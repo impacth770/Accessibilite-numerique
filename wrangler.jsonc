@@ -1,6 +1,6 @@
 {
   // Site statique servi par Cloudflare Workers (assets statiques, offre gratuite)
-  "name": "accessibilitenumerique",
+  "name": "accessibilite-numerique",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./dist",

@@ -1,5 +1,5 @@
 {
-  "name": "accessibilitenumerique",
+  "name": "accessibilite-numerique",
   "private": true,
   "version": "1.0.0",
   "description": "Site accessibilitenumerique.eu — site statique multilingue (FR, NL, DE, EN) servi par Cloudflare Workers",
