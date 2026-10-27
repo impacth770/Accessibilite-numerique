@@ -1,0 +1,13 @@
+{
+  "name": "accessibilitenumerique",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Site accessibilitenumerique.eu — site statique multilingue (FR, NL, DE, EN) servi par Cloudflare Workers",
+  "scripts": {
+    "build": "python3 gen/build.py prod",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Développement accessible : design et code — Accessibilité numérique</title>
+<meta name="description" content="Revue de maquettes, design system, revue de code et assistance : vos équipes construisent un produit accessible dès la conception.">
+<link rel="canonical" href="https://accessibilitenumerique.eu/prestations/developpement-accessible/">
+<link rel="alternate" hreflang="fr" href="https://accessibilitenumerique.eu/prestations/developpement-accessible/">
+<link rel="alternate" hreflang="nl" href="https://accessibilitenumerique.eu/nl/diensten/toegankelijke-ontwikkeling/">
+<link rel="alternate" hreflang="de" href="https://accessibilitenumerique.eu/de/leistungen/barrierefreie-entwicklung/">
+<link rel="alternate" hreflang="en" href="https://accessibilitenumerique.eu/en/services/accessible-development/">
+<link rel="alternate" hreflang="x-default" href="https://accessibilitenumerique.eu/prestations/developpement-accessible/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Accessibilité numérique">
+<meta property="og:title" content="Développement accessible : design et code — Accessibilité numérique">
+<meta property="og:description" content="Revue de maquettes, design system, revue de code et assistance : vos équipes construisent un produit accessible dès la conception.">
+<meta property="og:url" content="https://accessibilitenumerique.eu/prestations/developpement-accessible/">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/manrope-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://accessibilitenumerique.eu/#org", "name": "Accessibilité numérique", "legalName": "MABEL AGENCY", "telephone": "+33465849826", "url": "https://accessibilitenumerique.eu/", "numberOfEmployees": {"@type": "QuantitativeValue", "value": 80}, "taxID": "FR19904260742", "address": {"@type": "PostalAddress", "streetAddress": "25 rue Jules Isaac", "postalCode": "13009", "addressLocality": "Marseille", "addressCountry": "FR"}, "email": "contact@accessibilitenumerique.eu", "description": "Audit RGAA, conformité EAA, tests utilisateurs et formation. Cabinet d'accessibilité numérique depuis 15 ans en France, Belgique, Luxembourg et Suisse.", "areaServed": [{"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Belgium"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Switzerland"}], "availableLanguage": ["fr", "nl", "de", "en"], "memberOf": [{"@type": "Organization", "name": "International Association of Accessibility Professionals"}, {"@type": "Organization", "name": "World Wide Web Consortium"}], "knowsAbout": ["RGAA", "WCAG", "EN 301 549", "European Accessibility Act", "RAWeb", "RAAM", "eCH-0059"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "À quel moment intervenir ?", "acceptedAnswer": {"@type": "Answer", "text": "Le plus tôt possible : au cadrage ou à la conception, chaque choix coûte moins cher à corriger."}}, {"@type": "Question", "name": "Travaillez-vous avec nos frameworks ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, sur les principaux frameworks web et sur les environnements iOS et Android natifs."}}, {"@type": "Question", "name": "Faut-il un audit ensuite ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui : un audit final mesure la conformité et permet de publier la déclaration d'accessibilité."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Développement accessible", "description": "Nos consultants accompagnent vos designers et vos développeurs tout au long du projet : revue des maquettes, choix des composants, revue de code et assistance au quotidien. Vos équipes montent en compétence pendant que votre produit se construit accessible.", "provider": {"@id": "https://accessibilitenumerique.eu/#org"}, "areaServed": ["FR", "BE", "LU", "CH"], "url": "https://accessibilitenumerique.eu/prestations/developpement-accessible/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://accessibilitenumerique.eu/"}, {"@type": "ListItem", "position": 2, "name": "Prestations", "item": "https://accessibilitenumerique.eu/prestations/"}, {"@type": "ListItem", "position": 3, "name": "Développement accessible"}]}</script>
+</head>
+<body>
+<a href="#contenu" class="skip">Aller au contenu</a>
+<header class="hd">
+<div class="w">
+<a class="logo" href="/" aria-label="Accessibilité numérique, retour à l&#39;accueil"><b>accessibilité</b><span> numérique</span></a>
+<nav class="nav" aria-label="Navigation principale">
+<button type="button" data-toggle="mega" aria-expanded="false" aria-controls="mega" class="cur">Prestations <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M1.5 3.5L5 7l3.5-3.5" fill="none" stroke="#0B0B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<a href="/referentiels/">Référentiels</a>
+<a href="/cabinet/">Le cabinet</a>
+<a href="/ressources/">Ressources</a>
+</nav>
+<div class="tools">
+<div class="langsw">
+<button type="button" data-toggle="lang" aria-expanded="false" aria-controls="langues"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#0B0B0C" stroke-width="1.2"/><path d="M1.5 8h13M8 1.5c2 2 2 11 0 13M8 1.5c-2 2-2 11 0 13" fill="none" stroke="#0B0B0C" stroke-width="1.2"/></svg><span aria-hidden="true">FR</span><span class="sr">Choisir la langue (français)</span></button>
+<ul class="dd" id="langues" hidden>
+<li><a href="/prestations/developpement-accessible/" hreflang="fr" lang="fr" aria-current="true">Français <span>FR</span></a></li>
+<li><a href="/nl/diensten/toegankelijke-ontwikkeling/" hreflang="nl" lang="nl">Nederlands <span>NL</span></a></li>
+<li><a href="/de/leistungen/barrierefreie-entwicklung/" hreflang="de" lang="de">Deutsch <span>DE</span></a></li>
+<li><a href="/en/services/accessible-development/" hreflang="en" lang="en">English <span>EN</span></a></li>
+</ul>
+</div>
+<a class="btn sm" href="/contact/">Prendre rendez-vous</a>
+</div>
+<button type="button" class="burger" data-toggle="mob" aria-expanded="false" aria-controls="menu-mobile"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 7h14M3 13h14" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round"/></svg><span class="sr">Menu</span></button>
+</div>
+<div class="mega" id="mega" hidden>
+<div class="w">
+<div class="cols">
+<div><h2>Audits</h2><ul><li><a href="/prestations/audit-rgaa/">Audit RGAA</a></li><li><a href="/prestations/audit-raam/">Audit RAAM</a></li><li><a href="/prestations/audit-de-conformite/">Audit de conformité</a></li><li><a href="/prestations/recette-accessibilite/">Recette accessibilité</a></li><li><a href="/prestations/test-utilisateur-reel/">Test utilisateur réel</a></li>
+</ul></div>
+<div><h2>Accompagnement</h2><ul><li><a href="/prestations/developpement-accessible/">Développement accessible</a></li><li><a href="/prestations/prestation-informatique/">Prestation informatique</a></li><li><a href="/prestations/aide-au-recrutement/">Aide au recrutement</a></li>
+</ul></div>
+<div><h2>Formation</h2><ul><li><a href="/prestations/e-learning-accessibilite/">E-learning accessibilité</a></li><li><a href="/prestations/formations/">Formations</a></li>
+</ul></div>
+</div>
+<a class="all" href="/prestations/"><span>Toutes nos prestations et notre méthode</span><span class="arrow k"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+</div>
+</div>
+<nav class="mnav" id="menu-mobile" aria-label="Navigation principale" hidden>
+<div class="w">
+<a href="/prestations/">Prestations</a>
+<a href="/referentiels/">Référentiels</a>
+<a href="/cabinet/">Le cabinet</a>
+<a href="/ressources/">Ressources</a>
+<a href="/contact/">Contact</a>
+<p class="langs"><a href="/prestations/developpement-accessible/" hreflang="fr" lang="fr" aria-current="true"><abbr title="Français" style="text-decoration:none">FR</abbr></a><a href="/nl/diensten/toegankelijke-ontwikkeling/" hreflang="nl" lang="nl"><abbr title="Nederlands" style="text-decoration:none">NL</abbr></a><a href="/de/leistungen/barrierefreie-entwicklung/" hreflang="de" lang="de"><abbr title="Deutsch" style="text-decoration:none">DE</abbr></a><a href="/en/services/accessible-development/" hreflang="en" lang="en"><abbr title="English" style="text-decoration:none">EN</abbr></a></p>
+<a class="btn" href="/contact/">Prendre rendez-vous</a>
+</div>
+</nav>
+</header>
+<main id="contenu" tabindex="-1">
+
+<section class="sec top" aria-labelledby="h1"><div class="w">
+<nav class="crumb" aria-label="Fil d&#39;Ariane"><ol>
+<li><a href="/">Accueil</a></li><li><a href="/prestations/">Prestations</a></li><li><span aria-current="page">Développement accessible</span></li>
+</ol></nav>
+<div style="display:flex;flex-wrap:wrap;gap:48px 80px;align-items:flex-start">
+<div style="flex:1.4 1 560px;min-width:0">
+<p class="eyebrow">Accompagnement · Conception</p>
+<h1 id="h1" class="d1">Développement accessible</h1>
+<p class="tag">L&#39;accessibilité intégrée dès la maquette, plutôt que corrigée après.</p>
+<p class="lead">Nos consultants accompagnent vos designers et vos développeurs tout au long du projet : revue des maquettes, choix des composants, revue de code et assistance au quotidien. Vos équipes montent en compétence pendant que votre produit se construit accessible.</p>
+<div class="btns" style="margin-top:40px"><a class="btn" href="/contact/">Demander un devis</a><a class="btn ghost" href="#detail">En détail</a></div>
+</div>
+<aside class="panel" style="flex:1 1 340px;min-width:0;border-radius:24px;padding:32px" aria-labelledby="enbref"><h2 id="enbref" class="label" style="font-size:14px;margin-bottom:8px">En bref</h2>
+<dl class="facts"><div><dt>Pour qui</dt><dd>Équipes design, front-end et mobile</dd></div><div><dt>Format</dt><dd>Accompagnement au long cours ou renfort ponctuel</dd></div><div><dt>Livrables</dt><dd>Revues annotées, recommandations, composants validés</dd></div><div><dt>Technologies</dt><dd>Web, iOS, Android et principaux frameworks</dd></div></dl></aside>
+</div>
+</div></section>
+<section class="sec" aria-labelledby="t-who"><div class="w split">
+<h2 id="t-who" class="l h2m">Pour qui ?</h2>
+<div class="r grid g260" style="gap:12px"><div class="card line"><p class="t" style="font-size:20px">Projets de création ou de refonte</p><p class="sub" style="font-size:16px">Pour éviter les corrections coûteuses après la mise en ligne.</p></div><div class="card line"><p class="t" style="font-size:20px">Design systems</p><p class="sub" style="font-size:16px">Des composants accessibles une fois pour toutes, réutilisés partout.</p></div><div class="card line"><p class="t" style="font-size:20px">Équipes internes</p><p class="sub" style="font-size:16px">Pour gagner en autonomie sur le sujet, projet après projet.</p></div></div>
+</div></section>
+<section class="sec" id="detail" aria-labelledby="t-inc"><div class="w">
+<h2 id="t-inc" class="h2" style="margin-bottom:48px;max-width:760px">Ce que comprend l&#39;accompagnement</h2>
+<ol class="grid" style="list-style:none;margin:0;padding:0">
+<li class="card" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">01</span><span><span class="t" style="display:block">Revue des maquettes</span><span class="sub" style="display:block;margin-top:8px">Contrastes, hiérarchie, états de focus et alternatives, avant le développement.</span></span></li>
+<li class="card" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">02</span><span><span class="t" style="display:block">Design system accessible</span><span class="sub" style="display:block;margin-top:8px">Composants, règles d&#39;usage et documentation.</span></span></li>
+<li class="card" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">03</span><span><span class="t" style="display:block">Revue de code</span><span class="sub" style="display:block;margin-top:8px">HTML sémantique, ARIA, gestion du focus et composants dynamiques.</span></span></li>
+<li class="card" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">04</span><span><span class="t" style="display:block">Assistance au quotidien</span><span class="sub" style="display:block;margin-top:8px">Un consultant disponible pour répondre aux questions de vos équipes.</span></span></li>
+<li class="card" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">05</span><span><span class="t" style="display:block">Tests en continu</span><span class="sub" style="display:block;margin-top:8px">Des contrôles réguliers sur les fonctionnalités développées.</span></span></li>
+<li class="card k" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">06</span><span><span class="t" style="display:block">Transmission</span><span class="sub" style="display:block;margin-top:8px">Des bonnes pratiques adaptées à vos outils, pour que l&#39;équipe reste autonome.</span></span></li>
+</ol>
+</div></section>
+<section class="sec" aria-labelledby="t-faq"><div class="w split">
+<h2 id="t-faq" class="l h2m">Questions fréquentes</h2>
+<div class="r"><div class="faq">
+<details open><summary><h3>À quel moment intervenir ?</h3></summary><p>Le plus tôt possible : au cadrage ou à la conception, chaque choix coûte moins cher à corriger.</p></details>
+<details><summary><h3>Travaillez-vous avec nos frameworks ?</h3></summary><p>Oui, sur les principaux frameworks web et sur les environnements iOS et Android natifs.</p></details>
+<details><summary><h3>Faut-il un audit ensuite ?</h3></summary><p>Oui : un audit final mesure la conformité et permet de publier la déclaration d&#39;accessibilité.</p></details>
+</div></div>
+</div></section>
+<section class="sec" aria-labelledby="t-rel"><div class="w">
+<h2 id="t-rel" class="h2s" style="margin-bottom:32px">Prestations associées</h2>
+<div class="grid"><a class="card row lift" href="/prestations/audit-rgaa/"><span class="t" style="font-size:20px">Audit RGAA</span><span class="arrow"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="card row lift" href="/prestations/recette-accessibilite/"><span class="t" style="font-size:20px">Recette accessibilité</span><span class="arrow"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="card row lift" href="/prestations/formations/"><span class="t" style="font-size:20px">Formations</span><span class="arrow"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+</div></section>
+<section class="sec" aria-labelledby="t-cta"><div class="w">
+<div class="cta panel dark">
+<div><h2 id="t-cta" class="h2">Construisons un produit accessible.</h2><p>Décrivez votre besoin : nous revenons vers vous avec une proposition détaillée.</p></div>
+<a class="btn inv" href="/contact/">Demander un devis <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div></div></section>
+
+</main>
+<footer class="ft">
+<div class="w">
+<div class="ft-top">
+<div class="ft-brand">
+<a class="logo" href="/" aria-label="Accessibilité numérique, retour à l&#39;accueil"><b>accessibilité</b><span> numérique</span></a>
+<p>Cabinet d&#39;audit et de conseil en accessibilité numérique depuis 15 ans. France, Belgique, Luxembourg, Suisse.</p>
+<div class="ft-aff"><span><img src="/assets/logos/iaap.webp" alt="Membre de l’IAAP" width="84" height="37"></span><span><img src="/assets/logos/w3c.svg" alt="Membre du W3C" width="40" height="40"></span></div>
+</div>
+<div class="ft-col"><h2>Nos prestations</h2><ul><li><a href="/prestations/audit-rgaa/">Audit RGAA</a></li><li><a href="/prestations/audit-raam/">Audit RAAM</a></li><li><a href="/prestations/audit-de-conformite/">Audit de conformité</a></li><li><a href="/prestations/recette-accessibilite/">Recette accessibilité</a></li><li><a href="/prestations/test-utilisateur-reel/">Test utilisateur réel</a></li><li><a href="/prestations/developpement-accessible/">Développement accessible</a></li><li><a href="/prestations/prestation-informatique/">Prestation informatique</a></li><li><a href="/prestations/aide-au-recrutement/">Aide au recrutement</a></li><li><a href="/prestations/e-learning-accessibilite/">E-learning accessibilité</a></li><li><a href="/prestations/formations/">Formations</a></li>
+</ul></div>
+<div class="ft-col"><h2>Référentiels</h2><ul><li><a href="/referentiels/france/">France</a></li><li><a href="/referentiels/belgique/">Belgique</a></li><li><a href="/referentiels/luxembourg/">Luxembourg</a></li><li><a href="/referentiels/suisse/">Suisse</a></li>
+</ul>
+<h2>Secteurs</h2><ul><li><a href="/secteurs/secteur-public/">Collectivités et secteur public</a></li><li><a href="/secteurs/grands-comptes/">Grands comptes</a></li><li><a href="/secteurs/pme-eti/">PME et ETI</a></li>
+</ul></div>
+<div class="ft-col"><h2>Le cabinet</h2><ul>
+<li><a href="/cabinet/">Qui sommes-nous</a></li>
+<li><a href="/ressources/">Ressources</a></li>
+<li><a href="/contact/">Contact</a></li>
+</ul>
+<h2>Nous écrire</h2>
+<p><a class="mail" href="mailto:contact@accessibilitenumerique.eu">contact@accessibilitenumerique.eu</a></p>
+<p><a href="tel:+33465849826" style="color:#B5B5B8">04 65 84 98 26</a></p>
+</div>
+</div>
+<div class="ft-bot">
+<p>© 2026 Accessibilité numérique</p>
+<ul>
+<li><a href="/mentions-legales/">Mentions légales</a></li>
+<li><a href="/confidentialite/">Politique de confidentialité</a></li>
+<li><a href="/accessibilite/">Accessibilité : totalement conforme</a></li>
+<li><a href="/plan-du-site/">Plan du site</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

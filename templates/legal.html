@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block main %}
+<section class="sec top" aria-labelledby="h1" style="padding-bottom:120px"><div class="w">
+{{ m.crumbs([(None, c.title)]) }}
+<h1 id="h1" class="d1">{{ c.title }}</h1>
+<p class="mute" style="margin:20px 0 64px;font-size:15px">{{ c.updated }}</p>
+<div style="display:flex;flex-wrap:wrap;gap:48px 80px">
+<nav class="toc" aria-labelledby="toc"><h2 id="toc">{{ ui.toc }}</h2><ol>{% for s in c.sections %}<li><a href="#{{ s[0] }}">{{ s[1] }}</a></li>{% endfor %}</ol></nav>
+<div class="legal">
+{% if c.lead %}<p class="intro">{{ c.lead }}</p>{% endif %}
+{%- for s in c.sections %}
+<section id="{{ s[0] }}" aria-labelledby="h-{{ s[0] }}"><h2 id="h-{{ s[0] }}">{{ s[1] }}</h2>
+{%- for p in s[2] %}<p>{{ p }}</p>{% endfor %}
+{%- if s|length > 3 %}<ul>{% for lk in s[3] %}<li><a class="ul" href="{{ lk[2] if lk|length > 2 else u(lk[0]) }}"{% if lk|length > 3 %} lang="{{ lk[3] }}" hreflang="{{ lk[3] }}"{% endif %}>{{ lk[1] }}</a></li>{% endfor %}</ul>{% endif %}
+</section>
+{%- endfor %}
+</div>
+</div>
+</div></section>
+{% endblock %}

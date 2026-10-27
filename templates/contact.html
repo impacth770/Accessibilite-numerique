@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block main %}
+<section class="sec top" aria-labelledby="h1" style="padding-bottom:120px"><div class="w">
+{{ m.crumbs([(None, ui.contact)]) }}
+<h1 id="h1" class="d1" style="margin-bottom:64px">{{ c.h1 }}</h1>
+<div style="display:flex;flex-wrap:wrap;gap:48px 72px;align-items:flex-start">
+<div style="flex:1.5 1 560px;min-width:0">
+<div id="form-ok" class="done" role="status" tabindex="-1" hidden><strong>{{ c.ok[0] }}</strong><p class="mute" style="margin-top:12px">{{ c.ok[1] }}</p></div>
+<form class="form" data-contact data-endpoint="{{ form_endpoint }}" data-neterr="{{ c.neterr }}" novalidate>
+<p class="mute" style="font-size:15px">{{ c.required }}</p>
+<fieldset><legend>{{ c.need }}</legend><div class="choices">
+{%- for n in c.needs %}<label><input type="radio" name="besoin" value="{{ fr_contact.needs[loop.index0] }}"{% if loop.first %} checked{% endif %}><span>{{ n }}</span></label>{% endfor %}
+</div></fieldset>
+<div class="fields">
+<div class="f"><label for="c-nom">{{ c.f.name }} *</label><input id="c-nom" name="nom" type="text" autocomplete="name" required></div>
+<div class="f"><label for="c-org">{{ c.f.org }} *</label><input id="c-org" name="organisation" type="text" autocomplete="organization" required></div>
+<div class="f"><label for="c-mail">{{ c.f.mail }} *</label><input id="c-mail" name="email" type="email" autocomplete="email" required></div>
+<div class="f"><label for="c-tel">{{ c.f.tel }} <span>{{ c.f.optional }}</span></label><input id="c-tel" name="telephone" type="tel" autocomplete="tel"></div>
+<div class="f"><label for="c-pays">{{ c.f.country }}</label><select id="c-pays" name="pays">{% for o in c.f.countries %}<option value="{{ country_fr[o] }}">{{ o }}</option>{% endfor %}</select></div>
+<div class="f"><label for="c-type">{{ c.f.type }}</label><select id="c-type" name="type">{% for o in c.f.types %}<option value="{{ fr_contact.f.types[loop.index0] }}">{{ o }}</option>{% endfor %}</select></div>
+</div>
+<div class="f"><label for="c-msg">{{ c.f.msg }} *</label><textarea id="c-msg" name="message" rows="6" required></textarea></div>
+<div class="consent"><input id="c-rgpd" name="consentement" type="checkbox" value="oui" required><label for="c-rgpd">{{ c.consent }} * <a href="{{ u('legal:confidentialite') }}">{{ ui.legal.confidentialite }}</a></label></div>
+<p class="err" role="alert" hidden>{{ c.err }}</p>
+<div><button class="btn" type="submit">{{ c.send }}</button></div>
+</form>
+</div>
+<aside style="flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:16px" aria-label="{{ c.coords }}">
+<div class="panel dark" style="border-radius:24px;padding:34px;display:flex;flex-direction:column;gap:24px">
+<h2 class="t" style="margin:0;font-size:22px;font-weight:600">{{ c.coords }}</h2>
+<div><p style="font-size:14px;color:#B5B5B8">{{ c.f.mail_short }}</p><p style="margin-top:4px;font-size:18px"><a href="mailto:contact@accessibilitenumerique.eu">contact@accessibilitenumerique.eu</a></p></div>
+<div><p style="font-size:14px;color:#B5B5B8">{{ c.f.tel_short }}</p><p style="margin-top:4px;font-size:18px"><a href="tel:+33465849826">{{ ui.phone }}</a></p></div>
+<div><p style="font-size:14px;color:#B5B5B8">{{ c.f.address }}</p><p style="margin-top:4px;font-size:18px">{{ c.address }}</p></div>
+</div>
+<div class="panel" style="border-radius:24px;padding:34px">
+<h2 class="t" style="margin:0 0 20px;font-size:22px;font-weight:600">{{ c.after }}</h2>
+<ol class="steps">{% for s in c.steps %}<li><span aria-hidden="true">{{ loop.index }}</span>{{ s }}</li>{% endfor %}</ol>
+</div>
+</aside>
+</div>
+</div></section>
+{% endblock %}

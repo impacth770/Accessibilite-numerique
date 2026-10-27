@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block main %}
+<section class="sec hero" aria-labelledby="h1"><div class="w">
+<p class="chip">{{ c.chip }}</p>
+<h1 id="h1" class="d0">{{ c.h1a }} <span class="grey">{{ c.h1b }}</span></h1>
+<div class="hero-row">
+<p>{{ c.intro }}</p>
+<div class="btns"><a class="btn" href="{{ u('contact') }}">{{ ui.cta }} {{ m.arrow('#FFFFFF') }}</a><a class="btn ghost" href="{{ u('services') }}">{{ c.cta2 }}</a></div>
+</div>
+<div class="stage">
+<figure class="report" aria-label="{{ c.report.aria }}">
+<div class="top"><div><small>{{ c.report.label }}</small><strong>{{ c.report.title }}</strong></div><span class="badge">{{ c.report.badge }}</span></div>
+<div class="bar" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="legend">{% for l in c.report.legend %}<span><i aria-hidden="true"></i>{{ l }}</span>{% endfor %}</div>
+<ul class="crit">
+{%- for k, q, ok in c.report.crit %}
+<li><span class="k">{{ k }}</span><span class="q">{{ q }}</span><span class="{{ 'ok' if ok else 'ko' }}">{{ c.report.ok if ok else c.report.ko }}</span></li>
+{%- endfor %}
+</ul>
+</figure>
+<div class="side">
+<div class="card k"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="19" fill="none" stroke="#FFFFFF" stroke-opacity="0.3"/><path d="M13 20.5l4.5 4.5L27 15.5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><p class="t">{{ c.decl[0] }}</p><p class="sub" style="margin-top:8px">{{ c.decl[1] }}</p></div></div>
+<div class="card w0"><p class="t">{{ c.test[0] }}</p><p class="sub">{{ c.test[1] }}</p><ul class="tags">{% for t in c.test[2] %}<li>{{ t }}</li>{% endfor %}</ul></div>
+</div>
+</div>
+</div></section>
+
+<section class="sec" aria-labelledby="t-trust" style="padding-top:56px;padding-bottom:24px"><div class="w trust">
+<h2 id="t-trust" class="sr">{{ c.trust_label }}</h2>
+<p>{{ c.trust }}</p>
+<ul class="logos">
+{%- for name, file, h in logos %}
+<li><img src="{{ asset('logos/' ~ file) }}" alt="{{ name }}" style="max-height:{{ h }}px" loading="lazy"></li>
+{%- endfor %}
+</ul>
+</div></section>
+
+<section class="sec" aria-labelledby="t-cab" style="padding-top:120px;padding-bottom:120px"><div class="w split">
+<h2 id="t-cab" class="l n label">{{ ui.firm }}</h2>
+<div class="r">
+<p class="statement">{{ c.statement[0] }} <span class="grey">{{ c.statement[1] }}</span></p>
+<dl class="figs" style="margin-top:64px;padding-top:40px;border-top:1px solid #E8E8E6">
+{%- for v, suf, lab in c.figs %}<div><dt>{{ lab }}</dt><dd>{{ v }}{% if suf %}<b>{{ suf }}</b>{% endif %}</dd></div>{% endfor %}
+</dl>
+<a class="more ul" href="{{ u('firm') }}">{{ c.more_firm }}</a>
+</div>
+</div></section>
+
+<section class="sec" aria-labelledby="t-presta"><div class="w">
+<div class="head" style="margin-bottom:40px">
+<h2 id="t-presta" class="h2">{{ c.cta2 }}</h2>
+<div class="tabs" role="tablist" aria-label="{{ c.tabs_label }}">
+{%- for g in svc_groups %}<button type="button" role="tab" id="tab-{{ loop.index }}" aria-controls="tp-{{ loop.index }}" aria-selected="{{ 'true' if loop.first else 'false' }}">{{ ui.cols[loop.index0] }}</button>{% endfor %}
+</div>
+</div>
+{%- for g in svc_groups %}
+<div class="grid fill" role="tabpanel" id="tp-{{ loop.index }}" aria-labelledby="tab-{{ loop.index }}"{% if not loop.first %} hidden{% endif %}>
+{%- for s in g %}
+<a class="card tall lift" href="{{ u('svc:' ~ s) }}"><span class="t">{{ ui.svc[s] }}</span><span class="sub">{{ svc[s].card }}</span><span class="arrow end">{{ m.arrow() }}</span></a>
+{%- endfor %}
+</div>
+{%- endfor %}
+<a class="more ul" href="{{ u('services') }}">{{ c.see_all }}</a>
+</div></section>
+
+<section class="sec" aria-labelledby="t-qui" style="padding-bottom:120px"><div class="w split">
+<h2 id="t-qui" class="l h2">{{ c.qui_title }}</h2>
+<div class="r rows">
+{%- for k, d in c.qui %}
+<a class="slide" href="{{ u('sector:' ~ k) }}"><span class="t">{{ ui.sector[k] }}</span><span class="d">{{ d }}</span></a>
+{%- endfor %}
+</div>
+</div></section>
+
+<section class="sec" aria-labelledby="t-ref" style="padding-bottom:120px"><div class="w">
+<div class="panel dark">
+<div class="head"><h2 id="t-ref" class="h2" style="max-width:640px">{{ c.ref_title[0] }} <span class="grey">{{ c.ref_title[1] }}</span></h2><p style="color:#C9C9CC;font-size:16px">{{ c.ref_text }}</p></div>
+<div class="grid g230">
+{%- for co in countries %}
+<a class="card dk2 lift" style="gap:40px" href="{{ u('country:' ~ co) }}"><span class="code">{{ codes[co] }}</span><span><span class="t" style="display:block;font-size:19px">{{ ui.country[co] }}</span><span style="display:block;margin-top:6px;font-size:14px;color:#B5B5B8">{{ c.ref_sub[co] }}</span></span></a>
+{%- endfor %}
+</div>
+</div>
+</div></section>
+
+<section class="sec" aria-labelledby="t-res" style="padding-bottom:120px"><div class="w">
+<div class="head" style="margin-bottom:40px"><h2 id="t-res" class="h2">{{ ui.resources }}</h2><a class="ul" style="font-weight:600" href="{{ u('resources') }}">{{ c.all_res }}</a></div>
+<div class="grid wide">
+{%- for p in posts[:3] %}
+<article class="post"><div class="cover {{ p.cls }}" aria-hidden="true">{{ p.cover }}</div><small>{{ p.cat }} · {{ p.where }}</small><h3>{% if p.live %}<a class="ul" href="{{ u(p.key) }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3></article>
+{%- endfor %}
+</div>
+</div></section>
+
+<section class="sec" aria-labelledby="t-cta" style="padding-bottom:120px"><div class="w">
+<div class="cta panel"><div><h2 id="t-cta" class="h2">{{ c.cta_title }}</h2><p style="color:#3D3E43">{{ c.cta_text }}</p></div><a class="btn" href="{{ u('contact') }}">{{ ui.cta }} {{ m.arrow('#FFFFFF') }}</a></div>
+</div></section>
+{% endblock %}

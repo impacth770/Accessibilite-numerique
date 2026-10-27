@@ -1,0 +1,23 @@
+{%- macro arrow(color='#0B0B0C') -%}<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="{{ color }}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>{%- endmacro -%}
+{%- macro crumbs(items) -%}
+<nav class="crumb" aria-label="{{ ui.crumb_label }}"><ol>
+<li><a href="{{ u('home') }}">{{ ui.home }}</a></li>
+{%- for it in items %}
+{%- if loop.last %}<li><span aria-current="page">{{ it[1] }}</span></li>{% elif it[0] %}<li><a href="{{ u(it[0]) }}">{{ it[1] }}</a></li>{% else %}<li><span>{{ it[1] }}</span></li>{% endif %}
+{%- endfor %}
+</ol></nav>
+{%- endmacro -%}
+{%- macro faq(items) -%}
+<div class="faq">
+{%- for q in items %}
+<details{% if loop.first %} open{% endif %}><summary><h3>{{ q[0] }}</h3></summary><p>{{ q[1] }}</p></details>
+{%- endfor %}
+</div>
+{%- endmacro -%}
+{%- macro ctabox(title, text, label, key, dark=true) -%}
+<section class="sec" aria-labelledby="t-cta"><div class="w">
+<div class="cta {{ 'panel dark' if dark else 'panel' }}">
+<div><h2 id="t-cta" class="h2">{{ title }}</h2>{% if text %}<p>{{ text }}</p>{% endif %}</div>
+<a class="btn {{ 'inv' if dark }}" href="{{ u(key) }}">{{ label }} {{ arrow('#0B0B0C' if dark else '#FFFFFF') }}</a>
+</div></div></section>
+{%- endmacro -%}

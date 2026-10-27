@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block main %}
+<section class="sec top" aria-labelledby="h1"><div class="w">
+{{ m.crumbs([(None, ui.f_sectors), (None, ui.sector[sid])]) }}
+<p class="eyebrow">{{ ui.sector[sid] }}</p>
+<h1 id="h1" class="d1">{{ c.h1 }}</h1>
+<div class="hero-row" style="margin-top:32px"><p style="max-width:660px;font-size:18px"><span class="tag" style="display:block;margin:0 0 16px;font-size:clamp(22px,2.2vw,28px)">{{ c.tagline }}</span>{{ c.intro }}</p><a class="btn" href="{{ u('contact') }}">{{ ui.cta }}</a></div>
+</div></section>
+<section class="sec" aria-labelledby="t-enj"><div class="w">
+<h2 id="t-enj" class="h2" style="margin-bottom:40px">{{ ui.stakes }}</h2>
+<div class="grid">{% for t, d in c.stakes %}<div class="card{% if loop.first %} k{% endif %}" style="gap:56px;padding:34px;border-radius:24px;background:{{ '#0B0B0C' if loop.first else '#F3F3F1' }}"><span class="sub" aria-hidden="true">0{{ loop.index }}</span><span><span class="t l" style="display:block">{{ t }}</span><span class="sub" style="display:block;margin-top:10px;font-size:16px">{{ d }}</span></span></div>{% endfor %}</div>
+</div></section>
+<section class="sec" aria-labelledby="t-dem"><div class="w split">
+<h2 id="t-dem" class="l h2m">{{ ui.approach }}</h2>
+<ol class="r rows">{% for t, d in c.steps %}<li><span class="n" aria-hidden="true">0{{ loop.index }}</span><span class="t" style="font-size:22px">{{ t }}</span><span class="d">{{ d }}</span></li>{% endfor %}</ol>
+</div></section>
+<section class="sec" aria-labelledby="t-serv"><div class="w">
+<h2 id="t-serv" class="h2m" style="margin-bottom:32px">{{ ui.recommended }}</h2>
+<div class="grid g260">{% for s in c.serv %}<a class="card sp lift" href="{{ u('svc:' ~ s) }}"><span class="t">{{ ui.svc[s] }}</span><span class="arrow">{{ m.arrow() }}</span></a>{% endfor %}</div>
+</div></section>
+{{ m.ctabox(c.cta_title, '', ui.cta, 'contact', false) }}
+{% endblock %}

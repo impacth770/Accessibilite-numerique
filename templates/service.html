@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block main %}
+<section class="sec top" aria-labelledby="h1"><div class="w">
+{{ m.crumbs([('services', ui.services), (None, ui.svc[sid])]) }}
+<div style="display:flex;flex-wrap:wrap;gap:48px 80px;align-items:flex-start">
+<div style="flex:1.4 1 560px;min-width:0">
+<p class="eyebrow">{{ c.cat }}</p>
+<h1 id="h1" class="d1">{{ ui.svc[sid] }}</h1>
+<p class="tag">{{ c.tagline }}</p>
+<p class="lead">{{ c.intro }}</p>
+<div class="btns" style="margin-top:40px"><a class="btn" href="{{ u('contact') }}">{{ ui.quote }}</a><a class="btn ghost" href="#detail">{{ ui.detail }}</a></div>
+</div>
+<aside class="panel" style="flex:1 1 340px;min-width:0;border-radius:24px;padding:32px" aria-labelledby="enbref"><h2 id="enbref" class="label" style="font-size:14px;margin-bottom:8px">{{ ui.brief }}</h2>
+<dl class="facts">{% for k, v in c.brief %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}</dl></aside>
+</div>
+</div></section>
+<section class="sec" aria-labelledby="t-who"><div class="w split">
+<h2 id="t-who" class="l h2m">{{ c.who_title }}</h2>
+<div class="r grid g260" style="gap:12px">{% for t, d in c.who %}<div class="card line"><p class="t" style="font-size:20px">{{ t }}</p><p class="sub" style="font-size:16px">{{ d }}</p></div>{% endfor %}</div>
+</div></section>
+<section class="sec" id="detail" aria-labelledby="t-inc"><div class="w">
+<h2 id="t-inc" class="h2" style="margin-bottom:48px;max-width:760px">{{ c.inc_title }}</h2>
+<ol class="grid" style="list-style:none;margin:0;padding:0">
+{%- for t, d in c.inc %}
+<li class="card{% if loop.last %} k{% endif %}" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">0{{ loop.index }}</span><span><span class="t" style="display:block">{{ t }}</span><span class="sub" style="display:block;margin-top:8px">{{ d }}</span></span></li>
+{%- endfor %}
+</ol>
+</div></section>
+<section class="sec" aria-labelledby="t-faq"><div class="w split">
+<h2 id="t-faq" class="l h2m">{{ ui.faq }}</h2>
+<div class="r">{{ m.faq(c.faq) }}</div>
+</div></section>
+<section class="sec" aria-labelledby="t-rel"><div class="w">
+<h2 id="t-rel" class="h2s" style="margin-bottom:32px">{{ ui.related }}</h2>
+<div class="grid">{% for r in c.related %}<a class="card row lift" href="{{ u('svc:' ~ r) }}"><span class="t" style="font-size:20px">{{ ui.svc[r] }}</span><span class="arrow">{{ m.arrow() }}</span></a>{% endfor %}</div>
+</div></section>
+{{ m.ctabox(c.cta_title, ui.quote_text, ui.quote, 'contact', true) }}
+{% endblock %}

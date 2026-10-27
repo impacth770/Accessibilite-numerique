@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block main %}
+<section class="sec top" aria-labelledby="h1"><div class="w">
+{{ m.crumbs([(None, ui.services)]) }}
+<div class="head" style="margin-bottom:0"><h1 id="h1" class="d1" style="max-width:820px">{{ c.h1 }}</h1><p>{{ c.intro }}</p></div>
+<p class="btns" style="margin-top:48px">{% for g in svc_groups %}<a class="btn ghost sm" style="background:#F3F3F1;border-color:#F3F3F1" href="#g{{ loop.index }}">{{ ui.cols[loop.index0] }}</a>{% endfor %}<a class="btn ghost sm" style="background:#F3F3F1;border-color:#F3F3F1" href="#methode">{{ c.method_link }}</a></p>
+</div></section>
+{%- for g in svc_groups %}
+<section class="sec" id="g{{ loop.index }}" aria-labelledby="tg{{ loop.index }}"><div class="w split">
+<div class="l"><p class="eyebrow" style="margin-bottom:12px">{{ c.groups[loop.index0][0] }}</p><h2 id="tg{{ loop.index }}" class="h2m">{{ ui.cols[loop.index0] }}</h2><p class="mute" style="margin-top:16px;font-size:16px">{{ c.groups[loop.index0][1] }}</p></div>
+<div class="r rows al">
+{%- for s in g %}
+<a class="slide" href="{{ u('svc:' ~ s) }}"><span class="t">{{ ui.svc[s] }}</span><span class="d">{{ svc[s].card }}</span><span class="arrow o">{{ m.arrow() }}</span></a>
+{%- endfor %}
+</div>
+</div></section>
+{%- endfor %}
+<section class="sec" id="methode" aria-labelledby="t-m"><div class="w"><div class="panel">
+<div class="head"><h2 id="t-m" class="h2" style="max-width:620px">{{ c.method_title[0] }} <span class="grey">{{ c.method_title[1] }}</span></h2><p style="font-size:16px;color:#55565B">{{ c.method_text }}</p></div>
+<ol class="grid g230" style="list-style:none;margin:0;padding:0">
+{%- for t, d in c.method %}
+<li class="card" style="background:#fff;gap:40px"><span style="font-size:15px;font-weight:600;color:var(--acc)">{{ c.step }} {{ loop.index }}</span><span><span class="t" style="display:block;font-size:22px">{{ t }}</span><span class="sub" style="display:block;margin-top:8px">{{ d }}</span></span></li>
+{%- endfor %}
+</ol>
+</div></div></section>
+{{ m.ctabox(c.cta_title, '', ui.cta, 'contact', false) }}
+{% endblock %}

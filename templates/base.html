@@ -1,0 +1,119 @@
+{% import 'macros.html' as m with context %}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ meta.title }}</title>
+<meta name="description" content="{{ meta.desc }}">
+<link rel="canonical" href="{{ canonical }}">
+{%- for a in alternates %}
+<link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.href }}">
+{%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ xdefault }}">
+<meta property="og:type" content="{{ 'article' if page_type == 'article' else 'website' }}">
+<meta property="og:site_name" content="Accessibilité numérique">
+<meta property="og:title" content="{{ meta.title }}">
+<meta property="og:description" content="{{ meta.desc }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:locale" content="{{ ui.og_locale }}">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
+<link rel="preload" href="{{ asset('fonts/manrope-500.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ asset('site.css') }}">
+{%- for j in jsonld %}
+<script type="application/ld+json">{{ j }}</script>
+{%- endfor %}
+</head>
+<body>
+<a href="#contenu" class="skip">{{ ui.skip }}</a>
+<header class="hd">
+<div class="w">
+<a class="logo" href="{{ u('home') }}" aria-label="{{ ui.logo_label }}"><b>accessibilité</b><span> numérique</span></a>
+<nav class="nav" aria-label="{{ ui.nav_label }}">
+<button type="button" data-toggle="mega" aria-expanded="false" aria-controls="mega"{% if section == 'services' %} class="cur"{% endif %}>{{ ui.services }} <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M1.5 3.5L5 7l3.5-3.5" fill="none" stroke="#0B0B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<a href="{{ u('standards') }}"{% if section == 'standards' %} aria-current="page"{% endif %}>{{ ui.standards }}</a>
+<a href="{{ u('firm') }}"{% if section == 'firm' %} aria-current="page"{% endif %}>{{ ui.firm }}</a>
+<a href="{{ u('resources') }}"{% if section == 'resources' %} aria-current="page"{% endif %}>{{ ui.resources }}</a>
+</nav>
+<div class="tools">
+<div class="langsw">
+<button type="button" data-toggle="lang" aria-expanded="false" aria-controls="langues"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#0B0B0C" stroke-width="1.2"/><path d="M1.5 8h13M8 1.5c2 2 2 11 0 13M8 1.5c-2 2-2 11 0 13" fill="none" stroke="#0B0B0C" stroke-width="1.2"/></svg><span aria-hidden="true">{{ lang|upper }}</span><span class="sr">{{ ui.lang_label }}</span></button>
+<ul class="dd" id="langues" hidden>
+{%- for l in switch %}
+<li><a href="{{ l.href }}" hreflang="{{ l.lang }}" lang="{{ l.lang }}"{% if l.lang == lang %} aria-current="true"{% endif %}>{{ l.name }} <span>{{ l.lang|upper }}</span></a></li>
+{%- endfor %}
+</ul>
+</div>
+<a class="btn sm" href="{{ u('contact') }}">{{ ui.cta }}</a>
+</div>
+<button type="button" class="burger" data-toggle="mob" aria-expanded="false" aria-controls="menu-mobile"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 7h14M3 13h14" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round"/></svg><span class="sr">{{ ui.menu }}</span></button>
+</div>
+<div class="mega" id="mega" hidden>
+<div class="w">
+<div class="cols">
+{%- for g in svc_groups %}
+<div><h2>{{ ui.cols[loop.index0] }}</h2><ul>
+{%- for s in g %}<li><a href="{{ u('svc:' ~ s) }}">{{ ui.svc[s] }}</a></li>{% endfor %}
+</ul></div>
+{%- endfor %}
+</div>
+<a class="all" href="{{ u('services') }}"><span>{{ ui.all_services }}</span><span class="arrow k">{{ m.arrow('#FFFFFF') }}</span></a>
+</div>
+</div>
+<nav class="mnav" id="menu-mobile" aria-label="{{ ui.nav_label }}" hidden>
+<div class="w">
+<a href="{{ u('services') }}">{{ ui.services }}</a>
+<a href="{{ u('standards') }}">{{ ui.standards }}</a>
+<a href="{{ u('firm') }}">{{ ui.firm }}</a>
+<a href="{{ u('resources') }}">{{ ui.resources }}</a>
+<a href="{{ u('contact') }}">{{ ui.contact }}</a>
+<p class="langs">{% for l in switch %}<a href="{{ l.href }}" hreflang="{{ l.lang }}" lang="{{ l.lang }}"{% if l.lang == lang %} aria-current="true"{% endif %}><abbr title="{{ l.name }}" style="text-decoration:none">{{ l.lang|upper }}</abbr></a>{% endfor %}</p>
+<a class="btn" href="{{ u('contact') }}">{{ ui.cta }}</a>
+</div>
+</nav>
+</header>
+<main id="contenu" tabindex="-1">
+{% block main %}{% endblock %}
+</main>
+<footer class="ft">
+<div class="w">
+<div class="ft-top">
+<div class="ft-brand">
+<a class="logo" href="{{ u('home') }}" aria-label="{{ ui.logo_label }}"><b>accessibilité</b><span> numérique</span></a>
+<p>{{ ui.tagline }}</p>
+<div class="ft-aff"><span><img src="{{ asset('logos/iaap.webp') }}" alt="{{ ui.iaap }}" width="84" height="37"></span><span><img src="{{ asset('logos/w3c.svg') }}" alt="{{ ui.w3c }}" width="40" height="40"></span></div>
+</div>
+<div class="ft-col"><h2>{{ ui.f_services }}</h2><ul>
+{%- for s in svc_all %}<li><a href="{{ u('svc:' ~ s) }}">{{ ui.svc[s] }}</a></li>{% endfor %}
+</ul></div>
+<div class="ft-col"><h2>{{ ui.f_standards }}</h2><ul>
+{%- for c in countries %}<li><a href="{{ u('country:' ~ c) }}">{{ ui.country[c] }}</a></li>{% endfor %}
+</ul>
+<h2>{{ ui.f_sectors }}</h2><ul>
+{%- for s in sectors %}<li><a href="{{ u('sector:' ~ s) }}">{{ ui.sector[s] }}</a></li>{% endfor %}
+</ul></div>
+<div class="ft-col"><h2>{{ ui.firm }}</h2><ul>
+<li><a href="{{ u('firm') }}">{{ ui.about }}</a></li>
+<li><a href="{{ u('resources') }}">{{ ui.resources }}</a></li>
+<li><a href="{{ u('contact') }}">{{ ui.contact }}</a></li>
+</ul>
+<h2>{{ ui.write }}</h2>
+<p><a class="mail" href="mailto:contact@accessibilitenumerique.eu">contact@accessibilitenumerique.eu</a></p>
+<p><a href="tel:+33465849826" style="color:#B5B5B8">{{ ui.phone }}</a></p>
+</div>
+</div>
+<div class="ft-bot">
+<p>© 2026 Accessibilité numérique</p>
+<ul>
+<li><a href="{{ u('legal:mentions') }}">{{ ui.legal.mentions }}</a></li>
+<li><a href="{{ u('legal:confidentialite') }}">{{ ui.legal.confidentialite }}</a></li>
+<li><a href="{{ u('legal:accessibilite') }}">{{ ui.a11y_status }}</a></li>
+<li><a href="{{ u('legal:plan') }}">{{ ui.legal.plan }}</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script src="{{ asset('site.js') }}" defer></script>
+</body>
+</html>

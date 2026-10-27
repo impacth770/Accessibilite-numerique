@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block main %}
+<section class="sec top" aria-labelledby="h1" style="padding-bottom:160px"><div class="w">
+<p class="eyebrow">404</p>
+<h1 id="h1" class="d1">{{ c.h1 }}</h1>
+<p class="lead">{{ c.text }}</p>
+<div class="btns" style="margin-top:40px"><a class="btn" href="{{ u('home') }}">{{ ui.home }}</a><a class="btn ghost" href="{{ u('legal:plan') }}">{{ ui.legal.plan }}</a></div>
+</div></section>
+{% endblock %}

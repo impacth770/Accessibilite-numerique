@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAAM mobile app accessibility audit — Accessibilité numérique</title>
+<meta name="description" content="Audit of your iOS and Android apps against RAAM, on real devices, with VoiceOver and TalkBack. Report and prioritised action plan.">
+<link rel="canonical" href="https://accessibilitenumerique.eu/en/services/raam-audit/">
+<link rel="alternate" hreflang="fr" href="https://accessibilitenumerique.eu/prestations/audit-raam/">
+<link rel="alternate" hreflang="nl" href="https://accessibilitenumerique.eu/nl/diensten/raam-audit/">
+<link rel="alternate" hreflang="de" href="https://accessibilitenumerique.eu/de/leistungen/raam-audit/">
+<link rel="alternate" hreflang="en" href="https://accessibilitenumerique.eu/en/services/raam-audit/">
+<link rel="alternate" hreflang="x-default" href="https://accessibilitenumerique.eu/prestations/audit-raam/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Accessibilité numérique">
+<meta property="og:title" content="RAAM mobile app accessibility audit — Accessibilité numérique">
+<meta property="og:description" content="Audit of your iOS and Android apps against RAAM, on real devices, with VoiceOver and TalkBack. Report and prioritised action plan.">
+<meta property="og:url" content="https://accessibilitenumerique.eu/en/services/raam-audit/">
+<meta property="og:locale" content="en_GB">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/manrope-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://accessibilitenumerique.eu/#org", "name": "Accessibilité numérique", "legalName": "MABEL AGENCY", "telephone": "+33465849826", "url": "https://accessibilitenumerique.eu/", "numberOfEmployees": {"@type": "QuantitativeValue", "value": 80}, "taxID": "FR19904260742", "address": {"@type": "PostalAddress", "streetAddress": "25 rue Jules Isaac", "postalCode": "13009", "addressLocality": "Marseille", "addressCountry": "FR"}, "email": "contact@accessibilitenumerique.eu", "description": "Accessibility audits against EN 301 549 and WCAG, real user testing and training. 15 years of experience in France, Belgium, Luxembourg and Switzerland.", "areaServed": [{"@type": "Country", "name": "France"}, {"@type": "Country", "name": "Belgium"}, {"@type": "Country", "name": "Luxembourg"}, {"@type": "Country", "name": "Switzerland"}], "availableLanguage": ["fr", "nl", "de", "en"], "memberOf": [{"@type": "Organization", "name": "International Association of Accessibility Professionals"}, {"@type": "Organization", "name": "World Wide Web Consortium"}], "knowsAbout": ["RGAA", "WCAG", "EN 301 549", "European Accessibility Act", "RAWeb", "RAAM", "eCH-0059"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does RAAM apply outside Luxembourg?", "acceptedAnswer": {"@type": "Answer", "text": "RAAM is the Luxembourg framework. Elsewhere, we assess your apps against the applicable standard, RGAA in France or EN 301 549, with the same method."}}, {"@type": "Question", "name": "Should iOS and Android be audited separately?", "acceptedAnswer": {"@type": "Answer", "text": "Yes: each platform has its own components and assistive technologies. We audit both versions and pool the shared recommendations."}}, {"@type": "Question", "name": "Can an app be audited during development?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, on a test build. It is often the best time to fix issues at the lowest cost."}}, {"@type": "Question", "name": "Are embedded web views audited?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, whenever they carry an essential journey of the app."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "RAAM audit", "description": "RAAM is the mobile app accessibility assessment framework published in Luxembourg. Our consultants apply it to your native or hybrid apps, on iPhone and Android, with the assistive technologies built into each system.", "provider": {"@id": "https://accessibilitenumerique.eu/#org"}, "areaServed": ["FR", "BE", "LU", "CH"], "url": "https://accessibilitenumerique.eu/en/services/raam-audit/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://accessibilitenumerique.eu/en/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://accessibilitenumerique.eu/en/services/"}, {"@type": "ListItem", "position": 3, "name": "RAAM audit"}]}</script>
+</head>
+<body>
+<a href="#contenu" class="skip">Skip to content</a>
+<header class="hd">
+<div class="w">
+<a class="logo" href="/en/" aria-label="Accessibilité numérique, back to home"><b>accessibilité</b><span> numérique</span></a>
+<nav class="nav" aria-label="Main navigation">
+<button type="button" data-toggle="mega" aria-expanded="false" aria-controls="mega" class="cur">Services <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M1.5 3.5L5 7l3.5-3.5" fill="none" stroke="#0B0B0C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<a href="/en/standards/">Standards</a>
+<a href="/en/about/">The firm</a>
+<a href="/en/resources/">Resources</a>
+</nav>
+<div class="tools">
+<div class="langsw">
+<button type="button" data-toggle="lang" aria-expanded="false" aria-controls="langues"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#0B0B0C" stroke-width="1.2"/><path d="M1.5 8h13M8 1.5c2 2 2 11 0 13M8 1.5c-2 2-2 11 0 13" fill="none" stroke="#0B0B0C" stroke-width="1.2"/></svg><span aria-hidden="true">EN</span><span class="sr">Choose language (English)</span></button>
+<ul class="dd" id="langues" hidden>
+<li><a href="/prestations/audit-raam/" hreflang="fr" lang="fr">Français <span>FR</span></a></li>
+<li><a href="/nl/diensten/raam-audit/" hreflang="nl" lang="nl">Nederlands <span>NL</span></a></li>
+<li><a href="/de/leistungen/raam-audit/" hreflang="de" lang="de">Deutsch <span>DE</span></a></li>
+<li><a href="/en/services/raam-audit/" hreflang="en" lang="en" aria-current="true">English <span>EN</span></a></li>
+</ul>
+</div>
+<a class="btn sm" href="/en/contact/">Book a meeting</a>
+</div>
+<button type="button" class="burger" data-toggle="mob" aria-expanded="false" aria-controls="menu-mobile"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 7h14M3 13h14" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round"/></svg><span class="sr">Menu</span></button>
+</div>
+<div class="mega" id="mega" hidden>
+<div class="w">
+<div class="cols">
+<div><h2>Audits</h2><ul><li><a href="/en/services/rgaa-audit/">RGAA audit</a></li><li><a href="/en/services/raam-audit/">RAAM audit</a></li><li><a href="/en/services/compliance-audit/">Compliance audit</a></li><li><a href="/en/services/accessibility-acceptance-testing/">Accessibility acceptance testing</a></li><li><a href="/en/services/real-user-testing/">Real user testing</a></li>
+</ul></div>
+<div><h2>Support</h2><ul><li><a href="/en/services/accessible-development/">Accessible development</a></li><li><a href="/en/services/it-services/">IT services</a></li><li><a href="/en/services/recruitment-support/">Recruitment support</a></li>
+</ul></div>
+<div><h2>Training</h2><ul><li><a href="/en/services/accessibility-e-learning/">Accessibility e-learning</a></li><li><a href="/en/services/training/">Training</a></li>
+</ul></div>
+</div>
+<a class="all" href="/en/services/"><span>All our services and our method</span><span class="arrow k"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+</div>
+</div>
+<nav class="mnav" id="menu-mobile" aria-label="Main navigation" hidden>
+<div class="w">
+<a href="/en/services/">Services</a>
+<a href="/en/standards/">Standards</a>
+<a href="/en/about/">The firm</a>
+<a href="/en/resources/">Resources</a>
+<a href="/en/contact/">Contact</a>
+<p class="langs"><a href="/prestations/audit-raam/" hreflang="fr" lang="fr"><abbr title="Français" style="text-decoration:none">FR</abbr></a><a href="/nl/diensten/raam-audit/" hreflang="nl" lang="nl"><abbr title="Nederlands" style="text-decoration:none">NL</abbr></a><a href="/de/leistungen/raam-audit/" hreflang="de" lang="de"><abbr title="Deutsch" style="text-decoration:none">DE</abbr></a><a href="/en/services/raam-audit/" hreflang="en" lang="en" aria-current="true"><abbr title="English" style="text-decoration:none">EN</abbr></a></p>
+<a class="btn" href="/en/contact/">Book a meeting</a>
+</div>
+</nav>
+</header>
+<main id="contenu" tabindex="-1">
+
+<section class="sec top" aria-labelledby="h1"><div class="w">
+<nav class="crumb" aria-label="Breadcrumb"><ol>
+<li><a href="/en/">Home</a></li><li><a href="/en/services/">Services</a></li><li><span aria-current="page">RAAM audit</span></li>
+</ol></nav>
+<div style="display:flex;flex-wrap:wrap;gap:48px 80px;align-items:flex-start">
+<div style="flex:1.4 1 560px;min-width:0">
+<p class="eyebrow">Audits · Mobile apps</p>
+<h1 id="h1" class="d1">RAAM audit</h1>
+<p class="tag">Your iOS and Android apps, checked on real devices.</p>
+<p class="lead">RAAM is the mobile app accessibility assessment framework published in Luxembourg. Our consultants apply it to your native or hybrid apps, on iPhone and Android, with the assistive technologies built into each system.</p>
+<div class="btns" style="margin-top:40px"><a class="btn" href="/en/contact/">Request a quote</a><a class="btn ghost" href="#detail">In detail</a></div>
+</div>
+<aside class="panel" style="flex:1 1 340px;min-width:0;border-radius:24px;padding:32px" aria-labelledby="enbref"><h2 id="enbref" class="label" style="font-size:14px;margin-bottom:8px">At a glance</h2>
+<dl class="facts"><div><dt>Standard</dt><dd>RAAM, aligned with EN 301 549</dd></div><div><dt>Platforms</dt><dd>iOS and Android, native and hybrid apps</dd></div><div><dt>Deliverables</dt><dd>Report, assessment grid, action plan, statement</dd></div><div><dt>Average timeframe</dt><dd>3 weeks</dd></div></dl></aside>
+</div>
+</div></section>
+<section class="sec" aria-labelledby="t-who"><div class="w split">
+<h2 id="t-who" class="l h2m">Who is affected?</h2>
+<div class="r grid g260" style="gap:12px"><div class="card line"><p class="t" style="font-size:20px">Luxembourg public bodies</p><p class="sub" style="font-size:16px">Their mobile apps are subject to the law of 28 May 2019.</p></div><div class="card line"><p class="t" style="font-size:20px">Companies covered by the EAA</p><p class="sub" style="font-size:16px">Banking, transport, e-commerce: the app is often your main service channel.</p></div><div class="card line"><p class="t" style="font-size:20px">Any app publisher</p><p class="sub" style="font-size:16px">To make sure all your customers can use your app.</p></div></div>
+</div></section>
+<section class="sec" id="detail" aria-labelledby="t-inc"><div class="w">
+<h2 id="t-inc" class="h2" style="margin-bottom:48px;max-width:760px">What the audit includes</h2>
+<ol class="grid" style="list-style:none;margin:0;padding:0">
+<li class="card" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">01</span><span><span class="t" style="display:block">Screen sample</span><span class="sub" style="display:block;margin-top:8px">Key screens and journeys: sign-in, search, purchase, customer account.</span></span></li>
+<li class="card" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">02</span><span><span class="t" style="display:block">Criteria assessment</span><span class="sub" style="display:block;margin-top:8px">Check of every criterion in the framework, screen by screen.</span></span></li>
+<li class="card" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">03</span><span><span class="t" style="display:block">VoiceOver and TalkBack</span><span class="sub" style="display:block;margin-top:8px">Tests with native screen readers, voice control and magnification.</span></span></li>
+<li class="card" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">04</span><span><span class="t" style="display:block">Real devices</span><span class="sub" style="display:block;margin-top:8px">Checks on smartphones and tablets, in portrait and landscape.</span></span></li>
+<li class="card" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">05</span><span><span class="t" style="display:block">Prioritised action plan</span><span class="sub" style="display:block;margin-top:8px">Fixes ranked by impact, with guidance for your iOS and Android developers.</span></span></li>
+<li class="card k" style="gap:32px;padding:32px"><span class="n" aria-hidden="true">06</span><span><span class="t" style="display:block">Accessibility statement</span><span class="sub" style="display:block;margin-top:8px">Drafted from the results, ready to publish.</span></span></li>
+</ol>
+</div></section>
+<section class="sec" aria-labelledby="t-faq"><div class="w split">
+<h2 id="t-faq" class="l h2m">Frequently asked questions</h2>
+<div class="r"><div class="faq">
+<details open><summary><h3>Does RAAM apply outside Luxembourg?</h3></summary><p>RAAM is the Luxembourg framework. Elsewhere, we assess your apps against the applicable standard, RGAA in France or EN 301 549, with the same method.</p></details>
+<details><summary><h3>Should iOS and Android be audited separately?</h3></summary><p>Yes: each platform has its own components and assistive technologies. We audit both versions and pool the shared recommendations.</p></details>
+<details><summary><h3>Can an app be audited during development?</h3></summary><p>Yes, on a test build. It is often the best time to fix issues at the lowest cost.</p></details>
+<details><summary><h3>Are embedded web views audited?</h3></summary><p>Yes, whenever they carry an essential journey of the app.</p></details>
+</div></div>
+</div></section>
+<section class="sec" aria-labelledby="t-rel"><div class="w">
+<h2 id="t-rel" class="h2s" style="margin-bottom:32px">Related services</h2>
+<div class="grid"><a class="card row lift" href="/en/services/real-user-testing/"><span class="t" style="font-size:20px">Real user testing</span><span class="arrow"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="card row lift" href="/en/services/accessible-development/"><span class="t" style="font-size:20px">Accessible development</span><span class="arrow"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="card row lift" href="/en/services/accessibility-acceptance-testing/"><span class="t" style="font-size:20px">Accessibility acceptance testing</span><span class="arrow"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+</div></section>
+<section class="sec" aria-labelledby="t-cta"><div class="w">
+<div class="cta panel dark">
+<div><h2 id="t-cta" class="h2">Let&#39;s plan your app audit.</h2><p>Tell us what you need: we will come back to you with a detailed proposal.</p></div>
+<a class="btn inv" href="/en/contact/">Request a quote <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="#0B0B0C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div></div></section>
+
+</main>
+<footer class="ft">
+<div class="w">
+<div class="ft-top">
+<div class="ft-brand">
+<a class="logo" href="/en/" aria-label="Accessibilité numérique, back to home"><b>accessibilité</b><span> numérique</span></a>
+<p>Digital accessibility audit and consulting firm for 15 years. France, Belgium, Luxembourg, Switzerland.</p>
+<div class="ft-aff"><span><img src="/assets/logos/iaap.webp" alt="IAAP member" width="84" height="37"></span><span><img src="/assets/logos/w3c.svg" alt="W3C member" width="40" height="40"></span></div>
+</div>
+<div class="ft-col"><h2>Our services</h2><ul><li><a href="/en/services/rgaa-audit/">RGAA audit</a></li><li><a href="/en/services/raam-audit/">RAAM audit</a></li><li><a href="/en/services/compliance-audit/">Compliance audit</a></li><li><a href="/en/services/accessibility-acceptance-testing/">Accessibility acceptance testing</a></li><li><a href="/en/services/real-user-testing/">Real user testing</a></li><li><a href="/en/services/accessible-development/">Accessible development</a></li><li><a href="/en/services/it-services/">IT services</a></li><li><a href="/en/services/recruitment-support/">Recruitment support</a></li><li><a href="/en/services/accessibility-e-learning/">Accessibility e-learning</a></li><li><a href="/en/services/training/">Training</a></li>
+</ul></div>
+<div class="ft-col"><h2>Standards</h2><ul><li><a href="/en/standards/france/">France</a></li><li><a href="/en/standards/belgium/">Belgium</a></li><li><a href="/en/standards/luxembourg/">Luxembourg</a></li><li><a href="/en/standards/switzerland/">Switzerland</a></li>
+</ul>
+<h2>Sectors</h2><ul><li><a href="/en/sectors/public-sector/">Public sector</a></li><li><a href="/en/sectors/large-companies/">Large companies</a></li><li><a href="/en/sectors/smes/">SMEs</a></li>
+</ul></div>
+<div class="ft-col"><h2>The firm</h2><ul>
+<li><a href="/en/about/">About us</a></li>
+<li><a href="/en/resources/">Resources</a></li>
+<li><a href="/en/contact/">Contact</a></li>
+</ul>
+<h2>Write to us</h2>
+<p><a class="mail" href="mailto:contact@accessibilitenumerique.eu">contact@accessibilitenumerique.eu</a></p>
+<p><a href="tel:+33465849826" style="color:#B5B5B8">+33 4 65 84 98 26</a></p>
+</div>
+</div>
+<div class="ft-bot">
+<p>© 2026 Accessibilité numérique</p>
+<ul>
+<li><a href="/en/legal-notice/">Legal notice</a></li>
+<li><a href="/en/privacy/">Privacy policy</a></li>
+<li><a href="/en/accessibility/">Accessibility: fully compliant</a></li>
+<li><a href="/en/sitemap/">Sitemap</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
