@@ -10,7 +10,7 @@
 {% if c.lead %}<p class="intro">{{ c.lead }}</p>{% endif %}
 {%- for s in c.sections %}
 <section id="{{ s[0] }}" aria-labelledby="h-{{ s[0] }}"><h2 id="h-{{ s[0] }}">{{ s[1] }}</h2>
-{%- for p in s[2] %}<p>{{ p }}</p>{% endfor %}
+{%- for p in s[2] %}{% if p is string %}<p>{{ p }}</p>{% elif p[0] == 'h3' %}<h3>{{ p[1] }}</h3>{% elif p[0] == 'ul' %}<ul class="plist">{% for i in p[1] %}<li>{{ i }}</li>{% endfor %}</ul>{% endif %}{% endfor %}
 {%- if s|length > 3 %}<ul>{% for lk in s[3] %}<li><a class="ul" href="{{ lk[2] if lk|length > 2 else u(lk[0]) }}"{% if lk|length > 3 %} lang="{{ lk[3] }}" hreflang="{{ lk[3] }}"{% endif %}>{{ lk[1] }}</a></li>{% endfor %}</ul>{% endif %}
 </section>
 {%- endfor %}
