@@ -1,0 +1,641 @@
+{
+ "slug": "accessibilite-numerique-belgique",
+ "h1": "Accessibilité numérique en Belgique : quelle règle et quel contrôleur pour votre site",
+ "crumb": "Accessibilité numérique en Belgique",
+ "meta_title": "Accessibilité numérique Belgique : lois, contrôles et EAA",
+ "meta_desc": "Loi du 19 juillet 2018, décrets régionaux, EAA : identifiez le texte et l'organisme de contrôle qui s'appliquent à votre site en Belgique, puis agissez.",
+ "card_desc": "Fédéral, Régions, Communautés et EAA : le texte, l'organisme de contrôle et les obligations qui s'appliquent à vos services en Belgique.",
+ "cat": "reglementation",
+ "where": "Belgique",
+ "cover": "BE",
+ "cover_note": [
+  "Loi du 19 juillet 2018",
+  "EAA en vigueur le 28 juin 2025"
+ ],
+ "date": "2026-10-27",
+ "lead": "L'accessibilité numérique en Belgique ne repose pas sur une loi unique : l'État fédéral, les Régions et les Communautés ont chacun transposé la directive européenne pour leurs propres organismes publics, et chacun a désigné son organisme de contrôle. Depuis le 28 juin 2025, l'European Accessibility Act s'y ajoute pour une partie du secteur privé, à nouveau à travers plusieurs textes. Ce guide vous indique, entité par entité, quel texte s'applique à vos sites et applications, qui contrôle, ce que doit contenir votre déclaration d'accessibilité et par où commencer.",
+ "body": [
+  [
+   "h2",
+   "repartition-competences",
+   "Accessibilité numérique en Belgique : une obligation, plusieurs législateurs"
+  ],
+  [
+   "p",
+   "La directive (UE) 2016/2102 du 26 octobre 2016 impose aux organismes du secteur public de rendre leurs sites internet et leurs applications mobiles accessibles aux personnes handicapées. Dans un État fédéral comme la Belgique, chaque niveau de pouvoir l'a transposée pour les organismes qui relèvent de sa compétence : l'État fédéral pour ses services publics fédéraux, la Région wallonne pour ses communes et ses intercommunales, la Flandre pour son administration et ses pouvoirs locaux, et ainsi de suite. Le SPF Stratégie et Appui (BOSA) tient la liste officielle de ces textes et des organismes de contrôle sur sa page [[https://accessibility.belgium.be/fr/missions-et-plaintes|missions et plaintes du Belgian Web Accessibility Office]]."
+  ],
+  [
+   "p",
+   "Pour un organisme public, la première question n'est donc pas technique mais institutionnelle : de quelle entité relevez-vous ? Ce n'est ni la langue de votre site ni l'adresse de votre siège qui tranche, mais l'autorité dont vous dépendez. Une commune bruxelloise relève de l'ordonnance bruxelloise, un service public fédéral installé à Namur relève de la loi fédérale, et une institution de la Fédération Wallonie-Bruxelles établie à Bruxelles relève du décret de la Communauté française."
+  ],
+  [
+   "p",
+   "La bonne nouvelle, c'est que toutes ces règles transposent la même directive. Les exigences de fond sont identiques d'une entité à l'autre : mêmes quatre principes (perceptible, utilisable, compréhensible, robuste), même norme technique de référence, même modèle européen de déclaration d'accessibilité, mêmes échéances. Ce qui change, c'est l'organisme qui vous contrôle, le chemin que suit une plainte et le médiateur qui peut être saisi."
+  ],
+  [
+   "ul",
+   [
+    "Votre organisme de contrôle dépend de votre entité de rattachement, pas de votre prestataire ni de votre hébergeur ;",
+    "un même prestataire peut gérer des sites relevant de trois entités différentes, avec trois interlocuteurs de contrôle ;",
+    "les organisations hybrides (ASBL financée par plusieurs pouvoirs, intercommunale, organisme para-régional) doivent vérifier leur rattachement avant de rédiger leur déclaration ;",
+    "le secteur privé n'est pas visé par ces textes, mais il l'est, depuis le 28 juin 2025, par les lois qui transposent l'European Accessibility Act pour certains produits et services."
+   ]
+  ],
+  [
+   "note",
+   "À retenir",
+   "En Belgique, la question « suis-je concerné ? » se double toujours de la question « par quel texte ? ». Le fond des obligations est commun ; le contrôle et les recours varient selon l'entité dont relève votre organisme."
+  ],
+  [
+   "h2",
+   "loi-federale-2018",
+   "La loi du 19 juillet 2018 : le socle fédéral de l'accessibilité web"
+  ],
+  [
+   "p",
+   "Au niveau fédéral, la directive a été transposée par la loi du 19 juillet 2018 relative à l'accessibilité des sites internet et des applications mobiles des organismes du secteur public. Malgré son titre général, elle ne vise que les organismes fédéraux : SPF, SPP et autres organismes publics qui dépendent de l'État fédéral. Les communes, les provinces et les administrations régionales ou communautaires relèvent de leurs propres textes."
+  ],
+  [
+   "p",
+   "La loi reprend le calendrier de la directive. Les sites publiés après le 23 septembre 2018 devaient être accessibles depuis le 23 septembre 2019, les sites plus anciens depuis le 23 septembre 2020, et les applications mobiles depuis le 23 juin 2021. Toutes ces échéances sont dépassées : un site fédéral qui n'est pas accessible aujourd'hui n'est pas « en retard », il est en défaut."
+  ],
+  [
+   "p",
+   "Deux arrêtés royaux complètent la loi. L'arrêté royal du 5 septembre 2019 désigne l'organisme de contrôle, le SPF BOSA, et organise la méthode de contrôle prévue par la directive. Un arrêté royal du 3 septembre 2019 règle la procédure de plainte. En pratique, un usager qui ne parvient pas à remplir un formulaire fédéral avec son lecteur d'écran s'adresse d'abord au responsable du site, puis à l'administration par le portail des plaintes de belgium.be, et enfin au médiateur fédéral si la réponse est absente ou insatisfaisante."
+  ],
+  [
+   "h3",
+   "Ce que la loi impose concrètement"
+  ],
+  [
+   "ul",
+   [
+    "Concevoir, développer, maintenir et mettre à jour les sites et applications de manière à les rendre perceptibles, utilisables, compréhensibles et robustes ;",
+    "se conformer à la norme harmonisée européenne, aujourd'hui la norme EN 301 549, dont le respect crée une présomption de conformité ;",
+    "publier une déclaration d'accessibilité détaillée pour chaque site et chaque application ;",
+    "offrir un mécanisme permettant à toute personne de signaler un défaut d'accessibilité ou de demander une information sous une forme accessible ;",
+    "justifier, de manière documentée, toute dérogation fondée sur une charge disproportionnée, en mettant en balance le coût pour l'organisme et le bénéfice pour les personnes handicapées."
+   ]
+  ],
+  [
+   "h3",
+   "Les contenus exclus, et leurs limites"
+  ],
+  [
+   "p",
+   "Les textes belges reprennent les exclusions de la directive, que l'on retrouve par exemple à l'article 3 du décret wallon : fichiers bureautiques publiés avant le 23 septembre 2018, sauf s'ils sont nécessaires à des démarches administratives en cours ; médias temporels préenregistrés publiés avant le 23 septembre 2020 et médias diffusés en direct ; certaines cartes et services de cartographie ; reproductions d'objets du patrimoine ; archives non mises à jour après le 23 septembre 2019 ; contenus de tiers que l'organisme ne finance pas, ne développe pas et ne contrôle pas. Les extranets et intranets publiés avant le 23 septembre 2019 en sont également exclus jusqu'à leur prochaine révision substantielle."
+  ],
+  [
+   "p",
+   "Ces exclusions sont plus étroites qu'on ne le croit. Un formulaire PDF de demande de prime publié en 2017 mais toujours utilisé pour déposer un dossier n'est pas exclu, puisqu'il sert une démarche en cours. De même, un module de prise de rendez-vous fourni par un éditeur, mais choisi, payé et paramétré par l'administration, n'est pas un « contenu de tiers » : l'organisme le finance et le contrôle."
+  ],
+  [
+   "h2",
+   "wallonie-federation-wallonie-bruxelles",
+   "Accessibilité numérique en Wallonie et en Fédération Wallonie-Bruxelles"
+  ],
+  [
+   "h3",
+   "Région wallonne : les décrets du 2 mai 2019"
+  ],
+  [
+   "p",
+   "La Région wallonne a transposé la directive par le [[https://wallex.wallonie.be/files/pdfs/14/19444_D%C3%A9cret_relatif_%C3%A0_l%27accessibilit%C3%A9_des_sites_internet_et_des_applications_mobiles_des_organismes_du_secteur_public_23-09-2018-.pdf|décret du 2 mai 2019 relatif à l'accessibilité des sites internet et des applications mobiles des organismes du secteur public]], publié au Moniteur belge le 5 septembre 2019, qui produit ses effets au 23 septembre 2018. Un second décret du même jour vise notamment les CPAS et les associations qu'ils constituent. Ensemble, ils couvrent la Région, les provinces, les communes, les régies autonomes, les intercommunales, les associations de projet, les sociétés de logement de service public et les personnes morales de droit public qui dépendent de la Région."
+  ],
+  [
+   "p",
+   "Le décret wallon contient deux précisions utiles. Son article 6 impose à chaque organisme de répondre aux signalements et aux demandes d'information accessible dans les trente jours de leur réception. Son article 7 exige une mise à jour annuelle de la déclaration d'accessibilité, établie selon le modèle européen. L'organisme de contrôle doit présenter chaque année au Gouvernement un rapport sur les résultats des contrôles qu'il organise (article 10). Selon la liste tenue par le SPF BOSA, ce contrôle est assuré par l'Agence du Numérique."
+  ],
+  [
+   "p",
+   "Pour une commune, cela se traduit très concrètement : le formulaire de demande de carte de stationnement, le PDF du règlement-taxe, la vidéo de la séance du conseil communal ou l'application de signalement des dépôts sauvages sont tous dans le champ. Une boîte de contact « accessibilité » qui ne répond pas dans les trente jours constitue déjà un manquement au décret."
+  ],
+  [
+   "h3",
+   "Fédération Wallonie-Bruxelles : décret du 3 mai 2019 et contrôle par l'ETNIC"
+  ],
+  [
+   "p",
+   "La Communauté française a adopté le décret du 3 mai 2019 relatif à l'accessibilité des sites internet et des applications mobiles des organismes publics. Son exécution a été organisée plus tard par l'[[https://gallilex.cfwb.be/sites/default/files/imports/50388_000.pdf|arrêté du Gouvernement de la Communauté française du 14 juillet 2022]], publié au Moniteur belge le 3 août 2022. Cet arrêté désigne l'ETNIC, l'entreprise publique des technologies numériques de la Communauté française, comme organisme de contrôle, et lui impose la méthode de suivi définie par la décision d'exécution (UE) 2018/1524."
+  ],
+  [
+   "p",
+   "L'arrêté prévoit aussi des actions de formation du personnel à l'accessibilité, qu'il s'agisse de conception et d'expérience utilisateur, de développement, de production de contenus ou de gestion de projet. La procédure de plainte suit deux temps : l'usager s'adresse d'abord au gestionnaire du site ou de l'application ; faute de réponse satisfaisante dans les trente jours, il peut saisir le service du Médiateur commun à la Communauté française et à la Région wallonne."
+  ],
+  [
+   "h2",
+   "bruxelles-capitale-cocof-cocom",
+   "Accessibilité numérique à Bruxelles : Région, COCOF et COCOM"
+  ],
+  [
+   "p",
+   "La Région de Bruxelles-Capitale a été la première entité fédérée à légiférer, avec l'ordonnance du 4 octobre 2018 relative à l'accessibilité des sites internet et des applications mobiles des organismes publics régionaux et des communes. Elle vise les administrations et organismes publics régionaux ainsi que les dix-neuf communes. La liste officielle du SPF BOSA désigne equal.brussels comme organisme de contrôle pour la Région. Les déclarations d'accessibilité des organismes régionaux renvoient, pour les recours, au Service de médiation bruxellois."
+  ],
+  [
+   "p",
+   "Le paysage bruxellois se complique avec les commissions communautaires. La Commission communautaire française (COCOF) a adopté son propre décret du 9 mai 2019, relatif à l'accessibilité des sites internet et des applications mobiles des institutions publiques de la COCOF. Un projet de décret déposé en septembre 2022 au Parlement francophone bruxellois visait à le compléter pour y intégrer le contrôle exigé par l'article 8 de la directive : désignation de l'organisme de contrôle par le Collège et rapport annuel de cet organisme. La liste du SPF BOSA ne mentionne, à ce jour, aucun organisme de contrôle propre à la COCOF."
+  ],
+  [
+   "p",
+   "Pour la Commission communautaire commune (COCOM), compétente notamment pour les institutions bicommunautaires d'aide aux personnes et de santé, la liste officielle ne cite pas de texte de transposition spécifique. Si votre organisme relève de la COCOM, nous vous conseillons de vérifier auprès de votre administration de tutelle quel texte et quel contrôle s'appliquent, et de bâtir en attendant votre démarche sur la norme EN 301 549 et le modèle européen de déclaration, qui sont communs à toutes les entités."
+  ],
+  [
+   "p",
+   "Dernier point propre à Bruxelles : les institutions des Communautés qui y sont établies suivent leur Communauté. Un organisme public de la Fédération Wallonie-Bruxelles implanté à Ixelles relève du décret du 3 mai 2019 ; une institution flamande installée à Bruxelles relève en principe du décret flamand."
+  ],
+  [
+   "h2",
+   "flandre-communaute-germanophone",
+   "Accessibilité numérique en Flandre et en Communauté germanophone"
+  ],
+  [
+   "h3",
+   "Flandre : le Bestuursdecreet du 7 décembre 2018"
+  ],
+  [
+   "p",
+   "La Flandre a intégré les règles de la directive dans son décret de gouvernance (Bestuursdecreet) du 7 décembre 2018, dans une section consacrée à l'accessibilité des sites internet et des applications mobiles. Le texte vise l'administration flamande, les provinces, les villes et les communes, ainsi que les organisations étroitement liées aux pouvoirs publics : celles financées pour plus de la moitié par une autorité flamande, ou dont la gestion est contrôlée par elle. Les ASBL ne sont visées que si elles fournissent des services essentiels, comme l'aide sociale, les soins ou l'enseignement, ou des services destinés aux personnes handicapées. Pour les écoles, seules les fonctions administratives essentielles en ligne sont concernées : page d'accueil, navigation, coordonnées, programme, règlement et informations d'inscription."
+  ],
+  [
+   "p",
+   "Le contrôle a été confié à Inter, l'agence Toegankelijk Vlaanderen, qui exerce depuis 2025 le rôle d'organisme d'appui et de contrôle de l'accessibilité numérique pour la Flandre (OCODT). Selon sa [[https://www.vlaanderen.be/inter/overheden-en-professionelen/werken-aan-digitale-toegankelijkheid/ondersteunings-en-controleorgaan-digitale-toegankelijkheid|page de présentation officielle]], Inter audite chaque année plus de 200 sites et applications, avec l'avis du NOOZO, le conseil consultatif flamand des personnes en situation de handicap, et fait réaliser des contrôles approfondis par des experts externes sur un plus petit nombre de sites. Il rend compte chaque année au SPF BOSA, qui coordonne le rapport belge à l'Union européenne. Inter précise qu'il n'a aucune mission de contrôle au titre de l'European Accessibility Act."
+  ],
+  [
+   "h3",
+   "Communauté germanophone : un décret plus large"
+  ],
+  [
+   "p",
+   "La Communauté germanophone a choisi d'intégrer la directive dans un texte plus large : le décret du 15 octobre 2018 relatif à la communication électronique, publique ou adressée aux particuliers, des autorités de la région de langue allemande. Son article 24 confie la surveillance des sites et applications au Gouvernement, et la liste du SPF BOSA désigne le Ministère de la Communauté germanophone comme organisme de contrôle. L'article 23 impose de répondre aux signalements « de manière appropriée et dans un délai raisonnable », sans fixer de nombre de jours comme le fait le décret wallon ; l'article 27 étend la compétence du service de médiation de la Communauté germanophone (Ombudsdienst der DG) aux plaintes portant sur ces réponses et sur l'évaluation d'une charge disproportionnée. Pour les neuf communes germanophones et les organismes de la Communauté, l'obligation de fond est la même qu'ailleurs, avec un enjeu spécifique : produire des contenus accessibles en allemand, alors que de nombreux outils et modèles disponibles en Belgique existent d'abord en français et en néerlandais."
+  ],
+  [
+   "h2",
+   "tableau-synthese",
+   "Tableau de synthèse : entité, texte, organismes visés, contrôle"
+  ],
+  [
+   "p",
+   "Le tableau ci-dessous reprend, pour chaque entité, le texte de transposition de la directive (UE) 2016/2102 et l'organisme de contrôle, tels qu'ils figurent dans la liste officielle tenue par le SPF BOSA et dans les textes eux-mêmes. Il ne concerne que le secteur public ; l'European Accessibility Act fait l'objet d'un tableau distinct plus bas."
+  ],
+  [
+   "table",
+   {
+    "caption": "Accessibilité numérique du secteur public en Belgique : qui applique quoi",
+    "head": [
+     "Entité",
+     "Texte de transposition",
+     "Organismes visés",
+     "Contrôle et recours"
+    ],
+    "rows": [
+     [
+      "État fédéral",
+      "Loi du 19 juillet 2018 ; arrêtés royaux du 3 septembre 2019 (plaintes) et du 5 septembre 2019 (organisme de contrôle)",
+      "SPF, SPP et organismes publics fédéraux",
+      "SPF BOSA ; médiateur fédéral"
+     ],
+     [
+      "Région wallonne",
+      "Décrets du 2 mai 2019 (Moniteur belge du 5 septembre 2019)",
+      "Région, provinces, communes, CPAS, intercommunales, organismes publics régionaux et locaux",
+      "Agence du Numérique ; Médiateur de la Wallonie et de la Fédération Wallonie-Bruxelles"
+     ],
+     [
+      "Fédération Wallonie-Bruxelles",
+      "Décret du 3 mai 2019 ; arrêté du Gouvernement du 14 juillet 2022",
+      "Organismes publics relevant de la Communauté française",
+      "ETNIC ; Médiateur commun après trente jours sans réponse satisfaisante"
+     ],
+     [
+      "Région de Bruxelles-Capitale",
+      "Ordonnance du 4 octobre 2018",
+      "Organismes publics régionaux et communes",
+      "equal.brussels ; Service de médiation bruxellois"
+     ],
+     [
+      "COCOF",
+      "Décret du 9 mai 2019",
+      "Institutions publiques de la COCOF",
+      "Organisme désigné par le Collège selon le projet de 2022 ; aucun organisme cité dans la liste fédérale"
+     ],
+     [
+      "COCOM",
+      "Aucun texte propre dans la liste officielle",
+      "Institutions bicommunautaires",
+      "À vérifier auprès de l'administration de tutelle"
+     ],
+     [
+      "Flandre",
+      "Bestuursdecreet du 7 décembre 2018",
+      "Administration flamande, provinces, villes et communes, organisations contrôlées ou financées majoritairement, certaines ASBL, écoles (fonctions essentielles)",
+      "Inter (Toegankelijk Vlaanderen)"
+     ],
+     [
+      "Communauté germanophone",
+      "Décret du 15 octobre 2018",
+      "Autorités de la région de langue allemande",
+      "Ministère de la Communauté germanophone (surveillance confiée au Gouvernement, article 24) ; Ombudsdienst de la Communauté germanophone (article 27)"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Pour une vue d'ensemble des obligations belges et de nos prestations sur place, consultez notre page [[country:belgique|accessibilité numérique en Belgique]]. Si votre organisme relève de plusieurs entités, par exemple une intercommunale dont certains services sont financés par la Région et d'autres par la Communauté, documentez votre analyse de rattachement dans la déclaration elle-même : c'est la première question que posera un organisme de contrôle."
+  ],
+  [
+   "h2",
+   "norme-en-301-549-wcag",
+   "EN 301 549 et WCAG : la norme d'accessibilité web appliquée en Belgique"
+  ],
+  [
+   "p",
+   "La Belgique n'a pas créé de référentiel national comparable au RGAA français ou au RAWeb luxembourgeois. Toutes les entités s'appuient directement sur la norme européenne EN 301 549. Le SPF BOSA indique, dans sa [[https://accessibility.belgium.be/fr/faq/quest-ce-que-la-declaration-daccessibilite|foire aux questions sur la déclaration d'accessibilité]], que les critères à respecter correspondent à la version 3.2.1 de 2021 de cette norme. Pour les contenus web, cette version reprend les critères des WCAG 2.1 de niveau A et AA, soit 50 critères regroupés sous les quatre principes ; les pages flamandes rappellent de leur côté que le niveau AA des WCAG 2.1 est le minimum légal pour les sites publics."
+  ],
+  [
+   "p",
+   "La norme EN 301 549 va au-delà du web. Elle contient des exigences pour les documents non web, comme les PDF et les fichiers bureautiques, pour les logiciels et les applications mobiles, et pour les fonctionnalités matérielles des équipements. C'est ce qui la rend utile à la fois pour le secteur public et pour les entreprises soumises à l'European Accessibility Act. Le détail des chapitres, et leur articulation avec les WCAG, est présenté dans notre article sur les [[article:normes|normes d'accessibilité numérique]]."
+  ],
+  [
+   "h3",
+   "La version 4.1.1 et le passage aux WCAG 2.2"
+  ],
+  [
+   "p",
+   "Une nouvelle version, EN 301 549 V4.1.1, a été publiée par les organismes européens de normalisation début septembre 2026. Elle aligne les exigences web, documents et logiciels sur les WCAG 2.2 de niveau AA. Tant qu'elle n'est pas citée au Journal officiel de l'Union européenne, c'est encore la version 3.2.1 qui fonde la présomption de conformité. Concrètement, un audit réalisé aujourd'hui sur la base des WCAG 2.1 AA reste la référence, mais il est prudent d'y ajouter dès maintenant les critères introduits par les WCAG 2.2 : taille minimale des cibles tactiles, focus clavier qui ne doit pas être masqué par un bandeau fixe, alternative aux gestes de glisser-déposer, aide présentée de manière cohérente, absence de ressaisie inutile et authentification sans test cognitif."
+  ],
+  [
+   "p",
+   "Ce dernier point illustre bien l'enjeu. Un captcha qui demande de recopier des caractères déformés, sur la page de connexion d'un guichet en ligne, bloque déjà de nombreux usagers avec les WCAG 2.1. Avec les WCAG 2.2, l'exigence d'authentification accessible rend ce schéma encore plus difficile à défendre : mieux vaut prévoir dès la prochaine refonte une connexion par identité électronique, par lien de connexion envoyé par courriel ou compatible avec les gestionnaires de mots de passe."
+  ],
+  [
+   "h3",
+   "Un audit RGAA vaut-il en Belgique ?"
+  ],
+  [
+   "p",
+   "Le RGAA repose lui aussi sur les WCAG, et un audit RGAA bien conduit couvre une grande partie des exigences web de la norme EN 301 549. Mais la référence juridique belge reste la norme européenne : votre déclaration doit exprimer un niveau de conformité par rapport à EN 301 549, et non un taux RGAA. Pour une organisation présente en France et en Belgique, la solution la plus économique consiste souvent à faire auditer une seule fois le même échantillon de pages, en restituant les résultats dans les deux grilles."
+  ],
+  [
+   "h2",
+   "declaration-accessibilite-belgique",
+   "La déclaration d'accessibilité en Belgique : contenu, emplacement et pièges"
+  ],
+  [
+   "p",
+   "Toutes les entités imposent une déclaration d'accessibilité établie selon le modèle de la décision d'exécution (UE) 2018/1523. Le SPF BOSA en précise le contenu attendu, et propose un assistant en ligne qui guide la rédaction étape par étape et produit un fichier HTML. Notre article consacré à la [[article:declaration|déclaration d'accessibilité]] détaille la logique européenne ; voici ce qui est attendu en Belgique."
+  ],
+  [
+   "ul",
+   [
+    "Le périmètre : le site ou l'application visés, toutes plateformes comprises pour une application ;",
+    "le niveau de conformité par rapport à la norme EN 301 549 version 3.2.1 ;",
+    "la méthode d'évaluation : audit simplifié réalisé par l'organisme de contrôle, ou audit approfondi ;",
+    "un lien vers un rapport d'audit formel ;",
+    "la liste des pages ou parties non conformes, ce qui est fait pour les corriger, l'échéance prévue et l'alternative proposée en attendant ;",
+    "la date de rédaction de la déclaration et celle de sa dernière mise à jour ;",
+    "le contact de la personne responsable de l'accessibilité, à qui l'on peut signaler un problème ;",
+    "la procédure de recours et l'organe compétent, selon l'entité dont relève l'organisme."
+   ]
+  ],
+  [
+   "h3",
+   "Où la publier"
+  ],
+  [
+   "p",
+   "Le SPF BOSA recommande de publier la déclaration comme une page web plutôt que comme un document à télécharger, et de placer le lien à un endroit logique, typiquement en pied de page. Pour une application mobile, la déclaration doit se trouver dans l'application, sur le site associé s'il en existe un, et sur les plateformes de téléchargement. Un organisme qui propose un site et une application doit donc publier deux déclarations distinctes. En Wallonie, le décret impose en outre une mise à jour annuelle."
+  ],
+  [
+   "h3",
+   "Les erreurs que l'on rencontre le plus souvent"
+  ],
+  [
+   "ul",
+   [
+    "Une déclaration publiée en PDF non balisé, elle-même inaccessible ;",
+    "une mention « conforme » sans audit qui la fonde, ou un renvoi à un audit vieux de plusieurs années et antérieur à la refonte du site ;",
+    "une déclaration unique pour un site et une application, alors que deux sont attendues ;",
+    "une adresse de contact générique qui ne répond jamais, ou un formulaire de contact lui-même protégé par un captcha visuel ;",
+    "une seule version linguistique, alors que le site existe en français, en néerlandais et en allemand ;",
+    "un organe de recours erroné, par exemple le médiateur fédéral cité sur le site d'une commune wallonne."
+   ]
+  ],
+  [
+   "h2",
+   "controle-plaintes-rapports",
+   "Contrôles, plaintes et rapports à la Commission européenne"
+  ],
+  [
+   "p",
+   "Le contrôle belge repose sur la méthode européenne fixée par la décision d'exécution (UE) 2018/1524, qui distingue deux niveaux. L'audit simplifié porte sur un nombre limité de critères et sur une partie seulement de chaque site ; il sert à mesurer l'état général du parc. L'audit approfondi analyse un échantillon plus large de manière détaillée et donne une image précise des points à corriger."
+  ],
+  [
+   "p",
+   "Au niveau fédéral, les chiffres sont publics. Selon la [[https://accessibility.belgium.be/fr/actualites/publication-des-controles-daccessibilite-pour-2025|publication des contrôles 2025 du SPF BOSA]], 259 sites de services publics fédéraux ont fait l'objet d'un audit simplifié, neuf d'un audit approfondi, et 246 sites se déclarent partiellement conformes, soit près de 95 % du total. Pour 2026, la liste publiée en décembre 2025 annonce 275 audits simplifiés et 12 audits approfondis, choisis pour couvrir les différents domaines de compétence fédéraux, les sites destinés aux personnes handicapées et les sites les plus consultés. En Flandre, Inter audite chaque année plus de 200 sites et applications."
+  ],
+  [
+   "p",
+   "Un détail change la donne pour les responsables de site : les rapports d'audit simplifié du SPF BOSA sont publiés en ligne et liés depuis les déclarations d'accessibilité. Un défaut sur votre formulaire de contact ou sur votre page d'accueil n'est donc pas seulement signalé à votre équipe ; il est consultable par tout citoyen, journaliste ou association."
+  ],
+  [
+   "h3",
+   "Le parcours d'une plainte"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Contacter le responsable du site.",
+     "Ses coordonnées doivent figurer dans la déclaration d'accessibilité. C'est à ce stade que se règle la majorité des demandes, par exemple l'envoi d'un document sous une forme accessible."
+    ],
+    [
+     "S'adresser à l'administration concernée.",
+     "Au niveau fédéral, par le portail des plaintes de belgium.be ; ailleurs, par le service des plaintes de l'organisme."
+    ],
+    [
+     "Saisir le médiateur compétent.",
+     "Médiateur fédéral, Médiateur de la Wallonie et de la Fédération Wallonie-Bruxelles, Service de médiation bruxellois ou Ombudsdienst de la Communauté germanophone, selon l'entité."
+    ],
+    [
+     "Signaler l'absence de déclaration.",
+     "Si un site public non fédéral n'a pas de déclaration, l'équipe accessibilité du SPF BOSA transmet le signalement à l'organisme de contrôle compétent."
+    ]
+   ]
+  ],
+  [
+   "h3",
+   "Les rapports belges à l'Union européenne"
+  ],
+  [
+   "p",
+   "La directive impose à chaque État membre de remettre un rapport de suivi à la Commission, d'abord le 23 décembre 2021, puis tous les trois ans. La Belgique remet un rapport unique, coordonné par le SPF BOSA à partir des contributions des organismes de contrôle de chaque entité, réunis dans un groupe de pilotage interfédéral. La Commission publie ces rapports nationaux sur sa page des [[https://digital-strategy.ec.europa.eu/en/library/web-accessibility-directive-monitoring-reports|rapports de suivi de la directive sur l'accessibilité du web]], où le rapport belge figure en français et en néerlandais ; la série suivante était attendue pour décembre 2024."
+  ],
+  [
+   "p",
+   "Les textes consultés pour cet article organisent avant tout un contrôle, une publicité des résultats et des voies de recours, plutôt qu'un régime d'amendes comparable à celui de l'European Accessibility Act. Pour un organisme public, le risque principal est donc réputationnel et contentieux : un audit public défavorable, des plaintes répétées, une intervention du médiateur, et la difficulté de justifier des services inaccessibles auprès d'usagers qui n'ont pas d'alternative."
+  ],
+  [
+   "h2",
+   "eaa-belgique",
+   "EAA en Belgique : une transposition répartie entre plusieurs textes"
+  ],
+  [
+   "p",
+   "La directive (UE) 2019/882 du 17 avril 2019, dite European Accessibility Act, fixe des exigences d'accessibilité pour une série de produits et de services destinés aux consommateurs, applicables depuis le 28 juin 2025. Comme pour le secteur public, la Belgique l'a transposée en plusieurs morceaux, chaque autorité intervenant dans son domaine de compétence. Notre article de référence sur l'[[article:eaa|European Accessibility Act]] présente le champ complet de la directive ; voici comment elle a été déclinée en droit belge."
+  ],
+  [
+   "h3",
+   "La loi du 5 novembre 2023 : banque et commerce électronique"
+  ],
+  [
+   "p",
+   "Le texte central pour les entreprises est la loi du 5 novembre 2023 modifiant plusieurs livres du Code de droit économique et la loi du 2 août 2002 relative à la surveillance du secteur financier, pour ce qui concerne certains services. Elle insère dans le livre VIII du Code de droit économique un nouveau titre 5, consacré aux exigences d'accessibilité des services, qui vise deux catégories de services fournis aux consommateurs : les services bancaires et les services de commerce électronique. Selon le [[https://www.dekamer.be/FLWB/PDF/55/3433/55K3433003.pdf|texte adopté en commission à la Chambre]], la loi entre en vigueur le 28 juin 2025."
+  ],
+  [
+   "p",
+   "Les prestataires doivent concevoir et fournir des services conformes aux exigences de l'annexe 1 du livre VIII, y compris lorsqu'ils sous-traitent tout ou partie du service : le recours à une plateforme de commerce en ligne ou à un prestataire de paiement ne les décharge pas. Ils établissent les informations prévues à l'annexe 2, les mettent à la disposition du public par écrit et oralement, et les conservent aussi longtemps que le service est proposé. Pour les services bancaires, les informations ne doivent pas dépasser le niveau B2 du Cadre européen commun de référence pour les langues. Lorsqu'un service n'est pas conforme, le prestataire doit en informer immédiatement les agents de contrôle, en décrivant la non-conformité et les mesures correctrices prises."
+  ],
+  [
+   "p",
+   "Le contrôle est confié à la Direction générale de l'Inspection économique du SPF Economie. La FSMA ne reçoit pas de mission de contrôle : la loi modifie seulement l'article 75 de la loi du 2 août 2002 pour qu'elle puisse transmettre aux autorités compétentes des autres États membres des informations relatives à ces exigences d'accessibilité. Les infractions aux articles VIII.59 à VIII.62 sont punies d'une sanction de niveau 2 de l'échelle du Code de droit économique, et de niveau 3 lorsqu'elles sont commises de mauvaise foi. La loi ouvre également la voie à l'action en réparation collective prévue par le livre XVII du même code."
+  ],
+  [
+   "h3",
+   "Les exceptions et les délais transitoires"
+  ],
+  [
+   "p",
+   "Comme la directive, la loi admet deux exceptions : la modification fondamentale de la nature du service, et la charge disproportionnée, qui doit être démontrée par une évaluation documentée selon les critères de l'annexe 3. Les contrats de services conclus avant le 28 juin 2025 peuvent se poursuivre sans modification jusqu'à leur terme, dans la limite de cinq ans. Jusqu'au 28 juin 2030, les prestataires peuvent continuer à fournir leurs services au moyen des produits qu'ils utilisaient légalement avant cette date, et les terminaux libre-service déjà en service peuvent rester utilisés jusqu'à la fin de leur vie économique, dans la limite de vingt ans après leur mise en service."
+  ],
+  [
+   "note",
+   "Particularité belge",
+   "La loi du 5 novembre 2023 n'exclut les microentreprises (moins de dix personnes et chiffre d'affaires annuel ou total du bilan d'au plus 2 millions d'euros) des services bancaires et de commerce électronique que jusqu'au 28 juin 2030 (article 40) ; l'article VIII.59, § 2 permet en outre au Roi d'exclure tout ou partie des microentreprises de certaines exigences. C'est une différence sensible avec la directive, qui exempte les microentreprises prestataires de services."
+  ],
+  [
+   "h3",
+   "Les autres textes de transposition"
+  ],
+  [
+   "p",
+   "Le reste du champ de la directive est réparti entre d'autres législations. La loi du 20 juillet 2023 modifie la loi du 13 juin 2005 relative aux communications électroniques pour les équipements radio et terminaux concernés (ordinateurs grand public et leurs systèmes d'exploitation, terminaux de paiement, distributeurs automatiques de billets, bornes de billetterie et d'enregistrement, terminaux d'information interactifs, liseuses) et pour les services de communications électroniques, sous la surveillance de l'IBPT. Une autre loi du même jour modifie la loi du 5 mai 2017 relative aux services de médias audiovisuels en région bilingue de Bruxelles-Capitale. Les Communautés et les Régions ont adopté leurs propres textes pour les matières qui leur reviennent, comme les médias audiovisuels, le transport urbain et régional ou les livres numériques."
+  ],
+  [
+   "table",
+   {
+    "caption": "European Accessibility Act : principaux textes belges et autorités par secteur",
+    "head": [
+     "Secteur",
+     "Texte belge",
+     "Autorité de contrôle"
+    ],
+    "rows": [
+     [
+      "Services bancaires aux consommateurs",
+      "Loi du 5 novembre 2023 (Code de droit économique, livre VIII, titre 5)",
+      "SPF Economie, Inspection économique"
+     ],
+     [
+      "Commerce électronique",
+      "Loi du 5 novembre 2023 (Code de droit économique, livre VIII, titre 5)",
+      "SPF Economie, Inspection économique"
+     ],
+     [
+      "Ordinateurs, terminaux, liseuses, bornes et terminaux de paiement",
+      "Loi du 20 juillet 2023 modifiant la loi du 13 juin 2005",
+      "IBPT"
+     ],
+     [
+      "Services de communications électroniques",
+      "Loi du 20 juillet 2023 modifiant la loi du 13 juin 2005",
+      "IBPT"
+     ],
+     [
+      "Médias audiovisuels, transport régional, livres numériques",
+      "Textes fédéraux, communautaires ou régionaux selon la matière",
+      "Autorité désignée par chaque texte"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "entreprises-privees-belges",
+   "Entreprise privée en Belgique : êtes-vous concernée par l'accessibilité numérique ?"
+  ],
+  [
+   "p",
+   "Pour une entreprise, la règle de départ est simple : la directive de 2016 ne la vise pas, mais l'European Accessibility Act peut la viser si elle propose aux consommateurs l'un des produits ou services couverts. La page d'Inter sur les obligations en Flandre résume bien la situation : une entreprise qui vend en ligne, avec paiement ou réservation contraignante, relève de l'EAA ; un site purement informatif d'une entreprise privée n'a pas d'obligation légale, même si l'accessibilité reste fortement recommandée."
+  ],
+  [
+   "h3",
+   "Commerce en ligne"
+  ],
+  [
+   "p",
+   "Pour une boutique en ligne, c'est l'ensemble du parcours d'achat qui est en cause : fiche produit, choix des variantes, panier, création de compte, paiement, confirmation, suivi et annulation. Les défauts les plus fréquents sont connus : un sélecteur de taille construit avec une liste déroulante personnalisée que le clavier ne peut pas ouvrir, un message d'erreur signalé uniquement par une bordure rouge, une session de paiement qui expire sans prévenir, une facture envoyée en PDF non balisé, un module de chat qui capture le focus. Ces défauts relèvent de votre responsabilité même s'ils proviennent d'un thème ou d'un module tiers."
+  ],
+  [
+   "h3",
+   "Banque et services financiers"
+  ],
+  [
+   "p",
+   "Une banque doit rendre accessibles ses services bancaires aux consommateurs, qu'il s'agisse de l'ouverture de compte, du paiement, du crédit ou de la monnaie électronique, sur le web comme dans ses applications. La contrainte du niveau de langue B2 impose de reprendre les textes d'information : conditions de crédit, explications sur les frais, messages d'erreur d'un simulateur de prêt. Les terminaux, distributeurs de billets et terminaux de paiement relèvent quant à eux de la loi du 20 juillet 2023."
+  ],
+  [
+   "h3",
+   "Transport, télécommunications et autres services"
+  ],
+  [
+   "p",
+   "Les opérateurs de transport de voyageurs, les opérateurs télécoms et les éditeurs de services audiovisuels doivent identifier le texte qui les concerne, souvent différent de celui du commerce électronique, et l'autorité qui les contrôle. Un opérateur ferroviaire, par exemple, peut être concerné à la fois par les règles applicables aux sites et applications de réservation, aux billets électroniques, aux informations en temps réel et aux bornes libre-service."
+  ],
+  [
+   "h3",
+   "Ce qui n'est pas visé"
+  ],
+  [
+   "p",
+   "Le titre 5 du livre VIII vise les services fournis aux consommateurs. Une plateforme exclusivement destinée aux professionnels, comme un portail de commande pour revendeurs, n'entre donc pas dans ce champ, sauf si elle est aussi ouverte aux particuliers. Les microentreprises de la banque et du commerce électronique sont exclues jusqu'au 28 juin 2030, mais elles ont intérêt à anticiper : une refonte décidée en 2027 sera encore en ligne en 2030. Pour les PME, notre page [[sector:pme|accessibilité pour les PME]] propose une approche proportionnée."
+  ],
+  [
+   "h2",
+   "sites-multilingues-fr-nl-de",
+   "Sites multilingues FR/NL/DE : les exigences propres au contexte belge"
+  ],
+  [
+   "p",
+   "La plupart des sites publics fédéraux et bruxellois, et beaucoup de sites d'entreprises, existent en deux, trois ou quatre langues. Le multilinguisme ne crée pas d'obligation juridique supplémentaire, mais il multiplie les points de défaillance. Les WCAG exigent que la langue de chaque page soit identifiée dans le code (critère 3.1.1) et que les passages dans une autre langue le soient aussi (critère 3.1.2). Sans cela, un lecteur d'écran réglé en français lira une page néerlandaise avec une prononciation française, et le texte devient incompréhensible."
+  ],
+  [
+   "ul",
+   [
+    "Déclarez la langue de chaque version dans l'élément html, par exemple fr-BE, nl-BE ou de-BE, et vérifiez-la sur chaque gabarit, y compris les pages d'erreur et les modales ;",
+    "dans le sélecteur de langue, écrivez chaque langue dans sa propre langue (« Français », « Nederlands », « Deutsch ») et marquez-la avec l'attribut lang ; évitez les drapeaux seuls et les abréviations « FR | NL » sans nom accessible ;",
+    "traduisez les textes alternatifs, les sous-titres, les transcriptions et les libellés invisibles à l'écran (aria-label, titres de cadres, messages d'erreur), qui sont souvent oubliés par les outils de traduction ;",
+    "conservez la même structure et la même navigation d'une langue à l'autre, pour qu'un usager qui change de langue retrouve ses repères ;",
+    "publiez la déclaration d'accessibilité dans chaque langue du site, avec un contact capable de répondre dans cette langue ;",
+    "vérifiez les PDF dans chaque langue : un document balisé en français n'implique pas que sa version néerlandaise l'ait été."
+   ]
+  ],
+  [
+   "p",
+   "Le contexte belge pose aussi la question de la langue des signes. Pour des contenus vidéo importants destinés au grand public, une interprétation en langue des signes de Belgique francophone (LSFB) ou en langue des signes flamande (VGT) améliore nettement l'accès, au-delà du sous-titrage exigé par la norme. Les tests avec utilisateurs gagnent à être conduits dans les langues réelles du service : nos [[svc:test-utilisateur|tests avec des utilisateurs en situation de handicap]] peuvent être menés en français ou en néerlandais."
+  ],
+  [
+   "h2",
+   "acteurs-ecosysteme",
+   "Les acteurs de l'accessibilité numérique en Belgique"
+  ],
+  [
+   "p",
+   "Au-delà des textes, quelques acteurs publics structurent l'écosystème belge. Les connaître permet de savoir à qui poser une question, où trouver un outil et qui peut intervenir en cas de litige."
+  ],
+  [
+   "ul",
+   [
+    "Le Belgian Web Accessibility Office du SPF BOSA, qui contrôle les sites fédéraux, publie les rapports d'audit, met à disposition un assistant de rédaction de la déclaration, un registre des sites publics en cours de développement et des centrales d'achats ;",
+    "le groupe de pilotage interfédéral, qui réunit les organismes de contrôle des différentes entités et prépare le rapport belge à la Commission européenne ;",
+    "les organismes de contrôle régionaux et communautaires : Agence du Numérique, ETNIC, equal.brussels, Inter et Ministère de la Communauté germanophone ;",
+    "le NOOZO, conseil consultatif flamand des personnes en situation de handicap, associé aux contrôles d'Inter ;",
+    "le Conseil supérieur national des personnes handicapées, que les agents de contrôle de l'EAA doivent consulter sur leurs lignes directrices de portée générale ;",
+    "l'Inspection économique du SPF Economie et l'IBPT pour l'European Accessibility Act ;",
+    "les médiateurs : médiateur fédéral, Médiateur de la Wallonie et de la Fédération Wallonie-Bruxelles, Service de médiation bruxellois, Ombudsdienst de la Communauté germanophone."
+   ]
+  ],
+  [
+   "p",
+   "Pour les organismes publics, les centrales d'achats mentionnées par le SPF BOSA permettent de recourir à des prestations déjà attribuées par marché public, ce qui allège la procédure. Pour les entreprises, il n'existe pas de certification officielle de conformité : la preuve repose sur la documentation que vous constituez, audits, déclarations, plans de correction et évaluations de charge disproportionnée."
+  ],
+  [
+   "h2",
+   "plan-action-accessibilite-belgique",
+   "Plan d'action : mettre vos services en conformité en huit étapes"
+  ],
+  [
+   "p",
+   "Pour un service public comme pour une entreprise soumise à l'EAA, la démarche suit le même ordre. Ce qui varie, c'est le texte que vous citez et l'interlocuteur auquel vous rendez compte."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Qualifier votre situation juridique.",
+     "Identifiez l'entité dont relève chaque site et application, ou, pour une entreprise, le service EAA concerné et le texte belge applicable. Consignez cette analyse : elle servira de base à la déclaration."
+    ],
+    [
+     "Inventorier le périmètre.",
+     "Listez les sites, sous-domaines, applications, espaces connectés, formulaires, documents téléchargeables et modules tiers. Les oublis les plus courants sont les plateformes de rendez-vous, de paiement et d'inscription."
+    ],
+    [
+     "Prioriser les parcours essentiels.",
+     "Commencez par ce qui empêche un usager d'accomplir une démarche ou un achat : connexion, formulaire, paiement, confirmation, contact. Un défaut sur ces étapes pèse plus qu'une dizaine de défauts sur des pages d'actualité."
+    ],
+    [
+     "Faire réaliser un audit sur la norme EN 301 549.",
+     "Un [[svc:audit-conformite|audit de conformité]] sur un échantillon représentatif, avec tests clavier, lecteurs d'écran sur ordinateur et mobile, et vérification des documents, donne une base opposable. Ajoutez dès maintenant les critères des WCAG 2.2."
+    ],
+    [
+     "Planifier et corriger.",
+     "Transformez le rapport en plan de correction daté, réparti entre développeurs, rédacteurs et fournisseurs. Exigez des éditeurs tiers un engagement de conformité dans vos contrats et cahiers des charges."
+    ],
+    [
+     "Publier la déclaration.",
+     "Rédigez une déclaration par site et par application, en page web, dans chaque langue, avec un contact qui répond et la bonne voie de recours. En Wallonie, prévoyez sa mise à jour annuelle."
+    ],
+    [
+     "Former les équipes.",
+     "Les régressions viennent surtout des contenus publiés après l'audit : PDF, vidéos, tableaux, nouvelles pages. Des [[svc:formations|formations ciblées]] pour les rédacteurs, les développeurs et les chefs de projet évitent de repartir de zéro à chaque refonte."
+    ],
+    [
+     "Contrôler en continu.",
+     "Intégrez une [[svc:recette|recette d'accessibilité]] à chaque mise en production importante, suivez les signalements des usagers et répondez-y dans les délais, par exemple trente jours en Wallonie et en Fédération Wallonie-Bruxelles."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Pour les organismes publics, notre page [[sector:public|secteur public]] détaille l'accompagnement possible ; pour comparer avec un pays voisin qui a fait le choix inverse d'un référentiel national, voyez notre article sur l'[[article:luxembourg|accessibilité numérique au Luxembourg]]. Et si vous souhaitez faire le point sur votre situation, vous pouvez simplement nous [[contact|contacter]]."
+  ]
+ ],
+ "faq": [
+  [
+   "Quelle loi impose l'accessibilité numérique en Belgique ?",
+   "Il n'y a pas une loi mais plusieurs textes. Pour le secteur public, la loi du 19 juillet 2018 vise les organismes fédéraux, et chaque Région et Communauté a son propre décret ou sa propre ordonnance pour ses organismes. Pour le secteur privé, l'European Accessibility Act a été transposé principalement par la loi du 5 novembre 2023, pour la banque et le commerce électronique, et par la loi du 20 juillet 2023 pour les communications électroniques et les équipements."
+  ],
+  [
+   "Une petite boutique en ligne belge doit-elle être accessible ?",
+   "Si elle compte moins de dix personnes et un chiffre d'affaires annuel ou un total du bilan d'au plus 2 millions d'euros, elle est exclue des obligations de la loi du 5 novembre 2023 jusqu'au 28 juin 2030. Au-delà de ces seuils, elle est concernée depuis le 28 juin 2025. Dans les deux cas, il est raisonnable d'intégrer l'accessibilité dans la prochaine refonte, puisque le site sera probablement encore en ligne après 2030."
+  ],
+  [
+   "Une ASBL doit-elle rendre son site accessible ?",
+   "Cela dépend de son rattachement et de son financement. En Flandre, une ASBL est visée si elle est financée majoritairement ou contrôlée par une autorité publique, ou si elle fournit des services essentiels ou destinés aux personnes handicapées. Dans les autres entités, une ASBL qui répond à la définition d'organisme de droit public est également concernée. Une ASBL qui vend en ligne à des consommateurs peut, en outre, relever de l'European Accessibility Act."
+  ],
+  [
+   "Les PDF publiés sur un site public doivent-ils être accessibles ?",
+   "Oui, dès lors qu'ils ont été publiés après le 23 septembre 2018 ou qu'ils restent nécessaires à une démarche administrative en cours, comme un formulaire de demande ou un règlement. La norme EN 301 549 contient des exigences spécifiques pour ces documents non web. En pratique, il est souvent plus simple de transformer les formulaires PDF en formulaires web et de réserver le PDF aux documents de référence, correctement balisés."
+  ],
+  [
+   "Combien de temps prend un audit d'accessibilité ?",
+   "La durée dépend du nombre de gabarits, des parcours à tester et des applications mobiles incluses. Pour un site institutionnel de taille moyenne, il faut compter quelques semaines entre le cadrage de l'échantillon et la remise du rapport ; chez nous, le délai moyen est de trois semaines. Prévoyez ensuite du temps pour les corrections, puis un contre-audit des points corrigés avant de mettre à jour la déclaration."
+  ],
+  [
+   "Qui contrôle le respect de l'EAA en Belgique ?",
+   "Le contrôle dépend du produit ou du service. Pour les services bancaires aux consommateurs et le commerce électronique, c'est la Direction générale de l'Inspection économique du SPF Economie. Pour les équipements et les services de communications électroniques, c'est l'IBPT. Les organismes chargés du contrôle des sites publics, comme Inter en Flandre, n'ont pas de mission au titre de l'EAA."
+  ],
+  [
+   "Faut-il une déclaration d'accessibilité dans chaque langue ?",
+   "Les textes ne l'imposent pas en termes exprès, mais la déclaration doit être accessible aux usagers du site. Si votre site existe en français, en néerlandais et en allemand, publiez la déclaration dans chacune de ces langues et assurez-vous que la personne de contact peut répondre dans la langue de l'usager. Plusieurs services fédéraux publient ainsi leur déclaration en français, en néerlandais, en allemand et en anglais."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Quel texte s'applique à vos services en Belgique ?",
+ "cta_text": "Nous pouvons identifier avec vous l'entité dont relèvent vos sites et applications, puis auditer leur conformité à la norme EN 301 549. Un premier échange suffit souvent à clarifier le périmètre.",
+ "related": [
+  "eaa",
+  "normes",
+  "luxembourg"
+ ]
+}

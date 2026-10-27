@@ -56,8 +56,8 @@ META = {
 
 HOME = {
     'chip': 'Audit- und Beratungsunternehmen seit 15 Jahren · Frankreich, Belgien, Luxemburg, Schweiz',
-    'h1a': 'Digitale Barrierefreiheit,', 'h1b': 'mit Methode und Anspruch umgesetzt.',
-    'intro': 'Audits, Beratung und Schulungen für öffentliche Stellen, Großunternehmen und KMU. Wir machen Ihre Websites, Apps und Dokumente für alle nutzbar und konform mit den Vorgaben jedes Landes.',
+    'h1a': 'Digitale Barrierefreiheit,', 'h1b': 'einfach gemacht.',
+    'intro': 'Das erste Beratungsunternehmen, das sich zu 100 % der digitalen Barrierefreiheit widmet. Audits, Beratung und Schulungen für öffentliche Stellen, Großunternehmen und KMU in Luxemburg, der Schweiz, Belgien und Frankreich.',
     'cta2': 'Unsere Leistungen',
     'report': {'aria': 'Beispiel eines Auditberichts zur Barrierefreiheit', 'label': 'Auditbericht', 'title': 'Bürgerportal — [Organisation]', 'badge': 'EN 301 549 · WCAG 2.1 AA',
                'legend': ['Erfüllt', 'Nicht erfüllt', 'Nicht anwendbar'], 'ok': 'Erfüllt', 'ko': 'Nicht erfüllt',
@@ -158,8 +158,8 @@ SVC = {
                 ('Management-Zusammenfassung', 'Ein klarer Überblick über Risiken und Prioritäten für Ihre Geschäftsleitung.'),
                 ('Priorisierter Maßnahmenplan', 'Korrekturen nach Auswirkung und Aufwand geordnet, bereit zur Planung.')],
         'faq': [('Was ist der Unterschied zu einem RGAA-Audit?', 'Das RGAA-Audit folgt der französischen Methode. Das Konformitätsaudit folgt direkt den WCAG und der EN 301 549: Es eignet sich für eine Gruppe, die in mehreren Ländern tätig ist.'),
-                ('Fällt mein Unternehmen unter den EAA?', 'Das hängt von Ihren Produkten, Dienstleistungen und Ihrer Größe ab: Kleinstunternehmen, die Dienstleistungen erbringen, sind ausgenommen. Wir klären das in der Planungsphase.'),
-                ('WCAG 2.1 oder WCAG 2.2?', 'Die EN 301 549 verweist auf WCAG 2.1. Wir prüfen auch die in WCAG 2.2 hinzugekommenen Kriterien, um künftigen Entwicklungen vorzugreifen.'),
+                ('Fällt mein Unternehmen unter den EAA?', 'Das hängt von Ihren Produkten, Dienstleistungen und Ihrer Größe ab: Die Richtlinie nimmt Kleinstunternehmen aus, die Dienstleistungen erbringen (in Belgien gilt der Ausschluss nur bis zum 28. Juni 2030). Wir klären das in der Planungsphase.'),
+                ('WCAG 2.1 oder WCAG 2.2?', 'Die derzeit im Amtsblatt zitierte Fassung der EN 301 549 (V3.2.1) verweist auf WCAG 2.1. Die neue V4.1.1, veröffentlicht im September 2026, beruht auf WCAG 2.2: Deshalb prüfen wir die in WCAG 2.2 hinzugekommenen Kriterien schon heute.'),
                 ('Können Sie mehrere Sprachen prüfen?', 'Ja: Wir prüfen die französische, niederländische, deutsche und englische Version Ihrer Angebote.')],
         'related': ['audit-rgaa', 'prestation-informatique', 'formations'], 'cta_title': 'Messen wir Ihre europäische Konformität.'},
     'recette': {
@@ -286,7 +286,7 @@ SVC = {
         'card': 'Präsenz- oder Online-Sitzungen, abgestimmt auf jede Rolle und Ihre Werkzeuge.',
         'cat': 'Schulung · Maßgeschneidert', 'tagline': 'Schulungen nach Rolle, gehalten von erfahrenen Auditoren.',
         'intro': 'Unsere Trainer sind auch Auditoren: Sie geben weiter, was sie täglich praktizieren. Präsenz- oder Online-Sitzungen, als Inhouse-Schulung, abgestimmt auf Ihre Werkzeuge, Inhalte und Rollen.',
-        'brief': [('Format', 'Präsenz oder online, als Inhouse-Schulung'), ('Zielgruppen', 'Redaktion, Design, Entwicklung, Projektleitung, Einkauf'), ('Sprachen', 'Französisch, Niederländisch, Deutsch, Englisch'), ('Ansatz', 'Praxisübungen mit Ihren eigenen Unterlagen')],
+        'brief': [('Format', 'Präsenz oder online, als Inhouse-Schulung'), ('Zielgruppen', 'Redaktion, Design, Entwicklung, Projektleitung, Einkauf'), ('Unsere Arbeitssprachen', 'Französisch, Niederländisch, Deutsch, Englisch'), ('Ansatz', 'Praxisübungen mit Ihren eigenen Unterlagen')],
         'who_title': 'Für wen?',
         'who': [('Redaktionen', 'Täglich barrierefreie Inhalte und Dokumente veröffentlichen.'),
                 ('Technische Teams', 'Barrierefreie Oberflächen gestalten, entwickeln und testen.'),
@@ -310,7 +310,7 @@ STANDARDS = {
     'list_title': 'Die Länder, in denen wir tätig sind',
     'eu_title': 'Die europäische Grundlage',
     'eu_text': 'Neben den nationalen Standards prägen zwei europäische Texte die Pflichten unserer Kunden.',
-    'eu': [('EN 301 549', 'Die harmonisierte europäische Norm mit Anforderungen an die Barrierefreiheit digitaler Produkte und Dienstleistungen, abgestimmt auf die WCAG.'),
+    'eu': [('EN 301 549', 'Die europäische Norm mit Anforderungen an die Barrierefreiheit digitaler Produkte und Dienstleistungen, abgestimmt auf die WCAG. Die Fassung V3.2.1 ist für den öffentlichen Sektor harmonisiert; die V4.1.1, abgestimmt auf WCAG 2.2, wird für den EAA im Amtsblatt erwartet.'),
            ('EAA', 'Der European Accessibility Act, seit dem 28. Juni 2025 anwendbar, der die Pflichten auf viele Produkte und Dienstleistungen der Privatwirtschaft ausweitet.')],
     'cta_title': 'Welcher Standard gilt für Sie? Sprechen wir darüber.',
 }
@@ -330,7 +330,7 @@ COUNTRY = {
     'belgique': {'region': 'Europäische Union', 'more': 'Alles über Belgien',
         'h1': 'Digitale Barrierefreiheit in Belgien', 'tagline': 'Die Norm EN 301 549, föderale und regionale Texte und der EAA.',
         'intro': 'In Belgien wird die Barrierefreiheit von Websites und Apps des öffentlichen Sektors auf föderaler Ebene durch das Gesetz vom 19. Juli 2018 vorgeschrieben, ergänzt durch regionale und gemeinschaftliche Texte. Die Privatwirtschaft ist von der Umsetzung des European Accessibility Act betroffen.',
-        'facts': [('Standard', 'EN 301 549 und WCAG, Stufe AA'), ('Rechtsgrundlagen', 'Gesetz vom 19. Juli 2018, regionale und gemeinschaftliche Texte, EAA'), ('Betroffen', 'Öffentliche Stellen und vom EAA erfasste private Anbieter'), ('Sprachen', 'Französisch, Niederländisch, Deutsch, Englisch')],
+        'facts': [('Standard', 'EN 301 549 und WCAG, Stufe AA'), ('Rechtsgrundlagen', 'Gesetz vom 19. Juli 2018, regionale und gemeinschaftliche Texte, EAA'), ('Betroffen', 'Öffentliche Stellen und vom EAA erfasste private Anbieter'), ('Unsere Arbeitssprachen', 'Französisch, Niederländisch, Deutsch, Englisch')],
         'ob_title': 'Was das Gesetz verlangt',
         'ob': ['Websites und Apps konform mit der EN 301 549 gestalten', 'Für jede Website und App eine Erklärung zur Barrierefreiheit veröffentlichen', 'Einen Feedback-Mechanismus für Nutzer anbieten', 'Anfragen und Meldungen in angemessener Frist bearbeiten', 'Sich der Kontrolle der zuständigen Überwachungsstelle unterziehen'],
         'ref_title': 'Die Norm EN 301 549', 'ref_text': 'Belgien hat keinen eigenen nationalen Referenzrahmen: Die Konformität wird nach der europäischen Norm EN 301 549 geprüft, die die WCAG Stufe AA einschließt. Unsere Audits folgen dieser Norm, mit derselben Methode in allen drei Regionen.',
@@ -341,9 +341,9 @@ COUNTRY = {
     'luxembourg': {'region': 'Europäische Union', 'more': 'Alles über Luxemburg',
         'h1': 'Digitale Barrierefreiheit in Luxemburg', 'tagline': 'RAWeb, RAAM und das Gesetz vom 28. Mai 2019.',
         'intro': 'Luxemburg hat sich für nationale Referenzrahmen entschieden: den RAWeb für das Web und den RAAM für mobile Apps. Sie dienen der Prüfung der Angebote des öffentlichen Sektors, die dem Gesetz vom 28. Mai 2019 unterliegen. Die Privatwirtschaft ist von der Umsetzung des European Accessibility Act betroffen.',
-        'facts': [('Standards', 'RAWeb für das Web, RAAM für Mobile'), ('Rechtsgrundlagen', 'Gesetz vom 28. Mai 2019 und European Accessibility Act'), ('Betroffen', 'Öffentliche Stellen und vom EAA erfasste private Anbieter'), ('Sprachen', 'Französisch, Deutsch, Englisch')],
+        'facts': [('Standards', 'RAWeb für das Web, RAAM für Mobile'), ('Rechtsgrundlagen', 'Gesetz vom 28. Mai 2019 und European Accessibility Act'), ('Betroffen', 'Öffentliche Stellen und vom EAA erfasste private Anbieter'), ('Unsere Arbeitssprachen', 'Französisch, Deutsch, Englisch')],
         'ob_title': 'Was das Gesetz verlangt',
-        'ob': ['Websites und Apps an die Anforderungen von RAWeb und RAAM anpassen', 'Eine Erklärung zur Barrierefreiheit veröffentlichen', 'Einen Feedback-Mechanismus für Nutzer anbieten', 'Gemeldete Mängel beheben', 'Sich der Kontrolle der Überwachungsstelle unterziehen'],
+        'ob': ['Websites und Apps an die EN 301 549 anpassen, geprüft mit RAWeb und RAAM', 'Eine Erklärung zur Barrierefreiheit veröffentlichen', 'Einen Feedback-Mechanismus für Nutzer anbieten', 'Gemeldete Mängel beheben', 'Sich der Kontrolle der Überwachungsstelle unterziehen'],
         'ref_title': 'RAWeb und RAAM', 'ref_text': 'Der RAWeb und der RAAM, herausgegeben vom Service information et presse der Regierung, übersetzen die EN 301 549 in Kriterien und Tests, nach dem methodischen Vorbild des RGAA. Wir wenden sie auf Ihre Websites und auf Ihre iOS- und Android-Apps an.',
         'serv_title': 'Unsere Leistungen in Luxemburg', 'serv': ['audit-raam', 'audit-conformite', 'test-utilisateur', 'formations'],
         'faq': [('Was unterscheidet RAWeb und RGAA?', 'Der RAWeb übernimmt die Methode des RGAA und passt sie an die EN 301 549 an. Beide folgen derselben Logik aus Kriterien und Tests.'),
@@ -352,7 +352,7 @@ COUNTRY = {
     'suisse': {'region': 'Außerhalb der Europäischen Union', 'more': 'Alles über die Schweiz',
         'h1': 'Digitale Barrierefreiheit in der Schweiz', 'tagline': 'Der Standard eCH-0059, das BehiG und die Auswirkungen des EAA.',
         'intro': 'In der Schweiz verlangt das Behindertengleichstellungsgesetz (BehiG) die Barrierefreiheit der Online-Angebote des Bundes, nach dem auf den WCAG beruhenden Standard eCH-0059. Schweizer Unternehmen, die in der Europäischen Union verkaufen, müssen zudem den European Accessibility Act berücksichtigen.',
-        'facts': [('Standard', 'eCH-0059, auf Basis der WCAG'), ('Rechtsgrundlagen', 'BehiG, kantonale Regeln, EAA für den EU-Markt'), ('Betroffen', 'Verwaltungen und Unternehmen, die auf dem europäischen Markt tätig sind'), ('Sprachen', 'Deutsch, Französisch, Englisch')],
+        'facts': [('Standard', 'eCH-0059, auf Basis der WCAG'), ('Rechtsgrundlagen', 'BehiG, kantonale Regeln, EAA für den EU-Markt'), ('Betroffen', 'Verwaltungen und Unternehmen, die auf dem europäischen Markt tätig sind'), ('Unsere Arbeitssprachen', 'Deutsch, Französisch, Englisch')],
         'ob_title': 'Was erwartet wird',
         'ob': ['Online-Angebote des Bundes, die für alle zugänglich sind', 'Der Standard eCH-0059 als Referenz', 'Für Kantone und Gemeinden: eigene Regeln je Kanton', 'Für exportierende Unternehmen: EAA-Konformität der in der EU verkauften Produkte und Dienstleistungen'],
         'ref_title': 'Der Standard eCH-0059', 'ref_text': 'Der vom Verein eCH herausgegebene Standard eCH-0059 übernimmt die WCAG Stufe AA. Er ist die Referenz für Schweizer Verwaltungen und eine solide Grundlage für private Unternehmen.',
@@ -411,52 +411,17 @@ FIRM = {
 
 RESOURCES = {
     'intro': 'Praxisleitfäden und Analysen zur Regulierung, verfasst von unseren Beratern.',
-    'featured_label': 'Im Fokus', 'read': 'Analyse lesen', 'all_label': 'Alle Beiträge', 'filter_label': 'Beiträge filtern',
+    'featured_label': 'Im Fokus', 'read': 'Leitfaden lesen', 'all_label': 'Alle Beiträge', 'filter_label': 'Beiträge filtern',
     'filters': ['Alle'], 'cats': [('guide', 'Leitfäden'), ('analyse', 'Analysen'), ('reglementation', 'Regulierung')],
     'status_tpl': '%n Beiträge angezeigt', 'soon': 'Demnächst verfügbar',
 }
 
-POSTS = [
-    {'key': 'article:eaa', 'live': True, 'catkey': 'analyse', 'cat': 'Analyse', 'where': 'Europa', 'cover': 'EAA', 'cls': '', 'title': 'European Accessibility Act: Was sich für private Unternehmen ändert', 'desc': 'Betroffene Produkte und Dienstleistungen, Ausnahmen, Zeitplan und Pflichten, Land für Land.'},
-    {'key': 'resources', 'live': False, 'catkey': 'reglementation', 'cat': 'Regulierung', 'where': 'Schweiz', 'cover': 'CH', 'cls': 'c1', 'title': 'Schweizer Unternehmen: Betrifft Sie der EAA?', 'desc': 'Der Fall von Unternehmen, die in der Europäischen Union verkaufen.'},
-    {'key': 'resources', 'live': False, 'catkey': 'guide', 'cat': 'Leitfaden', 'where': 'Luxemburg', 'cover': 'RAAM', 'cls': 'c2', 'title': 'Eine mobile App nach RAAM prüfen', 'desc': 'Methode, Stichprobe der Bildschirme und Tests auf echten Geräten.'},
-    {'key': 'resources', 'live': False, 'catkey': 'analyse', 'cat': 'Analyse', 'where': 'Europa', 'cover': 'WCAG', 'cls': '', 'title': 'Von den WCAG zur EN 301 549: die Zusammenhänge verstehen', 'desc': 'Wie internationale Standards zu gesetzlichen Pflichten werden.'},
-    {'key': 'resources', 'live': False, 'catkey': 'guide', 'cat': 'Leitfaden', 'where': 'Europa', 'cover': 'PDF', 'cls': 'c1', 'title': 'Barrierefreie PDF-Dokumente erstellen', 'desc': 'Struktur, Tags und Prüfungen vor der Veröffentlichung.'},
-    {'key': 'resources', 'live': False, 'catkey': 'reglementation', 'cat': 'Regulierung', 'where': 'Belgien', 'cover': 'BE', 'cls': 'c2', 'title': 'Digitale Barrierefreiheit in Belgien: Wer ist betroffen?', 'desc': 'Öffentlicher Sektor, regionale Texte und European Accessibility Act.'},
-]
 
-ARTICLE = {
-    'crumb': 'European Accessibility Act', 'cat': 'Analyse · Europa',
-    'h1': 'European Accessibility Act: Was sich für private Unternehmen ändert',
-    'date': 'Veröffentlicht am 27. Oktober 2026', 'read': 'Lesezeit: 8 Minuten', 'by': 'Vom Team des Beratungsunternehmens',
-    'cover_note': ('Richtlinie (EU) 2019/882', 'Anwendbar seit dem 28. Juni 2025'),
-    'lead': 'Seit dem 28. Juni 2025 ist digitale Barrierefreiheit nicht mehr nur Sache des öffentlichen Sektors. Mit dem European Accessibility Act müssen viele private Unternehmen, die an Verbraucher verkaufen, ihre Produkte und Dienstleistungen für Menschen mit Behinderungen nutzbar machen.',
-    'body': [
-        ('h2', 'definition', 'Was der European Accessibility Act ist'),
-        ('p', 'Der European Accessibility Act ist die Richtlinie (EU) 2019/882 vom 17. April 2019. Sie legt in der gesamten Union gemeinsame Anforderungen an die Barrierefreiheit für eine Liste von Produkten und Dienstleistungen fest, damit Unternehmen nicht mehr mit unterschiedlichen Regeln je Land umgehen müssen.'),
-        ('p', 'Jeder Mitgliedstaat hat sie in nationales Recht umgesetzt; in Deutschland etwa durch das Barrierefreiheitsstärkungsgesetz. Die neuen Regeln gelten seit dem 28. Juni 2025, die Kontrolle obliegt den Marktüberwachungsbehörden der einzelnen Länder.'),
-        ('h2', 'concernes', 'Betroffene Produkte und Dienstleistungen'),
-        ('p', 'Der Text erfasst zunächst Produkte, vor allem ihre digitalen Schnittstellen:'),
-        ('ul', ['Computer und ihre Betriebssysteme;', 'Zahlungsterminals, Geldautomaten, Check-in- und Fahrkartenautomaten;', 'Smartphones und Kommunikationsgeräte;', 'Geräte für den Zugang zu audiovisuellen Mediendiensten;', 'E-Book-Reader.']),
-        ('p', 'Er gilt auch für Dienstleistungen, die meist über eine Website oder App erbracht werden:'),
-        ('ul', ['den elektronischen Geschäftsverkehr;', 'Bankdienstleistungen für Verbraucher;', 'elektronische Kommunikationsdienste;', 'den Zugang zu audiovisuellen Mediendiensten;', 'Websites, Apps, E-Tickets und Informationen im Personenverkehr;', 'E-Books und ihre Lesesoftware.']),
-        ('note', 'Gut zu wissen', 'Ein Onlineshop, der an Privatkunden in der Europäischen Union verkauft, fällt unter den EAA, sofern keine Ausnahme greift.'),
-        ('h2', 'exemptions', 'Wer ist ausgenommen?'),
-        ('p', 'Kleinstunternehmen, die Dienstleistungen erbringen, sind ausgenommen: weniger als 10 Beschäftigte und ein Jahresumsatz oder eine Jahresbilanzsumme von höchstens 2 Millionen Euro.'),
-        ('p', 'Ein Unternehmen kann sich auch auf eine unverhältnismäßige Belastung oder eine grundlegende Veränderung seines Produkts oder seiner Dienstleistung berufen. Diese Ausnahme ist eng gefasst: Sie muss bewertet, dokumentiert und regelmäßig überprüft werden.'),
-        ('h2', 'transition', 'Die Übergangsfristen'),
-        ('p', 'Dienstleister dürfen ihre Dienste bis zum 28. Juni 2030 weiter mit Produkten erbringen, die sie vor dem 28. Juni 2025 rechtmäßig eingesetzt haben. Bereits installierte Selbstbedienungsterminals dürfen bis zum Ende ihrer wirtschaftlichen Nutzungsdauer weiterbetrieben werden, höchstens jedoch 20 Jahre.'),
-        ('p', 'Diese Fristen gelten nicht für neue Websites und Apps: Was heute online geht, muss die Anforderungen erfüllen.'),
-        ('h2', 'actions', 'Was Sie konkret tun müssen'),
-        ('ol', [('Erfassen', 'Sie die betroffenen Produkte und Dienstleistungen, Land für Land.'), ('Prüfen', 'Sie Ihre Websites und Apps nach der EN 301 549, die die WCAG Stufe AA einschließt.'),
-                ('Korrigieren', 'Sie zuerst die wesentlichen Nutzerwege: Suche, Kauf, Zahlung, Kundenkonto.'), ('Informieren', 'Sie Ihre Kunden darüber, wie Ihr Angebot die Anforderungen erfüllt.'),
-                ('Schulen', 'Sie Ihre Teams, damit neue Funktionen konform bleiben.'), ('Sichern', 'Sie das erreichte Niveau mit einer Abnahme bei jeder Auslieferung.')]),
-        ('h2', 'pays', 'Land für Land'),
-        ('p', 'In Frankreich, Belgien und Luxemburg wurde der EAA in nationales Recht umgesetzt und ergänzt die Pflichten des öffentlichen Sektors. Die Schweiz ist kein Mitglied der Europäischen Union, aber Schweizer Unternehmen, die an europäische Verbraucher verkaufen, sind für diese Verkäufe betroffen.'),
-        ('p', 'Unsere Seiten zu [[country:france|Frankreich]], [[country:belgique|Belgien]], [[country:luxembourg|Luxemburg]] und [[country:suisse|der Schweiz]] beschreiben den Rahmen in jedem Land.'),
-    ],
+ARTICLE_UI = {
+    'by': 'Vom Team des Beratungsunternehmens', 'published': 'Veröffentlicht am', 'read': 'Lesezeit: %d Minuten',
+    'faq': 'Häufige Fragen', 'related': 'Weiterlesen',
+    'cats': {'guide': 'Leitfaden', 'analyse': 'Analyse', 'reglementation': 'Regulierung'},
     'author': ('Accessibilité numérique', 'Audit- und Beratungsunternehmen für digitale Barrierefreiheit'),
-    'cta_title': 'Ist Ihr Unternehmen betroffen?', 'cta_text': 'Wir klären es gemeinsam mit Ihnen und prüfen anschließend Ihre Angebote nach der EN 301 549.',
 }
 
 CONTACT = {

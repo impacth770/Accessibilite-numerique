@@ -3,26 +3,46 @@
 <article aria-labelledby="h1">
 <header class="sec top" style="padding-bottom:56px"><div class="w">
 {{ m.crumbs([('resources', ui.resources), (None, c.crumb)]) }}
-<p class="eyebrow">{{ c.cat }}</p>
+<p class="eyebrow">{{ c.cat_txt }}</p>
 <h1 id="h1" class="d1">{{ c.h1 }}</h1>
-<p class="meta"><span>{{ c.date }}</span><span>{{ c.read }}</span><span>{{ c.by }}</span></p>
+<p class="meta"><span>{{ c.date_txt }}</span><span>{{ c.read_txt }}</span><span>{{ au.by }}</span></p>
 </div></header>
-<div class="w" style="padding-bottom:64px"><div class="artcover" aria-hidden="true"><b>EAA</b><span>{{ c.cover_note[0] }}<br>{{ c.cover_note[1] }}</span></div></div>
+<div class="w" style="padding-bottom:64px"><div class="artcover" aria-hidden="true"><b>{{ c.cover }}</b><span>{{ c.cover_note[0] }}<br>{{ c.cover_note[1] }}</span></div></div>
 <div class="w" style="display:flex;flex-wrap:wrap;gap:48px 96px;padding-bottom:104px">
-<nav class="toc" aria-labelledby="toc"><h2 id="toc">{{ ui.toc }}</h2><ol>{% for b in c.body if b[0] == 'h2' %}<li><a href="#{{ b[1] }}">{{ b[2] }}</a></li>{% endfor %}</ol></nav>
+<nav class="toc" aria-labelledby="toc"><h2 id="toc">{{ ui.toc }}</h2><ol>{% for b in c.body if b[0] == 'h2' %}<li><a href="#{{ b[1] }}">{{ b[2] }}</a></li>{% endfor %}{% if c.faq %}<li><a href="#faq">{{ au.faq }}</a></li>{% endif %}</ol></nav>
 <div class="prose">
-<p class="intro">{{ c.lead }}</p>
+<p class="intro">{{ c.lead|rich(u) }}</p>
 {%- for b in c.body %}
 {%- if b[0] == 'h2' %}<h2 id="{{ b[1] }}">{{ b[2] }}</h2>
+{%- elif b[0] == 'h3' %}<h3>{{ b[1] }}</h3>
 {%- elif b[0] == 'p' %}<p>{{ b[1]|rich(u) }}</p>
-{%- elif b[0] == 'ul' %}<ul>{% for i in b[1] %}<li>{{ i }}</li>{% endfor %}</ul>
-{%- elif b[0] == 'ol' %}<ol>{% for s, r in b[1] %}<li><strong>{{ s }}</strong> {{ r }}</li>{% endfor %}</ol>
-{%- elif b[0] == 'note' %}<div class="note"><small>{{ b[1] }}</small><p>{{ b[2] }}</p></div>
+{%- elif b[0] == 'ul' %}<ul>{% for i in b[1] %}<li>{{ i|rich(u) }}</li>{% endfor %}</ul>
+{%- elif b[0] == 'ol' %}<ol>{% for s, r in b[1] %}<li><strong>{{ s }}</strong> {{ r|rich(u) }}</li>{% endfor %}</ol>
+{%- elif b[0] == 'note' %}<div class="note"><small>{{ b[1] }}</small><p>{{ b[2]|rich(u) }}</p></div>
+{%- elif b[0] == 'table' %}<div class="tbl" role="region" aria-labelledby="tc{{ loop.index }}" tabindex="0"><table><caption id="tc{{ loop.index }}">{{ b[1].caption }}</caption><thead><tr>{% for h in b[1].head %}<th scope="col">{{ h }}</th>{% endfor %}</tr></thead><tbody>{% for r in b[1].rows %}<tr>{% for cell in r %}{% if loop.first %}<th scope="row">{{ cell|rich(u) }}</th>{% else %}<td>{{ cell|rich(u) }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody></table></div>
 {%- endif %}
 {%- endfor %}
-<div class="author"><i aria-hidden="true"></i><p><b>{{ c.author[0] }}</b>{{ c.author[1] }}</p></div>
+{%- if c.faq %}
+<h2 id="faq">{{ au.faq }}</h2>
+<div class="faq">
+{%- for q in c.faq %}
+<details><summary><h3>{{ q[0] }}</h3></summary><p>{{ q[1]|rich(u) }}</p></details>
+{%- endfor %}
+</div>
+{%- endif %}
+<div class="author"><i aria-hidden="true"></i><p><b>{{ au.author[0] }}</b>{{ au.author[1] }}</p></div>
 </div>
 </div>
 </article>
-{{ m.ctabox(c.cta_title, c.cta_text, ui.svc['audit-conformite'], 'svc:audit-conformite', true) }}
+{%- if related %}
+<section class="sec" aria-labelledby="t-rel" style="padding-bottom:104px"><div class="w">
+<h2 id="t-rel" class="h2" style="margin-bottom:40px">{{ au.related }}</h2>
+<div class="grid wide">
+{%- for p in related %}
+<article class="post"><div class="cover {{ p.cls }}" aria-hidden="true">{{ p.cover }}</div><small>{{ p.cat }} · {{ p.where }}</small><h3><a class="ul" href="{{ u(p.key) }}">{{ p.title }}</a></h3></article>
+{%- endfor %}
+</div>
+</div></section>
+{%- endif %}
+{{ m.ctabox(c.cta_title, c.cta_text, ui.svc[c.cta_svc], 'svc:' ~ c.cta_svc, true) }}
 {% endblock %}

@@ -55,8 +55,8 @@ META = {
 
 HOME = {
     'chip': "Cabinet d'audit et de conseil depuis 15 ans · France, Belgique, Luxembourg, Suisse",
-    'h1a': "L'accessibilité numérique,", 'h1b': 'conduite avec méthode et exigence.',
-    'intro': "Audits, conseil et formation pour les collectivités, les grands comptes et les PME. Nous rendons vos sites, applications et documents utilisables par tous, et conformes aux obligations de chaque pays.",
+    'h1a': "L'accessibilité numérique,", 'h1b': 'simplement.',
+    'intro': "Le premier cabinet de conseil 100 % dédié à l'accessibilité numérique. Audits, conseil et formation pour les collectivités, les grands comptes et les PME, en France, en Belgique, au Luxembourg et en Suisse.",
     'cta2': 'Nos prestations',
     'report': {'aria': "Exemple de rapport d'audit RGAA", 'label': "Rapport d'audit", 'title': 'Portail citoyen — [Organisation]', 'badge': 'RGAA · 106 critères',
                'legend': ['Conformes', 'Non conformes', 'Non applicables'], 'ok': 'Conforme', 'ko': 'Non conforme',
@@ -157,8 +157,8 @@ SVC = {
                 ('Synthèse de direction', 'Une vue claire des risques et des priorités pour votre comité de direction.'),
                 ("Plan d'action priorisé", 'Les corrections classées par impact et par effort, prêtes à être planifiées.')],
         'faq': [('Quelle différence avec un audit RGAA ?', "L'audit RGAA suit la méthode française. L'audit de conformité suit directement les WCAG et la norme EN 301 549 : il convient à un groupe présent dans plusieurs pays."),
-                ("Mon entreprise est-elle concernée par l'EAA ?", 'Cela dépend de vos produits, de vos services et de votre taille : les microentreprises de services en sont exemptées. Nous faisons ce diagnostic lors du cadrage.'),
-                ('WCAG 2.1 ou WCAG 2.2 ?', 'La norme EN 301 549 se réfère aux WCAG 2.1. Nous évaluons aussi les critères ajoutés par les WCAG 2.2, pour anticiper les prochaines évolutions.'),
+                ("Mon entreprise est-elle concernée par l'EAA ?", 'Cela dépend de vos produits, de vos services et de votre taille : la directive exempte les microentreprises de services (en Belgique, elles sont seulement exclues jusqu’au 28 juin 2030). Nous faisons ce diagnostic lors du cadrage.'),
+                ('WCAG 2.1 ou WCAG 2.2 ?', 'La version de la norme EN 301 549 citée aujourd’hui au Journal officiel (V3.2.1) se réfère aux WCAG 2.1. La nouvelle version V4.1.1, publiée en septembre 2026, repose sur les WCAG 2.2 : nous évaluons donc déjà les critères ajoutés par les WCAG 2.2.'),
                 ('Pouvez-vous auditer plusieurs langues ?', 'Oui : nous auditons les versions française, néerlandaise, allemande et anglaise de vos services.')],
         'related': ['audit-rgaa', 'prestation-informatique', 'formations'], 'cta_title': 'Mesurons votre conformité européenne.'},
     'recette': {
@@ -285,7 +285,7 @@ SVC = {
         'card': 'Sessions en présentiel ou à distance, adaptées à chaque métier et à vos outils.',
         'cat': 'Formation · Sur mesure', 'tagline': "Des formations par métier, animées par des praticiens de l'audit.",
         'intro': "Nos formateurs sont aussi auditeurs : ils transmettent ce qu'ils pratiquent chaque jour. Sessions en présentiel ou à distance, en intra-entreprise, adaptées à vos outils, à vos contenus et à vos métiers.",
-        'brief': [('Format', 'Présentiel ou à distance, en intra-entreprise'), ('Publics', 'Contributeurs, designers, développeurs, chefs de projet, acheteurs'), ('Langues', 'Français, néerlandais, allemand, anglais'), ('Approche', 'Exercices pratiques sur vos propres supports')],
+        'brief': [('Format', 'Présentiel ou à distance, en intra-entreprise'), ('Publics', 'Contributeurs, designers, développeurs, chefs de projet, acheteurs'), ('Nos langues de travail', 'Français, néerlandais, allemand, anglais'), ('Approche', 'Exercices pratiques sur vos propres supports')],
         'who_title': 'Pour qui ?',
         'who': [('Contributeurs et rédacteurs', 'Publier des contenus et des documents accessibles au quotidien.'),
                 ('Équipes techniques', 'Concevoir, développer et tester des interfaces accessibles.'),
@@ -309,7 +309,7 @@ STANDARDS = {
     'list_title': 'Les pays où nous intervenons',
     'eu_title': 'Le socle européen',
     'eu_text': 'Au-delà des référentiels nationaux, deux textes européens structurent les obligations de nos clients.',
-    'eu': [('EN 301 549', "La norme européenne harmonisée d'exigences d'accessibilité pour les produits et services numériques, alignée sur les WCAG."),
+    'eu': [('EN 301 549', "La norme européenne d'exigences d'accessibilité pour les produits et services numériques, alignée sur les WCAG. Sa version V3.2.1 est harmonisée pour le secteur public ; la V4.1.1, alignée sur les WCAG 2.2, est attendue au Journal officiel pour l'EAA."),
            ('EAA', "L'European Accessibility Act, applicable depuis le 28 juin 2025, qui étend les obligations à de nombreux produits et services du secteur privé.")],
     'cta_title': 'Quel référentiel pour votre organisation ? Parlons-en.',
 }
@@ -329,7 +329,7 @@ COUNTRY = {
     'belgique': {'region': 'Union européenne', 'more': 'Tout savoir sur la Belgique',
         'h1': "L'accessibilité numérique en Belgique", 'tagline': "La norme EN 301 549, des textes fédéraux et régionaux, et l'EAA.",
         'intro': "En Belgique, l'accessibilité des sites et applications du secteur public est imposée au niveau fédéral par la loi du 19 juillet 2018, complétée par des textes régionaux et communautaires. Le secteur privé est concerné par la transposition de l'European Accessibility Act.",
-        'facts': [('Référentiel', 'Norme EN 301 549 et WCAG, niveau AA'), ('Textes', 'Loi du 19 juillet 2018, textes régionaux et communautaires, EAA'), ('Concernés', "Organismes publics et acteurs privés visés par l'EAA"), ('Langues', 'Français, néerlandais, allemand, anglais')],
+        'facts': [('Référentiel', 'Norme EN 301 549 et WCAG, niveau AA'), ('Textes', 'Loi du 19 juillet 2018, textes régionaux et communautaires, EAA'), ('Concernés', "Organismes publics et acteurs privés visés par l'EAA"), ('Nos langues de travail', 'Français, néerlandais, allemand, anglais')],
         'ob_title': 'Ce que la loi exige',
         'ob': ['Rendre sites et applications conformes à la norme EN 301 549', "Publier une déclaration d'accessibilité pour chaque site et application", "Proposer un mécanisme de retour d'information aux usagers", 'Traiter les demandes et signalements dans un délai raisonnable', "Se soumettre au contrôle de l'organisme de surveillance compétent"],
         'ref_title': 'La norme EN 301 549', 'ref_text': "La Belgique n'a pas de référentiel national propre : la conformité s'évalue selon la norme européenne EN 301 549, qui intègre les WCAG niveau AA. Nos audits suivent cette norme, avec la même méthode dans les trois Régions.",
@@ -340,9 +340,9 @@ COUNTRY = {
     'luxembourg': {'region': 'Union européenne', 'more': 'Tout savoir sur le Luxembourg',
         'h1': "L'accessibilité numérique au Luxembourg", 'tagline': 'Le RAWeb, le RAAM et la loi du 28 mai 2019.',
         'intro': "Le Luxembourg a fait le choix de référentiels nationaux : le RAWeb pour le web et le RAAM pour les applications mobiles. Ils servent à évaluer les services du secteur public, soumis à la loi du 28 mai 2019. Le secteur privé est concerné par la transposition de l'European Accessibility Act.",
-        'facts': [('Référentiels', 'RAWeb pour le web, RAAM pour le mobile'), ('Textes', 'Loi du 28 mai 2019 et European Accessibility Act'), ('Concernés', "Organismes publics et acteurs privés visés par l'EAA"), ('Langues', 'Français, allemand, anglais')],
+        'facts': [('Référentiels', 'RAWeb pour le web, RAAM pour le mobile'), ('Textes', 'Loi du 28 mai 2019 et European Accessibility Act'), ('Concernés', "Organismes publics et acteurs privés visés par l'EAA"), ('Nos langues de travail', 'Français, allemand, anglais')],
         'ob_title': 'Ce que la loi exige',
-        'ob': ['Rendre sites et applications conformes aux exigences du RAWeb et du RAAM', "Publier une déclaration d'accessibilité", "Proposer un mécanisme de retour d'information aux usagers", 'Corriger les défauts signalés', "Se soumettre au contrôle de l'organisme de surveillance"],
+        'ob': ['Rendre sites et applications conformes à la norme EN 301 549, évaluée avec le RAWeb et le RAAM', "Publier une déclaration d'accessibilité", "Proposer un mécanisme de retour d'information aux usagers", 'Corriger les défauts signalés', "Se soumettre au contrôle de l'organisme de surveillance"],
         'ref_title': 'Le RAWeb et le RAAM', 'ref_text': 'Publiés par le Service information et presse du gouvernement, le RAWeb et le RAAM déclinent la norme EN 301 549 en critères et en tests, sur le modèle méthodologique du RGAA. Nous les appliquons à vos sites comme à vos applications iOS et Android.',
         'serv_title': 'Nos prestations au Luxembourg', 'serv': ['audit-raam', 'audit-conformite', 'test-utilisateur', 'formations'],
         'faq': [('Quelle différence entre le RAWeb et le RGAA ?', "Le RAWeb reprend la méthode du RGAA en l'adaptant à la norme EN 301 549. Les deux partagent une logique de critères et de tests."),
@@ -351,7 +351,7 @@ COUNTRY = {
     'suisse': {'region': 'Hors Union européenne', 'more': 'Tout savoir sur la Suisse',
         'h1': "L'accessibilité numérique en Suisse", 'tagline': "La norme eCH-0059, la LHand et l'impact de l'EAA.",
         'intro': "En Suisse, la loi sur l'égalité pour les handicapés (LHand) impose l'accessibilité des services en ligne de la Confédération, selon la norme eCH-0059 fondée sur les WCAG. Les entreprises suisses qui vendent dans l'Union européenne doivent aussi tenir compte de l'European Accessibility Act.",
-        'facts': [('Référentiel', 'Norme eCH-0059, fondée sur les WCAG'), ('Textes', 'LHand, règles cantonales, EAA pour le marché européen'), ('Concernés', 'Administrations et entreprises actives sur le marché européen'), ('Langues', 'Français, allemand, anglais')],
+        'facts': [('Référentiel', 'Norme eCH-0059, fondée sur les WCAG'), ('Textes', 'LHand, règles cantonales, EAA pour le marché européen'), ('Concernés', 'Administrations et entreprises actives sur le marché européen'), ('Nos langues de travail', 'Français, allemand, anglais')],
         'ob_title': 'Ce qui est attendu',
         'ob': ['Des services en ligne de la Confédération accessibles à tous', "L'application de la norme eCH-0059 comme référence", 'Pour les cantons et communes, des règles propres à chaque canton', "Pour les entreprises exportatrices, la conformité à l'EAA des produits et services vendus dans l'Union"],
         'ref_title': 'La norme eCH-0059', 'ref_text': "Publiée par l'association eCH, la norme eCH-0059 reprend les WCAG niveau AA. Elle sert de référence aux administrations suisses et constitue une base solide pour les entreprises privées.",
@@ -410,52 +410,17 @@ FIRM = {
 
 RESOURCES = {
     'intro': 'Guides pratiques et analyses réglementaires, rédigés par nos consultants.',
-    'featured_label': 'À la une', 'read': "Lire l'analyse", 'all_label': 'Toutes les ressources', 'filter_label': 'Filtrer les ressources',
+    'featured_label': 'À la une', 'read': "Lire le guide", 'all_label': 'Toutes les ressources', 'filter_label': 'Filtrer les ressources',
     'filters': ['Toutes'], 'cats': [('guide', 'Guides'), ('analyse', 'Analyses'), ('reglementation', 'Réglementation')],
     'status_tpl': '%n ressources affichées', 'soon': 'Bientôt disponible',
 }
 
-POSTS = [
-    {'key': 'article:eaa', 'live': True, 'catkey': 'analyse', 'cat': 'Analyse', 'where': 'Europe', 'cover': 'EAA', 'cls': '', 'title': 'European Accessibility Act : ce qui change pour les entreprises privées', 'desc': 'Produits et services concernés, exemptions, calendrier et obligations, pays par pays.'},
-    {'key': 'resources', 'live': False, 'catkey': 'guide', 'cat': 'Guide', 'where': 'France', 'cover': 'RGAA', 'cls': 'c1', 'title': "Rédiger sa déclaration d'accessibilité : mode d'emploi", 'desc': 'Les mentions attendues, les erreurs fréquentes et la mise à jour.'},
-    {'key': 'resources', 'live': False, 'catkey': 'guide', 'cat': 'Guide', 'where': 'Luxembourg', 'cover': 'RAAM', 'cls': 'c2', 'title': 'Auditer une application mobile selon le RAAM', 'desc': "Méthode, échantillon d'écrans et tests sur appareils réels."},
-    {'key': 'resources', 'live': False, 'catkey': 'reglementation', 'cat': 'Réglementation', 'where': 'Belgique', 'cover': 'BE', 'cls': '', 'title': 'Accessibilité numérique en Belgique : qui est concerné ?', 'desc': 'Secteur public, textes régionaux et European Accessibility Act.'},
-    {'key': 'resources', 'live': False, 'catkey': 'analyse', 'cat': 'Analyse', 'where': 'Europe', 'cover': 'WCAG', 'cls': 'c1', 'title': 'Des WCAG à la norme EN 301 549 : comprendre les liens', 'desc': 'Comment les standards internationaux deviennent des obligations.'},
-    {'key': 'resources', 'live': False, 'catkey': 'reglementation', 'cat': 'Réglementation', 'where': 'Suisse', 'cover': 'CH', 'cls': 'c2', 'title': "Entreprises suisses : l'EAA vous concerne-t-il ?", 'desc': "Le cas des entreprises qui vendent dans l'Union européenne."},
-]
 
-ARTICLE = {
-    'crumb': 'European Accessibility Act', 'cat': 'Analyse · Europe',
-    'h1': 'European Accessibility Act : ce qui change pour les entreprises privées',
-    'date': 'Publié le 27 octobre 2026', 'read': 'Lecture : 8 minutes', 'by': 'Par l’équipe du cabinet',
-    'cover_note': ('Directive (UE) 2019/882', 'Applicable depuis le 28 juin 2025'),
-    'lead': "Depuis le 28 juin 2025, l'accessibilité numérique n'est plus seulement l'affaire du secteur public. Avec l'European Accessibility Act, de nombreuses entreprises privées qui vendent aux consommateurs doivent rendre leurs produits et services utilisables par les personnes en situation de handicap.",
-    'body': [
-        ('h2', 'definition', "Ce qu'est l'European Accessibility Act"),
-        ('p', "L'European Accessibility Act, ou acte européen sur l'accessibilité, désigne la directive (UE) 2019/882 du 17 avril 2019. Elle fixe des exigences d'accessibilité communes à toute l'Union pour une liste de produits et de services, afin que les entreprises n'aient plus à composer avec des règles différentes d'un pays à l'autre."),
-        ('p', "Chaque État membre l'a transposée dans son droit national. Les nouvelles règles s'appliquent depuis le 28 juin 2025, avec des contrôles confiés aux autorités de surveillance du marché de chaque pays."),
-        ('h2', 'concernes', 'Les produits et services concernés'),
-        ('p', 'Le texte vise d’abord des produits, et en premier lieu leurs interfaces numériques :'),
-        ('ul', ['les ordinateurs et leurs systèmes d’exploitation ;', 'les terminaux de paiement, les distributeurs de billets, les bornes d’enregistrement et de billetterie ;', 'les smartphones et les équipements de communication ;', 'les équipements qui donnent accès aux services de médias audiovisuels ;', 'les liseuses numériques.']),
-        ('p', "Il couvre aussi des services, dont la plupart passent par un site ou une application :"),
-        ('ul', ['le commerce électronique ;', 'les services bancaires destinés aux consommateurs ;', 'les services de communications électroniques ;', 'l’accès aux services de médias audiovisuels ;', 'les sites, applications, billets électroniques et informations des services de transport de voyageurs ;', 'les livres numériques et leurs logiciels de lecture.']),
-        ('note', 'À retenir', "Une boutique en ligne qui vend à des particuliers dans l'Union européenne entre, sauf exemption, dans le champ de l'EAA."),
-        ('h2', 'exemptions', 'Qui est exempté ?'),
-        ('p', "Les microentreprises qui fournissent des services sont exemptées : moins de 10 personnes, et un chiffre d'affaires annuel ou un total de bilan qui ne dépasse pas 2 millions d'euros."),
-        ('p', 'Une entreprise peut aussi invoquer une charge disproportionnée ou une modification fondamentale de son produit ou service. Cette exception est encadrée : elle doit être évaluée, documentée et réexaminée régulièrement.'),
-        ('h2', 'transition', 'Les périodes de transition'),
-        ('p', "Les prestataires peuvent continuer à fournir leurs services avec des produits qu'ils utilisaient légalement avant le 28 juin 2025, jusqu'au 28 juin 2030. Les terminaux en libre-service déjà installés peuvent rester en service jusqu'à la fin de leur durée de vie économique, dans la limite de 20 ans."),
-        ('p', "Ces délais ne concernent pas les nouveaux sites et applications : ce qui est mis en ligne aujourd'hui doit respecter les exigences."),
-        ('h2', 'actions', 'Ce que vous devez faire concrètement'),
-        ('ol', [('Cartographier', 'vos produits et services concernés, pays par pays.'), ('Auditer', 'vos sites et applications selon la norme EN 301 549, qui intègre les WCAG niveau AA.'),
-                ('Corriger', 'en commençant par les parcours essentiels : recherche, achat, paiement, compte client.'), ('Informer', "vos clients sur la manière dont votre service répond aux exigences d'accessibilité."),
-                ('Former', 'vos équipes pour que les nouvelles fonctionnalités restent conformes.'), ('Maintenir', 'le niveau atteint avec une recette à chaque livraison.')]),
-        ('h2', 'pays', 'Pays par pays'),
-        ('p', "En France, en Belgique et au Luxembourg, l'EAA a été transposé dans le droit national et s'ajoute aux obligations du secteur public. La Suisse n'est pas membre de l'Union européenne, mais les entreprises suisses qui vendent aux consommateurs européens sont concernées pour ces ventes."),
-        ('p', 'Nos pages [[country:france|France]], [[country:belgique|Belgique]], [[country:luxembourg|Luxembourg]] et [[country:suisse|Suisse]] détaillent le cadre propre à chaque pays.'),
-    ],
+ARTICLE_UI = {
+    'by': 'Par l’équipe du cabinet', 'published': 'Publié le', 'read': 'Lecture : %d minutes',
+    'faq': 'Questions fréquentes', 'related': 'À lire aussi',
+    'cats': {'guide': 'Guide', 'analyse': 'Analyse', 'reglementation': 'Réglementation'},
     'author': ('Accessibilité numérique', 'Cabinet d’audit et de conseil en accessibilité numérique'),
-    'cta_title': 'Votre entreprise est-elle concernée ?', 'cta_text': 'Nous faisons le diagnostic avec vous, puis nous auditons vos services selon la norme EN 301 549.',
 }
 
 CONTACT = {

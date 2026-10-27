@@ -9,6 +9,12 @@ Site statique multilingue (FR, NL, DE, EN) — 28 pages par langue, 112 pages au
 - `static/` : feuille de style, scripts, police Manrope hébergée localement, logos.
 - `gen/build.py` : génération.
 
+## Articles du blog
+- Un fichier JSON par article et par langue dans `gen/articles/<id>.<lang>.json` (8 articles × 4 langues).
+- Cahier des charges : `gen/articles/SPEC.md` ; consignes de traduction : `gen/articles/TRANSLATION.md`.
+- Contrôle d'un article : `python3 gen/check_article.py gen/articles/<id>.<lang>.json 3500`.
+- Un article n'est publié que s'il existe dans les 4 langues (liste `ARTICLES` dans `gen/common.py`).
+
 ## Générer
     pip install -r requirements.txt
     python3 gen/build.py prod          # -> dist/ (URL propres, sitemap, robots.txt, _headers)

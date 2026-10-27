@@ -56,8 +56,8 @@ META = {
 
 HOME = {
     'chip': 'Audit and consulting firm for 15 years · France, Belgium, Luxembourg, Switzerland',
-    'h1a': 'Digital accessibility,', 'h1b': 'delivered with method and rigour.',
-    'intro': 'Audits, consulting and training for public bodies, large companies and SMEs. We make your websites, apps and documents usable by everyone, and compliant with the rules of each country.',
+    'h1a': 'Digital accessibility,', 'h1b': 'made simple.',
+    'intro': 'The first consulting firm 100% dedicated to digital accessibility. Audits, consulting and training for public bodies, large companies and SMEs in France, Belgium, Luxembourg and Switzerland.',
     'cta2': 'Our services',
     'report': {'aria': 'Example accessibility audit report', 'label': 'Audit report', 'title': 'Customer portal — [Organisation]', 'badge': 'EN 301 549 · WCAG 2.1 AA',
                'legend': ['Passed', 'Failed', 'Not applicable'], 'ok': 'Pass', 'ko': 'Fail',
@@ -159,7 +159,7 @@ SVC = {
                 ('Prioritised action plan', 'Fixes ranked by impact and effort, ready to schedule.')],
         'faq': [('How is it different from an RGAA audit?', 'An RGAA audit follows the French method. A compliance audit follows WCAG and EN 301 549 directly, which suits a group operating in several countries.'),
                 ('Is my company covered by the EAA?', 'It depends on your products, services and size: micro-enterprises providing services are exempt. We make this assessment during scoping.'),
-                ('WCAG 2.1 or WCAG 2.2?', 'EN 301 549 refers to WCAG 2.1. We also assess the criteria added in WCAG 2.2, to anticipate future changes.'),
+                ('WCAG 2.1 or WCAG 2.2?', 'The version of EN 301 549 currently cited in the Official Journal (V3.2.1) refers to WCAG 2.1. The new V4.1.1, published in September 2026, is based on WCAG 2.2, so we already assess the criteria added in WCAG 2.2.'),
                 ('Can you audit several languages?', 'Yes: we audit the French, Dutch, German and English versions of your services.')],
         'related': ['audit-rgaa', 'prestation-informatique', 'formations'], 'cta_title': "Let's measure your European compliance."},
     'recette': {
@@ -286,7 +286,7 @@ SVC = {
         'card': 'On-site or remote sessions, adapted to each role and to your tools.',
         'cat': 'Training · Tailored', 'tagline': 'Role-based training, delivered by practising auditors.',
         'intro': 'Our trainers are also auditors: they pass on what they practise every day. Sessions on site or remote, in-house, adapted to your tools, your content and your roles.',
-        'brief': [('Format', 'On site or remote, in-house'), ('Audiences', 'Content editors, designers, developers, project managers, buyers'), ('Languages', 'French, Dutch, German, English'), ('Approach', 'Hands-on exercises on your own materials')],
+        'brief': [('Format', 'On site or remote, in-house'), ('Audiences', 'Content editors, designers, developers, project managers, buyers'), ('Our working languages', 'French, Dutch, German, English'), ('Approach', 'Hands-on exercises on your own materials')],
         'who_title': 'Who is it for?',
         'who': [('Content editors', 'Publish accessible content and documents every day.'),
                 ('Technical teams', 'Design, develop and test accessible interfaces.'),
@@ -310,7 +310,7 @@ STANDARDS = {
     'list_title': 'The countries where we work',
     'eu_title': 'The European foundation',
     'eu_text': 'Beyond national standards, two European texts shape our clients’ obligations.',
-    'eu': [('EN 301 549', 'The harmonised European standard setting accessibility requirements for digital products and services, aligned with WCAG.'),
+    'eu': [('EN 301 549', 'The European standard setting accessibility requirements for digital products and services, aligned with WCAG. Version V3.2.1 is harmonised for the public sector; V4.1.1, aligned with WCAG 2.2, is expected in the Official Journal for the EAA.'),
            ('EAA', 'The European Accessibility Act, in force since 28 June 2025, which extends obligations to many private-sector products and services.')],
     'cta_title': 'Which standard applies to you? Let’s talk.',
 }
@@ -330,7 +330,7 @@ COUNTRY = {
     'belgique': {'region': 'European Union', 'more': 'All about Belgium',
         'h1': 'Digital accessibility in Belgium', 'tagline': 'EN 301 549, federal and regional texts, and the EAA.',
         'intro': 'In Belgium, the accessibility of public-sector websites and apps is required at federal level by the law of 19 July 2018, complemented by regional and community texts. The private sector is covered by the transposition of the European Accessibility Act.',
-        'facts': [('Standard', 'EN 301 549 and WCAG, level AA'), ('Legislation', 'Law of 19 July 2018, regional and community texts, EAA'), ('Who is affected', 'Public bodies and private organisations covered by the EAA'), ('Languages', 'French, Dutch, German, English')],
+        'facts': [('Standard', 'EN 301 549 and WCAG, level AA'), ('Legislation', 'Law of 19 July 2018, regional and community texts, EAA'), ('Who is affected', 'Public bodies and private organisations covered by the EAA'), ('Our working languages', 'French, Dutch, German, English')],
         'ob_title': 'What the law requires',
         'ob': ['Make websites and apps compliant with EN 301 549', 'Publish an accessibility statement for each website and app', 'Provide a feedback mechanism for users', 'Handle requests and reports within a reasonable time', 'Be subject to monitoring by the competent authority'],
         'ref_title': 'EN 301 549', 'ref_text': 'Belgium has no national framework of its own: compliance is assessed against the European standard EN 301 549, which includes WCAG level AA. Our audits follow this standard, with the same method in all three Regions.',
@@ -341,9 +341,9 @@ COUNTRY = {
     'luxembourg': {'region': 'European Union', 'more': 'All about Luxembourg',
         'h1': 'Digital accessibility in Luxembourg', 'tagline': 'RAWeb, RAAM and the law of 28 May 2019.',
         'intro': 'Luxembourg has chosen national frameworks: RAWeb for websites and RAAM for mobile apps. They are used to assess public-sector services, which are subject to the law of 28 May 2019. The private sector is covered by the transposition of the European Accessibility Act.',
-        'facts': [('Standards', 'RAWeb for the web, RAAM for mobile'), ('Legislation', 'Law of 28 May 2019 and European Accessibility Act'), ('Who is affected', 'Public bodies and private organisations covered by the EAA'), ('Languages', 'French, German, English')],
+        'facts': [('Standards', 'RAWeb for the web, RAAM for mobile'), ('Legislation', 'Law of 28 May 2019 and European Accessibility Act'), ('Who is affected', 'Public bodies and private organisations covered by the EAA'), ('Our working languages', 'French, German, English')],
         'ob_title': 'What the law requires',
-        'ob': ['Make websites and apps meet the requirements of RAWeb and RAAM', 'Publish an accessibility statement', 'Provide a feedback mechanism for users', 'Fix the issues reported', 'Be subject to monitoring by the supervisory body'],
+        'ob': ['Make websites and apps comply with EN 301 549, assessed with RAWeb and RAAM', 'Publish an accessibility statement', 'Provide a feedback mechanism for users', 'Fix the issues reported', 'Be subject to monitoring by the supervisory body'],
         'ref_title': 'RAWeb and RAAM', 'ref_text': 'Published by the government’s Information and Press Service, RAWeb and RAAM translate EN 301 549 into criteria and tests, following the RGAA methodology. We apply them to your websites as well as your iOS and Android apps.',
         'serv_title': 'Our services in Luxembourg', 'serv': ['audit-raam', 'audit-conformite', 'test-utilisateur', 'formations'],
         'faq': [('What is the difference between RAWeb and RGAA?', 'RAWeb adopts the RGAA method and adapts it to EN 301 549. Both use the same logic of criteria and tests.'),
@@ -352,7 +352,7 @@ COUNTRY = {
     'suisse': {'region': 'Outside the European Union', 'more': 'All about Switzerland',
         'h1': 'Digital accessibility in Switzerland', 'tagline': 'The eCH-0059 standard, the Disability Discrimination Act and the impact of the EAA.',
         'intro': 'In Switzerland, the Disability Discrimination Act (LHand/BehiG) requires the Confederation’s online services to be accessible, according to the eCH-0059 standard based on WCAG. Swiss companies selling in the European Union must also take the European Accessibility Act into account.',
-        'facts': [('Standard', 'eCH-0059, based on WCAG'), ('Legislation', 'Disability Discrimination Act, cantonal rules, EAA for the EU market'), ('Who is affected', 'Public administrations and companies active on the European market'), ('Languages', 'French, German, English')],
+        'facts': [('Standard', 'eCH-0059, based on WCAG'), ('Legislation', 'Disability Discrimination Act, cantonal rules, EAA for the EU market'), ('Who is affected', 'Public administrations and companies active on the European market'), ('Our working languages', 'French, German, English')],
         'ob_title': 'What is expected',
         'ob': ['Federal online services that are accessible to everyone', 'The eCH-0059 standard as the reference', 'For cantons and municipalities, rules specific to each canton', 'For exporting companies, EAA compliance of products and services sold in the EU'],
         'ref_title': 'The eCH-0059 standard', 'ref_text': 'Published by the eCH association, the eCH-0059 standard adopts WCAG level AA. It is the reference for Swiss administrations and a solid basis for private companies.',
@@ -411,52 +411,17 @@ FIRM = {
 
 RESOURCES = {
     'intro': 'Practical guides and regulatory analysis, written by our consultants.',
-    'featured_label': 'Featured', 'read': 'Read the analysis', 'all_label': 'All resources', 'filter_label': 'Filter resources',
+    'featured_label': 'Featured', 'read': 'Read the guide', 'all_label': 'All resources', 'filter_label': 'Filter resources',
     'filters': ['All'], 'cats': [('guide', 'Guides'), ('analyse', 'Analysis'), ('reglementation', 'Regulation')],
     'status_tpl': '%n resources shown', 'soon': 'Coming soon',
 }
 
-POSTS = [
-    {'key': 'article:eaa', 'live': True, 'catkey': 'analyse', 'cat': 'Analysis', 'where': 'Europe', 'cover': 'EAA', 'cls': '', 'title': 'European Accessibility Act: what changes for private companies', 'desc': 'Products and services covered, exemptions, timeline and obligations, country by country.'},
-    {'key': 'resources', 'live': False, 'catkey': 'guide', 'cat': 'Guide', 'where': 'France', 'cover': 'RGAA', 'cls': 'c1', 'title': 'Writing your accessibility statement: a practical guide', 'desc': 'Required content, common mistakes and keeping it up to date.'},
-    {'key': 'resources', 'live': False, 'catkey': 'guide', 'cat': 'Guide', 'where': 'Luxembourg', 'cover': 'RAAM', 'cls': 'c2', 'title': 'Auditing a mobile app against RAAM', 'desc': 'Method, screen sample and tests on real devices.'},
-    {'key': 'resources', 'live': False, 'catkey': 'reglementation', 'cat': 'Regulation', 'where': 'Belgium', 'cover': 'BE', 'cls': '', 'title': 'Digital accessibility in Belgium: who is affected?', 'desc': 'Public sector, regional texts and the European Accessibility Act.'},
-    {'key': 'resources', 'live': False, 'catkey': 'analyse', 'cat': 'Analysis', 'where': 'Europe', 'cover': 'WCAG', 'cls': 'c1', 'title': 'From WCAG to EN 301 549: understanding the links', 'desc': 'How international standards become legal obligations.'},
-    {'key': 'resources', 'live': False, 'catkey': 'reglementation', 'cat': 'Regulation', 'where': 'Switzerland', 'cover': 'CH', 'cls': 'c2', 'title': 'Swiss companies: does the EAA apply to you?', 'desc': 'The case of companies selling in the European Union.'},
-]
 
-ARTICLE = {
-    'crumb': 'European Accessibility Act', 'cat': 'Analysis · Europe',
-    'h1': 'European Accessibility Act: what changes for private companies',
-    'date': 'Published on 27 October 2026', 'read': 'Reading time: 8 minutes', 'by': 'By the firm’s team',
-    'cover_note': ('Directive (EU) 2019/882', 'Applicable since 28 June 2025'),
-    'lead': 'Since 28 June 2025, digital accessibility is no longer just a matter for the public sector. With the European Accessibility Act, many private companies that sell to consumers must make their products and services usable by people with disabilities.',
-    'body': [
-        ('h2', 'definition', 'What the European Accessibility Act is'),
-        ('p', 'The European Accessibility Act is Directive (EU) 2019/882 of 17 April 2019. It sets common accessibility requirements across the Union for a list of products and services, so that companies no longer have to deal with different rules from one country to another.'),
-        ('p', 'Each Member State has transposed it into national law. The new rules have applied since 28 June 2025, with checks carried out by each country’s market surveillance authorities.'),
-        ('h2', 'concernes', 'Products and services covered'),
-        ('p', 'The text first covers products, and above all their digital interfaces:'),
-        ('ul', ['computers and their operating systems;', 'payment terminals, cash machines, check-in and ticketing kiosks;', 'smartphones and communication equipment;', 'equipment giving access to audiovisual media services;', 'e-readers.']),
-        ('p', 'It also covers services, most of which are delivered through a website or an app:'),
-        ('ul', ['e-commerce;', 'consumer banking services;', 'electronic communication services;', 'access to audiovisual media services;', 'websites, apps, e-tickets and information for passenger transport services;', 'e-books and their reading software.']),
-        ('note', 'Key point', 'An online shop selling to consumers in the European Union falls within the scope of the EAA, unless it is exempt.'),
-        ('h2', 'exemptions', 'Who is exempt?'),
-        ('p', 'Micro-enterprises providing services are exempt: fewer than 10 people, and an annual turnover or balance sheet total of no more than €2 million.'),
-        ('p', 'A company may also invoke a disproportionate burden or a fundamental alteration of its product or service. This exception is strictly framed: it must be assessed, documented and reviewed regularly.'),
-        ('h2', 'transition', 'Transition periods'),
-        ('p', 'Service providers may continue to deliver their services using products they lawfully used before 28 June 2025, until 28 June 2030. Self-service terminals already installed may remain in use until the end of their economically useful life, up to a maximum of 20 years.'),
-        ('p', 'These periods do not apply to new websites and apps: whatever goes live today must meet the requirements.'),
-        ('h2', 'actions', 'What you need to do in practice'),
-        ('ol', [('Map', 'the products and services affected, country by country.'), ('Audit', 'your websites and apps against EN 301 549, which includes WCAG level AA.'),
-                ('Fix', 'starting with essential journeys: search, purchase, payment, customer account.'), ('Inform', 'your customers about how your service meets the accessibility requirements.'),
-                ('Train', 'your teams so that new features remain compliant.'), ('Maintain', 'the level reached with acceptance testing at every release.')]),
-        ('h2', 'pays', 'Country by country'),
-        ('p', 'In France, Belgium and Luxembourg, the EAA has been transposed into national law and comes on top of public-sector obligations. Switzerland is not a member of the European Union, but Swiss companies selling to European consumers are affected for those sales.'),
-        ('p', 'Our pages on [[country:france|France]], [[country:belgique|Belgium]], [[country:luxembourg|Luxembourg]] and [[country:suisse|Switzerland]] describe the framework in each country.'),
-    ],
+ARTICLE_UI = {
+    'by': 'By the firm’s team', 'published': 'Published on', 'read': 'Reading time: %d minutes',
+    'faq': 'Frequently asked questions', 'related': 'Further reading',
+    'cats': {'guide': 'Guide', 'analyse': 'Analysis', 'reglementation': 'Regulation'},
     'author': ('Accessibilité numérique', 'Digital accessibility audit and consulting firm'),
-    'cta_title': 'Is your company affected?', 'cta_text': 'We carry out the assessment with you, then audit your services against EN 301 549.',
 }
 
 CONTACT = {

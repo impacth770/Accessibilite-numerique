@@ -18,13 +18,46 @@ def rich(text, u):
     out, pos = [], 0
     for mt in re.finditer(r'\[\[([^|\]]+)\|([^\]]+)\]\]', text):
         out.append(escape(text[pos:mt.start()]))
-        out.append(Markup('<a href="%s">%s</a>') % (u(mt.group(1)), mt.group(2)))
+        k = mt.group(1).strip()
+        if k.startswith('http'):
+            out.append(Markup('<a href="%s" rel="noopener">%s</a>') % (k, mt.group(2)))
+        else:
+            out.append(Markup('<a href="%s">%s</a>') % (u(k), mt.group(2)))
         pos = mt.end()
     out.append(escape(text[pos:]))
     return Markup('').join(out)
 env.filters['rich'] = rich
 
 C = {l: importlib.import_module('content_' + l) for l in LANGS}
+
+MONTHS = {'fr': ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+          'en': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          'nl': ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'],
+          'de': ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']}
+
+def fmt_date(lang, iso):
+    y, mo, d = (int(x) for x in iso.split('-'))
+    if lang == 'en': return '%d %s %d' % (d, MONTHS[lang][mo - 1], y)
+    if lang == 'de': return '%d. %s %d' % (d, MONTHS[lang][mo - 1], y)
+    return '%d %s %d' % (d, MONTHS[lang][mo - 1], y)
+
+def words(a):
+    t = [a.get('lead', '')]
+    for b in a['body']:
+        if b[0] in ('p', 'h3'): t.append(b[1])
+        elif b[0] == 'h2': t.append(b[2])
+        elif b[0] == 'ul': t += b[1]
+        elif b[0] == 'ol': t += [x[0] + ' ' + x[1] for x in b[1]]
+        elif b[0] == 'note': t += [b[1], b[2]]
+        elif b[0] == 'table': t += b[1].get('head', []) + [c for r in b[1]['rows'] for c in r]
+    t += [q + ' ' + r for q, r in a.get('faq', [])]
+    return len(re.sub(r'\[\[[^|\]]+\|([^\]]+)\]\]', r'\1', ' '.join(t)).split())
+
+def posts(lang):
+    m = C[lang]; au = m.ARTICLE_UI
+    return [{'key': 'article:' + a, 'id': a, 'live': True, 'catkey': ART[lang][a]['cat'], 'cat': au['cats'][ART[lang][a]['cat']],
+             'where': ART[lang][a]['where'], 'cover': ART[lang][a]['cover'], 'cls': ['', 'c1', 'c2'][i % 3],
+             'title': ART[lang][a]['h1'], 'desc': ART[lang][a]['card_desc']} for i, a in enumerate(ART_LIVE)]
 
 def href(lang, key, cur_path):
     target = path(lang, key)
@@ -69,7 +102,7 @@ def plan_sections(lang):
            ('services', ui['services'], [], [('svc:' + s, ui['svc'][s]) for s in SVC]),
            ('standards', ui['standards'], [], [('country:' + c, ui['country'][c]) for c in COUNTRIES]),
            ('sectors', ui['f_sectors'], [], [('sector:' + s, ui['sector'][s]) for s in SECTORS]),
-           ('resources', ui['resources'], [], [('article:eaa', m.ARTICLE['h1'])]),
+           ('resources', ui['resources'], [], [('article:' + a, ART[lang][a]['h1']) for a in ART_LIVE]),
            ('infos', ui['sm_info'], [], [('legal:' + l, ui['legal'][l]) for l in ['mentions', 'confidentialite', 'accessibilite']])]
     return sec
 
@@ -79,7 +112,7 @@ def render(lang, key):
     u = lambda k: href(lang, k, cur)
     ctx = dict(lang=lang, ui=ui, u=u, asset=lambda n: asset_url(n, cur), svc_groups=SVC_GROUPS, svc_all=SVC,
                countries=COUNTRIES, sectors=SECTORS, codes=CODES, svc=m.SVC, country=m.COUNTRY, logos=LOGOS,
-               posts=m.POSTS, form_endpoint=FORM_ENDPOINT, fr_contact=C['fr'].CONTACT, country_fr=COUNTRY_FR, section=None, page_type='page')
+               posts=posts(lang), form_endpoint=FORM_ENDPOINT, fr_contact=C['fr'].CONTACT, country_fr=COUNTRY_FR, section=None, page_type='page')
     jsonld = [org(lang)]
     trail = []
     if key == 'home':
@@ -104,11 +137,20 @@ def render(lang, key):
         tpl, c, ctx['section'] = 'firm.html', m.FIRM, 'firm'; trail = [(None, ui['firm'])]
     elif key == 'resources':
         tpl, c, ctx['section'] = 'resources.html', m.RESOURCES, 'resources'; trail = [(None, ui['resources'])]
-    elif key == 'article:eaa':
-        tpl, c, ctx['section'], ctx['page_type'] = 'article.html', m.ARTICLE, 'resources', 'article'
+    elif key.startswith('article:'):
+        aid = key[8:]; c = dict(ART[lang][aid]); au = m.ARTICLE_UI
+        tpl, ctx['section'], ctx['page_type'] = 'article.html', 'resources', 'article'
+        n = words(c)
+        c['date_txt'] = au['published'] + ' ' + fmt_date(lang, c['date'])
+        c['read_txt'] = au['read'] % max(1, round(n / 230))
+        c['cat_txt'] = au['cats'][c['cat']] + ' · ' + c['where']
+        rel = [a for a in c.get('related', []) if a in ART_LIVE] or [a for a in ART_LIVE if a != aid]
+        ctx.update(au=au, related=[p for p in posts(lang) if p['id'] in rel[:3]])
         trail = [('resources', ui['resources']), (None, c['crumb'])]
-        jsonld.append({"@context": "https://schema.org", "@type": "Article", "headline": c['h1'], "inLanguage": lang,
-                       "publisher": {"@id": DOMAIN + "/#org"}, "mainEntityOfPage": DOMAIN + '/' + cur})
+        jsonld.append({"@context": "https://schema.org", "@type": "Article", "headline": c['h1'], "description": c['meta_desc'],
+                       "inLanguage": lang, "datePublished": c['date'], "dateModified": c.get('modified', c['date']), "wordCount": n,
+                       "author": {"@id": DOMAIN + "/#org"}, "publisher": {"@id": DOMAIN + "/#org"}, "mainEntityOfPage": DOMAIN + '/' + cur})
+        if c.get('faq'): jsonld.append(faq_ld(c['faq']))
     elif key == 'contact':
         tpl, c = 'contact.html', m.CONTACT; trail = [(None, ui['contact'])]
     elif key.startswith('legal:'):
@@ -120,7 +162,10 @@ def render(lang, key):
     elif key == '404':
         tpl, c = '404.html', m.NOTFOUND
     if trail: jsonld.append(crumbs_ld(lang, trail))
-    title, desc = m.META.get(key, (None, None)) if key != '404' else (m.NOTFOUND['title'], m.NOTFOUND['text'])
+    if key.startswith('article:'):
+        title, desc = c['meta_title'], c['meta_desc']
+    else:
+        title, desc = m.META.get(key, (None, None)) if key != '404' else (m.NOTFOUND['title'], m.NOTFOUND['text'])
     ctx.update(c=c, meta={'title': title, 'desc': desc}, jsonld=[ld(j) for j in jsonld],
                canonical=DOMAIN + '/' + cur,
                alternates=[{'lang': l, 'href': DOMAIN + '/' + path(l, key)} for l in LANGS] if key != '404' else [],

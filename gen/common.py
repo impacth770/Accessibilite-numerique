@@ -1,3 +1,5 @@
+import json as _json, os as _os
+
 LANGS = ['fr', 'nl', 'de', 'en']
 DOMAIN = 'https://accessibilitenumerique.eu'
 SVC = ['audit-rgaa', 'audit-raam', 'audit-conformite', 'recette', 'test-utilisateur',
@@ -32,9 +34,27 @@ SLUGS = {
 }
 
 
+# Articles du blog : un fichier JSON par article et par langue, dans gen/articles/<id>.<lang>.json
+ARTICLES = ['guide', 'eaa', 'france', 'declaration', 'belgique', 'luxembourg', 'suisse', 'normes']
+_ART_DIR = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'articles')
+
+def _load_articles():
+    out = {l: {} for l in LANGS}
+    for a in ARTICLES:
+        for l in LANGS:
+            f = _os.path.join(_ART_DIR, '%s.%s.json' % (a, l))
+            if _os.path.exists(f):
+                out[l][a] = _json.load(open(f, encoding='utf-8'))
+    return out
+
+ART = _load_articles()
+# Seuls les articles disponibles dans les 4 langues sont publiés
+ART_LIVE = [a for a in ARTICLES if all(a in ART[l] for l in LANGS)]
+
+
 def keys():
     k = ['home', 'services'] + ['svc:' + s for s in SVC] + ['standards'] + ['country:' + c for c in COUNTRIES]
-    k += ['sector:' + s for s in SECTORS] + ['firm', 'resources', 'article:eaa', 'contact'] + ['legal:' + l for l in LEGAL]
+    k += ['sector:' + s for s in SECTORS] + ['firm', 'resources'] + ['article:' + a for a in ART_LIVE] + ['contact'] + ['legal:' + l for l in LEGAL]
     return k
 
 
@@ -52,8 +72,8 @@ def path(lang, key):
         p = S['standards'] + '/' + S['country'][key[8:]] + '/'
     elif key.startswith('sector:'):
         p = S['sectors'] + '/' + S['sector'][key[7:]] + '/'
-    elif key == 'article:eaa':
-        p = S['resources'] + '/european-accessibility-act/'
+    elif key.startswith('article:'):
+        p = S['resources'] + '/' + ART[lang][key[8:]]['slug'] + '/'
     elif key.startswith('legal:'):
         p = S['legal'][key[6:]] + '/'
     elif key == '404':
