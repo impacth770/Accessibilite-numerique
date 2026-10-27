@@ -1,5 +1,5 @@
 UI = {
-    'og_locale': 'fr_FR', 'skip': 'Aller au contenu', 'home': 'Accueil', 'logo_label': "Accessibilité numérique, retour à l'accueil",
+    'og_locale': 'fr_FR', 'skip': 'Aller au contenu', 'home': 'Accueil', 'logo_label': "Accessibilité Numérique.eu, retour à l'accueil",
     'nav_label': 'Navigation principale', 'crumb_label': "Fil d'Ariane", 'services': 'Prestations', 'standards': 'Référentiels',
     'firm': 'Le cabinet', 'about': 'Qui sommes-nous', 'resources': 'Ressources', 'contact': 'Contact', 'cta': 'Prendre rendez-vous', 'menu': 'Menu',
     'lang_label': 'Choisir la langue (français)', 'all_services': 'Toutes nos prestations et notre méthode',

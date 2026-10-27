@@ -1,5 +1,5 @@
 UI = {
-    'og_locale': 'en_GB', 'skip': 'Skip to content', 'home': 'Home', 'logo_label': 'Accessibilité numérique, back to home',
+    'og_locale': 'en_GB', 'skip': 'Skip to content', 'home': 'Home', 'logo_label': 'Accessibilité Numérique.eu, back to home',
     'nav_label': 'Main navigation', 'crumb_label': 'Breadcrumb', 'services': 'Services', 'standards': 'Standards',
     'firm': 'The firm', 'about': 'About us', 'resources': 'Resources', 'contact': 'Contact', 'cta': 'Book a meeting', 'menu': 'Menu',
     'lang_label': 'Choose language (English)', 'all_services': 'All our services and our method',

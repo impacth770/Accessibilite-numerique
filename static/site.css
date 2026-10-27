@@ -331,3 +331,5 @@ a.slide:hover{padding-left:12px;color:var(--ink)}
 .legal h3{margin:22px 0 8px;font-size:18px;font-weight:600;letter-spacing:-.015em;line-height:1.35}
 .legal ul.plist{display:block;list-style:disc;padding-left:22px;margin:0 0 14px}
 .legal ul.plist li{margin:0 0 6px;color:var(--ink2)}
+.logo i{font-style:normal;font-weight:500;color:var(--acc)}
+.ft .logo i{color:#6FCDB0}

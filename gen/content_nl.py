@@ -1,5 +1,5 @@
 UI = {
-    'og_locale': 'nl_BE', 'skip': 'Naar de inhoud', 'home': 'Home', 'logo_label': 'Accessibilité numérique, terug naar de startpagina',
+    'og_locale': 'nl_BE', 'skip': 'Naar de inhoud', 'home': 'Home', 'logo_label': 'Accessibilité Numérique.eu, terug naar de startpagina',
     'nav_label': 'Hoofdnavigatie', 'crumb_label': 'Kruimelpad', 'services': 'Diensten', 'standards': 'Normen',
     'firm': 'Over ons', 'about': 'Wie zijn we', 'resources': 'Kennisbank', 'contact': 'Contact', 'cta': 'Afspraak maken', 'menu': 'Menu',
     'lang_label': 'Taal kiezen (Nederlands)', 'all_services': 'Al onze diensten en onze methode',
