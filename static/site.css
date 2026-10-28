@@ -333,3 +333,8 @@ a.slide:hover{padding-left:12px;color:var(--ink)}
 .legal ul.plist li{margin:0 0 6px;color:var(--ink2)}
 .logo i{font-style:normal;font-weight:500;color:var(--acc)}
 .ft .logo i{color:#6FCDB0}
+.hero-txt{max-width:560px}
+.hero-txt>p{font-size:19px;line-height:1.6;color:var(--ink2);margin:0}
+.hero-aff{list-style:none;margin:28px 0 0;padding:0;display:flex;gap:10px}
+.hero-aff li{width:112px;height:52px;border-radius:12px;background:var(--bg2);display:flex;align-items:center;justify-content:center}
+.hero-aff img{filter:grayscale(1);mix-blend-mode:multiply}

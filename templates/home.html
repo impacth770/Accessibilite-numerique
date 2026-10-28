@@ -4,7 +4,8 @@
 <p class="chip">{{ c.chip }}</p>
 <h1 id="h1" class="d0">{{ c.h1a }} <span class="grey">{{ c.h1b }}</span></h1>
 <div class="hero-row">
-<p>{{ c.intro }}</p>
+<div class="hero-txt"><p>{{ c.intro }}</p>
+<ul class="hero-aff"><li><img src="{{ asset('logos/iaap.webp') }}" alt="{{ ui.iaap }}" width="84" height="37"></li><li><img src="{{ asset('logos/w3c.svg') }}" alt="{{ ui.w3c }}" width="40" height="40"></li></ul></div>
 <div class="btns"><a class="btn" href="{{ u('contact') }}">{{ ui.cta }} {{ m.arrow('#FFFFFF') }}</a><a class="btn ghost" href="{{ u('services') }}">{{ c.cta2 }}</a></div>
 </div>
 <div class="stage">
