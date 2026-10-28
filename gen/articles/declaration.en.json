@@ -15,277 +15,853 @@
  "date": "2026-10-27",
  "lead": "An accessibility statement is the document in which a French public body, or a large company, certifies the actual level of accessibility of each of its websites, apps and software packages, on the basis of a genuine audit. Many are published, but few survive an inspection: an inflated rate, no audit at all, renamed sections, an expired date. This guide takes each requirement of RGAA 4.1.2 from the source, explains how the compliance rate is calculated, lists the errors identified by Arcom, the French regulator, and provides an annotated accessibility statement template with the mandatory French wording and its English translation.",
  "body": [
-  ["h2", "invalid-statements", "Why so many accessibility statements fail to meet the obligation"],
-  ["p", "An accessibility statement is not a declaration of good intentions. It is a standardised document, whose format is imposed by the framework, which reports on an actual assessment of a service’s compliance with the RGAA (Référentiel général d’amélioration de l’accessibilité, France’s General Accessibility Improvement Framework) and which commits the organisation that publishes it. An “Accessibility” page that sets out a general commitment, with no compliance rate, no audit date and no list of non-accessible content, does not meet the obligation, however carefully it is written."],
-  ["p", "On 24 June 2026, Arcom (Autorité de régulation de la communication audiovisuelle et numérique, the French regulator for audiovisual and digital communication) served formal notice on the Ministry of Public Action and Accounts concerning several services on impots.gouv.fr, the French tax administration’s website ([[https://www.arcom.fr/en/find-out-more/legal-area/decisions/decision-24-june-2026-giving-formal-notice-ministry-public-action-and-accounts|Arcom decision of 24 June 2026, published on 6 July 2026]]). The failings it found in the statements are typical. One, drawn up on 16 January 2023, had not been updated within three years and claimed full compliance while itself reporting a compliance rate of 42.11%. Another was not based on any audit. Two did not follow the mandatory format, with sections moved or renamed. Finally, the published action plan covered 2024 rather than the current year."],
-  ["p", "None of these errors is exceptional. They appear on the websites of local authorities, public institutions and large companies, most often because the statement was written once, from an example found online, and then forgotten while the site evolved. International groups face an additional pitfall: a statement adapted from a group-wide template written for another country will rarely follow the French format, which prescribes its own headings and their order. The sections below take each requirement from the official documentation published by DINUM (Direction interministérielle du numérique, the French government’s interministerial digital directorate), then provide an annotated template and a list of pitfalls to avoid."],
-
-  ["h2", "legal-basis", "RGAA accessibility statement: the legal basis and the texts that set its content"],
-  ["h3", "Article 47 of the law of 11 February 2005"],
-  ["p", "The obligation stems from article 47 of Law No. 2005-102 of 11 February 2005 on equal rights and opportunities, participation and citizenship of persons with disabilities (loi pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées). This article requires online public communication services to be accessible (websites, intranets, extranets, mobile apps, software packages and digital street furniture), and it adds the transparency obligations that go with that requirement: the accessibility statement (déclaration d’accessibilité), the compliance notice on the home page, the multi-year plan and annual action plans, and a mechanism allowing users to report a defect."],
-  ["h3", "The organisations concerned"],
-  ["p", "The [[https://accessibilite.numerique.gouv.fr/obligations/champ-application/|summary of the scope published by DINUM (in French)]] distinguishes four categories of organisation:"],
-  ["ul", [
-   "legal persons governed by public law: the State, local and regional authorities, public institutions;",
-   "legal persons governed by private law that are entrusted with a public service mission, or that were set up to meet needs in the general interest that are not industrial or commercial in nature, where they meet conditions of public funding or control;",
-   "private-law bodies set up by the organisations above for the same purposes;",
-   "companies whose turnover reaches €250 million, a threshold assessed entity by entity on the average annual turnover generated in France over the last three closed financial years."
-  ]],
-  ["p", "A company below this threshold is not required to publish a statement within the meaning of article 47. It may, however, fall within the scope of the European Accessibility Act, transposed into the French Consumer Code (code de la consommation), which imposes other information obligations and is enforced by a different authority, the DGCCRF (Direction générale de la concurrence, de la consommation et de la répression des fraudes, the government directorate in charge of consumer protection). We cover that side in our article on [[article:eaa|the European Accessibility Act]] and on the page [[country:france|digital accessibility in France]]. Because the threshold is assessed entity by entity, a group with several French subsidiaries needs to check each one separately: one may be bound by article 47 while another is not."],
-  ["h3", "The decree of 24 July 2019 and the RGAA"],
-  ["p", "Decree No. 2019-768 of 24 July 2019 sets out, in its article 6, the minimum content of the statement: the identification of the person responsible and of the service, with a link to the multi-year plan; the status of the service with regard to the accessibility obligation, the elements of the assessment and the list of non-accessible content, with the reasons and the alternatives offered; the means available to users to report a defect; and the means of redress. The same article provides for the compliance notice to be displayed on the home page."],
-  ["p", "The precise format is a matter for the RGAA, approved by the order (arrêté) of 20 September 2019 and now in version 4.1.2, with 106 criteria. Its section on obligations states that the statement must follow the format it defines: this is the basis on which Arcom found failings where sections had been renamed or moved. The [[https://accessibilite.numerique.gouv.fr/obligations/declaration-accessibilite/|official page on the accessibility statement (in French)]] and the [[https://accessibilite.numerique.gouv.fr/ressources/modele-de-declaration/|model statement published by DINUM (in French)]] are the two references to keep at hand while drafting."],
-  ["p", "The 2019 decree was amended by Decree No. 2026-816 of 24 August 2026, published in the Journal officiel (the French official gazette) on 26 August 2026 and in force from the following day. According to its explanatory note, it aligns the list of exempt content with the dates and deadlines of Directive (EU) 2019/882, which was transposed by Law No. 2023-171 of 9 March 2023. If you rely on an exemption, check its wording in the consolidated version of the decree, not in a statement drafted before that date."],
-  ["h3", "Arcom enforcement and penalties"],
-  ["p", "Since Ordinance No. 2023-859 of 6 September 2023, which created an article 47-1 in the 2005 law, enforcement lies with Arcom. As Arcom’s [[https://www.arcom.fr/en/we-know/our-missions/ensuring-relationship-of-plurality-and-social-cohesion/the-rights-of-handicapped-people/accessibility-of-digital-sites-and-services|presentation of this mission]] explains, the authority may serve formal notice on the organisation responsible for the service, then impose financial penalties of up to €50,000 for failing to meet the accessibility requirements and up to €25,000 for the other obligations: the home page notice, the statement, the multi-year plan and action plan, and the reporting mechanism. The same page specifies that, for private companies covered because of the turnover threshold, Arcom does not check RGAA compliance as such, but only these display and documentation obligations: for those companies, the statement is the main point of exposure. In the decision on impots.gouv.fr, Arcom allowed two months to correct the statements and the action plan, and nine months for the accessibility defects themselves."],
-
-  ["h2", "compliance-statuses", "The three compliance statuses and their exact thresholds"],
-  ["p", "The statement, like the notice displayed on the home page, uses one of the three statuses defined by the RGAA according to the percentage of criteria met. There is no fourth status. Wordings such as “en cours de mise en conformité” (compliance in progress), “conforme à 80 %” (80% compliant) or simply “accessible” do not correspond to any regulatory category."],
-  ["table", {
-   "caption": "The three RGAA compliance statuses",
-   "head": ["Status", "Condition", "Home page notice (official French wording)"],
-   "rows": [
-    ["Fully compliant (totalement conforme)", "All applicable RGAA criteria are met: a rate of 100%", "“Accessibilité : totalement conforme” (Accessibility: fully compliant)"],
-    ["Partially compliant (partiellement conforme)", "At least 50% of the applicable criteria are met", "“Accessibilité : partiellement conforme” (Accessibility: partially compliant)"],
-    ["Non-compliant (non conforme)", "Fewer than 50% of the criteria are met, or there is no valid assessment result", "“Accessibilité : non conforme” (Accessibility: non-compliant)"]
+  [
+   "h2",
+   "invalid-statements",
+   "Why so many accessibility statements fail to meet the obligation"
+  ],
+  [
+   "p",
+   "An accessibility statement is not a declaration of good intentions. It is a standardised document, whose format is imposed by the framework, which reports on an actual assessment of a service’s compliance with the RGAA (Référentiel général d’amélioration de l’accessibilité, France’s General Accessibility Improvement Framework) and which commits the organisation that publishes it. An “Accessibility” page that sets out a general commitment, with no compliance rate, no audit date and no list of non-accessible content, does not meet the obligation, however carefully it is written."
+  ],
+  [
+   "p",
+   "On 24 June 2026, Arcom (Autorité de régulation de la communication audiovisuelle et numérique, the French regulator for audiovisual and digital communication) served formal notice on the Ministry of Public Action and Accounts concerning several services on impots.gouv.fr, the French tax administration’s website ([[https://www.arcom.fr/en/find-out-more/legal-area/decisions/decision-24-june-2026-giving-formal-notice-ministry-public-action-and-accounts|Arcom decision of 24 June 2026, published on 6 July 2026]]). The failings it found in the statements are typical. One, drawn up on 16 January 2023, had not been updated within three years and claimed full compliance while itself reporting a compliance rate of 42.11%. Another was not based on any audit. Two did not follow the mandatory format, with sections moved or renamed. Finally, the published action plan covered 2024 rather than the current year."
+  ],
+  [
+   "p",
+   "None of these errors is exceptional. They appear on the websites of local authorities, public institutions and large companies, most often because the statement was written once, from an example found online, and then forgotten while the site evolved. International groups face an additional pitfall: a statement adapted from a group-wide template written for another country will rarely follow the French format, which prescribes its own headings and their order. The sections below take each requirement from the official documentation published by DINUM (Direction interministérielle du numérique, the French government’s interministerial digital directorate), then provide an annotated template and a list of pitfalls to avoid."
+  ],
+  [
+   "h2",
+   "legal-basis",
+   "RGAA accessibility statement: the legal basis and the texts that set its content"
+  ],
+  [
+   "h3",
+   "Article 47 of the law of 11 February 2005"
+  ],
+  [
+   "p",
+   "The obligation stems from article 47 of Law No. 2005-102 of 11 February 2005 on equal rights and opportunities, participation and citizenship of persons with disabilities (loi pour l’égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées). This article requires online public communication services to be accessible (websites, intranets, extranets, mobile apps, software packages and digital street furniture), and it adds the transparency obligations that go with that requirement: the accessibility statement (déclaration d’accessibilité), the compliance notice on the home page, the multi-year plan and annual action plans, and a mechanism allowing users to report a defect."
+  ],
+  [
+   "h3",
+   "The organisations concerned"
+  ],
+  [
+   "p",
+   "The [[https://accessibilite.numerique.gouv.fr/obligations/champ-application/|summary of the scope published by DINUM (in French)]] distinguishes four categories of organisation:"
+  ],
+  [
+   "ul",
+   [
+    "legal persons governed by public law: the State, local and regional authorities, public institutions;",
+    "legal persons governed by private law that are entrusted with a public service mission, or that were set up to meet needs in the general interest that are not industrial or commercial in nature, where they meet conditions of public funding or control;",
+    "private-law bodies set up by the organisations above for the same purposes;",
+    "companies whose turnover reaches €250 million, a threshold assessed entity by entity on the average annual turnover generated in France over the last three closed financial years."
    ]
-  }],
-  ["p", "Two practical consequences follow. “Fully compliant” allows no exceptions: a single criterion that is not met on a single page of the sample is enough to move the service into partial compliance. And the absence of a valid audit leaves only one option: “non-compliant”. A service that has never been audited, or whose statement has passed its period of validity, cannot declare itself partially compliant on the grounds that it looks fine."],
-  ["p", "A false status is more serious than an unfavourable one. Displaying “non conforme” on a service that is genuinely non-compliant meets the transparency obligation, even though the accessibility defects remain a failing to be corrected. Displaying “totalement conforme” on a service whose own statement reports a rate of 42% misleads users and is in itself a failing, as Arcom found."],
-
-  ["h2", "rate-and-sample", "Calculating the compliance rate and choosing the page sample"],
-  ["p", "The rate published in the statement is neither an impression nor the score of an automated tool. It results from the method described on the official page on [[https://accessibilite.numerique.gouv.fr/obligations/evaluation-conformite/|compliance assessment (in French)]]: an audit carried out by the organisation itself (self-assessment) or by a third party, on a representative sample of pages, criterion by criterion and test by test."],
-  ["h3", "The mandatory pages in the sample"],
-  ["p", "The sample first includes the following pages, where they exist:"],
-  ["ul", [
-   "the home page;",
-   "the contact page;",
-   "the legal notice (mentions légales);",
-   "the Accessibility page, which contains the statement;",
-   "the site map;",
-   "the help page;",
-   "the login page."
-  ]],
-  ["p", "To these are added at least one relevant page for each type of service offered, search included; at least one relevant downloadable document; all the pages of a process (a multi-step procedure, a payment funnel, an appointment booking); and pages with different kinds of content: article, product or information sheet, form, data table, map, video. Finally, randomly selected pages must make up at least 10% of the pages in the sample. For a mobile app, each screen is treated as a page."],
-  ["p", "For a municipal website, a realistic sample might bring together the home page, contact page, legal notice, Accessibility page, site map, a search results page, a news item, the page describing an administrative procedure, the four steps of a school canteen registration with online payment, a council resolution in PDF, the events calendar, a page with an interactive map and two pages drawn at random. For a company’s customer area, the equivalent would be the login page, the account dashboard, every step of a subscription or order, the downloadable invoice and the help centre. The classic trap is to leave out the steps of a process because they require a test account. Yet these are the pages that matter most to users, and a criterion is only met for a process if it is met on every one of its steps."],
-  ["h3", "The official calculation method"],
-  ["ol", [
-   ["Assess each criterion on each page.", "For each page in the sample, each of the 106 criteria is recorded as met, not met or not applicable. As soon as a single element on the page fails the tests for a criterion, that criterion cannot be met for that page."],
-   ["Consolidate at service level.", "A criterion is met for the service if it is met on every page of the sample where it applies. It is applicable as soon as it applies on a single page."],
-   ["Calculate the overall rate.", "The compliance rate is obtained by dividing the number of criteria met by the number of applicable criteria. This rate, and this rate alone, determines the compliance status."],
-   ["Optionally, calculate the average rate.", "This is the average of the compliance rates of the individual pages. The official model presents it as optional information, which supplements the overall rate without ever replacing it."]
-  ]],
-  ["p", "Take a sample of fifteen pages in which 54 criteria apply at least once. Of these, 41 are met wherever they apply and 13 fail on at least one page. The compliance rate is 41 divided by 54, or 75.93%: the service is partially compliant. If one of the 13 failing criteria is a problem only on the payment page, it still counts as not met for the service as a whole. The average rate per page will generally be higher, because an isolated error weighs on only one page: that is why presenting it on its own gives a flattering and inaccurate picture."],
-  ["p", "Only three grounds allow a criterion to be declared not applicable: the content or feature concerned does not exist; the content is exempt; or the content is covered by an exemption for disproportionate burden and is accompanied by an accessible digital alternative. Without an alternative, the criterion remains applicable and counts in the calculation. Classifying criteria as “not applicable” to improve the rate is a common error, and an easy one to spot during an inspection."],
-
-  ["h2", "mandatory-sections", "The mandatory sections of an accessibility statement, one by one"],
-  ["p", "The official model sets the order and the headings of the sections. Arcom made the point in its decision of June 2026: the sections “Retour d’information et contact” (Feedback and contact) and “Voies de recours” (Means of redress) placed before the statement, the heading “Contenus inaccessibles” used instead of “Contenus non accessibles” (both translate as non-accessible content), a missing non-compliance subsection and a subsection merged into the body text were enough to make the format non-compliant. On a French-language site, use the headings word for word, in the order of the model. If you also publish a translated version for users who do not read French, keep exactly the same structure and order."],
-  ["h3", "Header: commitment, strategy and scope"],
-  ["p", "The statement opens with the organisation’s commitment to make its services accessible, in accordance with article 47 of the law of 11 February 2005. Next come the links to the multi-year plan and to the action plan for the current year, followed by the scope sentence, “Cette déclaration d’accessibilité s’applique à” (This accessibility statement applies to), with the name and exact address of the service. For example: “Cette déclaration d’accessibilité s’applique au site www.ville-exemple.fr.” If the municipality’s family portal is a separate service, hosted elsewhere and audited separately, it must have its own statement. The same reasoning applies to a company’s public website and its customer area when they are separate applications."],
-  ["h3", "Compliance status (État de conformité)"],
-  ["p", "One sentence, one status, one version of the framework: “Le site www.ville-exemple.fr est partiellement conforme avec le référentiel général d’amélioration de l’accessibilité (RGAA), version 4.1.2, en raison des non-conformités et des dérogations énumérées ci-dessous” (The website www.ville-exemple.fr is partially compliant with the General Accessibility Improvement Framework (RGAA), version 4.1.2, owing to the non-compliances and exemptions listed below). A statement that refers to “the RGAA” without a version number, or to a version that has been superseded, casts doubt on the method actually applied."],
-  ["h3", "Test results (Résultats des tests)"],
-  ["p", "This section states who carried out the audit and what it measured: “L’audit de conformité réalisé par [nom de l’organisme ou du prestataire] révèle que 75,93 % des critères du RGAA version 4.1.2 sont respectés” (The compliance audit carried out by [name of the organisation or service provider] shows that 75.93% of the criteria of RGAA version 4.1.2 are met). Note that French uses a decimal comma and a space before the percentage sign. The average rate and the link to the audit grid are optional. Publishing the grid nonetheless strengthens the credibility of the document, since it allows a user or an inspector to check the results criterion by criterion."],
-  ["h3", "Non-accessible content (Contenus non accessibles)"],
-  ["p", "This section is divided into three subsections. As a precaution, keep all of them, writing “Aucun contenu concerné” (no content concerned) when a list is empty, rather than deleting the heading."],
-  ["ul", [
-   "“Non-conformités” (non-compliances): the list of defects found, written for users rather than for developers. Write “Le formulaire de paiement de la cantine ne signale pas les erreurs de saisie aux lecteurs d’écran (critère 11.10)” (The canteen payment form does not announce input errors to screen readers, criterion 11.10) rather than “11.10 NC”.",
-   "“Dérogations pour charge disproportionnée” (exemptions for disproportionate burden): each item of content concerned, with its justification and the alternative offered. For example: “Les enregistrements vidéo des conseils municipaux de 2021 à 2024 ne sont pas sous-titrés. Une transcription est transmise sur demande à accessibilite@ville-exemple.fr” (Video recordings of council meetings from 2021 to 2024 are not subtitled. A transcript is sent on request to accessibilite@ville-exemple.fr).",
-   "“Contenus non soumis à l’obligation d’accessibilité” (content not subject to the accessibility obligation): content exempted by the decree, for example an interactive map whose essential information (address, opening hours, access) is given as text on the same page, or an embedded social media feed that the organisation does not fund, develop or control."
-  ]],
-  ["h3", "Preparation of this statement (Établissement de cette déclaration d’accessibilité)"],
-  ["p", "This section gives the date on which the statement was drawn up and, where applicable, the date it was updated. It then contains four subsections: the technologies used to build the site (for example HTML5, CSS, JavaScript); the test environment, that is the combinations of browsers and assistive technologies used (NVDA with Firefox, VoiceOver with Safari on iOS, TalkBack with Chrome on Android); the tools used to assess accessibility (contrast analyser, code inspector, checking extensions); and finally the list of pages that were checked, with their addresses. These dates allow anyone to verify that the statement is still valid."],
-  ["h3", "Feedback and contact (Retour d’information et contact)"],
-  ["p", "This section explains how to report an accessibility defect or obtain content in another form: an online form, an email address, the contact details of the department responsible. Its requirements are set out in detail further on."],
-  ["h3", "Means of redress (Voies de recours)"],
-  ["p", "The final section informs users that they may refer the matter to the Défenseur des droits (Defender of Rights), France’s independent authority for the protection of rights, if they have not received a satisfactory answer after reporting a defect, and explains how to do so."],
-  ["table", {
-   "caption": "The sections of an RGAA accessibility statement",
-   "head": ["Section (heading in the model)", "Expected content", "Common error"],
-   "rows": [
-    ["Header (commitment and scope)", "Commitment under article 47, links to the multi-year plan and the plan for the current year, address of the service covered", "No scope, or “all our sites” without a list"],
-    ["État de conformité (compliance status)", "One of the three statuses, name of the service, RGAA version", "“Totalement conforme” with no audit or with a rate below 100%"],
-    ["Résultats des tests (test results)", "Author of the audit, overall rate of criteria met, optional average rate", "Average rate presented as the overall rate, automated tool score"],
-    ["Contenus non accessibles: Non-conformités (non-compliances)", "List of defects, understandable by users", "Subsection deleted, or a list of criterion numbers"],
-    ["Contenus non accessibles: Dérogations pour charge disproportionnée (disproportionate burden)", "Content concerned, justification, accessible alternative", "A general exemption for the whole site"],
-    ["Contenus non accessibles: Contenus non soumis à l’obligation d’accessibilité (exempt content)", "Content exempted by the decree, with its date where relevant", "A third-party tool paid for by the organisation presented as exempt"],
-    ["Établissement de cette déclaration d’accessibilité (preparation of the statement)", "Dates, technologies, test environment, tools, pages checked", "No date, missing list of pages"],
-    ["Retour d’information et contact (feedback and contact)", "Accessible form or email address, contact details", "Form protected by an inaccessible captcha"],
-    ["Voies de recours (means of redress)", "Referral to the Défenseur des droits: online form, local delegate, free post", "Section missing or placed before the statement"]
+  ],
+  [
+   "p",
+   "A company below this threshold is not required to publish a statement within the meaning of article 47. It may, however, fall within the scope of the European Accessibility Act, transposed into the French Consumer Code (code de la consommation), which imposes other information obligations and is enforced by a different authority, the DGCCRF (Direction générale de la concurrence, de la consommation et de la répression des fraudes, the government directorate in charge of consumer protection). We cover that side in our article on [[article:eaa|the European Accessibility Act]] and on the page [[country:france|digital accessibility in France]]. Because the threshold is assessed entity by entity, a group with several French subsidiaries needs to check each one separately: one may be bound by article 47 while another is not."
+  ],
+  [
+   "h3",
+   "The decree of 24 July 2019 and the RGAA"
+  ],
+  [
+   "p",
+   "Decree No. 2019-768 of 24 July 2019 sets out, in its article 6, the minimum content of the statement: the identification of the person responsible and of the service, with a link to the multi-year plan; the status of the service with regard to the accessibility obligation, the elements of the assessment and the list of non-accessible content, with the reasons and the alternatives offered; the means available to users to report a defect; and the means of redress. The same article provides for the compliance notice to be displayed on the home page."
+  ],
+  [
+   "p",
+   "The precise format is a matter for the RGAA, approved by the order (arrêté) of 20 September 2019 and now in version 4.1.2, with 106 criteria. Its section on obligations states that the statement must follow the format it defines: this is the basis on which Arcom found failings where sections had been renamed or moved. The [[https://accessibilite.numerique.gouv.fr/obligations/declaration-accessibilite/|official page on the accessibility statement (in French)]] and the [[https://accessibilite.numerique.gouv.fr/ressources/modele-de-declaration/|model statement published by DINUM (in French)]] are the two references to keep at hand while drafting."
+  ],
+  [
+   "p",
+   "The 2019 decree was amended by Decree No. 2026-816 of 24 August 2026, published in the Journal officiel (the French official gazette) on 26 August 2026 and in force from the following day. According to its explanatory note, it aligns the list of exempt content with the dates and deadlines of Directive (EU) 2019/882, which was transposed by Law No. 2023-171 of 9 March 2023. If you rely on an exemption, check its wording in the consolidated version of the decree, not in a statement drafted before that date."
+  ],
+  [
+   "h3",
+   "Arcom enforcement and penalties"
+  ],
+  [
+   "p",
+   "Since Ordinance No. 2023-859 of 6 September 2023, which created an article 47-1 in the 2005 law, enforcement lies with Arcom. As Arcom’s [[https://www.arcom.fr/en/we-know/our-missions/ensuring-relationship-of-plurality-and-social-cohesion/the-rights-of-handicapped-people/accessibility-of-digital-sites-and-services|presentation of this mission]] explains, the authority may serve formal notice on the organisation responsible for the service, then impose financial penalties of up to €50,000 for failing to meet the accessibility requirements and up to €25,000 for the other obligations: the home page notice, the statement, the multi-year plan and action plan, and the reporting mechanism. The same page specifies that, for private companies covered because of the turnover threshold, Arcom does not check RGAA compliance as such, but only these display and documentation obligations: for those companies, the statement is the main point of exposure. In the decision on impots.gouv.fr, Arcom allowed two months to correct the statements and the action plan, and nine months for the accessibility defects themselves."
+  ],
+  [
+   "h2",
+   "compliance-statuses",
+   "The three compliance statuses and their exact thresholds"
+  ],
+  [
+   "p",
+   "The statement, like the notice displayed on the home page, uses one of the three statuses defined by the RGAA according to the percentage of criteria met. There is no fourth status. Wordings such as “en cours de mise en conformité” (compliance in progress), “conforme à 80 %” (80% compliant) or simply “accessible” do not correspond to any regulatory category."
+  ],
+  [
+   "table",
+   {
+    "caption": "The three RGAA compliance statuses",
+    "head": [
+     "Status",
+     "Condition",
+     "Home page notice (official French wording)"
+    ],
+    "rows": [
+     [
+      "Fully compliant (totalement conforme)",
+      "All applicable RGAA criteria are met: a rate of 100%",
+      "“Accessibilité : totalement conforme” (Accessibility: fully compliant)"
+     ],
+     [
+      "Partially compliant (partiellement conforme)",
+      "At least 50% of the applicable criteria are met",
+      "“Accessibilité : partiellement conforme” (Accessibility: partially compliant)"
+     ],
+     [
+      "Non-compliant (non conforme)",
+      "Fewer than 50% of the criteria are met, or there is no valid assessment result",
+      "“Accessibilité : non conforme” (Accessibility: non-compliant)"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Two practical consequences follow. “Fully compliant” allows no exceptions: a single criterion that is not met on a single page of the sample is enough to move the service into partial compliance. And the absence of a valid audit leaves only one option: “non-compliant”. A service that has never been audited, or whose statement has passed its period of validity, cannot declare itself partially compliant on the grounds that it looks fine."
+  ],
+  [
+   "p",
+   "A false status is more serious than an unfavourable one. Displaying “non conforme” on a service that is genuinely non-compliant meets the transparency obligation, even though the accessibility defects remain a failing to be corrected. Displaying “totalement conforme” on a service whose own statement reports a rate of 42% misleads users and is in itself a failing, as Arcom found."
+  ],
+  [
+   "h2",
+   "rate-and-sample",
+   "Calculating the compliance rate and choosing the page sample"
+  ],
+  [
+   "p",
+   "The rate published in the statement is neither an impression nor the score of an automated tool. It results from the method described on the official page on [[https://accessibilite.numerique.gouv.fr/obligations/evaluation-conformite/|compliance assessment (in French)]]: an audit carried out by the organisation itself (self-assessment) or by a third party, on a representative sample of pages, criterion by criterion and test by test."
+  ],
+  [
+   "h3",
+   "The mandatory pages in the sample"
+  ],
+  [
+   "p",
+   "The sample first includes the following pages, where they exist:"
+  ],
+  [
+   "ul",
+   [
+    "the home page;",
+    "the contact page;",
+    "the legal notice (mentions légales);",
+    "the Accessibility page, which contains the statement;",
+    "the site map;",
+    "the help page;",
+    "the login page."
    ]
-  }],
-
-  ["h2", "exemptions", "Disproportionate burden and exempt content: what is allowed, and the limits"],
-  ["h3", "The exemption for disproportionate burden"],
-  ["p", "An exemption for disproportionate burden is invoked case by case, for a specific item of content or feature, never for an entire site. It is assessed in the light of the size, resources and nature of the organisation, and of a comparison between the cost of making the content accessible and the expected benefit for people with disabilities, taking into account how often and for how long the service is used and how important it is. Resources are understood broadly (budget, fees, public grants, private donations, other income), and costs include investment, running costs, staff time and the skills required."],
-  ["p", "The RGAA expressly rules out the most common justifications: “L’absence de priorité, le manque de temps ou de connaissances ne constituent pas des circonstances légitimes” (lack of priority, time or knowledge does not constitute legitimate circumstances). A municipality therefore cannot claim an exemption for its civil status certificate request form on the grounds that its supplier has not been trained. It can, on the other hand, justify an exemption for a hundred or so hours of rarely viewed video archives, if the cost of subtitling is out of proportion to actual use and a transcript is provided on request. Each exemption appears in the statement, with its justification and the alternative offered."],
-  ["h3", "Content not subject to the obligation"],
-  ["p", "The 2019 decree lists the exempt content. As presented by DINUM, the list includes:"],
-  ["ul", [
-   "office files published before 23 September 2018, unless they are needed for an ongoing administrative procedure;",
-   "pre-recorded audio and video content published before 23 September 2020;",
-   "live audio and video content;",
-   "online maps and mapping services, provided that essential location or route information is given in an accessible digital form;",
-   "third-party content that the organisation neither funds, develops nor controls;",
-   "reproductions of items in heritage collections that cannot be made fully accessible;",
-   "intranet and extranet content published before 23 September 2019, until those sites are overhauled;",
-   "content that is neither needed for an active administrative procedure nor updated after 23 September 2019, archives included."
-  ]],
-  ["p", "This list was revised by Decree No. 2026-816 of 24 August 2026 to take account of the timetable of the European directive. Check the wording in force before relying on it, and give the date of each item of exempt content in the statement."],
-  ["p", "Three limits come up in almost every audit. An exemption covers an item of content, not the page that hosts it: a page embedding a live video remains subject to every criterion for its navigation, headings and forms. A module bought from a software vendor (appointment booking, payment, recruitment) is not third-party content within the meaning of the decree, since the organisation chose it and pays for it. Finally, an old PDF becomes subject to the obligation again if it is used in an ongoing procedure, such as a grant application form that is still in use."],
-
-  ["h2", "feedback-and-redress", "Feedback, contact and means of redress in the statement"],
-  ["p", "The “Retour d’information et contact” section must offer an accessible way to report a defect and to request information or an alternative. The model suggests a simple wording: “Si vous n’arrivez pas à accéder à un contenu ou à un service, vous pouvez contacter le responsable de [nom du service] pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme” (If you cannot access content or a service, you can contact the person responsible for [name of the service] to be directed to an accessible alternative or to obtain the content in another form). This is followed by a link to an online form, an email address and the postal address of the department."],
-  ["p", "The official documentation also governs how complaints are handled. The organisation provides the possibility of complaining online, sends an acknowledgement of receipt under the conditions of articles R112-3 and R112-5 of the Code of relations between the public and the administration (code des relations entre le public et l’administration), and replies within one week of the request being sent. If the question is complex, the reply states a reasonable time frame for the final answer and explains why. Users identify themselves in accordance with article R112-9-1 of the same code; an incomplete request leads to a request for further details."],
-  ["p", "In practice, the contact channel must be tested like the rest of the site. A form protected by a visual captcha with no alternative, or an inbox that nobody checks, makes the section meaningless. Assign the inbox to the accessibility lead, keep a log of requests and carry the reported defects over into the action plan: this is often the most useful source of corrections. For an international group whose support is run from a shared service centre abroad, make sure that French-language requests reach someone who can answer them within the one-week time frame."],
-  ["p", "The “Voies de recours” section states that users who have not received a satisfactory answer may refer the matter to the Défenseur des droits, free of charge, in three ways: through the institution’s online form, by contacting the Défenseur des droits delegate in their region, or by unstamped letter to Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07. They may also report to Arcom a service covered by article 47; the authority asks users to contact the organisation concerned first."],
-
-  ["h2", "compliance-notice", "The home page notice: “Accessibilité : non conforme”, partially or fully compliant"],
-  ["p", "The home page of each service must display one of the three notices: “Accessibilité : totalement conforme”, “Accessibilité : partiellement conforme” or “Accessibilité : non conforme”. On a French-language site, the notice appears in this official French wording. It may be a link leading to the Accessibility page or directly to the statement. The text only requires it on the home page, but the Accessibility page itself must be reachable directly from the home page and from any page of the service."],
-  ["p", "The safest solution is therefore to place the notice in the footer shared by the whole site, as a link to the Accessibility page: it appears on the home page, as the text requires, and gives access to the statement from every page. The RGAA recommends a standardised address, such as www.sitename.fr/accessibilite, which users and inspectors can find without searching. On a multilingual site, the official texts only describe the French wording; if you add a translated notice on English pages (for example “Accessibility: partially compliant”), keep the French notice on the French home page and make sure both show the same status and lead to the same statement."],
-  ["p", "The Accessibility page contains the statement that follows the model, the multi-year plan or a link to it, and the action plan for the current year or a link to it. For a mobile app, the statement is published on the website of the organisation that developed it or together with the information available at download, and the compliance status is also shown within the app."],
-  ["p", "The most frequent discrepancies are easy to correct: a notice embedded in an image without a text alternative, an invented label (“Accessibilité : en cours”, meaning in progress), a notice that no longer matches the status given in the statement after a new audit, or a footer link that leads to a generic page about the organisation’s commitment rather than to the statement itself."],
-
-  ["h2", "multi-year-plan", "Multi-year accessibility plan and annual action plans"],
-  ["p", "The statement refers to two documents that extend it: the multi-year accessibility plan (schéma pluriannuel de mise en accessibilité), drawn up for a maximum of three years, and the action plan for the current year. According to the official documentation, the multi-year plan sets out the organisation’s digital accessibility policy and includes in particular:"],
-  ["ul", [
-   "the position within the organisation and the responsibilities of the digital accessibility lead;",
-   "the human and financial resources allocated to digital accessibility;",
-   "staff training and awareness-raising;",
-   "how accessibility is built into contract clauses, calls for tenders and quotations;",
-   "the compliance assessments planned for all services;",
-   "the corrective measures planned to deal with non-accessible content, with their timetable;",
-   "the review of the annual action plans."
-  ]],
-  ["p", "The compliance work is scheduled each year in an action plan. The multi-year plan and the plan for the current year are published online, in an accessible format, and the statement links to them. A 2026-2028 multi-year plan is thus accompanied by a 2026 action plan, then by a 2027 plan published at the latest at the start of the following year, together with a review of the previous one. Leaving the plan for a past year online is precisely the failing Arcom found on impots.gouv.fr."],
-  ["p", "Consistency between the documents is what makes the whole credible. Each non-compliance listed in the statement should have a corresponding correction in an action plan, with a deadline. Each exemption for disproportionate burden should be re-examined when the multi-year plan is revised, because the situation that justified it (budget, tool, supplier) changes. For a public body, this work goes hand in hand with public procurement: our page on the [[sector:public|public sector]] explains how to build accessibility into contracts."],
-
-  ["h2", "updating", "When to update an accessibility statement, and which tools to use"],
-  ["p", "The statement is valid from its date of publication. It must be updated in three cases: on the date of a substantial modification or overhaul of the service; three years after its publication; and eighteen months after a new version of the framework is published, for organisations applying the RGAA technical method. Whichever event occurs first triggers the update."],
-  ["p", "That last case is becoming concrete. DINUM has announced the [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|publication of RGAA 5, expected at the end of 2026 (in French)]], which incorporates WCAG 2.2 and adds criteria for mobile apps and office documents. Statements published before its release will remain valid for eighteen months, without exceeding three years from their publication. DINUM specifies that work based on RGAA 4.1.2 should not be suspended or postponed while waiting for the new version. To see how the RGAA relates to WCAG and to the EN 301 549 standard, read our article on [[article:normes|digital accessibility standards]]."],
-  ["p", "The notion of substantial modification is not defined by a list. It clearly covers a visual redesign, a change of CMS, the launch of a new user area or a new payment funnel, and a change of development supplier. A good practice is to reread the statement once a year, when the action plan is published, and to repeat the audit as soon as a change affects a user journey in the sample."],
-  ["p", "On the tools side, DINUM provides Ara, an online service intended for accessibility experts to conduct RGAA audits. Ara does not carry out the audit for you: it structures the entry of results, produces the report and can generate the accessibility statement once the full audit is complete. The RGAA also provides for the statement to be filed through an online service, under arrangements to be set by the ministers responsible for disability and for digital affairs."],
-
-  ["h2", "common-errors", "The errors that make an accessibility statement misleading or invalid"],
-  ["p", "The errors below are those most often found when reviewing existing statements. Some have been expressly identified by Arcom; others follow directly from the RGAA method."],
-  ["ol", [
-   ["Declaring a status without an audit.", "Without an actual assessment, the only possible status is “non conforme”. A statement that displays a favourable status with no rate and no audit is invalid."],
-   ["Overstating the status.", "Claiming full compliance with a rate below 100%, or partial compliance with a rate below 50%. This was the case on impots.gouv.fr: full compliance claimed, alongside a stated rate of 42.11%."],
-   ["Publishing the average rate instead of the overall rate.", "The average rate per page is almost always more favourable. The compliance status is determined solely by the overall rate of criteria met."],
-   ["Using the score of an automated tool.", "Automated tools only test some of the criteria and cannot judge whether a text alternative or a link label is relevant. Their score is not an RGAA compliance rate."],
-   ["Overusing “not applicable”.", "A criterion is only not applicable if the content does not exist, if it is exempt, or if it is covered by an exemption accompanied by an accessible alternative."],
-   ["Changing the order or the headings of the sections.", "Placing the contact section before the statement, or writing “Contenus inaccessibles” instead of “Contenus non accessibles”: Arcom treats this as a non-compliant format."],
-   ["Deleting a subsection.", "The absence of the non-compliance subsection, or listing the technologies used in a free-text paragraph, was identified as a failing."],
-   ["Letting the statement expire.", "Three years after its publication, the statement must be updated. A statement from January 2023 was no longer valid in 2026."],
-   ["Not repeating the audit after a redesign.", "The old site’s statement, kept on the new site, describes a service that no longer exists."],
-   ["Building a convenient sample.", "Leaving out processes, downloadable documents or randomly selected pages to keep only simple pages distorts the result."],
-   ["Covering several services with a single statement.", "Each website, app or software package is assessed separately. A mobile app without its own statement remains in breach, even if the website has one."],
-   ["Invoking a general exemption.", "“Pour des raisons de charge disproportionnée, le site n’est pas accessible” (for reasons of disproportionate burden, the site is not accessible) is worthless. An exemption concerns specific content, is justified and comes with an alternative."],
-   ["Exempting content wrongly.", "Presenting a tool the organisation has bought as third-party content, or a document still used in a procedure as an archive."],
-   ["Offering an unusable contact channel.", "A form protected by an inaccessible captcha, a generic address nobody checks, no reply within the time limit."],
-   ["Omitting or distorting the means of redress.", "The section must mention referral to the Défenseur des droits and how to do it, not simply refer users to customer service."],
-   ["Leaving dead or outdated links.", "A link to a multi-year plan that does not exist, an action plan for a past year, an audit grid that has been deleted."],
-   ["Displaying an inconsistent notice.", "A home page saying “partiellement conforme” and a statement saying “non conforme” contradict each other; the notice must reflect the status in the statement currently in force."],
-   ["Publishing the statement in an inaccessible format.", "A statement in a scanned PDF or as an image defeats its own purpose. It must be published in an accessible format, preferably as HTML on the Accessibility page."]
-  ]],
-  ["note", "Key point", "An accurate “non conforme” statement is worth more than a false “totalement conforme” one: the first meets the transparency obligation, the second misleads users and is in itself a failing."],
-
-  ["h2", "annotated-template", "Annotated accessibility statement template, with the French wording"],
-  ["p", "The template below follows the order and headings of the official RGAA 4.1.2 model. On a French-language site, the statement is written in French: each block therefore gives the French wording to publish, followed by its English translation for your teams. Items in square brackets are to be completed. Each block is followed by a comment explaining what to check before publication. Section headings are to be used exactly as they stand."],
-  ["h3", "Page title: Déclaration d’accessibilité (Accessibility statement)"],
-  ["p", "“[Nom de l’organisme] s’engage à rendre ses sites internet, intranet, extranet, ses applications mobiles et ses progiciels accessibles, conformément à l’article 47 de la loi n° 2005-102 du 11 février 2005.” Translation: [Name of the organisation] undertakes to make its websites, intranet, extranet, mobile apps and software packages accessible, in accordance with article 47 of Law No. 2005-102 of 11 February 2005."],
-  ["p", "“À cette fin, [nom de l’organisme] met en œuvre la stratégie et les actions suivantes :” Translation: To this end, [name of the organisation] is implementing the following strategy and actions:"],
-  ["ul", [
-   "“Schéma pluriannuel de mise en accessibilité [année de début]-[année de fin] : [lien]” (multi-year accessibility plan [start year]-[end year]: [link]);",
-   "“Plan d’actions [année en cours] : [lien]” (action plan [current year]: [link]);",
-   "“Bilan des actions [année précédente] : [lien]” (review of actions [previous year]: [link])."
-  ]],
-  ["p", "“Cette déclaration d’accessibilité s’applique à [nom du service] ([adresse du service]).” Translation: This accessibility statement applies to [name of the service] ([address of the service])."],
-  ["p", "Comment: check that the links work and that the plan covers the current year. The scope must designate a specific service; if the organisation runs several sites, each has its own statement page."],
-  ["h3", "État de conformité (Compliance status)"],
-  ["p", "“[Nom du service] ([adresse du service]) est [totalement / partiellement / non] conforme avec le référentiel général d’amélioration de l’accessibilité (RGAA), version 4.1.2, en raison des non-conformités et des dérogations énumérées ci-dessous.” Translation: [Name of the service] ([address of the service]) is [fully / partially / not] compliant with the General Accessibility Improvement Framework (RGAA), version 4.1.2, owing to the non-compliances and exemptions listed below."],
-  ["p", "Comment: write only one status, derived from the overall rate: 100% for “totalement”, at least 50% for “partiellement”, below 50% or no valid audit for “non”. In the case of full compliance, remove the end of the sentence about non-compliances, but keep any exemptions."],
-  ["h3", "Résultats des tests (Test results)"],
-  ["p", "“L’audit de conformité réalisé par [nom de l’organisme ou du prestataire] révèle que [nn,nn] % des critères du RGAA version 4.1.2 sont respectés.” Translation: The compliance audit carried out by [name of the organisation or service provider] shows that [nn.nn]% of the criteria of RGAA version 4.1.2 are met."],
-  ["p", "Optional: “Le taux moyen de conformité du service s’élève à [nn,nn] %.” (The average compliance rate of the service is [nn.nn]%.) and “La grille d’audit est disponible à l’adresse suivante : [lien].” (The audit grid is available at the following address: [link].)"],
-  ["p", "Comment: the rate is the ratio between criteria met and applicable criteria, calculated across the whole sample. State whether the audit is a self-assessment or was carried out by a third party, and make sure the audit date is consistent with the date on which the statement was drawn up."],
-  ["h3", "Contenus non accessibles (Non-accessible content)"],
-  ["p", "“Les contenus listés ci-dessous ne sont pas accessibles pour les raisons suivantes.” Translation: The content listed below is not accessible for the following reasons."],
-  ["p", "Subsection “Non-conformités” (non-compliances): “[Liste des non-conformités, une par ligne, formulée pour l’usager, avec le numéro du critère entre parenthèses].” Translation: [list of non-compliances, one per line, worded for users, with the criterion number in brackets]. Examples:"],
-  ["ul", [
-   "“La vidéo de présentation du budget ne dispose pas de transcription textuelle (critère 4.1).” (The budget presentation video has no text transcript, criterion 4.1.);",
-   "“Le bouton d’envoi du formulaire de contact n’a pas d’intitulé explicite pour les lecteurs d’écran (critère 11.9).” (The submit button of the contact form has no explicit label for screen readers, criterion 11.9.);",
-   "“Le menu déroulant de choix de l’année n’est pas utilisable au clavier (critère 7.3).” (The year selection drop-down menu cannot be used with a keyboard, criterion 7.3.)"
-  ]],
-  ["p", "Subsection “Dérogations pour charge disproportionnée” (exemptions for disproportionate burden): “[Contenu concerné], [justification], [alternative proposée et moyen de l’obtenir].” Translation: [content concerned], [justification], [alternative offered and how to obtain it]."],
-  ["p", "Subsection “Contenus non soumis à l’obligation d’accessibilité” (content not subject to the accessibility obligation): “[Contenu exempté], [motif d’exemption au regard du décret], [date de publication si l’exemption en dépend].” Translation: [exempt content], [ground for exemption under the decree], [publication date if the exemption depends on it]."],
-  ["p", "Comment: the list of non-compliances must match the audit grid. An exemption without justification or alternative, or an exempt item without a stated ground, does not protect the organisation. If a subsection is empty, say so rather than deleting it."],
-  ["h3", "Établissement de cette déclaration d’accessibilité (Preparation of this statement)"],
-  ["p", "“Cette déclaration a été établie le [jour mois année]. Elle a été mise à jour le [jour mois année].” Translation: This statement was drawn up on [day month year]. It was updated on [day month year]."],
-  ["p", "Subsection “Technologies utilisées pour la réalisation du site” (technologies used to build the site): “[HTML5, CSS, JavaScript, nom du CMS le cas échéant].” (HTML5, CSS, JavaScript, name of the CMS where applicable.)"],
-  ["p", "Subsection “Environnement de test” (test environment): “Les vérifications de restitution des contenus par les technologies d’assistance ont été réalisées avec les combinaisons suivantes : [lecteur d’écran et version, navigateur et version, système d’exploitation].” Translation: The checks on how content is rendered by assistive technologies were carried out with the following combinations: [screen reader and version, browser and version, operating system]."],
-  ["p", "Subsection “Outils pour évaluer l’accessibilité” (tools used to assess accessibility): “[analyseur de contraste, inspecteur de code du navigateur, extensions ou outils utilisés].” (contrast analyser, browser code inspector, extensions or tools used.)"],
-  ["p", "Subsection “Pages du site ayant fait l’objet de la vérification de conformité” (pages of the site checked for compliance):"],
-  ["ul", [
-   "“Accueil : [adresse]” (home page: [address]);",
-   "“Contact : [adresse]” (contact: [address]);",
-   "“Mentions légales : [adresse]” (legal notice: [address]);",
-   "“Accessibilité : [adresse]” (accessibility: [address]);",
-   "“Plan du site : [adresse]” (site map: [address]);",
-   "“[Autres pages de l’échantillon, dont les étapes des processus et les pages tirées au hasard] : [adresses]” (other pages in the sample, including the steps of processes and the randomly selected pages: [addresses])."
-  ]],
-  ["p", "Comment: the date on which the statement was drawn up starts the three-year validity period. Keep these subsections separate: merging them into a paragraph was identified as a format defect."],
-  ["h3", "Retour d’information et contact (Feedback and contact)"],
-  ["p", "“Si vous n’arrivez pas à accéder à un contenu ou à un service, vous pouvez contacter le responsable de [nom du service] pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme.” Translation: If you cannot access content or a service, you can contact the person responsible for [name of the service] to be directed to an accessible alternative or to obtain the content in another form."],
-  ["ul", [
-   "“Envoyer un message : [lien vers le formulaire]” (send a message: [link to the form]);",
-   "“Écrire à : [adresse électronique]” (write to: [email address]);",
-   "“Contacter : [nom du service, adresse postale, téléphone]” (contact: [name of the department, postal address, telephone])."
-  ]],
-  ["p", "Comment: test the form with a screen reader and with the keyboard before publication, and appoint the person responsible for replying within one week."],
-  ["h3", "Voies de recours (Means of redress)"],
-  ["p", "“Si vous constatez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou à une fonctionnalité du site, que vous nous le signalez et que vous ne parvenez pas à obtenir une réponse de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits. Plusieurs moyens sont à votre disposition :” Translation: If you find an accessibility defect that prevents you from accessing content or a feature of the site, you report it to us and you do not manage to obtain a response from us, you are entitled to send your complaint or a request for referral to the Défenseur des droits. Several means are available to you:"],
-  ["ul", [
-   "“Écrire un message au Défenseur des droits : [lien vers le formulaire en ligne]” (write a message to the Défenseur des droits: [link to the online form]);",
-   "“Contacter le délégué du Défenseur des droits dans votre région : [lien vers la carte des délégués]” (contact the Défenseur des droits delegate in your region: [link to the map of delegates]);",
-   "“Envoyer un courrier par la poste, gratuit, ne pas mettre de timbre : Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07” (send a letter by post, free of charge, no stamp needed, to the address given)."
-  ]],
-  ["p", "Comment: this section closes the statement. It must not be moved to the top of the page, nor replaced by a reference to customer service."],
-
-  ["h2", "belgium-luxembourg-switzerland", "Accessibility statements in Belgium, Luxembourg and Switzerland"],
-  ["p", "The French accessibility statement is the national version of a European obligation: Directive (EU) 2016/2102 on the accessibility of the websites and mobile applications of public sector bodies, for which Commission Implementing Decision (EU) 2018/1523 of 11 October 2018 establishes a model accessibility statement. Belgium and Luxembourg rely on this common model; Switzerland, which is outside the European Union, follows a different approach. For a group present in several of these countries, this means that the statements of its entities will not all look alike."],
-  ["h3", "Belgium"],
-  ["p", "At federal level, the obligation derives from the law of 19 July 2018 on the accessibility of the websites and mobile applications of public sector bodies, supplemented by texts specific to each federated entity: the Flemish decree of 7 December 2018, the Brussels ordinance of 4 October 2018, the decree of the German-speaking Community of 15 October 2018, the Walloon decree of 2 May 2019, the decree of the Wallonia-Brussels Federation of 3 May 2019 and the COCOF decree of 9 May 2019. Compliance is assessed against the EN 301 549 standard. FPS BOSA (the Federal Public Service Policy and Support) carries out monitoring at federal level, and each federated entity has its own body."],
-  ["p", "The [[https://accessibility.belgium.be/fr/missions-et-plaintes|complaints procedure described by BOSA (in French; also available in Dutch and German)]] follows three steps: contact the person responsible for the site, whose details appear in the statement; if necessary, file a complaint with the administration; and, failing a satisfactory answer, refer the matter to the Federal Ombudsman. The Belgian statement uses the sections of the European model: compliance status, preparation of the statement, non-accessible content and alternatives, contact and means of redress. The details are on our page [[country:belgique|digital accessibility in Belgium]] and in our article on [[article:belgique|Belgian obligations]]."],
-  ["h3", "Luxembourg"],
-  ["p", "The law of 28 May 2019 on the accessibility of the websites and mobile applications of public sector bodies requires every public website and app to have an accessibility statement based on the European model. Assessment relies on RAWeb for the web and RAAM for mobile apps, published by the government’s Information and Press Service (Service information et presse, SIP), which offers a downloadable model statement and maintains a public observatory of statements. Content exempted for disproportionate burden must be listed precisely. In its own statement, the SIP invites dissatisfied users to file a complaint online and then, where appropriate, to refer the matter to the Ombudsman of the Grand Duchy. To go further: our page [[country:luxembourg|digital accessibility in Luxembourg]], our article on [[article:luxembourg|the Luxembourg framework]] and our [[svc:audit-raam|RAAM audit of mobile apps]]."],
-  ["h3", "Switzerland"],
-  ["p", "Switzerland is not bound by the European directive and has no comparable regulatory model statement. The accessibility of federal services rests on the Disability Discrimination Act (DDA; BehiG in German, LHand in French), its implementing ordinance (BehiV in German, OHand in French) and article 3(4) of the Federal Act on the Use of Electronic Means for the Fulfilment of Official Tasks (EMBAG; LMETA in French). The third version of the eCH-0059 standard requires WCAG 2.1 level AA to be met. Several federal offices nevertheless publish an accessibility statement indicating their level of compliance, the content that falls short and a contact point: this is good practice, and Swiss companies active on the European market have every reason to adopt it. See our page [[country:suisse|digital accessibility in Switzerland]] and our article on [[article:suisse|the Swiss framework]]."],
-
-  ["h2", "action-plan", "Action plan: publishing an accessibility statement that withstands inspection"],
-  ["p", "For an organisation starting from an old statement, or from no statement at all, the process breaks down into short, verifiable steps."],
-  ["ol", [
-   ["List your services.", "List every website, intranet, extranet, app and software package, with the person responsible and the date of its last statement. Each one needs its own statement. In a group, do this entity by entity for each French company concerned."],
-   ["Display an accurate status immediately.", "For any service without a valid audit, publish “Accessibilité : non conforme” and a statement that says so. It is accurate, and it ends the most serious reporting failing."],
-   ["Build the sample.", "Mandatory pages, complete processes, downloadable documents, varied pages and at least 10% of randomly selected pages."],
-   ["Carry out the RGAA 4.1.2 audit.", "In-house if your teams master the method, or with an external [[svc:audit-rgaa|RGAA audit]]. At our firm, a full audit takes three weeks on average."],
-   ["Write the statement from the model.", "Use the headings word for word, calculate the overall rate, list the non-compliances in plain language and justify each exemption."],
-   ["Publish the Accessibility page.", "The statement, the multi-year plan and the plan for the current year, in HTML, at an address such as /accessibilite, linked from the footer of every page."],
-   ["Test the contact channel.", "An accessible form and email address, a named person to reply within one week, a log of requests."],
-   ["Schedule the updates.", "Note the three-year deadline, the publication of RGAA 5 and every planned redesign. Have each major release checked through [[svc:recette|accessibility acceptance testing]] and train your content editors with our [[svc:formations|training courses]]."]
-  ]],
-  ["p", "For an overview of the obligations in the four countries where we work, see our [[article:guide|guide to digital accessibility]] and the page [[standards|standards and obligations]]. If you would like an existing statement reviewed before an inspection, you can [[contact|write to us]]."]
+  ],
+  [
+   "p",
+   "To these are added at least one relevant page for each type of service offered, search included; at least one relevant downloadable document; all the pages of a process (a multi-step procedure, a payment funnel, an appointment booking); and pages with different kinds of content: article, product or information sheet, form, data table, map, video. Finally, randomly selected pages must make up at least 10% of the pages in the sample. For a mobile app, each screen is treated as a page."
+  ],
+  [
+   "p",
+   "For a municipal website, a realistic sample might bring together the home page, contact page, legal notice, Accessibility page, site map, a search results page, a news item, the page describing an administrative procedure, the four steps of a school canteen registration with online payment, a council resolution in PDF, the events calendar, a page with an interactive map and two pages drawn at random. For a company’s customer area, the equivalent would be the login page, the account dashboard, every step of a subscription or order, the downloadable invoice and the help centre. The classic trap is to leave out the steps of a process because they require a test account. Yet these are the pages that matter most to users, and a criterion is only met for a process if it is met on every one of its steps."
+  ],
+  [
+   "h3",
+   "The official calculation method"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Assess each criterion on each page.",
+     "For each page in the sample, each of the 106 criteria is recorded as met, not met or not applicable. As soon as a single element on the page fails the tests for a criterion, that criterion cannot be met for that page."
+    ],
+    [
+     "Consolidate at service level.",
+     "A criterion is met for the service if it is met on every page of the sample where it applies. It is applicable as soon as it applies on a single page."
+    ],
+    [
+     "Calculate the overall rate.",
+     "The compliance rate is obtained by dividing the number of criteria met by the number of applicable criteria. This rate, and this rate alone, determines the compliance status."
+    ],
+    [
+     "Optionally, calculate the average rate.",
+     "This is the average of the compliance rates of the individual pages. The official model presents it as optional information, which supplements the overall rate without ever replacing it."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Take a sample of fifteen pages in which 54 criteria apply at least once. Of these, 41 are met wherever they apply and 13 fail on at least one page. The compliance rate is 41 divided by 54, or 75.93%: the service is partially compliant. If one of the 13 failing criteria is a problem only on the payment page, it still counts as not met for the service as a whole. The average rate per page will generally be higher, because an isolated error weighs on only one page: that is why presenting it on its own gives a flattering and inaccurate picture."
+  ],
+  [
+   "p",
+   "Only three grounds allow a criterion to be declared not applicable: the content or feature concerned does not exist; the content is exempt; or the content is covered by an exemption for disproportionate burden and is accompanied by an accessible digital alternative. Without an alternative, the criterion remains applicable and counts in the calculation. Classifying criteria as “not applicable” to improve the rate is a common error, and an easy one to spot during an inspection."
+  ],
+  [
+   "h2",
+   "mandatory-sections",
+   "The mandatory sections of an accessibility statement, one by one"
+  ],
+  [
+   "p",
+   "The official model sets the order and the headings of the sections. Arcom made the point in its decision of June 2026: the sections “Retour d’information et contact” (Feedback and contact) and “Voies de recours” (Means of redress) placed before the statement, the heading “Contenus inaccessibles” used instead of “Contenus non accessibles” (both translate as non-accessible content), a missing non-compliance subsection and a subsection merged into the body text were enough to make the format non-compliant. On a French-language site, use the headings word for word, in the order of the model. If you also publish a translated version for users who do not read French, keep exactly the same structure and order."
+  ],
+  [
+   "h3",
+   "Header: commitment, strategy and scope"
+  ],
+  [
+   "p",
+   "The statement opens with the organisation’s commitment to make its services accessible, in accordance with article 47 of the law of 11 February 2005. Next come the links to the multi-year plan and to the action plan for the current year, followed by the scope sentence, “Cette déclaration d’accessibilité s’applique à” (This accessibility statement applies to), with the name and exact address of the service. For example: “Cette déclaration d’accessibilité s’applique au site www.ville-exemple.fr.” If the municipality’s family portal is a separate service, hosted elsewhere and audited separately, it must have its own statement. The same reasoning applies to a company’s public website and its customer area when they are separate applications."
+  ],
+  [
+   "h3",
+   "Compliance status (État de conformité)"
+  ],
+  [
+   "p",
+   "One sentence, one status, one version of the framework: “Le site www.ville-exemple.fr est partiellement conforme avec le référentiel général d’amélioration de l’accessibilité (RGAA), version 4.1.2, en raison des non-conformités et des dérogations énumérées ci-dessous” (The website www.ville-exemple.fr is partially compliant with the General Accessibility Improvement Framework (RGAA), version 4.1.2, owing to the non-compliances and exemptions listed below). A statement that refers to “the RGAA” without a version number, or to a version that has been superseded, casts doubt on the method actually applied."
+  ],
+  [
+   "h3",
+   "Test results (Résultats des tests)"
+  ],
+  [
+   "p",
+   "This section states who carried out the audit and what it measured: “L’audit de conformité réalisé par [nom de l’organisme ou du prestataire] révèle que 75,93 % des critères du RGAA version 4.1.2 sont respectés” (The compliance audit carried out by [name of the organisation or service provider] shows that 75.93% of the criteria of RGAA version 4.1.2 are met). Note that French uses a decimal comma and a space before the percentage sign. The average rate and the link to the audit grid are optional. Publishing the grid nonetheless strengthens the credibility of the document, since it allows a user or an inspector to check the results criterion by criterion."
+  ],
+  [
+   "h3",
+   "Non-accessible content (Contenus non accessibles)"
+  ],
+  [
+   "p",
+   "This section is divided into three subsections. As a precaution, keep all of them, writing “Aucun contenu concerné” (no content concerned) when a list is empty, rather than deleting the heading."
+  ],
+  [
+   "ul",
+   [
+    "“Non-conformités” (non-compliances): the list of defects found, written for users rather than for developers. Write “Le formulaire de paiement de la cantine ne signale pas les erreurs de saisie aux lecteurs d’écran (critère 11.10)” (The canteen payment form does not announce input errors to screen readers, criterion 11.10) rather than “11.10 NC”.",
+    "“Dérogations pour charge disproportionnée” (exemptions for disproportionate burden): each item of content concerned, with its justification and the alternative offered. For example: “Les enregistrements vidéo des conseils municipaux de 2021 à 2024 ne sont pas sous-titrés. Une transcription est transmise sur demande à accessibilite@ville-exemple.fr” (Video recordings of council meetings from 2021 to 2024 are not subtitled. A transcript is sent on request to accessibilite@ville-exemple.fr).",
+    "“Contenus non soumis à l’obligation d’accessibilité” (content not subject to the accessibility obligation): content exempted by the decree, for example an interactive map whose essential information (address, opening hours, access) is given as text on the same page, or an embedded social media feed that the organisation does not fund, develop or control."
+   ]
+  ],
+  [
+   "h3",
+   "Preparation of this statement (Établissement de cette déclaration d’accessibilité)"
+  ],
+  [
+   "p",
+   "This section gives the date on which the statement was drawn up and, where applicable, the date it was updated. It then contains four subsections: the technologies used to build the site (for example HTML5, CSS, JavaScript); the test environment, that is the combinations of browsers and assistive technologies used (NVDA with Firefox, VoiceOver with Safari on iOS, TalkBack with Chrome on Android); the tools used to assess accessibility (contrast analyser, code inspector, checking extensions); and finally the list of pages that were checked, with their addresses. These dates allow anyone to verify that the statement is still valid."
+  ],
+  [
+   "h3",
+   "Feedback and contact (Retour d’information et contact)"
+  ],
+  [
+   "p",
+   "This section explains how to report an accessibility defect or obtain content in another form: an online form, an email address, the contact details of the department responsible. Its requirements are set out in detail further on."
+  ],
+  [
+   "h3",
+   "Means of redress (Voies de recours)"
+  ],
+  [
+   "p",
+   "The final section informs users that they may refer the matter to the Défenseur des droits (Defender of Rights), France’s independent authority for the protection of rights, if they have not received a satisfactory answer after reporting a defect, and explains how to do so."
+  ],
+  [
+   "table",
+   {
+    "caption": "The sections of an RGAA accessibility statement",
+    "head": [
+     "Section (heading in the model)",
+     "Expected content",
+     "Common error"
+    ],
+    "rows": [
+     [
+      "Header (commitment and scope)",
+      "Commitment under article 47, links to the multi-year plan and the plan for the current year, address of the service covered",
+      "No scope, or “all our sites” without a list"
+     ],
+     [
+      "État de conformité (compliance status)",
+      "One of the three statuses, name of the service, RGAA version",
+      "“Totalement conforme” with no audit or with a rate below 100%"
+     ],
+     [
+      "Résultats des tests (test results)",
+      "Author of the audit, overall rate of criteria met, optional average rate",
+      "Average rate presented as the overall rate, automated tool score"
+     ],
+     [
+      "Contenus non accessibles: Non-conformités (non-compliances)",
+      "List of defects, understandable by users",
+      "Subsection deleted, or a list of criterion numbers"
+     ],
+     [
+      "Contenus non accessibles: Dérogations pour charge disproportionnée (disproportionate burden)",
+      "Content concerned, justification, accessible alternative",
+      "A general exemption for the whole site"
+     ],
+     [
+      "Contenus non accessibles: Contenus non soumis à l’obligation d’accessibilité (exempt content)",
+      "Content exempted by the decree, with its date where relevant",
+      "A third-party tool paid for by the organisation presented as exempt"
+     ],
+     [
+      "Établissement de cette déclaration d’accessibilité (preparation of the statement)",
+      "Dates, technologies, test environment, tools, pages checked",
+      "No date, missing list of pages"
+     ],
+     [
+      "Retour d’information et contact (feedback and contact)",
+      "Accessible form or email address, contact details",
+      "Form protected by an inaccessible captcha"
+     ],
+     [
+      "Voies de recours (means of redress)",
+      "Referral to the Défenseur des droits: online form, local delegate, free post",
+      "Section missing or placed before the statement"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "exemptions",
+   "Disproportionate burden and exempt content: what is allowed, and the limits"
+  ],
+  [
+   "h3",
+   "The exemption for disproportionate burden"
+  ],
+  [
+   "p",
+   "An exemption for disproportionate burden is invoked case by case, for a specific item of content or feature, never for an entire site. It is assessed in the light of the size, resources and nature of the organisation, and of a comparison between the cost of making the content accessible and the expected benefit for people with disabilities, taking into account how often and for how long the service is used and how important it is. Resources are understood broadly (budget, fees, public grants, private donations, other income), and costs include investment, running costs, staff time and the skills required."
+  ],
+  [
+   "p",
+   "The RGAA expressly rules out the most common justifications: “L’absence de priorité, le manque de temps ou de connaissances ne constituent pas des circonstances légitimes” (lack of priority, time or knowledge does not constitute legitimate circumstances). A municipality therefore cannot claim an exemption for its civil status certificate request form on the grounds that its supplier has not been trained. It can, on the other hand, justify an exemption for a hundred or so hours of rarely viewed video archives, if the cost of subtitling is out of proportion to actual use and a transcript is provided on request. Each exemption appears in the statement, with its justification and the alternative offered."
+  ],
+  [
+   "h3",
+   "Content not subject to the obligation"
+  ],
+  [
+   "p",
+   "The 2019 decree lists the exempt content. As presented by DINUM, the list includes:"
+  ],
+  [
+   "ul",
+   [
+    "office files published before 23 September 2018, unless they are needed for an ongoing administrative procedure;",
+    "pre-recorded audio and video content published before 23 September 2020;",
+    "live audio and video content;",
+    "online maps and mapping services, provided that essential location or route information is given in an accessible digital form;",
+    "third-party content that the organisation neither funds, develops nor controls;",
+    "reproductions of items in heritage collections that cannot be made fully accessible;",
+    "intranet and extranet content published before 23 September 2019, until those sites are overhauled;",
+    "content that is neither needed for an active administrative procedure nor updated after 23 September 2019, archives included."
+   ]
+  ],
+  [
+   "p",
+   "This list was revised by Decree No. 2026-816 of 24 August 2026 to take account of the timetable of the European directive. Check the wording in force before relying on it, and give the date of each item of exempt content in the statement."
+  ],
+  [
+   "p",
+   "Three limits come up in almost every audit. An exemption covers an item of content, not the page that hosts it: a page embedding a live video remains subject to every criterion for its navigation, headings and forms. A module bought from a software vendor (appointment booking, payment, recruitment) is not third-party content within the meaning of the decree, since the organisation chose it and pays for it. Finally, an old PDF becomes subject to the obligation again if it is used in an ongoing procedure, such as a grant application form that is still in use."
+  ],
+  [
+   "h2",
+   "feedback-and-redress",
+   "Feedback, contact and means of redress in the statement"
+  ],
+  [
+   "p",
+   "The “Retour d’information et contact” section must offer an accessible way to report a defect and to request information or an alternative. The model suggests a simple wording: “Si vous n’arrivez pas à accéder à un contenu ou à un service, vous pouvez contacter le responsable de [nom du service] pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme” (If you cannot access content or a service, you can contact the person responsible for [name of the service] to be directed to an accessible alternative or to obtain the content in another form). This is followed by a link to an online form, an email address and the postal address of the department."
+  ],
+  [
+   "p",
+   "The official documentation also governs how complaints are handled. The organisation provides the possibility of complaining online, sends an acknowledgement of receipt under the conditions of articles R112-3 and R112-5 of the Code of relations between the public and the administration (code des relations entre le public et l’administration), and replies within one week of the request being sent. If the question is complex, the reply states a reasonable time frame for the final answer and explains why. Users identify themselves in accordance with article R112-9-1 of the same code; an incomplete request leads to a request for further details."
+  ],
+  [
+   "p",
+   "In practice, the contact channel must be tested like the rest of the site. A form protected by a visual captcha with no alternative, or an inbox that nobody checks, makes the section meaningless. Assign the inbox to the accessibility lead, keep a log of requests and carry the reported defects over into the action plan: this is often the most useful source of corrections. For an international group whose support is run from a shared service centre abroad, make sure that French-language requests reach someone who can answer them within the one-week time frame."
+  ],
+  [
+   "p",
+   "The “Voies de recours” section states that users who have not received a satisfactory answer may refer the matter to the Défenseur des droits, free of charge, in three ways: through the institution’s online form, by contacting the Défenseur des droits delegate in their region, or by unstamped letter to Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07. They may also report to Arcom a service covered by article 47; the authority asks users to contact the organisation concerned first."
+  ],
+  [
+   "h2",
+   "compliance-notice",
+   "The home page notice: “Accessibilité : non conforme”, partially or fully compliant"
+  ],
+  [
+   "p",
+   "The home page of each service must display one of the three notices: “Accessibilité : totalement conforme”, “Accessibilité : partiellement conforme” or “Accessibilité : non conforme”. On a French-language site, the notice appears in this official French wording. It may be a link leading to the Accessibility page or directly to the statement. The text only requires it on the home page, but the Accessibility page itself must be reachable directly from the home page and from any page of the service."
+  ],
+  [
+   "p",
+   "The safest solution is therefore to place the notice in the footer shared by the whole site, as a link to the Accessibility page: it appears on the home page, as the text requires, and gives access to the statement from every page. The RGAA recommends a standardised address, such as www.sitename.fr/accessibilite, which users and inspectors can find without searching. On a multilingual site, the official texts only describe the French wording; if you add a translated notice on English pages (for example “Accessibility: partially compliant”), keep the French notice on the French home page and make sure both show the same status and lead to the same statement."
+  ],
+  [
+   "p",
+   "The Accessibility page contains the statement that follows the model, the multi-year plan or a link to it, and the action plan for the current year or a link to it. For a mobile app, the statement is published on the website of the organisation that developed it or together with the information available at download, and the compliance status is also shown within the app."
+  ],
+  [
+   "p",
+   "The most frequent discrepancies are easy to correct: a notice embedded in an image without a text alternative, an invented label (“Accessibilité : en cours”, meaning in progress), a notice that no longer matches the status given in the statement after a new audit, or a footer link that leads to a generic page about the organisation’s commitment rather than to the statement itself."
+  ],
+  [
+   "h2",
+   "multi-year-plan",
+   "Multi-year accessibility plan and annual action plans"
+  ],
+  [
+   "p",
+   "The statement refers to two documents that extend it: the multi-year accessibility plan (schéma pluriannuel de mise en accessibilité), drawn up for a maximum of three years, and the action plan for the current year. According to the official documentation, the multi-year plan sets out the organisation’s digital accessibility policy and includes in particular:"
+  ],
+  [
+   "ul",
+   [
+    "the position within the organisation and the responsibilities of the digital accessibility lead;",
+    "the human and financial resources allocated to digital accessibility;",
+    "staff training and awareness-raising;",
+    "how accessibility is built into contract clauses, calls for tenders and quotations;",
+    "the compliance assessments planned for all services;",
+    "the corrective measures planned to deal with non-accessible content, with their timetable;",
+    "the review of the annual action plans."
+   ]
+  ],
+  [
+   "p",
+   "The compliance work is scheduled each year in an action plan. The multi-year plan and the plan for the current year are published online, in an accessible format, and the statement links to them. A 2026-2028 multi-year plan is thus accompanied by a 2026 action plan, then by a 2027 plan published at the latest at the start of the following year, together with a review of the previous one. Leaving the plan for a past year online is precisely the failing Arcom found on impots.gouv.fr."
+  ],
+  [
+   "p",
+   "Consistency between the documents is what makes the whole credible. Each non-compliance listed in the statement should have a corresponding correction in an action plan, with a deadline. Each exemption for disproportionate burden should be re-examined when the multi-year plan is revised, because the situation that justified it (budget, tool, supplier) changes. For a public body, this work goes hand in hand with public procurement: our page on the [[sector:public|public sector]] explains how to build accessibility into contracts."
+  ],
+  [
+   "h2",
+   "updating",
+   "When to update an accessibility statement, and which tools to use"
+  ],
+  [
+   "p",
+   "The statement is valid from its date of publication. It must be updated in three cases: on the date of a substantial modification or overhaul of the service; three years after its publication; and eighteen months after a new version of the framework is published, for organisations applying the RGAA technical method. Whichever event occurs first triggers the update."
+  ],
+  [
+   "p",
+   "That last case is becoming concrete. DINUM has announced the [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|publication of RGAA 5, expected at the end of 2026 (in French)]], which incorporates WCAG 2.2 and adds criteria for mobile apps and office documents. Statements published before its release will remain valid for eighteen months, without exceeding three years from their publication. DINUM specifies that work based on RGAA 4.1.2 should not be suspended or postponed while waiting for the new version. To see how the RGAA relates to WCAG and to the EN 301 549 standard, read our article on [[article:normes|digital accessibility standards]]."
+  ],
+  [
+   "p",
+   "The notion of substantial modification is not defined by a list. It clearly covers a visual redesign, a change of CMS, the launch of a new user area or a new payment funnel, and a change of development supplier. A good practice is to reread the statement once a year, when the action plan is published, and to repeat the audit as soon as a change affects a user journey in the sample."
+  ],
+  [
+   "p",
+   "On the tools side, DINUM provides Ara, an online service intended for accessibility experts to conduct RGAA audits. Ara does not carry out the audit for you: it structures the entry of results, produces the report and can generate the accessibility statement once the full audit is complete. The RGAA also provides for the statement to be filed through an online service, under arrangements to be set by the ministers responsible for disability and for digital affairs."
+  ],
+  [
+   "h2",
+   "common-errors",
+   "The errors that make an accessibility statement misleading or invalid"
+  ],
+  [
+   "p",
+   "The errors below are those most often found when reviewing existing statements. Some have been expressly identified by Arcom; others follow directly from the RGAA method."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Declaring a status without an audit.",
+     "Without an actual assessment, the only possible status is “non conforme”. A statement that displays a favourable status with no rate and no audit is invalid."
+    ],
+    [
+     "Overstating the status.",
+     "Claiming full compliance with a rate below 100%, or partial compliance with a rate below 50%. This was the case on impots.gouv.fr: full compliance claimed, alongside a stated rate of 42.11%."
+    ],
+    [
+     "Publishing the average rate instead of the overall rate.",
+     "The average rate per page is almost always more favourable. The compliance status is determined solely by the overall rate of criteria met."
+    ],
+    [
+     "Using the score of an automated tool.",
+     "Automated tools only test some of the criteria and cannot judge whether a text alternative or a link label is relevant. Their score is not an RGAA compliance rate."
+    ],
+    [
+     "Overusing “not applicable”.",
+     "A criterion is only not applicable if the content does not exist, if it is exempt, or if it is covered by an exemption accompanied by an accessible alternative."
+    ],
+    [
+     "Changing the order or the headings of the sections.",
+     "Placing the contact section before the statement, or writing “Contenus inaccessibles” instead of “Contenus non accessibles”: Arcom treats this as a non-compliant format."
+    ],
+    [
+     "Deleting a subsection.",
+     "The absence of the non-compliance subsection, or listing the technologies used in a free-text paragraph, was identified as a failing."
+    ],
+    [
+     "Letting the statement expire.",
+     "Three years after its publication, the statement must be updated. A statement from January 2023 was no longer valid in 2026."
+    ],
+    [
+     "Not repeating the audit after a redesign.",
+     "The old site’s statement, kept on the new site, describes a service that no longer exists."
+    ],
+    [
+     "Building a convenient sample.",
+     "Leaving out processes, downloadable documents or randomly selected pages to keep only simple pages distorts the result."
+    ],
+    [
+     "Covering several services with a single statement.",
+     "Each website, app or software package is assessed separately. A mobile app without its own statement remains in breach, even if the website has one."
+    ],
+    [
+     "Invoking a general exemption.",
+     "“Pour des raisons de charge disproportionnée, le site n’est pas accessible” (for reasons of disproportionate burden, the site is not accessible) is worthless. An exemption concerns specific content, is justified and comes with an alternative."
+    ],
+    [
+     "Exempting content wrongly.",
+     "Presenting a tool the organisation has bought as third-party content, or a document still used in a procedure as an archive."
+    ],
+    [
+     "Offering an unusable contact channel.",
+     "A form protected by an inaccessible captcha, a generic address nobody checks, no reply within the time limit."
+    ],
+    [
+     "Omitting or distorting the means of redress.",
+     "The section must mention referral to the Défenseur des droits and how to do it, not simply refer users to customer service."
+    ],
+    [
+     "Leaving dead or outdated links.",
+     "A link to a multi-year plan that does not exist, an action plan for a past year, an audit grid that has been deleted."
+    ],
+    [
+     "Displaying an inconsistent notice.",
+     "A home page saying “partiellement conforme” and a statement saying “non conforme” contradict each other; the notice must reflect the status in the statement currently in force."
+    ],
+    [
+     "Publishing the statement in an inaccessible format.",
+     "A statement in a scanned PDF or as an image defeats its own purpose. It must be published in an accessible format, preferably as HTML on the Accessibility page."
+    ]
+   ]
+  ],
+  [
+   "note",
+   "Key point",
+   "An accurate “non conforme” statement is worth more than a false “totalement conforme” one: the first meets the transparency obligation, the second misleads users and is in itself a failing."
+  ],
+  [
+   "h2",
+   "annotated-template",
+   "Annotated accessibility statement template, with the French wording"
+  ],
+  [
+   "p",
+   "The template below follows the order and headings of the official RGAA 4.1.2 model. On a French-language site, the statement is written in French: each block therefore gives the French wording to publish, followed by its English translation for your teams. Items in square brackets are to be completed. Each block is followed by a comment explaining what to check before publication. Section headings are to be used exactly as they stand."
+  ],
+  [
+   "h3",
+   "Page title: Déclaration d’accessibilité (Accessibility statement)"
+  ],
+  [
+   "p",
+   "“[Nom de l’organisme] s’engage à rendre ses sites internet, intranet, extranet, ses applications mobiles et ses progiciels accessibles, conformément à l’article 47 de la loi n° 2005-102 du 11 février 2005.” Translation: [Name of the organisation] undertakes to make its websites, intranet, extranet, mobile apps and software packages accessible, in accordance with article 47 of Law No. 2005-102 of 11 February 2005."
+  ],
+  [
+   "p",
+   "“À cette fin, [nom de l’organisme] met en œuvre la stratégie et les actions suivantes :” Translation: To this end, [name of the organisation] is implementing the following strategy and actions:"
+  ],
+  [
+   "ul",
+   [
+    "“Schéma pluriannuel de mise en accessibilité [année de début]-[année de fin] : [lien]” (multi-year accessibility plan [start year]-[end year]: [link]);",
+    "“Plan d’actions [année en cours] : [lien]” (action plan [current year]: [link]);",
+    "“Bilan des actions [année précédente] : [lien]” (review of actions [previous year]: [link])."
+   ]
+  ],
+  [
+   "p",
+   "“Cette déclaration d’accessibilité s’applique à [nom du service] ([adresse du service]).” Translation: This accessibility statement applies to [name of the service] ([address of the service])."
+  ],
+  [
+   "p",
+   "Comment: check that the links work and that the plan covers the current year. The scope must designate a specific service; if the organisation runs several sites, each has its own statement page."
+  ],
+  [
+   "h3",
+   "État de conformité (Compliance status)"
+  ],
+  [
+   "p",
+   "“[Nom du service] ([adresse du service]) est [totalement / partiellement / non] conforme avec le référentiel général d’amélioration de l’accessibilité (RGAA), version 4.1.2, en raison des non-conformités et des dérogations énumérées ci-dessous.” Translation: [Name of the service] ([address of the service]) is [fully / partially / not] compliant with the General Accessibility Improvement Framework (RGAA), version 4.1.2, owing to the non-compliances and exemptions listed below."
+  ],
+  [
+   "p",
+   "Comment: write only one status, derived from the overall rate: 100% for “totalement”, at least 50% for “partiellement”, below 50% or no valid audit for “non”. In the case of full compliance, remove the end of the sentence about non-compliances, but keep any exemptions."
+  ],
+  [
+   "h3",
+   "Résultats des tests (Test results)"
+  ],
+  [
+   "p",
+   "“L’audit de conformité réalisé par [nom de l’organisme ou du prestataire] révèle que [nn,nn] % des critères du RGAA version 4.1.2 sont respectés.” Translation: The compliance audit carried out by [name of the organisation or service provider] shows that [nn.nn]% of the criteria of RGAA version 4.1.2 are met."
+  ],
+  [
+   "p",
+   "Optional: “Le taux moyen de conformité du service s’élève à [nn,nn] %.” (The average compliance rate of the service is [nn.nn]%.) and “La grille d’audit est disponible à l’adresse suivante : [lien].” (The audit grid is available at the following address: [link].)"
+  ],
+  [
+   "p",
+   "Comment: the rate is the ratio between criteria met and applicable criteria, calculated across the whole sample. State whether the audit is a self-assessment or was carried out by a third party, and make sure the audit date is consistent with the date on which the statement was drawn up."
+  ],
+  [
+   "h3",
+   "Contenus non accessibles (Non-accessible content)"
+  ],
+  [
+   "p",
+   "“Les contenus listés ci-dessous ne sont pas accessibles pour les raisons suivantes.” Translation: The content listed below is not accessible for the following reasons."
+  ],
+  [
+   "p",
+   "Subsection “Non-conformités” (non-compliances): “[Liste des non-conformités, une par ligne, formulée pour l’usager, avec le numéro du critère entre parenthèses].” Translation: [list of non-compliances, one per line, worded for users, with the criterion number in brackets]. Examples:"
+  ],
+  [
+   "ul",
+   [
+    "“La vidéo de présentation du budget ne dispose pas de transcription textuelle (critère 4.1).” (The budget presentation video has no text transcript, criterion 4.1.);",
+    "“Le bouton d’envoi du formulaire de contact n’a pas d’intitulé explicite pour les lecteurs d’écran (critère 11.9).” (The submit button of the contact form has no explicit label for screen readers, criterion 11.9.);",
+    "“Le menu déroulant de choix de l’année n’est pas utilisable au clavier (critère 7.3).” (The year selection drop-down menu cannot be used with a keyboard, criterion 7.3.)"
+   ]
+  ],
+  [
+   "p",
+   "Subsection “Dérogations pour charge disproportionnée” (exemptions for disproportionate burden): “[Contenu concerné], [justification], [alternative proposée et moyen de l’obtenir].” Translation: [content concerned], [justification], [alternative offered and how to obtain it]."
+  ],
+  [
+   "p",
+   "Subsection “Contenus non soumis à l’obligation d’accessibilité” (content not subject to the accessibility obligation): “[Contenu exempté], [motif d’exemption au regard du décret], [date de publication si l’exemption en dépend].” Translation: [exempt content], [ground for exemption under the decree], [publication date if the exemption depends on it]."
+  ],
+  [
+   "p",
+   "Comment: the list of non-compliances must match the audit grid. An exemption without justification or alternative, or an exempt item without a stated ground, does not protect the organisation. If a subsection is empty, say so rather than deleting it."
+  ],
+  [
+   "h3",
+   "Établissement de cette déclaration d’accessibilité (Preparation of this statement)"
+  ],
+  [
+   "p",
+   "“Cette déclaration a été établie le [jour mois année]. Elle a été mise à jour le [jour mois année].” Translation: This statement was drawn up on [day month year]. It was updated on [day month year]."
+  ],
+  [
+   "p",
+   "Subsection “Technologies utilisées pour la réalisation du site” (technologies used to build the site): “[HTML5, CSS, JavaScript, nom du CMS le cas échéant].” (HTML5, CSS, JavaScript, name of the CMS where applicable.)"
+  ],
+  [
+   "p",
+   "Subsection “Environnement de test” (test environment): “Les vérifications de restitution des contenus par les technologies d’assistance ont été réalisées avec les combinaisons suivantes : [lecteur d’écran et version, navigateur et version, système d’exploitation].” Translation: The checks on how content is rendered by assistive technologies were carried out with the following combinations: [screen reader and version, browser and version, operating system]."
+  ],
+  [
+   "p",
+   "Subsection “Outils pour évaluer l’accessibilité” (tools used to assess accessibility): “[analyseur de contraste, inspecteur de code du navigateur, extensions ou outils utilisés].” (contrast analyser, browser code inspector, extensions or tools used.)"
+  ],
+  [
+   "p",
+   "Subsection “Pages du site ayant fait l’objet de la vérification de conformité” (pages of the site checked for compliance):"
+  ],
+  [
+   "ul",
+   [
+    "“Accueil : [adresse]” (home page: [address]);",
+    "“Contact : [adresse]” (contact: [address]);",
+    "“Mentions légales : [adresse]” (legal notice: [address]);",
+    "“Accessibilité : [adresse]” (accessibility: [address]);",
+    "“Plan du site : [adresse]” (site map: [address]);",
+    "“[Autres pages de l’échantillon, dont les étapes des processus et les pages tirées au hasard] : [adresses]” (other pages in the sample, including the steps of processes and the randomly selected pages: [addresses])."
+   ]
+  ],
+  [
+   "p",
+   "Comment: the date on which the statement was drawn up starts the three-year validity period. Keep these subsections separate: merging them into a paragraph was identified as a format defect."
+  ],
+  [
+   "h3",
+   "Retour d’information et contact (Feedback and contact)"
+  ],
+  [
+   "p",
+   "“Si vous n’arrivez pas à accéder à un contenu ou à un service, vous pouvez contacter le responsable de [nom du service] pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme.” Translation: If you cannot access content or a service, you can contact the person responsible for [name of the service] to be directed to an accessible alternative or to obtain the content in another form."
+  ],
+  [
+   "ul",
+   [
+    "“Envoyer un message : [lien vers le formulaire]” (send a message: [link to the form]);",
+    "“Écrire à : [adresse électronique]” (write to: [email address]);",
+    "“Contacter : [nom du service, adresse postale, téléphone]” (contact: [name of the department, postal address, telephone])."
+   ]
+  ],
+  [
+   "p",
+   "Comment: test the form with a screen reader and with the keyboard before publication, and appoint the person responsible for replying within one week."
+  ],
+  [
+   "h3",
+   "Voies de recours (Means of redress)"
+  ],
+  [
+   "p",
+   "“Si vous constatez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou à une fonctionnalité du site, que vous nous le signalez et que vous ne parvenez pas à obtenir une réponse de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits. Plusieurs moyens sont à votre disposition :” Translation: If you find an accessibility defect that prevents you from accessing content or a feature of the site, you report it to us and you do not manage to obtain a response from us, you are entitled to send your complaint or a request for referral to the Défenseur des droits. Several means are available to you:"
+  ],
+  [
+   "ul",
+   [
+    "“Écrire un message au Défenseur des droits : [lien vers le formulaire en ligne]” (write a message to the Défenseur des droits: [link to the online form]);",
+    "“Contacter le délégué du Défenseur des droits dans votre région : [lien vers la carte des délégués]” (contact the Défenseur des droits delegate in your region: [link to the map of delegates]);",
+    "“Envoyer un courrier par la poste, gratuit, ne pas mettre de timbre : Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07” (send a letter by post, free of charge, no stamp needed, to the address given)."
+   ]
+  ],
+  [
+   "p",
+   "Comment: this section closes the statement. It must not be moved to the top of the page, nor replaced by a reference to customer service."
+  ],
+  [
+   "h2",
+   "belgium-luxembourg-switzerland",
+   "Accessibility statements in Belgium, Luxembourg and Switzerland"
+  ],
+  [
+   "p",
+   "The French accessibility statement is the national version of a European obligation: Directive (EU) 2016/2102 on the accessibility of the websites and mobile applications of public sector bodies, for which Commission Implementing Decision (EU) 2018/1523 of 11 October 2018 establishes a model accessibility statement. Belgium and Luxembourg rely on this common model; Switzerland, which is outside the European Union, follows a different approach. For a group present in several of these countries, this means that the statements of its entities will not all look alike."
+  ],
+  [
+   "h3",
+   "Belgium"
+  ],
+  [
+   "p",
+   "At federal level, the obligation derives from the law of 19 July 2018 on the accessibility of the websites and mobile applications of public sector bodies, supplemented by texts specific to each federated entity: the Flemish decree of 7 December 2018, the Brussels ordinance of 4 October 2018, the decree of the German-speaking Community of 15 October 2018, the Walloon decree of 2 May 2019, the decree of the Wallonia-Brussels Federation of 3 May 2019 and the COCOF decree of 9 May 2019. Compliance is assessed against the EN 301 549 standard. FPS BOSA (the Federal Public Service Policy and Support) carries out monitoring at federal level, and each federated entity has its own body."
+  ],
+  [
+   "p",
+   "The [[https://accessibility.belgium.be/fr/missions-et-plaintes|complaints procedure described by BOSA (in French; also available in Dutch and German)]] follows three steps: contact the person responsible for the site, whose details appear in the statement; if necessary, file a complaint with the administration; and, failing a satisfactory answer, refer the matter to the Federal Ombudsman. The Belgian statement uses the sections of the European model: compliance status, preparation of the statement, non-accessible content and alternatives, contact and means of redress. The details are on our page [[country:belgique|digital accessibility in Belgium]] and in our article on [[article:belgique|Belgian obligations]]."
+  ],
+  [
+   "h3",
+   "Luxembourg"
+  ],
+  [
+   "p",
+   "The law of 28 May 2019 on the accessibility of the websites and mobile applications of public sector bodies requires every public website and app to have an accessibility statement based on the European model. Assessment relies on RAWeb for the web and RAAM for mobile apps, published by the government’s Information and Press Service (Service information et presse, SIP), which offers a downloadable model statement and maintains a public observatory of statements. Content exempted for disproportionate burden must be listed precisely. In its own statement, the SIP invites dissatisfied users to file a complaint online and then, where appropriate, to refer the matter to the Ombudsman of the Grand Duchy. To go further: our page [[country:luxembourg|digital accessibility in Luxembourg]], our article on [[article:luxembourg|the Luxembourg framework]] and our [[svc:audit-raam|RAAM audit of mobile apps]]."
+  ],
+  [
+   "h3",
+   "Switzerland"
+  ],
+  [
+   "p",
+   "Switzerland is not bound by the European directive and has no comparable regulatory model statement. The accessibility of federal services rests on the Disability Discrimination Act (DDA; BehiG in German, LHand in French), its implementing ordinance (BehiV in German, OHand in French) and article 3(4) of the Federal Act on the Use of Electronic Means for the Fulfilment of Official Tasks (EMBAG; LMETA in French). The third version of the eCH-0059 standard requires WCAG 2.1 level AA to be met. Several federal offices nevertheless publish an accessibility statement indicating their level of compliance, the content that falls short and a contact point: this is good practice, and Swiss companies active on the European market have every reason to adopt it. See our page [[country:suisse|digital accessibility in Switzerland]] and our article on [[article:suisse|the Swiss framework]]."
+  ],
+  [
+   "h2",
+   "action-plan",
+   "Action plan: publishing an accessibility statement that withstands inspection"
+  ],
+  [
+   "p",
+   "For an organisation starting from an old statement, or from no statement at all, the process breaks down into short, verifiable steps."
+  ],
+  [
+   "ol",
+   [
+    [
+     "List your services.",
+     "List every website, intranet, extranet, app and software package, with the person responsible and the date of its last statement. Each one needs its own statement. In a group, do this entity by entity for each French company concerned."
+    ],
+    [
+     "Display an accurate status immediately.",
+     "For any service without a valid audit, publish “Accessibilité : non conforme” and a statement that says so. It is accurate, and it ends the most serious reporting failing."
+    ],
+    [
+     "Build the sample.",
+     "Mandatory pages, complete processes, downloadable documents, varied pages and at least 10% of randomly selected pages."
+    ],
+    [
+     "Carry out the RGAA 4.1.2 audit.",
+     "In-house if your teams master the method, or with an external [[svc:audit-rgaa|RGAA audit]]. At our firm, a full audit takes three weeks on average."
+    ],
+    [
+     "Write the statement from the model.",
+     "Use the headings word for word, calculate the overall rate, list the non-compliances in plain language and justify each exemption."
+    ],
+    [
+     "Publish the Accessibility page.",
+     "The statement, the multi-year plan and the plan for the current year, in HTML, at an address such as /accessibilite, linked from the footer of every page."
+    ],
+    [
+     "Test the contact channel.",
+     "An accessible form and email address, a named person to reply within one week, a log of requests."
+    ],
+    [
+     "Schedule the updates.",
+     "Note the three-year deadline, the publication of RGAA 5 and every planned redesign. Have each major release checked through [[svc:recette|accessibility acceptance testing]] and train your content editors with our [[svc:formations|training courses]]."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "For an overview of the obligations in the four countries where we work, see our [[article:guide|guide to digital accessibility]] and the page [[standards|standards and obligations]]. If you would like an existing statement reviewed before an inspection, you can [[contact|write to us]]."
+  ]
  ],
  "faq": [
-  ["Does a private company have to publish an accessibility statement in France?", "Yes, if it falls under article 47 of the law of 11 February 2005, that is, if its average turnover generated in France over the last three financial years reaches €250 million, or if it is entrusted with a public service mission under the conditions laid down in that text. Below that, it is not subject to this regime, but it may fall under the European Accessibility Act: it must then publish information on the compliance of its services, under the supervision of the DGCCRF, rather than a statement in the RGAA format."],
-  ["Can we display “partiellement conforme” while waiting for the audit results?", "No. As long as there is no valid audit result, the only status allowed is “non conforme” (non-compliant). Partial compliance requires a measured rate of at least 50% of the applicable criteria. In June 2026, Arcom also found that a statement not based on any audit was in itself a failing. Publish the non-compliant status, launch the audit, then update the notice and the statement as soon as the rate is known."],
-  ["Do we need one accessibility statement per website or one for the whole organisation?", "One per service. Each website, intranet, extranet, mobile app or software package is assessed separately, and therefore has its own statement, with its own rate and its own list of non-accessible content. An Accessibility page can group the links to several statements, but a single overall statement displaying one rate for all of the organisation’s services does not meet the obligation."],
-  ["Can the accessibility statement be published as a PDF?", "It must be published in an accessible format and made available on the Accessibility page, which can be reached from every page. A tagged, accessible PDF is not ruled out, but it adds a risk: a scanned or poorly structured PDF makes the statement itself inaccessible. Publishing it in HTML, directly on the Accessibility page, is the simplest solution to maintain and to check."],
-  ["Does a mobile app need its own accessibility statement?", "Yes. The statement for an app is published on the website of the organisation that developed it or together with the information available at download, and the compliance status must also be shown within the app. The audit treats each screen as a page and is carried out on real devices, with the system screen readers: VoiceOver on iOS and TalkBack on Android."],
-  ["Who can carry out the audit on which the statement is based?", "The organisation itself, as a self-assessment, or a third party. The law does not require a certified provider. The audit must, however, apply the RGAA method, on a representative sample, and be documented in a grid that allows each criterion to be checked. A reliable self-assessment requires trained auditors and the use of assistive technologies; an external review limits the risk of an overstated rate."]
+  [
+   "Does a private company have to publish an accessibility statement in France?",
+   "Yes, if it falls under article 47 of the law of 11 February 2005, that is, if its average turnover generated in France over the last three financial years reaches €250 million, or if it is entrusted with a public service mission under the conditions laid down in that text. Below that, it is not subject to this regime, but it may fall under the European Accessibility Act: it must then publish information on the compliance of its services, under the supervision of the DGCCRF, rather than a statement in the RGAA format."
+  ],
+  [
+   "Can we display “partiellement conforme” while waiting for the audit results?",
+   "No. As long as there is no valid audit result, the only status allowed is “non conforme” (non-compliant). Partial compliance requires a measured rate of at least 50% of the applicable criteria. In June 2026, Arcom also found that a statement not based on any audit was in itself a failing. Publish the non-compliant status, launch the audit, then update the notice and the statement as soon as the rate is known."
+  ],
+  [
+   "Do we need one accessibility statement per website or one for the whole organisation?",
+   "One per service. Each website, intranet, extranet, mobile app or software package is assessed separately, and therefore has its own statement, with its own rate and its own list of non-accessible content. An Accessibility page can group the links to several statements, but a single overall statement displaying one rate for all of the organisation’s services does not meet the obligation."
+  ],
+  [
+   "Can the accessibility statement be published as a PDF?",
+   "It must be published in an accessible format and made available on the Accessibility page, which can be reached from every page. A tagged, accessible PDF is not ruled out, but it adds a risk: a scanned or poorly structured PDF makes the statement itself inaccessible. Publishing it in HTML, directly on the Accessibility page, is the simplest solution to maintain and to check."
+  ],
+  [
+   "Does a mobile app need its own accessibility statement?",
+   "Yes. The statement for an app is published on the website of the organisation that developed it or together with the information available at download, and the compliance status must also be shown within the app. The audit treats each screen as a page and is carried out on real devices, with the system screen readers: VoiceOver on iOS and TalkBack on Android."
+  ],
+  [
+   "Who can carry out the audit on which the statement is based?",
+   "The organisation itself, as a self-assessment, or a third party. The law does not require a certified provider. The audit must, however, apply the RGAA method, on a representative sample, and be documented in a grid that allows each criterion to be checked. A reliable self-assessment requires trained auditors and the use of assistive technologies; an external review limits the risk of an overstated rate."
+  ]
  ],
  "cta_svc": "audit-rgaa",
  "cta_title": "Would your statement withstand an inspection?",
  "cta_text": "We carry out the RGAA audit on which your accessibility statement rests and check that each section follows the official model. Let us talk about your services.",
- "related": ["france", "normes", "guide"]
+ "related": [
+  "france",
+  "normes",
+  "guide"
+ ],
+ "cluster": "methode"
 }

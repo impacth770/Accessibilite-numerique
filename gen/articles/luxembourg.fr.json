@@ -1,182 +1,715 @@
 {
-  "slug": "accessibilite-numerique-luxembourg",
-  "h1": "Accessibilité numérique au Luxembourg : ce que le SIP et l'OSAPS vérifient en 2026",
-  "crumb": "Accessibilité numérique au Luxembourg",
-  "meta_title": "Accessibilité numérique Luxembourg : RAWeb, RAAM et EAA en 2026",
-  "meta_desc": "Loi du 28 mai 2019, RAWeb 1.1, RAAM 1.1 et loi du 8 mars 2023 (EAA) : obligations, contrôles, sanctions et méthode d'audit mobile au Luxembourg.",
-  "card_desc": "Secteur public, EAA, RAWeb et RAAM : qui contrôle quoi au Luxembourg, et comment auditer une application mobile.",
-  "cat": "reglementation",
-  "where": "Luxembourg",
-  "cover": "LU",
-  "cover_note": ["Loi du 28 mai 2019", "RAWeb et RAAM"],
-  "date": "2026-10-27",
-  "lead": "L'accessibilité numérique au Luxembourg repose sur deux lois et deux autorités : la loi du 28 mai 2019 pour les sites et applications du secteur public, contrôlée par le Service information et presse (SIP), et la loi du 8 mars 2023, qui transpose l'European Accessibility Act et confie la surveillance du marché à l'OSAPS. Les référentiels nationaux RAWeb 1.1 et RAAM 1.1 traduisent la norme EN 301 549 en critères vérifiables, pour le web comme pour les applications mobiles. Cet article détaille qui doit faire quoi, ce que montrent les contrôles publiés, et comment se déroule concrètement l'audit d'une application selon le RAAM.",
-  "body": [
-    ["h2", "loi-28-mai-2019", "Accessibilité numérique au Luxembourg : ce qu'impose la loi du 28 mai 2019"],
-    ["p", "La loi du 28 mai 2019 relative à l'accessibilité des sites internet et des applications mobiles des organismes du secteur public transpose la directive (UE) 2016/2102. Son principe est simple : un site ou une application publique doit pouvoir être utilisé par une personne aveugle, malvoyante, sourde, ayant un handicap moteur ou cognitif, avec ses propres outils. La loi ne contient pas elle-même de liste de critères techniques. Elle renvoie à la norme européenne harmonisée EN 301 549, dans sa version V3.2.1, que le Luxembourg décline ensuite en référentiels nationaux."],
-    ["p", "Cette loi accessibilité Luxembourg est la base de tout le dispositif applicable au secteur public. Le portail officiel en présente le détail sur sa page consacrée aux [[https://accessibilite.public.lu/fr/obligations.html|obligations légales d'accessibilité numérique]], qui constitue la lecture de référence pour un service juridique ou un responsable de projet. Les paragraphes qui suivent en reprennent les points qui posent le plus de questions sur le terrain."],
-    ["h3", "Les organismes visés"],
-    ["p", "Sont concernés l'État, les communes, certains organismes de droit public ainsi que les associations formées par ces autorités. En pratique, cela couvre les ministères et leurs administrations, les communes et syndicats de communes, les offices sociaux et les établissements publics. Une circulaire du ministère de l'Intérieur du 11 août 2021 a d'ailleurs rappelé ces obligations aux administrations communales, aux syndicats de communes, aux offices sociaux et aux établissements publics placés sous leur surveillance."],
-    ["p", "Les applications mobiles entrent dans le champ dès lors qu'elles sont conçues et développées par un organisme public ou pour son compte. Une application commandée à une agence ou à un prestataire informatique reste donc sous la responsabilité de l'organisme qui la publie : c'est lui qui signe la déclaration d'accessibilité et qui répond aux réclamations. Le cahier des charges doit en tenir compte dès l'appel d'offres."],
-    ["p", "Quelques catégories sont exclues du champ de la loi :"],
-    ["ul", ["les sites et applications des diffuseurs du service public ;", "certaines organisations non gouvernementales ;", "les sites et applications des établissements scolaires de l'enseignement primaire et secondaire et des crèches, sauf pour les contenus liés aux fonctions administratives essentielles en ligne, comme une inscription ou un paiement."]],
-    ["h3", "Les contenus exemptés"],
-    ["p", "Certains contenus échappent aussi à l'obligation, en fonction de leur nature et de leur date de publication. Ces exemptions sont précises et datées ; elles ne couvrent pas l'ensemble d'un site ancien."],
-    ["ul", ["les fichiers bureautiques publiés avant le 23 septembre 2018, sauf s'ils sont nécessaires à une démarche administrative active ;", "les médias temporels préenregistrés publiés avant le 23 septembre 2020 ;", "les contenus d'intranet et d'extranet publiés avant le 23 septembre 2019, jusqu'à leur prochaine révision substantielle ;", "les contenus archivés qui ne sont pas nécessaires à une démarche active et n'ont pas été mis à jour après le 23 septembre 2019 ;", "les médias temporels en direct, les contenus de tiers et certaines reproductions de pièces de patrimoine."]],
-    ["p", "Un exemple fréquent : une commune publie chaque mois le compte rendu de son conseil communal en PDF. Les comptes rendus antérieurs à septembre 2018 peuvent rester en l'état s'ils ne servent à aucune démarche. Ceux publiés depuis doivent être accessibles, ou disposer d'une alternative accessible, par exemple une version HTML du même contenu."],
-    ["h3", "Les obligations concrètes"],
-    ["ul", ["rendre les sites et applications conformes aux exigences de la norme EN 301 549, évaluées avec le RAWeb pour le web et le RAAM pour le mobile ;", "publier une déclaration d'accessibilité pour chaque site et chaque application, et la tenir à jour ;", "proposer un mécanisme accessible pour signaler un défaut ou demander une alternative, accuser réception et répondre dans un délai d'un mois ;", "informer le SIP de la publication ou de la mise à jour de la déclaration, sans formalité particulière, dans les trente jours ;", "mentionner dans la déclaration la possibilité de saisir le SIP ou le médiateur du Grand-Duché."]],
-    ["h3", "La charge disproportionnée, une dérogation encadrée"],
-    ["p", "L'article 4 de la loi permet de déroger aux exigences lorsqu'elles imposeraient une charge disproportionnée. Le portail officiel encadre strictement cette notion : elle s'apprécie au cas par cas, pour une fonctionnalité ou un contenu donné, et ne peut en principe pas couvrir un site ou une application entière. La taille de l'organisme, ses ressources, ainsi que les coûts et les bénéfices estimés pour les personnes handicapées entrent dans l'évaluation."],
-    ["p", "Deux précisions évitent bien des erreurs. D'abord, le portail indique explicitement que le manque de priorité, de temps ou de connaissances ne constitue pas une circonstance légitime. Ensuite, invoquer la charge disproportionnée ne dispense pas de publier une déclaration d'accessibilité, ni de proposer une alternative accessible lorsque c'est possible ; pour une mission de service public essentielle, un service alternatif équivalent doit être offert."],
-    ["note", "À retenir", "Pour le secteur public, le dispositif luxembourgeois repose sur le contrôle, la publication des résultats et la médiation : le rapport de suivi 2022-2024 ne fait état d'aucune sanction. Le risque principal est donc la mise en cause publique et la réclamation, alors que la loi du 8 mars 2023 sur l'EAA prévoit, elle, des amendes."],
-
-    ["h2", "sip-accessibilite-public-lu", "Le SIP et le portail accessibilite.public.lu : qui contrôle le secteur public"],
-    ["p", "Le Service information et presse du gouvernement (SIP) est l'organe chargé du suivi de la loi du 28 mai 2019. Rattaché au ministère d'État et placé sous l'autorité directe du Premier ministre, il est d'abord le service de communication du gouvernement. Il porte aussi, depuis la transposition de la directive, l'ensemble de la politique d'accessibilité numérique du secteur public : contrôles, référentiels, réclamations, information et formation."],
-    ["p", "Ses missions dans ce domaine se répartissent en quatre blocs :"],
-    ["ul", ["exécuter des contrôles périodiques des sites et applications du secteur public et en rendre compte à la Commission européenne ;", "publier et maintenir les référentiels d'évaluation : RAWeb pour le web, RAAM pour les applications mobiles, RAPDF pour les documents PDF ;", "instruire les réclamations des usagers, en concertation avec les organismes concernés ;", "informer, sensibiliser et former, notamment au travers du portail accessibilite.public.lu, d'un observatoire et des cours proposés avec l'Institut national d'administration publique."]],
-    ["h3", "Trois types de contrôle"],
-    ["p", "Conformément à la décision d'exécution (UE) 2018/1524, le SIP pratique trois formes de contrôle. Le contrôle approfondi d'un site est un audit de conformité complet selon le RAWeb : il dit si le site est accessible et quels problèmes ont été relevés. Le contrôle d'une application mobile est un audit de conformité selon le RAAM. Le contrôle simplifié, enfin, vise à détecter des non-conformités et à sensibiliser, sans permettre de conclure sur la conformité du site."],
-    ["p", "La méthode de contrôle simplifié est publiée. Elle porte sur un échantillon de trois pages (la page d'accueil, une page comportant un formulaire, une page comportant un contenu particulier comme une vidéo, un tableau ou une image complexe), combine 41 règles automatisées de l'outil Axe et 47 critères du RAWeb vérifiés manuellement, et exclut les documents téléchargeables. Elle permet de couvrir beaucoup plus de sites que l'audit approfondi."],
-    ["h3", "Un calendrier annuel et des données ouvertes"],
-    ["p", "La première période de contrôle a couru du 23 septembre 2020 à la fin de 2021 ; depuis, une période correspond à une année civile. Le processus suit toujours les mêmes étapes : inventaire des sites et applications publics, constitution d'un échantillon décidé avec les principaux acteurs du secteur du handicap, audits, puis rapport à la Commission européenne tous les trois ans. Les inventaires, les échantillons, les rapports d'audit, les déclarations d'accessibilité et l'historique des réclamations sont publiés sur le portail de données ouvertes data.public.lu."],
-    ["p", "Cette transparence a une conséquence pratique : un organisme public qui figure dans l'échantillon de l'année verra son rapport d'audit publié. Le SIP a publié l'échantillon 2026 ; vérifier si vos sites ou applications y figurent est une première démarche utile."],
-    ["h3", "Des outils publics au-delà du contrôle"],
-    ["p", "Le portail met à disposition un modèle de cahier des charges, un kit d'audit, un générateur de déclaration d'accessibilité et le formulaire de réclamation. Les sources des référentiels sont publiées sur GitHub, ce qui permet à la communauté de proposer des corrections. En 2026, le SIP a aussi présenté Mia et Mil, deux voix de synthèse en luxembourgeois conçues pour les technologies d'assistance, open source et utilisables hors connexion : jusqu'ici, les utilisateurs de lecteurs d'écran devaient le plus souvent se contenter d'une voix allemande pour lire un texte luxembourgeois."],
-
-    ["h2", "raweb", "Le RAWeb 1.1 : le référentiel web luxembourgeois et ses différences avec le RGAA"],
-    ["p", "Le RAWeb, référentiel d'évaluation de l'accessibilité web, est la méthode utilisée pour vérifier qu'une page web respecte les exigences de la norme EN 301 549. Sa [[https://accessibilite.public.lu/fr/raweb1.1/index.html|version 1.1, publiée le 6 février 2026]], compte 136 critères de contrôle répartis en 17 thématiques. Elle s'applique à tout contenu HTML (HTML4, XHTML1 et HTML5) ; les applications mobiles natives relèvent du RAAM."],
-    ["p", "Le RAWeb reprend des contenus issus du RGAA 4.1.2 français, adaptés par le SIP au cadre juridique luxembourgeois. Les treize premières thématiques sont familières à quiconque connaît le RGAA : images, cadres, couleurs, multimédia, tableaux, liens, scripts, éléments obligatoires, structuration de l'information, présentation de l'information, formulaires, navigation et consultation. Le RAWeb ajoute quatre thématiques : documentation et fonctionnalités d'accessibilité, outils d'édition, services d'assistance, et communication en temps réel."],
-    ["h3", "Pourquoi 136 critères au lieu de 106"],
-    ["p", "Le RGAA 4.1.2 compte 106 critères et se concentre sur les exigences issues des WCAG. La norme EN 301 549 va plus loin : elle traite aussi de la documentation d'un service, des outils qui permettent de publier du contenu, du support client et des communications en temps réel. Le RAWeb couvre ces exigences, ce qui explique les 30 critères supplémentaires mentionnés dans le rapport de suivi luxembourgeois. Le SIP a utilisé le RGAA pour ses contrôles approfondis jusqu'en 2023, puis le RAWeb à partir de 2024."],
-    ["p", "Conséquence directe : un audit RGAA réalisé pour un site français ne suffit pas à établir la conformité d'un site luxembourgeois. Il en couvre l'essentiel, mais laisse de côté les critères propres à la norme, par exemple l'accessibilité de l'aide en ligne, d'un chat de support ou d'un back-office de publication. Les taux obtenus ne sont pas non plus directement comparables, puisque le dénominateur change. Notre article sur [[article:normes|les normes et référentiels d'accessibilité]] détaille ces correspondances, et la page [[standards|référentiels par pays]] les résume."],
-    ["h3", "Le RAPDF pour les documents"],
-    ["p", "Le Luxembourg dispose aussi d'un référentiel dédié aux documents PDF, le RAPDF, introduit en 2023 et passé lui aussi en version 1.1 en 2026. C'est un point utile pour les administrations, qui publient de nombreux formulaires, rapports et délibérations en PDF : les documents bureautiques représentent la première exemption déclarée dans les déclarations d'accessibilité, et les PDF inaccessibles sont le premier motif de réclamation recensé par le SIP sur 2022-2024."],
-
-    ["h2", "raam", "Le RAAM 1.1 : le référentiel pour l'accessibilité des applications mobiles"],
-    ["p", "Le RAAM, référentiel d'évaluation de l'accessibilité des applications mobiles, est l'une des particularités du Luxembourg. Peu de pays disposent d'une méthode publique aussi détaillée pour évaluer une application native. Sa [[https://accessibilite.public.lu/fr/raam1.1/index.html|version 1.1, publiée le 24 février 2025]], compte 108 critères de contrôle et permet de vérifier qu'une application respecte la norme EN 301 549 V3.2.1. Elle est diffusée sous licence CC-BY 3.0 LU."],
-    ["p", "Le RAAM couvre les chapitres de la norme qui concernent une application : exigences génériques (chapitre 5), communication vocale bidirectionnelle (6), fonctionnalités vidéo (7), documents non web (10), logiciels (11), documentation et services d'assistance (12). Ses critères sont organisés en quinze thématiques :"],
-    ["ul", ["éléments graphiques, couleurs, multimédia, tableaux ;", "composants d'interface, éléments obligatoires, structuration de l'information, présentation de l'information ;", "formulaires, navigation, consultation ;", "documentation et fonctionnalités d'accessibilité, outils d'édition, services d'assistance, communication en temps réel."]],
-    ["h3", "Ce qui a changé avec la version 1.1"],
-    ["p", "La première version du RAAM, publiée en juin 2021, comptait 107 critères. La version 1.1 en ajoute un, le critère 14.3, issu d'un découpage de la thématique 12 pour rendre les exigences plus lisibles. Elle revoit aussi plusieurs méthodes : le contraste tient désormais compte de la taille réelle du texte, de nouveaux tests couvrent les sous-titres des médias en direct, et le seuil de clignotement passe de « moins de 3 par seconde » à « 3 par seconde ou moins »."],
-    ["p", "La méthodologie a gagné un principe de non-interférence, repris du RAWeb : un contenu exempté ou dérogé n'a pas à être conforme, mais il ne doit pas empêcher l'accès au reste de l'écran. Elle précise aussi comment tester avec ou sans service d'accessibilité clavier sur Android, et comment mesurer une taille de texte à partir de captures d'écran."],
-    ["h3", "Pourquoi un référentiel distinct du web"],
-    ["p", "Sur une application native, l'auditeur n'a presque jamais accès au code source. Il ne peut pas inspecter un attribut comme sur une page web : il vérifie ce que le système expose réellement aux technologies d'assistance. Les tests du RAAM s'appuient donc sur les lecteurs d'écran, les réglages du système et les outils d'inspection fournis par Apple et Google. C'est une autre façon de travailler, qui exige des appareils réels et une bonne connaissance de chaque plateforme. Le RAAM est le référentiel luxembourgeois ; ailleurs, la même méthode s'applique avec le référentiel local, comme l'explique notre page [[svc:audit-raam|audit d'application mobile selon le RAAM]]."],
-
-    ["h2", "declaration-reclamation", "Déclaration d'accessibilité et réclamations : le circuit luxembourgeois"],
-    ["p", "La déclaration d'accessibilité est la pièce que l'usager, le SIP et parfois la presse consultent en premier. Elle indique un état de conformité établi par un audit, selon trois niveaux définis par le portail officiel."],
-    ["ul", ["conformité totale : tous les critères de contrôle du référentiel sont respectés, soit un taux de 100 % après audit ;", "conformité partielle : au moins 50 % des critères de contrôle sont respectés ;", "non-conformité : aucun audit valable n'a été réalisé, ou moins de 50 % des critères sont respectés."]],
-    ["p", "Au-delà de cet état, la déclaration liste les contenus non accessibles en distinguant ce qui est non conforme, ce qui est exempté et ce qui relève d'une charge disproportionnée, avec la justification et les alternatives proposées. Elle décrit les fonctionnalités d'accessibilité disponibles, précise s'il s'agit d'une autoévaluation ou d'une évaluation par un tiers, donne une adresse de contact et rappelle la possibilité de saisir le SIP ou le médiateur."],
-    ["h3", "Où la publier, et dans quelles langues"],
-    ["p", "Pour un site, la déclaration doit être facile à trouver : un lien doit figurer sur chaque page, par exemple dans le pied de page. Pour une application, elle se publie sur le site de l'organisme responsable ou dans les informations disponibles au moment du téléchargement, c'est-à-dire la fiche de l'App Store ou de Google Play. Le générateur officiel produit la déclaration en français, en allemand, en anglais et en luxembourgeois, et recommande de la proposer dans chaque langue d'un site multilingue."],
-    ["p", "Après publication, l'organisme envoie l'adresse de sa déclaration au SIP, à accessibilite@sip.etat.lu. Le générateur recommande de réévaluer après toute refonte importante et de relire la déclaration au moins une fois par an. Pour la rédaction elle-même, notre article sur [[article:declaration|la déclaration d'accessibilité]] détaille les erreurs les plus fréquentes, en France comme au Luxembourg."],
-    ["h3", "Le parcours d'une réclamation"],
-    ["p", "Prenons un usager qui ne parvient pas à valider un formulaire de demande d'allocation avec TalkBack, parce que le bouton « Envoyer » n'est pas annoncé. Il s'adresse d'abord à l'organisme, via le contact indiqué dans la déclaration d'accessibilité. L'organisme doit accuser réception et répondre dans un délai d'un mois à compter de l'envoi ; si le problème est complexe, il peut fixer un délai plus long, à condition de le justifier."],
-    ["p", "Si la réponse ne le satisfait pas, l'usager peut saisir le SIP au moyen de son formulaire de réclamation en ligne, ou le médiateur du Grand-Duché de Luxembourg. Le SIP s'engage à répondre par e-mail dans un délai d'un mois au plus tard. Dans la pratique, il analyse la demande, contacte l'organisme et lui laisse un mois pour réagir. Tant que la déclaration ne propose pas de contact accessible, l'organisme se prive de la première étape et laisse la réclamation remonter directement à l'autorité."],
-
-    ["h2", "resultats-suivi", "Ce que montrent les contrôles publiés pour 2022 à 2024"],
-    ["p", "Le Luxembourg publie ses résultats avec un niveau de détail rare. Le [[https://download.data.public.lu/resources/rapport-sur-le-controle-de-laccessibilite-des-sites-internet-et-applications-mobiles-du-secteur-public-au-luxembourg-2022-2024/20250115-100700/wad-monitoring-report-lu-2022-2024.pdf|rapport sur le contrôle de l'accessibilité des sites et applications du secteur public 2022-2024]], transmis à la Commission européenne, donne une image précise de la situation. Tous les chiffres de cette section en sont issus."],
-    ["table", {"caption": "Contrôles du SIP et scores moyens, 2022-2024 (source : rapport de suivi 2022-2024)", "head": ["Indicateur", "2022", "2023", "2024"], "rows": [
-      ["Audits approfondis de sites", "17", "15", "16"],
-      ["Audits simplifiés de sites", "87", "93", "93"],
-      ["Audits approfondis d'applications mobiles", "6", "6", "7"],
-      ["Score moyen des audits approfondis de sites", "48 %", "54 %", "61 %"],
-      ["Score moyen des audits d'applications mobiles", "49 %", "43 %", "37 %"],
-      ["Réclamations reçues par le SIP", "9", "4", "7"]
-    ]}],
-    ["p", "La tendance est nette : les sites progressent, de 48 % à 61 % de score moyen en trois ans, tandis que les applications mobiles reculent, de 49 % à 37 %. Le rapport relève qu'en 2024, comme en 2021, aucune application auditée n'atteint la conformité partielle (deux y parvenaient en 2022 et en 2023). Le mobile est aujourd'hui le point faible du secteur public luxembourgeois, ce qui justifie une attention particulière au RAAM."],
-    ["h3", "Les non-conformités les plus fréquentes"],
-    ["p", "Sur les applications, les trois défauts les plus fréquents sont des composants d'interface incompatibles avec les technologies d'assistance (critère 5.1), une structure de titres inadaptée (critère 7.1) et des contenus qui ne s'adaptent pas à l'orientation de l'écran (critère 11.9). Sur les sites, en contrôle approfondi, ce sont des scripts incompatibles avec les technologies d'assistance, des balises utilisées à des fins de présentation et des listes mal structurées."],
-    ["p", "En contrôle simplifié, le défaut le plus fréquent est l'absence d'indication des changements de langue, devant les scripts non utilisables au clavier et à la souris et les contrastes de texte insuffisants. Ce premier résultat est très luxembourgeois : une page en français qui cite une démarche en allemand ou un nom d'institution en luxembourgeois doit signaler ce passage pour que le lecteur d'écran change de voix et de prononciation."],
-    ["h3", "Déclarations, dérogations et réclamations"],
-    ["p", "Le rapport recense 431 déclarations d'accessibilité de sites et 30 déclarations d'applications, pour 979 sites et applications identifiés dans l'inventaire du secteur public. En 2024, 61 % des déclarations invoquaient une dérogation pour charge disproportionnée, un usage que le cadre officiel présente pourtant comme exceptionnel. Le SIP a reçu 20 réclamations sur la période ; les PDF inaccessibles en sont le premier motif, devant les problèmes de pages web et d'applications."],
-    ["p", "Ces chiffres sont modestes en valeur absolue, mais ils sont publics. Pour une administration, le risque est moins une sanction qu'un rapport d'audit publié qui montre un score faible, ou une déclaration qui invoque une charge disproportionnée sans justification. Pour en savoir plus sur l'accompagnement des administrations, consultez notre page [[sector:public|secteur public]]."],
-
-    ["h2", "eaa-luxembourg", "EAA Luxembourg : la loi du 8 mars 2023 et l'OSAPS"],
-    ["p", "Le Luxembourg a transposé la directive (UE) 2019/882, dite European Accessibility Act, par la [[https://accessibilite-produits-services.public.lu/dam-assets/lgislation/loi-du-8-mars-2023.pdf|loi du 8 mars 2023 relative aux exigences en matière d'accessibilité applicables aux produits et services]], publiée au Mémorial A n° 133 du 15 mars 2023. Selon son article 36, elle est entrée en vigueur le 28 juin 2025. Elle concerne cette fois les acteurs économiques, privés comme publics, qui mettent sur le marché des produits ou fournissent aux consommateurs des services visés."],
-    ["h3", "Produits et services concernés"],
-    ["p", "Côté produits : ordinateurs et systèmes d'exploitation grand public, smartphones et tablettes, terminaux de paiement, bornes d'enregistrement et automates de vente de titres de transport (hors ceux embarqués dans les véhicules), téléviseurs connectés et liseuses. Côté services : communications électroniques, accès aux services de médias audiovisuels, transport de passagers aérien, ferroviaire, par autobus et par voie navigable (sites, applications, billetterie électronique et informations), services bancaires aux consommateurs, livres numériques, commerce électronique et réponse aux communications d'urgence vers le 112. Notre article sur [[article:eaa|l'European Accessibility Act]] détaille ce périmètre commun à tous les États membres."],
-    ["h3", "L'OSAPS, autorité de surveillance"],
-    ["p", "L'article 3 de la loi crée l'Office de la surveillance de l'accessibilité des produits et services (OSAPS), placé sous l'autorité du ministre ayant la politique pour personnes handicapées dans ses attributions, aujourd'hui le ministère de la Famille, des Solidarités, du Vivre ensemble et de l'Accueil. Pour les produits, les contrôles sont confiés à l'OSAPS, à l'Administration des douanes et accises et à la Police grand-ducale (article 28, paragraphe 1). Pour les services, l'OSAPS et la Police grand-ducale contrôlent la conformité, avec les autorités sectorielles compétentes (article 28, paragraphe 2)."],
-    ["p", "L'OSAPS sert aussi de point de contact sur l'accessibilité et fournit des lignes directrices et des outils, en particulier aux microentreprises. Toute personne physique ou morale peut lui signaler la non-conformité d'un produit ou d'un service. Le signalement se fait en ligne via MyGuichet.lu, gratuitement, avec la possibilité de joindre une capture d'écran ou un document. Une association de personnes handicapées peut le faire au titre de personne morale."],
-    ["h3", "Sanctions prévues"],
-    ["ul", ["amende administrative de 250 à 15 000 euros prononcée par l'OSAPS contre l'opérateur qui refuse de fournir des documents ou informations, fait obstacle aux contrôles ou ne respecte pas les décisions de l'Office (article 32) ;", "amende pénale de 251 à 500 000 euros pour l'opérateur économique qui enfreint les dispositions visées par la loi, modulée selon l'étendue et la gravité du manquement (article 33, paragraphe 1) ;", "en cas de récidive, amende de 500 à 1 000 000 euros (article 33, paragraphe 2) ;", "restriction ou interdiction de la mise à disposition d'un produit ou de la fourniture d'un service non conforme, décision contestable par un recours en réformation devant le tribunal administratif dans un délai de trois mois (article 28, paragraphe 5)."]],
-    ["h3", "Exemptions et délais de transition"],
-    ["p", "La loi définit la microentreprise comme une entreprise qui emploie moins de dix personnes et dont le chiffre d'affaires annuel ou le total du bilan annuel n'excède pas 2 000 000 euros. Les microentreprises qui fournissent des services sont exemptées des exigences d'accessibilité ; celles qui fabriquent ou distribuent des produits restent soumises aux exigences, avec des obligations documentaires allégées. Une PME de plus grande taille qui vend en ligne aux consommateurs est en revanche pleinement concernée."],
-    ["p", "Des délais de transition s'appliquent. Les prestataires de services peuvent continuer d'utiliser jusqu'au 28 juin 2030 les produits qu'ils utilisaient légalement avant l'entrée en vigueur. Les contrats de services conclus avant cette date peuvent se poursuivre sans modification jusqu'à leur expiration, dans la limite de cinq ans. Les terminaux en libre-service déjà en service peuvent le rester jusqu'à la fin de leur vie économique, sans dépasser vingt ans après leur mise en service."],
-    ["p", "Comme partout dans l'Union, le fournisseur d'un service visé doit aussi expliquer, dans des informations accessibles au public et notamment dans ses conditions générales, comment son service satisfait aux exigences d'accessibilité. Ce point est souvent oublié : un site marchand peut être techniquement correct et rester en défaut faute de cette information. Pour l'évaluation technique, la référence est la norme EN 301 549 ; le RAWeb et le RAAM constituent des méthodes publiques, détaillées et gratuites pour la mettre en œuvre, que l'OSAPS cite d'ailleurs parmi ses ressources. Nous proposons pour ces acteurs un [[svc:audit-conformite|audit de conformité EN 301 549 et WCAG]]."],
-
-    ["h2", "specificites-luxembourg", "Multilinguisme, place financière, frontaliers : les spécificités luxembourgeoises"],
-    ["p", "Les exigences techniques sont européennes, mais leur mise en œuvre au Luxembourg rencontre trois réalités que l'on retrouve rarement réunies ailleurs. Elles pèsent directement sur la qualité d'un audit et sur le coût des corrections."],
-    ["h3", "Quatre langues dans une même interface"],
-    ["p", "La loi du 24 février 1984 sur le régime des langues a reconnu le luxembourgeois comme langue nationale, fait du français la langue de la législation et retenu le français, l'allemand et le luxembourgeois comme langues administratives. L'anglais s'y ajoute très souvent dans les services financiers, les institutions européennes et les entreprises internationales. Un même site public peut donc exister en quatre versions, et une même page mélanger plusieurs langues."],
-    ["p", "Pour l'accessibilité, chaque version linguistique est un contenu à part entière : textes alternatifs, intitulés de boutons, messages d'erreur, sous-titres et transcriptions doivent exister dans chaque langue. La langue de chaque page doit être déclarée, et chaque passage dans une autre langue signalé ; c'est, on l'a vu, le défaut le plus fréquent relevé par les contrôles simplifiés. Le RAAM 1.1 a d'ailleurs ajouté une condition sur la langue des sous-titres. Enfin, un échantillon d'audit doit couvrir les versions linguistiques réellement utilisées, faute de quoi les défauts d'une traduction secondaire passent inaperçus."],
-    ["h3", "La place financière et les services bancaires"],
-    ["p", "Les services bancaires aux consommateurs figurent dans le champ de l'EAA. Pour une banque de détail, un établissement de paiement ou un émetteur de monnaie électronique établi au Luxembourg, l'application mobile est souvent le premier canal de relation client. Les points de blocage sont connus : authentification forte par code ou biométrie sans alternative, délais de session trop courts pour un utilisateur de lecteur d'écran, graphiques de portefeuille sans équivalent textuel, contrats et relevés en PDF non balisés, captchas visuels lors de l'ouverture de compte."],
-    ["p", "Les banques privées et les acteurs qui ne servent que des clients professionnels doivent analyser précisément leur périmètre, car l'EAA vise les services fournis aux consommateurs. Cette analyse mérite d'être documentée et validée par le service juridique plutôt que présumée. Notre page [[sector:grands-comptes|grands comptes]] présente l'accompagnement de ces organisations."],
-    ["h3", "Les frontaliers, des usagers à part entière"],
-    ["p", "Selon le [[https://statistiques.public.lu/dam-assets/catalogue-publications/regards/2026/regards-frontaliers-120326-03.pdf|STATEC]], le Luxembourg comptait 225 840 salariés frontaliers entrants en 2023, dont 54,2 % résidant en France, 23 % en Allemagne et 22,7 % en Belgique. Ces personnes utilisent les services numériques luxembourgeois (sécurité sociale, fiscalité, transport, banque) avec des appareils et des réglages configurés dans leur pays, parfois dans une autre langue que celle du service."],
-    ["p", "Pour une organisation luxembourgeoise, cela implique de tester avec des configurations variées, notamment des lecteurs d'écran réglés en français ou en allemand. Pour une organisation qui opère des deux côtés de la frontière, cela signifie aussi composer avec plusieurs régimes : RGAA en France, norme EN 301 549 en Belgique, RAWeb et RAAM au Luxembourg. Nos articles sur [[article:belgique|l'accessibilité numérique en Belgique]] et [[article:france|l'accessibilité numérique en France]] présentent les deux voisins ; nos consultants travaillent en français, en allemand et en anglais."],
-
-    ["h2", "methode-audit-raam", "Auditer une application mobile selon le RAAM : la méthode pas à pas"],
-    ["p", "La [[https://accessibilite.public.lu/en/raam1.1/methodologie.html|méthodologie de test du RAAM 1.1]] est publique et précise. Elle laisse toutefois de nombreux choix pratiques à l'auditeur. Voici comment se déroule, concrètement, l'audit d'une application d'organisme public ou d'entreprise, sur iOS et sur Android."],
-    ["ol", [
-      ["Cadrer le périmètre et l'environnement.", "On fixe la version de l'application auditée (version publiée ou build de test via TestFlight ou une piste de test Google Play), les comptes de test nécessaires et les données fictives pour parcourir les démarches sans risque. Si l'application est destinée à un environnement géré, par exemple une flotte d'appareils administrée par une banque ou une administration, le RAAM demande de tester avec les configurations réellement utilisées dans cet environnement."],
-      ["Constituer l'échantillon d'écrans.", "La méthodologie impose, lorsqu'ils existent, l'écran d'accueil, les informations légales, l'authentification, le contact, les écrans de documentation, au moins un écran pertinent pour chaque type de service et usage principal (dont la recherche), au moins un document téléchargeable par service, tous les écrans d'un processus en plusieurs étapes et les écrans de nature différente (tableaux de données, multimédia, formulaires, communication en temps réel). Des écrans tirés au hasard, représentant au moins 10 % de l'échantillon, complètent la sélection."],
-      ["Préparer les appareils réels.", "Les tests se font sur la dernière version disponible d'iOS et d'Android, ou sur la version précédente, avec les versions de VoiceOver et TalkBack livrées avec le système. Le RAAM précise qu'il n'est pas nécessaire de tester Android sur un modèle d'appareil particulier. En pratique, on prévoit au moins un smartphone de chaque plateforme, et une tablette si l'application la prend en charge."],
-      ["Tester au lecteur d'écran.", "Chaque écran est parcouru avec VoiceOver sur iOS et TalkBack sur Android, par gestes de balayage, par exploration tactile et avec le rotor ou les commandes de lecture. Le panneau de sous-titres de VoiceOver ou l'affichage de la sortie vocale de TalkBack permettent de consigner exactement ce qui est annoncé. On vérifie que chaque bouton a un nom, un rôle et un état, que les titres sont déclarés, que les messages d'erreur et de confirmation sont restitués sans déplacer le focus de manière inattendue."],
-      ["Tester au clavier externe et au contacteur.", "Sur iOS, on active l'accès complet au clavier ; sur Android, on teste d'abord avec le seul clavier, puis avec Switch Access si nécessaire, en associant par exemple Tab à « suivant », Maj + Tab à « précédent », Entrée à « sélectionner » et Échap à « retour ». L'objectif est d'atteindre et d'activer chaque fonction, sans piège et dans un ordre logique."],
-      ["Contrôler l'agrandissement et l'affichage.", "La taille de texte est augmentée dans les réglages du système ; sur iOS, la méthodologie recommande de tester à 190 %, valeur la plus proche de 200 % disponible dans le centre de contrôle. On vérifie que les textes ne sont ni tronqués ni superposés, que l'application fonctionne en mode portrait et paysage, et que le contraste reste suffisant, mesuré à partir de captures d'écran de l'appareil."],
-      ["Vérifier les autres usages.", "On contrôle les alternatives aux gestes complexes (glisser, pincer, secouer), la taille et l'espacement des zones tactiles, la gestion des délais, les vidéos (sous-titres, audiodescription), les vues web intégrées qui portent une démarche, et les documents téléchargés depuis l'application. Les outils d'inspection d'Apple (Accessibility Inspector) et de Google (Accessibility Scanner) et Colour Contrast Analyser complètent l'analyse, sans jamais remplacer les tests manuels."],
-      ["Calculer le taux et appliquer la non-interférence.", "Un critère n'est validé que s'il est respecté sur tous les écrans de l'échantillon où il s'applique : un seul écran en échec suffit à l'invalider. Le taux de conformité rapporte les critères validés aux critères applicables. Les critères de non-interférence (contrôle des sons déclenchés automatiquement, absence de piège au clavier, maîtrise des limites de temps, absence de flashs dangereux, contrôle des contenus en mouvement) s'appliquent même aux contenus exemptés."],
-      ["Restituer et rédiger la déclaration.", "Le rapport livre, écran par écran, les critères non validés, les éléments en cause et des recommandations distinctes pour les équipes iOS et Android, qui utilisent des composants différents. Il sert de base à la déclaration d'accessibilité à publier sur le site de l'organisme ou dans la fiche de l'application."]
-    ]],
-    ["p", "Trois pièges reviennent souvent. Le premier est l'audit d'une seule plateforme : iOS et Android ont leurs propres composants, et une application hybride peut être correcte sur l'une et défaillante sur l'autre ; les audits du SIP portent d'ailleurs séparément sur des versions iOS et Android. Le deuxième est l'orientation bloquée en portrait sans justification, l'un des défauts les plus fréquents relevés. Le troisième est le composant personnalisé (sélecteur de date, carrousel, onglets) qui ne s'expose pas aux technologies d'assistance. Pour aller au-delà de la conformité, un [[svc:test-utilisateur|test avec des utilisateurs en situation de handicap]] permet de vérifier que les parcours sont réellement utilisables."],
-
-    ["h2", "tableau-synthese", "Qui applique quoi : organisation, texte, référentiel, contrôle"],
-    ["p", "Le tableau ci-dessous résume les situations les plus courantes. Il ne remplace pas une analyse juridique de votre périmètre, mais il permet d'identifier rapidement le texte et l'autorité dont vous relevez."],
-    ["table", {"caption": "Accessibilité numérique au Luxembourg : textes, référentiels et autorités par type d'organisation", "head": ["Organisation", "Texte applicable", "Référentiel d'évaluation", "Contrôle et recours"], "rows": [
-      ["Ministère, administration de l'État", "Loi du 28 mai 2019", "RAWeb 1.1 (web), RAAM 1.1 (mobile), RAPDF 1.1 (PDF)", "SIP : contrôles, réclamations ; médiateur"],
-      ["Commune, syndicat de communes, office social", "Loi du 28 mai 2019", "RAWeb 1.1, RAAM 1.1, RAPDF 1.1", "SIP ; médiateur"],
-      ["Établissement public, association formée par des autorités publiques", "Loi du 28 mai 2019", "RAWeb 1.1, RAAM 1.1", "SIP ; médiateur"],
-      ["École primaire ou secondaire, crèche", "Hors champ, sauf fonctions administratives essentielles en ligne", "RAWeb 1.1 pour ces fonctions", "SIP pour les contenus couverts"],
-      ["Banque de détail, établissement de paiement", "Loi du 8 mars 2023 (EAA)", "EN 301 549 ; RAWeb et RAAM comme méthodes", "OSAPS, Police grand-ducale ; amendes"],
-      ["Site marchand d'une entreprise hors microentreprise", "Loi du 8 mars 2023 (EAA)", "EN 301 549 ; RAWeb comme méthode", "OSAPS ; amendes"],
-      ["Transporteur de passagers (site, application, billetterie)", "Loi du 8 mars 2023 (EAA)", "EN 301 549 ; RAWeb et RAAM comme méthodes", "OSAPS, autorités sectorielles"],
-      ["Fabricant ou importateur de terminaux, smartphones, liseuses", "Loi du 8 mars 2023 (EAA)", "Exigences de la loi, normes harmonisées", "OSAPS, Douanes et accises, Police grand-ducale"],
-      ["Microentreprise de services", "Exemptée des exigences de la loi du 8 mars 2023", "Aucun au titre de l'EAA ; WCAG recommandées", "Aucun contrôle au titre de l'EAA"]
-    ]}],
-    ["p", "Une même organisation peut relever des deux lois. Un opérateur public de transport, par exemple, entre dans le champ de la loi de 2019 pour ses sites institutionnels et dans celui de la loi de 2023 pour ses services de transport de passagers. La page [[country:luxembourg|accessibilité numérique au Luxembourg]] rappelle les obligations principales et les prestations disponibles dans le pays."],
-
-    ["h2", "raweb-2-raam-2", "RAWeb 2 et RAAM 2 en 2027 : anticiper la nouvelle norme EN 301 549"],
-    ["p", "Le cadre va évoluer à court terme. La version révisée de la norme EN 301 549, numérotée 4.1.1, a été approuvée le 2 septembre 2026 par le CEN et l'ETSI ; sa publication au Journal officiel de l'Union européenne est attendue d'ici la fin de l'année. Elle intègre notamment les WCAG 2.2 et sert désormais à évaluer la conformité tant au titre de la directive de 2016 sur les sites publics qu'au titre de l'European Accessibility Act."],
-    ["p", "Le SIP a [[https://accessibilite.public.lu/en/news/2026-09-15-EN301549v4.html|annoncé la publication du RAWeb 2 et du RAAM 2 en février 2027]]. Les nouvelles versions conserveront l'approche par critères, tests et méthodologie, mais adopteront une structure alignée sur celle de la norme, afin d'en faciliter l'usage par des personnes qui ne connaissent ni le RGAA ni le RAWeb et de réduire les écarts de taux entre le référentiel et la norme. Les retours de la communauté recueillis sur GitHub y seront intégrés."],
-    ["p", "Sans attendre, vos équipes peuvent intégrer les six critères WCAG 2.2 que la norme ajoute : focus non masqué, alternative aux mouvements de glisser, taille des cibles, aide cohérente, saisie redondante évitée et authentification accessible. Les deux derniers concernent directement les parcours bancaires et les démarches administratives : ne pas redemander une information déjà saisie, et ne pas imposer un test cognitif, comme la recopie d'un code déformé, sans alternative. Une [[svc:formations|formation des équipes]] de conception et de développement au début de 2027 évite de produire du nouveau contenu selon des règles déjà dépassées."],
-
-    ["h2", "plan-action", "Plan d'action pour l'accessibilité numérique au Luxembourg"],
-    ["p", "Quel que soit le texte dont vous relevez, la démarche suit les mêmes étapes. Elle peut être engagée dès ce trimestre, sans attendre les versions 2 des référentiels."],
-    ["ol", [
-      ["Inventorier vos services numériques.", "Listez les sites, applications, intranets, extranets et documents publiés, avec leur langue, leur public et leur prestataire. Pour un organisme public, comparez votre liste avec l'inventaire publié sur data.public.lu."],
-      ["Déterminer le texte applicable.", "Pour chaque service : loi du 28 mai 2019, loi du 8 mars 2023, ou les deux. Documentez les cas limites (clientèle professionnelle, microentreprise, contenus exemptés) et faites valider l'analyse par votre service juridique."],
-      ["Choisir le référentiel et l'échantillon.", "RAWeb 1.1 pour le web, RAAM 1.1 pour les applications, RAPDF 1.1 pour les PDF. Construisez un échantillon qui couvre les parcours essentiels et toutes les versions linguistiques réellement utilisées."],
-      ["Réaliser l'audit initial.", "Faites auditer chaque service sur appareils réels pour le mobile, en distinguant iOS et Android. Un [[svc:audit-raam|audit RAAM]] ou un audit RAWeb donne un taux de conformité opposable et une liste de corrections priorisées."],
-      ["Publier ou corriger la déclaration d'accessibilité.", "Utilisez le générateur officiel, publiez la déclaration dans chaque langue, ajoutez un contact accessible et, pour un organisme public, transmettez l'adresse au SIP dans les trente jours."],
-      ["Corriger selon l'impact.", "Traitez d'abord ce qui bloque un parcours essentiel : authentification, paiement, formulaire de demande, consultation d'un document officiel. Inscrivez les exigences d'accessibilité dans vos contrats de développement et faites [[svc:recette|recetter l'accessibilité]] avant chaque mise en production."],
-      ["Préparer 2027.", "Intégrez dès maintenant les critères WCAG 2.2, suivez la publication du RAWeb 2 et du RAAM 2 en février 2027, et planifiez un nouvel audit après chaque refonte importante et au moins une relecture annuelle de vos déclarations."]
-    ]],
-    ["p", "Pour les acteurs soumis à l'EAA, ajoutez deux tâches : rédiger les informations sur l'accessibilité du service à intégrer dans vos conditions générales, et organiser le traitement des signalements que l'OSAPS pourrait vous transmettre. Pour les organismes publics, gardez à l'esprit que l'échantillon de contrôle 2026 est déjà publié et que les rapports d'audit le seront aussi. Si vos équipes développent elles-mêmes, un [[svc:developpement|accompagnement des développeurs]] sur iOS et Android réduit le coût des corrections."]
+ "slug": "accessibilite-numerique-luxembourg",
+ "h1": "Accessibilité numérique au Luxembourg : ce que le SIP et l'OSAPS vérifient en 2026",
+ "crumb": "Accessibilité numérique au Luxembourg",
+ "meta_title": "Accessibilité numérique Luxembourg : RAWeb, RAAM et EAA en 2026",
+ "meta_desc": "Loi du 28 mai 2019, RAWeb 1.1, RAAM 1.1 et loi du 8 mars 2023 (EAA) : obligations, contrôles, sanctions et méthode d'audit mobile au Luxembourg.",
+ "card_desc": "Secteur public, EAA, RAWeb et RAAM : qui contrôle quoi au Luxembourg, et comment auditer une application mobile.",
+ "cat": "reglementation",
+ "where": "Luxembourg",
+ "cover": "LU",
+ "cover_note": [
+  "Loi du 28 mai 2019",
+  "RAWeb et RAAM"
+ ],
+ "date": "2026-10-27",
+ "lead": "L'accessibilité numérique au Luxembourg repose sur deux lois et deux autorités : la loi du 28 mai 2019 pour les sites et applications du secteur public, contrôlée par le Service information et presse (SIP), et la loi du 8 mars 2023, qui transpose l'European Accessibility Act et confie la surveillance du marché à l'OSAPS. Les référentiels nationaux RAWeb 1.1 et RAAM 1.1 traduisent la norme EN 301 549 en critères vérifiables, pour le web comme pour les applications mobiles. Cet article détaille qui doit faire quoi, ce que montrent les contrôles publiés, et comment se déroule concrètement l'audit d'une application selon le RAAM.",
+ "body": [
+  [
+   "h2",
+   "loi-28-mai-2019",
+   "Accessibilité numérique au Luxembourg : ce qu'impose la loi du 28 mai 2019"
   ],
-  "faq": [
-    ["Une entreprise privée doit-elle appliquer le RAWeb ou le RAAM ?", "Non, ces référentiels sont imposés au secteur public par la loi du 28 mai 2019. Une entreprise soumise à la loi du 8 mars 2023 doit respecter les exigences d'accessibilité de l'EAA, évaluées au regard de la norme EN 301 549. Le RAWeb et le RAAM restent toutefois des méthodes publiques, gratuites et détaillées pour démontrer cette conformité, et leurs critères correspondent aux exigences de la norme. Les utiliser facilite le dialogue avec l'OSAPS en cas de signalement."],
-    ["Un audit RGAA réalisé en France est-il valable au Luxembourg ?", "Il couvre une large partie des exigences, puisque le RAWeb reprend des contenus du RGAA 4.1.2, mais il ne suffit pas. Le RAWeb compte 136 critères contre 106 pour le RGAA : les critères propres à la documentation, aux outils d'édition, aux services d'assistance et à la communication en temps réel ne sont pas évalués. Pour une déclaration d'accessibilité luxembourgeoise, il faut compléter l'audit sur ces points et recalculer le taux selon le RAWeb."],
-    ["Que risque un organisme public qui ne respecte pas la loi du 28 mai 2019 ?", "La loi ne prévoit pas d'amende comparable à celles de l'EAA, et le rapport de suivi 2022-2024 ne mentionne aucune sanction. L'organisme s'expose en revanche à un contrôle du SIP dont le rapport est publié en données ouvertes, à des réclamations instruites par le SIP ou par le médiateur, et à une mise en cause publique. Une déclaration absente ou erronée est par ailleurs immédiatement visible pour les usagers comme pour l'autorité."],
-    ["La déclaration d'accessibilité doit-elle être traduite en luxembourgeois ?", "Le générateur officiel produit la déclaration en français, en allemand, en anglais et en luxembourgeois, et recommande de la proposer dans chaque langue d'un site multilingue. Si votre site existe en trois langues, publiez donc la déclaration dans ces trois langues. L'essentiel est qu'un usager trouve la déclaration dans la langue de la page qu'il consulte, avec un contact accessible et la mention des recours."],
-    ["Combien de temps prend l'audit d'une application mobile ?", "La durée dépend du nombre d'écrans de l'échantillon, du nombre de plateformes et de la complexité des parcours : une application avec authentification, paiement et documents téléchargeables demande plus de travail qu'une application d'information. L'audit iOS et l'audit Android sont deux évaluations distinctes, même si les recommandations communes sont mutualisées. Dans notre pratique, le délai moyen d'un audit est de trois semaines, de la mise à disposition de l'application à la restitution."],
-    ["Les applications d'une banque luxembourgeoise sont-elles concernées par l'EAA ?", "Oui, dès lors qu'elles servent des consommateurs : les services bancaires aux consommateurs figurent dans le champ de la loi du 8 mars 2023. Cela couvre l'application mobile, l'espace client en ligne, les parcours d'ouverture de compte et les documents fournis au client. Les services exclusivement destinés à une clientèle professionnelle relèvent d'une analyse au cas par cas. La surveillance est assurée par l'OSAPS, avec les autorités sectorielles compétentes."],
-    ["Comment signaler un site ou un service inaccessible au Luxembourg ?", "Pour un site ou une application du secteur public, contactez d'abord l'organisme via sa déclaration d'accessibilité ; sans réponse satisfaisante dans le mois, saisissez le SIP par son formulaire de réclamation ou le médiateur du Grand-Duché. Pour un produit ou un service privé visé par l'EAA, le signalement se fait auprès de l'OSAPS, en ligne via MyGuichet.lu, gratuitement, en joignant si possible une capture d'écran."]
+  [
+   "p",
+   "La loi du 28 mai 2019 relative à l'accessibilité des sites internet et des applications mobiles des organismes du secteur public transpose la directive (UE) 2016/2102. Son principe est simple : un site ou une application publique doit pouvoir être utilisé par une personne aveugle, malvoyante, sourde, ayant un handicap moteur ou cognitif, avec ses propres outils. La loi ne contient pas elle-même de liste de critères techniques. Elle renvoie à la norme européenne harmonisée EN 301 549, dans sa version V3.2.1, que le Luxembourg décline ensuite en référentiels nationaux."
   ],
-  "cta_svc": "audit-raam",
-  "cta_title": "Votre application est-elle prête pour un contrôle ?",
-  "cta_text": "Nous évaluons vos applications iOS et Android selon le RAAM 1.1, sur appareils réels, et préparons votre déclaration d'accessibilité. Parlons de votre périmètre.",
-  "related": ["eaa", "normes", "belgique"]
+  [
+   "p",
+   "Pour une vue d'ensemble des obligations, des normes et de la méthode dans les quatre pays, consultez aussi notre [[article:guide|guide de l'accessibilité numérique]]."
+  ],
+  [
+   "p",
+   "Cette loi accessibilité Luxembourg est la base de tout le dispositif applicable au secteur public. Le portail officiel en présente le détail sur sa page consacrée aux [[https://accessibilite.public.lu/fr/obligations.html|obligations légales d'accessibilité numérique]], qui constitue la lecture de référence pour un service juridique ou un responsable de projet. Les paragraphes qui suivent en reprennent les points qui posent le plus de questions sur le terrain."
+  ],
+  [
+   "h3",
+   "Les organismes visés"
+  ],
+  [
+   "p",
+   "Sont concernés l'État, les communes, certains organismes de droit public ainsi que les associations formées par ces autorités. En pratique, cela couvre les ministères et leurs administrations, les communes et syndicats de communes, les offices sociaux et les établissements publics. Une circulaire du ministère de l'Intérieur du 11 août 2021 a d'ailleurs rappelé ces obligations aux administrations communales, aux syndicats de communes, aux offices sociaux et aux établissements publics placés sous leur surveillance."
+  ],
+  [
+   "p",
+   "Les applications mobiles entrent dans le champ dès lors qu'elles sont conçues et développées par un organisme public ou pour son compte. Une application commandée à une agence ou à un prestataire informatique reste donc sous la responsabilité de l'organisme qui la publie : c'est lui qui signe la déclaration d'accessibilité et qui répond aux réclamations. Le cahier des charges doit en tenir compte dès l'appel d'offres."
+  ],
+  [
+   "p",
+   "Quelques catégories sont exclues du champ de la loi :"
+  ],
+  [
+   "ul",
+   [
+    "les sites et applications des diffuseurs du service public ;",
+    "certaines organisations non gouvernementales ;",
+    "les sites et applications des établissements scolaires de l'enseignement primaire et secondaire et des crèches, sauf pour les contenus liés aux fonctions administratives essentielles en ligne, comme une inscription ou un paiement."
+   ]
+  ],
+  [
+   "h3",
+   "Les contenus exemptés"
+  ],
+  [
+   "p",
+   "Certains contenus échappent aussi à l'obligation, en fonction de leur nature et de leur date de publication. Ces exemptions sont précises et datées ; elles ne couvrent pas l'ensemble d'un site ancien."
+  ],
+  [
+   "ul",
+   [
+    "les fichiers bureautiques publiés avant le 23 septembre 2018, sauf s'ils sont nécessaires à une démarche administrative active ;",
+    "les médias temporels préenregistrés publiés avant le 23 septembre 2020 ;",
+    "les contenus d'intranet et d'extranet publiés avant le 23 septembre 2019, jusqu'à leur prochaine révision substantielle ;",
+    "les contenus archivés qui ne sont pas nécessaires à une démarche active et n'ont pas été mis à jour après le 23 septembre 2019 ;",
+    "les médias temporels en direct, les contenus de tiers et certaines reproductions de pièces de patrimoine."
+   ]
+  ],
+  [
+   "p",
+   "Un exemple fréquent : une commune publie chaque mois le compte rendu de son conseil communal en PDF. Les comptes rendus antérieurs à septembre 2018 peuvent rester en l'état s'ils ne servent à aucune démarche. Ceux publiés depuis doivent être accessibles, ou disposer d'une alternative accessible, par exemple une version HTML du même contenu."
+  ],
+  [
+   "h3",
+   "Les obligations concrètes"
+  ],
+  [
+   "ul",
+   [
+    "rendre les sites et applications conformes aux exigences de la norme EN 301 549, évaluées avec le RAWeb pour le web et le RAAM pour le mobile ;",
+    "publier une déclaration d'accessibilité pour chaque site et chaque application, et la tenir à jour ;",
+    "proposer un mécanisme accessible pour signaler un défaut ou demander une alternative, accuser réception et répondre dans un délai d'un mois ;",
+    "informer le SIP de la publication ou de la mise à jour de la déclaration, sans formalité particulière, dans les trente jours ;",
+    "mentionner dans la déclaration la possibilité de saisir le SIP ou le médiateur du Grand-Duché."
+   ]
+  ],
+  [
+   "h3",
+   "La charge disproportionnée, une dérogation encadrée"
+  ],
+  [
+   "p",
+   "L'article 4 de la loi permet de déroger aux exigences lorsqu'elles imposeraient une charge disproportionnée. Le portail officiel encadre strictement cette notion : elle s'apprécie au cas par cas, pour une fonctionnalité ou un contenu donné, et ne peut en principe pas couvrir un site ou une application entière. La taille de l'organisme, ses ressources, ainsi que les coûts et les bénéfices estimés pour les personnes handicapées entrent dans l'évaluation."
+  ],
+  [
+   "p",
+   "Deux précisions évitent bien des erreurs. D'abord, le portail indique explicitement que le manque de priorité, de temps ou de connaissances ne constitue pas une circonstance légitime. Ensuite, invoquer la charge disproportionnée ne dispense pas de publier une déclaration d'accessibilité, ni de proposer une alternative accessible lorsque c'est possible ; pour une mission de service public essentielle, un service alternatif équivalent doit être offert."
+  ],
+  [
+   "note",
+   "À retenir",
+   "Pour le secteur public, le dispositif luxembourgeois repose sur le contrôle, la publication des résultats et la médiation : le rapport de suivi 2022-2024 ne fait état d'aucune sanction. Le risque principal est donc la mise en cause publique et la réclamation, alors que la loi du 8 mars 2023 sur l'EAA prévoit, elle, des amendes."
+  ],
+  [
+   "h2",
+   "sip-accessibilite-public-lu",
+   "Le SIP et le portail accessibilite.public.lu : qui contrôle le secteur public"
+  ],
+  [
+   "p",
+   "Le Service information et presse du gouvernement (SIP) est l'organe chargé du suivi de la loi du 28 mai 2019. Rattaché au ministère d'État et placé sous l'autorité directe du Premier ministre, il est d'abord le service de communication du gouvernement. Il porte aussi, depuis la transposition de la directive, l'ensemble de la politique d'accessibilité numérique du secteur public : contrôles, référentiels, réclamations, information et formation."
+  ],
+  [
+   "p",
+   "Ses missions dans ce domaine se répartissent en quatre blocs :"
+  ],
+  [
+   "ul",
+   [
+    "exécuter des contrôles périodiques des sites et applications du secteur public et en rendre compte à la Commission européenne ;",
+    "publier et maintenir les référentiels d'évaluation : RAWeb pour le web, RAAM pour les applications mobiles, RAPDF pour les documents PDF ;",
+    "instruire les réclamations des usagers, en concertation avec les organismes concernés ;",
+    "informer, sensibiliser et former, notamment au travers du portail accessibilite.public.lu, d'un observatoire et des cours proposés avec l'Institut national d'administration publique."
+   ]
+  ],
+  [
+   "h3",
+   "Trois types de contrôle"
+  ],
+  [
+   "p",
+   "Conformément à la décision d'exécution (UE) 2018/1524, le SIP pratique trois formes de contrôle. Le contrôle approfondi d'un site est un audit de conformité complet selon le RAWeb : il dit si le site est accessible et quels problèmes ont été relevés. Le contrôle d'une application mobile est un audit de conformité selon le RAAM. Le contrôle simplifié, enfin, vise à détecter des non-conformités et à sensibiliser, sans permettre de conclure sur la conformité du site."
+  ],
+  [
+   "p",
+   "La méthode de contrôle simplifié est publiée. Elle porte sur un échantillon de trois pages (la page d'accueil, une page comportant un formulaire, une page comportant un contenu particulier comme une vidéo, un tableau ou une image complexe), combine 41 règles automatisées de l'outil Axe et 47 critères du RAWeb vérifiés manuellement, et exclut les documents téléchargeables. Elle permet de couvrir beaucoup plus de sites que l'audit approfondi."
+  ],
+  [
+   "h3",
+   "Un calendrier annuel et des données ouvertes"
+  ],
+  [
+   "p",
+   "La première période de contrôle a couru du 23 septembre 2020 à la fin de 2021 ; depuis, une période correspond à une année civile. Le processus suit toujours les mêmes étapes : inventaire des sites et applications publics, constitution d'un échantillon décidé avec les principaux acteurs du secteur du handicap, audits, puis rapport à la Commission européenne tous les trois ans. Les inventaires, les échantillons, les rapports d'audit, les déclarations d'accessibilité et l'historique des réclamations sont publiés sur le portail de données ouvertes data.public.lu."
+  ],
+  [
+   "p",
+   "Cette transparence a une conséquence pratique : un organisme public qui figure dans l'échantillon de l'année verra son rapport d'audit publié. Le SIP a publié l'échantillon 2026 ; vérifier si vos sites ou applications y figurent est une première démarche utile."
+  ],
+  [
+   "h3",
+   "Des outils publics au-delà du contrôle"
+  ],
+  [
+   "p",
+   "Le portail met à disposition un modèle de cahier des charges, un kit d'audit, un générateur de déclaration d'accessibilité et le formulaire de réclamation. Les sources des référentiels sont publiées sur GitHub, ce qui permet à la communauté de proposer des corrections. En 2026, le SIP a aussi présenté Mia et Mil, deux voix de synthèse en luxembourgeois conçues pour les technologies d'assistance, open source et utilisables hors connexion : jusqu'ici, les utilisateurs de lecteurs d'écran devaient le plus souvent se contenter d'une voix allemande pour lire un texte luxembourgeois."
+  ],
+  [
+   "h2",
+   "raweb",
+   "Le RAWeb 1.1 : le référentiel web luxembourgeois et ses différences avec le RGAA"
+  ],
+  [
+   "p",
+   "Le RAWeb, référentiel d'évaluation de l'accessibilité web, est la méthode utilisée pour vérifier qu'une page web respecte les exigences de la norme EN 301 549. Sa [[https://accessibilite.public.lu/fr/raweb1.1/index.html|version 1.1, publiée le 6 février 2026]], compte 136 critères de contrôle répartis en 17 thématiques. Elle s'applique à tout contenu HTML (HTML4, XHTML1 et HTML5) ; les applications mobiles natives relèvent du RAAM."
+  ],
+  [
+   "p",
+   "Le RAWeb reprend des contenus issus du RGAA 4.1.2 français, adaptés par le SIP au cadre juridique luxembourgeois. Les treize premières thématiques sont familières à quiconque connaît le RGAA : images, cadres, couleurs, multimédia, tableaux, liens, scripts, éléments obligatoires, structuration de l'information, présentation de l'information, formulaires, navigation et consultation. Le RAWeb ajoute quatre thématiques : documentation et fonctionnalités d'accessibilité, outils d'édition, services d'assistance, et communication en temps réel."
+  ],
+  [
+   "h3",
+   "Pourquoi 136 critères au lieu de 106"
+  ],
+  [
+   "p",
+   "Le RGAA 4.1.2 compte 106 critères et se concentre sur les exigences issues des WCAG. La norme EN 301 549 va plus loin : elle traite aussi de la documentation d'un service, des outils qui permettent de publier du contenu, du support client et des communications en temps réel. Le RAWeb couvre ces exigences, ce qui explique les 30 critères supplémentaires mentionnés dans le rapport de suivi luxembourgeois. Le SIP a utilisé le RGAA pour ses contrôles approfondis jusqu'en 2023, puis le RAWeb à partir de 2024."
+  ],
+  [
+   "p",
+   "Conséquence directe : un audit RGAA réalisé pour un site français ne suffit pas à établir la conformité d'un site luxembourgeois. Il en couvre l'essentiel, mais laisse de côté les critères propres à la norme, par exemple l'accessibilité de l'aide en ligne, d'un chat de support ou d'un back-office de publication. Les taux obtenus ne sont pas non plus directement comparables, puisque le dénominateur change. Notre article sur [[article:normes|les normes et référentiels d'accessibilité]] détaille ces correspondances, et la page [[standards|référentiels par pays]] les résume."
+  ],
+  [
+   "h3",
+   "Le RAPDF pour les documents"
+  ],
+  [
+   "p",
+   "Le Luxembourg dispose aussi d'un référentiel dédié aux documents PDF, le RAPDF, introduit en 2023 et passé lui aussi en version 1.1 en 2026. C'est un point utile pour les administrations, qui publient de nombreux formulaires, rapports et délibérations en PDF : les documents bureautiques représentent la première exemption déclarée dans les déclarations d'accessibilité, et les PDF inaccessibles sont le premier motif de réclamation recensé par le SIP sur 2022-2024."
+  ],
+  [
+   "h2",
+   "raam",
+   "Le RAAM 1.1 : le référentiel pour l'accessibilité des applications mobiles"
+  ],
+  [
+   "p",
+   "Le RAAM, référentiel d'évaluation de l'accessibilité des applications mobiles, est l'une des particularités du Luxembourg. Peu de pays disposent d'une méthode publique aussi détaillée pour évaluer une application native. Sa [[https://accessibilite.public.lu/fr/raam1.1/index.html|version 1.1, publiée le 24 février 2025]], compte 108 critères de contrôle et permet de vérifier qu'une application respecte la norme EN 301 549 V3.2.1. Elle est diffusée sous licence CC-BY 3.0 LU."
+  ],
+  [
+   "p",
+   "Le RAAM couvre les chapitres de la norme qui concernent une application : exigences génériques (chapitre 5), communication vocale bidirectionnelle (6), fonctionnalités vidéo (7), documents non web (10), logiciels (11), documentation et services d'assistance (12). Ses critères sont organisés en quinze thématiques :"
+  ],
+  [
+   "ul",
+   [
+    "éléments graphiques, couleurs, multimédia, tableaux ;",
+    "composants d'interface, éléments obligatoires, structuration de l'information, présentation de l'information ;",
+    "formulaires, navigation, consultation ;",
+    "documentation et fonctionnalités d'accessibilité, outils d'édition, services d'assistance, communication en temps réel."
+   ]
+  ],
+  [
+   "h3",
+   "Ce qui a changé avec la version 1.1"
+  ],
+  [
+   "p",
+   "La première version du RAAM, publiée en juin 2021, comptait 107 critères. La version 1.1 en ajoute un, le critère 14.3, issu d'un découpage de la thématique 12 pour rendre les exigences plus lisibles. Elle revoit aussi plusieurs méthodes : le contraste tient désormais compte de la taille réelle du texte, de nouveaux tests couvrent les sous-titres des médias en direct, et le seuil de clignotement passe de « moins de 3 par seconde » à « 3 par seconde ou moins »."
+  ],
+  [
+   "p",
+   "La méthodologie a gagné un principe de non-interférence, repris du RAWeb : un contenu exempté ou dérogé n'a pas à être conforme, mais il ne doit pas empêcher l'accès au reste de l'écran. Elle précise aussi comment tester avec ou sans service d'accessibilité clavier sur Android, et comment mesurer une taille de texte à partir de captures d'écran."
+  ],
+  [
+   "h3",
+   "Pourquoi un référentiel distinct du web"
+  ],
+  [
+   "p",
+   "Sur une application native, l'auditeur n'a presque jamais accès au code source. Il ne peut pas inspecter un attribut comme sur une page web : il vérifie ce que le système expose réellement aux technologies d'assistance. Les tests du RAAM s'appuient donc sur les lecteurs d'écran, les réglages du système et les outils d'inspection fournis par Apple et Google. C'est une autre façon de travailler, qui exige des appareils réels et une bonne connaissance de chaque plateforme. Le RAAM est le référentiel luxembourgeois ; ailleurs, la même méthode s'applique avec le référentiel local, comme l'explique notre page [[svc:audit-raam|audit d'application mobile selon le RAAM]]."
+  ],
+  [
+   "h2",
+   "declaration-reclamation",
+   "Déclaration d'accessibilité et réclamations : le circuit luxembourgeois"
+  ],
+  [
+   "p",
+   "La déclaration d'accessibilité est la pièce que l'usager, le SIP et parfois la presse consultent en premier. Elle indique un état de conformité établi par un audit, selon trois niveaux définis par le portail officiel."
+  ],
+  [
+   "ul",
+   [
+    "conformité totale : tous les critères de contrôle du référentiel sont respectés, soit un taux de 100 % après audit ;",
+    "conformité partielle : au moins 50 % des critères de contrôle sont respectés ;",
+    "non-conformité : aucun audit valable n'a été réalisé, ou moins de 50 % des critères sont respectés."
+   ]
+  ],
+  [
+   "p",
+   "Au-delà de cet état, la déclaration liste les contenus non accessibles en distinguant ce qui est non conforme, ce qui est exempté et ce qui relève d'une charge disproportionnée, avec la justification et les alternatives proposées. Elle décrit les fonctionnalités d'accessibilité disponibles, précise s'il s'agit d'une autoévaluation ou d'une évaluation par un tiers, donne une adresse de contact et rappelle la possibilité de saisir le SIP ou le médiateur."
+  ],
+  [
+   "h3",
+   "Où la publier, et dans quelles langues"
+  ],
+  [
+   "p",
+   "Pour un site, la déclaration doit être facile à trouver : un lien doit figurer sur chaque page, par exemple dans le pied de page. Pour une application, elle se publie sur le site de l'organisme responsable ou dans les informations disponibles au moment du téléchargement, c'est-à-dire la fiche de l'App Store ou de Google Play. Le générateur officiel produit la déclaration en français, en allemand, en anglais et en luxembourgeois, et recommande de la proposer dans chaque langue d'un site multilingue."
+  ],
+  [
+   "p",
+   "Après publication, l'organisme envoie l'adresse de sa déclaration au SIP, à accessibilite@sip.etat.lu. Le générateur recommande de réévaluer après toute refonte importante et de relire la déclaration au moins une fois par an. Pour la rédaction elle-même, notre article sur [[article:declaration|la déclaration d'accessibilité]] détaille les erreurs les plus fréquentes, en France comme au Luxembourg."
+  ],
+  [
+   "h3",
+   "Le parcours d'une réclamation"
+  ],
+  [
+   "p",
+   "Prenons un usager qui ne parvient pas à valider un formulaire de demande d'allocation avec TalkBack, parce que le bouton « Envoyer » n'est pas annoncé. Il s'adresse d'abord à l'organisme, via le contact indiqué dans la déclaration d'accessibilité. L'organisme doit accuser réception et répondre dans un délai d'un mois à compter de l'envoi ; si le problème est complexe, il peut fixer un délai plus long, à condition de le justifier."
+  ],
+  [
+   "p",
+   "Si la réponse ne le satisfait pas, l'usager peut saisir le SIP au moyen de son formulaire de réclamation en ligne, ou le médiateur du Grand-Duché de Luxembourg. Le SIP s'engage à répondre par e-mail dans un délai d'un mois au plus tard. Dans la pratique, il analyse la demande, contacte l'organisme et lui laisse un mois pour réagir. Tant que la déclaration ne propose pas de contact accessible, l'organisme se prive de la première étape et laisse la réclamation remonter directement à l'autorité."
+  ],
+  [
+   "h2",
+   "resultats-suivi",
+   "Ce que montrent les contrôles publiés pour 2022 à 2024"
+  ],
+  [
+   "p",
+   "Le Luxembourg publie ses résultats avec un niveau de détail rare. Le [[https://download.data.public.lu/resources/rapport-sur-le-controle-de-laccessibilite-des-sites-internet-et-applications-mobiles-du-secteur-public-au-luxembourg-2022-2024/20250115-100700/wad-monitoring-report-lu-2022-2024.pdf|rapport sur le contrôle de l'accessibilité des sites et applications du secteur public 2022-2024]], transmis à la Commission européenne, donne une image précise de la situation. Tous les chiffres de cette section en sont issus."
+  ],
+  [
+   "table",
+   {
+    "caption": "Contrôles du SIP et scores moyens, 2022-2024 (source : rapport de suivi 2022-2024)",
+    "head": [
+     "Indicateur",
+     "2022",
+     "2023",
+     "2024"
+    ],
+    "rows": [
+     [
+      "Audits approfondis de sites",
+      "17",
+      "15",
+      "16"
+     ],
+     [
+      "Audits simplifiés de sites",
+      "87",
+      "93",
+      "93"
+     ],
+     [
+      "Audits approfondis d'applications mobiles",
+      "6",
+      "6",
+      "7"
+     ],
+     [
+      "Score moyen des audits approfondis de sites",
+      "48 %",
+      "54 %",
+      "61 %"
+     ],
+     [
+      "Score moyen des audits d'applications mobiles",
+      "49 %",
+      "43 %",
+      "37 %"
+     ],
+     [
+      "Réclamations reçues par le SIP",
+      "9",
+      "4",
+      "7"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "La tendance est nette : les sites progressent, de 48 % à 61 % de score moyen en trois ans, tandis que les applications mobiles reculent, de 49 % à 37 %. Le rapport relève qu'en 2024, comme en 2021, aucune application auditée n'atteint la conformité partielle (deux y parvenaient en 2022 et en 2023). Le mobile est aujourd'hui le point faible du secteur public luxembourgeois, ce qui justifie une attention particulière au RAAM."
+  ],
+  [
+   "h3",
+   "Les non-conformités les plus fréquentes"
+  ],
+  [
+   "p",
+   "Sur les applications, les trois défauts les plus fréquents sont des composants d'interface incompatibles avec les technologies d'assistance (critère 5.1), une structure de titres inadaptée (critère 7.1) et des contenus qui ne s'adaptent pas à l'orientation de l'écran (critère 11.9). Sur les sites, en contrôle approfondi, ce sont des scripts incompatibles avec les technologies d'assistance, des balises utilisées à des fins de présentation et des listes mal structurées."
+  ],
+  [
+   "p",
+   "En contrôle simplifié, le défaut le plus fréquent est l'absence d'indication des changements de langue, devant les scripts non utilisables au clavier et à la souris et les contrastes de texte insuffisants. Ce premier résultat est très luxembourgeois : une page en français qui cite une démarche en allemand ou un nom d'institution en luxembourgeois doit signaler ce passage pour que le lecteur d'écran change de voix et de prononciation."
+  ],
+  [
+   "h3",
+   "Déclarations, dérogations et réclamations"
+  ],
+  [
+   "p",
+   "Le rapport recense 431 déclarations d'accessibilité de sites et 30 déclarations d'applications, pour 979 sites et applications identifiés dans l'inventaire du secteur public. En 2024, 61 % des déclarations invoquaient une dérogation pour charge disproportionnée, un usage que le cadre officiel présente pourtant comme exceptionnel. Le SIP a reçu 20 réclamations sur la période ; les PDF inaccessibles en sont le premier motif, devant les problèmes de pages web et d'applications."
+  ],
+  [
+   "p",
+   "Ces chiffres sont modestes en valeur absolue, mais ils sont publics. Pour une administration, le risque est moins une sanction qu'un rapport d'audit publié qui montre un score faible, ou une déclaration qui invoque une charge disproportionnée sans justification. Pour en savoir plus sur l'accompagnement des administrations, consultez notre page [[sector:public|secteur public]]."
+  ],
+  [
+   "h2",
+   "eaa-luxembourg",
+   "EAA Luxembourg : la loi du 8 mars 2023 et l'OSAPS"
+  ],
+  [
+   "p",
+   "Le Luxembourg a transposé la directive (UE) 2019/882, dite European Accessibility Act, par la [[https://accessibilite-produits-services.public.lu/dam-assets/lgislation/loi-du-8-mars-2023.pdf|loi du 8 mars 2023 relative aux exigences en matière d'accessibilité applicables aux produits et services]], publiée au Mémorial A n° 133 du 15 mars 2023. Selon son article 36, elle est entrée en vigueur le 28 juin 2025. Elle concerne cette fois les acteurs économiques, privés comme publics, qui mettent sur le marché des produits ou fournissent aux consommateurs des services visés."
+  ],
+  [
+   "h3",
+   "Produits et services concernés"
+  ],
+  [
+   "p",
+   "Côté produits : ordinateurs et systèmes d'exploitation grand public, smartphones et tablettes, terminaux de paiement, bornes d'enregistrement et automates de vente de titres de transport (hors ceux embarqués dans les véhicules), téléviseurs connectés et liseuses. Côté services : communications électroniques, accès aux services de médias audiovisuels, transport de passagers aérien, ferroviaire, par autobus et par voie navigable (sites, applications, billetterie électronique et informations), services bancaires aux consommateurs, livres numériques, commerce électronique et réponse aux communications d'urgence vers le 112. Notre article sur [[article:eaa|l'European Accessibility Act]] détaille ce périmètre commun à tous les États membres."
+  ],
+  [
+   "h3",
+   "L'OSAPS, autorité de surveillance"
+  ],
+  [
+   "p",
+   "L'article 3 de la loi crée l'Office de la surveillance de l'accessibilité des produits et services (OSAPS), placé sous l'autorité du ministre ayant la politique pour personnes handicapées dans ses attributions, aujourd'hui le ministère de la Famille, des Solidarités, du Vivre ensemble et de l'Accueil. Pour les produits, les contrôles sont confiés à l'OSAPS, à l'Administration des douanes et accises et à la Police grand-ducale (article 28, paragraphe 1). Pour les services, l'OSAPS et la Police grand-ducale contrôlent la conformité, avec les autorités sectorielles compétentes (article 28, paragraphe 2)."
+  ],
+  [
+   "p",
+   "L'OSAPS sert aussi de point de contact sur l'accessibilité et fournit des lignes directrices et des outils, en particulier aux microentreprises. Toute personne physique ou morale peut lui signaler la non-conformité d'un produit ou d'un service. Le signalement se fait en ligne via MyGuichet.lu, gratuitement, avec la possibilité de joindre une capture d'écran ou un document. Une association de personnes handicapées peut le faire au titre de personne morale."
+  ],
+  [
+   "h3",
+   "Sanctions prévues"
+  ],
+  [
+   "ul",
+   [
+    "amende administrative de 250 à 15 000 euros prononcée par l'OSAPS contre l'opérateur qui refuse de fournir des documents ou informations, fait obstacle aux contrôles ou ne respecte pas les décisions de l'Office (article 32) ;",
+    "amende pénale de 251 à 500 000 euros pour l'opérateur économique qui enfreint les dispositions visées par la loi, modulée selon l'étendue et la gravité du manquement (article 33, paragraphe 1) ;",
+    "en cas de récidive, amende de 500 à 1 000 000 euros (article 33, paragraphe 2) ;",
+    "restriction ou interdiction de la mise à disposition d'un produit ou de la fourniture d'un service non conforme, décision contestable par un recours en réformation devant le tribunal administratif dans un délai de trois mois (article 28, paragraphe 5)."
+   ]
+  ],
+  [
+   "h3",
+   "Exemptions et délais de transition"
+  ],
+  [
+   "p",
+   "La loi définit la microentreprise comme une entreprise qui emploie moins de dix personnes et dont le chiffre d'affaires annuel ou le total du bilan annuel n'excède pas 2 000 000 euros. Les microentreprises qui fournissent des services sont exemptées des exigences d'accessibilité ; celles qui fabriquent ou distribuent des produits restent soumises aux exigences, avec des obligations documentaires allégées. Une PME de plus grande taille qui vend en ligne aux consommateurs est en revanche pleinement concernée."
+  ],
+  [
+   "p",
+   "Des délais de transition s'appliquent. Les prestataires de services peuvent continuer d'utiliser jusqu'au 28 juin 2030 les produits qu'ils utilisaient légalement avant l'entrée en vigueur. Les contrats de services conclus avant cette date peuvent se poursuivre sans modification jusqu'à leur expiration, dans la limite de cinq ans. Les terminaux en libre-service déjà en service peuvent le rester jusqu'à la fin de leur vie économique, sans dépasser vingt ans après leur mise en service."
+  ],
+  [
+   "p",
+   "Comme partout dans l'Union, le fournisseur d'un service visé doit aussi expliquer, dans des informations accessibles au public et notamment dans ses conditions générales, comment son service satisfait aux exigences d'accessibilité. Ce point est souvent oublié : un site marchand peut être techniquement correct et rester en défaut faute de cette information. Pour l'évaluation technique, la référence est la norme EN 301 549 ; le RAWeb et le RAAM constituent des méthodes publiques, détaillées et gratuites pour la mettre en œuvre, que l'OSAPS cite d'ailleurs parmi ses ressources. Nous proposons pour ces acteurs un [[svc:audit-conformite|audit de conformité EN 301 549 et WCAG]]."
+  ],
+  [
+   "h2",
+   "specificites-luxembourg",
+   "Multilinguisme, place financière, frontaliers : les spécificités luxembourgeoises"
+  ],
+  [
+   "p",
+   "Les exigences techniques sont européennes, mais leur mise en œuvre au Luxembourg rencontre trois réalités que l'on retrouve rarement réunies ailleurs. Elles pèsent directement sur la qualité d'un audit et sur le coût des corrections."
+  ],
+  [
+   "h3",
+   "Quatre langues dans une même interface"
+  ],
+  [
+   "p",
+   "La loi du 24 février 1984 sur le régime des langues a reconnu le luxembourgeois comme langue nationale, fait du français la langue de la législation et retenu le français, l'allemand et le luxembourgeois comme langues administratives. L'anglais s'y ajoute très souvent dans les services financiers, les institutions européennes et les entreprises internationales. Un même site public peut donc exister en quatre versions, et une même page mélanger plusieurs langues."
+  ],
+  [
+   "p",
+   "Pour l'accessibilité, chaque version linguistique est un contenu à part entière : textes alternatifs, intitulés de boutons, messages d'erreur, sous-titres et transcriptions doivent exister dans chaque langue. La langue de chaque page doit être déclarée, et chaque passage dans une autre langue signalé ; c'est, on l'a vu, le défaut le plus fréquent relevé par les contrôles simplifiés. Le RAAM 1.1 a d'ailleurs ajouté une condition sur la langue des sous-titres. Enfin, un échantillon d'audit doit couvrir les versions linguistiques réellement utilisées, faute de quoi les défauts d'une traduction secondaire passent inaperçus."
+  ],
+  [
+   "h3",
+   "La place financière et les services bancaires"
+  ],
+  [
+   "p",
+   "Les services bancaires aux consommateurs figurent dans le champ de l'EAA. Pour une banque de détail, un établissement de paiement ou un émetteur de monnaie électronique établi au Luxembourg, l'application mobile est souvent le premier canal de relation client. Les points de blocage sont connus : authentification forte par code ou biométrie sans alternative, délais de session trop courts pour un utilisateur de lecteur d'écran, graphiques de portefeuille sans équivalent textuel, contrats et relevés en PDF non balisés, captchas visuels lors de l'ouverture de compte."
+  ],
+  [
+   "p",
+   "Les banques privées et les acteurs qui ne servent que des clients professionnels doivent analyser précisément leur périmètre, car l'EAA vise les services fournis aux consommateurs. Cette analyse mérite d'être documentée et validée par le service juridique plutôt que présumée. Notre page [[sector:grands-comptes|grands comptes]] présente l'accompagnement de ces organisations."
+  ],
+  [
+   "h3",
+   "Les frontaliers, des usagers à part entière"
+  ],
+  [
+   "p",
+   "Selon le [[https://statistiques.public.lu/dam-assets/catalogue-publications/regards/2026/regards-frontaliers-120326-03.pdf|STATEC]], le Luxembourg comptait 225 840 salariés frontaliers entrants en 2023, dont 54,2 % résidant en France, 23 % en Allemagne et 22,7 % en Belgique. Ces personnes utilisent les services numériques luxembourgeois (sécurité sociale, fiscalité, transport, banque) avec des appareils et des réglages configurés dans leur pays, parfois dans une autre langue que celle du service."
+  ],
+  [
+   "p",
+   "Pour une organisation luxembourgeoise, cela implique de tester avec des configurations variées, notamment des lecteurs d'écran réglés en français ou en allemand. Pour une organisation qui opère des deux côtés de la frontière, cela signifie aussi composer avec plusieurs régimes : RGAA en France, norme EN 301 549 en Belgique, RAWeb et RAAM au Luxembourg. Nos articles sur [[article:belgique|l'accessibilité numérique en Belgique]] et [[article:france|l'accessibilité numérique en France]] présentent les deux voisins ; nos consultants travaillent en français, en allemand et en anglais."
+  ],
+  [
+   "h2",
+   "methode-audit-raam",
+   "Auditer une application mobile selon le RAAM : la méthode pas à pas"
+  ],
+  [
+   "p",
+   "La [[https://accessibilite.public.lu/en/raam1.1/methodologie.html|méthodologie de test du RAAM 1.1]] est publique et précise. Elle laisse toutefois de nombreux choix pratiques à l'auditeur. Voici comment se déroule, concrètement, l'audit d'une application d'organisme public ou d'entreprise, sur iOS et sur Android."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Cadrer le périmètre et l'environnement.",
+     "On fixe la version de l'application auditée (version publiée ou build de test via TestFlight ou une piste de test Google Play), les comptes de test nécessaires et les données fictives pour parcourir les démarches sans risque. Si l'application est destinée à un environnement géré, par exemple une flotte d'appareils administrée par une banque ou une administration, le RAAM demande de tester avec les configurations réellement utilisées dans cet environnement."
+    ],
+    [
+     "Constituer l'échantillon d'écrans.",
+     "La méthodologie impose, lorsqu'ils existent, l'écran d'accueil, les informations légales, l'authentification, le contact, les écrans de documentation, au moins un écran pertinent pour chaque type de service et usage principal (dont la recherche), au moins un document téléchargeable par service, tous les écrans d'un processus en plusieurs étapes et les écrans de nature différente (tableaux de données, multimédia, formulaires, communication en temps réel). Des écrans tirés au hasard, représentant au moins 10 % de l'échantillon, complètent la sélection."
+    ],
+    [
+     "Préparer les appareils réels.",
+     "Les tests se font sur la dernière version disponible d'iOS et d'Android, ou sur la version précédente, avec les versions de VoiceOver et TalkBack livrées avec le système. Le RAAM précise qu'il n'est pas nécessaire de tester Android sur un modèle d'appareil particulier. En pratique, on prévoit au moins un smartphone de chaque plateforme, et une tablette si l'application la prend en charge."
+    ],
+    [
+     "Tester au lecteur d'écran.",
+     "Chaque écran est parcouru avec VoiceOver sur iOS et TalkBack sur Android, par gestes de balayage, par exploration tactile et avec le rotor ou les commandes de lecture. Le panneau de sous-titres de VoiceOver ou l'affichage de la sortie vocale de TalkBack permettent de consigner exactement ce qui est annoncé. On vérifie que chaque bouton a un nom, un rôle et un état, que les titres sont déclarés, que les messages d'erreur et de confirmation sont restitués sans déplacer le focus de manière inattendue."
+    ],
+    [
+     "Tester au clavier externe et au contacteur.",
+     "Sur iOS, on active l'accès complet au clavier ; sur Android, on teste d'abord avec le seul clavier, puis avec Switch Access si nécessaire, en associant par exemple Tab à « suivant », Maj + Tab à « précédent », Entrée à « sélectionner » et Échap à « retour ». L'objectif est d'atteindre et d'activer chaque fonction, sans piège et dans un ordre logique."
+    ],
+    [
+     "Contrôler l'agrandissement et l'affichage.",
+     "La taille de texte est augmentée dans les réglages du système ; sur iOS, la méthodologie recommande de tester à 190 %, valeur la plus proche de 200 % disponible dans le centre de contrôle. On vérifie que les textes ne sont ni tronqués ni superposés, que l'application fonctionne en mode portrait et paysage, et que le contraste reste suffisant, mesuré à partir de captures d'écran de l'appareil."
+    ],
+    [
+     "Vérifier les autres usages.",
+     "On contrôle les alternatives aux gestes complexes (glisser, pincer, secouer), la taille et l'espacement des zones tactiles, la gestion des délais, les vidéos (sous-titres, audiodescription), les vues web intégrées qui portent une démarche, et les documents téléchargés depuis l'application. Les outils d'inspection d'Apple (Accessibility Inspector) et de Google (Accessibility Scanner) et Colour Contrast Analyser complètent l'analyse, sans jamais remplacer les tests manuels."
+    ],
+    [
+     "Calculer le taux et appliquer la non-interférence.",
+     "Un critère n'est validé que s'il est respecté sur tous les écrans de l'échantillon où il s'applique : un seul écran en échec suffit à l'invalider. Le taux de conformité rapporte les critères validés aux critères applicables. Les critères de non-interférence (contrôle des sons déclenchés automatiquement, absence de piège au clavier, maîtrise des limites de temps, absence de flashs dangereux, contrôle des contenus en mouvement) s'appliquent même aux contenus exemptés."
+    ],
+    [
+     "Restituer et rédiger la déclaration.",
+     "Le rapport livre, écran par écran, les critères non validés, les éléments en cause et des recommandations distinctes pour les équipes iOS et Android, qui utilisent des composants différents. Il sert de base à la déclaration d'accessibilité à publier sur le site de l'organisme ou dans la fiche de l'application."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Trois pièges reviennent souvent. Le premier est l'audit d'une seule plateforme : iOS et Android ont leurs propres composants, et une application hybride peut être correcte sur l'une et défaillante sur l'autre ; les audits du SIP portent d'ailleurs séparément sur des versions iOS et Android. Le deuxième est l'orientation bloquée en portrait sans justification, l'un des défauts les plus fréquents relevés. Le troisième est le composant personnalisé (sélecteur de date, carrousel, onglets) qui ne s'expose pas aux technologies d'assistance. Pour aller au-delà de la conformité, un [[svc:test-utilisateur|test avec des utilisateurs en situation de handicap]] permet de vérifier que les parcours sont réellement utilisables."
+  ],
+  [
+   "h2",
+   "tableau-synthese",
+   "Qui applique quoi : organisation, texte, référentiel, contrôle"
+  ],
+  [
+   "p",
+   "Le tableau ci-dessous résume les situations les plus courantes. Il ne remplace pas une analyse juridique de votre périmètre, mais il permet d'identifier rapidement le texte et l'autorité dont vous relevez."
+  ],
+  [
+   "table",
+   {
+    "caption": "Accessibilité numérique au Luxembourg : textes, référentiels et autorités par type d'organisation",
+    "head": [
+     "Organisation",
+     "Texte applicable",
+     "Référentiel d'évaluation",
+     "Contrôle et recours"
+    ],
+    "rows": [
+     [
+      "Ministère, administration de l'État",
+      "Loi du 28 mai 2019",
+      "RAWeb 1.1 (web), RAAM 1.1 (mobile), RAPDF 1.1 (PDF)",
+      "SIP : contrôles, réclamations ; médiateur"
+     ],
+     [
+      "Commune, syndicat de communes, office social",
+      "Loi du 28 mai 2019",
+      "RAWeb 1.1, RAAM 1.1, RAPDF 1.1",
+      "SIP ; médiateur"
+     ],
+     [
+      "Établissement public, association formée par des autorités publiques",
+      "Loi du 28 mai 2019",
+      "RAWeb 1.1, RAAM 1.1",
+      "SIP ; médiateur"
+     ],
+     [
+      "École primaire ou secondaire, crèche",
+      "Hors champ, sauf fonctions administratives essentielles en ligne",
+      "RAWeb 1.1 pour ces fonctions",
+      "SIP pour les contenus couverts"
+     ],
+     [
+      "Banque de détail, établissement de paiement",
+      "Loi du 8 mars 2023 (EAA)",
+      "EN 301 549 ; RAWeb et RAAM comme méthodes",
+      "OSAPS, Police grand-ducale ; amendes"
+     ],
+     [
+      "Site marchand d'une entreprise hors microentreprise",
+      "Loi du 8 mars 2023 (EAA)",
+      "EN 301 549 ; RAWeb comme méthode",
+      "OSAPS ; amendes"
+     ],
+     [
+      "Transporteur de passagers (site, application, billetterie)",
+      "Loi du 8 mars 2023 (EAA)",
+      "EN 301 549 ; RAWeb et RAAM comme méthodes",
+      "OSAPS, autorités sectorielles"
+     ],
+     [
+      "Fabricant ou importateur de terminaux, smartphones, liseuses",
+      "Loi du 8 mars 2023 (EAA)",
+      "Exigences de la loi, normes harmonisées",
+      "OSAPS, Douanes et accises, Police grand-ducale"
+     ],
+     [
+      "Microentreprise de services",
+      "Exemptée des exigences de la loi du 8 mars 2023",
+      "Aucun au titre de l'EAA ; WCAG recommandées",
+      "Aucun contrôle au titre de l'EAA"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Une même organisation peut relever des deux lois. Un opérateur public de transport, par exemple, entre dans le champ de la loi de 2019 pour ses sites institutionnels et dans celui de la loi de 2023 pour ses services de transport de passagers. La page [[country:luxembourg|accessibilité numérique au Luxembourg]] rappelle les obligations principales et les prestations disponibles dans le pays."
+  ],
+  [
+   "h2",
+   "raweb-2-raam-2",
+   "RAWeb 2 et RAAM 2 en 2027 : anticiper la nouvelle norme EN 301 549"
+  ],
+  [
+   "p",
+   "Le cadre va évoluer à court terme. La version révisée de la norme EN 301 549, numérotée 4.1.1, a été approuvée le 2 septembre 2026 par le CEN et l'ETSI ; sa publication au Journal officiel de l'Union européenne est attendue d'ici la fin de l'année. Elle intègre notamment les WCAG 2.2 et sert désormais à évaluer la conformité tant au titre de la directive de 2016 sur les sites publics qu'au titre de l'European Accessibility Act."
+  ],
+  [
+   "p",
+   "Le SIP a [[https://accessibilite.public.lu/en/news/2026-09-15-EN301549v4.html|annoncé la publication du RAWeb 2 et du RAAM 2 en février 2027]]. Les nouvelles versions conserveront l'approche par critères, tests et méthodologie, mais adopteront une structure alignée sur celle de la norme, afin d'en faciliter l'usage par des personnes qui ne connaissent ni le RGAA ni le RAWeb et de réduire les écarts de taux entre le référentiel et la norme. Les retours de la communauté recueillis sur GitHub y seront intégrés."
+  ],
+  [
+   "p",
+   "Sans attendre, vos équipes peuvent intégrer les six critères WCAG 2.2 que la norme ajoute : focus non masqué, alternative aux mouvements de glisser, taille des cibles, aide cohérente, saisie redondante évitée et authentification accessible. Les deux derniers concernent directement les parcours bancaires et les démarches administratives : ne pas redemander une information déjà saisie, et ne pas imposer un test cognitif, comme la recopie d'un code déformé, sans alternative. Une [[svc:formations|formation des équipes]] de conception et de développement au début de 2027 évite de produire du nouveau contenu selon des règles déjà dépassées."
+  ],
+  [
+   "h2",
+   "plan-action",
+   "Plan d'action pour l'accessibilité numérique au Luxembourg"
+  ],
+  [
+   "p",
+   "Quel que soit le texte dont vous relevez, la démarche suit les mêmes étapes. Elle peut être engagée dès ce trimestre, sans attendre les versions 2 des référentiels."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Inventorier vos services numériques.",
+     "Listez les sites, applications, intranets, extranets et documents publiés, avec leur langue, leur public et leur prestataire. Pour un organisme public, comparez votre liste avec l'inventaire publié sur data.public.lu."
+    ],
+    [
+     "Déterminer le texte applicable.",
+     "Pour chaque service : loi du 28 mai 2019, loi du 8 mars 2023, ou les deux. Documentez les cas limites (clientèle professionnelle, microentreprise, contenus exemptés) et faites valider l'analyse par votre service juridique."
+    ],
+    [
+     "Choisir le référentiel et l'échantillon.",
+     "RAWeb 1.1 pour le web, RAAM 1.1 pour les applications, RAPDF 1.1 pour les PDF. Construisez un échantillon qui couvre les parcours essentiels et toutes les versions linguistiques réellement utilisées."
+    ],
+    [
+     "Réaliser l'audit initial.",
+     "Faites auditer chaque service sur appareils réels pour le mobile, en distinguant iOS et Android. Un [[svc:audit-raam|audit RAAM]] ou un audit RAWeb donne un taux de conformité opposable et une liste de corrections priorisées."
+    ],
+    [
+     "Publier ou corriger la déclaration d'accessibilité.",
+     "Utilisez le générateur officiel, publiez la déclaration dans chaque langue, ajoutez un contact accessible et, pour un organisme public, transmettez l'adresse au SIP dans les trente jours."
+    ],
+    [
+     "Corriger selon l'impact.",
+     "Traitez d'abord ce qui bloque un parcours essentiel : authentification, paiement, formulaire de demande, consultation d'un document officiel. Inscrivez les exigences d'accessibilité dans vos contrats de développement et faites [[svc:recette|recetter l'accessibilité]] avant chaque mise en production."
+    ],
+    [
+     "Préparer 2027.",
+     "Intégrez dès maintenant les critères WCAG 2.2, suivez la publication du RAWeb 2 et du RAAM 2 en février 2027, et planifiez un nouvel audit après chaque refonte importante et au moins une relecture annuelle de vos déclarations."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Pour les acteurs soumis à l'EAA, ajoutez deux tâches : rédiger les informations sur l'accessibilité du service à intégrer dans vos conditions générales, et organiser le traitement des signalements que l'OSAPS pourrait vous transmettre. Pour les organismes publics, gardez à l'esprit que l'échantillon de contrôle 2026 est déjà publié et que les rapports d'audit le seront aussi. Si vos équipes développent elles-mêmes, un [[svc:developpement|accompagnement des développeurs]] sur iOS et Android réduit le coût des corrections."
+  ]
+ ],
+ "faq": [
+  [
+   "Une entreprise privée doit-elle appliquer le RAWeb ou le RAAM ?",
+   "Non, ces référentiels sont imposés au secteur public par la loi du 28 mai 2019. Une entreprise soumise à la loi du 8 mars 2023 doit respecter les exigences d'accessibilité de l'EAA, évaluées au regard de la norme EN 301 549. Le RAWeb et le RAAM restent toutefois des méthodes publiques, gratuites et détaillées pour démontrer cette conformité, et leurs critères correspondent aux exigences de la norme. Les utiliser facilite le dialogue avec l'OSAPS en cas de signalement."
+  ],
+  [
+   "Un audit RGAA réalisé en France est-il valable au Luxembourg ?",
+   "Il couvre une large partie des exigences, puisque le RAWeb reprend des contenus du RGAA 4.1.2, mais il ne suffit pas. Le RAWeb compte 136 critères contre 106 pour le RGAA : les critères propres à la documentation, aux outils d'édition, aux services d'assistance et à la communication en temps réel ne sont pas évalués. Pour une déclaration d'accessibilité luxembourgeoise, il faut compléter l'audit sur ces points et recalculer le taux selon le RAWeb."
+  ],
+  [
+   "Que risque un organisme public qui ne respecte pas la loi du 28 mai 2019 ?",
+   "La loi ne prévoit pas d'amende comparable à celles de l'EAA, et le rapport de suivi 2022-2024 ne mentionne aucune sanction. L'organisme s'expose en revanche à un contrôle du SIP dont le rapport est publié en données ouvertes, à des réclamations instruites par le SIP ou par le médiateur, et à une mise en cause publique. Une déclaration absente ou erronée est par ailleurs immédiatement visible pour les usagers comme pour l'autorité."
+  ],
+  [
+   "La déclaration d'accessibilité doit-elle être traduite en luxembourgeois ?",
+   "Le générateur officiel produit la déclaration en français, en allemand, en anglais et en luxembourgeois, et recommande de la proposer dans chaque langue d'un site multilingue. Si votre site existe en trois langues, publiez donc la déclaration dans ces trois langues. L'essentiel est qu'un usager trouve la déclaration dans la langue de la page qu'il consulte, avec un contact accessible et la mention des recours."
+  ],
+  [
+   "Combien de temps prend l'audit d'une application mobile ?",
+   "La durée dépend du nombre d'écrans de l'échantillon, du nombre de plateformes et de la complexité des parcours : une application avec authentification, paiement et documents téléchargeables demande plus de travail qu'une application d'information. L'audit iOS et l'audit Android sont deux évaluations distinctes, même si les recommandations communes sont mutualisées. Dans notre pratique, le délai moyen d'un audit est de trois semaines, de la mise à disposition de l'application à la restitution."
+  ],
+  [
+   "Les applications d'une banque luxembourgeoise sont-elles concernées par l'EAA ?",
+   "Oui, dès lors qu'elles servent des consommateurs : les services bancaires aux consommateurs figurent dans le champ de la loi du 8 mars 2023. Cela couvre l'application mobile, l'espace client en ligne, les parcours d'ouverture de compte et les documents fournis au client. Les services exclusivement destinés à une clientèle professionnelle relèvent d'une analyse au cas par cas. La surveillance est assurée par l'OSAPS, avec les autorités sectorielles compétentes."
+  ],
+  [
+   "Comment signaler un site ou un service inaccessible au Luxembourg ?",
+   "Pour un site ou une application du secteur public, contactez d'abord l'organisme via sa déclaration d'accessibilité ; sans réponse satisfaisante dans le mois, saisissez le SIP par son formulaire de réclamation ou le médiateur du Grand-Duché. Pour un produit ou un service privé visé par l'EAA, le signalement se fait auprès de l'OSAPS, en ligne via MyGuichet.lu, gratuitement, en joignant si possible une capture d'écran."
+  ]
+ ],
+ "cta_svc": "audit-raam",
+ "cta_title": "Votre application est-elle prête pour un contrôle ?",
+ "cta_text": "Nous évaluons vos applications iOS et Android selon le RAAM 1.1, sur appareils réels, et préparons votre déclaration d'accessibilité. Parlons de votre périmètre.",
+ "related": [
+  "eaa",
+  "normes",
+  "belgique"
+ ],
+ "modified": "2026-10-28",
+ "cluster": "reglementation"
 }

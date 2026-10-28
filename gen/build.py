@@ -196,7 +196,8 @@ def main():
         for l in LANGS:
             rows = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
             for k in keys():
-                rows.append('<url><loc>%s/%s</loc>' % (DOMAIN, path(l, k)) + ''.join(
+                lm = ('<lastmod>%s</lastmod>' % ART[l][k[8:]].get('modified', ART[l][k[8:]]['date'])) if k.startswith('article:') else ''
+                rows.append('<url><loc>%s/%s</loc>%s' % (DOMAIN, path(l, k), lm) + ''.join(
                     '<xhtml:link rel="alternate" hreflang="%s" href="%s/%s"/>' % (a, DOMAIN, path(a, k)) for a in LANGS) +
                     '<xhtml:link rel="alternate" hreflang="x-default" href="%s/%s"/></url>' % (DOMAIN, path('fr', k)))
             rows.append('</urlset>')

@@ -1,191 +1,536 @@
 {
-  "slug": "digital-accessibility-switzerland",
-  "h1": "Digital accessibility in Switzerland: DDA, eCH-0059 and the EAA, who must do what in 2026",
-  "crumb": "Digital accessibility in Switzerland",
-  "meta_title": "Digital accessibility Switzerland: DDA, eCH-0059 and the EAA",
-  "meta_desc": "DDA, its ordinance, eCH-0059, cantonal rules and the EAA: what each type of Swiss organisation actually has to do in 2026, the risks and a practical action plan.",
-  "card_desc": "DDA, eCH-0059, cantons and the EAA: what each Swiss organisation must do, provision by provision, and what changes in 2026.",
-  "cat": "reglementation",
-  "where": "Switzerland",
-  "cover": "CH",
-  "cover_note": ["DDA and the eCH-0059 V3.0 standard", "EAA in effect since 28 June 2025"],
-  "date": "2026-10-27",
-  "lead": "Digital accessibility in Switzerland does not rest on a single law. It combines the Disability Discrimination Act (DDA) and its ordinance for the Confederation, the eCH-0059 standard as the technical benchmark, cantonal rules that vary widely and, for companies selling into the European Union, the European Accessibility Act. This article goes back to the source of each text, separates what is mandatory from what is good practice, sets out where the reforms voted or under debate stand in autumn 2026, and ends with an action plan for each type of organisation.",
-  "body": [
-    ["h2", "three-layers-of-obligations", "Digital accessibility in Switzerland: three layers of obligations"],
-    ["p", "To know what applies to a website, an app or a document, you first need to place the organisation that publishes it. Switzerland does not currently have an equivalent of the EU Web Accessibility Directive for public sector websites, nor a general law requiring every company to meet a given WCAG level. Obligations fall into three layers, which often overlap."],
-    ["ul", [
-      "Federal law: the Federal Act on the Elimination of Discrimination against People with Disabilities (Disability Discrimination Act, DDA; BehiG in German, LHand in French), its implementing ordinance (BehiV in German, OHand in French) and the Federal Act on the Use of Electronic Means for the Fulfilment of Official Tasks (EMBAG). These apply first and foremost to the Confederation, but some of their rules also reach all public authorities, licensed undertakings and private entities that provide services to the public;",
-      "cantonal law: each canton sets its own rules for its administration and municipalities, and the gap is wide between a canton with dedicated legislation and a canton that has issued little more than a statement of intent;",
-      "EU law: the European Accessibility Act (Directive (EU) 2019/882) does not apply on Swiss territory, but it does apply to any Swiss company that offers consumers in the European Union products or services covered by the directive."
-    ]],
-    ["p", "On top of these texts sits a technical standard, eCH-0059, which turns the legal obligations into measurable requirements and refers to the W3C’s Web Content Accessibility Guidelines (WCAG). It is the audit benchmark for public administrations, and private companies often adopt it voluntarily. The political context is also moving: in September 2026 the National Council passed an Inclusion Act, which still has to go before the Council of States. We cover this in detail below."],
-    ["p", "The rest of this article follows these three layers, then provides a summary table and an action plan. If you are looking for a shorter overview, our page on [[country:suisse|digital accessibility in Switzerland]] covers the essentials; to compare Switzerland with its neighbours, see our page on [[standards|standards and obligations by country]]."],
-
-    ["h2", "dda-federal-administration", "DDA and its ordinance: what the law requires of the Confederation"],
-    ["p", "The DDA of 13 December 2002 has the purpose of “preventing, reducing or eliminating discrimination against people with disabilities”. For digital services, three provisions matter: the definition of discrimination in obtaining a service, the specific rule for public authorities, and the right to take legal action. An English translation is available in [[https://www.fedlex.admin.ch/eli/cc/2003/667/en|the text of the Disability Discrimination Act (SR 151.3) on Fedlex]]; it is provided for information only, and only the versions published in the official languages are legally binding."],
-    ["h3", "Article 14(2): public authorities’ online services"],
-    ["p", "Article 14(2) DDA provides that, where public authorities offer their services online, access to those services must not be made difficult for people with visual impairments. The same paragraph instructs the Federal Council to issue the necessary technical regulations and allows it to declare technical standards developed by private organisations binding. It is this last sentence that makes it possible to give a standard such as eCH-0059 binding force for the federal administration."],
-    ["p", "The Act itself mentions only visual impairment, which reflects the state of the web in the early 2000s. The implementing ordinance corrected this narrow reading, and in practice the ordinance is the text to read."],
-    ["h3", "Article 10 of the Ordinance: all types of disability, W3C standards first"],
-    ["p", "Article 10 of the Ordinance on the Elimination of Discrimination against People with Disabilities (BehiV/OHand, SR 151.31) broadens the scope: information and the communication or transaction services offered online must be accessible to people with speech, hearing, visual or motor impairments. Websites must be designed in line with international IT standards, in particular the W3C guidelines on web accessibility, and, as a fallback, with national standards."],
-    ["p", "The same article allocates responsibility for issuing guidelines: for the central federal administration, the Digital Transformation and ICT Steering sector of the Federal Chancellery; for other bodies and for licensed undertakings, the authorities responsible for each field. Guidelines are drawn up together with disability organisations and professional associations, and updated as technology evolves. In practice, the benchmark adopted for the federal administration is version 3.0 of the eCH-0059 standard."],
-    ["h3", "Article 3(4) EMBAG: access for the entire population"],
-    ["p", "The Federal Act on the Use of Electronic Means for the Fulfilment of Official Tasks (EMBAG; LMETA in French) came into force on 1 January 2024. Article 3(4) requires federal authorities to ensure that their services are accessible to the entire population. The accessibility statements published by federal offices, such as the one issued by [[https://www.edi.admin.ch/en/accessibility-in-the-federal-administration|the Federal Department of Home Affairs, to which the Federal Bureau for the Equality of People with Disabilities (FBED) belongs]], now cite this provision alongside the DDA, its ordinance, Article 8(2) of the Federal Constitution and Article 9 of the UN Convention on the Rights of Persons with Disabilities."],
-    ["p", "EMBAG does not set a technical level, but it anchors accessibility in the law that drives the Confederation’s digital transformation. In practical terms, a new online portal, a digital identity app or an application form for a public service that shuts out part of the population does not meet the legal requirement, even if it works perfectly for most users."],
-    ["h3", "The role of the FBED"],
-    ["p", "The FBED, which sits within the General Secretariat of the Federal Department of Home Affairs (FDHA), was set up in 2004 when the DDA came into force. It promotes equality, advises the administration and publishes practical tools: a checklist for content published with the Livingdocs editorial tool, requirements for accessible PDFs, and guides on subtitling, audio description, easy-to-read language and sign language. These documents are useful well beyond the federal administration: a corporate communications team can adopt them as they stand as a specification."],
-
-    ["h2", "dda-private-companies", "DDA and accessibility: what the law provides for private companies"],
-    ["p", "This is the point most often misunderstood. The DDA does apply to private companies, but far less stringently than to public authorities. Article 3(e) extends it to services that are in principle available to anyone and are provided by private entities, by undertakings holding certain transport licences, by other licensed undertakings and by public authorities. An online shop, a bank, an insurer or a booking platform therefore falls within the scope of the Act as soon as its offer is aimed at the public."],
-    ["h3", "A ban on discrimination, not a compliance obligation"],
-    ["p", "Article 6 DDA sets out a short rule: private entities that offer services to the public may not discriminate against people with disabilities because of their disability. The Act imposes on them no technical standard, no WCAG level and no accessibility statement. The legal remedy is limited: under Article 8(3), a person who suffers discrimination within the meaning of Article 6 may claim compensation in court, which Article 11(2) caps at CHF 5,000."],
-    ["p", "The contrast with the public sector is stark. Against a public authority or a licensed undertaking, a person who faces discrimination in obtaining a service, that is, where obtaining it is “impossible or only possible with difficulty” within the meaning of Article 2(4), may ask a court or an administrative authority to order the provider to eliminate the discrimination (Article 8(1)). Against a private entity, they can only obtain compensation, and only where there is discrimination."],
-    ["h3", "A strict reading of discrimination"],
-    ["p", "Case law sets the bar high. In a judgment of 10 October 2012 (4A_369/2012), the Federal Supreme Court held that a Geneva cinema’s refusal to admit a wheelchair user, on the grounds of safety instructions, did not amount to discrimination within the meaning of Article 6. The court relied on the definition in the Ordinance, which refers to a particularly marked and seriously unequal difference in treatment whose purpose or effect is to demean or marginalise a person with a disability. A mere access barrier, even a serious one, is therefore not always enough."],
-    ["p", "Applied to digital services, this means that a payment form that cannot be used with a keyboard, or a visual captcha with no alternative, exposes a Swiss company today to a real but limited legal risk under the DDA alone. The main risk lies elsewhere: lost customers, public complaints, lost tenders and, above all, the EAA for companies that serve consumers in the EU. This picture is changing with the reforms under way, which would require private providers to make reasonable accommodations."],
-    ["note", "Key point", "Under current federal law, a private Swiss company has no obligation to comply with WCAG: it has an obligation not to discriminate, backed by compensation capped at CHF 5,000. Public authorities and licensed undertakings, by contrast, can be ordered to eliminate the discrimination."],
-
-    ["h2", "ech-0059-standard", "The eCH-0059 V3.0 standard: the benchmark for web accessibility in Switzerland"],
-    ["p", "eCH is the Swiss association that publishes the e-government standards used by the Confederation, the cantons and the municipalities. Its eCH-0059 Accessibility Standard is now at version 3.0, adopted on 4 June 2020 and published on 25 June 2020; it replaces version 2.0. At the time of writing, the official page for the standard on ech.ch still presents version 3.0 as the current version. The standard is published in German (original) and French (translation); there is no English version. The French text is available in [[https://www.ech.ch/sites/default/files/dosvers/hauptdokument/STAN_f_DEF_2020-05-19_eCH-0059_V3.0_Accessibility%20Standard.pdf|the official eCH-0059 V3.0 document (French version)]]."],
-    ["h3", "What the standard requires"],
-    ["ul", [
-      "A conformance level: websites and mobile apps must meet the WCAG 2.1 success criteria at levels A and AA;",
-      "a broad scope: text and non-text content, downloadable documents, forms and complete processes such as authentication or payment, including e-government services;",
-      "strict conformance conditions: every page or screen must conform, and a multi-step process conforms only if every one of its steps does;",
-      "accessible documents: every published document must meet WCAG 2.1, with the PDF/UA standard (ISO 14289-1) recommended for PDFs;",
-      "an accessibility statement that is easy to find, machine-readable and reviewed at least once a year, stating the conformance status, the content that is not accessible and why, the dates on which it was drawn up and reviewed, and a contact;",
-      "a feedback mechanism that lets users report a barrier, request content in an accessible format or make a suggestion;",
-      "easy-to-read language and sign language for information on essential areas of life (health, safety, political rights, rights and obligations), and to a proportionate extent for other information."
-    ]],
-    ["p", "The standard set deadlines: 31 December 2020 for new or redesigned websites and apps, and 31 December 2021 for alternative forms of communication. It excludes, among other things, online maps, live media while they are being broadcast, third-party content that the organisation neither funds nor controls, and content created before 31 December 2020."],
-    ["h3", "Who has to apply it"],
-    ["p", "The scope of the standard covers public authorities and licensed undertakings. For the federal administration, the FBED presents it as binding. For cantons and municipalities, whether it is mandatory depends on cantonal law, which refers to it more or less explicitly. For a private company, eCH-0059 has no binding force, but the company can adopt it voluntarily; the standard also recommends applying it to intranets and extranets."],
-    ["h3", "eCH-0059, WCAG 2.2 and EN 301 549"],
-    ["p", "Version 3.0 refers to WCAG 2.1, whereas the W3C has since published WCAG 2.2, which adds criteria on matters such as the size of touch targets, focus visibility and authentication mechanisms. It does not cite the European standard EN 301 549. Some administrations already go further than the standard: the Canton of Zurich, for example, requires for its portal and web applications [[https://www.zh.ch/de/webangebote-entwickeln-und-gestalten/inhalt/barrierefreiheit/vorgaben-zur-barrierefreiheit.html|WCAG 2.2 level AA, in addition to eCH-0059, and PDF/UA-1 for documents (page in German)]]."],
-    ["p", "For an audit, the practical consequence is simple. WCAG 2.2 includes almost all the WCAG 2.1 success criteria: an audit carried out against WCAG 2.2 level AA covers eCH-0059 and prepares for what comes next. If your organisation also serves customers in the EU, the same test campaign can be documented against EN 301 549, which incorporates WCAG and adds requirements specific to software, documents and hardware. Our article on [[article:normes|digital accessibility standards]] explains how they map onto one another."],
-
-    ["h2", "cantons-and-municipalities", "Cantons and municipalities: rules that differ widely from one canton to the next"],
-    ["p", "The DDA applies to public authorities in general, but the technical rule in Article 14(2) DDA and Article 10 of the Ordinance is aimed at the Confederation. For their own websites, cantons and municipalities are governed by cantonal law. The picture is very uneven: some cantons have adopted comprehensive legislation on the rights of people with disabilities, while others limit themselves to an internal policy or an accessibility statement. A few verified examples show the range."],
-    ["ul", [
-      "Basel-Stadt was the first canton to adopt a law on the rights of people with disabilities (Behindertenrechtegesetz, BRG) that also covers private providers of services open to the public. Its implementing ordinance requires information and services offered online to comply with national IT standards, in particular the eCH accessibility standards, and the canton is running an action plan for barrier-free communication;",
-      "Zurich applies WCAG 2.2 level AA to its cantonal portal on top of eCH-0059, including for documents, videos, iframes and single-page applications, with no exemption for new content;",
-      "Geneva states in its accessibility statement that it complies with WCAG level AA and the eCH-0059 V3.0 standard, while acknowledging that full conformance is not guaranteed across its entire website;",
-      "Valais has applied a law on the rights and inclusion of people with disabilities (LDIPH) since 1 January 2022 and has an office whose remit includes advising authorities and service providers on accessibility."
-    ]],
-    ["p", "For a municipality or an autonomous public body, the question is therefore twofold: what does cantonal law say, and which benchmark does it refer to? In the vast majority of cases, the practical answer converges on eCH-0059, and therefore on WCAG level AA. The differences lie mainly in the accessibility statement, the treatment of documents and monitoring. For a [[sector:public|public sector]] body, any audit should start from the cantonal text, because that text determines what the report will need to demonstrate."],
-    ["p", "Public procurement is another way in. A canton that requires eCH-0059 for its websites has every reason to write it into its suppliers’ specifications, with precise acceptance criteria. Without that clause, it pays twice: once for development, and a second time for the fixes after the audit."],
-
-    ["h2", "reforms-2026", "Inclusion Initiative, Inclusion Act, DDA revision: where things stand in October 2026"],
-    ["p", "Swiss equality law is being overhauled. Three projects intersect, and their timetable will shape what private companies have to do over the coming years. The FBED maintains a [[https://www.ebgb.admin.ch/dam/fr/sd-web/Zi3a-PJiSJ8N/Fiche%20d'information%20_%20Politique%20du%20handicap%20_%20vue%20d%E2%80%99ensemble%20des%20projets%20de%20loi%20actuels.pdf|factsheet on the current legislative projects (in French)]], updated in March 2026."],
-    ["h3", "The starting point: the UN Convention"],
-    ["p", "Switzerland acceded to the Convention on the Rights of Persons with Disabilities (CRPD) on 15 April 2014, and it came into force for Switzerland on 15 May 2014, according to [[https://www.eda.admin.ch/en/convention-on-the-rights-of-persons-with-disabilities|the Federal Department of Foreign Affairs]]. Article 9 requires States Parties to ensure equal access to information and to services provided to the public, including information and communication technologies. Switzerland has not ratified the Optional Protocol, which would allow individual communications to the UN Committee."],
-    ["h3", "The three projects"],
-    ["ol", [
-      ["The Inclusion Initiative.", "Submitted on 5 September 2024 by disability organisations, the popular initiative “For the equality of people with disabilities” calls for equality to be strengthened in all areas of life and for people to be guaranteed a free choice of where and how they live, with the support they need. The Federal Council recommends rejecting it."],
-      ["The partial revision of the DDA.", "The Federal Council adopted its dispatch on 20 December 2024. The bill focuses mainly on employment and services: according to the FBED factsheet, private actors would be required to make reasonable and appropriate accommodations, both in employment relationships and in services offered to the public. It also provides for the recognition of the Swiss sign languages."],
-      ["The indirect counter-proposal, or Inclusion Act.", "Adopted by the Federal Council on 25 February 2026, it creates a framework act to implement the CRPD (a national strategy and action plan, an independent monitoring mechanism, principles on housing and statistics) and amends the Federal Invalidity Insurance Act."]
-    ]],
-    ["h3", "What happened in Parliament in 2026"],
-    ["p", "In spring 2026, the National Council’s Committee for Science, Education and Culture decided unanimously to fold the measures from the DDA revision into the counter-proposal, then broadened the text. On 21 September 2026, [[https://www.parlament.ch/de/services/news/Seiten/2026/20260921214157850194158159026_bsd140.aspx|the National Council passed the Inclusion Act (parliamentary news in German)]] by 108 votes to 80 with 8 abstentions, and recommended rejecting the initiative by 97 votes to 78 with 21 abstentions. The additions include lower accessibility thresholds for buildings (residential buildings from six dwellings instead of eight, workplaces with more than 25 jobs instead of 50). The bill is now in the hands of the Council of States."],
-    ["p", "At the time of writing, none of these texts is in force. The final scope of private providers’ obligations, in particular for digital services, will only be known after the Council of States has examined the bill, after any procedure to resolve differences between the two chambers and the final vote, and then, where applicable, after the popular vote on the initiative. Nothing prevents you from preparing now, however: the technical requirements for an accessible service do not depend on the outcome of the parliamentary debate, only their binding force does."],
-    ["note", "For companies", "An obligation for private providers to make reasonable accommodations has been on the table since the dispatch of December 2024. A website built today to WCAG 2.2 level AA will not need to be rebuilt when the law comes into force; a website that ignores the issue will."],
-
-    ["h2", "eaa-swiss-companies", "The EAA and Swiss companies: who is affected and how"],
-    ["p", "The European Accessibility Act has applied since 28 June 2025 to products placed on the market and services provided to consumers in the EU after that date. As Switzerland is a member of neither the European Union nor the European Economic Area, the directive has not been transposed there. It nonetheless affects many Swiss companies, because what triggers it is the market served, not where the company is based. Our [[article:eaa|full article on the European Accessibility Act]] sets out the requirements; here we focus on the position of a company established in Switzerland."],
-    ["h3", "The decisive test: offering a service to consumers in the EU"],
-    ["p", "[[https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng|Directive (EU) 2019/882]] defines a service provider as any natural or legal person who provides a service on the Union market or makes offers to provide such a service to consumers in the Union. The place of establishment plays no part in the definition. A company based in Zurich or Lausanne that sells online to consumers in Germany, France or Italy is therefore a service provider within the meaning of the directive for that activity."],
-    ["p", "The directive does not list criteria for deciding whether an offer targets the EU. In practice, you look at what a lawyer would examine for any consumer protection rule: delivery to EU countries, prices in euros, language versions or national domains aimed at those countries, targeted advertising, customer service reachable from the EU. A website priced only in Swiss francs that delivers only within Switzerland is outside the scope; a website that offers “Delivery to France and Germany” at the basket stage no longer is."],
-    ["h3", "The services and products covered"],
-    ["p", "On the services side, the directive covers in particular electronic communications services, access to audiovisual media services, certain elements of passenger transport services, consumer banking services, e-books and dedicated e-book software, and e-commerce. On the products side, it covers, among others, consumer computers and their operating systems, payment terminals, certain self-service terminals, smartphones and other terminal equipment, and e-readers."],
-    ["h3", "The role of each economic operator"],
-    ["ul", [
-      "Service provider: a Swiss company that serves consumers in the EU directly bears the obligations itself, with no intermediary: conformity of the service, information on accessibility, documentation of the assessment;",
-      "manufacturer: a Swiss manufacturer that designs a covered product, or has it manufactured, and markets it under its own name remains a manufacturer within the meaning of the directive, even if it is not established in the EU;",
-      "authorised representative: the manufacturer may appoint, by written mandate, a person established in the EU to carry out certain tasks on its behalf;",
-      "importer: the person established in the EU who places on the market a product from a third country, and therefore from Switzerland, takes on its own verification obligations; in practice, a careful importer will ask the Swiss manufacturer for proof of conformity before listing the product;",
-      "distributor: any other actor in the supply chain that makes the product available on the market."
-    ]],
-    ["h3", "Practical examples"],
-    ["ul", [
-      "An online sports equipment shop based in Bern that delivers to Germany and Austria: its website and app, from catalogue to checkout, fall under the EAA for those sales;",
-      "a Geneva publisher selling e-books to readers in France: the e-books and the dedicated reading software are covered;",
-      "a Swiss manufacturer of payment terminals sold to European retailers: it is the manufacturer of a covered product, and its importer in the EU will check conformity;",
-      "a transport company selling tickets online for cross-border journeys to travellers from the EU: the digital elements of the transport service, such as the website, the app and electronic tickets, are within scope;",
-      "a small online travel agency with six employees and a turnover below €2 million: as a microenterprise providing services, it is exempt from the directive’s requirements for its services, but remains subject to Article 6 DDA in Switzerland."
-    ]],
-    ["p", "Two further points complete the picture. The exemption for microenterprises, defined as employing fewer than ten people with an annual turnover or annual balance sheet total not exceeding €2 million, applies only to services. And the directive provides for transitional measures: its recitals refer to a period of five years for products already in use to provide a service, and an economic life capped at twenty years for self-service terminals. Enforcement and penalties are a matter for each Member State under its transposing law, so a company selling into several EU countries should expect different authorities and procedures in each."],
-    ["p", "If you run an exporting SME, our page for [[sector:pme|SMEs]] sets out a proportionate approach; for a group running several websites per country, see our approach for [[sector:grands-comptes|large companies]]."],
-
-    ["h2", "multilingual-websites", "Web accessibility in Switzerland and multilingual websites: French, German, Italian"],
-    ["p", "Multilingualism is the feature that most sets a Swiss project apart from a French or German one. A bilingual federal or cantonal website, or a company website in three languages, multiplies the opportunities for error. Language-related accessibility problems cannot be seen on screen: you hear them through a screen reader."],
-    ["ul", [
-      "Declare the right language: each version must state its main language in the page code (the lang attribute); otherwise the speech synthesiser reads a French text with German pronunciation, which makes it unintelligible;",
-      "mark changes of language: an Italian quotation on a French page, an English product name or the “Deutsch” link in the language switcher must each be tagged with their own language;",
-      "name the language switcher: abbreviations such as “DE FR IT” with no accessible label are poorly announced; the link to each version should be written in the target language and be identifiable as such;",
-      "translate what cannot be seen: image text alternatives, button labels, form error messages, page titles and transcripts often remain in the original language on the translated versions;",
-      "produce each PDF in an accessible form: an accessible German leaflet or annual report does not make its French version accessible, since that version is produced separately and often without tags;",
-      "treat English versions like any other language version: many Swiss companies publish an English version for international customers and staff, and it needs the same care, from lang=\"en\" on the page to translated alternatives, labels and error messages;",
-      "provide easy-to-read language and sign language in each language region: eCH-0059 requires them for essential information, and the Confederation has a competence centre for easy-to-read language; the DDA revision provides for the recognition of the Swiss sign languages."
-    ]],
-    ["p", "In an audit, these points mean that each language version must be assessed, not just the reference version. A reasonable sample includes the shared templates once, then the content and documents specific to each language. Our audits and reports in Switzerland are delivered in French or German; checks on language markup cover all published versions."],
-
-    ["h2", "obligations-by-organisation", "Who must do what: obligations, standards and risks by type of organisation"],
-    ["p", "The table below summarises the position as at 27 October 2026, under the law currently in force. It does not take account of the Inclusion Act, which is still before Parliament."],
-    ["table", {
-      "caption": "Digital accessibility in Switzerland: obligations by type of organisation",
-      "head": ["Type of organisation", "Obligation", "Reference standard", "Main risk"],
-      "rows": [
-        ["Federal administration (departments, offices)", "Art. 14(2) DDA; Art. 10 of the Ordinance; Art. 3(4) EMBAG", "eCH-0059 V3.0, i.e. WCAG 2.1 level AA", "Action to eliminate the discrimination (Art. 8(1) DDA), damage to the state’s role as an example"],
-        ["Licensed undertakings (public transport, other licences)", "Within the scope of the DDA (Art. 3(e)) and the right of action under Art. 8(1)", "eCH-0059 V3.0, whose scope includes licensed undertakings", "Order to eliminate the discrimination, subject to proportionality (Art. 11)"],
-        ["Cantons, municipalities, public bodies", "Cantonal law, plus the right of action under the DDA against public authorities", "Generally eCH-0059; WCAG 2.2 AA in Zurich", "Complaints from users, cantonal oversight, requirements in public procurement"],
-        ["Private company serving the public in Switzerland", "Ban on discrimination (Art. 6 DDA); cantonal rules such as those in Basel-Stadt", "No mandatory standard; WCAG 2.2 AA recommended", "Compensation of up to CHF 5,000 per case (Art. 11(2)), reputation, future obligation to make reasonable accommodations"],
-        ["Swiss company offering a covered service to EU consumers", "EAA, through the transposing law of each Member State served", "EN 301 549, which incorporates WCAG level AA", "Penalties and measures by EU national authorities, withdrawal or blocking of the service"],
-        ["Swiss manufacturer of a covered product sold in the EU", "EAA: manufacturer’s obligations, checks by the importer established in the EU", "EN 301 549 for software and hardware aspects", "Importer refuses to list the product, withdrawal from the market"],
-        ["Microenterprise providing services and selling in the EU", "Exempt from the EAA requirements for its services; Art. 6 DDA in Switzerland", "WCAG 2.2 AA recommended", "Low in legal terms, real in commercial terms"]
-      ]
-    }],
-    ["p", "This table is a starting point, not legal advice. Mixed situations are common: a licensed undertaking that also sells tickets to travellers from the EU is subject to both eCH-0059 and the EAA. In that case, the sound strategy is to aim for a single level, WCAG 2.2 level AA, and to document conformance for each framework."],
-
-    ["h2", "common-pitfalls", "Common pitfalls on Swiss websites and apps"],
-    ["p", "The defects found in Switzerland resemble those seen elsewhere in Europe, but some recur with particular regularity, linked to local practice and to multilingualism."],
-    ["ul", [
-      "The cookie and consent banner, displayed first, traps keyboard focus or is not announced by the screen reader: the person simply cannot get into the website;",
-      "the visual captcha on contact, registration or order forms, with no audio alternative or invisible solution;",
-      "the payment flow handed over to an external provider: the company assumes that step is not its concern, whereas both eCH-0059 and the EAA assess the complete process;",
-      "drop-down menus and mega menus that open on mouse hover but not with the keyboard, or that do not convey whether they are open or closed;",
-      "PDFs of decisions, municipal regulations, minutes or annual reports, published as scans or without a heading structure;",
-      "interactive maps and booking calendars that can only be used with a mouse and have no alternative list;",
-      "videos without subtitles in all the website’s languages, or subtitled in German only;",
-      "mobile apps whose icon buttons have no accessible name, making VoiceOver or TalkBack unusable on the home screen;",
-      "accessibility overlays added through a script, which change the display but do not fix the code and can interfere with assistive technologies."
-    ]],
-    ["p", "None of these defects can be reliably detected with an automated tool alone. They require manual testing with a keyboard and with a screen reader on desktop and mobile and, ideally, [[svc:test-utilisateur|testing with users with disabilities]]. Most of them are fixed in the shared components, which is why a well-targeted audit has an effect across the whole website."],
-
-    ["h2", "action-plan", "A seven-step digital accessibility action plan for Switzerland"],
-    ["p", "The plan below works for a public administration as well as for a company. The steps are the same; only the standard of proof changes, depending on the applicable framework."],
-    ["ol", [
-      ["Establish your position.", "List your websites, apps, extranets and documents, and determine the framework for each one: federal law, cantonal law, the DDA for private providers, the EAA for EU markets. The table in the previous section serves as a grid."],
-      ["Choose a single level.", "Adopt WCAG 2.2 level AA as a common target. This level covers eCH-0059 V3.0, the expectations of the most demanding cantons and the WCAG requirements incorporated in EN 301 549."],
-      ["Audit a representative sample.", "Have the templates, shared components and complete journeys (registration, search, ordering, payment, contact) assessed in every published language. A [[svc:audit-conformite|compliance audit]] provides the list of non-conformities, their severity and recommendations for fixing them."],
-      ["Fix issues at source.", "Prioritise blockers on essential journeys, then fix them in the design system and components, so that each fix benefits every page. [[svc:developpement|Support for your developers]] avoids recreating the same errors in the next release."],
-      ["Deal with documents and media.", "Set rules for PDFs (tagging, PDF/UA), videos (subtitles, audio description) and easy-to-read content, drawing on the tools published by the FBED."],
-      ["Publish a statement and a feedback channel.", "Even where the law does not require it, an accessibility statement structured according to the annex to eCH-0059 or the European model shows the real state of the service and offers a way to report a barrier. Our article on [[article:declaration|the accessibility statement]] sets out what it should contain."],
-      ["Embed the approach.", "Write WCAG 2.2 AA into your development contracts and tenders, train your content, design and development teams through [[svc:formations|training tailored to your tools]], and schedule a review at least once a year, as eCH-0059 requires for the review of the statement."]
-    ]],
-    ["p", "For an initial overview, the page on [[country:suisse|digital accessibility in Switzerland]] summarises the texts, and our [[article:guide|guide to digital accessibility]] covers the basics. If you sell into the EU, read our [[article:eaa|detailed analysis of the EAA]] alongside this article. To scope an audit, you can also write to us via the [[contact|contact page]]."]
+ "slug": "digital-accessibility-switzerland",
+ "h1": "Digital accessibility in Switzerland: DDA, eCH-0059 and the EAA, who must do what in 2026",
+ "crumb": "Digital accessibility in Switzerland",
+ "meta_title": "Digital accessibility Switzerland: DDA, eCH-0059 and the EAA",
+ "meta_desc": "DDA, its ordinance, eCH-0059, cantonal rules and the EAA: what each type of Swiss organisation actually has to do in 2026, the risks and a practical action plan.",
+ "card_desc": "DDA, eCH-0059, cantons and the EAA: what each Swiss organisation must do, provision by provision, and what changes in 2026.",
+ "cat": "reglementation",
+ "where": "Switzerland",
+ "cover": "CH",
+ "cover_note": [
+  "DDA and the eCH-0059 V3.0 standard",
+  "EAA in effect since 28 June 2025"
+ ],
+ "date": "2026-10-27",
+ "lead": "Digital accessibility in Switzerland does not rest on a single law. It combines the Disability Discrimination Act (DDA) and its ordinance for the Confederation, the eCH-0059 standard as the technical benchmark, cantonal rules that vary widely and, for companies selling into the European Union, the European Accessibility Act. This article goes back to the source of each text, separates what is mandatory from what is good practice, sets out where the reforms voted or under debate stand in autumn 2026, and ends with an action plan for each type of organisation.",
+ "body": [
+  [
+   "h2",
+   "three-layers-of-obligations",
+   "Digital accessibility in Switzerland: three layers of obligations"
   ],
-  "faq": [
-    ["Does a Swiss company website have to comply with WCAG?", "No, not under current federal law. The Disability Discrimination Act prohibits private entities that provide services to the public from discriminating against people with disabilities, but it imposes no standard or WCAG level on them. An obligation may, however, come from elsewhere: a canton that extends its rules to private providers, a contract or a public tender, or the European Accessibility Act if the company offers a covered service to consumers in the European Union."],
-    ["What penalty does a Swiss company with an inaccessible website face?", "Under the DDA, a person who suffers discrimination may claim compensation in court, capped at CHF 5,000 by Article 11(2). The Federal Supreme Court interprets the notion of discrimination strictly. If the company serves consumers in the EU, the penalties laid down in the transposing law of each Member State concerned apply, with enforcement authorities specific to each country."],
-    ["Should we audit against eCH-0059 or EN 301 549?", "Both are based on WCAG level AA. eCH-0059 V3.0 refers to WCAG 2.1 and is the benchmark for Swiss administrations; EN 301 549 is the standard used to demonstrate conformity with the EAA. An audit carried out against WCAG 2.2 level AA, documented for each framework, allows you to meet both without running separate test campaigns."],
-    ["Are mobile apps covered in Switzerland?", "Yes for public administrations: eCH-0059 explicitly covers mobile apps, which must meet WCAG 2.1 level AA, drawing on the iOS and Android accessibility guidelines for native apps. For a company, the app is subject to the same rules as the website: the ban on discrimination in Switzerland, and the EAA if it is used to provide a covered service to consumers in the EU."],
-    ["How long does an accessibility audit take in Switzerland?", "It depends on the scope: the number of templates and journeys, the number of languages, and whether a mobile app or documents are included. As a guide, our audits take three weeks on average from kick-off to delivery of the report. The price is set by quotation, after an analysis of the sample to be assessed, and not by the number of pages on the website."],
-    ["Is the Inclusion Act already in force?", "No. The National Council passed it on 21 September 2026 as an indirect counter-proposal to the Inclusion Initiative, and the bill still has to be examined by the Council of States. Until both chambers have adopted a common version and the act has come into force, the applicable law remains the current Disability Discrimination Act, its ordinance and cantonal rules."],
-    ["Is an accessibility overlay enough to be compliant?", "No. These scripts change the display, for example text size or contrast, but do not fix the code: a button without a name, a poorly labelled form or a menu that cannot be used with the keyboard stays that way. Neither eCH-0059 nor EN 301 549 recognises these tools as a means of conformance, and they can even interfere with assistive technologies."]
+  [
+   "p",
+   "To know what applies to a website, an app or a document, you first need to place the organisation that publishes it. Switzerland does not currently have an equivalent of the EU Web Accessibility Directive for public sector websites, nor a general law requiring every company to meet a given WCAG level. Obligations fall into three layers, which often overlap."
   ],
-  "cta_svc": "audit-conformite",
-  "cta_title": "How does your website measure up to eCH-0059 and the EAA?",
-  "cta_text": "We can audit your websites and apps against WCAG 2.2 level AA, with a report covering both eCH-0059 and EN 301 549, in French or German.",
-  "related": ["eaa", "normes", "guide"]
+  [
+   "ul",
+   [
+    "Federal law: the Federal Act on the Elimination of Discrimination against People with Disabilities (Disability Discrimination Act, DDA; BehiG in German, LHand in French), its implementing ordinance (BehiV in German, OHand in French) and the Federal Act on the Use of Electronic Means for the Fulfilment of Official Tasks (EMBAG). These apply first and foremost to the Confederation, but some of their rules also reach all public authorities, licensed undertakings and private entities that provide services to the public;",
+    "cantonal law: each canton sets its own rules for its administration and municipalities, and the gap is wide between a canton with dedicated legislation and a canton that has issued little more than a statement of intent;",
+    "EU law: the European Accessibility Act (Directive (EU) 2019/882) does not apply on Swiss territory, but it does apply to any Swiss company that offers consumers in the European Union products or services covered by the directive."
+   ]
+  ],
+  [
+   "p",
+   "On top of these texts sits a technical standard, eCH-0059, which turns the legal obligations into measurable requirements and refers to the W3C’s Web Content Accessibility Guidelines (WCAG). It is the audit benchmark for public administrations, and private companies often adopt it voluntarily. The political context is also moving: in September 2026 the National Council passed an Inclusion Act, which still has to go before the Council of States. We cover this in detail below."
+  ],
+  [
+   "p",
+   "The rest of this article follows these three layers, then provides a summary table and an action plan. If you are looking for a shorter overview, our page on [[country:suisse|digital accessibility in Switzerland]] covers the essentials; to compare Switzerland with its neighbours, see our page on [[standards|standards and obligations by country]]."
+  ],
+  [
+   "h2",
+   "dda-federal-administration",
+   "DDA and its ordinance: what the law requires of the Confederation"
+  ],
+  [
+   "p",
+   "The DDA of 13 December 2002 has the purpose of “preventing, reducing or eliminating discrimination against people with disabilities”. For digital services, three provisions matter: the definition of discrimination in obtaining a service, the specific rule for public authorities, and the right to take legal action. An English translation is available in [[https://www.fedlex.admin.ch/eli/cc/2003/667/en|the text of the Disability Discrimination Act (SR 151.3) on Fedlex]]; it is provided for information only, and only the versions published in the official languages are legally binding."
+  ],
+  [
+   "h3",
+   "Article 14(2): public authorities’ online services"
+  ],
+  [
+   "p",
+   "Article 14(2) DDA provides that, where public authorities offer their services online, access to those services must not be made difficult for people with visual impairments. The same paragraph instructs the Federal Council to issue the necessary technical regulations and allows it to declare technical standards developed by private organisations binding. It is this last sentence that makes it possible to give a standard such as eCH-0059 binding force for the federal administration."
+  ],
+  [
+   "p",
+   "The Act itself mentions only visual impairment, which reflects the state of the web in the early 2000s. The implementing ordinance corrected this narrow reading, and in practice the ordinance is the text to read."
+  ],
+  [
+   "h3",
+   "Article 10 of the Ordinance: all types of disability, W3C standards first"
+  ],
+  [
+   "p",
+   "Article 10 of the Ordinance on the Elimination of Discrimination against People with Disabilities (BehiV/OHand, SR 151.31) broadens the scope: information and the communication or transaction services offered online must be accessible to people with speech, hearing, visual or motor impairments. Websites must be designed in line with international IT standards, in particular the W3C guidelines on web accessibility, and, as a fallback, with national standards."
+  ],
+  [
+   "p",
+   "The same article allocates responsibility for issuing guidelines: for the central federal administration, the Digital Transformation and ICT Steering sector of the Federal Chancellery; for other bodies and for licensed undertakings, the authorities responsible for each field. Guidelines are drawn up together with disability organisations and professional associations, and updated as technology evolves. In practice, the benchmark adopted for the federal administration is version 3.0 of the eCH-0059 standard."
+  ],
+  [
+   "h3",
+   "Article 3(4) EMBAG: access for the entire population"
+  ],
+  [
+   "p",
+   "The Federal Act on the Use of Electronic Means for the Fulfilment of Official Tasks (EMBAG; LMETA in French) came into force on 1 January 2024. Article 3(4) requires federal authorities to ensure that their services are accessible to the entire population. The accessibility statements published by federal offices, such as the one issued by [[https://www.edi.admin.ch/en/accessibility-in-the-federal-administration|the Federal Department of Home Affairs, to which the Federal Bureau for the Equality of People with Disabilities (FBED) belongs]], now cite this provision alongside the DDA, its ordinance, Article 8(2) of the Federal Constitution and Article 9 of the UN Convention on the Rights of Persons with Disabilities."
+  ],
+  [
+   "p",
+   "EMBAG does not set a technical level, but it anchors accessibility in the law that drives the Confederation’s digital transformation. In practical terms, a new online portal, a digital identity app or an application form for a public service that shuts out part of the population does not meet the legal requirement, even if it works perfectly for most users."
+  ],
+  [
+   "h3",
+   "The role of the FBED"
+  ],
+  [
+   "p",
+   "The FBED, which sits within the General Secretariat of the Federal Department of Home Affairs (FDHA), was set up in 2004 when the DDA came into force. It promotes equality, advises the administration and publishes practical tools: a checklist for content published with the Livingdocs editorial tool, requirements for accessible PDFs, and guides on subtitling, audio description, easy-to-read language and sign language. These documents are useful well beyond the federal administration: a corporate communications team can adopt them as they stand as a specification."
+  ],
+  [
+   "h2",
+   "dda-private-companies",
+   "DDA and accessibility: what the law provides for private companies"
+  ],
+  [
+   "p",
+   "This is the point most often misunderstood. The DDA does apply to private companies, but far less stringently than to public authorities. Article 3(e) extends it to services that are in principle available to anyone and are provided by private entities, by undertakings holding certain transport licences, by other licensed undertakings and by public authorities. An online shop, a bank, an insurer or a booking platform therefore falls within the scope of the Act as soon as its offer is aimed at the public."
+  ],
+  [
+   "h3",
+   "A ban on discrimination, not a compliance obligation"
+  ],
+  [
+   "p",
+   "Article 6 DDA sets out a short rule: private entities that offer services to the public may not discriminate against people with disabilities because of their disability. The Act imposes on them no technical standard, no WCAG level and no accessibility statement. The legal remedy is limited: under Article 8(3), a person who suffers discrimination within the meaning of Article 6 may claim compensation in court, which Article 11(2) caps at CHF 5,000."
+  ],
+  [
+   "p",
+   "The contrast with the public sector is stark. Against a public authority or a licensed undertaking, a person who faces discrimination in obtaining a service, that is, where obtaining it is “impossible or only possible with difficulty” within the meaning of Article 2(4), may ask a court or an administrative authority to order the provider to eliminate the discrimination (Article 8(1)). Against a private entity, they can only obtain compensation, and only where there is discrimination."
+  ],
+  [
+   "h3",
+   "A strict reading of discrimination"
+  ],
+  [
+   "p",
+   "Case law sets the bar high. In a judgment of 10 October 2012 (4A_369/2012), the Federal Supreme Court held that a Geneva cinema’s refusal to admit a wheelchair user, on the grounds of safety instructions, did not amount to discrimination within the meaning of Article 6. The court relied on the definition in the Ordinance, which refers to a particularly marked and seriously unequal difference in treatment whose purpose or effect is to demean or marginalise a person with a disability. A mere access barrier, even a serious one, is therefore not always enough."
+  ],
+  [
+   "p",
+   "Applied to digital services, this means that a payment form that cannot be used with a keyboard, or a visual captcha with no alternative, exposes a Swiss company today to a real but limited legal risk under the DDA alone. The main risk lies elsewhere: lost customers, public complaints, lost tenders and, above all, the EAA for companies that serve consumers in the EU. This picture is changing with the reforms under way, which would require private providers to make reasonable accommodations."
+  ],
+  [
+   "note",
+   "Key point",
+   "Under current federal law, a private Swiss company has no obligation to comply with WCAG: it has an obligation not to discriminate, backed by compensation capped at CHF 5,000. Public authorities and licensed undertakings, by contrast, can be ordered to eliminate the discrimination."
+  ],
+  [
+   "h2",
+   "ech-0059-standard",
+   "The eCH-0059 V3.0 standard: the benchmark for web accessibility in Switzerland"
+  ],
+  [
+   "p",
+   "eCH is the Swiss association that publishes the e-government standards used by the Confederation, the cantons and the municipalities. Its eCH-0059 Accessibility Standard is now at version 3.0, adopted on 4 June 2020 and published on 25 June 2020; it replaces version 2.0. At the time of writing, the official page for the standard on ech.ch still presents version 3.0 as the current version. The standard is published in German (original) and French (translation); there is no English version. The French text is available in [[https://www.ech.ch/sites/default/files/dosvers/hauptdokument/STAN_f_DEF_2020-05-19_eCH-0059_V3.0_Accessibility%20Standard.pdf|the official eCH-0059 V3.0 document (French version)]]."
+  ],
+  [
+   "h3",
+   "What the standard requires"
+  ],
+  [
+   "ul",
+   [
+    "A conformance level: websites and mobile apps must meet the WCAG 2.1 success criteria at levels A and AA;",
+    "a broad scope: text and non-text content, downloadable documents, forms and complete processes such as authentication or payment, including e-government services;",
+    "strict conformance conditions: every page or screen must conform, and a multi-step process conforms only if every one of its steps does;",
+    "accessible documents: every published document must meet WCAG 2.1, with the PDF/UA standard (ISO 14289-1) recommended for PDFs;",
+    "an accessibility statement that is easy to find, machine-readable and reviewed at least once a year, stating the conformance status, the content that is not accessible and why, the dates on which it was drawn up and reviewed, and a contact;",
+    "a feedback mechanism that lets users report a barrier, request content in an accessible format or make a suggestion;",
+    "easy-to-read language and sign language for information on essential areas of life (health, safety, political rights, rights and obligations), and to a proportionate extent for other information."
+   ]
+  ],
+  [
+   "p",
+   "The standard set deadlines: 31 December 2020 for new or redesigned websites and apps, and 31 December 2021 for alternative forms of communication. It excludes, among other things, online maps, live media while they are being broadcast, third-party content that the organisation neither funds nor controls, and content created before 31 December 2020."
+  ],
+  [
+   "h3",
+   "Who has to apply it"
+  ],
+  [
+   "p",
+   "The scope of the standard covers public authorities and licensed undertakings. For the federal administration, the FBED presents it as binding. For cantons and municipalities, whether it is mandatory depends on cantonal law, which refers to it more or less explicitly. For a private company, eCH-0059 has no binding force, but the company can adopt it voluntarily; the standard also recommends applying it to intranets and extranets."
+  ],
+  [
+   "h3",
+   "eCH-0059, WCAG 2.2 and EN 301 549"
+  ],
+  [
+   "p",
+   "Version 3.0 refers to WCAG 2.1, whereas the W3C has since published WCAG 2.2, which adds criteria on matters such as the size of touch targets, focus visibility and authentication mechanisms. It does not cite the European standard EN 301 549. Some administrations already go further than the standard: the Canton of Zurich, for example, requires for its portal and web applications [[https://www.zh.ch/de/webangebote-entwickeln-und-gestalten/inhalt/barrierefreiheit/vorgaben-zur-barrierefreiheit.html|WCAG 2.2 level AA, in addition to eCH-0059, and PDF/UA-1 for documents (page in German)]]."
+  ],
+  [
+   "p",
+   "For an audit, the practical consequence is simple. WCAG 2.2 includes almost all the WCAG 2.1 success criteria: an audit carried out against WCAG 2.2 level AA covers eCH-0059 and prepares for what comes next. If your organisation also serves customers in the EU, the same test campaign can be documented against EN 301 549, which incorporates WCAG and adds requirements specific to software, documents and hardware. Our article on [[article:normes|digital accessibility standards]] explains how they map onto one another."
+  ],
+  [
+   "h2",
+   "cantons-and-municipalities",
+   "Cantons and municipalities: rules that differ widely from one canton to the next"
+  ],
+  [
+   "p",
+   "The DDA applies to public authorities in general, but the technical rule in Article 14(2) DDA and Article 10 of the Ordinance is aimed at the Confederation. For their own websites, cantons and municipalities are governed by cantonal law. The picture is very uneven: some cantons have adopted comprehensive legislation on the rights of people with disabilities, while others limit themselves to an internal policy or an accessibility statement. A few verified examples show the range."
+  ],
+  [
+   "ul",
+   [
+    "Basel-Stadt was the first canton to adopt a law on the rights of people with disabilities (Behindertenrechtegesetz, BRG) that also covers private providers of services open to the public. Its implementing ordinance requires information and services offered online to comply with national IT standards, in particular the eCH accessibility standards, and the canton is running an action plan for barrier-free communication;",
+    "Zurich applies WCAG 2.2 level AA to its cantonal portal on top of eCH-0059, including for documents, videos, iframes and single-page applications, with no exemption for new content;",
+    "Geneva states in its accessibility statement that it complies with WCAG level AA and the eCH-0059 V3.0 standard, while acknowledging that full conformance is not guaranteed across its entire website;",
+    "Valais has applied a law on the rights and inclusion of people with disabilities (LDIPH) since 1 January 2022 and has an office whose remit includes advising authorities and service providers on accessibility."
+   ]
+  ],
+  [
+   "p",
+   "For a municipality or an autonomous public body, the question is therefore twofold: what does cantonal law say, and which benchmark does it refer to? In the vast majority of cases, the practical answer converges on eCH-0059, and therefore on WCAG level AA. The differences lie mainly in the accessibility statement, the treatment of documents and monitoring. For a [[sector:public|public sector]] body, any audit should start from the cantonal text, because that text determines what the report will need to demonstrate."
+  ],
+  [
+   "p",
+   "Public procurement is another way in. A canton that requires eCH-0059 for its websites has every reason to write it into its suppliers’ specifications, with precise acceptance criteria. Without that clause, it pays twice: once for development, and a second time for the fixes after the audit."
+  ],
+  [
+   "h2",
+   "reforms-2026",
+   "Inclusion Initiative, Inclusion Act, DDA revision: where things stand in October 2026"
+  ],
+  [
+   "p",
+   "Swiss equality law is being overhauled. Three projects intersect, and their timetable will shape what private companies have to do over the coming years. The FBED maintains a [[https://www.ebgb.admin.ch/dam/fr/sd-web/Zi3a-PJiSJ8N/Fiche%20d'information%20_%20Politique%20du%20handicap%20_%20vue%20d%E2%80%99ensemble%20des%20projets%20de%20loi%20actuels.pdf|factsheet on the current legislative projects (in French)]], updated in March 2026."
+  ],
+  [
+   "h3",
+   "The starting point: the UN Convention"
+  ],
+  [
+   "p",
+   "Switzerland acceded to the Convention on the Rights of Persons with Disabilities (CRPD) on 15 April 2014, and it came into force for Switzerland on 15 May 2014, according to [[https://www.eda.admin.ch/en/convention-on-the-rights-of-persons-with-disabilities|the Federal Department of Foreign Affairs]]. Article 9 requires States Parties to ensure equal access to information and to services provided to the public, including information and communication technologies. Switzerland has not ratified the Optional Protocol, which would allow individual communications to the UN Committee."
+  ],
+  [
+   "h3",
+   "The three projects"
+  ],
+  [
+   "ol",
+   [
+    [
+     "The Inclusion Initiative.",
+     "Submitted on 5 September 2024 by disability organisations, the popular initiative “For the equality of people with disabilities” calls for equality to be strengthened in all areas of life and for people to be guaranteed a free choice of where and how they live, with the support they need. The Federal Council recommends rejecting it."
+    ],
+    [
+     "The partial revision of the DDA.",
+     "The Federal Council adopted its dispatch on 20 December 2024. The bill focuses mainly on employment and services: according to the FBED factsheet, private actors would be required to make reasonable and appropriate accommodations, both in employment relationships and in services offered to the public. It also provides for the recognition of the Swiss sign languages."
+    ],
+    [
+     "The indirect counter-proposal, or Inclusion Act.",
+     "Adopted by the Federal Council on 25 February 2026, it creates a framework act to implement the CRPD (a national strategy and action plan, an independent monitoring mechanism, principles on housing and statistics) and amends the Federal Invalidity Insurance Act."
+    ]
+   ]
+  ],
+  [
+   "h3",
+   "What happened in Parliament in 2026"
+  ],
+  [
+   "p",
+   "In spring 2026, the National Council’s Committee for Science, Education and Culture decided unanimously to fold the measures from the DDA revision into the counter-proposal, then broadened the text. On 21 September 2026, [[https://www.parlament.ch/de/services/news/Seiten/2026/20260921214157850194158159026_bsd140.aspx|the National Council passed the Inclusion Act (parliamentary news in German)]] by 108 votes to 80 with 8 abstentions, and recommended rejecting the initiative by 97 votes to 78 with 21 abstentions. The additions include lower accessibility thresholds for buildings (residential buildings from six dwellings instead of eight, workplaces with more than 25 jobs instead of 50). The bill is now in the hands of the Council of States."
+  ],
+  [
+   "p",
+   "At the time of writing, none of these texts is in force. The final scope of private providers’ obligations, in particular for digital services, will only be known after the Council of States has examined the bill, after any procedure to resolve differences between the two chambers and the final vote, and then, where applicable, after the popular vote on the initiative. Nothing prevents you from preparing now, however: the technical requirements for an accessible service do not depend on the outcome of the parliamentary debate, only their binding force does."
+  ],
+  [
+   "note",
+   "For companies",
+   "An obligation for private providers to make reasonable accommodations has been on the table since the dispatch of December 2024. A website built today to WCAG 2.2 level AA will not need to be rebuilt when the law comes into force; a website that ignores the issue will."
+  ],
+  [
+   "h2",
+   "eaa-swiss-companies",
+   "The EAA and Swiss companies: who is affected and how"
+  ],
+  [
+   "p",
+   "The European Accessibility Act has applied since 28 June 2025 to products placed on the market and services provided to consumers in the EU after that date. As Switzerland is a member of neither the European Union nor the European Economic Area, the directive has not been transposed there. It nonetheless affects many Swiss companies, because what triggers it is the market served, not where the company is based. Our [[article:eaa|full article on the European Accessibility Act]] sets out the requirements; here we focus on the position of a company established in Switzerland."
+  ],
+  [
+   "h3",
+   "The decisive test: offering a service to consumers in the EU"
+  ],
+  [
+   "p",
+   "[[https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng|Directive (EU) 2019/882]] defines a service provider as any natural or legal person who provides a service on the Union market or makes offers to provide such a service to consumers in the Union. The place of establishment plays no part in the definition. A company based in Zurich or Lausanne that sells online to consumers in Germany, France or Italy is therefore a service provider within the meaning of the directive for that activity."
+  ],
+  [
+   "p",
+   "The directive does not list criteria for deciding whether an offer targets the EU. In practice, you look at what a lawyer would examine for any consumer protection rule: delivery to EU countries, prices in euros, language versions or national domains aimed at those countries, targeted advertising, customer service reachable from the EU. A website priced only in Swiss francs that delivers only within Switzerland is outside the scope; a website that offers “Delivery to France and Germany” at the basket stage no longer is."
+  ],
+  [
+   "h3",
+   "The services and products covered"
+  ],
+  [
+   "p",
+   "On the services side, the directive covers in particular electronic communications services, access to audiovisual media services, certain elements of passenger transport services, consumer banking services, e-books and dedicated e-book software, and e-commerce. On the products side, it covers, among others, consumer computers and their operating systems, payment terminals, certain self-service terminals, smartphones and other terminal equipment, and e-readers."
+  ],
+  [
+   "h3",
+   "The role of each economic operator"
+  ],
+  [
+   "ul",
+   [
+    "Service provider: a Swiss company that serves consumers in the EU directly bears the obligations itself, with no intermediary: conformity of the service, information on accessibility, documentation of the assessment;",
+    "manufacturer: a Swiss manufacturer that designs a covered product, or has it manufactured, and markets it under its own name remains a manufacturer within the meaning of the directive, even if it is not established in the EU;",
+    "authorised representative: the manufacturer may appoint, by written mandate, a person established in the EU to carry out certain tasks on its behalf;",
+    "importer: the person established in the EU who places on the market a product from a third country, and therefore from Switzerland, takes on its own verification obligations; in practice, a careful importer will ask the Swiss manufacturer for proof of conformity before listing the product;",
+    "distributor: any other actor in the supply chain that makes the product available on the market."
+   ]
+  ],
+  [
+   "h3",
+   "Practical examples"
+  ],
+  [
+   "ul",
+   [
+    "An online sports equipment shop based in Bern that delivers to Germany and Austria: its website and app, from catalogue to checkout, fall under the EAA for those sales;",
+    "a Geneva publisher selling e-books to readers in France: the e-books and the dedicated reading software are covered;",
+    "a Swiss manufacturer of payment terminals sold to European retailers: it is the manufacturer of a covered product, and its importer in the EU will check conformity;",
+    "a transport company selling tickets online for cross-border journeys to travellers from the EU: the digital elements of the transport service, such as the website, the app and electronic tickets, are within scope;",
+    "a small online travel agency with six employees and a turnover below €2 million: as a microenterprise providing services, it is exempt from the directive’s requirements for its services, but remains subject to Article 6 DDA in Switzerland."
+   ]
+  ],
+  [
+   "p",
+   "Two further points complete the picture. The exemption for microenterprises, defined as employing fewer than ten people with an annual turnover or annual balance sheet total not exceeding €2 million, applies only to services. And the directive provides for transitional measures: its recitals refer to a period of five years for products already in use to provide a service, and an economic life capped at twenty years for self-service terminals. Enforcement and penalties are a matter for each Member State under its transposing law, so a company selling into several EU countries should expect different authorities and procedures in each."
+  ],
+  [
+   "p",
+   "If you run an exporting SME, our page for [[sector:pme|SMEs]] sets out a proportionate approach; for a group running several websites per country, see our approach for [[sector:grands-comptes|large companies]]."
+  ],
+  [
+   "h2",
+   "multilingual-websites",
+   "Web accessibility in Switzerland and multilingual websites: French, German, Italian"
+  ],
+  [
+   "p",
+   "Multilingualism is the feature that most sets a Swiss project apart from a French or German one. A bilingual federal or cantonal website, or a company website in three languages, multiplies the opportunities for error. Language-related accessibility problems cannot be seen on screen: you hear them through a screen reader."
+  ],
+  [
+   "ul",
+   [
+    "Declare the right language: each version must state its main language in the page code (the lang attribute); otherwise the speech synthesiser reads a French text with German pronunciation, which makes it unintelligible;",
+    "mark changes of language: an Italian quotation on a French page, an English product name or the “Deutsch” link in the language switcher must each be tagged with their own language;",
+    "name the language switcher: abbreviations such as “DE FR IT” with no accessible label are poorly announced; the link to each version should be written in the target language and be identifiable as such;",
+    "translate what cannot be seen: image text alternatives, button labels, form error messages, page titles and transcripts often remain in the original language on the translated versions;",
+    "produce each PDF in an accessible form: an accessible German leaflet or annual report does not make its French version accessible, since that version is produced separately and often without tags;",
+    "treat English versions like any other language version: many Swiss companies publish an English version for international customers and staff, and it needs the same care, from lang=\"en\" on the page to translated alternatives, labels and error messages;",
+    "provide easy-to-read language and sign language in each language region: eCH-0059 requires them for essential information, and the Confederation has a competence centre for easy-to-read language; the DDA revision provides for the recognition of the Swiss sign languages."
+   ]
+  ],
+  [
+   "p",
+   "In an audit, these points mean that each language version must be assessed, not just the reference version. A reasonable sample includes the shared templates once, then the content and documents specific to each language. Our audits and reports in Switzerland are delivered in French or German; checks on language markup cover all published versions."
+  ],
+  [
+   "h2",
+   "obligations-by-organisation",
+   "Who must do what: obligations, standards and risks by type of organisation"
+  ],
+  [
+   "p",
+   "The table below summarises the position as at 27 October 2026, under the law currently in force. It does not take account of the Inclusion Act, which is still before Parliament."
+  ],
+  [
+   "table",
+   {
+    "caption": "Digital accessibility in Switzerland: obligations by type of organisation",
+    "head": [
+     "Type of organisation",
+     "Obligation",
+     "Reference standard",
+     "Main risk"
+    ],
+    "rows": [
+     [
+      "Federal administration (departments, offices)",
+      "Art. 14(2) DDA; Art. 10 of the Ordinance; Art. 3(4) EMBAG",
+      "eCH-0059 V3.0, i.e. WCAG 2.1 level AA",
+      "Action to eliminate the discrimination (Art. 8(1) DDA), damage to the state’s role as an example"
+     ],
+     [
+      "Licensed undertakings (public transport, other licences)",
+      "Within the scope of the DDA (Art. 3(e)) and the right of action under Art. 8(1)",
+      "eCH-0059 V3.0, whose scope includes licensed undertakings",
+      "Order to eliminate the discrimination, subject to proportionality (Art. 11)"
+     ],
+     [
+      "Cantons, municipalities, public bodies",
+      "Cantonal law, plus the right of action under the DDA against public authorities",
+      "Generally eCH-0059; WCAG 2.2 AA in Zurich",
+      "Complaints from users, cantonal oversight, requirements in public procurement"
+     ],
+     [
+      "Private company serving the public in Switzerland",
+      "Ban on discrimination (Art. 6 DDA); cantonal rules such as those in Basel-Stadt",
+      "No mandatory standard; WCAG 2.2 AA recommended",
+      "Compensation of up to CHF 5,000 per case (Art. 11(2)), reputation, future obligation to make reasonable accommodations"
+     ],
+     [
+      "Swiss company offering a covered service to EU consumers",
+      "EAA, through the transposing law of each Member State served",
+      "EN 301 549, which incorporates WCAG level AA",
+      "Penalties and measures by EU national authorities, withdrawal or blocking of the service"
+     ],
+     [
+      "Swiss manufacturer of a covered product sold in the EU",
+      "EAA: manufacturer’s obligations, checks by the importer established in the EU",
+      "EN 301 549 for software and hardware aspects",
+      "Importer refuses to list the product, withdrawal from the market"
+     ],
+     [
+      "Microenterprise providing services and selling in the EU",
+      "Exempt from the EAA requirements for its services; Art. 6 DDA in Switzerland",
+      "WCAG 2.2 AA recommended",
+      "Low in legal terms, real in commercial terms"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "This table is a starting point, not legal advice. Mixed situations are common: a licensed undertaking that also sells tickets to travellers from the EU is subject to both eCH-0059 and the EAA. In that case, the sound strategy is to aim for a single level, WCAG 2.2 level AA, and to document conformance for each framework."
+  ],
+  [
+   "h2",
+   "common-pitfalls",
+   "Common pitfalls on Swiss websites and apps"
+  ],
+  [
+   "p",
+   "The defects found in Switzerland resemble those seen elsewhere in Europe, but some recur with particular regularity, linked to local practice and to multilingualism."
+  ],
+  [
+   "ul",
+   [
+    "The cookie and consent banner, displayed first, traps keyboard focus or is not announced by the screen reader: the person simply cannot get into the website;",
+    "the visual captcha on contact, registration or order forms, with no audio alternative or invisible solution;",
+    "the payment flow handed over to an external provider: the company assumes that step is not its concern, whereas both eCH-0059 and the EAA assess the complete process;",
+    "drop-down menus and mega menus that open on mouse hover but not with the keyboard, or that do not convey whether they are open or closed;",
+    "PDFs of decisions, municipal regulations, minutes or annual reports, published as scans or without a heading structure;",
+    "interactive maps and booking calendars that can only be used with a mouse and have no alternative list;",
+    "videos without subtitles in all the website’s languages, or subtitled in German only;",
+    "mobile apps whose icon buttons have no accessible name, making VoiceOver or TalkBack unusable on the home screen;",
+    "accessibility overlays added through a script, which change the display but do not fix the code and can interfere with assistive technologies."
+   ]
+  ],
+  [
+   "p",
+   "None of these defects can be reliably detected with an automated tool alone. They require manual testing with a keyboard and with a screen reader on desktop and mobile and, ideally, [[svc:test-utilisateur|testing with users with disabilities]]. Most of them are fixed in the shared components, which is why a well-targeted audit has an effect across the whole website."
+  ],
+  [
+   "h2",
+   "action-plan",
+   "A seven-step digital accessibility action plan for Switzerland"
+  ],
+  [
+   "p",
+   "The plan below works for a public administration as well as for a company. The steps are the same; only the standard of proof changes, depending on the applicable framework."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Establish your position.",
+     "List your websites, apps, extranets and documents, and determine the framework for each one: federal law, cantonal law, the DDA for private providers, the EAA for EU markets. The table in the previous section serves as a grid."
+    ],
+    [
+     "Choose a single level.",
+     "Adopt WCAG 2.2 level AA as a common target. This level covers eCH-0059 V3.0, the expectations of the most demanding cantons and the WCAG requirements incorporated in EN 301 549."
+    ],
+    [
+     "Audit a representative sample.",
+     "Have the templates, shared components and complete journeys (registration, search, ordering, payment, contact) assessed in every published language. A [[svc:audit-conformite|compliance audit]] provides the list of non-conformities, their severity and recommendations for fixing them."
+    ],
+    [
+     "Fix issues at source.",
+     "Prioritise blockers on essential journeys, then fix them in the design system and components, so that each fix benefits every page. [[svc:developpement|Support for your developers]] avoids recreating the same errors in the next release."
+    ],
+    [
+     "Deal with documents and media.",
+     "Set rules for PDFs (tagging, PDF/UA), videos (subtitles, audio description) and easy-to-read content, drawing on the tools published by the FBED."
+    ],
+    [
+     "Publish a statement and a feedback channel.",
+     "Even where the law does not require it, an accessibility statement structured according to the annex to eCH-0059 or the European model shows the real state of the service and offers a way to report a barrier. Our article on [[article:declaration|the accessibility statement]] sets out what it should contain."
+    ],
+    [
+     "Embed the approach.",
+     "Write WCAG 2.2 AA into your development contracts and tenders, train your content, design and development teams through [[svc:formations|training tailored to your tools]], and schedule a review at least once a year, as eCH-0059 requires for the review of the statement."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "For an initial overview, the page on [[country:suisse|digital accessibility in Switzerland]] summarises the texts, and our [[article:guide|guide to digital accessibility]] covers the basics. If you sell into the EU, read our [[article:eaa|detailed analysis of the EAA]] alongside this article. To scope an audit, you can also write to us via the [[contact|contact page]]."
+  ]
+ ],
+ "faq": [
+  [
+   "Does a Swiss company website have to comply with WCAG?",
+   "No, not under current federal law. The Disability Discrimination Act prohibits private entities that provide services to the public from discriminating against people with disabilities, but it imposes no standard or WCAG level on them. An obligation may, however, come from elsewhere: a canton that extends its rules to private providers, a contract or a public tender, or the European Accessibility Act if the company offers a covered service to consumers in the European Union."
+  ],
+  [
+   "What penalty does a Swiss company with an inaccessible website face?",
+   "Under the DDA, a person who suffers discrimination may claim compensation in court, capped at CHF 5,000 by Article 11(2). The Federal Supreme Court interprets the notion of discrimination strictly. If the company serves consumers in the EU, the penalties laid down in the transposing law of each Member State concerned apply, with enforcement authorities specific to each country."
+  ],
+  [
+   "Should we audit against eCH-0059 or EN 301 549?",
+   "Both are based on WCAG level AA. eCH-0059 V3.0 refers to WCAG 2.1 and is the benchmark for Swiss administrations; EN 301 549 is the standard used to demonstrate conformity with the EAA. An audit carried out against WCAG 2.2 level AA, documented for each framework, allows you to meet both without running separate test campaigns."
+  ],
+  [
+   "Are mobile apps covered in Switzerland?",
+   "Yes for public administrations: eCH-0059 explicitly covers mobile apps, which must meet WCAG 2.1 level AA, drawing on the iOS and Android accessibility guidelines for native apps. For a company, the app is subject to the same rules as the website: the ban on discrimination in Switzerland, and the EAA if it is used to provide a covered service to consumers in the EU."
+  ],
+  [
+   "How long does an accessibility audit take in Switzerland?",
+   "It depends on the scope: the number of templates and journeys, the number of languages, and whether a mobile app or documents are included. As a guide, our audits take three weeks on average from kick-off to delivery of the report. The price is set by quotation, after an analysis of the sample to be assessed, and not by the number of pages on the website."
+  ],
+  [
+   "Is the Inclusion Act already in force?",
+   "No. The National Council passed it on 21 September 2026 as an indirect counter-proposal to the Inclusion Initiative, and the bill still has to be examined by the Council of States. Until both chambers have adopted a common version and the act has come into force, the applicable law remains the current Disability Discrimination Act, its ordinance and cantonal rules."
+  ],
+  [
+   "Is an accessibility overlay enough to be compliant?",
+   "No. These scripts change the display, for example text size or contrast, but do not fix the code: a button without a name, a poorly labelled form or a menu that cannot be used with the keyboard stays that way. Neither eCH-0059 nor EN 301 549 recognises these tools as a means of conformance, and they can even interfere with assistive technologies."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "How does your website measure up to eCH-0059 and the EAA?",
+ "cta_text": "We can audit your websites and apps against WCAG 2.2 level AA, with a report covering both eCH-0059 and EN 301 549, in French or German.",
+ "related": [
+  "eaa",
+  "normes",
+  "guide"
+ ],
+ "cluster": "reglementation"
 }

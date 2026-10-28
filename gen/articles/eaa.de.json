@@ -1,139 +1,709 @@
 {
-  "slug": "european-accessibility-act",
-  "h1": "European Accessibility Act: was die Behörden prüfen, Branche für Branche",
-  "crumb": "European Accessibility Act",
-  "meta_title": "European Accessibility Act: Pflichten und Kontrollen je Branche",
-  "meta_desc": "EAA Barrierefreiheit: erfasste Produkte und Dienste, Ausnahmen, EN 301 549, Behörden in Luxemburg, Belgien und Frankreich, erste Urteile, Nachweise.",
-  "card_desc": "Erfasste Produkte und Dienste, Ausnahmen, EN 301 549, Behörden und erste Urteile: der EAA Branche für Branche erklärt.",
-  "cat": "analyse",
-  "where": "Europa",
-  "cover": "EAA",
-  "cover_note": ["Richtlinie (EU) 2019/882", "Anwendbar seit dem 28. Juni 2025"],
-  "date": "2026-10-27",
-  "lead": "Der European Accessibility Act, die Richtlinie (EU) 2019/882 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen, gilt seit dem 28. Juni 2025 für digitale Produkte und Dienstleistungen, die Verbrauchern in der Union angeboten werden: Onlinehandel, Banken, Personenverkehr, Telekommunikation, audiovisuelle Medien, E-Books und Endgeräte. Diese Analyse zeigt Branche für Branche, was Nutzerinnen und Nutzer tatsächlich blockiert, welche Ausnahmen unter welchen genauen Bedingungen gelten, wo die Norm EN 301 549 steht und welche Behörden kontrollieren, mit besonderem Blick auf das luxemburgische Gesetz vom 8. März 2023, das OSAPS und die Lage Schweizer Unternehmen. Sie fasst außerdem die ersten Gerichtsentscheidungen zusammen und endet mit einer Tabelle der aufzubewahrenden Nachweise und einem Aktionsplan.",
-  "body": [
-    ["h2", "binnenmarkt-richtlinie", "European Accessibility Act: eine Binnenmarktrichtlinie"],
-    ["p", "Mit dem European Accessibility Act, kurz EAA, ist die [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/deu|Richtlinie (EU) 2019/882 des Europäischen Parlaments und des Rates vom 17. April 2019 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen]] gemeint, die am 7. Juni 2019 im Amtsblatt der Europäischen Union veröffentlicht wurde. Die Mitgliedstaaten mussten sie bis spätestens 28. Juni 2022 umsetzen und ihre Vorschriften ab dem 28. Juni 2025 anwenden. Seit diesem Datum muss ein erfasstes Produkt, das in Verkehr gebracht wird, oder eine erfasste Dienstleistung, die gegenüber Verbrauchern erbracht wird, Barrierefreiheitsanforderungen erfüllen, die in der ganzen Union gleich sind."],
-    ["p", "Ihre Logik ist nicht in erster Linie die eines Behindertengesetzes. Es handelt sich um eine Binnenmarktrichtlinie: Vor ihr begannen mehrere Länder, eigene Regeln für Automaten, Onlineshops oder Banking-Apps festzulegen, was den Markt zersplitterte und Produkte verteuerte. Die Union hat deshalb eine einheitliche Liste von Anforderungen beschlossen, die Wirtschaftsakteure einmal umsetzen, um überall verkaufen zu können. Der Text trägt im Übrigen den Vermerk „Text von Bedeutung für den EWR“, ist also dafür vorgesehen, in das Abkommen über den Europäischen Wirtschaftsraum übernommen zu werden."],
-    ["p", "Diese Logik hat sehr praktische Folgen. Bei Produkten übernimmt der EAA die Mechanismen des Produktsicherheitsrechts: Hersteller, Einführer und Händler haben jeweils eigene Pflichten, und der Hersteller erstellt eine technische Dokumentation und eine EU-Konformitätserklärung und bringt die CE-Kennzeichnung an. Bei Dienstleistungen liegt die Pflicht beim Dienstleistungserbringer: Er muss seine Dienstleistung nach den Anforderungen gestalten, die Öffentlichkeit darüber informieren, wie er sie erfüllt, und Nichtkonformitäten beheben. In beiden Fällen kontrollieren Marktüberwachungsbehörden, wie bei einem Spielzeug oder einem Elektrogerät."],
-    ["p", "Der EAA ersetzt nicht die Regeln für öffentliche Stellen. Die Richtlinie (EU) 2016/2102 über den barrierefreien Zugang zu den Websites und mobilen Anwendungen öffentlicher Stellen gilt parallel weiter; in Luxemburg ist sie durch das Gesetz vom 28. Mai 2019 umgesetzt, in Frankreich beruht ihre Umsetzung auf Artikel 47 des Gesetzes vom 11. Februar 2005 und auf dem RGAA. Ein und dasselbe Unternehmen kann beiden Regelungen unterliegen, was Abgrenzungsfragen aufwirft, die französische Gerichte 2026 zu entscheiden begonnen haben. Wie diese Texte zueinander stehen, erläutern unser [[article:guide|Leitfaden zur digitalen Barrierefreiheit]] und die Seite [[standards|Standards und Pflichten nach Land]]."],
-    ["h2", "erfasste-produkte-dienstleistungen", "Welche Produkte und Dienstleistungen der European Accessibility Act erfasst"],
-    ["p", "Der Anwendungsbereich der Richtlinie ist eine abschließende Liste, festgelegt in ihrem Artikel 2. Ein Produkt oder eine Dienstleistung, die dort nicht aufgeführt ist, unterliegt nicht dem EAA, selbst wenn sie digital ist und von der breiten Öffentlichkeit genutzt wird. Umgekehrt verkleinert keine Umsatzschwelle diese Liste: Nur die weiter unten beschriebene Ausnahme für Kleinstunternehmen, die Dienstleistungen erbringen, begrenzt die Zahl der betroffenen Akteure."],
-    ["h3", "Produkte, die nach dem 28. Juni 2025 in Verkehr gebracht werden"],
-    ["ul", ["Hardwaresysteme für Universalrechner für Verbraucher und deren Betriebssysteme;", "Selbstbedienungsterminals: Zahlungsterminals, Geldautomaten, Fahrausweisautomaten, Check-in-Automaten und interaktive Selbstbedienungsterminals zur Bereitstellung von Informationen, mit Ausnahme solcher, die in Fahrzeuge, Luftfahrzeuge, Schiffe oder Schienenfahrzeuge eingebaut sind;", "Verbraucherendgeräte mit interaktivem Leistungsumfang, die für elektronische Kommunikation genutzt werden, etwa Smartphones, oder für den Zugang zu audiovisuellen Mediendiensten, etwa Fernseher und Set-Top-Boxen;", "E-Book-Lesegeräte."]],
-    ["h3", "Dienstleistungen für Verbraucher, die nach dem 28. Juni 2025 erbracht werden"],
-    ["ul", ["elektronische Kommunikationsdienste, mit Ausnahme von Übertragungsdiensten, die für die Bereitstellung von Diensten der Maschine-Maschine-Kommunikation genutzt werden;", "Dienstleistungen, die den Zugang zu audiovisuellen Mediendiensten ermöglichen, zum Beispiel eine Website oder App eines Fernsehanbieters;", "bestimmte Elemente von Personenbeförderungsdiensten im Luft-, Schienen-, Schiffs- und Busverkehr: Websites, Dienste auf Mobilgeräten, elektronische Tickets und elektronische Ticketdienste, Reiseinformationen einschließlich Echtzeit-Informationen sowie interaktive Selbstbedienungsterminals; bei Stadt-, Vorort- und Regionalverkehrsdiensten sind nur diese Terminals erfasst;", "Bankdienstleistungen für Verbraucher;", "E-Books und die dafür bestimmte Software;", "Dienstleistungen im elektronischen Geschäftsverkehr;", "die Beantwortung von Notrufen an die einheitliche europäische Notrufnummer 112."]],
-    ["p", "Zwei Klarstellungen ersparen viele Fehler bei der Abgrenzung. Erstens sind Dienstleistungen nur erfasst, wenn sie gegenüber Verbrauchern erbracht werden: Erwägungsgrund 42 der Richtlinie beschreibt Dienstleistungen im elektronischen Geschäftsverkehr als Ferndienstleistungen, die im Hinblick auf den Abschluss eines Verbrauchervertrags erbracht werden, sodass eine Bestellplattform, die ausschließlich Geschäftskunden offensteht, nicht in diese Kategorie fällt. Zweitens spielt die Nationalität des Wirtschaftsakteurs keine Rolle: Die Pflicht wird dadurch ausgelöst, dass ein Produkt auf dem Unionsmarkt in Verkehr gebracht oder eine Dienstleistung gegenüber Verbrauchern in der Union erbracht wird."],
-    ["p", "Eine reine Unternehmenswebsite, die ein Unternehmen vorstellt, ohne dass man über sie einen Vertrag schließen kann, fällt deshalb nicht als elektronischer Geschäftsverkehr unter den EAA. Sobald sie aber das Bestellen, Reservieren, Abonnieren oder Bezahlen ermöglicht, ist sie im Anwendungsbereich. In der Praxis haben die meisten Unternehmen, die Dienstleistungen für Privatkunden anbieten, mindestens einen betroffenen Ablauf: die Bestellung, das Kundenkonto oder den Online-Vertragsabschluss."],
-    ["h2", "branche-fuer-branche", "EAA Barrierefreiheit Branche für Branche: was in der Praxis blockiert"],
-    ["p", "Die Anforderungen der Richtlinie sind funktional formuliert. Um zu wissen, worauf eine Behörde oder ein Beschwerdeführer achten wird, muss man sie in konkrete Abläufe übersetzen. Die folgenden Beispiele sind diejenigen, die bei Audits am häufigsten auftreten: Der Text nennt sie nicht einzeln, aber jedes von ihnen hindert einen Menschen mit Behinderung daran, eine erfasste Dienstleistung bis zum Ende zu nutzen, und genau das soll der EAA verhindern."],
-    ["h3", "Elektronischer Geschäftsverkehr"],
-    ["p", "Das ist der breiteste Bereich: Jede Website und jede App, über die ein Verbraucher einen Fernabsatzvertrag schließen kann, ist betroffen, ob sie Kleidung, Lebensmittel, Reisen, Konzertkarten oder Abonnements verkauft. Anhang I sieht außerdem vor, dass der Dienst Informationen über die Barrierefreiheit der verkauften Produkte bereitstellt, wenn der Hersteller sie liefert, und dass die Funktionen für Identifizierung, Sicherheit und Zahlung wahrnehmbar, bedienbar, verständlich und robust sind."],
-    ["p", "Die Blockaden liegen selten auf der Startseite. Man findet sie im Bestellprozess:"],
-    ["ul", ["Suchfilter (Größe, Preis, Marke), deren ausgewählter Zustand vom Screenreader nicht angesagt wird oder die die Liste ohne Hinweis neu laden;", "Farb- oder Größenauswahlfelder ohne zugänglichen Namen: Eine blinde Person hört „Schaltfläche, Schaltfläche, Schaltfläche“, ohne zu wissen, was sie auswählt;", "ein Warenkorb, dessen Mengenänderungen nicht angekündigt werden, oder eine Schaltfläche „Entfernen“, die nicht sagt, welchen Artikel sie löscht;", "ein rein visuelles CAPTCHA bei der Kontoerstellung, ohne Audio-Alternative und ohne anderes Prüfverfahren;", "ein Kalender zur Auswahl des Lieferfensters, der sich nicht mit der Tastatur bedienen lässt;", "ein Adressformular, das Fehler nur durch einen roten Rahmen anzeigt oder die Eingaben nach einem Fehler löscht;", "ein in einen Frame eingebettetes Zahlungsmodul eines Drittanbieters und danach eine Seite zur starken Kundenauthentifizierung der Bank, die sich in einem Fenster öffnet, das der Screenreader nicht erkennt;", "eine Sitzungszeitbegrenzung, die zu kurz ist für eine Person, die mit Sprachausgabe oder Sprachsteuerung navigiert."]],
-    ["p", "Das Zahlungsmodul verdient besondere Aufmerksamkeit, weil es fast immer von einem Dienstleister stammt. Der EAA verschiebt die Verantwortung deshalb nicht: Es ist der Händler, der die Dienstleistung im elektronischen Geschäftsverkehr gegenüber dem Verbraucher erbringt. Verlangen Sie daher von Ihren Anbietern für Zahlung, elektronische Signatur und CAPTCHA deren eigene Konformitätsnachweise, und testen Sie den vollständigen Ablauf, von der Produktseite bis zur Bestellbestätigung."],
-    ["h3", "Bankdienstleistungen für Verbraucher"],
-    ["p", "Der Bankensektor ist für Dienstleistungen an Privatkunden erfasst: Kundenportal, mobile App, Kontoeröffnung und Online-Vertragsabschluss, Zahlungen, Kredite. Geldautomaten und Zahlungsterminals fallen dagegen unter die Regeln für Produkte. Die typischen Blockaden sind gut bekannt:"],
-    ["ul", ["die starke Kundenauthentifizierung, wenn sie ausschließlich auf einer Push-Benachrichtigung beruht, die innerhalb weniger Sekunden bestätigt werden muss, oder auf einer biometrischen Erkennung ohne andere Option;", "die virtuelle Tastatur mit vertauschten Tasten zur Eingabe einer PIN, die Screenreader schlecht oder gar nicht wiedergeben;", "der per SMS empfangene Einmalcode, der in ein Feld einzugeben ist, das abläuft, bevor die Person von einer App zur anderen wechseln konnte;", "die elektronische Signatur eines Kreditangebots in einem Drittmodul, dessen Kontrollkästchen und Schaltfläche „Unterschreiben“ nicht beschriftet sind;", "Allgemeine Geschäftsbedingungen, Kreditangebote und Kontoauszüge als eingescannte oder nicht getaggte PDF-Dateien, die eine Sprachausgabe nicht lesen kann;", "Kreditrechner mit Schiebereglern, die sich weder mit der Tastatur noch mit einer Bildschirmlupe bedienen lassen."]],
-    ["p", "Für diesen Sektor betont Anhang I zudem die Verständlichkeit der Informationen. Ein unnötig kompliziert formulierter Vertrag oder eine solche Anleitung ist daher ein Problem der Barrierefreiheit und nicht nur eine Frage der redaktionellen Qualität: Rechts- und Marketingabteilungen sind ebenso gefordert wie die technischen Teams. Für einen Finanzplatz wie Luxemburg, an dem viele Banken Privatkunden in mehreren Sprachen bedienen, gilt diese Anforderung für jede angebotene Sprachfassung."],
-    ["h3", "Personenbeförderung"],
-    ["p", "Im Luft-, Schienen-, Schiffs- und Busverkehr erfasst die Richtlinie Websites, Apps, elektronische Tickets, Ticketverkauf, Reiseinformationen einschließlich Echtzeit-Informationen und interaktive Terminals. Typische Blockaden sind:"],
-    ["ul", ["der Kabinen- oder Wagenplan zur Sitzplatzwahl, als Bild ohne Textalternative gezeichnet;", "das als PDF verschickte elektronische Ticket, dessen Reisedaten nicht getaggt sind;", "Verspätungs- oder Gleiswechselmeldungen, die nur über farbige Piktogramme vermittelt werden;", "die Anmeldung einer Hilfeleistung für Personen mit eingeschränkter Mobilität, die nur über ein seinerseits nicht barrierefreies Formular möglich ist;", "Fahrkartenautomaten im Bahnhof ohne Audioausgabe, ohne Kopfhöreranschluss und ohne physische Tastatur."]],
-    ["p", "Bei Stadt-, Vorort- und Regionalverkehrsdiensten sind nur die interaktiven Selbstbedienungsterminals erfasst. Die Website oder App eines städtischen Busnetzes fällt also nicht aus diesem Grund unter den EAA, auch wenn sie anderen Pflichten unterliegen kann, insbesondere wenn der Betreiber eine öffentliche Stelle ist oder eine öffentliche Aufgabe wahrnimmt, wie unsere Seite zum [[sector:public|öffentlichen Sektor]] ausführt."],
-    ["h3", "Elektronische Kommunikation"],
-    ["p", "Telefonanbieter und Internetprovider stehen in der ersten Reihe. Anhang I verlangt von ihnen insbesondere, zusätzlich zur Sprachkommunikation Echtzeittext anzubieten, und Gesamtgesprächsdienste, wenn neben der Sprache auch Video bereitgestellt wird. Die häufigsten Blockaden sind jedoch alltäglicher: Vertragsabschluss oder Tarifwechsel in einem nicht barrierefreien Kundenportal, Rechnungen als unstrukturierte PDF-Dateien, ein Kundendienst, der nur per Sprachanruf erreichbar ist, ein Kündigungsprozess, der eine rein grafische Bedienung voraussetzt. Die Benutzeroberfläche des Routers oder der Set-Top-Box fällt dagegen unter die Regeln für Produkte."],
-    ["h3", "Audiovisuelle Medien"],
-    ["p", "Die Richtlinie erfasst die Dienstleistungen, die den Zugang zu audiovisuellen Inhalten ermöglichen: Fernseh- und Video-on-Demand-Apps, elektronische Programmführer, Mediatheken. Sie schafft keine Pflicht, alle Sendungen zu untertiteln; das regeln andere Texte. Sie verlangt, dass diese Dienste ihre Funktionen barrierefrei gestalten, über die Verfügbarkeit barrierefreier Inhalte informieren und die vorhandenen Zugangsdienste vollständig übertragen: Untertitel, Audiodeskription, gesprochene Untertitel, Gebärdensprachdolmetschung."],
-    ["p", "In der Praxis zeigen Audits Videoplayer, deren Schaltflächen keinen Namen haben, eine Untertitelaktivierung, die in einem nicht barrierefreien Menü versteckt ist, Kataloge aus Bildkacheln ohne Text oder eine Navigation per Fernbedienung ohne jede Sprachrückmeldung. Eine Audiodeskription, die zwar vorhanden ist, sich aber nicht selbstständig aktivieren lässt, ist für die Nutzerin oder den Nutzer gleichbedeutend mit einer fehlenden Audiodeskription."],
-    ["h3", "E-Books"],
-    ["p", "E-Books und Lesesoftware müssen die Navigation in der Textstruktur, die Anpassung der Darstellung, das Vorlesen per Sprachausgabe und die Wiedergabe nicht-textueller Inhalte über Alternativen ermöglichen. Sie müssen außerdem Metadaten bereitstellen, die ihre Barrierefreiheitsfunktionen beschreiben, und Systeme zur digitalen Rechteverwaltung dürfen diese Funktionen nicht blockieren. Ein Verlag, der die Sprachausgabe durch seinen Kopierschutz sperrt oder Schaubilder ohne Beschreibung veröffentlicht, verstößt gegen die Anforderungen."],
-    ["h3", "Terminals, Computer, Smartphones und E-Book-Lesegeräte"],
-    ["p", "Bei Produkten folgt die Verantwortungskette dem System der CE-Kennzeichnung. Der Hersteller bewertet die Konformität, erstellt die technische Dokumentation und die EU-Konformitätserklärung und bringt dann die Kennzeichnung an. Der Einführer prüft, ob diese Schritte erfolgt sind, und der Händler kontrolliert, ob Kennzeichnung und Unterlagen vorhanden sind. Die häufigen Mängel sind bekannt: ein Touchscreen ohne Alternative für blinde Menschen, keine Audioausgabe, PIN-Eingabe auf einer glatten Fläche ohne taktile Markierung, Zeitlimits, die sich nicht verlängern lassen, Bedienungsanleitungen und Verpackungen ohne barrierefreie Informationen."],
-    ["h2", "anhang-i-anforderungen", "Die Anforderungen aus Anhang I in verständlicher Sprache"],
-    ["p", "Anhang I nennt weder die WCAG noch eine andere Norm. Er legt Ergebnisse fest, die zu erreichen sind, gegliedert in allgemeine Anforderungen an Produkte, allgemeine Anforderungen an Dienstleistungen, besondere Anforderungen an bestimmte Dienstleistungen und funktionale Leistungskriterien. In Alltagssprache übersetzt laufen sie auf einige Grundsätze hinaus, die jede Projektleitung an ihrem eigenen Dienst überprüfen kann."],
-    ["ol", [["Mehrere Sinneskanäle.", "Jede für die Nutzung notwendige Information, etwa eine Anweisung, eine Warnung oder der Status eines Vorgangs, wird über mehr als einen Sinn vermittelt: Eine angezeigte Fehlermeldung muss auch von der Sprachausgabe wiedergegeben werden, ein akustisches Signal braucht eine visuelle Entsprechung."], ["Wahrnehmbar, bedienbar, verständlich, robust.", "Für Websites und mobile Apps übernimmt der Anhang die vier Grundsätze der WCAG: Man muss den Inhalt wahrnehmen, ihn mit der Tastatur oder einer assistiven Technologie bedienen, ihn verstehen und ihn mit den gängigen Browsern und Werkzeugen nutzen können, und zwar in einheitlicher und angemessener Weise."], ["Eine Alternative zu jeder Fähigkeit.", "Ein Dienst darf nicht eine einzige Fähigkeit voraussetzen: Sehen, Hören, Sprechen, Feinmotorik oder Kraft. Eine reine Sprachsteuerung, eine komplexe Geste auf einem Touchscreen oder eine Authentifizierung, die auf einer einzigen Modalität beruht, sind ohne gleichwertige Alternative problematisch."], ["Keine Gefahr durch Fotosensibilität.", "Inhalte dürfen keine Effekte enthalten, die fotosensible epileptische Anfälle auslösen können. In der Praxis müssen sich automatisch ablaufende Animationen außerdem anhalten lassen."], ["Nutzung ohne Verlust an Selbstständigkeit oder Privatsphäre.", "Wer eine Barrierefreiheitsfunktion nutzt, darf nicht auf fremde Hilfe angewiesen sein und seine Daten nicht preisgeben müssen: Eine eingegebene PIN darf zum Beispiel nicht ohne Kopfhörer laut vorgelesen werden."], ["Informationen über die Funktionsweise des Dienstes.", "Der Dienstleistungserbringer erklärt, wie der Dienst funktioniert und welche Barrierefreiheitsfunktionen er bietet, in Formaten, die ihrerseits barrierefrei sind."], ["Barrierefreie Unterstützungsdienste.", "Kundendienst, Hotline oder technischer Support müssen Auskunft über die Barrierefreiheit des Dienstes und seine Kompatibilität mit assistiven Technologien geben können, über Kontaktwege, die alle nutzen können."], ["Verständliche Informationen.", "Die Texte, die man zur Nutzung des Dienstes braucht, müssen für das Zielpublikum verständlich sein; für Bankdienstleistungen sagt der Anhang dies ausdrücklich."]]],
-    ["p", "Um nachzuweisen, dass ein digitaler Dienst diese Grundsätze erfüllt, übersetzen Prüferinnen und Prüfer sie in überprüfbare Kriterien. Für Web und Mobile bedeutet das, die Erfolgskriterien der WCAG auf Stufe AA zu bewerten, ergänzt um die Anforderungen der Norm EN 301 549 an Dokumente, Software, Hardware und Unterstützungsdienste. Genau das leistet ein [[svc:audit-conformite|Konformitätsaudit nach WCAG und EN 301 549]], das auch Dokumente und Bestellprozesse abdeckt."],
-    ["note", "Das Wichtigste", "Anhang I legt Ergebnisse fest; die Normen sagen, wie man sie nachweist. Ein Dienst kann den Anhang erfüllen, ohne eine Norm anzuwenden, muss dann aber selbst, Anforderung für Anforderung, belegen, dass er das geforderte Ergebnis erreicht."],
-    ["h2", "ausnahmen-bedingungen", "Kleinstunternehmen, unverhältnismäßige Belastung: die Ausnahmen und ihre genauen Bedingungen"],
-    ["h3", "Die Ausnahme für Kleinstunternehmen, die Dienstleistungen erbringen"],
-    ["p", "Die Richtlinie definiert ein Kleinstunternehmen als ein Unternehmen, das weniger als zehn Personen beschäftigt und dessen Jahresumsatz oder Jahresbilanzsumme 2 Millionen Euro nicht übersteigt. Die Bedingung zur Beschäftigtenzahl muss immer erfüllt sein, bei den Beträgen genügt eine von beiden: Ein Onlineshop mit acht Beschäftigten, der 3 Millionen Euro Umsatz erzielt, dessen Bilanzsumme aber 1,5 Millionen beträgt, bleibt ein Kleinstunternehmen im Sinne des Textes. Eine Gesellschaft mit zwölf Beschäftigten ist nie eines, unabhängig von ihrem Umsatz. Das luxemburgische Gesetz vom 8. März 2023 übernimmt diese Definition unverändert."],
-    ["p", "Die Ausnahme gilt nur für Dienstleistungen. Ein Kleinstunternehmen, das ein erfasstes Produkt herstellt oder einführt, etwa ein Terminal oder ein E-Book-Lesegerät, muss die Anforderungen an Produkte erfüllen. Es profitiert lediglich von Verfahrenserleichterungen: Es muss keine Nachweisakte anlegen, wenn es sich auf eine Ausnahme beruft, und die Behörden nicht darüber informieren, muss aber die maßgeblichen Tatsachen vorlegen, wenn die Behörde sie verlangt. Die Richtlinie verpflichtet die Mitgliedstaaten außerdem, Kleinstunternehmen Leitlinien und Werkzeuge zur Verfügung zu stellen, die die Anwendung der Vorschriften erleichtern; in Luxemburg kündigt das OSAPS solche Leitlinien, Werkzeuge und Beratung an."],
-    ["p", "Zwei Reflexe sind angebracht. Berechnen Sie die Schwellen auf der Ebene der juristischen Person, die die Dienstleistung tatsächlich gegenüber Verbrauchern erbringt, und bewahren Sie diese Berechnung zusammen mit Ihren Abschlüssen auf: Das ist das erste Dokument, das eine Behörde verlangen wird. Behalten Sie außerdem das Wachstum im Blick: Die Ausnahme entfällt, sobald das Unternehmen eine der Schwellen überschreitet, und die Anpassung eines Onlineshops dauert mehrere Monate. [[sector:pme|KMU]], die sich den Schwellen nähern, sollten die Barrierefreiheit schon bei der nächsten Überarbeitung einplanen."],
-    ["h3", "Grundlegende Veränderung und unverhältnismäßige Belastung"],
-    ["p", "Artikel 14 der Richtlinie sieht zwei Ausnahmen vor, die für Produkte wie für Dienstleistungen gelten: Die Anforderungen sind nicht anzuwenden, wenn ihre Einhaltung eine wesentliche Änderung erfordern würde, die zu einer grundlegenden Veränderung der Wesensmerkmale des Produkts oder der Dienstleistung führt, oder wenn sie dem Wirtschaftsakteur eine unverhältnismäßige Belastung auferlegen würde. Diese Ausnahmen lassen sich nicht einfach erklären, sie müssen nachgewiesen werden. Die Bedingungen sind genau festgelegt:"],
-    ["ol", [["Eine vorherige Beurteilung durch den Wirtschaftsakteur.", "Sie folgt den Kriterien von Anhang VI: Verhältnis der Nettokosten der Anpassung zu den Gesamtkosten des Wirtschaftsakteurs, Kosten im Verhältnis zum geschätzten Nutzen für Menschen mit Behinderungen unter Berücksichtigung von Häufigkeit und Dauer der Nutzung, Verhältnis dieser Kosten zum Nettoumsatz."], ["Eine fünf Jahre lang aufbewahrte Dokumentation.", "Die Nachweise werden fünf Jahre lang ab der letzten Bereitstellung des Produkts auf dem Markt oder der letzten Erbringung der Dienstleistung aufbewahrt, und den Behörden wird auf Verlangen eine Kopie übergeben."], ["Eine regelmäßige Neubewertung.", "Bei Dienstleistungen wird die Beurteilung bei jeder Änderung des Dienstes, auf Verlangen der Kontrollbehörde und in jedem Fall mindestens alle fünf Jahre erneuert."], ["Eine Information der Behörden.", "Der Wirtschaftsakteur, der sich auf die Ausnahme beruft, informiert die Marktüberwachungsbehörden jedes Mitgliedstaats, in dem das Produkt in Verkehr gebracht oder die Dienstleistung erbracht wird. In Frankreich verweist die Behörde für Wettbewerb, Verbraucherschutz und Betrugsbekämpfung (DGCCRF) auf ein Online-Verfahren, mit dem man eine Nichtkonformität meldet oder sich auf eine Ausnahme beruft."], ["Keine zweckgebundene Fremdfinanzierung.", "Ein Wirtschaftsakteur, der für die Verbesserung der Barrierefreiheit eine öffentliche oder private Finanzierung erhält, die nicht aus eigenen Mitteln stammt, kann sich nicht auf die unverhältnismäßige Belastung berufen."]]],
-    ["p", "Erwägungsgrund 66 der Richtlinie verschließt die Tür für bequeme Begründungen: Mangelnde Priorität, Zeit oder Kenntnis sollen nicht als berechtigte Gründe gelten. Die Ausnahme betrifft außerdem nur die jeweilige Anforderung und nur in dem Umfang, in dem sie unverhältnismäßig ist, nicht den gesamten Dienst. Ein Anbieter, der ein altes Anzeigemodul kurzfristig nicht barrierefrei machen kann, bleibt für den gesamten übrigen Ablauf gebunden und muss, wo möglich, eine Ersatzlösung anbieten."],
-    ["h2", "en-301-549-konformitaetsvermutung", "Konformitätsvermutung: wo die Norm EN 301 549 steht"],
-    ["p", "Nach Artikel 15 der Richtlinie gilt bei einem Produkt oder einer Dienstleistung, die harmonisierten Normen entspricht, deren Fundstellen im Amtsblatt der Europäischen Union veröffentlicht wurden, die Vermutung der Konformität mit den Anforderungen, die diese Normen abdecken. Dieselbe Vermutung gilt für technische Spezifikationen, die die Kommission im Wege von Durchführungsrechtsakten erlassen kann. Diese Vermutung ist wertvoll: Sie kehrt die Last der Argumentation um, denn dann muss die Behörde nachweisen, dass der Dienst die Anforderung nicht erfüllt."],
-    ["p", "Für die Informationstechnik ist die maßgebliche Norm die EN 301 549. Ihre 2021 veröffentlichte Fassung V3.2.1 ist im Rahmen der Richtlinie 2016/2102 über den öffentlichen Sektor harmonisiert, durch den Durchführungsbeschluss (EU) 2021/1339. Das [[https://www.etsi.org/human-factors-accessibility/en-301-549-v3-the-harmonized-european-standard-for-ict-accessibility|ETSI erläutert, dass diese Fassung seit August 2021 die Richtlinie über den öffentlichen Sektor stützt und dass für den European Accessibility Act eine Überarbeitung vorgesehen ist]]. Diese für den EAA bestimmte Überarbeitung, die Fassung V4.1.1, wurde von den europäischen Normungsorganisationen im Spätsommer 2026 angenommen und am 2. September 2026 veröffentlicht. Sie wechselt von den WCAG 2.1 zu den WCAG 2.2, Stufen A und AA, und fügt einen Anhang mit der Zuordnung zu den Anforderungen des EAA hinzu."],
-    ["p", "Zum Zeitpunkt der Abfassung dieses Artikels ist die Fundstelle dieser neuen Fassung noch nicht im Amtsblatt angegeben. Die irische Behörde für Behindertenfragen, die National Disability Authority, [[https://nda.ie/news/en301549-published|erwartet diese Veröffentlichung für den 16. Dezember 2026]]. Solange sie nicht erfolgt ist, begründet keine Norm die Konformitätsvermutung im Rahmen des EAA: Die Konformität wird anhand von Anhang I nachgewiesen, wobei die bestehenden Normen als Bewertungsmethode dienen."],
-    ["p", "Diese Lage hindert die Behörden nicht daran, einen Prüfmaßstab zu haben. Die französische DGCCRF nennt etwa die Norm EN 301 549 V3.2.1, den RGAA und die WCAG 2.1 als Referenzen. Der geltende RGAA ist die Version 4.1.2, und die interministerielle Digitaldirektion Frankreichs weist auf der [[https://accessibilite.numerique.gouv.fr/|offiziellen Website des RGAA (auf Französisch)]] darauf hin, dass eine Version 5 in Arbeit ist und Ende 2026 erscheinen soll. In Luxemburg dienen RAWeb und RAAM als öffentliche Methoden zur Umsetzung der EN 301 549. Die vernünftige Wahl besteht heute darin, Ihre Dienste nach den WCAG 2.2 auf Stufe AA zu bewerten: Damit decken Sie die Kriterien der Fassung 3.2.1 ab und nehmen die der Fassung 4.1.1 vorweg. Die nationalen Referenzrahmen, RGAA in Frankreich, RAWeb und RAAM in Luxemburg, eCH-0059 in der Schweiz, stellt unser Artikel über [[article:normes|Normen und Referenzrahmen der Barrierefreiheit]] im Einzelnen vor."],
-    ["h2", "informationspflicht-dienstleistungen", "Über die Barrierefreiheit Ihrer Dienstleistungen informieren: wo und wie"],
-    ["p", "Der EAA erlegt Dienstleistungserbringern eine Informationspflicht auf, die von den technischen Anforderungen getrennt ist. Der Anbieter erstellt die in Anhang V der Richtlinie vorgesehenen Informationen und erläutert, wie seine Dienstleistung die Barrierefreiheitsanforderungen erfüllt. Diese Informationen werden der Öffentlichkeit schriftlich und mündlich zur Verfügung gestellt, in einer für Menschen mit Behinderungen zugänglichen Form, und so lange aufbewahrt, wie die Dienstleistung angeboten wird. In Frankreich sieht das Dekret Nr. 2023-931 vom 9. Oktober 2023 vor, dass sie in den Allgemeinen Geschäftsbedingungen oder einem gleichwertigen Dokument stehen; das luxemburgische Gesetz verlangt in seinem Anhang II ebenfalls, dass sie in die Allgemeinen Geschäftsbedingungen oder ein gleichwertiges Dokument aufgenommen werden."],
-    ["p", "Ihr Inhalt ist vorgegeben: eine allgemeine Beschreibung der Dienstleistung in barrierefreien Formaten, die Erläuterungen, die zum Verständnis ihrer Funktionsweise nötig sind, und die Beschreibung, wie sie die geltenden Anforderungen erfüllt. Die DGCCRF nennt RGAA-Auditberichte unter den Unterlagen, mit denen sich diese Information belegen lässt. Konkret erfüllt eine Seite „Barrierefreiheit“, die aus der Fußzeile und aus den Allgemeinen Geschäftsbedingungen verlinkt ist und für jeden Dienst und jede App einzeln geführt wird, die Erwartung, wenn sie mindestens Folgendes enthält:"],
-    ["ul", ["den genauen Umfang des beschriebenen Dienstes: Website, iOS-App, Android-App, Terminals;", "den für die Bewertung verwendeten Referenzrahmen, das Datum der Bewertung und die Stelle, die sie durchgeführt hat;", "die verfügbaren Barrierefreiheitsfunktionen und die assistiven Technologien, mit denen der Dienst getestet wurde;", "die bekannten Einschränkungen, jeweils mit der angebotenen Alternative und dem Zeitplan für die Behebung;", "einen barrierefreien Kontaktweg, um eine Schwierigkeit zu melden oder die Information in anderer Form zu erhalten;", "das Datum der letzten Aktualisierung."]],
-    ["p", "Bei mehrsprachigen Angeboten, wie sie in Luxemburg, in der Schweiz und in Belgien die Regel sind, sollte diese Seite in jeder Sprache vorliegen, in der der Dienst angeboten wird: Eine Kundin, die den Shop auf Deutsch nutzt, muss die Information auch auf Deutsch finden. Die Richtlinie schreibt das nicht wörtlich vor, aber eine Information, die das Zielpublikum nicht versteht, erfüllt kaum die Anforderung, in zugänglicher Form bereitgestellt zu werden."],
-    ["p", "Diese Information ist nicht mit der Erklärung zur Barrierefreiheit zu verwechseln, die für öffentliche Stellen gilt, in Frankreich nach Artikel 47 des Gesetzes von 2005 mit einem vom RGAA festgelegten Inhalt, in Luxemburg nach dem Gesetz vom 28. Mai 2019. Ein Unternehmen, das beiden Regelungen unterliegt, kann sie auf einer Seite zusammenführen, sofern jede ihre eigenen Anforderungen erfüllt; die Methode beschreibt unser Artikel über [[article:declaration|die Erklärung zur Barrierefreiheit]]. In Belgien stellte die Stellungnahme der Plattform der Beratungsgremien für Menschen mit Behinderung (Plateforme des conseils d'avis handicap) vom September 2025 ihrerseits fest, dass die Informationen, die mehrere Aufsichtsbehörden wie der FÖD Wirtschaft oder das BIPT für Endnutzer veröffentlichen, sehr knapp waren, fehlten oder schwer auffindbar waren."],
-    ["h2", "uebergangsfristen", "Übergangsfristen: 2030, 15 oder 20 Jahre und was nicht darunter fällt"],
-    ["p", "Die Richtlinie sieht ein schrittweises Inkrafttreten vor, aber ihre Übergangsfristen sind enger, als oft angenommen wird. So wie die [[https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/professionnels-vos-produits-et-services-doivent-etre-conformes-la-directive-accessibilite|DGCCRF sie für Frankreich darstellt (auf Französisch)]], sind es drei:"],
-    ["ul", ["bis zum 28. Juni 2030 darf ein Dienstleistungserbringer seine Dienste weiterhin mit Produkten erbringen, die er vor dem 28. Juni 2025 rechtmäßig zur Erbringung ähnlicher Dienstleistungen eingesetzt hat;", "Dienstleistungsverträge, die vor dem 28. Juni 2025 mit Verbrauchern geschlossen wurden, dürfen bis zu ihrem Ablauf unverändert fortbestehen, längstens jedoch bis zum 28. Juni 2030;", "Selbstbedienungsterminals, die vor dem 28. Juni 2025 rechtmäßig eingesetzt wurden, dürfen bis zum Ende ihrer wirtschaftlichen Nutzungsdauer in Betrieb bleiben; die Richtlinie erlaubt den Staaten, diese Dauer auf zwanzig Jahre nach der Inbetriebnahme zu begrenzen, und Frankreich hat fünfzehn Jahre gewählt."]],
-    ["p", "Luxemburg hat diese Möglichkeiten anders genutzt. Nach Artikel 34 des [[https://accessibilite-produits-services.public.lu/dam-assets/lgislation/de-loi-du-8-mars-2023-relative-aux-exigences-en-matire-daccessibilit-applicables-aux-produits-et-services.pdf|Gesetzes vom 8. März 2023 (deutsche Fassung)]] endet die Übergangszeit für bereits eingesetzte Produkte ebenfalls am 28. Juni 2030, vor diesem Datum geschlossene Verträge dürfen bis zu ihrem Ablauf laufen, höchstens jedoch fünf Jahre, und Selbstbedienungsterminals dürfen bis zum Ende ihrer wirtschaftlichen Nutzungsdauer in Betrieb bleiben, längstens zwanzig Jahre nach ihrer Inbetriebnahme. Ein Geldautomat, der in Luxemburg vor Juni 2025 aufgestellt wurde, kann also länger in Betrieb bleiben als ein baugleiches Gerät in Frankreich."],
-    ["p", "Die wichtigste Klarstellung steht im selben Merkblatt der DGCCRF: Eine Website oder eine mobile App ist kein „Produkt“ im Sinne der Richtlinie. Sie profitiert daher von keiner dieser Übergangsfristen. Ein Onlineshop, der vor dem 28. Juni 2025 online war, genießt keinen Bestandsschutz: Seit diesem Datum ist jede Bestellung, die er ermöglicht, eine gegenüber einem Verbraucher erbrachte Dienstleistung, die den Anforderungen unterliegt."],
-    ["note", "Das Wichtigste", "Die Fristen bis 2030 und die fünfzehn oder zwanzig Jahre betreffen bereits eingesetzte Hardware und laufende Verträge. Sie gelten weder für Websites noch für Apps, die seit dem 28. Juni 2025 konform sein müssen."],
-    ["h2", "luxemburg-barrierefreiheitsgesetz-osaps", "Luxemburg: das Barrierefreiheitsgesetz vom 8. März 2023 und das OSAPS"],
-    ["p", "Luxemburg hat sich für einen einzigen Text entschieden: das Gesetz vom 8. März 2023 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen, veröffentlicht im Mémorial A unter der Nummer 133. Es wurde noch im selben Jahr geändert, um die von der Richtlinie vorgesehene Ausnahme für Stadt-, Vorort- und Regionalverkehrsdienste aufzunehmen, wie der [[https://wdocs-pub.chd.lu/docs/exped/0143/039/286396.pdf|Bericht der Abgeordnetenkammer zum Gesetzentwurf Nr. 8265 (auf Französisch)]] nachzeichnet. Nach seinem Artikel 36 ist das Gesetz am 28. Juni 2025 in Kraft getreten. Die luxemburgische Regierung stellt eine deutsche Fassung bereit; im Streitfall ist allein die französische Fassung maßgebend."],
-    ["h3", "Das OSAPS als zentrale Anlaufstelle"],
-    ["p", "Artikel 3 des Gesetzes schafft das Amt für die Überwachung der Barrierefreiheit von Produkten und Dienstleistungen (Office de la surveillance de l'accessibilité des produits et services, OSAPS), eine Verwaltung, die dem für die Politik zugunsten von Menschen mit Behinderungen zuständigen Minister untersteht und als zentrale Anlaufstelle dient. Bei Produkten sind das OSAPS, die Zoll- und Verbrauchsteuerverwaltung und die Großherzogliche Polizei mit der Kontrolle beauftragt; bei Dienstleistungen prüfen das OSAPS und die Großherzogliche Polizei, ob die geltenden Anforderungen erfüllt sind (Artikel 28). Gegen die getroffenen Entscheidungen kann innerhalb von drei Monaten Abänderungsklage erhoben werden."],
-    ["p", "Das OSAPS kündigt an, Unternehmen Leitlinien, Werkzeuge und Beratung zur Verbesserung der Barrierefreiheit bereitzustellen, und jede Person kann ihm die Nichtkonformität eines Produkts oder einer Dienstleistung melden. Für ein Unternehmen bedeutet das: Die erste Kontrolle wird häufig nicht von Amts wegen angestoßen, sondern durch die Meldung einer Kundin, die ihre Bestellung nicht abschließen konnte. Ein barrierefreier Kontaktweg, über den solche Schwierigkeiten zuerst beim Unternehmen selbst ankommen, ist deshalb die einfachste Vorsorge."],
-    ["h3", "Sanktionen: was der veröffentlichte Text vorsieht"],
-    ["p", "Während des Gesetzgebungsverfahrens sah der Entwurf sowohl Verwaltungs- als auch Strafsanktionen vor, und der Staatsrat wandte sich gegen ihre Kumulierung. Der auf dem offiziellen Portal veröffentlichte Gesetzestext trennt die beiden Ebenen nun klar:"],
-    ["ul", ["eine Verwaltungsgeldbuße von 250 bis 15 000 Euro gegen einen Akteur, der die Herausgabe von Unterlagen verweigert, die Überwachung behindert oder die Entscheidungen des OSAPS nicht befolgt (Artikel 32);", "eine Geldstrafe von 251 bis 500 000 Euro bei Verstößen gegen die Bestimmungen des Gesetzes (Artikel 33 Absatz 1);", "im Wiederholungsfall eine Geldstrafe von 500 bis 1 000 000 Euro (Artikel 33 Absatz 2);", "daneben Maßnahmen der Marktüberwachung bis hin zur Beschränkung oder Untersagung der Bereitstellung eines nicht konformen Produkts oder der Erbringung einer nicht konformen Dienstleistung."]],
-    ["p", "Prüfen Sie vor jeder Risikoanalyse dennoch die konsolidierte Fassung im Amtsblatt des Großherzogtums, denn nur sie gibt den jeweils geltenden Stand wieder. Luxemburgische Unternehmen, die zugleich digitale öffentliche Dienste betreiben, bewerten diese mit dem RAWeb und dem RAAM, die auf der Seite [[country:luxembourg|digitale Barrierefreiheit in Luxemburg]] vorgestellt werden; für mobile Apps deckt ein [[svc:audit-raam|Audit nach dem RAAM]] beide Regelungen ab. Der Artikel [[article:luxembourg|über Luxemburg]] vertieft diese Punkte, einschließlich der Rolle des SIP für den öffentlichen Sektor."],
-    ["h3", "Was das für luxemburgische Unternehmen konkret heißt"],
-    ["p", "Drei Konstellationen kommen in der Praxis besonders häufig vor. Eine Bank mit Privatkundengeschäft unterliegt dem Gesetz für ihr Kundenportal, ihre App, die Online-Kontoeröffnung und die Dokumente, die der Kunde erhält, während ihre Geldautomaten und Zahlungsterminals unter die Regeln für Produkte fallen. Ein Onlinehändler, der von Luxemburg aus Kundinnen in Belgien, Deutschland und Frankreich beliefert, muss die Anforderungen in jedem dieser Länder erfüllen, die inhaltlich dieselben sind, wird aber von mehreren Behörden kontrolliert. Ein kleines Unternehmen mit weniger als zehn Beschäftigten, das nur Dienstleistungen erbringt, ist befreit, sollte aber die Berechnung seiner Schwellen dokumentieren."],
-    ["h2", "schweizer-unternehmen-eaa", "Schweizer Unternehmen und der EAA: außerhalb der Union, aber über die Verkäufe betroffen"],
-    ["p", "Die Schweiz ist weder Mitglied der Europäischen Union noch des Europäischen Wirtschaftsraums: Sie hat die Richtlinie nicht umgesetzt, und der EAA gilt nicht für Dienstleistungen, die Verbrauchern in der Schweiz erbracht werden. Ein Schweizer Unternehmen, das online an Verbraucher in der Union verkauft, ihnen Bank- oder Beförderungsdienstleistungen anbietet oder Terminals und E-Book-Lesegeräte herstellt, die in der Union verkauft werden, unterliegt dagegen denselben Anforderungen wie seine europäischen Wettbewerber."],
-    ["h3", "Das entscheidende Kriterium: der bediente Markt"],
-    ["p", "Die Richtlinie definiert den Dienstleistungserbringer in Artikel 3 als jede natürliche oder juristische Person, die auf dem Unionsmarkt eine Dienstleistung erbringt oder anbietet, Verbrauchern in der Union eine solche Dienstleistung zu erbringen. Der Sitz des Unternehmens kommt in dieser Definition nicht vor. Eine Zürcher oder Basler Gesellschaft, die online an Verbraucher in Deutschland, Österreich oder Frankreich verkauft, ist für diese Tätigkeit also Dienstleistungserbringer im Sinne der Richtlinie."],
-    ["p", "Woran sich zeigt, dass sich ein Angebot an die Union richtet, regelt die Richtlinie nicht mit einer Liste. In der Praxis prüft man, was eine Juristin bei jeder Verbraucherschutzregel prüfen würde: Lieferung in Länder der Union, Preise in Euro, Sprachfassungen oder Länderdomains für diese Länder, gezielte Werbung, ein aus der Union erreichbarer Kundendienst. Ein Shop, der nur in Franken abrechnet und ausschließlich in die Schweiz liefert, liegt außerhalb; ein Shop, der im Warenkorb „Lieferung nach Deutschland und Österreich“ anbietet, nicht mehr."],
-    ["h3", "Hersteller, Bevollmächtigter, Einführer"],
-    ["p", "Bei Produkten muss der in der Union ansässige Einführer die Konformität prüfen, was den Schweizer Hersteller verpflichtet, ihm die technische Dokumentation und die Konformitätserklärung zu liefern. Der Hersteller kann zudem einen Bevollmächtigten benennen, also eine in der Union ansässige Person, die er schriftlich beauftragt, bestimmte Aufgaben in seinem Namen wahrzunehmen. Ein Schweizer Hersteller von Zahlungsterminals, der an europäische Händler verkauft, sollte deshalb davon ausgehen, dass sein Einführer den Konformitätsnachweis verlangt, bevor er das Gerät listet."],
-    ["h3", "Zwei Referenzrahmen, eine Bewertung"],
-    ["p", "Schweizer Unternehmen müssen also zwei Referenzrahmen steuern: das Behindertengleichstellungsgesetz (BehiG) und die Norm eCH-0059 für ihre nationalen Pflichten, den EAA für ihre Verkäufe in der Union. Beide beruhen auf den WCAG, was eine einzige, gut abgegrenzte Bewertung ermöglicht. Auch das Schweizer Recht ist in Bewegung: Am 21. September 2026 hat der Nationalrat ein Inklusionsgesetz als Gegenvorschlag zur Inklusions-Initiative verabschiedet, das nun an den Ständerat geht. Mehr dazu auf der Seite [[country:suisse|digitale Barrierefreiheit in der Schweiz]] und im Artikel [[article:suisse|über die Schweiz]]."],
-    ["h2", "umsetzung-belgien-frankreich", "Umsetzung und Kontrolle in Belgien und Frankreich"],
-    ["h3", "Belgien: mehrere Texte und mehrere Behörden"],
-    ["p", "Belgien hat die Umsetzung je nach Zuständigkeit auf den Föderalstaat, die Gemeinschaften und die Regionen verteilt. Für den elektronischen Geschäftsverkehr und die Bankdienstleistungen ändert das Gesetz vom 5. November 2023 mehrere Bücher des Wirtschaftsgesetzbuches und das Gesetz vom 2. August 2002: Es schafft in Buch VIII einen Titel über die Barrierefreiheitsanforderungen an Dienstleistungen und belegt Verstöße mit Sanktionen der Stufe 2 oder, bei Bösgläubigkeit, der Stufe 3, wie der [[https://www.dekamer.be/FLWB/PDF/55/3433/55K3433003.pdf|im Ausschuss der Kammer angenommene Text (auf Französisch und Niederländisch)]] zeigt. Eine belgische Besonderheit: Artikel 40 dieses Gesetzes nimmt Kleinstunternehmen nur bis zum 28. Juni 2030 von seinem Anwendungsbereich aus und nicht dauerhaft, wie es die Richtlinie für Kleinstunternehmen vorsieht, die Dienstleistungen erbringen; danach könnte sie nur noch ein königlicher Erlass auf der Grundlage des neuen Artikels VIII.59 § 2 des Wirtschaftsgesetzbuches ausnehmen. Weitere föderale, gemeinschaftliche und regionale Texte decken elektronische Kommunikation, audiovisuelle Medien, E-Books, Beförderung und die 112 ab."],
-    ["p", "Nach der Stellungnahme der Plattform der Beratungsgremien für Menschen mit Behinderung vom September 2025 ist die Überwachung wie folgt verteilt: der FÖD Wirtschaft mit seiner Wirtschaftsinspektion für den elektronischen Geschäftsverkehr und die Bankdienstleistungen; das BIPT für Selbstbedienungsterminals, Computer und Betriebssysteme, Endgeräte, E-Book-Lesegeräte und elektronische Kommunikation; die Gemeinschaften für audiovisuelle Medien und E-Books; der FÖD Inneres für die 112; der FÖD Mobilität und Transportwesen für den Fernverkehr; die Regionen für den Stadt-, Vorort- und Regionalverkehr. Dieselbe Stellungnahme gibt an, dass die Verwaltungsgeldbußen bei den schwersten Verstößen 200 000 Euro oder 6 % des Jahresumsatzes erreichen können."],
-    ["p", "Für Unternehmen in der Deutschsprachigen Gemeinschaft bedeutet diese Aufteilung, dass ein Onlineshop oder eine Bank in Eupen oder Sankt Vith von denselben föderalen Behörden kontrolliert wird wie ein Unternehmen in Brüssel oder Antwerpen, während für audiovisuelle Medien und E-Books die Gemeinschaften zuständig sind. Siehe die Seite [[country:belgique|digitale Barrierefreiheit in Belgien]] und den Artikel [[article:belgique|über Belgien]]."],
-    ["h3", "Frankreich: Verbraucherrecht, DGCCRF und Artikel 47"],
-    ["p", "Frankreich hat die Richtlinie durch Artikel 16 des Gesetzes Nr. 2023-171 vom 9. März 2023 umgesetzt, der Artikel L. 412-13 in das Verbrauchergesetzbuch (Code de la consommation) eingefügt hat, sowie durch das Dekret Nr. 2023-931 vom 9. Oktober 2023 und eine Verordnung vom selben Tag, die die Anforderungen im Einzelnen regelt. Die Vorschriften stehen also im Verbraucherrecht, als Teil der Pflicht zur Konformität von Produkten und Dienstleistungen."],
-    ["p", "Die Kontrolle obliegt der DGCCRF, die insbesondere Multimediaprodukte, Telefone, Router, Fernseher und Selbstbedienungsterminals sowie Dienstleistungen im elektronischen Geschäftsverkehr, Bank- und Beförderungsdienstleistungen prüft. Sie handelt in Abstimmung mit der Medienaufsicht Arcom, der Regulierungsbehörde für elektronische Kommunikation Arcep, der Banque de France, der Aufsichtsbehörde ACPR und der Finanzmarktaufsicht AMF. Ihre Bediensteten können die Herstellung der Konformität unter Androhung eines Zwangsgelds anordnen. Verstöße sind Übertretungen der fünften Klasse, die mit Geldbußen von 7 500 Euro geahndet werden, kumulierbar je nach Zahl der festgestellten Verstöße, und bei anhaltenden Praktiken ist eine Aussetzung des Inverkehrbringens möglich."],
-    ["p", "Diese Regelung besteht neben Artikel 47 des Gesetzes vom 11. Februar 2005, der die Barrierefreiheit der Online-Kommunikationsdienste für öffentliche Stellen, Konzessionsnehmer öffentlicher Aufgaben und Unternehmen mit einem Umsatz von mehr als 250 Millionen Euro vorschreibt. Seit der Verordnung Nr. 2023-859 vom 6. September 2023 wird diese zweite Regelung von der Arcom kontrolliert. Artikel L. 412-13 gilt „unbeschadet“ von Artikel 47, eine Formel, deren Tragweite inzwischen vor Gericht umstritten ist. Die Seite [[country:france|digitale Barrierefreiheit in Frankreich]] und der Artikel [[article:france|über die französischen Pflichten]] stellen diese Regeln vollständig dar."],
-    ["h2", "seit-juni-2025", "Was seit dem 28. Juni 2025 geschehen ist"],
-    ["p", "In Frankreich gingen die ersten Schritte von Verbänden aus. Am 7. Juli 2025 forderten die Verbände apiDV und Droit Pluriel die Handelsketten Auchan, Carrefour, E.Leclerc und Picard Surgelés förmlich auf, ihre Online-Lebensmittelshops für blinde und sehbehinderte Menschen barrierefrei zu machen. Mangels ausreichender Ergebnisse wurden die vier Ketten im November 2025 im Eilverfahren (référé) verklagt, mit Unterstützung des Juristenkollektivs Intérêt à Agir, wie das Portal Clubic am 12. November 2025 berichtete."],
-    ["p", "Zwei Eilentscheidungen sind seitdem zu gegensätzlichen Lesarten gelangt. Am 5. Mai 2026 wies der Eilrichter des Tribunal judiciaire von Lille die Klage der Verbände gegen Auchan E-Commerce France ab, deren Umsatz mit 182 Millionen Euro im Jahr 2023 und 144 Millionen im Jahr 2024 unter der Schwelle von 250 Millionen Euro aus Artikel 47 lag. Laut Handicap.fr befand das Gericht, dass diese Schwelle des Gesetzes von 2005 Vorrang vor dem Verbrauchergesetzbuch habe, stellte aber zugleich, gestützt auf ein auf Wunsch des Unternehmens durchgeführtes Audit, ein „recht niedriges“ Niveau der Barrierefreiheit fest. Die Verbände bestreiten diese Lesart, die darauf hinausläuft, auf den EAA eine Schwelle anzuwenden, die die Richtlinie nicht kennt."],
-    ["p", "Am 4. Juni 2026 ordnete das im Eilverfahren angerufene Tribunal judiciaire von Caen dagegen an, dass Carrefour France seine Website carrefour.fr und seine mobile App innerhalb von sechs Monaten unter Androhung eines Zwangsgelds vollständig barrierefrei machen muss. Die Handelskette hatte einen Konformitätsgrad von 71 % geltend gemacht; der Richter wies dieses Argument zurück, weil sich ein Dienst nicht damit begnügen könne, teilweise barrierefrei zu sein. Für das Verfahren gegen E.Leclerc, das vor das Tribunal judiciaire von Créteil gebracht wurde, lag zum Zeitpunkt der Abfassung kein in einer verlässlichen Quelle veröffentlichtes Ergebnis vor. Eine Klärung durch die Berufungsgerichte oder den Gesetzgeber steht noch aus."],
-    ["p", "Auf Seiten der Verwaltung stellte die DGCCRF auf der Conférence nationale du handicap am 4. September 2026 eine erste Bilanz ihrer Kontrollen vor: Laut La Lettre des Réseaux wies mehr als die Hälfte der seit Anfang 2026 kontrollierten Onlinehändler Mängel auf, die zu Abhilfe- oder Sanktionsmaßnahmen führten; die endgültigen Ergebnisse der Untersuchung werden Anfang 2027 erwartet. Seit Dezember 2025 können Verbraucherinnen und Verbraucher Barrierefreiheitsmängel zudem über einen eigenen Meldeweg auf SignalConso melden."],
-    ["p", "Das Signal an die Unternehmen ist deutlich, auch außerhalb Frankreichs. Das Hauptrisiko ist nicht eine einzelne Geldbuße, sondern eine im Eilverfahren ausgesprochene Anordnung mit Zwangsgeld und kurzer Frist, gestützt auf ein Audit, das das Unternehmen mitunter selbst in Auftrag gegeben hat. Ein Auditbericht, der Nichtkonformitäten feststellt, ohne einen datierten Behebungsplan zu enthalten, wird dann zum belastenden Beweisstück."],
-    ["h2", "tabelle-nachweise", "Tabelle: zentrale Anforderungen und aufzubewahrende Nachweise je Branche"],
-    ["p", "Die folgende Tabelle fasst für jede Branche zusammen, welche Punkte eine Behörde oder ein Beschwerdeführer vorrangig prüfen wird und welche Unterlagen eine Antwort darauf ermöglichen. Sie lässt sich als dokumentarische Checkliste lesen: Jede Zeile muss sich mit einem datierten Dokument belegen lassen."],
-    ["table", {"caption": "European Accessibility Act: vorrangige Anforderungen und aufzubewahrende Nachweise", "head": ["Branche", "Zu prüfende zentrale Anforderungen", "Aufzubewahrende Nachweise"], "rows": [["Elektronischer Geschäftsverkehr", "Suche und Filter, Produktseite, Warenkorb, Kontoerstellung ohne blockierendes CAPTCHA, Zahlung und Authentifizierung, Informationen zur Barrierefreiheit der verkauften Produkte", "Auditbericht über den vollständigen Bestellprozess, Konformitätsnachweise der Zahlungs- und CAPTCHA-Anbieter, aktuelle Informationsseite, datierter Behebungsplan"], ["Bankdienstleistungen", "Starke Authentifizierung mit Alternativen, Eingabe von Codes, elektronische Signatur, lesbare Vertragsdokumente, verständliche Informationen", "Audit der Apps und des Kundenportals, Tests mit Screenreadern auf Mobilgeräten, barrierefreie Fassung der Musterverträge, Nachweis der angebotenen Alternativen"], ["Personenbeförderung", "Buchung, Sitzplatzwahl, elektronisches Ticket, Echtzeit-Informationen, Anmeldung von Hilfeleistungen, Terminals", "Audit von Website und App, Tests der erzeugten Tickets, technisches Datenblatt der Terminals, veröffentlichte Informationen über die Zugangsdienste"], ["Elektronische Kommunikation", "Vertragsabschluss und Kundenportal, Rechnungen, Echtzeittext, Kontakt zum Kundendienst über mehrere Kanäle", "Audit der Abläufe für Vertragsabschluss und Kündigung, Beschreibung der barrierefreien Kontaktwege, Dokumentation der bereitgestellten Endgeräte"], ["Audiovisuelle Medien", "Videoplayer, Programmführer, Aktivierung von Untertiteln und Audiodeskription, vollständige Übertragung der Zugangsdienste", "Audit der Apps auf jeder Plattform, Kontrollverfahren für die Übertragung der Zugangsdienste, veröffentlichte Informationen"], ["E-Books", "Strukturelle Navigation, Sprachausgabe nicht durch Kopierschutz blockiert, Alternativen zu Bildern, Metadaten zur Barrierefreiheit", "Prüfbericht der Dateien je Reihe, Richtlinie zur Rechteverwaltung, veröffentlichte Metadaten"], ["Terminals und Hardware", "Bedienoberfläche über mehrere Sinneskanäle, Audioausgabe, taktile Markierungen, Anleitungen und Verpackungen", "Technische Dokumentation, EU-Konformitätserklärung, CE-Kennzeichnung, fünf Jahre lang aufbewahrte Unterlagen"], ["Alle Dienstleistungen", "Informationen zur Barrierefreiheit, barrierefreier Kontakt, etwaige Ausnahmen", "Information in den Allgemeinen Geschäftsbedingungen oder einem gleichwertigen Dokument, fünf Jahre lang aufbewahrte Beurteilungen der unverhältnismäßigen Belastung, Nachweis der Information der Behörden, Berechnung der Schwellen für Kleinstunternehmen"]]}],
-    ["p", "Für die am stärksten exponierten Abläufe bleibt der überzeugendste Nachweis ein Test durch Menschen, die im Alltag einen Screenreader, eine Sprachsteuerung oder eine Bildschirmlupe nutzen: Das ist der Gegenstand von [[svc:test-utilisateur|Nutzertests mit Menschen mit Behinderungen]]. Ein Auditbericht, so genau er auch sein mag, ersetzt nicht den Nachweis, dass eine blinde Person ihre Bestellung tatsächlich bezahlen kann."],
-    ["h2", "aktionsplan", "Aktionsplan: den European Accessibility Act umsetzen"],
-    ["p", "Ob ein Unternehmen bei null anfängt oder bereits ein erstes Audit hat, die Vorgehensweise folgt derselben Reihenfolge. Es geht nicht darum, alles auf einmal zu beheben, sondern zuerst das zu beseitigen, was einen Verbraucher an der Nutzung des Dienstes hindert, und dann jede Entscheidung zu dokumentieren."],
-    ["ol", [["Den Umfang bestimmen.", "Listen Sie Ihre Produkte und Dienstleistungen anhand von Artikel 2 auf: Über welche Abläufe wird ein Vertrag mit einem Verbraucher geschlossen, welche Bank-, Beförderungs- oder Kommunikationsdienstleistungen erbringen Sie, in welchen Mitgliedstaaten. Halten Sie auch fest, was nicht in den Anwendungsbereich fällt, mit Begründung; für ein Schweizer Unternehmen gehört dazu die Frage, welche Angebote sich an Verbraucher in der Union richten."], ["Schwellen und Ausnahmen prüfen.", "Berechnen Sie Beschäftigtenzahl, Umsatz und Bilanzsumme jeder Einheit, die eine erfasste Dienstleistung erbringt. Erscheint eine Ausnahme wegen unverhältnismäßiger Belastung denkbar, legen Sie die Beurteilungsakte nach den Kriterien von Anhang VI schon jetzt an."], ["Die kritischen Abläufe erfassen.", "Bestimmen Sie für jeden Dienst die fünf bis zehn Abläufe, ohne die er unbenutzbar ist: Kontoerstellung, Anmeldung, Suche, Bestellung, Zahlung, Abruf von Dokumenten, Kontakt. Auf sie richtet sich die Bewertung."], ["Nach einer anerkannten Methode prüfen.", "Lassen Sie diese Abläufe nach den WCAG 2.2 auf Stufe AA und der Norm EN 301 549 bewerten, auf dem Computer und auf Mobilgeräten, mit den gängigen assistiven Technologien. Für einen französischen Dienst, der auch Artikel 47 unterliegt, kann parallel ein [[svc:audit-rgaa|RGAA-Audit]] durchgeführt werden; die durchschnittliche Dauer eines Audits liegt in unserer Praxis bei drei Wochen."], ["Drittkomponenten behandeln.", "Zahlung, Authentifizierung, CAPTCHA, elektronische Signatur, Chatbot, Videoplayer: Verlangen Sie von jedem Anbieter seine Konformitätsnachweise, nehmen Sie eine Barrierefreiheitsklausel in Ihre Verträge auf und planen Sie eine Ersatzlösung ein, falls die Komponente blockierend bleibt."], ["Beheben und abnehmen.", "Ordnen Sie die Mängel nach ihrer Auswirkung auf die Abläufe und nach Aufwand, beheben Sie zuerst die Blockaden und prüfen Sie jede Korrektur vor der Produktivsetzung mit einer [[svc:recette|Abnahmeprüfung der Barrierefreiheit]]. Interne Teams lassen sich durch eine [[svc:developpement|Begleitung bei der barrierefreien Entwicklung]] unterstützen."], ["Die Information veröffentlichen und einen Kontaktweg öffnen.", "Verfassen Sie die in Anhang V vorgesehene Information in jeder Sprache Ihres Angebots, verknüpfen Sie sie mit den Allgemeinen Geschäftsbedingungen und bieten Sie einen barrierefreien Kontaktweg an, um Schwierigkeiten zu melden."], ["Dokumentieren und informieren.", "Bewahren Sie die Berichte, die datierten Behebungspläne, die Beurteilungen von Ausnahmen und gegebenenfalls den Nachweis der Information der Behörden auf. Benennen Sie eine verantwortliche Person für diese Akte."], ["Die Teams schulen.", "Rückschritte entstehen durch neue Funktionen: Schulen Sie Konzeption, Entwicklung, Redaktion und Kundendienst mit [[svc:formations|Schulungen zur digitalen Barrierefreiheit]], die auf jede Rolle zugeschnitten sind."], ["Eine Beobachtung einrichten.", "Verfolgen Sie die Veröffentlichung der Fundstelle der EN 301 549 V4.1.1 im Amtsblatt, die Veröffentlichung des RGAA 5, die Entscheidungen der französischen Berufungsgerichte zum Verhältnis zwischen Artikel 47 und dem Verbrauchergesetzbuch, die Beratungen des Ständerats über das Schweizer Inklusionsgesetz und die Positionen der Behörden in jedem Land, in dem Sie verkaufen."]]]
+ "slug": "european-accessibility-act",
+ "h1": "European Accessibility Act: was die Behörden prüfen, Branche für Branche",
+ "crumb": "European Accessibility Act",
+ "meta_title": "European Accessibility Act: Pflichten und Kontrollen je Branche",
+ "meta_desc": "EAA Barrierefreiheit: erfasste Produkte und Dienste, Ausnahmen, EN 301 549, Behörden in Luxemburg, Belgien und Frankreich, erste Urteile, Nachweise.",
+ "card_desc": "Erfasste Produkte und Dienste, Ausnahmen, EN 301 549, Behörden und erste Urteile: der EAA Branche für Branche erklärt.",
+ "cat": "analyse",
+ "where": "Europa",
+ "cover": "EAA",
+ "cover_note": [
+  "Richtlinie (EU) 2019/882",
+  "Anwendbar seit dem 28. Juni 2025"
+ ],
+ "date": "2026-10-27",
+ "lead": "Der European Accessibility Act, die Richtlinie (EU) 2019/882 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen, gilt seit dem 28. Juni 2025 für digitale Produkte und Dienstleistungen, die Verbrauchern in der Union angeboten werden: Onlinehandel, Banken, Personenverkehr, Telekommunikation, audiovisuelle Medien, E-Books und Endgeräte. Diese Analyse zeigt Branche für Branche, was Nutzerinnen und Nutzer tatsächlich blockiert, welche Ausnahmen unter welchen genauen Bedingungen gelten, wo die Norm EN 301 549 steht und welche Behörden kontrollieren, mit besonderem Blick auf das luxemburgische Gesetz vom 8. März 2023, das OSAPS und die Lage Schweizer Unternehmen. Sie fasst außerdem die ersten Gerichtsentscheidungen zusammen und endet mit einer Tabelle der aufzubewahrenden Nachweise und einem Aktionsplan.",
+ "body": [
+  [
+   "h2",
+   "binnenmarkt-richtlinie",
+   "European Accessibility Act: eine Binnenmarktrichtlinie"
   ],
-  "faq": [
-    ["Gilt der EAA für eine B2B-Website?", "Bei Dienstleistungen erfasst die Richtlinie nur solche, die gegenüber Verbrauchern erbracht werden. Eine Bestellplattform, die ausschließlich Geschäftskunden offensteht, mit Kontoeröffnung nur gegen Nachweis einer Unternehmensnummer, fällt daher nicht unter den elektronischen Geschäftsverkehr im Sinne des EAA. Kann eine Privatperson über dieselbe Website bestellen, ist sie für diesen Ablauf jedoch betroffen. Produkte wiederum sind erfasst, sobald sie für Verbraucher bestimmt sind, unabhängig vom Vertriebskanal."],
-    ["Braucht eine Website oder App eine CE-Kennzeichnung?", "Nein. CE-Kennzeichnung und EU-Konformitätserklärung betreffen Produkte: Computer, Smartphones, Terminals, E-Book-Lesegeräte. Eine Website oder App ist kein Produkt im Sinne der Richtlinie, wie die französische DGCCRF klarstellt. Bei Dienstleistungen besteht die Pflicht darin, die Anforderungen von Anhang I zu erfüllen, Informationen über die Barrierefreiheit der Dienstleistung zu veröffentlichen und den Behörden auf Verlangen die Konformität nachweisen zu können."],
-    ["Reicht ein RGAA-Audit für den European Accessibility Act?", "Für einen französischen Dienst ist es eine solide Grundlage: Die DGCCRF nennt den RGAA unter ihren Referenzen, und er beruht auf den WCAG 2.1. Er deckt aber nicht alles ab. Der EAA erfasst auch den Kundendienst, die Vertragsdokumente, die Hardware und die veröffentlichten Informationen. Für eine Gruppe, die in mehreren Ländern tätig ist, liefert eine Bewertung nach der Norm EN 301 549 und den WCAG 2.2 ein überall lesbares Ergebnis und nimmt die Fassung 4.1.1 der Norm vorweg."],
-    ["Schreibt der EAA einen Mindestkonformitätsgrad vor?", "Die Richtlinie nennt keinen Prozentsatz: Sie verlangt, dass die Dienstleistung die geltenden Anforderungen erfüllt. Ein Konformitätsgrad ist eine Kennzahl zur Verfolgung des Fortschritts, kein Schutz. Das Tribunal judiciaire von Caen hat das im Juni 2026 gezeigt, als es das Argument eines Konformitätsgrads von 71 % zurückwies: Ein Dienst kann sich nicht damit begnügen, teilweise barrierefrei zu sein. Ein vollständig nutzbarer Bestellprozess ist mehr wert als ein hoher Wert, der auf Nebenseiten erzielt wird."],
-    ["Fallen mobile Apps unter den EAA?", "Ja. Apps gehören zu den erfassten Dienstleistungen, sobald man mit ihnen bestellt, ein Bankkonto verwaltet, ein Ticket kauft, Reiseinformationen abruft oder auf audiovisuelle Inhalte zugreift. Für sie gilt keine Übergangsfrist. Sie werden auf echten Geräten bewertet, mit VoiceOver unter iOS und TalkBack unter Android, und die Bewertung umfasst auch die Bildschirme, die von Drittkomponenten geöffnet werden, etwa die Authentifizierung der Bank."],
-    ["Wer kann gegen ein nicht konformes Unternehmen vorgehen?", "Die Marktüberwachungsbehörden jedes Landes können von Amts wegen oder nach einer Meldung kontrollieren: in Luxemburg das OSAPS, in Frankreich die DGCCRF und die Fachbehörden. Verbände von Menschen mit Behinderungen können zudem Gerichte anrufen; in Frankreich haben mehrere seit 2025 im Eilverfahren Anordnungen mit Zwangsgeld beantragt oder erwirkt. Verbraucherinnen und Verbraucher können eine Schwierigkeit schließlich dem Unternehmen selbst melden, das über einen barrierefreien Kanal antworten können muss."],
-    ["Gibt es das luxemburgische Barrierefreiheitsgesetz auf Deutsch?", "Ja. Für das Gesetz vom 8. März 2023 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen stellt die luxemburgische Regierung eine deutsche Fassung bereit, die die offizielle Terminologie übernimmt, etwa das Amt für die Überwachung der Barrierefreiheit von Produkten und Dienstleistungen (OSAPS). Im Streitfall ist allerdings allein die französische Fassung maßgebend. Für eine rechtliche Bewertung, etwa der Sanktionen, sollten Sie daher die französische konsolidierte Fassung heranziehen."]
+  [
+   "p",
+   "Mit dem European Accessibility Act, kurz EAA, ist die [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/deu|Richtlinie (EU) 2019/882 des Europäischen Parlaments und des Rates vom 17. April 2019 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen]] gemeint, die am 7. Juni 2019 im Amtsblatt der Europäischen Union veröffentlicht wurde. Die Mitgliedstaaten mussten sie bis spätestens 28. Juni 2022 umsetzen und ihre Vorschriften ab dem 28. Juni 2025 anwenden. Seit diesem Datum muss ein erfasstes Produkt, das in Verkehr gebracht wird, oder eine erfasste Dienstleistung, die gegenüber Verbrauchern erbracht wird, Barrierefreiheitsanforderungen erfüllen, die in der ganzen Union gleich sind."
   ],
-  "cta_svc": "audit-conformite",
-  "cta_title": "Fällt Ihre Dienstleistung unter den EAA?",
-  "cta_text": "Wir bestimmen Ihren Anwendungsbereich und bewerten Ihre kritischen Abläufe nach den WCAG und der Norm EN 301 549. Ein erstes Gespräch genügt, um zu wissen, wo Sie anfangen sollten.",
-  "related": ["france", "belgique", "normes"]
+  [
+   "p",
+   "Ihre Logik ist nicht in erster Linie die eines Behindertengesetzes. Es handelt sich um eine Binnenmarktrichtlinie: Vor ihr begannen mehrere Länder, eigene Regeln für Automaten, Onlineshops oder Banking-Apps festzulegen, was den Markt zersplitterte und Produkte verteuerte. Die Union hat deshalb eine einheitliche Liste von Anforderungen beschlossen, die Wirtschaftsakteure einmal umsetzen, um überall verkaufen zu können. Der Text trägt im Übrigen den Vermerk „Text von Bedeutung für den EWR“, ist also dafür vorgesehen, in das Abkommen über den Europäischen Wirtschaftsraum übernommen zu werden."
+  ],
+  [
+   "p",
+   "Diese Logik hat sehr praktische Folgen. Bei Produkten übernimmt der EAA die Mechanismen des Produktsicherheitsrechts: Hersteller, Einführer und Händler haben jeweils eigene Pflichten, und der Hersteller erstellt eine technische Dokumentation und eine EU-Konformitätserklärung und bringt die CE-Kennzeichnung an. Bei Dienstleistungen liegt die Pflicht beim Dienstleistungserbringer: Er muss seine Dienstleistung nach den Anforderungen gestalten, die Öffentlichkeit darüber informieren, wie er sie erfüllt, und Nichtkonformitäten beheben. In beiden Fällen kontrollieren Marktüberwachungsbehörden, wie bei einem Spielzeug oder einem Elektrogerät."
+  ],
+  [
+   "p",
+   "Der EAA ersetzt nicht die Regeln für öffentliche Stellen. Die Richtlinie (EU) 2016/2102 über den barrierefreien Zugang zu den Websites und mobilen Anwendungen öffentlicher Stellen gilt parallel weiter; in Luxemburg ist sie durch das Gesetz vom 28. Mai 2019 umgesetzt, in Frankreich beruht ihre Umsetzung auf Artikel 47 des Gesetzes vom 11. Februar 2005 und auf dem RGAA. Ein und dasselbe Unternehmen kann beiden Regelungen unterliegen, was Abgrenzungsfragen aufwirft, die französische Gerichte 2026 zu entscheiden begonnen haben. Wie diese Texte zueinander stehen, erläutern unser [[article:guide|Leitfaden zur digitalen Barrierefreiheit]] und die Seite [[standards|Standards und Pflichten nach Land]]."
+  ],
+  [
+   "h2",
+   "erfasste-produkte-dienstleistungen",
+   "Welche Produkte und Dienstleistungen der European Accessibility Act erfasst"
+  ],
+  [
+   "p",
+   "Der Anwendungsbereich der Richtlinie ist eine abschließende Liste, festgelegt in ihrem Artikel 2. Ein Produkt oder eine Dienstleistung, die dort nicht aufgeführt ist, unterliegt nicht dem EAA, selbst wenn sie digital ist und von der breiten Öffentlichkeit genutzt wird. Umgekehrt verkleinert keine Umsatzschwelle diese Liste: Nur die weiter unten beschriebene Ausnahme für Kleinstunternehmen, die Dienstleistungen erbringen, begrenzt die Zahl der betroffenen Akteure."
+  ],
+  [
+   "h3",
+   "Produkte, die nach dem 28. Juni 2025 in Verkehr gebracht werden"
+  ],
+  [
+   "ul",
+   [
+    "Hardwaresysteme für Universalrechner für Verbraucher und deren Betriebssysteme;",
+    "Selbstbedienungsterminals: Zahlungsterminals, Geldautomaten, Fahrausweisautomaten, Check-in-Automaten und interaktive Selbstbedienungsterminals zur Bereitstellung von Informationen, mit Ausnahme solcher, die in Fahrzeuge, Luftfahrzeuge, Schiffe oder Schienenfahrzeuge eingebaut sind;",
+    "Verbraucherendgeräte mit interaktivem Leistungsumfang, die für elektronische Kommunikation genutzt werden, etwa Smartphones, oder für den Zugang zu audiovisuellen Mediendiensten, etwa Fernseher und Set-Top-Boxen;",
+    "E-Book-Lesegeräte."
+   ]
+  ],
+  [
+   "h3",
+   "Dienstleistungen für Verbraucher, die nach dem 28. Juni 2025 erbracht werden"
+  ],
+  [
+   "ul",
+   [
+    "elektronische Kommunikationsdienste, mit Ausnahme von Übertragungsdiensten, die für die Bereitstellung von Diensten der Maschine-Maschine-Kommunikation genutzt werden;",
+    "Dienstleistungen, die den Zugang zu audiovisuellen Mediendiensten ermöglichen, zum Beispiel eine Website oder App eines Fernsehanbieters;",
+    "bestimmte Elemente von Personenbeförderungsdiensten im Luft-, Schienen-, Schiffs- und Busverkehr: Websites, Dienste auf Mobilgeräten, elektronische Tickets und elektronische Ticketdienste, Reiseinformationen einschließlich Echtzeit-Informationen sowie interaktive Selbstbedienungsterminals; bei Stadt-, Vorort- und Regionalverkehrsdiensten sind nur diese Terminals erfasst;",
+    "Bankdienstleistungen für Verbraucher;",
+    "E-Books und die dafür bestimmte Software;",
+    "Dienstleistungen im elektronischen Geschäftsverkehr;",
+    "die Beantwortung von Notrufen an die einheitliche europäische Notrufnummer 112."
+   ]
+  ],
+  [
+   "p",
+   "Zwei Klarstellungen ersparen viele Fehler bei der Abgrenzung. Erstens sind Dienstleistungen nur erfasst, wenn sie gegenüber Verbrauchern erbracht werden: Erwägungsgrund 42 der Richtlinie beschreibt Dienstleistungen im elektronischen Geschäftsverkehr als Ferndienstleistungen, die im Hinblick auf den Abschluss eines Verbrauchervertrags erbracht werden, sodass eine Bestellplattform, die ausschließlich Geschäftskunden offensteht, nicht in diese Kategorie fällt. Zweitens spielt die Nationalität des Wirtschaftsakteurs keine Rolle: Die Pflicht wird dadurch ausgelöst, dass ein Produkt auf dem Unionsmarkt in Verkehr gebracht oder eine Dienstleistung gegenüber Verbrauchern in der Union erbracht wird."
+  ],
+  [
+   "p",
+   "Eine reine Unternehmenswebsite, die ein Unternehmen vorstellt, ohne dass man über sie einen Vertrag schließen kann, fällt deshalb nicht als elektronischer Geschäftsverkehr unter den EAA. Sobald sie aber das Bestellen, Reservieren, Abonnieren oder Bezahlen ermöglicht, ist sie im Anwendungsbereich. In der Praxis haben die meisten Unternehmen, die Dienstleistungen für Privatkunden anbieten, mindestens einen betroffenen Ablauf: die Bestellung, das Kundenkonto oder den Online-Vertragsabschluss."
+  ],
+  [
+   "h2",
+   "branche-fuer-branche",
+   "EAA Barrierefreiheit Branche für Branche: was in der Praxis blockiert"
+  ],
+  [
+   "p",
+   "Die Anforderungen der Richtlinie sind funktional formuliert. Um zu wissen, worauf eine Behörde oder ein Beschwerdeführer achten wird, muss man sie in konkrete Abläufe übersetzen. Die folgenden Beispiele sind diejenigen, die bei Audits am häufigsten auftreten: Der Text nennt sie nicht einzeln, aber jedes von ihnen hindert einen Menschen mit Behinderung daran, eine erfasste Dienstleistung bis zum Ende zu nutzen, und genau das soll der EAA verhindern."
+  ],
+  [
+   "h3",
+   "Elektronischer Geschäftsverkehr"
+  ],
+  [
+   "p",
+   "Das ist der breiteste Bereich: Jede Website und jede App, über die ein Verbraucher einen Fernabsatzvertrag schließen kann, ist betroffen, ob sie Kleidung, Lebensmittel, Reisen, Konzertkarten oder Abonnements verkauft. Anhang I sieht außerdem vor, dass der Dienst Informationen über die Barrierefreiheit der verkauften Produkte bereitstellt, wenn der Hersteller sie liefert, und dass die Funktionen für Identifizierung, Sicherheit und Zahlung wahrnehmbar, bedienbar, verständlich und robust sind."
+  ],
+  [
+   "p",
+   "Die Blockaden liegen selten auf der Startseite. Man findet sie im Bestellprozess:"
+  ],
+  [
+   "ul",
+   [
+    "Suchfilter (Größe, Preis, Marke), deren ausgewählter Zustand vom Screenreader nicht angesagt wird oder die die Liste ohne Hinweis neu laden;",
+    "Farb- oder Größenauswahlfelder ohne zugänglichen Namen: Eine blinde Person hört „Schaltfläche, Schaltfläche, Schaltfläche“, ohne zu wissen, was sie auswählt;",
+    "ein Warenkorb, dessen Mengenänderungen nicht angekündigt werden, oder eine Schaltfläche „Entfernen“, die nicht sagt, welchen Artikel sie löscht;",
+    "ein rein visuelles CAPTCHA bei der Kontoerstellung, ohne Audio-Alternative und ohne anderes Prüfverfahren;",
+    "ein Kalender zur Auswahl des Lieferfensters, der sich nicht mit der Tastatur bedienen lässt;",
+    "ein Adressformular, das Fehler nur durch einen roten Rahmen anzeigt oder die Eingaben nach einem Fehler löscht;",
+    "ein in einen Frame eingebettetes Zahlungsmodul eines Drittanbieters und danach eine Seite zur starken Kundenauthentifizierung der Bank, die sich in einem Fenster öffnet, das der Screenreader nicht erkennt;",
+    "eine Sitzungszeitbegrenzung, die zu kurz ist für eine Person, die mit Sprachausgabe oder Sprachsteuerung navigiert."
+   ]
+  ],
+  [
+   "p",
+   "Das Zahlungsmodul verdient besondere Aufmerksamkeit, weil es fast immer von einem Dienstleister stammt. Der EAA verschiebt die Verantwortung deshalb nicht: Es ist der Händler, der die Dienstleistung im elektronischen Geschäftsverkehr gegenüber dem Verbraucher erbringt. Verlangen Sie daher von Ihren Anbietern für Zahlung, elektronische Signatur und CAPTCHA deren eigene Konformitätsnachweise, und testen Sie den vollständigen Ablauf, von der Produktseite bis zur Bestellbestätigung."
+  ],
+  [
+   "h3",
+   "Bankdienstleistungen für Verbraucher"
+  ],
+  [
+   "p",
+   "Der Bankensektor ist für Dienstleistungen an Privatkunden erfasst: Kundenportal, mobile App, Kontoeröffnung und Online-Vertragsabschluss, Zahlungen, Kredite. Geldautomaten und Zahlungsterminals fallen dagegen unter die Regeln für Produkte. Die typischen Blockaden sind gut bekannt:"
+  ],
+  [
+   "ul",
+   [
+    "die starke Kundenauthentifizierung, wenn sie ausschließlich auf einer Push-Benachrichtigung beruht, die innerhalb weniger Sekunden bestätigt werden muss, oder auf einer biometrischen Erkennung ohne andere Option;",
+    "die virtuelle Tastatur mit vertauschten Tasten zur Eingabe einer PIN, die Screenreader schlecht oder gar nicht wiedergeben;",
+    "der per SMS empfangene Einmalcode, der in ein Feld einzugeben ist, das abläuft, bevor die Person von einer App zur anderen wechseln konnte;",
+    "die elektronische Signatur eines Kreditangebots in einem Drittmodul, dessen Kontrollkästchen und Schaltfläche „Unterschreiben“ nicht beschriftet sind;",
+    "Allgemeine Geschäftsbedingungen, Kreditangebote und Kontoauszüge als eingescannte oder nicht getaggte PDF-Dateien, die eine Sprachausgabe nicht lesen kann;",
+    "Kreditrechner mit Schiebereglern, die sich weder mit der Tastatur noch mit einer Bildschirmlupe bedienen lassen."
+   ]
+  ],
+  [
+   "p",
+   "Für diesen Sektor betont Anhang I zudem die Verständlichkeit der Informationen. Ein unnötig kompliziert formulierter Vertrag oder eine solche Anleitung ist daher ein Problem der Barrierefreiheit und nicht nur eine Frage der redaktionellen Qualität: Rechts- und Marketingabteilungen sind ebenso gefordert wie die technischen Teams. Für einen Finanzplatz wie Luxemburg, an dem viele Banken Privatkunden in mehreren Sprachen bedienen, gilt diese Anforderung für jede angebotene Sprachfassung."
+  ],
+  [
+   "h3",
+   "Personenbeförderung"
+  ],
+  [
+   "p",
+   "Im Luft-, Schienen-, Schiffs- und Busverkehr erfasst die Richtlinie Websites, Apps, elektronische Tickets, Ticketverkauf, Reiseinformationen einschließlich Echtzeit-Informationen und interaktive Terminals. Typische Blockaden sind:"
+  ],
+  [
+   "ul",
+   [
+    "der Kabinen- oder Wagenplan zur Sitzplatzwahl, als Bild ohne Textalternative gezeichnet;",
+    "das als PDF verschickte elektronische Ticket, dessen Reisedaten nicht getaggt sind;",
+    "Verspätungs- oder Gleiswechselmeldungen, die nur über farbige Piktogramme vermittelt werden;",
+    "die Anmeldung einer Hilfeleistung für Personen mit eingeschränkter Mobilität, die nur über ein seinerseits nicht barrierefreies Formular möglich ist;",
+    "Fahrkartenautomaten im Bahnhof ohne Audioausgabe, ohne Kopfhöreranschluss und ohne physische Tastatur."
+   ]
+  ],
+  [
+   "p",
+   "Bei Stadt-, Vorort- und Regionalverkehrsdiensten sind nur die interaktiven Selbstbedienungsterminals erfasst. Die Website oder App eines städtischen Busnetzes fällt also nicht aus diesem Grund unter den EAA, auch wenn sie anderen Pflichten unterliegen kann, insbesondere wenn der Betreiber eine öffentliche Stelle ist oder eine öffentliche Aufgabe wahrnimmt, wie unsere Seite zum [[sector:public|öffentlichen Sektor]] ausführt."
+  ],
+  [
+   "h3",
+   "Elektronische Kommunikation"
+  ],
+  [
+   "p",
+   "Telefonanbieter und Internetprovider stehen in der ersten Reihe. Anhang I verlangt von ihnen insbesondere, zusätzlich zur Sprachkommunikation Echtzeittext anzubieten, und Gesamtgesprächsdienste, wenn neben der Sprache auch Video bereitgestellt wird. Die häufigsten Blockaden sind jedoch alltäglicher: Vertragsabschluss oder Tarifwechsel in einem nicht barrierefreien Kundenportal, Rechnungen als unstrukturierte PDF-Dateien, ein Kundendienst, der nur per Sprachanruf erreichbar ist, ein Kündigungsprozess, der eine rein grafische Bedienung voraussetzt. Die Benutzeroberfläche des Routers oder der Set-Top-Box fällt dagegen unter die Regeln für Produkte."
+  ],
+  [
+   "h3",
+   "Audiovisuelle Medien"
+  ],
+  [
+   "p",
+   "Die Richtlinie erfasst die Dienstleistungen, die den Zugang zu audiovisuellen Inhalten ermöglichen: Fernseh- und Video-on-Demand-Apps, elektronische Programmführer, Mediatheken. Sie schafft keine Pflicht, alle Sendungen zu untertiteln; das regeln andere Texte. Sie verlangt, dass diese Dienste ihre Funktionen barrierefrei gestalten, über die Verfügbarkeit barrierefreier Inhalte informieren und die vorhandenen Zugangsdienste vollständig übertragen: Untertitel, Audiodeskription, gesprochene Untertitel, Gebärdensprachdolmetschung."
+  ],
+  [
+   "p",
+   "In der Praxis zeigen Audits Videoplayer, deren Schaltflächen keinen Namen haben, eine Untertitelaktivierung, die in einem nicht barrierefreien Menü versteckt ist, Kataloge aus Bildkacheln ohne Text oder eine Navigation per Fernbedienung ohne jede Sprachrückmeldung. Eine Audiodeskription, die zwar vorhanden ist, sich aber nicht selbstständig aktivieren lässt, ist für die Nutzerin oder den Nutzer gleichbedeutend mit einer fehlenden Audiodeskription."
+  ],
+  [
+   "h3",
+   "E-Books"
+  ],
+  [
+   "p",
+   "E-Books und Lesesoftware müssen die Navigation in der Textstruktur, die Anpassung der Darstellung, das Vorlesen per Sprachausgabe und die Wiedergabe nicht-textueller Inhalte über Alternativen ermöglichen. Sie müssen außerdem Metadaten bereitstellen, die ihre Barrierefreiheitsfunktionen beschreiben, und Systeme zur digitalen Rechteverwaltung dürfen diese Funktionen nicht blockieren. Ein Verlag, der die Sprachausgabe durch seinen Kopierschutz sperrt oder Schaubilder ohne Beschreibung veröffentlicht, verstößt gegen die Anforderungen."
+  ],
+  [
+   "h3",
+   "Terminals, Computer, Smartphones und E-Book-Lesegeräte"
+  ],
+  [
+   "p",
+   "Bei Produkten folgt die Verantwortungskette dem System der CE-Kennzeichnung. Der Hersteller bewertet die Konformität, erstellt die technische Dokumentation und die EU-Konformitätserklärung und bringt dann die Kennzeichnung an. Der Einführer prüft, ob diese Schritte erfolgt sind, und der Händler kontrolliert, ob Kennzeichnung und Unterlagen vorhanden sind. Die häufigen Mängel sind bekannt: ein Touchscreen ohne Alternative für blinde Menschen, keine Audioausgabe, PIN-Eingabe auf einer glatten Fläche ohne taktile Markierung, Zeitlimits, die sich nicht verlängern lassen, Bedienungsanleitungen und Verpackungen ohne barrierefreie Informationen."
+  ],
+  [
+   "h2",
+   "anhang-i-anforderungen",
+   "Die Anforderungen aus Anhang I in verständlicher Sprache"
+  ],
+  [
+   "p",
+   "Anhang I nennt weder die WCAG noch eine andere Norm. Er legt Ergebnisse fest, die zu erreichen sind, gegliedert in allgemeine Anforderungen an Produkte, allgemeine Anforderungen an Dienstleistungen, besondere Anforderungen an bestimmte Dienstleistungen und funktionale Leistungskriterien. In Alltagssprache übersetzt laufen sie auf einige Grundsätze hinaus, die jede Projektleitung an ihrem eigenen Dienst überprüfen kann."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Mehrere Sinneskanäle.",
+     "Jede für die Nutzung notwendige Information, etwa eine Anweisung, eine Warnung oder der Status eines Vorgangs, wird über mehr als einen Sinn vermittelt: Eine angezeigte Fehlermeldung muss auch von der Sprachausgabe wiedergegeben werden, ein akustisches Signal braucht eine visuelle Entsprechung."
+    ],
+    [
+     "Wahrnehmbar, bedienbar, verständlich, robust.",
+     "Für Websites und mobile Apps übernimmt der Anhang die vier Grundsätze der WCAG: Man muss den Inhalt wahrnehmen, ihn mit der Tastatur oder einer assistiven Technologie bedienen, ihn verstehen und ihn mit den gängigen Browsern und Werkzeugen nutzen können, und zwar in einheitlicher und angemessener Weise."
+    ],
+    [
+     "Eine Alternative zu jeder Fähigkeit.",
+     "Ein Dienst darf nicht eine einzige Fähigkeit voraussetzen: Sehen, Hören, Sprechen, Feinmotorik oder Kraft. Eine reine Sprachsteuerung, eine komplexe Geste auf einem Touchscreen oder eine Authentifizierung, die auf einer einzigen Modalität beruht, sind ohne gleichwertige Alternative problematisch."
+    ],
+    [
+     "Keine Gefahr durch Fotosensibilität.",
+     "Inhalte dürfen keine Effekte enthalten, die fotosensible epileptische Anfälle auslösen können. In der Praxis müssen sich automatisch ablaufende Animationen außerdem anhalten lassen."
+    ],
+    [
+     "Nutzung ohne Verlust an Selbstständigkeit oder Privatsphäre.",
+     "Wer eine Barrierefreiheitsfunktion nutzt, darf nicht auf fremde Hilfe angewiesen sein und seine Daten nicht preisgeben müssen: Eine eingegebene PIN darf zum Beispiel nicht ohne Kopfhörer laut vorgelesen werden."
+    ],
+    [
+     "Informationen über die Funktionsweise des Dienstes.",
+     "Der Dienstleistungserbringer erklärt, wie der Dienst funktioniert und welche Barrierefreiheitsfunktionen er bietet, in Formaten, die ihrerseits barrierefrei sind."
+    ],
+    [
+     "Barrierefreie Unterstützungsdienste.",
+     "Kundendienst, Hotline oder technischer Support müssen Auskunft über die Barrierefreiheit des Dienstes und seine Kompatibilität mit assistiven Technologien geben können, über Kontaktwege, die alle nutzen können."
+    ],
+    [
+     "Verständliche Informationen.",
+     "Die Texte, die man zur Nutzung des Dienstes braucht, müssen für das Zielpublikum verständlich sein; für Bankdienstleistungen sagt der Anhang dies ausdrücklich."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Um nachzuweisen, dass ein digitaler Dienst diese Grundsätze erfüllt, übersetzen Prüferinnen und Prüfer sie in überprüfbare Kriterien. Für Web und Mobile bedeutet das, die Erfolgskriterien der WCAG auf Stufe AA zu bewerten, ergänzt um die Anforderungen der Norm EN 301 549 an Dokumente, Software, Hardware und Unterstützungsdienste. Genau das leistet ein [[svc:audit-conformite|Konformitätsaudit nach WCAG und EN 301 549]], das auch Dokumente und Bestellprozesse abdeckt."
+  ],
+  [
+   "note",
+   "Das Wichtigste",
+   "Anhang I legt Ergebnisse fest; die Normen sagen, wie man sie nachweist. Ein Dienst kann den Anhang erfüllen, ohne eine Norm anzuwenden, muss dann aber selbst, Anforderung für Anforderung, belegen, dass er das geforderte Ergebnis erreicht."
+  ],
+  [
+   "h2",
+   "ausnahmen-bedingungen",
+   "Kleinstunternehmen, unverhältnismäßige Belastung: die Ausnahmen und ihre genauen Bedingungen"
+  ],
+  [
+   "h3",
+   "Die Ausnahme für Kleinstunternehmen, die Dienstleistungen erbringen"
+  ],
+  [
+   "p",
+   "Die Richtlinie definiert ein Kleinstunternehmen als ein Unternehmen, das weniger als zehn Personen beschäftigt und dessen Jahresumsatz oder Jahresbilanzsumme 2 Millionen Euro nicht übersteigt. Die Bedingung zur Beschäftigtenzahl muss immer erfüllt sein, bei den Beträgen genügt eine von beiden: Ein Onlineshop mit acht Beschäftigten, der 3 Millionen Euro Umsatz erzielt, dessen Bilanzsumme aber 1,5 Millionen beträgt, bleibt ein Kleinstunternehmen im Sinne des Textes. Eine Gesellschaft mit zwölf Beschäftigten ist nie eines, unabhängig von ihrem Umsatz. Das luxemburgische Gesetz vom 8. März 2023 übernimmt diese Definition unverändert."
+  ],
+  [
+   "p",
+   "Die Ausnahme gilt nur für Dienstleistungen. Ein Kleinstunternehmen, das ein erfasstes Produkt herstellt oder einführt, etwa ein Terminal oder ein E-Book-Lesegerät, muss die Anforderungen an Produkte erfüllen. Es profitiert lediglich von Verfahrenserleichterungen: Es muss keine Nachweisakte anlegen, wenn es sich auf eine Ausnahme beruft, und die Behörden nicht darüber informieren, muss aber die maßgeblichen Tatsachen vorlegen, wenn die Behörde sie verlangt. Die Richtlinie verpflichtet die Mitgliedstaaten außerdem, Kleinstunternehmen Leitlinien und Werkzeuge zur Verfügung zu stellen, die die Anwendung der Vorschriften erleichtern; in Luxemburg kündigt das OSAPS solche Leitlinien, Werkzeuge und Beratung an."
+  ],
+  [
+   "p",
+   "Zwei Reflexe sind angebracht. Berechnen Sie die Schwellen auf der Ebene der juristischen Person, die die Dienstleistung tatsächlich gegenüber Verbrauchern erbringt, und bewahren Sie diese Berechnung zusammen mit Ihren Abschlüssen auf: Das ist das erste Dokument, das eine Behörde verlangen wird. Behalten Sie außerdem das Wachstum im Blick: Die Ausnahme entfällt, sobald das Unternehmen eine der Schwellen überschreitet, und die Anpassung eines Onlineshops dauert mehrere Monate. [[sector:pme|KMU]], die sich den Schwellen nähern, sollten die Barrierefreiheit schon bei der nächsten Überarbeitung einplanen."
+  ],
+  [
+   "h3",
+   "Grundlegende Veränderung und unverhältnismäßige Belastung"
+  ],
+  [
+   "p",
+   "Artikel 14 der Richtlinie sieht zwei Ausnahmen vor, die für Produkte wie für Dienstleistungen gelten: Die Anforderungen sind nicht anzuwenden, wenn ihre Einhaltung eine wesentliche Änderung erfordern würde, die zu einer grundlegenden Veränderung der Wesensmerkmale des Produkts oder der Dienstleistung führt, oder wenn sie dem Wirtschaftsakteur eine unverhältnismäßige Belastung auferlegen würde. Diese Ausnahmen lassen sich nicht einfach erklären, sie müssen nachgewiesen werden. Die Bedingungen sind genau festgelegt:"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Eine vorherige Beurteilung durch den Wirtschaftsakteur.",
+     "Sie folgt den Kriterien von Anhang VI: Verhältnis der Nettokosten der Anpassung zu den Gesamtkosten des Wirtschaftsakteurs, Kosten im Verhältnis zum geschätzten Nutzen für Menschen mit Behinderungen unter Berücksichtigung von Häufigkeit und Dauer der Nutzung, Verhältnis dieser Kosten zum Nettoumsatz."
+    ],
+    [
+     "Eine fünf Jahre lang aufbewahrte Dokumentation.",
+     "Die Nachweise werden fünf Jahre lang ab der letzten Bereitstellung des Produkts auf dem Markt oder der letzten Erbringung der Dienstleistung aufbewahrt, und den Behörden wird auf Verlangen eine Kopie übergeben."
+    ],
+    [
+     "Eine regelmäßige Neubewertung.",
+     "Bei Dienstleistungen wird die Beurteilung bei jeder Änderung des Dienstes, auf Verlangen der Kontrollbehörde und in jedem Fall mindestens alle fünf Jahre erneuert."
+    ],
+    [
+     "Eine Information der Behörden.",
+     "Der Wirtschaftsakteur, der sich auf die Ausnahme beruft, informiert die Marktüberwachungsbehörden jedes Mitgliedstaats, in dem das Produkt in Verkehr gebracht oder die Dienstleistung erbracht wird. In Frankreich verweist die Behörde für Wettbewerb, Verbraucherschutz und Betrugsbekämpfung (DGCCRF) auf ein Online-Verfahren, mit dem man eine Nichtkonformität meldet oder sich auf eine Ausnahme beruft."
+    ],
+    [
+     "Keine zweckgebundene Fremdfinanzierung.",
+     "Ein Wirtschaftsakteur, der für die Verbesserung der Barrierefreiheit eine öffentliche oder private Finanzierung erhält, die nicht aus eigenen Mitteln stammt, kann sich nicht auf die unverhältnismäßige Belastung berufen."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Erwägungsgrund 66 der Richtlinie verschließt die Tür für bequeme Begründungen: Mangelnde Priorität, Zeit oder Kenntnis sollen nicht als berechtigte Gründe gelten. Die Ausnahme betrifft außerdem nur die jeweilige Anforderung und nur in dem Umfang, in dem sie unverhältnismäßig ist, nicht den gesamten Dienst. Ein Anbieter, der ein altes Anzeigemodul kurzfristig nicht barrierefrei machen kann, bleibt für den gesamten übrigen Ablauf gebunden und muss, wo möglich, eine Ersatzlösung anbieten."
+  ],
+  [
+   "h2",
+   "en-301-549-konformitaetsvermutung",
+   "Konformitätsvermutung: wo die Norm EN 301 549 steht"
+  ],
+  [
+   "p",
+   "Nach Artikel 15 der Richtlinie gilt bei einem Produkt oder einer Dienstleistung, die harmonisierten Normen entspricht, deren Fundstellen im Amtsblatt der Europäischen Union veröffentlicht wurden, die Vermutung der Konformität mit den Anforderungen, die diese Normen abdecken. Dieselbe Vermutung gilt für technische Spezifikationen, die die Kommission im Wege von Durchführungsrechtsakten erlassen kann. Diese Vermutung ist wertvoll: Sie kehrt die Last der Argumentation um, denn dann muss die Behörde nachweisen, dass der Dienst die Anforderung nicht erfüllt."
+  ],
+  [
+   "p",
+   "Für die Informationstechnik ist die maßgebliche Norm die EN 301 549. Ihre 2021 veröffentlichte Fassung V3.2.1 ist im Rahmen der Richtlinie 2016/2102 über den öffentlichen Sektor harmonisiert, durch den Durchführungsbeschluss (EU) 2021/1339. Das [[https://www.etsi.org/human-factors-accessibility/en-301-549-v3-the-harmonized-european-standard-for-ict-accessibility|ETSI erläutert, dass diese Fassung seit August 2021 die Richtlinie über den öffentlichen Sektor stützt und dass für den European Accessibility Act eine Überarbeitung vorgesehen ist]]. Diese für den EAA bestimmte Überarbeitung, die Fassung V4.1.1, wurde von den europäischen Normungsorganisationen im Spätsommer 2026 angenommen und am 2. September 2026 veröffentlicht. Sie wechselt von den WCAG 2.1 zu den WCAG 2.2, Stufen A und AA, und fügt einen Anhang mit der Zuordnung zu den Anforderungen des EAA hinzu."
+  ],
+  [
+   "p",
+   "Zum Zeitpunkt der Abfassung dieses Artikels ist die Fundstelle dieser neuen Fassung noch nicht im Amtsblatt angegeben. Die irische Behörde für Behindertenfragen, die National Disability Authority, [[https://nda.ie/news/en301549-published|erwartet diese Veröffentlichung für den 16. Dezember 2026]]. Solange sie nicht erfolgt ist, begründet keine Norm die Konformitätsvermutung im Rahmen des EAA: Die Konformität wird anhand von Anhang I nachgewiesen, wobei die bestehenden Normen als Bewertungsmethode dienen."
+  ],
+  [
+   "p",
+   "Diese Lage hindert die Behörden nicht daran, einen Prüfmaßstab zu haben. Die französische DGCCRF nennt etwa die Norm EN 301 549 V3.2.1, den RGAA und die WCAG 2.1 als Referenzen. Der geltende RGAA ist die Version 4.1.2, und die interministerielle Digitaldirektion Frankreichs weist auf der [[https://accessibilite.numerique.gouv.fr/|offiziellen Website des RGAA (auf Französisch)]] darauf hin, dass eine Version 5 in Arbeit ist und Ende 2026 erscheinen soll. In Luxemburg dienen RAWeb und RAAM als öffentliche Methoden zur Umsetzung der EN 301 549. Die vernünftige Wahl besteht heute darin, Ihre Dienste nach den WCAG 2.2 auf Stufe AA zu bewerten: Damit decken Sie die Kriterien der Fassung 3.2.1 ab und nehmen die der Fassung 4.1.1 vorweg. Die nationalen Referenzrahmen, RGAA in Frankreich, RAWeb und RAAM in Luxemburg, eCH-0059 in der Schweiz, stellt unser Artikel über [[article:normes|Normen und Referenzrahmen der Barrierefreiheit]] im Einzelnen vor."
+  ],
+  [
+   "h2",
+   "informationspflicht-dienstleistungen",
+   "Über die Barrierefreiheit Ihrer Dienstleistungen informieren: wo und wie"
+  ],
+  [
+   "p",
+   "Der EAA erlegt Dienstleistungserbringern eine Informationspflicht auf, die von den technischen Anforderungen getrennt ist. Der Anbieter erstellt die in Anhang V der Richtlinie vorgesehenen Informationen und erläutert, wie seine Dienstleistung die Barrierefreiheitsanforderungen erfüllt. Diese Informationen werden der Öffentlichkeit schriftlich und mündlich zur Verfügung gestellt, in einer für Menschen mit Behinderungen zugänglichen Form, und so lange aufbewahrt, wie die Dienstleistung angeboten wird. In Frankreich sieht das Dekret Nr. 2023-931 vom 9. Oktober 2023 vor, dass sie in den Allgemeinen Geschäftsbedingungen oder einem gleichwertigen Dokument stehen; das luxemburgische Gesetz verlangt in seinem Anhang II ebenfalls, dass sie in die Allgemeinen Geschäftsbedingungen oder ein gleichwertiges Dokument aufgenommen werden."
+  ],
+  [
+   "p",
+   "Ihr Inhalt ist vorgegeben: eine allgemeine Beschreibung der Dienstleistung in barrierefreien Formaten, die Erläuterungen, die zum Verständnis ihrer Funktionsweise nötig sind, und die Beschreibung, wie sie die geltenden Anforderungen erfüllt. Die DGCCRF nennt RGAA-Auditberichte unter den Unterlagen, mit denen sich diese Information belegen lässt. Konkret erfüllt eine Seite „Barrierefreiheit“, die aus der Fußzeile und aus den Allgemeinen Geschäftsbedingungen verlinkt ist und für jeden Dienst und jede App einzeln geführt wird, die Erwartung, wenn sie mindestens Folgendes enthält:"
+  ],
+  [
+   "ul",
+   [
+    "den genauen Umfang des beschriebenen Dienstes: Website, iOS-App, Android-App, Terminals;",
+    "den für die Bewertung verwendeten Referenzrahmen, das Datum der Bewertung und die Stelle, die sie durchgeführt hat;",
+    "die verfügbaren Barrierefreiheitsfunktionen und die assistiven Technologien, mit denen der Dienst getestet wurde;",
+    "die bekannten Einschränkungen, jeweils mit der angebotenen Alternative und dem Zeitplan für die Behebung;",
+    "einen barrierefreien Kontaktweg, um eine Schwierigkeit zu melden oder die Information in anderer Form zu erhalten;",
+    "das Datum der letzten Aktualisierung."
+   ]
+  ],
+  [
+   "p",
+   "Bei mehrsprachigen Angeboten, wie sie in Luxemburg, in der Schweiz und in Belgien die Regel sind, sollte diese Seite in jeder Sprache vorliegen, in der der Dienst angeboten wird: Eine Kundin, die den Shop auf Deutsch nutzt, muss die Information auch auf Deutsch finden. Die Richtlinie schreibt das nicht wörtlich vor, aber eine Information, die das Zielpublikum nicht versteht, erfüllt kaum die Anforderung, in zugänglicher Form bereitgestellt zu werden."
+  ],
+  [
+   "p",
+   "Diese Information ist nicht mit der Erklärung zur Barrierefreiheit zu verwechseln, die für öffentliche Stellen gilt, in Frankreich nach Artikel 47 des Gesetzes von 2005 mit einem vom RGAA festgelegten Inhalt, in Luxemburg nach dem Gesetz vom 28. Mai 2019. Ein Unternehmen, das beiden Regelungen unterliegt, kann sie auf einer Seite zusammenführen, sofern jede ihre eigenen Anforderungen erfüllt; die Methode beschreibt unser Artikel über [[article:declaration|die Erklärung zur Barrierefreiheit]]. In Belgien stellte die Stellungnahme der Plattform der Beratungsgremien für Menschen mit Behinderung (Plateforme des conseils d'avis handicap) vom September 2025 ihrerseits fest, dass die Informationen, die mehrere Aufsichtsbehörden wie der FÖD Wirtschaft oder das BIPT für Endnutzer veröffentlichen, sehr knapp waren, fehlten oder schwer auffindbar waren."
+  ],
+  [
+   "h2",
+   "uebergangsfristen",
+   "Übergangsfristen: 2030, 15 oder 20 Jahre und was nicht darunter fällt"
+  ],
+  [
+   "p",
+   "Die Richtlinie sieht ein schrittweises Inkrafttreten vor, aber ihre Übergangsfristen sind enger, als oft angenommen wird. So wie die [[https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/professionnels-vos-produits-et-services-doivent-etre-conformes-la-directive-accessibilite|DGCCRF sie für Frankreich darstellt (auf Französisch)]], sind es drei:"
+  ],
+  [
+   "ul",
+   [
+    "bis zum 28. Juni 2030 darf ein Dienstleistungserbringer seine Dienste weiterhin mit Produkten erbringen, die er vor dem 28. Juni 2025 rechtmäßig zur Erbringung ähnlicher Dienstleistungen eingesetzt hat;",
+    "Dienstleistungsverträge, die vor dem 28. Juni 2025 mit Verbrauchern geschlossen wurden, dürfen bis zu ihrem Ablauf unverändert fortbestehen, längstens jedoch bis zum 28. Juni 2030;",
+    "Selbstbedienungsterminals, die vor dem 28. Juni 2025 rechtmäßig eingesetzt wurden, dürfen bis zum Ende ihrer wirtschaftlichen Nutzungsdauer in Betrieb bleiben; die Richtlinie erlaubt den Staaten, diese Dauer auf zwanzig Jahre nach der Inbetriebnahme zu begrenzen, und Frankreich hat fünfzehn Jahre gewählt."
+   ]
+  ],
+  [
+   "p",
+   "Luxemburg hat diese Möglichkeiten anders genutzt. Nach Artikel 34 des [[https://accessibilite-produits-services.public.lu/dam-assets/lgislation/de-loi-du-8-mars-2023-relative-aux-exigences-en-matire-daccessibilit-applicables-aux-produits-et-services.pdf|Gesetzes vom 8. März 2023 (deutsche Fassung)]] endet die Übergangszeit für bereits eingesetzte Produkte ebenfalls am 28. Juni 2030, vor diesem Datum geschlossene Verträge dürfen bis zu ihrem Ablauf laufen, höchstens jedoch fünf Jahre, und Selbstbedienungsterminals dürfen bis zum Ende ihrer wirtschaftlichen Nutzungsdauer in Betrieb bleiben, längstens zwanzig Jahre nach ihrer Inbetriebnahme. Ein Geldautomat, der in Luxemburg vor Juni 2025 aufgestellt wurde, kann also länger in Betrieb bleiben als ein baugleiches Gerät in Frankreich."
+  ],
+  [
+   "p",
+   "Die wichtigste Klarstellung steht im selben Merkblatt der DGCCRF: Eine Website oder eine mobile App ist kein „Produkt“ im Sinne der Richtlinie. Sie profitiert daher von keiner dieser Übergangsfristen. Ein Onlineshop, der vor dem 28. Juni 2025 online war, genießt keinen Bestandsschutz: Seit diesem Datum ist jede Bestellung, die er ermöglicht, eine gegenüber einem Verbraucher erbrachte Dienstleistung, die den Anforderungen unterliegt."
+  ],
+  [
+   "note",
+   "Das Wichtigste",
+   "Die Fristen bis 2030 und die fünfzehn oder zwanzig Jahre betreffen bereits eingesetzte Hardware und laufende Verträge. Sie gelten weder für Websites noch für Apps, die seit dem 28. Juni 2025 konform sein müssen."
+  ],
+  [
+   "h2",
+   "luxemburg-barrierefreiheitsgesetz-osaps",
+   "Luxemburg: das Barrierefreiheitsgesetz vom 8. März 2023 und das OSAPS"
+  ],
+  [
+   "p",
+   "Luxemburg hat sich für einen einzigen Text entschieden: das Gesetz vom 8. März 2023 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen, veröffentlicht im Mémorial A unter der Nummer 133. Es wurde noch im selben Jahr geändert, um die von der Richtlinie vorgesehene Ausnahme für Stadt-, Vorort- und Regionalverkehrsdienste aufzunehmen, wie der [[https://wdocs-pub.chd.lu/docs/exped/0143/039/286396.pdf|Bericht der Abgeordnetenkammer zum Gesetzentwurf Nr. 8265 (auf Französisch)]] nachzeichnet. Nach seinem Artikel 36 ist das Gesetz am 28. Juni 2025 in Kraft getreten. Die luxemburgische Regierung stellt eine deutsche Fassung bereit; im Streitfall ist allein die französische Fassung maßgebend."
+  ],
+  [
+   "h3",
+   "Das OSAPS als zentrale Anlaufstelle"
+  ],
+  [
+   "p",
+   "Artikel 3 des Gesetzes schafft das Amt für die Überwachung der Barrierefreiheit von Produkten und Dienstleistungen (Office de la surveillance de l'accessibilité des produits et services, OSAPS), eine Verwaltung, die dem für die Politik zugunsten von Menschen mit Behinderungen zuständigen Minister untersteht und als zentrale Anlaufstelle dient. Bei Produkten sind das OSAPS, die Zoll- und Verbrauchsteuerverwaltung und die Großherzogliche Polizei mit der Kontrolle beauftragt; bei Dienstleistungen prüfen das OSAPS und die Großherzogliche Polizei, ob die geltenden Anforderungen erfüllt sind (Artikel 28). Gegen die getroffenen Entscheidungen kann innerhalb von drei Monaten Abänderungsklage erhoben werden."
+  ],
+  [
+   "p",
+   "Das OSAPS kündigt an, Unternehmen Leitlinien, Werkzeuge und Beratung zur Verbesserung der Barrierefreiheit bereitzustellen, und jede Person kann ihm die Nichtkonformität eines Produkts oder einer Dienstleistung melden. Für ein Unternehmen bedeutet das: Die erste Kontrolle wird häufig nicht von Amts wegen angestoßen, sondern durch die Meldung einer Kundin, die ihre Bestellung nicht abschließen konnte. Ein barrierefreier Kontaktweg, über den solche Schwierigkeiten zuerst beim Unternehmen selbst ankommen, ist deshalb die einfachste Vorsorge."
+  ],
+  [
+   "h3",
+   "Sanktionen: was der veröffentlichte Text vorsieht"
+  ],
+  [
+   "p",
+   "Während des Gesetzgebungsverfahrens sah der Entwurf sowohl Verwaltungs- als auch Strafsanktionen vor, und der Staatsrat wandte sich gegen ihre Kumulierung. Der auf dem offiziellen Portal veröffentlichte Gesetzestext trennt die beiden Ebenen nun klar:"
+  ],
+  [
+   "ul",
+   [
+    "eine Verwaltungsgeldbuße von 250 bis 15 000 Euro gegen einen Akteur, der die Herausgabe von Unterlagen verweigert, die Überwachung behindert oder die Entscheidungen des OSAPS nicht befolgt (Artikel 32);",
+    "eine Geldstrafe von 251 bis 500 000 Euro bei Verstößen gegen die Bestimmungen des Gesetzes (Artikel 33 Absatz 1);",
+    "im Wiederholungsfall eine Geldstrafe von 500 bis 1 000 000 Euro (Artikel 33 Absatz 2);",
+    "daneben Maßnahmen der Marktüberwachung bis hin zur Beschränkung oder Untersagung der Bereitstellung eines nicht konformen Produkts oder der Erbringung einer nicht konformen Dienstleistung."
+   ]
+  ],
+  [
+   "p",
+   "Prüfen Sie vor jeder Risikoanalyse dennoch die konsolidierte Fassung im Amtsblatt des Großherzogtums, denn nur sie gibt den jeweils geltenden Stand wieder. Luxemburgische Unternehmen, die zugleich digitale öffentliche Dienste betreiben, bewerten diese mit dem RAWeb und dem RAAM, die auf der Seite [[country:luxembourg|digitale Barrierefreiheit in Luxemburg]] vorgestellt werden; für mobile Apps deckt ein [[svc:audit-raam|Audit nach dem RAAM]] beide Regelungen ab. Der Artikel [[article:luxembourg|über Luxemburg]] vertieft diese Punkte, einschließlich der Rolle des SIP für den öffentlichen Sektor."
+  ],
+  [
+   "h3",
+   "Was das für luxemburgische Unternehmen konkret heißt"
+  ],
+  [
+   "p",
+   "Drei Konstellationen kommen in der Praxis besonders häufig vor. Eine Bank mit Privatkundengeschäft unterliegt dem Gesetz für ihr Kundenportal, ihre App, die Online-Kontoeröffnung und die Dokumente, die der Kunde erhält, während ihre Geldautomaten und Zahlungsterminals unter die Regeln für Produkte fallen. Ein Onlinehändler, der von Luxemburg aus Kundinnen in Belgien, Deutschland und Frankreich beliefert, muss die Anforderungen in jedem dieser Länder erfüllen, die inhaltlich dieselben sind, wird aber von mehreren Behörden kontrolliert. Ein kleines Unternehmen mit weniger als zehn Beschäftigten, das nur Dienstleistungen erbringt, ist befreit, sollte aber die Berechnung seiner Schwellen dokumentieren."
+  ],
+  [
+   "h2",
+   "schweizer-unternehmen-eaa",
+   "Schweizer Unternehmen und der EAA: außerhalb der Union, aber über die Verkäufe betroffen"
+  ],
+  [
+   "p",
+   "Die Schweiz ist weder Mitglied der Europäischen Union noch des Europäischen Wirtschaftsraums: Sie hat die Richtlinie nicht umgesetzt, und der EAA gilt nicht für Dienstleistungen, die Verbrauchern in der Schweiz erbracht werden. Ein Schweizer Unternehmen, das online an Verbraucher in der Union verkauft, ihnen Bank- oder Beförderungsdienstleistungen anbietet oder Terminals und E-Book-Lesegeräte herstellt, die in der Union verkauft werden, unterliegt dagegen denselben Anforderungen wie seine europäischen Wettbewerber."
+  ],
+  [
+   "h3",
+   "Das entscheidende Kriterium: der bediente Markt"
+  ],
+  [
+   "p",
+   "Die Richtlinie definiert den Dienstleistungserbringer in Artikel 3 als jede natürliche oder juristische Person, die auf dem Unionsmarkt eine Dienstleistung erbringt oder anbietet, Verbrauchern in der Union eine solche Dienstleistung zu erbringen. Der Sitz des Unternehmens kommt in dieser Definition nicht vor. Eine Zürcher oder Basler Gesellschaft, die online an Verbraucher in Deutschland, Österreich oder Frankreich verkauft, ist für diese Tätigkeit also Dienstleistungserbringer im Sinne der Richtlinie."
+  ],
+  [
+   "p",
+   "Woran sich zeigt, dass sich ein Angebot an die Union richtet, regelt die Richtlinie nicht mit einer Liste. In der Praxis prüft man, was eine Juristin bei jeder Verbraucherschutzregel prüfen würde: Lieferung in Länder der Union, Preise in Euro, Sprachfassungen oder Länderdomains für diese Länder, gezielte Werbung, ein aus der Union erreichbarer Kundendienst. Ein Shop, der nur in Franken abrechnet und ausschließlich in die Schweiz liefert, liegt außerhalb; ein Shop, der im Warenkorb „Lieferung nach Deutschland und Österreich“ anbietet, nicht mehr."
+  ],
+  [
+   "h3",
+   "Hersteller, Bevollmächtigter, Einführer"
+  ],
+  [
+   "p",
+   "Bei Produkten muss der in der Union ansässige Einführer die Konformität prüfen, was den Schweizer Hersteller verpflichtet, ihm die technische Dokumentation und die Konformitätserklärung zu liefern. Der Hersteller kann zudem einen Bevollmächtigten benennen, also eine in der Union ansässige Person, die er schriftlich beauftragt, bestimmte Aufgaben in seinem Namen wahrzunehmen. Ein Schweizer Hersteller von Zahlungsterminals, der an europäische Händler verkauft, sollte deshalb davon ausgehen, dass sein Einführer den Konformitätsnachweis verlangt, bevor er das Gerät listet."
+  ],
+  [
+   "h3",
+   "Zwei Referenzrahmen, eine Bewertung"
+  ],
+  [
+   "p",
+   "Schweizer Unternehmen müssen also zwei Referenzrahmen steuern: das Behindertengleichstellungsgesetz (BehiG) und die Norm eCH-0059 für ihre nationalen Pflichten, den EAA für ihre Verkäufe in der Union. Beide beruhen auf den WCAG, was eine einzige, gut abgegrenzte Bewertung ermöglicht. Auch das Schweizer Recht ist in Bewegung: Am 21. September 2026 hat der Nationalrat ein Inklusionsgesetz als Gegenvorschlag zur Inklusions-Initiative verabschiedet, das nun an den Ständerat geht. Mehr dazu auf der Seite [[country:suisse|digitale Barrierefreiheit in der Schweiz]] und im Artikel [[article:suisse|über die Schweiz]]."
+  ],
+  [
+   "h2",
+   "umsetzung-belgien-frankreich",
+   "Umsetzung und Kontrolle in Belgien und Frankreich"
+  ],
+  [
+   "h3",
+   "Belgien: mehrere Texte und mehrere Behörden"
+  ],
+  [
+   "p",
+   "Belgien hat die Umsetzung je nach Zuständigkeit auf den Föderalstaat, die Gemeinschaften und die Regionen verteilt. Für den elektronischen Geschäftsverkehr und die Bankdienstleistungen ändert das Gesetz vom 5. November 2023 mehrere Bücher des Wirtschaftsgesetzbuches und das Gesetz vom 2. August 2002: Es schafft in Buch VIII einen Titel über die Barrierefreiheitsanforderungen an Dienstleistungen und belegt Verstöße mit Sanktionen der Stufe 2 oder, bei Bösgläubigkeit, der Stufe 3, wie der [[https://www.dekamer.be/FLWB/PDF/55/3433/55K3433003.pdf|im Ausschuss der Kammer angenommene Text (auf Französisch und Niederländisch)]] zeigt. Eine belgische Besonderheit: Artikel 40 dieses Gesetzes nimmt Kleinstunternehmen nur bis zum 28. Juni 2030 von seinem Anwendungsbereich aus und nicht dauerhaft, wie es die Richtlinie für Kleinstunternehmen vorsieht, die Dienstleistungen erbringen; danach könnte sie nur noch ein königlicher Erlass auf der Grundlage des neuen Artikels VIII.59 § 2 des Wirtschaftsgesetzbuches ausnehmen. Weitere föderale, gemeinschaftliche und regionale Texte decken elektronische Kommunikation, audiovisuelle Medien, E-Books, Beförderung und die 112 ab."
+  ],
+  [
+   "p",
+   "Nach der Stellungnahme der Plattform der Beratungsgremien für Menschen mit Behinderung vom September 2025 ist die Überwachung wie folgt verteilt: der FÖD Wirtschaft mit seiner Wirtschaftsinspektion für den elektronischen Geschäftsverkehr und die Bankdienstleistungen; das BIPT für Selbstbedienungsterminals, Computer und Betriebssysteme, Endgeräte, E-Book-Lesegeräte und elektronische Kommunikation; die Gemeinschaften für audiovisuelle Medien und E-Books; der FÖD Inneres für die 112; der FÖD Mobilität und Transportwesen für den Fernverkehr; die Regionen für den Stadt-, Vorort- und Regionalverkehr. Dieselbe Stellungnahme gibt an, dass die Verwaltungsgeldbußen bei den schwersten Verstößen 200 000 Euro oder 6 % des Jahresumsatzes erreichen können."
+  ],
+  [
+   "p",
+   "Für Unternehmen in der Deutschsprachigen Gemeinschaft bedeutet diese Aufteilung, dass ein Onlineshop oder eine Bank in Eupen oder Sankt Vith von denselben föderalen Behörden kontrolliert wird wie ein Unternehmen in Brüssel oder Antwerpen, während für audiovisuelle Medien und E-Books die Gemeinschaften zuständig sind. Siehe die Seite [[country:belgique|digitale Barrierefreiheit in Belgien]] und den Artikel [[article:belgique|über Belgien]]."
+  ],
+  [
+   "h3",
+   "Frankreich: Verbraucherrecht, DGCCRF und Artikel 47"
+  ],
+  [
+   "p",
+   "Frankreich hat die Richtlinie durch Artikel 16 des Gesetzes Nr. 2023-171 vom 9. März 2023 umgesetzt, der Artikel L. 412-13 in das Verbrauchergesetzbuch (Code de la consommation) eingefügt hat, sowie durch das Dekret Nr. 2023-931 vom 9. Oktober 2023 und eine Verordnung vom selben Tag, die die Anforderungen im Einzelnen regelt. Die Vorschriften stehen also im Verbraucherrecht, als Teil der Pflicht zur Konformität von Produkten und Dienstleistungen."
+  ],
+  [
+   "p",
+   "Die Kontrolle obliegt der DGCCRF, die insbesondere Multimediaprodukte, Telefone, Router, Fernseher und Selbstbedienungsterminals sowie Dienstleistungen im elektronischen Geschäftsverkehr, Bank- und Beförderungsdienstleistungen prüft. Sie handelt in Abstimmung mit der Medienaufsicht Arcom, der Regulierungsbehörde für elektronische Kommunikation Arcep, der Banque de France, der Aufsichtsbehörde ACPR und der Finanzmarktaufsicht AMF. Ihre Bediensteten können die Herstellung der Konformität unter Androhung eines Zwangsgelds anordnen. Verstöße sind Übertretungen der fünften Klasse, die mit Geldbußen von 7 500 Euro geahndet werden, kumulierbar je nach Zahl der festgestellten Verstöße, und bei anhaltenden Praktiken ist eine Aussetzung des Inverkehrbringens möglich."
+  ],
+  [
+   "p",
+   "Diese Regelung besteht neben Artikel 47 des Gesetzes vom 11. Februar 2005, der die Barrierefreiheit der Online-Kommunikationsdienste für öffentliche Stellen, Konzessionsnehmer öffentlicher Aufgaben und Unternehmen mit einem Umsatz von mehr als 250 Millionen Euro vorschreibt. Seit der Verordnung Nr. 2023-859 vom 6. September 2023 wird diese zweite Regelung von der Arcom kontrolliert. Artikel L. 412-13 gilt „unbeschadet“ von Artikel 47, eine Formel, deren Tragweite inzwischen vor Gericht umstritten ist. Die Seite [[country:france|digitale Barrierefreiheit in Frankreich]] und der Artikel [[article:france|über die französischen Pflichten]] stellen diese Regeln vollständig dar."
+  ],
+  [
+   "h2",
+   "seit-juni-2025",
+   "Was seit dem 28. Juni 2025 geschehen ist"
+  ],
+  [
+   "p",
+   "In Frankreich gingen die ersten Schritte von Verbänden aus. Am 7. Juli 2025 forderten die Verbände apiDV und Droit Pluriel die Handelsketten Auchan, Carrefour, E.Leclerc und Picard Surgelés förmlich auf, ihre Online-Lebensmittelshops für blinde und sehbehinderte Menschen barrierefrei zu machen. Mangels ausreichender Ergebnisse wurden die vier Ketten im November 2025 im Eilverfahren (référé) verklagt, mit Unterstützung des Juristenkollektivs Intérêt à Agir, wie das Portal Clubic am 12. November 2025 berichtete."
+  ],
+  [
+   "p",
+   "Zwei Eilentscheidungen sind seitdem zu gegensätzlichen Lesarten gelangt. Am 5. Mai 2026 wies der Eilrichter des Tribunal judiciaire von Lille die Klage der Verbände gegen Auchan E-Commerce France ab, deren Umsatz mit 182 Millionen Euro im Jahr 2023 und 144 Millionen im Jahr 2024 unter der Schwelle von 250 Millionen Euro aus Artikel 47 lag. Laut Handicap.fr befand das Gericht, dass diese Schwelle des Gesetzes von 2005 Vorrang vor dem Verbrauchergesetzbuch habe, stellte aber zugleich, gestützt auf ein auf Wunsch des Unternehmens durchgeführtes Audit, ein „recht niedriges“ Niveau der Barrierefreiheit fest. Die Verbände bestreiten diese Lesart, die darauf hinausläuft, auf den EAA eine Schwelle anzuwenden, die die Richtlinie nicht kennt."
+  ],
+  [
+   "p",
+   "Am 4. Juni 2026 ordnete das im Eilverfahren angerufene Tribunal judiciaire von Caen dagegen an, dass Carrefour France seine Website carrefour.fr und seine mobile App innerhalb von sechs Monaten unter Androhung eines Zwangsgelds vollständig barrierefrei machen muss. Die Handelskette hatte einen Konformitätsgrad von 71 % geltend gemacht; der Richter wies dieses Argument zurück, weil sich ein Dienst nicht damit begnügen könne, teilweise barrierefrei zu sein. Für das Verfahren gegen E.Leclerc, das vor das Tribunal judiciaire von Créteil gebracht wurde, lag zum Zeitpunkt der Abfassung kein in einer verlässlichen Quelle veröffentlichtes Ergebnis vor. Eine Klärung durch die Berufungsgerichte oder den Gesetzgeber steht noch aus."
+  ],
+  [
+   "p",
+   "Auf Seiten der Verwaltung stellte die DGCCRF auf der Conférence nationale du handicap am 4. September 2026 eine erste Bilanz ihrer Kontrollen vor: Laut La Lettre des Réseaux wies mehr als die Hälfte der seit Anfang 2026 kontrollierten Onlinehändler Mängel auf, die zu Abhilfe- oder Sanktionsmaßnahmen führten; die endgültigen Ergebnisse der Untersuchung werden Anfang 2027 erwartet. Seit Dezember 2025 können Verbraucherinnen und Verbraucher Barrierefreiheitsmängel zudem über einen eigenen Meldeweg auf SignalConso melden."
+  ],
+  [
+   "p",
+   "Das Signal an die Unternehmen ist deutlich, auch außerhalb Frankreichs. Das Hauptrisiko ist nicht eine einzelne Geldbuße, sondern eine im Eilverfahren ausgesprochene Anordnung mit Zwangsgeld und kurzer Frist, gestützt auf ein Audit, das das Unternehmen mitunter selbst in Auftrag gegeben hat. Ein Auditbericht, der Nichtkonformitäten feststellt, ohne einen datierten Behebungsplan zu enthalten, wird dann zum belastenden Beweisstück."
+  ],
+  [
+   "h2",
+   "tabelle-nachweise",
+   "Tabelle: zentrale Anforderungen und aufzubewahrende Nachweise je Branche"
+  ],
+  [
+   "p",
+   "Die folgende Tabelle fasst für jede Branche zusammen, welche Punkte eine Behörde oder ein Beschwerdeführer vorrangig prüfen wird und welche Unterlagen eine Antwort darauf ermöglichen. Sie lässt sich als dokumentarische Checkliste lesen: Jede Zeile muss sich mit einem datierten Dokument belegen lassen."
+  ],
+  [
+   "table",
+   {
+    "caption": "European Accessibility Act: vorrangige Anforderungen und aufzubewahrende Nachweise",
+    "head": [
+     "Branche",
+     "Zu prüfende zentrale Anforderungen",
+     "Aufzubewahrende Nachweise"
+    ],
+    "rows": [
+     [
+      "Elektronischer Geschäftsverkehr",
+      "Suche und Filter, Produktseite, Warenkorb, Kontoerstellung ohne blockierendes CAPTCHA, Zahlung und Authentifizierung, Informationen zur Barrierefreiheit der verkauften Produkte",
+      "Auditbericht über den vollständigen Bestellprozess, Konformitätsnachweise der Zahlungs- und CAPTCHA-Anbieter, aktuelle Informationsseite, datierter Behebungsplan"
+     ],
+     [
+      "Bankdienstleistungen",
+      "Starke Authentifizierung mit Alternativen, Eingabe von Codes, elektronische Signatur, lesbare Vertragsdokumente, verständliche Informationen",
+      "Audit der Apps und des Kundenportals, Tests mit Screenreadern auf Mobilgeräten, barrierefreie Fassung der Musterverträge, Nachweis der angebotenen Alternativen"
+     ],
+     [
+      "Personenbeförderung",
+      "Buchung, Sitzplatzwahl, elektronisches Ticket, Echtzeit-Informationen, Anmeldung von Hilfeleistungen, Terminals",
+      "Audit von Website und App, Tests der erzeugten Tickets, technisches Datenblatt der Terminals, veröffentlichte Informationen über die Zugangsdienste"
+     ],
+     [
+      "Elektronische Kommunikation",
+      "Vertragsabschluss und Kundenportal, Rechnungen, Echtzeittext, Kontakt zum Kundendienst über mehrere Kanäle",
+      "Audit der Abläufe für Vertragsabschluss und Kündigung, Beschreibung der barrierefreien Kontaktwege, Dokumentation der bereitgestellten Endgeräte"
+     ],
+     [
+      "Audiovisuelle Medien",
+      "Videoplayer, Programmführer, Aktivierung von Untertiteln und Audiodeskription, vollständige Übertragung der Zugangsdienste",
+      "Audit der Apps auf jeder Plattform, Kontrollverfahren für die Übertragung der Zugangsdienste, veröffentlichte Informationen"
+     ],
+     [
+      "E-Books",
+      "Strukturelle Navigation, Sprachausgabe nicht durch Kopierschutz blockiert, Alternativen zu Bildern, Metadaten zur Barrierefreiheit",
+      "Prüfbericht der Dateien je Reihe, Richtlinie zur Rechteverwaltung, veröffentlichte Metadaten"
+     ],
+     [
+      "Terminals und Hardware",
+      "Bedienoberfläche über mehrere Sinneskanäle, Audioausgabe, taktile Markierungen, Anleitungen und Verpackungen",
+      "Technische Dokumentation, EU-Konformitätserklärung, CE-Kennzeichnung, fünf Jahre lang aufbewahrte Unterlagen"
+     ],
+     [
+      "Alle Dienstleistungen",
+      "Informationen zur Barrierefreiheit, barrierefreier Kontakt, etwaige Ausnahmen",
+      "Information in den Allgemeinen Geschäftsbedingungen oder einem gleichwertigen Dokument, fünf Jahre lang aufbewahrte Beurteilungen der unverhältnismäßigen Belastung, Nachweis der Information der Behörden, Berechnung der Schwellen für Kleinstunternehmen"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Für die am stärksten exponierten Abläufe bleibt der überzeugendste Nachweis ein Test durch Menschen, die im Alltag einen Screenreader, eine Sprachsteuerung oder eine Bildschirmlupe nutzen: Das ist der Gegenstand von [[svc:test-utilisateur|Nutzertests mit Menschen mit Behinderungen]]. Ein Auditbericht, so genau er auch sein mag, ersetzt nicht den Nachweis, dass eine blinde Person ihre Bestellung tatsächlich bezahlen kann."
+  ],
+  [
+   "h2",
+   "aktionsplan",
+   "Aktionsplan: den European Accessibility Act umsetzen"
+  ],
+  [
+   "p",
+   "Ob ein Unternehmen bei null anfängt oder bereits ein erstes Audit hat, die Vorgehensweise folgt derselben Reihenfolge. Es geht nicht darum, alles auf einmal zu beheben, sondern zuerst das zu beseitigen, was einen Verbraucher an der Nutzung des Dienstes hindert, und dann jede Entscheidung zu dokumentieren."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Den Umfang bestimmen.",
+     "Listen Sie Ihre Produkte und Dienstleistungen anhand von Artikel 2 auf: Über welche Abläufe wird ein Vertrag mit einem Verbraucher geschlossen, welche Bank-, Beförderungs- oder Kommunikationsdienstleistungen erbringen Sie, in welchen Mitgliedstaaten. Halten Sie auch fest, was nicht in den Anwendungsbereich fällt, mit Begründung; für ein Schweizer Unternehmen gehört dazu die Frage, welche Angebote sich an Verbraucher in der Union richten."
+    ],
+    [
+     "Schwellen und Ausnahmen prüfen.",
+     "Berechnen Sie Beschäftigtenzahl, Umsatz und Bilanzsumme jeder Einheit, die eine erfasste Dienstleistung erbringt. Erscheint eine Ausnahme wegen unverhältnismäßiger Belastung denkbar, legen Sie die Beurteilungsakte nach den Kriterien von Anhang VI schon jetzt an."
+    ],
+    [
+     "Die kritischen Abläufe erfassen.",
+     "Bestimmen Sie für jeden Dienst die fünf bis zehn Abläufe, ohne die er unbenutzbar ist: Kontoerstellung, Anmeldung, Suche, Bestellung, Zahlung, Abruf von Dokumenten, Kontakt. Auf sie richtet sich die Bewertung."
+    ],
+    [
+     "Nach einer anerkannten Methode prüfen.",
+     "Lassen Sie diese Abläufe nach den WCAG 2.2 auf Stufe AA und der Norm EN 301 549 bewerten, auf dem Computer und auf Mobilgeräten, mit den gängigen assistiven Technologien. Für einen französischen Dienst, der auch Artikel 47 unterliegt, kann parallel ein [[svc:audit-rgaa|RGAA-Audit]] durchgeführt werden; die durchschnittliche Dauer eines Audits liegt in unserer Praxis bei drei Wochen."
+    ],
+    [
+     "Drittkomponenten behandeln.",
+     "Zahlung, Authentifizierung, CAPTCHA, elektronische Signatur, Chatbot, Videoplayer: Verlangen Sie von jedem Anbieter seine Konformitätsnachweise, nehmen Sie eine Barrierefreiheitsklausel in Ihre Verträge auf und planen Sie eine Ersatzlösung ein, falls die Komponente blockierend bleibt."
+    ],
+    [
+     "Beheben und abnehmen.",
+     "Ordnen Sie die Mängel nach ihrer Auswirkung auf die Abläufe und nach Aufwand, beheben Sie zuerst die Blockaden und prüfen Sie jede Korrektur vor der Produktivsetzung mit einer [[svc:recette|Abnahmeprüfung der Barrierefreiheit]]. Interne Teams lassen sich durch eine [[svc:developpement|Begleitung bei der barrierefreien Entwicklung]] unterstützen."
+    ],
+    [
+     "Die Information veröffentlichen und einen Kontaktweg öffnen.",
+     "Verfassen Sie die in Anhang V vorgesehene Information in jeder Sprache Ihres Angebots, verknüpfen Sie sie mit den Allgemeinen Geschäftsbedingungen und bieten Sie einen barrierefreien Kontaktweg an, um Schwierigkeiten zu melden."
+    ],
+    [
+     "Dokumentieren und informieren.",
+     "Bewahren Sie die Berichte, die datierten Behebungspläne, die Beurteilungen von Ausnahmen und gegebenenfalls den Nachweis der Information der Behörden auf. Benennen Sie eine verantwortliche Person für diese Akte."
+    ],
+    [
+     "Die Teams schulen.",
+     "Rückschritte entstehen durch neue Funktionen: Schulen Sie Konzeption, Entwicklung, Redaktion und Kundendienst mit [[svc:formations|Schulungen zur digitalen Barrierefreiheit]], die auf jede Rolle zugeschnitten sind."
+    ],
+    [
+     "Eine Beobachtung einrichten.",
+     "Verfolgen Sie die Veröffentlichung der Fundstelle der EN 301 549 V4.1.1 im Amtsblatt, die Veröffentlichung des RGAA 5, die Entscheidungen der französischen Berufungsgerichte zum Verhältnis zwischen Artikel 47 und dem Verbrauchergesetzbuch, die Beratungen des Ständerats über das Schweizer Inklusionsgesetz und die Positionen der Behörden in jedem Land, in dem Sie verkaufen."
+    ]
+   ]
+  ]
+ ],
+ "faq": [
+  [
+   "Gilt der EAA für eine B2B-Website?",
+   "Bei Dienstleistungen erfasst die Richtlinie nur solche, die gegenüber Verbrauchern erbracht werden. Eine Bestellplattform, die ausschließlich Geschäftskunden offensteht, mit Kontoeröffnung nur gegen Nachweis einer Unternehmensnummer, fällt daher nicht unter den elektronischen Geschäftsverkehr im Sinne des EAA. Kann eine Privatperson über dieselbe Website bestellen, ist sie für diesen Ablauf jedoch betroffen. Produkte wiederum sind erfasst, sobald sie für Verbraucher bestimmt sind, unabhängig vom Vertriebskanal."
+  ],
+  [
+   "Braucht eine Website oder App eine CE-Kennzeichnung?",
+   "Nein. CE-Kennzeichnung und EU-Konformitätserklärung betreffen Produkte: Computer, Smartphones, Terminals, E-Book-Lesegeräte. Eine Website oder App ist kein Produkt im Sinne der Richtlinie, wie die französische DGCCRF klarstellt. Bei Dienstleistungen besteht die Pflicht darin, die Anforderungen von Anhang I zu erfüllen, Informationen über die Barrierefreiheit der Dienstleistung zu veröffentlichen und den Behörden auf Verlangen die Konformität nachweisen zu können."
+  ],
+  [
+   "Reicht ein RGAA-Audit für den European Accessibility Act?",
+   "Für einen französischen Dienst ist es eine solide Grundlage: Die DGCCRF nennt den RGAA unter ihren Referenzen, und er beruht auf den WCAG 2.1. Er deckt aber nicht alles ab. Der EAA erfasst auch den Kundendienst, die Vertragsdokumente, die Hardware und die veröffentlichten Informationen. Für eine Gruppe, die in mehreren Ländern tätig ist, liefert eine Bewertung nach der Norm EN 301 549 und den WCAG 2.2 ein überall lesbares Ergebnis und nimmt die Fassung 4.1.1 der Norm vorweg."
+  ],
+  [
+   "Schreibt der EAA einen Mindestkonformitätsgrad vor?",
+   "Die Richtlinie nennt keinen Prozentsatz: Sie verlangt, dass die Dienstleistung die geltenden Anforderungen erfüllt. Ein Konformitätsgrad ist eine Kennzahl zur Verfolgung des Fortschritts, kein Schutz. Das Tribunal judiciaire von Caen hat das im Juni 2026 gezeigt, als es das Argument eines Konformitätsgrads von 71 % zurückwies: Ein Dienst kann sich nicht damit begnügen, teilweise barrierefrei zu sein. Ein vollständig nutzbarer Bestellprozess ist mehr wert als ein hoher Wert, der auf Nebenseiten erzielt wird."
+  ],
+  [
+   "Fallen mobile Apps unter den EAA?",
+   "Ja. Apps gehören zu den erfassten Dienstleistungen, sobald man mit ihnen bestellt, ein Bankkonto verwaltet, ein Ticket kauft, Reiseinformationen abruft oder auf audiovisuelle Inhalte zugreift. Für sie gilt keine Übergangsfrist. Sie werden auf echten Geräten bewertet, mit VoiceOver unter iOS und TalkBack unter Android, und die Bewertung umfasst auch die Bildschirme, die von Drittkomponenten geöffnet werden, etwa die Authentifizierung der Bank."
+  ],
+  [
+   "Wer kann gegen ein nicht konformes Unternehmen vorgehen?",
+   "Die Marktüberwachungsbehörden jedes Landes können von Amts wegen oder nach einer Meldung kontrollieren: in Luxemburg das OSAPS, in Frankreich die DGCCRF und die Fachbehörden. Verbände von Menschen mit Behinderungen können zudem Gerichte anrufen; in Frankreich haben mehrere seit 2025 im Eilverfahren Anordnungen mit Zwangsgeld beantragt oder erwirkt. Verbraucherinnen und Verbraucher können eine Schwierigkeit schließlich dem Unternehmen selbst melden, das über einen barrierefreien Kanal antworten können muss."
+  ],
+  [
+   "Gibt es das luxemburgische Barrierefreiheitsgesetz auf Deutsch?",
+   "Ja. Für das Gesetz vom 8. März 2023 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen stellt die luxemburgische Regierung eine deutsche Fassung bereit, die die offizielle Terminologie übernimmt, etwa das Amt für die Überwachung der Barrierefreiheit von Produkten und Dienstleistungen (OSAPS). Im Streitfall ist allerdings allein die französische Fassung maßgebend. Für eine rechtliche Bewertung, etwa der Sanktionen, sollten Sie daher die französische konsolidierte Fassung heranziehen."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Fällt Ihre Dienstleistung unter den EAA?",
+ "cta_text": "Wir bestimmen Ihren Anwendungsbereich und bewerten Ihre kritischen Abläufe nach den WCAG und der Norm EN 301 549. Ein erstes Gespräch genügt, um zu wissen, wo Sie anfangen sollten.",
+ "related": [
+  "france",
+  "belgique",
+  "normes"
+ ],
+ "cluster": "reglementation"
 }

@@ -1,184 +1,723 @@
 {
-  "slug": "digitale-toegankelijkheid-luxemburg",
-  "h1": "Digitale toegankelijkheid in Luxemburg: wat SIP en OSAPS controleren in 2026",
-  "crumb": "Digitale toegankelijkheid in Luxemburg",
-  "meta_title": "Digitale toegankelijkheid Luxemburg: RAWeb, RAAM en EAA in 2026",
-  "meta_desc": "Wet van 28 mei 2019, RAWeb 1.1, RAAM 1.1 en de EAA-wet van 8 maart 2023: verplichtingen, controles, sancties en auditmethode voor mobiele apps in Luxemburg.",
-  "card_desc": "Overheid, EAA, RAWeb en RAAM: wie controleert wat in Luxemburg, en hoe u een mobiele app laat auditeren.",
-  "cat": "reglementation",
-  "where": "Luxemburg",
-  "cover": "LU",
-  "cover_note": ["Wet van 28 mei 2019", "RAWeb en RAAM"],
-  "date": "2026-10-27",
-  "lead": "Digitale toegankelijkheid in Luxemburg steunt op twee wetten en twee autoriteiten: de wet van 28 mei 2019 voor websites en apps van de publieke sector, waarop de Service information et presse (SIP) toeziet, en de wet van 8 maart 2023, die de European Accessibility Act omzet en het markttoezicht toevertrouwt aan het OSAPS. De nationale referentiekaders RAWeb 1.1 en RAAM 1.1 vertalen de norm EN 301 549 in controleerbare criteria, voor het web en voor mobiele apps. Dit artikel legt uit wie wat moet doen, wat de gepubliceerde controles laten zien en hoe de audit van een app volgens RAAM concreet verloopt. Het is ook bedoeld voor Belgische organisaties die in het Groothertogdom actief zijn of er klanten bedienen.",
-  "body": [
-    ["h2", "wet-28-mei-2019", "Digitale toegankelijkheid in Luxemburg: wat de wet van 28 mei 2019 oplegt"],
-    ["p", "De wet van 28 mei 2019 betreffende de toegankelijkheid van websites en mobiele applicaties van overheidsinstanties zet richtlijn (EU) 2016/2102 om in Luxemburgs recht. Het uitgangspunt is eenvoudig: een overheidswebsite of -app moet bruikbaar zijn voor iemand die blind, slechtziend of doof is, of een motorische of cognitieve beperking heeft, met zijn eigen hulpmiddelen. De wet bevat zelf geen lijst met technische criteria. Ze verwijst naar de geharmoniseerde Europese norm EN 301 549, in versie V3.2.1, die Luxemburg vervolgens uitwerkt in nationale referentiekaders."],
-    ["p", "Deze toegankelijkheidswet vormt de basis van het hele Luxemburgse systeem voor de publieke sector. Het officiële portaal licht de details toe op zijn pagina over de [[https://accessibilite.public.lu/fr/obligations.html|wettelijke verplichtingen inzake digitale toegankelijkheid (in het Frans)]], de referentietekst voor een juridische dienst of een projectverantwoordelijke. De volgende paragrafen behandelen de punten die in de praktijk de meeste vragen oproepen."],
-    ["h3", "Welke organisaties eronder vallen"],
-    ["p", "De wet geldt voor de Staat, de gemeenten, bepaalde publiekrechtelijke instellingen en de verenigingen die door die overheden zijn opgericht. Concreet gaat het om de ministeries en hun administraties, de gemeenten en de intercommunale samenwerkingsverbanden (syndicats de communes), de offices sociaux, die vergelijkbaar zijn met een Belgisch OCMW, en de openbare instellingen. Een omzendbrief van het ministerie van Binnenlandse Zaken van 11 augustus 2021 heeft die verplichtingen overigens nog eens in herinnering gebracht aan de gemeentebesturen, de syndicats de communes, de offices sociaux en de openbare instellingen die onder hun toezicht staan."],
-    ["p", "Mobiele apps vallen onder de wet zodra ze door of in opdracht van een overheidsinstantie worden ontworpen en ontwikkeld. Een app die bij een webbureau of een IT-dienstverlener is besteld, blijft dus de verantwoordelijkheid van de instantie die ze publiceert: die ondertekent de toegankelijkheidsverklaring en beantwoordt de klachten. Het bestek moet daar vanaf de aanbesteding rekening mee houden, net zoals een Vlaamse gemeente of een FOD dat zou doen bij een overheidsopdracht voor een nieuwe website."],
-    ["p", "Enkele categorieën vallen buiten het toepassingsgebied van de wet:"],
-    ["ul", ["de websites en apps van openbare omroepen;", "bepaalde niet-gouvernementele organisaties;", "de websites en apps van scholen in het basis- en secundair onderwijs en van kinderdagverblijven, behalve voor inhoud die verband houdt met essentiële administratieve functies online, zoals een inschrijving of een betaling."]],
-    ["h3", "Vrijgestelde inhoud"],
-    ["p", "Ook bepaalde inhoud ontsnapt aan de verplichting, afhankelijk van de aard en de publicatiedatum ervan. Die uitzonderingen zijn nauwkeurig afgebakend en gedateerd; ze dekken niet zomaar een volledige oude website."],
-    ["ul", ["kantoorbestanden die vóór 23 september 2018 zijn gepubliceerd, tenzij ze nodig zijn voor een lopende administratieve procedure;", "vooraf opgenomen tijdgebonden media die vóór 23 september 2020 zijn gepubliceerd;", "inhoud van intranetten en extranetten die vóór 23 september 2019 is gepubliceerd, tot de volgende ingrijpende herziening ervan;", "gearchiveerde inhoud die niet nodig is voor een lopende procedure en na 23 september 2019 niet meer is bijgewerkt;", "live uitgezonden tijdgebonden media, inhoud van derden en bepaalde reproducties van erfgoedstukken."]],
-    ["p", "Een veelvoorkomend voorbeeld: een gemeente publiceert elke maand het verslag van haar gemeenteraad als pdf. De verslagen van vóór september 2018 mogen blijven zoals ze zijn, als ze voor geen enkele procedure nodig zijn. De verslagen die sindsdien zijn gepubliceerd, moeten toegankelijk zijn of een toegankelijk alternatief hebben, bijvoorbeeld een html-versie van dezelfde inhoud."],
-    ["h3", "De concrete verplichtingen"],
-    ["ul", ["websites en apps in overeenstemming brengen met de eisen van de norm EN 301 549, beoordeeld met RAWeb voor het web en RAAM voor mobiel;", "voor elke website en elke app een toegankelijkheidsverklaring publiceren en die actueel houden;", "een toegankelijk mechanisme aanbieden om een gebrek te melden of een alternatief te vragen, de ontvangst bevestigen en binnen een maand antwoorden;", "de SIP binnen dertig dagen, zonder bijzondere formaliteiten, op de hoogte brengen van de publicatie of de bijwerking van de verklaring;", "in de verklaring vermelden dat de gebruiker zich kan wenden tot de SIP of tot de ombudsman van het Groothertogdom (de médiateur)."]],
-    ["h3", "Onevenredige last: een afgebakende afwijking"],
-    ["p", "Artikel 4 van de wet staat toe om van de eisen af te wijken wanneer ze een onevenredige last zouden opleggen. Het officiële portaal omkadert dat begrip strikt: het wordt geval per geval beoordeeld, voor een bepaalde functionaliteit of inhoud, en kan in principe geen volledige website of app dekken. De omvang van de organisatie, haar middelen en de geraamde kosten en baten voor personen met een handicap spelen mee in de beoordeling."],
-    ["p", "Twee preciseringen voorkomen heel wat fouten. Ten eerste stelt het portaal uitdrukkelijk dat een gebrek aan prioriteit, tijd of kennis geen legitieme omstandigheid is. Ten tweede ontslaat een beroep op onevenredige last u niet van de plicht om een toegankelijkheidsverklaring te publiceren, noch om waar mogelijk een toegankelijk alternatief aan te bieden; voor een essentiële taak van openbare dienstverlening moet een gelijkwaardige alternatieve dienst worden aangeboden."],
-    ["note", "Om te onthouden", "Voor de publieke sector steunt het Luxemburgse systeem op controle, publicatie van de resultaten en bemiddeling: het monitoringverslag 2022-2024 vermeldt geen enkele sanctie. Het grootste risico is dus publieke kritiek en klachten, terwijl de wet van 8 maart 2023 over de EAA wel boetes voorziet."],
-
-    ["h2", "sip-en-accessibilite-public-lu", "De SIP en het portaal accessibilite.public.lu: wie de publieke sector controleert"],
-    ["p", "De Service information et presse van de regering (SIP), de voorlichtings- en persdienst, is het orgaan dat toeziet op de wet van 28 mei 2019. De dienst hangt af van het ministerie van Staat en staat rechtstreeks onder het gezag van de eerste minister. In de eerste plaats is het de communicatiedienst van de regering. Sinds de omzetting van de richtlijn draagt de SIP echter ook het volledige beleid inzake digitale toegankelijkheid van de publieke sector: controles, referentiekaders, klachten, informatie en opleiding."],
-    ["p", "Zijn opdrachten op dat vlak vallen in vier blokken uiteen:"],
-    ["ul", ["periodieke controles uitvoeren van de websites en apps van de publieke sector en daarover verslag uitbrengen bij de Europese Commissie;", "de beoordelingskaders publiceren en onderhouden: RAWeb voor het web, RAAM voor mobiele apps en RAPDF voor pdf-documenten;", "klachten van gebruikers behandelen, in overleg met de betrokken organisaties;", "informeren, sensibiliseren en opleiden, onder meer via het portaal accessibilite.public.lu, een observatorium en de cursussen die samen met het Institut national d'administration publique worden aangeboden."]],
-    ["h3", "Drie soorten controle"],
-    ["p", "Overeenkomstig uitvoeringsbesluit (EU) 2018/1524 hanteert de SIP drie vormen van controle. De diepgaande controle van een website is een volledige conformiteitsaudit volgens RAWeb: ze zegt of de site toegankelijk is en welke problemen werden vastgesteld. De controle van een mobiele app is een conformiteitsaudit volgens RAAM. De vereenvoudigde controle, ten slotte, wil non-conformiteiten opsporen en sensibiliseren, zonder dat ze toelaat een besluit te trekken over de conformiteit van de site."],
-    ["p", "De methode voor de vereenvoudigde controle is openbaar. Ze heeft betrekking op een steekproef van drie pagina's (de startpagina, een pagina met een formulier en een pagina met bijzondere inhoud zoals een video, een tabel of een complexe afbeelding), combineert 41 geautomatiseerde regels van de tool Axe met 47 RAWeb-criteria die handmatig worden gecontroleerd, en sluit downloadbare documenten uit. Zo kan de SIP veel meer websites bestrijken dan met een diepgaande audit."],
-    ["h3", "Een jaarlijkse kalender en open data"],
-    ["p", "De eerste controleperiode liep van 23 september 2020 tot eind 2021; sindsdien komt een periode overeen met een kalenderjaar. Het proces volgt steeds dezelfde stappen: inventaris van de websites en apps van de overheid, samenstelling van een steekproef in overleg met de belangrijkste spelers uit de gehandicaptensector, audits en daarna om de drie jaar een verslag aan de Europese Commissie. De inventarissen, de steekproeven, de auditrapporten, de toegankelijkheidsverklaringen en het overzicht van de klachten worden gepubliceerd op het open-dataportaal data.public.lu."],
-    ["p", "Die transparantie heeft een praktisch gevolg: een overheidsinstantie die in de steekproef van het jaar zit, ziet haar auditrapport gepubliceerd worden. De SIP heeft de steekproef voor 2026 gepubliceerd; nagaan of uw websites of apps erin staan, is een nuttige eerste stap."],
-    ["h3", "Openbare hulpmiddelen naast de controle"],
-    ["p", "Het portaal stelt een modelbestek, een auditkit, een generator voor toegankelijkheidsverklaringen en het klachtenformulier ter beschikking. De bronbestanden van de referentiekaders staan op GitHub, zodat de gemeenschap correcties kan voorstellen. In 2026 stelde de SIP ook Mia en Mil voor, twee Luxemburgstalige synthetische stemmen voor hulptechnologieën, open source en offline bruikbaar. Tot dan moesten gebruikers van schermlezers zich meestal behelpen met een Duitse stem om een Luxemburgse tekst te laten voorlezen."],
-
-    ["h2", "raweb", "RAWeb 1.1: het Luxemburgse referentiekader voor het web en de verschillen met de RGAA"],
-    ["p", "RAWeb, het Référentiel d'évaluation de l'accessibilité web, is de methode waarmee wordt nagegaan of een webpagina voldoet aan de eisen van de norm EN 301 549. De [[https://accessibilite.public.lu/fr/raweb1.1/index.html|versie 1.1, gepubliceerd op 6 februari 2026 (in het Frans)]], telt 136 controlecriteria, verdeeld over 17 thema's. Ze geldt voor alle html-inhoud (HTML4, XHTML1 en HTML5); native mobiele apps vallen onder RAAM."],
-    ["p", "RAWeb neemt inhoud over uit de Franse RGAA 4.1.2, door de SIP aangepast aan het Luxemburgse juridische kader. De eerste dertien thema's zullen iedereen die de RGAA kent bekend voorkomen: afbeeldingen, frames, kleuren, multimedia, tabellen, links, scripts, verplichte elementen, structurering van de informatie, presentatie van de informatie, formulieren, navigatie en raadpleging. RAWeb voegt er vier thema's aan toe: documentatie en toegankelijkheidsfuncties, bewerkingstools, ondersteunende diensten en realtimecommunicatie."],
-    ["h3", "Waarom 136 criteria in plaats van 106"],
-    ["p", "De RGAA 4.1.2 telt 106 criteria en concentreert zich op de eisen die uit de WCAG voortvloeien. De norm EN 301 549 gaat verder: ze behandelt ook de documentatie van een dienst, de tools waarmee inhoud wordt gepubliceerd, de klantenondersteuning en realtimecommunicatie. RAWeb dekt die eisen, wat de 30 extra criteria verklaart die in het Luxemburgse monitoringverslag worden vermeld. De SIP gebruikte de RGAA voor zijn diepgaande controles tot 2023 en vanaf 2024 RAWeb."],
-    ["p", "Het directe gevolg: een RGAA-audit die voor een Franse website is uitgevoerd, volstaat niet om de conformiteit van een Luxemburgse website aan te tonen. Hij dekt het grootste deel, maar laat de criteria buiten beschouwing die eigen zijn aan de norm, bijvoorbeeld de toegankelijkheid van de online help, van een supportchat of van een back-office om inhoud te publiceren. De behaalde scores zijn ook niet rechtstreeks vergelijkbaar, omdat de noemer verandert. Ons artikel over [[article:normes|de normen en referentiekaders voor toegankelijkheid]] gaat dieper in op die overeenkomsten, en de pagina [[standards|normen per land]] vat ze samen."],
-    ["p", "Voor een Belgische lezer is dat een vertrouwd verhaal in omgekeerde richting. België heeft geen eigen nationaal referentiekader en toetst rechtstreeks aan EN 301 549. Een audit die in Brussel of Gent volgens de Europese norm werd uitgevoerd, sluit inhoudelijk dus nauw aan bij RAWeb, maar levert geen score op die u zonder herberekening in een Luxemburgse toegankelijkheidsverklaring kunt overnemen."],
-    ["h3", "RAPDF voor documenten"],
-    ["p", "Luxemburg beschikt ook over een referentiekader voor pdf-documenten, RAPDF, dat in 2023 werd ingevoerd en in 2026 eveneens naar versie 1.1 is overgestapt. Dat is nuttig voor administraties, die veel formulieren, verslagen en beslissingen als pdf publiceren: kantoordocumenten zijn de meest aangevoerde uitzondering in de toegankelijkheidsverklaringen, en ontoegankelijke pdf's zijn de belangrijkste reden voor klachten die de SIP over de periode 2022-2024 heeft geregistreerd."],
-
-    ["h2", "raam", "RAAM 1.1: het referentiekader voor de toegankelijkheid van mobiele apps"],
-    ["p", "RAAM, het Référentiel d'évaluation de l'accessibilité des applications mobiles, is een van de bijzonderheden van Luxemburg. Weinig landen beschikken over een zo gedetailleerde openbare methode om een native app te beoordelen. De [[https://accessibilite.public.lu/fr/raam1.1/index.html|versie 1.1, gepubliceerd op 24 februari 2025 (in het Frans)]], telt 108 controlecriteria en maakt het mogelijk na te gaan of een app voldoet aan de norm EN 301 549 V3.2.1. Ze wordt verspreid onder de licentie CC-BY 3.0 LU."],
-    ["p", "RAAM bestrijkt de hoofdstukken van de norm die op een app betrekking hebben: generieke eisen (hoofdstuk 5), tweerichtingsspraakcommunicatie (6), videofuncties (7), niet-webdocumenten (10), software (11) en documentatie en ondersteunende diensten (12). De criteria zijn ingedeeld in vijftien thema's:"],
-    ["ul", ["grafische elementen, kleuren, multimedia, tabellen;", "interfacecomponenten, verplichte elementen, structurering van de informatie, presentatie van de informatie;", "formulieren, navigatie, raadpleging;", "documentatie en toegankelijkheidsfuncties, bewerkingstools, ondersteunende diensten, realtimecommunicatie."]],
-    ["h3", "Wat er met versie 1.1 is veranderd"],
-    ["p", "De eerste versie van RAAM, gepubliceerd in juni 2021, telde 107 criteria. Versie 1.1 voegt er één aan toe, criterium 14.3, dat voortkomt uit een opsplitsing van thema 12 om de eisen leesbaarder te maken. Ze herziet ook verschillende methoden: het contrast houdt voortaan rekening met de werkelijke tekstgrootte, nieuwe tests dekken de ondertiteling van live media, en de drempel voor knipperen gaat van “minder dan 3 per seconde” naar “3 per seconde of minder”."],
-    ["p", "De methodologie heeft er een principe van niet-interferentie bij gekregen, overgenomen uit RAWeb: vrijgestelde inhoud of inhoud waarvoor een afwijking geldt, hoeft niet conform te zijn, maar mag de toegang tot de rest van het scherm niet verhinderen. Ze verduidelijkt ook hoe er met of zonder toegankelijkheidsdienst voor het toetsenbord op Android wordt getest, en hoe een tekstgrootte wordt gemeten op basis van schermafbeeldingen."],
-    ["h3", "Waarom een apart kader naast het web"],
-    ["p", "Bij een native app heeft de auditor bijna nooit toegang tot de broncode. Hij kan geen attribuut inspecteren zoals op een webpagina: hij controleert wat het systeem werkelijk doorgeeft aan de hulptechnologieën. De tests van RAAM steunen dus op schermlezers, de systeeminstellingen en de inspectietools van Apple en Google. Dat is een andere manier van werken, die echte toestellen en een goede kennis van elk platform vereist. RAAM is het Luxemburgse referentiekader; elders geldt dezelfde methode met het lokale referentiekader, zoals onze pagina over de [[svc:audit-raam|audit van mobiele apps volgens RAAM]] uitlegt."],
-
-    ["h2", "verklaring-en-klachten", "Toegankelijkheidsverklaring en klachten: het Luxemburgse circuit"],
-    ["p", "De toegankelijkheidsverklaring is het document dat de gebruiker, de SIP en soms de pers als eerste raadplegen. Ze vermeldt een conformiteitsstatus die door een audit is vastgesteld, volgens drie niveaus die het officiële portaal definieert."],
-    ["ul", ["volledige conformiteit: alle controlecriteria van het referentiekader worden nageleefd, dus een score van 100 % na audit;", "gedeeltelijke conformiteit: minstens 50 % van de controlecriteria wordt nageleefd;", "niet-conformiteit: er is geen geldige audit uitgevoerd, of minder dan 50 % van de criteria wordt nageleefd."]],
-    ["p", "Naast die status somt de verklaring de ontoegankelijke inhoud op. Ze maakt daarbij een onderscheid tussen wat niet conform is, wat vrijgesteld is en wat onder onevenredige last valt, met de verantwoording en de aangeboden alternatieven. Ze beschrijft de beschikbare toegankelijkheidsfuncties, vermeldt of het om een zelfbeoordeling of een beoordeling door een derde gaat, geeft een contactadres en herinnert aan de mogelijkheid om zich tot de SIP of de ombudsman te wenden."],
-    ["h3", "Waar u ze publiceert, en in welke talen"],
-    ["p", "Voor een website moet de verklaring makkelijk te vinden zijn: op elke pagina moet een link staan, bijvoorbeeld in de footer. Voor een app wordt ze gepubliceerd op de website van de verantwoordelijke organisatie of in de informatie die beschikbaar is op het moment van downloaden, dus op de pagina in de App Store of op Google Play. De officiële generator maakt de verklaring aan in het Frans, het Duits, het Engels en het Luxemburgs, en raadt aan ze aan te bieden in elke taal van een meertalige website."],
-    ["p", "Na publicatie stuurt de organisatie het adres van haar verklaring naar de SIP, via accessibilite@sip.etat.lu. De generator raadt aan opnieuw te evalueren na elke grote herwerking en de verklaring minstens één keer per jaar na te lezen. Voor het opstellen zelf bespreekt ons artikel over [[article:declaration|de toegankelijkheidsverklaring]] de meest gemaakte fouten, in Frankrijk zowel als in Luxemburg."],
-    ["h3", "Het verloop van een klacht"],
-    ["p", "Neem een gebruiker die een aanvraagformulier voor een uitkering niet kan verzenden met TalkBack, omdat de knop “Verzenden” niet wordt voorgelezen. Hij wendt zich eerst tot de organisatie, via het contactpunt in de toegankelijkheidsverklaring. De organisatie moet de ontvangst bevestigen en binnen een maand na verzending antwoorden; is het probleem complex, dan mag ze een langere termijn vastleggen, op voorwaarde dat ze die verantwoordt."],
-    ["p", "Is de gebruiker niet tevreden met het antwoord, dan kan hij een klacht indienen bij de SIP via het onlineklachtenformulier, of bij de ombudsman van het Groothertogdom Luxemburg. De SIP verbindt zich ertoe uiterlijk binnen een maand per e-mail te antwoorden. In de praktijk analyseert de dienst de vraag, neemt hij contact op met de organisatie en geeft hij haar een maand om te reageren. Zolang de verklaring geen toegankelijk contactpunt biedt, slaat de organisatie zelf de eerste stap over en laat ze de klacht rechtstreeks bij de autoriteit terechtkomen."],
-
-    ["h2", "resultaten-monitoring", "Wat de gepubliceerde controles van 2022 tot 2024 laten zien"],
-    ["p", "Luxemburg publiceert zijn resultaten met een zeldzame graad van detail. Het [[https://download.data.public.lu/resources/rapport-sur-le-controle-de-laccessibilite-des-sites-internet-et-applications-mobiles-du-secteur-public-au-luxembourg-2022-2024/20250115-100700/wad-monitoring-report-lu-2022-2024.pdf|verslag over de controle van de toegankelijkheid van websites en apps van de publieke sector 2022-2024 (in het Frans)]], dat aan de Europese Commissie werd bezorgd, geeft een nauwkeurig beeld van de situatie. Alle cijfers in deze sectie komen eruit."],
-    ["table", {"caption": "Controles van de SIP en gemiddelde scores, 2022-2024 (bron: monitoringverslag 2022-2024)", "head": ["Indicator", "2022", "2023", "2024"], "rows": [
-      ["Diepgaande audits van websites", "17", "15", "16"],
-      ["Vereenvoudigde audits van websites", "87", "93", "93"],
-      ["Diepgaande audits van mobiele apps", "6", "6", "7"],
-      ["Gemiddelde score diepgaande audits van websites", "48 %", "54 %", "61 %"],
-      ["Gemiddelde score audits van mobiele apps", "49 %", "43 %", "37 %"],
-      ["Klachten ontvangen door de SIP", "9", "4", "7"]
-    ]}],
-    ["p", "De trend is duidelijk: de websites gaan vooruit, van een gemiddelde score van 48 % naar 61 % in drie jaar, terwijl de mobiele apps achteruitgaan, van 49 % naar 37 %. Het verslag stelt vast dat in 2024, net als in 2021, geen enkele geauditeerde app gedeeltelijke conformiteit bereikt (in 2022 en 2023 lukte dat telkens twee apps). Mobiel is vandaag het zwakke punt van de Luxemburgse publieke sector, wat bijzondere aandacht voor RAAM rechtvaardigt."],
-    ["h3", "De meest voorkomende non-conformiteiten"],
-    ["p", "Bij de apps zijn de drie meest voorkomende gebreken interfacecomponenten die niet compatibel zijn met hulptechnologieën (criterium 5.1), een ongeschikte structuur van titels (criterium 7.1) en inhoud die zich niet aanpast aan de schermoriëntatie (criterium 11.9). Bij de websites, in diepgaande controle, gaat het om scripts die niet compatibel zijn met hulptechnologieën, tags die voor de opmaak worden gebruikt en slecht gestructureerde lijsten."],
-    ["p", "In de vereenvoudigde controle is het vaakst vastgestelde gebrek het ontbreken van een aanduiding van taalwissels, vóór scripts die niet met toetsenbord en muis bruikbaar zijn en onvoldoende tekstcontrast. Dat eerste resultaat is typisch Luxemburgs: een Franstalige pagina die een procedure in het Duits vermeldt of de naam van een instelling in het Luxemburgs, moet die overgang aangeven, zodat de schermlezer van stem en uitspraak wisselt. Hetzelfde aandachtspunt geldt voor tweetalige Brusselse websites die Nederlandse en Franse benamingen van diensten mengen."],
-    ["h3", "Verklaringen, afwijkingen en klachten"],
-    ["p", "Het verslag telt 431 toegankelijkheidsverklaringen van websites en 30 verklaringen van apps, voor 979 websites en apps in de inventaris van de publieke sector. In 2024 riep 61 % van de verklaringen een afwijking wegens onevenredige last in, een gebruik dat het officiële kader nochtans als uitzonderlijk voorstelt. De SIP ontving over de periode 20 klachten; ontoegankelijke pdf's zijn de belangrijkste reden, vóór problemen met webpagina's en apps."],
-    ["p", "In absolute cijfers zijn dat bescheiden aantallen, maar ze zijn openbaar. Voor een administratie is het risico minder een sanctie dan een gepubliceerd auditrapport met een lage score, of een verklaring die zich zonder verantwoording op onevenredige last beroept. Meer over de begeleiding van administraties leest u op onze pagina over de [[sector:public|publieke sector]]."],
-
-    ["h2", "eaa-luxemburg", "EAA in Luxemburg: de wet van 8 maart 2023 en het OSAPS"],
-    ["p", "Luxemburg heeft richtlijn (EU) 2019/882, de European Accessibility Act, omgezet met de [[https://accessibilite-produits-services.public.lu/dam-assets/lgislation/loi-du-8-mars-2023.pdf|wet van 8 maart 2023 betreffende de toegankelijkheidsvoorschriften voor producten en diensten (in het Frans)]], gepubliceerd in het Mémorial A nr. 133 van 15 maart 2023. Volgens artikel 36 is ze op 28 juni 2025 in werking getreden. Ze richt zich deze keer tot de marktdeelnemers, privé en publiek, die producten op de markt brengen of bepaalde diensten aan consumenten verlenen."],
-    ["h3", "Welke producten en diensten eronder vallen"],
-    ["p", "Aan de kant van de producten: computers en besturingssystemen voor consumenten, smartphones en tablets, betaalterminals, incheckautomaten en automaten voor vervoerbewijzen (behalve die in voertuigen zijn ingebouwd), smart-tv's en e-readers. Aan de kant van de diensten: elektronische communicatie, toegang tot audiovisuele mediadiensten, personenvervoer door de lucht, per spoor, per bus en over het water (websites, apps, elektronische tickets en informatie), bankdiensten voor consumenten, e-books, e-commerce en de beantwoording van noodcommunicatie naar 112. Ons artikel over [[article:eaa|de European Accessibility Act]] bespreekt dat toepassingsgebied, dat in alle lidstaten hetzelfde is."],
-    ["h3", "Het OSAPS als toezichthouder"],
-    ["p", "Artikel 3 van de wet richt het Office de la surveillance de l'accessibilité des produits et services (OSAPS) op, de dienst voor het toezicht op de toegankelijkheid van producten en diensten. Het staat onder het gezag van de minister die bevoegd is voor het beleid ten aanzien van personen met een handicap, vandaag het ministerie van Gezin, Solidariteit, Samenleven en Opvang. Voor producten zijn de controles toevertrouwd aan het OSAPS, de Administration des douanes et accises en de groothertogelijke politie (artikel 28, § 1). Voor diensten controleren het OSAPS en de groothertogelijke politie de conformiteit, samen met de bevoegde sectorale autoriteiten (artikel 28, § 2)."],
-    ["p", "Het OSAPS is ook het aanspreekpunt voor toegankelijkheid en levert richtsnoeren en hulpmiddelen, in het bijzonder aan micro-ondernemingen. Elke natuurlijke of rechtspersoon kan er een niet-conform product of een niet-conforme dienst melden. Die melding gebeurt gratis online via MyGuichet.lu, met de mogelijkheid om een schermafbeelding of een document toe te voegen. Een vereniging van personen met een handicap kan dat als rechtspersoon doen."],
-    ["h3", "Voorziene sancties"],
-    ["ul", ["een administratieve geldboete van 250 tot 15.000 euro, opgelegd door het OSAPS aan de marktdeelnemer die weigert documenten of informatie te verstrekken, de controles belemmert of de beslissingen van de dienst niet naleeft (artikel 32);", "een strafrechtelijke geldboete van 251 tot 500.000 euro voor de marktdeelnemer die de bepalingen van de wet overtreedt, afgestemd op de omvang en de ernst van de inbreuk (artikel 33, § 1);", "bij herhaling een geldboete van 500 tot 1.000.000 euro (artikel 33, § 2);", "een beperking of verbod op het aanbieden van een niet-conform product of het verlenen van een niet-conforme dienst, een beslissing waartegen binnen drie maanden een beroep tot hervorming (recours en réformation) kan worden ingesteld bij de administratieve rechtbank (artikel 28, § 5)."]],
-    ["h3", "Vrijstellingen en overgangstermijnen"],
-    ["p", "De wet definieert een micro-onderneming als een onderneming die minder dan tien personen tewerkstelt en waarvan de jaaromzet of het jaarlijkse balanstotaal niet meer dan 2.000.000 euro bedraagt. Micro-ondernemingen die diensten verlenen, zijn vrijgesteld van de toegankelijkheidseisen; micro-ondernemingen die producten vervaardigen of verdelen, blijven aan de eisen onderworpen, met lichtere documentatieverplichtingen. Een grotere kmo die online aan consumenten verkoopt, valt daarentegen volledig onder de wet."],
-    ["p", "Er gelden overgangstermijnen. Dienstverleners mogen de producten die ze vóór de inwerkingtreding rechtmatig gebruikten, tot 28 juni 2030 blijven gebruiken. Dienstencontracten die vóór die datum zijn gesloten, mogen ongewijzigd doorlopen tot ze verstrijken, met een maximum van vijf jaar. Selfserviceterminals die al in gebruik zijn, mogen dat blijven tot het einde van hun economische levensduur, zonder twintig jaar na hun ingebruikname te overschrijden."],
-    ["p", "Zoals overal in de Unie moet de aanbieder van een betrokken dienst ook in openbaar toegankelijke informatie, en met name in zijn algemene voorwaarden, uitleggen hoe zijn dienst aan de toegankelijkheidseisen voldoet. Dat punt wordt vaak vergeten: een webshop kan technisch in orde zijn en toch in gebreke blijven door het ontbreken van die informatie. Voor de technische beoordeling is de norm EN 301 549 de referentie; RAWeb en RAAM zijn openbare, gedetailleerde en gratis methoden om die norm toe te passen, en het OSAPS vermeldt ze trouwens bij zijn hulpmiddelen. Voor die spelers bieden wij een [[svc:audit-conformite|conformiteitsaudit volgens EN 301 549 en WCAG]] aan."],
-    ["p", "Voor een Belgische onderneming die vanuit Vlaanderen of Brussel een webshop of een app voor Luxemburgse consumenten uitbaat, is dit kader herkenbaar: de inhoudelijke eisen komen uit dezelfde Europese richtlijn als in België. Het verschil zit in de toezichthouder en de procedure. In het Groothertogdom komt een melding bij het OSAPS terecht, en de geldboetes zijn die van de Luxemburgse wet van 8 maart 2023."],
-
-    ["h2", "luxemburgse-bijzonderheden", "Meertaligheid, financieel centrum, grensarbeiders: de Luxemburgse bijzonderheden"],
-    ["p", "De technische eisen zijn Europees, maar bij de toepassing ervan in Luxemburg komen drie realiteiten samen die elders zelden tegelijk voorkomen. Ze wegen rechtstreeks op de kwaliteit van een audit en op de kosten van de correcties."],
-    ["h3", "Vier talen in één interface"],
-    ["p", "De wet van 24 februari 1984 op het taalgebruik heeft het Luxemburgs erkend als nationale taal, het Frans tot taal van de wetgeving gemaakt en het Frans, het Duits en het Luxemburgs als administratieve talen vastgelegd. Daar komt het Engels heel vaak bij in de financiële dienstverlening, de Europese instellingen en de internationale ondernemingen. Eenzelfde overheidswebsite kan dus in vier versies bestaan, en eenzelfde pagina kan verschillende talen door elkaar gebruiken."],
-    ["p", "Voor toegankelijkheid is elke taalversie volwaardige inhoud: tekstalternatieven, knoplabels, foutmeldingen, ondertitels en transcripties moeten in elke taal bestaan. De taal van elke pagina moet zijn aangegeven, en elke passage in een andere taal moet worden gemarkeerd; zoals we zagen, is dat het meest vastgestelde gebrek in de vereenvoudigde controles. RAAM 1.1 heeft overigens een voorwaarde toegevoegd over de taal van de ondertitels. Ten slotte moet een auditsteekproef de taalversies bestrijken die werkelijk worden gebruikt, anders blijven de gebreken van een secundaire vertaling onopgemerkt."],
-    ["h3", "Het financieel centrum en de bankdiensten"],
-    ["p", "Bankdiensten voor consumenten vallen onder de EAA. Voor een retailbank, een betalingsinstelling of een uitgever van elektronisch geld met vestiging in Luxemburg is de mobiele app vaak het belangrijkste kanaal in de klantrelatie. De knelpunten zijn bekend: sterke authenticatie met code of biometrie zonder alternatief, sessietijden die te kort zijn voor een gebruiker van een schermlezer, portefeuillegrafieken zonder tekstueel equivalent, contracten en rekeninguittreksels als pdf zonder tags, en visuele captcha's bij het openen van een rekening."],
-    ["p", "Privébanken en spelers die uitsluitend professionele klanten bedienen, moeten hun toepassingsgebied nauwkeurig analyseren, omdat de EAA zich richt op diensten die aan consumenten worden verleend. Die analyse verdient het om gedocumenteerd en door de juridische dienst gevalideerd te worden, in plaats van zomaar te worden aangenomen. Onze pagina over [[sector:grands-comptes|grote ondernemingen]] beschrijft hoe wij die organisaties begeleiden."],
-    ["h3", "Grensarbeiders, volwaardige gebruikers"],
-    ["p", "Volgens [[https://statistiques.public.lu/dam-assets/catalogue-publications/regards/2026/regards-frontaliers-120326-03.pdf|STATEC (in het Frans)]] telde Luxemburg in 2023 225.840 inkomende grensarbeiders, van wie 54,2 % in Frankrijk woonde, 23 % in Duitsland en 22,7 % in België. Die mensen gebruiken de Luxemburgse digitale diensten (sociale zekerheid, fiscaliteit, vervoer, bank) met toestellen en instellingen die in hun eigen land zijn geconfigureerd, soms in een andere taal dan die van de dienst."],
-    ["p", "Voor een Luxemburgse organisatie betekent dat testen met uiteenlopende configuraties, met name met schermlezers die in het Frans of het Duits zijn ingesteld. Voor een organisatie die aan beide kanten van de grens actief is, betekent het ook omgaan met verschillende regimes: de RGAA in Frankrijk, de norm EN 301 549 in België, RAWeb en RAAM in Luxemburg. Onze artikelen over [[article:belgique|digitale toegankelijkheid in België]] en [[article:france|digitale toegankelijkheid in Frankrijk]] stellen de twee buurlanden voor; onze consultants werken in het Frans, het Duits en het Engels."],
-
-    ["h2", "auditmethode-raam", "Een mobiele app auditeren volgens RAAM: de methode stap voor stap"],
-    ["p", "De [[https://accessibilite.public.lu/en/raam1.1/methodologie.html|testmethodologie van RAAM 1.1 (in het Engels)]] is openbaar en nauwkeurig. Toch laat ze de auditor heel wat praktische keuzes. Zo verloopt concreet de audit van een app van een overheidsinstantie of een onderneming, op iOS en op Android."],
-    ["ol", [
-      ["De scope en de omgeving afbakenen.", "We leggen de versie van de geauditeerde app vast (de gepubliceerde versie of een testbuild via TestFlight of een testtrack op Google Play), de nodige testaccounts en de fictieve gegevens om de procedures zonder risico te doorlopen. Is de app bedoeld voor een beheerde omgeving, bijvoorbeeld een vloot toestellen die door een bank of een administratie wordt beheerd, dan vraagt RAAM om te testen met de configuraties die in die omgeving werkelijk worden gebruikt."],
-      ["De steekproef van schermen samenstellen.", "De methodologie legt, voor zover ze bestaan, de volgende schermen op: het startscherm, de wettelijke informatie, de authenticatie, het contact, de documentatieschermen, minstens één relevant scherm voor elk type dienst en elk hoofdgebruik (waaronder de zoekfunctie), minstens één downloadbaar document per dienst, alle schermen van een proces in meerdere stappen en de schermen van verschillende aard (datatabellen, multimedia, formulieren, realtimecommunicatie). Willekeurig gekozen schermen, goed voor minstens 10 % van de steekproef, vullen de selectie aan."],
-      ["De echte toestellen voorbereiden.", "De tests gebeuren op de laatste beschikbare versie van iOS en Android, of op de vorige versie, met de versies van VoiceOver en TalkBack die bij het systeem worden geleverd. RAAM preciseert dat het niet nodig is om Android op een bepaald toestelmodel te testen. In de praktijk voorzien we minstens één smartphone per platform, en een tablet als de app die ondersteunt."],
-      ["Testen met de schermlezer.", "Elk scherm wordt doorlopen met VoiceOver op iOS en TalkBack op Android, met veegbewegingen, door het scherm aan te raken en met de rotor of de leesopdrachten. Met het ondertitelpaneel van VoiceOver of de weergave van de spraakuitvoer van TalkBack kunnen we precies vastleggen wat wordt voorgelezen. We controleren of elke knop een naam, een rol en een status heeft, of de titels zijn gedeclareerd en of fout- en bevestigingsmeldingen worden voorgelezen zonder dat de focus onverwacht verspringt."],
-      ["Testen met extern toetsenbord en schakelaar.", "Op iOS activeren we de volledige toetsenbordtoegang; op Android testen we eerst met alleen het toetsenbord en daarna zo nodig met Switch Access, waarbij we bijvoorbeeld Tab koppelen aan “volgende”, Shift + Tab aan “vorige”, Enter aan “selecteren” en Esc aan “terug”. Het doel is elke functie te bereiken en te activeren, zonder valkuil en in een logische volgorde."],
-      ["Vergroting en weergave controleren.", "De tekstgrootte wordt verhoogd in de systeeminstellingen; op iOS raadt de methodologie aan te testen op 190 %, de waarde die het dichtst bij 200 % ligt en in het bedieningspaneel beschikbaar is. We controleren of teksten niet worden afgekapt of overlappen, of de app werkt in staande en liggende stand, en of het contrast voldoende blijft, gemeten op basis van schermafbeeldingen van het toestel."],
-      ["De andere vormen van gebruik nagaan.", "We controleren de alternatieven voor complexe gebaren (slepen, knijpen, schudden), de grootte en de tussenruimte van de aanraakzones, het beheer van tijdslimieten, de video's (ondertiteling, audiodescriptie), de ingebouwde webweergaven waarin een procedure verloopt, en de documenten die vanuit de app worden gedownload. De inspectietools van Apple (Accessibility Inspector) en Google (Accessibility Scanner) en Colour Contrast Analyser vullen de analyse aan, zonder de handmatige tests ooit te vervangen."],
-      ["De score berekenen en de niet-interferentie toepassen.", "Een criterium is pas gevalideerd als het wordt nageleefd op alle schermen van de steekproef waarop het van toepassing is: één scherm dat faalt, volstaat om het af te keuren. De conformiteitsscore zet de gevalideerde criteria af tegen de toepasselijke criteria. De niet-interferentiecriteria (controle over automatisch afgespeelde geluiden, geen toetsenbordval, controle over tijdslimieten, geen gevaarlijke flitsen, controle over bewegende inhoud) gelden zelfs voor vrijgestelde inhoud."],
-      ["Rapporteren en de verklaring opstellen.", "Het rapport geeft per scherm de niet-gevalideerde criteria, de betrokken elementen en afzonderlijke aanbevelingen voor de iOS- en Android-teams, die met verschillende componenten werken. Het dient als basis voor de toegankelijkheidsverklaring die op de website van de organisatie of op de pagina van de app wordt gepubliceerd."]
-    ]],
-    ["p", "Drie valkuilen komen vaak terug. De eerste is de audit van slechts één platform: iOS en Android hebben elk hun eigen componenten, en een hybride app kan op het ene correct zijn en op het andere tekortschieten; de audits van de SIP hebben trouwens afzonderlijk betrekking op iOS- en Android-versies. De tweede is een oriëntatie die zonder verantwoording in staande stand is vergrendeld, een van de meest vastgestelde gebreken. De derde is de aangepaste component (datumkiezer, carrousel, tabbladen) die zich niet kenbaar maakt aan hulptechnologieën. Om verder te gaan dan conformiteit, kunt u met een [[svc:test-utilisateur|test met gebruikers met een beperking]] nagaan of de gebruikerstrajecten echt bruikbaar zijn."],
-
-    ["h2", "overzichtstabel", "Wie past wat toe: organisatie, wettekst, referentiekader, controle"],
-    ["p", "De onderstaande tabel vat de meest voorkomende situaties samen. Ze vervangt geen juridische analyse van uw situatie, maar helpt u snel te bepalen onder welke tekst en welke autoriteit u valt."],
-    ["table", {"caption": "Digitale toegankelijkheid in Luxemburg: wetteksten, referentiekaders en autoriteiten per type organisatie", "head": ["Organisatie", "Toepasselijke tekst", "Beoordelingskader", "Controle en beroep"], "rows": [
-      ["Ministerie, staatsadministratie", "Wet van 28 mei 2019", "RAWeb 1.1 (web), RAAM 1.1 (mobiel), RAPDF 1.1 (pdf)", "SIP: controles, klachten; ombudsman"],
-      ["Gemeente, syndicat de communes, office social", "Wet van 28 mei 2019", "RAWeb 1.1, RAAM 1.1, RAPDF 1.1", "SIP; ombudsman"],
-      ["Openbare instelling, vereniging opgericht door overheden", "Wet van 28 mei 2019", "RAWeb 1.1, RAAM 1.1", "SIP; ombudsman"],
-      ["Basis- of secundaire school, kinderdagverblijf", "Buiten toepassingsgebied, behalve essentiële administratieve functies online", "RAWeb 1.1 voor die functies", "SIP voor de gedekte inhoud"],
-      ["Retailbank, betalingsinstelling", "Wet van 8 maart 2023 (EAA)", "EN 301 549; RAWeb en RAAM als methode", "OSAPS, groothertogelijke politie; boetes"],
-      ["Webshop van een onderneming die geen micro-onderneming is", "Wet van 8 maart 2023 (EAA)", "EN 301 549; RAWeb als methode", "OSAPS; boetes"],
-      ["Personenvervoerder (website, app, ticketing)", "Wet van 8 maart 2023 (EAA)", "EN 301 549; RAWeb en RAAM als methode", "OSAPS, sectorale autoriteiten"],
-      ["Fabrikant of invoerder van terminals, smartphones, e-readers", "Wet van 8 maart 2023 (EAA)", "Eisen van de wet, geharmoniseerde normen", "OSAPS, Douanes et accises, groothertogelijke politie"],
-      ["Micro-onderneming die diensten verleent", "Vrijgesteld van de eisen van de wet van 8 maart 2023", "Geen onder de EAA; WCAG aanbevolen", "Geen controle onder de EAA"]
-    ]}],
-    ["p", "Eenzelfde organisatie kan onder beide wetten vallen. Een openbare vervoersmaatschappij valt bijvoorbeeld onder de wet van 2019 voor haar institutionele websites en onder de wet van 2023 voor haar diensten van personenvervoer. De pagina [[country:luxembourg|digitale toegankelijkheid in Luxemburg]] zet de belangrijkste verplichtingen en de beschikbare diensten in het land op een rij."],
-
-    ["h2", "raweb-2-raam-2", "RAWeb 2 en RAAM 2 in 2027: anticiperen op de nieuwe norm EN 301 549"],
-    ["p", "Het kader verandert binnenkort. De herziene versie van de norm EN 301 549, met nummer 4.1.1, werd op 2 september 2026 goedgekeurd door CEN en ETSI; de publicatie in het Publicatieblad van de Europese Unie wordt tegen het einde van het jaar verwacht. Ze integreert onder meer de WCAG 2.2 en dient voortaan om de conformiteit te beoordelen zowel onder de richtlijn van 2016 over overheidswebsites als onder de European Accessibility Act."],
-    ["p", "De SIP heeft [[https://accessibilite.public.lu/en/news/2026-09-15-EN301549v4.html|aangekondigd dat RAWeb 2 en RAAM 2 in februari 2027 verschijnen (in het Engels)]]. De nieuwe versies behouden de aanpak met criteria, tests en methodologie, maar krijgen een structuur die aansluit bij die van de norm. Zo worden ze makkelijker bruikbaar voor wie de RGAA noch RAWeb kent, en verkleinen ze de verschillen in score tussen het referentiekader en de norm. De feedback van de gemeenschap die via GitHub werd verzameld, wordt erin verwerkt."],
-    ["p", "Zonder te wachten kunnen uw teams de zes WCAG 2.2-criteria toepassen die de norm toevoegt: niet-verborgen focus, alternatief voor sleepbewegingen, grootte van de doelen, consistente hulp, vermijden van overbodige invoer en toegankelijke authenticatie. De laatste twee raken rechtstreeks aan bankprocessen en administratieve procedures: niet opnieuw vragen naar informatie die al werd ingevoerd, en geen cognitieve test opleggen, zoals het overtypen van een vervormde code, zonder alternatief. Een [[svc:formations|opleiding voor de ontwerp- en ontwikkelteams]] begin 2027 voorkomt dat nieuwe inhoud wordt gemaakt volgens regels die al achterhaald zijn."],
-
-    ["h2", "actieplan", "Actieplan voor digitale toegankelijkheid in Luxemburg"],
-    ["p", "Onder welke tekst u ook valt, de aanpak volgt dezelfde stappen. U kunt er nog dit kwartaal mee beginnen, zonder op versie 2 van de referentiekaders te wachten."],
-    ["ol", [
-      ["Breng uw digitale diensten in kaart.", "Maak een lijst van de websites, apps, intranetten, extranetten en gepubliceerde documenten, met hun taal, hun doelgroep en hun leverancier. Voor een overheidsinstantie vergelijkt u uw lijst met de inventaris die op data.public.lu is gepubliceerd."],
-      ["Bepaal de toepasselijke tekst.", "Per dienst: de wet van 28 mei 2019, de wet van 8 maart 2023, of beide. Documenteer de grensgevallen (professionele klanten, micro-onderneming, vrijgestelde inhoud) en laat de analyse valideren door uw juridische dienst."],
-      ["Kies het referentiekader en de steekproef.", "RAWeb 1.1 voor het web, RAAM 1.1 voor apps, RAPDF 1.1 voor pdf's. Stel een steekproef samen die de essentiële trajecten en alle werkelijk gebruikte taalversies dekt."],
-      ["Voer de eerste audit uit.", "Laat elke dienst auditeren, voor mobiel op echte toestellen en met een onderscheid tussen iOS en Android. Een [[svc:audit-raam|RAAM-audit]] of een RAWeb-audit levert een onderbouwde conformiteitsscore op en een lijst met geprioriteerde correcties."],
-      ["Publiceer of verbeter de toegankelijkheidsverklaring.", "Gebruik de officiële generator, publiceer de verklaring in elke taal, voeg een toegankelijk contactpunt toe en bezorg, als overheidsinstantie, het adres binnen dertig dagen aan de SIP."],
-      ["Corrigeer volgens de impact.", "Pak eerst aan wat een essentieel traject blokkeert: authenticatie, betaling, aanvraagformulier, raadpleging van een officieel document. Neem de toegankelijkheidseisen op in uw ontwikkelcontracten en laat de [[svc:recette|toegankelijkheid controleren bij elke oplevering]], vóór elke ingebruikname."],
-      ["Bereid 2027 voor.", "Pas nu al de WCAG 2.2-criteria toe, volg de publicatie van RAWeb 2 en RAAM 2 in februari 2027 op, en plan een nieuwe audit na elke grote herwerking en minstens één jaarlijkse herlezing van uw verklaringen."]
-    ]],
-    ["p", "Valt u onder de EAA, voeg dan twee taken toe: de informatie over de toegankelijkheid van de dienst opstellen die in uw algemene voorwaarden moet komen, en de behandeling organiseren van meldingen die het OSAPS u zou kunnen bezorgen. Voor overheidsinstanties: houd er rekening mee dat de controlesteekproef voor 2026 al is gepubliceerd en dat de auditrapporten dat ook zullen worden. Ontwikkelen uw teams zelf, dan verlaagt een [[svc:developpement|begeleiding van de ontwikkelaars]] op iOS en Android de kosten van de correcties."]
+ "slug": "digitale-toegankelijkheid-luxemburg",
+ "h1": "Digitale toegankelijkheid in Luxemburg: wat SIP en OSAPS controleren in 2026",
+ "crumb": "Digitale toegankelijkheid in Luxemburg",
+ "meta_title": "Digitale toegankelijkheid Luxemburg: RAWeb, RAAM en EAA in 2026",
+ "meta_desc": "Wet van 28 mei 2019, RAWeb 1.1, RAAM 1.1 en de EAA-wet van 8 maart 2023: verplichtingen, controles, sancties en auditmethode voor mobiele apps in Luxemburg.",
+ "card_desc": "Overheid, EAA, RAWeb en RAAM: wie controleert wat in Luxemburg, en hoe u een mobiele app laat auditeren.",
+ "cat": "reglementation",
+ "where": "Luxemburg",
+ "cover": "LU",
+ "cover_note": [
+  "Wet van 28 mei 2019",
+  "RAWeb en RAAM"
+ ],
+ "date": "2026-10-27",
+ "lead": "Digitale toegankelijkheid in Luxemburg steunt op twee wetten en twee autoriteiten: de wet van 28 mei 2019 voor websites en apps van de publieke sector, waarop de Service information et presse (SIP) toeziet, en de wet van 8 maart 2023, die de European Accessibility Act omzet en het markttoezicht toevertrouwt aan het OSAPS. De nationale referentiekaders RAWeb 1.1 en RAAM 1.1 vertalen de norm EN 301 549 in controleerbare criteria, voor het web en voor mobiele apps. Dit artikel legt uit wie wat moet doen, wat de gepubliceerde controles laten zien en hoe de audit van een app volgens RAAM concreet verloopt. Het is ook bedoeld voor Belgische organisaties die in het Groothertogdom actief zijn of er klanten bedienen.",
+ "body": [
+  [
+   "h2",
+   "wet-28-mei-2019",
+   "Digitale toegankelijkheid in Luxemburg: wat de wet van 28 mei 2019 oplegt"
   ],
-  "faq": [
-    ["Moet een privéonderneming RAWeb of RAAM toepassen?", "Nee, die referentiekaders zijn door de wet van 28 mei 2019 opgelegd aan de publieke sector. Een onderneming die onder de wet van 8 maart 2023 valt, moet de toegankelijkheidseisen van de EAA naleven, beoordeeld aan de hand van de norm EN 301 549. RAWeb en RAAM blijven wel openbare, gratis en gedetailleerde methoden om die conformiteit aan te tonen, en hun criteria stemmen overeen met de eisen van de norm. Wie ze gebruikt, heeft het makkelijker in de dialoog met het OSAPS bij een melding."],
-    ["Is een RGAA-audit uit Frankrijk geldig in Luxemburg?", "Hij dekt een groot deel van de eisen, omdat RAWeb inhoud van de RGAA 4.1.2 overneemt, maar hij volstaat niet. RAWeb telt 136 criteria tegenover 106 voor de RGAA: de criteria over documentatie, bewerkingstools, ondersteunende diensten en realtimecommunicatie worden niet beoordeeld. Voor een Luxemburgse toegankelijkheidsverklaring moet u de audit op die punten aanvullen en de score volgens RAWeb herberekenen."],
-    ["Wat riskeert een overheidsinstantie die de wet van 28 mei 2019 niet naleeft?", "De wet voorziet geen boetes zoals die van de EAA, en het monitoringverslag 2022-2024 vermeldt geen enkele sanctie. De instantie stelt zich wel bloot aan een controle door de SIP, waarvan het rapport als open data wordt gepubliceerd, aan klachten die door de SIP of de ombudsman worden behandeld, en aan publieke kritiek. Een ontbrekende of foutieve verklaring valt bovendien meteen op, zowel bij de gebruikers als bij de autoriteit."],
-    ["Moet de toegankelijkheidsverklaring in het Luxemburgs worden vertaald?", "De officiële generator maakt de verklaring aan in het Frans, het Duits, het Engels en het Luxemburgs, en raadt aan ze aan te bieden in elke taal van een meertalige website. Bestaat uw website in drie talen, publiceer de verklaring dan in die drie talen. Het belangrijkste is dat een gebruiker de verklaring vindt in de taal van de pagina die hij bekijkt, met een toegankelijk contactpunt en de vermelding van de beroepsmogelijkheden."],
-    ["Hoe lang duurt de audit van een mobiele app?", "De duur hangt af van het aantal schermen in de steekproef, het aantal platformen en de complexiteit van de trajecten: een app met authenticatie, betaling en downloadbare documenten vraagt meer werk dan een informatieve app. De iOS-audit en de Android-audit zijn twee afzonderlijke beoordelingen, ook al worden gemeenschappelijke aanbevelingen gebundeld. In onze praktijk bedraagt de gemiddelde doorlooptijd van een audit drie weken, van de terbeschikkingstelling van de app tot de oplevering van het rapport."],
-    ["Vallen de apps van een Luxemburgse bank onder de EAA?", "Ja, zodra ze consumenten bedienen: bankdiensten voor consumenten vallen onder de wet van 8 maart 2023. Dat omvat de mobiele app, de online klantenzone, de trajecten om een rekening te openen en de documenten die aan de klant worden bezorgd. Diensten die uitsluitend voor professionele klanten bedoeld zijn, vergen een analyse geval per geval. Het toezicht ligt bij het OSAPS, samen met de bevoegde sectorale autoriteiten."],
-    ["Hoe meldt u een ontoegankelijke website of dienst in Luxemburg?", "Voor een website of app van de publieke sector neemt u eerst contact op met de organisatie via haar toegankelijkheidsverklaring; krijgt u binnen de maand geen bevredigend antwoord, dan dient u een klacht in bij de SIP via het klachtenformulier, of bij de ombudsman van het Groothertogdom. Voor een privéproduct of -dienst onder de EAA meldt u het probleem bij het OSAPS, gratis online via MyGuichet.lu, indien mogelijk met een schermafbeelding."]
+  [
+   "p",
+   "De wet van 28 mei 2019 betreffende de toegankelijkheid van websites en mobiele applicaties van overheidsinstanties zet richtlijn (EU) 2016/2102 om in Luxemburgs recht. Het uitgangspunt is eenvoudig: een overheidswebsite of -app moet bruikbaar zijn voor iemand die blind, slechtziend of doof is, of een motorische of cognitieve beperking heeft, met zijn eigen hulpmiddelen. De wet bevat zelf geen lijst met technische criteria. Ze verwijst naar de geharmoniseerde Europese norm EN 301 549, in versie V3.2.1, die Luxemburg vervolgens uitwerkt in nationale referentiekaders."
   ],
-  "cta_svc": "audit-raam",
-  "cta_title": "Is uw app klaar voor een controle?",
-  "cta_text": "Wij beoordelen uw iOS- en Android-apps volgens RAAM 1.1, op echte toestellen, en bereiden uw toegankelijkheidsverklaring voor. Laten we samen uw situatie bekijken.",
-  "related": ["eaa", "normes", "belgique"]
+  [
+   "p",
+   "Voor een overzicht van de verplichtingen, de normen en de aanpak in de vier landen kunt u ook onze [[article:guide|gids over digitale toegankelijkheid]] raadplegen."
+  ],
+  [
+   "p",
+   "Deze toegankelijkheidswet vormt de basis van het hele Luxemburgse systeem voor de publieke sector. Het officiële portaal licht de details toe op zijn pagina over de [[https://accessibilite.public.lu/fr/obligations.html|wettelijke verplichtingen inzake digitale toegankelijkheid (in het Frans)]], de referentietekst voor een juridische dienst of een projectverantwoordelijke. De volgende paragrafen behandelen de punten die in de praktijk de meeste vragen oproepen."
+  ],
+  [
+   "h3",
+   "Welke organisaties eronder vallen"
+  ],
+  [
+   "p",
+   "De wet geldt voor de Staat, de gemeenten, bepaalde publiekrechtelijke instellingen en de verenigingen die door die overheden zijn opgericht. Concreet gaat het om de ministeries en hun administraties, de gemeenten en de intercommunale samenwerkingsverbanden (syndicats de communes), de offices sociaux, die vergelijkbaar zijn met een Belgisch OCMW, en de openbare instellingen. Een omzendbrief van het ministerie van Binnenlandse Zaken van 11 augustus 2021 heeft die verplichtingen overigens nog eens in herinnering gebracht aan de gemeentebesturen, de syndicats de communes, de offices sociaux en de openbare instellingen die onder hun toezicht staan."
+  ],
+  [
+   "p",
+   "Mobiele apps vallen onder de wet zodra ze door of in opdracht van een overheidsinstantie worden ontworpen en ontwikkeld. Een app die bij een webbureau of een IT-dienstverlener is besteld, blijft dus de verantwoordelijkheid van de instantie die ze publiceert: die ondertekent de toegankelijkheidsverklaring en beantwoordt de klachten. Het bestek moet daar vanaf de aanbesteding rekening mee houden, net zoals een Vlaamse gemeente of een FOD dat zou doen bij een overheidsopdracht voor een nieuwe website."
+  ],
+  [
+   "p",
+   "Enkele categorieën vallen buiten het toepassingsgebied van de wet:"
+  ],
+  [
+   "ul",
+   [
+    "de websites en apps van openbare omroepen;",
+    "bepaalde niet-gouvernementele organisaties;",
+    "de websites en apps van scholen in het basis- en secundair onderwijs en van kinderdagverblijven, behalve voor inhoud die verband houdt met essentiële administratieve functies online, zoals een inschrijving of een betaling."
+   ]
+  ],
+  [
+   "h3",
+   "Vrijgestelde inhoud"
+  ],
+  [
+   "p",
+   "Ook bepaalde inhoud ontsnapt aan de verplichting, afhankelijk van de aard en de publicatiedatum ervan. Die uitzonderingen zijn nauwkeurig afgebakend en gedateerd; ze dekken niet zomaar een volledige oude website."
+  ],
+  [
+   "ul",
+   [
+    "kantoorbestanden die vóór 23 september 2018 zijn gepubliceerd, tenzij ze nodig zijn voor een lopende administratieve procedure;",
+    "vooraf opgenomen tijdgebonden media die vóór 23 september 2020 zijn gepubliceerd;",
+    "inhoud van intranetten en extranetten die vóór 23 september 2019 is gepubliceerd, tot de volgende ingrijpende herziening ervan;",
+    "gearchiveerde inhoud die niet nodig is voor een lopende procedure en na 23 september 2019 niet meer is bijgewerkt;",
+    "live uitgezonden tijdgebonden media, inhoud van derden en bepaalde reproducties van erfgoedstukken."
+   ]
+  ],
+  [
+   "p",
+   "Een veelvoorkomend voorbeeld: een gemeente publiceert elke maand het verslag van haar gemeenteraad als pdf. De verslagen van vóór september 2018 mogen blijven zoals ze zijn, als ze voor geen enkele procedure nodig zijn. De verslagen die sindsdien zijn gepubliceerd, moeten toegankelijk zijn of een toegankelijk alternatief hebben, bijvoorbeeld een html-versie van dezelfde inhoud."
+  ],
+  [
+   "h3",
+   "De concrete verplichtingen"
+  ],
+  [
+   "ul",
+   [
+    "websites en apps in overeenstemming brengen met de eisen van de norm EN 301 549, beoordeeld met RAWeb voor het web en RAAM voor mobiel;",
+    "voor elke website en elke app een toegankelijkheidsverklaring publiceren en die actueel houden;",
+    "een toegankelijk mechanisme aanbieden om een gebrek te melden of een alternatief te vragen, de ontvangst bevestigen en binnen een maand antwoorden;",
+    "de SIP binnen dertig dagen, zonder bijzondere formaliteiten, op de hoogte brengen van de publicatie of de bijwerking van de verklaring;",
+    "in de verklaring vermelden dat de gebruiker zich kan wenden tot de SIP of tot de ombudsman van het Groothertogdom (de médiateur)."
+   ]
+  ],
+  [
+   "h3",
+   "Onevenredige last: een afgebakende afwijking"
+  ],
+  [
+   "p",
+   "Artikel 4 van de wet staat toe om van de eisen af te wijken wanneer ze een onevenredige last zouden opleggen. Het officiële portaal omkadert dat begrip strikt: het wordt geval per geval beoordeeld, voor een bepaalde functionaliteit of inhoud, en kan in principe geen volledige website of app dekken. De omvang van de organisatie, haar middelen en de geraamde kosten en baten voor personen met een handicap spelen mee in de beoordeling."
+  ],
+  [
+   "p",
+   "Twee preciseringen voorkomen heel wat fouten. Ten eerste stelt het portaal uitdrukkelijk dat een gebrek aan prioriteit, tijd of kennis geen legitieme omstandigheid is. Ten tweede ontslaat een beroep op onevenredige last u niet van de plicht om een toegankelijkheidsverklaring te publiceren, noch om waar mogelijk een toegankelijk alternatief aan te bieden; voor een essentiële taak van openbare dienstverlening moet een gelijkwaardige alternatieve dienst worden aangeboden."
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "Voor de publieke sector steunt het Luxemburgse systeem op controle, publicatie van de resultaten en bemiddeling: het monitoringverslag 2022-2024 vermeldt geen enkele sanctie. Het grootste risico is dus publieke kritiek en klachten, terwijl de wet van 8 maart 2023 over de EAA wel boetes voorziet."
+  ],
+  [
+   "h2",
+   "sip-en-accessibilite-public-lu",
+   "De SIP en het portaal accessibilite.public.lu: wie de publieke sector controleert"
+  ],
+  [
+   "p",
+   "De Service information et presse van de regering (SIP), de voorlichtings- en persdienst, is het orgaan dat toeziet op de wet van 28 mei 2019. De dienst hangt af van het ministerie van Staat en staat rechtstreeks onder het gezag van de eerste minister. In de eerste plaats is het de communicatiedienst van de regering. Sinds de omzetting van de richtlijn draagt de SIP echter ook het volledige beleid inzake digitale toegankelijkheid van de publieke sector: controles, referentiekaders, klachten, informatie en opleiding."
+  ],
+  [
+   "p",
+   "Zijn opdrachten op dat vlak vallen in vier blokken uiteen:"
+  ],
+  [
+   "ul",
+   [
+    "periodieke controles uitvoeren van de websites en apps van de publieke sector en daarover verslag uitbrengen bij de Europese Commissie;",
+    "de beoordelingskaders publiceren en onderhouden: RAWeb voor het web, RAAM voor mobiele apps en RAPDF voor pdf-documenten;",
+    "klachten van gebruikers behandelen, in overleg met de betrokken organisaties;",
+    "informeren, sensibiliseren en opleiden, onder meer via het portaal accessibilite.public.lu, een observatorium en de cursussen die samen met het Institut national d'administration publique worden aangeboden."
+   ]
+  ],
+  [
+   "h3",
+   "Drie soorten controle"
+  ],
+  [
+   "p",
+   "Overeenkomstig uitvoeringsbesluit (EU) 2018/1524 hanteert de SIP drie vormen van controle. De diepgaande controle van een website is een volledige conformiteitsaudit volgens RAWeb: ze zegt of de site toegankelijk is en welke problemen werden vastgesteld. De controle van een mobiele app is een conformiteitsaudit volgens RAAM. De vereenvoudigde controle, ten slotte, wil non-conformiteiten opsporen en sensibiliseren, zonder dat ze toelaat een besluit te trekken over de conformiteit van de site."
+  ],
+  [
+   "p",
+   "De methode voor de vereenvoudigde controle is openbaar. Ze heeft betrekking op een steekproef van drie pagina's (de startpagina, een pagina met een formulier en een pagina met bijzondere inhoud zoals een video, een tabel of een complexe afbeelding), combineert 41 geautomatiseerde regels van de tool Axe met 47 RAWeb-criteria die handmatig worden gecontroleerd, en sluit downloadbare documenten uit. Zo kan de SIP veel meer websites bestrijken dan met een diepgaande audit."
+  ],
+  [
+   "h3",
+   "Een jaarlijkse kalender en open data"
+  ],
+  [
+   "p",
+   "De eerste controleperiode liep van 23 september 2020 tot eind 2021; sindsdien komt een periode overeen met een kalenderjaar. Het proces volgt steeds dezelfde stappen: inventaris van de websites en apps van de overheid, samenstelling van een steekproef in overleg met de belangrijkste spelers uit de gehandicaptensector, audits en daarna om de drie jaar een verslag aan de Europese Commissie. De inventarissen, de steekproeven, de auditrapporten, de toegankelijkheidsverklaringen en het overzicht van de klachten worden gepubliceerd op het open-dataportaal data.public.lu."
+  ],
+  [
+   "p",
+   "Die transparantie heeft een praktisch gevolg: een overheidsinstantie die in de steekproef van het jaar zit, ziet haar auditrapport gepubliceerd worden. De SIP heeft de steekproef voor 2026 gepubliceerd; nagaan of uw websites of apps erin staan, is een nuttige eerste stap."
+  ],
+  [
+   "h3",
+   "Openbare hulpmiddelen naast de controle"
+  ],
+  [
+   "p",
+   "Het portaal stelt een modelbestek, een auditkit, een generator voor toegankelijkheidsverklaringen en het klachtenformulier ter beschikking. De bronbestanden van de referentiekaders staan op GitHub, zodat de gemeenschap correcties kan voorstellen. In 2026 stelde de SIP ook Mia en Mil voor, twee Luxemburgstalige synthetische stemmen voor hulptechnologieën, open source en offline bruikbaar. Tot dan moesten gebruikers van schermlezers zich meestal behelpen met een Duitse stem om een Luxemburgse tekst te laten voorlezen."
+  ],
+  [
+   "h2",
+   "raweb",
+   "RAWeb 1.1: het Luxemburgse referentiekader voor het web en de verschillen met de RGAA"
+  ],
+  [
+   "p",
+   "RAWeb, het Référentiel d'évaluation de l'accessibilité web, is de methode waarmee wordt nagegaan of een webpagina voldoet aan de eisen van de norm EN 301 549. De [[https://accessibilite.public.lu/fr/raweb1.1/index.html|versie 1.1, gepubliceerd op 6 februari 2026 (in het Frans)]], telt 136 controlecriteria, verdeeld over 17 thema's. Ze geldt voor alle html-inhoud (HTML4, XHTML1 en HTML5); native mobiele apps vallen onder RAAM."
+  ],
+  [
+   "p",
+   "RAWeb neemt inhoud over uit de Franse RGAA 4.1.2, door de SIP aangepast aan het Luxemburgse juridische kader. De eerste dertien thema's zullen iedereen die de RGAA kent bekend voorkomen: afbeeldingen, frames, kleuren, multimedia, tabellen, links, scripts, verplichte elementen, structurering van de informatie, presentatie van de informatie, formulieren, navigatie en raadpleging. RAWeb voegt er vier thema's aan toe: documentatie en toegankelijkheidsfuncties, bewerkingstools, ondersteunende diensten en realtimecommunicatie."
+  ],
+  [
+   "h3",
+   "Waarom 136 criteria in plaats van 106"
+  ],
+  [
+   "p",
+   "De RGAA 4.1.2 telt 106 criteria en concentreert zich op de eisen die uit de WCAG voortvloeien. De norm EN 301 549 gaat verder: ze behandelt ook de documentatie van een dienst, de tools waarmee inhoud wordt gepubliceerd, de klantenondersteuning en realtimecommunicatie. RAWeb dekt die eisen, wat de 30 extra criteria verklaart die in het Luxemburgse monitoringverslag worden vermeld. De SIP gebruikte de RGAA voor zijn diepgaande controles tot 2023 en vanaf 2024 RAWeb."
+  ],
+  [
+   "p",
+   "Het directe gevolg: een RGAA-audit die voor een Franse website is uitgevoerd, volstaat niet om de conformiteit van een Luxemburgse website aan te tonen. Hij dekt het grootste deel, maar laat de criteria buiten beschouwing die eigen zijn aan de norm, bijvoorbeeld de toegankelijkheid van de online help, van een supportchat of van een back-office om inhoud te publiceren. De behaalde scores zijn ook niet rechtstreeks vergelijkbaar, omdat de noemer verandert. Ons artikel over [[article:normes|de normen en referentiekaders voor toegankelijkheid]] gaat dieper in op die overeenkomsten, en de pagina [[standards|normen per land]] vat ze samen."
+  ],
+  [
+   "p",
+   "Voor een Belgische lezer is dat een vertrouwd verhaal in omgekeerde richting. België heeft geen eigen nationaal referentiekader en toetst rechtstreeks aan EN 301 549. Een audit die in Brussel of Gent volgens de Europese norm werd uitgevoerd, sluit inhoudelijk dus nauw aan bij RAWeb, maar levert geen score op die u zonder herberekening in een Luxemburgse toegankelijkheidsverklaring kunt overnemen."
+  ],
+  [
+   "h3",
+   "RAPDF voor documenten"
+  ],
+  [
+   "p",
+   "Luxemburg beschikt ook over een referentiekader voor pdf-documenten, RAPDF, dat in 2023 werd ingevoerd en in 2026 eveneens naar versie 1.1 is overgestapt. Dat is nuttig voor administraties, die veel formulieren, verslagen en beslissingen als pdf publiceren: kantoordocumenten zijn de meest aangevoerde uitzondering in de toegankelijkheidsverklaringen, en ontoegankelijke pdf's zijn de belangrijkste reden voor klachten die de SIP over de periode 2022-2024 heeft geregistreerd."
+  ],
+  [
+   "h2",
+   "raam",
+   "RAAM 1.1: het referentiekader voor de toegankelijkheid van mobiele apps"
+  ],
+  [
+   "p",
+   "RAAM, het Référentiel d'évaluation de l'accessibilité des applications mobiles, is een van de bijzonderheden van Luxemburg. Weinig landen beschikken over een zo gedetailleerde openbare methode om een native app te beoordelen. De [[https://accessibilite.public.lu/fr/raam1.1/index.html|versie 1.1, gepubliceerd op 24 februari 2025 (in het Frans)]], telt 108 controlecriteria en maakt het mogelijk na te gaan of een app voldoet aan de norm EN 301 549 V3.2.1. Ze wordt verspreid onder de licentie CC-BY 3.0 LU."
+  ],
+  [
+   "p",
+   "RAAM bestrijkt de hoofdstukken van de norm die op een app betrekking hebben: generieke eisen (hoofdstuk 5), tweerichtingsspraakcommunicatie (6), videofuncties (7), niet-webdocumenten (10), software (11) en documentatie en ondersteunende diensten (12). De criteria zijn ingedeeld in vijftien thema's:"
+  ],
+  [
+   "ul",
+   [
+    "grafische elementen, kleuren, multimedia, tabellen;",
+    "interfacecomponenten, verplichte elementen, structurering van de informatie, presentatie van de informatie;",
+    "formulieren, navigatie, raadpleging;",
+    "documentatie en toegankelijkheidsfuncties, bewerkingstools, ondersteunende diensten, realtimecommunicatie."
+   ]
+  ],
+  [
+   "h3",
+   "Wat er met versie 1.1 is veranderd"
+  ],
+  [
+   "p",
+   "De eerste versie van RAAM, gepubliceerd in juni 2021, telde 107 criteria. Versie 1.1 voegt er één aan toe, criterium 14.3, dat voortkomt uit een opsplitsing van thema 12 om de eisen leesbaarder te maken. Ze herziet ook verschillende methoden: het contrast houdt voortaan rekening met de werkelijke tekstgrootte, nieuwe tests dekken de ondertiteling van live media, en de drempel voor knipperen gaat van “minder dan 3 per seconde” naar “3 per seconde of minder”."
+  ],
+  [
+   "p",
+   "De methodologie heeft er een principe van niet-interferentie bij gekregen, overgenomen uit RAWeb: vrijgestelde inhoud of inhoud waarvoor een afwijking geldt, hoeft niet conform te zijn, maar mag de toegang tot de rest van het scherm niet verhinderen. Ze verduidelijkt ook hoe er met of zonder toegankelijkheidsdienst voor het toetsenbord op Android wordt getest, en hoe een tekstgrootte wordt gemeten op basis van schermafbeeldingen."
+  ],
+  [
+   "h3",
+   "Waarom een apart kader naast het web"
+  ],
+  [
+   "p",
+   "Bij een native app heeft de auditor bijna nooit toegang tot de broncode. Hij kan geen attribuut inspecteren zoals op een webpagina: hij controleert wat het systeem werkelijk doorgeeft aan de hulptechnologieën. De tests van RAAM steunen dus op schermlezers, de systeeminstellingen en de inspectietools van Apple en Google. Dat is een andere manier van werken, die echte toestellen en een goede kennis van elk platform vereist. RAAM is het Luxemburgse referentiekader; elders geldt dezelfde methode met het lokale referentiekader, zoals onze pagina over de [[svc:audit-raam|audit van mobiele apps volgens RAAM]] uitlegt."
+  ],
+  [
+   "h2",
+   "verklaring-en-klachten",
+   "Toegankelijkheidsverklaring en klachten: het Luxemburgse circuit"
+  ],
+  [
+   "p",
+   "De toegankelijkheidsverklaring is het document dat de gebruiker, de SIP en soms de pers als eerste raadplegen. Ze vermeldt een conformiteitsstatus die door een audit is vastgesteld, volgens drie niveaus die het officiële portaal definieert."
+  ],
+  [
+   "ul",
+   [
+    "volledige conformiteit: alle controlecriteria van het referentiekader worden nageleefd, dus een score van 100 % na audit;",
+    "gedeeltelijke conformiteit: minstens 50 % van de controlecriteria wordt nageleefd;",
+    "niet-conformiteit: er is geen geldige audit uitgevoerd, of minder dan 50 % van de criteria wordt nageleefd."
+   ]
+  ],
+  [
+   "p",
+   "Naast die status somt de verklaring de ontoegankelijke inhoud op. Ze maakt daarbij een onderscheid tussen wat niet conform is, wat vrijgesteld is en wat onder onevenredige last valt, met de verantwoording en de aangeboden alternatieven. Ze beschrijft de beschikbare toegankelijkheidsfuncties, vermeldt of het om een zelfbeoordeling of een beoordeling door een derde gaat, geeft een contactadres en herinnert aan de mogelijkheid om zich tot de SIP of de ombudsman te wenden."
+  ],
+  [
+   "h3",
+   "Waar u ze publiceert, en in welke talen"
+  ],
+  [
+   "p",
+   "Voor een website moet de verklaring makkelijk te vinden zijn: op elke pagina moet een link staan, bijvoorbeeld in de footer. Voor een app wordt ze gepubliceerd op de website van de verantwoordelijke organisatie of in de informatie die beschikbaar is op het moment van downloaden, dus op de pagina in de App Store of op Google Play. De officiële generator maakt de verklaring aan in het Frans, het Duits, het Engels en het Luxemburgs, en raadt aan ze aan te bieden in elke taal van een meertalige website."
+  ],
+  [
+   "p",
+   "Na publicatie stuurt de organisatie het adres van haar verklaring naar de SIP, via accessibilite@sip.etat.lu. De generator raadt aan opnieuw te evalueren na elke grote herwerking en de verklaring minstens één keer per jaar na te lezen. Voor het opstellen zelf bespreekt ons artikel over [[article:declaration|de toegankelijkheidsverklaring]] de meest gemaakte fouten, in Frankrijk zowel als in Luxemburg."
+  ],
+  [
+   "h3",
+   "Het verloop van een klacht"
+  ],
+  [
+   "p",
+   "Neem een gebruiker die een aanvraagformulier voor een uitkering niet kan verzenden met TalkBack, omdat de knop “Verzenden” niet wordt voorgelezen. Hij wendt zich eerst tot de organisatie, via het contactpunt in de toegankelijkheidsverklaring. De organisatie moet de ontvangst bevestigen en binnen een maand na verzending antwoorden; is het probleem complex, dan mag ze een langere termijn vastleggen, op voorwaarde dat ze die verantwoordt."
+  ],
+  [
+   "p",
+   "Is de gebruiker niet tevreden met het antwoord, dan kan hij een klacht indienen bij de SIP via het onlineklachtenformulier, of bij de ombudsman van het Groothertogdom Luxemburg. De SIP verbindt zich ertoe uiterlijk binnen een maand per e-mail te antwoorden. In de praktijk analyseert de dienst de vraag, neemt hij contact op met de organisatie en geeft hij haar een maand om te reageren. Zolang de verklaring geen toegankelijk contactpunt biedt, slaat de organisatie zelf de eerste stap over en laat ze de klacht rechtstreeks bij de autoriteit terechtkomen."
+  ],
+  [
+   "h2",
+   "resultaten-monitoring",
+   "Wat de gepubliceerde controles van 2022 tot 2024 laten zien"
+  ],
+  [
+   "p",
+   "Luxemburg publiceert zijn resultaten met een zeldzame graad van detail. Het [[https://download.data.public.lu/resources/rapport-sur-le-controle-de-laccessibilite-des-sites-internet-et-applications-mobiles-du-secteur-public-au-luxembourg-2022-2024/20250115-100700/wad-monitoring-report-lu-2022-2024.pdf|verslag over de controle van de toegankelijkheid van websites en apps van de publieke sector 2022-2024 (in het Frans)]], dat aan de Europese Commissie werd bezorgd, geeft een nauwkeurig beeld van de situatie. Alle cijfers in deze sectie komen eruit."
+  ],
+  [
+   "table",
+   {
+    "caption": "Controles van de SIP en gemiddelde scores, 2022-2024 (bron: monitoringverslag 2022-2024)",
+    "head": [
+     "Indicator",
+     "2022",
+     "2023",
+     "2024"
+    ],
+    "rows": [
+     [
+      "Diepgaande audits van websites",
+      "17",
+      "15",
+      "16"
+     ],
+     [
+      "Vereenvoudigde audits van websites",
+      "87",
+      "93",
+      "93"
+     ],
+     [
+      "Diepgaande audits van mobiele apps",
+      "6",
+      "6",
+      "7"
+     ],
+     [
+      "Gemiddelde score diepgaande audits van websites",
+      "48 %",
+      "54 %",
+      "61 %"
+     ],
+     [
+      "Gemiddelde score audits van mobiele apps",
+      "49 %",
+      "43 %",
+      "37 %"
+     ],
+     [
+      "Klachten ontvangen door de SIP",
+      "9",
+      "4",
+      "7"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "De trend is duidelijk: de websites gaan vooruit, van een gemiddelde score van 48 % naar 61 % in drie jaar, terwijl de mobiele apps achteruitgaan, van 49 % naar 37 %. Het verslag stelt vast dat in 2024, net als in 2021, geen enkele geauditeerde app gedeeltelijke conformiteit bereikt (in 2022 en 2023 lukte dat telkens twee apps). Mobiel is vandaag het zwakke punt van de Luxemburgse publieke sector, wat bijzondere aandacht voor RAAM rechtvaardigt."
+  ],
+  [
+   "h3",
+   "De meest voorkomende non-conformiteiten"
+  ],
+  [
+   "p",
+   "Bij de apps zijn de drie meest voorkomende gebreken interfacecomponenten die niet compatibel zijn met hulptechnologieën (criterium 5.1), een ongeschikte structuur van titels (criterium 7.1) en inhoud die zich niet aanpast aan de schermoriëntatie (criterium 11.9). Bij de websites, in diepgaande controle, gaat het om scripts die niet compatibel zijn met hulptechnologieën, tags die voor de opmaak worden gebruikt en slecht gestructureerde lijsten."
+  ],
+  [
+   "p",
+   "In de vereenvoudigde controle is het vaakst vastgestelde gebrek het ontbreken van een aanduiding van taalwissels, vóór scripts die niet met toetsenbord en muis bruikbaar zijn en onvoldoende tekstcontrast. Dat eerste resultaat is typisch Luxemburgs: een Franstalige pagina die een procedure in het Duits vermeldt of de naam van een instelling in het Luxemburgs, moet die overgang aangeven, zodat de schermlezer van stem en uitspraak wisselt. Hetzelfde aandachtspunt geldt voor tweetalige Brusselse websites die Nederlandse en Franse benamingen van diensten mengen."
+  ],
+  [
+   "h3",
+   "Verklaringen, afwijkingen en klachten"
+  ],
+  [
+   "p",
+   "Het verslag telt 431 toegankelijkheidsverklaringen van websites en 30 verklaringen van apps, voor 979 websites en apps in de inventaris van de publieke sector. In 2024 riep 61 % van de verklaringen een afwijking wegens onevenredige last in, een gebruik dat het officiële kader nochtans als uitzonderlijk voorstelt. De SIP ontving over de periode 20 klachten; ontoegankelijke pdf's zijn de belangrijkste reden, vóór problemen met webpagina's en apps."
+  ],
+  [
+   "p",
+   "In absolute cijfers zijn dat bescheiden aantallen, maar ze zijn openbaar. Voor een administratie is het risico minder een sanctie dan een gepubliceerd auditrapport met een lage score, of een verklaring die zich zonder verantwoording op onevenredige last beroept. Meer over de begeleiding van administraties leest u op onze pagina over de [[sector:public|publieke sector]]."
+  ],
+  [
+   "h2",
+   "eaa-luxemburg",
+   "EAA in Luxemburg: de wet van 8 maart 2023 en het OSAPS"
+  ],
+  [
+   "p",
+   "Luxemburg heeft richtlijn (EU) 2019/882, de European Accessibility Act, omgezet met de [[https://accessibilite-produits-services.public.lu/dam-assets/lgislation/loi-du-8-mars-2023.pdf|wet van 8 maart 2023 betreffende de toegankelijkheidsvoorschriften voor producten en diensten (in het Frans)]], gepubliceerd in het Mémorial A nr. 133 van 15 maart 2023. Volgens artikel 36 is ze op 28 juni 2025 in werking getreden. Ze richt zich deze keer tot de marktdeelnemers, privé en publiek, die producten op de markt brengen of bepaalde diensten aan consumenten verlenen."
+  ],
+  [
+   "h3",
+   "Welke producten en diensten eronder vallen"
+  ],
+  [
+   "p",
+   "Aan de kant van de producten: computers en besturingssystemen voor consumenten, smartphones en tablets, betaalterminals, incheckautomaten en automaten voor vervoerbewijzen (behalve die in voertuigen zijn ingebouwd), smart-tv's en e-readers. Aan de kant van de diensten: elektronische communicatie, toegang tot audiovisuele mediadiensten, personenvervoer door de lucht, per spoor, per bus en over het water (websites, apps, elektronische tickets en informatie), bankdiensten voor consumenten, e-books, e-commerce en de beantwoording van noodcommunicatie naar 112. Ons artikel over [[article:eaa|de European Accessibility Act]] bespreekt dat toepassingsgebied, dat in alle lidstaten hetzelfde is."
+  ],
+  [
+   "h3",
+   "Het OSAPS als toezichthouder"
+  ],
+  [
+   "p",
+   "Artikel 3 van de wet richt het Office de la surveillance de l'accessibilité des produits et services (OSAPS) op, de dienst voor het toezicht op de toegankelijkheid van producten en diensten. Het staat onder het gezag van de minister die bevoegd is voor het beleid ten aanzien van personen met een handicap, vandaag het ministerie van Gezin, Solidariteit, Samenleven en Opvang. Voor producten zijn de controles toevertrouwd aan het OSAPS, de Administration des douanes et accises en de groothertogelijke politie (artikel 28, § 1). Voor diensten controleren het OSAPS en de groothertogelijke politie de conformiteit, samen met de bevoegde sectorale autoriteiten (artikel 28, § 2)."
+  ],
+  [
+   "p",
+   "Het OSAPS is ook het aanspreekpunt voor toegankelijkheid en levert richtsnoeren en hulpmiddelen, in het bijzonder aan micro-ondernemingen. Elke natuurlijke of rechtspersoon kan er een niet-conform product of een niet-conforme dienst melden. Die melding gebeurt gratis online via MyGuichet.lu, met de mogelijkheid om een schermafbeelding of een document toe te voegen. Een vereniging van personen met een handicap kan dat als rechtspersoon doen."
+  ],
+  [
+   "h3",
+   "Voorziene sancties"
+  ],
+  [
+   "ul",
+   [
+    "een administratieve geldboete van 250 tot 15.000 euro, opgelegd door het OSAPS aan de marktdeelnemer die weigert documenten of informatie te verstrekken, de controles belemmert of de beslissingen van de dienst niet naleeft (artikel 32);",
+    "een strafrechtelijke geldboete van 251 tot 500.000 euro voor de marktdeelnemer die de bepalingen van de wet overtreedt, afgestemd op de omvang en de ernst van de inbreuk (artikel 33, § 1);",
+    "bij herhaling een geldboete van 500 tot 1.000.000 euro (artikel 33, § 2);",
+    "een beperking of verbod op het aanbieden van een niet-conform product of het verlenen van een niet-conforme dienst, een beslissing waartegen binnen drie maanden een beroep tot hervorming (recours en réformation) kan worden ingesteld bij de administratieve rechtbank (artikel 28, § 5)."
+   ]
+  ],
+  [
+   "h3",
+   "Vrijstellingen en overgangstermijnen"
+  ],
+  [
+   "p",
+   "De wet definieert een micro-onderneming als een onderneming die minder dan tien personen tewerkstelt en waarvan de jaaromzet of het jaarlijkse balanstotaal niet meer dan 2.000.000 euro bedraagt. Micro-ondernemingen die diensten verlenen, zijn vrijgesteld van de toegankelijkheidseisen; micro-ondernemingen die producten vervaardigen of verdelen, blijven aan de eisen onderworpen, met lichtere documentatieverplichtingen. Een grotere kmo die online aan consumenten verkoopt, valt daarentegen volledig onder de wet."
+  ],
+  [
+   "p",
+   "Er gelden overgangstermijnen. Dienstverleners mogen de producten die ze vóór de inwerkingtreding rechtmatig gebruikten, tot 28 juni 2030 blijven gebruiken. Dienstencontracten die vóór die datum zijn gesloten, mogen ongewijzigd doorlopen tot ze verstrijken, met een maximum van vijf jaar. Selfserviceterminals die al in gebruik zijn, mogen dat blijven tot het einde van hun economische levensduur, zonder twintig jaar na hun ingebruikname te overschrijden."
+  ],
+  [
+   "p",
+   "Zoals overal in de Unie moet de aanbieder van een betrokken dienst ook in openbaar toegankelijke informatie, en met name in zijn algemene voorwaarden, uitleggen hoe zijn dienst aan de toegankelijkheidseisen voldoet. Dat punt wordt vaak vergeten: een webshop kan technisch in orde zijn en toch in gebreke blijven door het ontbreken van die informatie. Voor de technische beoordeling is de norm EN 301 549 de referentie; RAWeb en RAAM zijn openbare, gedetailleerde en gratis methoden om die norm toe te passen, en het OSAPS vermeldt ze trouwens bij zijn hulpmiddelen. Voor die spelers bieden wij een [[svc:audit-conformite|conformiteitsaudit volgens EN 301 549 en WCAG]] aan."
+  ],
+  [
+   "p",
+   "Voor een Belgische onderneming die vanuit Vlaanderen of Brussel een webshop of een app voor Luxemburgse consumenten uitbaat, is dit kader herkenbaar: de inhoudelijke eisen komen uit dezelfde Europese richtlijn als in België. Het verschil zit in de toezichthouder en de procedure. In het Groothertogdom komt een melding bij het OSAPS terecht, en de geldboetes zijn die van de Luxemburgse wet van 8 maart 2023."
+  ],
+  [
+   "h2",
+   "luxemburgse-bijzonderheden",
+   "Meertaligheid, financieel centrum, grensarbeiders: de Luxemburgse bijzonderheden"
+  ],
+  [
+   "p",
+   "De technische eisen zijn Europees, maar bij de toepassing ervan in Luxemburg komen drie realiteiten samen die elders zelden tegelijk voorkomen. Ze wegen rechtstreeks op de kwaliteit van een audit en op de kosten van de correcties."
+  ],
+  [
+   "h3",
+   "Vier talen in één interface"
+  ],
+  [
+   "p",
+   "De wet van 24 februari 1984 op het taalgebruik heeft het Luxemburgs erkend als nationale taal, het Frans tot taal van de wetgeving gemaakt en het Frans, het Duits en het Luxemburgs als administratieve talen vastgelegd. Daar komt het Engels heel vaak bij in de financiële dienstverlening, de Europese instellingen en de internationale ondernemingen. Eenzelfde overheidswebsite kan dus in vier versies bestaan, en eenzelfde pagina kan verschillende talen door elkaar gebruiken."
+  ],
+  [
+   "p",
+   "Voor toegankelijkheid is elke taalversie volwaardige inhoud: tekstalternatieven, knoplabels, foutmeldingen, ondertitels en transcripties moeten in elke taal bestaan. De taal van elke pagina moet zijn aangegeven, en elke passage in een andere taal moet worden gemarkeerd; zoals we zagen, is dat het meest vastgestelde gebrek in de vereenvoudigde controles. RAAM 1.1 heeft overigens een voorwaarde toegevoegd over de taal van de ondertitels. Ten slotte moet een auditsteekproef de taalversies bestrijken die werkelijk worden gebruikt, anders blijven de gebreken van een secundaire vertaling onopgemerkt."
+  ],
+  [
+   "h3",
+   "Het financieel centrum en de bankdiensten"
+  ],
+  [
+   "p",
+   "Bankdiensten voor consumenten vallen onder de EAA. Voor een retailbank, een betalingsinstelling of een uitgever van elektronisch geld met vestiging in Luxemburg is de mobiele app vaak het belangrijkste kanaal in de klantrelatie. De knelpunten zijn bekend: sterke authenticatie met code of biometrie zonder alternatief, sessietijden die te kort zijn voor een gebruiker van een schermlezer, portefeuillegrafieken zonder tekstueel equivalent, contracten en rekeninguittreksels als pdf zonder tags, en visuele captcha's bij het openen van een rekening."
+  ],
+  [
+   "p",
+   "Privébanken en spelers die uitsluitend professionele klanten bedienen, moeten hun toepassingsgebied nauwkeurig analyseren, omdat de EAA zich richt op diensten die aan consumenten worden verleend. Die analyse verdient het om gedocumenteerd en door de juridische dienst gevalideerd te worden, in plaats van zomaar te worden aangenomen. Onze pagina over [[sector:grands-comptes|grote ondernemingen]] beschrijft hoe wij die organisaties begeleiden."
+  ],
+  [
+   "h3",
+   "Grensarbeiders, volwaardige gebruikers"
+  ],
+  [
+   "p",
+   "Volgens [[https://statistiques.public.lu/dam-assets/catalogue-publications/regards/2026/regards-frontaliers-120326-03.pdf|STATEC (in het Frans)]] telde Luxemburg in 2023 225.840 inkomende grensarbeiders, van wie 54,2 % in Frankrijk woonde, 23 % in Duitsland en 22,7 % in België. Die mensen gebruiken de Luxemburgse digitale diensten (sociale zekerheid, fiscaliteit, vervoer, bank) met toestellen en instellingen die in hun eigen land zijn geconfigureerd, soms in een andere taal dan die van de dienst."
+  ],
+  [
+   "p",
+   "Voor een Luxemburgse organisatie betekent dat testen met uiteenlopende configuraties, met name met schermlezers die in het Frans of het Duits zijn ingesteld. Voor een organisatie die aan beide kanten van de grens actief is, betekent het ook omgaan met verschillende regimes: de RGAA in Frankrijk, de norm EN 301 549 in België, RAWeb en RAAM in Luxemburg. Onze artikelen over [[article:belgique|digitale toegankelijkheid in België]] en [[article:france|digitale toegankelijkheid in Frankrijk]] stellen de twee buurlanden voor; onze consultants werken in het Frans, het Duits en het Engels."
+  ],
+  [
+   "h2",
+   "auditmethode-raam",
+   "Een mobiele app auditeren volgens RAAM: de methode stap voor stap"
+  ],
+  [
+   "p",
+   "De [[https://accessibilite.public.lu/en/raam1.1/methodologie.html|testmethodologie van RAAM 1.1 (in het Engels)]] is openbaar en nauwkeurig. Toch laat ze de auditor heel wat praktische keuzes. Zo verloopt concreet de audit van een app van een overheidsinstantie of een onderneming, op iOS en op Android."
+  ],
+  [
+   "ol",
+   [
+    [
+     "De scope en de omgeving afbakenen.",
+     "We leggen de versie van de geauditeerde app vast (de gepubliceerde versie of een testbuild via TestFlight of een testtrack op Google Play), de nodige testaccounts en de fictieve gegevens om de procedures zonder risico te doorlopen. Is de app bedoeld voor een beheerde omgeving, bijvoorbeeld een vloot toestellen die door een bank of een administratie wordt beheerd, dan vraagt RAAM om te testen met de configuraties die in die omgeving werkelijk worden gebruikt."
+    ],
+    [
+     "De steekproef van schermen samenstellen.",
+     "De methodologie legt, voor zover ze bestaan, de volgende schermen op: het startscherm, de wettelijke informatie, de authenticatie, het contact, de documentatieschermen, minstens één relevant scherm voor elk type dienst en elk hoofdgebruik (waaronder de zoekfunctie), minstens één downloadbaar document per dienst, alle schermen van een proces in meerdere stappen en de schermen van verschillende aard (datatabellen, multimedia, formulieren, realtimecommunicatie). Willekeurig gekozen schermen, goed voor minstens 10 % van de steekproef, vullen de selectie aan."
+    ],
+    [
+     "De echte toestellen voorbereiden.",
+     "De tests gebeuren op de laatste beschikbare versie van iOS en Android, of op de vorige versie, met de versies van VoiceOver en TalkBack die bij het systeem worden geleverd. RAAM preciseert dat het niet nodig is om Android op een bepaald toestelmodel te testen. In de praktijk voorzien we minstens één smartphone per platform, en een tablet als de app die ondersteunt."
+    ],
+    [
+     "Testen met de schermlezer.",
+     "Elk scherm wordt doorlopen met VoiceOver op iOS en TalkBack op Android, met veegbewegingen, door het scherm aan te raken en met de rotor of de leesopdrachten. Met het ondertitelpaneel van VoiceOver of de weergave van de spraakuitvoer van TalkBack kunnen we precies vastleggen wat wordt voorgelezen. We controleren of elke knop een naam, een rol en een status heeft, of de titels zijn gedeclareerd en of fout- en bevestigingsmeldingen worden voorgelezen zonder dat de focus onverwacht verspringt."
+    ],
+    [
+     "Testen met extern toetsenbord en schakelaar.",
+     "Op iOS activeren we de volledige toetsenbordtoegang; op Android testen we eerst met alleen het toetsenbord en daarna zo nodig met Switch Access, waarbij we bijvoorbeeld Tab koppelen aan “volgende”, Shift + Tab aan “vorige”, Enter aan “selecteren” en Esc aan “terug”. Het doel is elke functie te bereiken en te activeren, zonder valkuil en in een logische volgorde."
+    ],
+    [
+     "Vergroting en weergave controleren.",
+     "De tekstgrootte wordt verhoogd in de systeeminstellingen; op iOS raadt de methodologie aan te testen op 190 %, de waarde die het dichtst bij 200 % ligt en in het bedieningspaneel beschikbaar is. We controleren of teksten niet worden afgekapt of overlappen, of de app werkt in staande en liggende stand, en of het contrast voldoende blijft, gemeten op basis van schermafbeeldingen van het toestel."
+    ],
+    [
+     "De andere vormen van gebruik nagaan.",
+     "We controleren de alternatieven voor complexe gebaren (slepen, knijpen, schudden), de grootte en de tussenruimte van de aanraakzones, het beheer van tijdslimieten, de video's (ondertiteling, audiodescriptie), de ingebouwde webweergaven waarin een procedure verloopt, en de documenten die vanuit de app worden gedownload. De inspectietools van Apple (Accessibility Inspector) en Google (Accessibility Scanner) en Colour Contrast Analyser vullen de analyse aan, zonder de handmatige tests ooit te vervangen."
+    ],
+    [
+     "De score berekenen en de niet-interferentie toepassen.",
+     "Een criterium is pas gevalideerd als het wordt nageleefd op alle schermen van de steekproef waarop het van toepassing is: één scherm dat faalt, volstaat om het af te keuren. De conformiteitsscore zet de gevalideerde criteria af tegen de toepasselijke criteria. De niet-interferentiecriteria (controle over automatisch afgespeelde geluiden, geen toetsenbordval, controle over tijdslimieten, geen gevaarlijke flitsen, controle over bewegende inhoud) gelden zelfs voor vrijgestelde inhoud."
+    ],
+    [
+     "Rapporteren en de verklaring opstellen.",
+     "Het rapport geeft per scherm de niet-gevalideerde criteria, de betrokken elementen en afzonderlijke aanbevelingen voor de iOS- en Android-teams, die met verschillende componenten werken. Het dient als basis voor de toegankelijkheidsverklaring die op de website van de organisatie of op de pagina van de app wordt gepubliceerd."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Drie valkuilen komen vaak terug. De eerste is de audit van slechts één platform: iOS en Android hebben elk hun eigen componenten, en een hybride app kan op het ene correct zijn en op het andere tekortschieten; de audits van de SIP hebben trouwens afzonderlijk betrekking op iOS- en Android-versies. De tweede is een oriëntatie die zonder verantwoording in staande stand is vergrendeld, een van de meest vastgestelde gebreken. De derde is de aangepaste component (datumkiezer, carrousel, tabbladen) die zich niet kenbaar maakt aan hulptechnologieën. Om verder te gaan dan conformiteit, kunt u met een [[svc:test-utilisateur|test met gebruikers met een beperking]] nagaan of de gebruikerstrajecten echt bruikbaar zijn."
+  ],
+  [
+   "h2",
+   "overzichtstabel",
+   "Wie past wat toe: organisatie, wettekst, referentiekader, controle"
+  ],
+  [
+   "p",
+   "De onderstaande tabel vat de meest voorkomende situaties samen. Ze vervangt geen juridische analyse van uw situatie, maar helpt u snel te bepalen onder welke tekst en welke autoriteit u valt."
+  ],
+  [
+   "table",
+   {
+    "caption": "Digitale toegankelijkheid in Luxemburg: wetteksten, referentiekaders en autoriteiten per type organisatie",
+    "head": [
+     "Organisatie",
+     "Toepasselijke tekst",
+     "Beoordelingskader",
+     "Controle en beroep"
+    ],
+    "rows": [
+     [
+      "Ministerie, staatsadministratie",
+      "Wet van 28 mei 2019",
+      "RAWeb 1.1 (web), RAAM 1.1 (mobiel), RAPDF 1.1 (pdf)",
+      "SIP: controles, klachten; ombudsman"
+     ],
+     [
+      "Gemeente, syndicat de communes, office social",
+      "Wet van 28 mei 2019",
+      "RAWeb 1.1, RAAM 1.1, RAPDF 1.1",
+      "SIP; ombudsman"
+     ],
+     [
+      "Openbare instelling, vereniging opgericht door overheden",
+      "Wet van 28 mei 2019",
+      "RAWeb 1.1, RAAM 1.1",
+      "SIP; ombudsman"
+     ],
+     [
+      "Basis- of secundaire school, kinderdagverblijf",
+      "Buiten toepassingsgebied, behalve essentiële administratieve functies online",
+      "RAWeb 1.1 voor die functies",
+      "SIP voor de gedekte inhoud"
+     ],
+     [
+      "Retailbank, betalingsinstelling",
+      "Wet van 8 maart 2023 (EAA)",
+      "EN 301 549; RAWeb en RAAM als methode",
+      "OSAPS, groothertogelijke politie; boetes"
+     ],
+     [
+      "Webshop van een onderneming die geen micro-onderneming is",
+      "Wet van 8 maart 2023 (EAA)",
+      "EN 301 549; RAWeb als methode",
+      "OSAPS; boetes"
+     ],
+     [
+      "Personenvervoerder (website, app, ticketing)",
+      "Wet van 8 maart 2023 (EAA)",
+      "EN 301 549; RAWeb en RAAM als methode",
+      "OSAPS, sectorale autoriteiten"
+     ],
+     [
+      "Fabrikant of invoerder van terminals, smartphones, e-readers",
+      "Wet van 8 maart 2023 (EAA)",
+      "Eisen van de wet, geharmoniseerde normen",
+      "OSAPS, Douanes et accises, groothertogelijke politie"
+     ],
+     [
+      "Micro-onderneming die diensten verleent",
+      "Vrijgesteld van de eisen van de wet van 8 maart 2023",
+      "Geen onder de EAA; WCAG aanbevolen",
+      "Geen controle onder de EAA"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Eenzelfde organisatie kan onder beide wetten vallen. Een openbare vervoersmaatschappij valt bijvoorbeeld onder de wet van 2019 voor haar institutionele websites en onder de wet van 2023 voor haar diensten van personenvervoer. De pagina [[country:luxembourg|digitale toegankelijkheid in Luxemburg]] zet de belangrijkste verplichtingen en de beschikbare diensten in het land op een rij."
+  ],
+  [
+   "h2",
+   "raweb-2-raam-2",
+   "RAWeb 2 en RAAM 2 in 2027: anticiperen op de nieuwe norm EN 301 549"
+  ],
+  [
+   "p",
+   "Het kader verandert binnenkort. De herziene versie van de norm EN 301 549, met nummer 4.1.1, werd op 2 september 2026 goedgekeurd door CEN en ETSI; de publicatie in het Publicatieblad van de Europese Unie wordt tegen het einde van het jaar verwacht. Ze integreert onder meer de WCAG 2.2 en dient voortaan om de conformiteit te beoordelen zowel onder de richtlijn van 2016 over overheidswebsites als onder de European Accessibility Act."
+  ],
+  [
+   "p",
+   "De SIP heeft [[https://accessibilite.public.lu/en/news/2026-09-15-EN301549v4.html|aangekondigd dat RAWeb 2 en RAAM 2 in februari 2027 verschijnen (in het Engels)]]. De nieuwe versies behouden de aanpak met criteria, tests en methodologie, maar krijgen een structuur die aansluit bij die van de norm. Zo worden ze makkelijker bruikbaar voor wie de RGAA noch RAWeb kent, en verkleinen ze de verschillen in score tussen het referentiekader en de norm. De feedback van de gemeenschap die via GitHub werd verzameld, wordt erin verwerkt."
+  ],
+  [
+   "p",
+   "Zonder te wachten kunnen uw teams de zes WCAG 2.2-criteria toepassen die de norm toevoegt: niet-verborgen focus, alternatief voor sleepbewegingen, grootte van de doelen, consistente hulp, vermijden van overbodige invoer en toegankelijke authenticatie. De laatste twee raken rechtstreeks aan bankprocessen en administratieve procedures: niet opnieuw vragen naar informatie die al werd ingevoerd, en geen cognitieve test opleggen, zoals het overtypen van een vervormde code, zonder alternatief. Een [[svc:formations|opleiding voor de ontwerp- en ontwikkelteams]] begin 2027 voorkomt dat nieuwe inhoud wordt gemaakt volgens regels die al achterhaald zijn."
+  ],
+  [
+   "h2",
+   "actieplan",
+   "Actieplan voor digitale toegankelijkheid in Luxemburg"
+  ],
+  [
+   "p",
+   "Onder welke tekst u ook valt, de aanpak volgt dezelfde stappen. U kunt er nog dit kwartaal mee beginnen, zonder op versie 2 van de referentiekaders te wachten."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Breng uw digitale diensten in kaart.",
+     "Maak een lijst van de websites, apps, intranetten, extranetten en gepubliceerde documenten, met hun taal, hun doelgroep en hun leverancier. Voor een overheidsinstantie vergelijkt u uw lijst met de inventaris die op data.public.lu is gepubliceerd."
+    ],
+    [
+     "Bepaal de toepasselijke tekst.",
+     "Per dienst: de wet van 28 mei 2019, de wet van 8 maart 2023, of beide. Documenteer de grensgevallen (professionele klanten, micro-onderneming, vrijgestelde inhoud) en laat de analyse valideren door uw juridische dienst."
+    ],
+    [
+     "Kies het referentiekader en de steekproef.",
+     "RAWeb 1.1 voor het web, RAAM 1.1 voor apps, RAPDF 1.1 voor pdf's. Stel een steekproef samen die de essentiële trajecten en alle werkelijk gebruikte taalversies dekt."
+    ],
+    [
+     "Voer de eerste audit uit.",
+     "Laat elke dienst auditeren, voor mobiel op echte toestellen en met een onderscheid tussen iOS en Android. Een [[svc:audit-raam|RAAM-audit]] of een RAWeb-audit levert een onderbouwde conformiteitsscore op en een lijst met geprioriteerde correcties."
+    ],
+    [
+     "Publiceer of verbeter de toegankelijkheidsverklaring.",
+     "Gebruik de officiële generator, publiceer de verklaring in elke taal, voeg een toegankelijk contactpunt toe en bezorg, als overheidsinstantie, het adres binnen dertig dagen aan de SIP."
+    ],
+    [
+     "Corrigeer volgens de impact.",
+     "Pak eerst aan wat een essentieel traject blokkeert: authenticatie, betaling, aanvraagformulier, raadpleging van een officieel document. Neem de toegankelijkheidseisen op in uw ontwikkelcontracten en laat de [[svc:recette|toegankelijkheid controleren bij elke oplevering]], vóór elke ingebruikname."
+    ],
+    [
+     "Bereid 2027 voor.",
+     "Pas nu al de WCAG 2.2-criteria toe, volg de publicatie van RAWeb 2 en RAAM 2 in februari 2027 op, en plan een nieuwe audit na elke grote herwerking en minstens één jaarlijkse herlezing van uw verklaringen."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Valt u onder de EAA, voeg dan twee taken toe: de informatie over de toegankelijkheid van de dienst opstellen die in uw algemene voorwaarden moet komen, en de behandeling organiseren van meldingen die het OSAPS u zou kunnen bezorgen. Voor overheidsinstanties: houd er rekening mee dat de controlesteekproef voor 2026 al is gepubliceerd en dat de auditrapporten dat ook zullen worden. Ontwikkelen uw teams zelf, dan verlaagt een [[svc:developpement|begeleiding van de ontwikkelaars]] op iOS en Android de kosten van de correcties."
+  ]
+ ],
+ "faq": [
+  [
+   "Moet een privéonderneming RAWeb of RAAM toepassen?",
+   "Nee, die referentiekaders zijn door de wet van 28 mei 2019 opgelegd aan de publieke sector. Een onderneming die onder de wet van 8 maart 2023 valt, moet de toegankelijkheidseisen van de EAA naleven, beoordeeld aan de hand van de norm EN 301 549. RAWeb en RAAM blijven wel openbare, gratis en gedetailleerde methoden om die conformiteit aan te tonen, en hun criteria stemmen overeen met de eisen van de norm. Wie ze gebruikt, heeft het makkelijker in de dialoog met het OSAPS bij een melding."
+  ],
+  [
+   "Is een RGAA-audit uit Frankrijk geldig in Luxemburg?",
+   "Hij dekt een groot deel van de eisen, omdat RAWeb inhoud van de RGAA 4.1.2 overneemt, maar hij volstaat niet. RAWeb telt 136 criteria tegenover 106 voor de RGAA: de criteria over documentatie, bewerkingstools, ondersteunende diensten en realtimecommunicatie worden niet beoordeeld. Voor een Luxemburgse toegankelijkheidsverklaring moet u de audit op die punten aanvullen en de score volgens RAWeb herberekenen."
+  ],
+  [
+   "Wat riskeert een overheidsinstantie die de wet van 28 mei 2019 niet naleeft?",
+   "De wet voorziet geen boetes zoals die van de EAA, en het monitoringverslag 2022-2024 vermeldt geen enkele sanctie. De instantie stelt zich wel bloot aan een controle door de SIP, waarvan het rapport als open data wordt gepubliceerd, aan klachten die door de SIP of de ombudsman worden behandeld, en aan publieke kritiek. Een ontbrekende of foutieve verklaring valt bovendien meteen op, zowel bij de gebruikers als bij de autoriteit."
+  ],
+  [
+   "Moet de toegankelijkheidsverklaring in het Luxemburgs worden vertaald?",
+   "De officiële generator maakt de verklaring aan in het Frans, het Duits, het Engels en het Luxemburgs, en raadt aan ze aan te bieden in elke taal van een meertalige website. Bestaat uw website in drie talen, publiceer de verklaring dan in die drie talen. Het belangrijkste is dat een gebruiker de verklaring vindt in de taal van de pagina die hij bekijkt, met een toegankelijk contactpunt en de vermelding van de beroepsmogelijkheden."
+  ],
+  [
+   "Hoe lang duurt de audit van een mobiele app?",
+   "De duur hangt af van het aantal schermen in de steekproef, het aantal platformen en de complexiteit van de trajecten: een app met authenticatie, betaling en downloadbare documenten vraagt meer werk dan een informatieve app. De iOS-audit en de Android-audit zijn twee afzonderlijke beoordelingen, ook al worden gemeenschappelijke aanbevelingen gebundeld. In onze praktijk bedraagt de gemiddelde doorlooptijd van een audit drie weken, van de terbeschikkingstelling van de app tot de oplevering van het rapport."
+  ],
+  [
+   "Vallen de apps van een Luxemburgse bank onder de EAA?",
+   "Ja, zodra ze consumenten bedienen: bankdiensten voor consumenten vallen onder de wet van 8 maart 2023. Dat omvat de mobiele app, de online klantenzone, de trajecten om een rekening te openen en de documenten die aan de klant worden bezorgd. Diensten die uitsluitend voor professionele klanten bedoeld zijn, vergen een analyse geval per geval. Het toezicht ligt bij het OSAPS, samen met de bevoegde sectorale autoriteiten."
+  ],
+  [
+   "Hoe meldt u een ontoegankelijke website of dienst in Luxemburg?",
+   "Voor een website of app van de publieke sector neemt u eerst contact op met de organisatie via haar toegankelijkheidsverklaring; krijgt u binnen de maand geen bevredigend antwoord, dan dient u een klacht in bij de SIP via het klachtenformulier, of bij de ombudsman van het Groothertogdom. Voor een privéproduct of -dienst onder de EAA meldt u het probleem bij het OSAPS, gratis online via MyGuichet.lu, indien mogelijk met een schermafbeelding."
+  ]
+ ],
+ "cta_svc": "audit-raam",
+ "cta_title": "Is uw app klaar voor een controle?",
+ "cta_text": "Wij beoordelen uw iOS- en Android-apps volgens RAAM 1.1, op echte toestellen, en bereiden uw toegankelijkheidsverklaring voor. Laten we samen uw situatie bekijken.",
+ "related": [
+  "eaa",
+  "normes",
+  "belgique"
+ ],
+ "modified": "2026-10-28",
+ "cluster": "reglementation"
 }

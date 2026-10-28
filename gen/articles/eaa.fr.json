@@ -1,217 +1,630 @@
 {
-  "slug": "european-accessibility-act",
-  "h1": "European Accessibility Act : ce que vérifient les autorités, secteur par secteur",
-  "crumb": "European Accessibility Act",
-  "meta_title": "European Accessibility Act : obligations et contrôles par secteur",
-  "meta_desc": "EAA : produits et services visés, exemptions, norme EN 301 549, autorités en France, Belgique et Luxembourg, premiers jugements et preuves à conserver.",
-  "card_desc": "Produits et services visés, exemptions, norme EN 301 549, autorités et premiers jugements : l'EAA expliqué secteur par secteur.",
-  "cat": "analyse",
-  "where": "Europe",
-  "cover": "EAA",
-  "cover_note": ["Directive (UE) 2019/882", "Applicable depuis le 28 juin 2025"],
-  "date": "2026-10-27",
-  "lead": "L'European Accessibility Act, la directive (UE) 2019/882, s'applique depuis le 28 juin 2025 aux produits et services numériques proposés aux consommateurs de l'Union : commerce en ligne, banque, transport, télécoms, médias audiovisuels, livres numériques et terminaux. Cette analyse détaille, secteur par secteur, ce qui bloque réellement les utilisateurs, les exemptions et leurs conditions exactes, l'état de la norme EN 301 549 et les autorités de contrôle en France, en Belgique et au Luxembourg. Elle fait aussi le point sur les premières décisions de justice, puis se termine par un tableau des preuves à conserver et un plan d'action.",
-  "body": [
-    ["h2", "directive-marche-interieur", "European Accessibility Act : une directive de marché intérieur"],
-    ["p", "L'European Accessibility Act, ou acte européen sur l'accessibilité, désigne la [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/fra|directive (UE) 2019/882 du 17 avril 2019 relative aux exigences en matière d'accessibilité applicables aux produits et services]], publiée au Journal officiel de l'Union européenne le 7 juin 2019. Les États membres devaient la transposer au plus tard le 28 juin 2022 et en appliquer les règles à partir du 28 juin 2025. Depuis cette date, un produit visé mis sur le marché, ou un service visé fourni à un consommateur, doit respecter des exigences d'accessibilité communes à l'ensemble de l'Union."],
-    ["p", "Sa logique n'est pas d'abord celle d'une loi sur le handicap. C'est une directive de marché intérieur : avant elle, plusieurs pays commençaient à fixer leurs propres règles pour les distributeurs automatiques, les sites marchands ou les applications bancaires, ce qui fragmentait le marché et renchérissait les produits. L'Union a donc arrêté une liste unique d'exigences, que les opérateurs appliquent une fois pour vendre partout. Le texte est d'ailleurs marqué « présentant de l'intérêt pour l'EEE », ce qui signifie qu'il a vocation à être repris dans l'accord sur l'Espace économique européen."],
-    ["p", "Cette logique a des conséquences très pratiques. Pour les produits, l'EAA reprend les mécanismes de la législation sur la sécurité des produits : fabricants, importateurs et distributeurs ont chacun des obligations, et le fabricant établit une documentation technique, une déclaration UE de conformité et appose le marquage CE. Pour les services, l'obligation pèse sur le prestataire, qui doit concevoir son service selon les exigences, informer le public de la manière dont il les respecte et corriger les non-conformités. Dans les deux cas, le contrôle relève d'autorités de surveillance du marché, comme pour un jouet ou un appareil électrique."],
-    ["p", "L'EAA ne remplace pas les règles propres aux organismes publics. La directive (UE) 2016/2102 sur l'accessibilité des sites et applications du secteur public, dont la transposition française repose sur l'article 47 de la loi du 11 février 2005 et sur le RGAA, continue de s'appliquer en parallèle. Une même entreprise peut relever des deux régimes, ce qui soulève des questions d'articulation que les juridictions françaises ont commencé à trancher en 2026. Pour situer ces textes les uns par rapport aux autres, reportez-vous au [[article:guide|guide de l'accessibilité numérique]] et à la page [[standards|référentiels et obligations par pays]]."],
-
-    ["h2", "produits-services-concernes", "Produits et services couverts par l'acte européen sur l'accessibilité"],
-    ["p", "Le champ de la directive est une liste fermée, fixée à son article 2. Un produit ou un service qui n'y figure pas n'est pas soumis à l'EAA, même s'il est numérique et utilisé par le grand public. À l'inverse, aucun seuil de chiffre d'affaires ne réduit cette liste : seule l'exemption des microentreprises de services, détaillée plus loin, limite le nombre d'opérateurs concernés."],
-    ["h3", "Les produits mis sur le marché après le 28 juin 2025"],
-    ["ul", [
-      "les systèmes informatiques matériels à usage général destinés aux consommateurs, et leurs systèmes d'exploitation ;",
-      "les terminaux en libre-service : terminaux de paiement, guichets automatiques bancaires, distributeurs de titres de transport, bornes d'enregistrement et terminaux interactifs d'information, à l'exception de ceux qui sont intégrés dans des véhicules, aéronefs, navires ou matériel roulant ;",
-      "les équipements terminaux grand public à capacités informatiques interactives, utilisés pour les communications électroniques, comme les smartphones, ou pour accéder à des services de médias audiovisuels, comme les téléviseurs et décodeurs ;",
-      "les liseuses numériques."
-    ]],
-    ["h3", "Les services fournis aux consommateurs après le 28 juin 2025"],
-    ["ul", [
-      "les services de communications électroniques, à l'exception des services de transmission utilisés pour fournir des services de machine à machine ;",
-      "les services donnant accès à des services de médias audiovisuels, par exemple un site ou une application de télévision ;",
-      "certains éléments des services de transport aérien, ferroviaire, par voie navigable et par autobus : sites internet, services sur appareils mobiles, billets et billetterie électroniques, informations sur le voyage, y compris en temps réel, et terminaux interactifs en libre-service ; pour les transports urbains, suburbains et régionaux, seuls ces terminaux sont visés ;",
-      "les services bancaires aux consommateurs ;",
-      "les livres numériques et les logiciels spécialisés qui permettent de les lire ;",
-      "les services de commerce électronique ;",
-      "la réception des communications d'urgence adressées au numéro d'urgence unique européen 112."
-    ]],
-    ["p", "Deux précisions évitent bien des erreurs de cadrage. D'abord, les services ne sont visés que lorsqu'ils sont fournis à des consommateurs : le considérant 42 de la directive décrit le commerce électronique comme un service fourni à distance en vue de conclure un contrat de consommation, si bien qu'une plateforme de commande réservée aux professionnels n'entre pas dans cette catégorie. Ensuite, la nationalité de l'opérateur ne compte pas : ce qui déclenche l'obligation, c'est la mise sur le marché de l'Union d'un produit ou la fourniture d'un service à des consommateurs qui s'y trouvent."],
-    ["p", "Un site vitrine qui présente une entreprise sans permettre de conclure un contrat ne relève donc pas, à ce titre, du commerce électronique. Mais dès qu'il permet de commander, de réserver, de souscrire un abonnement ou de payer, il bascule dans le champ. Dans la pratique, la plupart des entreprises de services aux particuliers ont au moins un parcours concerné : la prise de commande, l'espace client ou la souscription en ligne."],
-
-    ["h2", "secteur-par-secteur", "EAA accessibilité secteur par secteur : ce qui bloque en pratique"],
-    ["p", "Les exigences de la directive sont formulées de manière fonctionnelle. Pour savoir ce qu'une autorité ou un plaignant regardera, il faut les traduire en parcours concrets. Les exemples qui suivent sont ceux que l'on rencontre le plus souvent en audit : le texte ne les cite pas un par un, mais chacun empêche une personne handicapée d'aller au bout d'un service couvert, ce que l'EAA a précisément pour objet d'empêcher."],
-    ["h3", "Commerce électronique"],
-    ["p", "C'est le secteur le plus large : tout site ou application qui permet à un consommateur de conclure un contrat à distance est concerné, qu'il vende des vêtements, des courses, des voyages, des billets de spectacle ou des abonnements. L'annexe I prévoit en outre que le service fournisse les informations sur l'accessibilité des produits vendus lorsque le fabricant les communique, et que les fonctions d'identification, de sécurité et de paiement soient perceptibles, utilisables, compréhensibles et robustes."],
-    ["p", "Les blocages se situent rarement sur la page d'accueil. On les trouve dans le tunnel d'achat :"],
-    ["ul", [
-      "des filtres de recherche (taille, prix, marque) dont l'état coché n'est pas restitué par le lecteur d'écran, ou qui rechargent la liste sans prévenir ;",
-      "des pastilles de couleur ou de taille sans nom accessible : une personne aveugle entend « bouton, bouton, bouton » sans savoir ce qu'elle choisit ;",
-      "un panier dont la mise à jour des quantités n'est pas annoncée, ou un bouton « supprimer » qui ne précise pas quel article il retire ;",
-      "un captcha purement visuel à la création de compte, sans alternative audio ni autre moyen de vérification ;",
-      "un calendrier de choix de créneau de livraison inutilisable au clavier ;",
-      "un formulaire d'adresse qui signale ses erreurs uniquement par une bordure rouge, ou qui efface la saisie après une erreur ;",
-      "un module de paiement tiers intégré dans un cadre, puis une page d'authentification forte de la banque qui s'ouvre dans une fenêtre que le lecteur d'écran ne détecte pas ;",
-      "un délai de session trop court pour une personne qui navigue avec une synthèse vocale ou une commande vocale."
-    ]],
-    ["p", "Le module de paiement mérite une attention particulière, car il est presque toujours fourni par un prestataire. L'EAA ne déplace pas la responsabilité pour autant : c'est le marchand qui fournit le service de commerce électronique au consommateur. Demandez donc à vos prestataires de paiement, de signature électronique et de captcha leurs propres éléments de conformité, et testez le parcours complet, de la fiche produit à la confirmation de commande."],
-    ["h3", "Services bancaires aux consommateurs"],
-    ["p", "Le secteur bancaire est visé pour les services fournis aux particuliers : espace client, application mobile, ouverture de compte et souscription en ligne, paiements, crédits. Les guichets automatiques et les terminaux de paiement relèvent, eux, du régime des produits. Les points de blocage sont bien identifiés :"],
-    ["ul", [
-      "l'authentification forte, lorsqu'elle repose uniquement sur une notification à valider en quelques secondes ou sur une reconnaissance biométrique sans autre option ;",
-      "le clavier virtuel à touches mélangées pour saisir un code confidentiel, que les lecteurs d'écran restituent mal ou pas du tout ;",
-      "le code à usage unique reçu par SMS, à saisir dans un champ qui expire avant que l'utilisateur ait pu passer d'une application à l'autre ;",
-      "la signature électronique d'une offre de crédit dans un module tiers dont les cases à cocher et le bouton « signer » ne sont pas étiquetés ;",
-      "les conditions générales, offres de prêt et relevés fournis en PDF scannés ou non balisés, donc illisibles par synthèse vocale ;",
-      "les simulateurs de crédit à curseurs, impossibles à manipuler au clavier ou avec un agrandisseur d'écran."
-    ]],
-    ["p", "Pour ce secteur, l'annexe I insiste aussi sur la compréhensibilité de l'information. Un contrat ou une notice rédigé de manière inutilement complexe pose donc un problème d'accessibilité, et pas seulement de qualité rédactionnelle : les services juridiques et marketing sont concernés autant que les équipes techniques."],
-    ["h3", "Transport de voyageurs"],
-    ["p", "Pour l'aérien, le ferroviaire, le maritime et fluvial et l'autocar, la directive vise les sites, les applications, les billets électroniques, la billetterie, l'information voyageurs y compris en temps réel, et les bornes interactives. Les blocages typiques sont les suivants :"],
-    ["ul", [
-      "le plan de cabine ou de voiture pour choisir sa place, dessiné en image sans équivalent textuel ;",
-      "le billet électronique envoyé en PDF dont les informations de trajet ne sont pas balisées ;",
-      "les alertes de retard ou de changement de quai diffusées uniquement par des pictogrammes de couleur ;",
-      "la demande d'assistance pour une personne à mobilité réduite accessible seulement par un formulaire lui-même inaccessible ;",
-      "les bornes de vente en gare sans sortie audio, sans prise casque et sans clavier physique."
-    ]],
-    ["p", "Pour les réseaux urbains, suburbains et régionaux, seuls les terminaux interactifs en libre-service sont visés. Le site ou l'application d'un réseau de bus urbain n'entre donc pas dans le champ de l'EAA à ce titre, même s'il peut relever d'autres obligations, notamment lorsque l'exploitant est un organisme public ou délégataire d'une mission de service public, comme le détaille la page consacrée au [[sector:public|secteur public]]."],
-    ["h3", "Communications électroniques"],
-    ["p", "Les opérateurs de téléphonie et les fournisseurs d'accès à internet sont au premier rang. L'annexe I leur demande notamment de proposer du texte en temps réel en complément de la voix, et la conversation totale lorsque la vidéo est fournie avec la voix. Mais les blocages les plus fréquents sont plus prosaïques : souscription ou changement de forfait dans un espace client inaccessible, factures en PDF non structurés, service client joignable uniquement par téléphone vocal, procédure de résiliation qui impose un parcours graphique. L'interface de la box ou du décodeur relève quant à elle du régime des produits."],
-    ["h3", "Médias audiovisuels"],
-    ["p", "La directive vise les services qui donnent accès aux contenus audiovisuels : applications de télévision et de vidéo à la demande, guides électroniques de programmes, sites de rattrapage. Elle ne crée pas d'obligation de sous-titrer tous les programmes, qui relève d'autres textes. Elle exige que ces services rendent leurs fonctions accessibles, informent sur la disponibilité des contenus accessibles et transmettent intégralement les services d'accès existants : sous-titres, audiodescription, sous-titres parlés, interprétation en langue des signes."],
-    ["p", "En pratique, les audits révèlent des lecteurs vidéo dont les boutons n'ont pas de nom, une activation des sous-titres cachée dans un menu non accessible, des catalogues en vignettes d'images sans texte, ou une navigation à la télécommande sans aucun retour vocal. Une audiodescription disponible mais impossible à activer seul équivaut, pour l'utilisateur, à une audiodescription absente."],
-    ["h3", "Livres numériques"],
-    ["p", "Les livres numériques et les logiciels de lecture doivent permettre la navigation dans la structure du texte, l'adaptation de l'affichage, la lecture par synthèse vocale et la restitution des contenus non textuels par des alternatives. Ils doivent aussi fournir des métadonnées décrivant leurs fonctions d'accessibilité, et les dispositifs de gestion des droits numériques ne doivent pas bloquer ces fonctions. Un éditeur qui verrouille la synthèse vocale par sa protection, ou qui publie des schémas sans description, se place hors des exigences."],
-    ["h3", "Terminaux, ordinateurs, smartphones et liseuses"],
-    ["p", "Pour les produits, la chaîne de responsabilité est celle du marquage CE. Le fabricant évalue la conformité, établit la documentation technique et la déclaration UE de conformité, puis appose le marquage. L'importateur vérifie que ces étapes ont été faites, et le distributeur contrôle la présence du marquage et des documents. Les défauts courants sont connus : écran tactile sans alternative pour une personne aveugle, absence de sortie audio, saisie du code sur une surface lisse sans repère tactile, délais impossibles à prolonger, notices et emballages sans information accessible."],
-
-    ["h2", "annexe-i-exigences", "Les exigences de l'annexe I traduites en langage clair"],
-    ["p", "L'annexe I ne cite ni les WCAG ni aucune norme. Elle fixe des résultats à atteindre, regroupés en exigences communes aux produits, exigences communes aux services, exigences propres à certains services et critères de performance fonctionnelle. Traduites en langage courant, elles reviennent à quelques principes que tout chef de projet peut vérifier sur son propre service."],
-    ["ol", [
-      ["Plusieurs canaux sensoriels.", "Toute information nécessaire à l'usage, comme une consigne, une alerte ou l'état d'une opération, passe par plus d'un sens : un message d'erreur affiché doit aussi être restitué par la synthèse vocale, un signal sonore doit avoir un équivalent visuel."],
-      ["Perceptible, utilisable, compréhensible, robuste.", "Pour les sites et les applications mobiles, l'annexe reprend les quatre principes des WCAG : on doit pouvoir percevoir le contenu, l'utiliser au clavier ou avec une technologie d'assistance, le comprendre, et l'utiliser avec les navigateurs et les outils du marché, de manière cohérente et adéquate."],
-      ["Une alternative à chaque capacité.", "Un service ne doit pas exiger une seule capacité : la vue, l'audition, la parole, la précision des gestes ou la force. Une commande uniquement vocale, un geste complexe sur écran tactile ou une authentification reposant sur une seule modalité, sans équivalent, posent problème."],
-      ["Aucun risque photosensible.", "Les contenus ne doivent pas comporter d'effets susceptibles de déclencher des crises d'épilepsie photosensible. En pratique, les animations automatiques doivent aussi pouvoir être arrêtées."],
-      ["Une utilisation sans perte d'autonomie ni de confidentialité.", "Recourir à une fonction d'accessibilité ne doit pas obliger à se faire aider ni exposer ses données : un code saisi ne doit pas être énoncé à voix haute sans écouteurs, par exemple."],
-      ["Une information sur le fonctionnement du service.", "Le prestataire explique comment le service fonctionne et quelles fonctions d'accessibilité il offre, dans des formats eux-mêmes accessibles."],
-      ["Des services d'assistance accessibles.", "Le service client, la hotline ou le support technique doivent pouvoir renseigner sur l'accessibilité du service et sur sa compatibilité avec les technologies d'assistance, par des moyens de contact que tous peuvent utiliser."],
-      ["Une information compréhensible.", "Les textes nécessaires pour utiliser le service doivent être compréhensibles par le public auquel ils s'adressent ; l'annexe le précise expressément pour les services bancaires."]
-    ]],
-    ["p", "Pour démontrer qu'un service numérique respecte ces principes, les auditeurs les déclinent en critères vérifiables. Pour le web et le mobile, cela revient à évaluer les critères de succès des WCAG de niveau AA, complétés par les exigences de la norme EN 301 549 sur les documents, les logiciels, le matériel et les services d'assistance. C'est l'objet d'un [[svc:audit-conformite|audit de conformité WCAG et EN 301 549]], qui couvre aussi les documents et les parcours d'achat."],
-    ["note", "À retenir", "L'annexe I fixe des résultats ; les normes disent comment les démontrer. Un service peut respecter l'annexe sans appliquer une norme, mais il doit alors prouver lui-même, exigence par exigence, qu'il atteint le résultat attendu."],
-
-    ["h2", "exemptions-conditions", "Microentreprises, charge disproportionnée : les exemptions et leurs conditions exactes"],
-    ["h3", "L'exemption des microentreprises de services"],
-    ["p", "La directive définit la microentreprise comme une entreprise qui emploie moins de dix personnes et dont le chiffre d'affaires annuel ou le total du bilan annuel n'excède pas 2 millions d'euros. Les deux conditions sont cumulatives pour l'effectif, alternatives pour les montants : une boutique en ligne de huit salariés qui réalise 3 millions d'euros de chiffre d'affaires, mais dont le total de bilan est de 1,5 million, reste une microentreprise au sens du texte. Une société de douze salariés n'en est jamais une, quel que soit son chiffre d'affaires."],
-    ["p", "L'exemption ne vaut que pour les services. Une microentreprise qui fabrique ou importe un produit visé, par exemple une borne ou une liseuse, doit respecter les exigences applicables aux produits. Elle bénéficie seulement d'allègements de procédure : elle n'a pas à constituer de dossier de preuves lorsqu'elle invoque une exception, ni à en informer les autorités, mais elle doit communiquer les faits pertinents si l'autorité les lui demande. La directive demande aussi aux États membres de fournir aux microentreprises des lignes directrices et des outils pour faciliter l'application des règles."],
-    ["p", "Deux réflexes s'imposent. Calculez les seuils au niveau de l'entité juridique qui fournit effectivement le service aux consommateurs, et conservez ce calcul avec vos comptes : c'est la première pièce que demandera une autorité. Ensuite, surveillez la croissance : l'exemption disparaît dès que l'entreprise franchit l'un des seuils, et la mise en conformité d'un site marchand prend plusieurs mois. Les [[sector:pme|PME]] qui approchent des seuils ont intérêt à intégrer l'accessibilité dès la prochaine refonte."],
-    ["h3", "Modification fondamentale et charge disproportionnée"],
-    ["p", "L'article 14 de la directive prévoit deux exceptions, valables pour les produits comme pour les services : les exigences ne s'appliquent pas lorsque leur respect imposerait une modification significative entraînant une modification fondamentale de la nature du produit ou du service, ou lorsqu'il ferait peser une charge disproportionnée sur l'opérateur. Ces exceptions ne se décrètent pas, elles se démontrent. Les conditions sont précises :"],
-    ["ol", [
-      ["Une évaluation préalable, faite par l'opérateur.", "Elle suit les critères de l'annexe VI : rapport entre les coûts nets de mise en conformité et les coûts totaux de l'opérateur, coûts rapportés aux avantages estimés pour les personnes handicapées compte tenu de la fréquence et de la durée d'utilisation, rapport entre ces coûts et le chiffre d'affaires net."],
-      ["Une documentation conservée cinq ans.", "Les preuves sont conservées pendant cinq ans à compter de la dernière mise à disposition du produit ou de la dernière fourniture du service, et une copie est remise aux autorités sur demande."],
-      ["Une réévaluation régulière.", "Pour les services, l'évaluation est renouvelée à chaque modification du service, à la demande de l'autorité de contrôle et, en tout état de cause, au moins tous les cinq ans."],
-      ["Une information des autorités.", "L'opérateur qui invoque l'exception en informe les autorités de surveillance du marché de chaque État membre où le produit est mis sur le marché ou le service fourni. En France, la DGCCRF oriente vers une démarche en ligne de déclaration de non-conformité ou d'invocation d'une exemption."],
-      ["Aucun financement externe dédié.", "Un opérateur qui reçoit, pour améliorer l'accessibilité, un financement public ou privé autre que ses ressources propres ne peut pas invoquer la charge disproportionnée."]
-    ]],
-    ["p", "Le considérant 66 de la directive ferme la porte aux justifications de confort : l'absence de priorité, de temps ou de connaissances ne doit pas être considérée comme une raison légitime. L'exception porte en outre sur l'exigence concernée et dans la mesure où elle est disproportionnée, pas sur l'ensemble du service. Un prestataire qui ne peut pas rendre accessible à court terme un module de visualisation ancien reste tenu par tout le reste de son parcours, et doit proposer une solution de substitution lorsque c'est possible."],
-
-    ["h2", "en-301-549-presomption", "Présomption de conformité : où en est la norme EN 301 549"],
-    ["p", "Selon l'article 15 de la directive, un produit ou un service conforme à des normes harmonisées dont les références ont été publiées au Journal officiel de l'Union européenne est présumé conforme aux exigences que ces normes couvrent. La même présomption joue pour les spécifications techniques que la Commission peut adopter par actes d'exécution. Cette présomption est précieuse : elle inverse la charge de la discussion, puisque c'est alors à l'autorité de démontrer que le service ne respecte pas l'exigence."],
-    ["p", "Pour les technologies de l'information, la norme de référence est l'EN 301 549. Sa version V3.2.1, publiée en 2021, est harmonisée au titre de la directive 2016/2102 sur le secteur public, par la décision d'exécution (UE) 2021/1339, et [[https://www.etsi.org/human-factors-accessibility/en-301-549-v3-the-harmonized-european-standard-for-ict-accessibility|l'ETSI la présente comme le soutien de cette directive, une mise à jour étant prévue pour couvrir aussi l'European Accessibility Act]]. La révision destinée à l'EAA, la version V4.1.1, a été adoptée par les organismes européens de normalisation le 24 août 2026 et publiée le 2 septembre 2026. Elle passe des WCAG 2.1 aux WCAG 2.2, niveaux A et AA, et ajoute une annexe de correspondance avec les exigences de l'EAA."],
-    ["p", "À la date de rédaction de cet article, la référence de cette nouvelle version n'a pas encore été citée au Journal officiel. L'autorité irlandaise chargée du handicap, la National Disability Authority, [[https://nda.ie/news/en301549-published|annonce cette citation pour le 16 décembre 2026]]. Tant qu'elle n'a pas eu lieu, aucune norme ne confère la présomption de conformité au titre de l'EAA : la conformité se démontre au regard de l'annexe I, en s'appuyant sur les normes existantes comme méthode d'évaluation."],
-    ["p", "Cette situation n'empêche pas les autorités d'avoir une grille de lecture. La DGCCRF cite ainsi la norme EN 301 549 V3.2.1, le RGAA et les WCAG 2.1 comme références. Le RGAA en vigueur est la version 4.1.2, et la Direction interministérielle du numérique indique sur [[https://accessibilite.numerique.gouv.fr/|le site officiel du RGAA]] qu'une version 5 est en cours de rédaction, avec une publication prévue fin 2026. Le choix raisonnable aujourd'hui consiste à évaluer vos services selon les WCAG 2.2 de niveau AA : vous couvrez les critères de la version 3.2.1 et anticipez ceux de la version 4.1.1. Le détail des référentiels nationaux, RGAA en France, RAWeb et RAAM au Luxembourg, eCH-0059 en Suisse, est présenté dans l'article sur les [[article:normes|normes et référentiels d'accessibilité]]."],
-
-    ["h2", "information-accessibilite-services", "Informer sur l'accessibilité de vos services : où et comment"],
-    ["p", "L'EAA impose aux prestataires de services une obligation d'information distincte des exigences techniques. Le prestataire établit les informations prévues par l'annexe V de la directive et explique comment son service respecte les exigences d'accessibilité. Ces informations sont mises à la disposition du public par écrit et oralement, sous une forme accessible aux personnes handicapées, et conservées aussi longtemps que le service est proposé. En France, le décret n° 2023-931 du 9 octobre 2023 prévoit qu'elles figurent dans les conditions générales ou dans un document équivalent."],
-    ["p", "Leur contenu est fixé : une description générale du service dans des formats accessibles, les explications nécessaires pour comprendre son fonctionnement, et la description de la manière dont il respecte les exigences applicables. La DGCCRF cite les rapports d'audit RGAA parmi les éléments qui permettent d'établir cette information. Concrètement, une page « Accessibilité » reliée depuis le pied de page et depuis les conditions générales, déclinée pour chaque service ou application, répond à l'attente si elle contient au minimum :"],
-    ["ul", [
-      "le périmètre exact du service décrit : site, application iOS, application Android, bornes ;",
-      "le référentiel utilisé pour l'évaluation, la date de l'évaluation et l'organisme qui l'a réalisée ;",
-      "les fonctions d'accessibilité disponibles et les technologies d'assistance avec lesquelles le service a été testé ;",
-      "les limites connues, avec l'alternative proposée pour chacune et le calendrier de correction ;",
-      "un moyen de contact accessible pour signaler une difficulté ou obtenir l'information sous une autre forme ;",
-      "la date de dernière mise à jour."
-    ]],
-    ["p", "Cette information ne se confond pas avec la déclaration d'accessibilité prévue par l'article 47 de la loi de 2005, dont le contenu est fixé par le RGAA et qui vise d'autres organismes. Une entreprise soumise aux deux régimes peut les rassembler sur une même page, à condition que chacune réponde à ses propres exigences : la méthode est détaillée dans l'article sur la [[article:declaration|déclaration d'accessibilité]]. En Belgique, l'avis de septembre 2025 de la Plateforme des conseils d'avis handicap relevait pour sa part que les informations publiées à l'intention des utilisateurs finaux par plusieurs autorités de contrôle, comme le SPF Économie ou l'IBPT, étaient très minimalistes, absentes ou difficiles à trouver."],
-
-    ["h2", "periodes-transition", "Périodes de transition : 2030, 15 ou 20 ans, et ce qui n'en bénéficie pas"],
-    ["p", "La directive organise une entrée en vigueur progressive, mais ses périodes de transition sont plus étroites qu'on ne le croit souvent. Telles que la [[https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/professionnels-vos-produits-et-services-doivent-etre-conformes-la-directive-accessibilite|DGCCRF les présente pour la France]], elles sont au nombre de trois :"],
-    ["ul", [
-      "jusqu'au 28 juin 2030, un prestataire peut continuer à fournir ses services au moyen de produits qu'il utilisait légalement avant le 28 juin 2025 pour fournir des services similaires ;",
-      "les contrats de service conclus avec des consommateurs avant le 28 juin 2025 peuvent se poursuivre sans modification jusqu'à leur terme, et au plus tard jusqu'au 28 juin 2030 ;",
-      "les terminaux en libre-service utilisés légalement avant le 28 juin 2025 peuvent rester en service jusqu'à la fin de leur durée de vie économique ; la directive autorise les États à plafonner cette durée à vingt ans après la mise en service, et la France a retenu quinze ans."
-    ]],
-    ["p", "La précision la plus importante figure dans la même fiche de la DGCCRF : un site internet ou une application mobile n'est pas un « produit » au sens de la directive. Il ne bénéficie donc d'aucune de ces périodes transitoires. Un site marchand en ligne avant le 28 juin 2025 n'est pas couvert par une clause d'antériorité : depuis cette date, chaque commande qu'il permet de passer est un service fourni à un consommateur, soumis aux exigences."],
-    ["note", "À retenir", "Les délais de 2030 et de quinze ou vingt ans concernent le matériel déjà en service et les contrats en cours. Ils ne s'appliquent ni aux sites ni aux applications, qui doivent être conformes depuis le 28 juin 2025."],
-
-    ["h2", "transposition-autorites", "Transposition et contrôle : France, Belgique, Luxembourg et entreprises suisses"],
-    ["h3", "France : le code de la consommation, la DGCCRF et l'article 47"],
-    ["p", "La France a transposé la directive par l'article 16 de la loi n° 2023-171 du 9 mars 2023, qui a créé l'article L. 412-13 du code de la consommation, puis par le décret n° 2023-931 du 9 octobre 2023 et un arrêté du même jour qui détaille les exigences. Les règles figurent donc dans le droit de la consommation, au titre de l'obligation de conformité des produits et services."],
-    ["p", "Le contrôle est confié à la DGCCRF, qui vérifie notamment les produits multimédias, téléphones, box, téléviseurs et terminaux en libre-service, ainsi que les services de commerce électronique, bancaires et de transport. Elle agit en coordination avec l'Arcom, l'Arcep, la Banque de France, l'Autorité de contrôle prudentiel et de résolution et l'Autorité des marchés financiers. Ses agents peuvent enjoindre la mise en conformité, avec une astreinte. Les manquements sont des contraventions de cinquième classe, punies d'amendes de 7 500 euros cumulables en fonction du nombre d'infractions constatées, et une suspension de mise sur le marché est possible en cas de pratiques persistantes."],
-    ["p", "Ce régime coexiste avec l'article 47 de la loi du 11 février 2005, qui impose l'accessibilité des services de communication au public en ligne aux organismes publics, aux délégataires de service public et aux entreprises dont le chiffre d'affaires dépasse 250 millions d'euros. Depuis l'ordonnance n° 2023-859 du 6 septembre 2023, ce second régime est contrôlé par l'Arcom. L'article L. 412-13 s'applique « sans préjudice » de l'article 47, une formule dont la portée est désormais discutée devant les tribunaux. La page [[country:france|accessibilité numérique en France]] et l'article [[article:france|sur les obligations françaises]] détaillent l'ensemble de ces règles."],
-    ["h3", "Belgique : plusieurs textes et plusieurs autorités"],
-    ["p", "La Belgique a réparti la transposition entre l'État fédéral, les Communautés et les Régions, selon leurs compétences. Pour le commerce électronique et les services bancaires, la loi du 5 novembre 2023 modifie plusieurs livres du Code de droit économique et la loi du 2 août 2002 : elle crée dans le livre VIII un titre consacré aux exigences d'accessibilité des services et rend les infractions passibles de sanctions de niveau 2, ou de niveau 3 en cas de mauvaise foi, comme le montre le [[https://www.dekamer.be/FLWB/PDF/55/3433/55K3433003.pdf|texte adopté en commission de la Chambre]]. Particularité belge : l'article 40 de cette loi n'exclut les microentreprises de son champ que jusqu'au 28 juin 2030, et non de manière permanente comme le fait la directive pour les microentreprises de services ; au-delà de cette date, seul un arrêté royal pris sur la base du nouvel article VIII.59, § 2, du Code de droit économique pourrait les en exclure. D'autres textes fédéraux, communautaires et régionaux couvrent les communications électroniques, l'audiovisuel, les livres numériques, le transport et le 112."],
-    ["p", "Selon l'avis de septembre 2025 de la Plateforme des conseils d'avis handicap, la surveillance est répartie ainsi : le SPF Économie, par son inspection économique, pour le commerce électronique et les services bancaires ; l'IBPT pour les terminaux en libre-service, les ordinateurs et systèmes d'exploitation, les équipements terminaux, les liseuses et les communications électroniques ; les Communautés pour les médias audiovisuels et les livres numériques ; le SPF Intérieur pour le 112 ; le SPF Mobilité et Transports pour le transport longue distance ; les Régions pour les transports urbains, suburbains et régionaux. Le même avis indique que les amendes administratives peuvent atteindre, pour les infractions les plus graves, 200 000 euros ou 6 % du chiffre d'affaires annuel. Voir la page [[country:belgique|accessibilité numérique en Belgique]] et l'article [[article:belgique|consacré à la Belgique]]."],
-    ["h3", "Luxembourg : une loi unique et l'OSAPS"],
-    ["p", "Le Luxembourg a choisi un texte unique : la loi du 8 mars 2023 relative aux exigences en matière d'accessibilité applicables aux produits et services, modifiée la même année pour ajouter l'exception prévue par la directive pour les transports urbains, suburbains et régionaux, comme le retrace le [[https://wdocs-pub.chd.lu/docs/exped/0143/039/286396.pdf|rapport parlementaire sur le projet de loi n° 8265]]. La surveillance relève de l'Office de la surveillance de l'accessibilité des produits et services (OSAPS), administration placée sous l'autorité du ministre chargé de la politique pour personnes handicapées, qui sert de guichet unique."],
-    ["p", "Au cours des travaux parlementaires, le projet prévoyait à la fois des sanctions administratives et pénales, et le Conseil d'État s'est opposé à leur cumul. La [[https://accessibilite-produits-services.public.lu/dam-assets/lgislation/loi-du-8-mars-2023.pdf|loi publiée au Mémorial A n° 133 du 15 mars 2023]] distingue désormais deux niveaux. L'OSAPS peut infliger une amende administrative de 250 à 15 000 euros à l'opérateur qui refuse de lui fournir des documents, fait obstacle à la surveillance ou ne respecte pas ses décisions (article 32). L'opérateur qui enfreint les exigences de la loi encourt une amende pénale de 251 à 500 000 euros, proportionnée à l'étendue et à la gravité de la non-conformité, portée de 500 à 1 000 000 euros en cas de récidive (article 33). Les entreprises luxembourgeoises qui exploitent aussi des services publics numériques évaluent ces derniers avec le RAWeb et le RAAM, présentés sur la page [[country:luxembourg|accessibilité numérique au Luxembourg]] ; pour les applications mobiles, un [[svc:audit-raam|audit RAAM]] couvre les deux régimes. L'article [[article:luxembourg|consacré au Luxembourg]] approfondit ces points."],
-    ["h3", "Suisse : hors Union, mais concernée par ses ventes"],
-    ["p", "La Suisse n'est membre ni de l'Union européenne ni de l'Espace économique européen : elle n'a pas transposé la directive, et l'EAA ne s'applique pas aux services fournis aux consommateurs en Suisse. En revanche, une entreprise suisse qui vend en ligne à des consommateurs situés dans l'Union, qui leur propose des services bancaires ou de transport, ou qui fabrique des terminaux et liseuses vendus dans l'Union, est soumise aux mêmes exigences que ses concurrents européens. Pour les produits, l'importateur établi dans l'Union doit vérifier la conformité, ce qui oblige le fabricant suisse à lui fournir la documentation technique et la déclaration de conformité."],
-    ["p", "Les entreprises suisses doivent donc piloter deux référentiels : la LHand et la norme eCH-0059 pour leurs obligations nationales, l'EAA pour leurs ventes dans l'Union. Les deux reposent sur les WCAG, ce qui permet une seule évaluation bien cadrée. Voir la page [[country:suisse|accessibilité numérique en Suisse]] et l'article [[article:suisse|consacré à la Suisse]]."],
-
-    ["h2", "depuis-juin-2025", "Ce qui s'est passé depuis le 28 juin 2025"],
-    ["p", "En France, les premières actions sont venues des associations. Le 7 juillet 2025, l'apiDV et Droit Pluriel ont mis en demeure Auchan, Carrefour, E.Leclerc et Picard Surgelés de rendre accessibles leurs sites de courses en ligne aux personnes aveugles et malvoyantes. Faute de résultat suffisant, les quatre enseignes ont été assignées en référé en novembre 2025, avec le soutien du collectif de juristes Intérêt à Agir, selon les informations publiées le 12 novembre 2025 par Clubic."],
-    ["p", "Deux décisions de référé ont depuis abouti à des lectures opposées. Le 5 mai 2026, le juge des référés du tribunal judiciaire de Lille a débouté les associations face à Auchan E-Commerce France, dont le chiffre d'affaires, 182 millions d'euros en 2023 et 144 millions en 2024, était inférieur au seuil de 250 millions d'euros de l'article 47. Selon Handicap.fr, le tribunal a estimé que ce seuil de la loi de 2005 devait l'emporter sur le code de la consommation, tout en relevant, d'après un audit réalisé à la demande de l'entreprise, un niveau d'accessibilité « assez bas ». Les associations contestent cette lecture, qui revient à appliquer à l'EAA un seuil que la directive ne connaît pas."],
-    ["p", "Le 4 juin 2026, le tribunal judiciaire de Caen, saisi en référé, a au contraire ordonné à Carrefour France de rendre son site carrefour.fr et son application mobile pleinement accessibles dans un délai de six mois, sous astreinte. L'enseigne faisait valoir un taux de conformité de 71 % ; le juge a écarté cet argument, en considérant qu'un service ne peut pas se contenter d'être partiellement accessible. L'affaire concernant E.Leclerc, portée devant le tribunal judiciaire de Créteil, n'avait pas d'issue publiée dans une source fiable à la date de rédaction. Une clarification par les cours d'appel ou par le législateur reste attendue."],
-    ["p", "Côté administration, la DGCCRF a présenté un premier bilan de ses contrôles lors de la Conférence nationale du handicap du 4 septembre 2026 : selon La Lettre des Réseaux, plus de la moitié des établissements de commerce en ligne contrôlés depuis le début de 2026 présentaient des manquements, qui ont donné lieu à des mesures correctives ou répressives, et les résultats définitifs de l'enquête sont attendus début 2027. Depuis décembre 2025, les consommateurs peuvent aussi signaler les défauts d'accessibilité par un parcours dédié sur SignalConso."],
-    ["p", "Le signal est clair pour les entreprises. Le risque principal n'est pas une amende isolée, mais une injonction prononcée en référé, assortie d'une astreinte et d'un délai court, sur la base d'un audit que l'entreprise a parfois elle-même commandé. Un rapport d'audit qui reconnaît des non-conformités sans plan de correction daté devient alors une pièce à charge."],
-
-    ["h2", "tableau-preuves", "Tableau : exigences clés et preuves à conserver, secteur par secteur"],
-    ["p", "Le tableau ci-dessous résume, pour chaque secteur, les points qu'une autorité ou un plaignant examinera en priorité et les pièces qui permettent d'y répondre. Il se lit comme une liste de contrôle documentaire : chaque ligne doit pouvoir être justifiée par un document daté."],
-    ["table", {
-      "caption": "European Accessibility Act : exigences prioritaires et preuves à conserver",
-      "head": ["Secteur", "Exigences clés à vérifier", "Preuves à conserver"],
-      "rows": [
-        ["Commerce électronique", "Recherche et filtres, fiche produit, panier, création de compte sans captcha bloquant, paiement et authentification, information sur l'accessibilité des produits vendus", "Rapport d'audit du parcours d'achat complet, éléments de conformité des prestataires de paiement et de captcha, page d'information à jour, plan de correction daté"],
-        ["Services bancaires", "Authentification forte avec alternatives, saisie des codes, signature électronique, documents contractuels lisibles, information compréhensible", "Audit des applications et de l'espace client, tests avec lecteurs d'écran sur mobile, version accessible des contrats types, preuve des alternatives proposées"],
-        ["Transport de voyageurs", "Réservation, choix de place, billet électronique, information en temps réel, demande d'assistance, bornes", "Audit site et application, tests des billets générés, fiche technique des bornes, information publiée sur les services d'accès"],
-        ["Communications électroniques", "Souscription et espace client, factures, texte en temps réel, contact du service client par plusieurs canaux", "Audit des parcours de souscription et de résiliation, description des moyens de contact accessibles, documentation des terminaux fournis"],
-        ["Médias audiovisuels", "Lecteur vidéo, guide des programmes, activation des sous-titres et de l'audiodescription, transmission intégrale des services d'accès", "Audit des applications sur chaque plateforme, procédure de contrôle de la transmission des services d'accès, information publiée"],
-        ["Livres numériques", "Navigation structurelle, synthèse vocale non bloquée par la protection, alternatives aux images, métadonnées d'accessibilité", "Rapport de contrôle des fichiers par collection, politique de gestion des droits, métadonnées publiées"],
-        ["Terminaux et matériels", "Interface sur plusieurs canaux sensoriels, sortie audio, repères tactiles, notices et emballages", "Documentation technique, déclaration UE de conformité, marquage CE, documents conservés cinq ans"],
-        ["Tous services", "Information sur l'accessibilité, contact accessible, exceptions éventuelles", "Information dans les conditions générales ou document équivalent, évaluations de charge disproportionnée conservées cinq ans, preuve d'information des autorités, calcul des seuils de microentreprise"]
-      ]
-    }],
-    ["p", "Pour les parcours les plus exposés, la preuve la plus convaincante reste un test réalisé par des personnes qui utilisent au quotidien un lecteur d'écran, une commande vocale ou un agrandisseur : c'est l'objet des [[svc:test-utilisateur|tests utilisateurs avec des personnes handicapées]]. Un rapport d'audit, aussi précis soit-il, ne remplace pas la démonstration qu'une personne aveugle peut effectivement payer sa commande."],
-
-    ["h2", "plan-action", "Plan d'action pour se conformer à l'European Accessibility Act"],
-    ["p", "Que l'entreprise parte de zéro ou d'un premier audit, la démarche suit le même ordre. Il ne s'agit pas de tout corriger d'un coup, mais de traiter d'abord ce qui empêche un consommateur d'utiliser le service, puis de documenter chaque décision."],
-    ["ol", [
-      ["Qualifier le périmètre.", "Listez vos produits et services au regard de l'article 2 : quels parcours permettent de conclure un contrat avec un consommateur, quels services bancaires, de transport ou de communication vous fournissez, dans quels États membres. Notez aussi ce qui sort du champ, avec la justification."],
-      ["Vérifier les seuils et les exemptions.", "Calculez l'effectif, le chiffre d'affaires et le total de bilan de chaque entité qui fournit un service visé. Si une exception pour charge disproportionnée paraît envisageable, ouvrez dès maintenant le dossier d'évaluation selon les critères de l'annexe VI."],
-      ["Cartographier les parcours critiques.", "Identifiez, pour chaque service, les cinq à dix parcours sans lesquels il est inutilisable : création de compte, connexion, recherche, commande, paiement, consultation de documents, contact. C'est sur eux que portera l'évaluation."],
-      ["Auditer selon une méthode reconnue.", "Faites évaluer ces parcours selon les WCAG 2.2 de niveau AA et la norme EN 301 549, sur ordinateur et sur mobile, avec les technologies d'assistance du marché. Pour un service français également soumis à l'article 47, un [[svc:audit-rgaa|audit RGAA]] peut être mené en parallèle ; le délai moyen d'un audit, dans notre pratique, est de trois semaines."],
-      ["Traiter les composants tiers.", "Paiement, authentification, captcha, signature électronique, agent conversationnel, lecteur vidéo : demandez à chaque fournisseur ses éléments de conformité, ajoutez une clause d'accessibilité dans vos contrats et prévoyez une solution de remplacement si le composant reste bloquant."],
-      ["Corriger et recetter.", "Classez les anomalies par impact sur les parcours et par effort, corrigez d'abord les blocages, puis vérifiez chaque correction avant mise en production grâce à une [[svc:recette|recette accessibilité]]. Les équipes internes peuvent être appuyées par un [[svc:developpement|accompagnement au développement accessible]]."],
-      ["Publier l'information et ouvrir un canal de contact.", "Rédigez l'information prévue par l'annexe V, rattachez-la aux conditions générales, et proposez un moyen de contact accessible pour signaler une difficulté."],
-      ["Documenter et informer.", "Conservez les rapports, les plans de correction datés, les évaluations d'exception et, le cas échéant, la preuve de l'information des autorités. Désignez une personne responsable de ce dossier."],
-      ["Former les équipes.", "Les régressions viennent des nouvelles fonctionnalités : formez concepteurs, développeurs, rédacteurs et service client, avec des [[svc:formations|formations à l'accessibilité numérique]] adaptées à chaque métier."],
-      ["Mettre en place une veille.", "Suivez la citation au Journal officiel de l'EN 301 549 V4.1.1, la publication du RGAA 5, les décisions des cours d'appel sur l'articulation entre l'article 47 et le code de la consommation, et les positions des autorités de chaque pays où vous vendez."]
-    ]]
+ "slug": "european-accessibility-act",
+ "h1": "European Accessibility Act : ce que vérifient les autorités, secteur par secteur",
+ "crumb": "European Accessibility Act",
+ "meta_title": "European Accessibility Act : obligations et contrôles par secteur",
+ "meta_desc": "EAA : produits et services visés, exemptions, norme EN 301 549, autorités en France, Belgique et Luxembourg, premiers jugements et preuves à conserver.",
+ "card_desc": "Produits et services visés, exemptions, norme EN 301 549, autorités et premiers jugements : l'EAA expliqué secteur par secteur.",
+ "cat": "analyse",
+ "where": "Europe",
+ "cover": "EAA",
+ "cover_note": [
+  "Directive (UE) 2019/882",
+  "Applicable depuis le 28 juin 2025"
+ ],
+ "date": "2026-10-27",
+ "lead": "L'European Accessibility Act, la directive (UE) 2019/882, s'applique depuis le 28 juin 2025 aux produits et services numériques proposés aux consommateurs de l'Union : commerce en ligne, banque, transport, télécoms, médias audiovisuels, livres numériques et terminaux. Cette analyse détaille, secteur par secteur, ce qui bloque réellement les utilisateurs, les exemptions et leurs conditions exactes, l'état de la norme EN 301 549 et les autorités de contrôle en France, en Belgique et au Luxembourg. Elle fait aussi le point sur les premières décisions de justice, puis se termine par un tableau des preuves à conserver et un plan d'action.",
+ "body": [
+  [
+   "h2",
+   "directive-marche-interieur",
+   "European Accessibility Act : une directive de marché intérieur"
   ],
-  "faq": [
-    ["L'EAA s'applique-t-il à un site B2B ?", "Pour les services, la directive ne vise que ceux qui sont fournis aux consommateurs. Une plateforme de commande strictement réservée aux professionnels, avec ouverture de compte sur justification d'un numéro d'entreprise, n'entre donc pas dans le commerce électronique au sens de l'EAA. En revanche, si le même site permet à un particulier de commander, il est concerné pour ce parcours. Les produits, eux, sont visés dès lors qu'ils sont destinés au grand public, quel que soit le canal de vente."],
-    ["Faut-il apposer un marquage CE sur un site ou une application ?", "Non. Le marquage CE et la déclaration UE de conformité concernent les produits : ordinateurs, smartphones, terminaux, liseuses. Un site ou une application n'est pas un produit au sens de la directive, comme le rappelle la DGCCRF. Pour les services, l'obligation consiste à respecter les exigences de l'annexe I, à publier une information sur l'accessibilité du service et à pouvoir prouver la conformité aux autorités qui la demandent."],
-    ["Un audit RGAA suffit-il pour l'European Accessibility Act ?", "Il constitue une base solide pour un service français : la DGCCRF cite le RGAA parmi ses références, et il repose sur les WCAG 2.1. Il ne couvre toutefois pas tout. L'EAA vise aussi le service client, les documents contractuels, le matériel et l'information publiée. Pour un groupe présent dans plusieurs pays, une évaluation selon la norme EN 301 549 et les WCAG 2.2 donne un résultat lisible partout et anticipe la version 4.1.1 de la norme."],
-    ["L'EAA impose-t-il un taux de conformité minimum ?", "La directive ne fixe aucun pourcentage : elle exige que le service respecte les exigences applicables. Un taux de conformité est un indicateur de suivi, pas une protection. Le tribunal judiciaire de Caen l'a montré en juin 2026 en écartant l'argument d'un taux de 71 % : un service ne peut pas se contenter d'être partiellement accessible. Mieux vaut un parcours d'achat entièrement utilisable qu'un taux élevé obtenu sur des pages secondaires."],
-    ["Les applications mobiles sont-elles concernées par l'EAA ?", "Oui. Les applications font partie des services visés dès qu'elles servent à commander, à gérer un compte bancaire, à acheter un billet, à consulter une information voyageurs ou à accéder à des contenus audiovisuels. Elles ne bénéficient d'aucune période de transition. Leur évaluation se fait sur appareils réels, avec VoiceOver sur iOS et TalkBack sur Android, et porte aussi sur les écrans ouverts par des composants tiers, comme l'authentification bancaire."],
-    ["Qui peut agir contre une entreprise non conforme ?", "Les autorités de surveillance du marché de chaque pays peuvent contrôler d'office ou à la suite d'un signalement : en France, la DGCCRF et les autorités sectorielles. Les associations de personnes handicapées peuvent aussi saisir le juge : en France, plusieurs ont obtenu ou demandé en référé des injonctions sous astreinte depuis 2025. Les consommateurs peuvent enfin signaler une difficulté à l'entreprise elle-même, qui doit pouvoir y répondre par un canal accessible."]
+  [
+   "p",
+   "L'European Accessibility Act, ou acte européen sur l'accessibilité, désigne la [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/fra|directive (UE) 2019/882 du 17 avril 2019 relative aux exigences en matière d'accessibilité applicables aux produits et services]], publiée au Journal officiel de l'Union européenne le 7 juin 2019. Les États membres devaient la transposer au plus tard le 28 juin 2022 et en appliquer les règles à partir du 28 juin 2025. Depuis cette date, un produit visé mis sur le marché, ou un service visé fourni à un consommateur, doit respecter des exigences d'accessibilité communes à l'ensemble de l'Union."
   ],
-  "cta_svc": "audit-conformite",
-  "cta_title": "Votre service entre-t-il dans le champ de l'EAA ?",
-  "cta_text": "Nous qualifions votre périmètre et évaluons vos parcours critiques selon les WCAG et la norme EN 301 549. Un premier échange suffit pour savoir par où commencer.",
-  "related": ["france", "belgique", "normes"]
+  [
+   "p",
+   "Sa logique n'est pas d'abord celle d'une loi sur le handicap. C'est une directive de marché intérieur : avant elle, plusieurs pays commençaient à fixer leurs propres règles pour les distributeurs automatiques, les sites marchands ou les applications bancaires, ce qui fragmentait le marché et renchérissait les produits. L'Union a donc arrêté une liste unique d'exigences, que les opérateurs appliquent une fois pour vendre partout. Le texte est d'ailleurs marqué « présentant de l'intérêt pour l'EEE », ce qui signifie qu'il a vocation à être repris dans l'accord sur l'Espace économique européen."
+  ],
+  [
+   "p",
+   "Cette logique a des conséquences très pratiques. Pour les produits, l'EAA reprend les mécanismes de la législation sur la sécurité des produits : fabricants, importateurs et distributeurs ont chacun des obligations, et le fabricant établit une documentation technique, une déclaration UE de conformité et appose le marquage CE. Pour les services, l'obligation pèse sur le prestataire, qui doit concevoir son service selon les exigences, informer le public de la manière dont il les respecte et corriger les non-conformités. Dans les deux cas, le contrôle relève d'autorités de surveillance du marché, comme pour un jouet ou un appareil électrique."
+  ],
+  [
+   "p",
+   "L'EAA ne remplace pas les règles propres aux organismes publics. La directive (UE) 2016/2102 sur l'accessibilité des sites et applications du secteur public, dont la transposition française repose sur l'article 47 de la loi du 11 février 2005 et sur le RGAA, continue de s'appliquer en parallèle. Une même entreprise peut relever des deux régimes, ce qui soulève des questions d'articulation que les juridictions françaises ont commencé à trancher en 2026. Pour situer ces textes les uns par rapport aux autres, reportez-vous au [[article:guide|guide de l'accessibilité numérique]] et à la page [[standards|référentiels et obligations par pays]]."
+  ],
+  [
+   "h2",
+   "produits-services-concernes",
+   "Produits et services couverts par l'acte européen sur l'accessibilité"
+  ],
+  [
+   "p",
+   "Le champ de la directive est une liste fermée, fixée à son article 2. Un produit ou un service qui n'y figure pas n'est pas soumis à l'EAA, même s'il est numérique et utilisé par le grand public. À l'inverse, aucun seuil de chiffre d'affaires ne réduit cette liste : seule l'exemption des microentreprises de services, détaillée plus loin, limite le nombre d'opérateurs concernés."
+  ],
+  [
+   "h3",
+   "Les produits mis sur le marché après le 28 juin 2025"
+  ],
+  [
+   "ul",
+   [
+    "les systèmes informatiques matériels à usage général destinés aux consommateurs, et leurs systèmes d'exploitation ;",
+    "les terminaux en libre-service : terminaux de paiement, guichets automatiques bancaires, distributeurs de titres de transport, bornes d'enregistrement et terminaux interactifs d'information, à l'exception de ceux qui sont intégrés dans des véhicules, aéronefs, navires ou matériel roulant ;",
+    "les équipements terminaux grand public à capacités informatiques interactives, utilisés pour les communications électroniques, comme les smartphones, ou pour accéder à des services de médias audiovisuels, comme les téléviseurs et décodeurs ;",
+    "les liseuses numériques."
+   ]
+  ],
+  [
+   "h3",
+   "Les services fournis aux consommateurs après le 28 juin 2025"
+  ],
+  [
+   "ul",
+   [
+    "les services de communications électroniques, à l'exception des services de transmission utilisés pour fournir des services de machine à machine ;",
+    "les services donnant accès à des services de médias audiovisuels, par exemple un site ou une application de télévision ;",
+    "certains éléments des services de transport aérien, ferroviaire, par voie navigable et par autobus : sites internet, services sur appareils mobiles, billets et billetterie électroniques, informations sur le voyage, y compris en temps réel, et terminaux interactifs en libre-service ; pour les transports urbains, suburbains et régionaux, seuls ces terminaux sont visés ;",
+    "les services bancaires aux consommateurs ;",
+    "les livres numériques et les logiciels spécialisés qui permettent de les lire ;",
+    "les services de commerce électronique ;",
+    "la réception des communications d'urgence adressées au numéro d'urgence unique européen 112."
+   ]
+  ],
+  [
+   "p",
+   "Deux précisions évitent bien des erreurs de cadrage. D'abord, les services ne sont visés que lorsqu'ils sont fournis à des consommateurs : le considérant 42 de la directive décrit le commerce électronique comme un service fourni à distance en vue de conclure un contrat de consommation, si bien qu'une plateforme de commande réservée aux professionnels n'entre pas dans cette catégorie. Ensuite, la nationalité de l'opérateur ne compte pas : ce qui déclenche l'obligation, c'est la mise sur le marché de l'Union d'un produit ou la fourniture d'un service à des consommateurs qui s'y trouvent."
+  ],
+  [
+   "p",
+   "Un site vitrine qui présente une entreprise sans permettre de conclure un contrat ne relève donc pas, à ce titre, du commerce électronique. Mais dès qu'il permet de commander, de réserver, de souscrire un abonnement ou de payer, il bascule dans le champ. Dans la pratique, la plupart des entreprises de services aux particuliers ont au moins un parcours concerné : la prise de commande, l'espace client ou la souscription en ligne."
+  ],
+  [
+   "h2",
+   "secteur-par-secteur",
+   "EAA accessibilité secteur par secteur : ce qui bloque en pratique"
+  ],
+  [
+   "p",
+   "Les exigences de la directive sont formulées de manière fonctionnelle. Pour savoir ce qu'une autorité ou un plaignant regardera, il faut les traduire en parcours concrets. Les exemples qui suivent sont ceux que l'on rencontre le plus souvent en audit : le texte ne les cite pas un par un, mais chacun empêche une personne handicapée d'aller au bout d'un service couvert, ce que l'EAA a précisément pour objet d'empêcher."
+  ],
+  [
+   "h3",
+   "Commerce électronique"
+  ],
+  [
+   "p",
+   "C'est le secteur le plus large : tout site ou application qui permet à un consommateur de conclure un contrat à distance est concerné, qu'il vende des vêtements, des courses, des voyages, des billets de spectacle ou des abonnements. L'annexe I prévoit en outre que le service fournisse les informations sur l'accessibilité des produits vendus lorsque le fabricant les communique, et que les fonctions d'identification, de sécurité et de paiement soient perceptibles, utilisables, compréhensibles et robustes."
+  ],
+  [
+   "p",
+   "Les blocages se situent rarement sur la page d'accueil. On les trouve dans le tunnel d'achat :"
+  ],
+  [
+   "ul",
+   [
+    "des filtres de recherche (taille, prix, marque) dont l'état coché n'est pas restitué par le lecteur d'écran, ou qui rechargent la liste sans prévenir ;",
+    "des pastilles de couleur ou de taille sans nom accessible : une personne aveugle entend « bouton, bouton, bouton » sans savoir ce qu'elle choisit ;",
+    "un panier dont la mise à jour des quantités n'est pas annoncée, ou un bouton « supprimer » qui ne précise pas quel article il retire ;",
+    "un captcha purement visuel à la création de compte, sans alternative audio ni autre moyen de vérification ;",
+    "un calendrier de choix de créneau de livraison inutilisable au clavier ;",
+    "un formulaire d'adresse qui signale ses erreurs uniquement par une bordure rouge, ou qui efface la saisie après une erreur ;",
+    "un module de paiement tiers intégré dans un cadre, puis une page d'authentification forte de la banque qui s'ouvre dans une fenêtre que le lecteur d'écran ne détecte pas ;",
+    "un délai de session trop court pour une personne qui navigue avec une synthèse vocale ou une commande vocale."
+   ]
+  ],
+  [
+   "p",
+   "Le module de paiement mérite une attention particulière, car il est presque toujours fourni par un prestataire. L'EAA ne déplace pas la responsabilité pour autant : c'est le marchand qui fournit le service de commerce électronique au consommateur. Demandez donc à vos prestataires de paiement, de signature électronique et de captcha leurs propres éléments de conformité, et testez le parcours complet, de la fiche produit à la confirmation de commande."
+  ],
+  [
+   "h3",
+   "Services bancaires aux consommateurs"
+  ],
+  [
+   "p",
+   "Le secteur bancaire est visé pour les services fournis aux particuliers : espace client, application mobile, ouverture de compte et souscription en ligne, paiements, crédits. Les guichets automatiques et les terminaux de paiement relèvent, eux, du régime des produits. Les points de blocage sont bien identifiés :"
+  ],
+  [
+   "ul",
+   [
+    "l'authentification forte, lorsqu'elle repose uniquement sur une notification à valider en quelques secondes ou sur une reconnaissance biométrique sans autre option ;",
+    "le clavier virtuel à touches mélangées pour saisir un code confidentiel, que les lecteurs d'écran restituent mal ou pas du tout ;",
+    "le code à usage unique reçu par SMS, à saisir dans un champ qui expire avant que l'utilisateur ait pu passer d'une application à l'autre ;",
+    "la signature électronique d'une offre de crédit dans un module tiers dont les cases à cocher et le bouton « signer » ne sont pas étiquetés ;",
+    "les conditions générales, offres de prêt et relevés fournis en PDF scannés ou non balisés, donc illisibles par synthèse vocale ;",
+    "les simulateurs de crédit à curseurs, impossibles à manipuler au clavier ou avec un agrandisseur d'écran."
+   ]
+  ],
+  [
+   "p",
+   "Pour ce secteur, l'annexe I insiste aussi sur la compréhensibilité de l'information. Un contrat ou une notice rédigé de manière inutilement complexe pose donc un problème d'accessibilité, et pas seulement de qualité rédactionnelle : les services juridiques et marketing sont concernés autant que les équipes techniques."
+  ],
+  [
+   "h3",
+   "Transport de voyageurs"
+  ],
+  [
+   "p",
+   "Pour l'aérien, le ferroviaire, le maritime et fluvial et l'autocar, la directive vise les sites, les applications, les billets électroniques, la billetterie, l'information voyageurs y compris en temps réel, et les bornes interactives. Les blocages typiques sont les suivants :"
+  ],
+  [
+   "ul",
+   [
+    "le plan de cabine ou de voiture pour choisir sa place, dessiné en image sans équivalent textuel ;",
+    "le billet électronique envoyé en PDF dont les informations de trajet ne sont pas balisées ;",
+    "les alertes de retard ou de changement de quai diffusées uniquement par des pictogrammes de couleur ;",
+    "la demande d'assistance pour une personne à mobilité réduite accessible seulement par un formulaire lui-même inaccessible ;",
+    "les bornes de vente en gare sans sortie audio, sans prise casque et sans clavier physique."
+   ]
+  ],
+  [
+   "p",
+   "Pour les réseaux urbains, suburbains et régionaux, seuls les terminaux interactifs en libre-service sont visés. Le site ou l'application d'un réseau de bus urbain n'entre donc pas dans le champ de l'EAA à ce titre, même s'il peut relever d'autres obligations, notamment lorsque l'exploitant est un organisme public ou délégataire d'une mission de service public, comme le détaille la page consacrée au [[sector:public|secteur public]]."
+  ],
+  [
+   "h3",
+   "Communications électroniques"
+  ],
+  [
+   "p",
+   "Les opérateurs de téléphonie et les fournisseurs d'accès à internet sont au premier rang. L'annexe I leur demande notamment de proposer du texte en temps réel en complément de la voix, et la conversation totale lorsque la vidéo est fournie avec la voix. Mais les blocages les plus fréquents sont plus prosaïques : souscription ou changement de forfait dans un espace client inaccessible, factures en PDF non structurés, service client joignable uniquement par téléphone vocal, procédure de résiliation qui impose un parcours graphique. L'interface de la box ou du décodeur relève quant à elle du régime des produits."
+  ],
+  [
+   "h3",
+   "Médias audiovisuels"
+  ],
+  [
+   "p",
+   "La directive vise les services qui donnent accès aux contenus audiovisuels : applications de télévision et de vidéo à la demande, guides électroniques de programmes, sites de rattrapage. Elle ne crée pas d'obligation de sous-titrer tous les programmes, qui relève d'autres textes. Elle exige que ces services rendent leurs fonctions accessibles, informent sur la disponibilité des contenus accessibles et transmettent intégralement les services d'accès existants : sous-titres, audiodescription, sous-titres parlés, interprétation en langue des signes."
+  ],
+  [
+   "p",
+   "En pratique, les audits révèlent des lecteurs vidéo dont les boutons n'ont pas de nom, une activation des sous-titres cachée dans un menu non accessible, des catalogues en vignettes d'images sans texte, ou une navigation à la télécommande sans aucun retour vocal. Une audiodescription disponible mais impossible à activer seul équivaut, pour l'utilisateur, à une audiodescription absente."
+  ],
+  [
+   "h3",
+   "Livres numériques"
+  ],
+  [
+   "p",
+   "Les livres numériques et les logiciels de lecture doivent permettre la navigation dans la structure du texte, l'adaptation de l'affichage, la lecture par synthèse vocale et la restitution des contenus non textuels par des alternatives. Ils doivent aussi fournir des métadonnées décrivant leurs fonctions d'accessibilité, et les dispositifs de gestion des droits numériques ne doivent pas bloquer ces fonctions. Un éditeur qui verrouille la synthèse vocale par sa protection, ou qui publie des schémas sans description, se place hors des exigences."
+  ],
+  [
+   "h3",
+   "Terminaux, ordinateurs, smartphones et liseuses"
+  ],
+  [
+   "p",
+   "Pour les produits, la chaîne de responsabilité est celle du marquage CE. Le fabricant évalue la conformité, établit la documentation technique et la déclaration UE de conformité, puis appose le marquage. L'importateur vérifie que ces étapes ont été faites, et le distributeur contrôle la présence du marquage et des documents. Les défauts courants sont connus : écran tactile sans alternative pour une personne aveugle, absence de sortie audio, saisie du code sur une surface lisse sans repère tactile, délais impossibles à prolonger, notices et emballages sans information accessible."
+  ],
+  [
+   "h2",
+   "annexe-i-exigences",
+   "Les exigences de l'annexe I traduites en langage clair"
+  ],
+  [
+   "p",
+   "L'annexe I ne cite ni les WCAG ni aucune norme. Elle fixe des résultats à atteindre, regroupés en exigences communes aux produits, exigences communes aux services, exigences propres à certains services et critères de performance fonctionnelle. Traduites en langage courant, elles reviennent à quelques principes que tout chef de projet peut vérifier sur son propre service."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Plusieurs canaux sensoriels.",
+     "Toute information nécessaire à l'usage, comme une consigne, une alerte ou l'état d'une opération, passe par plus d'un sens : un message d'erreur affiché doit aussi être restitué par la synthèse vocale, un signal sonore doit avoir un équivalent visuel."
+    ],
+    [
+     "Perceptible, utilisable, compréhensible, robuste.",
+     "Pour les sites et les applications mobiles, l'annexe reprend les quatre principes des WCAG : on doit pouvoir percevoir le contenu, l'utiliser au clavier ou avec une technologie d'assistance, le comprendre, et l'utiliser avec les navigateurs et les outils du marché, de manière cohérente et adéquate."
+    ],
+    [
+     "Une alternative à chaque capacité.",
+     "Un service ne doit pas exiger une seule capacité : la vue, l'audition, la parole, la précision des gestes ou la force. Une commande uniquement vocale, un geste complexe sur écran tactile ou une authentification reposant sur une seule modalité, sans équivalent, posent problème."
+    ],
+    [
+     "Aucun risque photosensible.",
+     "Les contenus ne doivent pas comporter d'effets susceptibles de déclencher des crises d'épilepsie photosensible. En pratique, les animations automatiques doivent aussi pouvoir être arrêtées."
+    ],
+    [
+     "Une utilisation sans perte d'autonomie ni de confidentialité.",
+     "Recourir à une fonction d'accessibilité ne doit pas obliger à se faire aider ni exposer ses données : un code saisi ne doit pas être énoncé à voix haute sans écouteurs, par exemple."
+    ],
+    [
+     "Une information sur le fonctionnement du service.",
+     "Le prestataire explique comment le service fonctionne et quelles fonctions d'accessibilité il offre, dans des formats eux-mêmes accessibles."
+    ],
+    [
+     "Des services d'assistance accessibles.",
+     "Le service client, la hotline ou le support technique doivent pouvoir renseigner sur l'accessibilité du service et sur sa compatibilité avec les technologies d'assistance, par des moyens de contact que tous peuvent utiliser."
+    ],
+    [
+     "Une information compréhensible.",
+     "Les textes nécessaires pour utiliser le service doivent être compréhensibles par le public auquel ils s'adressent ; l'annexe le précise expressément pour les services bancaires."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Pour démontrer qu'un service numérique respecte ces principes, les auditeurs les déclinent en critères vérifiables. Pour le web et le mobile, cela revient à évaluer les critères de succès des WCAG de niveau AA, complétés par les exigences de la norme EN 301 549 sur les documents, les logiciels, le matériel et les services d'assistance. C'est l'objet d'un [[svc:audit-conformite|audit de conformité WCAG et EN 301 549]], qui couvre aussi les documents et les parcours d'achat."
+  ],
+  [
+   "note",
+   "À retenir",
+   "L'annexe I fixe des résultats ; les normes disent comment les démontrer. Un service peut respecter l'annexe sans appliquer une norme, mais il doit alors prouver lui-même, exigence par exigence, qu'il atteint le résultat attendu."
+  ],
+  [
+   "h2",
+   "exemptions-conditions",
+   "Microentreprises, charge disproportionnée : les exemptions et leurs conditions exactes"
+  ],
+  [
+   "h3",
+   "L'exemption des microentreprises de services"
+  ],
+  [
+   "p",
+   "La directive définit la microentreprise comme une entreprise qui emploie moins de dix personnes et dont le chiffre d'affaires annuel ou le total du bilan annuel n'excède pas 2 millions d'euros. Les deux conditions sont cumulatives pour l'effectif, alternatives pour les montants : une boutique en ligne de huit salariés qui réalise 3 millions d'euros de chiffre d'affaires, mais dont le total de bilan est de 1,5 million, reste une microentreprise au sens du texte. Une société de douze salariés n'en est jamais une, quel que soit son chiffre d'affaires."
+  ],
+  [
+   "p",
+   "L'exemption ne vaut que pour les services. Une microentreprise qui fabrique ou importe un produit visé, par exemple une borne ou une liseuse, doit respecter les exigences applicables aux produits. Elle bénéficie seulement d'allègements de procédure : elle n'a pas à constituer de dossier de preuves lorsqu'elle invoque une exception, ni à en informer les autorités, mais elle doit communiquer les faits pertinents si l'autorité les lui demande. La directive demande aussi aux États membres de fournir aux microentreprises des lignes directrices et des outils pour faciliter l'application des règles."
+  ],
+  [
+   "p",
+   "Deux réflexes s'imposent. Calculez les seuils au niveau de l'entité juridique qui fournit effectivement le service aux consommateurs, et conservez ce calcul avec vos comptes : c'est la première pièce que demandera une autorité. Ensuite, surveillez la croissance : l'exemption disparaît dès que l'entreprise franchit l'un des seuils, et la mise en conformité d'un site marchand prend plusieurs mois. Les [[sector:pme|PME]] qui approchent des seuils ont intérêt à intégrer l'accessibilité dès la prochaine refonte."
+  ],
+  [
+   "h3",
+   "Modification fondamentale et charge disproportionnée"
+  ],
+  [
+   "p",
+   "L'article 14 de la directive prévoit deux exceptions, valables pour les produits comme pour les services : les exigences ne s'appliquent pas lorsque leur respect imposerait une modification significative entraînant une modification fondamentale de la nature du produit ou du service, ou lorsqu'il ferait peser une charge disproportionnée sur l'opérateur. Ces exceptions ne se décrètent pas, elles se démontrent. Les conditions sont précises :"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Une évaluation préalable, faite par l'opérateur.",
+     "Elle suit les critères de l'annexe VI : rapport entre les coûts nets de mise en conformité et les coûts totaux de l'opérateur, coûts rapportés aux avantages estimés pour les personnes handicapées compte tenu de la fréquence et de la durée d'utilisation, rapport entre ces coûts et le chiffre d'affaires net."
+    ],
+    [
+     "Une documentation conservée cinq ans.",
+     "Les preuves sont conservées pendant cinq ans à compter de la dernière mise à disposition du produit ou de la dernière fourniture du service, et une copie est remise aux autorités sur demande."
+    ],
+    [
+     "Une réévaluation régulière.",
+     "Pour les services, l'évaluation est renouvelée à chaque modification du service, à la demande de l'autorité de contrôle et, en tout état de cause, au moins tous les cinq ans."
+    ],
+    [
+     "Une information des autorités.",
+     "L'opérateur qui invoque l'exception en informe les autorités de surveillance du marché de chaque État membre où le produit est mis sur le marché ou le service fourni. En France, la DGCCRF oriente vers une démarche en ligne de déclaration de non-conformité ou d'invocation d'une exemption."
+    ],
+    [
+     "Aucun financement externe dédié.",
+     "Un opérateur qui reçoit, pour améliorer l'accessibilité, un financement public ou privé autre que ses ressources propres ne peut pas invoquer la charge disproportionnée."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Le considérant 66 de la directive ferme la porte aux justifications de confort : l'absence de priorité, de temps ou de connaissances ne doit pas être considérée comme une raison légitime. L'exception porte en outre sur l'exigence concernée et dans la mesure où elle est disproportionnée, pas sur l'ensemble du service. Un prestataire qui ne peut pas rendre accessible à court terme un module de visualisation ancien reste tenu par tout le reste de son parcours, et doit proposer une solution de substitution lorsque c'est possible."
+  ],
+  [
+   "h2",
+   "en-301-549-presomption",
+   "Présomption de conformité : où en est la norme EN 301 549"
+  ],
+  [
+   "p",
+   "Selon l'article 15 de la directive, un produit ou un service conforme à des normes harmonisées dont les références ont été publiées au Journal officiel de l'Union européenne est présumé conforme aux exigences que ces normes couvrent. La même présomption joue pour les spécifications techniques que la Commission peut adopter par actes d'exécution. Cette présomption est précieuse : elle inverse la charge de la discussion, puisque c'est alors à l'autorité de démontrer que le service ne respecte pas l'exigence."
+  ],
+  [
+   "p",
+   "Pour les technologies de l'information, la norme de référence est l'EN 301 549. Sa version V3.2.1, publiée en 2021, est harmonisée au titre de la directive 2016/2102 sur le secteur public, par la décision d'exécution (UE) 2021/1339, et [[https://www.etsi.org/human-factors-accessibility/en-301-549-v3-the-harmonized-european-standard-for-ict-accessibility|l'ETSI la présente comme le soutien de cette directive, une mise à jour étant prévue pour couvrir aussi l'European Accessibility Act]]. La révision destinée à l'EAA, la version V4.1.1, a été adoptée par les organismes européens de normalisation le 24 août 2026 et publiée le 2 septembre 2026. Elle passe des WCAG 2.1 aux WCAG 2.2, niveaux A et AA, et ajoute une annexe de correspondance avec les exigences de l'EAA."
+  ],
+  [
+   "p",
+   "À la date de rédaction de cet article, la référence de cette nouvelle version n'a pas encore été citée au Journal officiel. L'autorité irlandaise chargée du handicap, la National Disability Authority, [[https://nda.ie/news/en301549-published|annonce cette citation pour le 16 décembre 2026]]. Tant qu'elle n'a pas eu lieu, aucune norme ne confère la présomption de conformité au titre de l'EAA : la conformité se démontre au regard de l'annexe I, en s'appuyant sur les normes existantes comme méthode d'évaluation."
+  ],
+  [
+   "p",
+   "Cette situation n'empêche pas les autorités d'avoir une grille de lecture. La DGCCRF cite ainsi la norme EN 301 549 V3.2.1, le RGAA et les WCAG 2.1 comme références. Le RGAA en vigueur est la version 4.1.2, et la Direction interministérielle du numérique indique sur [[https://accessibilite.numerique.gouv.fr/|le site officiel du RGAA]] qu'une version 5 est en cours de rédaction, avec une publication prévue fin 2026. Le choix raisonnable aujourd'hui consiste à évaluer vos services selon les WCAG 2.2 de niveau AA : vous couvrez les critères de la version 3.2.1 et anticipez ceux de la version 4.1.1. Le détail des référentiels nationaux, RGAA en France, RAWeb et RAAM au Luxembourg, eCH-0059 en Suisse, est présenté dans l'article sur les [[article:normes|normes et référentiels d'accessibilité]]."
+  ],
+  [
+   "h2",
+   "information-accessibilite-services",
+   "Informer sur l'accessibilité de vos services : où et comment"
+  ],
+  [
+   "p",
+   "L'EAA impose aux prestataires de services une obligation d'information distincte des exigences techniques. Le prestataire établit les informations prévues par l'annexe V de la directive et explique comment son service respecte les exigences d'accessibilité. Ces informations sont mises à la disposition du public par écrit et oralement, sous une forme accessible aux personnes handicapées, et conservées aussi longtemps que le service est proposé. En France, le décret n° 2023-931 du 9 octobre 2023 prévoit qu'elles figurent dans les conditions générales ou dans un document équivalent."
+  ],
+  [
+   "p",
+   "Leur contenu est fixé : une description générale du service dans des formats accessibles, les explications nécessaires pour comprendre son fonctionnement, et la description de la manière dont il respecte les exigences applicables. La DGCCRF cite les rapports d'audit RGAA parmi les éléments qui permettent d'établir cette information. Concrètement, une page « Accessibilité » reliée depuis le pied de page et depuis les conditions générales, déclinée pour chaque service ou application, répond à l'attente si elle contient au minimum :"
+  ],
+  [
+   "ul",
+   [
+    "le périmètre exact du service décrit : site, application iOS, application Android, bornes ;",
+    "le référentiel utilisé pour l'évaluation, la date de l'évaluation et l'organisme qui l'a réalisée ;",
+    "les fonctions d'accessibilité disponibles et les technologies d'assistance avec lesquelles le service a été testé ;",
+    "les limites connues, avec l'alternative proposée pour chacune et le calendrier de correction ;",
+    "un moyen de contact accessible pour signaler une difficulté ou obtenir l'information sous une autre forme ;",
+    "la date de dernière mise à jour."
+   ]
+  ],
+  [
+   "p",
+   "Cette information ne se confond pas avec la déclaration d'accessibilité prévue par l'article 47 de la loi de 2005, dont le contenu est fixé par le RGAA et qui vise d'autres organismes. Une entreprise soumise aux deux régimes peut les rassembler sur une même page, à condition que chacune réponde à ses propres exigences : la méthode est détaillée dans l'article sur la [[article:declaration|déclaration d'accessibilité]]. En Belgique, l'avis de septembre 2025 de la Plateforme des conseils d'avis handicap relevait pour sa part que les informations publiées à l'intention des utilisateurs finaux par plusieurs autorités de contrôle, comme le SPF Économie ou l'IBPT, étaient très minimalistes, absentes ou difficiles à trouver."
+  ],
+  [
+   "h2",
+   "periodes-transition",
+   "Périodes de transition : 2030, 15 ou 20 ans, et ce qui n'en bénéficie pas"
+  ],
+  [
+   "p",
+   "La directive organise une entrée en vigueur progressive, mais ses périodes de transition sont plus étroites qu'on ne le croit souvent. Telles que la [[https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/professionnels-vos-produits-et-services-doivent-etre-conformes-la-directive-accessibilite|DGCCRF les présente pour la France]], elles sont au nombre de trois :"
+  ],
+  [
+   "ul",
+   [
+    "jusqu'au 28 juin 2030, un prestataire peut continuer à fournir ses services au moyen de produits qu'il utilisait légalement avant le 28 juin 2025 pour fournir des services similaires ;",
+    "les contrats de service conclus avec des consommateurs avant le 28 juin 2025 peuvent se poursuivre sans modification jusqu'à leur terme, et au plus tard jusqu'au 28 juin 2030 ;",
+    "les terminaux en libre-service utilisés légalement avant le 28 juin 2025 peuvent rester en service jusqu'à la fin de leur durée de vie économique ; la directive autorise les États à plafonner cette durée à vingt ans après la mise en service, et la France a retenu quinze ans."
+   ]
+  ],
+  [
+   "p",
+   "La précision la plus importante figure dans la même fiche de la DGCCRF : un site internet ou une application mobile n'est pas un « produit » au sens de la directive. Il ne bénéficie donc d'aucune de ces périodes transitoires. Un site marchand en ligne avant le 28 juin 2025 n'est pas couvert par une clause d'antériorité : depuis cette date, chaque commande qu'il permet de passer est un service fourni à un consommateur, soumis aux exigences."
+  ],
+  [
+   "note",
+   "À retenir",
+   "Les délais de 2030 et de quinze ou vingt ans concernent le matériel déjà en service et les contrats en cours. Ils ne s'appliquent ni aux sites ni aux applications, qui doivent être conformes depuis le 28 juin 2025."
+  ],
+  [
+   "h2",
+   "transposition-autorites",
+   "Transposition et contrôle : France, Belgique, Luxembourg et entreprises suisses"
+  ],
+  [
+   "h3",
+   "France : le code de la consommation, la DGCCRF et l'article 47"
+  ],
+  [
+   "p",
+   "La France a transposé la directive par l'article 16 de la loi n° 2023-171 du 9 mars 2023, qui a créé l'article L. 412-13 du code de la consommation, puis par le décret n° 2023-931 du 9 octobre 2023 et un arrêté du même jour qui détaille les exigences. Les règles figurent donc dans le droit de la consommation, au titre de l'obligation de conformité des produits et services."
+  ],
+  [
+   "p",
+   "Le contrôle est confié à la DGCCRF, qui vérifie notamment les produits multimédias, téléphones, box, téléviseurs et terminaux en libre-service, ainsi que les services de commerce électronique, bancaires et de transport. Elle agit en coordination avec l'Arcom, l'Arcep, la Banque de France, l'Autorité de contrôle prudentiel et de résolution et l'Autorité des marchés financiers. Ses agents peuvent enjoindre la mise en conformité, avec une astreinte. Les manquements sont des contraventions de cinquième classe, punies d'amendes de 7 500 euros cumulables en fonction du nombre d'infractions constatées, et une suspension de mise sur le marché est possible en cas de pratiques persistantes."
+  ],
+  [
+   "p",
+   "Ce régime coexiste avec l'article 47 de la loi du 11 février 2005, qui impose l'accessibilité des services de communication au public en ligne aux organismes publics, aux délégataires de service public et aux entreprises dont le chiffre d'affaires dépasse 250 millions d'euros. Depuis l'ordonnance n° 2023-859 du 6 septembre 2023, ce second régime est contrôlé par l'Arcom. L'article L. 412-13 s'applique « sans préjudice » de l'article 47, une formule dont la portée est désormais discutée devant les tribunaux. La page [[country:france|accessibilité numérique en France]] et l'article [[article:france|sur les obligations françaises]] détaillent l'ensemble de ces règles."
+  ],
+  [
+   "h3",
+   "Belgique : plusieurs textes et plusieurs autorités"
+  ],
+  [
+   "p",
+   "La Belgique a réparti la transposition entre l'État fédéral, les Communautés et les Régions, selon leurs compétences. Pour le commerce électronique et les services bancaires, la loi du 5 novembre 2023 modifie plusieurs livres du Code de droit économique et la loi du 2 août 2002 : elle crée dans le livre VIII un titre consacré aux exigences d'accessibilité des services et rend les infractions passibles de sanctions de niveau 2, ou de niveau 3 en cas de mauvaise foi, comme le montre le [[https://www.dekamer.be/FLWB/PDF/55/3433/55K3433003.pdf|texte adopté en commission de la Chambre]]. Particularité belge : l'article 40 de cette loi n'exclut les microentreprises de son champ que jusqu'au 28 juin 2030, et non de manière permanente comme le fait la directive pour les microentreprises de services ; au-delà de cette date, seul un arrêté royal pris sur la base du nouvel article VIII.59, § 2, du Code de droit économique pourrait les en exclure. D'autres textes fédéraux, communautaires et régionaux couvrent les communications électroniques, l'audiovisuel, les livres numériques, le transport et le 112."
+  ],
+  [
+   "p",
+   "Selon l'avis de septembre 2025 de la Plateforme des conseils d'avis handicap, la surveillance est répartie ainsi : le SPF Économie, par son inspection économique, pour le commerce électronique et les services bancaires ; l'IBPT pour les terminaux en libre-service, les ordinateurs et systèmes d'exploitation, les équipements terminaux, les liseuses et les communications électroniques ; les Communautés pour les médias audiovisuels et les livres numériques ; le SPF Intérieur pour le 112 ; le SPF Mobilité et Transports pour le transport longue distance ; les Régions pour les transports urbains, suburbains et régionaux. Le même avis indique que les amendes administratives peuvent atteindre, pour les infractions les plus graves, 200 000 euros ou 6 % du chiffre d'affaires annuel. Voir la page [[country:belgique|accessibilité numérique en Belgique]] et l'article [[article:belgique|consacré à la Belgique]]."
+  ],
+  [
+   "h3",
+   "Luxembourg : une loi unique et l'OSAPS"
+  ],
+  [
+   "p",
+   "Le Luxembourg a choisi un texte unique : la loi du 8 mars 2023 relative aux exigences en matière d'accessibilité applicables aux produits et services, modifiée la même année pour ajouter l'exception prévue par la directive pour les transports urbains, suburbains et régionaux, comme le retrace le [[https://wdocs-pub.chd.lu/docs/exped/0143/039/286396.pdf|rapport parlementaire sur le projet de loi n° 8265]]. La surveillance relève de l'Office de la surveillance de l'accessibilité des produits et services (OSAPS), administration placée sous l'autorité du ministre chargé de la politique pour personnes handicapées, qui sert de guichet unique."
+  ],
+  [
+   "p",
+   "Au cours des travaux parlementaires, le projet prévoyait à la fois des sanctions administratives et pénales, et le Conseil d'État s'est opposé à leur cumul. La [[https://accessibilite-produits-services.public.lu/dam-assets/lgislation/loi-du-8-mars-2023.pdf|loi publiée au Mémorial A n° 133 du 15 mars 2023]] distingue désormais deux niveaux. L'OSAPS peut infliger une amende administrative de 250 à 15 000 euros à l'opérateur qui refuse de lui fournir des documents, fait obstacle à la surveillance ou ne respecte pas ses décisions (article 32). L'opérateur qui enfreint les exigences de la loi encourt une amende pénale de 251 à 500 000 euros, proportionnée à l'étendue et à la gravité de la non-conformité, portée de 500 à 1 000 000 euros en cas de récidive (article 33). Les entreprises luxembourgeoises qui exploitent aussi des services publics numériques évaluent ces derniers avec le RAWeb et le RAAM, présentés sur la page [[country:luxembourg|accessibilité numérique au Luxembourg]] ; pour les applications mobiles, un [[svc:audit-raam|audit RAAM]] couvre les deux régimes. L'article [[article:luxembourg|consacré au Luxembourg]] approfondit ces points."
+  ],
+  [
+   "h3",
+   "Suisse : hors Union, mais concernée par ses ventes"
+  ],
+  [
+   "p",
+   "La Suisse n'est membre ni de l'Union européenne ni de l'Espace économique européen : elle n'a pas transposé la directive, et l'EAA ne s'applique pas aux services fournis aux consommateurs en Suisse. En revanche, une entreprise suisse qui vend en ligne à des consommateurs situés dans l'Union, qui leur propose des services bancaires ou de transport, ou qui fabrique des terminaux et liseuses vendus dans l'Union, est soumise aux mêmes exigences que ses concurrents européens. Pour les produits, l'importateur établi dans l'Union doit vérifier la conformité, ce qui oblige le fabricant suisse à lui fournir la documentation technique et la déclaration de conformité."
+  ],
+  [
+   "p",
+   "Les entreprises suisses doivent donc piloter deux référentiels : la LHand et la norme eCH-0059 pour leurs obligations nationales, l'EAA pour leurs ventes dans l'Union. Les deux reposent sur les WCAG, ce qui permet une seule évaluation bien cadrée. Voir la page [[country:suisse|accessibilité numérique en Suisse]] et l'article [[article:suisse|consacré à la Suisse]]."
+  ],
+  [
+   "h2",
+   "depuis-juin-2025",
+   "Ce qui s'est passé depuis le 28 juin 2025"
+  ],
+  [
+   "p",
+   "En France, les premières actions sont venues des associations. Le 7 juillet 2025, l'apiDV et Droit Pluriel ont mis en demeure Auchan, Carrefour, E.Leclerc et Picard Surgelés de rendre accessibles leurs sites de courses en ligne aux personnes aveugles et malvoyantes. Faute de résultat suffisant, les quatre enseignes ont été assignées en référé en novembre 2025, avec le soutien du collectif de juristes Intérêt à Agir, selon les informations publiées le 12 novembre 2025 par Clubic."
+  ],
+  [
+   "p",
+   "Deux décisions de référé ont depuis abouti à des lectures opposées. Le 5 mai 2026, le juge des référés du tribunal judiciaire de Lille a débouté les associations face à Auchan E-Commerce France, dont le chiffre d'affaires, 182 millions d'euros en 2023 et 144 millions en 2024, était inférieur au seuil de 250 millions d'euros de l'article 47. Selon Handicap.fr, le tribunal a estimé que ce seuil de la loi de 2005 devait l'emporter sur le code de la consommation, tout en relevant, d'après un audit réalisé à la demande de l'entreprise, un niveau d'accessibilité « assez bas ». Les associations contestent cette lecture, qui revient à appliquer à l'EAA un seuil que la directive ne connaît pas."
+  ],
+  [
+   "p",
+   "Le 4 juin 2026, le tribunal judiciaire de Caen, saisi en référé, a au contraire ordonné à Carrefour France de rendre son site carrefour.fr et son application mobile pleinement accessibles dans un délai de six mois, sous astreinte. L'enseigne faisait valoir un taux de conformité de 71 % ; le juge a écarté cet argument, en considérant qu'un service ne peut pas se contenter d'être partiellement accessible. L'affaire concernant E.Leclerc, portée devant le tribunal judiciaire de Créteil, n'avait pas d'issue publiée dans une source fiable à la date de rédaction. Une clarification par les cours d'appel ou par le législateur reste attendue."
+  ],
+  [
+   "p",
+   "Côté administration, la DGCCRF a présenté un premier bilan de ses contrôles lors de la Conférence nationale du handicap du 4 septembre 2026 : selon La Lettre des Réseaux, plus de la moitié des établissements de commerce en ligne contrôlés depuis le début de 2026 présentaient des manquements, qui ont donné lieu à des mesures correctives ou répressives, et les résultats définitifs de l'enquête sont attendus début 2027. Depuis décembre 2025, les consommateurs peuvent aussi signaler les défauts d'accessibilité par un parcours dédié sur SignalConso."
+  ],
+  [
+   "p",
+   "Le signal est clair pour les entreprises. Le risque principal n'est pas une amende isolée, mais une injonction prononcée en référé, assortie d'une astreinte et d'un délai court, sur la base d'un audit que l'entreprise a parfois elle-même commandé. Un rapport d'audit qui reconnaît des non-conformités sans plan de correction daté devient alors une pièce à charge."
+  ],
+  [
+   "h2",
+   "tableau-preuves",
+   "Tableau : exigences clés et preuves à conserver, secteur par secteur"
+  ],
+  [
+   "p",
+   "Le tableau ci-dessous résume, pour chaque secteur, les points qu'une autorité ou un plaignant examinera en priorité et les pièces qui permettent d'y répondre. Il se lit comme une liste de contrôle documentaire : chaque ligne doit pouvoir être justifiée par un document daté."
+  ],
+  [
+   "table",
+   {
+    "caption": "European Accessibility Act : exigences prioritaires et preuves à conserver",
+    "head": [
+     "Secteur",
+     "Exigences clés à vérifier",
+     "Preuves à conserver"
+    ],
+    "rows": [
+     [
+      "Commerce électronique",
+      "Recherche et filtres, fiche produit, panier, création de compte sans captcha bloquant, paiement et authentification, information sur l'accessibilité des produits vendus",
+      "Rapport d'audit du parcours d'achat complet, éléments de conformité des prestataires de paiement et de captcha, page d'information à jour, plan de correction daté"
+     ],
+     [
+      "Services bancaires",
+      "Authentification forte avec alternatives, saisie des codes, signature électronique, documents contractuels lisibles, information compréhensible",
+      "Audit des applications et de l'espace client, tests avec lecteurs d'écran sur mobile, version accessible des contrats types, preuve des alternatives proposées"
+     ],
+     [
+      "Transport de voyageurs",
+      "Réservation, choix de place, billet électronique, information en temps réel, demande d'assistance, bornes",
+      "Audit site et application, tests des billets générés, fiche technique des bornes, information publiée sur les services d'accès"
+     ],
+     [
+      "Communications électroniques",
+      "Souscription et espace client, factures, texte en temps réel, contact du service client par plusieurs canaux",
+      "Audit des parcours de souscription et de résiliation, description des moyens de contact accessibles, documentation des terminaux fournis"
+     ],
+     [
+      "Médias audiovisuels",
+      "Lecteur vidéo, guide des programmes, activation des sous-titres et de l'audiodescription, transmission intégrale des services d'accès",
+      "Audit des applications sur chaque plateforme, procédure de contrôle de la transmission des services d'accès, information publiée"
+     ],
+     [
+      "Livres numériques",
+      "Navigation structurelle, synthèse vocale non bloquée par la protection, alternatives aux images, métadonnées d'accessibilité",
+      "Rapport de contrôle des fichiers par collection, politique de gestion des droits, métadonnées publiées"
+     ],
+     [
+      "Terminaux et matériels",
+      "Interface sur plusieurs canaux sensoriels, sortie audio, repères tactiles, notices et emballages",
+      "Documentation technique, déclaration UE de conformité, marquage CE, documents conservés cinq ans"
+     ],
+     [
+      "Tous services",
+      "Information sur l'accessibilité, contact accessible, exceptions éventuelles",
+      "Information dans les conditions générales ou document équivalent, évaluations de charge disproportionnée conservées cinq ans, preuve d'information des autorités, calcul des seuils de microentreprise"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Pour les parcours les plus exposés, la preuve la plus convaincante reste un test réalisé par des personnes qui utilisent au quotidien un lecteur d'écran, une commande vocale ou un agrandisseur : c'est l'objet des [[svc:test-utilisateur|tests utilisateurs avec des personnes handicapées]]. Un rapport d'audit, aussi précis soit-il, ne remplace pas la démonstration qu'une personne aveugle peut effectivement payer sa commande."
+  ],
+  [
+   "h2",
+   "plan-action",
+   "Plan d'action pour se conformer à l'European Accessibility Act"
+  ],
+  [
+   "p",
+   "Que l'entreprise parte de zéro ou d'un premier audit, la démarche suit le même ordre. Il ne s'agit pas de tout corriger d'un coup, mais de traiter d'abord ce qui empêche un consommateur d'utiliser le service, puis de documenter chaque décision."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Qualifier le périmètre.",
+     "Listez vos produits et services au regard de l'article 2 : quels parcours permettent de conclure un contrat avec un consommateur, quels services bancaires, de transport ou de communication vous fournissez, dans quels États membres. Notez aussi ce qui sort du champ, avec la justification."
+    ],
+    [
+     "Vérifier les seuils et les exemptions.",
+     "Calculez l'effectif, le chiffre d'affaires et le total de bilan de chaque entité qui fournit un service visé. Si une exception pour charge disproportionnée paraît envisageable, ouvrez dès maintenant le dossier d'évaluation selon les critères de l'annexe VI."
+    ],
+    [
+     "Cartographier les parcours critiques.",
+     "Identifiez, pour chaque service, les cinq à dix parcours sans lesquels il est inutilisable : création de compte, connexion, recherche, commande, paiement, consultation de documents, contact. C'est sur eux que portera l'évaluation."
+    ],
+    [
+     "Auditer selon une méthode reconnue.",
+     "Faites évaluer ces parcours selon les WCAG 2.2 de niveau AA et la norme EN 301 549, sur ordinateur et sur mobile, avec les technologies d'assistance du marché. Pour un service français également soumis à l'article 47, un [[svc:audit-rgaa|audit RGAA]] peut être mené en parallèle ; le délai moyen d'un audit, dans notre pratique, est de trois semaines."
+    ],
+    [
+     "Traiter les composants tiers.",
+     "Paiement, authentification, captcha, signature électronique, agent conversationnel, lecteur vidéo : demandez à chaque fournisseur ses éléments de conformité, ajoutez une clause d'accessibilité dans vos contrats et prévoyez une solution de remplacement si le composant reste bloquant."
+    ],
+    [
+     "Corriger et recetter.",
+     "Classez les anomalies par impact sur les parcours et par effort, corrigez d'abord les blocages, puis vérifiez chaque correction avant mise en production grâce à une [[svc:recette|recette accessibilité]]. Les équipes internes peuvent être appuyées par un [[svc:developpement|accompagnement au développement accessible]]."
+    ],
+    [
+     "Publier l'information et ouvrir un canal de contact.",
+     "Rédigez l'information prévue par l'annexe V, rattachez-la aux conditions générales, et proposez un moyen de contact accessible pour signaler une difficulté."
+    ],
+    [
+     "Documenter et informer.",
+     "Conservez les rapports, les plans de correction datés, les évaluations d'exception et, le cas échéant, la preuve de l'information des autorités. Désignez une personne responsable de ce dossier."
+    ],
+    [
+     "Former les équipes.",
+     "Les régressions viennent des nouvelles fonctionnalités : formez concepteurs, développeurs, rédacteurs et service client, avec des [[svc:formations|formations à l'accessibilité numérique]] adaptées à chaque métier."
+    ],
+    [
+     "Mettre en place une veille.",
+     "Suivez la citation au Journal officiel de l'EN 301 549 V4.1.1, la publication du RGAA 5, les décisions des cours d'appel sur l'articulation entre l'article 47 et le code de la consommation, et les positions des autorités de chaque pays où vous vendez."
+    ]
+   ]
+  ]
+ ],
+ "faq": [
+  [
+   "L'EAA s'applique-t-il à un site B2B ?",
+   "Pour les services, la directive ne vise que ceux qui sont fournis aux consommateurs. Une plateforme de commande strictement réservée aux professionnels, avec ouverture de compte sur justification d'un numéro d'entreprise, n'entre donc pas dans le commerce électronique au sens de l'EAA. En revanche, si le même site permet à un particulier de commander, il est concerné pour ce parcours. Les produits, eux, sont visés dès lors qu'ils sont destinés au grand public, quel que soit le canal de vente."
+  ],
+  [
+   "Faut-il apposer un marquage CE sur un site ou une application ?",
+   "Non. Le marquage CE et la déclaration UE de conformité concernent les produits : ordinateurs, smartphones, terminaux, liseuses. Un site ou une application n'est pas un produit au sens de la directive, comme le rappelle la DGCCRF. Pour les services, l'obligation consiste à respecter les exigences de l'annexe I, à publier une information sur l'accessibilité du service et à pouvoir prouver la conformité aux autorités qui la demandent."
+  ],
+  [
+   "Un audit RGAA suffit-il pour l'European Accessibility Act ?",
+   "Il constitue une base solide pour un service français : la DGCCRF cite le RGAA parmi ses références, et il repose sur les WCAG 2.1. Il ne couvre toutefois pas tout. L'EAA vise aussi le service client, les documents contractuels, le matériel et l'information publiée. Pour un groupe présent dans plusieurs pays, une évaluation selon la norme EN 301 549 et les WCAG 2.2 donne un résultat lisible partout et anticipe la version 4.1.1 de la norme."
+  ],
+  [
+   "L'EAA impose-t-il un taux de conformité minimum ?",
+   "La directive ne fixe aucun pourcentage : elle exige que le service respecte les exigences applicables. Un taux de conformité est un indicateur de suivi, pas une protection. Le tribunal judiciaire de Caen l'a montré en juin 2026 en écartant l'argument d'un taux de 71 % : un service ne peut pas se contenter d'être partiellement accessible. Mieux vaut un parcours d'achat entièrement utilisable qu'un taux élevé obtenu sur des pages secondaires."
+  ],
+  [
+   "Les applications mobiles sont-elles concernées par l'EAA ?",
+   "Oui. Les applications font partie des services visés dès qu'elles servent à commander, à gérer un compte bancaire, à acheter un billet, à consulter une information voyageurs ou à accéder à des contenus audiovisuels. Elles ne bénéficient d'aucune période de transition. Leur évaluation se fait sur appareils réels, avec VoiceOver sur iOS et TalkBack sur Android, et porte aussi sur les écrans ouverts par des composants tiers, comme l'authentification bancaire."
+  ],
+  [
+   "Qui peut agir contre une entreprise non conforme ?",
+   "Les autorités de surveillance du marché de chaque pays peuvent contrôler d'office ou à la suite d'un signalement : en France, la DGCCRF et les autorités sectorielles. Les associations de personnes handicapées peuvent aussi saisir le juge : en France, plusieurs ont obtenu ou demandé en référé des injonctions sous astreinte depuis 2025. Les consommateurs peuvent enfin signaler une difficulté à l'entreprise elle-même, qui doit pouvoir y répondre par un canal accessible."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Votre service entre-t-il dans le champ de l'EAA ?",
+ "cta_text": "Nous qualifions votre périmètre et évaluons vos parcours critiques selon les WCAG et la norme EN 301 549. Un premier échange suffit pour savoir par où commencer.",
+ "related": [
+  "france",
+  "belgique",
+  "normes"
+ ],
+ "cluster": "reglementation"
 }

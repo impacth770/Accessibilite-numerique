@@ -10,13 +10,13 @@ Site statique multilingue (FR, NL, DE, EN) — 28 pages par langue, 112 pages au
 - `gen/build.py` : génération.
 
 ## Articles du blog
-- Un fichier JSON par article et par langue dans `gen/articles/<id>.<lang>.json` (8 articles × 4 langues).
-- Cahier des charges : `gen/articles/SPEC.md` ; consignes de traduction : `gen/articles/TRANSLATION.md`.
-- Contrôle d'un article : `python3 gen/check_article.py gen/articles/<id>.<lang>.json 3500`.
-- Un article n'est publié que s'il existe dans les 4 langues (liste `ARTICLES` dans `gen/common.py`).
+- Un fichier JSON par article et par langue dans `gen/articles/<id>.<lang>.json`, découverts automatiquement.
+- Ligne éditoriale, silos, maillage et procédure : `gen/articles/EDITORIAL.md` ; format : `SPEC.md` ; traductions : `TRANSLATION.md` ; file des sujets : `CALENDAR.md`.
+- Contrôles : `python3 gen/check_article.py <fichier> 3500`, `python3 gen/maillage.py [<id>]`, `python3 gen/check_site.py` (après build prod), `node tools/axe.cjs [chemins]` (après build preview, `npm install --no-save axe-core`).
+- Un article n'est publié que s'il existe dans les 4 langues.
 
 ## Générer
-    pip install -r requirements.txt
+    pip install jinja2
     python3 gen/build.py prod          # -> dist/ (URL propres, sitemap, robots.txt, _headers)
     python3 gen/build.py preview       # -> preview/ (liens relatifs, consultable hors ligne)
 
@@ -25,12 +25,7 @@ Le formulaire de contact envoie un JSON en POST vers l'URL définie au moment du
     FORM_ENDPOINT="https://hook.eu1.make.com/yzzl9yt5enats8we3umgcgw1x0g53rt6" python3 gen/build.py prod   # valeur par défaut déjà intégrée
 
 ## Déployer (Cloudflare Workers, gratuit)
-Le dossier `dist/` est versionné : le site est déployable tel quel, sans étape de build.
-
     npx wrangler deploy
-
-Avec le déploiement automatique depuis GitHub (Cloudflare Workers Builds) : commande de build vide
-(ou `python3 gen/build.py prod` après avoir modifié les textes), commande de déploiement `npx wrangler deploy`.
 
 Puis, dans Cloudflare : ajouter le domaine accessibilitenumerique.eu au Worker (Custom domain),
 après avoir pointé les serveurs de noms du domaine IONOS vers Cloudflare.

@@ -26,6 +26,10 @@
   ],
   [
    "p",
+   "For an overview of the obligations, standards and method across the four countries, see also our [[article:guide|digital accessibility guide]]."
+  ],
+  [
+   "p",
    "For a public body, the first question is therefore institutional rather than technical: which entity do you belong to? What decides is neither the language of your website nor the address of your head office, but the authority on which you depend. A Brussels municipality falls under the Brussels ordinance, a federal public service located in Namur falls under the federal law, and an institution of the Wallonia-Brussels Federation based in Brussels falls under the decree of the French Community."
   ],
   [
@@ -641,5 +645,7 @@
   "eaa",
   "normes",
   "luxembourg"
- ]
+ ],
+ "modified": "2026-10-28",
+ "cluster": "reglementation"
 }

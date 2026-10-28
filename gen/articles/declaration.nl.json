@@ -15,359 +15,1108 @@
  "date": "2026-10-27",
  "lead": "De toegankelijkheidsverklaring is het document waarmee een overheidsinstantie, of in Frankrijk ook een grote onderneming, het werkelijke toegankelijkheidsniveau van elke website, app en elk softwarepakket bekendmaakt, op basis van een echte audit. Veel verklaringen staan online, weinig doorstaan een controle: een overdreven conformiteitsgraad, een audit die nooit plaatsvond, hernoemde rubrieken, een verlopen datum. Deze gids neemt elke vereiste van de Franse RGAA 4.1.2 bij de bron door, legt de berekening van de conformiteitsgraad uit, bespreekt de fouten die de Franse toezichthouder Arcom heeft vastgesteld en geeft een model met commentaar. Een uitgebreid hoofdstuk behandelt de Belgische toegankelijkheidsverklaring: wat de FOD BOSA en Inter verwachten, en hoe u de invulassistent gebruikt.",
  "body": [
-  ["h2", "waarom-ongeldig", "Waarom zoveel toegankelijkheidsverklaringen niet aan de verplichting voldoen"],
-  ["p", "Een toegankelijkheidsverklaring is geen intentieverklaring. In Frankrijk is het een genormeerd document, waarvan het formaat door het referentiekader wordt opgelegd, dat verslag uitbrengt van een effectieve beoordeling van de conformiteit van een dienst met de RGAA en dat de organisatie die het publiceert, bindt. Een pagina “Toegankelijkheid” met een algemene belofte, zonder conformiteitsgraad, zonder auditdatum en zonder lijst van niet-toegankelijke inhoud, voldoet niet aan de verplichting, hoe verzorgd ze ook is. In België is de logica dezelfde: de FOD BOSA beschouwt een website als niet conform zodra één verplicht element in de verklaring ontbreekt, ook als de website in werkelijkheid goed toegankelijk is."],
-  ["p", "Op 24 juni 2026 heeft Arcom, de Franse toezichthouder voor audiovisuele en digitale communicatie, het ministère de l’Action et des Comptes publics in gebreke gesteld voor meerdere diensten van de website impots.gouv.fr ([[https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-24-juin-2026-mettant-en-demeure-le-ministere-de-laction-et-des-comptes-publics|beslissing van Arcom van 24 juni 2026, gepubliceerd op 6 juli 2026 (Franstalig)]]). De tekortkomingen die Arcom in de verklaringen vaststelde, zijn typisch. Eén verklaring, opgesteld op 16 januari 2023, was binnen de drie jaar niet bijgewerkt en meldde volledige conformiteit, terwijl ze zelf een conformiteitsgraad van 42,11 % vermeldde. Een andere steunde op geen enkele audit. Twee volgden het verplichte formaat niet, met verplaatste of hernoemde rubrieken. Het gepubliceerde actieplan, ten slotte, had betrekking op 2024 en niet op het lopende jaar."],
-  ["p", "Die fouten zijn niet uitzonderlijk. U vindt ze terug op websites van lokale besturen, openbare instellingen en grote ondernemingen, meestal omdat de verklaring één keer werd opgesteld op basis van een voorbeeld dat iemand online vond, en daarna vergeten werd terwijl de website verder evolueerde. De volgende hoofdstukken overlopen elke vereiste aan de hand van de officiële documentatie van de Franse interministeriële directie voor digitalisering (DINUM), en geven daarna een model met commentaar en een lijst van valkuilen."],
-  ["p", "Waarom dit Franse kader ook voor Belgische lezers telt: elke organisatie die in Frankrijk onder de regeling valt, moet een verklaring in het Franse formaat publiceren, ook als de beslissingen in Brussel, Gent of Antwerpen worden genomen. Denk aan de Franse dochteronderneming van een Belgische groep die zelf de omzetdrempel haalt, of aan een Belgisch bureau dat websites bouwt voor Franse openbare instellingen. Voor Belgische overheidswebsites gelden andere regels: hetzelfde Europese model, maar met eigen voorwaarden voor het conformiteitsniveau, de audit en de klachtenroute. Die komen uitgebreid aan bod in het hoofdstuk over de toegankelijkheidsverklaring in België."],
-
-  ["h2", "wettelijke-basis", "Toegankelijkheidsverklaring volgens de RGAA: wettelijke basis en teksten die de inhoud bepalen"],
-  ["h3", "Artikel 47 van de wet van 11 februari 2005"],
-  ["p", "De verplichting vindt haar oorsprong in artikel 47 van de Franse wet nr. 2005-102 van 11 februari 2005 voor gelijke rechten en kansen, participatie en burgerschap van personen met een handicap. Dat artikel legt de toegankelijkheid op van online communicatiediensten voor het publiek (websites, intranetten, extranetten, mobiele apps, softwarepakketten, digitaal straatmeubilair) en de transparantieverplichtingen die daarbij horen: de toegankelijkheidsverklaring, de conformiteitsvermelding op de homepage, het meerjarenplan en de jaarlijkse actieplannen, en een mechanisme waarmee gebruikers een tekortkoming kunnen melden."],
-  ["h3", "De organisaties die eronder vallen"],
-  ["p", "De officiële toelichting van de DINUM bij het toepassingsgebied onderscheidt vier categorieën organisaties:"],
-  ["ul", [
-   "publiekrechtelijke rechtspersonen: de Staat, de lokale en regionale overheden, de openbare instellingen;",
-   "privaatrechtelijke rechtspersonen die belast zijn met een opdracht van openbare dienst, of die zijn opgericht om te voorzien in behoeften van algemeen belang die geen industrieel of commercieel karakter hebben, wanneer ze voldoen aan voorwaarden van publieke financiering of publiek toezicht;",
-   "privaatrechtelijke organisaties die door de voorgaande categorieën voor dezelfde doeleinden zijn opgericht;",
-   "ondernemingen met een omzet van 250 miljoen euro of meer, een drempel die per entiteit wordt beoordeeld op basis van de gemiddelde jaaromzet in Frankrijk over de laatste drie afgesloten boekjaren."
-  ]],
-  ["p", "Een onderneming die die drempel niet haalt, hoeft geen verklaring in de zin van artikel 47 te publiceren. Ze kan wel onder de European Accessibility Act vallen, die in Frankrijk is omgezet in de code de la consommation en andere informatieverplichtingen oplegt, onder toezicht van een andere controleur: de DGCCRF, de Franse dienst voor consumentenbescherming. Dat luik behandelen we in ons artikel over de [[article:eaa|European Accessibility Act]] en op de pagina over [[country:france|digitale toegankelijkheid in Frankrijk]]."],
-  ["h3", "Het decreet van 24 juli 2019 en de RGAA"],
-  ["p", "Het Franse decreet nr. 2019-768 van 24 juli 2019 bepaalt in artikel 6 de minimale inhoud van de verklaring: de identificatie van de verantwoordelijke en van de dienst, met een link naar het meerjarenplan; de status van de dienst ten opzichte van de toegankelijkheidsverplichting, de elementen van de beoordeling en de lijst van niet-toegankelijke inhoud, met de redenen en de aangeboden alternatieven; de middelen waarmee gebruikers een tekortkoming kunnen melden, en de beroepsmogelijkheden. Hetzelfde artikel voorziet in de conformiteitsvermelding op de homepage."],
-  ["p", "Het precieze formaat volgt uit de RGAA, goedgekeurd bij het arrêté van 20 september 2019 en vandaag in versie 4.1.2, met 106 criteria. Het deel over de verplichtingen bepaalt dat de verklaring verplicht het daarin vastgelegde formaat aanneemt: op die grond stelde Arcom tekortkomingen vast bij hernoemde of verplaatste rubrieken. Het [[https://accessibilite.numerique.gouv.fr/ressources/modele-de-declaration/|officiële model van de toegankelijkheidsverklaring van de DINUM (Franstalig)]] en de officiële pagina over de déclaration d’accessibilité op dezelfde website zijn de twee referenties die u tijdens het schrijven bij de hand houdt."],
-  ["p", "Het decreet van 2019 werd gewijzigd door decreet nr. 2026-816 van 24 augustus 2026, gepubliceerd in het Journal officiel van 26 augustus 2026 en de dag nadien in werking getreden. Volgens de toelichting stemt het de lijst van vrijgestelde inhoud af op de data en termijnen van richtlijn (EU) 2019/882, omgezet bij wet nr. 2023-171 van 9 maart 2023. Beroept u zich op een vrijstelling, controleer dan de formulering in de geconsolideerde versie van het decreet, en niet in een verklaring die vóór die datum werd opgesteld."],
-  ["h3", "Toezicht door Arcom en sancties"],
-  ["p", "Sinds de ordonnance nr. 2023-859 van 6 september 2023, die een artikel 47-1 in de wet van 2005 invoegde, ligt het toezicht bij Arcom. Zoals de [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|toelichting van Arcom bij deze opdracht (Franstalig)]] uitlegt, kan de toezichthouder de organisatie waarvan de dienst afhangt in gebreke stellen en daarna financiële sancties opleggen van maximaal 50.000 euro voor het niet naleven van de toegankelijkheidseisen en 25.000 euro voor de andere verplichtingen: vermelding op de homepage, verklaring, meerjarenplan en actieplan, meldingsmechanisme. Dezelfde pagina bevestigt de omzetdrempel van 250 miljoen euro voor ondernemingen. In de beslissing over impots.gouv.fr gaf Arcom twee maanden om de verklaringen en het actieplan te corrigeren, en negen maanden voor de toegankelijkheidsproblemen zelf."],
-
-  ["h2", "conformiteitsstatus", "De drie conformiteitsstatussen en hun precieze drempels"],
-  ["p", "De verklaring, net als de vermelding op de homepage, kiest een van de drie statussen die de RGAA definieert op basis van het percentage nageleefde criteria. Een vierde status bestaat niet. Formuleringen zoals “wordt conform gemaakt”, “voor 80 % conform” of “toegankelijk” stemmen met geen enkele wettelijke categorie overeen. Op een Franse dienst staat de vermelding in het Frans, met de letterlijke formulering uit de RGAA."],
-  ["table", {
-   "caption": "De drie conformiteitsstatussen van de RGAA",
-   "head": ["Status", "Voorwaarde", "Vermelding op de homepage (Franse tekst)"],
-   "rows": [
-    ["Volledig conform (totalement conforme)", "Alle toepasselijke RGAA-criteria worden nageleefd: conformiteitsgraad van 100 %", "“Accessibilité : totalement conforme”"],
-    ["Gedeeltelijk conform (partiellement conforme)", "Minstens 50 % van de toepasselijke criteria wordt nageleefd", "“Accessibilité : partiellement conforme”"],
-    ["Niet conform (non conforme)", "Minder dan 50 % van de criteria wordt nageleefd, of er bestaat geen geldig evaluatieresultaat", "“Accessibilité : non conforme”"]
+  [
+   "h2",
+   "waarom-ongeldig",
+   "Waarom zoveel toegankelijkheidsverklaringen niet aan de verplichting voldoen"
+  ],
+  [
+   "p",
+   "Een toegankelijkheidsverklaring is geen intentieverklaring. In Frankrijk is het een genormeerd document, waarvan het formaat door het referentiekader wordt opgelegd, dat verslag uitbrengt van een effectieve beoordeling van de conformiteit van een dienst met de RGAA en dat de organisatie die het publiceert, bindt. Een pagina “Toegankelijkheid” met een algemene belofte, zonder conformiteitsgraad, zonder auditdatum en zonder lijst van niet-toegankelijke inhoud, voldoet niet aan de verplichting, hoe verzorgd ze ook is. In België is de logica dezelfde: de FOD BOSA beschouwt een website als niet conform zodra één verplicht element in de verklaring ontbreekt, ook als de website in werkelijkheid goed toegankelijk is."
+  ],
+  [
+   "p",
+   "Op 24 juni 2026 heeft Arcom, de Franse toezichthouder voor audiovisuele en digitale communicatie, het ministère de l’Action et des Comptes publics in gebreke gesteld voor meerdere diensten van de website impots.gouv.fr ([[https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-24-juin-2026-mettant-en-demeure-le-ministere-de-laction-et-des-comptes-publics|beslissing van Arcom van 24 juni 2026, gepubliceerd op 6 juli 2026 (Franstalig)]]). De tekortkomingen die Arcom in de verklaringen vaststelde, zijn typisch. Eén verklaring, opgesteld op 16 januari 2023, was binnen de drie jaar niet bijgewerkt en meldde volledige conformiteit, terwijl ze zelf een conformiteitsgraad van 42,11 % vermeldde. Een andere steunde op geen enkele audit. Twee volgden het verplichte formaat niet, met verplaatste of hernoemde rubrieken. Het gepubliceerde actieplan, ten slotte, had betrekking op 2024 en niet op het lopende jaar."
+  ],
+  [
+   "p",
+   "Die fouten zijn niet uitzonderlijk. U vindt ze terug op websites van lokale besturen, openbare instellingen en grote ondernemingen, meestal omdat de verklaring één keer werd opgesteld op basis van een voorbeeld dat iemand online vond, en daarna vergeten werd terwijl de website verder evolueerde. De volgende hoofdstukken overlopen elke vereiste aan de hand van de officiële documentatie van de Franse interministeriële directie voor digitalisering (DINUM), en geven daarna een model met commentaar en een lijst van valkuilen."
+  ],
+  [
+   "p",
+   "Waarom dit Franse kader ook voor Belgische lezers telt: elke organisatie die in Frankrijk onder de regeling valt, moet een verklaring in het Franse formaat publiceren, ook als de beslissingen in Brussel, Gent of Antwerpen worden genomen. Denk aan de Franse dochteronderneming van een Belgische groep die zelf de omzetdrempel haalt, of aan een Belgisch bureau dat websites bouwt voor Franse openbare instellingen. Voor Belgische overheidswebsites gelden andere regels: hetzelfde Europese model, maar met eigen voorwaarden voor het conformiteitsniveau, de audit en de klachtenroute. Die komen uitgebreid aan bod in het hoofdstuk over de toegankelijkheidsverklaring in België."
+  ],
+  [
+   "h2",
+   "wettelijke-basis",
+   "Toegankelijkheidsverklaring volgens de RGAA: wettelijke basis en teksten die de inhoud bepalen"
+  ],
+  [
+   "h3",
+   "Artikel 47 van de wet van 11 februari 2005"
+  ],
+  [
+   "p",
+   "De verplichting vindt haar oorsprong in artikel 47 van de Franse wet nr. 2005-102 van 11 februari 2005 voor gelijke rechten en kansen, participatie en burgerschap van personen met een handicap. Dat artikel legt de toegankelijkheid op van online communicatiediensten voor het publiek (websites, intranetten, extranetten, mobiele apps, softwarepakketten, digitaal straatmeubilair) en de transparantieverplichtingen die daarbij horen: de toegankelijkheidsverklaring, de conformiteitsvermelding op de homepage, het meerjarenplan en de jaarlijkse actieplannen, en een mechanisme waarmee gebruikers een tekortkoming kunnen melden."
+  ],
+  [
+   "h3",
+   "De organisaties die eronder vallen"
+  ],
+  [
+   "p",
+   "De officiële toelichting van de DINUM bij het toepassingsgebied onderscheidt vier categorieën organisaties:"
+  ],
+  [
+   "ul",
+   [
+    "publiekrechtelijke rechtspersonen: de Staat, de lokale en regionale overheden, de openbare instellingen;",
+    "privaatrechtelijke rechtspersonen die belast zijn met een opdracht van openbare dienst, of die zijn opgericht om te voorzien in behoeften van algemeen belang die geen industrieel of commercieel karakter hebben, wanneer ze voldoen aan voorwaarden van publieke financiering of publiek toezicht;",
+    "privaatrechtelijke organisaties die door de voorgaande categorieën voor dezelfde doeleinden zijn opgericht;",
+    "ondernemingen met een omzet van 250 miljoen euro of meer, een drempel die per entiteit wordt beoordeeld op basis van de gemiddelde jaaromzet in Frankrijk over de laatste drie afgesloten boekjaren."
    ]
-  }],
-  ["p", "Daaruit volgen twee praktische gevolgen. “Volledig conform” laat geen enkele uitzondering toe: één niet-gevalideerd criterium op één pagina van de steekproef volstaat om de dienst naar gedeeltelijke conformiteit te laten zakken. En zonder geldige audit is er maar één optie: “niet conform”. Een dienst die nooit is geaudit, of waarvan de verklaring haar geldigheidsduur heeft overschreden, kan zich niet gedeeltelijk conform verklaren omdat hij er behoorlijk uitziet."],
-  ["p", "Een foute status is erger dan een ongunstige status. “Niet conform” vermelden op een dienst die werkelijk niet conform is, vervult de transparantieplicht, ook al blijft het toegankelijkheidsprobleem zelf een tekortkoming die moet worden verholpen. “Volledig conform” vermelden op een dienst waarvan de verklaring zelf een graad van 42 % vermeldt, misleidt de gebruikers en is op zich een tekortkoming, zoals Arcom heeft vastgesteld. In België geldt overigens een nog strengere regel: daar kan een website zich alleen volledig conform verklaren na een diepgaande audit door een expert die het controleorgaan heeft aangesteld."],
-
-  ["h2", "conformiteitsgraad-steekproef", "Berekening van de conformiteitsgraad en keuze van de steekproef"],
-  ["p", "De conformiteitsgraad in de verklaring is geen indruk en ook niet de score van een automatische tool. Hij volgt uit de methode die de officiële pagina over [[https://accessibilite.numerique.gouv.fr/obligations/evaluation-conformite/|de conformiteitsbeoordeling (Franstalig)]] beschrijft: een audit door de organisatie zelf (zelfevaluatie) of door een derde, op een representatieve steekproef van pagina’s, criterium per criterium en test per test."],
-  ["h3", "De verplichte pagina’s van de steekproef"],
-  ["p", "De steekproef bevat in de eerste plaats de volgende pagina’s, voor zover ze bestaan:"],
-  ["ul", [
-   "de homepage;",
-   "de contactpagina;",
-   "de wettelijke vermeldingen;",
-   "de pagina Toegankelijkheid, met de verklaring;",
-   "de sitemap;",
-   "de hulppagina;",
-   "de aanmeldpagina."
-  ]],
-  ["p", "Daarbij komen minstens één relevante pagina per type dienst, zoekfunctie inbegrepen, minstens één relevant downloadbaar document, alle pagina’s van een proces (een aanvraag in meerdere stappen, een betaaltraject, een afspraak maken) en pagina’s met verschillende inhoud: artikel, fiche, formulier, gegevenstabel, kaart, video. Willekeurig gekozen pagina’s moeten ten slotte minstens 10 % van de steekproef uitmaken. Bij een mobiele app geldt elk scherm als een pagina."],
-  ["p", "Voor de website van een gemeente kan een realistische steekproef bestaan uit de homepage, de contactpagina, de wettelijke vermeldingen, de pagina Toegankelijkheid, de sitemap, een pagina met zoekresultaten, een nieuwsbericht, de fiche van een aanvraag, de vier stappen van een inschrijving voor de schoolmaaltijden met online betaling, een gemeenteraadsbesluit in pdf, de agenda, een pagina met een interactieve kaart en twee willekeurig gekozen pagina’s. De klassieke valkuil is de stappen van een proces weg te laten omdat ze een testaccount vereisen. Net die stappen tellen het zwaarst voor de gebruiker, en een criterium is voor een proces alleen gevalideerd als het op elke stap gevalideerd is."],
-  ["h3", "De officiële berekeningsmethode"],
-  ["ol", [
-   ["Elk criterium op elke pagina beoordelen.", "Voor elke pagina van de steekproef wordt elk van de 106 criteria als gevalideerd, niet gevalideerd of niet van toepassing beoordeeld. Zodra één element van de pagina niet slaagt voor de tests van een criterium, kan dat criterium voor die pagina niet worden gevalideerd."],
-   ["Consolideren op het niveau van de dienst.", "Een criterium is gevalideerd voor de dienst als het gevalideerd is op alle pagina’s van de steekproef waar het van toepassing is. Het is van toepassing zodra het op één pagina van toepassing is."],
-   ["De globale conformiteitsgraad berekenen.", "De conformiteitsgraad is het aantal gevalideerde criteria gedeeld door het aantal toepasselijke criteria. Die graad, en alleen die, bepaalt de conformiteitsstatus."],
-   ["Desgewenst de gemiddelde graad berekenen.", "Dat is het gemiddelde van de conformiteitsgraden van de afzonderlijke pagina’s. Het officiële model presenteert hem als facultatieve informatie, die de globale graad aanvult maar nooit vervangt."]
-  ]],
-  ["p", "Neem een steekproef van vijftien pagina’s waarop 54 criteria minstens één keer van toepassing zijn. Daarvan zijn er 41 overal gevalideerd waar ze van toepassing zijn, 13 falen op minstens één pagina. De conformiteitsgraad is 41 gedeeld door 54, of 75,93 %: de dienst is gedeeltelijk conform. Als een van de 13 falende criteria alleen op de betaalpagina een probleem geeft, blijft het niet gevalideerd voor de hele dienst. De gemiddelde graad per pagina ligt meestal hoger, omdat een geïsoleerde fout maar op één pagina doorweegt: daarom geeft wie alleen die gemiddelde graad toont, een flatterend en onjuist beeld."],
-  ["p", "Er zijn maar drie redenen om een criterium als niet van toepassing te beschouwen: de betrokken inhoud of functionaliteit bestaat niet; de inhoud is vrijgesteld; of de inhoud valt onder een afwijking wegens onevenredige last en gaat vergezeld van een toegankelijk digitaal alternatief. Zonder alternatief blijft het criterium van toepassing en telt het mee in de berekening. Criteria als “niet van toepassing” bestempelen om de graad op te krikken, is een veelgemaakte fout, en een die bij een controle snel opvalt."],
-
-  ["h2", "verplichte-rubrieken", "De verplichte rubrieken van de toegankelijkheidsverklaring, één voor één"],
-  ["p", "Het officiële model legt de volgorde en de titels van de rubrieken vast. Arcom herinnerde daaraan in zijn beslissing van juni 2026: de rubrieken “Retour d’information et contact” en “Voies de recours” vóór de verklaring plaatsen, de titel “Contenus inaccessibles” gebruiken in plaats van “Contenus non accessibles”, een ontbrekende rubriek “Non-conformités” en een subrubriek die in de lopende tekst was opgegaan, volstonden om het formaat niet conform te verklaren. Neem de titels dus letterlijk over, in de Franse versie en in de volgorde van het model. Hieronder staat bij elke rubriek de officiële Franse titel, met een Nederlandse vertaling ter verduidelijking."],
-  ["h3", "Hoofding: engagement, strategie en toepassingsgebied"],
-  ["p", "De verklaring begint met het engagement van de organisatie om haar diensten toegankelijk te maken, overeenkomstig artikel 47 van de wet van 11 februari 2005. Daarna volgen de links naar het meerjarenplan en naar het actieplan van het lopende jaar, en vervolgens de zin over het toepassingsgebied: “Cette déclaration d’accessibilité s’applique à” (deze toegankelijkheidsverklaring is van toepassing op), gevolgd door de naam en het exacte adres van de dienst. Bijvoorbeeld: “Cette déclaration d’accessibilité s’applique au site www.ville-exemple.fr.” Is het gezinsloket van de gemeente een aparte dienst, elders gehost en afzonderlijk geaudit, dan heeft het een eigen verklaring nodig."],
-  ["h3", "État de conformité (conformiteitsstatus)"],
-  ["p", "Eén zin, één status, één versie van het referentiekader: de website www.ville-exemple.fr is gedeeltelijk conform met het référentiel général d’amélioration de l’accessibilité (RGAA), versie 4.1.2, wegens de hieronder opgesomde niet-conformiteiten en afwijkingen. Een verklaring die naar “de RGAA” verwijst zonder versie, of naar een verlaten versie, laat twijfel bestaan over de methode die werkelijk is toegepast."],
-  ["h3", "Résultats des tests (testresultaten)"],
-  ["p", "Deze rubriek vermeldt wie de audit heeft uitgevoerd en wat die heeft gemeten, bijvoorbeeld: de conformiteitsaudit door [naam van de organisatie of de dienstverlener] toont aan dat 75,93 % van de criteria van RGAA versie 4.1.2 wordt nageleefd. De gemiddelde graad en de link naar het auditrooster zijn facultatief. Het rooster publiceren maakt het document toch geloofwaardiger, omdat een gebruiker en een controleur de resultaten dan criterium per criterium kunnen nagaan."],
-  ["h3", "Contenus non accessibles (niet-toegankelijke inhoud)"],
-  ["p", "Deze rubriek bestaat uit drie subrubrieken. Behoud ze uit voorzorg alle drie, en vermeld “Aucun contenu concerné” (geen betrokken inhoud) wanneer een lijst leeg is, in plaats van de titel te schrappen."],
-  ["ul", [
-   "“Non-conformités” (niet-conformiteiten): de lijst van vastgestelde problemen, geschreven voor de gebruiker en niet voor de ontwikkelaar. Schrijf “Het betaalformulier voor de schoolmaaltijden meldt invoerfouten niet aan schermlezers (criterium 11.10)” in plaats van “11.10 NC”.",
-   "“Dérogations pour charge disproportionnée” (afwijkingen wegens onevenredige last): elke betrokken inhoud, met de rechtvaardiging en het aangeboden alternatief. Bijvoorbeeld: “De video-opnames van de gemeenteraden van 2021 tot 2024 zijn niet ondertiteld. Een transcriptie wordt op verzoek bezorgd via accessibilite@ville-exemple.fr.”",
-   "“Contenus non soumis à l’obligation d’accessibilité” (inhoud die niet onder de toegankelijkheidsverplichting valt): de inhoud die het decreet vrijstelt, bijvoorbeeld een interactieve kaart waarvan de essentiële informatie (adres, openingsuren, bereikbaarheid) als tekst op dezelfde pagina staat, of een ingesloten feed van een sociaal netwerk die de organisatie niet financiert, niet ontwikkelt en niet beheert."
-  ]],
-  ["h3", "Établissement de cette déclaration d’accessibilité (opstelling van deze verklaring)"],
-  ["p", "Deze rubriek vermeldt de datum waarop de verklaring is opgesteld en, in voorkomend geval, de datum van de bijwerking. Ze bevat vervolgens vier subrubrieken: de technologieën waarmee de website is gebouwd (bijvoorbeeld HTML5, CSS, JavaScript); de testomgeving, dus de combinaties van browsers en hulptechnologieën die zijn gebruikt (NVDA met Firefox, VoiceOver met Safari op iOS, TalkBack met Chrome op Android); de tools waarmee de toegankelijkheid is beoordeeld (contrastanalyse, code-inspector, controle-extensies); en ten slotte de lijst van de gecontroleerde pagina’s, met hun adres. Met die data kan iedereen nagaan of de verklaring nog geldig is."],
-  ["h3", "Retour d’information et contact (feedback en contact)"],
-  ["p", "Deze rubriek legt uit hoe u een toegankelijkheidsprobleem meldt of een inhoud in een andere vorm verkrijgt: een online formulier, een e-mailadres, de gegevens van de verantwoordelijke dienst. De vereisten worden verderop uitgewerkt."],
-  ["h3", "Voies de recours (beroepsmogelijkheden)"],
-  ["p", "De laatste rubriek laat de gebruiker weten dat hij zich tot de Défenseur des droits, de Franse ombudsinstelling, kan wenden als hij na een melding geen bevredigend antwoord heeft gekregen, en legt uit hoe dat gaat."],
-  ["table", {
-   "caption": "Overzicht van de rubrieken van de Franse toegankelijkheidsverklaring (RGAA)",
-   "head": ["Rubriek (titel in het model)", "Verwachte inhoud", "Veelgemaakte fout"],
-   "rows": [
-    ["Hoofding (engagement en toepassingsgebied)", "Engagement op grond van artikel 47, links naar het meerjarenplan en het plan van het jaar, adres van de dienst", "Geen toepassingsgebied, of “al onze websites” zonder lijst"],
-    ["État de conformité", "Een van de drie statussen, naam van de dienst, versie van de RGAA", "“Totalement conforme” zonder audit of met een graad onder 100 %"],
-    ["Résultats des tests", "Auteur van de audit, globale graad van nageleefde criteria, facultatieve gemiddelde graad", "Gemiddelde graad voorgesteld als globale graad, score van een automatische tool"],
-    ["Contenus non accessibles: Non-conformités", "Lijst van problemen, begrijpelijk voor de gebruiker", "Subrubriek geschrapt, of een lijst van criteriumnummers"],
-    ["Contenus non accessibles: Dérogations pour charge disproportionnée", "Betrokken inhoud, rechtvaardiging, toegankelijk alternatief", "Algemene afwijking voor de hele website"],
-    ["Contenus non accessibles: Contenus non soumis à l’obligation d’accessibilité", "Inhoud vrijgesteld door het decreet, met de datum indien relevant", "Tool van derden die de organisatie financiert, voorgesteld als vrijgesteld"],
-    ["Établissement de cette déclaration d’accessibilité", "Data, technologieën, testomgeving, tools, gecontroleerde pagina’s", "Geen datum, geen lijst van pagina’s"],
-    ["Retour d’information et contact", "Toegankelijk formulier of e-mailadres, contactgegevens", "Formulier beveiligd met een ontoegankelijke captcha"],
-    ["Voies de recours", "Beroep bij de Défenseur des droits: formulier, gedelegeerde, gratis brief", "Rubriek ontbreekt of staat vóór de verklaring"]
+  ],
+  [
+   "p",
+   "Een onderneming die die drempel niet haalt, hoeft geen verklaring in de zin van artikel 47 te publiceren. Ze kan wel onder de European Accessibility Act vallen, die in Frankrijk is omgezet in de code de la consommation en andere informatieverplichtingen oplegt, onder toezicht van een andere controleur: de DGCCRF, de Franse dienst voor consumentenbescherming. Dat luik behandelen we in ons artikel over de [[article:eaa|European Accessibility Act]] en op de pagina over [[country:france|digitale toegankelijkheid in Frankrijk]]."
+  ],
+  [
+   "h3",
+   "Het decreet van 24 juli 2019 en de RGAA"
+  ],
+  [
+   "p",
+   "Het Franse decreet nr. 2019-768 van 24 juli 2019 bepaalt in artikel 6 de minimale inhoud van de verklaring: de identificatie van de verantwoordelijke en van de dienst, met een link naar het meerjarenplan; de status van de dienst ten opzichte van de toegankelijkheidsverplichting, de elementen van de beoordeling en de lijst van niet-toegankelijke inhoud, met de redenen en de aangeboden alternatieven; de middelen waarmee gebruikers een tekortkoming kunnen melden, en de beroepsmogelijkheden. Hetzelfde artikel voorziet in de conformiteitsvermelding op de homepage."
+  ],
+  [
+   "p",
+   "Het precieze formaat volgt uit de RGAA, goedgekeurd bij het arrêté van 20 september 2019 en vandaag in versie 4.1.2, met 106 criteria. Het deel over de verplichtingen bepaalt dat de verklaring verplicht het daarin vastgelegde formaat aanneemt: op die grond stelde Arcom tekortkomingen vast bij hernoemde of verplaatste rubrieken. Het [[https://accessibilite.numerique.gouv.fr/ressources/modele-de-declaration/|officiële model van de toegankelijkheidsverklaring van de DINUM (Franstalig)]] en de officiële pagina over de déclaration d’accessibilité op dezelfde website zijn de twee referenties die u tijdens het schrijven bij de hand houdt."
+  ],
+  [
+   "p",
+   "Het decreet van 2019 werd gewijzigd door decreet nr. 2026-816 van 24 augustus 2026, gepubliceerd in het Journal officiel van 26 augustus 2026 en de dag nadien in werking getreden. Volgens de toelichting stemt het de lijst van vrijgestelde inhoud af op de data en termijnen van richtlijn (EU) 2019/882, omgezet bij wet nr. 2023-171 van 9 maart 2023. Beroept u zich op een vrijstelling, controleer dan de formulering in de geconsolideerde versie van het decreet, en niet in een verklaring die vóór die datum werd opgesteld."
+  ],
+  [
+   "h3",
+   "Toezicht door Arcom en sancties"
+  ],
+  [
+   "p",
+   "Sinds de ordonnance nr. 2023-859 van 6 september 2023, die een artikel 47-1 in de wet van 2005 invoegde, ligt het toezicht bij Arcom. Zoals de [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|toelichting van Arcom bij deze opdracht (Franstalig)]] uitlegt, kan de toezichthouder de organisatie waarvan de dienst afhangt in gebreke stellen en daarna financiële sancties opleggen van maximaal 50.000 euro voor het niet naleven van de toegankelijkheidseisen en 25.000 euro voor de andere verplichtingen: vermelding op de homepage, verklaring, meerjarenplan en actieplan, meldingsmechanisme. Dezelfde pagina bevestigt de omzetdrempel van 250 miljoen euro voor ondernemingen. In de beslissing over impots.gouv.fr gaf Arcom twee maanden om de verklaringen en het actieplan te corrigeren, en negen maanden voor de toegankelijkheidsproblemen zelf."
+  ],
+  [
+   "h2",
+   "conformiteitsstatus",
+   "De drie conformiteitsstatussen en hun precieze drempels"
+  ],
+  [
+   "p",
+   "De verklaring, net als de vermelding op de homepage, kiest een van de drie statussen die de RGAA definieert op basis van het percentage nageleefde criteria. Een vierde status bestaat niet. Formuleringen zoals “wordt conform gemaakt”, “voor 80 % conform” of “toegankelijk” stemmen met geen enkele wettelijke categorie overeen. Op een Franse dienst staat de vermelding in het Frans, met de letterlijke formulering uit de RGAA."
+  ],
+  [
+   "table",
+   {
+    "caption": "De drie conformiteitsstatussen van de RGAA",
+    "head": [
+     "Status",
+     "Voorwaarde",
+     "Vermelding op de homepage (Franse tekst)"
+    ],
+    "rows": [
+     [
+      "Volledig conform (totalement conforme)",
+      "Alle toepasselijke RGAA-criteria worden nageleefd: conformiteitsgraad van 100 %",
+      "“Accessibilité : totalement conforme”"
+     ],
+     [
+      "Gedeeltelijk conform (partiellement conforme)",
+      "Minstens 50 % van de toepasselijke criteria wordt nageleefd",
+      "“Accessibilité : partiellement conforme”"
+     ],
+     [
+      "Niet conform (non conforme)",
+      "Minder dan 50 % van de criteria wordt nageleefd, of er bestaat geen geldig evaluatieresultaat",
+      "“Accessibilité : non conforme”"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Daaruit volgen twee praktische gevolgen. “Volledig conform” laat geen enkele uitzondering toe: één niet-gevalideerd criterium op één pagina van de steekproef volstaat om de dienst naar gedeeltelijke conformiteit te laten zakken. En zonder geldige audit is er maar één optie: “niet conform”. Een dienst die nooit is geaudit, of waarvan de verklaring haar geldigheidsduur heeft overschreden, kan zich niet gedeeltelijk conform verklaren omdat hij er behoorlijk uitziet."
+  ],
+  [
+   "p",
+   "Een foute status is erger dan een ongunstige status. “Niet conform” vermelden op een dienst die werkelijk niet conform is, vervult de transparantieplicht, ook al blijft het toegankelijkheidsprobleem zelf een tekortkoming die moet worden verholpen. “Volledig conform” vermelden op een dienst waarvan de verklaring zelf een graad van 42 % vermeldt, misleidt de gebruikers en is op zich een tekortkoming, zoals Arcom heeft vastgesteld. In België geldt overigens een nog strengere regel: daar kan een website zich alleen volledig conform verklaren na een diepgaande audit door een expert die het controleorgaan heeft aangesteld."
+  ],
+  [
+   "h2",
+   "conformiteitsgraad-steekproef",
+   "Berekening van de conformiteitsgraad en keuze van de steekproef"
+  ],
+  [
+   "p",
+   "De conformiteitsgraad in de verklaring is geen indruk en ook niet de score van een automatische tool. Hij volgt uit de methode die de officiële pagina over [[https://accessibilite.numerique.gouv.fr/obligations/evaluation-conformite/|de conformiteitsbeoordeling (Franstalig)]] beschrijft: een audit door de organisatie zelf (zelfevaluatie) of door een derde, op een representatieve steekproef van pagina’s, criterium per criterium en test per test."
+  ],
+  [
+   "h3",
+   "De verplichte pagina’s van de steekproef"
+  ],
+  [
+   "p",
+   "De steekproef bevat in de eerste plaats de volgende pagina’s, voor zover ze bestaan:"
+  ],
+  [
+   "ul",
+   [
+    "de homepage;",
+    "de contactpagina;",
+    "de wettelijke vermeldingen;",
+    "de pagina Toegankelijkheid, met de verklaring;",
+    "de sitemap;",
+    "de hulppagina;",
+    "de aanmeldpagina."
    ]
-  }],
-
-  ["h2", "onevenredige-last-uitzonderingen", "Onevenredige last en vrijgestelde inhoud: wat mag, en waar de grenzen liggen"],
-  ["h3", "De afwijking wegens onevenredige last"],
-  ["p", "Een afwijking wegens onevenredige last roept u geval per geval in, voor een precieze inhoud of functionaliteit, nooit voor een hele website. Ze wordt beoordeeld in het licht van de omvang, de middelen en de aard van de organisatie, en van een afweging tussen de kosten van het toegankelijk maken en het verwachte voordeel voor personen met een handicap, rekening houdend met hoe vaak en hoe lang de dienst wordt gebruikt en met het belang ervan. Middelen worden ruim opgevat (budget, retributies, overheidssubsidies, private giften, andere inkomsten), en de kosten omvatten investeringen, werking, de tijd van de medewerkers en de nodige competenties."],
-  ["p", "De RGAA sluit de meest gehoorde rechtvaardigingen uitdrukkelijk uit. Vrij vertaald: het ontbreken van prioriteit, tijdgebrek of gebrek aan kennis zijn geen legitieme omstandigheden. Een gemeente kan dus niet afwijken voor haar formulier om een akte van de burgerlijke stand aan te vragen omdat haar leverancier niet is opgeleid. Ze kan wel een afwijking motiveren voor een honderdtal uren videoarchief dat zelden wordt bekeken, als de kosten van ondertiteling buiten verhouding staan tot het werkelijke gebruik en als er op verzoek een transcriptie wordt geleverd. Elke afwijking staat in de verklaring, met de rechtvaardiging en het aangeboden alternatief. De Belgische FOD BOSA hanteert dezelfde lijn: een gerichte en gemotiveerde uitzondering, geen algemene vrijstelling."],
-  ["h3", "Inhoud die niet onder de verplichting valt"],
-  ["p", "Het Franse decreet van 2019 somt de vrijgestelde inhoud op. In de toelichting van de DINUM gaat het om:"],
-  ["ul", [
-   "kantoorbestanden die vóór 23 september 2018 zijn gepubliceerd, tenzij ze nodig zijn voor een lopende administratieve procedure;",
-   "vooraf opgenomen audio- en video-inhoud die vóór 23 september 2020 is gepubliceerd;",
-   "live uitgezonden audio- en video-inhoud;",
-   "online kaarten en kaartdiensten, op voorwaarde dat de essentiële informatie over locatie of route in een toegankelijke digitale vorm wordt aangeboden;",
-   "inhoud van derden die de organisatie niet financiert, niet ontwikkelt en niet beheert;",
-   "reproducties van stukken uit erfgoedcollecties die niet volledig toegankelijk kunnen worden gemaakt;",
-   "inhoud van intranetten en extranetten die vóór 23 september 2019 is gepubliceerd, tot aan een grondige herziening;",
-   "inhoud die niet nodig is voor een actieve administratieve procedure en na 23 september 2019 niet meer is bijgewerkt, archieven inbegrepen."
-  ]],
-  ["p", "Die lijst werd herzien bij decreet nr. 2026-816 van 24 augustus 2026, om rekening te houden met het tijdpad van de Europese richtlijn. Controleer de geldende formulering voordat u zich erop beroept, en vermeld bij elke vrijgestelde inhoud in de verklaring de datum."],
-  ["p", "Drie grenzen komen in bijna elke audit terug. Een vrijstelling geldt voor een inhoud, niet voor de pagina waarop die staat: de pagina met een livevideo blijft voor haar navigatie, koppen en formulieren aan alle criteria onderworpen. Een module die bij een softwareleverancier is gekocht (afspraken, betalingen, rekrutering) is geen inhoud van derden in de zin van het decreet, want de organisatie heeft die gekozen en betaalt ervoor. En een oude pdf valt opnieuw onder de verplichting als hij in een lopende procedure wordt gebruikt, zoals een subsidieaanvraagformulier dat nog altijd in omloop is."],
-
-  ["h2", "feedback-contact-beroep", "Feedback, contact en beroepsmogelijkheden"],
-  ["p", "De rubriek “Retour d’information et contact” moet een toegankelijke manier bieden om een probleem te melden en om informatie of een alternatief te vragen. Het model stelt een eenvoudige formulering voor, die in vertaling luidt: als u een inhoud of dienst niet kunt bereiken, kunt u contact opnemen met de verantwoordelijke van [naam van de dienst] om naar een toegankelijk alternatief te worden doorverwezen of om de inhoud in een andere vorm te verkrijgen. Daarna volgen een link naar een online formulier, een e-mailadres en het postadres van de dienst."],
-  ["p", "De officiële documentatie regelt ook de behandeling van klachten. De organisatie biedt online de mogelijkheid om een klacht in te dienen, stuurt een ontvangstbevestiging onder de voorwaarden van de artikelen R112-3 en R112-5 van de Franse code des relations entre le public et l’administration, en antwoordt binnen een week na verzending. Is de vraag complex, dan vermeldt het antwoord een redelijke termijn voor het definitieve antwoord en legt het uit waarom. De gebruiker identificeert zich volgens artikel R112-9-1 van hetzelfde wetboek; bij een onvolledige aanvraag wordt om verduidelijking gevraagd."],
-  ["p", "In de praktijk moet het contactkanaal net zo goed worden getest als de rest van de website. Een formulier dat is beveiligd met een visuele captcha zonder alternatief, of een adres dat niemand leest, maakt de rubriek zinloos. Vertrouw de mailbox toe aan de toegankelijkheidsreferent, houd een register van de aanvragen bij en neem de gemelde problemen op in het actieplan: vaak is dat de nuttigste bron van correcties."],
-  ["p", "De rubriek “Voies de recours” vermeldt dat een gebruiker die geen bevredigend antwoord kreeg, zich gratis tot de Défenseur des droits kan wenden, op drie manieren: via het online formulier van de instelling, via de gedelegeerde van de Défenseur des droits in zijn regio, of per brief zonder postzegel aan Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07. Hij kan een dienst die onder artikel 47 valt ook bij Arcom melden; de toezichthouder vraagt om eerst contact op te nemen met de betrokken organisatie."],
-
-  ["h2", "vermelding-toegankelijkheidspagina", "De vermelding “Accessibilité : non conforme”, gedeeltelijk of volledig conform: waar u ze toont"],
-  ["p", "De homepage van elke Franse dienst toont verplicht een van de drie vermeldingen: “Accessibilité : totalement conforme”, “Accessibilité : partiellement conforme” of “Accessibilité : non conforme”. De vermelding mag klikbaar zijn en naar de pagina Toegankelijkheid of rechtstreeks naar de verklaring leiden. De tekst legt ze alleen op de homepage op, maar de pagina Toegankelijkheid zelf moet rechtstreeks bereikbaar zijn vanaf de homepage en vanaf elke pagina van de dienst."],
-  ["p", "De veiligste oplossing is daarom de vermelding in de gemeenschappelijke footer van de website te plaatsen, als link naar de pagina Toegankelijkheid: ze verschijnt dan op de homepage, zoals de tekst vereist, en geeft vanaf elke pagina toegang tot de verklaring. De RGAA raadt een genormaliseerd adres aan, zoals www.naamvandewebsite.fr/accessibilite, dat gebruikers en controleurs vinden zonder te zoeken. Ook de FOD BOSA en Inter vragen in België een link die vanaf elke pagina zichtbaar is, bijvoorbeeld in de footer."],
-  ["p", "De pagina Toegankelijkheid bevat de verklaring volgens het model, het meerjarenplan of een link ernaar, en het actieplan van het lopende jaar of een link ernaar. Voor een mobiele app wordt de verklaring gepubliceerd op de website van de organisatie die de app heeft ontwikkeld of bij de informatie die bij het downloaden zichtbaar is, en wordt de conformiteitsstatus ook in de app zelf vermeld."],
-  ["p", "De meest voorkomende afwijkingen zijn eenvoudig te verhelpen: een vermelding die in een afbeelding zonder tekstalternatief zit, een verzonnen label (“Accessibilité : en cours”), een vermelding die na een nieuwe audit niet meer overeenkomt met de status in de verklaring, of een footerlink die naar een algemene pagina over het engagement van de organisatie leidt in plaats van naar de verklaring zelf."],
-
-  ["h2", "meerjarenplan-actieplannen", "Meerjarenplan voor toegankelijkheid en jaarlijkse actieplannen"],
-  ["p", "De verklaring verwijst naar twee documenten die er het verlengstuk van zijn: het meerjarenplan voor toegankelijkheid (schéma pluriannuel de mise en accessibilité), opgesteld voor maximaal drie jaar, en het actieplan van het lopende jaar. Volgens de officiële documentatie beschrijft het meerjarenplan het beleid van de organisatie inzake digitale toegankelijkheid en bevat het onder meer:"],
-  ["ul", [
-   "de functionele positie en de opdrachten van de referent digitale toegankelijkheid;",
-   "de personele en financiële middelen voor digitale toegankelijkheid;",
-   "de opleidings- en sensibiliseringsacties voor de medewerkers;",
-   "de integratie van toegankelijkheid in contractuele bepalingen, aanbestedingen en offertes;",
-   "de geplande conformiteitsbeoordelingen voor alle diensten;",
-   "de geplande correctieve maatregelen voor niet-toegankelijke inhoud, met hun tijdpad;",
-   "de evaluatie van de jaarlijkse actieplannen."
-  ]],
-  ["p", "De werkzaamheden om conform te worden, worden elk jaar in een actieplan gepland. Het meerjarenplan en het plan van het lopende jaar worden online gepubliceerd, in een toegankelijk formaat, en de verklaring linkt ernaar. Bij een meerjarenplan 2026-2028 hoort dus een plan 2026, daarna een plan 2027 dat ten laatste begin dat jaar wordt gepubliceerd, samen met de evaluatie van het vorige. Het plan van een verstreken jaar online laten staan, is precies de tekortkoming die Arcom op impots.gouv.fr vaststelde."],
-  ["p", "De samenhang tussen de documenten maakt het geheel geloofwaardig. Elke niet-conformiteit in de verklaring hoort een correctie te krijgen in een actieplan, met een termijn. Elke afwijking wegens onevenredige last hoort bij de herziening van het meerjarenplan opnieuw te worden bekeken, omdat de situatie die haar rechtvaardigde (budget, tool, leverancier) verandert. Voor een overheidsorganisatie loopt dit werk samen met de overheidsopdrachten: onze pagina over de [[sector:public|publieke sector]] legt uit hoe u toegankelijkheid in aanbestedingen opneemt. Ook in België vraagt de FOD BOSA, als aanbevolen aanvulling, een verbeterplan met maatregelen, prioriteiten en een tijdschema."],
-
-  ["h2", "bijwerken", "Wanneer u de toegankelijkheidsverklaring bijwerkt, en met welke tools"],
-  ["p", "De Franse verklaring is geldig vanaf de publicatiedatum. Ze moet in drie gevallen worden bijgewerkt: bij een substantiële wijziging of een vernieuwing van de dienst; drie jaar na de publicatie; achttien maanden na de publicatie van een nieuwe versie van het referentiekader, voor organisaties die de technische methode van de RGAA toepassen. De eerste gebeurtenis die zich voordoet, bepaalt het moment van bijwerken. In België is het ritme strakker: de FOD BOSA vraagt een herziening minstens één keer per jaar."],
-  ["p", "Dat laatste geval wordt concreet. De DINUM heeft de [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|publicatie van RGAA 5 aangekondigd, verwacht eind 2026 (Franstalig)]], met de WCAG 2.2 en extra criteria voor mobiele apps en kantoordocumenten. Verklaringen die vóór de publicatie zijn uitgebracht, blijven achttien maanden geldig, zonder drie jaar na hun publicatie te overschrijden. De DINUM benadrukt dat werkzaamheden op basis van RGAA 4.1.2 niet mogen worden opgeschort of uitgesteld in afwachting van de nieuwe versie. Hoe de RGAA zich verhoudt tot de WCAG en de norm EN 301 549, leest u in ons artikel over [[article:normes|de normen voor digitale toegankelijkheid]]."],
-  ["p", "Het begrip substantiële wijziging wordt niet door een lijst gedefinieerd. Het omvat zonder twijfel een grafische vernieuwing, een overstap naar een ander CMS, de opening van een nieuwe gebruikersomgeving of een nieuw betaaltraject, en een wissel van ontwikkelaar. Een goede praktijk is de verklaring één keer per jaar te herlezen, bij de publicatie van het actieplan, en de audit opnieuw uit te voeren zodra een wijziging een traject uit de steekproef raakt."],
-  ["p", "Wat tools betreft, stelt de DINUM Ara ter beschikking, een online dienst voor toegankelijkheidsexperts om RGAA-audits uit te voeren. Ara voert de audit niet voor u uit: het structureert de invoer van de resultaten, maakt het rapport en genereert de toegankelijkheidsverklaring zodra de volledige audit is afgerond. De RGAA voorziet bovendien dat de verklaring via een teledienst wordt ingediend, volgens regels die de ministers bevoegd voor personen met een handicap en voor digitale zaken vastleggen. De Belgische tegenhanger, de invulassistent van de FOD BOSA, komt verderop aan bod."],
-
-  ["h2", "veelgemaakte-fouten", "Fouten die een toegankelijkheidsverklaring misleidend of ongeldig maken"],
-  ["p", "De onderstaande fouten komen het vaakst voor wanneer we bestaande verklaringen nalezen. Sommige heeft Arcom uitdrukkelijk vastgesteld, andere volgen rechtstreeks uit de methode van de RGAA. De meeste gelden net zo goed voor een Belgische verklaring."],
-  ["ol", [
-   ["Een status verklaren zonder audit.", "Zonder effectieve beoordeling is de enige mogelijke status “niet conform”. Een verklaring die een gunstige status toont zonder graad of audit, is ongeldig."],
-   ["De status overschatten.", "Volledige conformiteit melden met een graad onder 100 %, of gedeeltelijke conformiteit met een graad onder 50 %. Dat was het geval bij impots.gouv.fr: volledige conformiteit vermeld in een verklaring die zelf een graad van 42,11 % aangaf."],
-   ["De gemiddelde graad publiceren in plaats van de globale graad.", "De gemiddelde graad per pagina is bijna altijd gunstiger. De conformiteitsstatus wordt uitsluitend bepaald door de globale graad van gevalideerde criteria."],
-   ["De score van een automatische tool overnemen.", "Automatische tools testen maar een deel van de criteria en beoordelen niet of een tekstalternatief of een linktekst relevant is. Hun score is geen RGAA-conformiteitsgraad."],
-   ["“Niet van toepassing” misbruiken.", "Een criterium is alleen niet van toepassing als de inhoud niet bestaat, als hij vrijgesteld is, of als hij onder een afwijking valt met een toegankelijk alternatief."],
-   ["De volgorde of titels van de rubrieken wijzigen.", "Het contact vóór de verklaring plaatsen, “Contenus inaccessibles” schrijven in plaats van “Contenus non accessibles”: Arcom ziet daarin een niet-conform formaat."],
-   ["Een subrubriek schrappen.", "Het ontbreken van de rubriek “Non-conformités”, of de gebruikte technologieën in een vrije alinea opnemen, werd als tekortkoming beschouwd."],
-   ["De verklaring laten verlopen.", "Drie jaar na de publicatie moet de Franse verklaring worden bijgewerkt. Een verklaring van januari 2023 was in 2026 niet meer geldig."],
-   ["De audit niet opnieuw doen na een vernieuwing.", "De verklaring van de oude website, overgenomen op de nieuwe, beschrijft een dienst die niet meer bestaat."],
-   ["Een gemakkelijke steekproef samenstellen.", "Processen, downloadbare documenten of willekeurige pagina’s weglaten en alleen eenvoudige pagina’s behouden, vertekent het resultaat."],
-   ["Meerdere diensten met één verklaring dekken.", "Elke website, app of elk softwarepakket krijgt een eigen beoordeling. Een mobiele app zonder eigen verklaring blijft in gebreke, ook als de website er een heeft."],
-   ["Een algemene afwijking inroepen.", "“Wegens onevenredige last is de website niet toegankelijk” heeft geen enkele waarde. Een afwijking betreft een precieze, gemotiveerde inhoud, met een alternatief."],
-   ["Ten onrechte vrijstellen.", "Een tool die de organisatie heeft gekocht, voorstellen als inhoud van derden, of een document dat nog in een procedure wordt gebruikt, voorstellen als archief."],
-   ["Een onbruikbaar contact aanbieden.", "Formulier beveiligd met een ontoegankelijke captcha, algemeen adres dat nooit wordt gelezen, geen antwoord binnen de termijn."],
-   ["De beroepsmogelijkheden weglaten of vervormen.", "De rubriek moet het beroep bij de Défenseur des droits en de werkwijze vermelden, en niet gewoon doorverwijzen naar de klantendienst."],
-   ["Dode of verouderde links laten staan.", "Link naar een onbestaand meerjarenplan, actieplan van een verstreken jaar, verwijderd auditrooster."],
-   ["Een tegenstrijdige vermelding tonen.", "Een homepage met “partiellement conforme” en een verklaring met “non conforme” spreken elkaar tegen; de vermelding moet de status van de geldende verklaring overnemen."],
-   ["De verklaring in een ontoegankelijk formaat publiceren.", "Een verklaring als gescande pdf of als afbeelding is in strijd met haar doel. Ze moet in een toegankelijk formaat worden gepubliceerd, bij voorkeur in HTML op de pagina Toegankelijkheid."]
-  ]],
-  ["note", "Om te onthouden", "Een correcte verklaring “niet conform” is beter dan een foute verklaring “volledig conform”: de eerste vervult de transparantieplicht, de tweede misleidt de gebruikers en is op zich al een tekortkoming."],
-
-  ["h2", "model-met-commentaar", "Model van een toegankelijkheidsverklaring met commentaar"],
-  ["p", "Het onderstaande model volgt de volgorde en de titels van het officiële model van RGAA 4.1.2. De elementen tussen vierkante haken vult u zelf in. Na elk blok volgt een commentaar met wat u vóór publicatie moet nagaan. Op een Franse dienst publiceert u de verklaring in het Frans: neem de rubriektitels letterlijk over (ze staan hieronder in het Frans) en gebruik de officiële Franse formuleringen van het DINUM-model. De Nederlandse tekst hieronder dient om de inhoud te begrijpen en te controleren, bijvoorbeeld voor een Belgisch team dat een Franse website beheert."],
-  ["h3", "Titel van de pagina: Déclaration d’accessibilité"],
-  ["p", "“[Naam van de organisatie] verbindt zich ertoe haar websites, intranet, extranet, mobiele apps en softwarepakketten toegankelijk te maken, overeenkomstig artikel 47 van de wet nr. 2005-102 van 11 februari 2005.”"],
-  ["p", "“Daartoe voert [naam van de organisatie] de volgende strategie en acties uit:”"],
-  ["ul", [
-   "“Meerjarenplan voor toegankelijkheid [beginjaar]-[eindjaar]: [link]”;",
-   "“Actieplan [lopend jaar]: [link]”;",
-   "“Evaluatie van de acties [vorig jaar]: [link]”."
-  ]],
-  ["p", "“Deze toegankelijkheidsverklaring is van toepassing op [naam van de dienst] ([adres van de dienst]).”"],
-  ["p", "Commentaar: controleer of de links werken en of het plan wel over het lopende jaar gaat. Het toepassingsgebied moet een precieze dienst aanduiden; beheert de organisatie meerdere websites, dan heeft elke website een eigen verklaringspagina."],
-  ["h3", "État de conformité"],
-  ["p", "“[Naam van de dienst] ([adres van de dienst]) is [volledig / gedeeltelijk / niet] conform met het référentiel général d’amélioration de l’accessibilité (RGAA), versie 4.1.2, wegens de hieronder opgesomde niet-conformiteiten en afwijkingen.”"],
-  ["p", "Commentaar: vermeld maar één status, afgeleid uit de globale graad: 100 % voor “volledig”, minstens 50 % voor “gedeeltelijk”, minder dan 50 % of geen geldige audit voor “niet”. Bij volledige conformiteit schrapt u het einde van de zin over de niet-conformiteiten, maar behoudt u eventuele afwijkingen."],
-  ["h3", "Résultats des tests"],
-  ["p", "“De conformiteitsaudit uitgevoerd door [naam van de organisatie of de dienstverlener] toont aan dat [nn,nn] % van de criteria van RGAA versie 4.1.2 wordt nageleefd.”"],
-  ["p", "Facultatief: “De gemiddelde conformiteitsgraad van de dienst bedraagt [nn,nn] %.” en “Het auditrooster is beschikbaar op het volgende adres: [link].”"],
-  ["p", "Commentaar: de graad is de verhouding tussen gevalideerde en toepasselijke criteria, berekend over de hele steekproef. Vermeld of de audit een zelfevaluatie is of door een derde werd uitgevoerd, en zorg dat de auditdatum strookt met de datum van opstelling."],
-  ["h3", "Contenus non accessibles"],
-  ["p", "“De hieronder vermelde inhoud is om de volgende redenen niet toegankelijk.”"],
-  ["p", "Subrubriek “Non-conformités”: “[Lijst van niet-conformiteiten, één per regel, geformuleerd voor de gebruiker, met het nummer van het criterium tussen haakjes].” Voorbeelden:"],
-  ["ul", [
-   "“De video over de begroting heeft geen teksttranscriptie (criterium 4.1).”;",
-   "“De verzendknop van het contactformulier heeft geen duidelijke naam voor schermlezers (criterium 11.9).”;",
-   "“Het uitklapmenu om het jaar te kiezen, is niet met het toetsenbord te bedienen (criterium 7.3).”"
-  ]],
-  ["p", "Subrubriek “Dérogations pour charge disproportionnée”: “[Betrokken inhoud], [rechtvaardiging], [aangeboden alternatief en hoe het te verkrijgen].”"],
-  ["p", "Subrubriek “Contenus non soumis à l’obligation d’accessibilité”: “[Vrijgestelde inhoud], [reden van vrijstelling op grond van het decreet], [publicatiedatum als de vrijstelling daarvan afhangt].”"],
-  ["p", "Commentaar: de lijst van niet-conformiteiten moet overeenkomen met het auditrooster. Een afwijking zonder rechtvaardiging of alternatief, of een vrijstelling zonder reden, beschermt de organisatie niet. Is een subrubriek leeg, vermeld dat dan in plaats van ze te schrappen."],
-  ["h3", "Établissement de cette déclaration d’accessibilité"],
-  ["p", "“Deze verklaring werd opgesteld op [dag maand jaar]. Ze werd bijgewerkt op [dag maand jaar].”"],
-  ["p", "Subrubriek “Technologies utilisées pour la réalisation du site” (gebruikte technologieën): “[HTML5, CSS, JavaScript, naam van het CMS indien van toepassing].”"],
-  ["p", "Subrubriek “Environnement de test” (testomgeving): “De weergave van de inhoud door hulptechnologieën werd gecontroleerd met de volgende combinaties: [schermlezer en versie, browser en versie, besturingssysteem].”"],
-  ["p", "Subrubriek “Outils pour évaluer l’accessibilité” (beoordelingstools): “[contrastanalyse, code-inspector van de browser, gebruikte extensies of tools].”"],
-  ["p", "Subrubriek “Pages du site ayant fait l’objet de la vérification de conformité” (gecontroleerde pagina’s):"],
-  ["ul", [
-   "“Accueil (homepage): [adres]”;",
-   "“Contact: [adres]”;",
-   "“Mentions légales (wettelijke vermeldingen): [adres]”;",
-   "“Accessibilité (toegankelijkheid): [adres]”;",
-   "“Plan du site (sitemap): [adres]”;",
-   "“[Andere pagina’s van de steekproef, waaronder de stappen van de processen en de willekeurig gekozen pagina’s]: [adressen]”."
-  ]],
-  ["p", "Commentaar: de datum van opstelling laat de geldigheidstermijn van drie jaar lopen. Houd deze subrubrieken gescheiden: ze in één alinea samenvoegen werd als vormfout beschouwd."],
-  ["h3", "Retour d’information et contact"],
-  ["p", "“Als u een inhoud of dienst niet kunt bereiken, kunt u contact opnemen met de verantwoordelijke van [naam van de dienst] om naar een toegankelijk alternatief te worden doorverwezen of om de inhoud in een andere vorm te verkrijgen.”"],
-  ["ul", [
-   "“Een bericht sturen: [link naar het formulier]”;",
-   "“Schrijven naar: [e-mailadres]”;",
-   "“Contact opnemen met: [naam van de dienst, postadres, telefoon]”."
-  ]],
-  ["p", "Commentaar: test het formulier vóór publicatie met een schermlezer en met het toetsenbord, en wijs de persoon aan die binnen een week antwoordt."],
-  ["h3", "Voies de recours"],
-  ["p", "“Stelt u een toegankelijkheidsprobleem vast dat u de toegang tot een inhoud of functionaliteit van de website belet, meldt u het ons en krijgt u geen antwoord, dan hebt u het recht uw klacht of een verzoek tot behandeling aan de Défenseur des droits te bezorgen. Daarvoor zijn verschillende middelen beschikbaar:”"],
-  ["ul", [
-   "“Een bericht sturen aan de Défenseur des droits: [link naar het online formulier]”;",
-   "“Contact opnemen met de gedelegeerde van de Défenseur des droits in uw regio: [link naar de kaart van de gedelegeerden]”;",
-   "“Een brief per post sturen, gratis, zonder postzegel: Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07”."
-  ]],
-  ["p", "Commentaar: deze rubriek sluit de verklaring af. Ze mag niet bovenaan de pagina worden geplaatst en niet worden vervangen door een verwijzing naar de klantendienst."],
-
-  ["h2", "toegankelijkheidsverklaring-belgie", "De toegankelijkheidsverklaring in België: wat BOSA en Inter verwachten (en Luxemburg en Zwitserland)"],
-  ["p", "De Franse toegankelijkheidsverklaring is de nationale invulling van een Europese verplichting: richtlijn (EU) 2016/2102 inzake de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties, waarvan het uitvoeringsbesluit (EU) 2018/1523 van de Europese Commissie, van 11 oktober 2018, een modelverklaring vastlegt. België en Luxemburg bouwen op dat gemeenschappelijke model; Zwitserland, buiten de Europese Unie, volgt een andere logica. Voor een Belgische organisatie verschillen vooral het referentiekader, de band tussen audit en conformiteitsniveau, het ritme van bijwerken en de klachtenroute."],
-  ["h3", "Wie verplicht is, en wie controleert"],
-  ["p", "Op federaal niveau volgt de verplichting uit de wet van 19 juli 2018 inzake de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties, aangevuld met teksten van elke deelstaat: het Vlaamse Bestuursdecreet van 7 december 2018, de Brusselse ordonnantie van 4 oktober 2018, het decreet van de Duitstalige Gemeenschap van 15 oktober 2018, het Waalse decreet van 2 mei 2019, het decreet van de Franse Gemeenschap van 3 mei 2019 en het decreet van de COCOF van 9 mei 2019. De conformiteit wordt beoordeeld volgens de Europese norm EN 301 549, en niet volgens een nationaal referentiekader zoals de RGAA. De FOD BOSA verwijst in zijn FAQ naar versie 3.2.1 van 2021; een versie 4.1.1 van de norm is in september 2026 gepubliceerd, zoals we toelichten in ons artikel over de normen."],
-  ["table", {
-   "caption": "Toezicht op de toegankelijkheidsverklaring van de Belgische publieke sector",
-   "head": ["Overheid", "Tekst", "Toezichthoudend orgaan"],
-   "rows": [
-    ["Federale overheid", "Wet van 19 juli 2018", "FOD Beleid en Ondersteuning (BOSA)"],
-    ["Vlaamse overheid (Gewest en Gemeenschap)", "Bestuursdecreet van 7 december 2018", "Inter, ondersteunings- en controleorgaan digitale toegankelijkheid (OCODT)"],
-    ["Brussels Hoofdstedelijk Gewest", "Ordonnantie van 4 oktober 2018", "equal.brussels"],
-    ["Waals Gewest", "Decreet van 2 mei 2019", "Agence du Numérique"],
-    ["Franse Gemeenschap", "Decreet van 3 mei 2019", "ETNIC"],
-    ["Duitstalige Gemeenschap", "Decreet van 15 oktober 2018", "Ministerium der Deutschsprachigen Gemeinschaft"],
-    ["COCOF", "Decreet van 9 mei 2019", "Geen orgaan vermeld in de federale lijst"]
+  ],
+  [
+   "p",
+   "Daarbij komen minstens één relevante pagina per type dienst, zoekfunctie inbegrepen, minstens één relevant downloadbaar document, alle pagina’s van een proces (een aanvraag in meerdere stappen, een betaaltraject, een afspraak maken) en pagina’s met verschillende inhoud: artikel, fiche, formulier, gegevenstabel, kaart, video. Willekeurig gekozen pagina’s moeten ten slotte minstens 10 % van de steekproef uitmaken. Bij een mobiele app geldt elk scherm als een pagina."
+  ],
+  [
+   "p",
+   "Voor de website van een gemeente kan een realistische steekproef bestaan uit de homepage, de contactpagina, de wettelijke vermeldingen, de pagina Toegankelijkheid, de sitemap, een pagina met zoekresultaten, een nieuwsbericht, de fiche van een aanvraag, de vier stappen van een inschrijving voor de schoolmaaltijden met online betaling, een gemeenteraadsbesluit in pdf, de agenda, een pagina met een interactieve kaart en twee willekeurig gekozen pagina’s. De klassieke valkuil is de stappen van een proces weg te laten omdat ze een testaccount vereisen. Net die stappen tellen het zwaarst voor de gebruiker, en een criterium is voor een proces alleen gevalideerd als het op elke stap gevalideerd is."
+  ],
+  [
+   "h3",
+   "De officiële berekeningsmethode"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Elk criterium op elke pagina beoordelen.",
+     "Voor elke pagina van de steekproef wordt elk van de 106 criteria als gevalideerd, niet gevalideerd of niet van toepassing beoordeeld. Zodra één element van de pagina niet slaagt voor de tests van een criterium, kan dat criterium voor die pagina niet worden gevalideerd."
+    ],
+    [
+     "Consolideren op het niveau van de dienst.",
+     "Een criterium is gevalideerd voor de dienst als het gevalideerd is op alle pagina’s van de steekproef waar het van toepassing is. Het is van toepassing zodra het op één pagina van toepassing is."
+    ],
+    [
+     "De globale conformiteitsgraad berekenen.",
+     "De conformiteitsgraad is het aantal gevalideerde criteria gedeeld door het aantal toepasselijke criteria. Die graad, en alleen die, bepaalt de conformiteitsstatus."
+    ],
+    [
+     "Desgewenst de gemiddelde graad berekenen.",
+     "Dat is het gemiddelde van de conformiteitsgraden van de afzonderlijke pagina’s. Het officiële model presenteert hem als facultatieve informatie, die de globale graad aanvult maar nooit vervangt."
+    ]
    ]
-  }],
-  ["p", "Uw toezichthouder hangt dus af van de overheid waaronder uw organisatie valt, niet van uw webbureau of uw hostingpartner. Een webbureau dat websites beheert voor een gemeente, een federale dienst en een Brusselse instelling, werkt met drie verschillende controleorganen. Het volledige overzicht van de Belgische teksten staat op onze pagina over [[country:belgique|digitale toegankelijkheid in België]] en in ons artikel over [[article:belgique|de Belgische verplichtingen]]."],
-  ["h3", "Wat een Belgische toegankelijkheidsverklaring moet bevatten"],
-  ["p", "De FOD BOSA somt in zijn FAQ [[https://accessibility.belgium.be/nl/faq/hoe-stel-je-een-conforme-toegankelijkheidsverklaring-op|Hoe stel je een conforme toegankelijkheidsverklaring op?]] de verplichte elementen op. Ontbreekt er één, dan wordt de website als niet conform beschouwd, ook als de werkelijke toegankelijkheid goed is."],
-  ["ul", [
-   "de naam van de verantwoordelijke organisatie, en haar engagement om de website volgens de wetgeving toegankelijk te maken;",
-   "het exacte webadres, of de naam van de mobiele app, waarop de verklaring betrekking heeft;",
-   "het conformiteitsniveau ten opzichte van de norm EN 301 549: volledig conform, gedeeltelijk conform of niet conform;",
-   "de evaluatiemethode: een vereenvoudigde of een diepgaande audit, met een link naar het auditrapport;",
-   "de lijst van niet-toegankelijke inhoud, in begrijpelijke taal;",
-   "de datum van eerste publicatie en de datum van de laatste bijwerking, want de verklaring moet minstens jaarlijks worden herzien;",
-   "de contactgegevens in drie escalatieniveaus: de beheerder van de website, de klachtendienst van de organisatie en de bevoegde ombudsdienst."
-  ]],
-  ["p", "BOSA beveelt twee aanvullingen aan: alternatieven voor niet-toegankelijke inhoud, of een manier om die informatie toch te verkrijgen, en een verbeterplan met maatregelen, prioriteiten en een tijdschema. In de Franse verklaring zijn die elementen verplicht, via de subrubriek over afwijkingen en het jaarlijkse actieplan. Wie al een Franse verklaring heeft opgesteld, beschikt dus over het materiaal voor beide aanbevelingen."],
-  ["h3", "Conformiteitsniveau: de audit van het controleorgaan beslist"],
-  ["p", "Op dit punt verschilt de Belgische verklaring het sterkst van de Franse. Volgens de FOD BOSA bepaalt het controleorgaan het conformiteitsniveau, en hangt het hoogst haalbare niveau af van het soort audit:"],
-  ["ul", [
-   "volledig conform: na een diepgaande audit door een expert die het controleorgaan heeft aangesteld, zonder toegankelijkheidsfouten, en met een actuele verklaring;",
-   "gedeeltelijk conform: na een vereenvoudigde audit, met minder dan 50 % toegankelijkheidsfouten en een actuele verklaring; dat is het hoogste niveau dat een vereenvoudigde audit kan opleveren;",
-   "niet conform: zonder officiële audit, zonder volledige verklaring, of met meer dan 50 % toegankelijkheidsfouten; zonder audit vermeldt u “niet conform bij gebrek aan een audit”."
-  ]],
-  ["p", "Een zelfevaluatie of het rapport van een privébedrijf mag u vermelden, om de geleverde inspanningen aan te tonen, maar het bevestigt de conformiteit niet: dat kan alleen het officiële controleorgaan van uw bestuursniveau. In Frankrijk volstaat daarentegen een zelfevaluatie of een audit door een derde volgens de RGAA-methode om een status te onderbouwen. Een Belgische gemeente die een extern bureau een volledige audit laat uitvoeren, kan dus niet zelf “volledig conform” verklaren; ze kan het rapport wel als evaluatie vermelden en de gevonden problemen correct oplijsten. Een [[svc:audit-conformite|conformiteitsaudit volgens EN 301 549]] blijft daarom nuttig: hij bereidt de officiële controle voor en levert de lijst van problemen die in de verklaring hoort."],
-  ["note", "Om te onthouden", "In België is “volledig conform” voorbehouden aan een diepgaande audit door een expert die het controleorgaan heeft aangesteld. Zonder officiële audit is de correcte vermelding “niet conform bij gebrek aan een audit”."],
-  ["h3", "Publicatie: een HTML-pagina, bereikbaar vanaf elke pagina"],
-  ["p", "BOSA vraagt de verklaring als webpagina te publiceren, niet als downloadbaar document, met een zichtbare link die vanaf elke pagina bereikbaar is, bijvoorbeeld in de footer. HTML is het aanbevolen formaat. De pagina gaat alleen over digitale toegankelijkheid en wordt niet samengevoegd met bijvoorbeeld de gebruiksvoorwaarden, en ze krijgt een duidelijke titel zoals “Toegankelijkheidsverklaring” of “Toegankelijkheid van deze website”. Voor een mobiele app staat de verklaring in de app zelf, op de bijbehorende website als die bestaat, en waar mogelijk op de downloadplatformen. Is een app aan een website gekoppeld, dan zijn twee afzonderlijke verklaringen nodig."],
-  ["p", "Voor meertalige Belgische websites komt daar een praktische regel bij: publiceer de toegankelijkheidsverklaring in elke taal van de website, met een contactpunt dat in die taal kan antwoorden. Een website in het Nederlands, Frans en Duits met een verklaring in één taal laat een deel van de gebruikers zonder de informatie die de verklaring moet bieden."],
-  ["h3", "Onevenredige last in de Belgische verklaring"],
-  ["p", "De FAQ van BOSA over onevenredige last, gebaseerd op artikel 5 van richtlijn (EU) 2016/2102, noemt het een gerichte en gemotiveerde uitzondering, geen algemene vrijstelling. De overheidsinstantie maakt vooraf een gedocumenteerde en becijferde beoordeling, die de betrokken pagina’s, documenten of functionaliteiten precies aanwijst, de financiële kosten van conformiteit raamt, de werklast inschat (personeel, technische complexiteit, termijnen) en die elementen afweegt tegen de beschikbare middelen. In de verklaring somt u de betrokken inhoud op en legt u begrijpelijk uit waarom er sprake is van onevenredige last. Die last moet regelmatig opnieuw worden beoordeeld; een onnauwkeurige of slecht onderbouwde rechtvaardiging kan worden verworpen, waarna de website of app als niet conform wordt beschouwd."],
-  ["h3", "De invulassistent van de FOD BOSA"],
-  ["p", "Om het opstellen te vergemakkelijken, biedt de FOD BOSA de [[https://accessibility.belgium.be/nl/invulassistent-toegankelijkheidsverklaring|Invulassistent Toegankelijkheidsverklaring]] aan: een online formulier dat u stap voor stap begeleidt naar een geldige verklaring, gebaseerd op het model van het Europese uitvoeringsbesluit en op de richtlijn. Het resultaat is een herbruikbare HTML-pagina, die u als bestand bewaart en doorgaans in uw CMS kopieert. De assistent bestaat in het Nederlands, het Frans en het Duits, wat handig is voor meertalige websites."],
-  ["p", "BOSA raadt aan vooraf vier dingen klaar te leggen:"],
-  ["ol", [
-   ["Het auditrapport van de website.", "Zonder rapport kunt u geen conformiteitsniveau onderbouwen, en blijft “niet conform bij gebrek aan een audit” de enige correcte vermelding."],
-   ["De contactgegevens van de verantwoordelijke dienst.", "Vul de drie escalatieniveaus in: beheerder van de website, klachtendienst, bevoegde ombudsdienst, telkens met website, e-mail, telefoon en adres."],
-   ["Informatie over geplande wijzigingen.", "Een vernieuwing, een nieuw CMS of een nieuw e-loket bepaalt welke problemen u binnenkort oplost en welke termijn u vermeldt."],
-   ["De alternatieven voor inhoud die nog niet aan de WCAG 2.1 voldoet.", "Bijvoorbeeld een toegankelijke versie van een pdf op verzoek, of telefonische hulp bij een formulier."]
-  ]],
-  ["p", "De assistent schrijft de verklaring niet in uw plaats: de kwaliteit hangt af van de audit en van de manier waarop u de problemen beschrijft. Een lijst van criteriumnummers zonder uitleg blijft even weinig bruikbaar als in Frankrijk. Volgens BOSA helpt het ook om in toekomstige opdrachten van leveranciers te eisen dat ze rekening houden met toegankelijkheidscriteria: dat bespaart later tijd."],
-  ["h3", "In Vlaanderen: wat Inter verwacht"],
-  ["p", "Voor Vlaamse overheden, lokale besturen inbegrepen, is Inter het ondersteunings- en controleorgaan digitale toegankelijkheid (OCODT). Inter auditeert jaarlijks meer dan 200 websites en apps, vraagt advies aan NOOZO bij de keuze ervan, laat voor een kleiner aantal diepgaande controles uitvoeren door externe experts en rapporteert jaarlijks aan de FOD BOSA. Inter heeft niet als taak te controleren of websites aan de European Accessibility Act voldoen. In zijn toolbox [[https://www.vlaanderen.be/inter/toolbox-toegankelijke-steden-en-gemeenten/algemeen-bestuur-dienstverlening-en-communicatie/digitale-toegankelijkheid/toegankelijkheidsverklaring|Je toegankelijkheidsverklaring opstellen]] werkt Inter de verwachtingen concreet uit:"],
-  ["ul", [
-   "elke website of app van een overheid die onder artikel II.16 van het Bestuursdecreet valt, heeft een toegankelijkheidsverklaring; voor andere organisaties is ze niet verplicht, maar wel aanbevolen;",
-   "het toepassingsgebied vermeldt voor een website de volledige URL en elk subdomein of extra adres dat eronder valt, en voor een app de exacte naam en het platform, bijvoorbeeld iOS of Android;",
-   "de status is “volledig conform”, “gedeeltelijk conform” of “niet conform”, ten opzichte van EN 301 549, die voor websites de WCAG 2.1 op niveau AA omvat;",
-   "de evaluatiemethode wordt kort beschreven (officiële audit, zelfcontrole, controle door een externe partner), met een link naar het auditrapport als dat bestaat;",
-   "bij elk gekend probleem staat wat er misloopt, waar (pagina, onderdeel, document, functie) en waarom het nog niet is opgelost, in korte zinnen en eenvoudige taal;",
-   "er zijn twee contactpunten met klikbare links: een eerste voor vragen en opmerkingen over toegankelijkheid, bijvoorbeeld toegankelijkheid@jouwdomein.be, en een interne of externe klachten- of ombudsdienst voor wie geen bevredigend antwoord krijgt, elk via meerdere kanalen;",
-   "de verklaring wordt minstens één keer per jaar bijgewerkt, en opnieuw na elke grote wijziging van de website of app; voor minstens gedeeltelijke conformiteit mag de laatste herziening bij de controle door het OCODT niet ouder zijn dan een jaar;",
-   "de verklaring is een gewone HTML-webpagina, geen pdf, met een link vanaf elke pagina, bijvoorbeeld in de footer."
-  ]],
-  ["p", "Inter verwijst als sjabloon naar de modelverklaring van de Europese Commissie met instructies, en noemt de toegankelijkheidsverklaring van Vlaanderen.be als goed voorbeeld. Twee bijzondere gevallen verdienen aandacht. Vzw’s en stichtingen moeten alleen digitaal toegankelijk zijn als ze essentiële diensten verlenen, zoals sociale hulpverlening, zorg of onderwijs, of diensten voor personen met een handicap. En voor onderwijsinstellingen gelden de verplichtingen alleen voor de wezenlijke online administratieve functies, zoals de homepage, het navigatiemenu, de contactgegevens, het onderwijsaanbod, het reglement en de toegankelijkheidsverklaring zelf, met de details in de omzendbrief NO/2025/02."],
-  ["h3", "De klachtenroute in de verklaring"],
-  ["p", "De Belgische verklaring moet de klachtenroute in drie opeenvolgende stappen beschrijven. Eerst wendt de bezoeker zich tot de verantwoordelijke van de website of app. Krijgt hij geen of een onbevredigend antwoord, dan richt hij zich tot de klachtendienst van de organisatie, die ook verplicht in de verklaring staat. Als laatste stap kan hij naar de bevoegde ombudsman: federaal, gewestelijk of van de gemeenschap, naargelang van de toezichthouder van de website, met de volledige contactgegevens (website, e-mail, telefoon en adres). Voor federale websites is dat de Federale Ombudsman. Heeft een website helemaal geen toegankelijkheidsverklaring, dan kan een gebruiker dat melden aan het toegankelijkheidsteam van de FOD BOSA, dat de melding doorstuurt naar de bevoegde dienst of het bevoegde controleorgaan."],
-  ["p", "De meest voorkomende fout in deze rubriek is een verkeerde ombudsdienst: de Federale Ombudsman op de website van een gemeente, of een klantendienst als eindpunt. Controleer ook of de klachtendienst van de organisatie werkelijk weet dat hij toegankelijkheidsklachten kan ontvangen."],
-  ["table", {
-   "caption": "Toegankelijkheidsverklaring in Frankrijk en België: de verschillen die tellen",
-   "head": ["Punt", "Frankrijk (RGAA)", "België (EN 301 549)"],
-   "rows": [
-    ["Referentiekader", "RGAA 4.1.2, 106 criteria", "EN 301 549, door BOSA vermeld in versie 3.2.1"],
-    ["Formaat", "Model van de DINUM, titels en volgorde verplicht", "Europees model (uitvoeringsbesluit (EU) 2018/1523), invulassistent van BOSA"],
-    ["Wie bepaalt de status", "De organisatie, op basis van een zelfevaluatie of een audit door een derde", "Het controleorgaan; “volledig conform” alleen na een diepgaande audit door een aangestelde expert"],
-    ["Drempel gedeeltelijk conform", "Minstens 50 % van de toepasselijke criteria nageleefd", "Minder dan 50 % toegankelijkheidsfouten, na een vereenvoudigde audit"],
-    ["Bijwerken", "Bij substantiële wijziging, na drie jaar, of achttien maanden na een nieuwe RGAA", "Minstens jaarlijks, en na elke grote wijziging"],
-    ["Klachtenroute", "Contact met de organisatie, daarna de Défenseur des droits; melding bij Arcom mogelijk", "Beheerder, klachtendienst, bevoegde ombudsman"],
-    ["Vermelding op de homepage", "Verplicht: “Accessibilité : …”", "Geen vaste formulering; link naar de verklaring vanaf elke pagina"]
+  ],
+  [
+   "p",
+   "Neem een steekproef van vijftien pagina’s waarop 54 criteria minstens één keer van toepassing zijn. Daarvan zijn er 41 overal gevalideerd waar ze van toepassing zijn, 13 falen op minstens één pagina. De conformiteitsgraad is 41 gedeeld door 54, of 75,93 %: de dienst is gedeeltelijk conform. Als een van de 13 falende criteria alleen op de betaalpagina een probleem geeft, blijft het niet gevalideerd voor de hele dienst. De gemiddelde graad per pagina ligt meestal hoger, omdat een geïsoleerde fout maar op één pagina doorweegt: daarom geeft wie alleen die gemiddelde graad toont, een flatterend en onjuist beeld."
+  ],
+  [
+   "p",
+   "Er zijn maar drie redenen om een criterium als niet van toepassing te beschouwen: de betrokken inhoud of functionaliteit bestaat niet; de inhoud is vrijgesteld; of de inhoud valt onder een afwijking wegens onevenredige last en gaat vergezeld van een toegankelijk digitaal alternatief. Zonder alternatief blijft het criterium van toepassing en telt het mee in de berekening. Criteria als “niet van toepassing” bestempelen om de graad op te krikken, is een veelgemaakte fout, en een die bij een controle snel opvalt."
+  ],
+  [
+   "h2",
+   "verplichte-rubrieken",
+   "De verplichte rubrieken van de toegankelijkheidsverklaring, één voor één"
+  ],
+  [
+   "p",
+   "Het officiële model legt de volgorde en de titels van de rubrieken vast. Arcom herinnerde daaraan in zijn beslissing van juni 2026: de rubrieken “Retour d’information et contact” en “Voies de recours” vóór de verklaring plaatsen, de titel “Contenus inaccessibles” gebruiken in plaats van “Contenus non accessibles”, een ontbrekende rubriek “Non-conformités” en een subrubriek die in de lopende tekst was opgegaan, volstonden om het formaat niet conform te verklaren. Neem de titels dus letterlijk over, in de Franse versie en in de volgorde van het model. Hieronder staat bij elke rubriek de officiële Franse titel, met een Nederlandse vertaling ter verduidelijking."
+  ],
+  [
+   "h3",
+   "Hoofding: engagement, strategie en toepassingsgebied"
+  ],
+  [
+   "p",
+   "De verklaring begint met het engagement van de organisatie om haar diensten toegankelijk te maken, overeenkomstig artikel 47 van de wet van 11 februari 2005. Daarna volgen de links naar het meerjarenplan en naar het actieplan van het lopende jaar, en vervolgens de zin over het toepassingsgebied: “Cette déclaration d’accessibilité s’applique à” (deze toegankelijkheidsverklaring is van toepassing op), gevolgd door de naam en het exacte adres van de dienst. Bijvoorbeeld: “Cette déclaration d’accessibilité s’applique au site www.ville-exemple.fr.” Is het gezinsloket van de gemeente een aparte dienst, elders gehost en afzonderlijk geaudit, dan heeft het een eigen verklaring nodig."
+  ],
+  [
+   "h3",
+   "État de conformité (conformiteitsstatus)"
+  ],
+  [
+   "p",
+   "Eén zin, één status, één versie van het referentiekader: de website www.ville-exemple.fr is gedeeltelijk conform met het référentiel général d’amélioration de l’accessibilité (RGAA), versie 4.1.2, wegens de hieronder opgesomde niet-conformiteiten en afwijkingen. Een verklaring die naar “de RGAA” verwijst zonder versie, of naar een verlaten versie, laat twijfel bestaan over de methode die werkelijk is toegepast."
+  ],
+  [
+   "h3",
+   "Résultats des tests (testresultaten)"
+  ],
+  [
+   "p",
+   "Deze rubriek vermeldt wie de audit heeft uitgevoerd en wat die heeft gemeten, bijvoorbeeld: de conformiteitsaudit door [naam van de organisatie of de dienstverlener] toont aan dat 75,93 % van de criteria van RGAA versie 4.1.2 wordt nageleefd. De gemiddelde graad en de link naar het auditrooster zijn facultatief. Het rooster publiceren maakt het document toch geloofwaardiger, omdat een gebruiker en een controleur de resultaten dan criterium per criterium kunnen nagaan."
+  ],
+  [
+   "h3",
+   "Contenus non accessibles (niet-toegankelijke inhoud)"
+  ],
+  [
+   "p",
+   "Deze rubriek bestaat uit drie subrubrieken. Behoud ze uit voorzorg alle drie, en vermeld “Aucun contenu concerné” (geen betrokken inhoud) wanneer een lijst leeg is, in plaats van de titel te schrappen."
+  ],
+  [
+   "ul",
+   [
+    "“Non-conformités” (niet-conformiteiten): de lijst van vastgestelde problemen, geschreven voor de gebruiker en niet voor de ontwikkelaar. Schrijf “Het betaalformulier voor de schoolmaaltijden meldt invoerfouten niet aan schermlezers (criterium 11.10)” in plaats van “11.10 NC”.",
+    "“Dérogations pour charge disproportionnée” (afwijkingen wegens onevenredige last): elke betrokken inhoud, met de rechtvaardiging en het aangeboden alternatief. Bijvoorbeeld: “De video-opnames van de gemeenteraden van 2021 tot 2024 zijn niet ondertiteld. Een transcriptie wordt op verzoek bezorgd via accessibilite@ville-exemple.fr.”",
+    "“Contenus non soumis à l’obligation d’accessibilité” (inhoud die niet onder de toegankelijkheidsverplichting valt): de inhoud die het decreet vrijstelt, bijvoorbeeld een interactieve kaart waarvan de essentiële informatie (adres, openingsuren, bereikbaarheid) als tekst op dezelfde pagina staat, of een ingesloten feed van een sociaal netwerk die de organisatie niet financiert, niet ontwikkelt en niet beheert."
    ]
-  }],
-  ["h3", "Actief in België en Frankrijk"],
-  ["p", "Voor een organisatie met diensten in beide landen is de meest economische aanpak vaak om één keer dezelfde steekproef van pagina’s te laten auditeren en de resultaten in beide roosters te rapporteren. Een goed uitgevoerde RGAA-audit dekt een groot deel van de webvereisten van EN 301 549, maar de Belgische juridische referentie blijft de Europese norm: uw Belgische verklaring drukt een conformiteitsniveau uit ten opzichte van EN 301 549, en geen RGAA-graad. Omgekeerd publiceert u voor een Franse dienst een verklaring in het Frans, volgens het DINUM-model, met de RGAA-graad en de rubrieken van dit artikel."],
-  ["h3", "Luxemburg"],
-  ["p", "De wet van 28 mei 2019 inzake de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties legt elke publieke website en app een toegankelijkheidsverklaring op, gebaseerd op het Europese model. De beoordeling steunt op de RAWeb voor het web en de RAAM voor mobiel, uitgegeven door de Service information et presse du gouvernement (SIP), die een downloadbaar model van de verklaring aanbiedt en een openbaar observatorium van de verklaringen bijhoudt. Inhoud waarvoor een afwijking wegens onevenredige last geldt, moet daarin precies worden opgesomd. In zijn eigen verklaring nodigt de SIP een ontevreden gebruiker uit om online een klacht in te dienen, en zich daarna zo nodig tot de Ombudsman van het Groothertogdom te wenden. Meer daarover op onze pagina [[country:luxembourg|digitale toegankelijkheid in Luxemburg]], in ons artikel over [[article:luxembourg|het Luxemburgse kader]] en bij onze [[svc:audit-raam|RAAM-audit van mobiele apps]]."],
-  ["h3", "Zwitserland"],
-  ["p", "Zwitserland is niet gebonden door de Europese richtlijn en kent geen vergelijkbaar reglementair model van verklaring. De toegankelijkheid van de diensten van de Confederatie steunt op de wet op de gelijkheid van personen met een handicap (BehiG / LHand), de bijbehorende verordening (BehiV / OHand) en artikel 3, lid 4, van de federale wet over het gebruik van elektronische middelen voor de uitvoering van overheidstaken (EMBAG / LMETA). De derde versie van de norm eCH-0059 vereist naleving van niveau AA van de WCAG 2.1. Verschillende federale diensten publiceren toch een toegankelijkheidsverklaring met hun conformiteitsniveau, de problematische inhoud en een contact: een goede praktijk, die Zwitserse ondernemingen met activiteiten op de Europese markt beter overnemen. Zie onze pagina [[country:suisse|digitale toegankelijkheid in Zwitserland]] en ons artikel over [[article:suisse|het Zwitserse kader]]."],
-
-  ["h2", "actieplan", "Actieplan: een toegankelijkheidsverklaring publiceren die een controle doorstaat"],
-  ["p", "Voor een organisatie die vertrekt van een oude verklaring, of van geen enkele verklaring, verloopt de aanpak in korte, controleerbare stappen."],
-  ["ol", [
-   ["De diensten inventariseren.", "Maak een lijst van elke website, intranet, extranet, app en elk softwarepakket, met de verantwoordelijke en de datum van de laatste verklaring. Elke dienst krijgt een eigen verklaring. Noteer voor elke dienst ook het land en, in België, de overheid waaronder hij valt."],
-   ["Meteen een correcte status tonen.", "Publiceer voor elke Franse dienst zonder geldige audit “Accessibilité : non conforme” en een verklaring die dat vermeldt; voor een Belgische dienst zonder officiële audit “niet conform bij gebrek aan een audit”. Dat is correct, en het maakt een einde aan de zwaarste tekortkoming in de verklaring."],
-   ["De steekproef samenstellen.", "Verplichte pagina’s, volledige processen, downloadbare documenten, gevarieerde pagina’s en minstens 10 % willekeurig gekozen pagina’s."],
-   ["De audit uitvoeren.", "RGAA 4.1.2 voor Franse diensten, EN 301 549 voor Belgische diensten: intern als uw teams de methode beheersen, of met een externe [[svc:audit-rgaa|RGAA-audit]]. Bij ons duurt een volledige audit gemiddeld drie weken."],
-   ["De verklaring opstellen op basis van het model.", "Neem de titels letterlijk over, bereken de globale graad of het conformiteitsniveau, beschrijf de niet-conformiteiten in duidelijke taal en rechtvaardig elke afwijking. Gebruik voor Belgische diensten de invulassistent van de FOD BOSA."],
-   ["De pagina Toegankelijkheid publiceren.", "Verklaring, meerjarenplan en plan van het lopende jaar, in HTML, op een adres zoals /accessibilite of /toegankelijkheid, gelinkt vanuit de footer van alle pagina’s, en in elke taal van de website."],
-   ["Het contactkanaal testen.", "Toegankelijk formulier en e-mailadres, een persoon die binnen de termijn antwoordt, een register van de aanvragen, en in België de drie escalatieniveaus met correcte gegevens."],
-   ["De bijwerkingen plannen.", "Noteer de termijn van drie jaar in Frankrijk, de jaarlijkse herziening in België, de publicatie van RGAA 5 en elke geplande vernieuwing. Laat elke belangrijke oplevering controleren met een [[svc:recette|toegankelijkheidsoplevering]] en leid de redacteurs op met onze [[svc:formations|opleidingen]]."]
-  ]],
-  ["p", "Voor een overzicht van de verplichtingen in de vier landen waar we actief zijn, raadpleegt u onze [[article:guide|gids over digitale toegankelijkheid]] en de pagina [[standards|referentiekaders en verplichtingen]]. Wilt u een bestaande verklaring laten nalezen vóór een controle, dan kunt u [[contact|ons schrijven]]."]
+  ],
+  [
+   "h3",
+   "Établissement de cette déclaration d’accessibilité (opstelling van deze verklaring)"
+  ],
+  [
+   "p",
+   "Deze rubriek vermeldt de datum waarop de verklaring is opgesteld en, in voorkomend geval, de datum van de bijwerking. Ze bevat vervolgens vier subrubrieken: de technologieën waarmee de website is gebouwd (bijvoorbeeld HTML5, CSS, JavaScript); de testomgeving, dus de combinaties van browsers en hulptechnologieën die zijn gebruikt (NVDA met Firefox, VoiceOver met Safari op iOS, TalkBack met Chrome op Android); de tools waarmee de toegankelijkheid is beoordeeld (contrastanalyse, code-inspector, controle-extensies); en ten slotte de lijst van de gecontroleerde pagina’s, met hun adres. Met die data kan iedereen nagaan of de verklaring nog geldig is."
+  ],
+  [
+   "h3",
+   "Retour d’information et contact (feedback en contact)"
+  ],
+  [
+   "p",
+   "Deze rubriek legt uit hoe u een toegankelijkheidsprobleem meldt of een inhoud in een andere vorm verkrijgt: een online formulier, een e-mailadres, de gegevens van de verantwoordelijke dienst. De vereisten worden verderop uitgewerkt."
+  ],
+  [
+   "h3",
+   "Voies de recours (beroepsmogelijkheden)"
+  ],
+  [
+   "p",
+   "De laatste rubriek laat de gebruiker weten dat hij zich tot de Défenseur des droits, de Franse ombudsinstelling, kan wenden als hij na een melding geen bevredigend antwoord heeft gekregen, en legt uit hoe dat gaat."
+  ],
+  [
+   "table",
+   {
+    "caption": "Overzicht van de rubrieken van de Franse toegankelijkheidsverklaring (RGAA)",
+    "head": [
+     "Rubriek (titel in het model)",
+     "Verwachte inhoud",
+     "Veelgemaakte fout"
+    ],
+    "rows": [
+     [
+      "Hoofding (engagement en toepassingsgebied)",
+      "Engagement op grond van artikel 47, links naar het meerjarenplan en het plan van het jaar, adres van de dienst",
+      "Geen toepassingsgebied, of “al onze websites” zonder lijst"
+     ],
+     [
+      "État de conformité",
+      "Een van de drie statussen, naam van de dienst, versie van de RGAA",
+      "“Totalement conforme” zonder audit of met een graad onder 100 %"
+     ],
+     [
+      "Résultats des tests",
+      "Auteur van de audit, globale graad van nageleefde criteria, facultatieve gemiddelde graad",
+      "Gemiddelde graad voorgesteld als globale graad, score van een automatische tool"
+     ],
+     [
+      "Contenus non accessibles: Non-conformités",
+      "Lijst van problemen, begrijpelijk voor de gebruiker",
+      "Subrubriek geschrapt, of een lijst van criteriumnummers"
+     ],
+     [
+      "Contenus non accessibles: Dérogations pour charge disproportionnée",
+      "Betrokken inhoud, rechtvaardiging, toegankelijk alternatief",
+      "Algemene afwijking voor de hele website"
+     ],
+     [
+      "Contenus non accessibles: Contenus non soumis à l’obligation d’accessibilité",
+      "Inhoud vrijgesteld door het decreet, met de datum indien relevant",
+      "Tool van derden die de organisatie financiert, voorgesteld als vrijgesteld"
+     ],
+     [
+      "Établissement de cette déclaration d’accessibilité",
+      "Data, technologieën, testomgeving, tools, gecontroleerde pagina’s",
+      "Geen datum, geen lijst van pagina’s"
+     ],
+     [
+      "Retour d’information et contact",
+      "Toegankelijk formulier of e-mailadres, contactgegevens",
+      "Formulier beveiligd met een ontoegankelijke captcha"
+     ],
+     [
+      "Voies de recours",
+      "Beroep bij de Défenseur des droits: formulier, gedelegeerde, gratis brief",
+      "Rubriek ontbreekt of staat vóór de verklaring"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "onevenredige-last-uitzonderingen",
+   "Onevenredige last en vrijgestelde inhoud: wat mag, en waar de grenzen liggen"
+  ],
+  [
+   "h3",
+   "De afwijking wegens onevenredige last"
+  ],
+  [
+   "p",
+   "Een afwijking wegens onevenredige last roept u geval per geval in, voor een precieze inhoud of functionaliteit, nooit voor een hele website. Ze wordt beoordeeld in het licht van de omvang, de middelen en de aard van de organisatie, en van een afweging tussen de kosten van het toegankelijk maken en het verwachte voordeel voor personen met een handicap, rekening houdend met hoe vaak en hoe lang de dienst wordt gebruikt en met het belang ervan. Middelen worden ruim opgevat (budget, retributies, overheidssubsidies, private giften, andere inkomsten), en de kosten omvatten investeringen, werking, de tijd van de medewerkers en de nodige competenties."
+  ],
+  [
+   "p",
+   "De RGAA sluit de meest gehoorde rechtvaardigingen uitdrukkelijk uit. Vrij vertaald: het ontbreken van prioriteit, tijdgebrek of gebrek aan kennis zijn geen legitieme omstandigheden. Een gemeente kan dus niet afwijken voor haar formulier om een akte van de burgerlijke stand aan te vragen omdat haar leverancier niet is opgeleid. Ze kan wel een afwijking motiveren voor een honderdtal uren videoarchief dat zelden wordt bekeken, als de kosten van ondertiteling buiten verhouding staan tot het werkelijke gebruik en als er op verzoek een transcriptie wordt geleverd. Elke afwijking staat in de verklaring, met de rechtvaardiging en het aangeboden alternatief. De Belgische FOD BOSA hanteert dezelfde lijn: een gerichte en gemotiveerde uitzondering, geen algemene vrijstelling."
+  ],
+  [
+   "h3",
+   "Inhoud die niet onder de verplichting valt"
+  ],
+  [
+   "p",
+   "Het Franse decreet van 2019 somt de vrijgestelde inhoud op. In de toelichting van de DINUM gaat het om:"
+  ],
+  [
+   "ul",
+   [
+    "kantoorbestanden die vóór 23 september 2018 zijn gepubliceerd, tenzij ze nodig zijn voor een lopende administratieve procedure;",
+    "vooraf opgenomen audio- en video-inhoud die vóór 23 september 2020 is gepubliceerd;",
+    "live uitgezonden audio- en video-inhoud;",
+    "online kaarten en kaartdiensten, op voorwaarde dat de essentiële informatie over locatie of route in een toegankelijke digitale vorm wordt aangeboden;",
+    "inhoud van derden die de organisatie niet financiert, niet ontwikkelt en niet beheert;",
+    "reproducties van stukken uit erfgoedcollecties die niet volledig toegankelijk kunnen worden gemaakt;",
+    "inhoud van intranetten en extranetten die vóór 23 september 2019 is gepubliceerd, tot aan een grondige herziening;",
+    "inhoud die niet nodig is voor een actieve administratieve procedure en na 23 september 2019 niet meer is bijgewerkt, archieven inbegrepen."
+   ]
+  ],
+  [
+   "p",
+   "Die lijst werd herzien bij decreet nr. 2026-816 van 24 augustus 2026, om rekening te houden met het tijdpad van de Europese richtlijn. Controleer de geldende formulering voordat u zich erop beroept, en vermeld bij elke vrijgestelde inhoud in de verklaring de datum."
+  ],
+  [
+   "p",
+   "Drie grenzen komen in bijna elke audit terug. Een vrijstelling geldt voor een inhoud, niet voor de pagina waarop die staat: de pagina met een livevideo blijft voor haar navigatie, koppen en formulieren aan alle criteria onderworpen. Een module die bij een softwareleverancier is gekocht (afspraken, betalingen, rekrutering) is geen inhoud van derden in de zin van het decreet, want de organisatie heeft die gekozen en betaalt ervoor. En een oude pdf valt opnieuw onder de verplichting als hij in een lopende procedure wordt gebruikt, zoals een subsidieaanvraagformulier dat nog altijd in omloop is."
+  ],
+  [
+   "h2",
+   "feedback-contact-beroep",
+   "Feedback, contact en beroepsmogelijkheden"
+  ],
+  [
+   "p",
+   "De rubriek “Retour d’information et contact” moet een toegankelijke manier bieden om een probleem te melden en om informatie of een alternatief te vragen. Het model stelt een eenvoudige formulering voor, die in vertaling luidt: als u een inhoud of dienst niet kunt bereiken, kunt u contact opnemen met de verantwoordelijke van [naam van de dienst] om naar een toegankelijk alternatief te worden doorverwezen of om de inhoud in een andere vorm te verkrijgen. Daarna volgen een link naar een online formulier, een e-mailadres en het postadres van de dienst."
+  ],
+  [
+   "p",
+   "De officiële documentatie regelt ook de behandeling van klachten. De organisatie biedt online de mogelijkheid om een klacht in te dienen, stuurt een ontvangstbevestiging onder de voorwaarden van de artikelen R112-3 en R112-5 van de Franse code des relations entre le public et l’administration, en antwoordt binnen een week na verzending. Is de vraag complex, dan vermeldt het antwoord een redelijke termijn voor het definitieve antwoord en legt het uit waarom. De gebruiker identificeert zich volgens artikel R112-9-1 van hetzelfde wetboek; bij een onvolledige aanvraag wordt om verduidelijking gevraagd."
+  ],
+  [
+   "p",
+   "In de praktijk moet het contactkanaal net zo goed worden getest als de rest van de website. Een formulier dat is beveiligd met een visuele captcha zonder alternatief, of een adres dat niemand leest, maakt de rubriek zinloos. Vertrouw de mailbox toe aan de toegankelijkheidsreferent, houd een register van de aanvragen bij en neem de gemelde problemen op in het actieplan: vaak is dat de nuttigste bron van correcties."
+  ],
+  [
+   "p",
+   "De rubriek “Voies de recours” vermeldt dat een gebruiker die geen bevredigend antwoord kreeg, zich gratis tot de Défenseur des droits kan wenden, op drie manieren: via het online formulier van de instelling, via de gedelegeerde van de Défenseur des droits in zijn regio, of per brief zonder postzegel aan Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07. Hij kan een dienst die onder artikel 47 valt ook bij Arcom melden; de toezichthouder vraagt om eerst contact op te nemen met de betrokken organisatie."
+  ],
+  [
+   "h2",
+   "vermelding-toegankelijkheidspagina",
+   "De vermelding “Accessibilité : non conforme”, gedeeltelijk of volledig conform: waar u ze toont"
+  ],
+  [
+   "p",
+   "De homepage van elke Franse dienst toont verplicht een van de drie vermeldingen: “Accessibilité : totalement conforme”, “Accessibilité : partiellement conforme” of “Accessibilité : non conforme”. De vermelding mag klikbaar zijn en naar de pagina Toegankelijkheid of rechtstreeks naar de verklaring leiden. De tekst legt ze alleen op de homepage op, maar de pagina Toegankelijkheid zelf moet rechtstreeks bereikbaar zijn vanaf de homepage en vanaf elke pagina van de dienst."
+  ],
+  [
+   "p",
+   "De veiligste oplossing is daarom de vermelding in de gemeenschappelijke footer van de website te plaatsen, als link naar de pagina Toegankelijkheid: ze verschijnt dan op de homepage, zoals de tekst vereist, en geeft vanaf elke pagina toegang tot de verklaring. De RGAA raadt een genormaliseerd adres aan, zoals www.naamvandewebsite.fr/accessibilite, dat gebruikers en controleurs vinden zonder te zoeken. Ook de FOD BOSA en Inter vragen in België een link die vanaf elke pagina zichtbaar is, bijvoorbeeld in de footer."
+  ],
+  [
+   "p",
+   "De pagina Toegankelijkheid bevat de verklaring volgens het model, het meerjarenplan of een link ernaar, en het actieplan van het lopende jaar of een link ernaar. Voor een mobiele app wordt de verklaring gepubliceerd op de website van de organisatie die de app heeft ontwikkeld of bij de informatie die bij het downloaden zichtbaar is, en wordt de conformiteitsstatus ook in de app zelf vermeld."
+  ],
+  [
+   "p",
+   "De meest voorkomende afwijkingen zijn eenvoudig te verhelpen: een vermelding die in een afbeelding zonder tekstalternatief zit, een verzonnen label (“Accessibilité : en cours”), een vermelding die na een nieuwe audit niet meer overeenkomt met de status in de verklaring, of een footerlink die naar een algemene pagina over het engagement van de organisatie leidt in plaats van naar de verklaring zelf."
+  ],
+  [
+   "h2",
+   "meerjarenplan-actieplannen",
+   "Meerjarenplan voor toegankelijkheid en jaarlijkse actieplannen"
+  ],
+  [
+   "p",
+   "De verklaring verwijst naar twee documenten die er het verlengstuk van zijn: het meerjarenplan voor toegankelijkheid (schéma pluriannuel de mise en accessibilité), opgesteld voor maximaal drie jaar, en het actieplan van het lopende jaar. Volgens de officiële documentatie beschrijft het meerjarenplan het beleid van de organisatie inzake digitale toegankelijkheid en bevat het onder meer:"
+  ],
+  [
+   "ul",
+   [
+    "de functionele positie en de opdrachten van de referent digitale toegankelijkheid;",
+    "de personele en financiële middelen voor digitale toegankelijkheid;",
+    "de opleidings- en sensibiliseringsacties voor de medewerkers;",
+    "de integratie van toegankelijkheid in contractuele bepalingen, aanbestedingen en offertes;",
+    "de geplande conformiteitsbeoordelingen voor alle diensten;",
+    "de geplande correctieve maatregelen voor niet-toegankelijke inhoud, met hun tijdpad;",
+    "de evaluatie van de jaarlijkse actieplannen."
+   ]
+  ],
+  [
+   "p",
+   "De werkzaamheden om conform te worden, worden elk jaar in een actieplan gepland. Het meerjarenplan en het plan van het lopende jaar worden online gepubliceerd, in een toegankelijk formaat, en de verklaring linkt ernaar. Bij een meerjarenplan 2026-2028 hoort dus een plan 2026, daarna een plan 2027 dat ten laatste begin dat jaar wordt gepubliceerd, samen met de evaluatie van het vorige. Het plan van een verstreken jaar online laten staan, is precies de tekortkoming die Arcom op impots.gouv.fr vaststelde."
+  ],
+  [
+   "p",
+   "De samenhang tussen de documenten maakt het geheel geloofwaardig. Elke niet-conformiteit in de verklaring hoort een correctie te krijgen in een actieplan, met een termijn. Elke afwijking wegens onevenredige last hoort bij de herziening van het meerjarenplan opnieuw te worden bekeken, omdat de situatie die haar rechtvaardigde (budget, tool, leverancier) verandert. Voor een overheidsorganisatie loopt dit werk samen met de overheidsopdrachten: onze pagina over de [[sector:public|publieke sector]] legt uit hoe u toegankelijkheid in aanbestedingen opneemt. Ook in België vraagt de FOD BOSA, als aanbevolen aanvulling, een verbeterplan met maatregelen, prioriteiten en een tijdschema."
+  ],
+  [
+   "h2",
+   "bijwerken",
+   "Wanneer u de toegankelijkheidsverklaring bijwerkt, en met welke tools"
+  ],
+  [
+   "p",
+   "De Franse verklaring is geldig vanaf de publicatiedatum. Ze moet in drie gevallen worden bijgewerkt: bij een substantiële wijziging of een vernieuwing van de dienst; drie jaar na de publicatie; achttien maanden na de publicatie van een nieuwe versie van het referentiekader, voor organisaties die de technische methode van de RGAA toepassen. De eerste gebeurtenis die zich voordoet, bepaalt het moment van bijwerken. In België is het ritme strakker: de FOD BOSA vraagt een herziening minstens één keer per jaar."
+  ],
+  [
+   "p",
+   "Dat laatste geval wordt concreet. De DINUM heeft de [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|publicatie van RGAA 5 aangekondigd, verwacht eind 2026 (Franstalig)]], met de WCAG 2.2 en extra criteria voor mobiele apps en kantoordocumenten. Verklaringen die vóór de publicatie zijn uitgebracht, blijven achttien maanden geldig, zonder drie jaar na hun publicatie te overschrijden. De DINUM benadrukt dat werkzaamheden op basis van RGAA 4.1.2 niet mogen worden opgeschort of uitgesteld in afwachting van de nieuwe versie. Hoe de RGAA zich verhoudt tot de WCAG en de norm EN 301 549, leest u in ons artikel over [[article:normes|de normen voor digitale toegankelijkheid]]."
+  ],
+  [
+   "p",
+   "Het begrip substantiële wijziging wordt niet door een lijst gedefinieerd. Het omvat zonder twijfel een grafische vernieuwing, een overstap naar een ander CMS, de opening van een nieuwe gebruikersomgeving of een nieuw betaaltraject, en een wissel van ontwikkelaar. Een goede praktijk is de verklaring één keer per jaar te herlezen, bij de publicatie van het actieplan, en de audit opnieuw uit te voeren zodra een wijziging een traject uit de steekproef raakt."
+  ],
+  [
+   "p",
+   "Wat tools betreft, stelt de DINUM Ara ter beschikking, een online dienst voor toegankelijkheidsexperts om RGAA-audits uit te voeren. Ara voert de audit niet voor u uit: het structureert de invoer van de resultaten, maakt het rapport en genereert de toegankelijkheidsverklaring zodra de volledige audit is afgerond. De RGAA voorziet bovendien dat de verklaring via een teledienst wordt ingediend, volgens regels die de ministers bevoegd voor personen met een handicap en voor digitale zaken vastleggen. De Belgische tegenhanger, de invulassistent van de FOD BOSA, komt verderop aan bod."
+  ],
+  [
+   "h2",
+   "veelgemaakte-fouten",
+   "Fouten die een toegankelijkheidsverklaring misleidend of ongeldig maken"
+  ],
+  [
+   "p",
+   "De onderstaande fouten komen het vaakst voor wanneer we bestaande verklaringen nalezen. Sommige heeft Arcom uitdrukkelijk vastgesteld, andere volgen rechtstreeks uit de methode van de RGAA. De meeste gelden net zo goed voor een Belgische verklaring."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Een status verklaren zonder audit.",
+     "Zonder effectieve beoordeling is de enige mogelijke status “niet conform”. Een verklaring die een gunstige status toont zonder graad of audit, is ongeldig."
+    ],
+    [
+     "De status overschatten.",
+     "Volledige conformiteit melden met een graad onder 100 %, of gedeeltelijke conformiteit met een graad onder 50 %. Dat was het geval bij impots.gouv.fr: volledige conformiteit vermeld in een verklaring die zelf een graad van 42,11 % aangaf."
+    ],
+    [
+     "De gemiddelde graad publiceren in plaats van de globale graad.",
+     "De gemiddelde graad per pagina is bijna altijd gunstiger. De conformiteitsstatus wordt uitsluitend bepaald door de globale graad van gevalideerde criteria."
+    ],
+    [
+     "De score van een automatische tool overnemen.",
+     "Automatische tools testen maar een deel van de criteria en beoordelen niet of een tekstalternatief of een linktekst relevant is. Hun score is geen RGAA-conformiteitsgraad."
+    ],
+    [
+     "“Niet van toepassing” misbruiken.",
+     "Een criterium is alleen niet van toepassing als de inhoud niet bestaat, als hij vrijgesteld is, of als hij onder een afwijking valt met een toegankelijk alternatief."
+    ],
+    [
+     "De volgorde of titels van de rubrieken wijzigen.",
+     "Het contact vóór de verklaring plaatsen, “Contenus inaccessibles” schrijven in plaats van “Contenus non accessibles”: Arcom ziet daarin een niet-conform formaat."
+    ],
+    [
+     "Een subrubriek schrappen.",
+     "Het ontbreken van de rubriek “Non-conformités”, of de gebruikte technologieën in een vrije alinea opnemen, werd als tekortkoming beschouwd."
+    ],
+    [
+     "De verklaring laten verlopen.",
+     "Drie jaar na de publicatie moet de Franse verklaring worden bijgewerkt. Een verklaring van januari 2023 was in 2026 niet meer geldig."
+    ],
+    [
+     "De audit niet opnieuw doen na een vernieuwing.",
+     "De verklaring van de oude website, overgenomen op de nieuwe, beschrijft een dienst die niet meer bestaat."
+    ],
+    [
+     "Een gemakkelijke steekproef samenstellen.",
+     "Processen, downloadbare documenten of willekeurige pagina’s weglaten en alleen eenvoudige pagina’s behouden, vertekent het resultaat."
+    ],
+    [
+     "Meerdere diensten met één verklaring dekken.",
+     "Elke website, app of elk softwarepakket krijgt een eigen beoordeling. Een mobiele app zonder eigen verklaring blijft in gebreke, ook als de website er een heeft."
+    ],
+    [
+     "Een algemene afwijking inroepen.",
+     "“Wegens onevenredige last is de website niet toegankelijk” heeft geen enkele waarde. Een afwijking betreft een precieze, gemotiveerde inhoud, met een alternatief."
+    ],
+    [
+     "Ten onrechte vrijstellen.",
+     "Een tool die de organisatie heeft gekocht, voorstellen als inhoud van derden, of een document dat nog in een procedure wordt gebruikt, voorstellen als archief."
+    ],
+    [
+     "Een onbruikbaar contact aanbieden.",
+     "Formulier beveiligd met een ontoegankelijke captcha, algemeen adres dat nooit wordt gelezen, geen antwoord binnen de termijn."
+    ],
+    [
+     "De beroepsmogelijkheden weglaten of vervormen.",
+     "De rubriek moet het beroep bij de Défenseur des droits en de werkwijze vermelden, en niet gewoon doorverwijzen naar de klantendienst."
+    ],
+    [
+     "Dode of verouderde links laten staan.",
+     "Link naar een onbestaand meerjarenplan, actieplan van een verstreken jaar, verwijderd auditrooster."
+    ],
+    [
+     "Een tegenstrijdige vermelding tonen.",
+     "Een homepage met “partiellement conforme” en een verklaring met “non conforme” spreken elkaar tegen; de vermelding moet de status van de geldende verklaring overnemen."
+    ],
+    [
+     "De verklaring in een ontoegankelijk formaat publiceren.",
+     "Een verklaring als gescande pdf of als afbeelding is in strijd met haar doel. Ze moet in een toegankelijk formaat worden gepubliceerd, bij voorkeur in HTML op de pagina Toegankelijkheid."
+    ]
+   ]
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "Een correcte verklaring “niet conform” is beter dan een foute verklaring “volledig conform”: de eerste vervult de transparantieplicht, de tweede misleidt de gebruikers en is op zich al een tekortkoming."
+  ],
+  [
+   "h2",
+   "model-met-commentaar",
+   "Model van een toegankelijkheidsverklaring met commentaar"
+  ],
+  [
+   "p",
+   "Het onderstaande model volgt de volgorde en de titels van het officiële model van RGAA 4.1.2. De elementen tussen vierkante haken vult u zelf in. Na elk blok volgt een commentaar met wat u vóór publicatie moet nagaan. Op een Franse dienst publiceert u de verklaring in het Frans: neem de rubriektitels letterlijk over (ze staan hieronder in het Frans) en gebruik de officiële Franse formuleringen van het DINUM-model. De Nederlandse tekst hieronder dient om de inhoud te begrijpen en te controleren, bijvoorbeeld voor een Belgisch team dat een Franse website beheert."
+  ],
+  [
+   "h3",
+   "Titel van de pagina: Déclaration d’accessibilité"
+  ],
+  [
+   "p",
+   "“[Naam van de organisatie] verbindt zich ertoe haar websites, intranet, extranet, mobiele apps en softwarepakketten toegankelijk te maken, overeenkomstig artikel 47 van de wet nr. 2005-102 van 11 februari 2005.”"
+  ],
+  [
+   "p",
+   "“Daartoe voert [naam van de organisatie] de volgende strategie en acties uit:”"
+  ],
+  [
+   "ul",
+   [
+    "“Meerjarenplan voor toegankelijkheid [beginjaar]-[eindjaar]: [link]”;",
+    "“Actieplan [lopend jaar]: [link]”;",
+    "“Evaluatie van de acties [vorig jaar]: [link]”."
+   ]
+  ],
+  [
+   "p",
+   "“Deze toegankelijkheidsverklaring is van toepassing op [naam van de dienst] ([adres van de dienst]).”"
+  ],
+  [
+   "p",
+   "Commentaar: controleer of de links werken en of het plan wel over het lopende jaar gaat. Het toepassingsgebied moet een precieze dienst aanduiden; beheert de organisatie meerdere websites, dan heeft elke website een eigen verklaringspagina."
+  ],
+  [
+   "h3",
+   "État de conformité"
+  ],
+  [
+   "p",
+   "“[Naam van de dienst] ([adres van de dienst]) is [volledig / gedeeltelijk / niet] conform met het référentiel général d’amélioration de l’accessibilité (RGAA), versie 4.1.2, wegens de hieronder opgesomde niet-conformiteiten en afwijkingen.”"
+  ],
+  [
+   "p",
+   "Commentaar: vermeld maar één status, afgeleid uit de globale graad: 100 % voor “volledig”, minstens 50 % voor “gedeeltelijk”, minder dan 50 % of geen geldige audit voor “niet”. Bij volledige conformiteit schrapt u het einde van de zin over de niet-conformiteiten, maar behoudt u eventuele afwijkingen."
+  ],
+  [
+   "h3",
+   "Résultats des tests"
+  ],
+  [
+   "p",
+   "“De conformiteitsaudit uitgevoerd door [naam van de organisatie of de dienstverlener] toont aan dat [nn,nn] % van de criteria van RGAA versie 4.1.2 wordt nageleefd.”"
+  ],
+  [
+   "p",
+   "Facultatief: “De gemiddelde conformiteitsgraad van de dienst bedraagt [nn,nn] %.” en “Het auditrooster is beschikbaar op het volgende adres: [link].”"
+  ],
+  [
+   "p",
+   "Commentaar: de graad is de verhouding tussen gevalideerde en toepasselijke criteria, berekend over de hele steekproef. Vermeld of de audit een zelfevaluatie is of door een derde werd uitgevoerd, en zorg dat de auditdatum strookt met de datum van opstelling."
+  ],
+  [
+   "h3",
+   "Contenus non accessibles"
+  ],
+  [
+   "p",
+   "“De hieronder vermelde inhoud is om de volgende redenen niet toegankelijk.”"
+  ],
+  [
+   "p",
+   "Subrubriek “Non-conformités”: “[Lijst van niet-conformiteiten, één per regel, geformuleerd voor de gebruiker, met het nummer van het criterium tussen haakjes].” Voorbeelden:"
+  ],
+  [
+   "ul",
+   [
+    "“De video over de begroting heeft geen teksttranscriptie (criterium 4.1).”;",
+    "“De verzendknop van het contactformulier heeft geen duidelijke naam voor schermlezers (criterium 11.9).”;",
+    "“Het uitklapmenu om het jaar te kiezen, is niet met het toetsenbord te bedienen (criterium 7.3).”"
+   ]
+  ],
+  [
+   "p",
+   "Subrubriek “Dérogations pour charge disproportionnée”: “[Betrokken inhoud], [rechtvaardiging], [aangeboden alternatief en hoe het te verkrijgen].”"
+  ],
+  [
+   "p",
+   "Subrubriek “Contenus non soumis à l’obligation d’accessibilité”: “[Vrijgestelde inhoud], [reden van vrijstelling op grond van het decreet], [publicatiedatum als de vrijstelling daarvan afhangt].”"
+  ],
+  [
+   "p",
+   "Commentaar: de lijst van niet-conformiteiten moet overeenkomen met het auditrooster. Een afwijking zonder rechtvaardiging of alternatief, of een vrijstelling zonder reden, beschermt de organisatie niet. Is een subrubriek leeg, vermeld dat dan in plaats van ze te schrappen."
+  ],
+  [
+   "h3",
+   "Établissement de cette déclaration d’accessibilité"
+  ],
+  [
+   "p",
+   "“Deze verklaring werd opgesteld op [dag maand jaar]. Ze werd bijgewerkt op [dag maand jaar].”"
+  ],
+  [
+   "p",
+   "Subrubriek “Technologies utilisées pour la réalisation du site” (gebruikte technologieën): “[HTML5, CSS, JavaScript, naam van het CMS indien van toepassing].”"
+  ],
+  [
+   "p",
+   "Subrubriek “Environnement de test” (testomgeving): “De weergave van de inhoud door hulptechnologieën werd gecontroleerd met de volgende combinaties: [schermlezer en versie, browser en versie, besturingssysteem].”"
+  ],
+  [
+   "p",
+   "Subrubriek “Outils pour évaluer l’accessibilité” (beoordelingstools): “[contrastanalyse, code-inspector van de browser, gebruikte extensies of tools].”"
+  ],
+  [
+   "p",
+   "Subrubriek “Pages du site ayant fait l’objet de la vérification de conformité” (gecontroleerde pagina’s):"
+  ],
+  [
+   "ul",
+   [
+    "“Accueil (homepage): [adres]”;",
+    "“Contact: [adres]”;",
+    "“Mentions légales (wettelijke vermeldingen): [adres]”;",
+    "“Accessibilité (toegankelijkheid): [adres]”;",
+    "“Plan du site (sitemap): [adres]”;",
+    "“[Andere pagina’s van de steekproef, waaronder de stappen van de processen en de willekeurig gekozen pagina’s]: [adressen]”."
+   ]
+  ],
+  [
+   "p",
+   "Commentaar: de datum van opstelling laat de geldigheidstermijn van drie jaar lopen. Houd deze subrubrieken gescheiden: ze in één alinea samenvoegen werd als vormfout beschouwd."
+  ],
+  [
+   "h3",
+   "Retour d’information et contact"
+  ],
+  [
+   "p",
+   "“Als u een inhoud of dienst niet kunt bereiken, kunt u contact opnemen met de verantwoordelijke van [naam van de dienst] om naar een toegankelijk alternatief te worden doorverwezen of om de inhoud in een andere vorm te verkrijgen.”"
+  ],
+  [
+   "ul",
+   [
+    "“Een bericht sturen: [link naar het formulier]”;",
+    "“Schrijven naar: [e-mailadres]”;",
+    "“Contact opnemen met: [naam van de dienst, postadres, telefoon]”."
+   ]
+  ],
+  [
+   "p",
+   "Commentaar: test het formulier vóór publicatie met een schermlezer en met het toetsenbord, en wijs de persoon aan die binnen een week antwoordt."
+  ],
+  [
+   "h3",
+   "Voies de recours"
+  ],
+  [
+   "p",
+   "“Stelt u een toegankelijkheidsprobleem vast dat u de toegang tot een inhoud of functionaliteit van de website belet, meldt u het ons en krijgt u geen antwoord, dan hebt u het recht uw klacht of een verzoek tot behandeling aan de Défenseur des droits te bezorgen. Daarvoor zijn verschillende middelen beschikbaar:”"
+  ],
+  [
+   "ul",
+   [
+    "“Een bericht sturen aan de Défenseur des droits: [link naar het online formulier]”;",
+    "“Contact opnemen met de gedelegeerde van de Défenseur des droits in uw regio: [link naar de kaart van de gedelegeerden]”;",
+    "“Een brief per post sturen, gratis, zonder postzegel: Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07”."
+   ]
+  ],
+  [
+   "p",
+   "Commentaar: deze rubriek sluit de verklaring af. Ze mag niet bovenaan de pagina worden geplaatst en niet worden vervangen door een verwijzing naar de klantendienst."
+  ],
+  [
+   "h2",
+   "toegankelijkheidsverklaring-belgie",
+   "De toegankelijkheidsverklaring in België: wat BOSA en Inter verwachten (en Luxemburg en Zwitserland)"
+  ],
+  [
+   "p",
+   "De Franse toegankelijkheidsverklaring is de nationale invulling van een Europese verplichting: richtlijn (EU) 2016/2102 inzake de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties, waarvan het uitvoeringsbesluit (EU) 2018/1523 van de Europese Commissie, van 11 oktober 2018, een modelverklaring vastlegt. België en Luxemburg bouwen op dat gemeenschappelijke model; Zwitserland, buiten de Europese Unie, volgt een andere logica. Voor een Belgische organisatie verschillen vooral het referentiekader, de band tussen audit en conformiteitsniveau, het ritme van bijwerken en de klachtenroute."
+  ],
+  [
+   "h3",
+   "Wie verplicht is, en wie controleert"
+  ],
+  [
+   "p",
+   "Op federaal niveau volgt de verplichting uit de wet van 19 juli 2018 inzake de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties, aangevuld met teksten van elke deelstaat: het Vlaamse Bestuursdecreet van 7 december 2018, de Brusselse ordonnantie van 4 oktober 2018, het decreet van de Duitstalige Gemeenschap van 15 oktober 2018, het Waalse decreet van 2 mei 2019, het decreet van de Franse Gemeenschap van 3 mei 2019 en het decreet van de COCOF van 9 mei 2019. De conformiteit wordt beoordeeld volgens de Europese norm EN 301 549, en niet volgens een nationaal referentiekader zoals de RGAA. De FOD BOSA verwijst in zijn FAQ naar versie 3.2.1 van 2021; een versie 4.1.1 van de norm is in september 2026 gepubliceerd, zoals we toelichten in ons artikel over de normen."
+  ],
+  [
+   "table",
+   {
+    "caption": "Toezicht op de toegankelijkheidsverklaring van de Belgische publieke sector",
+    "head": [
+     "Overheid",
+     "Tekst",
+     "Toezichthoudend orgaan"
+    ],
+    "rows": [
+     [
+      "Federale overheid",
+      "Wet van 19 juli 2018",
+      "FOD Beleid en Ondersteuning (BOSA)"
+     ],
+     [
+      "Vlaamse overheid (Gewest en Gemeenschap)",
+      "Bestuursdecreet van 7 december 2018",
+      "Inter, ondersteunings- en controleorgaan digitale toegankelijkheid (OCODT)"
+     ],
+     [
+      "Brussels Hoofdstedelijk Gewest",
+      "Ordonnantie van 4 oktober 2018",
+      "equal.brussels"
+     ],
+     [
+      "Waals Gewest",
+      "Decreet van 2 mei 2019",
+      "Agence du Numérique"
+     ],
+     [
+      "Franse Gemeenschap",
+      "Decreet van 3 mei 2019",
+      "ETNIC"
+     ],
+     [
+      "Duitstalige Gemeenschap",
+      "Decreet van 15 oktober 2018",
+      "Ministerium der Deutschsprachigen Gemeinschaft"
+     ],
+     [
+      "COCOF",
+      "Decreet van 9 mei 2019",
+      "Geen orgaan vermeld in de federale lijst"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Uw toezichthouder hangt dus af van de overheid waaronder uw organisatie valt, niet van uw webbureau of uw hostingpartner. Een webbureau dat websites beheert voor een gemeente, een federale dienst en een Brusselse instelling, werkt met drie verschillende controleorganen. Het volledige overzicht van de Belgische teksten staat op onze pagina over [[country:belgique|digitale toegankelijkheid in België]] en in ons artikel over [[article:belgique|de Belgische verplichtingen]]."
+  ],
+  [
+   "h3",
+   "Wat een Belgische toegankelijkheidsverklaring moet bevatten"
+  ],
+  [
+   "p",
+   "De FOD BOSA somt in zijn FAQ [[https://accessibility.belgium.be/nl/faq/hoe-stel-je-een-conforme-toegankelijkheidsverklaring-op|Hoe stel je een conforme toegankelijkheidsverklaring op?]] de verplichte elementen op. Ontbreekt er één, dan wordt de website als niet conform beschouwd, ook als de werkelijke toegankelijkheid goed is."
+  ],
+  [
+   "ul",
+   [
+    "de naam van de verantwoordelijke organisatie, en haar engagement om de website volgens de wetgeving toegankelijk te maken;",
+    "het exacte webadres, of de naam van de mobiele app, waarop de verklaring betrekking heeft;",
+    "het conformiteitsniveau ten opzichte van de norm EN 301 549: volledig conform, gedeeltelijk conform of niet conform;",
+    "de evaluatiemethode: een vereenvoudigde of een diepgaande audit, met een link naar het auditrapport;",
+    "de lijst van niet-toegankelijke inhoud, in begrijpelijke taal;",
+    "de datum van eerste publicatie en de datum van de laatste bijwerking, want de verklaring moet minstens jaarlijks worden herzien;",
+    "de contactgegevens in drie escalatieniveaus: de beheerder van de website, de klachtendienst van de organisatie en de bevoegde ombudsdienst."
+   ]
+  ],
+  [
+   "p",
+   "BOSA beveelt twee aanvullingen aan: alternatieven voor niet-toegankelijke inhoud, of een manier om die informatie toch te verkrijgen, en een verbeterplan met maatregelen, prioriteiten en een tijdschema. In de Franse verklaring zijn die elementen verplicht, via de subrubriek over afwijkingen en het jaarlijkse actieplan. Wie al een Franse verklaring heeft opgesteld, beschikt dus over het materiaal voor beide aanbevelingen."
+  ],
+  [
+   "h3",
+   "Conformiteitsniveau: de audit van het controleorgaan beslist"
+  ],
+  [
+   "p",
+   "Op dit punt verschilt de Belgische verklaring het sterkst van de Franse. Volgens de FOD BOSA bepaalt het controleorgaan het conformiteitsniveau, en hangt het hoogst haalbare niveau af van het soort audit:"
+  ],
+  [
+   "ul",
+   [
+    "volledig conform: na een diepgaande audit door een expert die het controleorgaan heeft aangesteld, zonder toegankelijkheidsfouten, en met een actuele verklaring;",
+    "gedeeltelijk conform: na een vereenvoudigde audit, met minder dan 50 % toegankelijkheidsfouten en een actuele verklaring; dat is het hoogste niveau dat een vereenvoudigde audit kan opleveren;",
+    "niet conform: zonder officiële audit, zonder volledige verklaring, of met meer dan 50 % toegankelijkheidsfouten; zonder audit vermeldt u “niet conform bij gebrek aan een audit”."
+   ]
+  ],
+  [
+   "p",
+   "Een zelfevaluatie of het rapport van een privébedrijf mag u vermelden, om de geleverde inspanningen aan te tonen, maar het bevestigt de conformiteit niet: dat kan alleen het officiële controleorgaan van uw bestuursniveau. In Frankrijk volstaat daarentegen een zelfevaluatie of een audit door een derde volgens de RGAA-methode om een status te onderbouwen. Een Belgische gemeente die een extern bureau een volledige audit laat uitvoeren, kan dus niet zelf “volledig conform” verklaren; ze kan het rapport wel als evaluatie vermelden en de gevonden problemen correct oplijsten. Een [[svc:audit-conformite|conformiteitsaudit volgens EN 301 549]] blijft daarom nuttig: hij bereidt de officiële controle voor en levert de lijst van problemen die in de verklaring hoort."
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "In België is “volledig conform” voorbehouden aan een diepgaande audit door een expert die het controleorgaan heeft aangesteld. Zonder officiële audit is de correcte vermelding “niet conform bij gebrek aan een audit”."
+  ],
+  [
+   "h3",
+   "Publicatie: een HTML-pagina, bereikbaar vanaf elke pagina"
+  ],
+  [
+   "p",
+   "BOSA vraagt de verklaring als webpagina te publiceren, niet als downloadbaar document, met een zichtbare link die vanaf elke pagina bereikbaar is, bijvoorbeeld in de footer. HTML is het aanbevolen formaat. De pagina gaat alleen over digitale toegankelijkheid en wordt niet samengevoegd met bijvoorbeeld de gebruiksvoorwaarden, en ze krijgt een duidelijke titel zoals “Toegankelijkheidsverklaring” of “Toegankelijkheid van deze website”. Voor een mobiele app staat de verklaring in de app zelf, op de bijbehorende website als die bestaat, en waar mogelijk op de downloadplatformen. Is een app aan een website gekoppeld, dan zijn twee afzonderlijke verklaringen nodig."
+  ],
+  [
+   "p",
+   "Voor meertalige Belgische websites komt daar een praktische regel bij: publiceer de toegankelijkheidsverklaring in elke taal van de website, met een contactpunt dat in die taal kan antwoorden. Een website in het Nederlands, Frans en Duits met een verklaring in één taal laat een deel van de gebruikers zonder de informatie die de verklaring moet bieden."
+  ],
+  [
+   "h3",
+   "Onevenredige last in de Belgische verklaring"
+  ],
+  [
+   "p",
+   "De FAQ van BOSA over onevenredige last, gebaseerd op artikel 5 van richtlijn (EU) 2016/2102, noemt het een gerichte en gemotiveerde uitzondering, geen algemene vrijstelling. De overheidsinstantie maakt vooraf een gedocumenteerde en becijferde beoordeling, die de betrokken pagina’s, documenten of functionaliteiten precies aanwijst, de financiële kosten van conformiteit raamt, de werklast inschat (personeel, technische complexiteit, termijnen) en die elementen afweegt tegen de beschikbare middelen. In de verklaring somt u de betrokken inhoud op en legt u begrijpelijk uit waarom er sprake is van onevenredige last. Die last moet regelmatig opnieuw worden beoordeeld; een onnauwkeurige of slecht onderbouwde rechtvaardiging kan worden verworpen, waarna de website of app als niet conform wordt beschouwd."
+  ],
+  [
+   "h3",
+   "De invulassistent van de FOD BOSA"
+  ],
+  [
+   "p",
+   "Om het opstellen te vergemakkelijken, biedt de FOD BOSA de [[https://accessibility.belgium.be/nl/invulassistent-toegankelijkheidsverklaring|Invulassistent Toegankelijkheidsverklaring]] aan: een online formulier dat u stap voor stap begeleidt naar een geldige verklaring, gebaseerd op het model van het Europese uitvoeringsbesluit en op de richtlijn. Het resultaat is een herbruikbare HTML-pagina, die u als bestand bewaart en doorgaans in uw CMS kopieert. De assistent bestaat in het Nederlands, het Frans en het Duits, wat handig is voor meertalige websites."
+  ],
+  [
+   "p",
+   "BOSA raadt aan vooraf vier dingen klaar te leggen:"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Het auditrapport van de website.",
+     "Zonder rapport kunt u geen conformiteitsniveau onderbouwen, en blijft “niet conform bij gebrek aan een audit” de enige correcte vermelding."
+    ],
+    [
+     "De contactgegevens van de verantwoordelijke dienst.",
+     "Vul de drie escalatieniveaus in: beheerder van de website, klachtendienst, bevoegde ombudsdienst, telkens met website, e-mail, telefoon en adres."
+    ],
+    [
+     "Informatie over geplande wijzigingen.",
+     "Een vernieuwing, een nieuw CMS of een nieuw e-loket bepaalt welke problemen u binnenkort oplost en welke termijn u vermeldt."
+    ],
+    [
+     "De alternatieven voor inhoud die nog niet aan de WCAG 2.1 voldoet.",
+     "Bijvoorbeeld een toegankelijke versie van een pdf op verzoek, of telefonische hulp bij een formulier."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "De assistent schrijft de verklaring niet in uw plaats: de kwaliteit hangt af van de audit en van de manier waarop u de problemen beschrijft. Een lijst van criteriumnummers zonder uitleg blijft even weinig bruikbaar als in Frankrijk. Volgens BOSA helpt het ook om in toekomstige opdrachten van leveranciers te eisen dat ze rekening houden met toegankelijkheidscriteria: dat bespaart later tijd."
+  ],
+  [
+   "h3",
+   "In Vlaanderen: wat Inter verwacht"
+  ],
+  [
+   "p",
+   "Voor Vlaamse overheden, lokale besturen inbegrepen, is Inter het ondersteunings- en controleorgaan digitale toegankelijkheid (OCODT). Inter auditeert jaarlijks meer dan 200 websites en apps, vraagt advies aan NOOZO bij de keuze ervan, laat voor een kleiner aantal diepgaande controles uitvoeren door externe experts en rapporteert jaarlijks aan de FOD BOSA. Inter heeft niet als taak te controleren of websites aan de European Accessibility Act voldoen. In zijn toolbox [[https://www.vlaanderen.be/inter/toolbox-toegankelijke-steden-en-gemeenten/algemeen-bestuur-dienstverlening-en-communicatie/digitale-toegankelijkheid/toegankelijkheidsverklaring|Je toegankelijkheidsverklaring opstellen]] werkt Inter de verwachtingen concreet uit:"
+  ],
+  [
+   "ul",
+   [
+    "elke website of app van een overheid die onder artikel II.16 van het Bestuursdecreet valt, heeft een toegankelijkheidsverklaring; voor andere organisaties is ze niet verplicht, maar wel aanbevolen;",
+    "het toepassingsgebied vermeldt voor een website de volledige URL en elk subdomein of extra adres dat eronder valt, en voor een app de exacte naam en het platform, bijvoorbeeld iOS of Android;",
+    "de status is “volledig conform”, “gedeeltelijk conform” of “niet conform”, ten opzichte van EN 301 549, die voor websites de WCAG 2.1 op niveau AA omvat;",
+    "de evaluatiemethode wordt kort beschreven (officiële audit, zelfcontrole, controle door een externe partner), met een link naar het auditrapport als dat bestaat;",
+    "bij elk gekend probleem staat wat er misloopt, waar (pagina, onderdeel, document, functie) en waarom het nog niet is opgelost, in korte zinnen en eenvoudige taal;",
+    "er zijn twee contactpunten met klikbare links: een eerste voor vragen en opmerkingen over toegankelijkheid, bijvoorbeeld toegankelijkheid@jouwdomein.be, en een interne of externe klachten- of ombudsdienst voor wie geen bevredigend antwoord krijgt, elk via meerdere kanalen;",
+    "de verklaring wordt minstens één keer per jaar bijgewerkt, en opnieuw na elke grote wijziging van de website of app; voor minstens gedeeltelijke conformiteit mag de laatste herziening bij de controle door het OCODT niet ouder zijn dan een jaar;",
+    "de verklaring is een gewone HTML-webpagina, geen pdf, met een link vanaf elke pagina, bijvoorbeeld in de footer."
+   ]
+  ],
+  [
+   "p",
+   "Inter verwijst als sjabloon naar de modelverklaring van de Europese Commissie met instructies, en noemt de toegankelijkheidsverklaring van Vlaanderen.be als goed voorbeeld. Twee bijzondere gevallen verdienen aandacht. Vzw’s en stichtingen moeten alleen digitaal toegankelijk zijn als ze essentiële diensten verlenen, zoals sociale hulpverlening, zorg of onderwijs, of diensten voor personen met een handicap. En voor onderwijsinstellingen gelden de verplichtingen alleen voor de wezenlijke online administratieve functies, zoals de homepage, het navigatiemenu, de contactgegevens, het onderwijsaanbod, het reglement en de toegankelijkheidsverklaring zelf, met de details in de omzendbrief NO/2025/02."
+  ],
+  [
+   "h3",
+   "De klachtenroute in de verklaring"
+  ],
+  [
+   "p",
+   "De Belgische verklaring moet de klachtenroute in drie opeenvolgende stappen beschrijven. Eerst wendt de bezoeker zich tot de verantwoordelijke van de website of app. Krijgt hij geen of een onbevredigend antwoord, dan richt hij zich tot de klachtendienst van de organisatie, die ook verplicht in de verklaring staat. Als laatste stap kan hij naar de bevoegde ombudsman: federaal, gewestelijk of van de gemeenschap, naargelang van de toezichthouder van de website, met de volledige contactgegevens (website, e-mail, telefoon en adres). Voor federale websites is dat de Federale Ombudsman. Heeft een website helemaal geen toegankelijkheidsverklaring, dan kan een gebruiker dat melden aan het toegankelijkheidsteam van de FOD BOSA, dat de melding doorstuurt naar de bevoegde dienst of het bevoegde controleorgaan."
+  ],
+  [
+   "p",
+   "De meest voorkomende fout in deze rubriek is een verkeerde ombudsdienst: de Federale Ombudsman op de website van een gemeente, of een klantendienst als eindpunt. Controleer ook of de klachtendienst van de organisatie werkelijk weet dat hij toegankelijkheidsklachten kan ontvangen."
+  ],
+  [
+   "table",
+   {
+    "caption": "Toegankelijkheidsverklaring in Frankrijk en België: de verschillen die tellen",
+    "head": [
+     "Punt",
+     "Frankrijk (RGAA)",
+     "België (EN 301 549)"
+    ],
+    "rows": [
+     [
+      "Referentiekader",
+      "RGAA 4.1.2, 106 criteria",
+      "EN 301 549, door BOSA vermeld in versie 3.2.1"
+     ],
+     [
+      "Formaat",
+      "Model van de DINUM, titels en volgorde verplicht",
+      "Europees model (uitvoeringsbesluit (EU) 2018/1523), invulassistent van BOSA"
+     ],
+     [
+      "Wie bepaalt de status",
+      "De organisatie, op basis van een zelfevaluatie of een audit door een derde",
+      "Het controleorgaan; “volledig conform” alleen na een diepgaande audit door een aangestelde expert"
+     ],
+     [
+      "Drempel gedeeltelijk conform",
+      "Minstens 50 % van de toepasselijke criteria nageleefd",
+      "Minder dan 50 % toegankelijkheidsfouten, na een vereenvoudigde audit"
+     ],
+     [
+      "Bijwerken",
+      "Bij substantiële wijziging, na drie jaar, of achttien maanden na een nieuwe RGAA",
+      "Minstens jaarlijks, en na elke grote wijziging"
+     ],
+     [
+      "Klachtenroute",
+      "Contact met de organisatie, daarna de Défenseur des droits; melding bij Arcom mogelijk",
+      "Beheerder, klachtendienst, bevoegde ombudsman"
+     ],
+     [
+      "Vermelding op de homepage",
+      "Verplicht: “Accessibilité : …”",
+      "Geen vaste formulering; link naar de verklaring vanaf elke pagina"
+     ]
+    ]
+   }
+  ],
+  [
+   "h3",
+   "Actief in België en Frankrijk"
+  ],
+  [
+   "p",
+   "Voor een organisatie met diensten in beide landen is de meest economische aanpak vaak om één keer dezelfde steekproef van pagina’s te laten auditeren en de resultaten in beide roosters te rapporteren. Een goed uitgevoerde RGAA-audit dekt een groot deel van de webvereisten van EN 301 549, maar de Belgische juridische referentie blijft de Europese norm: uw Belgische verklaring drukt een conformiteitsniveau uit ten opzichte van EN 301 549, en geen RGAA-graad. Omgekeerd publiceert u voor een Franse dienst een verklaring in het Frans, volgens het DINUM-model, met de RGAA-graad en de rubrieken van dit artikel."
+  ],
+  [
+   "h3",
+   "Luxemburg"
+  ],
+  [
+   "p",
+   "De wet van 28 mei 2019 inzake de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties legt elke publieke website en app een toegankelijkheidsverklaring op, gebaseerd op het Europese model. De beoordeling steunt op de RAWeb voor het web en de RAAM voor mobiel, uitgegeven door de Service information et presse du gouvernement (SIP), die een downloadbaar model van de verklaring aanbiedt en een openbaar observatorium van de verklaringen bijhoudt. Inhoud waarvoor een afwijking wegens onevenredige last geldt, moet daarin precies worden opgesomd. In zijn eigen verklaring nodigt de SIP een ontevreden gebruiker uit om online een klacht in te dienen, en zich daarna zo nodig tot de Ombudsman van het Groothertogdom te wenden. Meer daarover op onze pagina [[country:luxembourg|digitale toegankelijkheid in Luxemburg]], in ons artikel over [[article:luxembourg|het Luxemburgse kader]] en bij onze [[svc:audit-raam|RAAM-audit van mobiele apps]]."
+  ],
+  [
+   "h3",
+   "Zwitserland"
+  ],
+  [
+   "p",
+   "Zwitserland is niet gebonden door de Europese richtlijn en kent geen vergelijkbaar reglementair model van verklaring. De toegankelijkheid van de diensten van de Confederatie steunt op de wet op de gelijkheid van personen met een handicap (BehiG / LHand), de bijbehorende verordening (BehiV / OHand) en artikel 3, lid 4, van de federale wet over het gebruik van elektronische middelen voor de uitvoering van overheidstaken (EMBAG / LMETA). De derde versie van de norm eCH-0059 vereist naleving van niveau AA van de WCAG 2.1. Verschillende federale diensten publiceren toch een toegankelijkheidsverklaring met hun conformiteitsniveau, de problematische inhoud en een contact: een goede praktijk, die Zwitserse ondernemingen met activiteiten op de Europese markt beter overnemen. Zie onze pagina [[country:suisse|digitale toegankelijkheid in Zwitserland]] en ons artikel over [[article:suisse|het Zwitserse kader]]."
+  ],
+  [
+   "h2",
+   "actieplan",
+   "Actieplan: een toegankelijkheidsverklaring publiceren die een controle doorstaat"
+  ],
+  [
+   "p",
+   "Voor een organisatie die vertrekt van een oude verklaring, of van geen enkele verklaring, verloopt de aanpak in korte, controleerbare stappen."
+  ],
+  [
+   "ol",
+   [
+    [
+     "De diensten inventariseren.",
+     "Maak een lijst van elke website, intranet, extranet, app en elk softwarepakket, met de verantwoordelijke en de datum van de laatste verklaring. Elke dienst krijgt een eigen verklaring. Noteer voor elke dienst ook het land en, in België, de overheid waaronder hij valt."
+    ],
+    [
+     "Meteen een correcte status tonen.",
+     "Publiceer voor elke Franse dienst zonder geldige audit “Accessibilité : non conforme” en een verklaring die dat vermeldt; voor een Belgische dienst zonder officiële audit “niet conform bij gebrek aan een audit”. Dat is correct, en het maakt een einde aan de zwaarste tekortkoming in de verklaring."
+    ],
+    [
+     "De steekproef samenstellen.",
+     "Verplichte pagina’s, volledige processen, downloadbare documenten, gevarieerde pagina’s en minstens 10 % willekeurig gekozen pagina’s."
+    ],
+    [
+     "De audit uitvoeren.",
+     "RGAA 4.1.2 voor Franse diensten, EN 301 549 voor Belgische diensten: intern als uw teams de methode beheersen, of met een externe [[svc:audit-rgaa|RGAA-audit]]. Bij ons duurt een volledige audit gemiddeld drie weken."
+    ],
+    [
+     "De verklaring opstellen op basis van het model.",
+     "Neem de titels letterlijk over, bereken de globale graad of het conformiteitsniveau, beschrijf de niet-conformiteiten in duidelijke taal en rechtvaardig elke afwijking. Gebruik voor Belgische diensten de invulassistent van de FOD BOSA."
+    ],
+    [
+     "De pagina Toegankelijkheid publiceren.",
+     "Verklaring, meerjarenplan en plan van het lopende jaar, in HTML, op een adres zoals /accessibilite of /toegankelijkheid, gelinkt vanuit de footer van alle pagina’s, en in elke taal van de website."
+    ],
+    [
+     "Het contactkanaal testen.",
+     "Toegankelijk formulier en e-mailadres, een persoon die binnen de termijn antwoordt, een register van de aanvragen, en in België de drie escalatieniveaus met correcte gegevens."
+    ],
+    [
+     "De bijwerkingen plannen.",
+     "Noteer de termijn van drie jaar in Frankrijk, de jaarlijkse herziening in België, de publicatie van RGAA 5 en elke geplande vernieuwing. Laat elke belangrijke oplevering controleren met een [[svc:recette|toegankelijkheidsoplevering]] en leid de redacteurs op met onze [[svc:formations|opleidingen]]."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Voor een overzicht van de verplichtingen in de vier landen waar we actief zijn, raadpleegt u onze [[article:guide|gids over digitale toegankelijkheid]] en de pagina [[standards|referentiekaders en verplichtingen]]. Wilt u een bestaande verklaring laten nalezen vóór een controle, dan kunt u [[contact|ons schrijven]]."
+  ]
  ],
  "faq": [
-  ["Moet een privébedrijf een toegankelijkheidsverklaring publiceren?", "In Frankrijk wel, als het onder artikel 47 van de wet van 11 februari 2005 valt, dus als het een gemiddelde omzet in Frankrijk van 250 miljoen euro of meer haalt over de laatste drie boekjaren, of als het onder de voorwaarden van die wet een opdracht van openbare dienst vervult. Daaronder geldt die regeling niet, maar de European Accessibility Act kan wel van toepassing zijn: dan moet het bedrijf informatie publiceren over de conformiteit van zijn diensten, onder toezicht van de DGCCRF, en geen verklaring in RGAA-formaat."],
-  ["Mag u “gedeeltelijk conform” vermelden in afwachting van het auditresultaat?", "Nee. Zolang er geen geldig auditresultaat bestaat, is “niet conform” de enige toegelaten status, in Frankrijk net als in België, waar de vermelding dan “niet conform bij gebrek aan een audit” luidt. De gedeeltelijke status veronderstelt in Frankrijk een gemeten graad van minstens 50 % van de toepasselijke criteria. Arcom heeft in juni 2026 overigens een verklaring die op geen enkele audit steunde als tekortkoming aangemerkt. Publiceer de status niet conform, start de audit en werk de vermelding en de verklaring bij zodra het resultaat bekend is."],
-  ["Is er een verklaring per website nodig, of één voor de hele organisatie?", "Eén per dienst. Elke website, elk intranet, extranet, elke mobiele app of elk softwarepakket krijgt een eigen beoordeling, en dus een eigen verklaring, met een eigen resultaat en een eigen lijst van niet-toegankelijke inhoud. Een pagina Toegankelijkheid kan de links naar meerdere verklaringen bundelen, maar een algemene verklaring met één graad voor alle diensten van de organisatie voldoet niet aan de verplichting."],
-  ["Mag de toegankelijkheidsverklaring als pdf worden gepubliceerd?", "In Frankrijk moet ze in een toegankelijk formaat beschikbaar zijn op de pagina Toegankelijkheid, die vanaf elke pagina bereikbaar is. Een getagde, toegankelijke pdf is daar niet uitgesloten, maar houdt een risico in: een gescande of slecht gestructureerde pdf maakt de verklaring zelf ontoegankelijk. In België vragen de FOD BOSA en Inter uitdrukkelijk een HTML-webpagina en geen pdf. HTML is overal de eenvoudigste oplossing om te onderhouden en te controleren."],
-  ["Heeft een mobiele app een eigen verklaring nodig?", "Ja. In Frankrijk wordt de verklaring van een app gepubliceerd op de website van de organisatie die de app heeft ontwikkeld of bij de informatie die bij het downloaden zichtbaar is, en wordt de conformiteitsstatus ook in de app vermeld. In België staat de verklaring in de app, op de bijbehorende website en waar mogelijk op de downloadplatformen. De audit behandelt elk scherm als een pagina en gebeurt op echte toestellen, met VoiceOver op iOS en TalkBack op Android."],
-  ["Wie mag de audit uitvoeren waarop de verklaring steunt?", "In Frankrijk de organisatie zelf, als zelfevaluatie, of een derde; de wet legt geen gecertificeerde dienstverlener op. De audit moet wel de RGAA-methode toepassen, op een representatieve steekproef, en gedocumenteerd zijn met een rooster dat elk criterium controleerbaar maakt. Een betrouwbare zelfevaluatie vraagt opgeleide auditors en het gebruik van hulptechnologieën; een externe blik beperkt het risico op een overschatte graad."],
-  ["Kan een Belgische overheidswebsite zich na een eigen audit “volledig conform” verklaren?", "Nee. Volgens de FOD BOSA bepaalt het controleorgaan het conformiteitsniveau. “Volledig conform” vereist een diepgaande audit door een expert die het controleorgaan heeft aangesteld, zonder toegankelijkheidsfouten. Na een vereenvoudigde audit is “gedeeltelijk conform” het hoogste niveau. Een zelfevaluatie of het rapport van een privébedrijf mag u vermelden om uw inspanningen aan te tonen, maar het bevestigt de conformiteit niet."]
+  [
+   "Moet een privébedrijf een toegankelijkheidsverklaring publiceren?",
+   "In Frankrijk wel, als het onder artikel 47 van de wet van 11 februari 2005 valt, dus als het een gemiddelde omzet in Frankrijk van 250 miljoen euro of meer haalt over de laatste drie boekjaren, of als het onder de voorwaarden van die wet een opdracht van openbare dienst vervult. Daaronder geldt die regeling niet, maar de European Accessibility Act kan wel van toepassing zijn: dan moet het bedrijf informatie publiceren over de conformiteit van zijn diensten, onder toezicht van de DGCCRF, en geen verklaring in RGAA-formaat."
+  ],
+  [
+   "Mag u “gedeeltelijk conform” vermelden in afwachting van het auditresultaat?",
+   "Nee. Zolang er geen geldig auditresultaat bestaat, is “niet conform” de enige toegelaten status, in Frankrijk net als in België, waar de vermelding dan “niet conform bij gebrek aan een audit” luidt. De gedeeltelijke status veronderstelt in Frankrijk een gemeten graad van minstens 50 % van de toepasselijke criteria. Arcom heeft in juni 2026 overigens een verklaring die op geen enkele audit steunde als tekortkoming aangemerkt. Publiceer de status niet conform, start de audit en werk de vermelding en de verklaring bij zodra het resultaat bekend is."
+  ],
+  [
+   "Is er een verklaring per website nodig, of één voor de hele organisatie?",
+   "Eén per dienst. Elke website, elk intranet, extranet, elke mobiele app of elk softwarepakket krijgt een eigen beoordeling, en dus een eigen verklaring, met een eigen resultaat en een eigen lijst van niet-toegankelijke inhoud. Een pagina Toegankelijkheid kan de links naar meerdere verklaringen bundelen, maar een algemene verklaring met één graad voor alle diensten van de organisatie voldoet niet aan de verplichting."
+  ],
+  [
+   "Mag de toegankelijkheidsverklaring als pdf worden gepubliceerd?",
+   "In Frankrijk moet ze in een toegankelijk formaat beschikbaar zijn op de pagina Toegankelijkheid, die vanaf elke pagina bereikbaar is. Een getagde, toegankelijke pdf is daar niet uitgesloten, maar houdt een risico in: een gescande of slecht gestructureerde pdf maakt de verklaring zelf ontoegankelijk. In België vragen de FOD BOSA en Inter uitdrukkelijk een HTML-webpagina en geen pdf. HTML is overal de eenvoudigste oplossing om te onderhouden en te controleren."
+  ],
+  [
+   "Heeft een mobiele app een eigen verklaring nodig?",
+   "Ja. In Frankrijk wordt de verklaring van een app gepubliceerd op de website van de organisatie die de app heeft ontwikkeld of bij de informatie die bij het downloaden zichtbaar is, en wordt de conformiteitsstatus ook in de app vermeld. In België staat de verklaring in de app, op de bijbehorende website en waar mogelijk op de downloadplatformen. De audit behandelt elk scherm als een pagina en gebeurt op echte toestellen, met VoiceOver op iOS en TalkBack op Android."
+  ],
+  [
+   "Wie mag de audit uitvoeren waarop de verklaring steunt?",
+   "In Frankrijk de organisatie zelf, als zelfevaluatie, of een derde; de wet legt geen gecertificeerde dienstverlener op. De audit moet wel de RGAA-methode toepassen, op een representatieve steekproef, en gedocumenteerd zijn met een rooster dat elk criterium controleerbaar maakt. Een betrouwbare zelfevaluatie vraagt opgeleide auditors en het gebruik van hulptechnologieën; een externe blik beperkt het risico op een overschatte graad."
+  ],
+  [
+   "Kan een Belgische overheidswebsite zich na een eigen audit “volledig conform” verklaren?",
+   "Nee. Volgens de FOD BOSA bepaalt het controleorgaan het conformiteitsniveau. “Volledig conform” vereist een diepgaande audit door een expert die het controleorgaan heeft aangesteld, zonder toegankelijkheidsfouten. Na een vereenvoudigde audit is “gedeeltelijk conform” het hoogste niveau. Een zelfevaluatie of het rapport van een privébedrijf mag u vermelden om uw inspanningen aan te tonen, maar het bevestigt de conformiteit niet."
+  ]
  ],
  "cta_svc": "audit-rgaa",
  "cta_title": "Zou uw verklaring een controle doorstaan?",
  "cta_text": "Wij voeren de audit uit waarop uw toegankelijkheidsverklaring steunt, volgens de RGAA of EN 301 549, en controleren of elke rubriek het officiële model volgt. Bespreek uw diensten met ons.",
- "related": ["france", "normes", "guide"]
+ "related": [
+  "france",
+  "normes",
+  "guide"
+ ],
+ "cluster": "methode"
 }

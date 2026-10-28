@@ -1,195 +1,612 @@
 {
-  "slug": "accessibilite-numerique",
-  "h1": "Accessibilité numérique : ce qu'exige la loi, ce que vivent vos usagers, par où commencer",
-  "crumb": "Guide de l'accessibilité numérique",
-  "meta_title": "Accessibilité numérique : obligations, normes et méthode (2026)",
-  "meta_desc": "Accessibilité numérique : définition, obligations en France, Belgique, Luxembourg et Suisse, EAA, normes, méthode d'audit et budget. Guide à jour fin 2026.",
-  "card_desc": "Définition, utilisateurs, obligations par pays, normes, méthode et budget : le guide de référence de l'accessibilité numérique.",
-  "cat": "guide",
-  "where": "Europe",
-  "cover": "A11Y",
-  "cover_note": ["Guide de référence", "Mis à jour en octobre 2026"],
-  "date": "2026-10-27",
-  "lead": "L'accessibilité numérique consiste à rendre sites, applications, documents et services en ligne utilisables par toutes et tous, y compris par les personnes en situation de handicap. En Europe, c'est aussi une obligation légale, qui s'étend depuis le 28 juin 2025 à une large partie du secteur privé. Ce guide explique ce que la loi exige en France, en Belgique, au Luxembourg et en Suisse, comment vos utilisateurs parcourent réellement vos pages, et quelle méthode suivre pour passer de l'état des lieux à une conformité durable.",
-  "body": [
-    ["h2", "definition", "Qu'est-ce que l'accessibilité numérique ?"],
-    ["p", "L'accessibilité numérique désigne la capacité d'un service numérique (site web, intranet, application mobile, logiciel, document, borne) à être perçu, compris et utilisé par une personne en situation de handicap, avec ou sans technologie d'assistance. Concrètement, une personne aveugle doit pouvoir remplir votre formulaire de contact avec un lecteur d'écran. Une personne qui ne peut pas tenir une souris doit pouvoir valider son panier au clavier. Une personne sourde doit pouvoir suivre votre vidéo de présentation grâce aux sous-titres."],
-    ["p", "Les normes internationales résument cette exigence en quatre principes, repris par les WCAG et par la directive européenne de 2016 sur le secteur public : le contenu doit être perceptible, utilisable, compréhensible et robuste. Perceptible signifie que l'information ne passe jamais par un seul sens : une image porteuse de sens a une alternative textuelle, une vidéo a des sous-titres. Utilisable signifie que toutes les fonctions sont accessibles au clavier, sans délai impossible à tenir. Compréhensible signifie que les libellés sont clairs et que les erreurs sont expliquées. Robuste, enfin, signifie que le code est assez standard pour être interprété correctement par les navigateurs et les technologies d'assistance."],
-    ["p", "Le terme « accessibilité web » est souvent employé comme synonyme, mais il est plus étroit. L'accessibilité numérique couvre aussi les applications mobiles, les documents bureautiques et PDF, les logiciels métiers, les terminaux en libre-service et, depuis l'European Accessibility Act, des produits comme les terminaux de paiement, les smartphones ou les liseuses. Un site accessible n'est donc qu'une partie du sujet : c'est l'ensemble du parcours de l'usager qui compte, de la recherche d'information jusqu'au paiement, à la réception d'un courriel de confirmation et au téléchargement d'une facture."],
-    ["h3", "Ce que l'accessibilité numérique n'est pas"],
-    ["ul", [
-      "Ce n'est pas une version « spéciale handicap » du site. On rend accessible le service principal, pas une copie appauvrie qu'il faudrait maintenir en parallèle et qui finit toujours par prendre du retard sur l'original.",
-      "Ce n'est pas un design austère. Un site accessible peut être riche visuellement, animé et contemporain, dès lors que les contrastes, la structure et les interactions respectent les critères.",
-      "Ce n'est pas un label acquis une fois pour toutes. Chaque mise en production, chaque nouveau contenu et chaque PDF publié peut faire régresser la conformité.",
-      "Ce n'est pas un sujet réservé aux développeurs. Rédacteurs, designers, chefs de projet, acheteurs et juristes agissent tous sur le résultat final.",
-      "Ce n'est pas un synonyme d'ergonomie. Un site peut être agréable pour la majorité des visiteurs et totalement inutilisable avec un lecteur d'écran.",
-      "Ce n'est pas un score produit par un outil automatique. Les outils de test repèrent une partie des défauts seulement : la plupart des critères exigent un jugement humain, par exemple pour dire si une alternative textuelle décrit correctement une image."
-    ]],
-
-    ["h2", "utilisateurs", "Handicap et numérique : qui sont les utilisateurs concernés ?"],
-    ["p", "Selon l'[[https://www.who.int/fr/news-room/fact-sheets/detail/disability-and-health|aide-mémoire de l'Organisation mondiale de la santé sur le handicap]], environ 1,3 milliard de personnes vivent avec un handicap important, soit 16 % de la population mondiale, une personne sur six. Dans l'Union européenne, les estimations d'Eurostat reprises par l'[[https://www.consilium.europa.eu/en/infographics/disability-eu-facts-figures/|infographie du Conseil de l'Union européenne sur le handicap]] indiquent qu'en 2024, 24 % des personnes de plus de 16 ans déclaraient une forme de handicap, soit environ 90 millions de personnes. Cette part atteint 47,3 % chez les 65 ans et plus."],
-    ["p", "Ces chiffres recouvrent des réalités très différentes, qui ne posent pas les mêmes problèmes devant un écran. Beaucoup de handicaps ne se voient pas, et de nombreuses personnes concernées ne se décrivent pas comme handicapées : elles disent qu'elles voient mal, qu'elles se perdent dans les formulaires ou qu'elles ne supportent pas les animations. C'est pourquoi les normes raisonnent en besoins fonctionnels (voir, entendre, manipuler, comprendre) plutôt qu'en catégories médicales."],
-    ["h3", "Handicaps visuels"],
-    ["p", "Ils vont de la cécité totale à la malvoyance, en passant par le daltonisme, la vision tubulaire ou la sensibilité à la lumière. Une personne aveugle utilise un lecteur d'écran, parfois couplé à une plage braille ; elle a besoin d'une structure de titres cohérente, d'alternatives textuelles et de composants correctement nommés. Une personne malvoyante agrandit l'affichage, parfois très fortement, et a besoin de contrastes suffisants et d'une mise en page qui se réorganise sans défilement horizontal. Une personne daltonienne a besoin que l'information ne repose pas sur la seule couleur : un champ en erreur signalé uniquement par une bordure rouge lui échappe."],
-    ["h3", "Handicaps auditifs"],
-    ["p", "Les personnes sourdes ou malentendantes sont peu gênées par un site composé de texte et d'images. Les difficultés apparaissent avec les vidéos sans sous-titres, les podcasts sans transcription, les messages d'alerte uniquement sonores et les services clients joignables seulement par téléphone. Pour une partie des personnes sourdes de naissance, la langue première est une langue des signes, et le français écrit est une seconde langue : un texte clair et court leur rend un service considérable."],
-    ["h3", "Handicaps moteurs"],
-    ["p", "Paralysie, tremblements, amputation, maladie neuromusculaire ou simple arthrose : de nombreuses personnes ne peuvent pas utiliser une souris ou un écran tactile avec précision. Elles naviguent au clavier, avec un contacteur, une commande oculaire ou la commande vocale. Les obstacles typiques sont les fonctions accessibles uniquement au survol de la souris, les cibles trop petites, les gestes complexes sans alternative (glisser-déposer, pincer, balayer à deux doigts) et les délais trop courts pour remplir un formulaire."],
-    ["h3", "Handicaps cognitifs, psychiques et troubles dys"],
-    ["p", "Dyslexie, troubles de l'attention, troubles de la mémoire, autisme, déficience intellectuelle, troubles anxieux ou séquelles d'un accident vasculaire cérébral : ces situations sont nombreuses et souvent invisibles. Elles appellent une navigation prévisible, des libellés explicites, des consignes avant les champs plutôt qu'après l'erreur, des messages d'erreur qui disent comment corriger, et l'absence de changements de contexte inattendus. Les WCAG 2.2 ont ajouté des critères qui vont dans ce sens, par exemple l'interdiction d'imposer un test de mémoire ou de transcription pour s'authentifier lorsqu'aucune alternative n'est proposée."],
-    ["h3", "Situations temporaires et vieillissement"],
-    ["p", "Un poignet dans le plâtre, une opération des yeux, un écran en plein soleil, un quai de gare bruyant ou un enfant dans les bras placent temporairement n'importe qui dans la situation d'une personne handicapée. Le vieillissement, lui, combine souvent plusieurs limitations modérées : baisse de l'acuité visuelle, de l'audition et de la dextérité, fatigue plus rapide face aux interfaces chargées. Avec près d'une personne sur deux concernée parmi les 65 ans et plus dans l'Union, l'accessibilité numérique est d'abord une question de démographie."],
-
-    ["h2", "technologies-assistance", "Comment vos utilisateurs parcourent un site : technologies d'assistance et blocages concrets"],
-    ["p", "Pour comprendre l'accessibilité, le plus efficace est d'observer comment une personne utilise réellement un site avec ses outils. La plupart des technologies d'assistance ne voient pas l'écran comme vous : elles lisent le code et l'arbre d'accessibilité que le navigateur en déduit. Si le code ne dit pas qu'un élément est un bouton, un titre ou un champ obligatoire, l'outil ne peut pas le deviner."],
-    ["h3", "Lecteurs d'écran et plages braille"],
-    ["p", "Les principaux lecteurs d'écran sont NVDA et JAWS sur Windows, VoiceOver sur macOS et iOS, TalkBack sur Android et le Narrateur de Windows. Ils transforment le contenu en synthèse vocale ou en braille. Un utilisateur expérimenté ne lit pas la page de haut en bas : il saute de titre en titre, affiche la liste des liens, passe d'une zone à l'autre (en-tête, navigation, contenu principal) ou parcourt les champs d'un formulaire. Sur smartphone, il explore l'écran au doigt et enchaîne les éléments par balayages."],
-    ["p", "Les blocages les plus courants sont très concrets. Un bouton de recherche représenté par une simple loupe, sans nom accessible, est annoncé « bouton » sans autre précision. Un menu déroulant construit en JavaScript sans les rôles et états adéquats n'indique ni qu'il est ouvert, ni quelle option est sélectionnée. Une fenêtre modale qui ne reçoit pas le focus laisse l'utilisateur continuer à lire la page en arrière-plan sans savoir qu'une boîte de dialogue s'est ouverte. Un captcha visuel sans alternative ferme purement et simplement l'accès au service."],
-    ["h3", "Navigation au clavier et contacteurs"],
-    ["p", "Au clavier, on passe d'un élément interactif à l'autre avec Tab et Maj+Tab, on active avec Entrée ou Espace et on se déplace dans les listes avec les flèches. Trois conditions sont indispensables : chaque fonction doit être atteignable, l'ordre de tabulation doit suivre la logique visuelle, et l'élément qui a le focus doit être clairement visible. Les contacteurs, utilisés par des personnes à mobilité très réduite, reposent sur le même principe avec un ou deux boutons seulement : chaque étape inutile multiplie l'effort."],
-    ["p", "Exemple typique : sur une page de paiement, le sélecteur de date d'expiration de la carte s'ouvre au clic mais ne réagit pas au clavier. L'utilisateur arrive jusqu'au dernier écran du tunnel d'achat et ne peut pas payer. Autre cas fréquent, le « piège au clavier » : un lecteur vidéo ou une carte interactive capture le focus et ne le rend plus, obligeant à recharger la page."],
-    ["h3", "Loupes, agrandissement et réglages d'affichage"],
-    ["p", "Les personnes malvoyantes utilisent le zoom du navigateur, la loupe du système d'exploitation ou un logiciel d'agrandissement dédié, parfois avec des couleurs inversées ou un mode de contraste élevé. Avec un fort grossissement, elles ne voient qu'une petite portion de l'écran à la fois. Une notification qui apparaît dans un coin éloigné, un message de confirmation qui disparaît après trois secondes ou un texte figé dans une image qui devient flou à l'agrandissement leur échappent. Les WCAG demandent notamment que le contenu reste lisible sans défilement horizontal sur une largeur équivalente à 320 pixels CSS et que l'espacement du texte puisse être augmenté sans perte d'information."],
-    ["h3", "Commande vocale"],
-    ["p", "Avec Dragon, le Contrôle vocal d'Apple ou Voice Access sur Android, l'utilisateur dit « cliquer sur Envoyer » ou « appuyer sur Suivant ». Cela ne fonctionne que si le nom technique du bouton correspond à ce qui est écrit à l'écran. Un bouton affiché « Envoyer » mais nommé dans le code « submit-form-2 » ne répond pas à la commande : c'est le critère de succès dit « étiquette dans le nom » des WCAG, simple à respecter et souvent oublié."],
-    ["h3", "Sous-titres, transcriptions et audiodescription"],
-    ["p", "Les sous-titres synchronisés servent les personnes sourdes et malentendantes, mais aussi toutes celles qui regardent une vidéo sans le son, dans les transports ou en open space. La transcription textuelle permet de parcourir un contenu audio rapidement et sert aux personnes sourdaveugles équipées d'une plage braille. L'audiodescription, enfin, décrit les informations visuelles indispensables à la compréhension d'une vidéo, par exemple un graphique commenté par un orateur qui dit seulement « comme vous le voyez ici »."],
-    ["table", {
-      "caption": "Exemples de blocages fréquents et de leur correction",
-      "head": ["Situation", "Ce qui bloque", "Correction attendue"],
-      "rows": [
-        ["Formulaire de paiement", "Champ « date d'expiration » inutilisable au clavier, erreurs signalées par la seule couleur rouge", "Composant natif ou rôle ARIA complet, message d'erreur textuel associé au champ"],
-        ["Menu de navigation", "Sous-menus qui ne s'ouvrent qu'au survol de la souris", "Ouverture au clavier, état ouvert ou fermé restitué aux technologies d'assistance"],
-        ["PDF de délibération ou de rapport", "Document scanné, sans texte ni structure", "Version HTML ou PDF balisé, avec titres, ordre de lecture et alternatives"],
-        ["Captcha à l'inscription", "Reconnaissance d'images sans alternative", "Méthode de vérification qui ne repose ni sur la vue ni sur un test cognitif"],
-        ["Application mobile", "Icônes sans nom, annoncées « bouton » par VoiceOver ou TalkBack", "Libellé accessible pour chaque icône interactive"],
-        ["Vidéo de présentation", "Aucun sous-titre, lecture automatique avec le son", "Sous-titres synchronisés, lecture à l'initiative de l'utilisateur, commandes du lecteur accessibles"]
-      ]
-    }],
-
-    ["h2", "obligations-europe", "Accessibilité numérique et loi : ce qui est obligatoire en Europe"],
-    ["p", "Le droit de l'accessibilité numérique repose en Europe sur deux étages. Le premier vise le secteur public : la directive (UE) 2016/2102 impose depuis plusieurs années l'accessibilité des sites internet et des applications mobiles des organismes publics, selon un calendrier qui a pris fin le 23 juin 2021 pour les applications. Le second vise le marché : la directive (UE) 2019/882, dite European Accessibility Act, s'applique depuis le 28 juin 2025 à une liste de produits et de services proposés aux consommateurs. Chaque État transpose ces textes à sa manière, ce qui explique les différences de méthode et de contrôle d'un pays à l'autre."],
-    ["h3", "L'European Accessibility Act, pour les produits et services du secteur privé"],
-    ["p", "Le [[https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32019L0882|texte de la directive (UE) 2019/882 sur EUR-Lex]] couvre notamment les services de communications électroniques, l'accès aux services de médias audiovisuels, certains éléments des services de transport de voyageurs (aérien, ferroviaire, par autobus et par voie navigable), les services bancaires aux consommateurs, les livres numériques et le commerce électronique. Côté produits, il vise entre autres les ordinateurs et leurs systèmes d'exploitation, les smartphones, les terminaux de paiement, certains automates en libre-service et les liseuses. Un site de vente en ligne, une application bancaire ou une billetterie de transport sont donc directement concernés."],
-    ["p", "Les microentreprises qui fournissent des services, soit moins de 10 salariés et un chiffre d'affaires annuel ou un total de bilan n'excédant pas 2 millions d'euros, sont exemptées par la directive. Des mesures transitoires existent : les contrats de services conclus avant le 28 juin 2025 peuvent se poursuivre sans modification au plus tard jusqu'au 28 juin 2030, et les terminaux en libre-service déjà en service peuvent être utilisés jusqu'à la fin de leur vie économique, dans une limite que la directive fixe à vingt ans et que la France a ramenée à quinze ans. Attention : un site web ou une application n'est pas un « produit » au sens de ces mesures et ne bénéficie pas de ce délai. Pour le détail, consultez notre [[article:eaa|analyse complète de l'European Accessibility Act]]."],
-    ["h3", "France : loi de 2005, Arcom et DGCCRF"],
-    ["p", "En France, l'article 47 de la loi du 11 février 2005 et le décret n° 2019-768 du 24 juillet 2019 imposent l'accessibilité des services de communication au public en ligne aux personnes morales de droit public, aux organismes privés délégataires d'une mission de service public et aux entreprises dont le chiffre d'affaires en France dépasse 250 millions d'euros, en moyenne sur les trois derniers exercices. Ces organismes doivent publier une déclaration d'accessibilité, afficher sur la page d'accueil une mention de conformité (non, partiellement ou totalement conforme), adopter un schéma pluriannuel et un plan d'actions annuel, et proposer un moyen de signaler un défaut. La méthode de référence est le RGAA, présenté plus bas."],
-    ["p", "Depuis l'ordonnance du 6 septembre 2023, c'est l'Arcom qui contrôle ces obligations. Selon sa [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|page consacrée à l'accessibilité des sites et services numériques]], elle peut, après mise en demeure, prononcer une sanction pécuniaire d'un montant maximal de 50 000 euros pour le non-respect des exigences d'accessibilité et de 25 000 euros pour les autres obligations, modulable selon la nature, la gravité et la durée du manquement. Pour les entreprises dépassant le seuil de chiffre d'affaires, l'Arcom contrôle les obligations d'affichage, et non la conformité au RGAA elle-même. Ses décisions sont publiques : en juin 2026, elle a mis en demeure un ministère au sujet de son service fiscal en ligne, en relevant un avis d'impôt PDF inaccessible, une messagerie inutilisable au clavier, un tableau dont les cellules n'étaient pas reliées à leurs en-têtes et une déclaration d'accessibilité annonçant une conformité totale alors qu'elle indiquait elle-même un taux de conformité de 42,11 %."],
-    ["p", "L'European Accessibility Act a été transposé dans le Code de la consommation (article L. 412-13) et précisé par le décret n° 2023-931 et un arrêté du 9 octobre 2023. D'après la [[https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/professionnels-vos-produits-et-services-doivent-etre-conformes-la-directive-accessibilite|fiche pratique de la DGCCRF destinée aux professionnels]], la DGCCRF contrôle les produits et le commerce électronique, en coordination avec l'Arcom pour les médias audiovisuels, l'Arcep pour les communications électroniques, la Banque de France, l'ACPR et l'AMF pour les services financiers. Les manquements constituent des contraventions de cinquième classe, avec des amendes de 7 500 euros cumulables selon le nombre d'infractions, en plus des injonctions de mise en conformité. Un premier bilan publié par la DGCCRF le 25 juin 2026 fait état d'actions d'information et de contrôle, notamment auprès des plateformes de commerce en ligne. Tous les détails figurent sur notre page [[country:france|accessibilité numérique en France]] et dans notre [[article:france|article sur les obligations françaises]]."],
-    ["h3", "Belgique : loi de 2018, textes régionaux et EAA"],
-    ["p", "En Belgique, la loi du 19 juillet 2018 impose l'accessibilité des sites et applications des organismes publics fédéraux ; les Régions et Communautés ont adopté leurs propres textes, chacun avec son organisme de suivi. La référence technique est la norme européenne EN 301 549 : il n'existe pas de référentiel national propre. Au niveau fédéral, le service Accessibilité numérique du SPF BOSA assure le suivi, et l'usager qui n'obtient pas de réponse satisfaisante peut saisir le Médiateur fédéral."],
-    ["p", "Pour le secteur privé, l'European Accessibility Act a été transposé par plusieurs textes et plusieurs autorités sont compétentes. Selon le [[https://news.economie.fgov.be/251714-directive-sur-l-accessibilite-un-pas-en-avant-pour-une-societe-plus-inclusive/|communiqué du SPF Economie de juillet 2025]], l'Inspection économique contrôle le commerce électronique et les services bancaires aux consommateurs, et les microentreprises bénéficient d'un délai supplémentaire de cinq ans pour se mettre en conformité, une approche différente de l'exemption retenue en France. Voir notre page [[country:belgique|accessibilité numérique en Belgique]] et notre [[article:belgique|article dédié]]."],
-    ["h3", "Luxembourg : RAWeb, RAAM et deux lois"],
-    ["p", "Au Luxembourg, la loi du 28 mai 2019 impose l'accessibilité des sites et applications du secteur public. Le Service information et presse du gouvernement (SIP) en assure le contrôle et publie les référentiels nationaux : le RAWeb pour le web, dont la version 1.1 a été publiée en février 2026, et le RAAM pour les applications mobiles, tous deux fondés sur la norme EN 301 549. Le secteur privé relève de la loi du 8 mars 2023, qui transpose l'European Accessibility Act et dont la surveillance revient à l'Office de la surveillance de l'accessibilité des produits et services (OSAPS). Notre page [[country:luxembourg|accessibilité numérique au Luxembourg]] et notre [[article:luxembourg|article sur le cadre luxembourgeois]] détaillent ces obligations."],
-    ["h3", "Suisse : LHand, eCH-0059 et effet de l'EAA"],
-    ["p", "En Suisse, la loi sur l'égalité pour les handicapés (LHand), en vigueur depuis 2004, et son ordonnance imposent l'accessibilité des prestations de la Confédération, y compris en ligne. La loi fédérale sur l'utilisation des moyens électroniques pour l'exécution des tâches des autorités (LMETA) demande aussi que ces prestations soient accessibles à l'ensemble de la population. La norme de référence est eCH-0059, dont la troisième version exige le niveau AA des WCAG 2.1 pour les sites et applications de l'administration fédérale. Les cantons et communes appliquent leurs propres règles."],
-    ["p", "Deux évolutions méritent votre attention. D'abord, une révision partielle de la LHand a été transmise au Parlement par le Conseil fédéral fin 2024 et reste en cours d'examen. Ensuite, la Suisse ne fait pas partie de l'Union européenne, mais une entreprise suisse qui vend aux consommateurs de l'Union des produits ou des services visés par l'European Accessibility Act doit s'y conformer pour ces marchés. Voir notre page [[country:suisse|accessibilité numérique en Suisse]] et notre [[article:suisse|article sur la Suisse]]."],
-
-    ["h2", "tableau-par-pays", "Qui est concerné, quel texte, quelle norme, quel contrôle : le tableau par pays"],
-    ["p", "Le tableau ci-dessous résume les obligations d'accessibilité numérique dans les quatre pays où les organisations francophones sont le plus souvent actives. Il donne une vue d'ensemble : la qualification exacte de votre situation dépend de votre statut, de vos services et des pays dans lesquels vous les proposez."],
-    ["table", {
-      "caption": "Accessibilité numérique : obligations par pays (situation en octobre 2026)",
-      "head": ["Pays et secteur", "Qui est concerné", "Textes principaux", "Norme d'évaluation", "Contrôle"],
-      "rows": [
-        ["France, secteur public et grandes entreprises", "Personnes morales de droit public, délégataires de service public, entreprises au chiffre d'affaires en France supérieur à 250 M€", "Loi du 11 février 2005, article 47 ; décret n° 2019-768", "RGAA 4.1.2 (106 critères)", "Arcom, sanctions jusqu'à 50 000 €"],
-        ["France, secteur privé (EAA)", "Opérateurs économiques des produits et services visés, hors microentreprises de services", "Code de la consommation, article L. 412-13 ; décret n° 2023-931", "Exigences de la directive, norme EN 301 549", "DGCCRF, avec Arcom, Arcep, Banque de France, ACPR, AMF"],
-        ["Belgique, secteur public", "Organismes publics fédéraux, régionaux et communautaires", "Loi du 19 juillet 2018 et textes régionaux et communautaires", "EN 301 549 (WCAG niveau AA)", "SPF BOSA au niveau fédéral, organismes régionaux et communautaires"],
-        ["Belgique, secteur privé (EAA)", "Opérateurs des produits et services visés ; délai supplémentaire pour les microentreprises", "Transposition de la directive (UE) 2019/882", "EN 301 549", "Plusieurs autorités, dont l'Inspection économique du SPF Economie"],
-        ["Luxembourg, secteur public", "Organismes du secteur public", "Loi du 28 mai 2019", "RAWeb 1.1 (web), RAAM 1.1 (mobile)", "Service information et presse (SIP)"],
-        ["Luxembourg, secteur privé (EAA)", "Opérateurs des produits et services visés", "Loi du 8 mars 2023", "Exigences de la directive, EN 301 549", "OSAPS"],
-        ["Suisse", "Confédération ; cantons et communes selon leurs règles ; entreprises vendant dans l'UE au titre de l'EAA", "LHand et son ordonnance, LMETA, règles cantonales", "eCH-0059 (WCAG 2.1 niveau AA)", "Pas d'organisme de contrôle dédié comparable à l'Arcom ; le BFEH promeut l'égalité et agit contre les discriminations"]
-      ]
-    }],
-    ["p", "Un groupe présent dans plusieurs de ces pays n'a pas besoin de mener quatre démarches distinctes. Les référentiels reposent tous sur les WCAG niveau AA : un audit bien construit selon les WCAG et la norme EN 301 549 sert de socle commun, que l'on complète par les exigences de forme propres à chaque pays (format de la déclaration, mention de conformité, méthode de calcul du taux). Notre page [[standards|référentiels et obligations par pays]] présente cette articulation."],
-
-    ["h2", "normes", "Les normes d'accessibilité numérique en synthèse"],
-    ["p", "Les WCAG (Web Content Accessibility Guidelines), publiées par le W3C, sont le socle de toutes les autres normes. D'après la [[https://www.w3.org/WAI/standards-guidelines/wcag/|présentation officielle des WCAG par le W3C]], la version 2.2 a été publiée le 5 octobre 2023 et mise à jour le 12 décembre 2024 ; elle ajoute neuf critères de succès aux WCAG 2.1 et retire le critère 4.1.1 relatif à l'analyse syntaxique. Elle est aussi devenue la norme internationale ISO/IEC 40500:2025. Les critères sont classés en trois niveaux, A, AA et AAA : c'est le niveau AA que visent les législations européennes. Les WCAG 3 restent à l'état de projet et ne constituent pas une référence opposable."],
-    ["p", "La norme EN 301 549 est la norme européenne harmonisée d'exigences d'accessibilité pour les produits et services numériques. Elle reprend les WCAG pour le web, les documents et les logiciels, et ajoute des exigences pour le matériel, les services de communication bidirectionnelle, la documentation et les services d'assistance. La version V3.2.1 de 2021 s'appuie sur les WCAG 2.1. La version V4.1.1, publiée par l'ETSI, le CEN et le Cenelec en septembre 2026, s'aligne sur les WCAG 2.2 et se présente comme un moyen de se conformer à l'European Accessibility Act ; sa portée juridique complète dépend de sa citation au Journal officiel de l'Union européenne, qui n'était pas encore intervenue à la date de mise à jour de ce guide."],
-    ["p", "Le RGAA (Référentiel général d'amélioration de l'accessibilité), publié par la Direction interministérielle du numérique, traduit ces exigences en 106 critères assortis de tests précis et d'une méthode d'échantillonnage. La version en vigueur est la 4.1.2. Le [[https://accessibilite.numerique.gouv.fr/|site officiel du RGAA]] annonce une version 5 en cours de rédaction, dont la publication est prévue fin 2026, et précise que les travaux d'accessibilité en cours ne doivent pas être suspendus ou reportés dans l'attente. Voir aussi la prestation d'[[svc:audit-rgaa|audit RGAA]]."],
-    ["p", "Au Luxembourg, le RAWeb 1.1 et le RAAM 1.1 reprennent la méthode du RGAA en l'adaptant à la norme EN 301 549 ; le SIP publie également un référentiel d'évaluation des documents PDF, le RAPDF. En Suisse, la norme eCH-0059, publiée par l'association eCH, renvoie aux WCAG niveau AA. Notre [[article:normes|comparatif détaillé des normes d'accessibilité]] présente leurs différences critère par critère."],
-    ["note", "À retenir", "Toutes ces grilles reposent sur le même socle : les WCAG niveau AA. Ce qui change d'un pays à l'autre, c'est surtout la méthode de test, l'échantillon de pages, le format de la déclaration et l'autorité qui contrôle. Viser les WCAG 2.2 AA dès aujourd'hui vous prépare à la fois au RGAA 5 et à la nouvelle version de la norme EN 301 549."],
-
-    ["h2", "methode", "Mettre en œuvre l'accessibilité numérique : la méthode en huit étapes"],
-    ["p", "Les organisations qui atteignent une conformité stable ne sont pas celles qui corrigent le plus vite après un audit, mais celles qui installent un processus. Voici les huit étapes d'une démarche complète, de l'état des lieux au suivi. Elles valent pour un ministère comme pour un site marchand, avec des intensités différentes."],
-    ["ol", [
-      ["État des lieux.", "Commencez par l'inventaire : sites, sous-domaines, intranets, extranets, applications mobiles, espaces clients, documents téléchargeables, outils tiers intégrés (paiement, prise de rendez-vous, messagerie instantanée, cartographie). Identifiez pour chacun le texte applicable, le prestataire responsable, la date de la dernière refonte et l'existence éventuelle d'une déclaration d'accessibilité. Cette cartographie évite d'auditer en priorité un site vitrine peu consulté pendant que l'espace client, qui concentre les démarches, reste hors radar."],
-      ["Audit de conformité.", "L'audit mesure la conformité d'un échantillon représentatif de pages ou d'écrans au référentiel adapté : RGAA en France, RAWeb ou RAAM au Luxembourg, WCAG et EN 301 549 ailleurs ou pour l'European Accessibility Act. Un audit sérieux combine des outils automatiques, une inspection manuelle du code et des tests avec les technologies d'assistance réelles. Il produit un taux de conformité, une grille critère par critère et la description de chaque non-conformité. Selon votre situation : [[svc:audit-rgaa|audit RGAA]], [[svc:audit-conformite|audit WCAG et EN 301 549]] ou [[svc:audit-raam|audit RAAM des applications mobiles]]."],
-      ["Plan d'action priorisé.", "Classez les corrections selon trois critères : l'impact sur les parcours essentiels (créer un compte, payer, déposer une demande, contacter le service), la fréquence du défaut (un composant fautif présent sur toutes les pages compte plus qu'une anomalie isolée) et l'effort de correction. En France, ce plan alimente le schéma pluriannuel et le plan d'actions annuel exigés par la loi. Un bon plan d'action désigne un responsable et une échéance pour chaque lot."],
-      ["Corrections.", "Corrigez à la source : dans la bibliothèque de composants ou le système de design, dans les gabarits du CMS, dans les styles communs. Une correction faite dans le composant « bouton » se propage à des milliers de pages ; la même correction faite page par page ne tient pas jusqu'à la prochaine mise en production. Pour les composants tiers, exigez de vos fournisseurs leur propre déclaration de conformité et prévoyez des clauses contractuelles. Un accompagnement en [[svc:developpement|développement accessible]] aide vos équipes à corriger à la source dès les premiers sprints."],
-      ["Formation des équipes.", "L'accessibilité se dégrade dès que les personnes qui produisent le service ignorent les règles. Les développeurs doivent maîtriser la sémantique HTML et ARIA, les designers les contrastes et les états de focus, les rédacteurs la structure des titres, les liens explicites et les alternatives textuelles, les acheteurs les clauses à insérer dans les marchés. Les [[svc:formations|formations en groupe]] et l'[[svc:elearning|e-learning]] se complètent bien selon la taille des équipes."],
-      ["Recette accessibilité.", "Intégrez un contrôle d'accessibilité à chaque livraison, au même titre que les tests fonctionnels ou de sécurité. Inscrivez les critères d'accessibilité dans la définition de « terminé » de vos user stories et faites vérifier les nouvelles fonctionnalités avant leur mise en ligne. Une [[svc:recette|recette accessibilité]] régulière coûte beaucoup moins cher qu'une campagne de corrections tous les trois ans."],
-      ["Déclaration d'accessibilité.", "Publiez une déclaration qui dit la vérité : date et référentiel de l'audit, taux de conformité, contenus non accessibles et dérogations invoquées, moyen de contact pour signaler un problème et voies de recours. En France, la mention de conformité figure en outre sur la page d'accueil. Une déclaration qui annonce une conformité totale sans audit à l'appui expose davantage qu'une déclaration honnête de conformité partielle. Notre [[article:declaration|guide de la déclaration d'accessibilité]] détaille son contenu pays par pays."],
-      ["Suivi dans la durée.", "Traitez les signalements des usagers dans des délais raisonnables, faites réaliser un nouvel audit après chaque refonte importante et selon un rythme régulier, suivez l'évolution des normes (RGAA 5, nouvelle version de la norme EN 301 549) et nommez un référent qui dispose d'un mandat clair de la direction. Complétez enfin les audits par des [[svc:test-utilisateur|tests avec des utilisateurs en situation de handicap]] sur vos parcours clés : ils révèlent des difficultés qu'aucune grille ne mesure."]
-    ]],
-
-    ["h2", "budget-delais", "Budget et délais : combien coûte un audit d'accessibilité ?"],
-    ["p", "Il n'existe pas de tarif public de référence, et un prix annoncé sans connaître le périmètre n'a pas grande valeur. Le coût d'un audit d'accessibilité numérique dépend avant tout du volume et de la complexité de ce qui est évalué. Pour comparer des devis, demandez qu'ils portent sur le même échantillon, le même référentiel et les mêmes livrables."],
-    ["ul", [
-      "Le nombre de pages ou d'écrans de l'échantillon, et surtout le nombre de gabarits différents qu'il contient ;",
-      "la complexité des parcours : un tunnel d'achat, un simulateur ou un formulaire en plusieurs étapes demande beaucoup plus de tests qu'une page d'article ;",
-      "le nombre de plateformes : un même service sur le web, sur iOS et sur Android représente trois évaluations ;",
-      "le référentiel et le format de restitution attendus (RGAA avec grille officielle, RAWeb, WCAG et EN 301 549, éventuellement plusieurs à la fois pour un groupe multi-pays) ;",
-      "le volume de documents PDF ou bureautiques à évaluer ;",
-      "les langues de l'audit et du rapport ;",
-      "les prestations associées : tests utilisateurs, accompagnement des équipes pendant les corrections, contre-audit de vérification, rédaction de la déclaration ;",
-      "les contraintes de calendrier, par exemple un audit à livrer avant une mise en ligne ou une échéance de contrôle."
-    ]],
-    ["p", "Côté délais, l'audit d'un site de complexité courante se compte en semaines plutôt qu'en mois : dans notre cabinet, le délai moyen d'un audit est de trois semaines. Les corrections prennent généralement plus de temps que l'audit, de quelques semaines pour des défauts concentrés dans quelques composants à plusieurs mois lorsque l'architecture front-end doit être reprise. Une refonte est le meilleur moment pour intégrer l'accessibilité : prise en compte dès les maquettes, elle coûte une fraction de ce que coûtent des corrections après la mise en ligne."],
-    ["p", "Prévoyez enfin que l'audit n'est qu'une ligne du budget. Les postes les plus lourds sont souvent les corrections, la mise en accessibilité des documents existants et la formation. Méfiez-vous d'une offre très basse qui se limite à un passage d'outil automatique : elle ne permet ni de calculer un taux de conformité opposable, ni de rédiger une déclaration fiable."],
-
-    ["h2", "documents-mobile-video", "PDF, applications mobiles et vidéos : les angles morts de la conformité"],
-    ["h3", "Documents PDF et bureautiques"],
-    ["p", "Délibérations de conseil municipal, rapports annuels, formulaires à imprimer, avis d'imposition, conditions générales, factures : les documents téléchargeables sont souvent la partie la moins accessible d'un service. Un PDF issu d'un scan n'est qu'une image, illisible pour un lecteur d'écran. Un PDF exporté sans précaution peut contenir du texte mais aucune structure : pas de titres, un ordre de lecture aléatoire, des tableaux impossibles à parcourir, des champs de formulaire sans étiquette."],
-    ["p", "La bonne pratique consiste à publier l'information en HTML chaque fois que possible et à réserver le PDF aux documents qui doivent être imprimés ou signés. Lorsqu'un PDF est nécessaire, produisez-le depuis un document source correctement structuré (styles de titres, alternatives aux images, tableaux simples) puis vérifiez le balisage. Pour le secteur public, la directive de 2016 exclut les fichiers bureautiques publiés avant le 23 septembre 2018, sauf s'ils sont nécessaires à des démarches administratives en cours. Au Luxembourg, le rapport de contrôle 2022-2024 du SIP relève d'ailleurs que les PDF inaccessibles sont la justification de charge disproportionnée la plus souvent invoquée ; une dérogation ne dispense pas de proposer une alternative accessible sur demande."],
-    ["h3", "Applications mobiles"],
-    ["p", "Une application native iOS ou Android s'évalue sur appareil réel, avec VoiceOver et TalkBack, la taille de texte agrandie, l'affichage en mode paysage et, le cas échéant, un clavier externe. Les défauts typiques sont les icônes sans libellé, les gestes complexes sans alternative, l'orientation bloquée, les textes qui ne s'agrandissent pas avec les réglages du système et les vues web intégrées qui n'ont jamais été testées. Le RAAM au Luxembourg, le RGAA en France et les chapitres de la norme EN 301 549 consacrés aux logiciels fournissent la grille ; un [[svc:audit-raam|audit RAAM]] suit cette approche sur appareils réels."],
-    ["h3", "Vidéos, contenus audio et diffusion en direct"],
-    ["p", "Une vidéo accessible combine des sous-titres synchronisés et fidèles, une transcription, une audiodescription lorsque l'image porte une information qui n'est pas dite, et un lecteur dont les commandes sont utilisables au clavier et restituées par les lecteurs d'écran. Évitez la lecture automatique avec le son, qui couvre la voix du lecteur d'écran. Pour le secteur public, les médias temporels préenregistrés publiés avant le 23 septembre 2020 sont exclus du champ de la directive de 2016 ; les nouveaux contenus, eux, doivent être accessibles dès leur publication."],
-
-    ["h2", "erreurs-frequentes", "Les erreurs fréquentes en accessibilité numérique"],
-    ["p", "Les mêmes erreurs reviennent d'une organisation à l'autre, quel que soit le secteur. Les connaître permet d'en éviter la plupart avant même le premier audit."],
-    ["ul", [
-      "Attendre la prochaine refonte pour agir, alors que de nombreuses corrections (contrastes, libellés, structure des titres, alternatives) peuvent être faites sur le site actuel.",
-      "Se fier au seul score d'un outil automatique et croire qu'une page « sans erreur détectée » est conforme.",
-      "Publier une déclaration d'accessibilité sans audit réel, ou ne jamais la mettre à jour après les évolutions du site.",
-      "Corriger les pages une à une au lieu de corriger les composants et les gabarits communs.",
-      "Oublier les composants tiers : module de paiement, prise de rendez-vous, outil de recrutement, lecteur vidéo, cartes, messagerie instantanée.",
-      "Ajouter des attributs ARIA partout « pour bien faire » : un ARIA mal employé dégrade souvent l'expérience au lieu de l'améliorer, alors que le HTML natif suffit dans la majorité des cas.",
-      "Placer des captchas visuels ou des délais de session courts sans alternative ni possibilité de prolongation.",
-      "Négliger les documents PDF et les courriels transactionnels, qui font pourtant partie du parcours.",
-      "Ne pas intégrer d'exigences d'accessibilité dans les cahiers des charges, puis découvrir les défauts à la réception du projet.",
-      "Confier le sujet à une seule personne sans soutien de la direction ni budget de correction."
-    ]],
-
-    ["h2", "benefices", "Les bénéfices de l'accessibilité numérique au-delà de la conformité"],
-    ["p", "Le premier bénéfice est l'audience. Avec près d'un quart des adultes de l'Union déclarant une forme de handicap et près d'une personne sur deux parmi les 65 ans et plus, selon les chiffres d'Eurostat cités plus haut, un parcours inaccessible écarte une partie importante de vos usagers ou de vos clients. Pour un service public, c'est une rupture d'égalité ; pour un site marchand, ce sont des paniers abandonnés au moment du paiement."],
-    ["p", "Le deuxième bénéfice est la qualité. Un code sémantique, des composants documentés et des contenus structurés sont plus faciles à maintenir, à faire évoluer et à tester. Les mêmes efforts améliorent l'usage sur mobile, en situation de mobilité ou avec une connexion lente, et profitent à tous les visiteurs : des libellés clairs réduisent les erreurs de saisie, des messages d'erreur explicites réduisent les appels au service client."],
-    ["p", "Le troisième bénéfice tient à la visibilité et aux marchés. Une structure de titres cohérente, des textes alternatifs et des transcriptions rendent vos contenus plus lisibles pour les moteurs de recherche comme pour les humains, même si l'accessibilité n'est pas un critère de classement en tant que tel. Les acheteurs publics intègrent de plus en plus l'accessibilité dans leurs cahiers des charges, et les grandes entreprises la demandent à leurs fournisseurs : être en mesure de produire une déclaration fondée sur un audit devient un argument commercial."],
-    ["p", "Le dernier bénéfice est interne. Vos intranets, logiciels métiers et outils RH sont aussi des services numériques. Les rendre accessibles conditionne le recrutement et le maintien en emploi de collaborateurs en situation de handicap, et facilite le quotidien de ceux dont la vue, l'audition ou la mobilité évoluent au fil de leur carrière."],
-
-    ["h2", "par-ou-commencer", "Par où commencer : votre plan des 90 premiers jours"],
-    ["p", "Si vous partez de zéro, voici un calendrier réaliste pour engager la démarche d'accessibilité numérique sans attendre une refonte. Il convient aussi bien à une collectivité qu'à une entreprise visée par l'European Accessibility Act ; adaptez simplement le référentiel. Pour les spécificités de votre secteur, voyez nos pages [[sector:public|secteur public]], [[sector:grands-comptes|grands comptes]] et [[sector:pme|PME et ETI]]."],
-    ["ol", [
-      ["Semaines 1 et 2 : qualifier vos obligations.", "Listez vos services numériques, identifiez les textes applicables pays par pays et désignez un référent accessibilité avec un sponsor à la direction. Vérifiez si vous publiez déjà une déclaration et si elle repose sur un audit."],
-      ["Semaines 3 à 6 : auditer ce qui compte le plus.", "Faites auditer en priorité le service qui concentre les démarches ou le chiffre d'affaires, sur un échantillon qui inclut les parcours complets (connexion, formulaire, paiement, confirmation). Faites évaluer en parallèle quelques documents types et, si vous en avez une, votre application mobile."],
-      ["Semaines 5 à 8 : publier une déclaration honnête.", "Sur la base de l'audit, publiez ou mettez à jour la déclaration d'accessibilité et, en France, la mention de conformité, avec un contact pour signaler les difficultés. Mieux vaut une conformité partielle déclarée qu'une conformité totale affichée sans preuve."],
-      ["Semaines 6 à 10 : corriger les composants à fort impact.", "Traitez d'abord les défauts bloquants sur les parcours essentiels et ceux qui se répètent dans les composants communs : navigation, formulaires, boutons, fenêtres modales, contrastes."],
-      ["Semaines 8 à 12 : former et outiller les équipes.", "Formez développeurs, designers et rédacteurs, ajoutez des critères d'accessibilité à vos cahiers des charges et à votre recette, et prévoyez un contrôle avant chaque mise en production."],
-      ["Au-delà de 90 jours : tenir le calendrier.", "Inscrivez dans votre plan d'action les échéances qui arrivent : publication du RGAA 5 prévue fin 2026, citation attendue de la nouvelle version de la norme EN 301 549 au Journal officiel de l'Union, fin des mesures transitoires de l'European Accessibility Act pour les contrats de services le 28 juin 2030. Programmez un nouvel audit après chaque évolution majeure et au moins une fois par cycle de votre plan pluriannuel."]
-    ]],
-    ["note", "Le premier pas", "Un audit sur vos parcours essentiels suffit pour publier une déclaration fiable, prioriser les corrections et chiffrer la suite. C'est la base de toute démarche d'accessibilité numérique, quel que soit votre pays ou votre secteur."]
+ "slug": "accessibilite-numerique",
+ "h1": "Accessibilité numérique : ce qu'exige la loi, ce que vivent vos usagers, par où commencer",
+ "crumb": "Guide de l'accessibilité numérique",
+ "meta_title": "Accessibilité numérique : obligations, normes et méthode (2026)",
+ "meta_desc": "Accessibilité numérique : définition, obligations en France, Belgique, Luxembourg et Suisse, EAA, normes, méthode d'audit et budget. Guide à jour fin 2026.",
+ "card_desc": "Définition, utilisateurs, obligations par pays, normes, méthode et budget : le guide de référence de l'accessibilité numérique.",
+ "cat": "guide",
+ "where": "Europe",
+ "cover": "A11Y",
+ "cover_note": [
+  "Guide de référence",
+  "Mis à jour en octobre 2026"
+ ],
+ "date": "2026-10-27",
+ "lead": "L'accessibilité numérique consiste à rendre sites, applications, documents et services en ligne utilisables par toutes et tous, y compris par les personnes en situation de handicap. En Europe, c'est aussi une obligation légale, qui s'étend depuis le 28 juin 2025 à une large partie du secteur privé. Ce guide explique ce que la loi exige en France, en Belgique, au Luxembourg et en Suisse, comment vos utilisateurs parcourent réellement vos pages, et quelle méthode suivre pour passer de l'état des lieux à une conformité durable.",
+ "body": [
+  [
+   "h2",
+   "definition",
+   "Qu'est-ce que l'accessibilité numérique ?"
   ],
-  "faq": [
-    ["L'accessibilité numérique est-elle obligatoire pour toutes les entreprises ?", "Non, mais le champ est large. Les organismes publics sont concernés dans les quatre pays. Dans l'Union européenne, l'European Accessibility Act vise depuis le 28 juin 2025 les entreprises qui proposent aux consommateurs certains produits et services, comme le commerce en ligne, la banque, les transports ou les communications électroniques. En France, les entreprises dont le chiffre d'affaires en France dépasse 250 millions d'euros sont en outre soumises à l'article 47 de la loi de 2005. Les microentreprises de services bénéficient d'un régime allégé, qui varie selon les pays."],
-    ["Le RGAA, c'est quoi exactement ?", "Le RGAA est le Référentiel général d'amélioration de l'accessibilité, publié par l'État français. Il traduit les WCAG en 106 critères vérifiables, chacun accompagné de tests, et fixe la méthode pour calculer un taux de conformité et rédiger la déclaration d'accessibilité. La version en vigueur est la 4.1.2 ; une version 5 est annoncée pour fin 2026. Le RGAA s'applique aux organismes soumis à l'article 47 de la loi de 2005 et sert souvent de grille pratique au-delà de ce cercle."],
-    ["Un outil de test automatique suffit-il à vérifier l'accessibilité d'un site ?", "Non. Les outils automatiques sont utiles pour repérer rapidement certains défauts, comme une image sans attribut alt, un contraste insuffisant ou un champ sans étiquette. Mais ils ne peuvent pas juger de la pertinence d'une alternative, de la logique de l'ordre de tabulation ou de la clarté d'un message d'erreur. Un audit de conformité exige une inspection manuelle et des tests avec les technologies d'assistance."],
-    ["Faut-il refaire entièrement son site pour le rendre accessible ?", "Rarement. La plupart des défauts se corrigent dans les composants, les gabarits et les contenus existants : contrastes, libellés des boutons, structure des titres, alternatives textuelles, gestion du focus. Une refonte n'est justifiée que si l'architecture technique empêche toute correction durable ou si elle est déjà prévue pour d'autres raisons. Dans ce cas, intégrez l'accessibilité dès le cahier des charges et les maquettes."],
-    ["Quelle différence entre accessibilité numérique et ergonomie ?", "L'ergonomie cherche à rendre un service simple et efficace pour la majorité de ses utilisateurs. L'accessibilité numérique garantit qu'il reste utilisable par les personnes en situation de handicap, quels que soient leurs outils. Les deux démarches se renforcent mais ne se confondent pas : un parcours très fluide à la souris peut être impraticable au clavier, et un site conforme peut rester compliqué à utiliser. Les tests utilisateurs permettent de traiter les deux à la fois."],
-    ["Un site accessible est-il mieux référencé sur Google ?", "L'accessibilité n'est pas un critère de classement en tant que tel, mais de nombreuses bonnes pratiques profitent aussi au référencement naturel : titres structurés, textes alternatifs, liens explicites, transcriptions des vidéos, pages rapides et utilisables sur mobile. Un contenu bien structuré pour un lecteur d'écran l'est aussi pour un moteur de recherche. L'objectif reste toutefois de servir les utilisateurs, pas de gagner des positions."],
-    ["Qui peut réaliser un audit d'accessibilité numérique ?", "La valeur d'un audit tient d'abord à la méthode et à l'expérience des auditeurs. Choisissez des auditeurs qui maîtrisent le référentiel applicable, testent avec de vraies technologies d'assistance et fournissent une grille détaillée exploitable par vos équipes. Méfiez-vous des démarchages qui se réclament d'une autorité : l'Arcom indique qu'elle ne délègue sa mission de contrôle à aucun tiers. Une organisation peut aussi former un auditeur interne, à condition de garantir son indépendance vis-à-vis des équipes auditées."]
+  [
+   "p",
+   "L'accessibilité numérique désigne la capacité d'un service numérique (site web, intranet, application mobile, logiciel, document, borne) à être perçu, compris et utilisé par une personne en situation de handicap, avec ou sans technologie d'assistance. Concrètement, une personne aveugle doit pouvoir remplir votre formulaire de contact avec un lecteur d'écran. Une personne qui ne peut pas tenir une souris doit pouvoir valider son panier au clavier. Une personne sourde doit pouvoir suivre votre vidéo de présentation grâce aux sous-titres."
   ],
-  "cta_svc": "audit-conformite",
-  "cta_title": "Où en est votre service numérique ?",
-  "cta_text": "Un audit de conformité vous donne un état précis, critère par critère, et un plan d'action priorisé. Décrivez-nous votre périmètre : nous vous proposons le référentiel et la méthode adaptés.",
-  "related": ["eaa", "normes", "france"]
+  [
+   "p",
+   "Les normes internationales résument cette exigence en quatre principes, repris par les WCAG et par la directive européenne de 2016 sur le secteur public : le contenu doit être perceptible, utilisable, compréhensible et robuste. Perceptible signifie que l'information ne passe jamais par un seul sens : une image porteuse de sens a une alternative textuelle, une vidéo a des sous-titres. Utilisable signifie que toutes les fonctions sont accessibles au clavier, sans délai impossible à tenir. Compréhensible signifie que les libellés sont clairs et que les erreurs sont expliquées. Robuste, enfin, signifie que le code est assez standard pour être interprété correctement par les navigateurs et les technologies d'assistance."
+  ],
+  [
+   "p",
+   "Le terme « accessibilité web » est souvent employé comme synonyme, mais il est plus étroit. L'accessibilité numérique couvre aussi les applications mobiles, les documents bureautiques et PDF, les logiciels métiers, les terminaux en libre-service et, depuis l'European Accessibility Act, des produits comme les terminaux de paiement, les smartphones ou les liseuses. Un site accessible n'est donc qu'une partie du sujet : c'est l'ensemble du parcours de l'usager qui compte, de la recherche d'information jusqu'au paiement, à la réception d'un courriel de confirmation et au téléchargement d'une facture."
+  ],
+  [
+   "h3",
+   "Ce que l'accessibilité numérique n'est pas"
+  ],
+  [
+   "ul",
+   [
+    "Ce n'est pas une version « spéciale handicap » du site. On rend accessible le service principal, pas une copie appauvrie qu'il faudrait maintenir en parallèle et qui finit toujours par prendre du retard sur l'original.",
+    "Ce n'est pas un design austère. Un site accessible peut être riche visuellement, animé et contemporain, dès lors que les contrastes, la structure et les interactions respectent les critères.",
+    "Ce n'est pas un label acquis une fois pour toutes. Chaque mise en production, chaque nouveau contenu et chaque PDF publié peut faire régresser la conformité.",
+    "Ce n'est pas un sujet réservé aux développeurs. Rédacteurs, designers, chefs de projet, acheteurs et juristes agissent tous sur le résultat final.",
+    "Ce n'est pas un synonyme d'ergonomie. Un site peut être agréable pour la majorité des visiteurs et totalement inutilisable avec un lecteur d'écran.",
+    "Ce n'est pas un score produit par un outil automatique. Les outils de test repèrent une partie des défauts seulement : la plupart des critères exigent un jugement humain, par exemple pour dire si une alternative textuelle décrit correctement une image."
+   ]
+  ],
+  [
+   "h2",
+   "utilisateurs",
+   "Handicap et numérique : qui sont les utilisateurs concernés ?"
+  ],
+  [
+   "p",
+   "Selon l'[[https://www.who.int/fr/news-room/fact-sheets/detail/disability-and-health|aide-mémoire de l'Organisation mondiale de la santé sur le handicap]], environ 1,3 milliard de personnes vivent avec un handicap important, soit 16 % de la population mondiale, une personne sur six. Dans l'Union européenne, les estimations d'Eurostat reprises par l'[[https://www.consilium.europa.eu/en/infographics/disability-eu-facts-figures/|infographie du Conseil de l'Union européenne sur le handicap]] indiquent qu'en 2024, 24 % des personnes de plus de 16 ans déclaraient une forme de handicap, soit environ 90 millions de personnes. Cette part atteint 47,3 % chez les 65 ans et plus."
+  ],
+  [
+   "p",
+   "Ces chiffres recouvrent des réalités très différentes, qui ne posent pas les mêmes problèmes devant un écran. Beaucoup de handicaps ne se voient pas, et de nombreuses personnes concernées ne se décrivent pas comme handicapées : elles disent qu'elles voient mal, qu'elles se perdent dans les formulaires ou qu'elles ne supportent pas les animations. C'est pourquoi les normes raisonnent en besoins fonctionnels (voir, entendre, manipuler, comprendre) plutôt qu'en catégories médicales."
+  ],
+  [
+   "h3",
+   "Handicaps visuels"
+  ],
+  [
+   "p",
+   "Ils vont de la cécité totale à la malvoyance, en passant par le daltonisme, la vision tubulaire ou la sensibilité à la lumière. Une personne aveugle utilise un lecteur d'écran, parfois couplé à une plage braille ; elle a besoin d'une structure de titres cohérente, d'alternatives textuelles et de composants correctement nommés. Une personne malvoyante agrandit l'affichage, parfois très fortement, et a besoin de contrastes suffisants et d'une mise en page qui se réorganise sans défilement horizontal. Une personne daltonienne a besoin que l'information ne repose pas sur la seule couleur : un champ en erreur signalé uniquement par une bordure rouge lui échappe."
+  ],
+  [
+   "h3",
+   "Handicaps auditifs"
+  ],
+  [
+   "p",
+   "Les personnes sourdes ou malentendantes sont peu gênées par un site composé de texte et d'images. Les difficultés apparaissent avec les vidéos sans sous-titres, les podcasts sans transcription, les messages d'alerte uniquement sonores et les services clients joignables seulement par téléphone. Pour une partie des personnes sourdes de naissance, la langue première est une langue des signes, et le français écrit est une seconde langue : un texte clair et court leur rend un service considérable."
+  ],
+  [
+   "h3",
+   "Handicaps moteurs"
+  ],
+  [
+   "p",
+   "Paralysie, tremblements, amputation, maladie neuromusculaire ou simple arthrose : de nombreuses personnes ne peuvent pas utiliser une souris ou un écran tactile avec précision. Elles naviguent au clavier, avec un contacteur, une commande oculaire ou la commande vocale. Les obstacles typiques sont les fonctions accessibles uniquement au survol de la souris, les cibles trop petites, les gestes complexes sans alternative (glisser-déposer, pincer, balayer à deux doigts) et les délais trop courts pour remplir un formulaire."
+  ],
+  [
+   "h3",
+   "Handicaps cognitifs, psychiques et troubles dys"
+  ],
+  [
+   "p",
+   "Dyslexie, troubles de l'attention, troubles de la mémoire, autisme, déficience intellectuelle, troubles anxieux ou séquelles d'un accident vasculaire cérébral : ces situations sont nombreuses et souvent invisibles. Elles appellent une navigation prévisible, des libellés explicites, des consignes avant les champs plutôt qu'après l'erreur, des messages d'erreur qui disent comment corriger, et l'absence de changements de contexte inattendus. Les WCAG 2.2 ont ajouté des critères qui vont dans ce sens, par exemple l'interdiction d'imposer un test de mémoire ou de transcription pour s'authentifier lorsqu'aucune alternative n'est proposée."
+  ],
+  [
+   "h3",
+   "Situations temporaires et vieillissement"
+  ],
+  [
+   "p",
+   "Un poignet dans le plâtre, une opération des yeux, un écran en plein soleil, un quai de gare bruyant ou un enfant dans les bras placent temporairement n'importe qui dans la situation d'une personne handicapée. Le vieillissement, lui, combine souvent plusieurs limitations modérées : baisse de l'acuité visuelle, de l'audition et de la dextérité, fatigue plus rapide face aux interfaces chargées. Avec près d'une personne sur deux concernée parmi les 65 ans et plus dans l'Union, l'accessibilité numérique est d'abord une question de démographie."
+  ],
+  [
+   "h2",
+   "technologies-assistance",
+   "Comment vos utilisateurs parcourent un site : technologies d'assistance et blocages concrets"
+  ],
+  [
+   "p",
+   "Pour comprendre l'accessibilité, le plus efficace est d'observer comment une personne utilise réellement un site avec ses outils. La plupart des technologies d'assistance ne voient pas l'écran comme vous : elles lisent le code et l'arbre d'accessibilité que le navigateur en déduit. Si le code ne dit pas qu'un élément est un bouton, un titre ou un champ obligatoire, l'outil ne peut pas le deviner."
+  ],
+  [
+   "h3",
+   "Lecteurs d'écran et plages braille"
+  ],
+  [
+   "p",
+   "Les principaux lecteurs d'écran sont NVDA et JAWS sur Windows, VoiceOver sur macOS et iOS, TalkBack sur Android et le Narrateur de Windows. Ils transforment le contenu en synthèse vocale ou en braille. Un utilisateur expérimenté ne lit pas la page de haut en bas : il saute de titre en titre, affiche la liste des liens, passe d'une zone à l'autre (en-tête, navigation, contenu principal) ou parcourt les champs d'un formulaire. Sur smartphone, il explore l'écran au doigt et enchaîne les éléments par balayages."
+  ],
+  [
+   "p",
+   "Les blocages les plus courants sont très concrets. Un bouton de recherche représenté par une simple loupe, sans nom accessible, est annoncé « bouton » sans autre précision. Un menu déroulant construit en JavaScript sans les rôles et états adéquats n'indique ni qu'il est ouvert, ni quelle option est sélectionnée. Une fenêtre modale qui ne reçoit pas le focus laisse l'utilisateur continuer à lire la page en arrière-plan sans savoir qu'une boîte de dialogue s'est ouverte. Un captcha visuel sans alternative ferme purement et simplement l'accès au service."
+  ],
+  [
+   "h3",
+   "Navigation au clavier et contacteurs"
+  ],
+  [
+   "p",
+   "Au clavier, on passe d'un élément interactif à l'autre avec Tab et Maj+Tab, on active avec Entrée ou Espace et on se déplace dans les listes avec les flèches. Trois conditions sont indispensables : chaque fonction doit être atteignable, l'ordre de tabulation doit suivre la logique visuelle, et l'élément qui a le focus doit être clairement visible. Les contacteurs, utilisés par des personnes à mobilité très réduite, reposent sur le même principe avec un ou deux boutons seulement : chaque étape inutile multiplie l'effort."
+  ],
+  [
+   "p",
+   "Exemple typique : sur une page de paiement, le sélecteur de date d'expiration de la carte s'ouvre au clic mais ne réagit pas au clavier. L'utilisateur arrive jusqu'au dernier écran du tunnel d'achat et ne peut pas payer. Autre cas fréquent, le « piège au clavier » : un lecteur vidéo ou une carte interactive capture le focus et ne le rend plus, obligeant à recharger la page."
+  ],
+  [
+   "h3",
+   "Loupes, agrandissement et réglages d'affichage"
+  ],
+  [
+   "p",
+   "Les personnes malvoyantes utilisent le zoom du navigateur, la loupe du système d'exploitation ou un logiciel d'agrandissement dédié, parfois avec des couleurs inversées ou un mode de contraste élevé. Avec un fort grossissement, elles ne voient qu'une petite portion de l'écran à la fois. Une notification qui apparaît dans un coin éloigné, un message de confirmation qui disparaît après trois secondes ou un texte figé dans une image qui devient flou à l'agrandissement leur échappent. Les WCAG demandent notamment que le contenu reste lisible sans défilement horizontal sur une largeur équivalente à 320 pixels CSS et que l'espacement du texte puisse être augmenté sans perte d'information."
+  ],
+  [
+   "h3",
+   "Commande vocale"
+  ],
+  [
+   "p",
+   "Avec Dragon, le Contrôle vocal d'Apple ou Voice Access sur Android, l'utilisateur dit « cliquer sur Envoyer » ou « appuyer sur Suivant ». Cela ne fonctionne que si le nom technique du bouton correspond à ce qui est écrit à l'écran. Un bouton affiché « Envoyer » mais nommé dans le code « submit-form-2 » ne répond pas à la commande : c'est le critère de succès dit « étiquette dans le nom » des WCAG, simple à respecter et souvent oublié."
+  ],
+  [
+   "h3",
+   "Sous-titres, transcriptions et audiodescription"
+  ],
+  [
+   "p",
+   "Les sous-titres synchronisés servent les personnes sourdes et malentendantes, mais aussi toutes celles qui regardent une vidéo sans le son, dans les transports ou en open space. La transcription textuelle permet de parcourir un contenu audio rapidement et sert aux personnes sourdaveugles équipées d'une plage braille. L'audiodescription, enfin, décrit les informations visuelles indispensables à la compréhension d'une vidéo, par exemple un graphique commenté par un orateur qui dit seulement « comme vous le voyez ici »."
+  ],
+  [
+   "table",
+   {
+    "caption": "Exemples de blocages fréquents et de leur correction",
+    "head": [
+     "Situation",
+     "Ce qui bloque",
+     "Correction attendue"
+    ],
+    "rows": [
+     [
+      "Formulaire de paiement",
+      "Champ « date d'expiration » inutilisable au clavier, erreurs signalées par la seule couleur rouge",
+      "Composant natif ou rôle ARIA complet, message d'erreur textuel associé au champ"
+     ],
+     [
+      "Menu de navigation",
+      "Sous-menus qui ne s'ouvrent qu'au survol de la souris",
+      "Ouverture au clavier, état ouvert ou fermé restitué aux technologies d'assistance"
+     ],
+     [
+      "PDF de délibération ou de rapport",
+      "Document scanné, sans texte ni structure",
+      "Version HTML ou PDF balisé, avec titres, ordre de lecture et alternatives"
+     ],
+     [
+      "Captcha à l'inscription",
+      "Reconnaissance d'images sans alternative",
+      "Méthode de vérification qui ne repose ni sur la vue ni sur un test cognitif"
+     ],
+     [
+      "Application mobile",
+      "Icônes sans nom, annoncées « bouton » par VoiceOver ou TalkBack",
+      "Libellé accessible pour chaque icône interactive"
+     ],
+     [
+      "Vidéo de présentation",
+      "Aucun sous-titre, lecture automatique avec le son",
+      "Sous-titres synchronisés, lecture à l'initiative de l'utilisateur, commandes du lecteur accessibles"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "obligations-europe",
+   "Accessibilité numérique et loi : ce qui est obligatoire en Europe"
+  ],
+  [
+   "p",
+   "Le droit de l'accessibilité numérique repose en Europe sur deux étages. Le premier vise le secteur public : la directive (UE) 2016/2102 impose depuis plusieurs années l'accessibilité des sites internet et des applications mobiles des organismes publics, selon un calendrier qui a pris fin le 23 juin 2021 pour les applications. Le second vise le marché : la directive (UE) 2019/882, dite European Accessibility Act, s'applique depuis le 28 juin 2025 à une liste de produits et de services proposés aux consommateurs. Chaque État transpose ces textes à sa manière, ce qui explique les différences de méthode et de contrôle d'un pays à l'autre."
+  ],
+  [
+   "h3",
+   "L'European Accessibility Act, pour les produits et services du secteur privé"
+  ],
+  [
+   "p",
+   "Le [[https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32019L0882|texte de la directive (UE) 2019/882 sur EUR-Lex]] couvre notamment les services de communications électroniques, l'accès aux services de médias audiovisuels, certains éléments des services de transport de voyageurs (aérien, ferroviaire, par autobus et par voie navigable), les services bancaires aux consommateurs, les livres numériques et le commerce électronique. Côté produits, il vise entre autres les ordinateurs et leurs systèmes d'exploitation, les smartphones, les terminaux de paiement, certains automates en libre-service et les liseuses. Un site de vente en ligne, une application bancaire ou une billetterie de transport sont donc directement concernés."
+  ],
+  [
+   "p",
+   "Les microentreprises qui fournissent des services, soit moins de 10 salariés et un chiffre d'affaires annuel ou un total de bilan n'excédant pas 2 millions d'euros, sont exemptées par la directive. Des mesures transitoires existent : les contrats de services conclus avant le 28 juin 2025 peuvent se poursuivre sans modification au plus tard jusqu'au 28 juin 2030, et les terminaux en libre-service déjà en service peuvent être utilisés jusqu'à la fin de leur vie économique, dans une limite que la directive fixe à vingt ans et que la France a ramenée à quinze ans. Attention : un site web ou une application n'est pas un « produit » au sens de ces mesures et ne bénéficie pas de ce délai. Pour le détail, consultez notre [[article:eaa|analyse complète de l'European Accessibility Act]]."
+  ],
+  [
+   "h3",
+   "France : loi de 2005, Arcom et DGCCRF"
+  ],
+  [
+   "p",
+   "En France, l'article 47 de la loi du 11 février 2005 et le décret n° 2019-768 du 24 juillet 2019 imposent l'accessibilité des services de communication au public en ligne aux personnes morales de droit public, aux organismes privés délégataires d'une mission de service public et aux entreprises dont le chiffre d'affaires en France dépasse 250 millions d'euros, en moyenne sur les trois derniers exercices. Ces organismes doivent publier une déclaration d'accessibilité, afficher sur la page d'accueil une mention de conformité (non, partiellement ou totalement conforme), adopter un schéma pluriannuel et un plan d'actions annuel, et proposer un moyen de signaler un défaut. La méthode de référence est le RGAA, présenté plus bas."
+  ],
+  [
+   "p",
+   "Depuis l'ordonnance du 6 septembre 2023, c'est l'Arcom qui contrôle ces obligations. Selon sa [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|page consacrée à l'accessibilité des sites et services numériques]], elle peut, après mise en demeure, prononcer une sanction pécuniaire d'un montant maximal de 50 000 euros pour le non-respect des exigences d'accessibilité et de 25 000 euros pour les autres obligations, modulable selon la nature, la gravité et la durée du manquement. Pour les entreprises dépassant le seuil de chiffre d'affaires, l'Arcom contrôle les obligations d'affichage, et non la conformité au RGAA elle-même. Ses décisions sont publiques : en juin 2026, elle a mis en demeure un ministère au sujet de son service fiscal en ligne, en relevant un avis d'impôt PDF inaccessible, une messagerie inutilisable au clavier, un tableau dont les cellules n'étaient pas reliées à leurs en-têtes et une déclaration d'accessibilité annonçant une conformité totale alors qu'elle indiquait elle-même un taux de conformité de 42,11 %."
+  ],
+  [
+   "p",
+   "L'European Accessibility Act a été transposé dans le Code de la consommation (article L. 412-13) et précisé par le décret n° 2023-931 et un arrêté du 9 octobre 2023. D'après la [[https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/professionnels-vos-produits-et-services-doivent-etre-conformes-la-directive-accessibilite|fiche pratique de la DGCCRF destinée aux professionnels]], la DGCCRF contrôle les produits et le commerce électronique, en coordination avec l'Arcom pour les médias audiovisuels, l'Arcep pour les communications électroniques, la Banque de France, l'ACPR et l'AMF pour les services financiers. Les manquements constituent des contraventions de cinquième classe, avec des amendes de 7 500 euros cumulables selon le nombre d'infractions, en plus des injonctions de mise en conformité. Un premier bilan publié par la DGCCRF le 25 juin 2026 fait état d'actions d'information et de contrôle, notamment auprès des plateformes de commerce en ligne. Tous les détails figurent sur notre page [[country:france|accessibilité numérique en France]] et dans notre [[article:france|article sur les obligations françaises]]."
+  ],
+  [
+   "h3",
+   "Belgique : loi de 2018, textes régionaux et EAA"
+  ],
+  [
+   "p",
+   "En Belgique, la loi du 19 juillet 2018 impose l'accessibilité des sites et applications des organismes publics fédéraux ; les Régions et Communautés ont adopté leurs propres textes, chacun avec son organisme de suivi. La référence technique est la norme européenne EN 301 549 : il n'existe pas de référentiel national propre. Au niveau fédéral, le service Accessibilité numérique du SPF BOSA assure le suivi, et l'usager qui n'obtient pas de réponse satisfaisante peut saisir le Médiateur fédéral."
+  ],
+  [
+   "p",
+   "Pour le secteur privé, l'European Accessibility Act a été transposé par plusieurs textes et plusieurs autorités sont compétentes. Selon le [[https://news.economie.fgov.be/251714-directive-sur-l-accessibilite-un-pas-en-avant-pour-une-societe-plus-inclusive/|communiqué du SPF Economie de juillet 2025]], l'Inspection économique contrôle le commerce électronique et les services bancaires aux consommateurs, et les microentreprises bénéficient d'un délai supplémentaire de cinq ans pour se mettre en conformité, une approche différente de l'exemption retenue en France. Voir notre page [[country:belgique|accessibilité numérique en Belgique]] et notre [[article:belgique|article dédié]]."
+  ],
+  [
+   "h3",
+   "Luxembourg : RAWeb, RAAM et deux lois"
+  ],
+  [
+   "p",
+   "Au Luxembourg, la loi du 28 mai 2019 impose l'accessibilité des sites et applications du secteur public. Le Service information et presse du gouvernement (SIP) en assure le contrôle et publie les référentiels nationaux : le RAWeb pour le web, dont la version 1.1 a été publiée en février 2026, et le RAAM pour les applications mobiles, tous deux fondés sur la norme EN 301 549. Le secteur privé relève de la loi du 8 mars 2023, qui transpose l'European Accessibility Act et dont la surveillance revient à l'Office de la surveillance de l'accessibilité des produits et services (OSAPS). Notre page [[country:luxembourg|accessibilité numérique au Luxembourg]] et notre [[article:luxembourg|article sur le cadre luxembourgeois]] détaillent ces obligations."
+  ],
+  [
+   "h3",
+   "Suisse : LHand, eCH-0059 et effet de l'EAA"
+  ],
+  [
+   "p",
+   "En Suisse, la loi sur l'égalité pour les handicapés (LHand), en vigueur depuis 2004, et son ordonnance imposent l'accessibilité des prestations de la Confédération, y compris en ligne. La loi fédérale sur l'utilisation des moyens électroniques pour l'exécution des tâches des autorités (LMETA) demande aussi que ces prestations soient accessibles à l'ensemble de la population. La norme de référence est eCH-0059, dont la troisième version exige le niveau AA des WCAG 2.1 pour les sites et applications de l'administration fédérale. Les cantons et communes appliquent leurs propres règles."
+  ],
+  [
+   "p",
+   "Deux évolutions méritent votre attention. D'abord, une révision partielle de la LHand a été transmise au Parlement par le Conseil fédéral fin 2024 et reste en cours d'examen. Ensuite, la Suisse ne fait pas partie de l'Union européenne, mais une entreprise suisse qui vend aux consommateurs de l'Union des produits ou des services visés par l'European Accessibility Act doit s'y conformer pour ces marchés. Voir notre page [[country:suisse|accessibilité numérique en Suisse]] et notre [[article:suisse|article sur la Suisse]]."
+  ],
+  [
+   "h2",
+   "tableau-par-pays",
+   "Qui est concerné, quel texte, quelle norme, quel contrôle : le tableau par pays"
+  ],
+  [
+   "p",
+   "Le tableau ci-dessous résume les obligations d'accessibilité numérique dans les quatre pays où les organisations francophones sont le plus souvent actives. Il donne une vue d'ensemble : la qualification exacte de votre situation dépend de votre statut, de vos services et des pays dans lesquels vous les proposez."
+  ],
+  [
+   "table",
+   {
+    "caption": "Accessibilité numérique : obligations par pays (situation en octobre 2026)",
+    "head": [
+     "Pays et secteur",
+     "Qui est concerné",
+     "Textes principaux",
+     "Norme d'évaluation",
+     "Contrôle"
+    ],
+    "rows": [
+     [
+      "France, secteur public et grandes entreprises",
+      "Personnes morales de droit public, délégataires de service public, entreprises au chiffre d'affaires en France supérieur à 250 M€",
+      "Loi du 11 février 2005, article 47 ; décret n° 2019-768",
+      "RGAA 4.1.2 (106 critères)",
+      "Arcom, sanctions jusqu'à 50 000 €"
+     ],
+     [
+      "France, secteur privé (EAA)",
+      "Opérateurs économiques des produits et services visés, hors microentreprises de services",
+      "Code de la consommation, article L. 412-13 ; décret n° 2023-931",
+      "Exigences de la directive, norme EN 301 549",
+      "DGCCRF, avec Arcom, Arcep, Banque de France, ACPR, AMF"
+     ],
+     [
+      "Belgique, secteur public",
+      "Organismes publics fédéraux, régionaux et communautaires",
+      "Loi du 19 juillet 2018 et textes régionaux et communautaires",
+      "EN 301 549 (WCAG niveau AA)",
+      "SPF BOSA au niveau fédéral, organismes régionaux et communautaires"
+     ],
+     [
+      "Belgique, secteur privé (EAA)",
+      "Opérateurs des produits et services visés ; délai supplémentaire pour les microentreprises",
+      "Transposition de la directive (UE) 2019/882",
+      "EN 301 549",
+      "Plusieurs autorités, dont l'Inspection économique du SPF Economie"
+     ],
+     [
+      "Luxembourg, secteur public",
+      "Organismes du secteur public",
+      "Loi du 28 mai 2019",
+      "RAWeb 1.1 (web), RAAM 1.1 (mobile)",
+      "Service information et presse (SIP)"
+     ],
+     [
+      "Luxembourg, secteur privé (EAA)",
+      "Opérateurs des produits et services visés",
+      "Loi du 8 mars 2023",
+      "Exigences de la directive, EN 301 549",
+      "OSAPS"
+     ],
+     [
+      "Suisse",
+      "Confédération ; cantons et communes selon leurs règles ; entreprises vendant dans l'UE au titre de l'EAA",
+      "LHand et son ordonnance, LMETA, règles cantonales",
+      "eCH-0059 (WCAG 2.1 niveau AA)",
+      "Pas d'organisme de contrôle dédié comparable à l'Arcom ; le BFEH promeut l'égalité et agit contre les discriminations"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Un groupe présent dans plusieurs de ces pays n'a pas besoin de mener quatre démarches distinctes. Les référentiels reposent tous sur les WCAG niveau AA : un audit bien construit selon les WCAG et la norme EN 301 549 sert de socle commun, que l'on complète par les exigences de forme propres à chaque pays (format de la déclaration, mention de conformité, méthode de calcul du taux). Notre page [[standards|référentiels et obligations par pays]] présente cette articulation."
+  ],
+  [
+   "h2",
+   "normes",
+   "Les normes d'accessibilité numérique en synthèse"
+  ],
+  [
+   "p",
+   "Les WCAG (Web Content Accessibility Guidelines), publiées par le W3C, sont le socle de toutes les autres normes. D'après la [[https://www.w3.org/WAI/standards-guidelines/wcag/|présentation officielle des WCAG par le W3C]], la version 2.2 a été publiée le 5 octobre 2023 et mise à jour le 12 décembre 2024 ; elle ajoute neuf critères de succès aux WCAG 2.1 et retire le critère 4.1.1 relatif à l'analyse syntaxique. Elle est aussi devenue la norme internationale ISO/IEC 40500:2025. Les critères sont classés en trois niveaux, A, AA et AAA : c'est le niveau AA que visent les législations européennes. Les WCAG 3 restent à l'état de projet et ne constituent pas une référence opposable."
+  ],
+  [
+   "p",
+   "La norme EN 301 549 est la norme européenne harmonisée d'exigences d'accessibilité pour les produits et services numériques. Elle reprend les WCAG pour le web, les documents et les logiciels, et ajoute des exigences pour le matériel, les services de communication bidirectionnelle, la documentation et les services d'assistance. La version V3.2.1 de 2021 s'appuie sur les WCAG 2.1. La version V4.1.1, publiée par l'ETSI, le CEN et le Cenelec en septembre 2026, s'aligne sur les WCAG 2.2 et se présente comme un moyen de se conformer à l'European Accessibility Act ; sa portée juridique complète dépend de sa citation au Journal officiel de l'Union européenne, qui n'était pas encore intervenue à la date de mise à jour de ce guide."
+  ],
+  [
+   "p",
+   "Le RGAA (Référentiel général d'amélioration de l'accessibilité), publié par la Direction interministérielle du numérique, traduit ces exigences en 106 critères assortis de tests précis et d'une méthode d'échantillonnage. La version en vigueur est la 4.1.2. Le [[https://accessibilite.numerique.gouv.fr/|site officiel du RGAA]] annonce une version 5 en cours de rédaction, dont la publication est prévue fin 2026, et précise que les travaux d'accessibilité en cours ne doivent pas être suspendus ou reportés dans l'attente. Voir aussi la prestation d'[[svc:audit-rgaa|audit RGAA]]."
+  ],
+  [
+   "p",
+   "Au Luxembourg, le RAWeb 1.1 et le RAAM 1.1 reprennent la méthode du RGAA en l'adaptant à la norme EN 301 549 ; le SIP publie également un référentiel d'évaluation des documents PDF, le RAPDF. En Suisse, la norme eCH-0059, publiée par l'association eCH, renvoie aux WCAG niveau AA. Notre [[article:normes|comparatif détaillé des normes d'accessibilité]] présente leurs différences critère par critère."
+  ],
+  [
+   "note",
+   "À retenir",
+   "Toutes ces grilles reposent sur le même socle : les WCAG niveau AA. Ce qui change d'un pays à l'autre, c'est surtout la méthode de test, l'échantillon de pages, le format de la déclaration et l'autorité qui contrôle. Viser les WCAG 2.2 AA dès aujourd'hui vous prépare à la fois au RGAA 5 et à la nouvelle version de la norme EN 301 549."
+  ],
+  [
+   "h2",
+   "methode",
+   "Mettre en œuvre l'accessibilité numérique : la méthode en huit étapes"
+  ],
+  [
+   "p",
+   "Les organisations qui atteignent une conformité stable ne sont pas celles qui corrigent le plus vite après un audit, mais celles qui installent un processus. Voici les huit étapes d'une démarche complète, de l'état des lieux au suivi. Elles valent pour un ministère comme pour un site marchand, avec des intensités différentes."
+  ],
+  [
+   "ol",
+   [
+    [
+     "État des lieux.",
+     "Commencez par l'inventaire : sites, sous-domaines, intranets, extranets, applications mobiles, espaces clients, documents téléchargeables, outils tiers intégrés (paiement, prise de rendez-vous, messagerie instantanée, cartographie). Identifiez pour chacun le texte applicable, le prestataire responsable, la date de la dernière refonte et l'existence éventuelle d'une déclaration d'accessibilité. Cette cartographie évite d'auditer en priorité un site vitrine peu consulté pendant que l'espace client, qui concentre les démarches, reste hors radar."
+    ],
+    [
+     "Audit de conformité.",
+     "L'audit mesure la conformité d'un échantillon représentatif de pages ou d'écrans au référentiel adapté : RGAA en France, RAWeb ou RAAM au Luxembourg, WCAG et EN 301 549 ailleurs ou pour l'European Accessibility Act. Un audit sérieux combine des outils automatiques, une inspection manuelle du code et des tests avec les technologies d'assistance réelles. Il produit un taux de conformité, une grille critère par critère et la description de chaque non-conformité. Selon votre situation : [[svc:audit-rgaa|audit RGAA]], [[svc:audit-conformite|audit WCAG et EN 301 549]] ou [[svc:audit-raam|audit RAAM des applications mobiles]]."
+    ],
+    [
+     "Plan d'action priorisé.",
+     "Classez les corrections selon trois critères : l'impact sur les parcours essentiels (créer un compte, payer, déposer une demande, contacter le service), la fréquence du défaut (un composant fautif présent sur toutes les pages compte plus qu'une anomalie isolée) et l'effort de correction. En France, ce plan alimente le schéma pluriannuel et le plan d'actions annuel exigés par la loi. Un bon plan d'action désigne un responsable et une échéance pour chaque lot."
+    ],
+    [
+     "Corrections.",
+     "Corrigez à la source : dans la bibliothèque de composants ou le système de design, dans les gabarits du CMS, dans les styles communs. Une correction faite dans le composant « bouton » se propage à des milliers de pages ; la même correction faite page par page ne tient pas jusqu'à la prochaine mise en production. Pour les composants tiers, exigez de vos fournisseurs leur propre déclaration de conformité et prévoyez des clauses contractuelles. Un accompagnement en [[svc:developpement|développement accessible]] aide vos équipes à corriger à la source dès les premiers sprints."
+    ],
+    [
+     "Formation des équipes.",
+     "L'accessibilité se dégrade dès que les personnes qui produisent le service ignorent les règles. Les développeurs doivent maîtriser la sémantique HTML et ARIA, les designers les contrastes et les états de focus, les rédacteurs la structure des titres, les liens explicites et les alternatives textuelles, les acheteurs les clauses à insérer dans les marchés. Les [[svc:formations|formations en groupe]] et l'[[svc:elearning|e-learning]] se complètent bien selon la taille des équipes."
+    ],
+    [
+     "Recette accessibilité.",
+     "Intégrez un contrôle d'accessibilité à chaque livraison, au même titre que les tests fonctionnels ou de sécurité. Inscrivez les critères d'accessibilité dans la définition de « terminé » de vos user stories et faites vérifier les nouvelles fonctionnalités avant leur mise en ligne. Une [[svc:recette|recette accessibilité]] régulière coûte beaucoup moins cher qu'une campagne de corrections tous les trois ans."
+    ],
+    [
+     "Déclaration d'accessibilité.",
+     "Publiez une déclaration qui dit la vérité : date et référentiel de l'audit, taux de conformité, contenus non accessibles et dérogations invoquées, moyen de contact pour signaler un problème et voies de recours. En France, la mention de conformité figure en outre sur la page d'accueil. Une déclaration qui annonce une conformité totale sans audit à l'appui expose davantage qu'une déclaration honnête de conformité partielle. Notre [[article:declaration|guide de la déclaration d'accessibilité]] détaille son contenu pays par pays."
+    ],
+    [
+     "Suivi dans la durée.",
+     "Traitez les signalements des usagers dans des délais raisonnables, faites réaliser un nouvel audit après chaque refonte importante et selon un rythme régulier, suivez l'évolution des normes (RGAA 5, nouvelle version de la norme EN 301 549) et nommez un référent qui dispose d'un mandat clair de la direction. Complétez enfin les audits par des [[svc:test-utilisateur|tests avec des utilisateurs en situation de handicap]] sur vos parcours clés : ils révèlent des difficultés qu'aucune grille ne mesure."
+    ]
+   ]
+  ],
+  [
+   "h2",
+   "budget-delais",
+   "Budget et délais : combien coûte un audit d'accessibilité ?"
+  ],
+  [
+   "p",
+   "Il n'existe pas de tarif public de référence, et un prix annoncé sans connaître le périmètre n'a pas grande valeur. Le coût d'un audit d'accessibilité numérique dépend avant tout du volume et de la complexité de ce qui est évalué. Pour comparer des devis, demandez qu'ils portent sur le même échantillon, le même référentiel et les mêmes livrables."
+  ],
+  [
+   "ul",
+   [
+    "Le nombre de pages ou d'écrans de l'échantillon, et surtout le nombre de gabarits différents qu'il contient ;",
+    "la complexité des parcours : un tunnel d'achat, un simulateur ou un formulaire en plusieurs étapes demande beaucoup plus de tests qu'une page d'article ;",
+    "le nombre de plateformes : un même service sur le web, sur iOS et sur Android représente trois évaluations ;",
+    "le référentiel et le format de restitution attendus (RGAA avec grille officielle, RAWeb, WCAG et EN 301 549, éventuellement plusieurs à la fois pour un groupe multi-pays) ;",
+    "le volume de documents PDF ou bureautiques à évaluer ;",
+    "les langues de l'audit et du rapport ;",
+    "les prestations associées : tests utilisateurs, accompagnement des équipes pendant les corrections, contre-audit de vérification, rédaction de la déclaration ;",
+    "les contraintes de calendrier, par exemple un audit à livrer avant une mise en ligne ou une échéance de contrôle."
+   ]
+  ],
+  [
+   "p",
+   "Côté délais, l'audit d'un site de complexité courante se compte en semaines plutôt qu'en mois : dans notre cabinet, le délai moyen d'un audit est de trois semaines. Les corrections prennent généralement plus de temps que l'audit, de quelques semaines pour des défauts concentrés dans quelques composants à plusieurs mois lorsque l'architecture front-end doit être reprise. Une refonte est le meilleur moment pour intégrer l'accessibilité : prise en compte dès les maquettes, elle coûte une fraction de ce que coûtent des corrections après la mise en ligne."
+  ],
+  [
+   "p",
+   "Prévoyez enfin que l'audit n'est qu'une ligne du budget. Les postes les plus lourds sont souvent les corrections, la mise en accessibilité des documents existants et la formation. Méfiez-vous d'une offre très basse qui se limite à un passage d'outil automatique : elle ne permet ni de calculer un taux de conformité opposable, ni de rédiger une déclaration fiable."
+  ],
+  [
+   "h2",
+   "documents-mobile-video",
+   "PDF, applications mobiles et vidéos : les angles morts de la conformité"
+  ],
+  [
+   "h3",
+   "Documents PDF et bureautiques"
+  ],
+  [
+   "p",
+   "Délibérations de conseil municipal, rapports annuels, formulaires à imprimer, avis d'imposition, conditions générales, factures : les documents téléchargeables sont souvent la partie la moins accessible d'un service. Un PDF issu d'un scan n'est qu'une image, illisible pour un lecteur d'écran. Un PDF exporté sans précaution peut contenir du texte mais aucune structure : pas de titres, un ordre de lecture aléatoire, des tableaux impossibles à parcourir, des champs de formulaire sans étiquette."
+  ],
+  [
+   "p",
+   "La bonne pratique consiste à publier l'information en HTML chaque fois que possible et à réserver le PDF aux documents qui doivent être imprimés ou signés. Lorsqu'un PDF est nécessaire, produisez-le depuis un document source correctement structuré (styles de titres, alternatives aux images, tableaux simples) puis vérifiez le balisage. Pour le secteur public, la directive de 2016 exclut les fichiers bureautiques publiés avant le 23 septembre 2018, sauf s'ils sont nécessaires à des démarches administratives en cours. Au Luxembourg, le rapport de contrôle 2022-2024 du SIP relève d'ailleurs que les PDF inaccessibles sont la justification de charge disproportionnée la plus souvent invoquée ; une dérogation ne dispense pas de proposer une alternative accessible sur demande."
+  ],
+  [
+   "h3",
+   "Applications mobiles"
+  ],
+  [
+   "p",
+   "Une application native iOS ou Android s'évalue sur appareil réel, avec VoiceOver et TalkBack, la taille de texte agrandie, l'affichage en mode paysage et, le cas échéant, un clavier externe. Les défauts typiques sont les icônes sans libellé, les gestes complexes sans alternative, l'orientation bloquée, les textes qui ne s'agrandissent pas avec les réglages du système et les vues web intégrées qui n'ont jamais été testées. Le RAAM au Luxembourg, le RGAA en France et les chapitres de la norme EN 301 549 consacrés aux logiciels fournissent la grille ; un [[svc:audit-raam|audit RAAM]] suit cette approche sur appareils réels."
+  ],
+  [
+   "h3",
+   "Vidéos, contenus audio et diffusion en direct"
+  ],
+  [
+   "p",
+   "Une vidéo accessible combine des sous-titres synchronisés et fidèles, une transcription, une audiodescription lorsque l'image porte une information qui n'est pas dite, et un lecteur dont les commandes sont utilisables au clavier et restituées par les lecteurs d'écran. Évitez la lecture automatique avec le son, qui couvre la voix du lecteur d'écran. Pour le secteur public, les médias temporels préenregistrés publiés avant le 23 septembre 2020 sont exclus du champ de la directive de 2016 ; les nouveaux contenus, eux, doivent être accessibles dès leur publication."
+  ],
+  [
+   "h2",
+   "erreurs-frequentes",
+   "Les erreurs fréquentes en accessibilité numérique"
+  ],
+  [
+   "p",
+   "Les mêmes erreurs reviennent d'une organisation à l'autre, quel que soit le secteur. Les connaître permet d'en éviter la plupart avant même le premier audit."
+  ],
+  [
+   "ul",
+   [
+    "Attendre la prochaine refonte pour agir, alors que de nombreuses corrections (contrastes, libellés, structure des titres, alternatives) peuvent être faites sur le site actuel.",
+    "Se fier au seul score d'un outil automatique et croire qu'une page « sans erreur détectée » est conforme.",
+    "Publier une déclaration d'accessibilité sans audit réel, ou ne jamais la mettre à jour après les évolutions du site.",
+    "Corriger les pages une à une au lieu de corriger les composants et les gabarits communs.",
+    "Oublier les composants tiers : module de paiement, prise de rendez-vous, outil de recrutement, lecteur vidéo, cartes, messagerie instantanée.",
+    "Ajouter des attributs ARIA partout « pour bien faire » : un ARIA mal employé dégrade souvent l'expérience au lieu de l'améliorer, alors que le HTML natif suffit dans la majorité des cas.",
+    "Placer des captchas visuels ou des délais de session courts sans alternative ni possibilité de prolongation.",
+    "Négliger les documents PDF et les courriels transactionnels, qui font pourtant partie du parcours.",
+    "Ne pas intégrer d'exigences d'accessibilité dans les cahiers des charges, puis découvrir les défauts à la réception du projet.",
+    "Confier le sujet à une seule personne sans soutien de la direction ni budget de correction."
+   ]
+  ],
+  [
+   "h2",
+   "benefices",
+   "Les bénéfices de l'accessibilité numérique au-delà de la conformité"
+  ],
+  [
+   "p",
+   "Le premier bénéfice est l'audience. Avec près d'un quart des adultes de l'Union déclarant une forme de handicap et près d'une personne sur deux parmi les 65 ans et plus, selon les chiffres d'Eurostat cités plus haut, un parcours inaccessible écarte une partie importante de vos usagers ou de vos clients. Pour un service public, c'est une rupture d'égalité ; pour un site marchand, ce sont des paniers abandonnés au moment du paiement."
+  ],
+  [
+   "p",
+   "Le deuxième bénéfice est la qualité. Un code sémantique, des composants documentés et des contenus structurés sont plus faciles à maintenir, à faire évoluer et à tester. Les mêmes efforts améliorent l'usage sur mobile, en situation de mobilité ou avec une connexion lente, et profitent à tous les visiteurs : des libellés clairs réduisent les erreurs de saisie, des messages d'erreur explicites réduisent les appels au service client."
+  ],
+  [
+   "p",
+   "Le troisième bénéfice tient à la visibilité et aux marchés. Une structure de titres cohérente, des textes alternatifs et des transcriptions rendent vos contenus plus lisibles pour les moteurs de recherche comme pour les humains, même si l'accessibilité n'est pas un critère de classement en tant que tel. Les acheteurs publics intègrent de plus en plus l'accessibilité dans leurs cahiers des charges, et les grandes entreprises la demandent à leurs fournisseurs : être en mesure de produire une déclaration fondée sur un audit devient un argument commercial."
+  ],
+  [
+   "p",
+   "Le dernier bénéfice est interne. Vos intranets, logiciels métiers et outils RH sont aussi des services numériques. Les rendre accessibles conditionne le recrutement et le maintien en emploi de collaborateurs en situation de handicap, et facilite le quotidien de ceux dont la vue, l'audition ou la mobilité évoluent au fil de leur carrière."
+  ],
+  [
+   "h2",
+   "par-ou-commencer",
+   "Par où commencer : votre plan des 90 premiers jours"
+  ],
+  [
+   "p",
+   "Si vous partez de zéro, voici un calendrier réaliste pour engager la démarche d'accessibilité numérique sans attendre une refonte. Il convient aussi bien à une collectivité qu'à une entreprise visée par l'European Accessibility Act ; adaptez simplement le référentiel. Pour les spécificités de votre secteur, voyez nos pages [[sector:public|secteur public]], [[sector:grands-comptes|grands comptes]] et [[sector:pme|PME et ETI]]."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Semaines 1 et 2 : qualifier vos obligations.",
+     "Listez vos services numériques, identifiez les textes applicables pays par pays et désignez un référent accessibilité avec un sponsor à la direction. Vérifiez si vous publiez déjà une déclaration et si elle repose sur un audit."
+    ],
+    [
+     "Semaines 3 à 6 : auditer ce qui compte le plus.",
+     "Faites auditer en priorité le service qui concentre les démarches ou le chiffre d'affaires, sur un échantillon qui inclut les parcours complets (connexion, formulaire, paiement, confirmation). Faites évaluer en parallèle quelques documents types et, si vous en avez une, votre application mobile."
+    ],
+    [
+     "Semaines 5 à 8 : publier une déclaration honnête.",
+     "Sur la base de l'audit, publiez ou mettez à jour la déclaration d'accessibilité et, en France, la mention de conformité, avec un contact pour signaler les difficultés. Mieux vaut une conformité partielle déclarée qu'une conformité totale affichée sans preuve."
+    ],
+    [
+     "Semaines 6 à 10 : corriger les composants à fort impact.",
+     "Traitez d'abord les défauts bloquants sur les parcours essentiels et ceux qui se répètent dans les composants communs : navigation, formulaires, boutons, fenêtres modales, contrastes."
+    ],
+    [
+     "Semaines 8 à 12 : former et outiller les équipes.",
+     "Formez développeurs, designers et rédacteurs, ajoutez des critères d'accessibilité à vos cahiers des charges et à votre recette, et prévoyez un contrôle avant chaque mise en production."
+    ],
+    [
+     "Au-delà de 90 jours : tenir le calendrier.",
+     "Inscrivez dans votre plan d'action les échéances qui arrivent : publication du RGAA 5 prévue fin 2026, citation attendue de la nouvelle version de la norme EN 301 549 au Journal officiel de l'Union, fin des mesures transitoires de l'European Accessibility Act pour les contrats de services le 28 juin 2030. Programmez un nouvel audit après chaque évolution majeure et au moins une fois par cycle de votre plan pluriannuel."
+    ]
+   ]
+  ],
+  [
+   "note",
+   "Le premier pas",
+   "Un audit sur vos parcours essentiels suffit pour publier une déclaration fiable, prioriser les corrections et chiffrer la suite. C'est la base de toute démarche d'accessibilité numérique, quel que soit votre pays ou votre secteur."
+  ]
+ ],
+ "faq": [
+  [
+   "L'accessibilité numérique est-elle obligatoire pour toutes les entreprises ?",
+   "Non, mais le champ est large. Les organismes publics sont concernés dans les quatre pays. Dans l'Union européenne, l'European Accessibility Act vise depuis le 28 juin 2025 les entreprises qui proposent aux consommateurs certains produits et services, comme le commerce en ligne, la banque, les transports ou les communications électroniques. En France, les entreprises dont le chiffre d'affaires en France dépasse 250 millions d'euros sont en outre soumises à l'article 47 de la loi de 2005. Les microentreprises de services bénéficient d'un régime allégé, qui varie selon les pays."
+  ],
+  [
+   "Le RGAA, c'est quoi exactement ?",
+   "Le RGAA est le Référentiel général d'amélioration de l'accessibilité, publié par l'État français. Il traduit les WCAG en 106 critères vérifiables, chacun accompagné de tests, et fixe la méthode pour calculer un taux de conformité et rédiger la déclaration d'accessibilité. La version en vigueur est la 4.1.2 ; une version 5 est annoncée pour fin 2026. Le RGAA s'applique aux organismes soumis à l'article 47 de la loi de 2005 et sert souvent de grille pratique au-delà de ce cercle."
+  ],
+  [
+   "Un outil de test automatique suffit-il à vérifier l'accessibilité d'un site ?",
+   "Non. Les outils automatiques sont utiles pour repérer rapidement certains défauts, comme une image sans attribut alt, un contraste insuffisant ou un champ sans étiquette. Mais ils ne peuvent pas juger de la pertinence d'une alternative, de la logique de l'ordre de tabulation ou de la clarté d'un message d'erreur. Un audit de conformité exige une inspection manuelle et des tests avec les technologies d'assistance."
+  ],
+  [
+   "Faut-il refaire entièrement son site pour le rendre accessible ?",
+   "Rarement. La plupart des défauts se corrigent dans les composants, les gabarits et les contenus existants : contrastes, libellés des boutons, structure des titres, alternatives textuelles, gestion du focus. Une refonte n'est justifiée que si l'architecture technique empêche toute correction durable ou si elle est déjà prévue pour d'autres raisons. Dans ce cas, intégrez l'accessibilité dès le cahier des charges et les maquettes."
+  ],
+  [
+   "Quelle différence entre accessibilité numérique et ergonomie ?",
+   "L'ergonomie cherche à rendre un service simple et efficace pour la majorité de ses utilisateurs. L'accessibilité numérique garantit qu'il reste utilisable par les personnes en situation de handicap, quels que soient leurs outils. Les deux démarches se renforcent mais ne se confondent pas : un parcours très fluide à la souris peut être impraticable au clavier, et un site conforme peut rester compliqué à utiliser. Les tests utilisateurs permettent de traiter les deux à la fois."
+  ],
+  [
+   "Un site accessible est-il mieux référencé sur Google ?",
+   "L'accessibilité n'est pas un critère de classement en tant que tel, mais de nombreuses bonnes pratiques profitent aussi au référencement naturel : titres structurés, textes alternatifs, liens explicites, transcriptions des vidéos, pages rapides et utilisables sur mobile. Un contenu bien structuré pour un lecteur d'écran l'est aussi pour un moteur de recherche. L'objectif reste toutefois de servir les utilisateurs, pas de gagner des positions."
+  ],
+  [
+   "Qui peut réaliser un audit d'accessibilité numérique ?",
+   "La valeur d'un audit tient d'abord à la méthode et à l'expérience des auditeurs. Choisissez des auditeurs qui maîtrisent le référentiel applicable, testent avec de vraies technologies d'assistance et fournissent une grille détaillée exploitable par vos équipes. Méfiez-vous des démarchages qui se réclament d'une autorité : l'Arcom indique qu'elle ne délègue sa mission de contrôle à aucun tiers. Une organisation peut aussi former un auditeur interne, à condition de garantir son indépendance vis-à-vis des équipes auditées."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Où en est votre service numérique ?",
+ "cta_text": "Un audit de conformité vous donne un état précis, critère par critère, et un plan d'action priorisé. Décrivez-nous votre périmètre : nous vous proposons le référentiel et la méthode adaptés.",
+ "related": [
+  "eaa",
+  "normes",
+  "france"
+ ],
+ "cluster": "pilier"
 }

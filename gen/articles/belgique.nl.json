@@ -1,167 +1,669 @@
 {
-  "slug": "digitale-toegankelijkheid-belgie",
-  "h1": "Digitale toegankelijkheid in België: welke regel en welke toezichthouder voor uw website",
-  "crumb": "Digitale toegankelijkheid in België",
-  "meta_title": "Digitale toegankelijkheid België: wetgeving, controle en EAA",
-  "meta_desc": "Bestuursdecreet, Brusselse ordonnantie, wet van 19 juli 2018 en EAA: zie welke tekst en welke toezichthouder voor uw website in België gelden.",
-  "card_desc": "Vlaanderen, Brussel, federaal, Wallonië en EAA: de tekst, de toezichthouder en de plichten voor uw diensten in België.",
-  "cat": "reglementation",
-  "where": "België",
-  "cover": "BE",
-  "cover_note": ["Bestuursdecreet en wet van 19 juli 2018", "EAA van kracht sinds 28 juni 2025"],
-  "date": "2026-10-27",
-  "lead": "Digitale toegankelijkheid in België steunt niet op één enkele wet: Vlaanderen, het Brussels Hoofdstedelijk Gewest, de federale staat en de andere Gewesten en Gemeenschappen hebben elk de Europese richtlijn omgezet voor hun eigen overheidsinstanties, en elk heeft een eigen controleorgaan aangewezen. Sinds 28 juni 2025 komt daar voor een deel van de privésector de European Accessibility Act bij, opnieuw via meerdere teksten. Deze gids zet per entiteit, te beginnen met Vlaanderen en Brussel, op een rij welke tekst op uw websites en apps van toepassing is, wie controleert, wat uw toegankelijkheidsverklaring moet bevatten en waar u het best begint.",
-  "body": [
-    ["h2", "een-verplichting-meerdere-wetgevers", "Digitale toegankelijkheid in België: één verplichting, meerdere wetgevers"],
-    ["p", "Richtlijn (EU) 2016/2102 van 26 oktober 2016 verplicht overheidsinstanties om hun websites en mobiele applicaties toegankelijk te maken voor personen met een handicap. In een federale staat als België heeft elk beleidsniveau die richtlijn omgezet voor de instanties die onder zijn bevoegdheid vallen: Vlaanderen voor de Vlaamse overheid, de provincies, de steden en de gemeenten, het Brussels Hoofdstedelijk Gewest voor zijn gewestelijke instellingen en de negentien gemeenten, de federale staat voor de federale overheidsdiensten, het Waals Gewest voor zijn gemeenten en intercommunales, enzovoort. De FOD Beleid en Ondersteuning (BOSA) houdt de officiële lijst van die teksten en van de controleorganen bij op de pagina [[https://accessibility.belgium.be/nl/missies-en-klachten|Missies en klachten van het Belgian Web Accessibility Office]]."],
-    ["p", "Voor een overheidsinstantie is de eerste vraag dus niet technisch maar institutioneel: onder welke entiteit valt u? Niet de taal van uw website en niet het adres van uw hoofdzetel geven de doorslag, wel de overheid waarvan u afhangt. Een Brusselse gemeente valt onder de Brusselse ordonnantie, een federale overheidsdienst met kantoren in Antwerpen valt onder de federale wet, en een instelling van de Vlaamse Gemeenschap die in Brussel gevestigd is, valt in principe onder het Vlaamse Bestuursdecreet."],
-    ["p", "Het goede nieuws is dat al die regels dezelfde richtlijn omzetten. De inhoudelijke eisen zijn identiek van de ene entiteit tot de andere: dezelfde vier principes (waarneembaar, bedienbaar, begrijpelijk, robuust), dezelfde technische referentienorm, hetzelfde Europese model van toegankelijkheidsverklaring en dezelfde termijnen. Wat verschilt, is het orgaan dat u controleert, de weg die een klacht aflegt en de ombudsdienst die kan worden ingeschakeld."],
-    ["ul", ["Uw controleorgaan hangt af van de entiteit waaronder uw organisatie valt, niet van uw leverancier of uw hostingbedrijf;", "eenzelfde webbureau kan websites beheren die onder drie verschillende entiteiten vallen, met drie verschillende controleorganen;", "hybride organisaties (een vzw die door meerdere overheden wordt gefinancierd, een intercommunale, een para-regionale instelling) moeten nagaan onder welke entiteit ze vallen voordat ze hun toegankelijkheidsverklaring opstellen;", "de privésector valt niet onder deze teksten, maar wel, sinds 28 juni 2025, onder de wetten die de European Accessibility Act omzetten voor bepaalde producten en diensten."]],
-    ["note", "Om te onthouden", "In België gaat de vraag “moet ik mijn website toegankelijk maken?” altijd samen met de vraag “op grond van welke tekst?”. De inhoud van de verplichtingen is gemeenschappelijk; de controle en de klachtenprocedure verschillen naargelang de entiteit waaronder uw organisatie valt."],
-
-    ["h2", "vlaanderen-bestuursdecreet-inter", "Digitale toegankelijkheid in Vlaanderen: het Bestuursdecreet en Inter"],
-    ["h3", "Het Bestuursdecreet van 7 december 2018"],
-    ["p", "Vlaanderen heeft de regels van de richtlijn opgenomen in het Bestuursdecreet van 7 december 2018, in een afdeling over de toegankelijkheid van websites en mobiele applicaties. Het decreet geldt voor de Vlaamse overheid, de provincies, de steden en de gemeenten, en voor organisaties die nauw met de overheid verbonden zijn: organisaties die voor meer dan de helft door een Vlaamse overheid worden gefinancierd, of waarvan het bestuur of de beslissingen voor meer dan de helft door een Vlaamse overheid worden gecontroleerd."],
-    ["p", "Vzw’s en stichtingen vallen er alleen onder als ze essentiële diensten aanbieden, zoals sociale dienstverlening, zorg of onderwijs, of diensten voor personen met een handicap. Voor scholen, universiteiten en centra voor volwassenenonderwijs moeten alleen de wezenlijke online administratieve functies toegankelijk zijn, niet de hele website: de startpagina en toegangspagina’s, het navigatiemenu, de contactgegevens, het onderwijsaanbod, het lessenpakket of curriculum, het schoolreglement, de inschrijvingsinformatie, de contactgegevens van het CLB en de toegankelijkheidsverklaring. Inter verwijst voor het onderwijs ook naar een omzendbrief over digitale toegankelijkheid voor onderwijsinstellingen (NO/2025/02)."],
-    ["h3", "Inter als ondersteunings- en controleorgaan (OCODT)"],
-    ["p", "Het toezicht is toevertrouwd aan Inter, het agentschap Toegankelijk Vlaanderen, dat sinds 2025 de rol van ondersteunings- en controleorgaan digitale toegankelijkheid voor Vlaanderen (OCODT) vervult. Volgens de [[https://www.vlaanderen.be/inter/overheden-en-professionelen/werken-aan-digitale-toegankelijkheid/ondersteunings-en-controleorgaan-digitale-toegankelijkheid|officiële pagina van het ondersteunings- en controleorgaan]] auditeert Inter jaarlijks meer dan 200 websites en apps, met advies van NOOZO, de Vlaamse adviesraad van personen met een handicap, over de selectie. Een kleiner aantal websites krijgt een diepgaande controle door externe experts, die Inter opvolgt."],
-    ["p", "Inter rapporteert elk jaar aan de FOD BOSA, die de Belgische rapportering aan de Europese Unie coördineert. Inter benadrukt ook dat het niet als taak heeft te controleren of websites aan de European Accessibility Act voldoen: zijn rol betreft de websites en apps van overheden en van organisaties waarbij de overheid betrokken is."],
-    ["h3", "Wat dit betekent voor een Vlaamse gemeente, school of vzw"],
-    ["p", "Voor een stad of gemeente is het toepassingsgebied ruim. Het e-loket voor een uittreksel uit het bevolkingsregister, het formulier voor een parkeerkaart, de pdf van het belastingreglement, de opname van de gemeenteraad en de app om sluikstort te melden vallen er allemaal onder. Inter stelt via zijn toolbox voor toegankelijke steden en gemeenten praktische hulpmiddelen ter beschikking, waaronder informatie over de toegankelijkheidsverklaring en over het aanpakken van toegankelijke webinhoud."],
-    ["p", "Voor een school ligt de focus anders: een inschrijvingsmodule die niet met het toetsenbord te bedienen is, of een schoolreglement dat alleen als ingescande pdf beschikbaar is, raakt precies de functies die het decreet viseert. Een vzw uit de zorg- of welzijnssector die voor meer dan de helft door de Vlaamse overheid wordt gesubsidieerd, doet er goed aan haar situatie expliciet te documenteren: het financieringsaandeel en de aard van de dienstverlening bepalen of ze onder het decreet valt."],
-
-    ["h2", "brussel-gewest-cocof-ggc", "Digitale toegankelijkheid in Brussel: Gewest, Cocof en GGC"],
-    ["p", "Het Brussels Hoofdstedelijk Gewest was de eerste deelstaat die wetgeving aannam, met de ordonnantie van 4 oktober 2018 inzake de toegankelijkheid van de websites en mobiele applicaties van de gewestelijke overheidsinstanties en de gemeenten. Ze geldt voor de gewestelijke besturen en overheidsinstellingen en voor de negentien gemeenten. De officiële lijst van de FOD BOSA wijst equal.brussels aan als controleorgaan voor het Gewest. De toegankelijkheidsverklaringen van de gewestelijke instellingen verwijzen voor klachten naar de Brusselse ombudsdienst."],
-    ["p", "Het Brusselse landschap wordt ingewikkelder door de gemeenschapscommissies. De Franse Gemeenschapscommissie (Cocof) heeft een eigen decreet van 9 mei 2019 aangenomen, houdende de toegankelijkheid van de websites en mobiele applicaties van de openbare instellingen van de Cocof. Een ontwerp van decreet dat in september 2022 werd ingediend bij het Parlement francophone bruxellois, wilde dat decreet aanvullen met het toezicht dat artikel 8 van de richtlijn vereist: de aanwijzing van het controleorgaan door het College en een jaarverslag van dat orgaan. De lijst van de FOD BOSA vermeldt tot op vandaag geen eigen controleorgaan voor de Cocof."],
-    ["p", "Voor de Gemeenschappelijke Gemeenschapscommissie (GGC), die onder meer bevoegd is voor de bicommunautaire instellingen voor bijstand aan personen en gezondheidszorg, vermeldt de officiële lijst geen specifieke omzettingstekst. Valt uw organisatie onder de GGC, ga dan bij uw toezichthoudende overheid na welke tekst en welk toezicht van toepassing zijn, en baseer uw aanpak in afwachting op de norm EN 301 549 en het Europese model van toegankelijkheidsverklaring, die voor alle entiteiten gelden."],
-    ["p", "Een laatste Brusselse eigenheid: de instellingen van de Gemeenschappen die in Brussel gevestigd zijn, volgen hun Gemeenschap. Een Vlaamse instelling in Brussel, bijvoorbeeld een school of een cultuurcentrum van de Vlaamse Gemeenschap, valt in principe onder het Bestuursdecreet; een overheidsinstelling van de Federatie Wallonië-Brussel in Elsene valt onder het decreet van de Franse Gemeenschap van 3 mei 2019. Ook de Vlaamse Gemeenschapscommissie (VGC) wordt in de federale lijst niet afzonderlijk vermeld: organisaties die eronder vallen, controleren best bij hun toezichthoudende overheid welk kader en welk controleorgaan gelden."],
-
-    ["h2", "federale-wet-19-juli-2018", "De wet van 19 juli 2018: het federale kader voor webtoegankelijkheid"],
-    ["p", "Op federaal niveau werd de richtlijn omgezet door de wet van 19 juli 2018 inzake de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties. Ondanks haar algemene titel geldt ze alleen voor federale instanties: FOD’s, POD’s en andere overheidsinstellingen die van de federale staat afhangen. Gemeenten, provincies en de besturen van de Gewesten en Gemeenschappen vallen onder hun eigen teksten."],
-    ["p", "De wet neemt het tijdpad van de richtlijn over. Websites die na 23 september 2018 werden gepubliceerd, moesten toegankelijk zijn vanaf 23 september 2019, oudere websites vanaf 23 september 2020 en mobiele applicaties vanaf 23 juni 2021. Al die termijnen zijn verstreken: een federale website die vandaag niet toegankelijk is, is niet “te laat”, ze is in gebreke."],
-    ["p", "Twee koninklijke besluiten vullen de wet aan. Het koninklijk besluit van 5 september 2019 wijst het controleorgaan aan, de FOD BOSA, en regelt de controlemethode die de richtlijn voorschrijft. Een koninklijk besluit van 3 september 2019 regelt de klachtenprocedure. In de praktijk neemt een gebruiker die met zijn schermlezer een federaal formulier niet kan invullen eerst contact op met de beheerder van de website, daarna met de betrokken administratie via de klachtenpagina van belgium.be, en ten slotte met de federale Ombudsman als hij geen of een onbevredigend antwoord krijgt."],
-    ["h3", "Wat de wet concreet oplegt"],
-    ["ul", ["Websites en apps zo ontwerpen, ontwikkelen, onderhouden en bijwerken dat ze waarneembaar, bedienbaar, begrijpelijk en robuust zijn;", "voldoen aan de Europese geharmoniseerde norm, vandaag EN 301 549, waarvan de naleving een vermoeden van conformiteit oplevert;", "voor elke website en elke app een gedetailleerde toegankelijkheidsverklaring publiceren;", "een mechanisme aanbieden waarmee iedereen een toegankelijkheidsprobleem kan melden of informatie in een toegankelijke vorm kan vragen;", "elke afwijking op grond van een onevenredige last op een gedocumenteerde manier verantwoorden, door de kosten voor de organisatie af te wegen tegen het voordeel voor personen met een handicap."]],
-    ["h3", "Uitgesloten inhoud, en de grenzen ervan"],
-    ["p", "De Belgische teksten nemen de uitzonderingen van de richtlijn over, zoals je ze bijvoorbeeld terugvindt in artikel 3 van het Waalse decreet: kantoorbestanden die vóór 23 september 2018 zijn gepubliceerd, tenzij ze nodig zijn voor lopende administratieve procedures; vooraf opgenomen tijdgebonden media die vóór 23 september 2020 zijn gepubliceerd en live uitgezonden media; bepaalde kaarten en kaartdiensten; reproducties van erfgoedobjecten; archieven die na 23 september 2019 niet meer zijn bijgewerkt; inhoud van derden die de organisatie niet financiert, niet ontwikkelt en niet beheert. Extranetten en intranetten die vóór 23 september 2019 zijn gepubliceerd, vallen er ook buiten tot hun volgende grondige herziening."],
-    ["p", "Die uitzonderingen zijn enger dan men vaak denkt. Een pdf-aanvraagformulier voor een premie dat in 2017 werd gepubliceerd maar nog altijd wordt gebruikt om een dossier in te dienen, is niet uitgesloten, want het dient een lopende procedure. Evenmin is een module voor het maken van afspraken die door een softwareleverancier wordt geleverd, maar door de administratie is gekozen, betaald en ingesteld, “inhoud van derden”: de organisatie financiert en beheert ze."],
-
-    ["h2", "wallonie-federatie-duitstalige-gemeenschap", "Wallonië, de Federatie Wallonië-Brussel en de Duitstalige Gemeenschap"],
-    ["h3", "Waals Gewest: de decreten van 2 mei 2019"],
-    ["p", "Het Waals Gewest heeft de richtlijn omgezet met het [[https://wallex.wallonie.be/nl/contents/acts/19/19444.html|decreet van 2 mei 2019 betreffende de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties (Franstalige tekst op Wallex)]], bekendgemaakt in het Belgisch Staatsblad van 5 september 2019, met uitwerking op 23 september 2018. Een tweede decreet van dezelfde dag geldt onder meer voor de OCMW’s en de verenigingen die ze oprichten. Samen bestrijken ze het Gewest, de provincies, de gemeenten, de autonome regieën, de intercommunales, de projectverenigingen, de openbare huisvestingsmaatschappijen en de publiekrechtelijke rechtspersonen die van het Gewest afhangen."],
-    ["p", "Het Waalse decreet bevat twee nuttige preciseringen. Artikel 6 verplicht elke instantie om meldingen en verzoeken om toegankelijke informatie binnen dertig dagen na ontvangst te beantwoorden. Artikel 7 vereist een jaarlijkse bijwerking van de toegankelijkheidsverklaring, opgesteld volgens het Europese model. Het controleorgaan moet de Regering elk jaar een verslag voorleggen over de resultaten van de controles die het organiseert (artikel 10). Volgens de lijst van de FOD BOSA wordt die controle uitgevoerd door het Agence du Numérique. Voor Vlaamse organisaties met vestigingen of diensten in Wallonië is die termijn van dertig dagen een concreet referentiepunt, ook als ze zelf onder een ander kader vallen."],
-    ["h3", "Federatie Wallonië-Brussel: decreet van 3 mei 2019 en controle door ETNIC"],
-    ["p", "De Franse Gemeenschap heeft het decreet van 3 mei 2019 betreffende de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties aangenomen. De uitvoering ervan werd later geregeld door het [[https://gallilex.cfwb.be/sites/default/files/imports/50388_000.pdf|besluit van de Regering van de Franse Gemeenschap van 14 juli 2022 (Franstalige tekst)]], bekendgemaakt in het Belgisch Staatsblad van 3 augustus 2022. Dat besluit wijst ETNIC, het overheidsbedrijf voor digitale technologieën van de Franse Gemeenschap, aan als controleorgaan en legt het de monitoringmethode op die is vastgelegd in uitvoeringsbesluit (EU) 2018/1524."],
-    ["p", "Het besluit voorziet ook in opleidingen voor het personeel over toegankelijkheid, zowel voor ontwerp en gebruikerservaring als voor ontwikkeling, het maken van inhoud en projectbeheer. De klachtenprocedure verloopt in twee stappen: de gebruiker richt zich eerst tot de beheerder van de website of de app; krijgt hij binnen dertig dagen geen bevredigend antwoord, dan kan hij zich wenden tot de gemeenschappelijke ombudsdienst van de Franse Gemeenschap en het Waals Gewest."],
-    ["h3", "Duitstalige Gemeenschap: een ruimer decreet"],
-    ["p", "De Duitstalige Gemeenschap koos ervoor de richtlijn op te nemen in een ruimere tekst: het decreet van 15 oktober 2018 betreffende de niet-openbare en openbare elektronische communicatie van de overheden van het Duitse taalgebied. Artikel 24 vertrouwt het toezicht op de websites en apps toe aan de Regering, en de lijst van de FOD BOSA vermeldt het Ministerie van de Duitstalige Gemeenschap als controleorgaan. Artikel 23 verplicht de overheid om meldingen “op passende wijze en binnen een redelijke termijn” te beantwoorden, zonder een vast aantal dagen zoals in het Waalse decreet; artikel 27 breidt de bevoegdheid van de ombudsdienst van de Duitstalige Gemeenschap (Ombudsdienst der DG) uit tot klachten over die antwoorden en over de beoordeling van een onevenredige last. Voor de negen Duitstalige gemeenten en de instellingen van de Gemeenschap is de inhoudelijke verplichting dezelfde als elders, met één specifieke uitdaging: toegankelijke inhoud in het Duits produceren, terwijl veel hulpmiddelen en sjablonen in België eerst in het Nederlands en het Frans bestaan."],
-
-    ["h2", "overzichtstabel-belgie", "Overzichtstabel: entiteit, tekst, betrokken instanties, controle"],
-    ["p", "De onderstaande tabel geeft voor elke entiteit de omzettingstekst van richtlijn (EU) 2016/2102 en het controleorgaan weer, zoals ze voorkomen in de officiële lijst van de FOD BOSA en in de teksten zelf. Ze betreft alleen de publieke sector; de European Accessibility Act krijgt verderop een aparte tabel."],
-    ["table", {"caption": "Digitale toegankelijkheid van de publieke sector in België: wie past wat toe", "head": ["Entiteit", "Omzettingstekst", "Betrokken instanties", "Controle en klachten"], "rows": [
-      ["Vlaanderen", "Bestuursdecreet van 7 december 2018", "Vlaamse overheid, provincies, steden en gemeenten, organisaties die voor meer dan de helft gefinancierd of gecontroleerd worden, bepaalde vzw’s, scholen (wezenlijke functies)", "Inter (Toegankelijk Vlaanderen)"],
-      ["Brussels Hoofdstedelijk Gewest", "Ordonnantie van 4 oktober 2018", "Gewestelijke overheidsinstellingen en gemeenten", "equal.brussels; Brusselse ombudsdienst"],
-      ["Cocof", "Decreet van 9 mei 2019", "Openbare instellingen van de Cocof", "Orgaan aan te wijzen door het College volgens het ontwerp van 2022; geen orgaan vermeld in de federale lijst"],
-      ["GGC", "Geen eigen tekst in de officiële lijst", "Bicommunautaire instellingen", "Na te gaan bij de toezichthoudende overheid"],
-      ["Federale overheid", "Wet van 19 juli 2018; koninklijke besluiten van 3 september 2019 (klachten) en 5 september 2019 (controleorgaan)", "FOD’s, POD’s en federale overheidsinstellingen", "FOD BOSA; federale Ombudsman"],
-      ["Waals Gewest", "Decreten van 2 mei 2019 (Belgisch Staatsblad van 5 september 2019)", "Gewest, provincies, gemeenten, OCMW’s, intercommunales, gewestelijke en lokale overheidsinstellingen", "Agence du Numérique; ombudsdienst van Wallonië en de Federatie Wallonië-Brussel"],
-      ["Federatie Wallonië-Brussel", "Decreet van 3 mei 2019; besluit van de Regering van 14 juli 2022", "Overheidsinstellingen van de Franse Gemeenschap", "ETNIC; gemeenschappelijke ombudsdienst na dertig dagen zonder bevredigend antwoord"],
-      ["Duitstalige Gemeenschap", "Decreet van 15 oktober 2018", "Overheden van het Duitse taalgebied", "Ministerie van de Duitstalige Gemeenschap (toezicht toevertrouwd aan de Regering, artikel 24); ombudsdienst van de Duitstalige Gemeenschap (artikel 27)"]
-    ]}],
-    ["p", "Voor een overzicht van de Belgische verplichtingen en van onze diensten ter plaatse kunt u terecht op onze pagina [[country:belgique|digitale toegankelijkheid in België]]. Valt uw organisatie onder meerdere entiteiten, bijvoorbeeld een intercommunale waarvan sommige diensten door het Gewest en andere door de Gemeenschap worden gefinancierd, documenteer dan uw analyse in de toegankelijkheidsverklaring zelf: dat is de eerste vraag die een controleorgaan zal stellen."],
-
-    ["h2", "norm-en-301-549-wcag", "EN 301 549 en WCAG: de norm voor digitale toegankelijkheid in België"],
-    ["p", "België heeft geen nationaal referentiekader zoals de Franse RGAA of de Luxemburgse RAWeb. Alle entiteiten steunen rechtstreeks op de Europese norm EN 301 549. De FOD BOSA vermeldt in zijn [[https://accessibility.belgium.be/nl/faq/wat-een-toegankelijkheidsverklaring|veelgestelde vraag over de toegankelijkheidsverklaring]] dat de na te leven criteria overeenkomen met versie 3.2.1 (2021) van die norm. Voor webinhoud neemt die versie de criteria van de WCAG 2.1 op niveau A en AA over, samen 50 succescriteria onder de vier principes; ook de Vlaamse pagina’s herhalen dat niveau AA van de WCAG 2.1 het wettelijke minimum is voor overheidswebsites."],
-    ["p", "De norm EN 301 549 gaat verder dan het web. Ze bevat eisen voor niet-webdocumenten, zoals pdf’s en kantoorbestanden, voor software en mobiele applicaties, en voor de hardwarefuncties van apparaten. Daardoor is ze bruikbaar voor zowel de publieke sector als voor ondernemingen die onder de European Accessibility Act vallen. De opbouw van de hoofdstukken en hun samenhang met de WCAG worden toegelicht in ons artikel over de [[article:normes|normen voor digitale toegankelijkheid]]."],
-    ["h3", "Versie 4.1.1 en de overstap naar WCAG 2.2"],
-    ["p", "Een nieuwe versie, EN 301 549 V4.1.1, werd begin september 2026 door de Europese normalisatie-instellingen gepubliceerd. Ze stemt de eisen voor web, documenten en software af op WCAG 2.2 niveau AA. Zolang ze niet in het Publicatieblad van de Europese Unie is vermeld, blijft versie 3.2.1 de basis voor het vermoeden van conformiteit. Concreet blijft een audit die vandaag op basis van WCAG 2.1 AA wordt uitgevoerd de referentie, maar het is verstandig er nu al de criteria aan toe te voegen die WCAG 2.2 invoert: minimale grootte van aanraakdoelen, toetsenbordfocus die niet door een vaste banner mag worden verborgen, een alternatief voor sleepbewegingen, consistent aangeboden hulp, geen overbodige herhaalde invoer en authenticatie zonder cognitieve test."],
-    ["p", "Dat laatste punt toont goed wat er op het spel staat. Een captcha die vraagt om vervormde tekens over te typen, op de aanmeldpagina van een e-loket, blokkeert onder WCAG 2.1 al veel gebruikers. Met WCAG 2.2 wordt zo’n aanpak door de eis van toegankelijke authenticatie nog moeilijker te verdedigen: voorzie bij de volgende vernieuwing liever een aanmelding met elektronische identiteit, met een aanmeldlink per e-mail, of een aanmelding die compatibel is met wachtwoordbeheerders."],
-    ["h3", "Is een RGAA-audit geldig in België?"],
-    ["p", "Ook de RGAA steunt op de WCAG, en een goed uitgevoerde RGAA-audit dekt een groot deel van de webeisen van EN 301 549. Maar de Belgische juridische referentie blijft de Europese norm: uw verklaring moet een nalevingsniveau ten opzichte van EN 301 549 vermelden, geen RGAA-percentage. Voor een organisatie die in Frankrijk en in België actief is, bestaat de voordeligste oplossing er vaak in om hetzelfde staal van pagina’s één keer te laten auditeren en de resultaten in beide rasters te rapporteren."],
-
-    ["h2", "toegankelijkheidsverklaring-belgie", "De toegankelijkheidsverklaring in België: inhoud, plaats en valkuilen"],
-    ["p", "Alle entiteiten leggen een toegankelijkheidsverklaring op volgens het model van uitvoeringsbesluit (EU) 2018/1523. De FOD BOSA licht de verwachte inhoud toe en biedt een online assistent die het opstellen stap voor stap begeleidt en een HTML-bestand oplevert; in Vlaanderen stelt Inter daarnaast informatie over de toegankelijkheidsverklaring ter beschikking in zijn toolbox voor lokale besturen. Ons artikel over de [[article:declaration|toegankelijkheidsverklaring]] beschrijft de Europese logica; dit is wat in België wordt verwacht."],
-    ["ul", ["Het toepassingsgebied: de betrokken website of app, voor een app inclusief alle platformen;", "het niveau van naleving van de norm EN 301 549 versie 3.2.1;", "de evaluatiemethode: vereenvoudigde audit door het controleorgaan of grondige audit;", "een link naar een formeel auditrapport;", "de lijst van niet-conforme pagina’s of onderdelen, wat er wordt gedaan om ze te verbeteren, de geplande termijn en het alternatief dat in afwachting wordt aangeboden;", "de datum waarop de verklaring is opgesteld en die van de laatste bijwerking;", "de contactgegevens van de persoon die verantwoordelijk is voor toegankelijkheid en bij wie men een probleem kan melden;", "de klachtenprocedure en het bevoegde orgaan, naargelang de entiteit waaronder de organisatie valt."]],
-    ["h3", "Waar u ze publiceert"],
-    ["p", "De FOD BOSA raadt aan de verklaring als webpagina te publiceren en niet als downloadbaar document, en de link op een logische plaats te zetten, doorgaans in de footer. Voor een mobiele app moet de verklaring in de app zelf staan, op de bijbehorende website als die bestaat, en op de downloadplatformen. Een organisatie met een website en een app moet dus twee afzonderlijke verklaringen publiceren. In Wallonië legt het decreet bovendien een jaarlijkse bijwerking op."],
-    ["h3", "De fouten die we het vaakst tegenkomen"],
-    ["ul", ["Een verklaring gepubliceerd als niet-getagde pdf, die zelf ontoegankelijk is;", "de vermelding “conform” zonder audit die ze onderbouwt, of een verwijzing naar een audit van jaren geleden, nog van vóór de vernieuwing van de website;", "één verklaring voor een website en een app, terwijl er twee nodig zijn;", "een algemeen contactadres dat nooit antwoordt, of een contactformulier dat zelf achter een visuele captcha zit;", "slechts één taalversie, terwijl de website in het Nederlands, het Frans en het Duits bestaat;", "een verkeerd klachtenorgaan, bijvoorbeeld de federale Ombudsman op de website van een Vlaamse gemeente of een Waalse gemeente."]],
-
-    ["h2", "controle-klachten-rapportering", "Controles, klachten en rapportering aan de Europese Commissie"],
-    ["p", "De Belgische controle steunt op de Europese methode van uitvoeringsbesluit (EU) 2018/1524, die twee niveaus onderscheidt. De vereenvoudigde audit betreft een beperkt aantal criteria en slechts een deel van elke website; hij dient om de algemene toestand van het geheel te meten. De diepgaande audit analyseert een ruimer staal grondig en geeft een nauwkeurig beeld van wat moet worden verbeterd."],
-    ["p", "In Vlaanderen auditeert Inter jaarlijks meer dan 200 websites en apps. Op federaal niveau zijn de cijfers openbaar. Volgens de [[https://accessibility.belgium.be/nl/nieuws/publicatie-van-de-toegankelijkheidsaudits-voor-2025|publicatie van de toegankelijkheidsaudits voor 2025 door de FOD BOSA]] kregen 259 websites van federale overheidsdiensten een vereenvoudigde audit, werden er negen aan een diepgaande audit onderworpen, en verklaren 246 websites zich gedeeltelijk conform, bijna 95 % van het totaal. Voor 2026 kondigt de lijst die in december 2025 werd gepubliceerd 275 vereenvoudigde en 12 diepgaande audits aan, gekozen om de verschillende federale bevoegdheidsdomeinen, de websites voor personen met een handicap en de meest bezochte websites te dekken."],
-    ["p", "Eén detail verandert de zaak voor websitebeheerders: de rapporten van de vereenvoudigde audits van de FOD BOSA worden online gepubliceerd en zijn gelinkt vanuit de toegankelijkheidsverklaringen. Een fout in uw contactformulier of op uw startpagina wordt dus niet alleen aan uw team gemeld; elke burger, journalist of vereniging kan ze raadplegen."],
-    ["h3", "Het verloop van een klacht"],
-    ["ol", [["Contact opnemen met de verantwoordelijke van de website.", "Diens gegevens moeten in de toegankelijkheidsverklaring staan. In dit stadium wordt het merendeel van de verzoeken opgelost, bijvoorbeeld door een document in een toegankelijke vorm te bezorgen."], ["Zich richten tot de betrokken administratie.", "Op federaal niveau via de klachtenpagina van belgium.be; elders via de klachtendienst van de instantie."], ["De bevoegde ombudsdienst inschakelen.", "De federale Ombudsman, de Brusselse ombudsdienst, de ombudsdienst van Wallonië en de Federatie Wallonië-Brussel of de ombudsdienst van de Duitstalige Gemeenschap, naargelang de entiteit."], ["Het ontbreken van een verklaring melden.", "Heeft een niet-federale overheidswebsite geen toegankelijkheidsverklaring, dan bezorgt het toegankelijkheidsteam van de FOD BOSA de melding aan het bevoegde controleorgaan, bijvoorbeeld Inter voor een Vlaamse gemeente."]]],
-    ["h3", "De Belgische rapporten aan de Europese Unie"],
-    ["p", "De richtlijn verplicht elke lidstaat om bij de Commissie een monitoringverslag in te dienen, eerst op 23 december 2021 en daarna om de drie jaar. België dient één verslag in, gecoördineerd door de FOD BOSA op basis van de bijdragen van de controleorganen van elke entiteit, die samenkomen in een interfederale stuurgroep. De Commissie publiceert die nationale verslagen op haar pagina met de [[https://digital-strategy.ec.europa.eu/en/library/web-accessibility-directive-monitoring-reports|monitoringverslagen over de webtoegankelijkheidsrichtlijn (Engelstalige pagina)]], waar het Belgische verslag in het Nederlands en het Frans staat; de volgende reeks werd verwacht voor december 2024."],
-    ["p", "De voor dit artikel geraadpleegde teksten organiseren vooral controle, openbaarheid van de resultaten en klachtenprocedures, eerder dan een boeteregeling zoals die van de European Accessibility Act. Voor een overheidsinstantie is het belangrijkste risico dus reputatieschade en geschillen: een ongunstige openbare audit, herhaalde klachten, een tussenkomst van de ombudsdienst, en de moeilijkheid om ontoegankelijke diensten te verantwoorden tegenover gebruikers die geen alternatief hebben."],
-
-    ["h2", "eaa-belgie", "EAA in België: een omzetting verspreid over meerdere teksten"],
-    ["p", "Richtlijn (EU) 2019/882 van 17 april 2019, de European Accessibility Act, legt toegankelijkheidseisen op voor een reeks producten en diensten voor consumenten, die van toepassing zijn sinds 28 juni 2025. Net als voor de publieke sector heeft België ze in verschillende delen omgezet, waarbij elke overheid optreedt binnen haar bevoegdheidsdomein. Ons referentieartikel over de [[article:eaa|European Accessibility Act]] beschrijft het volledige toepassingsgebied van de richtlijn; hieronder leest u hoe ze in het Belgische recht is vertaald."],
-    ["h3", "De wet van 5 november 2023: bankdiensten en e-handel"],
-    ["p", "De centrale tekst voor ondernemingen is de wet van 5 november 2023 tot wijziging van diverse boeken van het Wetboek van economisch recht en van de wet van 2 augustus 2002 betreffende het toezicht op de financiële sector en de financiële diensten, wat bepaalde diensten betreft. Ze voegt in boek VIII van het Wetboek van economisch recht een nieuwe titel 5 in, “Toegankelijkheidsvoorschriften voor diensten”, die twee categorieën diensten voor consumenten viseert: bankdiensten voor consumenten en e-handelsdiensten. Volgens de [[https://www.dekamer.be/FLWB/PDF/55/3433/55K3433003.pdf|door de Kamercommissie aangenomen tekst (tweetalig document)]] treedt de wet in werking op 28 juni 2025."],
-    ["p", "Dienstverleners moeten hun diensten ontwerpen en leveren volgens de eisen van bijlage 1 bij boek VIII, ook wanneer ze de dienst geheel of gedeeltelijk uitbesteden: een beroep doen op een e-commerceplatform of een betaaldienstaanbieder ontslaat hen niet van hun verantwoordelijkheid. Ze stellen de informatie op die bijlage 2 voorschrijft, stellen ze schriftelijk en mondeling ter beschikking van het publiek, en bewaren ze zolang de dienst wordt aangeboden. Voor bankdiensten mag de informatie niet moeilijker zijn dan niveau B2 (hoger middenniveau) van het Gemeenschappelijk Europees Referentiekader voor Talen van de Raad van Europa. Is een dienst niet conform, dan moet de dienstverlener de controleambtenaren daar onmiddellijk van op de hoogte brengen, met een beschrijving van de non-conformiteit en van de genomen corrigerende maatregelen."],
-    ["p", "Het toezicht is toevertrouwd aan de Algemene Directie Economische Inspectie van de FOD Economie. De FSMA krijgt geen controletaak: de wet wijzigt alleen artikel 75 van de wet van 2 augustus 2002, zodat de FSMA informatie over deze toegankelijkheidsvoorschriften kan bezorgen aan de bevoegde autoriteiten van andere lidstaten. Inbreuken op de artikelen VIII.59 tot VIII.62 worden bestraft met een sanctie van niveau 2 van de schaal van het Wetboek van economisch recht, en van niveau 3 wanneer ze te kwader trouw worden gepleegd. De wet opent ook de weg naar de rechtsvordering tot collectief herstel van boek XVII van hetzelfde wetboek."],
-    ["h3", "Uitzonderingen en overgangstermijnen"],
-    ["p", "Net als de richtlijn laat de wet twee uitzonderingen toe: een fundamentele wijziging van de aard van de dienst, en een onevenredige last, die moet worden aangetoond met een gedocumenteerde beoordeling volgens de criteria van bijlage 3. Dienstencontracten die vóór 28 juni 2025 zijn gesloten, mogen ongewijzigd doorlopen tot ze aflopen, met een maximum van vijf jaar. Tot 28 juni 2030 mogen dienstverleners hun diensten blijven leveren met producten die ze vóór die datum rechtmatig gebruikten, en zelfbedieningsterminals die al in gebruik zijn, mogen in gebruik blijven tot het einde van hun economische levensduur, met een maximum van twintig jaar na hun ingebruikname."],
-    ["note", "Belgische bijzonderheid", "De wet van 5 november 2023 sluit micro-ondernemingen (minder dan tien personen en een jaaromzet of balanstotaal van ten hoogste 2 miljoen euro) slechts tot 28 juni 2030 uit voor bankdiensten en e-handelsdiensten (artikel 40); artikel VIII.59, § 2 laat de Koning bovendien toe om micro-ondernemingen geheel of gedeeltelijk van bepaalde eisen uit te sluiten. Dat is een merkbaar verschil met de richtlijn, die micro-ondernemingen die diensten verlenen vrijstelt."],
-    ["h3", "De andere omzettingsteksten"],
-    ["p", "De rest van het toepassingsgebied van de richtlijn is verdeeld over andere wetgeving. De wet van 20 juli 2023 wijzigt de wet van 13 juni 2005 betreffende de elektronische communicatie voor de betrokken radio- en eindapparatuur (computers voor consumenten en hun besturingssystemen, betaalterminals, geldautomaten, ticket- en incheckautomaten, interactieve informatieterminals, e-readers) en voor elektronischecommunicatiediensten, onder toezicht van het BIPT. Een andere wet van dezelfde dag wijzigt de wet van 5 mei 2017 betreffende de audiovisuele mediadiensten in het tweetalige gebied Brussel-Hoofdstad. De Gemeenschappen en de Gewesten hebben eigen teksten aangenomen voor de materies die hen toekomen, zoals audiovisuele media, stads- en streekvervoer of e-books."],
-    ["table", {"caption": "European Accessibility Act: belangrijkste Belgische teksten en autoriteiten per sector", "head": ["Sector", "Belgische tekst", "Toezichthoudende autoriteit"], "rows": [
-      ["Bankdiensten voor consumenten", "Wet van 5 november 2023 (Wetboek van economisch recht, boek VIII, titel 5)", "FOD Economie, Economische Inspectie"],
-      ["E-handel", "Wet van 5 november 2023 (Wetboek van economisch recht, boek VIII, titel 5)", "FOD Economie, Economische Inspectie"],
-      ["Computers, terminals, e-readers, automaten en betaalterminals", "Wet van 20 juli 2023 tot wijziging van de wet van 13 juni 2005", "BIPT"],
-      ["Elektronischecommunicatiediensten", "Wet van 20 juli 2023 tot wijziging van de wet van 13 juni 2005", "BIPT"],
-      ["Audiovisuele media, streekvervoer, e-books", "Federale, gemeenschaps- of gewestelijke teksten naargelang de materie", "Autoriteit aangewezen door elke tekst"]
-    ]}],
-
-    ["h2", "private-ondernemingen-belgie", "Private onderneming in België: valt u onder de regels voor digitale toegankelijkheid?"],
-    ["p", "Voor een onderneming is het uitgangspunt eenvoudig: de richtlijn van 2016 is niet op haar gericht, maar de European Accessibility Act kan wel op haar van toepassing zijn als ze consumenten een van de betrokken producten of diensten aanbiedt. De pagina van Inter over de verplichtingen in Vlaanderen vat het goed samen: een onderneming die online verkoopt, met betaling of met een bindende reservatie, valt onder de EAA; een louter informatieve website van een privébedrijf heeft geen wettelijke verplichting, al blijft toegankelijkheid sterk aanbevolen."],
-    ["h3", "E-commerce"],
-    ["p", "Voor een webshop gaat het om het volledige aankoopproces: productpagina, keuze van varianten, winkelmandje, account aanmaken, betaling, bevestiging, opvolging en annulering. De meest voorkomende fouten zijn bekend: een maatkiezer die met een aangepaste keuzelijst is gebouwd en niet met het toetsenbord kan worden geopend, een foutmelding die alleen met een rode rand wordt aangegeven, een betaalsessie die zonder waarschuwing verloopt, een factuur als niet-getagde pdf, een chatmodule die de focus vasthoudt. Die fouten zijn uw verantwoordelijkheid, ook als ze uit een thema of een module van derden komen."],
-    ["h3", "Bankdiensten en financiële diensten"],
-    ["p", "Een bank moet haar bankdiensten voor consumenten toegankelijk maken, of het nu gaat om het openen van een rekening, betalingen, krediet of elektronisch geld, zowel op het web als in haar apps. De eis van taalniveau B2 betekent dat informatieteksten moeten worden herwerkt: kredietvoorwaarden, uitleg over kosten, foutmeldingen in een leningsimulator. Terminals, geldautomaten en betaalterminals vallen dan weer onder de wet van 20 juli 2023."],
-    ["h3", "Vervoer, telecommunicatie en andere diensten"],
-    ["p", "Vervoerders van passagiers, telecomoperatoren en aanbieders van audiovisuele diensten moeten nagaan welke tekst op hen van toepassing is, vaak een andere dan die voor e-handel, en welke autoriteit hen controleert. Een spoorwegonderneming kan bijvoorbeeld tegelijk te maken hebben met de regels voor websites en apps om tickets te boeken, voor elektronische tickets, voor realtime-informatie en voor zelfbedieningsautomaten."],
-    ["h3", "Wat er niet onder valt"],
-    ["p", "Titel 5 van boek VIII betreft diensten voor consumenten. Een platform dat uitsluitend voor professionelen bedoeld is, zoals een bestelportaal voor wederverkopers, valt dus niet onder dat toepassingsgebied, tenzij het ook voor particulieren openstaat. Micro-ondernemingen in de bankdiensten en de e-handel zijn uitgesloten tot 28 juni 2030, maar ze hebben er belang bij te anticiperen: een vernieuwing die in 2027 wordt beslist, staat in 2030 nog online. Voor kmo’s stelt onze pagina [[sector:pme|toegankelijkheid voor kmo’s]] een evenredige aanpak voor."],
-
-    ["h2", "meertalige-websites-nl-fr-de", "Meertalige websites NL/FR/DE: de eisen van de Belgische context"],
-    ["p", "De meeste federale en Brusselse overheidswebsites, en veel bedrijfswebsites, bestaan in twee, drie of vier talen. Meertaligheid schept geen bijkomende juridische verplichting, maar ze vermenigvuldigt de mogelijke fouten. De WCAG vereisen dat de taal van elke pagina in de code is aangegeven (succescriterium 3.1.1) en dat passages in een andere taal dat ook zijn (succescriterium 3.1.2). Zonder die aanduiding leest een schermlezer die op Nederlands is ingesteld een Franstalige pagina met een Nederlandse uitspraak voor, en wordt de tekst onbegrijpelijk."],
-    ["ul", ["Geef de taal van elke versie aan in het html-element, bijvoorbeeld nl-BE, fr-BE of de-BE, en controleer dat op elk sjabloon, ook op foutpagina’s en modale vensters;", "schrijf in de taalkiezer elke taal in haar eigen taal (“Nederlands”, “Français”, “Deutsch”) en markeer ze met het lang-attribuut; vermijd losse vlaggetjes en afkortingen als “NL | FR” zonder toegankelijke naam;", "vertaal alternatieve teksten, ondertitels, transcripties en de labels die niet op het scherm verschijnen (aria-label, titels van frames, foutmeldingen), die vertaaltools vaak overslaan;", "behoud dezelfde structuur en navigatie in alle talen, zodat een gebruiker die van taal wisselt zijn weg blijft vinden;", "publiceer de toegankelijkheidsverklaring in elke taal van de website, met een contactpersoon die in die taal kan antwoorden;", "controleer de pdf’s in elke taal: dat een document in het Nederlands correct getagd is, betekent niet dat de Franstalige versie dat ook is."]],
-    ["p", "De Belgische context roept ook de vraag van de gebarentaal op. Voor belangrijke video’s voor het brede publiek verbetert een vertolking in Vlaamse Gebarentaal (VGT) of in Frans-Belgische Gebarentaal (LSFB) de toegang aanzienlijk, bovenop de ondertiteling die de norm vereist. Gebruikerstests zijn het nuttigst in de talen waarin de dienst echt wordt gebruikt: onze [[svc:test-utilisateur|tests met gebruikers met een handicap]] kunnen in het Nederlands of in het Frans worden uitgevoerd."],
-
-    ["h2", "actoren-digitale-toegankelijkheid", "De actoren van digitale toegankelijkheid in België"],
-    ["p", "Naast de teksten zijn er enkele overheidsactoren die het Belgische landschap structureren. Wie ze kent, weet bij wie hij met een vraag terechtkan, waar hij hulpmiddelen vindt en wie kan optreden bij een geschil."],
-    ["ul", ["Inter, het agentschap Toegankelijk Vlaanderen, controleorgaan voor de Vlaamse overheden en de organisaties onder het Bestuursdecreet, met een toolbox voor toegankelijke steden en gemeenten;", "NOOZO, de Vlaamse adviesraad van personen met een handicap, die adviseert over de selectie van de websites die Inter controleert;", "equal.brussels, controleorgaan voor het Brussels Hoofdstedelijk Gewest en zijn gemeenten;", "het Belgian Web Accessibility Office van de FOD BOSA, dat de federale websites controleert, de auditrapporten publiceert, een assistent voor het opstellen van de toegankelijkheidsverklaring aanbiedt, een register van overheidswebsites in ontwikkeling heeft en aankoopcentrales ter beschikking stelt;", "de interfederale stuurgroep, die de controleorganen van de verschillende entiteiten samenbrengt en het Belgische verslag aan de Europese Commissie voorbereidt;", "de andere controleorganen: Agence du Numérique, ETNIC en het Ministerie van de Duitstalige Gemeenschap;", "de Nationale Hoge Raad voor Personen met een Handicap, waaraan de controleambtenaren voor de EAA hun richtsnoeren met algemene draagwijdte moeten voorleggen;", "de Economische Inspectie van de FOD Economie en het BIPT voor de European Accessibility Act;", "de ombudsdiensten: de federale Ombudsman, de Brusselse ombudsdienst, de ombudsdienst van Wallonië en de Federatie Wallonië-Brussel en de ombudsdienst van de Duitstalige Gemeenschap."]],
-    ["p", "Voor overheidsinstanties maken de aankoopcentrales die de FOD BOSA vermeldt het mogelijk om een beroep te doen op diensten die al via een overheidsopdracht zijn gegund, wat de procedure lichter maakt. Voor ondernemingen bestaat er geen officiële conformiteitscertificering: het bewijs steunt op de documentatie die u zelf opbouwt, zoals audits, verklaringen, verbeterplannen en beoordelingen van onevenredige last."],
-
-    ["h2", "actieplan-digitale-toegankelijkheid", "Actieplan: uw diensten in acht stappen conform maken"],
-    ["p", "Voor een overheidsdienst en voor een onderneming die onder de EAA valt, verloopt de aanpak in dezelfde volgorde. Wat verschilt, is de tekst die u aanhaalt en het orgaan waaraan u verantwoording aflegt."],
-    ["ol", [
-      ["Bepaal uw juridische situatie.", "Ga na onder welke entiteit elke website en app valt, of, voor een onderneming, welke EAA-dienst het betreft en welke Belgische tekst van toepassing is. Leg die analyse vast: ze vormt de basis van de toegankelijkheidsverklaring."],
-      ["Breng het toepassingsgebied in kaart.", "Maak een lijst van websites, subdomeinen, apps, beveiligde omgevingen, formulieren, downloadbare documenten en modules van derden. Wat het vaakst vergeten wordt: platformen voor afspraken, betalingen en inschrijvingen."],
-      ["Geef voorrang aan de essentiële trajecten.", "Begin met wat een gebruiker verhindert een procedure of aankoop af te ronden: aanmelden, formulier, betaling, bevestiging, contact. Een fout in die stappen weegt zwaarder dan een tiental fouten op nieuwspagina’s."],
-      ["Laat een audit uitvoeren op basis van EN 301 549.", "Een [[svc:audit-conformite|conformiteitsaudit]] op een representatief staal, met toetsenbordtests, schermlezers op computer en mobiel en controle van de documenten, levert een onderbouwde basis op. Voeg nu al de criteria van WCAG 2.2 toe."],
-      ["Plan en verbeter.", "Zet het rapport om in een gedateerd verbeterplan, verdeeld over ontwikkelaars, redacteurs en leveranciers. Eis van externe softwareleveranciers een engagement inzake conformiteit in uw contracten en bestekken."],
-      ["Publiceer de toegankelijkheidsverklaring.", "Stel een verklaring op per website en per app, als webpagina, in elke taal, met een contactpersoon die antwoordt en het juiste klachtenorgaan. In Wallonië voorziet u de jaarlijkse bijwerking."],
-      ["Leid uw teams op.", "Regressies komen vooral voort uit inhoud die na de audit wordt gepubliceerd: pdf’s, video’s, tabellen, nieuwe pagina’s. Gerichte [[svc:formations|opleidingen]] voor redacteurs, ontwikkelaars en projectleiders voorkomen dat u bij elke vernieuwing van nul moet herbeginnen."],
-      ["Controleer doorlopend.", "Neem een [[svc:recette|toegankelijkheidstest bij oplevering]] op in elke belangrijke release, volg de meldingen van gebruikers op en beantwoord ze tijdig, bijvoorbeeld binnen dertig dagen in Wallonië en in de Federatie Wallonië-Brussel."]
-    ]],
-    ["p", "Voor overheidsinstanties beschrijft onze pagina [[sector:public|publieke sector]] de mogelijke begeleiding; wie wil vergelijken met een buurland dat de omgekeerde keuze maakte voor een nationaal referentiekader, leest ons artikel over [[article:luxembourg|digitale toegankelijkheid in Luxemburg]]. En als u uw situatie wilt laten doorlichten, kunt u gewoon [[contact|contact met ons opnemen]]."]
+ "slug": "digitale-toegankelijkheid-belgie",
+ "h1": "Digitale toegankelijkheid in België: welke regel en welke toezichthouder voor uw website",
+ "crumb": "Digitale toegankelijkheid in België",
+ "meta_title": "Digitale toegankelijkheid België: wetgeving, controle en EAA",
+ "meta_desc": "Bestuursdecreet, Brusselse ordonnantie, wet van 19 juli 2018 en EAA: zie welke tekst en welke toezichthouder voor uw website in België gelden.",
+ "card_desc": "Vlaanderen, Brussel, federaal, Wallonië en EAA: de tekst, de toezichthouder en de plichten voor uw diensten in België.",
+ "cat": "reglementation",
+ "where": "België",
+ "cover": "BE",
+ "cover_note": [
+  "Bestuursdecreet en wet van 19 juli 2018",
+  "EAA van kracht sinds 28 juni 2025"
+ ],
+ "date": "2026-10-27",
+ "lead": "Digitale toegankelijkheid in België steunt niet op één enkele wet: Vlaanderen, het Brussels Hoofdstedelijk Gewest, de federale staat en de andere Gewesten en Gemeenschappen hebben elk de Europese richtlijn omgezet voor hun eigen overheidsinstanties, en elk heeft een eigen controleorgaan aangewezen. Sinds 28 juni 2025 komt daar voor een deel van de privésector de European Accessibility Act bij, opnieuw via meerdere teksten. Deze gids zet per entiteit, te beginnen met Vlaanderen en Brussel, op een rij welke tekst op uw websites en apps van toepassing is, wie controleert, wat uw toegankelijkheidsverklaring moet bevatten en waar u het best begint.",
+ "body": [
+  [
+   "h2",
+   "een-verplichting-meerdere-wetgevers",
+   "Digitale toegankelijkheid in België: één verplichting, meerdere wetgevers"
   ],
-  "faq": [
-    ["Welke wet verplicht digitale toegankelijkheid in België?", "Er is niet één wet maar er zijn meerdere teksten. Voor de publieke sector geldt in Vlaanderen het Bestuursdecreet van 7 december 2018 en in Brussel de ordonnantie van 4 oktober 2018; de wet van 19 juli 2018 geldt voor federale instanties, en de andere Gewesten en Gemeenschappen hebben hun eigen decreet. Voor de privésector is de European Accessibility Act vooral omgezet door de wet van 5 november 2023, voor bankdiensten en e-handel, en door de wet van 20 juli 2023 voor elektronische communicatie en apparatuur."],
-    ["Moet een kleine Belgische webshop toegankelijk zijn?", "Telt de webshop minder dan tien personen en bedraagt de jaaromzet of het balanstotaal ten hoogste 2 miljoen euro, dan is hij tot 28 juni 2030 uitgesloten van de verplichtingen van de wet van 5 november 2023. Boven die drempels geldt de verplichting sinds 28 juni 2025. In beide gevallen is het verstandig toegankelijkheid mee te nemen in de volgende vernieuwing, want de website zal na 2030 waarschijnlijk nog online staan."],
-    ["Moet een vzw haar website toegankelijk maken?", "Dat hangt af van de overheid waaronder ze valt en van haar financiering. In Vlaanderen valt een vzw onder het Bestuursdecreet als ze voor meer dan de helft door een overheid wordt gefinancierd of gecontroleerd, of als ze essentiële diensten of diensten voor personen met een handicap aanbiedt. In de andere entiteiten valt een vzw die beantwoordt aan de definitie van publiekrechtelijke instelling er ook onder. Een vzw die online aan consumenten verkoopt, kan bovendien onder de European Accessibility Act vallen."],
-    ["Moeten pdf’s op een overheidswebsite toegankelijk zijn?", "Ja, zodra ze na 23 september 2018 zijn gepubliceerd of nog nodig zijn voor een lopende administratieve procedure, zoals een aanvraagformulier of een reglement. De norm EN 301 549 bevat specifieke eisen voor zulke niet-webdocumenten. In de praktijk is het vaak eenvoudiger om pdf-formulieren om te zetten in webformulieren en de pdf voor te behouden voor correct getagde referentiedocumenten."],
-    ["Hoelang duurt een toegankelijkheidsaudit?", "De duur hangt af van het aantal sjablonen, de te testen trajecten en de mobiele apps die erbij horen. Voor een middelgrote institutionele website moet u enkele weken rekenen tussen het vastleggen van het staal en de oplevering van het rapport; bij ons bedraagt de gemiddelde termijn drie weken. Voorzie daarna tijd voor de verbeteringen, en vervolgens een her-audit van de verbeterde punten voordat u de verklaring bijwerkt."],
-    ["Wie controleert de naleving van de EAA in België?", "Dat hangt af van het product of de dienst. Voor bankdiensten voor consumenten en e-handel is dat de Algemene Directie Economische Inspectie van de FOD Economie. Voor apparatuur en elektronischecommunicatiediensten is dat het BIPT. De organen die overheidswebsites controleren, zoals Inter in Vlaanderen, hebben geen opdracht in het kader van de EAA."],
-    ["Is een toegankelijkheidsverklaring in elke taal nodig?", "De teksten leggen dat niet uitdrukkelijk op, maar de verklaring moet toegankelijk zijn voor de gebruikers van de website. Bestaat uw website in het Nederlands, het Frans en het Duits, publiceer de verklaring dan in elk van die talen en zorg dat de contactpersoon in de taal van de gebruiker kan antwoorden. Verschillende federale diensten publiceren hun verklaring zo in het Nederlands, het Frans, het Duits en het Engels."]
+  [
+   "p",
+   "Richtlijn (EU) 2016/2102 van 26 oktober 2016 verplicht overheidsinstanties om hun websites en mobiele applicaties toegankelijk te maken voor personen met een handicap. In een federale staat als België heeft elk beleidsniveau die richtlijn omgezet voor de instanties die onder zijn bevoegdheid vallen: Vlaanderen voor de Vlaamse overheid, de provincies, de steden en de gemeenten, het Brussels Hoofdstedelijk Gewest voor zijn gewestelijke instellingen en de negentien gemeenten, de federale staat voor de federale overheidsdiensten, het Waals Gewest voor zijn gemeenten en intercommunales, enzovoort. De FOD Beleid en Ondersteuning (BOSA) houdt de officiële lijst van die teksten en van de controleorganen bij op de pagina [[https://accessibility.belgium.be/nl/missies-en-klachten|Missies en klachten van het Belgian Web Accessibility Office]]."
   ],
-  "cta_svc": "audit-conformite",
-  "cta_title": "Welke tekst geldt voor uw diensten in België?",
-  "cta_text": "We bepalen samen met u onder welke entiteit uw websites en apps vallen en auditeren daarna hun conformiteit met de norm EN 301 549. Een eerste gesprek volstaat vaak om de scope helder te krijgen.",
-  "related": ["eaa", "normes", "luxembourg"]
+  [
+   "p",
+   "Voor een overzicht van de verplichtingen, de normen en de aanpak in de vier landen kunt u ook onze [[article:guide|gids over digitale toegankelijkheid]] raadplegen."
+  ],
+  [
+   "p",
+   "Voor een overheidsinstantie is de eerste vraag dus niet technisch maar institutioneel: onder welke entiteit valt u? Niet de taal van uw website en niet het adres van uw hoofdzetel geven de doorslag, wel de overheid waarvan u afhangt. Een Brusselse gemeente valt onder de Brusselse ordonnantie, een federale overheidsdienst met kantoren in Antwerpen valt onder de federale wet, en een instelling van de Vlaamse Gemeenschap die in Brussel gevestigd is, valt in principe onder het Vlaamse Bestuursdecreet."
+  ],
+  [
+   "p",
+   "Het goede nieuws is dat al die regels dezelfde richtlijn omzetten. De inhoudelijke eisen zijn identiek van de ene entiteit tot de andere: dezelfde vier principes (waarneembaar, bedienbaar, begrijpelijk, robuust), dezelfde technische referentienorm, hetzelfde Europese model van toegankelijkheidsverklaring en dezelfde termijnen. Wat verschilt, is het orgaan dat u controleert, de weg die een klacht aflegt en de ombudsdienst die kan worden ingeschakeld."
+  ],
+  [
+   "ul",
+   [
+    "Uw controleorgaan hangt af van de entiteit waaronder uw organisatie valt, niet van uw leverancier of uw hostingbedrijf;",
+    "eenzelfde webbureau kan websites beheren die onder drie verschillende entiteiten vallen, met drie verschillende controleorganen;",
+    "hybride organisaties (een vzw die door meerdere overheden wordt gefinancierd, een intercommunale, een para-regionale instelling) moeten nagaan onder welke entiteit ze vallen voordat ze hun toegankelijkheidsverklaring opstellen;",
+    "de privésector valt niet onder deze teksten, maar wel, sinds 28 juni 2025, onder de wetten die de European Accessibility Act omzetten voor bepaalde producten en diensten."
+   ]
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "In België gaat de vraag “moet ik mijn website toegankelijk maken?” altijd samen met de vraag “op grond van welke tekst?”. De inhoud van de verplichtingen is gemeenschappelijk; de controle en de klachtenprocedure verschillen naargelang de entiteit waaronder uw organisatie valt."
+  ],
+  [
+   "h2",
+   "vlaanderen-bestuursdecreet-inter",
+   "Digitale toegankelijkheid in Vlaanderen: het Bestuursdecreet en Inter"
+  ],
+  [
+   "h3",
+   "Het Bestuursdecreet van 7 december 2018"
+  ],
+  [
+   "p",
+   "Vlaanderen heeft de regels van de richtlijn opgenomen in het Bestuursdecreet van 7 december 2018, in een afdeling over de toegankelijkheid van websites en mobiele applicaties. Het decreet geldt voor de Vlaamse overheid, de provincies, de steden en de gemeenten, en voor organisaties die nauw met de overheid verbonden zijn: organisaties die voor meer dan de helft door een Vlaamse overheid worden gefinancierd, of waarvan het bestuur of de beslissingen voor meer dan de helft door een Vlaamse overheid worden gecontroleerd."
+  ],
+  [
+   "p",
+   "Vzw’s en stichtingen vallen er alleen onder als ze essentiële diensten aanbieden, zoals sociale dienstverlening, zorg of onderwijs, of diensten voor personen met een handicap. Voor scholen, universiteiten en centra voor volwassenenonderwijs moeten alleen de wezenlijke online administratieve functies toegankelijk zijn, niet de hele website: de startpagina en toegangspagina’s, het navigatiemenu, de contactgegevens, het onderwijsaanbod, het lessenpakket of curriculum, het schoolreglement, de inschrijvingsinformatie, de contactgegevens van het CLB en de toegankelijkheidsverklaring. Inter verwijst voor het onderwijs ook naar een omzendbrief over digitale toegankelijkheid voor onderwijsinstellingen (NO/2025/02)."
+  ],
+  [
+   "h3",
+   "Inter als ondersteunings- en controleorgaan (OCODT)"
+  ],
+  [
+   "p",
+   "Het toezicht is toevertrouwd aan Inter, het agentschap Toegankelijk Vlaanderen, dat sinds 2025 de rol van ondersteunings- en controleorgaan digitale toegankelijkheid voor Vlaanderen (OCODT) vervult. Volgens de [[https://www.vlaanderen.be/inter/overheden-en-professionelen/werken-aan-digitale-toegankelijkheid/ondersteunings-en-controleorgaan-digitale-toegankelijkheid|officiële pagina van het ondersteunings- en controleorgaan]] auditeert Inter jaarlijks meer dan 200 websites en apps, met advies van NOOZO, de Vlaamse adviesraad van personen met een handicap, over de selectie. Een kleiner aantal websites krijgt een diepgaande controle door externe experts, die Inter opvolgt."
+  ],
+  [
+   "p",
+   "Inter rapporteert elk jaar aan de FOD BOSA, die de Belgische rapportering aan de Europese Unie coördineert. Inter benadrukt ook dat het niet als taak heeft te controleren of websites aan de European Accessibility Act voldoen: zijn rol betreft de websites en apps van overheden en van organisaties waarbij de overheid betrokken is."
+  ],
+  [
+   "h3",
+   "Wat dit betekent voor een Vlaamse gemeente, school of vzw"
+  ],
+  [
+   "p",
+   "Voor een stad of gemeente is het toepassingsgebied ruim. Het e-loket voor een uittreksel uit het bevolkingsregister, het formulier voor een parkeerkaart, de pdf van het belastingreglement, de opname van de gemeenteraad en de app om sluikstort te melden vallen er allemaal onder. Inter stelt via zijn toolbox voor toegankelijke steden en gemeenten praktische hulpmiddelen ter beschikking, waaronder informatie over de toegankelijkheidsverklaring en over het aanpakken van toegankelijke webinhoud."
+  ],
+  [
+   "p",
+   "Voor een school ligt de focus anders: een inschrijvingsmodule die niet met het toetsenbord te bedienen is, of een schoolreglement dat alleen als ingescande pdf beschikbaar is, raakt precies de functies die het decreet viseert. Een vzw uit de zorg- of welzijnssector die voor meer dan de helft door de Vlaamse overheid wordt gesubsidieerd, doet er goed aan haar situatie expliciet te documenteren: het financieringsaandeel en de aard van de dienstverlening bepalen of ze onder het decreet valt."
+  ],
+  [
+   "h2",
+   "brussel-gewest-cocof-ggc",
+   "Digitale toegankelijkheid in Brussel: Gewest, Cocof en GGC"
+  ],
+  [
+   "p",
+   "Het Brussels Hoofdstedelijk Gewest was de eerste deelstaat die wetgeving aannam, met de ordonnantie van 4 oktober 2018 inzake de toegankelijkheid van de websites en mobiele applicaties van de gewestelijke overheidsinstanties en de gemeenten. Ze geldt voor de gewestelijke besturen en overheidsinstellingen en voor de negentien gemeenten. De officiële lijst van de FOD BOSA wijst equal.brussels aan als controleorgaan voor het Gewest. De toegankelijkheidsverklaringen van de gewestelijke instellingen verwijzen voor klachten naar de Brusselse ombudsdienst."
+  ],
+  [
+   "p",
+   "Het Brusselse landschap wordt ingewikkelder door de gemeenschapscommissies. De Franse Gemeenschapscommissie (Cocof) heeft een eigen decreet van 9 mei 2019 aangenomen, houdende de toegankelijkheid van de websites en mobiele applicaties van de openbare instellingen van de Cocof. Een ontwerp van decreet dat in september 2022 werd ingediend bij het Parlement francophone bruxellois, wilde dat decreet aanvullen met het toezicht dat artikel 8 van de richtlijn vereist: de aanwijzing van het controleorgaan door het College en een jaarverslag van dat orgaan. De lijst van de FOD BOSA vermeldt tot op vandaag geen eigen controleorgaan voor de Cocof."
+  ],
+  [
+   "p",
+   "Voor de Gemeenschappelijke Gemeenschapscommissie (GGC), die onder meer bevoegd is voor de bicommunautaire instellingen voor bijstand aan personen en gezondheidszorg, vermeldt de officiële lijst geen specifieke omzettingstekst. Valt uw organisatie onder de GGC, ga dan bij uw toezichthoudende overheid na welke tekst en welk toezicht van toepassing zijn, en baseer uw aanpak in afwachting op de norm EN 301 549 en het Europese model van toegankelijkheidsverklaring, die voor alle entiteiten gelden."
+  ],
+  [
+   "p",
+   "Een laatste Brusselse eigenheid: de instellingen van de Gemeenschappen die in Brussel gevestigd zijn, volgen hun Gemeenschap. Een Vlaamse instelling in Brussel, bijvoorbeeld een school of een cultuurcentrum van de Vlaamse Gemeenschap, valt in principe onder het Bestuursdecreet; een overheidsinstelling van de Federatie Wallonië-Brussel in Elsene valt onder het decreet van de Franse Gemeenschap van 3 mei 2019. Ook de Vlaamse Gemeenschapscommissie (VGC) wordt in de federale lijst niet afzonderlijk vermeld: organisaties die eronder vallen, controleren best bij hun toezichthoudende overheid welk kader en welk controleorgaan gelden."
+  ],
+  [
+   "h2",
+   "federale-wet-19-juli-2018",
+   "De wet van 19 juli 2018: het federale kader voor webtoegankelijkheid"
+  ],
+  [
+   "p",
+   "Op federaal niveau werd de richtlijn omgezet door de wet van 19 juli 2018 inzake de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties. Ondanks haar algemene titel geldt ze alleen voor federale instanties: FOD’s, POD’s en andere overheidsinstellingen die van de federale staat afhangen. Gemeenten, provincies en de besturen van de Gewesten en Gemeenschappen vallen onder hun eigen teksten."
+  ],
+  [
+   "p",
+   "De wet neemt het tijdpad van de richtlijn over. Websites die na 23 september 2018 werden gepubliceerd, moesten toegankelijk zijn vanaf 23 september 2019, oudere websites vanaf 23 september 2020 en mobiele applicaties vanaf 23 juni 2021. Al die termijnen zijn verstreken: een federale website die vandaag niet toegankelijk is, is niet “te laat”, ze is in gebreke."
+  ],
+  [
+   "p",
+   "Twee koninklijke besluiten vullen de wet aan. Het koninklijk besluit van 5 september 2019 wijst het controleorgaan aan, de FOD BOSA, en regelt de controlemethode die de richtlijn voorschrijft. Een koninklijk besluit van 3 september 2019 regelt de klachtenprocedure. In de praktijk neemt een gebruiker die met zijn schermlezer een federaal formulier niet kan invullen eerst contact op met de beheerder van de website, daarna met de betrokken administratie via de klachtenpagina van belgium.be, en ten slotte met de federale Ombudsman als hij geen of een onbevredigend antwoord krijgt."
+  ],
+  [
+   "h3",
+   "Wat de wet concreet oplegt"
+  ],
+  [
+   "ul",
+   [
+    "Websites en apps zo ontwerpen, ontwikkelen, onderhouden en bijwerken dat ze waarneembaar, bedienbaar, begrijpelijk en robuust zijn;",
+    "voldoen aan de Europese geharmoniseerde norm, vandaag EN 301 549, waarvan de naleving een vermoeden van conformiteit oplevert;",
+    "voor elke website en elke app een gedetailleerde toegankelijkheidsverklaring publiceren;",
+    "een mechanisme aanbieden waarmee iedereen een toegankelijkheidsprobleem kan melden of informatie in een toegankelijke vorm kan vragen;",
+    "elke afwijking op grond van een onevenredige last op een gedocumenteerde manier verantwoorden, door de kosten voor de organisatie af te wegen tegen het voordeel voor personen met een handicap."
+   ]
+  ],
+  [
+   "h3",
+   "Uitgesloten inhoud, en de grenzen ervan"
+  ],
+  [
+   "p",
+   "De Belgische teksten nemen de uitzonderingen van de richtlijn over, zoals je ze bijvoorbeeld terugvindt in artikel 3 van het Waalse decreet: kantoorbestanden die vóór 23 september 2018 zijn gepubliceerd, tenzij ze nodig zijn voor lopende administratieve procedures; vooraf opgenomen tijdgebonden media die vóór 23 september 2020 zijn gepubliceerd en live uitgezonden media; bepaalde kaarten en kaartdiensten; reproducties van erfgoedobjecten; archieven die na 23 september 2019 niet meer zijn bijgewerkt; inhoud van derden die de organisatie niet financiert, niet ontwikkelt en niet beheert. Extranetten en intranetten die vóór 23 september 2019 zijn gepubliceerd, vallen er ook buiten tot hun volgende grondige herziening."
+  ],
+  [
+   "p",
+   "Die uitzonderingen zijn enger dan men vaak denkt. Een pdf-aanvraagformulier voor een premie dat in 2017 werd gepubliceerd maar nog altijd wordt gebruikt om een dossier in te dienen, is niet uitgesloten, want het dient een lopende procedure. Evenmin is een module voor het maken van afspraken die door een softwareleverancier wordt geleverd, maar door de administratie is gekozen, betaald en ingesteld, “inhoud van derden”: de organisatie financiert en beheert ze."
+  ],
+  [
+   "h2",
+   "wallonie-federatie-duitstalige-gemeenschap",
+   "Wallonië, de Federatie Wallonië-Brussel en de Duitstalige Gemeenschap"
+  ],
+  [
+   "h3",
+   "Waals Gewest: de decreten van 2 mei 2019"
+  ],
+  [
+   "p",
+   "Het Waals Gewest heeft de richtlijn omgezet met het [[https://wallex.wallonie.be/nl/contents/acts/19/19444.html|decreet van 2 mei 2019 betreffende de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties (Franstalige tekst op Wallex)]], bekendgemaakt in het Belgisch Staatsblad van 5 september 2019, met uitwerking op 23 september 2018. Een tweede decreet van dezelfde dag geldt onder meer voor de OCMW’s en de verenigingen die ze oprichten. Samen bestrijken ze het Gewest, de provincies, de gemeenten, de autonome regieën, de intercommunales, de projectverenigingen, de openbare huisvestingsmaatschappijen en de publiekrechtelijke rechtspersonen die van het Gewest afhangen."
+  ],
+  [
+   "p",
+   "Het Waalse decreet bevat twee nuttige preciseringen. Artikel 6 verplicht elke instantie om meldingen en verzoeken om toegankelijke informatie binnen dertig dagen na ontvangst te beantwoorden. Artikel 7 vereist een jaarlijkse bijwerking van de toegankelijkheidsverklaring, opgesteld volgens het Europese model. Het controleorgaan moet de Regering elk jaar een verslag voorleggen over de resultaten van de controles die het organiseert (artikel 10). Volgens de lijst van de FOD BOSA wordt die controle uitgevoerd door het Agence du Numérique. Voor Vlaamse organisaties met vestigingen of diensten in Wallonië is die termijn van dertig dagen een concreet referentiepunt, ook als ze zelf onder een ander kader vallen."
+  ],
+  [
+   "h3",
+   "Federatie Wallonië-Brussel: decreet van 3 mei 2019 en controle door ETNIC"
+  ],
+  [
+   "p",
+   "De Franse Gemeenschap heeft het decreet van 3 mei 2019 betreffende de toegankelijkheid van de websites en mobiele applicaties van overheidsinstanties aangenomen. De uitvoering ervan werd later geregeld door het [[https://gallilex.cfwb.be/sites/default/files/imports/50388_000.pdf|besluit van de Regering van de Franse Gemeenschap van 14 juli 2022 (Franstalige tekst)]], bekendgemaakt in het Belgisch Staatsblad van 3 augustus 2022. Dat besluit wijst ETNIC, het overheidsbedrijf voor digitale technologieën van de Franse Gemeenschap, aan als controleorgaan en legt het de monitoringmethode op die is vastgelegd in uitvoeringsbesluit (EU) 2018/1524."
+  ],
+  [
+   "p",
+   "Het besluit voorziet ook in opleidingen voor het personeel over toegankelijkheid, zowel voor ontwerp en gebruikerservaring als voor ontwikkeling, het maken van inhoud en projectbeheer. De klachtenprocedure verloopt in twee stappen: de gebruiker richt zich eerst tot de beheerder van de website of de app; krijgt hij binnen dertig dagen geen bevredigend antwoord, dan kan hij zich wenden tot de gemeenschappelijke ombudsdienst van de Franse Gemeenschap en het Waals Gewest."
+  ],
+  [
+   "h3",
+   "Duitstalige Gemeenschap: een ruimer decreet"
+  ],
+  [
+   "p",
+   "De Duitstalige Gemeenschap koos ervoor de richtlijn op te nemen in een ruimere tekst: het decreet van 15 oktober 2018 betreffende de niet-openbare en openbare elektronische communicatie van de overheden van het Duitse taalgebied. Artikel 24 vertrouwt het toezicht op de websites en apps toe aan de Regering, en de lijst van de FOD BOSA vermeldt het Ministerie van de Duitstalige Gemeenschap als controleorgaan. Artikel 23 verplicht de overheid om meldingen “op passende wijze en binnen een redelijke termijn” te beantwoorden, zonder een vast aantal dagen zoals in het Waalse decreet; artikel 27 breidt de bevoegdheid van de ombudsdienst van de Duitstalige Gemeenschap (Ombudsdienst der DG) uit tot klachten over die antwoorden en over de beoordeling van een onevenredige last. Voor de negen Duitstalige gemeenten en de instellingen van de Gemeenschap is de inhoudelijke verplichting dezelfde als elders, met één specifieke uitdaging: toegankelijke inhoud in het Duits produceren, terwijl veel hulpmiddelen en sjablonen in België eerst in het Nederlands en het Frans bestaan."
+  ],
+  [
+   "h2",
+   "overzichtstabel-belgie",
+   "Overzichtstabel: entiteit, tekst, betrokken instanties, controle"
+  ],
+  [
+   "p",
+   "De onderstaande tabel geeft voor elke entiteit de omzettingstekst van richtlijn (EU) 2016/2102 en het controleorgaan weer, zoals ze voorkomen in de officiële lijst van de FOD BOSA en in de teksten zelf. Ze betreft alleen de publieke sector; de European Accessibility Act krijgt verderop een aparte tabel."
+  ],
+  [
+   "table",
+   {
+    "caption": "Digitale toegankelijkheid van de publieke sector in België: wie past wat toe",
+    "head": [
+     "Entiteit",
+     "Omzettingstekst",
+     "Betrokken instanties",
+     "Controle en klachten"
+    ],
+    "rows": [
+     [
+      "Vlaanderen",
+      "Bestuursdecreet van 7 december 2018",
+      "Vlaamse overheid, provincies, steden en gemeenten, organisaties die voor meer dan de helft gefinancierd of gecontroleerd worden, bepaalde vzw’s, scholen (wezenlijke functies)",
+      "Inter (Toegankelijk Vlaanderen)"
+     ],
+     [
+      "Brussels Hoofdstedelijk Gewest",
+      "Ordonnantie van 4 oktober 2018",
+      "Gewestelijke overheidsinstellingen en gemeenten",
+      "equal.brussels; Brusselse ombudsdienst"
+     ],
+     [
+      "Cocof",
+      "Decreet van 9 mei 2019",
+      "Openbare instellingen van de Cocof",
+      "Orgaan aan te wijzen door het College volgens het ontwerp van 2022; geen orgaan vermeld in de federale lijst"
+     ],
+     [
+      "GGC",
+      "Geen eigen tekst in de officiële lijst",
+      "Bicommunautaire instellingen",
+      "Na te gaan bij de toezichthoudende overheid"
+     ],
+     [
+      "Federale overheid",
+      "Wet van 19 juli 2018; koninklijke besluiten van 3 september 2019 (klachten) en 5 september 2019 (controleorgaan)",
+      "FOD’s, POD’s en federale overheidsinstellingen",
+      "FOD BOSA; federale Ombudsman"
+     ],
+     [
+      "Waals Gewest",
+      "Decreten van 2 mei 2019 (Belgisch Staatsblad van 5 september 2019)",
+      "Gewest, provincies, gemeenten, OCMW’s, intercommunales, gewestelijke en lokale overheidsinstellingen",
+      "Agence du Numérique; ombudsdienst van Wallonië en de Federatie Wallonië-Brussel"
+     ],
+     [
+      "Federatie Wallonië-Brussel",
+      "Decreet van 3 mei 2019; besluit van de Regering van 14 juli 2022",
+      "Overheidsinstellingen van de Franse Gemeenschap",
+      "ETNIC; gemeenschappelijke ombudsdienst na dertig dagen zonder bevredigend antwoord"
+     ],
+     [
+      "Duitstalige Gemeenschap",
+      "Decreet van 15 oktober 2018",
+      "Overheden van het Duitse taalgebied",
+      "Ministerie van de Duitstalige Gemeenschap (toezicht toevertrouwd aan de Regering, artikel 24); ombudsdienst van de Duitstalige Gemeenschap (artikel 27)"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Voor een overzicht van de Belgische verplichtingen en van onze diensten ter plaatse kunt u terecht op onze pagina [[country:belgique|digitale toegankelijkheid in België]]. Valt uw organisatie onder meerdere entiteiten, bijvoorbeeld een intercommunale waarvan sommige diensten door het Gewest en andere door de Gemeenschap worden gefinancierd, documenteer dan uw analyse in de toegankelijkheidsverklaring zelf: dat is de eerste vraag die een controleorgaan zal stellen."
+  ],
+  [
+   "h2",
+   "norm-en-301-549-wcag",
+   "EN 301 549 en WCAG: de norm voor digitale toegankelijkheid in België"
+  ],
+  [
+   "p",
+   "België heeft geen nationaal referentiekader zoals de Franse RGAA of de Luxemburgse RAWeb. Alle entiteiten steunen rechtstreeks op de Europese norm EN 301 549. De FOD BOSA vermeldt in zijn [[https://accessibility.belgium.be/nl/faq/wat-een-toegankelijkheidsverklaring|veelgestelde vraag over de toegankelijkheidsverklaring]] dat de na te leven criteria overeenkomen met versie 3.2.1 (2021) van die norm. Voor webinhoud neemt die versie de criteria van de WCAG 2.1 op niveau A en AA over, samen 50 succescriteria onder de vier principes; ook de Vlaamse pagina’s herhalen dat niveau AA van de WCAG 2.1 het wettelijke minimum is voor overheidswebsites."
+  ],
+  [
+   "p",
+   "De norm EN 301 549 gaat verder dan het web. Ze bevat eisen voor niet-webdocumenten, zoals pdf’s en kantoorbestanden, voor software en mobiele applicaties, en voor de hardwarefuncties van apparaten. Daardoor is ze bruikbaar voor zowel de publieke sector als voor ondernemingen die onder de European Accessibility Act vallen. De opbouw van de hoofdstukken en hun samenhang met de WCAG worden toegelicht in ons artikel over de [[article:normes|normen voor digitale toegankelijkheid]]."
+  ],
+  [
+   "h3",
+   "Versie 4.1.1 en de overstap naar WCAG 2.2"
+  ],
+  [
+   "p",
+   "Een nieuwe versie, EN 301 549 V4.1.1, werd begin september 2026 door de Europese normalisatie-instellingen gepubliceerd. Ze stemt de eisen voor web, documenten en software af op WCAG 2.2 niveau AA. Zolang ze niet in het Publicatieblad van de Europese Unie is vermeld, blijft versie 3.2.1 de basis voor het vermoeden van conformiteit. Concreet blijft een audit die vandaag op basis van WCAG 2.1 AA wordt uitgevoerd de referentie, maar het is verstandig er nu al de criteria aan toe te voegen die WCAG 2.2 invoert: minimale grootte van aanraakdoelen, toetsenbordfocus die niet door een vaste banner mag worden verborgen, een alternatief voor sleepbewegingen, consistent aangeboden hulp, geen overbodige herhaalde invoer en authenticatie zonder cognitieve test."
+  ],
+  [
+   "p",
+   "Dat laatste punt toont goed wat er op het spel staat. Een captcha die vraagt om vervormde tekens over te typen, op de aanmeldpagina van een e-loket, blokkeert onder WCAG 2.1 al veel gebruikers. Met WCAG 2.2 wordt zo’n aanpak door de eis van toegankelijke authenticatie nog moeilijker te verdedigen: voorzie bij de volgende vernieuwing liever een aanmelding met elektronische identiteit, met een aanmeldlink per e-mail, of een aanmelding die compatibel is met wachtwoordbeheerders."
+  ],
+  [
+   "h3",
+   "Is een RGAA-audit geldig in België?"
+  ],
+  [
+   "p",
+   "Ook de RGAA steunt op de WCAG, en een goed uitgevoerde RGAA-audit dekt een groot deel van de webeisen van EN 301 549. Maar de Belgische juridische referentie blijft de Europese norm: uw verklaring moet een nalevingsniveau ten opzichte van EN 301 549 vermelden, geen RGAA-percentage. Voor een organisatie die in Frankrijk en in België actief is, bestaat de voordeligste oplossing er vaak in om hetzelfde staal van pagina’s één keer te laten auditeren en de resultaten in beide rasters te rapporteren."
+  ],
+  [
+   "h2",
+   "toegankelijkheidsverklaring-belgie",
+   "De toegankelijkheidsverklaring in België: inhoud, plaats en valkuilen"
+  ],
+  [
+   "p",
+   "Alle entiteiten leggen een toegankelijkheidsverklaring op volgens het model van uitvoeringsbesluit (EU) 2018/1523. De FOD BOSA licht de verwachte inhoud toe en biedt een online assistent die het opstellen stap voor stap begeleidt en een HTML-bestand oplevert; in Vlaanderen stelt Inter daarnaast informatie over de toegankelijkheidsverklaring ter beschikking in zijn toolbox voor lokale besturen. Ons artikel over de [[article:declaration|toegankelijkheidsverklaring]] beschrijft de Europese logica; dit is wat in België wordt verwacht."
+  ],
+  [
+   "ul",
+   [
+    "Het toepassingsgebied: de betrokken website of app, voor een app inclusief alle platformen;",
+    "het niveau van naleving van de norm EN 301 549 versie 3.2.1;",
+    "de evaluatiemethode: vereenvoudigde audit door het controleorgaan of grondige audit;",
+    "een link naar een formeel auditrapport;",
+    "de lijst van niet-conforme pagina’s of onderdelen, wat er wordt gedaan om ze te verbeteren, de geplande termijn en het alternatief dat in afwachting wordt aangeboden;",
+    "de datum waarop de verklaring is opgesteld en die van de laatste bijwerking;",
+    "de contactgegevens van de persoon die verantwoordelijk is voor toegankelijkheid en bij wie men een probleem kan melden;",
+    "de klachtenprocedure en het bevoegde orgaan, naargelang de entiteit waaronder de organisatie valt."
+   ]
+  ],
+  [
+   "h3",
+   "Waar u ze publiceert"
+  ],
+  [
+   "p",
+   "De FOD BOSA raadt aan de verklaring als webpagina te publiceren en niet als downloadbaar document, en de link op een logische plaats te zetten, doorgaans in de footer. Voor een mobiele app moet de verklaring in de app zelf staan, op de bijbehorende website als die bestaat, en op de downloadplatformen. Een organisatie met een website en een app moet dus twee afzonderlijke verklaringen publiceren. In Wallonië legt het decreet bovendien een jaarlijkse bijwerking op."
+  ],
+  [
+   "h3",
+   "De fouten die we het vaakst tegenkomen"
+  ],
+  [
+   "ul",
+   [
+    "Een verklaring gepubliceerd als niet-getagde pdf, die zelf ontoegankelijk is;",
+    "de vermelding “conform” zonder audit die ze onderbouwt, of een verwijzing naar een audit van jaren geleden, nog van vóór de vernieuwing van de website;",
+    "één verklaring voor een website en een app, terwijl er twee nodig zijn;",
+    "een algemeen contactadres dat nooit antwoordt, of een contactformulier dat zelf achter een visuele captcha zit;",
+    "slechts één taalversie, terwijl de website in het Nederlands, het Frans en het Duits bestaat;",
+    "een verkeerd klachtenorgaan, bijvoorbeeld de federale Ombudsman op de website van een Vlaamse gemeente of een Waalse gemeente."
+   ]
+  ],
+  [
+   "h2",
+   "controle-klachten-rapportering",
+   "Controles, klachten en rapportering aan de Europese Commissie"
+  ],
+  [
+   "p",
+   "De Belgische controle steunt op de Europese methode van uitvoeringsbesluit (EU) 2018/1524, die twee niveaus onderscheidt. De vereenvoudigde audit betreft een beperkt aantal criteria en slechts een deel van elke website; hij dient om de algemene toestand van het geheel te meten. De diepgaande audit analyseert een ruimer staal grondig en geeft een nauwkeurig beeld van wat moet worden verbeterd."
+  ],
+  [
+   "p",
+   "In Vlaanderen auditeert Inter jaarlijks meer dan 200 websites en apps. Op federaal niveau zijn de cijfers openbaar. Volgens de [[https://accessibility.belgium.be/nl/nieuws/publicatie-van-de-toegankelijkheidsaudits-voor-2025|publicatie van de toegankelijkheidsaudits voor 2025 door de FOD BOSA]] kregen 259 websites van federale overheidsdiensten een vereenvoudigde audit, werden er negen aan een diepgaande audit onderworpen, en verklaren 246 websites zich gedeeltelijk conform, bijna 95 % van het totaal. Voor 2026 kondigt de lijst die in december 2025 werd gepubliceerd 275 vereenvoudigde en 12 diepgaande audits aan, gekozen om de verschillende federale bevoegdheidsdomeinen, de websites voor personen met een handicap en de meest bezochte websites te dekken."
+  ],
+  [
+   "p",
+   "Eén detail verandert de zaak voor websitebeheerders: de rapporten van de vereenvoudigde audits van de FOD BOSA worden online gepubliceerd en zijn gelinkt vanuit de toegankelijkheidsverklaringen. Een fout in uw contactformulier of op uw startpagina wordt dus niet alleen aan uw team gemeld; elke burger, journalist of vereniging kan ze raadplegen."
+  ],
+  [
+   "h3",
+   "Het verloop van een klacht"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Contact opnemen met de verantwoordelijke van de website.",
+     "Diens gegevens moeten in de toegankelijkheidsverklaring staan. In dit stadium wordt het merendeel van de verzoeken opgelost, bijvoorbeeld door een document in een toegankelijke vorm te bezorgen."
+    ],
+    [
+     "Zich richten tot de betrokken administratie.",
+     "Op federaal niveau via de klachtenpagina van belgium.be; elders via de klachtendienst van de instantie."
+    ],
+    [
+     "De bevoegde ombudsdienst inschakelen.",
+     "De federale Ombudsman, de Brusselse ombudsdienst, de ombudsdienst van Wallonië en de Federatie Wallonië-Brussel of de ombudsdienst van de Duitstalige Gemeenschap, naargelang de entiteit."
+    ],
+    [
+     "Het ontbreken van een verklaring melden.",
+     "Heeft een niet-federale overheidswebsite geen toegankelijkheidsverklaring, dan bezorgt het toegankelijkheidsteam van de FOD BOSA de melding aan het bevoegde controleorgaan, bijvoorbeeld Inter voor een Vlaamse gemeente."
+    ]
+   ]
+  ],
+  [
+   "h3",
+   "De Belgische rapporten aan de Europese Unie"
+  ],
+  [
+   "p",
+   "De richtlijn verplicht elke lidstaat om bij de Commissie een monitoringverslag in te dienen, eerst op 23 december 2021 en daarna om de drie jaar. België dient één verslag in, gecoördineerd door de FOD BOSA op basis van de bijdragen van de controleorganen van elke entiteit, die samenkomen in een interfederale stuurgroep. De Commissie publiceert die nationale verslagen op haar pagina met de [[https://digital-strategy.ec.europa.eu/en/library/web-accessibility-directive-monitoring-reports|monitoringverslagen over de webtoegankelijkheidsrichtlijn (Engelstalige pagina)]], waar het Belgische verslag in het Nederlands en het Frans staat; de volgende reeks werd verwacht voor december 2024."
+  ],
+  [
+   "p",
+   "De voor dit artikel geraadpleegde teksten organiseren vooral controle, openbaarheid van de resultaten en klachtenprocedures, eerder dan een boeteregeling zoals die van de European Accessibility Act. Voor een overheidsinstantie is het belangrijkste risico dus reputatieschade en geschillen: een ongunstige openbare audit, herhaalde klachten, een tussenkomst van de ombudsdienst, en de moeilijkheid om ontoegankelijke diensten te verantwoorden tegenover gebruikers die geen alternatief hebben."
+  ],
+  [
+   "h2",
+   "eaa-belgie",
+   "EAA in België: een omzetting verspreid over meerdere teksten"
+  ],
+  [
+   "p",
+   "Richtlijn (EU) 2019/882 van 17 april 2019, de European Accessibility Act, legt toegankelijkheidseisen op voor een reeks producten en diensten voor consumenten, die van toepassing zijn sinds 28 juni 2025. Net als voor de publieke sector heeft België ze in verschillende delen omgezet, waarbij elke overheid optreedt binnen haar bevoegdheidsdomein. Ons referentieartikel over de [[article:eaa|European Accessibility Act]] beschrijft het volledige toepassingsgebied van de richtlijn; hieronder leest u hoe ze in het Belgische recht is vertaald."
+  ],
+  [
+   "h3",
+   "De wet van 5 november 2023: bankdiensten en e-handel"
+  ],
+  [
+   "p",
+   "De centrale tekst voor ondernemingen is de wet van 5 november 2023 tot wijziging van diverse boeken van het Wetboek van economisch recht en van de wet van 2 augustus 2002 betreffende het toezicht op de financiële sector en de financiële diensten, wat bepaalde diensten betreft. Ze voegt in boek VIII van het Wetboek van economisch recht een nieuwe titel 5 in, “Toegankelijkheidsvoorschriften voor diensten”, die twee categorieën diensten voor consumenten viseert: bankdiensten voor consumenten en e-handelsdiensten. Volgens de [[https://www.dekamer.be/FLWB/PDF/55/3433/55K3433003.pdf|door de Kamercommissie aangenomen tekst (tweetalig document)]] treedt de wet in werking op 28 juni 2025."
+  ],
+  [
+   "p",
+   "Dienstverleners moeten hun diensten ontwerpen en leveren volgens de eisen van bijlage 1 bij boek VIII, ook wanneer ze de dienst geheel of gedeeltelijk uitbesteden: een beroep doen op een e-commerceplatform of een betaaldienstaanbieder ontslaat hen niet van hun verantwoordelijkheid. Ze stellen de informatie op die bijlage 2 voorschrijft, stellen ze schriftelijk en mondeling ter beschikking van het publiek, en bewaren ze zolang de dienst wordt aangeboden. Voor bankdiensten mag de informatie niet moeilijker zijn dan niveau B2 (hoger middenniveau) van het Gemeenschappelijk Europees Referentiekader voor Talen van de Raad van Europa. Is een dienst niet conform, dan moet de dienstverlener de controleambtenaren daar onmiddellijk van op de hoogte brengen, met een beschrijving van de non-conformiteit en van de genomen corrigerende maatregelen."
+  ],
+  [
+   "p",
+   "Het toezicht is toevertrouwd aan de Algemene Directie Economische Inspectie van de FOD Economie. De FSMA krijgt geen controletaak: de wet wijzigt alleen artikel 75 van de wet van 2 augustus 2002, zodat de FSMA informatie over deze toegankelijkheidsvoorschriften kan bezorgen aan de bevoegde autoriteiten van andere lidstaten. Inbreuken op de artikelen VIII.59 tot VIII.62 worden bestraft met een sanctie van niveau 2 van de schaal van het Wetboek van economisch recht, en van niveau 3 wanneer ze te kwader trouw worden gepleegd. De wet opent ook de weg naar de rechtsvordering tot collectief herstel van boek XVII van hetzelfde wetboek."
+  ],
+  [
+   "h3",
+   "Uitzonderingen en overgangstermijnen"
+  ],
+  [
+   "p",
+   "Net als de richtlijn laat de wet twee uitzonderingen toe: een fundamentele wijziging van de aard van de dienst, en een onevenredige last, die moet worden aangetoond met een gedocumenteerde beoordeling volgens de criteria van bijlage 3. Dienstencontracten die vóór 28 juni 2025 zijn gesloten, mogen ongewijzigd doorlopen tot ze aflopen, met een maximum van vijf jaar. Tot 28 juni 2030 mogen dienstverleners hun diensten blijven leveren met producten die ze vóór die datum rechtmatig gebruikten, en zelfbedieningsterminals die al in gebruik zijn, mogen in gebruik blijven tot het einde van hun economische levensduur, met een maximum van twintig jaar na hun ingebruikname."
+  ],
+  [
+   "note",
+   "Belgische bijzonderheid",
+   "De wet van 5 november 2023 sluit micro-ondernemingen (minder dan tien personen en een jaaromzet of balanstotaal van ten hoogste 2 miljoen euro) slechts tot 28 juni 2030 uit voor bankdiensten en e-handelsdiensten (artikel 40); artikel VIII.59, § 2 laat de Koning bovendien toe om micro-ondernemingen geheel of gedeeltelijk van bepaalde eisen uit te sluiten. Dat is een merkbaar verschil met de richtlijn, die micro-ondernemingen die diensten verlenen vrijstelt."
+  ],
+  [
+   "h3",
+   "De andere omzettingsteksten"
+  ],
+  [
+   "p",
+   "De rest van het toepassingsgebied van de richtlijn is verdeeld over andere wetgeving. De wet van 20 juli 2023 wijzigt de wet van 13 juni 2005 betreffende de elektronische communicatie voor de betrokken radio- en eindapparatuur (computers voor consumenten en hun besturingssystemen, betaalterminals, geldautomaten, ticket- en incheckautomaten, interactieve informatieterminals, e-readers) en voor elektronischecommunicatiediensten, onder toezicht van het BIPT. Een andere wet van dezelfde dag wijzigt de wet van 5 mei 2017 betreffende de audiovisuele mediadiensten in het tweetalige gebied Brussel-Hoofdstad. De Gemeenschappen en de Gewesten hebben eigen teksten aangenomen voor de materies die hen toekomen, zoals audiovisuele media, stads- en streekvervoer of e-books."
+  ],
+  [
+   "table",
+   {
+    "caption": "European Accessibility Act: belangrijkste Belgische teksten en autoriteiten per sector",
+    "head": [
+     "Sector",
+     "Belgische tekst",
+     "Toezichthoudende autoriteit"
+    ],
+    "rows": [
+     [
+      "Bankdiensten voor consumenten",
+      "Wet van 5 november 2023 (Wetboek van economisch recht, boek VIII, titel 5)",
+      "FOD Economie, Economische Inspectie"
+     ],
+     [
+      "E-handel",
+      "Wet van 5 november 2023 (Wetboek van economisch recht, boek VIII, titel 5)",
+      "FOD Economie, Economische Inspectie"
+     ],
+     [
+      "Computers, terminals, e-readers, automaten en betaalterminals",
+      "Wet van 20 juli 2023 tot wijziging van de wet van 13 juni 2005",
+      "BIPT"
+     ],
+     [
+      "Elektronischecommunicatiediensten",
+      "Wet van 20 juli 2023 tot wijziging van de wet van 13 juni 2005",
+      "BIPT"
+     ],
+     [
+      "Audiovisuele media, streekvervoer, e-books",
+      "Federale, gemeenschaps- of gewestelijke teksten naargelang de materie",
+      "Autoriteit aangewezen door elke tekst"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "private-ondernemingen-belgie",
+   "Private onderneming in België: valt u onder de regels voor digitale toegankelijkheid?"
+  ],
+  [
+   "p",
+   "Voor een onderneming is het uitgangspunt eenvoudig: de richtlijn van 2016 is niet op haar gericht, maar de European Accessibility Act kan wel op haar van toepassing zijn als ze consumenten een van de betrokken producten of diensten aanbiedt. De pagina van Inter over de verplichtingen in Vlaanderen vat het goed samen: een onderneming die online verkoopt, met betaling of met een bindende reservatie, valt onder de EAA; een louter informatieve website van een privébedrijf heeft geen wettelijke verplichting, al blijft toegankelijkheid sterk aanbevolen."
+  ],
+  [
+   "h3",
+   "E-commerce"
+  ],
+  [
+   "p",
+   "Voor een webshop gaat het om het volledige aankoopproces: productpagina, keuze van varianten, winkelmandje, account aanmaken, betaling, bevestiging, opvolging en annulering. De meest voorkomende fouten zijn bekend: een maatkiezer die met een aangepaste keuzelijst is gebouwd en niet met het toetsenbord kan worden geopend, een foutmelding die alleen met een rode rand wordt aangegeven, een betaalsessie die zonder waarschuwing verloopt, een factuur als niet-getagde pdf, een chatmodule die de focus vasthoudt. Die fouten zijn uw verantwoordelijkheid, ook als ze uit een thema of een module van derden komen."
+  ],
+  [
+   "h3",
+   "Bankdiensten en financiële diensten"
+  ],
+  [
+   "p",
+   "Een bank moet haar bankdiensten voor consumenten toegankelijk maken, of het nu gaat om het openen van een rekening, betalingen, krediet of elektronisch geld, zowel op het web als in haar apps. De eis van taalniveau B2 betekent dat informatieteksten moeten worden herwerkt: kredietvoorwaarden, uitleg over kosten, foutmeldingen in een leningsimulator. Terminals, geldautomaten en betaalterminals vallen dan weer onder de wet van 20 juli 2023."
+  ],
+  [
+   "h3",
+   "Vervoer, telecommunicatie en andere diensten"
+  ],
+  [
+   "p",
+   "Vervoerders van passagiers, telecomoperatoren en aanbieders van audiovisuele diensten moeten nagaan welke tekst op hen van toepassing is, vaak een andere dan die voor e-handel, en welke autoriteit hen controleert. Een spoorwegonderneming kan bijvoorbeeld tegelijk te maken hebben met de regels voor websites en apps om tickets te boeken, voor elektronische tickets, voor realtime-informatie en voor zelfbedieningsautomaten."
+  ],
+  [
+   "h3",
+   "Wat er niet onder valt"
+  ],
+  [
+   "p",
+   "Titel 5 van boek VIII betreft diensten voor consumenten. Een platform dat uitsluitend voor professionelen bedoeld is, zoals een bestelportaal voor wederverkopers, valt dus niet onder dat toepassingsgebied, tenzij het ook voor particulieren openstaat. Micro-ondernemingen in de bankdiensten en de e-handel zijn uitgesloten tot 28 juni 2030, maar ze hebben er belang bij te anticiperen: een vernieuwing die in 2027 wordt beslist, staat in 2030 nog online. Voor kmo’s stelt onze pagina [[sector:pme|toegankelijkheid voor kmo’s]] een evenredige aanpak voor."
+  ],
+  [
+   "h2",
+   "meertalige-websites-nl-fr-de",
+   "Meertalige websites NL/FR/DE: de eisen van de Belgische context"
+  ],
+  [
+   "p",
+   "De meeste federale en Brusselse overheidswebsites, en veel bedrijfswebsites, bestaan in twee, drie of vier talen. Meertaligheid schept geen bijkomende juridische verplichting, maar ze vermenigvuldigt de mogelijke fouten. De WCAG vereisen dat de taal van elke pagina in de code is aangegeven (succescriterium 3.1.1) en dat passages in een andere taal dat ook zijn (succescriterium 3.1.2). Zonder die aanduiding leest een schermlezer die op Nederlands is ingesteld een Franstalige pagina met een Nederlandse uitspraak voor, en wordt de tekst onbegrijpelijk."
+  ],
+  [
+   "ul",
+   [
+    "Geef de taal van elke versie aan in het html-element, bijvoorbeeld nl-BE, fr-BE of de-BE, en controleer dat op elk sjabloon, ook op foutpagina’s en modale vensters;",
+    "schrijf in de taalkiezer elke taal in haar eigen taal (“Nederlands”, “Français”, “Deutsch”) en markeer ze met het lang-attribuut; vermijd losse vlaggetjes en afkortingen als “NL | FR” zonder toegankelijke naam;",
+    "vertaal alternatieve teksten, ondertitels, transcripties en de labels die niet op het scherm verschijnen (aria-label, titels van frames, foutmeldingen), die vertaaltools vaak overslaan;",
+    "behoud dezelfde structuur en navigatie in alle talen, zodat een gebruiker die van taal wisselt zijn weg blijft vinden;",
+    "publiceer de toegankelijkheidsverklaring in elke taal van de website, met een contactpersoon die in die taal kan antwoorden;",
+    "controleer de pdf’s in elke taal: dat een document in het Nederlands correct getagd is, betekent niet dat de Franstalige versie dat ook is."
+   ]
+  ],
+  [
+   "p",
+   "De Belgische context roept ook de vraag van de gebarentaal op. Voor belangrijke video’s voor het brede publiek verbetert een vertolking in Vlaamse Gebarentaal (VGT) of in Frans-Belgische Gebarentaal (LSFB) de toegang aanzienlijk, bovenop de ondertiteling die de norm vereist. Gebruikerstests zijn het nuttigst in de talen waarin de dienst echt wordt gebruikt: onze [[svc:test-utilisateur|tests met gebruikers met een handicap]] kunnen in het Nederlands of in het Frans worden uitgevoerd."
+  ],
+  [
+   "h2",
+   "actoren-digitale-toegankelijkheid",
+   "De actoren van digitale toegankelijkheid in België"
+  ],
+  [
+   "p",
+   "Naast de teksten zijn er enkele overheidsactoren die het Belgische landschap structureren. Wie ze kent, weet bij wie hij met een vraag terechtkan, waar hij hulpmiddelen vindt en wie kan optreden bij een geschil."
+  ],
+  [
+   "ul",
+   [
+    "Inter, het agentschap Toegankelijk Vlaanderen, controleorgaan voor de Vlaamse overheden en de organisaties onder het Bestuursdecreet, met een toolbox voor toegankelijke steden en gemeenten;",
+    "NOOZO, de Vlaamse adviesraad van personen met een handicap, die adviseert over de selectie van de websites die Inter controleert;",
+    "equal.brussels, controleorgaan voor het Brussels Hoofdstedelijk Gewest en zijn gemeenten;",
+    "het Belgian Web Accessibility Office van de FOD BOSA, dat de federale websites controleert, de auditrapporten publiceert, een assistent voor het opstellen van de toegankelijkheidsverklaring aanbiedt, een register van overheidswebsites in ontwikkeling heeft en aankoopcentrales ter beschikking stelt;",
+    "de interfederale stuurgroep, die de controleorganen van de verschillende entiteiten samenbrengt en het Belgische verslag aan de Europese Commissie voorbereidt;",
+    "de andere controleorganen: Agence du Numérique, ETNIC en het Ministerie van de Duitstalige Gemeenschap;",
+    "de Nationale Hoge Raad voor Personen met een Handicap, waaraan de controleambtenaren voor de EAA hun richtsnoeren met algemene draagwijdte moeten voorleggen;",
+    "de Economische Inspectie van de FOD Economie en het BIPT voor de European Accessibility Act;",
+    "de ombudsdiensten: de federale Ombudsman, de Brusselse ombudsdienst, de ombudsdienst van Wallonië en de Federatie Wallonië-Brussel en de ombudsdienst van de Duitstalige Gemeenschap."
+   ]
+  ],
+  [
+   "p",
+   "Voor overheidsinstanties maken de aankoopcentrales die de FOD BOSA vermeldt het mogelijk om een beroep te doen op diensten die al via een overheidsopdracht zijn gegund, wat de procedure lichter maakt. Voor ondernemingen bestaat er geen officiële conformiteitscertificering: het bewijs steunt op de documentatie die u zelf opbouwt, zoals audits, verklaringen, verbeterplannen en beoordelingen van onevenredige last."
+  ],
+  [
+   "h2",
+   "actieplan-digitale-toegankelijkheid",
+   "Actieplan: uw diensten in acht stappen conform maken"
+  ],
+  [
+   "p",
+   "Voor een overheidsdienst en voor een onderneming die onder de EAA valt, verloopt de aanpak in dezelfde volgorde. Wat verschilt, is de tekst die u aanhaalt en het orgaan waaraan u verantwoording aflegt."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Bepaal uw juridische situatie.",
+     "Ga na onder welke entiteit elke website en app valt, of, voor een onderneming, welke EAA-dienst het betreft en welke Belgische tekst van toepassing is. Leg die analyse vast: ze vormt de basis van de toegankelijkheidsverklaring."
+    ],
+    [
+     "Breng het toepassingsgebied in kaart.",
+     "Maak een lijst van websites, subdomeinen, apps, beveiligde omgevingen, formulieren, downloadbare documenten en modules van derden. Wat het vaakst vergeten wordt: platformen voor afspraken, betalingen en inschrijvingen."
+    ],
+    [
+     "Geef voorrang aan de essentiële trajecten.",
+     "Begin met wat een gebruiker verhindert een procedure of aankoop af te ronden: aanmelden, formulier, betaling, bevestiging, contact. Een fout in die stappen weegt zwaarder dan een tiental fouten op nieuwspagina’s."
+    ],
+    [
+     "Laat een audit uitvoeren op basis van EN 301 549.",
+     "Een [[svc:audit-conformite|conformiteitsaudit]] op een representatief staal, met toetsenbordtests, schermlezers op computer en mobiel en controle van de documenten, levert een onderbouwde basis op. Voeg nu al de criteria van WCAG 2.2 toe."
+    ],
+    [
+     "Plan en verbeter.",
+     "Zet het rapport om in een gedateerd verbeterplan, verdeeld over ontwikkelaars, redacteurs en leveranciers. Eis van externe softwareleveranciers een engagement inzake conformiteit in uw contracten en bestekken."
+    ],
+    [
+     "Publiceer de toegankelijkheidsverklaring.",
+     "Stel een verklaring op per website en per app, als webpagina, in elke taal, met een contactpersoon die antwoordt en het juiste klachtenorgaan. In Wallonië voorziet u de jaarlijkse bijwerking."
+    ],
+    [
+     "Leid uw teams op.",
+     "Regressies komen vooral voort uit inhoud die na de audit wordt gepubliceerd: pdf’s, video’s, tabellen, nieuwe pagina’s. Gerichte [[svc:formations|opleidingen]] voor redacteurs, ontwikkelaars en projectleiders voorkomen dat u bij elke vernieuwing van nul moet herbeginnen."
+    ],
+    [
+     "Controleer doorlopend.",
+     "Neem een [[svc:recette|toegankelijkheidstest bij oplevering]] op in elke belangrijke release, volg de meldingen van gebruikers op en beantwoord ze tijdig, bijvoorbeeld binnen dertig dagen in Wallonië en in de Federatie Wallonië-Brussel."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Voor overheidsinstanties beschrijft onze pagina [[sector:public|publieke sector]] de mogelijke begeleiding; wie wil vergelijken met een buurland dat de omgekeerde keuze maakte voor een nationaal referentiekader, leest ons artikel over [[article:luxembourg|digitale toegankelijkheid in Luxemburg]]. En als u uw situatie wilt laten doorlichten, kunt u gewoon [[contact|contact met ons opnemen]]."
+  ]
+ ],
+ "faq": [
+  [
+   "Welke wet verplicht digitale toegankelijkheid in België?",
+   "Er is niet één wet maar er zijn meerdere teksten. Voor de publieke sector geldt in Vlaanderen het Bestuursdecreet van 7 december 2018 en in Brussel de ordonnantie van 4 oktober 2018; de wet van 19 juli 2018 geldt voor federale instanties, en de andere Gewesten en Gemeenschappen hebben hun eigen decreet. Voor de privésector is de European Accessibility Act vooral omgezet door de wet van 5 november 2023, voor bankdiensten en e-handel, en door de wet van 20 juli 2023 voor elektronische communicatie en apparatuur."
+  ],
+  [
+   "Moet een kleine Belgische webshop toegankelijk zijn?",
+   "Telt de webshop minder dan tien personen en bedraagt de jaaromzet of het balanstotaal ten hoogste 2 miljoen euro, dan is hij tot 28 juni 2030 uitgesloten van de verplichtingen van de wet van 5 november 2023. Boven die drempels geldt de verplichting sinds 28 juni 2025. In beide gevallen is het verstandig toegankelijkheid mee te nemen in de volgende vernieuwing, want de website zal na 2030 waarschijnlijk nog online staan."
+  ],
+  [
+   "Moet een vzw haar website toegankelijk maken?",
+   "Dat hangt af van de overheid waaronder ze valt en van haar financiering. In Vlaanderen valt een vzw onder het Bestuursdecreet als ze voor meer dan de helft door een overheid wordt gefinancierd of gecontroleerd, of als ze essentiële diensten of diensten voor personen met een handicap aanbiedt. In de andere entiteiten valt een vzw die beantwoordt aan de definitie van publiekrechtelijke instelling er ook onder. Een vzw die online aan consumenten verkoopt, kan bovendien onder de European Accessibility Act vallen."
+  ],
+  [
+   "Moeten pdf’s op een overheidswebsite toegankelijk zijn?",
+   "Ja, zodra ze na 23 september 2018 zijn gepubliceerd of nog nodig zijn voor een lopende administratieve procedure, zoals een aanvraagformulier of een reglement. De norm EN 301 549 bevat specifieke eisen voor zulke niet-webdocumenten. In de praktijk is het vaak eenvoudiger om pdf-formulieren om te zetten in webformulieren en de pdf voor te behouden voor correct getagde referentiedocumenten."
+  ],
+  [
+   "Hoelang duurt een toegankelijkheidsaudit?",
+   "De duur hangt af van het aantal sjablonen, de te testen trajecten en de mobiele apps die erbij horen. Voor een middelgrote institutionele website moet u enkele weken rekenen tussen het vastleggen van het staal en de oplevering van het rapport; bij ons bedraagt de gemiddelde termijn drie weken. Voorzie daarna tijd voor de verbeteringen, en vervolgens een her-audit van de verbeterde punten voordat u de verklaring bijwerkt."
+  ],
+  [
+   "Wie controleert de naleving van de EAA in België?",
+   "Dat hangt af van het product of de dienst. Voor bankdiensten voor consumenten en e-handel is dat de Algemene Directie Economische Inspectie van de FOD Economie. Voor apparatuur en elektronischecommunicatiediensten is dat het BIPT. De organen die overheidswebsites controleren, zoals Inter in Vlaanderen, hebben geen opdracht in het kader van de EAA."
+  ],
+  [
+   "Is een toegankelijkheidsverklaring in elke taal nodig?",
+   "De teksten leggen dat niet uitdrukkelijk op, maar de verklaring moet toegankelijk zijn voor de gebruikers van de website. Bestaat uw website in het Nederlands, het Frans en het Duits, publiceer de verklaring dan in elk van die talen en zorg dat de contactpersoon in de taal van de gebruiker kan antwoorden. Verschillende federale diensten publiceren hun verklaring zo in het Nederlands, het Frans, het Duits en het Engels."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Welke tekst geldt voor uw diensten in België?",
+ "cta_text": "We bepalen samen met u onder welke entiteit uw websites en apps vallen en auditeren daarna hun conformiteit met de norm EN 301 549. Een eerste gesprek volstaat vaak om de scope helder te krijgen.",
+ "related": [
+  "eaa",
+  "normes",
+  "luxembourg"
+ ],
+ "modified": "2026-10-28",
+ "cluster": "reglementation"
 }

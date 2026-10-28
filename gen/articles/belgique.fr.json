@@ -26,6 +26,10 @@
   ],
   [
    "p",
+   "Pour une vue d'ensemble des obligations, des normes et de la méthode dans les quatre pays, consultez aussi notre [[article:guide|guide de l'accessibilité numérique]]."
+  ],
+  [
+   "p",
    "Pour un organisme public, la première question n'est donc pas technique mais institutionnelle : de quelle entité relevez-vous ? Ce n'est ni la langue de votre site ni l'adresse de votre siège qui tranche, mais l'autorité dont vous dépendez. Une commune bruxelloise relève de l'ordonnance bruxelloise, un service public fédéral installé à Namur relève de la loi fédérale, et une institution de la Fédération Wallonie-Bruxelles établie à Bruxelles relève du décret de la Communauté française."
   ],
   [
@@ -637,5 +641,7 @@
   "eaa",
   "normes",
   "luxembourg"
- ]
+ ],
+ "modified": "2026-10-28",
+ "cluster": "reglementation"
 }

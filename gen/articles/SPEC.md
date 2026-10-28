@@ -1,5 +1,7 @@
 # Cahier des charges des articles — accessibilitenumerique.eu
 
+À lire avec `EDITORIAL.md` (ligne éditoriale, silos, maillage, procédure) et `TRANSLATION.md`.
+
 ## Le site et le cabinet
 - Site institutionnel du cabinet « Accessibilité numérique » : audit et conseil en accessibilité numérique pour le secteur public, les grands comptes et les PME, en France, en Belgique, au Luxembourg et en Suisse, avec une dimension européenne. Ambiance : cabinet de conseil sérieux, sobre, précis.
 - Objectif SEO déclaré : être premier sur « accessibilité numérique » (et ses équivalents NL « digitale toegankelijkheid », DE « digitale Barrierefreiheit », EN « digital accessibility ») en France, Belgique, Luxembourg et Suisse. Chaque article doit être LA meilleure page du web sur son sujet : plus concrète, plus à jour et plus utile que les pages institutionnelles qui dominent aujourd'hui.
@@ -27,7 +29,7 @@
   - prestations : `svc:audit-rgaa`, `svc:audit-raam`, `svc:audit-conformite`, `svc:recette`, `svc:test-utilisateur`, `svc:developpement`, `svc:prestation-informatique`, `svc:aide-recrutement`, `svc:elearning`, `svc:formations`
   - pays : `country:france`, `country:belgique`, `country:luxembourg`, `country:suisse` ; pages `standards`, `services`, `contact`, `firm`
   - secteurs : `sector:public`, `sector:grands-comptes`, `sector:pme`
-  - autres articles : `article:guide`, `article:eaa`, `article:france`, `article:declaration`, `article:belgique`, `article:luxembourg`, `article:suisse`, `article:normes`
+  - autres articles : `article:<id>` pour tout article existant (liste : fichiers `gen/articles/*.fr.json`), par exemple `article:guide` (pilier), `article:eaa`, `article:france`, `article:declaration`, `article:belgique`, `article:luxembourg`, `article:suisse`, `article:normes`
 - Les liens ne fonctionnent que dans les paragraphes, items de listes, notes, cellules de tableau, le lead et les réponses de FAQ (pas dans les titres).
 
 ## Format du fichier (JSON UTF-8)
@@ -45,7 +47,8 @@
   "where": "France | Belgique | Luxembourg | Suisse | Europe",
   "cover": "≤ 5 caractères affichés en très grand sur la couverture (ex. BE, RGAA, EAA)",
   "cover_note": ["Ligne 1 de la couverture (ex. référence d'un texte)", "Ligne 2 (ex. date clé)"],
-  "date": "2026-10-27",
+  "date": "AAAA-MM-JJ (date de publication)",
+  "cluster": "pilier | reglementation | normes | methode | technique | secteurs | organisation",
   "lead": "Chapô de 2 à 4 phrases, contient le mot-clé principal.",
   "body": [
     ["h2", "identifiant-de-section", "Intertitre de section"],

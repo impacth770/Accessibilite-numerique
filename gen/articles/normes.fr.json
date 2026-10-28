@@ -1,245 +1,824 @@
 {
-  "slug": "wcag-en-301-549-rgaa",
-  "h1": "WCAG 2.2, EN 301 549, RGAA, RAWeb : quelle norme d'accessibilité numérique suivre ?",
-  "crumb": "Normes et référentiels",
-  "meta_title": "Norme accessibilité numérique : WCAG 2.2, EN 301 549, RGAA",
-  "meta_desc": "WCAG 2.2, EN 301 549 V4.1.1, RGAA 4.1.2, RAWeb, eCH-0059 : quel référentiel d'accessibilité appliquer selon votre pays, votre statut et vos services.",
-  "card_desc": "WCAG, EN 301 549, RGAA, RAWeb, eCH-0059 : ce que contient chaque référentiel et lequel s'applique à votre organisation.",
-  "cat": "analyse",
-  "where": "Europe",
-  "cover": "WCAG",
-  "cover_note": ["WCAG 2.2 · EN 301 549", "RGAA 4.1.2 · RAWeb"],
-  "date": "2026-10-27",
-  "lead": "Toutes les obligations d'accessibilité numérique en Europe reposent sur la même base technique : les WCAG du W3C. Pourtant, la norme d'accessibilité numérique qui fait foi n'est pas la même pour une mairie française, un ministère luxembourgeois, un organisme public belge ou un éditeur suisse qui vend dans l'Union : RGAA, RAWeb, EN 301 549 ou eCH-0059. Cette analyse, à jour au 27 octobre 2026, détaille ce que contient chaque référentiel, ce que change la version 4.1.1 de la norme EN 301 549 publiée en septembre, et comment choisir lorsque vous opérez dans plusieurs pays.",
-  "body": [
-    ["h2", "reponse-courte", "La réponse courte : une base commune, plusieurs déclinaisons"],
-    ["p", "Les WCAG définissent ce qu'est un contenu web accessible. La norme européenne EN 301 549 les reprend et les étend à tout le numérique : documents, logiciels, applications mobiles, terminaux, services de communication. Les référentiels nationaux, comme le RGAA en France ou le RAWeb au Luxembourg, transforment ces exigences en critères et en tests précis, assortis d'une méthode d'évaluation et rattachés à une loi."],
-    ["p", "Les écarts entre ces textes tiennent donc moins au fond qu'à trois éléments : la version des WCAG retenue, le périmètre couvert et la méthode imposée pour mesurer la conformité. Un site qui respecte les WCAG 2.1 au niveau AA est déjà proche de la conformité dans les quatre pays. Il ne l'est pas pour autant au sens juridique tant que l'évaluation n'a pas été menée selon le référentiel applicable et que les documents attendus, comme la [[article:declaration|déclaration d'accessibilité]], ne sont pas publiés."],
-    ["p", "Pour vous situer rapidement, voici le référentiel qui s'applique aux cas les plus fréquents à la date de cet article :"],
-    ["ul", [
-      "organisme public français, ou entreprise soumise à l'article 47 de la loi du 11 février 2005 : RGAA 4.1.2, en attendant le RGAA 5 annoncé pour la fin de 2026 ;",
-      "organisme public luxembourgeois : RAWeb 1.1 pour le web, RAAM 1.1 pour les applications mobiles et RAPDF 1.1 pour les documents PDF ;",
-      "organisme public belge : la norme EN 301 549, donc les WCAG 2.1 de niveau AA pour le web ;",
-      "administration fédérale suisse : la norme eCH-0059 version 3.0, qui renvoie aux WCAG 2.1 de niveau AA ;",
-      "entreprise visée par l'European Accessibility Act, quel que soit l'État membre : les exigences de la directive, pour lesquelles la norme EN 301 549 est la référence technique."
-    ]],
-
-    ["h2", "wcag", "WCAG : comment est construite la norme d'accessibilité numérique de référence"],
-    ["p", "Les Web Content Accessibility Guidelines sont publiées par le World Wide Web Consortium (W3C), au sein de son initiative pour l'accessibilité du web (WAI). Ce ne sont pas des textes de loi mais des recommandations techniques, auxquelles les lois et les normes renvoient. Depuis septembre 2025, la version 2.2 est aussi une norme internationale : l'ISO a publié la deuxième édition de la norme ISO/IEC 40500, qui reprend les WCAG 2.2."],
-    ["h3", "Quatre principes, treize règles, des critères testables"],
-    ["p", "Les WCAG s'organisent autour de quatre principes. Un contenu doit être perceptible : une information donnée par une image, un son ou une couleur doit aussi exister sous une forme que chacun peut percevoir, par exemple un texte lu par un lecteur d'écran. Il doit être utilisable : tout ce qui se fait à la souris doit pouvoir se faire au clavier, sans limite de temps impossible à tenir. Il doit être compréhensible : langue déclarée, comportements prévisibles, messages d'erreur explicites. Il doit enfin être robuste : le code doit permettre aux technologies d'assistance d'identifier le nom, le rôle et l'état de chaque composant."],
-    ["p", "Ces principes se déclinent en 13 règles (guidelines), comme « Accessible au clavier » ou « Assistance à la saisie ». Chaque règle se décompose à son tour en critères de succès, formulés de manière à pouvoir être vérifiés : un critère est respecté ou ne l'est pas sur une page donnée. La version 2.2 compte 86 critères de succès actifs. C'est ce niveau, celui des critères, que vérifient les auditeurs et que reprennent les référentiels nationaux."],
-    ["h3", "Trois niveaux de conformité : A, AA et AAA"],
-    ["p", "Chaque critère est rattaché à un niveau. Le niveau A regroupe les exigences sans lesquelles certaines personnes ne peuvent tout simplement pas accéder au contenu : une vidéo sans sous-titres, un bouton inutilisable au clavier. Le niveau AA ajoute des exigences qui lèvent des difficultés importantes, comme un contraste de texte suffisant ou un focus visible. Le niveau AAA rassemble les exigences les plus élevées, souvent impossibles à garantir sur l'ensemble d'un site, comme la langue des signes pour toutes les vidéos."],
-    ["p", "Être conforme au niveau AA signifie respecter tous les critères de niveau A et tous ceux de niveau AA. C'est le niveau retenu par la norme EN 301 549 et, à travers elle, par les réglementations européennes. La conformité s'apprécie page par page, mais aussi sur les processus complets : si l'une des étapes d'un tunnel de commande ou d'une démarche en ligne n'est pas conforme, aucune des pages de ce processus ne peut être déclarée conforme."],
-    ["h3", "Versions 2.0, 2.1 et 2.2 : trois versions compatibles entre elles"],
-    ["p", "Chaque nouvelle version des WCAG 2 ajoute des critères sans remettre en cause les précédents. Le W3C indique que les WCAG 2.2 s'appuient sur les WCAG 2.1 et restent compatibles avec elles : un contenu conforme aux WCAG 2.2 l'est aussi aux versions antérieures, à une exception près, présentée plus bas."],
-    ["table", {
-      "caption": "Les versions des WCAG 2 et ce qu'elles ont apporté",
-      "head": ["Version", "Publication par le W3C", "Critères de succès", "Principaux apports"],
-      "rows": [
-        ["WCAG 2.0", "11 décembre 2008", "61", "Le socle : alternatives textuelles, clavier, contraste, structure, formulaires"],
-        ["WCAG 2.1", "Juin 2018", "78 (17 ajoutés)", "Mobile et basse vision : orientation, redimensionnement à 320 pixels de large (reflow), contraste des composants, espacement du texte, messages d'état"],
-        ["WCAG 2.2", "5 octobre 2023, mise à jour du 12 décembre 2024", "86 (9 ajoutés, 1 retiré)", "Focus non masqué, taille des cibles, glisser-déposer, aide cohérente, authentification accessible"]
-      ]
-    }],
-    ["h3", "Les neuf critères ajoutés par les WCAG 2.2, et celui qui disparaît"],
-    ["p", "La page officielle du W3C [[https://w3.org/WAI/standards-guidelines/wcag/new-in-22/|Ce qui change dans les WCAG 2.2]] liste neuf nouveaux critères. Six d'entre eux relèvent des niveaux A et AA, et entrent donc dans le périmètre d'une conformité AA :"],
-    ["ul", [
-      "2.4.11 Focus non masqué (minimum), niveau AA : l'élément qui reçoit le focus ne doit pas être entièrement caché par un contenu de la page, comme un bandeau fixe ;",
-      "2.4.12 Focus non masqué (amélioré), niveau AAA : aucune partie de l'élément ne doit être cachée ;",
-      "2.4.13 Apparence du focus, niveau AAA : l'indicateur de focus doit avoir une taille et un contraste minimaux ;",
-      "2.5.7 Mouvements de glissement, niveau AA : toute action réalisée en faisant glisser doit pouvoir l'être par un simple clic ou une simple pression ;",
-      "2.5.8 Taille de la cible (minimum), niveau AA : les zones cliquables doivent mesurer au moins 24 pixels CSS de côté, sauf exceptions ;",
-      "3.2.6 Aide cohérente, niveau A : les moyens d'obtenir de l'aide doivent se trouver au même endroit d'une page à l'autre ;",
-      "3.3.7 Saisie redondante, niveau A : une information déjà donnée dans un processus ne doit pas être redemandée, ou doit être proposée automatiquement ;",
-      "3.3.8 Authentification accessible (minimum), niveau AA : se connecter ne doit pas exiger un test cognitif sans alternative ou sans aide ;",
-      "3.3.9 Authentification accessible (améliorée), niveau AAA : même exigence, sans l'exception accordée à la reconnaissance d'objets."
-    ]],
-    ["p", "Le critère 4.1.1 Analyse syntaxique (Parsing) est, selon le W3C, « obsolète et retiré » des WCAG 2.2 : les navigateurs et les technologies d'assistance ne dépendent plus de l'analyse du code source brut. C'est la seule entorse à la compatibilité ascendante. Le W3C précise que les organisations dont la réglementation renvoie encore aux WCAG 2.0 ou 2.1 peuvent devoir continuer à le tester. C'est le cas en France, où le critère 8.2 du RGAA 4.1.2 (validité du code source généré) reste à vérifier."],
-
-    ["h2", "wcag-3", "WCAG 3 : un chantier de long terme, pas une échéance"],
-    ["p", "Le W3C prépare depuis plusieurs années une nouvelle génération de règles, les W3C Accessibility Guidelines 3.0. Le [[https://www.w3.org/TR/wcag-3.0/|dernier brouillon de travail (Working Draft)]] date du 10 septembre 2026. Il propose une architecture différente : des résultats attendus regroupés par thèmes (images et médias, contrôle par l'utilisateur, etc.), des exigences plus fines classées en exigences essentielles et complémentaires, et des « assertions » par lesquelles une organisation déclare des pratiques, comme la conduite de tests utilisateurs. Le mode de calcul de la conformité diffère aussi de celui des WCAG 2."],
-    ["p", "Le W3C est explicite sur le calendrier : selon sa [[https://www.w3.org/WAI/WCAG3|page de présentation des WCAG 3]], la norme ne devrait pas être finalisée avant plusieurs années, elle ne remplacera pas les WCAG 2 et les WCAG 2 ne seront pas dépréciées avant plusieurs années après la finalisation des WCAG 3. Le brouillon lui-même précise que la liste définitive des exigences sera différente de celle publiée."],
-    ["p", "Aucune loi européenne ni aucune norme harmonisée ne renvoie aujourd'hui aux WCAG 3. Pour un directeur des systèmes d'information ou un responsable de la conformité, la conséquence est simple : l'investissement utile porte sur les WCAG 2.2 de niveau AA. Le brouillon de septembre 2026 indique d'ailleurs que respecter les WCAG 2 au niveau AA permet d'être proche de la conformité aux WCAG 3, même si des différences peuvent subsister."],
-
-    ["h2", "en-301-549", "EN 301 549 : la norme européenne qui va bien au-delà du web"],
-    ["p", "La norme EN 301 549, intitulée « Exigences d'accessibilité pour les produits et services TIC », est élaborée conjointement par l'ETSI, le CEN et le CENELEC, les organismes européens de normalisation. Là où les WCAG ne visent que les contenus web, elle couvre l'ensemble des technologies de l'information et de la communication : un guichet automatique, un logiciel métier, un service de visioconférence, une liseuse ou un PDF téléchargé relèvent de son champ."],
-    ["p", "Pour le web, la norme ne réinvente rien : son chapitre 9 reprend les critères de succès des WCAG de niveaux A et AA. Ses chapitres 10 et 11 appliquent ces mêmes critères, adaptés, aux documents et aux logiciels qui ne sont pas des pages web, y compris les applications mobiles natives. Le reste de la norme ajoute des exigences que les WCAG ne traitent pas."],
-    ["table", {
-      "caption": "Les chapitres de la norme EN 301 549 (version 4.1.1)",
-      "head": ["Chapitre", "Objet", "Exemples concrets"],
-      "rows": [
-        ["4", "Performances fonctionnelles", "Utilisation sans la vue, avec une vision réduite, sans l'ouïe, sans la parole, avec une force ou une mobilité limitée"],
-        ["5", "Exigences génériques", "Fonctions d'accessibilité activables, fonctionnement en circuit fermé (borne), biométrie, préservation des informations d'accessibilité lors d'une conversion"],
-        ["6", "Communication bidirectionnelle en temps réel", "Téléphonie, visioconférence, texte en temps réel, communications d'urgence"],
-        ["7", "Fonctions vidéo", "Lecteurs capables d'afficher et de transmettre les sous-titres et l'audiodescription"],
-        ["8", "Matériel", "Terminaux, bornes, touches repérables au toucher, connexion d'aides techniques"],
-        ["9", "Web", "Critères WCAG de niveaux A et AA appliqués aux pages web"],
-        ["10", "Documents non web", "PDF, traitement de texte, tableurs téléchargés"],
-        ["11", "Logiciels non web", "Applications mobiles, logiciels de bureau, outils d'édition, respect des préférences de l'utilisateur"],
-        ["12", "Informations sur les produits et services", "Information accessible sur les produits et les services, fonctions d'accessibilité et de compatibilité, guides électroniques des programmes"],
-        ["13", "Services de relais et accès aux secours", "Relais pour personnes sourdes ou malentendantes"],
-        ["14", "Conformité", "Règles générales d'évaluation"]
-      ]
-    }],
-    ["h3", "Version 3.2.1 en vigueur, version 4.1.1 publiée en septembre 2026"],
-    ["p", "La version actuellement citée au Journal officiel de l'Union européenne est la V3.2.1, publiée en 2021. Elle a été désignée comme norme harmonisée pour les sites et applications mobiles du secteur public par la [[https://eur-lex.europa.eu/eli/dec_impl/2021/1339/oj|décision d'exécution (UE) 2021/1339 de la Commission du 11 août 2021]], prise au titre de la directive (UE) 2016/2102. Ses chapitres web, documents et logiciels renvoient aux WCAG 2.1 de niveau AA."],
-    ["p", "La version 4.1.1 a été adoptée le 24 août 2026 et publiée le 2 septembre 2026. D'après son avant-propos et son introduction, elle a été préparée dans le cadre de la demande de normalisation M/587 de la Commission, référencée C(2022) 6456, afin d'offrir un moyen de démontrer la conformité à la directive (UE) 2019/882, l'European Accessibility Act. Ses chapitres 9, 10 et 11 sont alignés sur les WCAG 2.2, que la norme cite dans leur version du 12 décembre 2024 et sous la référence ISO/IEC 40500:2025. Ses annexes ZA et ZB établissent la correspondance entre ses exigences et celles des deux directives. Le texte est consultable gratuitement sur le site de l'ETSI : [[https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf|EN 301 549 V4.1.1 (2026-09)]]."],
-    ["p", "Un point juridique compte : une norme ne confère une présomption de conformité qu'une fois sa référence publiée au Journal officiel de l'Union européenne. À la date de cet article, la V4.1.1 n'y est pas encore citée ; les autorités nationales qui ont suivi les travaux, comme celle du Luxembourg, attendent cette citation d'ici la fin de 2026. Jusque-là, la V3.2.1 reste la norme harmonisée de référence pour le secteur public."],
-    ["note", "À retenir", "Testez dès maintenant selon les WCAG 2.2 de niveau AA : c'est la base de la norme EN 301 549 V4.1.1 et du futur RGAA 5. Mais un test WCAG seul ne démontre pas la conformité à la norme, qui ajoute ses propres exigences pour les logiciels, la documentation, le support et la communication en temps réel."],
-    ["h3", "Ce que la norme exige en plus des WCAG"],
-    ["p", "Dans un audit selon la norme EN 301 549, plusieurs exigences échappent à une grille purement WCAG. Un logiciel ou une application doit respecter les réglages d'accessibilité du système, par exemple la taille de texte choisie dans les paramètres du téléphone. Un éditeur de contenus doit permettre de produire des contenus accessibles. La documentation du produit doit décrire ses fonctions d'accessibilité, et le service d'assistance doit pouvoir répondre à une personne sourde ou aveugle. Pour un service de visioconférence ou une application bancaire avec appel vidéo, le chapitre 6 apporte des exigences sur le texte en temps réel et la qualité de la vidéo pour la lecture labiale ou la langue des signes."],
-
-    ["h2", "rgaa", "RGAA 4.1.2 : la différence entre RGAA et WCAG expliquée"],
-    ["p", "Le Référentiel général d'amélioration de l'accessibilité est publié par la Direction interministérielle du numérique (DINUM). Il sert à évaluer la conformité des services soumis à l'article 47 de la loi n° 2005-102 du 11 février 2005, dont les obligations sont détaillées dans notre article sur [[article:france|l'accessibilité numérique en France]]. La version 4 a été adoptée en septembre 2019 ; la version 4.1.2, en vigueur, est issue de la mise à jour du 18 avril 2023."],
-    ["p", "Le RGAA 4.1.2 compte 106 critères répartis en 13 thématiques. Chaque critère prend la forme d'une question fermée, par exemple : « Chaque image porteuse d'information a-t-elle une alternative textuelle ? ». Chaque critère se décompose en tests, 258 au total d'après le fichier officiel des [[https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/|critères et tests du RGAA]]. Un critère est conforme si tous ses tests le sont, non conforme si l'un d'eux échoue, ou non applicable si le contenu concerné n'existe pas sur la page."],
-    ["table", {
-      "caption": "Les 13 thématiques du RGAA 4.1.2",
-      "head": ["Thématique", "Nombre de critères", "Exemple de vérification"],
-      "rows": [
-        ["1. Images", "9", "Alternative textuelle des images porteuses d'information, images décoratives ignorées"],
-        ["2. Cadres", "2", "Titre pertinent des iframes (carte, vidéo intégrée)"],
-        ["3. Couleurs", "3", "Information non donnée par la seule couleur, contrastes"],
-        ["4. Multimédia", "13", "Transcription, sous-titres, audiodescription, contrôle des médias"],
-        ["5. Tableaux", "8", "En-têtes de tableaux de données associés aux cellules"],
-        ["6. Liens", "2", "Intitulé de lien explicite, lien sans intitulé"],
-        ["7. Scripts", "5", "Composants JavaScript utilisables au clavier et restitués"],
-        ["8. Éléments obligatoires", "10", "Langue, titre de page, code valide"],
-        ["9. Structuration de l'information", "4", "Hiérarchie des titres, listes, zones de la page"],
-        ["10. Présentation de l'information", "14", "Zoom à 200 %, focus visible, affichage sur petit écran"],
-        ["11. Formulaires", "13", "Étiquettes, regroupements, messages d'erreur, saisie automatique"],
-        ["12. Navigation", "11", "Lien d'évitement, ordre de tabulation, plan du site ou moteur de recherche"],
-        ["13. Consultation", "12", "Limites de temps, documents téléchargeables, contenus en mouvement"]
-      ]
-    }],
-    ["h3", "RGAA ou WCAG : ce qui change vraiment"],
-    ["p", "Sur le fond, le RGAA 4.1.2 et les WCAG 2.1 de niveau AA disent la même chose : chaque critère RGAA renvoie à un ou plusieurs critères WCAG. L'analyse du fichier officiel montre que le RGAA couvre les critères de niveaux A et AA des WCAG 2.1, à une exception près : les sous-titres en direct (critère WCAG 1.2.4) ne font l'objet d'aucun critère RGAA."],
-    ["p", "Les différences tiennent à la méthode. Le RGAA fixe des tests précis là où les WCAG laissent l'auditeur choisir sa technique ; il impose un environnement de test, c'est-à-dire des combinaisons de lecteurs d'écran et de navigateurs (NVDA, JAWS, VoiceOver sur ordinateur, TalkBack et VoiceOver sur mobile) ; il définit la façon de constituer l'échantillon de pages et de calculer un taux de conformité. Il s'accompagne enfin d'obligations de publication propres au droit français, comme la déclaration d'accessibilité et le schéma pluriannuel. Les critères ajoutés par les WCAG 2.2, comme la taille des cibles ou l'authentification accessible, n'y figurent pas encore."],
-    ["p", "Un audit RGAA ne vaut donc pas audit WCAG 2.2, et inversement. Si vous devez publier une déclaration en France, l'[[svc:audit-rgaa|audit RGAA]] est le seul qui produise un taux de conformité opposable. Si vous visez l'European Accessibility Act ou un marché européen, l'évaluation doit en plus couvrir les critères WCAG 2.2 et les chapitres pertinents de la norme EN 301 549."],
-    ["h3", "Le RGAA 5 en préparation"],
-    ["p", "La DINUM a annoncé que la version 5 du RGAA est en cours de rédaction, avec des acteurs publics, associatifs et privés, pour une publication prévue fin 2026. Selon [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|l'annonce officielle du RGAA 5]], cette version intégrera les WCAG 2.2, reformulera et simplifiera les critères, et définira des critères et des tests propres aux applications mobiles et aux documents bureautiques. Elle s'accompagnera de la désignation de l'Arcom comme autorité de contrôle et d'un service en ligne de dépôt et de publication des déclarations d'accessibilité."],
-    ["p", "La DINUM précise deux points pratiques. Les critères du RGAA 5 viendront préciser ou compléter ceux du RGAA 4.1.2 sans les contredire : le travail réalisé aujourd'hui n'est pas perdu. Et les déclarations établies avant la publication du RGAA 5 resteront valables 18 mois, dans la limite de trois ans après leur date de publication. Les travaux en cours ne doivent pas être suspendus dans l'attente de la nouvelle version."],
-
-    ["h2", "raweb-raam", "RAWeb, RAAM et RAPDF : les référentiels du Luxembourg"],
-    ["p", "Le Luxembourg a fait le choix de référentiels nationaux, publiés par le Service information et presse du gouvernement (SIP) sur le portail accessibilite.public.lu. Ils servent à évaluer les sites et applications des organismes du secteur public, soumis à la loi du 28 mai 2019. Leur particularité est d'être construits à partir de la norme EN 301 549, et non des seules WCAG, tout en reprenant la méthode du RGAA."],
-    ["p", "Le RAWeb 1.1, pour le web, comporte 136 critères. Il reprend les 13 thématiques du RGAA 4.1.2 et en ajoute quatre, issues de la norme européenne : documentation et fonctionnalités d'accessibilité, outils d'édition, services d'assistance, communication en temps réel. La mise à jour publiée le 6 février 2026 a notamment ajouté la prise en compte de l'European Accessibility Act, ce qui permet d'utiliser le RAWeb au-delà du seul secteur public luxembourgeois, et a supprimé des techniques devenues obsolètes."],
-    ["p", "Le RAAM 1.1, pour les applications mobiles, compte 108 critères. Il évalue une application au regard de la norme EN 301 549 V3.2.1, en couvrant ses chapitres 5, 6, 7, 10, 11 et 12. Le RAPDF 1.1, pour les documents PDF, a été simplifié en février 2026 : sa méthode ne repose plus sur un lecteur d'écran mais sur Acrobat Reader et l'outil PDF Accessibility Checker (PAC), et il intègre une correspondance avec la norme PDF/UA-2."],
-    ["p", "Une évolution majeure est programmée. Le SIP a annoncé le 15 septembre 2026 que [[https://accessibilite.public.lu/fr/news/2026-09-15-EN301549v4.html|le RAWeb et le RAAM passeront en version 2]] courant février 2027, en compatibilité avec la norme EN 301 549 V4.1.1 et donc avec les WCAG 2.2. Les organismes luxembourgeois qui lancent un audit à l'automne 2026 l'établissent en RAWeb 1.1 ou en RAAM 1.1 ; il est utile de faire vérifier en parallèle les critères WCAG 2.2 pour éviter une seconde campagne de corrections. Notre article sur [[article:luxembourg|l'accessibilité numérique au Luxembourg]] détaille les obligations, et la page [[svc:audit-raam|audit RAAM]] la méthode appliquée aux applications iOS et Android."],
-
-    ["h2", "belgique-suisse", "Belgique et Suisse : pas de référentiel national propre"],
-    ["h3", "En Belgique, la norme EN 301 549 directement"],
-    ["p", "En Belgique, la loi du 19 juillet 2018 relative à l'accessibilité des sites internet et des applications mobiles des organismes du secteur public transpose la directive (UE) 2016/2102 au niveau fédéral, complétée par des décrets et ordonnances des Régions et des Communautés. Il n'existe pas de grille nationale comparable au RGAA : la référence est la norme EN 301 549, donc les WCAG 2.1 de niveau AA pour le web, et ces mêmes critères interprétés pour les documents et logiciels."],
-    ["p", "En pratique, un audit belge s'appuie sur les critères WCAG et sur les chapitres de la norme applicables au service. Les tests du RGAA ou du RAWeb peuvent servir d'outils de travail à l'auditeur, mais le rapport et la déclaration doivent se référer à la norme EN 301 549. Les obligations et les autorités compétentes sont présentées sur notre page [[country:belgique|Belgique]] et dans l'article consacré à [[article:belgique|l'accessibilité numérique en Belgique]]."],
-    ["h3", "En Suisse, la norme eCH-0059"],
-    ["p", "En Suisse, la loi sur l'égalité pour les handicapés (LHand) et son ordonnance imposent l'accessibilité des prestations en ligne de la Confédération. La référence technique est la [[https://www.ech.ch/de/ech/ech-0059/3.0|norme eCH-0059, version 3.0]], approuvée par l'association eCH en juin 2020. Elle repose sur les WCAG 2.1, et l'administration fédérale en exige le respect au niveau AA. Les cantons et les communes appliquent leurs propres règles, qui renvoient souvent à la même norme."],
-    ["p", "Deux évolutions sont à suivre. Une révision partielle de la LHand, en discussion au Parlement fédéral, vise à renforcer l'accès aux prestations des entreprises privées, y compris numériques. Et les entreprises suisses qui vendent aux consommateurs de l'Union européenne sont soumises à l'European Accessibility Act pour les produits et services concernés, donc à la norme EN 301 549 plutôt qu'à eCH-0059. Le détail figure dans notre article sur [[article:suisse|l'accessibilité numérique en Suisse]]."],
-
-    ["h2", "tableau-correspondance", "Quel référentiel d'accessibilité selon votre pays et votre organisation"],
-    ["p", "Le tableau ci-dessous croise le pays et le type d'organisation avec le texte applicable, le référentiel d'évaluation et le niveau attendu. Il décrit la situation au 27 octobre 2026 ; les évolutions annoncées figurent dans le plan d'action en fin d'article."],
-    ["table", {
-      "caption": "Correspondance pays, organisation, texte, référentiel et niveau (octobre 2026)",
-      "head": ["Pays et organisation", "Texte applicable", "Référentiel d'évaluation", "Niveau attendu"],
-      "rows": [
-        ["France, organisme public", "Article 47 de la loi n° 2005-102 du 11 février 2005", "RGAA 4.1.2 (RGAA 5 annoncé pour fin 2026)", "106 critères, équivalent WCAG 2.1 AA"],
-        ["France, entreprise soumise à l'article 47", "Article 47 de la loi n° 2005-102", "RGAA 4.1.2", "106 critères, équivalent WCAG 2.1 AA"],
-        ["France, entreprise visée par l'EAA", "Transposition de la directive (UE) 2019/882", "Exigences de la directive, norme EN 301 549", "WCAG AA et exigences de la norme"],
-        ["Belgique, organisme public", "Loi du 19 juillet 2018 et textes régionaux", "EN 301 549 V3.2.1", "WCAG 2.1 AA"],
-        ["Belgique, entreprise visée par l'EAA", "Transposition de la directive (UE) 2019/882", "Norme EN 301 549", "WCAG AA et exigences de la norme"],
-        ["Luxembourg, organisme public", "Loi du 28 mai 2019", "RAWeb 1.1, RAAM 1.1, RAPDF 1.1", "Exigences de la norme EN 301 549"],
-        ["Luxembourg, entreprise visée par l'EAA", "Transposition de la directive (UE) 2019/882", "Norme EN 301 549 ; RAWeb 1.1 utilisable", "WCAG AA et exigences de la norme"],
-        ["Suisse, administration fédérale", "LHand et son ordonnance", "eCH-0059 version 3.0", "WCAG 2.1 AA"],
-        ["Suisse, entreprise vendant dans l'Union", "Loi de transposition de l'EAA du pays de vente", "Norme EN 301 549", "WCAG AA et exigences de la norme"],
-        ["Groupe présent dans plusieurs pays", "Cumul des textes ci-dessus", "WCAG 2.2 AA et EN 301 549, complétés des référentiels nationaux", "Le plus exigeant des niveaux applicables"]
-      ]
-    }],
-    ["p", "Deux remarques pour lire ce tableau. D'abord, le RGAA et le RAWeb sont des méthodes d'évaluation, pas des niveaux d'exigence supplémentaires : un site conforme au RGAA n'est pas « plus accessible » qu'un site conforme à la norme EN 301 549, il a été évalué selon une autre grille. Ensuite, pour l'European Accessibility Act, c'est la directive qui fixe les exigences, et la norme harmonisée qui en donne la traduction technique ; notre analyse de [[article:eaa|l'European Accessibility Act]] détaille les produits et services visés et les exemptions."],
-
-    ["h2", "criteres-expliques", "Six critères expliqués sur des cas concrets"],
-    ["p", "Les normes deviennent plus lisibles à travers quelques critères qui reviennent dans tous les audits. Pour chacun, nous indiquons la référence WCAG et, lorsqu'il existe, le critère RGAA correspondant."],
-    ["h3", "L'alternative textuelle des images"],
-    ["p", "Le critère WCAG 1.1.1 (niveau A), repris par les critères 1.1 à 1.3 du RGAA, exige que toute image porteuse d'information ait un équivalent textuel, et que les images décoratives soient ignorées par les technologies d'assistance. Sur une page de paiement, les logos des cartes acceptées doivent être restitués (« Visa, Mastercard ») ; l'illustration d'ambiance du bandeau, elle, doit avoir une alternative vide pour ne pas encombrer la lecture."],
-    ["p", "Les erreurs fréquentes sont connues : une alternative qui reprend le nom du fichier (« IMG_2045.jpg »), une alternative « image » ou « logo » sans contenu utile, un graphique de rapport annuel décrit par son seul titre alors que les chiffres ne figurent nulle part ailleurs. Dans ce dernier cas, le RGAA demande une description détaillée (critère 1.6), par exemple le tableau des données sous le graphique."],
-    ["h3", "Le contraste des textes et des composants"],
-    ["p", "Le critère WCAG 1.4.3 (niveau AA), critère 3.2 du RGAA, impose un rapport de contraste d'au moins 4,5:1 entre le texte et son arrière-plan, abaissé à 3:1 pour les grands textes, c'est-à-dire d'au moins 18 points, ou 14 points en gras. Le texte d'exemple gris clair affiché dans un champ de formulaire, le texte blanc posé sur une photo claire ou les mentions en petits caractères d'un bandeau de cookies échouent souvent."],
-    ["p", "Le critère 1.4.11 (niveau AA), critère 3.3 du RGAA, étend l'exigence aux composants d'interface et aux éléments graphiques porteurs d'information : la bordure d'un champ de saisie, l'icône d'une loupe sans libellé ou la courbe d'un graphique doivent atteindre un contraste de 3:1 avec les couleurs adjacentes."],
-    ["h3", "Le focus visible, et désormais non masqué"],
-    ["p", "Une personne qui navigue au clavier doit voir en permanence où elle se trouve. Le critère WCAG 2.4.7 (niveau AA), critère 10.7 du RGAA, exige que l'élément qui reçoit le focus soit visible. L'erreur classique est une règle CSS « outline: none » appliquée à tout le site pour des raisons esthétiques, sans indicateur de remplacement."],
-    ["p", "Les WCAG 2.2 ajoutent le critère 2.4.11 (niveau AA) : l'élément qui a le focus ne doit pas être entièrement caché par un contenu ajouté par l'auteur. Un en-tête fixe qui recouvre le lien sur lequel l'utilisateur vient d'arriver, ou un bandeau de consentement qui masque le bas de la page pendant que l'utilisateur tabule dans le pied de page, rendent la page non conforme."],
-    ["h3", "La taille des cibles"],
-    ["p", "Nouveau critère des WCAG 2.2, le 2.5.8 (niveau AA) demande que les cibles des actions au pointeur mesurent au moins 24 par 24 pixels CSS. Des exceptions existent : une cible plus petite reste acceptable si un espacement suffisant la sépare des cibles voisines, si la même fonction est offerte par un autre contrôle conforme sur la page, si le lien est inséré dans une phrase, ou si la taille est fixée par le navigateur et non par l'auteur."],
-    ["p", "Les cas typiques d'échec sont les numéros de pagination serrés, la croix de fermeture d'une fenêtre modale sur mobile ou les icônes de partage alignées sans marge. Ce critère n'existe pas dans le RGAA 4.1.2 ; il figure en revanche dans la norme EN 301 549 V4.1.1. Le corriger revient le plus souvent à ajuster quelques composants du design system, ce qui profite aussi aux personnes ayant des tremblements et à tous les utilisateurs de téléphone."],
-    ["h3", "L'authentification accessible"],
-    ["p", "Le critère WCAG 3.3.8 (niveau AA) interdit d'imposer un test de fonction cognitive pour s'authentifier, comme mémoriser un mot de passe, recopier des caractères ou résoudre une énigme, sauf si une alternative ou une aide est proposée. Selon la documentation explicative du W3C, le gestionnaire de mots de passe et le copier-coller sont des aides valables : un site qui bloque le collage du mot de passe, ou qui empêche le remplissage automatique des champs, échoue au critère."],
-    ["p", "Deux exemples reviennent souvent dans les espaces clients. Le clavier virtuel dont les chiffres changent de place à chaque connexion oblige à un effort de repérage, sans alternative ; et le code reçu par SMS saisi dans six cases séparées qui refusent le collage oblige à recopier. Un captcha de reconnaissance d'objets (« sélectionnez les images contenant un vélo ») est toléré au niveau AA, mais pas un captcha qui demande de retranscrire un texte déformé sans autre méthode de connexion."],
-    ["h3", "Les sous-titres"],
-    ["p", "Le critère WCAG 1.2.2 (niveau A) exige des sous-titres synchronisés pour les vidéos préenregistrées comportant du son ; le RGAA le reprend dans ses critères 4.3 (présence) et 4.4 (pertinence). La vidéo d'un conseil municipal publiée en différé, une vidéo de présentation d'un produit ou un tutoriel de formation sont concernés. Des sous-titres générés automatiquement et jamais relus échouent fréquemment au critère de pertinence."],
-    ["p", "Pour les contenus en direct, comme un webinaire ou une retransmission de séance publique, le critère WCAG 1.2.4 (niveau AA) exige des sous-titres en temps réel. Il ne fait l'objet d'aucun critère dans le RGAA 4.1.2, mais il s'applique à un audit selon les WCAG ou la norme EN 301 549. Le chapitre 7 de la norme ajoute une exigence côté lecteur : le lecteur vidéo doit permettre d'afficher les sous-titres et de les conserver lors de la transmission."],
-
-    ["h2", "plusieurs-pays", "Plusieurs pays, un seul programme : choisir un référentiel pivot"],
-    ["p", "Un groupe qui exploite un site de commerce en ligne en France, en Belgique et au Luxembourg, une application mobile commune et un espace client en Suisse ne peut pas mener quatre programmes d'accessibilité séparés. La méthode la plus efficace consiste à choisir un référentiel pivot, appliqué à tous les composants partagés, puis à produire les évaluations nationales là où la loi en exige une."],
-    ["ol", [
-      ["Cartographiez vos services et vos régimes.", "Pour chaque site, application ou document, notez les pays de diffusion, le statut de l'entité qui l'édite (public, privé, soumis à l'EAA ou non) et les documents à publier : déclaration d'accessibilité, informations exigées par l'EAA, schéma pluriannuel en France."],
-      ["Retenez un pivot exigeant.", "Les WCAG 2.2 de niveau AA, complétées des chapitres de la norme EN 301 549 utiles à vos services (logiciels, documentation, support, communication en temps réel), couvrent par construction le fond des exigences du RGAA, du RAWeb, du RAAM et d'eCH-0059."],
-      ["Évaluez d'abord les composants partagés.", "Le design system, les gabarits de pages, le tunnel de commande et l'authentification sont communs à tous vos marchés : une correction faite une fois profite à tous les pays."],
-      ["Produisez les évaluations nationales requises.", "Là où un référentiel national est imposé, comme le RGAA en France pour un service soumis à l'article 47 ou le RAWeb pour un organisme public luxembourgeois, menez l'audit selon ce référentiel pour obtenir un taux et une déclaration recevables."],
-      ["Harmonisez vos indicateurs.", "Suivez un indicateur commun, par exemple le nombre de critères WCAG 2.2 AA non respectés par parcours, et réservez les taux nationaux aux déclarations."]
-    ]],
-    ["p", "Le piège le plus courant consiste à présenter un audit RGAA comme preuve de conformité à l'European Accessibility Act : il ne couvre ni les nouveaux critères WCAG 2.2, ni les exigences de la norme sur la documentation et le support. L'inverse est vrai aussi : un rapport WCAG 2.2 ne suffit pas pour établir une déclaration RGAA. Un [[svc:audit-conformite|audit de conformité WCAG et EN 301 549]] sert de pivot ; il se combine avec un audit national lorsque la loi le demande. Les enjeux propres aux groupes sont développés sur la page [[sector:grands-comptes|grands comptes]]."],
-
-    ["h2", "methode-audit", "Méthode d'audit : de l'échantillon au plan de correction"],
-    ["p", "Quel que soit le référentiel, un audit d'accessibilité sérieux suit les mêmes étapes. Ce qui varie, ce sont la grille de critères et la forme du résultat. Notre [[article:guide|guide de l'accessibilité numérique]] présente la démarche d'ensemble ; voici le déroulé d'un audit de conformité."],
-    ["ol", [
-      ["Cadrage.", "Choix du référentiel et de sa version, délimitation du périmètre (site, sous-domaines, espace connecté, application), environnement de test et accès aux comptes de démonstration."],
-      ["Constitution de l'échantillon.", "La méthode du RGAA demande un échantillon représentatif : pages types lorsqu'elles existent (accueil, contact, mentions légales, déclaration d'accessibilité, plan du site, aide, authentification), pages les plus consultées, pages représentatives de chaque gabarit et toutes les étapes des processus clés, comme une demande d'acte d'état civil ou un achat."],
-      ["Tests manuels critère par critère.", "L'auditeur vérifie chaque critère sur chaque page de l'échantillon, au clavier, avec l'inspecteur de code et des outils de mesure (contraste, structure des titres). C'est cette étape qui prend le plus de temps."],
-      ["Vérification avec les technologies d'assistance.", "Les composants complexes, comme un menu déroulant, une carte interactive ou une fenêtre modale, sont testés avec des lecteurs d'écran (NVDA, JAWS, VoiceOver, TalkBack) et en zoom, pour vérifier ce qui est réellement restitué."],
-      ["Calcul du résultat et rapport.", "Selon le référentiel, le rapport donne un taux de conformité (RGAA, RAWeb, RAAM) ou un état par critère (WCAG, EN 301 549). Chaque non-conformité est localisée, illustrée et accompagnée d'une recommandation de correction."],
-      ["Plan de correction et contre-audit.", "Les non-conformités sont classées par impact sur les utilisateurs et par effort, puis un contre-audit vérifie les corrections avant la mise à jour de la déclaration."]
-    ]],
-    ["h3", "Ce que les outils automatiques ne voient pas"],
-    ["p", "Les extensions de navigateur et les robots d'analyse sont utiles pour détecter vite les erreurs répétitives : image sans attribut alt, champ sans étiquette, contraste insuffisant d'un texte sur fond uni, langue non déclarée. Ils ne savent pas juger de la pertinence : une alternative « bouton » sur l'image d'un bouton « Payer » passe le test automatique mais reste non conforme. Ils ne détectent pas non plus un piège au clavier dans une fenêtre modale, un ordre de tabulation incohérent, un texte posé sur une photo ou une vidéo sans sous-titres."],
-    ["p", "Un score d'outil automatique n'est donc pas un taux de conformité, et ne peut pas fonder une déclaration d'accessibilité. Dans nos audits, les outils servent à couvrir rapidement un grand nombre de pages, mais chaque critère est vérifié manuellement ; un audit complet demande en moyenne trois semaines. Pour savoir si les parcours fonctionnent vraiment, un [[svc:test-utilisateur|test avec des personnes en situation de handicap]] complète utilement l'audit."],
-
-    ["h2", "pdf-mobile", "Documents PDF et applications mobiles : les angles morts des audits"],
-    ["h3", "Les documents PDF"],
-    ["p", "Les documents téléchargeables sont souvent oubliés alors qu'ils portent des informations essentielles : délibérations, comptes rendus, formulaires, conditions générales, rapports annuels. La norme EN 301 549 leur consacre son chapitre 10, qui applique les critères WCAG aux documents non web. Le RGAA les traite dans son critère 13.3, qui exige une version accessible de chaque document bureautique en téléchargement, et le Luxembourg dispose avec le RAPDF d'un référentiel dédié, aligné sur la norme PDF/UA-2."],
-    ["p", "Un PDF de délibération scanné est une simple image : il est illisible par un lecteur d'écran, quelle que soit la qualité du scan. Un PDF accessible est balisé (titres, listes, tableaux), possède un ordre de lecture logique, un titre de document, une langue déclarée et des alternatives pour ses images. Pour l'information essentielle, la solution la plus durable reste souvent de publier le contenu en HTML et de proposer le PDF en complément."],
-    ["h3", "Les applications mobiles"],
-    ["p", "Une application native relève du chapitre 11 de la norme EN 301 549, consacré aux logiciels, qui transpose les critères WCAG au contexte d'une application. Au Luxembourg, le RAAM 1.1 fournit la grille officielle. En France, les applications mobiles entrent dans le champ de l'article 47 et sont aujourd'hui évaluées avec le RGAA ; le RGAA 5 doit définir des critères et des tests propres au mobile."],
-    ["p", "Un audit d'application se fait sur appareils réels, avec VoiceOver sur iOS et TalkBack sur Android. Les points de contrôle les plus sensibles sont la restitution des boutons sous forme d'icône, le respect de la taille de texte choisie dans les réglages du téléphone, l'affichage en mode portrait et paysage (critère WCAG 1.3.4), les gestes complexes sans alternative (critère 2.5.1) et la taille des cibles tactiles. Sur ce dernier point, les WCAG 2.2 et la norme EN 301 549 V4.1.1 fixent désormais un minimum, là où le RAAM 1.1 et le RGAA 4.1.2 n'en prévoient pas."],
-
-    ["h2", "plan-action", "Plan d'action : douze mois pour atteindre le bon niveau"],
-    ["p", "Les textes vont évoluer dans les prochains mois, mais aucun ne justifie d'attendre : les nouvelles versions annoncées précisent les exigences actuelles sans les remettre en cause. Voici une séquence réaliste pour une organisation qui part d'un état inconnu."],
-    ["ol", [
-      ["Mois 1 : inventaire.", "Listez vos sites, applications, espaces connectés et familles de documents, avec leur audience, leurs pays de diffusion et le régime juridique applicable."],
-      ["Mois 1 et 2 : choix du référentiel.", "Déterminez pour chaque service le référentiel imposé (RGAA, RAWeb, RAAM, EN 301 549, eCH-0059) et retenez les WCAG 2.2 de niveau AA comme pivot commun."],
-      ["Mois 2 et 3 : audit initial.", "Faites auditer en priorité les services les plus utilisés et les parcours qui engagent l'usager : connexion, paiement, prise de rendez-vous, dépôt de dossier."],
-      ["Mois 3 : publication.", "Publiez ou mettez à jour la déclaration d'accessibilité et, en France, le schéma pluriannuel et le plan d'action annuel. Les éléments attendus sont détaillés dans notre article sur [[article:declaration|la déclaration d'accessibilité]]."],
-      ["Mois 3 à 9 : corrections par composants.", "Corrigez d'abord le design system et les gabarits, puis les contenus. Intégrez une [[svc:recette|recette accessibilité]] à chaque livraison pour éviter les régressions."],
-      ["Mois 4 à 12 : montée en compétence.", "Formez les profils qui produisent les contenus et le code : développeurs, designers, contributeurs, acheteurs. Des [[svc:formations|formations par métier]] évitent que les mêmes erreurs reviennent."],
-      ["Mois 12 : contre-audit.", "Mesurez les progrès selon le référentiel en vigueur à cette date et mettez la déclaration à jour."]
-    ]],
-    ["h3", "Le calendrier à surveiller"],
-    ["ul", [
-      "d'ici la fin de 2026 : citation attendue de la norme EN 301 549 V4.1.1 au Journal officiel de l'Union européenne, qui lui donnera la présomption de conformité ;",
-      "fin 2026 : publication annoncée du RGAA 5 par la DINUM, avec intégration des WCAG 2.2 ; les déclarations antérieures restent valables 18 mois, dans la limite de trois ans ;",
-      "février 2027 : publication annoncée du RAWeb 2 et du RAAM 2 au Luxembourg, compatibles avec la norme EN 301 549 V4.1.1 ;",
-      "sans date arrêtée : révision partielle de la LHand en Suisse et finalisation des WCAG 3 par le W3C, qui ne remplaceront pas les WCAG 2 avant plusieurs années."
-    ]],
-    ["p", "Pour retrouver en un coup d'œil le référentiel de chaque pays, consultez notre page [[standards|référentiels et obligations]], ainsi que les pages [[country:france|France]], [[country:luxembourg|Luxembourg]] et [[country:suisse|Suisse]]."]
+ "slug": "wcag-en-301-549-rgaa",
+ "h1": "WCAG 2.2, EN 301 549, RGAA, RAWeb : quelle norme d'accessibilité numérique suivre ?",
+ "crumb": "Normes et référentiels",
+ "meta_title": "Norme accessibilité numérique : WCAG 2.2, EN 301 549, RGAA",
+ "meta_desc": "WCAG 2.2, EN 301 549 V4.1.1, RGAA 4.1.2, RAWeb, eCH-0059 : quel référentiel d'accessibilité appliquer selon votre pays, votre statut et vos services.",
+ "card_desc": "WCAG, EN 301 549, RGAA, RAWeb, eCH-0059 : ce que contient chaque référentiel et lequel s'applique à votre organisation.",
+ "cat": "analyse",
+ "where": "Europe",
+ "cover": "WCAG",
+ "cover_note": [
+  "WCAG 2.2 · EN 301 549",
+  "RGAA 4.1.2 · RAWeb"
+ ],
+ "date": "2026-10-27",
+ "lead": "Toutes les obligations d'accessibilité numérique en Europe reposent sur la même base technique : les WCAG du W3C. Pourtant, la norme d'accessibilité numérique qui fait foi n'est pas la même pour une mairie française, un ministère luxembourgeois, un organisme public belge ou un éditeur suisse qui vend dans l'Union : RGAA, RAWeb, EN 301 549 ou eCH-0059. Cette analyse, à jour au 27 octobre 2026, détaille ce que contient chaque référentiel, ce que change la version 4.1.1 de la norme EN 301 549 publiée en septembre, et comment choisir lorsque vous opérez dans plusieurs pays.",
+ "body": [
+  [
+   "h2",
+   "reponse-courte",
+   "La réponse courte : une base commune, plusieurs déclinaisons"
   ],
-  "faq": [
-    ["Une norme d'accessibilité numérique est-elle obligatoire pour un site d'entreprise privée ?", "Cela dépend de votre activité et de votre pays. Une entreprise qui propose aux consommateurs des produits ou services visés par l'European Accessibility Act, comme le commerce en ligne, la banque, le transport ou les communications électroniques, doit respecter les exigences de la directive, dont la norme EN 301 549 est la traduction technique. En France, certaines entreprises sont aussi soumises à l'article 47 de la loi du 11 février 2005 et doivent appliquer le RGAA. Un site purement vitrine d'une petite entreprise peut n'être soumis à aucune de ces obligations."],
-    ["Faut-il viser le niveau AAA des WCAG ?", "Non, pas comme objectif global. Les réglementations européennes et la norme EN 301 549 se limitent aux niveaux A et AA, et plusieurs critères AAA sont impossibles à garantir sur un site entier, comme la langue des signes pour toutes les vidéos. En revanche, certains critères AAA sont faciles à atteindre et très utiles, par exemple une apparence du focus bien contrastée. Vous pouvez les intégrer à votre design system sans en faire une obligation de conformité."],
-    ["Un audit RGAA est-il reconnu en Belgique ou au Luxembourg ?", "Pas directement. En Belgique, la référence est la norme EN 301 549 ; au Luxembourg, le secteur public est évalué selon le RAWeb et le RAAM. Le travail réalisé lors d'un audit RGAA reste largement réutilisable, car les critères reposent sur les mêmes WCAG, mais la déclaration doit se référer au texte du pays concerné. Pour un service diffusé dans les deux pays, un audit fondé sur la norme EN 301 549 est la base la plus solide."],
-    ["Combien de temps un audit d'accessibilité reste-t-il valable ?", "Un audit décrit l'état d'un service à une date donnée. Il doit être refait après toute refonte, changement de gabarit ou ajout d'un parcours important, et périodiquement pour suivre les corrections. En France, la DINUM a précisé que les déclarations établies avant la publication du RGAA 5 resteront valables 18 mois, dans la limite de trois ans après leur date de publication. Mieux vaut donc planifier l'audit suivant en tenant compte de ce calendrier."],
-    ["La conformité aux WCAG 2.2 suffit-elle pour l'European Accessibility Act ?", "Non. Les WCAG 2.2 de niveau AA couvrent l'essentiel des contenus web et des applications, mais l'European Accessibility Act fixe aussi des exigences sur les informations fournies aux clients, la documentation, le service d'assistance et, selon les produits, le matériel ou la communication en temps réel. La norme EN 301 549 V4.1.1 traduit ces exigences ; elle donnera une présomption de conformité une fois citée au Journal officiel de l'Union européenne."],
-    ["Peut-on tester soi-même l'accessibilité de son site ?", "Oui, pour un premier diagnostic. Naviguez sur vos pages uniquement au clavier, zoomez à 200 %, vérifiez les contrastes avec un outil gratuit et écoutez une page avec un lecteur d'écran comme NVDA sous Windows ou VoiceOver, intégré aux appareils Apple. Ces contrôles révèlent les défauts les plus visibles. Ils ne remplacent pas un audit selon le référentiel applicable, seul à même de produire un taux de conformité et une déclaration recevables."],
-    ["Qu'est-ce que le WCAG2ICT, cité dans les audits de logiciels ?", "C'est une note du W3C qui explique comment appliquer les critères WCAG 2 à des contenus qui ne sont pas des pages web : documents bureautiques, logiciels de bureau, applications mobiles. La norme EN 301 549 s'en inspire pour ses chapitres 10 et 11. Lors de l'audit d'une application native ou d'un logiciel métier, l'auditeur s'y réfère pour interpréter des notions propres au web, comme la « page » ou le « titre de page »."]
+  [
+   "p",
+   "Les WCAG définissent ce qu'est un contenu web accessible. La norme européenne EN 301 549 les reprend et les étend à tout le numérique : documents, logiciels, applications mobiles, terminaux, services de communication. Les référentiels nationaux, comme le RGAA en France ou le RAWeb au Luxembourg, transforment ces exigences en critères et en tests précis, assortis d'une méthode d'évaluation et rattachés à une loi."
   ],
-  "cta_svc": "audit-conformite",
-  "cta_title": "Quel référentiel pour vos services ?",
-  "cta_text": "Nous identifions avec vous les textes qui s'appliquent à chaque service et auditons selon le référentiel attendu, RGAA, RAWeb, RAAM ou EN 301 549, avec les critères WCAG 2.2.",
-  "related": ["guide", "eaa", "france"]
+  [
+   "p",
+   "Les écarts entre ces textes tiennent donc moins au fond qu'à trois éléments : la version des WCAG retenue, le périmètre couvert et la méthode imposée pour mesurer la conformité. Un site qui respecte les WCAG 2.1 au niveau AA est déjà proche de la conformité dans les quatre pays. Il ne l'est pas pour autant au sens juridique tant que l'évaluation n'a pas été menée selon le référentiel applicable et que les documents attendus, comme la [[article:declaration|déclaration d'accessibilité]], ne sont pas publiés."
+  ],
+  [
+   "p",
+   "Pour vous situer rapidement, voici le référentiel qui s'applique aux cas les plus fréquents à la date de cet article :"
+  ],
+  [
+   "ul",
+   [
+    "organisme public français, ou entreprise soumise à l'article 47 de la loi du 11 février 2005 : RGAA 4.1.2, en attendant le RGAA 5 annoncé pour la fin de 2026 ;",
+    "organisme public luxembourgeois : RAWeb 1.1 pour le web, RAAM 1.1 pour les applications mobiles et RAPDF 1.1 pour les documents PDF ;",
+    "organisme public belge : la norme EN 301 549, donc les WCAG 2.1 de niveau AA pour le web ;",
+    "administration fédérale suisse : la norme eCH-0059 version 3.0, qui renvoie aux WCAG 2.1 de niveau AA ;",
+    "entreprise visée par l'European Accessibility Act, quel que soit l'État membre : les exigences de la directive, pour lesquelles la norme EN 301 549 est la référence technique."
+   ]
+  ],
+  [
+   "h2",
+   "wcag",
+   "WCAG : comment est construite la norme d'accessibilité numérique de référence"
+  ],
+  [
+   "p",
+   "Les Web Content Accessibility Guidelines sont publiées par le World Wide Web Consortium (W3C), au sein de son initiative pour l'accessibilité du web (WAI). Ce ne sont pas des textes de loi mais des recommandations techniques, auxquelles les lois et les normes renvoient. Depuis septembre 2025, la version 2.2 est aussi une norme internationale : l'ISO a publié la deuxième édition de la norme ISO/IEC 40500, qui reprend les WCAG 2.2."
+  ],
+  [
+   "h3",
+   "Quatre principes, treize règles, des critères testables"
+  ],
+  [
+   "p",
+   "Les WCAG s'organisent autour de quatre principes. Un contenu doit être perceptible : une information donnée par une image, un son ou une couleur doit aussi exister sous une forme que chacun peut percevoir, par exemple un texte lu par un lecteur d'écran. Il doit être utilisable : tout ce qui se fait à la souris doit pouvoir se faire au clavier, sans limite de temps impossible à tenir. Il doit être compréhensible : langue déclarée, comportements prévisibles, messages d'erreur explicites. Il doit enfin être robuste : le code doit permettre aux technologies d'assistance d'identifier le nom, le rôle et l'état de chaque composant."
+  ],
+  [
+   "p",
+   "Ces principes se déclinent en 13 règles (guidelines), comme « Accessible au clavier » ou « Assistance à la saisie ». Chaque règle se décompose à son tour en critères de succès, formulés de manière à pouvoir être vérifiés : un critère est respecté ou ne l'est pas sur une page donnée. La version 2.2 compte 86 critères de succès actifs. C'est ce niveau, celui des critères, que vérifient les auditeurs et que reprennent les référentiels nationaux."
+  ],
+  [
+   "h3",
+   "Trois niveaux de conformité : A, AA et AAA"
+  ],
+  [
+   "p",
+   "Chaque critère est rattaché à un niveau. Le niveau A regroupe les exigences sans lesquelles certaines personnes ne peuvent tout simplement pas accéder au contenu : une vidéo sans sous-titres, un bouton inutilisable au clavier. Le niveau AA ajoute des exigences qui lèvent des difficultés importantes, comme un contraste de texte suffisant ou un focus visible. Le niveau AAA rassemble les exigences les plus élevées, souvent impossibles à garantir sur l'ensemble d'un site, comme la langue des signes pour toutes les vidéos."
+  ],
+  [
+   "p",
+   "Être conforme au niveau AA signifie respecter tous les critères de niveau A et tous ceux de niveau AA. C'est le niveau retenu par la norme EN 301 549 et, à travers elle, par les réglementations européennes. La conformité s'apprécie page par page, mais aussi sur les processus complets : si l'une des étapes d'un tunnel de commande ou d'une démarche en ligne n'est pas conforme, aucune des pages de ce processus ne peut être déclarée conforme."
+  ],
+  [
+   "h3",
+   "Versions 2.0, 2.1 et 2.2 : trois versions compatibles entre elles"
+  ],
+  [
+   "p",
+   "Chaque nouvelle version des WCAG 2 ajoute des critères sans remettre en cause les précédents. Le W3C indique que les WCAG 2.2 s'appuient sur les WCAG 2.1 et restent compatibles avec elles : un contenu conforme aux WCAG 2.2 l'est aussi aux versions antérieures, à une exception près, présentée plus bas."
+  ],
+  [
+   "table",
+   {
+    "caption": "Les versions des WCAG 2 et ce qu'elles ont apporté",
+    "head": [
+     "Version",
+     "Publication par le W3C",
+     "Critères de succès",
+     "Principaux apports"
+    ],
+    "rows": [
+     [
+      "WCAG 2.0",
+      "11 décembre 2008",
+      "61",
+      "Le socle : alternatives textuelles, clavier, contraste, structure, formulaires"
+     ],
+     [
+      "WCAG 2.1",
+      "Juin 2018",
+      "78 (17 ajoutés)",
+      "Mobile et basse vision : orientation, redimensionnement à 320 pixels de large (reflow), contraste des composants, espacement du texte, messages d'état"
+     ],
+     [
+      "WCAG 2.2",
+      "5 octobre 2023, mise à jour du 12 décembre 2024",
+      "86 (9 ajoutés, 1 retiré)",
+      "Focus non masqué, taille des cibles, glisser-déposer, aide cohérente, authentification accessible"
+     ]
+    ]
+   }
+  ],
+  [
+   "h3",
+   "Les neuf critères ajoutés par les WCAG 2.2, et celui qui disparaît"
+  ],
+  [
+   "p",
+   "La page officielle du W3C [[https://w3.org/WAI/standards-guidelines/wcag/new-in-22/|Ce qui change dans les WCAG 2.2]] liste neuf nouveaux critères. Six d'entre eux relèvent des niveaux A et AA, et entrent donc dans le périmètre d'une conformité AA :"
+  ],
+  [
+   "ul",
+   [
+    "2.4.11 Focus non masqué (minimum), niveau AA : l'élément qui reçoit le focus ne doit pas être entièrement caché par un contenu de la page, comme un bandeau fixe ;",
+    "2.4.12 Focus non masqué (amélioré), niveau AAA : aucune partie de l'élément ne doit être cachée ;",
+    "2.4.13 Apparence du focus, niveau AAA : l'indicateur de focus doit avoir une taille et un contraste minimaux ;",
+    "2.5.7 Mouvements de glissement, niveau AA : toute action réalisée en faisant glisser doit pouvoir l'être par un simple clic ou une simple pression ;",
+    "2.5.8 Taille de la cible (minimum), niveau AA : les zones cliquables doivent mesurer au moins 24 pixels CSS de côté, sauf exceptions ;",
+    "3.2.6 Aide cohérente, niveau A : les moyens d'obtenir de l'aide doivent se trouver au même endroit d'une page à l'autre ;",
+    "3.3.7 Saisie redondante, niveau A : une information déjà donnée dans un processus ne doit pas être redemandée, ou doit être proposée automatiquement ;",
+    "3.3.8 Authentification accessible (minimum), niveau AA : se connecter ne doit pas exiger un test cognitif sans alternative ou sans aide ;",
+    "3.3.9 Authentification accessible (améliorée), niveau AAA : même exigence, sans l'exception accordée à la reconnaissance d'objets."
+   ]
+  ],
+  [
+   "p",
+   "Le critère 4.1.1 Analyse syntaxique (Parsing) est, selon le W3C, « obsolète et retiré » des WCAG 2.2 : les navigateurs et les technologies d'assistance ne dépendent plus de l'analyse du code source brut. C'est la seule entorse à la compatibilité ascendante. Le W3C précise que les organisations dont la réglementation renvoie encore aux WCAG 2.0 ou 2.1 peuvent devoir continuer à le tester. C'est le cas en France, où le critère 8.2 du RGAA 4.1.2 (validité du code source généré) reste à vérifier."
+  ],
+  [
+   "h2",
+   "wcag-3",
+   "WCAG 3 : un chantier de long terme, pas une échéance"
+  ],
+  [
+   "p",
+   "Le W3C prépare depuis plusieurs années une nouvelle génération de règles, les W3C Accessibility Guidelines 3.0. Le [[https://www.w3.org/TR/wcag-3.0/|dernier brouillon de travail (Working Draft)]] date du 10 septembre 2026. Il propose une architecture différente : des résultats attendus regroupés par thèmes (images et médias, contrôle par l'utilisateur, etc.), des exigences plus fines classées en exigences essentielles et complémentaires, et des « assertions » par lesquelles une organisation déclare des pratiques, comme la conduite de tests utilisateurs. Le mode de calcul de la conformité diffère aussi de celui des WCAG 2."
+  ],
+  [
+   "p",
+   "Le W3C est explicite sur le calendrier : selon sa [[https://www.w3.org/WAI/WCAG3|page de présentation des WCAG 3]], la norme ne devrait pas être finalisée avant plusieurs années, elle ne remplacera pas les WCAG 2 et les WCAG 2 ne seront pas dépréciées avant plusieurs années après la finalisation des WCAG 3. Le brouillon lui-même précise que la liste définitive des exigences sera différente de celle publiée."
+  ],
+  [
+   "p",
+   "Aucune loi européenne ni aucune norme harmonisée ne renvoie aujourd'hui aux WCAG 3. Pour un directeur des systèmes d'information ou un responsable de la conformité, la conséquence est simple : l'investissement utile porte sur les WCAG 2.2 de niveau AA. Le brouillon de septembre 2026 indique d'ailleurs que respecter les WCAG 2 au niveau AA permet d'être proche de la conformité aux WCAG 3, même si des différences peuvent subsister."
+  ],
+  [
+   "h2",
+   "en-301-549",
+   "EN 301 549 : la norme européenne qui va bien au-delà du web"
+  ],
+  [
+   "p",
+   "La norme EN 301 549, intitulée « Exigences d'accessibilité pour les produits et services TIC », est élaborée conjointement par l'ETSI, le CEN et le CENELEC, les organismes européens de normalisation. Là où les WCAG ne visent que les contenus web, elle couvre l'ensemble des technologies de l'information et de la communication : un guichet automatique, un logiciel métier, un service de visioconférence, une liseuse ou un PDF téléchargé relèvent de son champ."
+  ],
+  [
+   "p",
+   "Pour le web, la norme ne réinvente rien : son chapitre 9 reprend les critères de succès des WCAG de niveaux A et AA. Ses chapitres 10 et 11 appliquent ces mêmes critères, adaptés, aux documents et aux logiciels qui ne sont pas des pages web, y compris les applications mobiles natives. Le reste de la norme ajoute des exigences que les WCAG ne traitent pas."
+  ],
+  [
+   "table",
+   {
+    "caption": "Les chapitres de la norme EN 301 549 (version 4.1.1)",
+    "head": [
+     "Chapitre",
+     "Objet",
+     "Exemples concrets"
+    ],
+    "rows": [
+     [
+      "4",
+      "Performances fonctionnelles",
+      "Utilisation sans la vue, avec une vision réduite, sans l'ouïe, sans la parole, avec une force ou une mobilité limitée"
+     ],
+     [
+      "5",
+      "Exigences génériques",
+      "Fonctions d'accessibilité activables, fonctionnement en circuit fermé (borne), biométrie, préservation des informations d'accessibilité lors d'une conversion"
+     ],
+     [
+      "6",
+      "Communication bidirectionnelle en temps réel",
+      "Téléphonie, visioconférence, texte en temps réel, communications d'urgence"
+     ],
+     [
+      "7",
+      "Fonctions vidéo",
+      "Lecteurs capables d'afficher et de transmettre les sous-titres et l'audiodescription"
+     ],
+     [
+      "8",
+      "Matériel",
+      "Terminaux, bornes, touches repérables au toucher, connexion d'aides techniques"
+     ],
+     [
+      "9",
+      "Web",
+      "Critères WCAG de niveaux A et AA appliqués aux pages web"
+     ],
+     [
+      "10",
+      "Documents non web",
+      "PDF, traitement de texte, tableurs téléchargés"
+     ],
+     [
+      "11",
+      "Logiciels non web",
+      "Applications mobiles, logiciels de bureau, outils d'édition, respect des préférences de l'utilisateur"
+     ],
+     [
+      "12",
+      "Informations sur les produits et services",
+      "Information accessible sur les produits et les services, fonctions d'accessibilité et de compatibilité, guides électroniques des programmes"
+     ],
+     [
+      "13",
+      "Services de relais et accès aux secours",
+      "Relais pour personnes sourdes ou malentendantes"
+     ],
+     [
+      "14",
+      "Conformité",
+      "Règles générales d'évaluation"
+     ]
+    ]
+   }
+  ],
+  [
+   "h3",
+   "Version 3.2.1 en vigueur, version 4.1.1 publiée en septembre 2026"
+  ],
+  [
+   "p",
+   "La version actuellement citée au Journal officiel de l'Union européenne est la V3.2.1, publiée en 2021. Elle a été désignée comme norme harmonisée pour les sites et applications mobiles du secteur public par la [[https://eur-lex.europa.eu/eli/dec_impl/2021/1339/oj|décision d'exécution (UE) 2021/1339 de la Commission du 11 août 2021]], prise au titre de la directive (UE) 2016/2102. Ses chapitres web, documents et logiciels renvoient aux WCAG 2.1 de niveau AA."
+  ],
+  [
+   "p",
+   "La version 4.1.1 a été adoptée le 24 août 2026 et publiée le 2 septembre 2026. D'après son avant-propos et son introduction, elle a été préparée dans le cadre de la demande de normalisation M/587 de la Commission, référencée C(2022) 6456, afin d'offrir un moyen de démontrer la conformité à la directive (UE) 2019/882, l'European Accessibility Act. Ses chapitres 9, 10 et 11 sont alignés sur les WCAG 2.2, que la norme cite dans leur version du 12 décembre 2024 et sous la référence ISO/IEC 40500:2025. Ses annexes ZA et ZB établissent la correspondance entre ses exigences et celles des deux directives. Le texte est consultable gratuitement sur le site de l'ETSI : [[https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf|EN 301 549 V4.1.1 (2026-09)]]."
+  ],
+  [
+   "p",
+   "Un point juridique compte : une norme ne confère une présomption de conformité qu'une fois sa référence publiée au Journal officiel de l'Union européenne. À la date de cet article, la V4.1.1 n'y est pas encore citée ; les autorités nationales qui ont suivi les travaux, comme celle du Luxembourg, attendent cette citation d'ici la fin de 2026. Jusque-là, la V3.2.1 reste la norme harmonisée de référence pour le secteur public."
+  ],
+  [
+   "note",
+   "À retenir",
+   "Testez dès maintenant selon les WCAG 2.2 de niveau AA : c'est la base de la norme EN 301 549 V4.1.1 et du futur RGAA 5. Mais un test WCAG seul ne démontre pas la conformité à la norme, qui ajoute ses propres exigences pour les logiciels, la documentation, le support et la communication en temps réel."
+  ],
+  [
+   "h3",
+   "Ce que la norme exige en plus des WCAG"
+  ],
+  [
+   "p",
+   "Dans un audit selon la norme EN 301 549, plusieurs exigences échappent à une grille purement WCAG. Un logiciel ou une application doit respecter les réglages d'accessibilité du système, par exemple la taille de texte choisie dans les paramètres du téléphone. Un éditeur de contenus doit permettre de produire des contenus accessibles. La documentation du produit doit décrire ses fonctions d'accessibilité, et le service d'assistance doit pouvoir répondre à une personne sourde ou aveugle. Pour un service de visioconférence ou une application bancaire avec appel vidéo, le chapitre 6 apporte des exigences sur le texte en temps réel et la qualité de la vidéo pour la lecture labiale ou la langue des signes."
+  ],
+  [
+   "h2",
+   "rgaa",
+   "RGAA 4.1.2 : la différence entre RGAA et WCAG expliquée"
+  ],
+  [
+   "p",
+   "Le Référentiel général d'amélioration de l'accessibilité est publié par la Direction interministérielle du numérique (DINUM). Il sert à évaluer la conformité des services soumis à l'article 47 de la loi n° 2005-102 du 11 février 2005, dont les obligations sont détaillées dans notre article sur [[article:france|l'accessibilité numérique en France]]. La version 4 a été adoptée en septembre 2019 ; la version 4.1.2, en vigueur, est issue de la mise à jour du 18 avril 2023."
+  ],
+  [
+   "p",
+   "Le RGAA 4.1.2 compte 106 critères répartis en 13 thématiques. Chaque critère prend la forme d'une question fermée, par exemple : « Chaque image porteuse d'information a-t-elle une alternative textuelle ? ». Chaque critère se décompose en tests, 258 au total d'après le fichier officiel des [[https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/|critères et tests du RGAA]]. Un critère est conforme si tous ses tests le sont, non conforme si l'un d'eux échoue, ou non applicable si le contenu concerné n'existe pas sur la page."
+  ],
+  [
+   "table",
+   {
+    "caption": "Les 13 thématiques du RGAA 4.1.2",
+    "head": [
+     "Thématique",
+     "Nombre de critères",
+     "Exemple de vérification"
+    ],
+    "rows": [
+     [
+      "1. Images",
+      "9",
+      "Alternative textuelle des images porteuses d'information, images décoratives ignorées"
+     ],
+     [
+      "2. Cadres",
+      "2",
+      "Titre pertinent des iframes (carte, vidéo intégrée)"
+     ],
+     [
+      "3. Couleurs",
+      "3",
+      "Information non donnée par la seule couleur, contrastes"
+     ],
+     [
+      "4. Multimédia",
+      "13",
+      "Transcription, sous-titres, audiodescription, contrôle des médias"
+     ],
+     [
+      "5. Tableaux",
+      "8",
+      "En-têtes de tableaux de données associés aux cellules"
+     ],
+     [
+      "6. Liens",
+      "2",
+      "Intitulé de lien explicite, lien sans intitulé"
+     ],
+     [
+      "7. Scripts",
+      "5",
+      "Composants JavaScript utilisables au clavier et restitués"
+     ],
+     [
+      "8. Éléments obligatoires",
+      "10",
+      "Langue, titre de page, code valide"
+     ],
+     [
+      "9. Structuration de l'information",
+      "4",
+      "Hiérarchie des titres, listes, zones de la page"
+     ],
+     [
+      "10. Présentation de l'information",
+      "14",
+      "Zoom à 200 %, focus visible, affichage sur petit écran"
+     ],
+     [
+      "11. Formulaires",
+      "13",
+      "Étiquettes, regroupements, messages d'erreur, saisie automatique"
+     ],
+     [
+      "12. Navigation",
+      "11",
+      "Lien d'évitement, ordre de tabulation, plan du site ou moteur de recherche"
+     ],
+     [
+      "13. Consultation",
+      "12",
+      "Limites de temps, documents téléchargeables, contenus en mouvement"
+     ]
+    ]
+   }
+  ],
+  [
+   "h3",
+   "RGAA ou WCAG : ce qui change vraiment"
+  ],
+  [
+   "p",
+   "Sur le fond, le RGAA 4.1.2 et les WCAG 2.1 de niveau AA disent la même chose : chaque critère RGAA renvoie à un ou plusieurs critères WCAG. L'analyse du fichier officiel montre que le RGAA couvre les critères de niveaux A et AA des WCAG 2.1, à une exception près : les sous-titres en direct (critère WCAG 1.2.4) ne font l'objet d'aucun critère RGAA."
+  ],
+  [
+   "p",
+   "Les différences tiennent à la méthode. Le RGAA fixe des tests précis là où les WCAG laissent l'auditeur choisir sa technique ; il impose un environnement de test, c'est-à-dire des combinaisons de lecteurs d'écran et de navigateurs (NVDA, JAWS, VoiceOver sur ordinateur, TalkBack et VoiceOver sur mobile) ; il définit la façon de constituer l'échantillon de pages et de calculer un taux de conformité. Il s'accompagne enfin d'obligations de publication propres au droit français, comme la déclaration d'accessibilité et le schéma pluriannuel. Les critères ajoutés par les WCAG 2.2, comme la taille des cibles ou l'authentification accessible, n'y figurent pas encore."
+  ],
+  [
+   "p",
+   "Un audit RGAA ne vaut donc pas audit WCAG 2.2, et inversement. Si vous devez publier une déclaration en France, l'[[svc:audit-rgaa|audit RGAA]] est le seul qui produise un taux de conformité opposable. Si vous visez l'European Accessibility Act ou un marché européen, l'évaluation doit en plus couvrir les critères WCAG 2.2 et les chapitres pertinents de la norme EN 301 549."
+  ],
+  [
+   "h3",
+   "Le RGAA 5 en préparation"
+  ],
+  [
+   "p",
+   "La DINUM a annoncé que la version 5 du RGAA est en cours de rédaction, avec des acteurs publics, associatifs et privés, pour une publication prévue fin 2026. Selon [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|l'annonce officielle du RGAA 5]], cette version intégrera les WCAG 2.2, reformulera et simplifiera les critères, et définira des critères et des tests propres aux applications mobiles et aux documents bureautiques. Elle s'accompagnera de la désignation de l'Arcom comme autorité de contrôle et d'un service en ligne de dépôt et de publication des déclarations d'accessibilité."
+  ],
+  [
+   "p",
+   "La DINUM précise deux points pratiques. Les critères du RGAA 5 viendront préciser ou compléter ceux du RGAA 4.1.2 sans les contredire : le travail réalisé aujourd'hui n'est pas perdu. Et les déclarations établies avant la publication du RGAA 5 resteront valables 18 mois, dans la limite de trois ans après leur date de publication. Les travaux en cours ne doivent pas être suspendus dans l'attente de la nouvelle version."
+  ],
+  [
+   "h2",
+   "raweb-raam",
+   "RAWeb, RAAM et RAPDF : les référentiels du Luxembourg"
+  ],
+  [
+   "p",
+   "Le Luxembourg a fait le choix de référentiels nationaux, publiés par le Service information et presse du gouvernement (SIP) sur le portail accessibilite.public.lu. Ils servent à évaluer les sites et applications des organismes du secteur public, soumis à la loi du 28 mai 2019. Leur particularité est d'être construits à partir de la norme EN 301 549, et non des seules WCAG, tout en reprenant la méthode du RGAA."
+  ],
+  [
+   "p",
+   "Le RAWeb 1.1, pour le web, comporte 136 critères. Il reprend les 13 thématiques du RGAA 4.1.2 et en ajoute quatre, issues de la norme européenne : documentation et fonctionnalités d'accessibilité, outils d'édition, services d'assistance, communication en temps réel. La mise à jour publiée le 6 février 2026 a notamment ajouté la prise en compte de l'European Accessibility Act, ce qui permet d'utiliser le RAWeb au-delà du seul secteur public luxembourgeois, et a supprimé des techniques devenues obsolètes."
+  ],
+  [
+   "p",
+   "Le RAAM 1.1, pour les applications mobiles, compte 108 critères. Il évalue une application au regard de la norme EN 301 549 V3.2.1, en couvrant ses chapitres 5, 6, 7, 10, 11 et 12. Le RAPDF 1.1, pour les documents PDF, a été simplifié en février 2026 : sa méthode ne repose plus sur un lecteur d'écran mais sur Acrobat Reader et l'outil PDF Accessibility Checker (PAC), et il intègre une correspondance avec la norme PDF/UA-2."
+  ],
+  [
+   "p",
+   "Une évolution majeure est programmée. Le SIP a annoncé le 15 septembre 2026 que [[https://accessibilite.public.lu/fr/news/2026-09-15-EN301549v4.html|le RAWeb et le RAAM passeront en version 2]] courant février 2027, en compatibilité avec la norme EN 301 549 V4.1.1 et donc avec les WCAG 2.2. Les organismes luxembourgeois qui lancent un audit à l'automne 2026 l'établissent en RAWeb 1.1 ou en RAAM 1.1 ; il est utile de faire vérifier en parallèle les critères WCAG 2.2 pour éviter une seconde campagne de corrections. Notre article sur [[article:luxembourg|l'accessibilité numérique au Luxembourg]] détaille les obligations, et la page [[svc:audit-raam|audit RAAM]] la méthode appliquée aux applications iOS et Android."
+  ],
+  [
+   "h2",
+   "belgique-suisse",
+   "Belgique et Suisse : pas de référentiel national propre"
+  ],
+  [
+   "h3",
+   "En Belgique, la norme EN 301 549 directement"
+  ],
+  [
+   "p",
+   "En Belgique, la loi du 19 juillet 2018 relative à l'accessibilité des sites internet et des applications mobiles des organismes du secteur public transpose la directive (UE) 2016/2102 au niveau fédéral, complétée par des décrets et ordonnances des Régions et des Communautés. Il n'existe pas de grille nationale comparable au RGAA : la référence est la norme EN 301 549, donc les WCAG 2.1 de niveau AA pour le web, et ces mêmes critères interprétés pour les documents et logiciels."
+  ],
+  [
+   "p",
+   "En pratique, un audit belge s'appuie sur les critères WCAG et sur les chapitres de la norme applicables au service. Les tests du RGAA ou du RAWeb peuvent servir d'outils de travail à l'auditeur, mais le rapport et la déclaration doivent se référer à la norme EN 301 549. Les obligations et les autorités compétentes sont présentées sur notre page [[country:belgique|Belgique]] et dans l'article consacré à [[article:belgique|l'accessibilité numérique en Belgique]]."
+  ],
+  [
+   "h3",
+   "En Suisse, la norme eCH-0059"
+  ],
+  [
+   "p",
+   "En Suisse, la loi sur l'égalité pour les handicapés (LHand) et son ordonnance imposent l'accessibilité des prestations en ligne de la Confédération. La référence technique est la [[https://www.ech.ch/de/ech/ech-0059/3.0|norme eCH-0059, version 3.0]], approuvée par l'association eCH en juin 2020. Elle repose sur les WCAG 2.1, et l'administration fédérale en exige le respect au niveau AA. Les cantons et les communes appliquent leurs propres règles, qui renvoient souvent à la même norme."
+  ],
+  [
+   "p",
+   "Deux évolutions sont à suivre. Une révision partielle de la LHand, en discussion au Parlement fédéral, vise à renforcer l'accès aux prestations des entreprises privées, y compris numériques. Et les entreprises suisses qui vendent aux consommateurs de l'Union européenne sont soumises à l'European Accessibility Act pour les produits et services concernés, donc à la norme EN 301 549 plutôt qu'à eCH-0059. Le détail figure dans notre article sur [[article:suisse|l'accessibilité numérique en Suisse]]."
+  ],
+  [
+   "h2",
+   "tableau-correspondance",
+   "Quel référentiel d'accessibilité selon votre pays et votre organisation"
+  ],
+  [
+   "p",
+   "Le tableau ci-dessous croise le pays et le type d'organisation avec le texte applicable, le référentiel d'évaluation et le niveau attendu. Il décrit la situation au 27 octobre 2026 ; les évolutions annoncées figurent dans le plan d'action en fin d'article."
+  ],
+  [
+   "table",
+   {
+    "caption": "Correspondance pays, organisation, texte, référentiel et niveau (octobre 2026)",
+    "head": [
+     "Pays et organisation",
+     "Texte applicable",
+     "Référentiel d'évaluation",
+     "Niveau attendu"
+    ],
+    "rows": [
+     [
+      "France, organisme public",
+      "Article 47 de la loi n° 2005-102 du 11 février 2005",
+      "RGAA 4.1.2 (RGAA 5 annoncé pour fin 2026)",
+      "106 critères, équivalent WCAG 2.1 AA"
+     ],
+     [
+      "France, entreprise soumise à l'article 47",
+      "Article 47 de la loi n° 2005-102",
+      "RGAA 4.1.2",
+      "106 critères, équivalent WCAG 2.1 AA"
+     ],
+     [
+      "France, entreprise visée par l'EAA",
+      "Transposition de la directive (UE) 2019/882",
+      "Exigences de la directive, norme EN 301 549",
+      "WCAG AA et exigences de la norme"
+     ],
+     [
+      "Belgique, organisme public",
+      "Loi du 19 juillet 2018 et textes régionaux",
+      "EN 301 549 V3.2.1",
+      "WCAG 2.1 AA"
+     ],
+     [
+      "Belgique, entreprise visée par l'EAA",
+      "Transposition de la directive (UE) 2019/882",
+      "Norme EN 301 549",
+      "WCAG AA et exigences de la norme"
+     ],
+     [
+      "Luxembourg, organisme public",
+      "Loi du 28 mai 2019",
+      "RAWeb 1.1, RAAM 1.1, RAPDF 1.1",
+      "Exigences de la norme EN 301 549"
+     ],
+     [
+      "Luxembourg, entreprise visée par l'EAA",
+      "Transposition de la directive (UE) 2019/882",
+      "Norme EN 301 549 ; RAWeb 1.1 utilisable",
+      "WCAG AA et exigences de la norme"
+     ],
+     [
+      "Suisse, administration fédérale",
+      "LHand et son ordonnance",
+      "eCH-0059 version 3.0",
+      "WCAG 2.1 AA"
+     ],
+     [
+      "Suisse, entreprise vendant dans l'Union",
+      "Loi de transposition de l'EAA du pays de vente",
+      "Norme EN 301 549",
+      "WCAG AA et exigences de la norme"
+     ],
+     [
+      "Groupe présent dans plusieurs pays",
+      "Cumul des textes ci-dessus",
+      "WCAG 2.2 AA et EN 301 549, complétés des référentiels nationaux",
+      "Le plus exigeant des niveaux applicables"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Deux remarques pour lire ce tableau. D'abord, le RGAA et le RAWeb sont des méthodes d'évaluation, pas des niveaux d'exigence supplémentaires : un site conforme au RGAA n'est pas « plus accessible » qu'un site conforme à la norme EN 301 549, il a été évalué selon une autre grille. Ensuite, pour l'European Accessibility Act, c'est la directive qui fixe les exigences, et la norme harmonisée qui en donne la traduction technique ; notre analyse de [[article:eaa|l'European Accessibility Act]] détaille les produits et services visés et les exemptions."
+  ],
+  [
+   "h2",
+   "criteres-expliques",
+   "Six critères expliqués sur des cas concrets"
+  ],
+  [
+   "p",
+   "Les normes deviennent plus lisibles à travers quelques critères qui reviennent dans tous les audits. Pour chacun, nous indiquons la référence WCAG et, lorsqu'il existe, le critère RGAA correspondant."
+  ],
+  [
+   "h3",
+   "L'alternative textuelle des images"
+  ],
+  [
+   "p",
+   "Le critère WCAG 1.1.1 (niveau A), repris par les critères 1.1 à 1.3 du RGAA, exige que toute image porteuse d'information ait un équivalent textuel, et que les images décoratives soient ignorées par les technologies d'assistance. Sur une page de paiement, les logos des cartes acceptées doivent être restitués (« Visa, Mastercard ») ; l'illustration d'ambiance du bandeau, elle, doit avoir une alternative vide pour ne pas encombrer la lecture."
+  ],
+  [
+   "p",
+   "Les erreurs fréquentes sont connues : une alternative qui reprend le nom du fichier (« IMG_2045.jpg »), une alternative « image » ou « logo » sans contenu utile, un graphique de rapport annuel décrit par son seul titre alors que les chiffres ne figurent nulle part ailleurs. Dans ce dernier cas, le RGAA demande une description détaillée (critère 1.6), par exemple le tableau des données sous le graphique."
+  ],
+  [
+   "h3",
+   "Le contraste des textes et des composants"
+  ],
+  [
+   "p",
+   "Le critère WCAG 1.4.3 (niveau AA), critère 3.2 du RGAA, impose un rapport de contraste d'au moins 4,5:1 entre le texte et son arrière-plan, abaissé à 3:1 pour les grands textes, c'est-à-dire d'au moins 18 points, ou 14 points en gras. Le texte d'exemple gris clair affiché dans un champ de formulaire, le texte blanc posé sur une photo claire ou les mentions en petits caractères d'un bandeau de cookies échouent souvent."
+  ],
+  [
+   "p",
+   "Le critère 1.4.11 (niveau AA), critère 3.3 du RGAA, étend l'exigence aux composants d'interface et aux éléments graphiques porteurs d'information : la bordure d'un champ de saisie, l'icône d'une loupe sans libellé ou la courbe d'un graphique doivent atteindre un contraste de 3:1 avec les couleurs adjacentes."
+  ],
+  [
+   "h3",
+   "Le focus visible, et désormais non masqué"
+  ],
+  [
+   "p",
+   "Une personne qui navigue au clavier doit voir en permanence où elle se trouve. Le critère WCAG 2.4.7 (niveau AA), critère 10.7 du RGAA, exige que l'élément qui reçoit le focus soit visible. L'erreur classique est une règle CSS « outline: none » appliquée à tout le site pour des raisons esthétiques, sans indicateur de remplacement."
+  ],
+  [
+   "p",
+   "Les WCAG 2.2 ajoutent le critère 2.4.11 (niveau AA) : l'élément qui a le focus ne doit pas être entièrement caché par un contenu ajouté par l'auteur. Un en-tête fixe qui recouvre le lien sur lequel l'utilisateur vient d'arriver, ou un bandeau de consentement qui masque le bas de la page pendant que l'utilisateur tabule dans le pied de page, rendent la page non conforme."
+  ],
+  [
+   "h3",
+   "La taille des cibles"
+  ],
+  [
+   "p",
+   "Nouveau critère des WCAG 2.2, le 2.5.8 (niveau AA) demande que les cibles des actions au pointeur mesurent au moins 24 par 24 pixels CSS. Des exceptions existent : une cible plus petite reste acceptable si un espacement suffisant la sépare des cibles voisines, si la même fonction est offerte par un autre contrôle conforme sur la page, si le lien est inséré dans une phrase, ou si la taille est fixée par le navigateur et non par l'auteur."
+  ],
+  [
+   "p",
+   "Les cas typiques d'échec sont les numéros de pagination serrés, la croix de fermeture d'une fenêtre modale sur mobile ou les icônes de partage alignées sans marge. Ce critère n'existe pas dans le RGAA 4.1.2 ; il figure en revanche dans la norme EN 301 549 V4.1.1. Le corriger revient le plus souvent à ajuster quelques composants du design system, ce qui profite aussi aux personnes ayant des tremblements et à tous les utilisateurs de téléphone."
+  ],
+  [
+   "h3",
+   "L'authentification accessible"
+  ],
+  [
+   "p",
+   "Le critère WCAG 3.3.8 (niveau AA) interdit d'imposer un test de fonction cognitive pour s'authentifier, comme mémoriser un mot de passe, recopier des caractères ou résoudre une énigme, sauf si une alternative ou une aide est proposée. Selon la documentation explicative du W3C, le gestionnaire de mots de passe et le copier-coller sont des aides valables : un site qui bloque le collage du mot de passe, ou qui empêche le remplissage automatique des champs, échoue au critère."
+  ],
+  [
+   "p",
+   "Deux exemples reviennent souvent dans les espaces clients. Le clavier virtuel dont les chiffres changent de place à chaque connexion oblige à un effort de repérage, sans alternative ; et le code reçu par SMS saisi dans six cases séparées qui refusent le collage oblige à recopier. Un captcha de reconnaissance d'objets (« sélectionnez les images contenant un vélo ») est toléré au niveau AA, mais pas un captcha qui demande de retranscrire un texte déformé sans autre méthode de connexion."
+  ],
+  [
+   "h3",
+   "Les sous-titres"
+  ],
+  [
+   "p",
+   "Le critère WCAG 1.2.2 (niveau A) exige des sous-titres synchronisés pour les vidéos préenregistrées comportant du son ; le RGAA le reprend dans ses critères 4.3 (présence) et 4.4 (pertinence). La vidéo d'un conseil municipal publiée en différé, une vidéo de présentation d'un produit ou un tutoriel de formation sont concernés. Des sous-titres générés automatiquement et jamais relus échouent fréquemment au critère de pertinence."
+  ],
+  [
+   "p",
+   "Pour les contenus en direct, comme un webinaire ou une retransmission de séance publique, le critère WCAG 1.2.4 (niveau AA) exige des sous-titres en temps réel. Il ne fait l'objet d'aucun critère dans le RGAA 4.1.2, mais il s'applique à un audit selon les WCAG ou la norme EN 301 549. Le chapitre 7 de la norme ajoute une exigence côté lecteur : le lecteur vidéo doit permettre d'afficher les sous-titres et de les conserver lors de la transmission."
+  ],
+  [
+   "h2",
+   "plusieurs-pays",
+   "Plusieurs pays, un seul programme : choisir un référentiel pivot"
+  ],
+  [
+   "p",
+   "Un groupe qui exploite un site de commerce en ligne en France, en Belgique et au Luxembourg, une application mobile commune et un espace client en Suisse ne peut pas mener quatre programmes d'accessibilité séparés. La méthode la plus efficace consiste à choisir un référentiel pivot, appliqué à tous les composants partagés, puis à produire les évaluations nationales là où la loi en exige une."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Cartographiez vos services et vos régimes.",
+     "Pour chaque site, application ou document, notez les pays de diffusion, le statut de l'entité qui l'édite (public, privé, soumis à l'EAA ou non) et les documents à publier : déclaration d'accessibilité, informations exigées par l'EAA, schéma pluriannuel en France."
+    ],
+    [
+     "Retenez un pivot exigeant.",
+     "Les WCAG 2.2 de niveau AA, complétées des chapitres de la norme EN 301 549 utiles à vos services (logiciels, documentation, support, communication en temps réel), couvrent par construction le fond des exigences du RGAA, du RAWeb, du RAAM et d'eCH-0059."
+    ],
+    [
+     "Évaluez d'abord les composants partagés.",
+     "Le design system, les gabarits de pages, le tunnel de commande et l'authentification sont communs à tous vos marchés : une correction faite une fois profite à tous les pays."
+    ],
+    [
+     "Produisez les évaluations nationales requises.",
+     "Là où un référentiel national est imposé, comme le RGAA en France pour un service soumis à l'article 47 ou le RAWeb pour un organisme public luxembourgeois, menez l'audit selon ce référentiel pour obtenir un taux et une déclaration recevables."
+    ],
+    [
+     "Harmonisez vos indicateurs.",
+     "Suivez un indicateur commun, par exemple le nombre de critères WCAG 2.2 AA non respectés par parcours, et réservez les taux nationaux aux déclarations."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Le piège le plus courant consiste à présenter un audit RGAA comme preuve de conformité à l'European Accessibility Act : il ne couvre ni les nouveaux critères WCAG 2.2, ni les exigences de la norme sur la documentation et le support. L'inverse est vrai aussi : un rapport WCAG 2.2 ne suffit pas pour établir une déclaration RGAA. Un [[svc:audit-conformite|audit de conformité WCAG et EN 301 549]] sert de pivot ; il se combine avec un audit national lorsque la loi le demande. Les enjeux propres aux groupes sont développés sur la page [[sector:grands-comptes|grands comptes]]."
+  ],
+  [
+   "h2",
+   "methode-audit",
+   "Méthode d'audit : de l'échantillon au plan de correction"
+  ],
+  [
+   "p",
+   "Quel que soit le référentiel, un audit d'accessibilité sérieux suit les mêmes étapes. Ce qui varie, ce sont la grille de critères et la forme du résultat. Notre [[article:guide|guide de l'accessibilité numérique]] présente la démarche d'ensemble ; voici le déroulé d'un audit de conformité."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Cadrage.",
+     "Choix du référentiel et de sa version, délimitation du périmètre (site, sous-domaines, espace connecté, application), environnement de test et accès aux comptes de démonstration."
+    ],
+    [
+     "Constitution de l'échantillon.",
+     "La méthode du RGAA demande un échantillon représentatif : pages types lorsqu'elles existent (accueil, contact, mentions légales, déclaration d'accessibilité, plan du site, aide, authentification), pages les plus consultées, pages représentatives de chaque gabarit et toutes les étapes des processus clés, comme une demande d'acte d'état civil ou un achat."
+    ],
+    [
+     "Tests manuels critère par critère.",
+     "L'auditeur vérifie chaque critère sur chaque page de l'échantillon, au clavier, avec l'inspecteur de code et des outils de mesure (contraste, structure des titres). C'est cette étape qui prend le plus de temps."
+    ],
+    [
+     "Vérification avec les technologies d'assistance.",
+     "Les composants complexes, comme un menu déroulant, une carte interactive ou une fenêtre modale, sont testés avec des lecteurs d'écran (NVDA, JAWS, VoiceOver, TalkBack) et en zoom, pour vérifier ce qui est réellement restitué."
+    ],
+    [
+     "Calcul du résultat et rapport.",
+     "Selon le référentiel, le rapport donne un taux de conformité (RGAA, RAWeb, RAAM) ou un état par critère (WCAG, EN 301 549). Chaque non-conformité est localisée, illustrée et accompagnée d'une recommandation de correction."
+    ],
+    [
+     "Plan de correction et contre-audit.",
+     "Les non-conformités sont classées par impact sur les utilisateurs et par effort, puis un contre-audit vérifie les corrections avant la mise à jour de la déclaration."
+    ]
+   ]
+  ],
+  [
+   "h3",
+   "Ce que les outils automatiques ne voient pas"
+  ],
+  [
+   "p",
+   "Les extensions de navigateur et les robots d'analyse sont utiles pour détecter vite les erreurs répétitives : image sans attribut alt, champ sans étiquette, contraste insuffisant d'un texte sur fond uni, langue non déclarée. Ils ne savent pas juger de la pertinence : une alternative « bouton » sur l'image d'un bouton « Payer » passe le test automatique mais reste non conforme. Ils ne détectent pas non plus un piège au clavier dans une fenêtre modale, un ordre de tabulation incohérent, un texte posé sur une photo ou une vidéo sans sous-titres."
+  ],
+  [
+   "p",
+   "Un score d'outil automatique n'est donc pas un taux de conformité, et ne peut pas fonder une déclaration d'accessibilité. Dans nos audits, les outils servent à couvrir rapidement un grand nombre de pages, mais chaque critère est vérifié manuellement ; un audit complet demande en moyenne trois semaines. Pour savoir si les parcours fonctionnent vraiment, un [[svc:test-utilisateur|test avec des personnes en situation de handicap]] complète utilement l'audit."
+  ],
+  [
+   "h2",
+   "pdf-mobile",
+   "Documents PDF et applications mobiles : les angles morts des audits"
+  ],
+  [
+   "h3",
+   "Les documents PDF"
+  ],
+  [
+   "p",
+   "Les documents téléchargeables sont souvent oubliés alors qu'ils portent des informations essentielles : délibérations, comptes rendus, formulaires, conditions générales, rapports annuels. La norme EN 301 549 leur consacre son chapitre 10, qui applique les critères WCAG aux documents non web. Le RGAA les traite dans son critère 13.3, qui exige une version accessible de chaque document bureautique en téléchargement, et le Luxembourg dispose avec le RAPDF d'un référentiel dédié, aligné sur la norme PDF/UA-2."
+  ],
+  [
+   "p",
+   "Un PDF de délibération scanné est une simple image : il est illisible par un lecteur d'écran, quelle que soit la qualité du scan. Un PDF accessible est balisé (titres, listes, tableaux), possède un ordre de lecture logique, un titre de document, une langue déclarée et des alternatives pour ses images. Pour l'information essentielle, la solution la plus durable reste souvent de publier le contenu en HTML et de proposer le PDF en complément."
+  ],
+  [
+   "h3",
+   "Les applications mobiles"
+  ],
+  [
+   "p",
+   "Une application native relève du chapitre 11 de la norme EN 301 549, consacré aux logiciels, qui transpose les critères WCAG au contexte d'une application. Au Luxembourg, le RAAM 1.1 fournit la grille officielle. En France, les applications mobiles entrent dans le champ de l'article 47 et sont aujourd'hui évaluées avec le RGAA ; le RGAA 5 doit définir des critères et des tests propres au mobile."
+  ],
+  [
+   "p",
+   "Un audit d'application se fait sur appareils réels, avec VoiceOver sur iOS et TalkBack sur Android. Les points de contrôle les plus sensibles sont la restitution des boutons sous forme d'icône, le respect de la taille de texte choisie dans les réglages du téléphone, l'affichage en mode portrait et paysage (critère WCAG 1.3.4), les gestes complexes sans alternative (critère 2.5.1) et la taille des cibles tactiles. Sur ce dernier point, les WCAG 2.2 et la norme EN 301 549 V4.1.1 fixent désormais un minimum, là où le RAAM 1.1 et le RGAA 4.1.2 n'en prévoient pas."
+  ],
+  [
+   "h2",
+   "plan-action",
+   "Plan d'action : douze mois pour atteindre le bon niveau"
+  ],
+  [
+   "p",
+   "Les textes vont évoluer dans les prochains mois, mais aucun ne justifie d'attendre : les nouvelles versions annoncées précisent les exigences actuelles sans les remettre en cause. Voici une séquence réaliste pour une organisation qui part d'un état inconnu."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Mois 1 : inventaire.",
+     "Listez vos sites, applications, espaces connectés et familles de documents, avec leur audience, leurs pays de diffusion et le régime juridique applicable."
+    ],
+    [
+     "Mois 1 et 2 : choix du référentiel.",
+     "Déterminez pour chaque service le référentiel imposé (RGAA, RAWeb, RAAM, EN 301 549, eCH-0059) et retenez les WCAG 2.2 de niveau AA comme pivot commun."
+    ],
+    [
+     "Mois 2 et 3 : audit initial.",
+     "Faites auditer en priorité les services les plus utilisés et les parcours qui engagent l'usager : connexion, paiement, prise de rendez-vous, dépôt de dossier."
+    ],
+    [
+     "Mois 3 : publication.",
+     "Publiez ou mettez à jour la déclaration d'accessibilité et, en France, le schéma pluriannuel et le plan d'action annuel. Les éléments attendus sont détaillés dans notre article sur [[article:declaration|la déclaration d'accessibilité]]."
+    ],
+    [
+     "Mois 3 à 9 : corrections par composants.",
+     "Corrigez d'abord le design system et les gabarits, puis les contenus. Intégrez une [[svc:recette|recette accessibilité]] à chaque livraison pour éviter les régressions."
+    ],
+    [
+     "Mois 4 à 12 : montée en compétence.",
+     "Formez les profils qui produisent les contenus et le code : développeurs, designers, contributeurs, acheteurs. Des [[svc:formations|formations par métier]] évitent que les mêmes erreurs reviennent."
+    ],
+    [
+     "Mois 12 : contre-audit.",
+     "Mesurez les progrès selon le référentiel en vigueur à cette date et mettez la déclaration à jour."
+    ]
+   ]
+  ],
+  [
+   "h3",
+   "Le calendrier à surveiller"
+  ],
+  [
+   "ul",
+   [
+    "d'ici la fin de 2026 : citation attendue de la norme EN 301 549 V4.1.1 au Journal officiel de l'Union européenne, qui lui donnera la présomption de conformité ;",
+    "fin 2026 : publication annoncée du RGAA 5 par la DINUM, avec intégration des WCAG 2.2 ; les déclarations antérieures restent valables 18 mois, dans la limite de trois ans ;",
+    "février 2027 : publication annoncée du RAWeb 2 et du RAAM 2 au Luxembourg, compatibles avec la norme EN 301 549 V4.1.1 ;",
+    "sans date arrêtée : révision partielle de la LHand en Suisse et finalisation des WCAG 3 par le W3C, qui ne remplaceront pas les WCAG 2 avant plusieurs années."
+   ]
+  ],
+  [
+   "p",
+   "Pour retrouver en un coup d'œil le référentiel de chaque pays, consultez notre page [[standards|référentiels et obligations]], ainsi que les pages [[country:france|France]], [[country:luxembourg|Luxembourg]] et [[country:suisse|Suisse]]."
+  ]
+ ],
+ "faq": [
+  [
+   "Une norme d'accessibilité numérique est-elle obligatoire pour un site d'entreprise privée ?",
+   "Cela dépend de votre activité et de votre pays. Une entreprise qui propose aux consommateurs des produits ou services visés par l'European Accessibility Act, comme le commerce en ligne, la banque, le transport ou les communications électroniques, doit respecter les exigences de la directive, dont la norme EN 301 549 est la traduction technique. En France, certaines entreprises sont aussi soumises à l'article 47 de la loi du 11 février 2005 et doivent appliquer le RGAA. Un site purement vitrine d'une petite entreprise peut n'être soumis à aucune de ces obligations."
+  ],
+  [
+   "Faut-il viser le niveau AAA des WCAG ?",
+   "Non, pas comme objectif global. Les réglementations européennes et la norme EN 301 549 se limitent aux niveaux A et AA, et plusieurs critères AAA sont impossibles à garantir sur un site entier, comme la langue des signes pour toutes les vidéos. En revanche, certains critères AAA sont faciles à atteindre et très utiles, par exemple une apparence du focus bien contrastée. Vous pouvez les intégrer à votre design system sans en faire une obligation de conformité."
+  ],
+  [
+   "Un audit RGAA est-il reconnu en Belgique ou au Luxembourg ?",
+   "Pas directement. En Belgique, la référence est la norme EN 301 549 ; au Luxembourg, le secteur public est évalué selon le RAWeb et le RAAM. Le travail réalisé lors d'un audit RGAA reste largement réutilisable, car les critères reposent sur les mêmes WCAG, mais la déclaration doit se référer au texte du pays concerné. Pour un service diffusé dans les deux pays, un audit fondé sur la norme EN 301 549 est la base la plus solide."
+  ],
+  [
+   "Combien de temps un audit d'accessibilité reste-t-il valable ?",
+   "Un audit décrit l'état d'un service à une date donnée. Il doit être refait après toute refonte, changement de gabarit ou ajout d'un parcours important, et périodiquement pour suivre les corrections. En France, la DINUM a précisé que les déclarations établies avant la publication du RGAA 5 resteront valables 18 mois, dans la limite de trois ans après leur date de publication. Mieux vaut donc planifier l'audit suivant en tenant compte de ce calendrier."
+  ],
+  [
+   "La conformité aux WCAG 2.2 suffit-elle pour l'European Accessibility Act ?",
+   "Non. Les WCAG 2.2 de niveau AA couvrent l'essentiel des contenus web et des applications, mais l'European Accessibility Act fixe aussi des exigences sur les informations fournies aux clients, la documentation, le service d'assistance et, selon les produits, le matériel ou la communication en temps réel. La norme EN 301 549 V4.1.1 traduit ces exigences ; elle donnera une présomption de conformité une fois citée au Journal officiel de l'Union européenne."
+  ],
+  [
+   "Peut-on tester soi-même l'accessibilité de son site ?",
+   "Oui, pour un premier diagnostic. Naviguez sur vos pages uniquement au clavier, zoomez à 200 %, vérifiez les contrastes avec un outil gratuit et écoutez une page avec un lecteur d'écran comme NVDA sous Windows ou VoiceOver, intégré aux appareils Apple. Ces contrôles révèlent les défauts les plus visibles. Ils ne remplacent pas un audit selon le référentiel applicable, seul à même de produire un taux de conformité et une déclaration recevables."
+  ],
+  [
+   "Qu'est-ce que le WCAG2ICT, cité dans les audits de logiciels ?",
+   "C'est une note du W3C qui explique comment appliquer les critères WCAG 2 à des contenus qui ne sont pas des pages web : documents bureautiques, logiciels de bureau, applications mobiles. La norme EN 301 549 s'en inspire pour ses chapitres 10 et 11. Lors de l'audit d'une application native ou d'un logiciel métier, l'auditeur s'y réfère pour interpréter des notions propres au web, comme la « page » ou le « titre de page »."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Quel référentiel pour vos services ?",
+ "cta_text": "Nous identifions avec vous les textes qui s'appliquent à chaque service et auditons selon le référentiel attendu, RGAA, RAWeb, RAAM ou EN 301 549, avec les critères WCAG 2.2.",
+ "related": [
+  "guide",
+  "eaa",
+  "france"
+ ],
+ "cluster": "normes"
 }

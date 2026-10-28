@@ -1,118 +1,612 @@
 {
-  "slug": "digital-accessibility",
-  "h1": "Digital accessibility: what the law requires, what your users experience, where to start",
-  "crumb": "Digital accessibility guide",
-  "meta_title": "Digital accessibility: obligations, standards and method (2026)",
-  "meta_desc": "Digital accessibility explained: obligations in France, Belgium, Luxembourg and Switzerland, the EAA, standards, audit method and budget. Updated late 2026.",
-  "card_desc": "Definition, users, obligations by country, standards, method and budget: the reference guide to digital accessibility.",
-  "cat": "guide",
-  "where": "Europe",
-  "cover": "A11Y",
-  "cover_note": ["Reference guide", "Updated October 2026"],
-  "date": "2026-10-27",
-  "lead": "Digital accessibility means making websites, apps, documents and online services usable by everyone, including people with disabilities. In Europe it is also a legal obligation, and since 28 June 2025 that obligation has extended to a large part of the private sector. This guide explains what the law requires in France, Belgium, Luxembourg and Switzerland, how your users actually move through your pages, and which method to follow to get from an initial assessment to lasting accessibility compliance.",
-  "body": [
-    ["h2", "what-is-digital-accessibility", "What is digital accessibility?"],
-    ["p", "Digital accessibility is the capacity of a digital service (a website, an intranet, a mobile app, a piece of software, a document, a kiosk) to be perceived, understood and used by a person with a disability, with or without assistive technology. In practice, a blind person must be able to fill in your contact form with a screen reader. A person who cannot hold a mouse must be able to check out their basket using the keyboard. A deaf person must be able to follow your corporate video thanks to captions."],
-    ["p", "International standards sum up this requirement in four principles, which appear in WCAG and in the 2016 European directive on the public sector: content must be perceivable, operable, understandable and robust. Perceivable means that information never relies on a single sense: an image that carries meaning has a text alternative, a video has captions. Operable means that every function can be reached with the keyboard, with no time limits that are impossible to meet. Understandable means that labels are clear and that errors are explained. Robust, finally, means that the code is standard enough to be interpreted correctly by browsers and assistive technologies."],
-    ["p", "The term “web accessibility” is often used as a synonym, but it is narrower. Digital accessibility also covers mobile apps, office documents and PDFs, business software, self-service terminals and, since the European Accessibility Act, products such as payment terminals, smartphones and e-readers. An accessible website is therefore only part of the picture: what counts is the user’s entire journey, from searching for information through to payment, receiving a confirmation email and downloading an invoice."],
-    ["h3", "What digital accessibility is not"],
-    ["ul", ["It is not a special “disability version” of the website. You make the main service accessible, not a stripped-down copy that has to be maintained in parallel and always ends up lagging behind the original.", "It is not austere design. An accessible website can be visually rich, animated and contemporary, provided that contrast, structure and interactions meet the criteria.", "It is not a label you earn once and for all. Every release, every new piece of content and every PDF you publish can cause compliance to slip.", "It is not a topic reserved for developers. Content writers, designers, project managers, buyers and lawyers all shape the final result.", "It is not a synonym for usability. A website can be pleasant for most visitors and completely unusable with a screen reader.", "It is not a score produced by an automated tool. Testing tools detect only some of the defects: most criteria require human judgement, for example to decide whether a text alternative describes an image correctly."]],
-    ["h2", "users", "Disability and digital services: who are the users concerned?"],
-    ["p", "According to the [[https://www.who.int/news-room/fact-sheets/detail/disability-and-health|World Health Organization fact sheet on disability and health]], an estimated 1.3 billion people experience significant disability, or 16% of the world’s population: one person in six. In the European Union, Eurostat estimates presented in the [[https://www.consilium.europa.eu/en/infographics/disability-eu-facts-figures/|Council of the European Union infographic on disability]] show that in 2024, 24% of people over the age of 16 reported some form of disability, around 90 million people. Among those aged 65 and over, the share reaches 47.3%."],
-    ["p", "These figures cover very different realities, which do not raise the same problems in front of a screen. Many disabilities are invisible, and many of the people concerned do not describe themselves as disabled: they say that their eyesight is poor, that they get lost in forms or that they cannot cope with animations. That is why the standards reason in terms of functional needs (seeing, hearing, handling, understanding) rather than medical categories."],
-    ["h3", "Visual impairments"],
-    ["p", "They range from total blindness to low vision, including colour blindness, tunnel vision and sensitivity to light. A blind person uses a screen reader, sometimes combined with a refreshable braille display; they need a consistent heading structure, text alternatives and correctly named components. A person with low vision enlarges the display, sometimes very considerably, and needs sufficient contrast and a layout that reflows without horizontal scrolling. A colour-blind person needs information that does not rely on colour alone: a field in error flagged only by a red border goes unnoticed."],
-    ["h3", "Hearing impairments"],
-    ["p", "Deaf and hard-of-hearing people are rarely hindered by a website made of text and images. Difficulties appear with videos without captions, podcasts without transcripts, alerts that are only audible and customer services that can only be reached by phone. For some people who were born deaf, their first language is a sign language and written French, German or English is a second language: a clear, short text makes a considerable difference for them."],
-    ["h3", "Motor impairments"],
-    ["p", "Paralysis, tremors, amputation, neuromuscular disease or simply arthritis: many people cannot use a mouse or a touchscreen with precision. They navigate with the keyboard, a switch device, eye-tracking or voice control. Typical barriers are functions that are only available on mouse hover, targets that are too small, complex gestures with no alternative (drag and drop, pinching, two-finger swiping) and time limits that are too short to complete a form."],
-    ["h3", "Cognitive and psychological disabilities, and specific learning difficulties"],
-    ["p", "Dyslexia, attention disorders, memory impairments, autism, intellectual disability, anxiety disorders or the after-effects of a stroke: these situations are common and often invisible. They call for predictable navigation, explicit labels, instructions placed before fields rather than after the error, error messages that explain how to fix the problem, and no unexpected changes of context. WCAG 2.2 added criteria along these lines, for example a ban on requiring a memory or transcription test to log in when no alternative is offered."],
-    ["h3", "Temporary situations and ageing"],
-    ["p", "A wrist in plaster, eye surgery, a screen in bright sunlight, a noisy railway platform or a child in your arms temporarily puts anyone in the position of a person with a disability. Ageing, for its part, often combines several moderate limitations: declining eyesight, hearing and dexterity, and quicker fatigue when faced with cluttered interfaces. With almost one person in two affected among those aged 65 and over in the Union, digital accessibility is first and foremost a matter of demographics."],
-    ["h2", "assistive-technologies", "How your users navigate a website: assistive technologies and real-world barriers"],
-    ["p", "The most effective way to understand accessibility is to watch how a person actually uses a website with their own tools. Most assistive technologies do not see the screen as you do: they read the code and the accessibility tree that the browser derives from it. If the code does not say that an element is a button, a heading or a required field, the tool cannot guess."],
-    ["h3", "Screen readers and braille displays"],
-    ["p", "The main screen readers are NVDA and JAWS on Windows, VoiceOver on macOS and iOS, TalkBack on Android and Windows Narrator. They turn content into synthesised speech or braille. An experienced user does not read the page from top to bottom: they jump from heading to heading, bring up the list of links, move from one region to another (header, navigation, main content) or step through the fields of a form. On a smartphone, they explore the screen with a finger and move from one element to the next by swiping."],
-    ["p", "The most common barriers are very concrete. A search button shown as a simple magnifying glass, with no accessible name, is announced as “button” and nothing more. A drop-down menu built in JavaScript without the appropriate roles and states says neither that it is open nor which option is selected. A modal window that does not receive focus leaves the user reading the page in the background, unaware that a dialog box has opened. A visual CAPTCHA with no alternative simply shuts the user out of the service."],
-    ["h3", "Keyboard navigation and switch devices"],
-    ["p", "With a keyboard, you move from one interactive element to the next with Tab and Shift+Tab, activate with Enter or Space and move within lists with the arrow keys. Three conditions are essential: every function must be reachable, the tab order must follow the visual logic, and the element that has focus must be clearly visible. Switch devices, used by people with very limited mobility, work on the same principle with only one or two buttons: every unnecessary step multiplies the effort."],
-    ["p", "A typical example: on a payment page, the card expiry date picker opens on click but does not respond to the keyboard. The user gets all the way to the last screen of the checkout and cannot pay. Another frequent case is the “keyboard trap”: a video player or an interactive map captures the focus and never releases it, forcing the user to reload the page."],
-    ["h3", "Magnifiers, zoom and display settings"],
-    ["p", "People with low vision use the browser zoom, the operating system’s magnifier or dedicated screen magnification software, sometimes with inverted colours or a high-contrast mode. At high magnification, they see only a small portion of the screen at a time. A notification that appears in a distant corner, a confirmation message that disappears after three seconds or text embedded in an image that blurs when enlarged all escape them. WCAG requires, among other things, that content remain readable without horizontal scrolling at a width equivalent to 320 CSS pixels and that text spacing can be increased without loss of information."],
-    ["h3", "Voice control"],
-    ["p", "With Dragon, Apple’s Voice Control or Voice Access on Android, the user says “click Send” or “tap Next”. This only works if the technical name of the button matches what is written on screen. A button displayed as “Send” but named “submit-form-2” in the code does not respond to the command: this is the WCAG success criterion known as “label in name”, simple to meet and often forgotten."],
-    ["h3", "Captions, transcripts and audio description"],
-    ["p", "Synchronised captions serve deaf and hard-of-hearing people, but also everyone who watches a video with the sound off, on public transport or in an open-plan office. A text transcript lets users skim audio content quickly and serves deafblind people who use a braille display. Audio description, finally, describes the visual information that is essential to understanding a video, for example a chart discussed by a speaker who says only “as you can see here”."],
-    ["table", {"caption": "Examples of common barriers and how to fix them", "head": ["Situation", "What blocks the user", "Expected fix"], "rows": [["Payment form", "“Expiry date” field unusable with the keyboard, errors flagged by red colour alone", "Native component or complete ARIA role, text error message associated with the field"], ["Navigation menu", "Sub-menus that only open on mouse hover", "Opens with the keyboard, open or closed state conveyed to assistive technologies"], ["PDF of council minutes or of a report", "Scanned document, with no text and no structure", "HTML version or tagged PDF, with headings, reading order and alternatives"], ["CAPTCHA at sign-up", "Image recognition with no alternative", "A verification method that relies neither on sight nor on a cognitive test"], ["Mobile app", "Icons with no name, announced as “button” by VoiceOver or TalkBack", "An accessible label for every interactive icon"], ["Corporate video", "No captions, autoplay with sound", "Synchronised captions, playback started by the user, accessible player controls"]]}],
-    ["h2", "european-obligations", "Digital accessibility and the law: what is mandatory in Europe"],
-    ["p", "In Europe, digital accessibility law rests on two tiers. The first concerns the public sector: Directive (EU) 2016/2102 has for several years required public-sector bodies to make their websites and mobile apps accessible, on a timetable that ended on 23 June 2021 for apps. The second concerns the market: Directive (EU) 2019/882, known as the European Accessibility Act, has applied since 28 June 2025 to a list of products and services offered to consumers. Each State transposes these texts in its own way, which explains why methods and enforcement differ from one country to another."],
-    ["h3", "The European Accessibility Act, for private-sector products and services"],
-    ["p", "The [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng|text of Directive (EU) 2019/882 on EUR-Lex]] covers in particular electronic communications services, access to audiovisual media services, certain elements of passenger transport services (air, rail, bus and waterborne), consumer banking services, e-books and e-commerce. On the product side, it targets among others computers and their operating systems, smartphones, payment terminals, certain self-service terminals and e-readers. An online shop, a banking app or a transport ticketing service is therefore directly concerned."],
-    ["p", "Microenterprises providing services, meaning those with fewer than 10 employees and an annual turnover or balance sheet total not exceeding €2 million, are exempted by the directive. Transitional measures exist: service contracts agreed before 28 June 2025 may continue unchanged until they expire, but no later than 28 June 2030, and self-service terminals already in use may continue to be used until the end of their economically useful life, within a limit that the directive sets at twenty years and that France has reduced to fifteen. Be careful: a website or an app is not a “product” within the meaning of these measures and does not benefit from this grace period. For the details, see our [[article:eaa|full analysis of the European Accessibility Act]]."],
-    ["h3", "France: the 2005 law, Arcom and the DGCCRF"],
-    ["p", "In France, article 47 of the law of 11 February 2005 and Decree No. 2019-768 of 24 July 2019 require online public communication services to be accessible when they are run by public-law bodies, by private bodies entrusted with a public service mission, and by companies whose turnover in France exceeds €250 million on average over the last three financial years. These organisations must publish an accessibility statement, display a compliance status on their home page (not, partially or fully compliant), adopt a multi-year accessibility plan and an annual action plan, and offer a way to report an accessibility issue. The reference method is RGAA, presented below."],
-    ["p", "Since the ordinance of 6 September 2023, these obligations have been enforced by Arcom, the French audiovisual and digital communication regulator. According to its [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|page on the accessibility of websites and digital services (in French)]], after a formal notice it can impose a financial penalty of up to €50,000 for failing to meet accessibility requirements and up to €25,000 for the other obligations, adjusted according to the nature, seriousness and duration of the breach. For companies above the turnover threshold, Arcom checks the display obligations, not RGAA compliance itself. Its decisions are public: in June 2026 it served a formal notice on a ministry over its online tax service, citing among other things a PDF tax notice with no title, language or structure tags, a messaging section that could not be reached with the keyboard, a table whose cells were not associated with their headers, and compliance information that was out of date or missing."],
-    ["p", "The European Accessibility Act was transposed into the French Consumer Code (article L. 412-13) and detailed by Decree No. 2023-931 and a ministerial order of 9 October 2023. According to the [[https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/professionnels-vos-produits-et-services-doivent-etre-conformes-la-directive-accessibilite|DGCCRF practical guide for businesses (in French)]], the DGCCRF, France’s consumer protection authority, checks products and e-commerce, in coordination with Arcom for audiovisual media, Arcep for electronic communications, and the Banque de France, the ACPR and the AMF for financial services. Breaches are fifth-class petty offences, with fines of €7,500 that accumulate with the number of breaches found, in addition to orders to bring services into compliance. A first review published by the DGCCRF on 25 June 2026 reported information and enforcement actions, notably targeting online retail platforms. Full details are on our page on [[country:france|digital accessibility in France]] and in our [[article:france|article on French obligations]]."],
-    ["h3", "Belgium: the 2018 law, regional texts and the EAA"],
-    ["p", "In Belgium, the law of 19 July 2018 requires federal public bodies to make their websites and apps accessible; the Regions and Communities have adopted their own texts, each with its own monitoring body. The technical reference is the European standard EN 301 549: there is no national framework of its own. At federal level, the Digital Accessibility service of FPS BOSA (the Federal Public Service Policy and Support) carries out monitoring, and a user who does not receive a satisfactory response can refer the matter to the Federal Ombudsman."],
-    ["p", "For the private sector, the European Accessibility Act was transposed by several texts and several authorities are competent. According to the [[https://news.economie.fgov.be/251714-directive-sur-l-accessibilite-un-pas-en-avant-pour-une-societe-plus-inclusive/|FPS Economy press release of July 2025 (in French)]], the Economic Inspection checks e-commerce and consumer banking services, and microenterprises have an additional five years to comply, a different approach from the exemption chosen in France. See our page on [[country:belgique|digital accessibility in Belgium]] and our [[article:belgique|dedicated article]]."],
-    ["h3", "Luxembourg: RAWeb, RAAM and two laws"],
-    ["p", "In Luxembourg, the law of 28 May 2019 requires public-sector websites and apps to be accessible. The government’s Information and Press Service (SIP) monitors compliance and publishes the national frameworks: RAWeb for the web, version 1.1 of which was published in February 2026, and RAAM for mobile apps, both based on EN 301 549. The private sector falls under the law of 8 March 2023, which transposes the European Accessibility Act and is enforced by OSAPS, the office responsible for monitoring the accessibility of products and services. Our page on [[country:luxembourg|digital accessibility in Luxembourg]] and our [[article:luxembourg|article on the Luxembourg framework]] set out these obligations in detail."],
-    ["h3", "Switzerland: the Disability Discrimination Act, eCH-0059 and the effect of the EAA"],
-    ["p", "In Switzerland, the Disability Discrimination Act (LHand in French, BehiG in German), in force since 2004, and its ordinance require the Confederation’s services, including online services, to be accessible. The federal act on the use of electronic means for official tasks (EMBAG in German, LMETA in French) also requires these services to be accessible to the whole population. The reference standard is eCH-0059, whose third version requires WCAG 2.1 level AA for the websites and applications of the federal administration. Cantons and municipalities apply their own rules."],
-    ["p", "Two developments deserve your attention. First, a partial revision of the Disability Discrimination Act was sent to Parliament by the Federal Council at the end of 2024 and is still under examination. Second, Switzerland is not part of the European Union, but a Swiss company selling products or services covered by the European Accessibility Act to consumers in the Union must comply with it for those markets. See our page on [[country:suisse|digital accessibility in Switzerland]] and our [[article:suisse|article on Switzerland]]."],
-    ["h2", "country-table", "Who is covered, which law, which standard, who enforces: the country table"],
-    ["p", "The table below summarises digital accessibility obligations in the four countries where French-speaking organisations, and the international groups that work with them, are most often active. It gives an overview: the exact assessment of your situation depends on your legal status, your services and the countries in which you offer them."],
-    ["table", {"caption": "Digital accessibility: obligations by country (situation in October 2026)", "head": ["Country and sector", "Who is covered", "Main legislation", "Assessment standard", "Enforcement"], "rows": [["France, public sector and large companies", "Public-law bodies, private bodies entrusted with a public service mission, companies with a turnover in France above €250 million", "Law of 11 February 2005, article 47; Decree No. 2019-768", "RGAA 4.1.2 (106 criteria)", "Arcom, penalties of up to €50,000"], ["France, private sector (EAA)", "Economic operators for the products and services covered, excluding microenterprises providing services", "Consumer Code, article L. 412-13; Decree No. 2023-931", "Requirements of the directive, EN 301 549", "DGCCRF, with Arcom, Arcep, Banque de France, ACPR, AMF"], ["Belgium, public sector", "Federal, regional and community public bodies", "Law of 19 July 2018 and regional and community texts", "EN 301 549 (WCAG level AA)", "FPS BOSA at federal level, regional and community bodies"], ["Belgium, private sector (EAA)", "Operators for the products and services covered; additional time for microenterprises", "Transposition of Directive (EU) 2019/882", "EN 301 549", "Several authorities, including the Economic Inspection of the FPS Economy"], ["Luxembourg, public sector", "Public-sector bodies", "Law of 28 May 2019", "RAWeb 1.1 (web), RAAM 1.1 (mobile)", "Information and Press Service (SIP)"], ["Luxembourg, private sector (EAA)", "Operators for the products and services covered", "Law of 8 March 2023", "Requirements of the directive, EN 301 549", "OSAPS"], ["Switzerland", "The Confederation; cantons and municipalities under their own rules; companies selling in the EU under the EAA", "Disability Discrimination Act and its ordinance, EMBAG/LMETA, cantonal rules", "eCH-0059 (WCAG 2.1 level AA)", "No dedicated enforcement body comparable to Arcom; the Federal Office for the Equality of People with Disabilities promotes equality and acts against discrimination"]]}],
-    ["p", "A group present in several of these countries does not need to run four separate programmes. The frameworks are all based on WCAG level AA: a well-designed audit against WCAG and EN 301 549 serves as a common foundation, which you then complement with each country’s formal requirements (format of the accessibility statement, compliance status notice, method for calculating the compliance rate). Our page on [[standards|standards and obligations by country]] explains how these fit together."],
-    ["h2", "standards", "Digital accessibility standards at a glance"],
-    ["p", "The Web Content Accessibility Guidelines (WCAG), published by the W3C, are the foundation of all the other standards. According to the [[https://www.w3.org/WAI/standards-guidelines/wcag/|W3C’s official overview of WCAG]], version 2.2 was published on 5 October 2023 and updated on 12 December 2024; it adds nine success criteria to WCAG 2.1 and makes success criterion 4.1.1 (Parsing) obsolete. The October 2023 text has also become the international standard ISO/IEC 40500:2025. Criteria are grouped into three levels, A, AA and AAA: level AA is the one European legislation targets. WCAG 3 is still a draft and is not an enforceable reference."],
-    ["p", "EN 301 549 is the harmonised European standard setting accessibility requirements for digital products and services. It incorporates WCAG for the web, documents and software, and adds requirements for hardware, two-way communication services, documentation and support services. Version V3.2.1, from 2021, is based on WCAG 2.1. Version V4.1.1, published by ETSI, CEN and Cenelec in September 2026, aligns with WCAG 2.2 and presents itself as a means of complying with the European Accessibility Act; its full legal effect depends on its citation in the Official Journal of the European Union, which had not yet happened when this guide was last updated."],
-    ["p", "RGAA, France’s General Accessibility Improvement Framework, published by the French interministerial digital directorate (DINUM), turns these requirements into 106 criteria, each with precise tests, and a sampling method. The version in force is 4.1.2. The [[https://accessibilite.numerique.gouv.fr/|official RGAA website (in French)]] announces that version 5 is being drafted, with publication expected at the end of 2026, and states that accessibility work under way must not be suspended or postponed in the meantime. See also our [[svc:audit-rgaa|RGAA audit]] service."],
-    ["p", "In Luxembourg, RAWeb 1.1 and RAAM 1.1 adopt the RGAA method and adapt it to EN 301 549; the SIP also publishes a framework for assessing PDF documents, RAPDF. In Switzerland, the eCH-0059 standard, published by the eCH association, refers to WCAG level AA. Our [[article:normes|detailed comparison of accessibility standards]] sets out their differences criterion by criterion."],
-    ["note", "Key point", "All these frameworks rest on the same foundation: WCAG level AA. What changes from one country to another is mainly the testing method, the sample of pages, the format of the accessibility statement and the authority that enforces. Targeting WCAG 2.2 AA today prepares you both for RGAA 5 and for the new version of EN 301 549."],
-    ["h2", "method", "Implementing digital accessibility: the eight-step method"],
-    ["p", "The organisations that achieve stable compliance are not the ones that fix issues fastest after an audit, but the ones that put a process in place. Here are the eight steps of a complete programme, from the initial assessment to ongoing monitoring. They apply to a ministry as much as to an online shop, with different levels of intensity."],
-    ["ol", [["Initial assessment.", "Start with an inventory: websites, subdomains, intranets, extranets, mobile apps, customer portals, downloadable documents and embedded third-party tools (payment, appointment booking, live chat, maps). For each one, identify the applicable legislation, the supplier responsible, the date of the last redesign and whether an accessibility statement exists. This mapping stops you from auditing a rarely visited brochure site first while the customer portal, where most transactions happen, stays off the radar."], ["Compliance audit.", "The audit measures how a representative sample of pages or screens complies with the relevant framework: RGAA in France, RAWeb or RAAM in Luxembourg, WCAG and EN 301 549 elsewhere or for the European Accessibility Act. A serious audit combines automated tools, manual code inspection and testing with real assistive technologies. It produces a compliance rate, a criterion-by-criterion grid and a description of each non-conformity. Depending on your situation: [[svc:audit-rgaa|RGAA audit]], [[svc:audit-conformite|WCAG and EN 301 549 audit]] or [[svc:audit-raam|RAAM audit of mobile apps]]."], ["Prioritised action plan.", "Rank the fixes according to three criteria: the impact on essential journeys (creating an account, paying, submitting an application, contacting the service), how often the defect occurs (a faulty component present on every page matters more than an isolated anomaly) and the effort required to fix it. In France, this plan feeds into the multi-year accessibility plan and the annual action plan required by law. A good action plan names an owner and a deadline for each batch of work."], ["Fixes.", "Fix issues at source: in the component library or design system, in the CMS templates, in the shared styles. A fix made to the “button” component spreads to thousands of pages; the same fix made page by page will not survive the next release. For third-party components, ask your suppliers for their own conformance statement and include contractual clauses. Support with [[svc:developpement|accessible development]] helps your teams fix issues at source from the very first sprints."], ["Team training.", "Accessibility deteriorates as soon as the people who build the service do not know the rules. Developers need to master HTML and ARIA semantics, designers contrast and focus states, content writers heading structure, explicit links and text alternatives, and buyers the clauses to include in contracts. Group [[svc:formations|training courses]] and [[svc:elearning|e-learning]] complement each other well, depending on the size of your teams."], ["Accessibility acceptance testing.", "Build an accessibility check into every delivery, in the same way as functional or security testing. Include accessibility criteria in the definition of done for your user stories and have new features checked before they go live. Regular [[svc:recette|accessibility acceptance testing]] costs far less than a campaign of fixes every three years."], ["Accessibility statement.", "Publish a statement that tells the truth: the date and framework of the audit, the compliance rate, content that is not accessible and any exemptions claimed, a contact for reporting a problem, and the enforcement procedure. In France, the compliance status must also appear on the home page. A statement that claims full compliance without an audit to back it up exposes you more than an honest statement of partial compliance. Our [[article:declaration|guide to the accessibility statement]] details its content country by country."], ["Ongoing monitoring.", "Handle user reports within a reasonable time, commission a new audit after every major redesign and at regular intervals, keep track of changes to the standards (RGAA 5, the new version of EN 301 549) and appoint an accessibility lead with a clear mandate from senior management. Finally, complement audits with [[svc:test-utilisateur|testing with users with disabilities]] on your key journeys: it reveals difficulties that no checklist measures."]]],
-    ["h2", "budget-and-timescales", "Budget and timescales: how much does an accessibility audit cost?"],
-    ["p", "There is no public reference price, and a price quoted without knowing the scope is not worth much. The cost of a digital accessibility audit depends above all on the volume and complexity of what is being assessed. To compare quotes, ask for them to cover the same sample, the same framework and the same deliverables."],
-    ["ul", ["The number of pages or screens in the sample and, above all, the number of different templates it contains;", "the complexity of the journeys: a checkout, a simulator or a multi-step form requires far more testing than an article page;", "the number of platforms: the same service on the web, on iOS and on Android means three assessments;", "the framework and the reporting format expected (RGAA with the official grid, RAWeb, WCAG and EN 301 549, possibly several at once for a multi-country group);", "the volume of PDF or office documents to be assessed;", "the languages of the audit and of the report;", "related services: user testing, support for your teams while they fix issues, a verification re-audit, drafting the accessibility statement;", "time constraints, for example an audit that must be delivered before a launch or an enforcement deadline."]],
-    ["p", "As for timescales, auditing a website of ordinary complexity takes weeks rather than months: at our firm, the average audit takes three weeks. Fixes generally take longer than the audit, from a few weeks for defects concentrated in a handful of components to several months when the front-end architecture has to be reworked. A redesign is the best time to build in accessibility: addressed from the wireframes onwards, it costs a fraction of what fixes cost after launch."],
-    ["p", "Bear in mind, finally, that the audit is only one line in the budget. The heaviest items are often the fixes, making existing documents accessible, and training. Be wary of a very low offer limited to running an automated tool: it allows you neither to calculate a compliance rate that will stand up to scrutiny nor to write a reliable accessibility statement."],
-    ["h2", "documents-mobile-video", "PDFs, mobile apps and video: where compliance often falls short"],
-    ["h3", "PDF and office documents"],
-    ["p", "Council minutes, annual reports, forms to print out, tax notices, terms and conditions, invoices: downloadable documents are often the least accessible part of a service. A PDF produced from a scan is just an image, unreadable for a screen reader. A PDF exported without care may contain text but no structure: no headings, a random reading order, tables that cannot be navigated, form fields without labels."],
-    ["p", "Good practice is to publish information in HTML whenever possible and to keep PDF for documents that need to be printed or signed. When a PDF is necessary, produce it from a properly structured source document (heading styles, image alternatives, simple tables) and then check the tagging. For the public sector, the 2016 directive excludes office files published before 23 September 2018, unless they are needed for active administrative processes. In Luxembourg, the SIP’s 2022–2024 monitoring report notes that inaccessible PDFs are the most frequently cited justification for disproportionate burden; an exemption does not remove the obligation to provide an accessible alternative on request."],
-    ["h3", "Mobile apps"],
-    ["p", "A native iOS or Android app is assessed on a real device, with VoiceOver and TalkBack, enlarged text size, landscape orientation and, where relevant, an external keyboard. Typical defects are icons without labels, complex gestures with no alternative, locked orientation, text that does not enlarge with the system settings and embedded web views that have never been tested. RAAM in Luxembourg, RGAA in France and the chapters of EN 301 549 on software provide the grid; a [[svc:audit-raam|RAAM audit]] follows this approach on real devices."],
-    ["h3", "Video, audio content and live streaming"],
-    ["p", "An accessible video combines accurate synchronised captions, a transcript, audio description when the image carries information that is not spoken, and a player whose controls can be used with the keyboard and are announced by screen readers. Avoid autoplay with sound, which drowns out the screen reader’s voice. For the public sector, pre-recorded time-based media published before 23 September 2020 are excluded from the scope of the 2016 directive; new content, on the other hand, must be accessible from the moment it is published."],
-    ["h2", "common-mistakes", "Common digital accessibility mistakes"],
-    ["p", "The same mistakes recur from one organisation to another, whatever the sector. Knowing them lets you avoid most of them before the first audit."],
-    ["ul", ["Waiting for the next redesign to act, when many fixes (contrast, labels, heading structure, alternatives) can be made on the current website.", "Relying solely on an automated tool’s score and believing that a page with “no errors detected” is compliant.", "Publishing an accessibility statement without a real audit, or never updating it after the website changes.", "Fixing pages one by one instead of fixing shared components and templates.", "Forgetting third-party components: payment module, appointment booking, recruitment tool, video player, maps, live chat.", "Adding ARIA attributes everywhere “to be on the safe side”: misused ARIA often makes the experience worse rather than better, while native HTML is enough in most cases.", "Using visual CAPTCHAs or short session timeouts without an alternative or the possibility of extending them.", "Neglecting PDF documents and transactional emails, even though they are part of the user journey.", "Leaving accessibility requirements out of specifications and tender documents, then discovering the defects when the project is handed over.", "Handing the topic to a single person with no support from senior management and no budget for fixes."]],
-    ["h2", "benefits", "The benefits of digital accessibility beyond compliance"],
-    ["p", "The first benefit is reach. With almost a quarter of adults in the Union reporting some form of disability and almost one in two among those aged 65 and over, according to the Eurostat figures cited above, an inaccessible journey shuts out a significant share of your users or customers. For a public service, it is a breach of equal treatment; for an online shop, it means baskets abandoned at the payment stage."],
-    ["p", "The second benefit is quality. Semantic code, documented components and structured content are easier to maintain, develop and test. The same efforts improve use on mobile, on the move or on a slow connection, and benefit every visitor: clear labels reduce input errors, and explicit error messages reduce calls to customer service."],
-    ["p", "The third benefit concerns visibility and markets. A consistent heading structure, text alternatives and transcripts make your content easier to read for search engines as well as for people, even though accessibility is not a ranking factor as such. Public buyers increasingly include accessibility in their specifications, and large companies require it of their suppliers: being able to produce an accessibility statement based on an audit is becoming a commercial argument."],
-    ["p", "The last benefit is internal. Your intranets, business software and HR tools are digital services too. Making them accessible is a precondition for recruiting and retaining employees with disabilities, and makes daily work easier for those whose sight, hearing or mobility changes over the course of their career."],
-    ["h2", "where-to-start", "Where to start: your 90-day digital accessibility plan"],
-    ["p", "If you are starting from scratch, here is a realistic timetable for launching a digital accessibility programme without waiting for a redesign. It suits a local authority as well as a company covered by the European Accessibility Act; simply adapt the framework. For the specific features of your sector, see our pages for the [[sector:public|public sector]], [[sector:grands-comptes|large enterprises]] and [[sector:pme|SMEs and mid-sized companies]]."],
-    ["ol", [["Weeks 1 and 2: establish your obligations.", "List your digital services, identify the applicable legislation country by country and appoint an accessibility lead with a sponsor in senior management. Check whether you already publish an accessibility statement and whether it is based on an audit."], ["Weeks 3 to 6: audit what matters most.", "Have the service that handles most of your transactions or revenue audited first, on a sample that includes complete journeys (login, form, payment, confirmation). In parallel, have a few typical documents assessed and, if you have one, your mobile app."], ["Weeks 5 to 8: publish an honest accessibility statement.", "Based on the audit, publish or update the accessibility statement and, in France, the compliance status notice, with a contact for reporting difficulties. A declared partial compliance is better than full compliance displayed without proof."], ["Weeks 6 to 10: fix the high-impact components.", "Deal first with blocking defects on essential journeys and with those that recur in shared components: navigation, forms, buttons, modal windows, contrast."], ["Weeks 8 to 12: train and equip your teams.", "Train developers, designers and content writers, add accessibility criteria to your specifications and acceptance testing, and plan a check before every release."], ["Beyond 90 days: keep to the timetable.", "Include the upcoming deadlines in your action plan: publication of RGAA 5 expected at the end of 2026, the expected citation of the new version of EN 301 549 in the Official Journal of the Union, and the end of the European Accessibility Act’s transitional measures for service contracts on 28 June 2030. Schedule a new audit after every major change and at least once per cycle of your multi-year plan."]]],
-    ["note", "The first step", "An audit of your essential journeys is enough to publish a reliable accessibility statement, prioritise fixes and put a figure on what comes next. It is the basis of any digital accessibility programme, whatever your country or sector."]
+ "slug": "digital-accessibility",
+ "h1": "Digital accessibility: what the law requires, what your users experience, where to start",
+ "crumb": "Digital accessibility guide",
+ "meta_title": "Digital accessibility: obligations, standards and method (2026)",
+ "meta_desc": "Digital accessibility explained: obligations in France, Belgium, Luxembourg and Switzerland, the EAA, standards, audit method and budget. Updated late 2026.",
+ "card_desc": "Definition, users, obligations by country, standards, method and budget: the reference guide to digital accessibility.",
+ "cat": "guide",
+ "where": "Europe",
+ "cover": "A11Y",
+ "cover_note": [
+  "Reference guide",
+  "Updated October 2026"
+ ],
+ "date": "2026-10-27",
+ "lead": "Digital accessibility means making websites, apps, documents and online services usable by everyone, including people with disabilities. In Europe it is also a legal obligation, and since 28 June 2025 that obligation has extended to a large part of the private sector. This guide explains what the law requires in France, Belgium, Luxembourg and Switzerland, how your users actually move through your pages, and which method to follow to get from an initial assessment to lasting accessibility compliance.",
+ "body": [
+  [
+   "h2",
+   "what-is-digital-accessibility",
+   "What is digital accessibility?"
   ],
-  "faq": [
-    ["Is digital accessibility mandatory for all companies?", "No, but the scope is broad. Public bodies are covered in all four countries. In the European Union, since 28 June 2025 the European Accessibility Act has applied to companies that offer certain products and services to consumers, such as e-commerce, banking, transport and electronic communications. In France, companies whose turnover in France exceeds €250 million are also subject to article 47 of the 2005 law. Microenterprises providing services benefit from lighter rules, which vary from country to country."],
-    ["What is RGAA exactly?", "RGAA is France’s General Accessibility Improvement Framework (Référentiel général d’amélioration de l’accessibilité), published by the French State. It translates WCAG into 106 verifiable criteria, each with its own tests, and sets out the method for calculating a compliance rate and writing the accessibility statement. The version in force is 4.1.2; version 5 is announced for the end of 2026. RGAA applies to organisations subject to article 47 of the 2005 law and is often used as a practical grid beyond that circle."],
-    ["Is an automated testing tool enough to check a website’s accessibility?", "No. Automated tools are useful for quickly spotting certain defects, such as an image without an alt attribute, insufficient contrast or a field without a label. But they cannot judge whether a text alternative is relevant, whether the tab order is logical or whether an error message is clear. A compliance audit requires manual inspection and testing with assistive technologies."],
-    ["Do you have to rebuild your website to make it accessible?", "Rarely. Most defects can be fixed in existing components, templates and content: contrast, button labels, heading structure, text alternatives, focus management. A redesign is only justified if the technical architecture prevents any lasting fix or if one is already planned for other reasons. In that case, build accessibility into the specifications and the wireframes from the outset."],
-    ["What is the difference between digital accessibility and usability?", "Usability aims to make a service simple and efficient for most of its users. Digital accessibility ensures that it remains usable by people with disabilities, whatever tools they use. The two approaches reinforce each other but are not the same: a journey that is smooth with a mouse can be impossible with a keyboard, and a compliant website can still be hard to use. User testing lets you address both at once."],
-    ["Does an accessible website rank better on Google?", "Accessibility is not a ranking factor as such, but many good practices also benefit search engine optimisation: structured headings, text alternatives, explicit links, video transcripts, fast pages that work well on mobile. Content that is well structured for a screen reader is also well structured for a search engine. The aim, however, remains to serve users, not to gain positions."],
-    ["Who can carry out a digital accessibility audit?", "The value of an audit lies first in the method and the experience of the auditors. Choose auditors who master the applicable framework, test with real assistive technologies and provide a detailed grid your teams can work with. Be wary of unsolicited approaches claiming to act on behalf of an authority: Arcom states that it does not delegate its enforcement role to any third party. An organisation can also train an in-house auditor, provided that their independence from the teams being audited is guaranteed."]
+  [
+   "p",
+   "Digital accessibility is the capacity of a digital service (a website, an intranet, a mobile app, a piece of software, a document, a kiosk) to be perceived, understood and used by a person with a disability, with or without assistive technology. In practice, a blind person must be able to fill in your contact form with a screen reader. A person who cannot hold a mouse must be able to check out their basket using the keyboard. A deaf person must be able to follow your corporate video thanks to captions."
   ],
-  "cta_svc": "audit-conformite",
-  "cta_title": "Where does your digital service stand?",
-  "cta_text": "A compliance audit gives you a precise picture, criterion by criterion, and a prioritised action plan. Tell us about your scope and we will suggest the right framework and method.",
-  "related": ["eaa", "normes", "france"]
+  [
+   "p",
+   "International standards sum up this requirement in four principles, which appear in WCAG and in the 2016 European directive on the public sector: content must be perceivable, operable, understandable and robust. Perceivable means that information never relies on a single sense: an image that carries meaning has a text alternative, a video has captions. Operable means that every function can be reached with the keyboard, with no time limits that are impossible to meet. Understandable means that labels are clear and that errors are explained. Robust, finally, means that the code is standard enough to be interpreted correctly by browsers and assistive technologies."
+  ],
+  [
+   "p",
+   "The term “web accessibility” is often used as a synonym, but it is narrower. Digital accessibility also covers mobile apps, office documents and PDFs, business software, self-service terminals and, since the European Accessibility Act, products such as payment terminals, smartphones and e-readers. An accessible website is therefore only part of the picture: what counts is the user’s entire journey, from searching for information through to payment, receiving a confirmation email and downloading an invoice."
+  ],
+  [
+   "h3",
+   "What digital accessibility is not"
+  ],
+  [
+   "ul",
+   [
+    "It is not a special “disability version” of the website. You make the main service accessible, not a stripped-down copy that has to be maintained in parallel and always ends up lagging behind the original.",
+    "It is not austere design. An accessible website can be visually rich, animated and contemporary, provided that contrast, structure and interactions meet the criteria.",
+    "It is not a label you earn once and for all. Every release, every new piece of content and every PDF you publish can cause compliance to slip.",
+    "It is not a topic reserved for developers. Content writers, designers, project managers, buyers and lawyers all shape the final result.",
+    "It is not a synonym for usability. A website can be pleasant for most visitors and completely unusable with a screen reader.",
+    "It is not a score produced by an automated tool. Testing tools detect only some of the defects: most criteria require human judgement, for example to decide whether a text alternative describes an image correctly."
+   ]
+  ],
+  [
+   "h2",
+   "users",
+   "Disability and digital services: who are the users concerned?"
+  ],
+  [
+   "p",
+   "According to the [[https://www.who.int/news-room/fact-sheets/detail/disability-and-health|World Health Organization fact sheet on disability and health]], an estimated 1.3 billion people experience significant disability, or 16% of the world’s population: one person in six. In the European Union, Eurostat estimates presented in the [[https://www.consilium.europa.eu/en/infographics/disability-eu-facts-figures/|Council of the European Union infographic on disability]] show that in 2024, 24% of people over the age of 16 reported some form of disability, around 90 million people. Among those aged 65 and over, the share reaches 47.3%."
+  ],
+  [
+   "p",
+   "These figures cover very different realities, which do not raise the same problems in front of a screen. Many disabilities are invisible, and many of the people concerned do not describe themselves as disabled: they say that their eyesight is poor, that they get lost in forms or that they cannot cope with animations. That is why the standards reason in terms of functional needs (seeing, hearing, handling, understanding) rather than medical categories."
+  ],
+  [
+   "h3",
+   "Visual impairments"
+  ],
+  [
+   "p",
+   "They range from total blindness to low vision, including colour blindness, tunnel vision and sensitivity to light. A blind person uses a screen reader, sometimes combined with a refreshable braille display; they need a consistent heading structure, text alternatives and correctly named components. A person with low vision enlarges the display, sometimes very considerably, and needs sufficient contrast and a layout that reflows without horizontal scrolling. A colour-blind person needs information that does not rely on colour alone: a field in error flagged only by a red border goes unnoticed."
+  ],
+  [
+   "h3",
+   "Hearing impairments"
+  ],
+  [
+   "p",
+   "Deaf and hard-of-hearing people are rarely hindered by a website made of text and images. Difficulties appear with videos without captions, podcasts without transcripts, alerts that are only audible and customer services that can only be reached by phone. For some people who were born deaf, their first language is a sign language and written French, German or English is a second language: a clear, short text makes a considerable difference for them."
+  ],
+  [
+   "h3",
+   "Motor impairments"
+  ],
+  [
+   "p",
+   "Paralysis, tremors, amputation, neuromuscular disease or simply arthritis: many people cannot use a mouse or a touchscreen with precision. They navigate with the keyboard, a switch device, eye-tracking or voice control. Typical barriers are functions that are only available on mouse hover, targets that are too small, complex gestures with no alternative (drag and drop, pinching, two-finger swiping) and time limits that are too short to complete a form."
+  ],
+  [
+   "h3",
+   "Cognitive and psychological disabilities, and specific learning difficulties"
+  ],
+  [
+   "p",
+   "Dyslexia, attention disorders, memory impairments, autism, intellectual disability, anxiety disorders or the after-effects of a stroke: these situations are common and often invisible. They call for predictable navigation, explicit labels, instructions placed before fields rather than after the error, error messages that explain how to fix the problem, and no unexpected changes of context. WCAG 2.2 added criteria along these lines, for example a ban on requiring a memory or transcription test to log in when no alternative is offered."
+  ],
+  [
+   "h3",
+   "Temporary situations and ageing"
+  ],
+  [
+   "p",
+   "A wrist in plaster, eye surgery, a screen in bright sunlight, a noisy railway platform or a child in your arms temporarily puts anyone in the position of a person with a disability. Ageing, for its part, often combines several moderate limitations: declining eyesight, hearing and dexterity, and quicker fatigue when faced with cluttered interfaces. With almost one person in two affected among those aged 65 and over in the Union, digital accessibility is first and foremost a matter of demographics."
+  ],
+  [
+   "h2",
+   "assistive-technologies",
+   "How your users navigate a website: assistive technologies and real-world barriers"
+  ],
+  [
+   "p",
+   "The most effective way to understand accessibility is to watch how a person actually uses a website with their own tools. Most assistive technologies do not see the screen as you do: they read the code and the accessibility tree that the browser derives from it. If the code does not say that an element is a button, a heading or a required field, the tool cannot guess."
+  ],
+  [
+   "h3",
+   "Screen readers and braille displays"
+  ],
+  [
+   "p",
+   "The main screen readers are NVDA and JAWS on Windows, VoiceOver on macOS and iOS, TalkBack on Android and Windows Narrator. They turn content into synthesised speech or braille. An experienced user does not read the page from top to bottom: they jump from heading to heading, bring up the list of links, move from one region to another (header, navigation, main content) or step through the fields of a form. On a smartphone, they explore the screen with a finger and move from one element to the next by swiping."
+  ],
+  [
+   "p",
+   "The most common barriers are very concrete. A search button shown as a simple magnifying glass, with no accessible name, is announced as “button” and nothing more. A drop-down menu built in JavaScript without the appropriate roles and states says neither that it is open nor which option is selected. A modal window that does not receive focus leaves the user reading the page in the background, unaware that a dialog box has opened. A visual CAPTCHA with no alternative simply shuts the user out of the service."
+  ],
+  [
+   "h3",
+   "Keyboard navigation and switch devices"
+  ],
+  [
+   "p",
+   "With a keyboard, you move from one interactive element to the next with Tab and Shift+Tab, activate with Enter or Space and move within lists with the arrow keys. Three conditions are essential: every function must be reachable, the tab order must follow the visual logic, and the element that has focus must be clearly visible. Switch devices, used by people with very limited mobility, work on the same principle with only one or two buttons: every unnecessary step multiplies the effort."
+  ],
+  [
+   "p",
+   "A typical example: on a payment page, the card expiry date picker opens on click but does not respond to the keyboard. The user gets all the way to the last screen of the checkout and cannot pay. Another frequent case is the “keyboard trap”: a video player or an interactive map captures the focus and never releases it, forcing the user to reload the page."
+  ],
+  [
+   "h3",
+   "Magnifiers, zoom and display settings"
+  ],
+  [
+   "p",
+   "People with low vision use the browser zoom, the operating system’s magnifier or dedicated screen magnification software, sometimes with inverted colours or a high-contrast mode. At high magnification, they see only a small portion of the screen at a time. A notification that appears in a distant corner, a confirmation message that disappears after three seconds or text embedded in an image that blurs when enlarged all escape them. WCAG requires, among other things, that content remain readable without horizontal scrolling at a width equivalent to 320 CSS pixels and that text spacing can be increased without loss of information."
+  ],
+  [
+   "h3",
+   "Voice control"
+  ],
+  [
+   "p",
+   "With Dragon, Apple’s Voice Control or Voice Access on Android, the user says “click Send” or “tap Next”. This only works if the technical name of the button matches what is written on screen. A button displayed as “Send” but named “submit-form-2” in the code does not respond to the command: this is the WCAG success criterion known as “label in name”, simple to meet and often forgotten."
+  ],
+  [
+   "h3",
+   "Captions, transcripts and audio description"
+  ],
+  [
+   "p",
+   "Synchronised captions serve deaf and hard-of-hearing people, but also everyone who watches a video with the sound off, on public transport or in an open-plan office. A text transcript lets users skim audio content quickly and serves deafblind people who use a braille display. Audio description, finally, describes the visual information that is essential to understanding a video, for example a chart discussed by a speaker who says only “as you can see here”."
+  ],
+  [
+   "table",
+   {
+    "caption": "Examples of common barriers and how to fix them",
+    "head": [
+     "Situation",
+     "What blocks the user",
+     "Expected fix"
+    ],
+    "rows": [
+     [
+      "Payment form",
+      "“Expiry date” field unusable with the keyboard, errors flagged by red colour alone",
+      "Native component or complete ARIA role, text error message associated with the field"
+     ],
+     [
+      "Navigation menu",
+      "Sub-menus that only open on mouse hover",
+      "Opens with the keyboard, open or closed state conveyed to assistive technologies"
+     ],
+     [
+      "PDF of council minutes or of a report",
+      "Scanned document, with no text and no structure",
+      "HTML version or tagged PDF, with headings, reading order and alternatives"
+     ],
+     [
+      "CAPTCHA at sign-up",
+      "Image recognition with no alternative",
+      "A verification method that relies neither on sight nor on a cognitive test"
+     ],
+     [
+      "Mobile app",
+      "Icons with no name, announced as “button” by VoiceOver or TalkBack",
+      "An accessible label for every interactive icon"
+     ],
+     [
+      "Corporate video",
+      "No captions, autoplay with sound",
+      "Synchronised captions, playback started by the user, accessible player controls"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "european-obligations",
+   "Digital accessibility and the law: what is mandatory in Europe"
+  ],
+  [
+   "p",
+   "In Europe, digital accessibility law rests on two tiers. The first concerns the public sector: Directive (EU) 2016/2102 has for several years required public-sector bodies to make their websites and mobile apps accessible, on a timetable that ended on 23 June 2021 for apps. The second concerns the market: Directive (EU) 2019/882, known as the European Accessibility Act, has applied since 28 June 2025 to a list of products and services offered to consumers. Each State transposes these texts in its own way, which explains why methods and enforcement differ from one country to another."
+  ],
+  [
+   "h3",
+   "The European Accessibility Act, for private-sector products and services"
+  ],
+  [
+   "p",
+   "The [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng|text of Directive (EU) 2019/882 on EUR-Lex]] covers in particular electronic communications services, access to audiovisual media services, certain elements of passenger transport services (air, rail, bus and waterborne), consumer banking services, e-books and e-commerce. On the product side, it targets among others computers and their operating systems, smartphones, payment terminals, certain self-service terminals and e-readers. An online shop, a banking app or a transport ticketing service is therefore directly concerned."
+  ],
+  [
+   "p",
+   "Microenterprises providing services, meaning those with fewer than 10 employees and an annual turnover or balance sheet total not exceeding €2 million, are exempted by the directive. Transitional measures exist: service contracts agreed before 28 June 2025 may continue unchanged until they expire, but no later than 28 June 2030, and self-service terminals already in use may continue to be used until the end of their economically useful life, within a limit that the directive sets at twenty years and that France has reduced to fifteen. Be careful: a website or an app is not a “product” within the meaning of these measures and does not benefit from this grace period. For the details, see our [[article:eaa|full analysis of the European Accessibility Act]]."
+  ],
+  [
+   "h3",
+   "France: the 2005 law, Arcom and the DGCCRF"
+  ],
+  [
+   "p",
+   "In France, article 47 of the law of 11 February 2005 and Decree No. 2019-768 of 24 July 2019 require online public communication services to be accessible when they are run by public-law bodies, by private bodies entrusted with a public service mission, and by companies whose turnover in France exceeds €250 million on average over the last three financial years. These organisations must publish an accessibility statement, display a compliance status on their home page (not, partially or fully compliant), adopt a multi-year accessibility plan and an annual action plan, and offer a way to report an accessibility issue. The reference method is RGAA, presented below."
+  ],
+  [
+   "p",
+   "Since the ordinance of 6 September 2023, these obligations have been enforced by Arcom, the French audiovisual and digital communication regulator. According to its [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|page on the accessibility of websites and digital services (in French)]], after a formal notice it can impose a financial penalty of up to €50,000 for failing to meet accessibility requirements and up to €25,000 for the other obligations, adjusted according to the nature, seriousness and duration of the breach. For companies above the turnover threshold, Arcom checks the display obligations, not RGAA compliance itself. Its decisions are public: in June 2026 it served a formal notice on a ministry over its online tax service, citing among other things a PDF tax notice with no title, language or structure tags, a messaging section that could not be reached with the keyboard, a table whose cells were not associated with their headers, and compliance information that was out of date or missing."
+  ],
+  [
+   "p",
+   "The European Accessibility Act was transposed into the French Consumer Code (article L. 412-13) and detailed by Decree No. 2023-931 and a ministerial order of 9 October 2023. According to the [[https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/professionnels-vos-produits-et-services-doivent-etre-conformes-la-directive-accessibilite|DGCCRF practical guide for businesses (in French)]], the DGCCRF, France’s consumer protection authority, checks products and e-commerce, in coordination with Arcom for audiovisual media, Arcep for electronic communications, and the Banque de France, the ACPR and the AMF for financial services. Breaches are fifth-class petty offences, with fines of €7,500 that accumulate with the number of breaches found, in addition to orders to bring services into compliance. A first review published by the DGCCRF on 25 June 2026 reported information and enforcement actions, notably targeting online retail platforms. Full details are on our page on [[country:france|digital accessibility in France]] and in our [[article:france|article on French obligations]]."
+  ],
+  [
+   "h3",
+   "Belgium: the 2018 law, regional texts and the EAA"
+  ],
+  [
+   "p",
+   "In Belgium, the law of 19 July 2018 requires federal public bodies to make their websites and apps accessible; the Regions and Communities have adopted their own texts, each with its own monitoring body. The technical reference is the European standard EN 301 549: there is no national framework of its own. At federal level, the Digital Accessibility service of FPS BOSA (the Federal Public Service Policy and Support) carries out monitoring, and a user who does not receive a satisfactory response can refer the matter to the Federal Ombudsman."
+  ],
+  [
+   "p",
+   "For the private sector, the European Accessibility Act was transposed by several texts and several authorities are competent. According to the [[https://news.economie.fgov.be/251714-directive-sur-l-accessibilite-un-pas-en-avant-pour-une-societe-plus-inclusive/|FPS Economy press release of July 2025 (in French)]], the Economic Inspection checks e-commerce and consumer banking services, and microenterprises have an additional five years to comply, a different approach from the exemption chosen in France. See our page on [[country:belgique|digital accessibility in Belgium]] and our [[article:belgique|dedicated article]]."
+  ],
+  [
+   "h3",
+   "Luxembourg: RAWeb, RAAM and two laws"
+  ],
+  [
+   "p",
+   "In Luxembourg, the law of 28 May 2019 requires public-sector websites and apps to be accessible. The government’s Information and Press Service (SIP) monitors compliance and publishes the national frameworks: RAWeb for the web, version 1.1 of which was published in February 2026, and RAAM for mobile apps, both based on EN 301 549. The private sector falls under the law of 8 March 2023, which transposes the European Accessibility Act and is enforced by OSAPS, the office responsible for monitoring the accessibility of products and services. Our page on [[country:luxembourg|digital accessibility in Luxembourg]] and our [[article:luxembourg|article on the Luxembourg framework]] set out these obligations in detail."
+  ],
+  [
+   "h3",
+   "Switzerland: the Disability Discrimination Act, eCH-0059 and the effect of the EAA"
+  ],
+  [
+   "p",
+   "In Switzerland, the Disability Discrimination Act (LHand in French, BehiG in German), in force since 2004, and its ordinance require the Confederation’s services, including online services, to be accessible. The federal act on the use of electronic means for official tasks (EMBAG in German, LMETA in French) also requires these services to be accessible to the whole population. The reference standard is eCH-0059, whose third version requires WCAG 2.1 level AA for the websites and applications of the federal administration. Cantons and municipalities apply their own rules."
+  ],
+  [
+   "p",
+   "Two developments deserve your attention. First, a partial revision of the Disability Discrimination Act was sent to Parliament by the Federal Council at the end of 2024 and is still under examination. Second, Switzerland is not part of the European Union, but a Swiss company selling products or services covered by the European Accessibility Act to consumers in the Union must comply with it for those markets. See our page on [[country:suisse|digital accessibility in Switzerland]] and our [[article:suisse|article on Switzerland]]."
+  ],
+  [
+   "h2",
+   "country-table",
+   "Who is covered, which law, which standard, who enforces: the country table"
+  ],
+  [
+   "p",
+   "The table below summarises digital accessibility obligations in the four countries where French-speaking organisations, and the international groups that work with them, are most often active. It gives an overview: the exact assessment of your situation depends on your legal status, your services and the countries in which you offer them."
+  ],
+  [
+   "table",
+   {
+    "caption": "Digital accessibility: obligations by country (situation in October 2026)",
+    "head": [
+     "Country and sector",
+     "Who is covered",
+     "Main legislation",
+     "Assessment standard",
+     "Enforcement"
+    ],
+    "rows": [
+     [
+      "France, public sector and large companies",
+      "Public-law bodies, private bodies entrusted with a public service mission, companies with a turnover in France above €250 million",
+      "Law of 11 February 2005, article 47; Decree No. 2019-768",
+      "RGAA 4.1.2 (106 criteria)",
+      "Arcom, penalties of up to €50,000"
+     ],
+     [
+      "France, private sector (EAA)",
+      "Economic operators for the products and services covered, excluding microenterprises providing services",
+      "Consumer Code, article L. 412-13; Decree No. 2023-931",
+      "Requirements of the directive, EN 301 549",
+      "DGCCRF, with Arcom, Arcep, Banque de France, ACPR, AMF"
+     ],
+     [
+      "Belgium, public sector",
+      "Federal, regional and community public bodies",
+      "Law of 19 July 2018 and regional and community texts",
+      "EN 301 549 (WCAG level AA)",
+      "FPS BOSA at federal level, regional and community bodies"
+     ],
+     [
+      "Belgium, private sector (EAA)",
+      "Operators for the products and services covered; additional time for microenterprises",
+      "Transposition of Directive (EU) 2019/882",
+      "EN 301 549",
+      "Several authorities, including the Economic Inspection of the FPS Economy"
+     ],
+     [
+      "Luxembourg, public sector",
+      "Public-sector bodies",
+      "Law of 28 May 2019",
+      "RAWeb 1.1 (web), RAAM 1.1 (mobile)",
+      "Information and Press Service (SIP)"
+     ],
+     [
+      "Luxembourg, private sector (EAA)",
+      "Operators for the products and services covered",
+      "Law of 8 March 2023",
+      "Requirements of the directive, EN 301 549",
+      "OSAPS"
+     ],
+     [
+      "Switzerland",
+      "The Confederation; cantons and municipalities under their own rules; companies selling in the EU under the EAA",
+      "Disability Discrimination Act and its ordinance, EMBAG/LMETA, cantonal rules",
+      "eCH-0059 (WCAG 2.1 level AA)",
+      "No dedicated enforcement body comparable to Arcom; the Federal Office for the Equality of People with Disabilities promotes equality and acts against discrimination"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "A group present in several of these countries does not need to run four separate programmes. The frameworks are all based on WCAG level AA: a well-designed audit against WCAG and EN 301 549 serves as a common foundation, which you then complement with each country’s formal requirements (format of the accessibility statement, compliance status notice, method for calculating the compliance rate). Our page on [[standards|standards and obligations by country]] explains how these fit together."
+  ],
+  [
+   "h2",
+   "standards",
+   "Digital accessibility standards at a glance"
+  ],
+  [
+   "p",
+   "The Web Content Accessibility Guidelines (WCAG), published by the W3C, are the foundation of all the other standards. According to the [[https://www.w3.org/WAI/standards-guidelines/wcag/|W3C’s official overview of WCAG]], version 2.2 was published on 5 October 2023 and updated on 12 December 2024; it adds nine success criteria to WCAG 2.1 and makes success criterion 4.1.1 (Parsing) obsolete. The October 2023 text has also become the international standard ISO/IEC 40500:2025. Criteria are grouped into three levels, A, AA and AAA: level AA is the one European legislation targets. WCAG 3 is still a draft and is not an enforceable reference."
+  ],
+  [
+   "p",
+   "EN 301 549 is the harmonised European standard setting accessibility requirements for digital products and services. It incorporates WCAG for the web, documents and software, and adds requirements for hardware, two-way communication services, documentation and support services. Version V3.2.1, from 2021, is based on WCAG 2.1. Version V4.1.1, published by ETSI, CEN and Cenelec in September 2026, aligns with WCAG 2.2 and presents itself as a means of complying with the European Accessibility Act; its full legal effect depends on its citation in the Official Journal of the European Union, which had not yet happened when this guide was last updated."
+  ],
+  [
+   "p",
+   "RGAA, France’s General Accessibility Improvement Framework, published by the French interministerial digital directorate (DINUM), turns these requirements into 106 criteria, each with precise tests, and a sampling method. The version in force is 4.1.2. The [[https://accessibilite.numerique.gouv.fr/|official RGAA website (in French)]] announces that version 5 is being drafted, with publication expected at the end of 2026, and states that accessibility work under way must not be suspended or postponed in the meantime. See also our [[svc:audit-rgaa|RGAA audit]] service."
+  ],
+  [
+   "p",
+   "In Luxembourg, RAWeb 1.1 and RAAM 1.1 adopt the RGAA method and adapt it to EN 301 549; the SIP also publishes a framework for assessing PDF documents, RAPDF. In Switzerland, the eCH-0059 standard, published by the eCH association, refers to WCAG level AA. Our [[article:normes|detailed comparison of accessibility standards]] sets out their differences criterion by criterion."
+  ],
+  [
+   "note",
+   "Key point",
+   "All these frameworks rest on the same foundation: WCAG level AA. What changes from one country to another is mainly the testing method, the sample of pages, the format of the accessibility statement and the authority that enforces. Targeting WCAG 2.2 AA today prepares you both for RGAA 5 and for the new version of EN 301 549."
+  ],
+  [
+   "h2",
+   "method",
+   "Implementing digital accessibility: the eight-step method"
+  ],
+  [
+   "p",
+   "The organisations that achieve stable compliance are not the ones that fix issues fastest after an audit, but the ones that put a process in place. Here are the eight steps of a complete programme, from the initial assessment to ongoing monitoring. They apply to a ministry as much as to an online shop, with different levels of intensity."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Initial assessment.",
+     "Start with an inventory: websites, subdomains, intranets, extranets, mobile apps, customer portals, downloadable documents and embedded third-party tools (payment, appointment booking, live chat, maps). For each one, identify the applicable legislation, the supplier responsible, the date of the last redesign and whether an accessibility statement exists. This mapping stops you from auditing a rarely visited brochure site first while the customer portal, where most transactions happen, stays off the radar."
+    ],
+    [
+     "Compliance audit.",
+     "The audit measures how a representative sample of pages or screens complies with the relevant framework: RGAA in France, RAWeb or RAAM in Luxembourg, WCAG and EN 301 549 elsewhere or for the European Accessibility Act. A serious audit combines automated tools, manual code inspection and testing with real assistive technologies. It produces a compliance rate, a criterion-by-criterion grid and a description of each non-conformity. Depending on your situation: [[svc:audit-rgaa|RGAA audit]], [[svc:audit-conformite|WCAG and EN 301 549 audit]] or [[svc:audit-raam|RAAM audit of mobile apps]]."
+    ],
+    [
+     "Prioritised action plan.",
+     "Rank the fixes according to three criteria: the impact on essential journeys (creating an account, paying, submitting an application, contacting the service), how often the defect occurs (a faulty component present on every page matters more than an isolated anomaly) and the effort required to fix it. In France, this plan feeds into the multi-year accessibility plan and the annual action plan required by law. A good action plan names an owner and a deadline for each batch of work."
+    ],
+    [
+     "Fixes.",
+     "Fix issues at source: in the component library or design system, in the CMS templates, in the shared styles. A fix made to the “button” component spreads to thousands of pages; the same fix made page by page will not survive the next release. For third-party components, ask your suppliers for their own conformance statement and include contractual clauses. Support with [[svc:developpement|accessible development]] helps your teams fix issues at source from the very first sprints."
+    ],
+    [
+     "Team training.",
+     "Accessibility deteriorates as soon as the people who build the service do not know the rules. Developers need to master HTML and ARIA semantics, designers contrast and focus states, content writers heading structure, explicit links and text alternatives, and buyers the clauses to include in contracts. Group [[svc:formations|training courses]] and [[svc:elearning|e-learning]] complement each other well, depending on the size of your teams."
+    ],
+    [
+     "Accessibility acceptance testing.",
+     "Build an accessibility check into every delivery, in the same way as functional or security testing. Include accessibility criteria in the definition of done for your user stories and have new features checked before they go live. Regular [[svc:recette|accessibility acceptance testing]] costs far less than a campaign of fixes every three years."
+    ],
+    [
+     "Accessibility statement.",
+     "Publish a statement that tells the truth: the date and framework of the audit, the compliance rate, content that is not accessible and any exemptions claimed, a contact for reporting a problem, and the enforcement procedure. In France, the compliance status must also appear on the home page. A statement that claims full compliance without an audit to back it up exposes you more than an honest statement of partial compliance. Our [[article:declaration|guide to the accessibility statement]] details its content country by country."
+    ],
+    [
+     "Ongoing monitoring.",
+     "Handle user reports within a reasonable time, commission a new audit after every major redesign and at regular intervals, keep track of changes to the standards (RGAA 5, the new version of EN 301 549) and appoint an accessibility lead with a clear mandate from senior management. Finally, complement audits with [[svc:test-utilisateur|testing with users with disabilities]] on your key journeys: it reveals difficulties that no checklist measures."
+    ]
+   ]
+  ],
+  [
+   "h2",
+   "budget-and-timescales",
+   "Budget and timescales: how much does an accessibility audit cost?"
+  ],
+  [
+   "p",
+   "There is no public reference price, and a price quoted without knowing the scope is not worth much. The cost of a digital accessibility audit depends above all on the volume and complexity of what is being assessed. To compare quotes, ask for them to cover the same sample, the same framework and the same deliverables."
+  ],
+  [
+   "ul",
+   [
+    "The number of pages or screens in the sample and, above all, the number of different templates it contains;",
+    "the complexity of the journeys: a checkout, a simulator or a multi-step form requires far more testing than an article page;",
+    "the number of platforms: the same service on the web, on iOS and on Android means three assessments;",
+    "the framework and the reporting format expected (RGAA with the official grid, RAWeb, WCAG and EN 301 549, possibly several at once for a multi-country group);",
+    "the volume of PDF or office documents to be assessed;",
+    "the languages of the audit and of the report;",
+    "related services: user testing, support for your teams while they fix issues, a verification re-audit, drafting the accessibility statement;",
+    "time constraints, for example an audit that must be delivered before a launch or an enforcement deadline."
+   ]
+  ],
+  [
+   "p",
+   "As for timescales, auditing a website of ordinary complexity takes weeks rather than months: at our firm, the average audit takes three weeks. Fixes generally take longer than the audit, from a few weeks for defects concentrated in a handful of components to several months when the front-end architecture has to be reworked. A redesign is the best time to build in accessibility: addressed from the wireframes onwards, it costs a fraction of what fixes cost after launch."
+  ],
+  [
+   "p",
+   "Bear in mind, finally, that the audit is only one line in the budget. The heaviest items are often the fixes, making existing documents accessible, and training. Be wary of a very low offer limited to running an automated tool: it allows you neither to calculate a compliance rate that will stand up to scrutiny nor to write a reliable accessibility statement."
+  ],
+  [
+   "h2",
+   "documents-mobile-video",
+   "PDFs, mobile apps and video: where compliance often falls short"
+  ],
+  [
+   "h3",
+   "PDF and office documents"
+  ],
+  [
+   "p",
+   "Council minutes, annual reports, forms to print out, tax notices, terms and conditions, invoices: downloadable documents are often the least accessible part of a service. A PDF produced from a scan is just an image, unreadable for a screen reader. A PDF exported without care may contain text but no structure: no headings, a random reading order, tables that cannot be navigated, form fields without labels."
+  ],
+  [
+   "p",
+   "Good practice is to publish information in HTML whenever possible and to keep PDF for documents that need to be printed or signed. When a PDF is necessary, produce it from a properly structured source document (heading styles, image alternatives, simple tables) and then check the tagging. For the public sector, the 2016 directive excludes office files published before 23 September 2018, unless they are needed for active administrative processes. In Luxembourg, the SIP’s 2022–2024 monitoring report notes that inaccessible PDFs are the most frequently cited justification for disproportionate burden; an exemption does not remove the obligation to provide an accessible alternative on request."
+  ],
+  [
+   "h3",
+   "Mobile apps"
+  ],
+  [
+   "p",
+   "A native iOS or Android app is assessed on a real device, with VoiceOver and TalkBack, enlarged text size, landscape orientation and, where relevant, an external keyboard. Typical defects are icons without labels, complex gestures with no alternative, locked orientation, text that does not enlarge with the system settings and embedded web views that have never been tested. RAAM in Luxembourg, RGAA in France and the chapters of EN 301 549 on software provide the grid; a [[svc:audit-raam|RAAM audit]] follows this approach on real devices."
+  ],
+  [
+   "h3",
+   "Video, audio content and live streaming"
+  ],
+  [
+   "p",
+   "An accessible video combines accurate synchronised captions, a transcript, audio description when the image carries information that is not spoken, and a player whose controls can be used with the keyboard and are announced by screen readers. Avoid autoplay with sound, which drowns out the screen reader’s voice. For the public sector, pre-recorded time-based media published before 23 September 2020 are excluded from the scope of the 2016 directive; new content, on the other hand, must be accessible from the moment it is published."
+  ],
+  [
+   "h2",
+   "common-mistakes",
+   "Common digital accessibility mistakes"
+  ],
+  [
+   "p",
+   "The same mistakes recur from one organisation to another, whatever the sector. Knowing them lets you avoid most of them before the first audit."
+  ],
+  [
+   "ul",
+   [
+    "Waiting for the next redesign to act, when many fixes (contrast, labels, heading structure, alternatives) can be made on the current website.",
+    "Relying solely on an automated tool’s score and believing that a page with “no errors detected” is compliant.",
+    "Publishing an accessibility statement without a real audit, or never updating it after the website changes.",
+    "Fixing pages one by one instead of fixing shared components and templates.",
+    "Forgetting third-party components: payment module, appointment booking, recruitment tool, video player, maps, live chat.",
+    "Adding ARIA attributes everywhere “to be on the safe side”: misused ARIA often makes the experience worse rather than better, while native HTML is enough in most cases.",
+    "Using visual CAPTCHAs or short session timeouts without an alternative or the possibility of extending them.",
+    "Neglecting PDF documents and transactional emails, even though they are part of the user journey.",
+    "Leaving accessibility requirements out of specifications and tender documents, then discovering the defects when the project is handed over.",
+    "Handing the topic to a single person with no support from senior management and no budget for fixes."
+   ]
+  ],
+  [
+   "h2",
+   "benefits",
+   "The benefits of digital accessibility beyond compliance"
+  ],
+  [
+   "p",
+   "The first benefit is reach. With almost a quarter of adults in the Union reporting some form of disability and almost one in two among those aged 65 and over, according to the Eurostat figures cited above, an inaccessible journey shuts out a significant share of your users or customers. For a public service, it is a breach of equal treatment; for an online shop, it means baskets abandoned at the payment stage."
+  ],
+  [
+   "p",
+   "The second benefit is quality. Semantic code, documented components and structured content are easier to maintain, develop and test. The same efforts improve use on mobile, on the move or on a slow connection, and benefit every visitor: clear labels reduce input errors, and explicit error messages reduce calls to customer service."
+  ],
+  [
+   "p",
+   "The third benefit concerns visibility and markets. A consistent heading structure, text alternatives and transcripts make your content easier to read for search engines as well as for people, even though accessibility is not a ranking factor as such. Public buyers increasingly include accessibility in their specifications, and large companies require it of their suppliers: being able to produce an accessibility statement based on an audit is becoming a commercial argument."
+  ],
+  [
+   "p",
+   "The last benefit is internal. Your intranets, business software and HR tools are digital services too. Making them accessible is a precondition for recruiting and retaining employees with disabilities, and makes daily work easier for those whose sight, hearing or mobility changes over the course of their career."
+  ],
+  [
+   "h2",
+   "where-to-start",
+   "Where to start: your 90-day digital accessibility plan"
+  ],
+  [
+   "p",
+   "If you are starting from scratch, here is a realistic timetable for launching a digital accessibility programme without waiting for a redesign. It suits a local authority as well as a company covered by the European Accessibility Act; simply adapt the framework. For the specific features of your sector, see our pages for the [[sector:public|public sector]], [[sector:grands-comptes|large enterprises]] and [[sector:pme|SMEs and mid-sized companies]]."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Weeks 1 and 2: establish your obligations.",
+     "List your digital services, identify the applicable legislation country by country and appoint an accessibility lead with a sponsor in senior management. Check whether you already publish an accessibility statement and whether it is based on an audit."
+    ],
+    [
+     "Weeks 3 to 6: audit what matters most.",
+     "Have the service that handles most of your transactions or revenue audited first, on a sample that includes complete journeys (login, form, payment, confirmation). In parallel, have a few typical documents assessed and, if you have one, your mobile app."
+    ],
+    [
+     "Weeks 5 to 8: publish an honest accessibility statement.",
+     "Based on the audit, publish or update the accessibility statement and, in France, the compliance status notice, with a contact for reporting difficulties. A declared partial compliance is better than full compliance displayed without proof."
+    ],
+    [
+     "Weeks 6 to 10: fix the high-impact components.",
+     "Deal first with blocking defects on essential journeys and with those that recur in shared components: navigation, forms, buttons, modal windows, contrast."
+    ],
+    [
+     "Weeks 8 to 12: train and equip your teams.",
+     "Train developers, designers and content writers, add accessibility criteria to your specifications and acceptance testing, and plan a check before every release."
+    ],
+    [
+     "Beyond 90 days: keep to the timetable.",
+     "Include the upcoming deadlines in your action plan: publication of RGAA 5 expected at the end of 2026, the expected citation of the new version of EN 301 549 in the Official Journal of the Union, and the end of the European Accessibility Act’s transitional measures for service contracts on 28 June 2030. Schedule a new audit after every major change and at least once per cycle of your multi-year plan."
+    ]
+   ]
+  ],
+  [
+   "note",
+   "The first step",
+   "An audit of your essential journeys is enough to publish a reliable accessibility statement, prioritise fixes and put a figure on what comes next. It is the basis of any digital accessibility programme, whatever your country or sector."
+  ]
+ ],
+ "faq": [
+  [
+   "Is digital accessibility mandatory for all companies?",
+   "No, but the scope is broad. Public bodies are covered in all four countries. In the European Union, since 28 June 2025 the European Accessibility Act has applied to companies that offer certain products and services to consumers, such as e-commerce, banking, transport and electronic communications. In France, companies whose turnover in France exceeds €250 million are also subject to article 47 of the 2005 law. Microenterprises providing services benefit from lighter rules, which vary from country to country."
+  ],
+  [
+   "What is RGAA exactly?",
+   "RGAA is France’s General Accessibility Improvement Framework (Référentiel général d’amélioration de l’accessibilité), published by the French State. It translates WCAG into 106 verifiable criteria, each with its own tests, and sets out the method for calculating a compliance rate and writing the accessibility statement. The version in force is 4.1.2; version 5 is announced for the end of 2026. RGAA applies to organisations subject to article 47 of the 2005 law and is often used as a practical grid beyond that circle."
+  ],
+  [
+   "Is an automated testing tool enough to check a website’s accessibility?",
+   "No. Automated tools are useful for quickly spotting certain defects, such as an image without an alt attribute, insufficient contrast or a field without a label. But they cannot judge whether a text alternative is relevant, whether the tab order is logical or whether an error message is clear. A compliance audit requires manual inspection and testing with assistive technologies."
+  ],
+  [
+   "Do you have to rebuild your website to make it accessible?",
+   "Rarely. Most defects can be fixed in existing components, templates and content: contrast, button labels, heading structure, text alternatives, focus management. A redesign is only justified if the technical architecture prevents any lasting fix or if one is already planned for other reasons. In that case, build accessibility into the specifications and the wireframes from the outset."
+  ],
+  [
+   "What is the difference between digital accessibility and usability?",
+   "Usability aims to make a service simple and efficient for most of its users. Digital accessibility ensures that it remains usable by people with disabilities, whatever tools they use. The two approaches reinforce each other but are not the same: a journey that is smooth with a mouse can be impossible with a keyboard, and a compliant website can still be hard to use. User testing lets you address both at once."
+  ],
+  [
+   "Does an accessible website rank better on Google?",
+   "Accessibility is not a ranking factor as such, but many good practices also benefit search engine optimisation: structured headings, text alternatives, explicit links, video transcripts, fast pages that work well on mobile. Content that is well structured for a screen reader is also well structured for a search engine. The aim, however, remains to serve users, not to gain positions."
+  ],
+  [
+   "Who can carry out a digital accessibility audit?",
+   "The value of an audit lies first in the method and the experience of the auditors. Choose auditors who master the applicable framework, test with real assistive technologies and provide a detailed grid your teams can work with. Be wary of unsolicited approaches claiming to act on behalf of an authority: Arcom states that it does not delegate its enforcement role to any third party. An organisation can also train an in-house auditor, provided that their independence from the teams being audited is guaranteed."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Where does your digital service stand?",
+ "cta_text": "A compliance audit gives you a precise picture, criterion by criterion, and a prioritised action plan. Tell us about your scope and we will suggest the right framework and method.",
+ "related": [
+  "eaa",
+  "normes",
+  "france"
+ ],
+ "cluster": "pilier"
 }

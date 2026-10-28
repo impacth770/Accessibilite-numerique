@@ -1,184 +1,723 @@
 {
-  "slug": "digitale-barrierefreiheit-luxemburg",
-  "h1": "Digitale Barrierefreiheit in Luxemburg: Was SIP und OSAPS 2026 prüfen",
-  "crumb": "Digitale Barrierefreiheit in Luxemburg",
-  "meta_title": "Digitale Barrierefreiheit Luxemburg: RAWeb, RAAM und EAA 2026",
-  "meta_desc": "Gesetz vom 28. Mai 2019, RAWeb 1.1, RAAM 1.1 und Gesetz vom 8. März 2023 (EAA): Pflichten, Kontrollen, Sanktionen und App-Audits in Luxemburg.",
-  "card_desc": "Öffentlicher Sektor, EAA, RAWeb und RAAM: wer in Luxemburg was kontrolliert und wie man eine mobile App prüft.",
-  "cat": "reglementation",
-  "where": "Luxemburg",
-  "cover": "LU",
-  "cover_note": ["Gesetz vom 28. Mai 2019", "RAWeb und RAAM"],
-  "date": "2026-10-27",
-  "lead": "Die digitale Barrierefreiheit in Luxemburg beruht auf zwei Gesetzen und zwei Behörden: dem Gesetz vom 28. Mai 2019 für Websites und mobile Anwendungen öffentlicher Stellen, dessen Einhaltung der Service information et presse (SIP) überwacht, und dem Gesetz vom 8. März 2023, das den European Accessibility Act umsetzt und die Marktüberwachung dem OSAPS überträgt. Die nationalen Referenzrahmen RAWeb 1.1 und RAAM 1.1 übersetzen die Norm EN 301 549 in überprüfbare Kriterien, für das Web ebenso wie für mobile Apps. Dieser Artikel zeigt, wer was tun muss, was die veröffentlichten Prüfungen ergeben und wie das Audit einer App nach dem RAAM konkret abläuft.",
-  "body": [
-    ["h2", "gesetz-28-mai-2019", "Digitale Barrierefreiheit in Luxemburg: was das Gesetz vom 28. Mai 2019 verlangt"],
-    ["p", "Das Gesetz vom 28. Mai 2019 über die Barrierefreiheit der Websites und mobilen Anwendungen öffentlicher Stellen setzt die Richtlinie (EU) 2016/2102 in luxemburgisches Recht um. Sein Grundsatz ist einfach: Eine öffentliche Website oder App muss von blinden, sehbehinderten oder gehörlosen Menschen sowie von Menschen mit motorischen oder kognitiven Beeinträchtigungen mit ihren eigenen Hilfsmitteln genutzt werden können. Das Gesetz selbst enthält keine Liste technischer Kriterien. Es verweist auf die harmonisierte europäische Norm EN 301 549 in der Fassung V3.2.1, die Luxemburg anschließend in nationale Referenzrahmen überführt."],
-    ["p", "Dieses Gesetz bildet die Grundlage des gesamten Regelwerks für den öffentlichen Sektor. Das offizielle Portal erläutert die Einzelheiten auf seiner Seite zu den [[https://accessibilite.public.lu/fr/obligations.html|gesetzlichen Pflichten zur digitalen Barrierefreiheit (auf Französisch und Englisch)]], die für eine Rechtsabteilung oder eine Projektleitung die maßgebliche Lektüre ist. Die folgenden Abschnitte greifen die Punkte auf, die in der Praxis die meisten Fragen aufwerfen."],
-    ["h3", "Welche Stellen betroffen sind"],
-    ["p", "Erfasst sind der Staat, die Gemeinden, bestimmte Einrichtungen des öffentlichen Rechts sowie Verbände, die von diesen Behörden gebildet werden. In der Praxis betrifft das die Ministerien und ihre Verwaltungen, die Gemeinden und Gemeindesyndikate, die Sozialämter und die öffentlichen Einrichtungen. Ein Rundschreiben des Innenministeriums vom 11. August 2021 hat diese Pflichten den Gemeindeverwaltungen, den Gemeindesyndikaten, den Sozialämtern und den unter ihrer Aufsicht stehenden öffentlichen Einrichtungen noch einmal in Erinnerung gerufen."],
-    ["p", "Mobile Apps fallen in den Anwendungsbereich, sobald sie von einer öffentlichen Stelle oder in ihrem Auftrag entworfen und entwickelt werden. Eine App, die bei einer Agentur oder einem IT-Dienstleister in Auftrag gegeben wurde, bleibt also in der Verantwortung der Stelle, die sie veröffentlicht: Sie unterzeichnet die Erklärung zur Barrierefreiheit und beantwortet Beschwerden. Das Lastenheft muss dies schon bei der Ausschreibung berücksichtigen."],
-    ["p", "Einige Kategorien sind vom Anwendungsbereich des Gesetzes ausgenommen:"],
-    ["ul", ["Websites und Apps öffentlich-rechtlicher Rundfunkanstalten;", "bestimmte Nichtregierungsorganisationen;", "Websites und Apps von Schulen der Grund- und Sekundarstufe sowie von Kinderkrippen, mit Ausnahme der Inhalte, die sich auf wesentliche Online-Verwaltungsfunktionen beziehen, etwa eine Einschreibung oder eine Zahlung."]],
-    ["h3", "Ausgenommene Inhalte"],
-    ["p", "Bestimmte Inhalte sind je nach Art und Veröffentlichungsdatum ebenfalls von der Pflicht ausgenommen. Diese Ausnahmen sind genau umrissen und an Stichtage gebunden; sie decken keineswegs eine ältere Website insgesamt ab."],
-    ["ul", ["Office-Dateien, die vor dem 23. September 2018 veröffentlicht wurden, es sei denn, sie werden für ein laufendes Verwaltungsverfahren benötigt;", "aufgezeichnete zeitbasierte Medien, die vor dem 23. September 2020 veröffentlicht wurden;", "Intranet- und Extranet-Inhalte, die vor dem 23. September 2019 veröffentlicht wurden, bis zu ihrer nächsten grundlegenden Überarbeitung;", "archivierte Inhalte, die für kein laufendes Verfahren benötigt werden und nach dem 23. September 2019 nicht aktualisiert wurden;", "zeitbasierte Medien in Echtzeit, Inhalte Dritter und bestimmte Reproduktionen von Kulturerbe-Stücken."]],
-    ["p", "Ein häufiges Beispiel: Eine Gemeinde veröffentlicht jeden Monat das Protokoll ihrer Gemeinderatssitzung als PDF. Protokolle aus der Zeit vor September 2018 dürfen unverändert online bleiben, wenn sie für kein Verfahren benötigt werden. Alle seither veröffentlichten Protokolle müssen barrierefrei sein oder über eine barrierefreie Alternative verfügen, zum Beispiel eine HTML-Fassung desselben Inhalts."],
-    ["h3", "Die konkreten Pflichten"],
-    ["ul", ["Websites und Apps an die Anforderungen der Norm EN 301 549 anpassen, geprüft mit dem RAWeb für das Web und dem RAAM für mobile Anwendungen;", "für jede Website und jede App eine Erklärung zur Barrierefreiheit veröffentlichen und aktuell halten;", "einen barrierefreien Mechanismus anbieten, über den Mängel gemeldet oder Alternativen angefordert werden können, den Eingang bestätigen und innerhalb eines Monats antworten;", "den SIP innerhalb von dreißig Tagen formlos über die Veröffentlichung oder Aktualisierung der Erklärung informieren;", "in der Erklärung auf die Möglichkeit hinweisen, sich an den SIP oder an den Ombudsman des Großherzogtums (Médiateur du Grand-Duché) zu wenden."]],
-    ["h3", "Die unverhältnismäßige Belastung: eine eng begrenzte Ausnahme"],
-    ["p", "Artikel 4 des Gesetzes erlaubt es, von den Anforderungen abzuweichen, wenn sie eine unverhältnismäßige Belastung darstellen würden. Das offizielle Portal fasst diesen Begriff eng: Er wird im Einzelfall beurteilt, für eine bestimmte Funktion oder einen bestimmten Inhalt, und kann grundsätzlich keine ganze Website und keine ganze App abdecken. In die Bewertung fließen die Größe der Stelle, ihre Ressourcen sowie die geschätzten Kosten und der Nutzen für Menschen mit Behinderungen ein."],
-    ["p", "Zwei Klarstellungen ersparen viele Fehler. Erstens stellt das Portal ausdrücklich fest, dass fehlende Priorität, fehlende Zeit oder fehlendes Wissen keine berechtigten Gründe sind. Zweitens befreit die Berufung auf eine unverhältnismäßige Belastung weder von der Veröffentlichung einer Erklärung zur Barrierefreiheit noch davon, nach Möglichkeit eine barrierefreie Alternative anzubieten; bei einer wesentlichen öffentlichen Aufgabe muss ein gleichwertiger alternativer Dienst bereitgestellt werden."],
-    ["note", "Das Wichtigste", "Im öffentlichen Sektor setzt Luxemburg auf Kontrolle, Veröffentlichung der Ergebnisse und Schlichtung: Der Monitoring-Bericht 2022–2024 erwähnt keine einzige Sanktion. Das Hauptrisiko sind daher öffentliche Kritik und Beschwerden, während das Gesetz vom 8. März 2023 zum EAA durchaus Geldbußen vorsieht."],
-
-    ["h2", "sip-accessibilite-public-lu", "Der SIP und das Portal accessibilite.public.lu: wer den öffentlichen Sektor kontrolliert"],
-    ["p", "Der Service information et presse (SIP), der Presse- und Informationsdienst der Regierung, ist für die Überwachung des Gesetzes vom 28. Mai 2019 zuständig. Er ist dem Staatsministerium angegliedert und untersteht unmittelbar dem Premierminister; in erster Linie ist er der Kommunikationsdienst der Regierung. Seit der Umsetzung der Richtlinie verantwortet er zudem die gesamte Politik der digitalen Barrierefreiheit im öffentlichen Sektor: Kontrollen, Referenzrahmen, Beschwerden, Information und Schulung."],
-    ["p", "Seine Aufgaben in diesem Bereich lassen sich in vier Blöcke gliedern:"],
-    ["ul", ["regelmäßige Prüfungen der Websites und Apps des öffentlichen Sektors durchführen und der Europäischen Kommission darüber berichten;", "die Prüfreferenzrahmen veröffentlichen und pflegen: RAWeb für das Web, RAAM für mobile Apps, RAPDF für PDF-Dokumente;", "Beschwerden von Nutzerinnen und Nutzern in Abstimmung mit den betroffenen Stellen bearbeiten;", "informieren, sensibilisieren und schulen, insbesondere über das Portal accessibilite.public.lu, eine Beobachtungsstelle und Kurse, die gemeinsam mit dem Institut national d'administration publique (INAP) angeboten werden."]],
-    ["h3", "Drei Arten der Prüfung"],
-    ["p", "Gemäß dem Durchführungsbeschluss (EU) 2018/1524 wendet der SIP drei Prüfformen an. Die eingehende Prüfung einer Website ist ein vollständiges Konformitätsaudit nach dem RAWeb: Sie stellt fest, ob die Website barrierefrei ist und welche Probleme gefunden wurden. Die Prüfung einer mobilen App ist ein Konformitätsaudit nach dem RAAM. Die vereinfachte Prüfung schließlich dient dazu, Mängel aufzudecken und zu sensibilisieren, ohne dass sich daraus eine Aussage über die Konformität der Website ableiten lässt."],
-    ["p", "Die Methode der vereinfachten Prüfung ist veröffentlicht. Sie stützt sich auf eine Stichprobe von drei Seiten (die Startseite, eine Seite mit einem Formular und eine Seite mit einem besonderen Inhalt wie einem Video, einer Tabelle oder einer komplexen Grafik), kombiniert 41 automatisierte Regeln des Werkzeugs Axe mit 47 manuell geprüften RAWeb-Kriterien und schließt herunterladbare Dokumente aus. So lassen sich deutlich mehr Websites erfassen als mit der eingehenden Prüfung."],
-    ["h3", "Ein jährlicher Zyklus und offene Daten"],
-    ["p", "Der erste Prüfzeitraum lief vom 23. September 2020 bis Ende 2021; seitdem entspricht ein Zeitraum einem Kalenderjahr. Der Ablauf folgt stets denselben Schritten: Bestandsaufnahme der öffentlichen Websites und Apps, Zusammenstellung einer Stichprobe in Abstimmung mit den wichtigsten Akteuren aus dem Behindertenbereich, Audits und alle drei Jahre ein Bericht an die Europäische Kommission. Bestandslisten, Stichproben, Auditberichte, Erklärungen zur Barrierefreiheit und der Verlauf der Beschwerden werden auf dem Open-Data-Portal data.public.lu veröffentlicht."],
-    ["p", "Diese Transparenz hat eine praktische Folge: Eine öffentliche Stelle, die in der Stichprobe des Jahres steht, sieht ihren Auditbericht veröffentlicht. Der SIP hat die Stichprobe für 2026 bereits publiziert; zu prüfen, ob Ihre Websites oder Apps darin enthalten sind, ist ein sinnvoller erster Schritt."],
-    ["h3", "Öffentliche Werkzeuge über die Kontrolle hinaus"],
-    ["p", "Das Portal stellt eine Vorlage für Lastenhefte, ein Audit-Kit, einen Generator für Erklärungen zur Barrierefreiheit und das Beschwerdeformular bereit. Die Quellen der Referenzrahmen sind auf GitHub veröffentlicht, sodass die Fachöffentlichkeit Korrekturen vorschlagen kann. 2026 hat der SIP außerdem Mia und Mil vorgestellt, zwei luxemburgische Sprachsynthese-Stimmen für Hilfstechnologien, quelloffen und auch offline nutzbar. Bis dahin mussten sich Nutzerinnen und Nutzer von Screenreadern meist mit einer deutschen Stimme begnügen, um einen luxemburgischen Text vorlesen zu lassen."],
-
-    ["h2", "raweb", "Der RAWeb 1.1: der luxemburgische Web-Referenzrahmen und seine Unterschiede zum RGAA"],
-    ["p", "Der RAWeb (Référentiel d'évaluation de l'accessibilité web) ist die Methode, mit der geprüft wird, ob eine Webseite die Anforderungen der Norm EN 301 549 erfüllt. Seine [[https://accessibilite.public.lu/fr/raweb1.1/index.html|Version 1.1, veröffentlicht am 6. Februar 2026]], umfasst 136 Prüfkriterien in 17 Themenbereichen. Sie gilt für alle HTML-Inhalte (HTML4, XHTML1 und HTML5); native mobile Apps werden nach dem RAAM geprüft."],
-    ["p", "Der RAWeb übernimmt Inhalte aus dem französischen RGAA 4.1.2, die der SIP an den luxemburgischen Rechtsrahmen angepasst hat. Die ersten dreizehn Themenbereiche sind jedem vertraut, der den RGAA kennt: Bilder, Frames, Farben, Multimedia, Tabellen, Links, Skripte, Pflichtelemente, Strukturierung der Information, Darstellung der Information, Formulare, Navigation und Nutzung. Der RAWeb ergänzt vier weitere: Dokumentation und Barrierefreiheitsfunktionen, Autorenwerkzeuge, Support-Dienste und Echtzeitkommunikation."],
-    ["h3", "Warum 136 statt 106 Kriterien"],
-    ["p", "Der RGAA 4.1.2 umfasst 106 Kriterien und konzentriert sich auf die Anforderungen aus den WCAG. Die Norm EN 301 549 geht weiter: Sie behandelt auch die Dokumentation eines Dienstes, die Werkzeuge zum Veröffentlichen von Inhalten, den Kundensupport und die Echtzeitkommunikation. Der RAWeb deckt diese Anforderungen ab, daher die 30 zusätzlichen Kriterien, die der luxemburgische Monitoring-Bericht nennt. Der SIP hat für seine eingehenden Prüfungen bis 2023 den RGAA verwendet und ab 2024 den RAWeb."],
-    ["p", "Die unmittelbare Folge: Ein RGAA-Audit für eine französische Website genügt nicht, um die Konformität einer luxemburgischen Website nachzuweisen. Es deckt zwar das Wesentliche ab, lässt aber die normspezifischen Kriterien außen vor, etwa die Barrierefreiheit der Online-Hilfe, eines Support-Chats oder eines Redaktions-Backends. Auch die ermittelten Konformitätsgrade sind nicht direkt vergleichbar, weil sich der Nenner ändert. Unser Artikel über [[article:normes|Normen und Referenzrahmen der Barrierefreiheit]] erläutert diese Entsprechungen, und die Seite [[standards|Standards nach Land]] fasst sie zusammen."],
-    ["h3", "Der RAPDF für Dokumente"],
-    ["p", "Luxemburg verfügt außerdem über einen eigenen Referenzrahmen für PDF-Dokumente, den RAPDF, der 2023 eingeführt wurde und 2026 ebenfalls in Version 1.1 erschienen ist. Für Verwaltungen, die zahlreiche Formulare, Berichte und Beschlüsse als PDF veröffentlichen, ist das ein wichtiger Punkt: Office-Dokumente sind die am häufigsten angegebene Ausnahme in den Erklärungen zur Barrierefreiheit, und nicht barrierefreie PDF-Dateien sind der häufigste Beschwerdegrund, den der SIP für 2022 bis 2024 verzeichnet hat."],
-
-    ["h2", "raam", "Der RAAM 1.1: der Referenzrahmen für barrierefreie mobile Apps"],
-    ["p", "Der RAAM (Référentiel d'évaluation de l'accessibilité des applications mobiles) ist eine luxemburgische Besonderheit. Nur wenige Länder verfügen über eine so detaillierte öffentliche Methode zur Prüfung nativer Apps. Seine [[https://accessibilite.public.lu/fr/raam1.1/index.html|Version 1.1, veröffentlicht am 24. Februar 2025]], umfasst 108 Prüfkriterien und ermöglicht den Nachweis, dass eine App die Norm EN 301 549 V3.2.1 erfüllt. Sie steht unter der Lizenz CC-BY 3.0 LU."],
-    ["p", "Der RAAM deckt die Kapitel der Norm ab, die eine App betreffen: allgemeine Anforderungen (Kapitel 5), Zwei-Wege-Sprachkommunikation (6), Videofunktionen (7), Nicht-Web-Dokumente (10), Software (11) sowie Dokumentation und Support-Dienste (12). Seine Kriterien sind in fünfzehn Themenbereiche gegliedert:"],
-    ["ul", ["grafische Elemente, Farben, Multimedia, Tabellen;", "Bedienelemente der Benutzeroberfläche, Pflichtelemente, Strukturierung der Information, Darstellung der Information;", "Formulare, Navigation, Nutzung;", "Dokumentation und Barrierefreiheitsfunktionen, Autorenwerkzeuge, Support-Dienste, Echtzeitkommunikation."]],
-    ["h3", "Was sich mit Version 1.1 geändert hat"],
-    ["p", "Die erste Version des RAAM, veröffentlicht im Juni 2021, umfasste 107 Kriterien. Version 1.1 fügt eines hinzu, das Kriterium 14.3, das aus einer Aufteilung des Themenbereichs 12 hervorgegangen ist, um die Anforderungen übersichtlicher zu machen. Außerdem wurden mehrere Prüfmethoden überarbeitet: Der Kontrast berücksichtigt nun die tatsächliche Textgröße, neue Tests decken Untertitel bei Live-Medien ab, und der Grenzwert für Blitze lautet nicht mehr „weniger als 3 pro Sekunde“, sondern „3 pro Sekunde oder weniger“."],
-    ["p", "Die Methodik enthält zudem ein aus dem RAWeb übernommenes Prinzip der Nicht-Beeinträchtigung: Ein ausgenommener Inhalt oder ein Inhalt, für den eine Abweichung gilt, muss nicht konform sein, darf aber den Zugang zum übrigen Bildschirminhalt nicht verhindern. Sie präzisiert außerdem, wie unter Android mit oder ohne Tastatur-Bedienungshilfe getestet wird und wie sich eine Textgröße anhand von Bildschirmfotos messen lässt."],
-    ["h3", "Warum ein eigener Referenzrahmen neben dem Web"],
-    ["p", "Bei einer nativen App hat die Prüferin oder der Prüfer fast nie Zugang zum Quellcode. Ein Attribut lässt sich nicht wie auf einer Webseite inspizieren: Geprüft wird, was das System den Hilfstechnologien tatsächlich bereitstellt. Die Tests des RAAM stützen sich deshalb auf Screenreader, Systemeinstellungen und die Inspektionswerkzeuge von Apple und Google. Das ist eine andere Arbeitsweise, die echte Geräte und gute Kenntnisse beider Plattformen voraussetzt. Der RAAM ist der luxemburgische Referenzrahmen; anderswo wird dieselbe Methode mit dem jeweiligen lokalen Standard angewandt, wie unsere Seite zum [[svc:audit-raam|Audit mobiler Apps nach dem RAAM]] erklärt."],
-
-    ["h2", "erklaerung-beschwerde", "Erklärung zur Barrierefreiheit und Beschwerden: der luxemburgische Ablauf"],
-    ["p", "Die Erklärung zur Barrierefreiheit ist das Dokument, das Nutzer, der SIP und mitunter auch die Presse zuerst lesen. Sie gibt einen durch ein Audit ermittelten Konformitätsstatus an, nach drei Stufen, die das offizielle Portal festlegt."],
-    ["ul", ["vollständig konform: Alle Prüfkriterien des Referenzrahmens werden erfüllt, also ein Konformitätsgrad von 100 % nach dem Audit;", "teilweise konform: Mindestens 50 % der Prüfkriterien werden erfüllt;", "nicht konform: Es wurde kein gültiges Audit durchgeführt, oder weniger als 50 % der Kriterien werden erfüllt."]],
-    ["p", "Über diesen Status hinaus listet die Erklärung die nicht barrierefreien Inhalte auf und unterscheidet dabei zwischen nicht konformen Inhalten, ausgenommenen Inhalten und solchen, für die eine unverhältnismäßige Belastung geltend gemacht wird, jeweils mit Begründung und angebotenen Alternativen. Sie beschreibt die verfügbaren Barrierefreiheitsfunktionen, gibt an, ob es sich um eine Selbstbewertung oder eine Bewertung durch Dritte handelt, nennt eine Kontaktadresse und weist auf die Möglichkeit hin, sich an den SIP oder den Ombudsman zu wenden."],
-    ["h3", "Wo und in welchen Sprachen sie veröffentlicht wird"],
-    ["p", "Bei einer Website muss die Erklärung leicht auffindbar sein: Auf jeder Seite muss ein Link zu ihr stehen, zum Beispiel in der Fußzeile. Bei einer App wird sie auf der Website der verantwortlichen Stelle veröffentlicht oder in den Informationen, die beim Herunterladen verfügbar sind, also im Eintrag im App Store oder bei Google Play. Der offizielle Generator erstellt die Erklärung auf Französisch, Deutsch, Englisch und Luxemburgisch und empfiehlt, sie bei einer mehrsprachigen Website in jeder Sprache anzubieten."],
-    ["p", "Nach der Veröffentlichung schickt die Stelle die Adresse ihrer Erklärung an den SIP, an accessibilite@sip.etat.lu. Der Generator empfiehlt, nach jeder größeren Überarbeitung neu zu bewerten und die Erklärung mindestens einmal jährlich durchzusehen. Für die Abfassung selbst erläutert unser Artikel über [[article:declaration|die Erklärung zur Barrierefreiheit]] die häufigsten Fehler, in Frankreich ebenso wie in Luxemburg."],
-    ["h3", "Der Weg einer Beschwerde"],
-    ["p", "Nehmen wir einen Nutzer, der ein Antragsformular für eine Beihilfe mit TalkBack nicht absenden kann, weil die Schaltfläche „Senden“ nicht angesagt wird. Er wendet sich zuerst an die Stelle selbst, über den in der Erklärung zur Barrierefreiheit angegebenen Kontakt. Die Stelle muss den Eingang bestätigen und innerhalb eines Monats ab dem Versand antworten; ist das Problem komplex, kann sie eine längere Frist festlegen, sofern sie diese begründet."],
-    ["p", "Ist die Antwort nicht zufriedenstellend, kann sich der Nutzer über das Online-Beschwerdeformular an den SIP wenden oder an den Ombudsman des Großherzogtums Luxemburg. Der SIP verpflichtet sich, spätestens innerhalb eines Monats per E-Mail zu antworten. In der Praxis analysiert er das Anliegen, nimmt Kontakt mit der Stelle auf und gibt ihr einen Monat Zeit zu reagieren. Solange die Erklärung keinen barrierefreien Kontakt anbietet, verzichtet die Stelle auf die erste Stufe und lässt die Beschwerde direkt bei der Behörde landen."],
-
-    ["h2", "ergebnisse-monitoring", "Was die veröffentlichten Prüfungen für 2022 bis 2024 zeigen"],
-    ["p", "Luxemburg veröffentlicht seine Ergebnisse in einer seltenen Ausführlichkeit. Der an die Europäische Kommission übermittelte [[https://download.data.public.lu/resources/rapport-sur-le-controle-de-laccessibilite-des-sites-internet-et-applications-mobiles-du-secteur-public-au-luxembourg-2022-2024/20250115-100700/wad-monitoring-report-lu-2022-2024.pdf|Bericht über die Prüfung der Barrierefreiheit der Websites und Apps des öffentlichen Sektors 2022–2024]] zeichnet ein genaues Bild der Lage. Alle Zahlen in diesem Abschnitt stammen daraus."],
-    ["table", {"caption": "Prüfungen des SIP und durchschnittliche Ergebnisse, 2022–2024 (Quelle: Monitoring-Bericht 2022–2024)", "head": ["Kennzahl", "2022", "2023", "2024"], "rows": [
-      ["Eingehende Prüfungen von Websites", "17", "15", "16"],
-      ["Vereinfachte Prüfungen von Websites", "87", "93", "93"],
-      ["Eingehende Prüfungen mobiler Apps", "6", "6", "7"],
-      ["Durchschnittsergebnis der eingehenden Website-Prüfungen", "48 %", "54 %", "61 %"],
-      ["Durchschnittsergebnis der App-Prüfungen", "49 %", "43 %", "37 %"],
-      ["Beim SIP eingegangene Beschwerden", "9", "4", "7"]
-    ]}],
-    ["p", "Der Trend ist eindeutig: Die Websites verbessern sich, von 48 % auf 61 % im Durchschnitt innerhalb von drei Jahren, während die mobilen Apps zurückfallen, von 49 % auf 37 %. Der Bericht hält fest, dass 2024 wie schon 2021 keine geprüfte App die teilweise Konformität erreicht (2022 und 2023 gelang dies jeweils zwei Apps). Der Mobilbereich ist heute die Schwachstelle des luxemburgischen öffentlichen Sektors, was eine besondere Aufmerksamkeit für den RAAM rechtfertigt."],
-    ["h3", "Die häufigsten Mängel"],
-    ["p", "Bei den Apps sind die drei häufigsten Mängel Bedienelemente, die mit Hilfstechnologien nicht kompatibel sind (Kriterium 5.1), eine ungeeignete Überschriftenstruktur (Kriterium 7.1) und Inhalte, die sich nicht an die Bildschirmausrichtung anpassen (Kriterium 11.9). Bei den Websites sind es in der eingehenden Prüfung Skripte, die mit Hilfstechnologien nicht kompatibel sind, Auszeichnungen, die zu Darstellungszwecken verwendet werden, und falsch strukturierte Listen."],
-    ["p", "In der vereinfachten Prüfung ist der häufigste Mangel die fehlende Kennzeichnung von Sprachwechseln, vor Skripten, die sich nicht per Tastatur und Maus bedienen lassen, und unzureichenden Textkontrasten. Dieses Ergebnis ist typisch luxemburgisch: Eine französischsprachige Seite, die ein Verfahren auf Deutsch nennt oder den luxemburgischen Namen einer Institution zitiert, muss diesen Wechsel kennzeichnen, damit der Screenreader Stimme und Aussprache umstellt."],
-    ["h3", "Erklärungen, Ausnahmen und Beschwerden"],
-    ["p", "Der Bericht zählt 431 Erklärungen zur Barrierefreiheit für Websites und 30 für Apps, bei 979 Websites und Apps, die in der Bestandsaufnahme des öffentlichen Sektors erfasst sind. 2024 beriefen sich 61 % der Erklärungen auf eine Ausnahme wegen unverhältnismäßiger Belastung, obwohl der offizielle Rahmen diese als Ausnahmefall darstellt. Der SIP erhielt im Berichtszeitraum 20 Beschwerden; nicht barrierefreie PDF-Dateien sind der häufigste Grund, vor Problemen mit Webseiten und Apps."],
-    ["p", "Absolut betrachtet sind diese Zahlen gering, aber sie sind öffentlich. Für eine Verwaltung besteht das Risiko weniger in einer Sanktion als in einem veröffentlichten Auditbericht mit schwachem Ergebnis oder in einer Erklärung, die ohne Begründung eine unverhältnismäßige Belastung geltend macht. Mehr zur Begleitung von Verwaltungen finden Sie auf unserer Seite für den [[sector:public|öffentlichen Sektor]]."],
-
-    ["h2", "eaa-luxemburg", "EAA in Luxemburg: das Gesetz vom 8. März 2023 und das OSAPS"],
-    ["p", "Luxemburg hat die Richtlinie (EU) 2019/882, den European Accessibility Act, mit dem Gesetz vom 8. März 2023 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen umgesetzt, veröffentlicht im Mémorial A Nr. 133 vom 15. März 2023. Eine [[https://accessibilite-produits-services.public.lu/dam-assets/lgislation/de-loi-du-8-mars-2023-relative-aux-exigences-en-matire-daccessibilit-applicables-aux-produits-et-services.pdf|deutsche Fassung des Gesetzes]] steht zur Verfügung; im Streitfall ist allein die französische Fassung maßgebend. Nach seinem Artikel 36 ist das Gesetz am 28. Juni 2025 in Kraft getreten. Es betrifft diesmal die Wirtschaftsakteure, private wie öffentliche, die bestimmte Produkte in Verkehr bringen oder bestimmte Dienstleistungen für Verbraucher erbringen."],
-    ["h3", "Betroffene Produkte und Dienstleistungen"],
-    ["p", "Bei den Produkten: Computer und Betriebssysteme für Verbraucher, Smartphones und Tablets, Zahlungsterminals, Check-in-Automaten und Fahrkartenautomaten (außer solchen, die in Fahrzeuge eingebaut sind), Smart-TVs und E-Book-Reader. Bei den Dienstleistungen: elektronische Kommunikation, Zugang zu audiovisuellen Mediendiensten, Personenbeförderung im Luft-, Schienen-, Bus- und Schiffsverkehr (Websites, Apps, elektronische Tickets und Informationen), Bankdienstleistungen für Verbraucher, E-Books, elektronischer Geschäftsverkehr sowie die Beantwortung von Notrufen an die 112. Unser Artikel über [[article:eaa|den European Accessibility Act]] erläutert diesen Anwendungsbereich, der für alle Mitgliedstaaten gleich ist."],
-    ["h3", "Das OSAPS als Aufsichtsbehörde"],
-    ["p", "Artikel 3 des Gesetzes schafft das Amt für die Überwachung der Barrierefreiheit von Produkten und Dienstleistungen (Office de la surveillance de l'accessibilité des produits et services, OSAPS). Es untersteht dem für die Politik zugunsten von Menschen mit Behinderungen zuständigen Minister, derzeit dem Familienministerium (Ministère de la Famille, des Solidarités, du Vivre ensemble et de l'Accueil). Bei Produkten liegen die Kontrollen beim OSAPS, bei der Zoll- und Verbrauchsteuerverwaltung und bei der Großherzoglichen Polizei (Artikel 28 Absatz 1). Bei Dienstleistungen prüfen das OSAPS und die Großherzogliche Polizei die Konformität, in Zusammenarbeit mit den jeweils zuständigen Fachbehörden (Artikel 28 Absatz 2)."],
-    ["p", "Das OSAPS ist zugleich Anlaufstelle für Fragen der Barrierefreiheit und stellt Leitlinien und Werkzeuge bereit, insbesondere für Kleinstunternehmen. Jede natürliche oder juristische Person kann ihm die Nichtkonformität eines Produkts oder einer Dienstleistung melden. Die Meldung erfolgt online über MyGuichet.lu, kostenlos, mit der Möglichkeit, ein Bildschirmfoto oder ein Dokument beizufügen. Ein Verband von Menschen mit Behinderungen kann dies als juristische Person tun."],
-    ["h3", "Vorgesehene Sanktionen"],
-    ["ul", ["Verwaltungsgeldbuße von 250 bis 15 000 Euro, verhängt durch das OSAPS gegen einen Akteur, der die Herausgabe von Unterlagen oder Informationen verweigert, Kontrollen behindert oder die Entscheidungen des Amtes nicht befolgt (Artikel 32);", "Geldstrafe von 251 bis 500 000 Euro für einen Wirtschaftsakteur, der gegen die im Gesetz genannten Bestimmungen verstößt, abgestuft nach Umfang und Schwere des Verstoßes (Artikel 33 Absatz 1);", "im Wiederholungsfall Geldstrafe von 500 bis 1 000 000 Euro (Artikel 33 Absatz 2);", "Beschränkung oder Untersagung der Bereitstellung eines nicht konformen Produkts oder der Erbringung einer nicht konformen Dienstleistung; gegen diese Entscheidung kann innerhalb von drei Monaten Abänderungsklage vor dem Verwaltungsgericht erhoben werden (Artikel 28 Absatz 5)."]],
-    ["h3", "Ausnahmen und Übergangsfristen"],
-    ["p", "Das Gesetz definiert ein Kleinstunternehmen als Unternehmen, das weniger als zehn Personen beschäftigt und dessen Jahresumsatz oder Jahresbilanzsumme 2 000 000 Euro nicht übersteigt. Kleinstunternehmen, die Dienstleistungen erbringen, sind von den Barrierefreiheitsanforderungen befreit; Kleinstunternehmen, die Produkte herstellen oder vertreiben, unterliegen den Anforderungen weiterhin, mit vereinfachten Dokumentationspflichten. Ein größeres KMU, das online an Verbraucher verkauft, ist dagegen in vollem Umfang betroffen."],
-    ["p", "Es gelten Übergangsfristen. Dienstleister dürfen Produkte, die sie vor dem Inkrafttreten rechtmäßig eingesetzt haben, bis zum 28. Juni 2030 weiter verwenden. Vor diesem Datum geschlossene Dienstleistungsverträge dürfen bis zu ihrem Ablauf unverändert fortgeführt werden, höchstens jedoch fünf Jahre. Bereits eingesetzte Selbstbedienungsterminals dürfen bis zum Ende ihrer wirtschaftlichen Nutzungsdauer in Betrieb bleiben, längstens zwanzig Jahre nach ihrer Inbetriebnahme."],
-    ["p", "Wie überall in der Union muss der Anbieter einer erfassten Dienstleistung außerdem in öffentlich zugänglichen Informationen, insbesondere in seinen Allgemeinen Geschäftsbedingungen, erläutern, wie seine Dienstleistung die Barrierefreiheitsanforderungen erfüllt. Dieser Punkt wird oft übersehen: Ein Onlineshop kann technisch sauber umgesetzt sein und dennoch gegen das Gesetz verstoßen, weil diese Information fehlt. Für die technische Bewertung ist die Norm EN 301 549 maßgeblich; RAWeb und RAAM sind öffentliche, detaillierte und kostenlose Methoden, um sie umzusetzen, und das OSAPS führt sie auch unter seinen Ressourcen auf. Für diese Akteure bieten wir ein [[svc:audit-conformite|Konformitätsaudit nach EN 301 549 und WCAG]] an."],
-
-    ["h2", "besonderheiten-luxemburg", "Mehrsprachigkeit, Finanzplatz, Grenzgänger: die Besonderheiten Luxemburgs"],
-    ["p", "Die technischen Anforderungen sind europäisch, doch ihre Umsetzung in Luxemburg trifft auf drei Gegebenheiten, die anderswo selten zusammenkommen. Sie wirken sich unmittelbar auf die Qualität eines Audits und auf die Kosten der Korrekturen aus."],
-    ["h3", "Vier Sprachen in einer Benutzeroberfläche"],
-    ["p", "Das Gesetz vom 24. Februar 1984 über die Sprachenregelung hat das Luxemburgische als Nationalsprache anerkannt, das Französische zur Sprache der Gesetzgebung gemacht und Französisch, Deutsch und Luxemburgisch als Verwaltungssprachen festgelegt. Hinzu kommt sehr häufig das Englische, in den Finanzdienstleistungen, den europäischen Institutionen und den internationalen Unternehmen. Ein und dieselbe öffentliche Website kann also in vier Fassungen existieren, und ein und dieselbe Seite kann mehrere Sprachen mischen."],
-    ["p", "Für die Barrierefreiheit ist jede Sprachfassung ein eigenständiger Inhalt: Alternativtexte, Beschriftungen von Schaltflächen, Fehlermeldungen, Untertitel und Transkripte müssen in jeder Sprache vorhanden sein. Die Sprache jeder Seite muss ausgezeichnet und jeder Abschnitt in einer anderen Sprache gekennzeichnet werden; wie oben gezeigt, ist genau das der häufigste Mangel in den vereinfachten Prüfungen. Der RAAM 1.1 hat zudem eine Bedingung zur Sprache der Untertitel eingeführt. Schließlich muss eine Audit-Stichprobe die tatsächlich genutzten Sprachfassungen abdecken, sonst bleiben die Mängel einer weniger beachteten Übersetzung unentdeckt."],
-    ["p", "Ein Beispiel aus dem Alltag: Eine Gemeinde-Website ist auf Französisch ausgezeichnet, die Rubrik mit Veranstaltungen erscheint aber auf Luxemburgisch, und das Formular für die Anmeldung zu einem Kurs ist auf Deutsch. Ohne korrekte Sprachauszeichnung liest ein Screenreader alle drei Teile mit französischer Aussprache vor, was luxemburgische und deutsche Wörter kaum verständlich macht. Die Korrektur ist technisch einfach, muss aber in den Vorlagen des Redaktionssystems und in den Gewohnheiten der Redaktion verankert werden, damit sie bei jeder neuen Seite greift."],
-    ["h3", "Der Finanzplatz und die Bankdienstleistungen"],
-    ["p", "Bankdienstleistungen für Verbraucher fallen in den Anwendungsbereich des EAA. Für eine Retailbank, ein Zahlungsinstitut oder einen E-Geld-Emittenten mit Sitz in Luxemburg ist die mobile App oft der wichtigste Kanal der Kundenbeziehung. Die typischen Hürden sind bekannt: starke Authentifizierung per Code oder Biometrie ohne Alternative, zu kurze Sitzungszeiten für Screenreader-Nutzer, Portfolio-Grafiken ohne Textalternative, Verträge und Kontoauszüge als nicht getaggte PDF-Dateien und visuelle Captchas bei der Kontoeröffnung."],
-    ["p", "Privatbanken und Anbieter, die ausschließlich Geschäftskunden bedienen, sollten ihren Anwendungsbereich genau analysieren, denn der EAA erfasst Dienstleistungen für Verbraucher. Diese Analyse sollte dokumentiert und von der Rechtsabteilung bestätigt werden, statt sie einfach vorauszusetzen. Unsere Seite für [[sector:grands-comptes|Großunternehmen]] beschreibt, wie wir solche Organisationen begleiten."],
-    ["h3", "Grenzgänger als vollwertige Nutzer"],
-    ["p", "Laut [[https://statistiques.public.lu/dam-assets/catalogue-publications/regards/2026/regards-frontaliers-120326-03.pdf|STATEC (auf Französisch)]] zählte Luxemburg 2023 insgesamt 225 840 einpendelnde Grenzgänger, von denen 54,2 % in Frankreich, 23 % in Deutschland und 22,7 % in Belgien wohnten. Diese Menschen nutzen die luxemburgischen digitalen Dienste (Sozialversicherung, Steuern, Verkehr, Bank) mit Geräten und Einstellungen aus ihrem Wohnland, manchmal in einer anderen Sprache als der des Dienstes."],
-    ["p", "Für eine luxemburgische Organisation bedeutet das, mit unterschiedlichen Konfigurationen zu testen, insbesondere mit Screenreadern, die auf Französisch oder Deutsch eingestellt sind. Für eine Organisation, die auf beiden Seiten der Grenze tätig ist, heißt es außerdem, mit mehreren Regelwerken umzugehen: RGAA in Frankreich, Norm EN 301 549 in Belgien, RAWeb und RAAM in Luxemburg. Unsere Artikel über [[article:belgique|digitale Barrierefreiheit in Belgien]] und [[article:france|digitale Barrierefreiheit in Frankreich]] stellen die beiden Nachbarn vor; unsere Berater arbeiten auf Französisch, Deutsch und Englisch."],
-    ["p", "Dasselbe gilt für Organisationen aus der Deutschsprachigen Gemeinschaft Belgiens, die Dienste für Nutzer in Luxemburg anbieten: Für ihre belgischen Angebote gilt der belgische Rahmen, für ihre Kunden in Luxemburg zählen die hier beschriebenen Pflichten. Schweizer Unternehmen, die in der Europäischen Union verkaufen, müssen ebenfalls den European Accessibility Act berücksichtigen; unser Artikel zur [[article:suisse|digitalen Barrierefreiheit in der Schweiz]] erläutert, wie sich dieser Rahmen zu den Schweizer Regeln verhält."],
-
-    ["h2", "methode-raam-audit", "Eine mobile App nach dem RAAM prüfen: die Methode Schritt für Schritt"],
-    ["p", "Die [[https://accessibilite.public.lu/en/raam1.1/methodologie.html|Prüfmethodik des RAAM 1.1 (auf Englisch)]] ist öffentlich und präzise. Sie lässt der Prüferin oder dem Prüfer aber viele praktische Entscheidungen. So läuft das Audit der App einer öffentlichen Stelle oder eines Unternehmens unter iOS und Android konkret ab."],
-    ["ol", [
-      ["Umfang und Umgebung festlegen.", "Festgelegt werden die geprüfte App-Version (veröffentlichte Version oder Test-Build über TestFlight oder einen Google-Play-Testtrack), die benötigten Testkonten und fiktive Daten, um die Abläufe gefahrlos durchspielen zu können. Ist die App für eine verwaltete Umgebung bestimmt, etwa eine von einer Bank oder einer Verwaltung administrierte Geräteflotte, verlangt der RAAM, mit den in dieser Umgebung tatsächlich verwendeten Konfigurationen zu testen."],
-      ["Die Stichprobe der Bildschirme zusammenstellen.", "Die Methodik schreibt, soweit vorhanden, folgende Bildschirme vor: Startbildschirm, rechtliche Hinweise, Anmeldung, Kontakt, Dokumentationsbildschirme, mindestens einen relevanten Bildschirm für jede Art von Dienst und jede Hauptnutzung (einschließlich der Suche), mindestens ein herunterladbares Dokument je Dienst, alle Bildschirme eines mehrstufigen Prozesses sowie Bildschirme unterschiedlicher Art (Datentabellen, Multimedia, Formulare, Echtzeitkommunikation). Zufällig ausgewählte Bildschirme, die mindestens 10 % der Stichprobe ausmachen, ergänzen die Auswahl."],
-      ["Echte Geräte vorbereiten.", "Getestet wird auf der neuesten verfügbaren Version von iOS und Android oder auf der Vorversion, mit den Versionen von VoiceOver und TalkBack, die mit dem System ausgeliefert werden. Der RAAM stellt klar, dass Android nicht auf einem bestimmten Gerätemodell getestet werden muss. In der Praxis plant man mindestens ein Smartphone je Plattform ein, und ein Tablet, wenn die App Tablets unterstützt."],
-      ["Mit dem Screenreader testen.", "Jeder Bildschirm wird mit VoiceOver unter iOS und mit TalkBack unter Android durchlaufen, per Wischgesten, durch Erkunden per Berührung und mit dem Rotor oder den Lesesteuerungen. Das Untertitelfeld von VoiceOver oder die Anzeige der Sprachausgabe von TalkBack erlauben es, genau zu protokollieren, was angesagt wird. Geprüft wird, ob jede Schaltfläche einen Namen, eine Rolle und einen Zustand hat, ob Überschriften ausgezeichnet sind und ob Fehler- und Bestätigungsmeldungen ausgegeben werden, ohne den Fokus unerwartet zu verschieben."],
-      ["Mit externer Tastatur und Schaltersteuerung testen.", "Unter iOS wird der vollständige Tastaturzugriff aktiviert; unter Android testet man zuerst nur mit der Tastatur und bei Bedarf anschließend mit Switch Access, wobei man zum Beispiel Tab „Weiter“, Umschalt + Tab „Zurück“, Eingabe „Auswählen“ und Escape „Zurück zur vorherigen Ansicht“ zuordnet. Ziel ist es, jede Funktion in logischer Reihenfolge und ohne Tastaturfalle zu erreichen und auszulösen."],
-      ["Vergrößerung und Darstellung kontrollieren.", "Die Textgröße wird in den Systemeinstellungen erhöht; unter iOS empfiehlt die Methodik, mit 190 % zu testen, dem Wert, der im Kontrollzentrum am nächsten an 200 % liegt. Geprüft wird, dass Texte weder abgeschnitten werden noch sich überlagern, dass die App im Hoch- und im Querformat funktioniert und dass der Kontrast ausreichend bleibt, gemessen anhand von Bildschirmfotos des Geräts."],
-      ["Weitere Nutzungsarten prüfen.", "Kontrolliert werden Alternativen zu komplexen Gesten (Ziehen, Zusammenziehen, Schütteln), Größe und Abstand der Touch-Ziele, der Umgang mit Zeitbegrenzungen, Videos (Untertitel, Audiodeskription), eingebettete Web-Ansichten, über die ein Verfahren läuft, sowie Dokumente, die aus der App heruntergeladen werden. Die Inspektionswerkzeuge von Apple (Accessibility Inspector) und Google (Accessibility Scanner) sowie der Colour Contrast Analyser ergänzen die Analyse, ersetzen aber nie die manuellen Tests."],
-      ["Konformitätsgrad berechnen und Nicht-Beeinträchtigung anwenden.", "Ein Kriterium gilt nur dann als erfüllt, wenn es auf allen Bildschirmen der Stichprobe erfüllt ist, auf denen es anwendbar ist: Ein einziger Bildschirm mit Fehler genügt, um es als nicht erfüllt zu werten. Der Konformitätsgrad setzt die erfüllten Kriterien ins Verhältnis zu den anwendbaren Kriterien. Die Kriterien der Nicht-Beeinträchtigung (Steuerung automatisch abgespielter Töne, keine Tastaturfalle, Kontrolle über Zeitbegrenzungen, keine gefährlichen Blitze, Kontrolle über bewegte Inhalte) gelten auch für ausgenommene Inhalte."],
-      ["Ergebnisse übergeben und die Erklärung verfassen.", "Der Bericht weist Bildschirm für Bildschirm die nicht erfüllten Kriterien und die betroffenen Elemente aus und enthält getrennte Empfehlungen für die iOS- und die Android-Teams, die unterschiedliche Komponenten verwenden. Er dient als Grundlage für die Erklärung zur Barrierefreiheit, die auf der Website der Stelle oder im Store-Eintrag der App veröffentlicht wird."]
-    ]],
-    ["p", "Drei Fallstricke kehren häufig wieder. Der erste ist das Audit nur einer Plattform: iOS und Android haben eigene Komponenten, und eine hybride App kann auf der einen korrekt und auf der anderen fehlerhaft sein; auch die Audits des SIP betreffen getrennt iOS- und Android-Versionen. Der zweite ist die ohne Begründung auf Hochformat fixierte Ausrichtung, einer der am häufigsten festgestellten Mängel. Der dritte ist die selbst entwickelte Komponente (Datumsauswahl, Karussell, Registerkarten), die sich den Hilfstechnologien nicht zu erkennen gibt. Wer über die Konformität hinausgehen will, prüft mit einem [[svc:test-utilisateur|Test mit Nutzerinnen und Nutzern mit Behinderungen]], ob die Abläufe tatsächlich bedienbar sind."],
-
-    ["h2", "uebersicht", "Wer wendet was an: Organisation, Rechtsgrundlage, Referenzrahmen, Kontrolle"],
-    ["p", "Die folgende Tabelle fasst die häufigsten Fälle zusammen. Sie ersetzt keine rechtliche Prüfung Ihres Anwendungsbereichs, hilft aber, rasch die Rechtsgrundlage und die zuständige Behörde zu bestimmen."],
-    ["table", {"caption": "Digitale Barrierefreiheit in Luxemburg: Rechtsgrundlagen, Referenzrahmen und Behörden nach Art der Organisation", "head": ["Organisation", "Rechtsgrundlage", "Prüfreferenzrahmen", "Kontrolle und Rechtsbehelf"], "rows": [
-      ["Ministerium, staatliche Verwaltung", "Gesetz vom 28. Mai 2019", "RAWeb 1.1 (Web), RAAM 1.1 (Mobil), RAPDF 1.1 (PDF)", "SIP: Prüfungen, Beschwerden; Ombudsman"],
-      ["Gemeinde, Gemeindesyndikat, Sozialamt", "Gesetz vom 28. Mai 2019", "RAWeb 1.1, RAAM 1.1, RAPDF 1.1", "SIP; Ombudsman"],
-      ["Öffentliche Einrichtung, von Behörden gebildeter Verband", "Gesetz vom 28. Mai 2019", "RAWeb 1.1, RAAM 1.1", "SIP; Ombudsman"],
-      ["Grund- oder Sekundarschule, Kinderkrippe", "Nicht erfasst, außer wesentliche Online-Verwaltungsfunktionen", "RAWeb 1.1 für diese Funktionen", "SIP für die erfassten Inhalte"],
-      ["Retailbank, Zahlungsinstitut", "Gesetz vom 8. März 2023 (EAA)", "EN 301 549; RAWeb und RAAM als Methoden", "OSAPS, Großherzogliche Polizei; Geldbußen"],
-      ["Onlineshop eines Unternehmens, das kein Kleinstunternehmen ist", "Gesetz vom 8. März 2023 (EAA)", "EN 301 549; RAWeb als Methode", "OSAPS; Geldbußen"],
-      ["Personenbeförderer (Website, App, Ticketing)", "Gesetz vom 8. März 2023 (EAA)", "EN 301 549; RAWeb und RAAM als Methoden", "OSAPS, Fachbehörden"],
-      ["Hersteller oder Importeur von Terminals, Smartphones, E-Book-Readern", "Gesetz vom 8. März 2023 (EAA)", "Anforderungen des Gesetzes, harmonisierte Normen", "OSAPS, Zoll- und Verbrauchsteuerverwaltung, Großherzogliche Polizei"],
-      ["Kleinstunternehmen, das Dienstleistungen erbringt", "Von den Anforderungen des Gesetzes vom 8. März 2023 befreit", "Keiner im Rahmen des EAA; WCAG empfohlen", "Keine Kontrolle im Rahmen des EAA"]
-    ]}],
-    ["p", "Eine Organisation kann unter beide Gesetze fallen. Ein öffentlicher Verkehrsbetrieb etwa unterliegt mit seinen institutionellen Websites dem Gesetz von 2019 und mit seinen Personenbeförderungsdiensten dem Gesetz von 2023. Die Seite [[country:luxembourg|digitale Barrierefreiheit in Luxemburg]] fasst die wichtigsten Pflichten und die im Land verfügbaren Leistungen zusammen."],
-
-    ["h2", "raweb-2-raam-2", "RAWeb 2 und RAAM 2 im Jahr 2027: sich auf die neue Norm EN 301 549 vorbereiten"],
-    ["p", "Der Rahmen wird sich kurzfristig ändern. Die überarbeitete Fassung der Norm EN 301 549 mit der Nummer 4.1.1 wurde am 2. September 2026 von CEN und ETSI angenommen; ihre Veröffentlichung im Amtsblatt der Europäischen Union wird bis Jahresende erwartet. Sie integriert insbesondere die WCAG 2.2 und dient künftig zur Bewertung der Konformität sowohl nach der Richtlinie von 2016 über öffentliche Websites als auch nach dem European Accessibility Act."],
-    ["p", "Der SIP hat [[https://accessibilite.public.lu/en/news/2026-09-15-EN301549v4.html|die Veröffentlichung von RAWeb 2 und RAAM 2 für Februar 2027 angekündigt (auf Englisch)]]. Die neuen Fassungen behalten den Ansatz aus Kriterien, Tests und Methodik bei, übernehmen aber eine an der Norm ausgerichtete Struktur. So sollen sie auch für Personen leichter nutzbar werden, die weder den RGAA noch den RAWeb kennen, und die Abweichungen der Konformitätsgrade zwischen Referenzrahmen und Norm verringern. Die auf GitHub gesammelten Rückmeldungen der Fachöffentlichkeit fließen ein."],
-    ["p", "Ihre Teams können schon jetzt die sechs WCAG-2.2-Kriterien berücksichtigen, die die Norm hinzufügt: nicht verdeckter Fokus, Alternative zu Ziehbewegungen, Zielgröße, konsistente Hilfe, Vermeidung redundanter Eingaben und barrierefreie Authentifizierung. Die beiden letzten betreffen unmittelbar Bankprozesse und Verwaltungsverfahren: keine bereits eingegebene Information erneut abfragen und keinen kognitiven Test verlangen, etwa das Abtippen eines verzerrten Codes, ohne eine Alternative anzubieten. Eine [[svc:formations|Schulung der Design- und Entwicklungsteams]] Anfang 2027 verhindert, dass neue Inhalte nach bereits überholten Regeln entstehen."],
-
-    ["h2", "aktionsplan", "Aktionsplan für digitale Barrierefreiheit in Luxemburg"],
-    ["p", "Unabhängig davon, welches Gesetz für Sie gilt, folgt das Vorgehen denselben Schritten. Es kann noch in diesem Quartal beginnen, ohne auf die Versionen 2 der Referenzrahmen zu warten."],
-    ["ol", [
-      ["Digitale Dienste erfassen.", "Listen Sie Websites, Apps, Intranets, Extranets und veröffentlichte Dokumente auf, jeweils mit Sprache, Zielgruppe und Dienstleister. Als öffentliche Stelle gleichen Sie Ihre Liste mit der auf data.public.lu veröffentlichten Bestandsaufnahme ab."],
-      ["Die anwendbare Rechtsgrundlage bestimmen.", "Für jeden Dienst: Gesetz vom 28. Mai 2019, Gesetz vom 8. März 2023 oder beide. Dokumentieren Sie Grenzfälle (Geschäftskunden, Kleinstunternehmen, ausgenommene Inhalte) und lassen Sie die Analyse von Ihrer Rechtsabteilung bestätigen."],
-      ["Referenzrahmen und Stichprobe wählen.", "RAWeb 1.1 für das Web, RAAM 1.1 für Apps, RAPDF 1.1 für PDF-Dateien. Stellen Sie eine Stichprobe zusammen, die die wesentlichen Abläufe und alle tatsächlich genutzten Sprachfassungen abdeckt."],
-      ["Das Erstaudit durchführen.", "Lassen Sie jeden Dienst prüfen, bei mobilen Apps auf echten Geräten und getrennt für iOS und Android. Ein [[svc:audit-raam|RAAM-Audit]] oder ein RAWeb-Audit liefert einen belastbaren Konformitätsgrad und eine priorisierte Liste von Korrekturen."],
-      ["Die Erklärung zur Barrierefreiheit veröffentlichen oder korrigieren.", "Nutzen Sie den offiziellen Generator, veröffentlichen Sie die Erklärung in jeder Sprache, ergänzen Sie einen barrierefreien Kontakt und übermitteln Sie als öffentliche Stelle die Adresse innerhalb von dreißig Tagen an den SIP."],
-      ["Nach Wirkung korrigieren.", "Beheben Sie zuerst, was einen wesentlichen Ablauf blockiert: Anmeldung, Zahlung, Antragsformular, Abruf eines amtlichen Dokuments. Verankern Sie Barrierefreiheitsanforderungen in Ihren Entwicklungsverträgen und lassen Sie die [[svc:recette|Barrierefreiheit vor jedem Release abnehmen]]."],
-      ["2027 vorbereiten.", "Berücksichtigen Sie schon jetzt die WCAG-2.2-Kriterien, verfolgen Sie die Veröffentlichung von RAWeb 2 und RAAM 2 im Februar 2027 und planen Sie nach jeder größeren Überarbeitung ein neues Audit sowie mindestens eine jährliche Durchsicht Ihrer Erklärungen ein."]
-    ]],
-    ["p", "Für Akteure, die dem EAA unterliegen, kommen zwei Aufgaben hinzu: die Informationen zur Barrierefreiheit des Dienstes verfassen, die in die Allgemeinen Geschäftsbedingungen aufgenommen werden, und die Bearbeitung von Meldungen organisieren, die das OSAPS an Sie weiterleiten könnte. Öffentliche Stellen sollten bedenken, dass die Prüfstichprobe 2026 bereits veröffentlicht ist und die Auditberichte ebenfalls veröffentlicht werden. Wenn Ihre Teams selbst entwickeln, senkt eine [[svc:developpement|Begleitung der Entwickler]] unter iOS und Android die Kosten der Korrekturen."]
+ "slug": "digitale-barrierefreiheit-luxemburg",
+ "h1": "Digitale Barrierefreiheit in Luxemburg: Was SIP und OSAPS 2026 prüfen",
+ "crumb": "Digitale Barrierefreiheit in Luxemburg",
+ "meta_title": "Digitale Barrierefreiheit Luxemburg: RAWeb, RAAM und EAA 2026",
+ "meta_desc": "Gesetz vom 28. Mai 2019, RAWeb 1.1, RAAM 1.1 und Gesetz vom 8. März 2023 (EAA): Pflichten, Kontrollen, Sanktionen und App-Audits in Luxemburg.",
+ "card_desc": "Öffentlicher Sektor, EAA, RAWeb und RAAM: wer in Luxemburg was kontrolliert und wie man eine mobile App prüft.",
+ "cat": "reglementation",
+ "where": "Luxemburg",
+ "cover": "LU",
+ "cover_note": [
+  "Gesetz vom 28. Mai 2019",
+  "RAWeb und RAAM"
+ ],
+ "date": "2026-10-27",
+ "lead": "Die digitale Barrierefreiheit in Luxemburg beruht auf zwei Gesetzen und zwei Behörden: dem Gesetz vom 28. Mai 2019 für Websites und mobile Anwendungen öffentlicher Stellen, dessen Einhaltung der Service information et presse (SIP) überwacht, und dem Gesetz vom 8. März 2023, das den European Accessibility Act umsetzt und die Marktüberwachung dem OSAPS überträgt. Die nationalen Referenzrahmen RAWeb 1.1 und RAAM 1.1 übersetzen die Norm EN 301 549 in überprüfbare Kriterien, für das Web ebenso wie für mobile Apps. Dieser Artikel zeigt, wer was tun muss, was die veröffentlichten Prüfungen ergeben und wie das Audit einer App nach dem RAAM konkret abläuft.",
+ "body": [
+  [
+   "h2",
+   "gesetz-28-mai-2019",
+   "Digitale Barrierefreiheit in Luxemburg: was das Gesetz vom 28. Mai 2019 verlangt"
   ],
-  "faq": [
-    ["Muss ein privates Unternehmen den RAWeb oder den RAAM anwenden?", "Nein, diese Referenzrahmen sind durch das Gesetz vom 28. Mai 2019 für den öffentlichen Sektor vorgeschrieben. Ein Unternehmen, das unter das Gesetz vom 8. März 2023 fällt, muss die Barrierefreiheitsanforderungen des EAA erfüllen, die anhand der Norm EN 301 549 bewertet werden. RAWeb und RAAM sind aber öffentliche, kostenlose und detaillierte Methoden, um diese Konformität nachzuweisen, und ihre Kriterien entsprechen den Anforderungen der Norm. Ihr Einsatz erleichtert im Fall einer Meldung den Austausch mit dem OSAPS."],
-    ["Ist ein in Frankreich durchgeführtes RGAA-Audit in Luxemburg gültig?", "Es deckt einen großen Teil der Anforderungen ab, weil der RAWeb Inhalte des RGAA 4.1.2 übernimmt, reicht aber nicht aus. Der RAWeb umfasst 136 Kriterien, der RGAA 106: Die Kriterien zu Dokumentation, Autorenwerkzeugen, Support-Diensten und Echtzeitkommunikation werden nicht bewertet. Für eine luxemburgische Erklärung zur Barrierefreiheit muss das Audit in diesen Punkten ergänzt und der Konformitätsgrad nach dem RAWeb neu berechnet werden."],
-    ["Was riskiert eine öffentliche Stelle, die das Gesetz vom 28. Mai 2019 nicht einhält?", "Das Gesetz sieht keine Geldbußen vor, die mit denen des EAA vergleichbar wären, und der Monitoring-Bericht 2022–2024 nennt keine Sanktion. Die Stelle muss aber mit einer Prüfung durch den SIP rechnen, deren Bericht als offene Daten veröffentlicht wird, mit Beschwerden, die der SIP oder der Ombudsman bearbeitet, und mit öffentlicher Kritik. Eine fehlende oder fehlerhafte Erklärung ist zudem für Nutzer wie für die Behörde sofort sichtbar."],
-    ["Muss die Erklärung zur Barrierefreiheit ins Luxemburgische übersetzt werden?", "Der offizielle Generator erstellt die Erklärung auf Französisch, Deutsch, Englisch und Luxemburgisch und empfiehlt, sie bei einer mehrsprachigen Website in jeder Sprache anzubieten. Gibt es Ihre Website in drei Sprachen, veröffentlichen Sie die Erklärung also in diesen drei Sprachen. Entscheidend ist, dass Nutzer die Erklärung in der Sprache der Seite finden, die sie gerade aufrufen, mit einem barrierefreien Kontakt und dem Hinweis auf die Rechtsbehelfe."],
-    ["Wie lange dauert das Audit einer mobilen App?", "Die Dauer hängt von der Zahl der Bildschirme in der Stichprobe, der Zahl der Plattformen und der Komplexität der Abläufe ab: Eine App mit Anmeldung, Zahlung und herunterladbaren Dokumenten erfordert mehr Aufwand als eine reine Informations-App. Das iOS- und das Android-Audit sind zwei getrennte Bewertungen, auch wenn gemeinsame Empfehlungen zusammengeführt werden. In unserer Praxis beträgt die durchschnittliche Dauer eines Audits drei Wochen, von der Bereitstellung der App bis zur Ergebnisübergabe."],
-    ["Fallen die Apps einer luxemburgischen Bank unter den EAA?", "Ja, sofern sie Verbraucher bedienen: Bankdienstleistungen für Verbraucher fallen in den Anwendungsbereich des Gesetzes vom 8. März 2023. Das umfasst die mobile App, das Online-Kundenportal, die Abläufe der Kontoeröffnung und die Dokumente, die der Kunde erhält. Dienste, die sich ausschließlich an Geschäftskunden richten, erfordern eine Prüfung im Einzelfall. Die Aufsicht liegt beim OSAPS, gemeinsam mit den zuständigen Fachbehörden."],
-    ["Wie meldet man in Luxemburg eine nicht barrierefreie Website oder Dienstleistung?", "Bei einer Website oder App des öffentlichen Sektors wenden Sie sich zuerst über die Erklärung zur Barrierefreiheit an die Stelle selbst; erhalten Sie innerhalb eines Monats keine zufriedenstellende Antwort, wenden Sie sich über das Beschwerdeformular an den SIP oder an den Ombudsman des Großherzogtums. Bei einem privaten Produkt oder einer privaten Dienstleistung im Anwendungsbereich des EAA erfolgt die Meldung beim OSAPS, online über MyGuichet.lu, kostenlos und möglichst mit einem Bildschirmfoto."]
+  [
+   "p",
+   "Das Gesetz vom 28. Mai 2019 über die Barrierefreiheit der Websites und mobilen Anwendungen öffentlicher Stellen setzt die Richtlinie (EU) 2016/2102 in luxemburgisches Recht um. Sein Grundsatz ist einfach: Eine öffentliche Website oder App muss von blinden, sehbehinderten oder gehörlosen Menschen sowie von Menschen mit motorischen oder kognitiven Beeinträchtigungen mit ihren eigenen Hilfsmitteln genutzt werden können. Das Gesetz selbst enthält keine Liste technischer Kriterien. Es verweist auf die harmonisierte europäische Norm EN 301 549 in der Fassung V3.2.1, die Luxemburg anschließend in nationale Referenzrahmen überführt."
   ],
-  "cta_svc": "audit-raam",
-  "cta_title": "Ist Ihre App bereit für eine Prüfung?",
-  "cta_text": "Wir prüfen Ihre iOS- und Android-Apps nach dem RAAM 1.1 auf echten Geräten und bereiten Ihre Erklärung zur Barrierefreiheit vor. Sprechen wir über Ihren Umfang.",
-  "related": ["eaa", "normes", "belgique"]
+  [
+   "p",
+   "Einen Überblick über Pflichten, Normen und Vorgehen in den vier Ländern gibt auch unser [[article:guide|Leitfaden zur digitalen Barrierefreiheit]]."
+  ],
+  [
+   "p",
+   "Dieses Gesetz bildet die Grundlage des gesamten Regelwerks für den öffentlichen Sektor. Das offizielle Portal erläutert die Einzelheiten auf seiner Seite zu den [[https://accessibilite.public.lu/fr/obligations.html|gesetzlichen Pflichten zur digitalen Barrierefreiheit (auf Französisch und Englisch)]], die für eine Rechtsabteilung oder eine Projektleitung die maßgebliche Lektüre ist. Die folgenden Abschnitte greifen die Punkte auf, die in der Praxis die meisten Fragen aufwerfen."
+  ],
+  [
+   "h3",
+   "Welche Stellen betroffen sind"
+  ],
+  [
+   "p",
+   "Erfasst sind der Staat, die Gemeinden, bestimmte Einrichtungen des öffentlichen Rechts sowie Verbände, die von diesen Behörden gebildet werden. In der Praxis betrifft das die Ministerien und ihre Verwaltungen, die Gemeinden und Gemeindesyndikate, die Sozialämter und die öffentlichen Einrichtungen. Ein Rundschreiben des Innenministeriums vom 11. August 2021 hat diese Pflichten den Gemeindeverwaltungen, den Gemeindesyndikaten, den Sozialämtern und den unter ihrer Aufsicht stehenden öffentlichen Einrichtungen noch einmal in Erinnerung gerufen."
+  ],
+  [
+   "p",
+   "Mobile Apps fallen in den Anwendungsbereich, sobald sie von einer öffentlichen Stelle oder in ihrem Auftrag entworfen und entwickelt werden. Eine App, die bei einer Agentur oder einem IT-Dienstleister in Auftrag gegeben wurde, bleibt also in der Verantwortung der Stelle, die sie veröffentlicht: Sie unterzeichnet die Erklärung zur Barrierefreiheit und beantwortet Beschwerden. Das Lastenheft muss dies schon bei der Ausschreibung berücksichtigen."
+  ],
+  [
+   "p",
+   "Einige Kategorien sind vom Anwendungsbereich des Gesetzes ausgenommen:"
+  ],
+  [
+   "ul",
+   [
+    "Websites und Apps öffentlich-rechtlicher Rundfunkanstalten;",
+    "bestimmte Nichtregierungsorganisationen;",
+    "Websites und Apps von Schulen der Grund- und Sekundarstufe sowie von Kinderkrippen, mit Ausnahme der Inhalte, die sich auf wesentliche Online-Verwaltungsfunktionen beziehen, etwa eine Einschreibung oder eine Zahlung."
+   ]
+  ],
+  [
+   "h3",
+   "Ausgenommene Inhalte"
+  ],
+  [
+   "p",
+   "Bestimmte Inhalte sind je nach Art und Veröffentlichungsdatum ebenfalls von der Pflicht ausgenommen. Diese Ausnahmen sind genau umrissen und an Stichtage gebunden; sie decken keineswegs eine ältere Website insgesamt ab."
+  ],
+  [
+   "ul",
+   [
+    "Office-Dateien, die vor dem 23. September 2018 veröffentlicht wurden, es sei denn, sie werden für ein laufendes Verwaltungsverfahren benötigt;",
+    "aufgezeichnete zeitbasierte Medien, die vor dem 23. September 2020 veröffentlicht wurden;",
+    "Intranet- und Extranet-Inhalte, die vor dem 23. September 2019 veröffentlicht wurden, bis zu ihrer nächsten grundlegenden Überarbeitung;",
+    "archivierte Inhalte, die für kein laufendes Verfahren benötigt werden und nach dem 23. September 2019 nicht aktualisiert wurden;",
+    "zeitbasierte Medien in Echtzeit, Inhalte Dritter und bestimmte Reproduktionen von Kulturerbe-Stücken."
+   ]
+  ],
+  [
+   "p",
+   "Ein häufiges Beispiel: Eine Gemeinde veröffentlicht jeden Monat das Protokoll ihrer Gemeinderatssitzung als PDF. Protokolle aus der Zeit vor September 2018 dürfen unverändert online bleiben, wenn sie für kein Verfahren benötigt werden. Alle seither veröffentlichten Protokolle müssen barrierefrei sein oder über eine barrierefreie Alternative verfügen, zum Beispiel eine HTML-Fassung desselben Inhalts."
+  ],
+  [
+   "h3",
+   "Die konkreten Pflichten"
+  ],
+  [
+   "ul",
+   [
+    "Websites und Apps an die Anforderungen der Norm EN 301 549 anpassen, geprüft mit dem RAWeb für das Web und dem RAAM für mobile Anwendungen;",
+    "für jede Website und jede App eine Erklärung zur Barrierefreiheit veröffentlichen und aktuell halten;",
+    "einen barrierefreien Mechanismus anbieten, über den Mängel gemeldet oder Alternativen angefordert werden können, den Eingang bestätigen und innerhalb eines Monats antworten;",
+    "den SIP innerhalb von dreißig Tagen formlos über die Veröffentlichung oder Aktualisierung der Erklärung informieren;",
+    "in der Erklärung auf die Möglichkeit hinweisen, sich an den SIP oder an den Ombudsman des Großherzogtums (Médiateur du Grand-Duché) zu wenden."
+   ]
+  ],
+  [
+   "h3",
+   "Die unverhältnismäßige Belastung: eine eng begrenzte Ausnahme"
+  ],
+  [
+   "p",
+   "Artikel 4 des Gesetzes erlaubt es, von den Anforderungen abzuweichen, wenn sie eine unverhältnismäßige Belastung darstellen würden. Das offizielle Portal fasst diesen Begriff eng: Er wird im Einzelfall beurteilt, für eine bestimmte Funktion oder einen bestimmten Inhalt, und kann grundsätzlich keine ganze Website und keine ganze App abdecken. In die Bewertung fließen die Größe der Stelle, ihre Ressourcen sowie die geschätzten Kosten und der Nutzen für Menschen mit Behinderungen ein."
+  ],
+  [
+   "p",
+   "Zwei Klarstellungen ersparen viele Fehler. Erstens stellt das Portal ausdrücklich fest, dass fehlende Priorität, fehlende Zeit oder fehlendes Wissen keine berechtigten Gründe sind. Zweitens befreit die Berufung auf eine unverhältnismäßige Belastung weder von der Veröffentlichung einer Erklärung zur Barrierefreiheit noch davon, nach Möglichkeit eine barrierefreie Alternative anzubieten; bei einer wesentlichen öffentlichen Aufgabe muss ein gleichwertiger alternativer Dienst bereitgestellt werden."
+  ],
+  [
+   "note",
+   "Das Wichtigste",
+   "Im öffentlichen Sektor setzt Luxemburg auf Kontrolle, Veröffentlichung der Ergebnisse und Schlichtung: Der Monitoring-Bericht 2022–2024 erwähnt keine einzige Sanktion. Das Hauptrisiko sind daher öffentliche Kritik und Beschwerden, während das Gesetz vom 8. März 2023 zum EAA durchaus Geldbußen vorsieht."
+  ],
+  [
+   "h2",
+   "sip-accessibilite-public-lu",
+   "Der SIP und das Portal accessibilite.public.lu: wer den öffentlichen Sektor kontrolliert"
+  ],
+  [
+   "p",
+   "Der Service information et presse (SIP), der Presse- und Informationsdienst der Regierung, ist für die Überwachung des Gesetzes vom 28. Mai 2019 zuständig. Er ist dem Staatsministerium angegliedert und untersteht unmittelbar dem Premierminister; in erster Linie ist er der Kommunikationsdienst der Regierung. Seit der Umsetzung der Richtlinie verantwortet er zudem die gesamte Politik der digitalen Barrierefreiheit im öffentlichen Sektor: Kontrollen, Referenzrahmen, Beschwerden, Information und Schulung."
+  ],
+  [
+   "p",
+   "Seine Aufgaben in diesem Bereich lassen sich in vier Blöcke gliedern:"
+  ],
+  [
+   "ul",
+   [
+    "regelmäßige Prüfungen der Websites und Apps des öffentlichen Sektors durchführen und der Europäischen Kommission darüber berichten;",
+    "die Prüfreferenzrahmen veröffentlichen und pflegen: RAWeb für das Web, RAAM für mobile Apps, RAPDF für PDF-Dokumente;",
+    "Beschwerden von Nutzerinnen und Nutzern in Abstimmung mit den betroffenen Stellen bearbeiten;",
+    "informieren, sensibilisieren und schulen, insbesondere über das Portal accessibilite.public.lu, eine Beobachtungsstelle und Kurse, die gemeinsam mit dem Institut national d'administration publique (INAP) angeboten werden."
+   ]
+  ],
+  [
+   "h3",
+   "Drei Arten der Prüfung"
+  ],
+  [
+   "p",
+   "Gemäß dem Durchführungsbeschluss (EU) 2018/1524 wendet der SIP drei Prüfformen an. Die eingehende Prüfung einer Website ist ein vollständiges Konformitätsaudit nach dem RAWeb: Sie stellt fest, ob die Website barrierefrei ist und welche Probleme gefunden wurden. Die Prüfung einer mobilen App ist ein Konformitätsaudit nach dem RAAM. Die vereinfachte Prüfung schließlich dient dazu, Mängel aufzudecken und zu sensibilisieren, ohne dass sich daraus eine Aussage über die Konformität der Website ableiten lässt."
+  ],
+  [
+   "p",
+   "Die Methode der vereinfachten Prüfung ist veröffentlicht. Sie stützt sich auf eine Stichprobe von drei Seiten (die Startseite, eine Seite mit einem Formular und eine Seite mit einem besonderen Inhalt wie einem Video, einer Tabelle oder einer komplexen Grafik), kombiniert 41 automatisierte Regeln des Werkzeugs Axe mit 47 manuell geprüften RAWeb-Kriterien und schließt herunterladbare Dokumente aus. So lassen sich deutlich mehr Websites erfassen als mit der eingehenden Prüfung."
+  ],
+  [
+   "h3",
+   "Ein jährlicher Zyklus und offene Daten"
+  ],
+  [
+   "p",
+   "Der erste Prüfzeitraum lief vom 23. September 2020 bis Ende 2021; seitdem entspricht ein Zeitraum einem Kalenderjahr. Der Ablauf folgt stets denselben Schritten: Bestandsaufnahme der öffentlichen Websites und Apps, Zusammenstellung einer Stichprobe in Abstimmung mit den wichtigsten Akteuren aus dem Behindertenbereich, Audits und alle drei Jahre ein Bericht an die Europäische Kommission. Bestandslisten, Stichproben, Auditberichte, Erklärungen zur Barrierefreiheit und der Verlauf der Beschwerden werden auf dem Open-Data-Portal data.public.lu veröffentlicht."
+  ],
+  [
+   "p",
+   "Diese Transparenz hat eine praktische Folge: Eine öffentliche Stelle, die in der Stichprobe des Jahres steht, sieht ihren Auditbericht veröffentlicht. Der SIP hat die Stichprobe für 2026 bereits publiziert; zu prüfen, ob Ihre Websites oder Apps darin enthalten sind, ist ein sinnvoller erster Schritt."
+  ],
+  [
+   "h3",
+   "Öffentliche Werkzeuge über die Kontrolle hinaus"
+  ],
+  [
+   "p",
+   "Das Portal stellt eine Vorlage für Lastenhefte, ein Audit-Kit, einen Generator für Erklärungen zur Barrierefreiheit und das Beschwerdeformular bereit. Die Quellen der Referenzrahmen sind auf GitHub veröffentlicht, sodass die Fachöffentlichkeit Korrekturen vorschlagen kann. 2026 hat der SIP außerdem Mia und Mil vorgestellt, zwei luxemburgische Sprachsynthese-Stimmen für Hilfstechnologien, quelloffen und auch offline nutzbar. Bis dahin mussten sich Nutzerinnen und Nutzer von Screenreadern meist mit einer deutschen Stimme begnügen, um einen luxemburgischen Text vorlesen zu lassen."
+  ],
+  [
+   "h2",
+   "raweb",
+   "Der RAWeb 1.1: der luxemburgische Web-Referenzrahmen und seine Unterschiede zum RGAA"
+  ],
+  [
+   "p",
+   "Der RAWeb (Référentiel d'évaluation de l'accessibilité web) ist die Methode, mit der geprüft wird, ob eine Webseite die Anforderungen der Norm EN 301 549 erfüllt. Seine [[https://accessibilite.public.lu/fr/raweb1.1/index.html|Version 1.1, veröffentlicht am 6. Februar 2026]], umfasst 136 Prüfkriterien in 17 Themenbereichen. Sie gilt für alle HTML-Inhalte (HTML4, XHTML1 und HTML5); native mobile Apps werden nach dem RAAM geprüft."
+  ],
+  [
+   "p",
+   "Der RAWeb übernimmt Inhalte aus dem französischen RGAA 4.1.2, die der SIP an den luxemburgischen Rechtsrahmen angepasst hat. Die ersten dreizehn Themenbereiche sind jedem vertraut, der den RGAA kennt: Bilder, Frames, Farben, Multimedia, Tabellen, Links, Skripte, Pflichtelemente, Strukturierung der Information, Darstellung der Information, Formulare, Navigation und Nutzung. Der RAWeb ergänzt vier weitere: Dokumentation und Barrierefreiheitsfunktionen, Autorenwerkzeuge, Support-Dienste und Echtzeitkommunikation."
+  ],
+  [
+   "h3",
+   "Warum 136 statt 106 Kriterien"
+  ],
+  [
+   "p",
+   "Der RGAA 4.1.2 umfasst 106 Kriterien und konzentriert sich auf die Anforderungen aus den WCAG. Die Norm EN 301 549 geht weiter: Sie behandelt auch die Dokumentation eines Dienstes, die Werkzeuge zum Veröffentlichen von Inhalten, den Kundensupport und die Echtzeitkommunikation. Der RAWeb deckt diese Anforderungen ab, daher die 30 zusätzlichen Kriterien, die der luxemburgische Monitoring-Bericht nennt. Der SIP hat für seine eingehenden Prüfungen bis 2023 den RGAA verwendet und ab 2024 den RAWeb."
+  ],
+  [
+   "p",
+   "Die unmittelbare Folge: Ein RGAA-Audit für eine französische Website genügt nicht, um die Konformität einer luxemburgischen Website nachzuweisen. Es deckt zwar das Wesentliche ab, lässt aber die normspezifischen Kriterien außen vor, etwa die Barrierefreiheit der Online-Hilfe, eines Support-Chats oder eines Redaktions-Backends. Auch die ermittelten Konformitätsgrade sind nicht direkt vergleichbar, weil sich der Nenner ändert. Unser Artikel über [[article:normes|Normen und Referenzrahmen der Barrierefreiheit]] erläutert diese Entsprechungen, und die Seite [[standards|Standards nach Land]] fasst sie zusammen."
+  ],
+  [
+   "h3",
+   "Der RAPDF für Dokumente"
+  ],
+  [
+   "p",
+   "Luxemburg verfügt außerdem über einen eigenen Referenzrahmen für PDF-Dokumente, den RAPDF, der 2023 eingeführt wurde und 2026 ebenfalls in Version 1.1 erschienen ist. Für Verwaltungen, die zahlreiche Formulare, Berichte und Beschlüsse als PDF veröffentlichen, ist das ein wichtiger Punkt: Office-Dokumente sind die am häufigsten angegebene Ausnahme in den Erklärungen zur Barrierefreiheit, und nicht barrierefreie PDF-Dateien sind der häufigste Beschwerdegrund, den der SIP für 2022 bis 2024 verzeichnet hat."
+  ],
+  [
+   "h2",
+   "raam",
+   "Der RAAM 1.1: der Referenzrahmen für barrierefreie mobile Apps"
+  ],
+  [
+   "p",
+   "Der RAAM (Référentiel d'évaluation de l'accessibilité des applications mobiles) ist eine luxemburgische Besonderheit. Nur wenige Länder verfügen über eine so detaillierte öffentliche Methode zur Prüfung nativer Apps. Seine [[https://accessibilite.public.lu/fr/raam1.1/index.html|Version 1.1, veröffentlicht am 24. Februar 2025]], umfasst 108 Prüfkriterien und ermöglicht den Nachweis, dass eine App die Norm EN 301 549 V3.2.1 erfüllt. Sie steht unter der Lizenz CC-BY 3.0 LU."
+  ],
+  [
+   "p",
+   "Der RAAM deckt die Kapitel der Norm ab, die eine App betreffen: allgemeine Anforderungen (Kapitel 5), Zwei-Wege-Sprachkommunikation (6), Videofunktionen (7), Nicht-Web-Dokumente (10), Software (11) sowie Dokumentation und Support-Dienste (12). Seine Kriterien sind in fünfzehn Themenbereiche gegliedert:"
+  ],
+  [
+   "ul",
+   [
+    "grafische Elemente, Farben, Multimedia, Tabellen;",
+    "Bedienelemente der Benutzeroberfläche, Pflichtelemente, Strukturierung der Information, Darstellung der Information;",
+    "Formulare, Navigation, Nutzung;",
+    "Dokumentation und Barrierefreiheitsfunktionen, Autorenwerkzeuge, Support-Dienste, Echtzeitkommunikation."
+   ]
+  ],
+  [
+   "h3",
+   "Was sich mit Version 1.1 geändert hat"
+  ],
+  [
+   "p",
+   "Die erste Version des RAAM, veröffentlicht im Juni 2021, umfasste 107 Kriterien. Version 1.1 fügt eines hinzu, das Kriterium 14.3, das aus einer Aufteilung des Themenbereichs 12 hervorgegangen ist, um die Anforderungen übersichtlicher zu machen. Außerdem wurden mehrere Prüfmethoden überarbeitet: Der Kontrast berücksichtigt nun die tatsächliche Textgröße, neue Tests decken Untertitel bei Live-Medien ab, und der Grenzwert für Blitze lautet nicht mehr „weniger als 3 pro Sekunde“, sondern „3 pro Sekunde oder weniger“."
+  ],
+  [
+   "p",
+   "Die Methodik enthält zudem ein aus dem RAWeb übernommenes Prinzip der Nicht-Beeinträchtigung: Ein ausgenommener Inhalt oder ein Inhalt, für den eine Abweichung gilt, muss nicht konform sein, darf aber den Zugang zum übrigen Bildschirminhalt nicht verhindern. Sie präzisiert außerdem, wie unter Android mit oder ohne Tastatur-Bedienungshilfe getestet wird und wie sich eine Textgröße anhand von Bildschirmfotos messen lässt."
+  ],
+  [
+   "h3",
+   "Warum ein eigener Referenzrahmen neben dem Web"
+  ],
+  [
+   "p",
+   "Bei einer nativen App hat die Prüferin oder der Prüfer fast nie Zugang zum Quellcode. Ein Attribut lässt sich nicht wie auf einer Webseite inspizieren: Geprüft wird, was das System den Hilfstechnologien tatsächlich bereitstellt. Die Tests des RAAM stützen sich deshalb auf Screenreader, Systemeinstellungen und die Inspektionswerkzeuge von Apple und Google. Das ist eine andere Arbeitsweise, die echte Geräte und gute Kenntnisse beider Plattformen voraussetzt. Der RAAM ist der luxemburgische Referenzrahmen; anderswo wird dieselbe Methode mit dem jeweiligen lokalen Standard angewandt, wie unsere Seite zum [[svc:audit-raam|Audit mobiler Apps nach dem RAAM]] erklärt."
+  ],
+  [
+   "h2",
+   "erklaerung-beschwerde",
+   "Erklärung zur Barrierefreiheit und Beschwerden: der luxemburgische Ablauf"
+  ],
+  [
+   "p",
+   "Die Erklärung zur Barrierefreiheit ist das Dokument, das Nutzer, der SIP und mitunter auch die Presse zuerst lesen. Sie gibt einen durch ein Audit ermittelten Konformitätsstatus an, nach drei Stufen, die das offizielle Portal festlegt."
+  ],
+  [
+   "ul",
+   [
+    "vollständig konform: Alle Prüfkriterien des Referenzrahmens werden erfüllt, also ein Konformitätsgrad von 100 % nach dem Audit;",
+    "teilweise konform: Mindestens 50 % der Prüfkriterien werden erfüllt;",
+    "nicht konform: Es wurde kein gültiges Audit durchgeführt, oder weniger als 50 % der Kriterien werden erfüllt."
+   ]
+  ],
+  [
+   "p",
+   "Über diesen Status hinaus listet die Erklärung die nicht barrierefreien Inhalte auf und unterscheidet dabei zwischen nicht konformen Inhalten, ausgenommenen Inhalten und solchen, für die eine unverhältnismäßige Belastung geltend gemacht wird, jeweils mit Begründung und angebotenen Alternativen. Sie beschreibt die verfügbaren Barrierefreiheitsfunktionen, gibt an, ob es sich um eine Selbstbewertung oder eine Bewertung durch Dritte handelt, nennt eine Kontaktadresse und weist auf die Möglichkeit hin, sich an den SIP oder den Ombudsman zu wenden."
+  ],
+  [
+   "h3",
+   "Wo und in welchen Sprachen sie veröffentlicht wird"
+  ],
+  [
+   "p",
+   "Bei einer Website muss die Erklärung leicht auffindbar sein: Auf jeder Seite muss ein Link zu ihr stehen, zum Beispiel in der Fußzeile. Bei einer App wird sie auf der Website der verantwortlichen Stelle veröffentlicht oder in den Informationen, die beim Herunterladen verfügbar sind, also im Eintrag im App Store oder bei Google Play. Der offizielle Generator erstellt die Erklärung auf Französisch, Deutsch, Englisch und Luxemburgisch und empfiehlt, sie bei einer mehrsprachigen Website in jeder Sprache anzubieten."
+  ],
+  [
+   "p",
+   "Nach der Veröffentlichung schickt die Stelle die Adresse ihrer Erklärung an den SIP, an accessibilite@sip.etat.lu. Der Generator empfiehlt, nach jeder größeren Überarbeitung neu zu bewerten und die Erklärung mindestens einmal jährlich durchzusehen. Für die Abfassung selbst erläutert unser Artikel über [[article:declaration|die Erklärung zur Barrierefreiheit]] die häufigsten Fehler, in Frankreich ebenso wie in Luxemburg."
+  ],
+  [
+   "h3",
+   "Der Weg einer Beschwerde"
+  ],
+  [
+   "p",
+   "Nehmen wir einen Nutzer, der ein Antragsformular für eine Beihilfe mit TalkBack nicht absenden kann, weil die Schaltfläche „Senden“ nicht angesagt wird. Er wendet sich zuerst an die Stelle selbst, über den in der Erklärung zur Barrierefreiheit angegebenen Kontakt. Die Stelle muss den Eingang bestätigen und innerhalb eines Monats ab dem Versand antworten; ist das Problem komplex, kann sie eine längere Frist festlegen, sofern sie diese begründet."
+  ],
+  [
+   "p",
+   "Ist die Antwort nicht zufriedenstellend, kann sich der Nutzer über das Online-Beschwerdeformular an den SIP wenden oder an den Ombudsman des Großherzogtums Luxemburg. Der SIP verpflichtet sich, spätestens innerhalb eines Monats per E-Mail zu antworten. In der Praxis analysiert er das Anliegen, nimmt Kontakt mit der Stelle auf und gibt ihr einen Monat Zeit zu reagieren. Solange die Erklärung keinen barrierefreien Kontakt anbietet, verzichtet die Stelle auf die erste Stufe und lässt die Beschwerde direkt bei der Behörde landen."
+  ],
+  [
+   "h2",
+   "ergebnisse-monitoring",
+   "Was die veröffentlichten Prüfungen für 2022 bis 2024 zeigen"
+  ],
+  [
+   "p",
+   "Luxemburg veröffentlicht seine Ergebnisse in einer seltenen Ausführlichkeit. Der an die Europäische Kommission übermittelte [[https://download.data.public.lu/resources/rapport-sur-le-controle-de-laccessibilite-des-sites-internet-et-applications-mobiles-du-secteur-public-au-luxembourg-2022-2024/20250115-100700/wad-monitoring-report-lu-2022-2024.pdf|Bericht über die Prüfung der Barrierefreiheit der Websites und Apps des öffentlichen Sektors 2022–2024]] zeichnet ein genaues Bild der Lage. Alle Zahlen in diesem Abschnitt stammen daraus."
+  ],
+  [
+   "table",
+   {
+    "caption": "Prüfungen des SIP und durchschnittliche Ergebnisse, 2022–2024 (Quelle: Monitoring-Bericht 2022–2024)",
+    "head": [
+     "Kennzahl",
+     "2022",
+     "2023",
+     "2024"
+    ],
+    "rows": [
+     [
+      "Eingehende Prüfungen von Websites",
+      "17",
+      "15",
+      "16"
+     ],
+     [
+      "Vereinfachte Prüfungen von Websites",
+      "87",
+      "93",
+      "93"
+     ],
+     [
+      "Eingehende Prüfungen mobiler Apps",
+      "6",
+      "6",
+      "7"
+     ],
+     [
+      "Durchschnittsergebnis der eingehenden Website-Prüfungen",
+      "48 %",
+      "54 %",
+      "61 %"
+     ],
+     [
+      "Durchschnittsergebnis der App-Prüfungen",
+      "49 %",
+      "43 %",
+      "37 %"
+     ],
+     [
+      "Beim SIP eingegangene Beschwerden",
+      "9",
+      "4",
+      "7"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Der Trend ist eindeutig: Die Websites verbessern sich, von 48 % auf 61 % im Durchschnitt innerhalb von drei Jahren, während die mobilen Apps zurückfallen, von 49 % auf 37 %. Der Bericht hält fest, dass 2024 wie schon 2021 keine geprüfte App die teilweise Konformität erreicht (2022 und 2023 gelang dies jeweils zwei Apps). Der Mobilbereich ist heute die Schwachstelle des luxemburgischen öffentlichen Sektors, was eine besondere Aufmerksamkeit für den RAAM rechtfertigt."
+  ],
+  [
+   "h3",
+   "Die häufigsten Mängel"
+  ],
+  [
+   "p",
+   "Bei den Apps sind die drei häufigsten Mängel Bedienelemente, die mit Hilfstechnologien nicht kompatibel sind (Kriterium 5.1), eine ungeeignete Überschriftenstruktur (Kriterium 7.1) und Inhalte, die sich nicht an die Bildschirmausrichtung anpassen (Kriterium 11.9). Bei den Websites sind es in der eingehenden Prüfung Skripte, die mit Hilfstechnologien nicht kompatibel sind, Auszeichnungen, die zu Darstellungszwecken verwendet werden, und falsch strukturierte Listen."
+  ],
+  [
+   "p",
+   "In der vereinfachten Prüfung ist der häufigste Mangel die fehlende Kennzeichnung von Sprachwechseln, vor Skripten, die sich nicht per Tastatur und Maus bedienen lassen, und unzureichenden Textkontrasten. Dieses Ergebnis ist typisch luxemburgisch: Eine französischsprachige Seite, die ein Verfahren auf Deutsch nennt oder den luxemburgischen Namen einer Institution zitiert, muss diesen Wechsel kennzeichnen, damit der Screenreader Stimme und Aussprache umstellt."
+  ],
+  [
+   "h3",
+   "Erklärungen, Ausnahmen und Beschwerden"
+  ],
+  [
+   "p",
+   "Der Bericht zählt 431 Erklärungen zur Barrierefreiheit für Websites und 30 für Apps, bei 979 Websites und Apps, die in der Bestandsaufnahme des öffentlichen Sektors erfasst sind. 2024 beriefen sich 61 % der Erklärungen auf eine Ausnahme wegen unverhältnismäßiger Belastung, obwohl der offizielle Rahmen diese als Ausnahmefall darstellt. Der SIP erhielt im Berichtszeitraum 20 Beschwerden; nicht barrierefreie PDF-Dateien sind der häufigste Grund, vor Problemen mit Webseiten und Apps."
+  ],
+  [
+   "p",
+   "Absolut betrachtet sind diese Zahlen gering, aber sie sind öffentlich. Für eine Verwaltung besteht das Risiko weniger in einer Sanktion als in einem veröffentlichten Auditbericht mit schwachem Ergebnis oder in einer Erklärung, die ohne Begründung eine unverhältnismäßige Belastung geltend macht. Mehr zur Begleitung von Verwaltungen finden Sie auf unserer Seite für den [[sector:public|öffentlichen Sektor]]."
+  ],
+  [
+   "h2",
+   "eaa-luxemburg",
+   "EAA in Luxemburg: das Gesetz vom 8. März 2023 und das OSAPS"
+  ],
+  [
+   "p",
+   "Luxemburg hat die Richtlinie (EU) 2019/882, den European Accessibility Act, mit dem Gesetz vom 8. März 2023 über die Barrierefreiheitsanforderungen für Produkte und Dienstleistungen umgesetzt, veröffentlicht im Mémorial A Nr. 133 vom 15. März 2023. Eine [[https://accessibilite-produits-services.public.lu/dam-assets/lgislation/de-loi-du-8-mars-2023-relative-aux-exigences-en-matire-daccessibilit-applicables-aux-produits-et-services.pdf|deutsche Fassung des Gesetzes]] steht zur Verfügung; im Streitfall ist allein die französische Fassung maßgebend. Nach seinem Artikel 36 ist das Gesetz am 28. Juni 2025 in Kraft getreten. Es betrifft diesmal die Wirtschaftsakteure, private wie öffentliche, die bestimmte Produkte in Verkehr bringen oder bestimmte Dienstleistungen für Verbraucher erbringen."
+  ],
+  [
+   "h3",
+   "Betroffene Produkte und Dienstleistungen"
+  ],
+  [
+   "p",
+   "Bei den Produkten: Computer und Betriebssysteme für Verbraucher, Smartphones und Tablets, Zahlungsterminals, Check-in-Automaten und Fahrkartenautomaten (außer solchen, die in Fahrzeuge eingebaut sind), Smart-TVs und E-Book-Reader. Bei den Dienstleistungen: elektronische Kommunikation, Zugang zu audiovisuellen Mediendiensten, Personenbeförderung im Luft-, Schienen-, Bus- und Schiffsverkehr (Websites, Apps, elektronische Tickets und Informationen), Bankdienstleistungen für Verbraucher, E-Books, elektronischer Geschäftsverkehr sowie die Beantwortung von Notrufen an die 112. Unser Artikel über [[article:eaa|den European Accessibility Act]] erläutert diesen Anwendungsbereich, der für alle Mitgliedstaaten gleich ist."
+  ],
+  [
+   "h3",
+   "Das OSAPS als Aufsichtsbehörde"
+  ],
+  [
+   "p",
+   "Artikel 3 des Gesetzes schafft das Amt für die Überwachung der Barrierefreiheit von Produkten und Dienstleistungen (Office de la surveillance de l'accessibilité des produits et services, OSAPS). Es untersteht dem für die Politik zugunsten von Menschen mit Behinderungen zuständigen Minister, derzeit dem Familienministerium (Ministère de la Famille, des Solidarités, du Vivre ensemble et de l'Accueil). Bei Produkten liegen die Kontrollen beim OSAPS, bei der Zoll- und Verbrauchsteuerverwaltung und bei der Großherzoglichen Polizei (Artikel 28 Absatz 1). Bei Dienstleistungen prüfen das OSAPS und die Großherzogliche Polizei die Konformität, in Zusammenarbeit mit den jeweils zuständigen Fachbehörden (Artikel 28 Absatz 2)."
+  ],
+  [
+   "p",
+   "Das OSAPS ist zugleich Anlaufstelle für Fragen der Barrierefreiheit und stellt Leitlinien und Werkzeuge bereit, insbesondere für Kleinstunternehmen. Jede natürliche oder juristische Person kann ihm die Nichtkonformität eines Produkts oder einer Dienstleistung melden. Die Meldung erfolgt online über MyGuichet.lu, kostenlos, mit der Möglichkeit, ein Bildschirmfoto oder ein Dokument beizufügen. Ein Verband von Menschen mit Behinderungen kann dies als juristische Person tun."
+  ],
+  [
+   "h3",
+   "Vorgesehene Sanktionen"
+  ],
+  [
+   "ul",
+   [
+    "Verwaltungsgeldbuße von 250 bis 15 000 Euro, verhängt durch das OSAPS gegen einen Akteur, der die Herausgabe von Unterlagen oder Informationen verweigert, Kontrollen behindert oder die Entscheidungen des Amtes nicht befolgt (Artikel 32);",
+    "Geldstrafe von 251 bis 500 000 Euro für einen Wirtschaftsakteur, der gegen die im Gesetz genannten Bestimmungen verstößt, abgestuft nach Umfang und Schwere des Verstoßes (Artikel 33 Absatz 1);",
+    "im Wiederholungsfall Geldstrafe von 500 bis 1 000 000 Euro (Artikel 33 Absatz 2);",
+    "Beschränkung oder Untersagung der Bereitstellung eines nicht konformen Produkts oder der Erbringung einer nicht konformen Dienstleistung; gegen diese Entscheidung kann innerhalb von drei Monaten Abänderungsklage vor dem Verwaltungsgericht erhoben werden (Artikel 28 Absatz 5)."
+   ]
+  ],
+  [
+   "h3",
+   "Ausnahmen und Übergangsfristen"
+  ],
+  [
+   "p",
+   "Das Gesetz definiert ein Kleinstunternehmen als Unternehmen, das weniger als zehn Personen beschäftigt und dessen Jahresumsatz oder Jahresbilanzsumme 2 000 000 Euro nicht übersteigt. Kleinstunternehmen, die Dienstleistungen erbringen, sind von den Barrierefreiheitsanforderungen befreit; Kleinstunternehmen, die Produkte herstellen oder vertreiben, unterliegen den Anforderungen weiterhin, mit vereinfachten Dokumentationspflichten. Ein größeres KMU, das online an Verbraucher verkauft, ist dagegen in vollem Umfang betroffen."
+  ],
+  [
+   "p",
+   "Es gelten Übergangsfristen. Dienstleister dürfen Produkte, die sie vor dem Inkrafttreten rechtmäßig eingesetzt haben, bis zum 28. Juni 2030 weiter verwenden. Vor diesem Datum geschlossene Dienstleistungsverträge dürfen bis zu ihrem Ablauf unverändert fortgeführt werden, höchstens jedoch fünf Jahre. Bereits eingesetzte Selbstbedienungsterminals dürfen bis zum Ende ihrer wirtschaftlichen Nutzungsdauer in Betrieb bleiben, längstens zwanzig Jahre nach ihrer Inbetriebnahme."
+  ],
+  [
+   "p",
+   "Wie überall in der Union muss der Anbieter einer erfassten Dienstleistung außerdem in öffentlich zugänglichen Informationen, insbesondere in seinen Allgemeinen Geschäftsbedingungen, erläutern, wie seine Dienstleistung die Barrierefreiheitsanforderungen erfüllt. Dieser Punkt wird oft übersehen: Ein Onlineshop kann technisch sauber umgesetzt sein und dennoch gegen das Gesetz verstoßen, weil diese Information fehlt. Für die technische Bewertung ist die Norm EN 301 549 maßgeblich; RAWeb und RAAM sind öffentliche, detaillierte und kostenlose Methoden, um sie umzusetzen, und das OSAPS führt sie auch unter seinen Ressourcen auf. Für diese Akteure bieten wir ein [[svc:audit-conformite|Konformitätsaudit nach EN 301 549 und WCAG]] an."
+  ],
+  [
+   "h2",
+   "besonderheiten-luxemburg",
+   "Mehrsprachigkeit, Finanzplatz, Grenzgänger: die Besonderheiten Luxemburgs"
+  ],
+  [
+   "p",
+   "Die technischen Anforderungen sind europäisch, doch ihre Umsetzung in Luxemburg trifft auf drei Gegebenheiten, die anderswo selten zusammenkommen. Sie wirken sich unmittelbar auf die Qualität eines Audits und auf die Kosten der Korrekturen aus."
+  ],
+  [
+   "h3",
+   "Vier Sprachen in einer Benutzeroberfläche"
+  ],
+  [
+   "p",
+   "Das Gesetz vom 24. Februar 1984 über die Sprachenregelung hat das Luxemburgische als Nationalsprache anerkannt, das Französische zur Sprache der Gesetzgebung gemacht und Französisch, Deutsch und Luxemburgisch als Verwaltungssprachen festgelegt. Hinzu kommt sehr häufig das Englische, in den Finanzdienstleistungen, den europäischen Institutionen und den internationalen Unternehmen. Ein und dieselbe öffentliche Website kann also in vier Fassungen existieren, und ein und dieselbe Seite kann mehrere Sprachen mischen."
+  ],
+  [
+   "p",
+   "Für die Barrierefreiheit ist jede Sprachfassung ein eigenständiger Inhalt: Alternativtexte, Beschriftungen von Schaltflächen, Fehlermeldungen, Untertitel und Transkripte müssen in jeder Sprache vorhanden sein. Die Sprache jeder Seite muss ausgezeichnet und jeder Abschnitt in einer anderen Sprache gekennzeichnet werden; wie oben gezeigt, ist genau das der häufigste Mangel in den vereinfachten Prüfungen. Der RAAM 1.1 hat zudem eine Bedingung zur Sprache der Untertitel eingeführt. Schließlich muss eine Audit-Stichprobe die tatsächlich genutzten Sprachfassungen abdecken, sonst bleiben die Mängel einer weniger beachteten Übersetzung unentdeckt."
+  ],
+  [
+   "p",
+   "Ein Beispiel aus dem Alltag: Eine Gemeinde-Website ist auf Französisch ausgezeichnet, die Rubrik mit Veranstaltungen erscheint aber auf Luxemburgisch, und das Formular für die Anmeldung zu einem Kurs ist auf Deutsch. Ohne korrekte Sprachauszeichnung liest ein Screenreader alle drei Teile mit französischer Aussprache vor, was luxemburgische und deutsche Wörter kaum verständlich macht. Die Korrektur ist technisch einfach, muss aber in den Vorlagen des Redaktionssystems und in den Gewohnheiten der Redaktion verankert werden, damit sie bei jeder neuen Seite greift."
+  ],
+  [
+   "h3",
+   "Der Finanzplatz und die Bankdienstleistungen"
+  ],
+  [
+   "p",
+   "Bankdienstleistungen für Verbraucher fallen in den Anwendungsbereich des EAA. Für eine Retailbank, ein Zahlungsinstitut oder einen E-Geld-Emittenten mit Sitz in Luxemburg ist die mobile App oft der wichtigste Kanal der Kundenbeziehung. Die typischen Hürden sind bekannt: starke Authentifizierung per Code oder Biometrie ohne Alternative, zu kurze Sitzungszeiten für Screenreader-Nutzer, Portfolio-Grafiken ohne Textalternative, Verträge und Kontoauszüge als nicht getaggte PDF-Dateien und visuelle Captchas bei der Kontoeröffnung."
+  ],
+  [
+   "p",
+   "Privatbanken und Anbieter, die ausschließlich Geschäftskunden bedienen, sollten ihren Anwendungsbereich genau analysieren, denn der EAA erfasst Dienstleistungen für Verbraucher. Diese Analyse sollte dokumentiert und von der Rechtsabteilung bestätigt werden, statt sie einfach vorauszusetzen. Unsere Seite für [[sector:grands-comptes|Großunternehmen]] beschreibt, wie wir solche Organisationen begleiten."
+  ],
+  [
+   "h3",
+   "Grenzgänger als vollwertige Nutzer"
+  ],
+  [
+   "p",
+   "Laut [[https://statistiques.public.lu/dam-assets/catalogue-publications/regards/2026/regards-frontaliers-120326-03.pdf|STATEC (auf Französisch)]] zählte Luxemburg 2023 insgesamt 225 840 einpendelnde Grenzgänger, von denen 54,2 % in Frankreich, 23 % in Deutschland und 22,7 % in Belgien wohnten. Diese Menschen nutzen die luxemburgischen digitalen Dienste (Sozialversicherung, Steuern, Verkehr, Bank) mit Geräten und Einstellungen aus ihrem Wohnland, manchmal in einer anderen Sprache als der des Dienstes."
+  ],
+  [
+   "p",
+   "Für eine luxemburgische Organisation bedeutet das, mit unterschiedlichen Konfigurationen zu testen, insbesondere mit Screenreadern, die auf Französisch oder Deutsch eingestellt sind. Für eine Organisation, die auf beiden Seiten der Grenze tätig ist, heißt es außerdem, mit mehreren Regelwerken umzugehen: RGAA in Frankreich, Norm EN 301 549 in Belgien, RAWeb und RAAM in Luxemburg. Unsere Artikel über [[article:belgique|digitale Barrierefreiheit in Belgien]] und [[article:france|digitale Barrierefreiheit in Frankreich]] stellen die beiden Nachbarn vor; unsere Berater arbeiten auf Französisch, Deutsch und Englisch."
+  ],
+  [
+   "p",
+   "Dasselbe gilt für Organisationen aus der Deutschsprachigen Gemeinschaft Belgiens, die Dienste für Nutzer in Luxemburg anbieten: Für ihre belgischen Angebote gilt der belgische Rahmen, für ihre Kunden in Luxemburg zählen die hier beschriebenen Pflichten. Schweizer Unternehmen, die in der Europäischen Union verkaufen, müssen ebenfalls den European Accessibility Act berücksichtigen; unser Artikel zur [[article:suisse|digitalen Barrierefreiheit in der Schweiz]] erläutert, wie sich dieser Rahmen zu den Schweizer Regeln verhält."
+  ],
+  [
+   "h2",
+   "methode-raam-audit",
+   "Eine mobile App nach dem RAAM prüfen: die Methode Schritt für Schritt"
+  ],
+  [
+   "p",
+   "Die [[https://accessibilite.public.lu/en/raam1.1/methodologie.html|Prüfmethodik des RAAM 1.1 (auf Englisch)]] ist öffentlich und präzise. Sie lässt der Prüferin oder dem Prüfer aber viele praktische Entscheidungen. So läuft das Audit der App einer öffentlichen Stelle oder eines Unternehmens unter iOS und Android konkret ab."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Umfang und Umgebung festlegen.",
+     "Festgelegt werden die geprüfte App-Version (veröffentlichte Version oder Test-Build über TestFlight oder einen Google-Play-Testtrack), die benötigten Testkonten und fiktive Daten, um die Abläufe gefahrlos durchspielen zu können. Ist die App für eine verwaltete Umgebung bestimmt, etwa eine von einer Bank oder einer Verwaltung administrierte Geräteflotte, verlangt der RAAM, mit den in dieser Umgebung tatsächlich verwendeten Konfigurationen zu testen."
+    ],
+    [
+     "Die Stichprobe der Bildschirme zusammenstellen.",
+     "Die Methodik schreibt, soweit vorhanden, folgende Bildschirme vor: Startbildschirm, rechtliche Hinweise, Anmeldung, Kontakt, Dokumentationsbildschirme, mindestens einen relevanten Bildschirm für jede Art von Dienst und jede Hauptnutzung (einschließlich der Suche), mindestens ein herunterladbares Dokument je Dienst, alle Bildschirme eines mehrstufigen Prozesses sowie Bildschirme unterschiedlicher Art (Datentabellen, Multimedia, Formulare, Echtzeitkommunikation). Zufällig ausgewählte Bildschirme, die mindestens 10 % der Stichprobe ausmachen, ergänzen die Auswahl."
+    ],
+    [
+     "Echte Geräte vorbereiten.",
+     "Getestet wird auf der neuesten verfügbaren Version von iOS und Android oder auf der Vorversion, mit den Versionen von VoiceOver und TalkBack, die mit dem System ausgeliefert werden. Der RAAM stellt klar, dass Android nicht auf einem bestimmten Gerätemodell getestet werden muss. In der Praxis plant man mindestens ein Smartphone je Plattform ein, und ein Tablet, wenn die App Tablets unterstützt."
+    ],
+    [
+     "Mit dem Screenreader testen.",
+     "Jeder Bildschirm wird mit VoiceOver unter iOS und mit TalkBack unter Android durchlaufen, per Wischgesten, durch Erkunden per Berührung und mit dem Rotor oder den Lesesteuerungen. Das Untertitelfeld von VoiceOver oder die Anzeige der Sprachausgabe von TalkBack erlauben es, genau zu protokollieren, was angesagt wird. Geprüft wird, ob jede Schaltfläche einen Namen, eine Rolle und einen Zustand hat, ob Überschriften ausgezeichnet sind und ob Fehler- und Bestätigungsmeldungen ausgegeben werden, ohne den Fokus unerwartet zu verschieben."
+    ],
+    [
+     "Mit externer Tastatur und Schaltersteuerung testen.",
+     "Unter iOS wird der vollständige Tastaturzugriff aktiviert; unter Android testet man zuerst nur mit der Tastatur und bei Bedarf anschließend mit Switch Access, wobei man zum Beispiel Tab „Weiter“, Umschalt + Tab „Zurück“, Eingabe „Auswählen“ und Escape „Zurück zur vorherigen Ansicht“ zuordnet. Ziel ist es, jede Funktion in logischer Reihenfolge und ohne Tastaturfalle zu erreichen und auszulösen."
+    ],
+    [
+     "Vergrößerung und Darstellung kontrollieren.",
+     "Die Textgröße wird in den Systemeinstellungen erhöht; unter iOS empfiehlt die Methodik, mit 190 % zu testen, dem Wert, der im Kontrollzentrum am nächsten an 200 % liegt. Geprüft wird, dass Texte weder abgeschnitten werden noch sich überlagern, dass die App im Hoch- und im Querformat funktioniert und dass der Kontrast ausreichend bleibt, gemessen anhand von Bildschirmfotos des Geräts."
+    ],
+    [
+     "Weitere Nutzungsarten prüfen.",
+     "Kontrolliert werden Alternativen zu komplexen Gesten (Ziehen, Zusammenziehen, Schütteln), Größe und Abstand der Touch-Ziele, der Umgang mit Zeitbegrenzungen, Videos (Untertitel, Audiodeskription), eingebettete Web-Ansichten, über die ein Verfahren läuft, sowie Dokumente, die aus der App heruntergeladen werden. Die Inspektionswerkzeuge von Apple (Accessibility Inspector) und Google (Accessibility Scanner) sowie der Colour Contrast Analyser ergänzen die Analyse, ersetzen aber nie die manuellen Tests."
+    ],
+    [
+     "Konformitätsgrad berechnen und Nicht-Beeinträchtigung anwenden.",
+     "Ein Kriterium gilt nur dann als erfüllt, wenn es auf allen Bildschirmen der Stichprobe erfüllt ist, auf denen es anwendbar ist: Ein einziger Bildschirm mit Fehler genügt, um es als nicht erfüllt zu werten. Der Konformitätsgrad setzt die erfüllten Kriterien ins Verhältnis zu den anwendbaren Kriterien. Die Kriterien der Nicht-Beeinträchtigung (Steuerung automatisch abgespielter Töne, keine Tastaturfalle, Kontrolle über Zeitbegrenzungen, keine gefährlichen Blitze, Kontrolle über bewegte Inhalte) gelten auch für ausgenommene Inhalte."
+    ],
+    [
+     "Ergebnisse übergeben und die Erklärung verfassen.",
+     "Der Bericht weist Bildschirm für Bildschirm die nicht erfüllten Kriterien und die betroffenen Elemente aus und enthält getrennte Empfehlungen für die iOS- und die Android-Teams, die unterschiedliche Komponenten verwenden. Er dient als Grundlage für die Erklärung zur Barrierefreiheit, die auf der Website der Stelle oder im Store-Eintrag der App veröffentlicht wird."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Drei Fallstricke kehren häufig wieder. Der erste ist das Audit nur einer Plattform: iOS und Android haben eigene Komponenten, und eine hybride App kann auf der einen korrekt und auf der anderen fehlerhaft sein; auch die Audits des SIP betreffen getrennt iOS- und Android-Versionen. Der zweite ist die ohne Begründung auf Hochformat fixierte Ausrichtung, einer der am häufigsten festgestellten Mängel. Der dritte ist die selbst entwickelte Komponente (Datumsauswahl, Karussell, Registerkarten), die sich den Hilfstechnologien nicht zu erkennen gibt. Wer über die Konformität hinausgehen will, prüft mit einem [[svc:test-utilisateur|Test mit Nutzerinnen und Nutzern mit Behinderungen]], ob die Abläufe tatsächlich bedienbar sind."
+  ],
+  [
+   "h2",
+   "uebersicht",
+   "Wer wendet was an: Organisation, Rechtsgrundlage, Referenzrahmen, Kontrolle"
+  ],
+  [
+   "p",
+   "Die folgende Tabelle fasst die häufigsten Fälle zusammen. Sie ersetzt keine rechtliche Prüfung Ihres Anwendungsbereichs, hilft aber, rasch die Rechtsgrundlage und die zuständige Behörde zu bestimmen."
+  ],
+  [
+   "table",
+   {
+    "caption": "Digitale Barrierefreiheit in Luxemburg: Rechtsgrundlagen, Referenzrahmen und Behörden nach Art der Organisation",
+    "head": [
+     "Organisation",
+     "Rechtsgrundlage",
+     "Prüfreferenzrahmen",
+     "Kontrolle und Rechtsbehelf"
+    ],
+    "rows": [
+     [
+      "Ministerium, staatliche Verwaltung",
+      "Gesetz vom 28. Mai 2019",
+      "RAWeb 1.1 (Web), RAAM 1.1 (Mobil), RAPDF 1.1 (PDF)",
+      "SIP: Prüfungen, Beschwerden; Ombudsman"
+     ],
+     [
+      "Gemeinde, Gemeindesyndikat, Sozialamt",
+      "Gesetz vom 28. Mai 2019",
+      "RAWeb 1.1, RAAM 1.1, RAPDF 1.1",
+      "SIP; Ombudsman"
+     ],
+     [
+      "Öffentliche Einrichtung, von Behörden gebildeter Verband",
+      "Gesetz vom 28. Mai 2019",
+      "RAWeb 1.1, RAAM 1.1",
+      "SIP; Ombudsman"
+     ],
+     [
+      "Grund- oder Sekundarschule, Kinderkrippe",
+      "Nicht erfasst, außer wesentliche Online-Verwaltungsfunktionen",
+      "RAWeb 1.1 für diese Funktionen",
+      "SIP für die erfassten Inhalte"
+     ],
+     [
+      "Retailbank, Zahlungsinstitut",
+      "Gesetz vom 8. März 2023 (EAA)",
+      "EN 301 549; RAWeb und RAAM als Methoden",
+      "OSAPS, Großherzogliche Polizei; Geldbußen"
+     ],
+     [
+      "Onlineshop eines Unternehmens, das kein Kleinstunternehmen ist",
+      "Gesetz vom 8. März 2023 (EAA)",
+      "EN 301 549; RAWeb als Methode",
+      "OSAPS; Geldbußen"
+     ],
+     [
+      "Personenbeförderer (Website, App, Ticketing)",
+      "Gesetz vom 8. März 2023 (EAA)",
+      "EN 301 549; RAWeb und RAAM als Methoden",
+      "OSAPS, Fachbehörden"
+     ],
+     [
+      "Hersteller oder Importeur von Terminals, Smartphones, E-Book-Readern",
+      "Gesetz vom 8. März 2023 (EAA)",
+      "Anforderungen des Gesetzes, harmonisierte Normen",
+      "OSAPS, Zoll- und Verbrauchsteuerverwaltung, Großherzogliche Polizei"
+     ],
+     [
+      "Kleinstunternehmen, das Dienstleistungen erbringt",
+      "Von den Anforderungen des Gesetzes vom 8. März 2023 befreit",
+      "Keiner im Rahmen des EAA; WCAG empfohlen",
+      "Keine Kontrolle im Rahmen des EAA"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Eine Organisation kann unter beide Gesetze fallen. Ein öffentlicher Verkehrsbetrieb etwa unterliegt mit seinen institutionellen Websites dem Gesetz von 2019 und mit seinen Personenbeförderungsdiensten dem Gesetz von 2023. Die Seite [[country:luxembourg|digitale Barrierefreiheit in Luxemburg]] fasst die wichtigsten Pflichten und die im Land verfügbaren Leistungen zusammen."
+  ],
+  [
+   "h2",
+   "raweb-2-raam-2",
+   "RAWeb 2 und RAAM 2 im Jahr 2027: sich auf die neue Norm EN 301 549 vorbereiten"
+  ],
+  [
+   "p",
+   "Der Rahmen wird sich kurzfristig ändern. Die überarbeitete Fassung der Norm EN 301 549 mit der Nummer 4.1.1 wurde am 2. September 2026 von CEN und ETSI angenommen; ihre Veröffentlichung im Amtsblatt der Europäischen Union wird bis Jahresende erwartet. Sie integriert insbesondere die WCAG 2.2 und dient künftig zur Bewertung der Konformität sowohl nach der Richtlinie von 2016 über öffentliche Websites als auch nach dem European Accessibility Act."
+  ],
+  [
+   "p",
+   "Der SIP hat [[https://accessibilite.public.lu/en/news/2026-09-15-EN301549v4.html|die Veröffentlichung von RAWeb 2 und RAAM 2 für Februar 2027 angekündigt (auf Englisch)]]. Die neuen Fassungen behalten den Ansatz aus Kriterien, Tests und Methodik bei, übernehmen aber eine an der Norm ausgerichtete Struktur. So sollen sie auch für Personen leichter nutzbar werden, die weder den RGAA noch den RAWeb kennen, und die Abweichungen der Konformitätsgrade zwischen Referenzrahmen und Norm verringern. Die auf GitHub gesammelten Rückmeldungen der Fachöffentlichkeit fließen ein."
+  ],
+  [
+   "p",
+   "Ihre Teams können schon jetzt die sechs WCAG-2.2-Kriterien berücksichtigen, die die Norm hinzufügt: nicht verdeckter Fokus, Alternative zu Ziehbewegungen, Zielgröße, konsistente Hilfe, Vermeidung redundanter Eingaben und barrierefreie Authentifizierung. Die beiden letzten betreffen unmittelbar Bankprozesse und Verwaltungsverfahren: keine bereits eingegebene Information erneut abfragen und keinen kognitiven Test verlangen, etwa das Abtippen eines verzerrten Codes, ohne eine Alternative anzubieten. Eine [[svc:formations|Schulung der Design- und Entwicklungsteams]] Anfang 2027 verhindert, dass neue Inhalte nach bereits überholten Regeln entstehen."
+  ],
+  [
+   "h2",
+   "aktionsplan",
+   "Aktionsplan für digitale Barrierefreiheit in Luxemburg"
+  ],
+  [
+   "p",
+   "Unabhängig davon, welches Gesetz für Sie gilt, folgt das Vorgehen denselben Schritten. Es kann noch in diesem Quartal beginnen, ohne auf die Versionen 2 der Referenzrahmen zu warten."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Digitale Dienste erfassen.",
+     "Listen Sie Websites, Apps, Intranets, Extranets und veröffentlichte Dokumente auf, jeweils mit Sprache, Zielgruppe und Dienstleister. Als öffentliche Stelle gleichen Sie Ihre Liste mit der auf data.public.lu veröffentlichten Bestandsaufnahme ab."
+    ],
+    [
+     "Die anwendbare Rechtsgrundlage bestimmen.",
+     "Für jeden Dienst: Gesetz vom 28. Mai 2019, Gesetz vom 8. März 2023 oder beide. Dokumentieren Sie Grenzfälle (Geschäftskunden, Kleinstunternehmen, ausgenommene Inhalte) und lassen Sie die Analyse von Ihrer Rechtsabteilung bestätigen."
+    ],
+    [
+     "Referenzrahmen und Stichprobe wählen.",
+     "RAWeb 1.1 für das Web, RAAM 1.1 für Apps, RAPDF 1.1 für PDF-Dateien. Stellen Sie eine Stichprobe zusammen, die die wesentlichen Abläufe und alle tatsächlich genutzten Sprachfassungen abdeckt."
+    ],
+    [
+     "Das Erstaudit durchführen.",
+     "Lassen Sie jeden Dienst prüfen, bei mobilen Apps auf echten Geräten und getrennt für iOS und Android. Ein [[svc:audit-raam|RAAM-Audit]] oder ein RAWeb-Audit liefert einen belastbaren Konformitätsgrad und eine priorisierte Liste von Korrekturen."
+    ],
+    [
+     "Die Erklärung zur Barrierefreiheit veröffentlichen oder korrigieren.",
+     "Nutzen Sie den offiziellen Generator, veröffentlichen Sie die Erklärung in jeder Sprache, ergänzen Sie einen barrierefreien Kontakt und übermitteln Sie als öffentliche Stelle die Adresse innerhalb von dreißig Tagen an den SIP."
+    ],
+    [
+     "Nach Wirkung korrigieren.",
+     "Beheben Sie zuerst, was einen wesentlichen Ablauf blockiert: Anmeldung, Zahlung, Antragsformular, Abruf eines amtlichen Dokuments. Verankern Sie Barrierefreiheitsanforderungen in Ihren Entwicklungsverträgen und lassen Sie die [[svc:recette|Barrierefreiheit vor jedem Release abnehmen]]."
+    ],
+    [
+     "2027 vorbereiten.",
+     "Berücksichtigen Sie schon jetzt die WCAG-2.2-Kriterien, verfolgen Sie die Veröffentlichung von RAWeb 2 und RAAM 2 im Februar 2027 und planen Sie nach jeder größeren Überarbeitung ein neues Audit sowie mindestens eine jährliche Durchsicht Ihrer Erklärungen ein."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Für Akteure, die dem EAA unterliegen, kommen zwei Aufgaben hinzu: die Informationen zur Barrierefreiheit des Dienstes verfassen, die in die Allgemeinen Geschäftsbedingungen aufgenommen werden, und die Bearbeitung von Meldungen organisieren, die das OSAPS an Sie weiterleiten könnte. Öffentliche Stellen sollten bedenken, dass die Prüfstichprobe 2026 bereits veröffentlicht ist und die Auditberichte ebenfalls veröffentlicht werden. Wenn Ihre Teams selbst entwickeln, senkt eine [[svc:developpement|Begleitung der Entwickler]] unter iOS und Android die Kosten der Korrekturen."
+  ]
+ ],
+ "faq": [
+  [
+   "Muss ein privates Unternehmen den RAWeb oder den RAAM anwenden?",
+   "Nein, diese Referenzrahmen sind durch das Gesetz vom 28. Mai 2019 für den öffentlichen Sektor vorgeschrieben. Ein Unternehmen, das unter das Gesetz vom 8. März 2023 fällt, muss die Barrierefreiheitsanforderungen des EAA erfüllen, die anhand der Norm EN 301 549 bewertet werden. RAWeb und RAAM sind aber öffentliche, kostenlose und detaillierte Methoden, um diese Konformität nachzuweisen, und ihre Kriterien entsprechen den Anforderungen der Norm. Ihr Einsatz erleichtert im Fall einer Meldung den Austausch mit dem OSAPS."
+  ],
+  [
+   "Ist ein in Frankreich durchgeführtes RGAA-Audit in Luxemburg gültig?",
+   "Es deckt einen großen Teil der Anforderungen ab, weil der RAWeb Inhalte des RGAA 4.1.2 übernimmt, reicht aber nicht aus. Der RAWeb umfasst 136 Kriterien, der RGAA 106: Die Kriterien zu Dokumentation, Autorenwerkzeugen, Support-Diensten und Echtzeitkommunikation werden nicht bewertet. Für eine luxemburgische Erklärung zur Barrierefreiheit muss das Audit in diesen Punkten ergänzt und der Konformitätsgrad nach dem RAWeb neu berechnet werden."
+  ],
+  [
+   "Was riskiert eine öffentliche Stelle, die das Gesetz vom 28. Mai 2019 nicht einhält?",
+   "Das Gesetz sieht keine Geldbußen vor, die mit denen des EAA vergleichbar wären, und der Monitoring-Bericht 2022–2024 nennt keine Sanktion. Die Stelle muss aber mit einer Prüfung durch den SIP rechnen, deren Bericht als offene Daten veröffentlicht wird, mit Beschwerden, die der SIP oder der Ombudsman bearbeitet, und mit öffentlicher Kritik. Eine fehlende oder fehlerhafte Erklärung ist zudem für Nutzer wie für die Behörde sofort sichtbar."
+  ],
+  [
+   "Muss die Erklärung zur Barrierefreiheit ins Luxemburgische übersetzt werden?",
+   "Der offizielle Generator erstellt die Erklärung auf Französisch, Deutsch, Englisch und Luxemburgisch und empfiehlt, sie bei einer mehrsprachigen Website in jeder Sprache anzubieten. Gibt es Ihre Website in drei Sprachen, veröffentlichen Sie die Erklärung also in diesen drei Sprachen. Entscheidend ist, dass Nutzer die Erklärung in der Sprache der Seite finden, die sie gerade aufrufen, mit einem barrierefreien Kontakt und dem Hinweis auf die Rechtsbehelfe."
+  ],
+  [
+   "Wie lange dauert das Audit einer mobilen App?",
+   "Die Dauer hängt von der Zahl der Bildschirme in der Stichprobe, der Zahl der Plattformen und der Komplexität der Abläufe ab: Eine App mit Anmeldung, Zahlung und herunterladbaren Dokumenten erfordert mehr Aufwand als eine reine Informations-App. Das iOS- und das Android-Audit sind zwei getrennte Bewertungen, auch wenn gemeinsame Empfehlungen zusammengeführt werden. In unserer Praxis beträgt die durchschnittliche Dauer eines Audits drei Wochen, von der Bereitstellung der App bis zur Ergebnisübergabe."
+  ],
+  [
+   "Fallen die Apps einer luxemburgischen Bank unter den EAA?",
+   "Ja, sofern sie Verbraucher bedienen: Bankdienstleistungen für Verbraucher fallen in den Anwendungsbereich des Gesetzes vom 8. März 2023. Das umfasst die mobile App, das Online-Kundenportal, die Abläufe der Kontoeröffnung und die Dokumente, die der Kunde erhält. Dienste, die sich ausschließlich an Geschäftskunden richten, erfordern eine Prüfung im Einzelfall. Die Aufsicht liegt beim OSAPS, gemeinsam mit den zuständigen Fachbehörden."
+  ],
+  [
+   "Wie meldet man in Luxemburg eine nicht barrierefreie Website oder Dienstleistung?",
+   "Bei einer Website oder App des öffentlichen Sektors wenden Sie sich zuerst über die Erklärung zur Barrierefreiheit an die Stelle selbst; erhalten Sie innerhalb eines Monats keine zufriedenstellende Antwort, wenden Sie sich über das Beschwerdeformular an den SIP oder an den Ombudsman des Großherzogtums. Bei einem privaten Produkt oder einer privaten Dienstleistung im Anwendungsbereich des EAA erfolgt die Meldung beim OSAPS, online über MyGuichet.lu, kostenlos und möglichst mit einem Bildschirmfoto."
+  ]
+ ],
+ "cta_svc": "audit-raam",
+ "cta_title": "Ist Ihre App bereit für eine Prüfung?",
+ "cta_text": "Wir prüfen Ihre iOS- und Android-Apps nach dem RAAM 1.1 auf echten Geräten und bereiten Ihre Erklärung zur Barrierefreiheit vor. Sprechen wir über Ihren Umfang.",
+ "related": [
+  "eaa",
+  "normes",
+  "belgique"
+ ],
+ "modified": "2026-10-28",
+ "cluster": "reglementation"
 }
