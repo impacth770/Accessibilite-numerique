@@ -7,7 +7,7 @@ La tâche planifiée traite d'abord « Mises à jour prioritaires », puis le pr
 
 | Statut | Événement | Articles à mettre à jour |
 |---|---|---|
-| — | (aucune pour l'instant) | — |
+| — | (aucune pour l'instant ; veille du 2026-10-29 : RGAA 5 non publié, EN 301 549 V4.1.1 non citée au JOUE, loi suisse sur l'inclusion adoptée par le Conseil national le 21 septembre 2026, Conseil des États pas encore saisi ; décision Arcom impots.gouv.fr déjà intégrée) | — |
 
 Échéances à surveiller : RGAA 5 (annoncé fin 2026) ; citation de l'EN 301 549 V4.1.1 au JOUE (attendue vers le 16 décembre 2026) ; RAWeb 2 et RAAM 2 (février 2027) ; vote du Conseil des États sur la loi suisse sur l'inclusion.
 
@@ -15,7 +15,6 @@ La tâche planifiée traite d'abord « Mises à jour prioritaires », puis le pr
 
 | # | Statut | Silo | Requête cible (FR) | Angle (ce que les pages concurrentes ne donnent pas) | Prestation à pousser |
 |---|---|---|---|---|---|
-| 1 | à faire | methode | audit RGAA | Déroulé réel d'un audit semaine par semaine, échantillon, livrables, ce que l'organisation doit préparer, comment lire le rapport | audit-rgaa |
 | 2 | à faire | secteurs | accessibilité e-commerce | Check-list EAA du parcours d'achat écran par écran (recherche, fiche produit, panier, paiement, compte), erreurs fréquentes, preuves à conserver | audit-conformite |
 | 3 | à faire | methode | prix audit accessibilité | Ce qui fait varier un devis (périmètre, échantillon, technologies, contre-audit, tests utilisateurs), comment comparer des offres, sans tarif inventé | audit-rgaa |
 | 4 | à faire | normes | WCAG 2.2 nouveaux critères | Les 9 critères ajoutés, un par un, avec exemple de défaut, correction HTML/CSS et test à faire soi-même | audit-conformite |
@@ -66,3 +65,4 @@ La tâche planifiée traite d'abord « Mises à jour prioritaires », puis le pr
 | 2026-10-27 | luxembourg | reglementation | Accessibilité numérique au Luxembourg : ce que le SIP et l'OSAPS vérifient en 2026 |
 | 2026-10-27 | suisse | reglementation | Accessibilité numérique en Suisse : LHand, eCH-0059 et EAA, qui doit quoi en 2026 |
 | 2026-10-27 | normes | normes | WCAG 2.2, EN 301 549, RGAA, RAWeb : quelle norme d'accessibilité numérique suivre ? |
+| 2026-10-29 | audit-rgaa | methode | Audit RGAA : déroulé semaine par semaine, préparation et lecture du rapport |

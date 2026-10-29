@@ -442,7 +442,7 @@
   ],
   [
    "p",
-   "As for timescales, auditing a website of ordinary complexity takes weeks rather than months: at our firm, the average audit takes three weeks. Fixes generally take longer than the audit, from a few weeks for defects concentrated in a handful of components to several months when the front-end architecture has to be reworked. A redesign is the best time to build in accessibility: addressed from the wireframes onwards, it costs a fraction of what fixes cost after launch."
+   "As for timescales, auditing a website of ordinary complexity takes weeks rather than months: at our firm, the average audit takes three weeks. Fixes generally take longer than the audit, from a few weeks for defects concentrated in a handful of components to several months when the front-end architecture has to be reworked. A redesign is the best time to build in accessibility: addressed from the wireframes onwards, it costs a fraction of what fixes cost after launch. What those three weeks involve, and what your organisation needs to prepare, is described in our article on [[article:audit-rgaa|the stages of an RGAA audit]]."
   ],
   [
    "p",
@@ -608,5 +608,6 @@
   "normes",
   "france"
  ],
- "cluster": "pilier"
+ "cluster": "pilier",
+ "modified": "2026-10-29"
 }

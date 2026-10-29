@@ -1,0 +1,211 @@
+{
+  "slug": "audit-rgaa-deroulement",
+  "h1": "Audit RGAA : déroulé semaine par semaine, préparation et lecture du rapport",
+  "crumb": "Déroulé d'un audit RGAA",
+  "meta_title": "Audit RGAA : déroulé, échantillon, livrables, lecture du rapport",
+  "meta_desc": "Audit RGAA semaine par semaine : check-list de préparation, échantillon commenté, livrables, lecture du taux de conformité et erreurs qui faussent le résultat.",
+  "card_desc": "Le déroulé réel d'un audit RGAA, ce que vous devez préparer, les livrables attendus et la façon de lire le rapport.",
+  "cat": "guide",
+  "where": "France",
+  "cover": "RGAA",
+  "cover_note": ["106 critères, 13 thématiques", "Préparer, auditer, lire le rapport"],
+  "date": "2026-10-29",
+  "cluster": "methode",
+  "lead": "Un audit RGAA mesure, critère par critère, la conformité d'un site, d'une application ou d'un progiciel au Référentiel général d'amélioration de l'accessibilité. C'est la base obligatoire de toute déclaration d'accessibilité en France, et c'est cette déclaration que l'Arcom vérifie lors de ses contrôles. Les pages qui en parlent décrivent la méthode ; celle-ci montre comment l'audit se déroule réellement, semaine par semaine, ce que votre organisation doit préparer, comment l'échantillon se construit, ce que contiennent les livrables et comment lire le rapport sans être spécialiste.",
+  "body": [
+    ["h2", "ce-que-mesure-un-audit-rgaa", "Audit RGAA : ce qu'il mesure, et ce qu'il ne mesure pas"],
+    ["p", "Le RGAA, aujourd'hui en version 4.1.2, regroupe 106 critères répartis en 13 thématiques : images, cadres, couleurs, multimédia, tableaux, liens, scripts, éléments obligatoires, structuration de l'information, présentation de l'information, formulaires, navigation et consultation. Chaque critère se décompose en tests précis, qui disent à l'auditeur quoi vérifier dans le code et dans le rendu. Le référentiel traduit ainsi les exigences des WCAG en une grille qui permet à deux auditeurs compétents d'aboutir au même résultat sur la même page."],
+    ["p", "Un audit RGAA produit trois choses : un statut pour chaque critère sur chaque page évaluée (validé, non validé ou non applicable), un taux de conformité pour le service, et la liste localisée des défauts à corriger. Il ne note ni l'esthétique, ni l'ergonomie générale, ni la qualité éditoriale. Un site peut obtenir un bon taux et rester pénible à utiliser pour une personne aveugle si les parcours sont longs et mal pensés ; c'est la raison pour laquelle l'audit de conformité se complète utilement d'un [[svc:test-utilisateur|test avec des utilisateurs en situation de handicap]]."],
+    ["p", "L'audit n'est pas non plus un passage d'outil automatique. Les extensions de navigateur repèrent une partie des erreurs techniques, mais elles ne savent pas juger si une alternative textuelle est pertinente, si l'ordre de lecture a du sens ou si un menu déroulant fonctionne au clavier. La page officielle sur [[https://accessibilite.numerique.gouv.fr/obligations/evaluation-conformite/|l'évaluation de la conformité]] décrit une évaluation critère par critère, sur un échantillon représentatif : c'est cette évaluation, et elle seule, qui fonde le taux publié dans la déclaration."],
+    ["h3", "Qui doit faire réaliser un audit RGAA"],
+    ["p", "En France, l'article 47 de la loi du 11 février 2005 impose l'accessibilité et la publication d'une déclaration aux personnes morales de droit public, aux organismes privés chargés d'une mission de service public ou d'intérêt général sous conditions, et aux entreprises dont le chiffre d'affaires réalisé en France dépasse 250 millions d'euros. Pour ces organismes, l'audit RGAA n'est pas une option : sans évaluation effective, le seul état que la déclaration peut afficher est « non conforme ». Le périmètre et les textes sont détaillés sur notre page [[country:france|accessibilité numérique en France]] et dans notre analyse des [[article:france|obligations françaises]]."],
+    ["p", "Une entreprise soumise à l'European Accessibility Act sans atteindre ce seuil relève d'une autre logique : ses obligations découlent du code de la consommation, la norme européenne EN 301 549 servant de référence technique, et elles sont contrôlées par la DGCCRF. Un audit fondé sur les WCAG et la norme européenne, comme notre [[svc:audit-conformite|audit de conformité]], y répond plus directement qu'un audit RGAA au sens strict, même si la méthode de travail est très proche. Notre article sur l'[[article:eaa|European Accessibility Act]] précise quels services sont concernés."],
+
+    ["h2", "quand-faire-un-audit-rgaa", "Quand faire un audit RGAA : les sept situations qui le déclenchent"],
+    ["p", "La question n'est pas seulement de savoir si vous devez auditer, mais à quel moment. Le RGAA fixe des échéances de mise à jour de la déclaration, et chacune suppose un audit récent. D'autres situations, sans être des obligations, rendent l'audit indispensable pour éviter de publier un état faux."],
+    ["table", {"caption": "Les situations qui déclenchent un audit RGAA", "head": ["Situation", "Pourquoi un audit est nécessaire", "Type d'audit adapté"], "rows": [
+      ["Aucune déclaration, ou déclaration sans taux", "Sans évaluation effective, la déclaration ne peut afficher que « non conforme »", "Audit complet de conformité"],
+      ["Déclaration publiée il y a trois ans", "La déclaration doit être mise à jour trois ans après sa publication", "Audit complet, avec le même échantillon enrichi des nouveautés"],
+      ["Refonte, changement de CMS, nouvel espace connecté", "Une modification substantielle impose la mise à jour de la déclaration", "Audit complet sur le nouveau service"],
+      ["Publication du RGAA 5", "Les déclarations existantes restent valables 18 mois, sans dépasser trois ans", "Audit complet selon la nouvelle version, à planifier"],
+      ["Mise en demeure ou signalement d'usager", "Il faut prouver que les défauts relevés sont corrigés", "Contre-audit ciblé, puis audit complet si nécessaire"],
+      ["Avant une mise en ligne", "Corriger avant la publication coûte beaucoup moins cher qu'après", "Audit de recette sur la version de préproduction"],
+      ["Livraison d'un prestataire dans un marché", "Vérifier que l'exigence d'accessibilité du contrat est tenue", "Recette d'accessibilité sur les parcours livrés"]
+    ]}],
+    ["p", "La quatrième ligne mérite d'être anticipée. La DINUM a annoncé la [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|publication du RGAA 5, attendue fin 2026]]. Il intègre les WCAG 2.2 et définira des critères pour les applications mobiles et les documents bureautiques. La DINUM précise que les travaux fondés sur le RGAA 4.1.2 ne doivent en aucun cas être suspendus ou reportés : un audit réalisé aujourd'hui reste utile, ses corrections resteront valables, et la déclaration qui en découle bénéficiera du délai de dix-huit mois."],
+    ["p", "Pour les livraisons de prestataires, l'audit prend la forme d'une [[svc:recette|recette d'accessibilité]] : on vérifie, avant de prononcer la réception, que les gabarits et les parcours livrés respectent les critères exigés au contrat. C'est beaucoup plus efficace que de découvrir les défauts lors de l'audit de conformité suivant, quand le prestataire est parti."],
+
+    ["h2", "preparer-audit-rgaa", "Préparer un audit RGAA : la check-list de l'organisation auditée"],
+    ["p", "La plupart des retards d'audit ne viennent pas des auditeurs, mais d'accès qui manquent le jour où les tests commencent : compte de test bloqué, environnement de recette indisponible, étape de paiement impossible à franchir. Une préparation de quelques jours évite de perdre une semaine. Voici ce que nous demandons, en pratique, avant la réunion de lancement."],
+    ["ul", [
+      "Le périmètre exact : adresse du service, sous-domaines inclus ou exclus, espaces connectés, applications mobiles, documents téléchargeables ;",
+      "la déclaration d'accessibilité en vigueur, le schéma pluriannuel et le plan d'actions, même anciens, pour mesurer l'écart et réutiliser ce qui peut l'être ;",
+      "les statistiques d'audience des pages les plus consultées, utiles pour rendre l'échantillon représentatif ;",
+      "la liste des gabarits ou types de pages (article, fiche, liste de résultats, formulaire, tableau de bord) et des composants partagés (menu, moteur de recherche, carrousel, fenêtres modales) ;",
+      "des comptes de test pour chaque profil d'usager, avec des données réalistes : un compte vide ne montre ni tableau de bord ni historique ;",
+      "un moyen de franchir les étapes sensibles : carte de paiement de test, code d'authentification forte transmis par un interlocuteur joignable, contournement temporaire d'un captcha en recette ;",
+      "les documents téléchargeables qui servent aux démarches : formulaires PDF, avis, factures, comptes rendus ;",
+      "la liste des modules fournis par des tiers (prise de rendez-vous, paiement, cartographie, conversationnel) et le nom de leur éditeur ;",
+      "un interlocuteur technique disponible pendant les tests, et la date de gel des évolutions : un site qui change pendant l'audit produit des résultats incohérents ;",
+      "le calendrier des contraintes : mise en ligne prévue, échéance de contrôle, comité de pilotage où les résultats doivent être présentés."
+    ]],
+    ["p", "Deux points sont souvent sous-estimés. Les modules tiers d'abord : un outil de prise de rendez-vous acheté à un éditeur fait partie de votre service, puisque vous l'avez choisi et que vous le financez. Il est audité comme le reste, et ses défauts figurent dans votre déclaration. Ensuite, l'environnement : auditer en préproduction est possible et souvent préférable, à condition que cette version soit identique à celle qui sera publiée et que la déclaration désigne bien le service en ligne."],
+    ["note", "À retenir", "L'audit le plus rapide est celui dont les accès sont prêts le premier jour : comptes de test avec données réalistes, moyen de franchir paiement et authentification, documents des démarches et gel des évolutions pendant les tests."],
+
+    ["h2", "echantillon-audit-rgaa", "Constituer l'échantillon de l'audit RGAA : les règles officielles et un exemple commenté"],
+    ["p", "On n'audite pas toutes les pages d'un site : on audite un échantillon, et le résultat vaut pour le service entier. C'est pourquoi la composition de l'échantillon est la décision la plus importante de l'audit. Un échantillon de complaisance donne un taux flatteur qui ne résistera pas à la première page qu'un contrôleur ouvrira au hasard."],
+    ["h3", "Ce que la méthode impose"],
+    ["p", "La méthode officielle demande d'abord d'auditer, lorsqu'elles existent, la page d'accueil, la page de contact, les mentions légales, la page Accessibilité, le plan du site, l'aide et la page d'authentification. S'y ajoutent au moins une page pertinente par type de service, recherche comprise, au moins un document téléchargeable pertinent par type de service, toutes les pages d'un processus (formulaire ou transaction en plusieurs étapes) et des pages d'aspect ou de contenu sensiblement différent : tableaux, multimédia, formulaires. Des pages choisies au hasard doivent représenter au moins 10 % des pages de l'échantillon. Aucun nombre total de pages n'est fixé ; pour une application mobile, chaque écran est assimilé à une page."],
+    ["p", "Une règle découle de cette construction et change tout pour les parcours : un critère n'est validé pour une page d'un processus que s'il est validé pour toutes les pages de ce processus. Si la troisième étape d'une demande en ligne contient un champ sans étiquette, le critère concerné est non validé sur l'ensemble des étapes du parcours."],
+    ["h3", "Exemple : l'espace usagers d'un établissement public"],
+    ["p", "Prenons le site d'un établissement public qui propose une information générale et un espace connecté où les usagers déposent une demande d'aide et suivent son traitement. Un échantillon défendable pourrait ressembler à celui-ci."],
+    ["table", {"caption": "Exemple d'échantillon d'audit RGAA pour un site avec espace connecté", "head": ["Page ou écran", "Motif d'inclusion", "Point d'attention pour l'auditeur"], "rows": [
+      ["Accueil", "Page obligatoire", "Menu principal, carrousel, mention de conformité en pied de page"],
+      ["Contact", "Page obligatoire", "Formulaire, messages d'erreur, éventuel captcha"],
+      ["Mentions légales, Accessibilité, Plan du site, Aide", "Pages obligatoires", "Structure de titres, liens, déclaration au format du modèle"],
+      ["Connexion à l'espace usager", "Page obligatoire (authentification)", "Étiquettes, gestion du mot de passe, délai de session"],
+      ["Résultats de recherche", "Type de service : recherche", "Annonce du nombre de résultats, filtres, pagination"],
+      ["Fiche d'information sur une aide", "Type de service : information", "Titres, liens explicites, tableau de conditions"],
+      ["Demande d'aide en quatre étapes", "Processus complet", "Chaque étape auditée ; erreurs de saisie, champs obligatoires, récapitulatif"],
+      ["Tableau de bord de suivi des demandes", "Contenu sensiblement différent", "Tableau de données, statuts signalés par la seule couleur"],
+      ["Notice de la demande en PDF", "Document téléchargeable nécessaire à la démarche", "Titre, langue, balisage, ordre de lecture"],
+      ["Page vidéo de présentation", "Contenu multimédia", "Sous-titres, transcription, lecteur utilisable au clavier"],
+      ["Deux pages tirées au hasard", "Au moins 10 % de l'échantillon", "Révèlent les gabarits oubliés lors de la sélection"]
+    ]}],
+    ["p", "Cet échantillon compte une vingtaine de pages et d'écrans, dont les quatre étapes de la demande. On y retrouve un réflexe à garder : chaque fonctionnalité qu'un usager doit pouvoir accomplir seul (se connecter, déposer, suivre, télécharger) apparaît au moins une fois. Écarter le tableau de bord ou le PDF parce qu'ils sont difficiles à tester, c'est précisément retirer de l'audit ce qui bloque les usagers."],
+    ["p", "La liste des pages auditées figure ensuite dans la déclaration d'accessibilité, avec leur adresse. Elle devient publique : n'importe quel usager, et l'Arcom, peut vérifier que l'échantillon contient bien les processus. Notre article sur la [[article:declaration|déclaration d'accessibilité]] détaille la façon de présenter cette liste et le calcul qui en découle."],
+
+    ["h2", "deroulement-audit-rgaa", "Le déroulement d'un audit RGAA, semaine par semaine"],
+    ["p", "Dans notre cabinet, le délai moyen d'un audit est de trois semaines entre le lancement et la remise du rapport. Ce délai varie avec la taille de l'échantillon, le nombre de parcours et de plateformes, et la disponibilité des accès. Le déroulé ci-dessous correspond à un site de complexité courante, avec un espace connecté."],
+    ["ol", [
+      ["Avant le lancement : le cadrage.", "Un échange d'une heure ou deux fixe le référentiel et sa version, le périmètre, la liste provisoire de l'échantillon, l'environnement de test et les interlocuteurs. Vous transmettez les éléments de la check-list de préparation. L'auditeur vérifie les accès et signale tout de suite ce qui manque."],
+      ["Semaine 1 : validation de l'échantillon et premiers tests.", "L'échantillon est arrêté avec vous, pages tirées au hasard comprises. L'auditeur commence par les pages obligatoires et les composants partagés (en-tête, menu, pied de page, moteur de recherche) : un défaut dans un composant commun se répète sur toutes les pages, et l'identifier tôt évite de le décrire vingt fois."],
+      ["Semaine 2 : parcours, formulaires et technologies d'assistance.", "Les processus sont audités étape par étape, avec les comptes de test. Les composants dynamiques (menus déroulants, onglets, fenêtres modales, messages d'erreur, contenus qui apparaissent au survol) sont vérifiés avec les lecteurs d'écran et au clavier. Les documents téléchargeables sont contrôlés. Un point d'étape signale les éventuels blocages majeurs, sans attendre le rapport."],
+      ["Semaine 3 : consolidation, rapport et restitution.", "Les résultats sont consolidés au niveau du service, le taux de conformité est calculé, chaque non-conformité est décrite avec un exemple et une recommandation. Une relecture interne contrôle la cohérence des statuts entre pages. La restitution présente les résultats aux équipes métier et techniques, puis le rapport, la grille et le projet de déclaration sont remis."],
+      ["Après la remise : les corrections et le contre-audit.", "Vos équipes ou vos prestataires corrigent en suivant le plan d'action. Un contre-audit, plus court, vérifie les corrections sur les mêmes pages, et la déclaration est mise à jour avec le nouveau taux."]
+    ]],
+    ["p", "Deux facteurs allongent presque toujours ce calendrier : un accès qui manque au moment des tests de la deuxième semaine, et une mise en production pendant l'audit. Le premier se règle par la préparation, le second par un gel des évolutions, ou à défaut par la date de version auditée indiquée dans le rapport."],
+
+    ["h2", "tests-criteres-rgaa", "Ce que fait réellement l'auditeur : tests, outils et environnement"],
+    ["p", "Pour chaque page de l'échantillon, l'auditeur passe en revue les 106 critères. Une grande partie est non applicable sur une page donnée (pas de vidéo, pas de tableau, pas de cadre) ; les autres sont vérifiés test par test, dans le code et dans le rendu. Dès qu'un seul élément de la page échoue à un test, le critère est non validé pour cette page."],
+    ["h3", "Un exemple : le formulaire de demande en ligne"],
+    ["p", "Sur une seule étape de formulaire, l'auditeur vérifie notamment que chaque champ a une étiquette (critère 11.1) et que les boutons ont un intitulé explicite (critère 11.9), que le contrôle de saisie signale les erreurs et les champs obligatoires de façon perceptible, y compris par les lecteurs d'écran (critère 11.10), que les scripts qui affichent ou masquent des champs sont compatibles avec les technologies d'assistance (critère 7.1) et utilisables au clavier (critère 7.3), que le focus reste visible (critère 10.7), que l'ordre de tabulation est cohérent (critère 12.8) et que l'utilisateur n'est jamais piégé au clavier (critère 12.9). Il mesure les contrastes du texte (critère 3.2) et des bordures de champ (critère 3.3), et contrôle que l'information n'est pas donnée par la seule couleur, par exemple un champ en erreur simplement entouré de rouge."],
+    ["p", "Ce découpage explique pourquoi un défaut unique peut coûter cher au taux : un message d'erreur absent ou mal associé à son champ rend le critère 11.10 non validé sur la page, donc sur tout le processus, donc pour le service. Il explique aussi pourquoi un même composant mal conçu, répété dans tous les formulaires du site, se corrige en une fois."],
+    ["h3", "Les outils et l'environnement de test"],
+    ["p", "L'auditeur travaille avec l'inspecteur de code du navigateur, un analyseur de contraste, des extensions de vérification qui accélèrent le repérage des erreurs répétitives, et une navigation au clavier systématique. Pour les composants dynamiques, il vérifie la restitution avec des technologies d'assistance. Le RGAA publie un [[https://accessibilite.numerique.gouv.fr/methode/environnement-de-test/|environnement de test de référence]] : sur ordinateur, des combinaisons associant NVDA ou JAWS à Firefox, et VoiceOver à Safari ; sur mobile, TalkBack avec Chrome sous Android et VoiceOver avec Safari sous iOS. Un composant est jugé compatible s'il fonctionne pleinement sur au moins une combinaison ; pour un site grand public consulté sur mobile, le référentiel conseille de tester dans les deux environnements."],
+    ["p", "Les combinaisons employées, les outils et leurs versions sont ensuite indiqués dans le rapport et dans la déclaration. C'est une garantie pour vous : un résultat obtenu avec une combinaison non documentée serait difficile à reproduire lors du contre-audit."],
+
+    ["h2", "livrables-audit-rgaa", "Les livrables d'un audit RGAA : rapport, grille, plan d'action et déclaration"],
+    ["p", "La DINUM met à disposition un [[https://accessibilite.numerique.gouv.fr/ressources/kit-audit/|kit d'audit]] qui comprend un modèle de rapport, un modèle de déclaration et la grille d'audit du RGAA 4.1.2 au format tableur ; la même page présente Ara, un outil en ligne qui structure la saisie des résultats et génère rapport et déclaration. Ara n'est pas un outil automatique : il suppose un auditeur qui connaît les 106 critères. Un audit professionnel s'appuie sur ces modèles ou en reprend la structure, ce qui permet de comparer deux audits successifs."],
+    ["table", {"caption": "Les livrables attendus d'un audit RGAA et leur usage", "head": ["Livrable", "Ce qu'il contient", "À qui il sert"], "rows": [
+      ["Rapport d'audit", "Contexte, échantillon, environnement de test, taux, description des erreurs par thématique, avis de l'auditeur, priorisation", "Direction, référent accessibilité, chefs de projet"],
+      ["Grille d'audit", "Statut de chaque critère sur chaque page de l'échantillon", "Équipes techniques, contre-audit, contrôleur"],
+      ["Plan d'action priorisé", "Corrections classées par impact et par effort, avec responsables et échéances", "Équipes de développement, prestataires, pilotage"],
+      ["Projet de déclaration d'accessibilité", "État de conformité, taux, contenus non accessibles, pages vérifiées, environnement", "Publication sur la page Accessibilité"],
+      ["Support de restitution", "Synthèse des résultats et des blocages principaux, exemples illustrés", "Comité de pilotage, élus, direction"]
+    ]}],
+    ["p", "Le [[https://accessibilite.numerique.gouv.fr/doc/rgaa4-2019-modele-rapport-audit.pdf|modèle officiel de rapport d'audit]] organise la description des erreurs par thématique. Pour chaque critère non conforme, il prévoit une présentation succincte du critère, un cas représentatif avec une capture si nécessaire, la description du problème et une recommandation technique. Sa conclusion comprend un avis de l'auditeur, rédigé pour un public non technique, et une priorisation des corrections selon trois axes : les fonctionnalités et contenus essentiels, les critères qui bloquent l'accès, et la facilité de mise en œuvre. La grille d'audit, en annexe, donne les résultats page par page."],
+    ["p", "Exigez que chaque non-conformité soit localisée (page, composant, élément) et accompagnée d'une recommandation exploitable par un développeur. Une ligne du type « critère 1.1 non conforme » sans exemple oblige vos équipes à refaire une partie de l'audit pour trouver les défauts."],
+
+    ["h2", "lire-rapport-audit-rgaa", "Lire un rapport d'audit RGAA sans être expert"],
+    ["p", "Un rapport de cinquante pages peut dérouter un directeur ou un élu. Il se lit pourtant en dix minutes si l'on sait où regarder, et dans quel ordre."],
+    ["ol", [
+      ["Le taux de conformité global.", "C'est le rapport entre les critères validés et les critères applicables, calculé sur tout l'échantillon : (critères validés ÷ critères applicables) × 100. Un taux de 100 % donne un service totalement conforme, un taux d'au moins 50 % un service partiellement conforme, en dessous il est non conforme. C'est ce taux, et lui seul, qui figure dans la déclaration."],
+      ["Le taux moyen.", "C'est la moyenne des taux de chaque page. Il est presque toujours plus élevé que le taux global, parce qu'une erreur isolée ne pèse que sur une page. Utile pour suivre une progression, il ne remplace jamais le taux global."],
+      ["Le nombre de critères applicables.", "Un nombre très faible de critères applicables doit interroger : soit le service est réellement simple, soit des contenus ont été écartés. Les critères non applicables ne se justifient que si le contenu n'existe pas, s'il est exempté ou s'il bénéficie d'une dérogation avec alternative accessible."],
+      ["Les blocages, avant le nombre de défauts.", "Cherchez dans la synthèse les défauts qui empêchent d'accomplir une tâche : se connecter, payer, déposer une demande, télécharger un avis. Un défaut de contraste sur une mention secondaire et un bouton de validation inutilisable au clavier comptent chacun pour un critère, mais n'ont pas le même effet."],
+      ["Les composants partagés.", "Repérez les défauts qui viennent du gabarit, du menu ou de la bibliothèque de composants : leur correction améliore d'un coup toutes les pages."],
+      ["Les contenus hors de votre main.", "Notez les défauts imputables à un module d'éditeur. Ils se traitent par la relation contractuelle, pas par vos développeurs."]
+    ]],
+    ["p", "Prenons un échantillon où 52 critères sont applicables et 39 validés : le taux est de 75 %, le service est partiellement conforme. Si le taux moyen par page atteint 88 %, c'est que la plupart des 13 critères en échec ne le sont que sur une ou deux pages, souvent dans le même parcours. La bonne lecture est donc : un service globalement correct, avec un parcours à reprendre en priorité. Le calcul détaillé et ses pièges sont développés dans notre article sur la [[article:declaration|déclaration d'accessibilité et le taux de conformité]]."],
+    ["note", "À retenir", "Un taux élevé ne prouve pas qu'un service est utilisable : un seul critère en échec sur l'étape de paiement peut bloquer tous les usagers de lecteurs d'écran. Lisez les blocages avant le pourcentage."],
+
+    ["h2", "controle-arcom-audit", "Ce qu'un contrôle de l'Arcom révèle sur la qualité d'un audit"],
+    ["p", "Depuis 2023, l'Arcom contrôle le respect de l'article 47. Sa décision n° 2026-358 du 24 juin 2026 visant le site impots.gouv.fr ([[https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054393304|publiée au Journal officiel]]) est instructive pour qui prépare un audit, parce que les défauts retenus portent exactement sur les contenus que les échantillons de complaisance écartent."],
+    ["ul", [
+      "un avis d'impôt en PDF téléchargeable depuis l'espace particulier, sans titre, sans langue définie, sans balisage, et sans alternative accessible (critère 13.3) ;",
+      "dans la messagerie sécurisée, une rubrique « Écrire » impossible à atteindre par tabulation et dont les informations ne sont pas restituées par les lecteurs d'écran (critère 10.8) ;",
+      "dans la même messagerie, un menu déroulant de choix de l'année d'imposition qui n'apparaît qu'à la souris, donc inutilisable au clavier (critère 12.11) ;",
+      "dans le formulaire de déclaration des revenus en ligne (rubrique des locations meublées non professionnelles), un tableau dont les cellules ne sont pas associées à leurs en-têtes (critère 5.7) ;",
+      "un service dont la déclaration ne donnait aucun taux, faute d'audit."
+    ]],
+    ["p", "Documents téléchargés depuis un espace connecté, messagerie, sélecteurs dynamiques, tableaux dans un formulaire : tous ces contenus se trouvent derrière une authentification. Un audit qui se limite aux pages publiques ne les voit pas. L'autorité a accordé neuf mois pour corriger les défauts d'accessibilité et deux mois pour mettre en règle les déclarations d'accessibilité et publier le plan d'actions de l'année en cours. Pour le secteur public, ces exigences s'articulent avec la commande publique et le pilotage décrits sur notre page [[sector:public|secteur public]]."],
+
+    ["h2", "apres-audit-rgaa", "Après l'audit RGAA : corrections, contre-audit et déclaration"],
+    ["p", "L'audit n'améliore rien par lui-même ; ce sont les corrections qui changent la vie des usagers et le taux. La période qui suit la remise du rapport décide de la valeur de l'investissement."],
+    ["h3", "Publier immédiatement un état exact"],
+    ["p", "Dès la remise du rapport, publiez la déclaration correspondant aux résultats, même défavorables, et alignez la mention de la page d'accueil. Une déclaration « partiellement conforme » exacte remplit l'obligation de transparence ; attendre la fin des corrections pour publier, c'est laisser en ligne un état faux ou une absence de déclaration pendant des mois."],
+    ["h3", "Corriger dans le bon ordre"],
+    ["p", "Commencez par les blocages sur les parcours essentiels, puis par les composants partagés, enfin par les défauts isolés. Intégrez chaque correction dans le circuit normal de développement, avec un critère d'acceptation qui reprend le test du RGAA : c'est ce qui évite la régression à la version suivante. Lorsque les défauts tiennent à l'architecture du front-end, un accompagnement en [[svc:developpement|développement accessible]] évite de corriger page par page ce qui se règle dans la bibliothèque de composants."],
+    ["h3", "Contre-audit et mise à jour"],
+    ["p", "Le contre-audit vérifie les corrections sur les pages de l'échantillon initial. Il est plus court que l'audit, mais il doit être aussi rigoureux : un critère corrigé sur une page et resté en défaut sur une autre reste non validé. Le nouveau taux est reporté dans la déclaration, avec la date de mise à jour. Les défauts non corrigés alimentent le plan d'actions de l'année, rattaché au schéma pluriannuel."],
+    ["h3", "Former pour ne pas recommencer"],
+    ["p", "Un audit révèle presque toujours des défauts liés aux pratiques : alternatives d'images rédigées sans méthode, PDF exportés sans balisage, composants copiés d'un projet à l'autre. Des [[svc:formations|formations ciblées par métier]] (contribution, conception, développement, achats) réduisent durablement le nombre de défauts au prochain audit."],
+
+    ["h2", "audit-interne-ou-externe", "Audit RGAA interne ou externe : comment choisir et comparer les offres"],
+    ["p", "La méthode officielle admet l'auto-évaluation comme l'audit confié à un tiers, à condition qu'il soit fiable et représentatif : l'organisme veille à la fiabilité de sa déclaration par tous moyens, qu'il s'agisse d'un prestataire externe, d'experts internes formés ou d'audits croisés. Les entreprises du 4° de l'article 47, celles qui dépassent le seuil de chiffre d'affaires, peuvent même employer une autre méthode de test, si elle est communicable sur demande, accompagnée d'une table de correspondance avec la norme et indiquée dans la déclaration."],
+    ["p", "Un audit interne a du sens si vous disposez d'auditeurs formés au RGAA, qui pratiquent les technologies d'assistance et ne sont pas ceux qui ont conçu le site. Un regard externe limite le risque d'un taux surévalué et apporte une preuve d'indépendance utile en cas de contrôle. Beaucoup d'organisations combinent les deux : audit externe tous les trois ans ou à chaque refonte, vérifications internes à chaque version."],
+    ["h3", "Les questions à poser avant de choisir un auditeur"],
+    ["ul", [
+      "L'audit évalue-t-il les 106 critères manuellement, page par page, ou repose-t-il sur un outil automatique ?",
+      "L'échantillon proposé contient-il les pages obligatoires, les processus complets, des documents téléchargeables et au moins 10 % de pages tirées au hasard ?",
+      "Quelles combinaisons de technologies d'assistance seront utilisées, et sont-elles indiquées dans le rapport ?",
+      "Les livrables comprennent-ils la grille complète, un plan d'action priorisé et le projet de déclaration ?",
+      "Chaque non-conformité est-elle localisée et accompagnée d'une recommandation de correction ?",
+      "Un contre-audit est-il prévu, sur quel périmètre et dans quel délai ?",
+      "Les auditeurs sont-ils indépendants des équipes qui ont conçu ou développé le service ?"
+    ]],
+    ["p", "Côté budget, il n'existe pas de tarif de référence : le coût dépend du nombre de pages et de gabarits, de la complexité des parcours, du nombre de plateformes, des documents à évaluer et des prestations associées. Pour comparer deux devis, vérifiez qu'ils portent sur le même échantillon, le même référentiel et les mêmes livrables. Le plus simple est de nous décrire votre service par la page [[contact|contact]] : nous précisons l'échantillon et le délai dans notre proposition, après un échange de cadrage."],
+
+    ["h2", "erreurs-audit-rgaa", "Les erreurs qui faussent un audit RGAA"],
+    ["p", "Les erreurs suivantes se retrouvent dans de nombreux rapports et dans des déclarations publiées. Chacune conduit à un taux qui ne correspond pas à l'expérience des usagers."],
+    ["ol", [
+      ["Auditer seulement les pages publiques.", "Les démarches, les espaces connectés et les documents qui y sont téléchargés concentrent les blocages."],
+      ["Choisir les pages au lieu de les tirer au sort.", "La règle des 10 % de pages aléatoires existe pour révéler les gabarits oubliés."],
+      ["Découper un processus.", "Auditer la première et la dernière étape d'une demande ne suffit pas : toutes les étapes font partie de l'échantillon."],
+      ["Multiplier les « non applicable ».", "Un critère n'est non applicable que si le contenu n'existe pas, s'il est exempté, ou s'il bénéficie d'une dérogation avec alternative accessible."],
+      ["Confondre score d'outil et taux de conformité.", "Un score automatique ne couvre qu'une partie des critères et ne juge pas la pertinence."],
+      ["Ignorer les modules tiers.", "Un outil acheté et intégré fait partie du service audité."],
+      ["Auditer un site en mouvement.", "Sans gel des évolutions, les résultats d'une page ne décrivent plus la version en ligne."],
+      ["Ne pas documenter l'environnement.", "Sans combinaisons de test indiquées, le contre-audit ne peut pas reproduire les résultats."],
+      ["Publier le taux moyen à la place du taux global.", "L'état de conformité se déduit uniquement du taux global."],
+      ["Considérer l'audit comme un aboutissement.", "Sans plan d'action, corrections et contre-audit, l'audit suivant donnera le même résultat."]
+    ]],
+
+    ["h2", "audit-rgaa-belgique-luxembourg-suisse", "Audit RGAA en Belgique, au Luxembourg et en Suisse : quel équivalent"],
+    ["p", "Le RGAA est un référentiel français. Hors de France, la méthode de travail reste très proche, mais la grille change, et un audit RGAA n'est pas toujours la meilleure preuve de conformité."],
+    ["table", {"caption": "Équivalents de l'audit RGAA dans les pays voisins", "head": ["Pays", "Référentiel d'évaluation", "Audit recommandé"], "rows": [
+      ["France", "RGAA 4.1.2, en attendant le RGAA 5", "Audit RGAA, recette, test utilisateur"],
+      ["Belgique", "Norme EN 301 549, WCAG niveau AA", "Audit de conformité EN 301 549"],
+      ["Luxembourg", "RAWeb pour le web, RAAM pour les applications mobiles", "Audit RAWeb ou audit RAAM"],
+      ["Suisse", "Norme eCH-0059, fondée sur les WCAG", "Audit WCAG niveau AA"]
+    ]}],
+    ["p", "Au Luxembourg, le RAWeb reprend la logique de critères et de tests du RGAA en l'adaptant à la norme EN 301 549 ; les applications mobiles relèvent du RAAM, que nous appliquons dans notre [[svc:audit-raam|audit RAAM des applications iOS et Android]]. En Belgique, la référence est la norme européenne, dans les trois Régions. En Suisse, la norme eCH-0059 sert de référence aux administrations. Pour un groupe présent dans plusieurs pays, un référentiel pivot évite de multiplier les audits : notre article sur [[article:normes|les normes d'accessibilité numérique]] explique comment le choisir, et les articles consacrés à [[article:belgique|la Belgique]], au [[article:luxembourg|Luxembourg]] et à [[article:suisse|la Suisse]] détaillent les obligations locales."],
+
+    ["h2", "calendrier-audit-rgaa", "Calendrier type : de la décision d'auditer à la déclaration publiée"],
+    ["p", "Pour un service de complexité courante, voici un calendrier réaliste. Il suppose que les accès sont prêts au lancement et que les corrections sont planifiées dès la restitution. Il s'inscrit dans la démarche d'ensemble décrite dans notre [[article:guide|guide de l'accessibilité numérique]]."],
+    ["table", {"caption": "Calendrier type d'un audit RGAA et de ses suites", "head": ["Période", "Étape", "Résultat attendu"], "rows": [
+      ["Semaine 0", "Cadrage, transmission des accès et des documents", "Périmètre et échantillon provisoire validés"],
+      ["Semaines 1 à 3", "Audit : pages obligatoires, parcours, technologies d'assistance, rapport", "Rapport, grille, plan d'action, projet de déclaration"],
+      ["Semaine 4", "Restitution et publication de la déclaration", "État de conformité exact en ligne, mention alignée"],
+      ["Mois 2 à 4", "Corrections des blocages et des composants partagés", "Parcours essentiels utilisables"],
+      ["Mois 4 ou 5", "Contre-audit sur l'échantillon initial", "Nouveau taux, déclaration mise à jour"],
+      ["Chaque année", "Plan d'actions, vérifications internes à chaque version", "Pas de régression, plan publié pour l'année en cours"],
+      ["Trois ans au plus tard, ou à la refonte, ou après le RGAA 5", "Nouvel audit complet", "Déclaration renouvelée"]
+    ]}],
+    ["p", "La durée des corrections varie bien plus que celle de l'audit : quelques semaines lorsque les défauts sont concentrés dans quelques composants, plusieurs mois lorsque l'architecture front-end doit être reprise. Si vous souhaitez planifier votre audit, notre page [[svc:audit-rgaa|audit RGAA]] présente le contenu de la prestation, et les [[sector:grands-comptes|grands comptes]] soumis à l'article 47 y trouveront les mêmes livrables."]
+  ],
+  "faq": [
+    ["Combien de pages faut-il auditer pour un audit RGAA ?", "La méthode officielle ne fixe aucun nombre de pages. Elle impose une composition : pages obligatoires lorsqu'elles existent, au moins une page par type de service, au moins un document téléchargeable, toutes les étapes des processus, des pages au contenu différent et au moins 10 % de pages tirées au hasard. Pour un site courant avec un espace connecté, cela représente souvent une vingtaine de pages ou d'écrans."],
+    ["Combien de temps dure un audit RGAA ?", "La durée dépend de l'échantillon, du nombre de parcours et de plateformes, et de la disponibilité des accès. Dans notre cabinet, le délai moyen entre le lancement et la remise du rapport est de trois semaines. Les corrections et le contre-audit prennent ensuite de quelques semaines à plusieurs mois selon la nature des défauts."],
+    ["Peut-on faire un audit RGAA soi-même ?", "Oui. L'auto-évaluation est admise si elle est fiable et représentative : auditeurs formés aux 106 critères, pratique des technologies d'assistance, échantillon conforme à la méthode. L'outil Ara de la DINUM aide à structurer les résultats, mais ne réalise pas l'audit. Un regard externe reste préférable pour éviter un taux surévalué, surtout lorsque l'équipe qui audite a conçu le site."],
+    ["Un audit RGAA est-il valable pour l'European Accessibility Act ?", "Le RGAA repose sur les WCAG, que reprend la norme EN 301 549 pour le web. Un audit RGAA couvre donc une grande partie des exigences, mais l'EAA fixe ses propres exigences, pour lesquelles la norme EN 301 549 sert de référence technique, et certaines dépassent le contenu web, comme l'information sur l'accessibilité du service. Pour une entreprise visée par l'EAA, un audit selon la norme EN 301 549 est la preuve la plus directe."],
+    ["Faut-il refaire l'audit à la sortie du RGAA 5 ?", "Pas immédiatement. Les déclarations publiées avant le RGAA 5 restent valables dix-huit mois après sa publication, sans dépasser trois ans à compter de leur propre publication. La DINUM demande de ne pas suspendre les travaux fondés sur le RGAA 4.1.2. Planifiez le prochain audit complet selon la nouvelle version dans ce délai, ou plus tôt en cas de refonte."],
+    ["Quelle différence entre un audit RGAA et un contre-audit ?", "L'audit établit l'état de conformité sur un échantillon complet et produit le rapport, la grille, le plan d'action et la déclaration. Le contre-audit intervient après les corrections : il vérifie, sur les mêmes pages, que les défauts relevés ont disparu, sans en introduire de nouveaux, puis permet de mettre à jour le taux et la déclaration."],
+    ["L'audit RGAA doit-il couvrir les PDF ?", "Oui, lorsqu'ils servent au service. La méthode impose au moins un document téléchargeable pertinent par type de service, et le critère 13.3 exige, si nécessaire, une version accessible de chaque document bureautique en téléchargement. L'Arcom a d'ailleurs retenu un avis d'impôt en PDF sans titre, sans langue et sans balisage parmi les manquements relevés sur impots.gouv.fr."]
+  ],
+  "cta_svc": "audit-rgaa",
+  "cta_title": "Vous préparez un audit RGAA ?",
+  "cta_text": "Décrivez-nous votre service : nous vous proposons un échantillon, un calendrier et la liste des accès à préparer, avant tout engagement.",
+  "related": ["declaration", "normes", "france"]
+}

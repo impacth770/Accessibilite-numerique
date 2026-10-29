@@ -675,7 +675,7 @@
   ],
   [
    "p",
-   "Unabhängig vom Standard folgt ein seriöses Barrierefreiheitsaudit denselben Schritten. Was sich unterscheidet, sind der Kriterienkatalog und die Form des Ergebnisses. Unser [[article:guide|Leitfaden zur digitalen Barrierefreiheit]] stellt das Vorgehen insgesamt vor; hier der Ablauf eines Konformitätsaudits."
+   "Unabhängig vom Standard folgt ein seriöses Barrierefreiheitsaudit denselben Schritten. Was sich unterscheidet, sind der Kriterienkatalog und die Form des Ergebnisses. Unser [[article:guide|Leitfaden zur digitalen Barrierefreiheit]] stellt das Vorgehen insgesamt vor; hier der Ablauf eines Konformitätsaudits. Für ein RGAA-Audit im Besonderen beschreiben wir [[article:audit-rgaa|den Ablauf Woche für Woche, die Vorbereitung und das Lesen des Berichts]]."
   ],
   [
    "ol",
@@ -845,5 +845,6 @@
   "eaa",
   "france"
  ],
- "cluster": "normes"
+ "cluster": "normes",
+ "modified": "2026-10-29"
 }

@@ -174,7 +174,7 @@
   ],
   [
    "p",
-   "Für die Website einer Gemeinde könnte eine realistische Stichprobe die Startseite, den Kontakt, das Impressum, die Seite zur Barrierefreiheit, die Sitemap, eine Suchergebnisseite, eine Nachricht, das Merkblatt zu einem Verwaltungsverfahren, die vier Schritte der Anmeldung zur Schulkantine mit Online-Zahlung, einen Ratsbeschluss als PDF, den Veranstaltungskalender, eine Seite mit interaktiver Karte und zwei ausgeloste Seiten umfassen. Der klassische Fehler besteht darin, die Schritte eines Prozesses wegzulassen, weil dafür ein Testkonto nötig ist. Gerade diese Schritte zählen für die Nutzer aber am meisten, und ein Kriterium gilt für einen Prozess nur dann als erfüllt, wenn es auf jedem seiner Schritte erfüllt ist."
+   "Für die Website einer Gemeinde könnte eine realistische Stichprobe die Startseite, den Kontakt, das Impressum, die Seite zur Barrierefreiheit, die Sitemap, eine Suchergebnisseite, eine Nachricht, das Merkblatt zu einem Verwaltungsverfahren, die vier Schritte der Anmeldung zur Schulkantine mit Online-Zahlung, einen Ratsbeschluss als PDF, den Veranstaltungskalender, eine Seite mit interaktiver Karte und zwei ausgeloste Seiten umfassen. Der klassische Fehler besteht darin, die Schritte eines Prozesses wegzulassen, weil dafür ein Testkonto nötig ist. Gerade diese Schritte zählen für die Nutzer aber am meisten, und ein Kriterium gilt für einen Prozess nur dann als erfüllt, wenn es auf jedem seiner Schritte erfüllt ist. Wie Sie Testkonten und Zugänge vorbereiten, damit diese Prozesse geprüft werden können, erklärt unser Beitrag zum [[article:audit-rgaa|Ablauf eines RGAA-Audits]]."
   ],
   [
    "h3",
@@ -958,5 +958,6 @@
   "normes",
   "guide"
  ],
- "cluster": "methode"
+ "cluster": "methode",
+ "modified": "2026-10-29"
 }

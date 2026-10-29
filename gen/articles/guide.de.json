@@ -442,7 +442,7 @@
   ],
   [
    "p",
-   "Was die Dauer betrifft, rechnet man beim Audit einer Website mittlerer Komplexität eher in Wochen als in Monaten: In unserem Beratungsunternehmen dauert ein Audit im Durchschnitt drei Wochen. Die Korrekturen nehmen meist mehr Zeit in Anspruch als das Audit, von einigen Wochen, wenn sich die Mängel auf wenige Komponenten konzentrieren, bis zu mehreren Monaten, wenn die Frontend-Architektur überarbeitet werden muss. Ein Relaunch ist der beste Zeitpunkt, um Barrierefreiheit einzubauen: Von den ersten Entwürfen an berücksichtigt, kostet sie nur einen Bruchteil dessen, was Korrekturen nach dem Livegang kosten."
+   "Was die Dauer betrifft, rechnet man beim Audit einer Website mittlerer Komplexität eher in Wochen als in Monaten: In unserem Beratungsunternehmen dauert ein Audit im Durchschnitt drei Wochen. Die Korrekturen nehmen meist mehr Zeit in Anspruch als das Audit, von einigen Wochen, wenn sich die Mängel auf wenige Komponenten konzentrieren, bis zu mehreren Monaten, wenn die Frontend-Architektur überarbeitet werden muss. Ein Relaunch ist der beste Zeitpunkt, um Barrierefreiheit einzubauen: Von den ersten Entwürfen an berücksichtigt, kostet sie nur einen Bruchteil dessen, was Korrekturen nach dem Livegang kosten. Was diese drei Wochen umfassen und was Ihre Organisation vorbereiten muss, beschreibt unser Beitrag über [[article:audit-rgaa|die Schritte eines RGAA-Audits]]."
   ],
   [
    "p",
@@ -608,5 +608,6 @@
   "normes",
   "france"
  ],
- "cluster": "pilier"
+ "cluster": "pilier",
+ "modified": "2026-10-29"
 }

@@ -650,7 +650,7 @@
   ],
   [
    "p",
-   "Quel que soit le référentiel, un audit d'accessibilité sérieux suit les mêmes étapes. Ce qui varie, ce sont la grille de critères et la forme du résultat. Notre [[article:guide|guide de l'accessibilité numérique]] présente la démarche d'ensemble ; voici le déroulé d'un audit de conformité."
+   "Quel que soit le référentiel, un audit d'accessibilité sérieux suit les mêmes étapes. Ce qui varie, ce sont la grille de critères et la forme du résultat. Notre [[article:guide|guide de l'accessibilité numérique]] présente la démarche d'ensemble ; voici le déroulé d'un audit de conformité. Pour un audit RGAA en particulier, nous détaillons [[article:audit-rgaa|le déroulé semaine par semaine, la préparation et la lecture du rapport]]."
   ],
   [
    "ol",
@@ -820,5 +820,6 @@
   "eaa",
   "france"
  ],
- "cluster": "normes"
+ "cluster": "normes",
+ "modified": "2026-10-29"
 }

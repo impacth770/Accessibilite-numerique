@@ -170,7 +170,7 @@
   ],
   [
    "p",
-   "Pour un site de commune, un échantillon réaliste pourrait réunir l'accueil, le contact, les mentions légales, la page Accessibilité, le plan du site, une page de résultats de recherche, une actualité, la fiche d'une démarche, les quatre étapes d'une inscription à la cantine avec paiement en ligne, une délibération en PDF, l'agenda, une page avec carte interactive et deux pages tirées au sort. Le piège classique consiste à écarter les étapes d'un processus parce qu'elles demandent un compte de test. Ce sont pourtant celles qui comptent le plus pour l'usager, et un critère n'est validé pour un processus que s'il l'est sur chacune de ses étapes."
+   "Pour un site de commune, un échantillon réaliste pourrait réunir l'accueil, le contact, les mentions légales, la page Accessibilité, le plan du site, une page de résultats de recherche, une actualité, la fiche d'une démarche, les quatre étapes d'une inscription à la cantine avec paiement en ligne, une délibération en PDF, l'agenda, une page avec carte interactive et deux pages tirées au sort. Le piège classique consiste à écarter les étapes d'un processus parce qu'elles demandent un compte de test. Ce sont pourtant celles qui comptent le plus pour l'usager, et un critère n'est validé pour un processus que s'il l'est sur chacune de ses étapes. Pour préparer les comptes de test et les accès qui permettent d'auditer ces processus, voyez notre article sur [[article:audit-rgaa|le déroulé d'un audit RGAA]]."
   ],
   [
    "h3",
@@ -863,5 +863,6 @@
   "normes",
   "guide"
  ],
- "cluster": "methode"
+ "cluster": "methode",
+ "modified": "2026-10-29"
 }

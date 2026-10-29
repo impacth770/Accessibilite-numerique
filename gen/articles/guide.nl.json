@@ -483,7 +483,7 @@
   ],
   [
    "p",
-   "Wat de doorlooptijd betreft: de audit van een website van gemiddelde complexiteit telt u eerder in weken dan in maanden; bij ons bedraagt de gemiddelde doorlooptijd van een audit drie weken. De correcties duren meestal langer dan de audit, van enkele weken voor fouten die in een paar componenten zitten tot meerdere maanden wanneer de front-endarchitectuur herzien moet worden. Een vernieuwing van de website is het beste moment om toegankelijkheid in te bouwen: als u er vanaf de wireframes rekening mee houdt, kost het een fractie van correcties na de lancering."
+   "Wat de doorlooptijd betreft: de audit van een website van gemiddelde complexiteit telt u eerder in weken dan in maanden; bij ons bedraagt de gemiddelde doorlooptijd van een audit drie weken. De correcties duren meestal langer dan de audit, van enkele weken voor fouten die in een paar componenten zitten tot meerdere maanden wanneer de front-endarchitectuur herzien moet worden. Een vernieuwing van de website is het beste moment om toegankelijkheid in te bouwen: als u er vanaf de wireframes rekening mee houdt, kost het een fractie van correcties na de lancering. Wat die drie weken inhouden en wat uw organisatie moet voorbereiden, beschrijven we in ons artikel over [[article:audit-rgaa|de stappen van een RGAA-audit]]."
   ],
   [
    "p",
@@ -649,5 +649,6 @@
   "normes",
   "france"
  ],
- "cluster": "pilier"
+ "cluster": "pilier",
+ "modified": "2026-10-29"
 }

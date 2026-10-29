@@ -174,7 +174,7 @@
   ],
   [
    "p",
-   "Voor de website van een gemeente kan een realistische steekproef bestaan uit de homepage, de contactpagina, de wettelijke vermeldingen, de pagina Toegankelijkheid, de sitemap, een pagina met zoekresultaten, een nieuwsbericht, de fiche van een aanvraag, de vier stappen van een inschrijving voor de schoolmaaltijden met online betaling, een gemeenteraadsbesluit in pdf, de agenda, een pagina met een interactieve kaart en twee willekeurig gekozen pagina’s. De klassieke valkuil is de stappen van een proces weg te laten omdat ze een testaccount vereisen. Net die stappen tellen het zwaarst voor de gebruiker, en een criterium is voor een proces alleen gevalideerd als het op elke stap gevalideerd is."
+   "Voor de website van een gemeente kan een realistische steekproef bestaan uit de homepage, de contactpagina, de wettelijke vermeldingen, de pagina Toegankelijkheid, de sitemap, een pagina met zoekresultaten, een nieuwsbericht, de fiche van een aanvraag, de vier stappen van een inschrijving voor de schoolmaaltijden met online betaling, een gemeenteraadsbesluit in pdf, de agenda, een pagina met een interactieve kaart en twee willekeurig gekozen pagina’s. De klassieke valkuil is de stappen van een proces weg te laten omdat ze een testaccount vereisen. Net die stappen tellen het zwaarst voor de gebruiker, en een criterium is voor een proces alleen gevalideerd als het op elke stap gevalideerd is. Hoe u testaccounts en toegang voorbereidt om die processen te kunnen auditen, leest u in ons artikel over [[article:audit-rgaa|het verloop van een RGAA-audit]]."
   ],
   [
    "h3",
@@ -1118,5 +1118,6 @@
   "normes",
   "guide"
  ],
- "cluster": "methode"
+ "cluster": "methode",
+ "modified": "2026-10-29"
 }

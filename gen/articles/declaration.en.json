@@ -170,7 +170,7 @@
   ],
   [
    "p",
-   "For a municipal website, a realistic sample might bring together the home page, contact page, legal notice, Accessibility page, site map, a search results page, a news item, the page describing an administrative procedure, the four steps of a school canteen registration with online payment, a council resolution in PDF, the events calendar, a page with an interactive map and two pages drawn at random. For a company’s customer area, the equivalent would be the login page, the account dashboard, every step of a subscription or order, the downloadable invoice and the help centre. The classic trap is to leave out the steps of a process because they require a test account. Yet these are the pages that matter most to users, and a criterion is only met for a process if it is met on every one of its steps."
+   "For a municipal website, a realistic sample might bring together the home page, contact page, legal notice, Accessibility page, site map, a search results page, a news item, the page describing an administrative procedure, the four steps of a school canteen registration with online payment, a council resolution in PDF, the events calendar, a page with an interactive map and two pages drawn at random. For a company’s customer area, the equivalent would be the login page, the account dashboard, every step of a subscription or order, the downloadable invoice and the help centre. The classic trap is to leave out the steps of a process because they require a test account. Yet these are the pages that matter most to users, and a criterion is only met for a process if it is met on every one of its steps. To prepare the test accounts and access needed to audit these processes, see our article on [[article:audit-rgaa|how an RGAA audit runs]]."
   ],
   [
    "h3",
@@ -863,5 +863,6 @@
   "normes",
   "guide"
  ],
- "cluster": "methode"
+ "cluster": "methode",
+ "modified": "2026-10-29"
 }

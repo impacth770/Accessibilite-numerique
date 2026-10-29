@@ -662,7 +662,7 @@
   ],
   [
    "p",
-   "Welk referentiekader ook geldt, een degelijke toegankelijkheidsaudit doorloopt dezelfde stappen. Wat verschilt, zijn het criteriaraster en de vorm van het resultaat. Onze [[article:guide|gids voor digitale toegankelijkheid]] beschrijft de volledige aanpak; hieronder ziet u het verloop van een conformiteitsaudit."
+   "Welk referentiekader ook geldt, een degelijke toegankelijkheidsaudit doorloopt dezelfde stappen. Wat verschilt, zijn het criteriaraster en de vorm van het resultaat. Onze [[article:guide|gids voor digitale toegankelijkheid]] beschrijft de volledige aanpak; hieronder ziet u het verloop van een conformiteitsaudit. Voor een RGAA-audit in het bijzonder beschrijven we [[article:audit-rgaa|het verloop week per week, de voorbereiding en het lezen van het rapport]]."
   ],
   [
    "ol",
@@ -832,5 +832,6 @@
   "eaa",
   "france"
  ],
- "cluster": "normes"
+ "cluster": "normes",
+ "modified": "2026-10-29"
 }

@@ -650,7 +650,7 @@
   ],
   [
    "p",
-   "Whatever the framework, a serious accessibility audit follows the same steps. What varies is the set of criteria and the form of the result. Our [[article:guide|guide to digital accessibility]] presents the overall approach; here is how a compliance audit unfolds."
+   "Whatever the framework, a serious accessibility audit follows the same steps. What varies is the set of criteria and the form of the result. Our [[article:guide|guide to digital accessibility]] presents the overall approach; here is how a compliance audit unfolds. For an RGAA audit specifically, we set out [[article:audit-rgaa|the week-by-week process, the preparation and how to read the report]]."
   ],
   [
    "ol",
@@ -820,5 +820,6 @@
   "eaa",
   "france"
  ],
- "cluster": "normes"
+ "cluster": "normes",
+ "modified": "2026-10-29"
 }

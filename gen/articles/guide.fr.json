@@ -442,7 +442,7 @@
   ],
   [
    "p",
-   "Côté délais, l'audit d'un site de complexité courante se compte en semaines plutôt qu'en mois : dans notre cabinet, le délai moyen d'un audit est de trois semaines. Les corrections prennent généralement plus de temps que l'audit, de quelques semaines pour des défauts concentrés dans quelques composants à plusieurs mois lorsque l'architecture front-end doit être reprise. Une refonte est le meilleur moment pour intégrer l'accessibilité : prise en compte dès les maquettes, elle coûte une fraction de ce que coûtent des corrections après la mise en ligne."
+   "Côté délais, l'audit d'un site de complexité courante se compte en semaines plutôt qu'en mois : dans notre cabinet, le délai moyen d'un audit est de trois semaines. Les corrections prennent généralement plus de temps que l'audit, de quelques semaines pour des défauts concentrés dans quelques composants à plusieurs mois lorsque l'architecture front-end doit être reprise. Une refonte est le meilleur moment pour intégrer l'accessibilité : prise en compte dès les maquettes, elle coûte une fraction de ce que coûtent des corrections après la mise en ligne. Ce que recouvrent ces trois semaines, et ce que votre organisation doit préparer, est décrit dans notre article sur [[article:audit-rgaa|les étapes d'un audit RGAA]]."
   ],
   [
    "p",
@@ -608,5 +608,6 @@
   "normes",
   "france"
  ],
- "cluster": "pilier"
+ "cluster": "pilier",
+ "modified": "2026-10-29"
 }
