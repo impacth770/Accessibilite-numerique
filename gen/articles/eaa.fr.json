@@ -118,7 +118,7 @@
   ],
   [
    "p",
-   "Le module de paiement mérite une attention particulière, car il est presque toujours fourni par un prestataire. L'EAA ne déplace pas la responsabilité pour autant : c'est le marchand qui fournit le service de commerce électronique au consommateur. Demandez donc à vos prestataires de paiement, de signature électronique et de captcha leurs propres éléments de conformité, et testez le parcours complet, de la fiche produit à la confirmation de commande."
+   "Le module de paiement mérite une attention particulière, car il est presque toujours fourni par un prestataire. L'EAA ne déplace pas la responsabilité pour autant : c'est le marchand qui fournit le service de commerce électronique au consommateur. Demandez donc à vos prestataires de paiement, de signature électronique et de captcha leurs propres éléments de conformité, et testez le parcours complet, de la fiche produit à la confirmation de commande. Notre [[article:e-commerce|check-list d'accessibilité e-commerce, écran par écran]] détaille ces contrôles, de la recherche au paiement."
   ],
   [
    "h3",
@@ -626,5 +626,6 @@
   "belgique",
   "normes"
  ],
- "cluster": "reglementation"
+ "cluster": "reglementation",
+ "modified": "2026-10-31"
 }

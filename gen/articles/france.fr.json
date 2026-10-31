@@ -141,7 +141,7 @@
   ],
   [
    "p",
-   "Une entreprise sous le seuil n'est pas pour autant hors de tout cadre. Si elle propose aux consommateurs un service couvert par l'EAA, comme une boutique en ligne ou une application de réservation de transport, elle doit respecter les exigences du code de la consommation, sauf si elle est une microentreprise de services, c'est-à-dire moins de 10 salariés et un chiffre d'affaires annuel ou un total de bilan n'excédant pas 2 millions d'euros. Elle peut aussi être tenue contractuellement par un client public qui inscrit le RGAA dans son cahier des charges. La page [[sector:pme|PME et ETI]] aide à faire ce diagnostic."
+   "Une entreprise sous le seuil n'est pas pour autant hors de tout cadre. Si elle propose aux consommateurs un service couvert par l'EAA, comme une boutique en ligne ou une application de réservation de transport, elle doit respecter les exigences du code de la consommation, sauf si elle est une microentreprise de services, c'est-à-dire moins de 10 salariés et un chiffre d'affaires annuel ou un total de bilan n'excédant pas 2 millions d'euros. Elle peut aussi être tenue contractuellement par un client public qui inscrit le RGAA dans son cahier des charges. La page [[sector:pme|PME et ETI]] aide à faire ce diagnostic. Pour une boutique en ligne, les points à vérifier sont détaillés dans notre [[article:e-commerce|check-list EAA du parcours d'achat]]."
   ],
   [
    "h2",
@@ -653,6 +653,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-10-28",
+ "modified": "2026-10-31",
  "cluster": "reglementation"
 }

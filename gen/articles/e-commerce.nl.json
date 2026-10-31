@@ -1,0 +1,706 @@
+{
+ "slug": "digitale-toegankelijkheid-webshop",
+ "h1": "Digitale toegankelijkheid van uw webshop: de EAA-checklist, scherm per scherm",
+ "crumb": "Toegankelijke webshop",
+ "meta_title": "Toegankelijke webshop: EAA-checklist scherm per scherm",
+ "meta_desc": "Zoeken, productpagina, winkelmandje, betaling, account: de EAA-checklist voor de digitale toegankelijkheid van uw webshop, met valkuilen en bewijsstukken.",
+ "card_desc": "De controles voor elk scherm van een webshop, de externe componenten om in het oog te houden en de bewijzen die de toezichthouder vraagt.",
+ "cat": "guide",
+ "where": "Europa",
+ "cover": "E-COM",
+ "cover_note": [
+  "Richtlijn (EU) 2019/882, bijlage I",
+  "Van toepassing sinds 28 juni 2025"
+ ],
+ "date": "2026-10-31",
+ "cluster": "secteurs",
+ "lead": "Sinds 28 juni 2025 is de digitale toegankelijkheid van een webshop geen goede praktijk meer maar een verplichting: de European Accessibility Act eist dat websites en apps voor e-handel een persoon met een handicap toelaten om zelfstandig te zoeken, te kiezen, te bestellen en te betalen. De meeste pagina’s over het onderwerp sommen algemene principes op; deze pagina volgt het aankoopproces scherm per scherm, van de homepage tot de factuur, met voor elke stap de controles die u zelf kunt uitvoeren, het betrokken WCAG-criterium en de gebreken die we bij audits het vaakst tegenkomen. Ze eindigt met de bewijsstukken die u moet bewaren, de vragen voor uw betaaldienstaanbieders en een actieplan van 90 dagen om uw toegankelijke webshop op poten te zetten.",
+ "body": [
+  [
+   "h2",
+   "betrokken-webshops",
+   "Toegankelijkheid van webshops: welke e-handelsdiensten onder de EAA vallen"
+  ],
+  [
+   "p",
+   "De European Accessibility Act, of [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/nld|richtlijn (EU) 2019/882 betreffende de toegankelijkheidsvoorschriften voor producten en diensten]], geldt voor e-handelsdiensten die aan consumenten worden verleend. De richtlijn omschrijft die als diensten die op afstand worden verleend via websites en diensten op mobiele apparaten, langs elektronische weg en op individueel verzoek van een consument, met het oog op het sluiten van een consumentenovereenkomst. Drie voorwaarden moeten dus samen vervuld zijn: een overeenkomst die online wordt gesloten, met een consument, via een website of een app."
+  ],
+  [
+   "p",
+   "Doorslaggevend is niet de sector waarin u actief bent, maar wat de pagina doet. Een vitrinesite die een merk voorstelt zonder dat men er iets kan bestellen, is op zich geen e-handelsdienst. Zodra de site toelaat te kopen, een dienst te reserveren, een abonnement af te sluiten of te betalen, valt hij binnen het toepassingsgebied, of hij nu schoenen, concerttickets, yogalessen of parkeerplaatsen verkoopt. De sectorale details, onder meer voor banken en vervoer, staan in het artikel over [[article:eaa|wat de toezichthouders controleren in het kader van de European Accessibility Act]]."
+  ],
+  [
+   "table",
+   {
+    "caption": "Valt uw webshop onder de EAA? De meest voorkomende situaties",
+    "head": [
+     "Situatie",
+     "Valt onder de EAA?",
+     "Aandachtspunt"
+    ],
+    "rows": [
+     [
+      "Webshop die aan particulieren verkoopt",
+      "Ja",
+      "Het volledige traject, van zoeken tot klantendienst na de aankoop, moet bruikbaar zijn"
+     ],
+     [
+      "Mobiele app om te bestellen of te reserveren",
+      "Ja",
+      "Apps voor iOS en Android vallen er net zo goed onder als de website"
+     ],
+     [
+      "Bestelplatform dat voorbehouden is aan professionelen",
+      "Nee, niet als e-handelsdienst",
+      "Controleer of een particulier werkelijk niet kan bestellen: een facultatief veld “btw-nummer” volstaat niet"
+     ],
+     [
+      "Gemengde site, voor particulieren en professionelen",
+      "Ja, voor het traject voor het grote publiek",
+      "Eenzelfde bestelproces bedient vaak beide doelgroepen: dat is het traject dat conform moet zijn"
+     ],
+     [
+      "Micro-onderneming die diensten verleent: minder dan 10 personen en een jaaromzet of balanstotaal van ten hoogste 2 miljoen euro",
+      "Vrijgesteld door de richtlijn",
+      "In België geldt de uitsluiting maar tot 28 juni 2030; bewaar de berekening van de drempels"
+     ],
+     [
+      "Zwitserse of Britse onderneming die aan consumenten in de Unie verkoopt",
+      "Ja, voor die verkopen",
+      "De eisen gelden voor elke dienst aan een consument in de Unie, ongeacht het land waar de verkoper gevestigd is"
+     ],
+     [
+      "Vitrinesite zonder online bestelling",
+      "Nee, niet als e-handelsdienst",
+      "Hij valt er wel onder zodra een module voor reservering of betaling wordt toegevoegd"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "In Frankrijk kunnen twee regelingen samenvallen. Een onderneming waarvan de in Frankrijk gerealiseerde omzet meer dan 250 miljoen euro bedraagt, valt ook onder artikel 47 van de wet van 11 februari 2005: toegankelijkheidsverklaring, vermelding van de conformiteit op de homepage, meerjarenschema en evaluatie volgens de RGAA. Die dubbele verplichting wordt uitgelegd in het artikel over [[article:france|de verplichtingen inzake digitale toegankelijkheid in Frankrijk]]. Voor een kleine of middelgrote onderneming is de eerste stap nagaan of ze in aanmerking komt voor de vrijstelling, waarbij de pagina [[sector:pme|digitale toegankelijkheid voor kmo’s en middelgrote ondernemingen]] helpt."
+  ],
+  [
+   "h3",
+   "Belgische webshops in Vlaanderen en Brussel"
+  ],
+  [
+   "p",
+   "In België is de richtlijn voor e-handel en bankdiensten voor consumenten omgezet door de wet van 5 november 2023, die de regels heeft ingevoegd in boek VIII van het Wetboek van economisch recht. Het is een federale regeling: een webshop in Antwerpen, Gent, Hasselt of Brussel valt onder dezelfde tekst en onder hetzelfde toezicht, ongeacht het Gewest waar hij gevestigd is. Het Vlaamse expertisecentrum Inter vat op zijn [[https://www.vlaanderen.be/inter/overheden-en-professionelen/werken-aan-digitale-toegankelijkheid/eu-richtlijn-2019-882-voor-b2c-eaa|pagina over de EAA voor B2C-diensten]] samen dat het gaat om diensten waarbij consumenten online betalen, boeken of een overeenkomst sluiten, en dat de dienstverlener verantwoordelijk blijft, ook wanneer een deel van de dienst via een extern platform loopt."
+  ],
+  [
+   "p",
+   "Het toezicht ligt bij de Algemene Directie Economische Inspectie van de FOD Economie, die klachten behandelt en kan optreden tegen inbreuken. Het belangrijkste Belgische verschil met de richtlijn betreft de kleinste ondernemingen: micro-ondernemingen in de e-handel zijn niet definitief vrijgesteld, maar slechts uitgesloten tot 28 juni 2030. Het Agentschap Innoveren en Ondernemen somt in zijn [[https://www.vlaio.be/nl/nieuws/nieuwe-regels-rond-digitale-toegankelijkheid-voor-e-handelsdiensten|nieuwsbericht over de nieuwe regels voor e-handelsdiensten]] ook enkele situaties op die buiten de regels vallen: platformen die enkel aan bedrijven verkopen, websites met uitsluitend redactionele inhoud en reserveringssites zonder betalingsverplichting. Voor een kleine Vlaamse of Brusselse webshop is de les eenvoudig: een vernieuwing van de site die vandaag wordt gepland, staat in 2030 nog online, dus neem toegankelijkheid nu al mee in het lastenboek."
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "Een website of app is geen “product” in de zin van de richtlijn: er geldt geen overgangsperiode. Een webshop die al vóór 28 juni 2025 online stond, moet sinds die datum toegankelijk zijn. Alleen gerichte uitsluitingen blijven bestaan, zoals vooraf opgenomen tijdgebaseerde media en kantoordocumenten die vóór die datum zijn gepubliceerd, en de voortzetting, uiterlijk tot 28 juni 2030, van dienstenovereenkomsten die vóór 28 juni 2025 zijn gesloten."
+  ],
+  [
+   "h2",
+   "eaa-eisen-webshop",
+   "Wat de EAA concreet eist van een webshop"
+  ],
+  [
+   "p",
+   "Bijlage I van de richtlijn noemt geen enkele norm. Ze legt resultaten vast. Voor alle diensten vraagt ze onder meer dat websites en apps waarneembaar, bedienbaar, begrijpelijk en robuust zijn, op een consistente en passende manier, en dat de informatie over de werking van de dienst en over de toegankelijkheidskenmerken in een toegankelijke vorm wordt verstrekt. Voor e-handel voegt ze drie eigen eisen toe, die het Luxemburgse toezichtsbureau, met voorbeelden van oplossingen, toelicht in zijn [[https://accessibilite-produits-services.public.lu/dam-assets/modles/guides/solutions/services-exigences-supplmentaires-commerce-lectronique.pdf|gids over de bijkomende eisen voor e-handel (in het Frans)]]:"
+  ],
+  [
+   "ul",
+   [
+    "informatie verstrekken over de toegankelijkheid van de verkochte producten en diensten, wanneer de verantwoordelijke marktdeelnemer, bijvoorbeeld de fabrikant, die informatie meedeelt;",
+    "de functies voor identificatie, beveiliging en betaling toegankelijk maken wanneer ze in het kader van de dienst worden aangeboden;",
+    "methoden voor identificatie, elektronische handtekening, beveiliging en betaling aanbieden die waarneembaar, bedienbaar, begrijpelijk en robuust zijn."
+   ]
+  ],
+  [
+   "p",
+   "De derde eis heeft de grootste gevolgen. Ze viseert precies de bouwstenen die de handelaar niet zelf ontwikkelt: de betaalpagina van de betaaldienstaanbieder, de sterke authenticatie van de kaarthouder, de module om een huur- of kredietovereenkomst te ondertekenen. Het Luxemburgse bureau geeft twee voorbeelden van oplossingen: een betaalinterface die met de stem bediend kan worden, zodat een blinde persoon zelfstandig aankopen kan doen, en dialoogvensters voor identificatie die door een schermlezer gelezen kunnen worden."
+  ],
+  [
+   "p",
+   "In Frankrijk vertaalt [[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048180389|artikel D. 412-57 van de Franse Code de la consommation (in het Frans)]] die eisen naar gedragsverplichtingen voor de dienstverlener: de dienst ontwerpen en leveren volgens de eisen die bij ministerieel besluit zijn vastgelegd, schriftelijk en mondeling informatie opstellen en openbaar maken die uitlegt hoe de dienst eraan voldoet, die informatie bewaren zolang de dienst wordt aangeboden, procedures invoeren zodat de dienst conform blijft, corrigerende maatregelen nemen bij non-conformiteit en de autoriteiten daarover informeren, en ten slotte op gemotiveerd verzoek de elementen bezorgen die de conformiteit aantonen."
+  ],
+  [
+   "p",
+   "Om aan te tonen dat een traject die resultaten haalt, baseren auditors zich op de [[https://www.w3.org/Translations/WCAG22-nl/|WCAG 2.2-richtlijnen (geautoriseerde Nederlandse vertaling)]], die op 5 oktober 2023 een W3C-aanbeveling werden, en op de Europese norm EN 301 549. Geen enkele versie van die norm geeft al een vermoeden van conformiteit in het kader van de EAA, omdat ze nog niet in het Publicatieblad van de Unie is vermeld. In de praktijk is niveau AA van de WCAG 2.2 het veiligste doel: daarop sluit versie 4.1.1 van de norm aan, gepubliceerd op 2 september 2026 en nog niet vermeld in het Publicatieblad. De overeenkomsten tussen WCAG, EN 301 549, RGAA en RAWeb staan in onze vergelijking van de [[article:normes|normen voor digitale toegankelijkheid]]."
+  ],
+  [
+   "h2",
+   "checklist-gebruiken",
+   "Zo gebruikt u deze checklist voor een toegankelijke webshop"
+  ],
+  [
+   "p",
+   "De checklist hieronder volgt het traject van een klant. Voor elk scherm staat wat u moet controleren, tussen haakjes het nummer van het overeenkomstige WCAG 2.2-succescriterium, en het meest voorkomende gebrek. Ze vervangt geen volledige audit: ze laat een productteam toe om op één dag de grootste blokkades op te sporen, de correcties te prioriteren en een audit in goede omstandigheden voor te bereiden."
+  ],
+  [
+   "p",
+   "Vier handelingen volstaan voor de meeste controles, zonder enige technische kennis:"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Koppel de muis los.",
+     "Doorloop het scherm met de Tab-toets, ga terug met Shift + Tab, activeer met Enter of de spatiebalk en sluit met Esc. U moet altijd zien waar de focus staat en alles kunnen doen."
+    ],
+    [
+     "Zet een schermlezer aan.",
+     "VoiceOver op iPhone en Mac, TalkBack op Android, het gratis NVDA op Windows. Luister naar wat er wordt voorgelezen bij elke knop, elk veld, elke melding: een naam, een rol, een status."
+    ],
+    [
+     "Zoom in tot 200 % en maak het venster daarna 320 pixels breed.",
+     "De tekst moet groter worden zonder afgesneden te worden, en de pagina moet leesbaar blijven zonder horizontaal te scrollen (criteria 1.4.4 en 1.4.10)."
+    ],
+    [
+     "Test op een echte smartphone.",
+     "Het merendeel van de bestellingen verloopt via mobiel: controleer de grootte van de aanraakdoelen, complexe gebaren en de oriëntatie van het scherm."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Noteer elk gebrek met een schermafbeelding, het adres van de pagina, de browser en het gebruikte hulpmiddel. Die lijst wordt uw eerste opvolgingsdocument, en ze laat de auditor toe snel na te gaan of de vastgestelde problemen zijn opgelost."
+  ],
+  [
+   "h2",
+   "homepage-menu-banners",
+   "Scherm 1: homepage, menu en banners"
+  ],
+  [
+   "p",
+   "Op de homepage zitten zelden de zwaarste blokkades, maar wel de componenten die op elke pagina hinderen: de cookiebanner, het pop-upvenster om in te schrijven op de nieuwsbrief, het hoofdmenu en de promotiecarrousel. Een gebrek hier herhaalt zich op de hele site."
+  ],
+  [
+   "ul",
+   [
+    "De cookiebanner krijgt de focus wanneer hij verschijnt, wordt door de schermlezer voorgelezen en kan met het toetsenbord gesloten worden; de knoppen “Aanvaarden” en “Weigeren” hebben voldoende contrast (2.1.1, 1.4.3). Vaak voorkomend gebrek: een banner die onzichtbaar is voor de schermlezer maar intussen wel alle klikken blokkeert.",
+    "Een skiplink laat toe om rechtstreeks naar de hoofdinhoud te springen (2.4.1).",
+    "Het megamenu opent en sluit met het toetsenbord, en elke subcategorie is bereikbaar met Tab of de pijltjestoetsen; de knop die het menu opent, meldt of het “uitgevouwen” of “samengevouwen” is (2.1.1, 4.1.2).",
+    "Een carrousel die vanzelf draait, kan gepauzeerd worden (2.2.2) en de pijlen hebben een duidelijke naam, niet alleen een pictogram.",
+    "Het inschrijvingsvenster voor de nieuwsbrief verschijnt niet midden in een invoer, krijgt de focus, sluit met Esc en zet de focus terug waar hij stond.",
+    "Vaste promotiebanners verbergen het element met de focus niet volledig (2.4.11), een vaak voorkomend gebrek bij balken met “gratis levering” die op mobiel onderaan het scherm vastplakken.",
+    "Het logo, het pictogram van het winkelmandje en dat van het account hebben een toegankelijke naam; het winkelmandje meldt ook het aantal artikelen (1.1.1, 4.1.2)."
+   ]
+  ],
+  [
+   "p",
+   "Het contrast van tekst wordt gemeten volgens criterium 1.4.3: 4,5:1 voor gewone tekst, 3:1 voor grote tekst. Doorgestreepte prijzen in lichtgrijs, juridische vermeldingen in kleine letters en witte labels “nieuw” op een pastelkleurige achtergrond slagen vaak niet. Criterium 1.4.11 eist ook een contrast van 3:1 voor de randen van invoervelden wanneer die nodig zijn om het veld te herkennen, en voor pictogrammen die nodig zijn om de inhoud te begrijpen."
+  ],
+  [
+   "h2",
+   "zoeken-productlijsten-filters",
+   "Scherm 2: zoekfunctie, productlijsten en filters"
+  ],
+  [
+   "p",
+   "Zoeken is vaak het eerste wat een klant met een schermlezer doet, omdat een catalogus pagina per pagina doorlopen veel tijd kost. In de resultatenlijsten en de filters zitten ook de meeste dynamische componenten die slecht worden weergegeven."
+  ],
+  [
+   "ul",
+   [
+    "Het zoekveld heeft een label, niet alleen een voorbeeldtekst die verdwijnt zodra u begint te typen (3.3.2).",
+    "Suggesties die tijdens het typen verschijnen, worden gemeld en kunnen met de pijltjestoetsen doorlopen worden; Enter start de zoekopdracht zonder dat de gebruiker vast komt te zitten.",
+    "Het aantal resultaten wordt gemeld na een zoekopdracht of na het toepassen van een filter, zonder de focus te verplaatsen: dat is een statusbericht (4.1.3).",
+    "Elke filter is een echt selectievakje of een echte knop waarvan de status “aangevinkt” of “toegepast” wordt weergegeven (4.1.2). Vaak voorkomend gebrek: klikbare kleurbolletjes die worden voorgelezen als “knop, knop, knop”.",
+    "De prijsschuifregelaar met twee handgrepen heeft een alternatief: twee velden “minimumprijs” en “maximumprijs”, of handgrepen die met het toetsenbord in te stellen zijn (2.1.1, 2.5.7).",
+    "Het wijzigen van de sortering of van een filter herlaadt de pagina niet zonder waarschuwing en stuurt de focus niet terug naar boven (3.2.2).",
+    "In de lijst heeft elke productkaart één hoofdlink waarvan de tekst de productnaam bevat, in plaats van drie identieke links “Bekijk” (2.4.4).",
+    "Oneindig scrollen wordt aangevuld met een knop “Meer producten tonen” en maakt de footer niet onbereikbaar, terwijl daar vaak de contactgegevens en de algemene verkoopvoorwaarden staan."
+   ]
+  ],
+  [
+   "p",
+   "Eén eenvoudige test vat dit scherm samen: zoek met een schermlezer naar “witte sneakers”, filter op uw maat en sorteer op oplopende prijs. Weet u niet bij elke stap hoeveel producten er nog getoond worden en welke filters actief zijn, dan is het traject niet zelfstandig bruikbaar."
+  ],
+  [
+   "h2",
+   "toegankelijke-productpagina",
+   "Scherm 3: een toegankelijke productpagina"
+  ],
+  [
+   "p",
+   "De productpagina is het scherm waar de aankoopbeslissing valt. Er staan afbeeldingen, keuzes tussen varianten, prijzen, beoordelingen en vaak een video. Het is ook daar dat bijlage I vraagt om informatie te geven over de toegankelijkheid van het verkochte product, wanneer de fabrikant die meedeelt."
+  ],
+  [
+   "table",
+   {
+    "caption": "Productpagina: prioritaire controles, WCAG 2.2-criterium en vaak voorkomend gebrek",
+    "head": [
+     "Element",
+     "Wat u moet controleren",
+     "Criterium",
+     "Vaak voorkomend gebrek"
+    ],
+    "rows": [
+     [
+      "Productfoto’s",
+      "Een nuttig tekstalternatief: kleur, materiaal, detail dat op de foto te zien is; niet de bestandsnaam",
+      "1.1.1",
+      "Alle afbeeldingen hebben dezelfde tekst, namelijk de productnaam"
+     ],
+     [
+      "Galerij en zoomfunctie",
+      "Miniaturen bereikbaar met het toetsenbord, zoom bruikbaar zonder muis, actieve afbeelding gemeld",
+      "2.1.1, 4.1.2",
+      "Zoom enkel bij muisaanwijzing, onbruikbaar met het toetsenbord en op mobiel"
+     ],
+     [
+      "Kleuren en maten",
+      "Elk bolletje heeft een naam (“marineblauw”, “maat 42”) en de geselecteerde status wordt weergegeven",
+      "1.1.1, 4.1.2",
+      "Kleurbolletjes zonder naam; onbeschikbare maat enkel aangeduid door een grijze tint"
+     ],
+     [
+      "Beschikbaarheid",
+      "De voorraad wordt in tekst vermeld, niet alleen met een groen of rood bolletje",
+      "1.4.1",
+      "“Op voorraad” alleen aangeduid met een kleur"
+     ],
+     [
+      "Prijs en promotie",
+      "Oude en nieuwe prijs in tekst van elkaar onderscheiden, niet alleen door de doorgestreepte stijl",
+      "1.3.1",
+      "De schermlezer leest “89 euro 59 euro” zonder te zeggen welke prijs geldt"
+     ],
+     [
+      "Klantenbeoordelingen",
+      "De score staat in tekst (“4,2 op 5, 128 beoordelingen”), niet alleen in sterren",
+      "1.1.1",
+      "Decoratieve sterren zonder tekstequivalent"
+     ],
+     [
+      "Maattabel",
+      "Een echte tabel met koppen, in een venster dat met het toetsenbord sluit",
+      "1.3.1, 2.1.2",
+      "Maattabel aangeboden als afbeelding"
+     ],
+     [
+      "Demonstratievideo",
+      "Ondertitels, benoemde bedieningsknoppen in de speler, geen automatisch afspelen met geluid",
+      "1.2.2, 1.4.2",
+      "Video start automatisch, pauzeknop zonder naam"
+     ],
+     [
+      "Knop “In winkelmandje”",
+      "Benoemde knop, bevestiging van de toevoeging gemeld zonder dat de gebruiker zijn positie verliest",
+      "4.1.2, 4.1.3",
+      "Stille toevoeging: de klant weet niet of het artikel in zijn winkelmandje zit"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Informatie over de toegankelijkheid van het product is een eis die specifiek voor e-handel geldt en vaak vergeten wordt. Ze betreft vooral producten die zelf onder de EAA vallen of waarvan de fabrikant de toegankelijkheid documenteert: een computer, een e-reader, een smartphone, een televisie. Levert de fabrikant die informatie, dan moet de productpagina ze overnemen, in een toegankelijke vorm. Voorzie er een apart veld voor in uw productinformatiesysteem en vraag de gegevens op bij uw leveranciers wanneer u een product in het assortiment opneemt."
+  ],
+  [
+   "p",
+   "De redactie telt evenveel als de code. Een goed geschreven tekstalternatief voor een jurk beschrijft wat een ziende persoon begrijpt wanneer hij de foto bekijkt: de snit, de lengte, het motief. Voor een redactieteam dat productteksten schrijft, is dat een vaardigheid die zich in enkele uren laat aanleren, en daar beginnen onze [[svc:formations|opleidingen digitale toegankelijkheid]] voor inhoudsteams vaak mee."
+  ],
+  [
+   "h2",
+   "winkelmandje-minicart",
+   "Scherm 4: winkelmandje en mini-winkelmandje"
+  ],
+  [
+   "p",
+   "Het winkelmandje is een zeer dynamisch scherm: elke wijziging van een hoeveelheid herberekent de totalen, de verzendkosten en soms de kortingen. Voor iemand die het scherm niet ziet, is elke wijziging die niet wordt gemeld een verloren stukje informatie."
+  ],
+  [
+   "ul",
+   [
+    "De knoppen “+” en “−” voor de hoeveelheid hebben een volledige naam (“hoeveelheid witte sneakers verhogen”) en de nieuwe hoeveelheid wordt gemeld (4.1.2, 4.1.3).",
+    "De verwijderknop vermeldt welk artikel hij verwijdert, en de verwijdering wordt met een bericht bevestigd (2.4.4, 4.1.3).",
+    "De bijwerking van het totaal en van de verzendkosten wordt gemeld, of het totaal staat minstens op een voorspelbare en leesbare plaats.",
+    "Het veld voor een kortingscode heeft een label; een geweigerde code geeft een foutmelding in tekst, gekoppeld aan het veld (3.3.1).",
+    "Het mini-winkelmandje dat als schuiflade opent, krijgt de focus, sluit met Esc en laat de focus niet wegglippen naar de pagina erachter (2.4.3).",
+    "Een winkelmandje dat “10 minuten gereserveerd” blijft of een sessie die verloopt, waarschuwt de gebruiker, geeft hem minstens twintig seconden om de termijn met een eenvoudige handeling te verlengen en laat toe die minstens tien keer te verlengen (2.2.1).",
+    "Aanraakdoelen meten minstens 24 bij 24 CSS-pixels of staan ver genoeg uit elkaar (2.5.8): de kleine kruisjes om een artikel te verwijderen zijn op mobiel een frequente bron van vergissingen."
+   ]
+  ],
+  [
+   "p",
+   "Cross-selling brengt een bijzonder probleem mee. Blokken “Misschien vindt u dit ook leuk” tussen het winkelmandje en de bestelknop maken het traject met het toetsenbord en de schermlezer langer. Plaats ze na de hoofdknop of in een zone die gemakkelijk over te slaan is."
+  ],
+  [
+   "h2",
+   "account-inloggen-captcha",
+   "Scherm 5: account aanmaken, inloggen en captcha"
+  ],
+  [
+   "p",
+   "Bij het aanmaken van een account en bij het inloggen worden gebreken echt blokkerend. Een blinde persoon kan een slecht beschreven afbeelding op een productpagina omzeilen; een captcha die ze niet kan waarnemen, kan ze niet omzeilen. Hier geldt ook de eis van bijlage I over identificatiemethoden."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Laat bestellen zonder account toe.",
+     "Een traject als gast vermindert het aantal schermen en velden. Het is geen verplichting, maar wel de eenvoudigste manier om de risico’s te beperken."
+    ],
+    [
+     "Geef elk veld een label en vermeld het doel ervan.",
+     "De velden voor naam, e-mailadres, telefoonnummer en postadres hebben het passende autocomplete-attribuut, zodat de browser ze automatisch kan invullen (1.3.5); instructies, zoals de vereisten voor het wachtwoord, staan vóór het invoerveld (3.3.2)."
+    ],
+    [
+     "Laat het plakken van het wachtwoord en van de ontvangen code toe.",
+     "Criterium 3.3.8 van de WCAG 2.2 verbiedt een cognitieve test, zoals tekens onthouden of overtypen, op te leggen zonder alternatief: kopiëren en plakken en wachtwoordbeheerders moeten werken."
+    ],
+    [
+     "Vervang de visuele captcha.",
+     "Een captcha met afbeeldingen of vervormde tekens moet een alternatief hebben dat niet op dezelfde vaardigheid steunt. Oplossingen die het gedrag op de achtergrond analyseren, zonder handeling van de gebruiker, of een verificatie via e-mail, geven minder problemen."
+    ],
+    [
+     "Toon een knop om het wachtwoord zichtbaar te maken.",
+     "Die helpt mensen met motorische beperkingen of geheugenproblemen, en de knop zelf moet een naam en een status hebben die worden weergegeven."
+    ],
+    [
+     "Schrijf bruikbare foutmeldingen.",
+     "“Ongeldig e-mailadres: het teken @ ontbreekt” in plaats van “Invoerfout”, naast het veld geplaatst en gemeld aan de schermlezer (3.3.1, 3.3.3)."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "De eenmalige code die per sms wordt verstuurd, verdient een specifieke test op mobiel. De gebruiker moet de app kunnen verlaten, het bericht lezen en terugkeren om de code in te voeren voordat die vervalt. Het automatisch invullen van de code door het besturingssysteem helpt veel, op voorwaarde dat het veld correct is gedeclareerd."
+  ],
+  [
+   "h2",
+   "levering-betaling-sterke-authenticatie",
+   "Scherm 6: levering, betaling en sterke authenticatie"
+  ],
+  [
+   "p",
+   "Het bestelproces, de checkout, is het deel van de site dat toezichthouders en klagers als eerste bekijken, omdat een gebrek daar de aankoop zelf verhindert. Het combineert formulieren die de handelaar zelf ontwikkelt met componenten van derden: de kaart met afhaalpunten, de pagina van de betaaldienstaanbieder, het authenticatievenster van de bank van de klant."
+  ],
+  [
+   "h3",
+   "Adres en leveringswijze"
+  ],
+  [
+   "ul",
+   [
+    "Het factuuradres kan het leveringsadres overnemen met een selectievakje, zonder dat de klant alles opnieuw moet invoeren (3.3.7).",
+    "Het afhaalpunt kan gekozen worden via een tekstlijst gesorteerd op afstand, naast de interactieve kaart, die zelden bruikbaar is met het toetsenbord en de schermlezer (1.1.1, 2.1.1).",
+    "Leveringsmomenten in een rooster vermelden in tekst de datum, het uur, de prijs en de beschikbaarheid van elk tijdslot, en het gekozen tijdslot wordt als geselecteerd weergegeven (1.3.1, 4.1.2).",
+    "De leveringswijzen zijn echte keuzerondjes, gegroepeerd onder een legende (1.3.1)."
+   ]
+  ],
+  [
+   "h3",
+   "Betaling en sterke authenticatie"
+  ],
+  [
+   "ul",
+   [
+    "De kaartvelden, vaak opgenomen in een frame van de betaaldienstaanbieder, hebben elk een label dat wordt weergegeven, ook voor de vervaldatum en de beveiligingscode (3.3.2, 4.1.2).",
+    "Het ingebedde frame heeft een titel en de focus gaat er met het toetsenbord gewoon in en weer uit (2.4.3).",
+    "Betaalmethoden die als logo worden getoond, hebben een tekstuele naam (1.1.1).",
+    "De stap van de sterke authenticatie, getoond door de bank van de klant, verloopt niet terwijl een schermlezergebruiker van de ene app naar de andere overschakelt; bij een mislukking laat een duidelijk bericht toe opnieuw te beginnen.",
+    "Vóór de bevestiging laat een overzicht toe de artikelen, het adres en het bedrag te controleren en te corrigeren (3.3.4).",
+    "Het selectievakje om de algemene voorwaarden te aanvaarden heeft een klikbaar label en de link naar de voorwaarden is toegankelijk; de laatste knop zegt wat hij doet, bijvoorbeeld “Bestelling met betalingsverplichting”, en is niet gewoon een pijltje."
+   ]
+  ],
+  [
+   "p",
+   "Een betrouwbare diagnose bestaat erin een echte bestelling te plaatsen, tot en met de betaling, met een schermlezer op de computer en daarna op mobiel, met een testkaart van de betaaldienstaanbieder. Op dat scenario levert een [[svc:audit-conformite|conformiteitsaudit volgens EN 301 549 en WCAG]] de meeste waarde op: hij stelt de lijst van gebreken op, maar ook wie ze moet verhelpen, de handelaar of de dienstverlener."
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "De handelaar blijft de verlener van de e-handelsdienst, ook wanneer de betaalpagina door een dienstverlener wordt gehost. Een gebrek in de betaalmodule is dus een gebrek in uw dienst."
+  ],
+  [
+   "h2",
+   "bevestiging-e-mails-klantendienst",
+   "Scherm 7: bevestiging, e-mails, facturen en klantendienst"
+  ],
+  [
+   "p",
+   "Het traject stopt niet bij de klik op “Bestellen”. De koper moet kunnen begrijpen dat de bestelling geplaatst is, de levering kunnen volgen, zijn factuur kunnen raadplegen, een artikel kunnen terugsturen en de klantendienst kunnen contacteren. Die schermen worden vaak gemaakt met andere tools dan de site zelf: software om e-mails te versturen, een factuurgenerator, een tool voor retourbeheer, een chatbot."
+  ],
+  [
+   "ul",
+   [
+    "De bevestigingspagina meldt duidelijk dat de bestelling gelukt is en geeft het bestelnummer, met een duidelijke paginatitel (2.4.2).",
+    "De e-mails voor bevestiging en verzending zijn leesbaar als tekst, met titels, duidelijke links en afbeeldingen met tekstalternatieven; het volgen van het pakket steunt niet op een afbeelding.",
+    "Facturen en retourformulieren om te downloaden zijn getagde pdf’s, of hun inhoud is in html beschikbaar in de klantenzone.",
+    "Het retourformulier volgt dezelfde regels als het bestelproces: labels, duidelijke foutmeldingen, geen blokkerende captcha.",
+    "De link naar hulp en contact staat op elke pagina op dezelfde plaats (3.2.6, ingevoerd door de WCAG 2.2).",
+    "De chatbot, als er een is, werkt met het toetsenbord en de schermlezer, en is niet de enige manier om de klantendienst te bereiken: een formulier, een e-mailadres of een telefoonnummer blijven beschikbaar."
+   ]
+  ],
+  [
+   "p",
+   "Bijlage I viseert in voorkomend geval ook de ondersteunende diensten: helpdesks, callcenters, technische ondersteuning, relaisdiensten en opleidingsdiensten. Zij moeten informatie geven over de toegankelijkheid van de dienst en de compatibiliteit ervan met ondersteunende technologieën, via toegankelijke communicatiemiddelen. Een medewerker die een klant met een schermlezer naar de juiste knop kan begeleiden, of die de bestelling via een ander kanaal kan opnemen, maakt deel uit van de conformiteit."
+  ],
+  [
+   "h2",
+   "externe-componenten-verantwoordelijkheid",
+   "Betaling, reviews, chat, captcha: externe componenten en verantwoordelijkheid"
+  ],
+  [
+   "p",
+   "Een gemiddelde webshop bestaat uit een tiental externe componenten. Elk daarvan kan de toegankelijkheid van een verder conform traject breken. De richtlijn voorziet geen overdracht van verantwoordelijkheid naar die leveranciers: tegenover de consument en de toezichthouder is het de verlener van de e-handelsdienst die verantwoordelijk is. Het enige doeltreffende antwoord ligt in contracten en documentatie."
+  ],
+  [
+   "table",
+   {
+    "caption": "Externe componenten van een webshop: risico’s en wat u van de leverancier moet eisen",
+    "head": [
+     "Component",
+     "Typisch risico",
+     "Op te vragen bij de leverancier"
+    ],
+    "rows": [
+     [
+      "Betaalpagina of betaalframe",
+      "Velden zonder label, te snelle time-out, fouten die niet worden gemeld",
+      "Recent auditrapport WCAG 2.2 AA, lijst van gekende gebreken en planning voor de correctie"
+     ],
+     [
+      "Sterke authenticatie en elektronische handtekening",
+      "Biometrische bevestiging zonder alternatief, korte termijnen",
+      "Beschrijving van de alternatieve methoden voor de kaarthouder of de ondertekenaar"
+     ],
+     [
+      "Captcha en fraudebestrijding",
+      "Visuele of auditieve test zonder alternatief",
+      "Modus zonder interactie of gedocumenteerd alternatief"
+     ],
+     [
+      "Klantenbeoordelingen",
+      "Sterren zonder tekst, ontoegankelijk formulier om een review te plaatsen",
+      "Auditrapport van de widget en van het formulier om een review te plaatsen"
+     ],
+     [
+      "Kaart met afhaalpunten",
+      "Kaart onbruikbaar met het toetsenbord, zonder lijst",
+      "Lijstversie of API waarmee een toegankelijke lijst kan worden getoond"
+     ],
+     [
+      "Chatbot",
+      "Venster dat de focus opeist, berichten die niet worden gemeld",
+      "Testresultaten met schermlezers, mogelijkheid om de chatbot uit te schakelen"
+     ],
+     [
+      "Cookiebanner",
+      "Banner die de pagina blokkeert zonder waarneembaar te zijn",
+      "Auditrapport en toegankelijke configuratieopties"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Neem die eisen op in uw contracten en uw lastenboeken: het verwachte niveau, de bewijzen die geleverd moeten worden, de termijn voor het verhelpen van gemelde gebreken en de informatie bij een nieuwe versie. Bij elke ingebruikname controleert een [[svc:recette|toegankelijkheidstest vóór oplevering]] of de nieuwe versie van de component het traject niet doet achteruitgaan. Kan een leverancier niet volgen, documenteer dan het alternatief dat de klant krijgt en de planning om de component te vervangen."
+  ],
+  [
+   "h2",
+   "veelgemaakte-fouten-webshop",
+   "De tien meest voorkomende fouten in een webshop"
+  ],
+  [
+   "p",
+   "Deze fouten komen van audit tot audit terug, welk platform er ook gebruikt wordt. Ze zijn zelden duur om te verhelpen wanneer u ze aanpakt in het thema of in de gemeenschappelijke componenten, in één keer voor alle pagina’s."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Knoppen zonder naam.",
+     "Pictogrammen voor het winkelmandje, de favorieten, het sluiten, pijlen van de carrousel: de schermlezer meldt “knop” zonder meer."
+    ],
+    [
+     "Stomme varianten.",
+     "Kleur- en maatbolletjes zonder naam of status, waardoor de klant het juiste artikel niet kan kiezen."
+    ],
+    [
+     "Stille toevoegingen aan het winkelmandje.",
+     "Geen bevestiging die wordt gemeld: de gebruiker voegt hetzelfde product drie keer toe om zeker te zijn."
+    ],
+    [
+     "Vensters die de focus vasthouden.",
+     "Mini-winkelmandje, inschrijvingsvenster of maattabel die niet met het toetsenbord te sluiten zijn."
+    ],
+    [
+     "Te zwakke contrasten.",
+     "Doorgestreepte prijzen, leveringsvermeldingen en tekst op foto’s onder 4,5:1."
+    ],
+    [
+     "Formulieren zonder labels.",
+     "Een voorbeeldtekst als enig label, die verdwijnt zodra de gebruiker begint te typen."
+    ],
+    [
+     "Vage foutmeldingen.",
+     "“Er is een fout opgetreden” in het rood, bovenaan de pagina, zonder te zeggen om welk veld het gaat."
+    ],
+    [
+     "Een captcha zonder alternatief.",
+     "Een visuele test die wordt opgelegd bij het aanmaken van een account of bij de betaling."
+    ],
+    [
+     "Een betaling die nooit getest is.",
+     "Het frame van de betaaldienstaanbieder werd nooit doorlopen met een schermlezer of op mobiel."
+    ],
+    [
+     "Toegankelijkheid die achteruitgaat.",
+     "De site wordt gecorrigeerd, waarna een promotiecampagne of een nieuw thema de gebreken opnieuw invoert omdat er vóór de publicatie niet werd gecontroleerd."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "De eerste vijf fouten worden meestal in de componenten van het thema verholpen: een goed gebouwde knop, een goed gebouwd bolletje, een goed gebouwd modaal venster lossen het probleem overal op. Dat is het werk dat onze [[svc:developpement|ontwikkelaars gespecialiseerd in toegankelijkheid]] samen met uw teams uitvoeren, te beginnen met de componenten die het meest worden gebruikt."
+  ],
+  [
+   "h2",
+   "bewijsstukken-bewaren",
+   "Bewijsstukken bewaren en de informatiepagina over toegankelijkheid"
+  ],
+  [
+   "p",
+   "Op de dag van een controle of een ingebrekestelling is de vraag niet alleen “is de site toegankelijk?”, maar ook “wat kunt u aantonen?”. In Frankrijk controleert de DGCCRF de e-handelsdiensten; haar ambtenaren kunnen een bevel tot conformiteit opleggen en de inbreuken zijn overtredingen van de vijfde klasse. In België controleert de Economische Inspectie van de FOD Economie de e-handel; in Luxemburg doet het Office de la surveillance de l’accessibilité des produits et services dat. De regels van elk land staan in de artikelen over [[article:belgique|België]] en [[article:luxembourg|Luxemburg]]."
+  ],
+  [
+   "table",
+   {
+    "caption": "Bewijsdossier van een webshop: inhoud en frequentie van bijwerking",
+    "head": [
+     "Stuk",
+     "Verwachte inhoud",
+     "Bijwerking"
+    ],
+    "rows": [
+     [
+      "Informatiepagina over toegankelijkheid",
+      "Beschrijving van de dienst, werking, manier waarop hij aan de eisen voldoet, gekende beperkingen, contact",
+      "Bij elke belangrijke wijziging van de dienst"
+     ],
+     [
+      "Auditrapport",
+      "Referentiekader, datum, steekproef, geteste trajecten, ondersteunende technologieën, resultaten",
+      "Minstens één keer per jaar en na elke herwerking"
+     ],
+     [
+      "Gedateerd correctieplan",
+      "Gebreken gerangschikt volgens ernst, verantwoordelijke, deadline, status",
+      "Elke maand"
+     ],
+     [
+      "Stukken van leveranciers",
+      "Auditrapporten van externe componenten, contractuele verbintenissen",
+      "Bij elke nieuwe versie of verlenging van het contract"
+     ],
+     [
+      "Opvolgingsprocedure",
+      "Controles vóór publicatie, aanvaardingscriteria, verantwoordelijken",
+      "Jaarlijkse herziening"
+     ],
+     [
+      "Register van meldingen",
+      "Vragen van klanten, gegeven antwoord, termijn",
+      "Doorlopend"
+     ],
+     [
+      "Berekening van de drempels of dossier voor een uitzondering",
+      "Personeelsaantal en drempels voor een micro-onderneming, beoordeling volgens bijlage VI bij een onevenredige last",
+      "Bij elk afgesloten boekjaar"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "De informatiepagina, waarin bijlage V van de richtlijn voorziet, is geen zoveelste juridische tekst. Ze is bereikbaar vanuit de footer, beschrijft de dienst en legt uit hoe hij aan de eisen voldoet, in een formaat dat zelf toegankelijk is. In Luxemburg stelt het toezichtsbureau een model van informatiefiche ter beschikking voor diensten die onder de wet van 8 maart 2023 vallen. Voor een Franse onderneming die ook onder artikel 47 valt, kan die pagina naast de toegankelijkheidsverklaring bestaan, op voorwaarde dat elk document aan zijn eigen eisen voldoet: de methode staat in het artikel over de [[article:declaration|toegankelijkheidsverklaring en de meest gemaakte fouten]]."
+  ],
+  [
+   "p",
+   "Uitzonderingen moeten gedocumenteerd zijn voordat u ze inroept. In Luxemburg [[https://guichet.public.lu/en/entreprises/commerce/accessibilite-produits-services/derogation-exigences-accessibilite.html|meldt een marktdeelnemer die een afwijking inroept wegens onevenredige last of fundamentele wijziging dat via een online procedure aan het bureau (in het Engels)]], met bewijsstukken. Vergeet niet dat de richtlijn een gebrek aan prioriteit, tijd of kennis uitdrukkelijk uitsluit als rechtvaardiging."
+  ],
+  [
+   "p",
+   "Het meest concrete risico voor een webshop is vandaag gerechtelijk. In Frankrijk heeft de rechtbank van Caen op 4 juni 2026, in kort geding gevat door twee verenigingen, een grote retailketen bevolen haar website en app binnen zes maanden toegankelijk te maken, onder verbeurte van een dwangsom, waarbij het argument van een conformiteitsgraad van 71 % werd verworpen. In Rijsel heeft de rechter in kort geding op 5 mei 2026 daarentegen de vordering van dezelfde verenigingen tegen de onlinedochter van een andere keten afgewezen, omdat haar omzet onder de drempel van 250 miljoen euro van artikel 47 lag, een lezing van de samenhang met de Franse Code de la consommation waarover juristen van mening verschillen. Consumenten kunnen een toegankelijkheidsgebrek bovendien bij de DGCCRF melden via SignalConso of via de dienst RéponseConso, zoals de [[https://handicap.gouv.fr/sites/handicap/files/2025-07/Fiche-conso-DGCCRF.pdf|consumentenfiche van de DGCCRF over de toegankelijkheid van producten en diensten (in het Frans)]] aangeeft."
+  ],
+  [
+   "h2",
+   "actieplan-90-dagen",
+   "Actieplan voor een toegankelijke webshop in 90 dagen"
+  ],
+  [
+   "p",
+   "Een webshop wordt niet in één keer toegankelijk. Het doel van de eerste drie maanden is de blokkades weg te werken die de aankoop verhinderen, de aanpak te documenteren en de controles in te voeren die achteruitgang voorkomen. De planning hieronder past bij een middelgrote site met een eigen ontwikkelteam; ze wordt langer voor een catalogus in meerdere landen of voor verschillende mobiele apps."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Week 1 en 2: afbakenen.",
+     "Ga na of u onder de regels valt en in welke landen u verkoopt, lijst de kritieke trajecten op (zoeken, productpagina, winkelmandje, account, betaling, retour, contact) en de externe componenten, en doorloop daarna de checklist van dit artikel op elk scherm. Voor groepen die in verschillende landen actief zijn, stelt de pagina [[sector:grands-comptes|grote ondernemingen]] een aanpak per merk en per markt voor."
+    ],
+    [
+     "Week 3 tot 5: auditen.",
+     "Laat de kritieke trajecten beoordelen volgens de WCAG 2.2 op niveau AA en de norm EN 301 549, op de computer en op mobiel. De gemiddelde doorlooptijd van een audit bedraagt in onze praktijk drie weken; het rapport moet voor elk gebrek de verantwoordelijke component en het verantwoordelijke team aanwijzen."
+    ],
+    [
+     "Week 4 tot 10: eerst verhelpen wat blokkeert.",
+     "Pak eerst de gebreken aan die het afronden van een bestelling verhinderen, daarna die welke via de gemeenschappelijke componenten alle schermen raken, en ten slotte de gebreken in de inhoud. Dien tegelijk de aanvragen in bij de externe leveranciers."
+    ],
+    [
+     "Week 8 tot 11: testen met gebruikers.",
+     "Laat echte bestellingen plaatsen door mensen die dagelijks een schermlezer, spraakbesturing of een vergrotingsprogramma gebruiken. [[svc:test-utilisateur|Gebruikerstests met personen met een handicap]] brengen blokkades aan het licht die geen enkel controlerooster meet, en vormen een sterk bewijs."
+    ],
+    [
+     "Week 10 tot 12: publiceren en de opvolging installeren.",
+     "Zet de informatiepagina, het correctieplan en een toegankelijk contactmiddel online. Voeg toegankelijkheidscriteria toe aan de definitie van “klaar” voor elke functionaliteit en een test vóór elke ingebruikname, zeker vóór commerciële acties."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Deze aanpak past in het bredere kader dat wordt voorgesteld in onze [[article:guide|gids over digitale toegankelijkheid]]. Voor een onderneming die ook aan Franse overheden verkoopt, kan een [[article:audit-rgaa|RGAA-audit volgens de officiële methode]] op dezelfde steekproef worden uitgevoerd, zodat dezelfde schermen niet twee keer getest worden. Een Zwitserse onderneming die in de Unie verkoopt, vindt de overeenkomsten met de norm eCH-0059 op de pagina [[country:suisse|digitale toegankelijkheid in Zwitserland]]."
+  ]
+ ],
+ "faq": [
+  [
+   "Is toegankelijkheid verplicht voor een webshop?",
+   "Ja, sinds 28 juni 2025, voor elke website of app waarmee een consument in de Europese Unie online een overeenkomst kan sluiten. Alleen micro-ondernemingen die diensten verlenen, met minder dan 10 personen en een jaaromzet of balanstotaal van ten hoogste 2 miljoen euro, zijn door de richtlijn vrijgesteld. In België geldt die uitsluiting maar tot 28 juni 2030. Een vitrinesite zonder online bestelling valt er als e-handelsdienst niet onder."
+  ],
+  [
+   "Is een webshop op een gangbaar e-commerceplatform automatisch toegankelijk?",
+   "Nee. Een platform levert componenten die meer of minder goed gebouwd zijn, maar het thema, de toegevoegde modules, de inhoud en de externe componenten bepalen het resultaat. Twee webshops op hetzelfde platform kunnen een heel verschillend niveau van toegankelijkheid hebben. Alleen een beoordeling van de site zoals hij online staat, met inbegrip van het aankoopproces, laat toe een conclusie te trekken."
+  ],
+  [
+   "Is mijn betaaldienstaanbieder verantwoordelijk voor de toegankelijkheid van zijn pagina?",
+   "Tegenover de consument en de toezichthouder is het de handelaar die de e-handelsdienst verleent en die verantwoordelijk is voor de toegankelijkheid ervan, de betaling inbegrepen. De aanbieder kan gebonden zijn door het contract dat u met hem sluit. Vraag hem een recent auditrapport, de lijst van gekende gebreken en een planning voor de correctie, en voorzie een alternatief als zijn module blokkeert."
+  ],
+  [
+   "Welk WCAG-niveau moet een webshop halen?",
+   "Niveau AA van de WCAG 2.2. De richtlijn noemt geen norm, maar de toezichthouders redeneren vanuit de norm EN 301 549, waarvan versie 4.1.1 aansluit op de WCAG 2.2. Wie dat niveau nu al nastreeft, hoeft het werk niet over te doen wanneer die versie in het Publicatieblad van de Europese Unie wordt vermeld."
+  ],
+  [
+   "Moet een webshop een toegankelijkheidsverklaring publiceren?",
+   "De EAA eist informatie over de toegankelijkheid van de dienst, beschreven in bijlage V: een beschrijving van de dienst, de werking ervan en de manier waarop hij aan de eisen voldoet. De toegankelijkheidsverklaring in de zin van de RGAA is in Frankrijk alleen verplicht voor organisaties die onder artikel 47 vallen, waaronder ondernemingen met meer dan 250 miljoen euro omzet in Frankrijk. Eén pagina kan beide bevatten als elk deel aan zijn eigen eisen voldoet."
+  ],
+  [
+   "Wat riskeert een webshop die niet toegankelijk is?",
+   "In Frankrijk kan de DGCCRF een bevel tot conformiteit opleggen en zijn de inbreuken overtredingen van de vijfde klasse. Verenigingen kunnen ook in kort geding optreden: een rechtbank beval in juni 2026 een keten om haar site binnen zes maanden toegankelijk te maken, onder verbeurte van een dwangsom. In België en Luxemburg voorzien de omzettingswetten in administratieve of strafrechtelijke boetes. Daar komt het commerciële risico bij: klanten die niet kunnen kopen."
+  ],
+  [
+   "Hoelang duurt het om een webshop toegankelijk te maken?",
+   "Dat hangt af van de omvang van de catalogus, het platform en de externe componenten. Voor een middelgrote site volstaan drie maanden doorgaans om de blokkades in het aankoopproces weg te werken, de aanpak te documenteren en controles vóór publicatie in te voeren. De volledige conformiteit, inhoud en apps inbegrepen, wordt daarna over meerdere maanden gepland, met een continue opvolging."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Is uw aankoopproces voor iedereen bruikbaar?",
+ "cta_text": "Vertel ons welk platform u gebruikt, in welke landen u verkoopt en welke betaalcomponenten u inzet: wij stellen een audit voor die focust op het bestelproces, op de computer en op mobiel.",
+ "related": [
+  "eaa",
+  "declaration",
+  "normes"
+ ]
+}

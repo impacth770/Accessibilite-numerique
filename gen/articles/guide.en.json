@@ -215,7 +215,7 @@
   ],
   [
    "p",
-   "The [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng|text of Directive (EU) 2019/882 on EUR-Lex]] covers in particular electronic communications services, access to audiovisual media services, certain elements of passenger transport services (air, rail, bus and waterborne), consumer banking services, e-books and e-commerce. On the product side, it targets among others computers and their operating systems, smartphones, payment terminals, certain self-service terminals and e-readers. An online shop, a banking app or a transport ticketing service is therefore directly concerned."
+   "The [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng|text of Directive (EU) 2019/882 on EUR-Lex]] covers in particular electronic communications services, access to audiovisual media services, certain elements of passenger transport services (air, rail, bus and waterborne), consumer banking services, e-books and e-commerce. On the product side, it targets among others computers and their operating systems, smartphones, payment terminals, certain self-service terminals and e-readers. An online shop, a banking app or a transport ticketing service is therefore directly concerned. For an online shop, the checks to run on each screen are gathered in our article on [[article:e-commerce|accessible online shops and the purchase journey]]."
   ],
   [
    "p",
@@ -609,5 +609,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-10-29"
+ "modified": "2026-10-31"
 }

@@ -118,7 +118,7 @@
   ],
   [
    "p",
-   "The payment module deserves particular attention, because it is almost always supplied by a third party. The EAA does not shift responsibility as a result: it is the merchant who provides the e-commerce service to the consumer. Ask your payment, e-signature and CAPTCHA providers for their own conformity evidence, and test the complete journey, from the product page to the order confirmation."
+   "The payment module deserves particular attention, because it is almost always supplied by a third party. The EAA does not shift responsibility as a result: it is the merchant who provides the e-commerce service to the consumer. Ask your payment, e-signature and CAPTCHA providers for their own conformity evidence, and test the complete journey, from the product page to the order confirmation. Our [[article:e-commerce|screen-by-screen e-commerce accessibility checklist]] sets out these checks in detail, from search to payment."
   ],
   [
    "h3",
@@ -626,5 +626,6 @@
   "belgique",
   "normes"
  ],
- "cluster": "reglementation"
+ "cluster": "reglementation",
+ "modified": "2026-10-31"
 }

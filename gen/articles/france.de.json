@@ -141,7 +141,7 @@
   ],
   [
    "p",
-   "Ein Unternehmen unterhalb der Schwelle bewegt sich deshalb nicht im rechtsfreien Raum. Bietet es Verbrauchern einen vom EAA erfassten Dienst an, etwa einen Onlineshop oder eine App zur Buchung von Fahrkarten, muss es die Anforderungen des Verbrauchergesetzbuchs einhalten, es sei denn, es ist ein Kleinstunternehmen, das Dienstleistungen erbringt, also mit weniger als 10 Beschäftigten und einem Jahresumsatz oder einer Bilanzsumme von höchstens 2 Millionen Euro. Es kann außerdem vertraglich gebunden sein, wenn ein öffentlicher Auftraggeber den RGAA in sein Lastenheft aufnimmt. Die Seite [[sector:pme|KMU und Mittelstand]] hilft bei dieser Einschätzung."
+   "Ein Unternehmen unterhalb der Schwelle bewegt sich deshalb nicht im rechtsfreien Raum. Bietet es Verbrauchern einen vom EAA erfassten Dienst an, etwa einen Onlineshop oder eine App zur Buchung von Fahrkarten, muss es die Anforderungen des Verbrauchergesetzbuchs einhalten, es sei denn, es ist ein Kleinstunternehmen, das Dienstleistungen erbringt, also mit weniger als 10 Beschäftigten und einem Jahresumsatz oder einer Bilanzsumme von höchstens 2 Millionen Euro. Es kann außerdem vertraglich gebunden sein, wenn ein öffentlicher Auftraggeber den RGAA in sein Lastenheft aufnimmt. Die Seite [[sector:pme|KMU und Mittelstand]] hilft bei dieser Einschätzung. Für einen Onlineshop sind die zu prüfenden Punkte in unserer [[article:e-commerce|EAA-Checkliste für den Kaufprozess]] aufgeführt."
   ],
   [
    "h2",
@@ -684,6 +684,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-10-28",
+ "modified": "2026-10-31",
  "cluster": "reglementation"
 }

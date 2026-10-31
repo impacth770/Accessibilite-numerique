@@ -141,7 +141,7 @@
   ],
   [
    "p",
-   "A company below the threshold is not free of all obligations. If it offers consumers a service covered by the EAA, such as an online shop or a transport booking app, it must meet the requirements of the Consumer Code, unless it is a micro-enterprise providing services, meaning fewer than 10 employees and an annual turnover or balance sheet total not exceeding €2 million. It may also be bound by contract to a public-sector client that writes the RGAA into its specifications. The page [[sector:pme|SMEs and mid-sized companies]] helps with this diagnosis."
+   "A company below the threshold is not free of all obligations. If it offers consumers a service covered by the EAA, such as an online shop or a transport booking app, it must meet the requirements of the Consumer Code, unless it is a micro-enterprise providing services, meaning fewer than 10 employees and an annual turnover or balance sheet total not exceeding €2 million. It may also be bound by contract to a public-sector client that writes the RGAA into its specifications. The page [[sector:pme|SMEs and mid-sized companies]] helps with this diagnosis. For an online shop, the points to check are set out in our [[article:e-commerce|EAA checklist for the purchase journey]]."
   ],
   [
    "h2",
@@ -653,6 +653,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-10-28",
+ "modified": "2026-10-31",
  "cluster": "reglementation"
 }

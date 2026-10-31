@@ -118,7 +118,7 @@
   ],
   [
    "p",
-   "De betaalmodule verdient bijzondere aandacht, omdat ze bijna altijd door een externe leverancier wordt aangeleverd. De EAA verschuift de verantwoordelijkheid daarom niet: het is de handelaar die de e-handelsdienst aan de consument verleent. Vraag uw leveranciers van betaling, elektronische handtekening en captcha dus naar hun eigen conformiteitsgegevens, en test het volledige traject, van de productfiche tot de orderbevestiging."
+   "De betaalmodule verdient bijzondere aandacht, omdat ze bijna altijd door een externe leverancier wordt aangeleverd. De EAA verschuift de verantwoordelijkheid daarom niet: het is de handelaar die de e-handelsdienst aan de consument verleent. Vraag uw leveranciers van betaling, elektronische handtekening en captcha dus naar hun eigen conformiteitsgegevens, en test het volledige traject, van de productfiche tot de orderbevestiging. Onze [[article:e-commerce|checklist voor de digitale toegankelijkheid van uw webshop, scherm per scherm]] werkt die controles uit, van de zoekfunctie tot de betaling."
   ],
   [
    "h3",
@@ -666,5 +666,6 @@
   "belgique",
   "normes"
  ],
- "cluster": "reglementation"
+ "cluster": "reglementation",
+ "modified": "2026-10-31"
 }

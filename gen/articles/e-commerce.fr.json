@@ -1,0 +1,694 @@
+{
+ "slug": "accessibilite-e-commerce",
+ "h1": "Accessibilité e-commerce : la check-list EAA du parcours d'achat, écran par écran",
+ "crumb": "Accessibilité e-commerce",
+ "meta_title": "Accessibilité e-commerce : check-list EAA écran par écran",
+ "meta_desc": "Recherche, fiche produit, panier, paiement, compte : la check-list d'accessibilité e-commerce exigée par l'EAA, les erreurs fréquentes et les preuves à garder.",
+ "card_desc": "Les contrôles à faire sur chaque écran d'un site marchand, les composants tiers à surveiller et les preuves que demandera l'autorité.",
+ "cat": "guide",
+ "where": "Europe",
+ "cover": "E-COM",
+ "cover_note": [
+  "Directive (UE) 2019/882, annexe I",
+  "Exigible depuis le 28 juin 2025"
+ ],
+ "date": "2026-10-31",
+ "cluster": "secteurs",
+ "lead": "Depuis le 28 juin 2025, l'accessibilité e-commerce n'est plus une bonne pratique : l'European Accessibility Act impose aux sites et applications marchands de permettre à une personne handicapée de chercher, choisir, commander et payer seule. Les pages qui traitent du sujet listent des principes généraux ; celle-ci suit le parcours d'achat écran par écran, de la page d'accueil à la facture, avec pour chaque étape les contrôles à faire vous-même, le critère WCAG concerné et les défauts que l'on rencontre le plus souvent en audit. Elle se termine par la liste des preuves à conserver, les questions à poser à vos prestataires de paiement et un plan de mise en conformité sur 90 jours.",
+ "body": [
+  [
+   "h2",
+   "sites-marchands-concernes",
+   "Accessibilité e-commerce : quels sites marchands sont concernés"
+  ],
+  [
+   "p",
+   "L'European Accessibility Act, ou [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/fra|directive (UE) 2019/882 relative aux exigences en matière d'accessibilité applicables aux produits et services]], vise les services de commerce électronique fournis aux consommateurs. La directive les définit comme des services fournis à distance, par l'intermédiaire de sites internet et de services sur appareils mobiles, par voie électronique et à la demande individuelle d'un consommateur, en vue de conclure un contrat de consommation. Trois conditions se cumulent donc : un contrat conclu en ligne, avec un consommateur, sur un site ou une application."
+  ],
+  [
+   "p",
+   "Le critère décisif n'est pas le secteur d'activité mais la fonction de la page. Un site vitrine qui présente une marque sans permettre de commander n'est pas, à ce titre, un service de commerce électronique. Dès qu'il permet d'acheter, de réserver une prestation, de souscrire un abonnement ou de payer, il entre dans le champ, qu'il vende des chaussures, des billets de concert, des cours de yoga ou des places de parking. Les détails sectoriels, notamment pour la banque et le transport, sont développés dans l'article sur [[article:eaa|ce que vérifient les autorités au titre de l'European Accessibility Act]]."
+  ],
+  [
+   "table",
+   {
+    "caption": "Votre site marchand est-il soumis à l'EAA ? Les situations les plus courantes",
+    "head": [
+     "Situation",
+     "Soumis à l'EAA ?",
+     "Point de vigilance"
+    ],
+    "rows": [
+     [
+      "Boutique en ligne qui vend à des particuliers",
+      "Oui",
+      "Tout le parcours, de la recherche au service après-vente, doit être utilisable"
+     ],
+     [
+      "Application mobile de commande ou de réservation",
+      "Oui",
+      "Les applications iOS et Android sont visées au même titre que le site"
+     ],
+     [
+      "Plateforme de commande réservée aux professionnels",
+      "Non, au titre du commerce électronique",
+      "Vérifiez qu'un particulier ne peut pas réellement commander : un simple champ « numéro de TVA » facultatif ne suffit pas"
+     ],
+     [
+      "Site mixte, particuliers et professionnels",
+      "Oui, pour le parcours grand public",
+      "Un même tunnel de commande sert souvent les deux publics : c'est lui qu'il faut rendre conforme"
+     ],
+     [
+      "Microentreprise de services : moins de 10 personnes et chiffre d'affaires ou total de bilan inférieur ou égal à 2 millions d'euros",
+      "Exemptée par la directive",
+      "En Belgique, l'exclusion ne vaut que jusqu'au 28 juin 2030 ; conservez le calcul des seuils"
+     ],
+     [
+      "Entreprise suisse ou britannique qui vend à des consommateurs de l'Union",
+      "Oui, pour ces ventes",
+      "Les exigences s'appliquent à tout service fourni à un consommateur de l'Union, quel que soit le pays d'établissement du vendeur"
+     ],
+     [
+      "Site vitrine sans commande en ligne",
+      "Non, au titre du commerce électronique",
+      "Il bascule dans le champ dès l'ajout d'un module de réservation ou de paiement"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Deux régimes peuvent se superposer en France. Une société dont le chiffre d'affaires réalisé en France dépasse 250 millions d'euros relève aussi de l'article 47 de la loi du 11 février 2005 : déclaration d'accessibilité, mention de conformité en page d'accueil, schéma pluriannuel, évaluation selon le RGAA. Le détail de cette double obligation figure dans l'article sur [[article:france|les obligations d'accessibilité numérique en France]]. Pour une petite ou moyenne entreprise, le premier travail consiste à vérifier l'éligibilité à l'exemption, ce que la page [[sector:pme|accessibilité numérique des PME et ETI]] aide à faire."
+  ],
+  [
+   "note",
+   "À retenir",
+   "Un site ou une application n'est pas un « produit » au sens de la directive : aucune période de transition ne s'applique. Un site marchand en ligne avant le 28 juin 2025 doit être accessible depuis cette date. Seules subsistent des exclusions ciblées, comme les médias temporels préenregistrés et les documents bureautiques publiés avant cette date, ainsi que la poursuite, au plus tard jusqu'au 28 juin 2030, des contrats de services conclus avant le 28 juin 2025."
+  ],
+  [
+   "h2",
+   "exigences-eaa-site-marchand",
+   "Ce que l'EAA exige concrètement d'un site e-commerce"
+  ],
+  [
+   "p",
+   "L'annexe I de la directive ne cite aucune norme. Elle fixe des résultats. Pour tous les services, elle demande notamment que les sites et applications soient perceptibles, utilisables, compréhensibles et robustes, d'une manière cohérente et appropriée, et que les informations sur le fonctionnement du service et ses caractéristiques d'accessibilité soient fournies sous une forme accessible. Pour le commerce électronique, elle ajoute trois exigences propres, que l'office luxembourgeois de surveillance reprend, exemples de solutions à l'appui, dans son [[https://accessibilite-produits-services.public.lu/dam-assets/modles/guides/solutions/services-exigences-supplmentaires-commerce-lectronique.pdf|guide sur les exigences supplémentaires applicables au commerce électronique]] :"
+  ],
+  [
+   "ul",
+   [
+    "fournir les informations relatives à l'accessibilité des produits et services vendus, lorsque l'opérateur économique responsable, par exemple le fabricant, les communique ;",
+    "rendre accessibles les fonctions d'identification, de sécurité et de paiement lorsqu'elles sont fournies dans le cadre du service ;",
+    "proposer des méthodes d'identification, de signature électronique, de sécurité et de paiement perceptibles, utilisables, compréhensibles et robustes."
+   ]
+  ],
+  [
+   "p",
+   "La troisième exigence est la plus lourde de conséquences. Elle vise précisément les briques que le marchand ne développe pas lui-même : la page de paiement du prestataire bancaire, l'authentification forte du porteur de carte, le module de signature d'un contrat de location ou de crédit. L'office luxembourgeois donne deux exemples de solution : une interface de paiement utilisable à la voix, qui permet à une personne aveugle de faire ses achats seule, et des boîtes de dialogue d'identification lisibles par un lecteur d'écran."
+  ],
+  [
+   "p",
+   "En France, l'[[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048180389|article D. 412-57 du code de la consommation]] traduit ces exigences en obligations de comportement pour le prestataire de services : concevoir et fournir le service conformément aux exigences fixées par arrêté, établir et rendre publiques, par écrit et oralement, les informations expliquant comment le service les respecte et les conserver tant que le service est proposé, mettre en place des procédures pour que le service reste conforme, prendre des mesures correctives en cas de non-conformité et en informer les autorités, enfin fournir sur demande motivée les éléments qui démontrent la conformité."
+  ],
+  [
+   "p",
+   "Pour démontrer qu'un parcours respecte ces résultats, les auditeurs s'appuient sur les [[https://www.w3.org/TR/2023/REC-WCAG22-20231005/|règles WCAG 2.2]], devenues recommandation du W3C le 5 octobre 2023, et sur la norme européenne EN 301 549. Aucune version de cette norme ne confère encore de présomption de conformité au titre de l'EAA, faute de citation au Journal officiel de l'Union. En pratique, le niveau AA des WCAG 2.2 est la cible la plus sûre : c'est celui sur lequel s'aligne la version 4.1.1 de la norme, publiée le 2 septembre 2026 et pas encore citée au Journal officiel. Les correspondances entre WCAG, EN 301 549, RGAA et RAWeb sont détaillées dans notre comparatif des [[article:normes|normes d'accessibilité numérique]]."
+  ],
+  [
+   "h2",
+   "utiliser-la-check-list",
+   "Comment utiliser cette check-list d'accessibilité e-commerce"
+  ],
+  [
+   "p",
+   "La check-list qui suit est organisée comme le parcours d'un client. Pour chaque écran, elle indique ce qu'il faut vérifier, entre parenthèses le numéro du critère de succès WCAG 2.2 correspondant, et le défaut le plus fréquent. Elle ne remplace pas un audit complet : elle permet à une équipe produit de repérer en une journée les blocages majeurs, de prioriser les corrections et de préparer un audit dans de bonnes conditions."
+  ],
+  [
+   "p",
+   "Quatre manipulations suffisent pour la plupart des contrôles, sans aucune compétence technique :"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Débranchez la souris.",
+     "Parcourez l'écran avec la touche Tab, revenez en arrière avec Maj + Tab, activez avec Entrée ou Espace, fermez avec Échap. Vous devez toujours voir où se trouve le focus et pouvoir tout faire."
+    ],
+    [
+     "Activez un lecteur d'écran.",
+     "VoiceOver sur iPhone et sur Mac, TalkBack sur Android, NVDA, gratuit, sur Windows. Écoutez ce qui est annoncé pour chaque bouton, chaque champ, chaque message : un nom, un rôle, un état."
+    ],
+    [
+     "Zoomez à 200 %, puis réduisez la fenêtre à 320 pixels de large.",
+     "Le texte doit grossir sans être coupé et la page doit se lire sans défilement horizontal (critères 1.4.4 et 1.4.10)."
+    ],
+    [
+     "Testez sur un vrai téléphone.",
+     "La majorité des commandes passent par le mobile : vérifiez la taille des cibles tactiles, les gestes complexes et l'orientation de l'écran."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Notez chaque défaut avec une capture, l'adresse de la page, le navigateur et l'outil utilisés. Ce relevé deviendra votre première pièce de suivi, et il permettra à l'auditeur de vérifier rapidement si les problèmes repérés ont été corrigés."
+  ],
+  [
+   "h2",
+   "accueil-navigation-bandeaux",
+   "Écran 1 : accueil, menu et bandeaux"
+  ],
+  [
+   "p",
+   "La page d'accueil concentre rarement les blocages les plus graves, mais elle contient les composants qui gênent sur toutes les pages : bandeau de consentement aux cookies, fenêtre d'inscription à la lettre d'information, menu principal, carrousel promotionnel. Un défaut ici se répète sur l'ensemble du site."
+  ],
+  [
+   "ul",
+   [
+    "Le bandeau de cookies reçoit le focus à l'ouverture, se lit au lecteur d'écran et se ferme au clavier ; ses boutons « Accepter » et « Refuser » ont des contrastes suffisants (2.1.1, 1.4.3). Défaut courant : un bandeau invisible pour le lecteur d'écran qui bloque pourtant les clics.",
+    "Un lien d'évitement permet d'aller directement au contenu principal (2.4.1).",
+    "Le méga-menu s'ouvre et se ferme au clavier, et chaque sous-catégorie est atteignable avec Tab ou les flèches ; le bouton qui l'ouvre annonce son état « développé » ou « réduit » (2.1.1, 4.1.2).",
+    "Le carrousel qui défile seul peut être mis en pause (2.2.2) et ses flèches portent un nom explicite, pas seulement une icône.",
+    "La fenêtre d'inscription à la lettre d'information n'apparaît pas au milieu d'une saisie, reçoit le focus, se ferme avec Échap et rend le focus là où il était.",
+    "Les bandeaux promotionnels fixes ne masquent pas entièrement l'élément qui a le focus (2.4.11), un défaut fréquent avec les barres « livraison offerte » collées en bas d'écran sur mobile.",
+    "Le logo, l'icône du panier et celle du compte ont un nom accessible ; l'icône du panier annonce aussi le nombre d'articles (1.1.1, 4.1.2)."
+   ]
+  ],
+  [
+   "p",
+   "Le contraste des textes est mesuré selon le critère 1.4.3 : 4,5:1 pour le texte courant, 3:1 pour le grand texte. Les prix barrés en gris clair, les mentions légales en petits caractères et les étiquettes « nouveau » blanches sur fond pastel échouent souvent. Le critère 1.4.11 impose aussi un contraste de 3:1 pour les contours des champs lorsqu'ils servent à les repérer, et pour les icônes nécessaires à la compréhension."
+  ],
+  [
+   "h2",
+   "recherche-listes-filtres",
+   "Écran 2 : recherche, listes de produits et filtres"
+  ],
+  [
+   "p",
+   "La recherche est souvent le premier geste d'un client qui utilise un lecteur d'écran, parce que parcourir un catalogue page par page est long. Les listes de résultats et les filtres sont aussi l'endroit où se concentrent les composants dynamiques mal restitués."
+  ],
+  [
+   "ul",
+   [
+    "Le champ de recherche a une étiquette, pas seulement un texte d'exemple qui disparaît à la saisie (3.3.2).",
+    "Les suggestions qui apparaissent pendant la frappe sont annoncées et se parcourent avec les flèches ; Entrée lance la recherche sans piège.",
+    "Le nombre de résultats est annoncé après une recherche ou l'application d'un filtre, sans déplacer le focus : c'est un message d'état (4.1.3).",
+    "Chaque filtre est une vraie case à cocher ou un vrai bouton dont l'état « coché » ou « appliqué » est restitué (4.1.2). Défaut courant : des pastilles de couleur cliquables annoncées « bouton, bouton, bouton ».",
+    "Le curseur de prix à deux poignées a une alternative : deux champs « prix minimum » et « prix maximum », ou des poignées réglables au clavier (2.1.1, 2.5.7).",
+    "Le changement du tri ou d'un filtre ne recharge pas la page sans prévenir et ne renvoie pas le focus en haut de page (3.2.2).",
+    "Dans la liste, chaque carte produit a un seul lien principal dont l'intitulé contient le nom du produit, plutôt que trois liens « Voir » identiques (2.4.4).",
+    "Le défilement infini est complété par un bouton « Afficher plus de produits » et ne rend pas inaccessible le pied de page, où se trouvent souvent le contact et les conditions de vente."
+   ]
+  ],
+  [
+   "p",
+   "Un test simple résume cet écran : avec un lecteur d'écran, cherchez « baskets blanches », filtrez sur votre pointure et triez par prix croissant. Si vous ne savez pas à chaque étape combien de produits restent affichés et quels filtres sont actifs, le parcours n'est pas utilisable de manière autonome."
+  ],
+  [
+   "h2",
+   "fiche-produit-accessible",
+   "Écran 3 : fiche produit accessible"
+  ],
+  [
+   "p",
+   "La fiche produit est l'écran où se prend la décision d'achat. Elle cumule des images, des choix de variantes, des prix, des avis et souvent une vidéo. C'est aussi là que l'annexe I demande de fournir l'information sur l'accessibilité du produit vendu, lorsque le fabricant la communique."
+  ],
+  [
+   "table",
+   {
+    "caption": "Fiche produit : contrôles prioritaires, critère WCAG 2.2 et défaut fréquent",
+    "head": [
+     "Élément",
+     "Ce qu'il faut vérifier",
+     "Critère",
+     "Défaut fréquent"
+    ],
+    "rows": [
+     [
+      "Photos du produit",
+      "Une alternative textuelle utile : couleur, matière, détail visible sur la photo ; pas le nom du fichier",
+      "1.1.1",
+      "Toutes les images portent le même texte, le nom du produit"
+     ],
+     [
+      "Galerie et zoom",
+      "Vignettes atteignables au clavier, zoom utilisable sans souris, image active annoncée",
+      "2.1.1, 4.1.2",
+      "Zoom au survol uniquement, inutilisable au clavier et sur mobile"
+     ],
+     [
+      "Couleurs et tailles",
+      "Chaque pastille a un nom (« bleu marine », « taille 42 ») et un état sélectionné restitué",
+      "1.1.1, 4.1.2",
+      "Pastilles de couleur sans nom ; taille indisponible signalée par un simple grisé"
+     ],
+     [
+      "Disponibilité",
+      "Le stock est indiqué en texte, pas seulement par une pastille verte ou rouge",
+      "1.4.1",
+      "« En stock » signalé par une couleur seule"
+     ],
+     [
+      "Prix et promotion",
+      "Ancien et nouveau prix distingués en texte, pas seulement par le style barré",
+      "1.3.1",
+      "Le lecteur d'écran lit « 89 euros 59 euros » sans indiquer lequel s'applique"
+     ],
+     [
+      "Avis clients",
+      "La note est donnée en texte (« 4,2 sur 5, 128 avis »), pas seulement en étoiles",
+      "1.1.1",
+      "Étoiles décoratives sans équivalent textuel"
+     ],
+     [
+      "Guide des tailles",
+      "Un vrai tableau avec en-têtes, dans une fenêtre qui se ferme au clavier",
+      "1.3.1, 2.1.2",
+      "Guide des tailles fourni sous forme d'image"
+     ],
+     [
+      "Vidéo de démonstration",
+      "Sous-titres, commandes du lecteur nommées, pas de lecture automatique avec le son",
+      "1.2.2, 1.4.2",
+      "Vidéo lancée automatiquement, bouton pause sans nom"
+     ],
+     [
+      "Bouton « Ajouter au panier »",
+      "Bouton nommé, confirmation de l'ajout annoncée sans perte de position",
+      "4.1.2, 4.1.3",
+      "Ajout silencieux : le client ne sait pas si l'article est dans son panier"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "L'information sur l'accessibilité du produit est une exigence propre au commerce électronique, souvent oubliée. Elle concerne surtout les produits eux-mêmes visés par l'EAA ou dont le fabricant documente l'accessibilité : un ordinateur, une liseuse, un téléphone, un téléviseur. Si le fabricant fournit ces informations, la fiche produit doit les reprendre, sous une forme accessible. Prévoyez un champ dédié dans votre système de gestion des produits et demandez-le à vos fournisseurs lors du référencement."
+  ],
+  [
+   "p",
+   "La rédaction compte autant que le code. Une alternative textuelle bien écrite pour une robe décrit ce qu'une personne voyante comprend en regardant la photo : la coupe, la longueur, le motif. Pour une équipe de rédaction produit, c'est une compétence qui s'acquiert en quelques heures, et c'est souvent par là que commencent nos [[svc:formations|formations à l'accessibilité numérique]] destinées aux équipes de contenu."
+  ],
+  [
+   "h2",
+   "panier-mini-panier",
+   "Écran 4 : panier et mini-panier"
+  ],
+  [
+   "p",
+   "Le panier est un écran très dynamique : chaque modification de quantité recalcule les totaux, les frais de port et parfois les remises. Pour une personne qui ne voit pas l'écran, chaque changement non annoncé est une information perdue."
+  ],
+  [
+   "ul",
+   [
+    "Les boutons « + » et « − » de quantité ont un nom complet (« augmenter la quantité de baskets blanches ») et la nouvelle quantité est annoncée (4.1.2, 4.1.3).",
+    "Le bouton de suppression précise l'article qu'il retire, et la suppression est confirmée par un message (2.4.4, 4.1.3).",
+    "La mise à jour du total et des frais de port est annoncée, ou au moins le total reste à un endroit prévisible et lisible.",
+    "Le champ de code promotionnel a une étiquette ; un code refusé produit un message d'erreur en texte, relié au champ (3.3.1).",
+    "Le mini-panier qui s'ouvre en tiroir reçoit le focus, se ferme avec Échap et ne laisse pas le focus partir derrière lui dans la page (2.4.3).",
+    "Un panier « réservé pendant 10 minutes » ou une session qui expire prévient l'utilisateur, lui laisse au moins vingt secondes pour prolonger le délai par une action simple et lui permet de le prolonger au moins dix fois (2.2.1).",
+    "Les cibles tactiles mesurent au moins 24 par 24 pixels CSS ou sont suffisamment espacées (2.5.8) : les petites croix de suppression sur mobile sont une source fréquente d'erreurs."
+   ]
+  ],
+  [
+   "p",
+   "Les ventes additionnelles posent un problème particulier. Les blocs « vous aimerez aussi » insérés entre le panier et le bouton de commande allongent le parcours au clavier et au lecteur d'écran. Placez-les après le bouton principal ou dans une zone que l'on peut facilement contourner."
+  ],
+  [
+   "h2",
+   "compte-connexion-captcha",
+   "Écran 5 : création de compte, connexion et captcha"
+  ],
+  [
+   "p",
+   "La création de compte et la connexion sont les écrans où les défauts deviennent bloquants. Une personne aveugle peut contourner une image mal décrite sur une fiche produit ; elle ne peut pas contourner un captcha qu'elle ne perçoit pas. C'est aussi là que s'applique l'exigence de l'annexe I sur les méthodes d'identification."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Proposez la commande sans compte.",
+     "Un parcours invité réduit le nombre d'écrans et de champs. Ce n'est pas une obligation, mais c'est le moyen le plus simple de limiter les risques."
+    ],
+    [
+     "Étiquetez chaque champ et déclarez sa finalité.",
+     "Les champs nom, adresse e-mail, téléphone et adresse postale portent l'attribut autocomplete adapté, ce qui permet au navigateur de les remplir automatiquement (1.3.5) ; les consignes, comme le format du mot de passe, sont données avant la saisie (3.3.2)."
+    ],
+    [
+     "Laissez coller le mot de passe et le code reçu.",
+     "Le critère 3.3.8 des WCAG 2.2 interdit d'imposer un test cognitif, comme mémoriser ou recopier des caractères, sans alternative : le copier-coller et les gestionnaires de mots de passe doivent fonctionner."
+    ],
+    [
+     "Remplacez le captcha visuel.",
+     "Un captcha d'images ou de caractères déformés doit avoir une alternative qui ne repose pas sur la même capacité. Les solutions qui analysent le comportement en arrière-plan, sans action de l'utilisateur, ou une vérification par e-mail, posent moins de difficultés."
+    ],
+    [
+     "Affichez un bouton pour voir le mot de passe.",
+     "Il aide les personnes qui ont des troubles moteurs ou de la mémoire, et il doit lui-même avoir un nom et un état restitués."
+    ],
+    [
+     "Rédigez des messages d'erreur utiles.",
+     "« Adresse e-mail invalide : il manque le caractère @ » plutôt que « Erreur de saisie », placé à côté du champ et annoncé au lecteur d'écran (3.3.1, 3.3.3)."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Le code à usage unique envoyé par SMS mérite un test spécifique sur mobile. Il faut pouvoir quitter l'application, lire le message et revenir saisir le code avant expiration. Le remplissage automatique du code par le système d'exploitation aide beaucoup, à condition que le champ soit correctement déclaré."
+  ],
+  [
+   "h2",
+   "livraison-paiement-authentification",
+   "Écran 6 : livraison, paiement et authentification forte"
+  ],
+  [
+   "p",
+   "Le tunnel de commande est la partie du site que les autorités et les plaignants examinent en premier, parce qu'un défaut y empêche l'achat lui-même. Il mélange des formulaires développés par le marchand et des composants fournis par des tiers : carte des points relais, page du prestataire de paiement, fenêtre d'authentification de la banque du client."
+  ],
+  [
+   "h3",
+   "Adresse et mode de livraison"
+  ],
+  [
+   "ul",
+   [
+    "L'adresse de facturation peut reprendre l'adresse de livraison par une case à cocher, sans ressaisie (3.3.7).",
+    "Le choix du point relais est possible par une liste textuelle triée par distance, en plus de la carte interactive, qui est rarement utilisable au clavier et au lecteur d'écran (1.1.1, 2.1.1).",
+    "Les créneaux de livraison présentés en grille indiquent en texte la date, l'heure, le prix et la disponibilité de chaque créneau, et le créneau choisi est restitué comme sélectionné (1.3.1, 4.1.2).",
+    "Les modes de livraison sont de vrais boutons radio groupés sous une légende (1.3.1)."
+   ]
+  ],
+  [
+   "h3",
+   "Paiement et authentification forte"
+  ],
+  [
+   "ul",
+   [
+    "Les champs de carte, souvent intégrés dans un cadre fourni par le prestataire de paiement, ont chacun une étiquette restituée, y compris la date d'expiration et le cryptogramme (3.3.2, 4.1.2).",
+    "Le cadre intégré a un titre et le focus y entre et en sort normalement au clavier (2.4.3).",
+    "Les moyens de paiement présentés sous forme de logos ont un nom textuel (1.1.1).",
+    "L'étape d'authentification forte, affichée par la banque du client, n'expire pas pendant qu'un utilisateur de lecteur d'écran passe d'une application à l'autre ; en cas d'échec, un message clair permet de recommencer.",
+    "Avant validation, un récapitulatif permet de vérifier et corriger les articles, l'adresse et le montant (3.3.4).",
+    "La case d'acceptation des conditions générales a une étiquette cliquable et le lien vers les conditions est accessible ; le bouton final dit ce qu'il fait, par exemple « Commander avec obligation de paiement », et non une simple flèche."
+   ]
+  ],
+  [
+   "p",
+   "Une démarche de diagnostic fiable consiste à passer une vraie commande, jusqu'au paiement, avec un lecteur d'écran sur ordinateur puis sur mobile, en utilisant une carte de test fournie par le prestataire de paiement. C'est sur ce scénario qu'un [[svc:audit-conformite|audit de conformité EN 301 549 et WCAG]] apporte le plus de valeur : il établit la liste des défauts, mais aussi qui doit les corriger, le marchand ou le prestataire."
+  ],
+  [
+   "note",
+   "À retenir",
+   "Le marchand reste le fournisseur du service de commerce électronique, même lorsque la page de paiement est hébergée par un prestataire. Un défaut du module de paiement est donc un défaut de votre service."
+  ],
+  [
+   "h2",
+   "confirmation-emails-service-client",
+   "Écran 7 : confirmation, e-mails, factures et service client"
+  ],
+  [
+   "p",
+   "Le parcours ne s'arrête pas au clic sur « Commander ». L'acheteur doit pouvoir comprendre que la commande est passée, suivre la livraison, consulter sa facture, retourner un article et contacter le service client. Ces écrans sont souvent produits par d'autres outils que le site lui-même : logiciel d'envoi d'e-mails, générateur de factures, outil de gestion des retours, agent conversationnel."
+  ],
+  [
+   "ul",
+   [
+    "La page de confirmation annonce clairement la réussite de la commande et son numéro, avec un titre de page explicite (2.4.2).",
+    "Les e-mails de confirmation et d'expédition sont lisibles en texte, avec des titres, des liens explicites et des images dotées d'alternatives ; le suivi de colis ne repose pas sur une image.",
+    "Les factures et bons de retour téléchargeables sont des PDF balisés, ou leur contenu est disponible en HTML dans l'espace client.",
+    "Le formulaire de retour respecte les mêmes règles que le tunnel de commande : étiquettes, erreurs explicites, pas de captcha bloquant.",
+    "Le lien vers l'aide et le contact se trouve au même endroit sur toutes les pages (3.2.6, introduit par les WCAG 2.2).",
+    "L'agent conversationnel, s'il existe, s'utilise au clavier et au lecteur d'écran, et n'est pas le seul moyen de joindre le service client : un formulaire, une adresse e-mail ou un téléphone restent disponibles."
+   ]
+  ],
+  [
+   "p",
+   "L'annexe I vise aussi, le cas échéant, les services d'assistance : services d'aide, centres d'appel, assistance technique, services de relais et de formation. Ils doivent donner des informations sur l'accessibilité du service et sa compatibilité avec les technologies d'assistance, par des moyens de communication accessibles. Un conseiller qui sait guider un client utilisant un lecteur d'écran jusqu'au bon bouton, ou qui peut prendre la commande par un autre canal, fait partie de la conformité."
+  ],
+  [
+   "h2",
+   "composants-tiers-responsabilite",
+   "Paiement, avis, chat, captcha : les composants tiers et leur responsabilité"
+  ],
+  [
+   "p",
+   "Un site marchand moyen assemble une dizaine de composants externes. Chacun peut casser l'accessibilité d'un parcours conforme par ailleurs. La directive ne prévoit pas de transfert de responsabilité vers ces fournisseurs : vis-à-vis du consommateur et de l'autorité, c'est le prestataire du service de commerce électronique qui répond. La seule réponse efficace est contractuelle et documentaire."
+  ],
+  [
+   "table",
+   {
+    "caption": "Composants tiers d'un site marchand : risques et éléments à exiger du fournisseur",
+    "head": [
+     "Composant",
+     "Risque typique",
+     "À demander au fournisseur"
+    ],
+    "rows": [
+     [
+      "Page ou cadre de paiement",
+      "Champs sans étiquette, expiration trop rapide, erreurs non annoncées",
+      "Rapport d'audit WCAG 2.2 AA récent, liste des défauts connus et calendrier de correction"
+     ],
+     [
+      "Authentification forte et signature électronique",
+      "Validation biométrique sans alternative, délais courts",
+      "Description des méthodes alternatives proposées au porteur ou au signataire"
+     ],
+     [
+      "Captcha et anti-fraude",
+      "Test visuel ou sonore sans alternative",
+      "Mode sans interaction ou alternative documentée"
+     ],
+     [
+      "Avis clients",
+      "Étoiles sans texte, formulaire de dépôt inaccessible",
+      "Rapport d'audit du widget et du formulaire de dépôt"
+     ],
+     [
+      "Carte des points relais",
+      "Carte inutilisable au clavier, sans liste",
+      "Version liste ou API permettant d'afficher une liste accessible"
+     ],
+     [
+      "Agent conversationnel",
+      "Fenêtre qui capte le focus, messages non annoncés",
+      "Résultats de tests avec lecteurs d'écran, possibilité de désactivation"
+     ],
+     [
+      "Bandeau de consentement aux cookies",
+      "Bandeau qui bloque la page sans être perceptible",
+      "Rapport d'audit et options de configuration accessibles"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Intégrez ces exigences dans vos contrats et vos appels d'offres : niveau attendu, preuves à fournir, délai de correction des défauts signalés, information en cas de nouvelle version. Pour chaque mise en production, une [[svc:recette|recette accessibilité]] vérifie que la nouvelle version du composant ne fait pas régresser le parcours. Quand un fournisseur ne peut pas suivre, documentez l'alternative proposée au client et le calendrier de remplacement."
+  ],
+  [
+   "h2",
+   "erreurs-frequentes-e-commerce",
+   "Les dix erreurs les plus fréquentes sur un site e-commerce"
+  ],
+  [
+   "p",
+   "Ces erreurs reviennent d'un audit à l'autre, quelle que soit la plateforme utilisée. Elles sont rarement coûteuses à corriger lorsqu'on les traite dans le thème ou les composants communs, une fois pour toutes les pages."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Des boutons sans nom.",
+     "Icônes de panier, de favoris, de fermeture, flèches de carrousel : le lecteur d'écran annonce « bouton » sans autre précision."
+    ],
+    [
+     "Des variantes muettes.",
+     "Pastilles de couleur et de taille sans nom ni état, qui empêchent de choisir le bon article."
+    ],
+    [
+     "Des ajouts au panier silencieux.",
+     "Aucune confirmation annoncée : l'utilisateur ajoute trois fois le même produit pour en être sûr."
+    ],
+    [
+     "Des fenêtres qui piègent le focus.",
+     "Mini-panier, fenêtre d'inscription ou guide des tailles impossibles à fermer au clavier."
+    ],
+    [
+     "Des contrastes trop faibles.",
+     "Prix barrés, mentions de livraison et textes sur photo en dessous de 4,5:1."
+    ],
+    [
+     "Des formulaires sans étiquettes.",
+     "Texte d'exemple utilisé comme seule étiquette, qui disparaît à la saisie."
+    ],
+    [
+     "Des messages d'erreur vagues.",
+     "« Une erreur est survenue » en rouge, en haut de page, sans indication du champ concerné."
+    ],
+    [
+     "Un captcha sans alternative.",
+     "Un test visuel imposé à la création de compte ou au paiement."
+    ],
+    [
+     "Un paiement non testé.",
+     "Le cadre du prestataire n'a jamais été parcouru avec un lecteur d'écran ni sur mobile."
+    ],
+    [
+     "Une accessibilité qui régresse.",
+     "Le site est corrigé, puis une campagne promotionnelle ou un nouveau thème réintroduit les défauts faute de contrôle avant mise en ligne."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Les cinq premières se corrigent généralement dans les composants du thème : un bouton, une pastille, une fenêtre modale bien construits règlent le problème partout. C'est le travail que mènent nos [[svc:developpement|développeurs spécialisés en accessibilité]] aux côtés de vos équipes, en corrigeant d'abord les composants les plus utilisés."
+  ],
+  [
+   "h2",
+   "preuves-a-conserver",
+   "Preuves à conserver et page d'information sur l'accessibilité"
+  ],
+  [
+   "p",
+   "Le jour d'un contrôle ou d'une mise en demeure, la question n'est pas seulement « le site est-il accessible ? », mais « que pouvez-vous démontrer ? ». En France, la DGCCRF contrôle les services de commerce électronique ; ses agents peuvent enjoindre une mise en conformité, et les manquements sont des contraventions de cinquième classe. En Belgique, c'est l'inspection économique du SPF Économie qui contrôle le commerce électronique ; au Luxembourg, l'Office de la surveillance de l'accessibilité des produits et services. Les régimes de chaque pays sont détaillés dans les articles consacrés à [[article:belgique|la Belgique]] et [[article:luxembourg|au Luxembourg]]."
+  ],
+  [
+   "table",
+   {
+    "caption": "Dossier de preuves d'un site marchand : contenu et fréquence de mise à jour",
+    "head": [
+     "Pièce",
+     "Contenu attendu",
+     "Mise à jour"
+    ],
+    "rows": [
+     [
+      "Page d'information sur l'accessibilité",
+      "Description du service, fonctionnement, manière dont il respecte les exigences, limites connues, contact",
+      "À chaque évolution notable du service"
+     ],
+     [
+      "Rapport d'audit",
+      "Référentiel, date, échantillon, parcours testés, technologies d'assistance, résultats",
+      "Au moins une fois par an et après chaque refonte"
+     ],
+     [
+      "Plan de correction daté",
+      "Défauts classés par gravité, responsable, échéance, état",
+      "Chaque mois"
+     ],
+     [
+      "Éléments des fournisseurs",
+      "Rapports d'audit des composants tiers, engagements contractuels",
+      "À chaque nouvelle version ou renouvellement de contrat"
+     ],
+     [
+      "Procédure de suivi",
+      "Contrôles avant mise en ligne, critères d'acceptation, responsables",
+      "Revue annuelle"
+     ],
+     [
+      "Registre des signalements",
+      "Demandes des clients, réponse apportée, délai",
+      "En continu"
+     ],
+     [
+      "Calcul d'éligibilité ou dossier d'exception",
+      "Effectif et seuils pour une microentreprise, évaluation selon l'annexe VI en cas de charge disproportionnée",
+      "À chaque exercice clos"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "La page d'information, prévue par l'annexe V de la directive, n'est pas un texte juridique de plus. Reliée depuis le pied de page, elle décrit le service et explique comment il respecte les exigences, dans un format lui-même accessible. Au Luxembourg, l'office de surveillance met à disposition un modèle de fiche d'information pour les services soumis à la loi du 8 mars 2023. Pour une entreprise française également soumise à l'article 47, cette page peut voisiner avec la déclaration d'accessibilité, à condition que chacune remplisse ses propres exigences : la méthode est expliquée dans l'article sur la [[article:declaration|déclaration d'accessibilité et ses erreurs fréquentes]]."
+  ],
+  [
+   "p",
+   "Les exceptions se documentent avant d'être invoquées. Au Luxembourg, un opérateur qui invoque une dérogation pour charge disproportionnée ou modification fondamentale en [[https://guichet.public.lu/fr/entreprises/commerce/accessibilite-produits-services/derogation-exigences-accessibilite.html|informe l'office par une démarche en ligne]], pièces justificatives à l'appui. Rappelons que la directive écarte expressément le manque de priorité, de temps ou de connaissances comme justification."
+  ],
+  [
+   "p",
+   "Le risque le plus concret, pour un site marchand, est aujourd'hui judiciaire. En France, le 4 juin 2026, le tribunal judiciaire de Caen, saisi en référé par deux associations, a ordonné à une grande enseigne de distribution de rendre son site et son application accessibles dans un délai de six mois, sous astreinte, en écartant l'argument d'un taux de conformité de 71 %. À Lille, le 5 mai 2026, le juge des référés a au contraire rejeté la demande des mêmes associations contre la filiale de commerce en ligne d'une autre enseigne, au motif que son chiffre d'affaires se trouvait sous le seuil de 250 millions d'euros de l'article 47, une lecture de l'articulation avec le code de la consommation que des juristes discutent. Les consommateurs peuvent en outre signaler un défaut d'accessibilité à la DGCCRF par SignalConso ou par le service RéponseConso, comme l'indique la [[https://handicap.gouv.fr/sites/handicap/files/2025-07/Fiche-conso-DGCCRF.pdf|fiche consommateurs de la DGCCRF sur l'accessibilité des produits et services]]."
+  ],
+  [
+   "h2",
+   "plan-conformite-90-jours",
+   "Plan de mise en conformité e-commerce sur 90 jours"
+  ],
+  [
+   "p",
+   "Un site marchand ne se rend pas accessible en une fois. L'objectif des trois premiers mois est de supprimer les blocages qui empêchent d'acheter, de documenter la démarche et d'installer les contrôles qui éviteront les régressions. Le calendrier ci-dessous convient à un site de taille moyenne disposant d'une équipe de développement ; il s'allonge pour un catalogue multi-pays ou plusieurs applications mobiles."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Semaines 1 et 2 : cadrer.",
+     "Vérifiez l'éligibilité et les pays de vente, listez les parcours critiques (recherche, fiche produit, panier, compte, paiement, retour, contact) et les composants tiers, puis passez la check-list de cet article sur chaque écran. Pour les groupes présents dans plusieurs pays, la page [[sector:grands-comptes|grands comptes]] présente une démarche par marque et par marché."
+    ],
+    [
+     "Semaines 3 à 5 : auditer.",
+     "Faites évaluer les parcours critiques selon les WCAG 2.2 de niveau AA et la norme EN 301 549, sur ordinateur et sur mobile. Le délai moyen d'un audit, dans notre pratique, est de trois semaines ; le rapport doit désigner pour chaque défaut le composant et l'équipe responsables."
+    ],
+    [
+     "Semaines 4 à 10 : corriger d'abord ce qui bloque.",
+     "Traitez en priorité les défauts qui empêchent de finaliser une commande, puis ceux qui touchent tous les écrans par les composants communs, enfin les défauts de contenu. Ouvrez en parallèle les demandes auprès des fournisseurs tiers."
+    ],
+    [
+     "Semaines 8 à 11 : tester avec des utilisateurs.",
+     "Faites passer des commandes réelles à des personnes qui utilisent au quotidien un lecteur d'écran, une commande vocale ou un agrandisseur. Les [[svc:test-utilisateur|tests utilisateurs avec des personnes handicapées]] révèlent des blocages qu'aucune grille ne mesure, et constituent une preuve forte."
+    ],
+    [
+     "Semaines 10 à 12 : publier et installer le suivi.",
+     "Mettez en ligne la page d'information, le plan de correction et un moyen de contact accessible. Ajoutez des critères d'accessibilité à la définition de « terminé » de chaque fonctionnalité et une recette avant chaque mise en production, en particulier avant les opérations commerciales."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Cette démarche s'inscrit dans le cadre plus large présenté dans notre [[article:guide|guide de l'accessibilité numérique]]. Pour une entreprise qui vend aussi aux administrations, un [[article:audit-rgaa|audit RGAA mené selon la méthode officielle]] peut être conduit sur le même échantillon, ce qui évite de tester deux fois les mêmes écrans. Une entreprise suisse qui vend dans l'Union trouvera les correspondances avec la norme eCH-0059 sur la page [[country:suisse|accessibilité numérique en Suisse]]."
+  ]
+ ],
+ "faq": [
+  [
+   "L'accessibilité est-elle obligatoire pour un site e-commerce ?",
+   "Oui, depuis le 28 juin 2025, pour tout site ou application qui permet à un consommateur de conclure un contrat en ligne dans l'Union européenne. Seules les microentreprises de services, moins de 10 personnes et au plus 2 millions d'euros de chiffre d'affaires ou de total de bilan, en sont exemptées par la directive. En Belgique, cette exclusion n'est prévue que jusqu'au 28 juin 2030. Un site vitrine sans commande en ligne n'est pas visé à ce titre."
+  ],
+  [
+   "Une boutique créée sur une plateforme e-commerce du marché est-elle accessible par défaut ?",
+   "Non. Une plateforme fournit des composants plus ou moins bien construits, mais le thème, les modules ajoutés, les contenus et les composants tiers déterminent le résultat. Deux boutiques sur la même plateforme peuvent avoir des niveaux d'accessibilité très différents. Seule une évaluation du site tel qu'il est mis en ligne, parcours d'achat compris, permet de conclure."
+  ],
+  [
+   "Mon prestataire de paiement est-il responsable de l'accessibilité de sa page ?",
+   "Vis-à-vis du consommateur et de l'autorité de contrôle, c'est le marchand qui fournit le service de commerce électronique et qui répond de son accessibilité, paiement compris. Le prestataire peut être tenu par le contrat que vous signez avec lui. Demandez-lui un rapport d'audit récent, la liste des défauts connus et un calendrier de correction, et prévoyez une alternative si son module bloque."
+  ],
+  [
+   "Quel niveau WCAG viser pour un site marchand ?",
+   "Le niveau AA des WCAG 2.2. La directive ne cite pas de norme, mais les autorités raisonnent à partir de la norme EN 301 549, dont la version 4.1.1 s'aligne sur les WCAG 2.2. Viser ce niveau dès maintenant évite de refaire le travail lorsque cette version sera citée au Journal officiel de l'Union européenne."
+  ],
+  [
+   "Faut-il publier une déclaration d'accessibilité sur un site e-commerce ?",
+   "L'EAA impose une information sur l'accessibilité du service, décrite à l'annexe V : description du service, fonctionnement et manière dont il respecte les exigences. La déclaration d'accessibilité au sens du RGAA ne s'impose en France qu'aux organismes soumis à l'article 47, dont les entreprises de plus de 250 millions d'euros de chiffre d'affaires en France. Une même page peut réunir les deux si chacune respecte ses propres exigences."
+  ],
+  [
+   "Que risque un site e-commerce non accessible ?",
+   "En France, la DGCCRF peut enjoindre la mise en conformité et les manquements sont des contraventions de cinquième classe. Les associations peuvent aussi agir en référé : un tribunal a ordonné en juin 2026 à une enseigne de rendre son site accessible sous six mois, sous astreinte. En Belgique et au Luxembourg, les lois de transposition prévoient des amendes administratives ou pénales. Le risque commercial, des clients qui ne peuvent pas acheter, s'y ajoute."
+  ],
+  [
+   "Combien de temps faut-il pour rendre un site marchand accessible ?",
+   "Cela dépend de la taille du catalogue, de la plateforme et des composants tiers. Pour un site de taille moyenne, trois mois permettent en général de supprimer les blocages du parcours d'achat, de documenter la démarche et d'installer les contrôles avant mise en ligne. La conformité complète, contenus et applications compris, se planifie ensuite sur plusieurs mois, avec un suivi continu."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Votre parcours d'achat est-il utilisable par tous ?",
+ "cta_text": "Indiquez-nous votre plateforme, vos pays de vente et vos composants de paiement : nous vous proposons un audit centré sur le tunnel de commande, sur ordinateur et sur mobile.",
+ "related": [
+  "eaa",
+  "declaration",
+  "normes"
+ ]
+}

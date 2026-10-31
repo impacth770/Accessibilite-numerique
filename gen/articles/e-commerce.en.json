@@ -1,0 +1,694 @@
+{
+ "slug": "ecommerce-accessibility-checklist",
+ "h1": "E-commerce accessibility: the EAA checklist for the purchase journey, screen by screen",
+ "crumb": "E-commerce accessibility",
+ "meta_title": "E-commerce accessibility: EAA checklist, screen by screen",
+ "meta_desc": "Search, product page, basket, payment, account: the e-commerce accessibility checklist the EAA requires, the most common errors and the evidence to keep.",
+ "card_desc": "The checks to run on every screen of an online shop, the third-party components to watch and the evidence regulators will ask for.",
+ "cat": "guide",
+ "where": "Europe",
+ "cover": "E-COM",
+ "cover_note": [
+  "Directive (EU) 2019/882, Annex I",
+  "Applicable since 28 June 2025"
+ ],
+ "date": "2026-10-31",
+ "cluster": "secteurs",
+ "lead": "Since 28 June 2025, e-commerce accessibility has no longer been a matter of good practice: the European Accessibility Act requires online shops and shopping apps to let a person with a disability search, choose, order and pay on their own. Most pages on the subject list general principles; this one follows the purchase journey screen by screen, from the home page to the invoice, setting out for each step the checks you can carry out yourself, the WCAG success criterion concerned and the defects most often found in audits. It ends with the evidence to keep, the questions to put to your payment providers and a 90-day compliance plan for an accessible online shop.",
+ "body": [
+  [
+   "h2",
+   "online-shops-covered",
+   "E-commerce accessibility: which online shops are covered"
+  ],
+  [
+   "p",
+   "The European Accessibility Act, or [[https://eur-lex.europa.eu/eli/dir/2019/882/oj/eng|Directive (EU) 2019/882 on the accessibility requirements for products and services]], covers e-commerce services provided to consumers. The directive defines them as services provided at a distance, through websites and mobile device-based services, by electronic means and at the individual request of a consumer with a view to concluding a consumer contract. Three conditions must therefore be met together: a contract concluded online, with a consumer, through a website or an app."
+  ],
+  [
+   "p",
+   "The decisive test is not the business sector but what the page does. A brochure site that presents a brand without allowing anyone to order is not, on that basis, an e-commerce service. As soon as it lets visitors buy, book a service, take out a subscription or pay, it falls within scope, whether it sells shoes, concert tickets, yoga classes or parking spaces. Sector-specific details, notably for banking and transport, are covered in our article on [[article:eaa|what the authorities check under the European Accessibility Act]]."
+  ],
+  [
+   "table",
+   {
+    "caption": "Is your online shop subject to the EAA? The most common situations",
+    "head": [
+     "Situation",
+     "Subject to the EAA?",
+     "Point to watch"
+    ],
+    "rows": [
+     [
+      "Online shop selling to private individuals",
+      "Yes",
+      "The whole journey, from search to after-sales service, must be usable"
+     ],
+     [
+      "Mobile app for ordering or booking",
+      "Yes",
+      "iOS and Android apps are covered in the same way as the website"
+     ],
+     [
+      "Ordering platform reserved for business customers",
+      "No, as far as e-commerce is concerned",
+      "Check that a private individual cannot actually place an order: a simple optional “VAT number” field is not enough"
+     ],
+     [
+      "Mixed site, consumers and businesses",
+      "Yes, for the consumer journey",
+      "The same checkout often serves both audiences: that is the one to make compliant"
+     ],
+     [
+      "Microenterprise providing services: fewer than 10 persons and annual turnover or balance sheet total not exceeding €2 million",
+      "Exempted by the directive",
+      "In Belgium, the exclusion only applies until 28 June 2030; keep your threshold calculation on file"
+     ],
+     [
+      "Swiss or British company selling to consumers in the Union",
+      "Yes, for those sales",
+      "The requirements apply to any service provided to a consumer in the Union, wherever the seller is established"
+     ],
+     [
+      "Brochure site with no online ordering",
+      "No, as far as e-commerce is concerned",
+      "It comes into scope as soon as a booking or payment module is added"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "In France, two regimes can overlap. A company whose turnover in France exceeds €250 million is also subject to article 47 of the law of 11 February 2005: an accessibility statement, a compliance notice on the home page, a multi-year plan and an assessment against the RGAA, the French accessibility framework. This dual obligation is explained in our article on [[article:france|digital accessibility obligations in France]]. For a small or medium-sized business, the first step is to check whether the exemption applies, which the page on [[sector:pme|digital accessibility for SMEs and mid-sized companies]] helps you to do."
+  ],
+  [
+   "note",
+   "Key point",
+   "A website or an app is not a “product” within the meaning of the directive: no transitional period applies. An online shop that was live before 28 June 2025 must have been accessible since that date. Only targeted exclusions remain, such as pre-recorded time-based media and office file formats published before that date, together with the continued provision, until 28 June 2030 at the latest, of services under contracts concluded before 28 June 2025."
+  ],
+  [
+   "h2",
+   "eaa-requirements-online-shop",
+   "What the EAA actually requires of an e-commerce site"
+  ],
+  [
+   "p",
+   "Annex I of the directive does not cite any standard. It sets outcomes. For all services, it requires in particular that websites and apps be made perceivable, operable, understandable and robust, in a consistent and adequate way, and that information on how the service works and on its accessibility features be provided in an accessible form. For e-commerce, it adds three specific requirements, which the Luxembourg market surveillance office sets out, with example solutions, in its [[https://accessibilite-produits-services.public.lu/dam-assets/modles/guides/solutions/services-exigences-supplmentaires-commerce-lectronique.pdf|guide to the additional requirements for e-commerce services (in French)]]:"
+  ],
+  [
+   "ul",
+   [
+    "providing information on the accessibility of the products and services being sold, where that information is supplied by the responsible economic operator, for example the manufacturer;",
+    "ensuring the accessibility of identification, security and payment functionality when it is delivered as part of the service;",
+    "providing identification methods, electronic signatures, security and payment services that are perceivable, operable, understandable and robust."
+   ]
+  ],
+  [
+   "p",
+   "The third requirement has the heaviest consequences. It targets precisely the building blocks that merchants do not develop themselves: the payment provider's page, strong customer authentication for the cardholder, the signing module for a rental or credit agreement. The Luxembourg office gives two examples of solutions: a payment interface that can be operated by voice, allowing a blind person to shop independently, and identification dialogue boxes that can be read by a screen reader."
+  ],
+  [
+   "p",
+   "In France, [[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048180389|article D. 412-57 of the French Consumer Code (in French)]] turns these requirements into obligations of conduct for the service provider: design and provide the service in line with the requirements set by ministerial order; prepare and make public, in writing and orally, the information explaining how the service meets them, and keep that information for as long as the service is offered; put procedures in place so that the service remains compliant; take corrective action in the event of non-conformity and inform the authorities; and, finally, provide on reasoned request the material demonstrating compliance."
+  ],
+  [
+   "p",
+   "To show that a journey achieves these outcomes, auditors rely on the [[https://www.w3.org/TR/2023/REC-WCAG22-20231005/|WCAG 2.2 guidelines]], which became a W3C Recommendation on 5 October 2023, and on the European standard EN 301 549. No version of that standard yet confers a presumption of conformity under the EAA, as none has been cited in the Official Journal of the Union. In practice, WCAG 2.2 level AA is the safest target: it is the level to which version 4.1.1 of the standard is aligned, published on 2 September 2026 and not yet cited in the Official Journal. The correspondences between WCAG, EN 301 549, the RGAA and the Luxembourg RAWeb are detailed in our comparison of [[article:normes|digital accessibility standards]]."
+  ],
+  [
+   "h2",
+   "using-the-checklist",
+   "How to use this e-commerce accessibility checklist"
+  ],
+  [
+   "p",
+   "The checklist that follows is organised like a customer's journey. For each screen, it states what to check, gives in brackets the number of the corresponding WCAG 2.2 success criterion, and describes the most frequent defect. It does not replace a full audit: it allows a product team to spot the major blockers in a single day, prioritise fixes and prepare for an audit in good conditions."
+  ],
+  [
+   "p",
+   "Four simple steps are enough for most of the checks, with no technical skills required:"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Unplug the mouse.",
+     "Move through the screen with the Tab key, go back with Shift + Tab, activate with Enter or Space and close with Esc. You must always be able to see where the focus is and be able to do everything."
+    ],
+    [
+     "Turn on a screen reader.",
+     "VoiceOver on iPhone and Mac, TalkBack on Android, NVDA (free) on Windows. Listen to what is announced for each button, each field and each message: a name, a role and a state."
+    ],
+    [
+     "Zoom to 200%, then narrow the window to 320 pixels wide.",
+     "The text must enlarge without being cut off, and the page must be readable without horizontal scrolling (criteria 1.4.4 and 1.4.10)."
+    ],
+    [
+     "Test on a real phone.",
+     "Most orders are placed on mobile: check the size of touch targets, complex gestures and screen orientation."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Record each defect with a screenshot, the page address, and the browser and tool used. This log becomes your first tracking document, and it will let the auditor check quickly whether the problems you found have been fixed. Keep it in a shared space rather than in someone's inbox: the people who fix the defects are rarely the people who found them."
+  ],
+  [
+   "h2",
+   "home-navigation-banners",
+   "Screen 1: home page, menu and banners"
+  ],
+  [
+   "p",
+   "The home page rarely contains the most serious blockers, but it holds the components that cause trouble on every page: the cookie consent banner, the newsletter sign-up pop-up, the main menu and the promotional carousel. A defect here is repeated across the whole site."
+  ],
+  [
+   "ul",
+   [
+    "The cookie banner receives focus when it opens, can be read by a screen reader and can be closed with the keyboard; its “Accept” and “Reject” buttons have sufficient contrast (2.1.1, 1.4.3). Common defect: a banner that is invisible to the screen reader yet still blocks clicks.",
+    "A skip link lets users go straight to the main content (2.4.1).",
+    "The mega menu opens and closes with the keyboard, and every subcategory can be reached with Tab or the arrow keys; the button that opens it announces whether it is “expanded” or “collapsed” (2.1.1, 4.1.2).",
+    "A carousel that scrolls automatically can be paused (2.2.2) and its arrows have an explicit name, not just an icon.",
+    "The newsletter sign-up pop-up does not appear in the middle of data entry, receives focus, closes with Esc and returns focus to where it was.",
+    "Sticky promotional banners do not entirely hide the element that has focus (2.4.11), a frequent defect with “free delivery” bars fixed to the bottom of the screen on mobile.",
+    "The logo and the basket and account icons have an accessible name; the basket icon also announces the number of items (1.1.1, 4.1.2)."
+   ]
+  ],
+  [
+   "p",
+   "Text contrast is measured against criterion 1.4.3: 4.5:1 for body text, 3:1 for large text. Crossed-out prices in light grey, legal notices in small print and white “new” labels on pastel backgrounds often fail. Criterion 1.4.11 also requires a contrast of 3:1 for field borders when they are needed to identify the field, and for icons needed to understand the content."
+  ],
+  [
+   "h2",
+   "search-product-lists-filters",
+   "Screen 2: search, product listings and filters"
+  ],
+  [
+   "p",
+   "Search is often the first thing a screen reader user does, because browsing a catalogue page by page takes a long time. Results lists and filters are also where poorly conveyed dynamic components tend to accumulate."
+  ],
+  [
+   "ul",
+   [
+    "The search field has a label, not just placeholder text that disappears when typing starts (3.3.2).",
+    "Suggestions that appear while typing are announced and can be browsed with the arrow keys; Enter launches the search without trapping the user.",
+    "The number of results is announced after a search or after a filter is applied, without moving the focus: this is a status message (4.1.3).",
+    "Each filter is a genuine checkbox or a genuine button whose “checked” or “applied” state is conveyed (4.1.2). Common defect: clickable colour swatches announced as “button, button, button”.",
+    "The two-handle price slider has an alternative: two “minimum price” and “maximum price” fields, or handles that can be adjusted with the keyboard (2.1.1, 2.5.7).",
+    "Changing the sort order or a filter does not reload the page without warning and does not send the focus back to the top of the page (3.2.2).",
+    "In the listing, each product card has a single main link whose text includes the product name, rather than three identical “View” links (2.4.4).",
+    "Infinite scrolling is supplemented by a “Show more products” button and does not make the footer unreachable, which is often where contact details and terms of sale are found."
+   ]
+  ],
+  [
+   "p",
+   "One simple test sums up this screen: using a screen reader, search for “white trainers”, filter by your size and sort by price, lowest first. If at each step you do not know how many products are still displayed and which filters are active, the journey cannot be completed independently."
+  ],
+  [
+   "h2",
+   "accessible-product-page",
+   "Screen 3: an accessible product page"
+  ],
+  [
+   "p",
+   "The product page is the screen where the buying decision is made. It combines images, variant choices, prices, reviews and often a video. It is also where Annex I requires information on the accessibility of the product being sold, where the manufacturer supplies it."
+  ],
+  [
+   "table",
+   {
+    "caption": "Product page: priority checks, WCAG 2.2 criterion and frequent defect",
+    "head": [
+     "Element",
+     "What to check",
+     "Criterion",
+     "Frequent defect"
+    ],
+    "rows": [
+     [
+      "Product photos",
+      "A useful text alternative: colour, material, a detail visible in the photo; not the file name",
+      "1.1.1",
+      "All images carry the same text, the product name"
+     ],
+     [
+      "Gallery and zoom",
+      "Thumbnails reachable with the keyboard, zoom usable without a mouse, active image announced",
+      "2.1.1, 4.1.2",
+      "Zoom on hover only, unusable with the keyboard and on mobile"
+     ],
+     [
+      "Colours and sizes",
+      "Each swatch has a name (“navy blue”, “size 42”) and a conveyed selected state",
+      "1.1.1, 4.1.2",
+      "Colour swatches with no name; unavailable size shown only by greying out"
+     ],
+     [
+      "Availability",
+      "Stock is given in text, not only by a green or red dot",
+      "1.4.1",
+      "“In stock” shown by colour alone"
+     ],
+     [
+      "Price and promotion",
+      "Old and new prices distinguished in text, not only by strikethrough styling",
+      "1.3.1",
+      "The screen reader reads “89 euros 59 euros” without saying which one applies"
+     ],
+     [
+      "Customer reviews",
+      "The rating is given in text (“4.2 out of 5, 128 reviews”), not only as stars",
+      "1.1.1",
+      "Decorative stars with no text equivalent"
+     ],
+     [
+      "Size guide",
+      "A genuine table with headers, in a window that closes with the keyboard",
+      "1.3.1, 2.1.2",
+      "Size guide supplied as an image"
+     ],
+     [
+      "Demonstration video",
+      "Captions, named player controls, no autoplay with sound",
+      "1.2.2, 1.4.2",
+      "Video starts automatically, pause button has no name"
+     ],
+     [
+      "“Add to basket” button",
+      "Named button, confirmation of the addition announced without losing position",
+      "4.1.2, 4.1.3",
+      "Silent addition: the customer does not know whether the item is in the basket"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Information on the accessibility of the product is a requirement specific to e-commerce, and it is often overlooked. It mainly concerns products that are themselves covered by the EAA or whose manufacturer documents their accessibility: a computer, an e-reader, a phone, a television. If the manufacturer provides this information, the product page must include it, in an accessible form. Plan a dedicated field in your product information management system and ask your suppliers for it when listing new products."
+  ],
+  [
+   "p",
+   "Writing matters as much as code. A well-written text alternative for a dress describes what a sighted person understands by looking at the photo: the cut, the length, the pattern. For a product content team, this is a skill that can be learned in a few hours, and it is often where our [[svc:formations|digital accessibility training]] for content teams begins. A short internal style guide, with three or four examples per product category, keeps descriptions consistent when several people write them."
+  ],
+  [
+   "h2",
+   "basket-mini-basket",
+   "Screen 4: basket and mini-basket"
+  ],
+  [
+   "p",
+   "The basket is a highly dynamic screen: every change in quantity recalculates the totals, the delivery charges and sometimes the discounts. For someone who cannot see the screen, every unannounced change is lost information."
+  ],
+  [
+   "ul",
+   [
+    "The “+” and “−” quantity buttons have a full name (“increase quantity of white trainers”) and the new quantity is announced (4.1.2, 4.1.3).",
+    "The remove button states which item it removes, and the removal is confirmed by a message (2.4.4, 4.1.3).",
+    "The update to the total and to the delivery charges is announced, or at the very least the total stays in a predictable, readable place.",
+    "The promo code field has a label; a rejected code produces a text error message linked to the field (3.3.1).",
+    "A mini-basket that slides open as a drawer receives focus, closes with Esc and does not let the focus escape behind it into the page (2.4.3).",
+    "A basket “reserved for 10 minutes” or a session that expires warns the user, gives them at least twenty seconds to extend the time limit with a simple action, and allows them to extend it at least ten times (2.2.1).",
+    "Touch targets measure at least 24 by 24 CSS pixels or are sufficiently spaced (2.5.8): the small remove crosses on mobile are a frequent source of errors."
+   ]
+  ],
+  [
+   "p",
+   "Cross-selling raises a particular problem. “You may also like” blocks inserted between the basket and the checkout button lengthen the journey for keyboard and screen reader users. Place them after the main button or in an area that can easily be skipped."
+  ],
+  [
+   "h2",
+   "account-login-captcha",
+   "Screen 5: account creation, login and CAPTCHA"
+  ],
+  [
+   "p",
+   "Account creation and login are the screens where defects become blocking. A blind person can work around a poorly described image on a product page; they cannot work around a CAPTCHA they cannot perceive. This is also where the Annex I requirement on identification methods applies."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Offer guest checkout.",
+     "A guest journey reduces the number of screens and fields. It is not an obligation, but it is the simplest way of limiting risk."
+    ],
+    [
+     "Label every field and declare its purpose.",
+     "Name, email address, phone number and postal address fields carry the appropriate autocomplete attribute, which allows the browser to fill them in automatically (1.3.5); instructions, such as the password format, are given before data entry (3.3.2)."
+    ],
+    [
+     "Allow the password and the received code to be pasted.",
+     "WCAG 2.2 criterion 3.3.8 prohibits requiring a cognitive function test, such as remembering or transcribing characters, without an alternative: copy and paste and password managers must work."
+    ],
+    [
+     "Replace the visual CAPTCHA.",
+     "A CAPTCHA based on images or distorted characters must have an alternative that does not rely on the same ability. Solutions that analyse behaviour in the background, without any action from the user, or verification by email, cause fewer difficulties."
+    ],
+    [
+     "Display a button to show the password.",
+     "It helps people with motor or memory impairments, and it must itself have a name and a state that are conveyed."
+    ],
+    [
+     "Write useful error messages.",
+     "“Invalid email address: the @ character is missing” rather than “Input error”, placed next to the field and announced to the screen reader (3.3.1, 3.3.3)."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "The one-time code sent by text message deserves a specific test on mobile. Users must be able to leave the app, read the message and come back to enter the code before it expires. Automatic filling of the code by the operating system helps a great deal, provided that the field is declared correctly."
+  ],
+  [
+   "h2",
+   "delivery-payment-authentication",
+   "Screen 6: delivery, payment and strong authentication"
+  ],
+  [
+   "p",
+   "The checkout is the part of the site that authorities and complainants examine first, because a defect there prevents the purchase itself. It mixes forms developed by the merchant with components supplied by third parties: the pick-up point map, the payment provider's page and the authentication window of the customer's bank."
+  ],
+  [
+   "h3",
+   "Address and delivery method"
+  ],
+  [
+   "ul",
+   [
+    "The billing address can reuse the delivery address through a checkbox, without re-entering it (3.3.7).",
+    "The pick-up point can be chosen from a text list sorted by distance, in addition to the interactive map, which is rarely usable with a keyboard or a screen reader (1.1.1, 2.1.1).",
+    "Delivery slots presented as a grid state in text the date, time, price and availability of each slot, and the chosen slot is conveyed as selected (1.3.1, 4.1.2).",
+    "Delivery methods are genuine radio buttons grouped under a legend (1.3.1)."
+   ]
+  ],
+  [
+   "h3",
+   "Payment and strong authentication"
+  ],
+  [
+   "ul",
+   [
+    "The card fields, often embedded in a frame supplied by the payment provider, each have a conveyed label, including the expiry date and the security code (3.3.2, 4.1.2).",
+    "The embedded frame has a title, and the focus moves into and out of it normally with the keyboard (2.4.3).",
+    "Payment methods shown as logos have a text name (1.1.1).",
+    "The strong authentication step, displayed by the customer's bank, does not time out while a screen reader user switches from one app to another; if it fails, a clear message allows the user to try again.",
+    "Before confirmation, a summary allows the user to check and correct the items, the address and the amount (3.3.4).",
+    "The checkbox for accepting the terms and conditions has a clickable label and the link to the terms is accessible; the final button says what it does, for example “Order with obligation to pay”, the wording French consumer law expects (“Commande avec obligation de paiement”, or an equally unambiguous phrase), and not just an arrow."
+   ]
+  ],
+  [
+   "p",
+   "A reliable diagnostic approach is to place a real order, all the way to payment, with a screen reader on a computer and then on mobile, using a test card supplied by the payment provider. This is the scenario in which an [[svc:audit-conformite|EN 301 549 and WCAG compliance audit]] adds the most value: it lists the defects, but also identifies who must fix them, the merchant or the provider."
+  ],
+  [
+   "note",
+   "Key point",
+   "The merchant remains the provider of the e-commerce service, even when the payment page is hosted by a provider. A defect in the payment module is therefore a defect in your service."
+  ],
+  [
+   "h2",
+   "confirmation-emails-customer-service",
+   "Screen 7: confirmation, emails, invoices and customer service"
+  ],
+  [
+   "p",
+   "The journey does not end with the click on “Place order”. Buyers must be able to understand that the order has gone through, track the delivery, view their invoice, return an item and contact customer service. These screens are often produced by tools other than the website itself: email software, invoice generator, returns management tool, chatbot."
+  ],
+  [
+   "ul",
+   [
+    "The confirmation page clearly announces that the order was successful and gives its number, with an explicit page title (2.4.2).",
+    "Confirmation and dispatch emails are readable as text, with headings, explicit links and images that have alternatives; parcel tracking does not rely on an image.",
+    "Downloadable invoices and returns labels are tagged PDFs, or their content is available in HTML in the customer account.",
+    "The returns form follows the same rules as the checkout: labels, explicit errors, no blocking CAPTCHA.",
+    "The link to help and contact is in the same place on every page (3.2.6, introduced in WCAG 2.2).",
+    "The chatbot, if there is one, can be used with a keyboard and a screen reader, and is not the only way to reach customer service: a form, an email address or a phone number remain available."
+   ]
+  ],
+  [
+   "p",
+   "Annex I also covers, where applicable, support services: help desks, call centres, technical support, relay services and training services. They must provide information on the accessibility of the service and its compatibility with assistive technologies, through accessible means of communication. An adviser who knows how to guide a screen reader user to the right button, or who can take the order through another channel, is part of compliance."
+  ],
+  [
+   "h2",
+   "third-party-components-responsibility",
+   "Payment, reviews, chat, CAPTCHA: third-party components and who is responsible"
+  ],
+  [
+   "p",
+   "An average online shop assembles around ten external components. Each of them can break the accessibility of a journey that is otherwise compliant. The directive does not provide for any transfer of responsibility to these suppliers: towards the consumer and the authority, it is the provider of the e-commerce service who is answerable. The only effective response lies in contracts and documentation."
+  ],
+  [
+   "table",
+   {
+    "caption": "Third-party components of an online shop: risks and what to require from the supplier",
+    "head": [
+     "Component",
+     "Typical risk",
+     "What to ask the supplier for"
+    ],
+    "rows": [
+     [
+      "Payment page or frame",
+      "Unlabelled fields, timeouts that are too short, errors not announced",
+      "A recent WCAG 2.2 AA audit report, a list of known defects and a remediation timetable"
+     ],
+     [
+      "Strong authentication and electronic signature",
+      "Biometric confirmation with no alternative, short time limits",
+      "A description of the alternative methods offered to the cardholder or signatory"
+     ],
+     [
+      "CAPTCHA and anti-fraud",
+      "Visual or audio test with no alternative",
+      "A no-interaction mode or a documented alternative"
+     ],
+     [
+      "Customer reviews",
+      "Stars with no text, inaccessible review submission form",
+      "An audit report on the widget and the submission form"
+     ],
+     [
+      "Pick-up point map",
+      "Map unusable with the keyboard, no list",
+      "A list version, or an API that allows an accessible list to be displayed"
+     ],
+     [
+      "Chatbot",
+      "Window that grabs the focus, messages not announced",
+      "Results of tests with screen readers, option to disable it"
+     ],
+     [
+      "Cookie consent banner",
+      "Banner that blocks the page without being perceivable",
+      "An audit report and accessible configuration options"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Build these requirements into your contracts and your calls for tender: the expected level, the evidence to be supplied, the deadline for fixing reported defects and notification of any new version. For each release, an [[svc:recette|accessibility acceptance test]] checks that the new version of the component does not make the journey regress. When a supplier cannot keep up, document the alternative offered to customers and the replacement timetable."
+  ],
+  [
+   "h2",
+   "common-ecommerce-errors",
+   "The ten most common errors on an e-commerce site"
+  ],
+  [
+   "p",
+   "These errors come up in audit after audit, whatever the platform used. They are rarely expensive to fix when they are dealt with in the theme or in shared components, once and for all pages."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Buttons with no name.",
+     "Basket, wishlist and close icons, carousel arrows: the screen reader announces “button” and nothing more."
+    ],
+    [
+     "Silent variants.",
+     "Colour and size swatches with no name or state, which prevent the customer from choosing the right item."
+    ],
+    [
+     "Silent additions to the basket.",
+     "No confirmation is announced, so the user adds the same product three times to be sure."
+    ],
+    [
+     "Windows that trap the focus.",
+     "A mini-basket, sign-up pop-up or size guide that cannot be closed with the keyboard."
+    ],
+    [
+     "Contrast that is too low.",
+     "Crossed-out prices, delivery notices and text over photos below 4.5:1."
+    ],
+    [
+     "Forms without labels.",
+     "Placeholder text used as the only label, which disappears when typing starts."
+    ],
+    [
+     "Vague error messages.",
+     "“An error has occurred” in red at the top of the page, with no indication of the field concerned."
+    ],
+    [
+     "A CAPTCHA with no alternative.",
+     "A visual test imposed at account creation or at payment."
+    ],
+    [
+     "An untested payment step.",
+     "The provider's frame has never been tried with a screen reader or on mobile."
+    ],
+    [
+     "Accessibility that regresses.",
+     "The site is fixed, then a promotional campaign or a new theme reintroduces the defects because nothing was checked before going live."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "The first five are usually fixed in the theme's components: a well-built button, swatch or modal window solves the problem everywhere. This is the work our [[svc:developpement|developers specialising in accessibility]] carry out alongside your teams, starting with the most widely used components."
+  ],
+  [
+   "h2",
+   "evidence-to-keep",
+   "Evidence to keep and the accessibility information page"
+  ],
+  [
+   "p",
+   "On the day of an inspection or a formal notice, the question is not only “is the site accessible?”, but “what can you demonstrate?”. In France, the DGCCRF, the authority responsible for consumer protection, checks e-commerce services; its officers can order a business to bring its service into compliance, and breaches are fifth-class petty offences (contraventions de cinquième classe). In Belgium, e-commerce is checked by the Economic Inspectorate of the FPS Economy; in Luxembourg, by the Office de la surveillance de l'accessibilité des produits et services (OSAPS). Each country's regime is detailed in our articles on [[article:belgique|Belgium]] and [[article:luxembourg|Luxembourg]]."
+  ],
+  [
+   "table",
+   {
+    "caption": "Evidence file for an online shop: expected content and update frequency",
+    "head": [
+     "Document",
+     "Expected content",
+     "Update"
+    ],
+    "rows": [
+     [
+      "Accessibility information page",
+      "Description of the service, how it works, how it meets the requirements, known limitations, contact",
+      "At every significant change to the service"
+     ],
+     [
+      "Audit report",
+      "Reference standard, date, sample, journeys tested, assistive technologies, results",
+      "At least once a year and after every redesign"
+     ],
+     [
+      "Dated remediation plan",
+      "Defects ranked by severity, owner, deadline, status",
+      "Every month"
+     ],
+     [
+      "Supplier documentation",
+      "Audit reports for third-party components, contractual commitments",
+      "At each new version or contract renewal"
+     ],
+     [
+      "Monitoring procedure",
+      "Pre-release checks, acceptance criteria, people responsible",
+      "Annual review"
+     ],
+     [
+      "Log of reports",
+      "Customer requests, response given, time taken",
+      "Ongoing"
+     ],
+     [
+      "Eligibility calculation or exception file",
+      "Headcount and thresholds for a microenterprise, assessment under Annex VI in the event of a disproportionate burden",
+      "At the close of each financial year"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "The information page provided for in Annex V of the directive is not just another legal text. Linked from the footer, it describes the service and explains how it meets the requirements, in a format that is itself accessible. In Luxembourg, the market surveillance office provides a template information sheet for services covered by the law of 8 March 2023. For a French company that is also subject to article 47, this page can sit alongside the accessibility statement, provided that each meets its own requirements: the method is explained in our article on the [[article:declaration|accessibility statement and its common mistakes]]."
+  ],
+  [
+   "p",
+   "Exceptions must be documented before they are relied upon. In Luxembourg, an operator invoking an exemption on the grounds of a disproportionate burden or a fundamental alteration [[https://guichet.public.lu/en/entreprises/commerce/accessibilite-produits-services/derogation-exigences-accessibilite.html|informs the office through an online procedure]], with supporting documents. Remember that the directive expressly rules out lack of priority, time or knowledge as a justification."
+  ],
+  [
+   "p",
+   "For an online shop, the most concrete risk today is litigation. In France, on 4 June 2026, the Caen judicial court, hearing an urgent application by two associations, ordered a major retail chain to make its website and app accessible within six months, subject to a daily penalty, rejecting the argument of a 71% compliance rate. In Lille, on 5 May 2026, the judge hearing urgent applications had on the contrary dismissed the same associations' claim against the online retail subsidiary of another chain, on the grounds that its turnover was below the €250 million threshold of article 47, a reading of how this provision fits with the Consumer Code that some lawyers dispute. Consumers can also report an accessibility defect to the DGCCRF through SignalConso or the RéponseConso service, as stated in the [[https://handicap.gouv.fr/sites/handicap/files/2025-07/Fiche-conso-DGCCRF.pdf|DGCCRF consumer fact sheet on the accessibility of products and services (in French)]]."
+  ],
+  [
+   "h2",
+   "90-day-compliance-plan",
+   "A 90-day EAA e-commerce compliance plan"
+  ],
+  [
+   "p",
+   "An online shop is not made accessible in one go. The aim of the first three months is to remove the blockers that prevent people from buying, to document the approach and to put in place the checks that will prevent regressions. The timetable below suits a medium-sized site with a development team; it takes longer for a multi-country catalogue or for several mobile apps."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Weeks 1 and 2: set the scope.",
+     "Check eligibility and the countries you sell to, list the critical journeys (search, product page, basket, account, payment, returns, contact) and the third-party components, then run the checklist in this article on each screen. For groups operating in several countries, the [[sector:grands-comptes|large enterprises]] page sets out an approach by brand and by market."
+    ],
+    [
+     "Weeks 3 to 5: audit.",
+     "Have the critical journeys assessed against WCAG 2.2 level AA and the EN 301 549 standard, on desktop and on mobile. In our practice, an audit takes three weeks on average; the report should identify, for each defect, the component and the team responsible."
+    ],
+    [
+     "Weeks 4 to 10: fix what blocks first.",
+     "Deal first with the defects that prevent an order from being completed, then those that affect every screen through shared components, and finally content defects. At the same time, open requests with third-party suppliers."
+    ],
+    [
+     "Weeks 8 to 11: test with users.",
+     "Ask people who use a screen reader, voice control or a magnifier every day to place real orders. [[svc:test-utilisateur|User testing with people with disabilities]] reveals blockers that no checklist measures, and provides strong evidence."
+    ],
+    [
+     "Weeks 10 to 12: publish and set up monitoring.",
+     "Publish the information page, the remediation plan and an accessible means of contact. Add accessibility criteria to the definition of “done” for each feature and an acceptance test before each release, particularly before sales campaigns."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "This approach fits into the broader framework presented in our [[article:guide|guide to digital accessibility]]. For a company that also sells to public bodies in France, an [[article:audit-rgaa|RGAA audit carried out according to the official method]] can be conducted on the same sample, which avoids testing the same screens twice. A Swiss company selling in the Union will find the correspondences with the eCH-0059 standard on the page on [[country:suisse|digital accessibility in Switzerland]]."
+  ]
+ ],
+ "faq": [
+  [
+   "Is accessibility mandatory for an e-commerce site?",
+   "Yes, since 28 June 2025, for any website or app that allows a consumer to conclude a contract online in the European Union. Only microenterprises providing services, with fewer than 10 persons and no more than €2 million in annual turnover or balance sheet total, are exempted by the directive. In Belgium, this exclusion is only provided for until 28 June 2030. A brochure site with no online ordering is not covered on that basis."
+  ],
+  [
+   "Is a shop built on an off-the-shelf e-commerce platform accessible by default?",
+   "No. A platform provides components that are more or less well built, but the theme, the added modules, the content and the third-party components determine the result. Two shops on the same platform can have very different levels of accessibility. Only an assessment of the site as it is actually published, including the purchase journey, allows a conclusion to be drawn."
+  ],
+  [
+   "Is my payment provider responsible for the accessibility of its page?",
+   "Towards the consumer and the enforcement authority, it is the merchant who provides the e-commerce service and who is answerable for its accessibility, payment included. The provider may be bound by the contract you sign with it. Ask it for a recent audit report, the list of known defects and a remediation timetable, and plan an alternative in case its module blocks customers."
+  ],
+  [
+   "What WCAG level should an online shop aim for?",
+   "WCAG 2.2 level AA. The directive does not cite a standard, but the authorities reason on the basis of the EN 301 549 standard, whose version 4.1.1 is aligned with WCAG 2.2. Aiming for this level now avoids having to redo the work when that version is cited in the Official Journal of the European Union."
+  ],
+  [
+   "Does an e-commerce site need to publish an accessibility statement?",
+   "The EAA requires information on the accessibility of the service, described in Annex V: a description of the service, how it works and how it meets the requirements. In France, an accessibility statement within the meaning of the RGAA is only mandatory for organisations subject to article 47, including companies with a turnover of more than €250 million in France. A single page can combine both, provided each meets its own requirements."
+  ],
+  [
+   "What are the risks for an inaccessible e-commerce site?",
+   "In France, the DGCCRF can order compliance, and breaches are fifth-class petty offences. Associations can also bring urgent proceedings: in June 2026 a court ordered a retail chain to make its site accessible within six months, subject to a daily penalty. In Belgium and Luxembourg, the transposing laws provide for administrative or criminal fines. On top of this comes the commercial risk of customers who cannot buy."
+  ],
+  [
+   "How long does it take to make an online shop accessible?",
+   "It depends on the size of the catalogue, the platform and the third-party components. For a medium-sized site, three months is generally enough to remove the blockers in the purchase journey, document the approach and put pre-release checks in place. Full compliance, including content and apps, is then planned over several months, with ongoing monitoring."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Can everyone complete your purchase journey?",
+ "cta_text": "Tell us your platform, the countries you sell to and your payment components: we will propose an audit focused on your checkout, on desktop and on mobile.",
+ "related": [
+  "eaa",
+  "declaration",
+  "normes"
+ ]
+}

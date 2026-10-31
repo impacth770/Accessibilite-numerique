@@ -118,7 +118,7 @@
   ],
   [
    "p",
-   "Das Zahlungsmodul verdient besondere Aufmerksamkeit, weil es fast immer von einem Dienstleister stammt. Der EAA verschiebt die Verantwortung deshalb nicht: Es ist der Händler, der die Dienstleistung im elektronischen Geschäftsverkehr gegenüber dem Verbraucher erbringt. Verlangen Sie daher von Ihren Anbietern für Zahlung, elektronische Signatur und CAPTCHA deren eigene Konformitätsnachweise, und testen Sie den vollständigen Ablauf, von der Produktseite bis zur Bestellbestätigung."
+   "Das Zahlungsmodul verdient besondere Aufmerksamkeit, weil es fast immer von einem Dienstleister stammt. Der EAA verschiebt die Verantwortung deshalb nicht: Es ist der Händler, der die Dienstleistung im elektronischen Geschäftsverkehr gegenüber dem Verbraucher erbringt. Verlangen Sie daher von Ihren Anbietern für Zahlung, elektronische Signatur und CAPTCHA deren eigene Konformitätsnachweise, und testen Sie den vollständigen Ablauf, von der Produktseite bis zur Bestellbestätigung. Unsere [[article:e-commerce|Checkliste zur Barrierefreiheit im Onlineshop, Seite für Seite]] beschreibt diese Prüfungen im Detail, von der Suche bis zur Zahlung."
   ],
   [
    "h3",
@@ -705,5 +705,6 @@
   "belgique",
   "normes"
  ],
- "cluster": "reglementation"
+ "cluster": "reglementation",
+ "modified": "2026-10-31"
 }
