@@ -425,7 +425,7 @@
   ],
   [
    "p",
-   "Il n'existe pas de tarif public de référence, et un prix annoncé sans connaître le périmètre n'a pas grande valeur. Le coût d'un audit d'accessibilité numérique dépend avant tout du volume et de la complexité de ce qui est évalué. Pour comparer des devis, demandez qu'ils portent sur le même échantillon, le même référentiel et les mêmes livrables."
+   "Il n'existe pas de tarif public de référence, et un prix annoncé sans connaître le périmètre n'a pas grande valeur. Le coût d'un audit d'accessibilité numérique dépend avant tout du volume et de la complexité de ce qui est évalué. Pour comparer des devis, demandez qu'ils portent sur le même échantillon, le même référentiel et les mêmes livrables. Notre article consacré au [[article:prix-audit|prix d'un audit d'accessibilité]] détaille les dix facteurs qui font varier un devis et propose une grille pour comparer les offres."
   ],
   [
    "ul",
@@ -609,5 +609,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-10-31"
+ "modified": "2026-11-03"
 }

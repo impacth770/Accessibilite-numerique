@@ -464,7 +464,7 @@
   ],
   [
    "p",
-   "Die Erklärung gilt ab ihrem Veröffentlichungsdatum. Sie muss in drei Fällen aktualisiert werden: zum Zeitpunkt einer wesentlichen Änderung oder einer Neugestaltung des Dienstes; drei Jahre nach ihrer Veröffentlichung; achtzehn Monate nach der Veröffentlichung einer neuen Version des Referenzrahmens, für Stellen, die die technische Methode des RGAA anwenden. Das zuerst eintretende Ereignis löst die Aktualisierung aus."
+   "Die Erklärung gilt ab ihrem Veröffentlichungsdatum. Sie muss in drei Fällen aktualisiert werden: zum Zeitpunkt einer wesentlichen Änderung oder einer Neugestaltung des Dienstes; drei Jahre nach ihrer Veröffentlichung; achtzehn Monate nach der Veröffentlichung einer neuen Version des Referenzrahmens, für Stellen, die die technische Methode des RGAA anwenden. Das zuerst eintretende Ereignis löst die Aktualisierung aus. Jeder dieser Anlässe erfordert ein neues Audit oder ein Nachaudit: Um es rechtzeitig einzuplanen, lesen Sie, [[article:prix-audit|was die Kosten eines Audits bestimmt und wie Sie Angebote vergleichen]]."
   ],
   [
    "p",
@@ -959,5 +959,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-10-29"
+ "modified": "2026-11-03"
 }

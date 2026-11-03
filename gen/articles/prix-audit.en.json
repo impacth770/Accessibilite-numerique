@@ -1,0 +1,764 @@
+{
+ "slug": "accessibility-audit-cost",
+ "h1": "Accessibility audit cost: what drives the quote and how to compare offers",
+ "crumb": "Accessibility audit cost",
+ "meta_title": "Accessibility audit cost: price factors, quotes, red flags",
+ "meta_desc": "Accessibility audit price explained: the ten factors behind a quote, a scoping sheet to send, a grid to compare offers and the warning signs to watch for.",
+ "card_desc": "What drives the cost of an RGAA or EN 301 549 audit, how to obtain comparable quotes and which offers to set aside.",
+ "cat": "guide",
+ "where": "Europe",
+ "cover": "COST",
+ "cover_note": [
+  "RGAA, RAWeb, EN 301 549 audits",
+  "Quotes, scoping, comparison"
+ ],
+ "date": "2026-11-03",
+ "cluster": "methode",
+ "lead": "The accessibility audit cost quoted by providers can vary enormously from one offer to the next, and this does not always mean that one provider is more expensive than another: very often, the quotes simply do not cover the same thing. This article explains how a digital accessibility audit quote is built, which factors push it up or down, what information to supply in order to receive comparable offers, and how to compare them line by line. It covers the RGAA audit in France, but also audits against the EN 301 549 standard, Luxembourg's RAWeb or the Swiss eCH-0059 standard, as well as buying an audit under French public procurement rules.",
+ "body": [
+  [
+   "h2",
+   "accessibility-audit-cost-without-scope",
+   "Accessibility audit cost: why a price without a scope means nothing"
+  ],
+  [
+   "p",
+   "The price grids “by type of website” found online are reassuring, but they compare objects that have nothing in common. A fifteen-page brochure site built on three templates and a ten-page site that includes a simulator, a logged-in area and a five-step payment funnel do not require the same work at all. The second may need several times the audit effort of the first, even though it has fewer pages."
+  ],
+  [
+   "p",
+   "What an accessibility audit actually sells is expert time: the time an auditor spends checking each criterion on each page of the sample, with several assistive technologies, then documenting each defect and formulating a fix. Everything that increases that time increases the price; everything that reduces it without removing a check lowers it. This is the only truly reliable key to reading a quote."
+  ],
+  [
+   "p",
+   "That is also why we do not publish a price list and why this article does not offer one: a figure announced before the service is known commits neither the provider nor the buyer. You can, however, perfectly well know in advance what will make the price of your digital accessibility audit vary, and put yourself in a position to receive comparable offers. That is the purpose of the sections that follow. To place the audit within the overall process (obligations, standards, steps), the article [[article:guide|digital accessibility: what the law requires and where to start]] gives the full picture."
+  ],
+  [
+   "note",
+   "Key takeaway",
+   "Two accessibility audit quotes can be compared only if they cover the same sample, the same standard, the same platforms and the same deliverables. Before comparing prices, compare scopes."
+  ],
+  [
+   "h2",
+   "how-an-accessibility-audit-quote-is-calculated",
+   "How an accessibility audit quote is calculated"
+  ],
+  [
+   "p",
+   "Whichever provider you choose, an audit quote breaks down into a few main phases. Knowing them helps you understand where most of the accessibility audit cost lies, and spot an offer that quietly drops one of them."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Scoping.",
+     "Discussion with your teams, inventory of templates and user journeys, choice of standard, building and validating the sample, checking access (pre-production environment, test accounts, dummy data). This is a short phase, but it determines everything else."
+    ],
+    [
+     "Page-by-page evaluation.",
+     "For an RGAA audit, each of the 106 criteria is examined on each page of the sample, using the tests supplied with the standard. This is by far the heaviest item: it grows with the number of pages, but above all with their density (forms, dynamic components, tables, media)."
+    ],
+    [
+     "Checks with assistive technologies.",
+     "Screen readers on computer and mobile, keyboard navigation, magnification. The standard publishes a reference test environment; each additional combination requested adds time."
+    ],
+    [
+     "Writing the deliverables.",
+     "Complete audit grid, report locating each non-conformity with a recommended fix, calculation of the compliance rate, prioritised action plan, draft accessibility statement. A report that merely lists non-conforming criteria is cheaper to produce, but it will cost your developers more, as they will have to track down each defect themselves."
+    ],
+    [
+     "The debrief.",
+     "Presentation of the results to business teams, technical teams and management, with answers to questions. It may be included, charged separately or absent."
+    ],
+    [
+     "Optional services.",
+     "Re-audit after fixes, support for developers during remediation, testing with users with disabilities, audit of office documents, training."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "The final price is therefore the product of a volume of work and the provider's daily rate. The daily rate depends on the seniority of the auditors, their specialisation and the organisation that employs them; it varies, but much less than the volume of work itself. When two offers show very large gaps, the explanation almost always lies in the number of days planned, and therefore in the scope, rarely in the daily rate."
+  ],
+  [
+   "p",
+   "The practical sequence of these phases, from scoping to debrief, is described in our article on [[article:audit-rgaa|how an RGAA audit unfolds, week by week]]. Here the issue is different: identifying what, in your service, will change the number of days."
+  ],
+  [
+   "h2",
+   "factors-driving-accessibility-audit-price",
+   "The ten factors that drive the price of an accessibility audit"
+  ],
+  [
+   "p",
+   "The table below brings together the factors that really weigh on a quote. For each one, it shows why audit time increases and what you can do to keep it under control without weakening the result."
+  ],
+  [
+   "table",
+   {
+    "caption": "Accessibility audit price factors and ways to control them",
+    "head": [
+     "Factor",
+     "Why it changes audit time",
+     "How to control it without distorting the audit"
+    ],
+    "rows": [
+     [
+      "Number of distinct templates",
+      "Each template brings its own components to check; two pages built on the same template are tested much faster than two different pages",
+      "Supply the inventory of templates and components rather than a bare page count"
+     ],
+     [
+      "Number of pages or screens in the sample",
+      "Each page is evaluated criterion by criterion; the volume of the report grows with it",
+      "Build the sample according to the official rules, without redundant pages"
+     ],
+     [
+      "Multi-step journeys",
+      "Every step of a process must be audited; forms, input errors and summary screens are the longest content to test",
+      "Prepare test accounts and data that make it possible to complete each journey"
+     ],
+     [
+      "Dynamic components",
+      "Menus, tabs, modal windows, carousels, interactive maps and autocomplete require keyboard and screen reader checks in every state",
+      "Flag complex components and the libraries used in advance"
+     ],
+     [
+      "Number of platforms",
+      "A service available on the web, on iOS and on Android represents three separate evaluations, with different tools and assistive technologies",
+      "Decide explicitly which platforms are within the scope of this audit"
+     ],
+     [
+      "Downloadable documents",
+      "Each PDF or office document is checked with its own tools: tagging, reading order, alternatives",
+      "Include at least one document per type of service, and handle large volumes in a separate engagement"
+     ],
+     [
+      "Multimedia content",
+      "Videos and audio content require checks on subtitles, transcripts, audio description and the player",
+      "List the media and indicate whether they are produced in-house or by a third party"
+     ],
+     [
+      "Standard and expected format",
+      "An audit against several standards at once, or with a correspondence table, requires more documentation",
+      "Choose one pivot standard per country and ask for a correspondence only where it serves a purpose"
+     ],
+     [
+      "Languages of the audit and of the report",
+      "A multilingual service may require checking the language versions and writing the report in several languages",
+      "Specify the versions to audit and the language of the report in the initial request"
+     ],
+     [
+      "Timetable and access constraints",
+      "An audit to be delivered at very short notice, or an unstable test environment, ties up more resources",
+      "Request the audit early and guarantee a stable environment throughout the audit"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Two lessons emerge from this table. First, the number of pages is a misleading indicator unless it comes with the number of templates and the list of journeys. Second, most factors can be controlled through preparation: a buyer who supplies a precise inventory receives quotes that are more accurate, closer to one another and often cheaper, because the provider does not need to build in a margin for the unknown."
+  ],
+  [
+   "h2",
+   "audit-sample-and-accessibility-audit-cost",
+   "The sample: the first item in the quote, and the first place where savings go wrong"
+  ],
+  [
+   "p",
+   "An audit never covers every page of a site: it covers a representative sample, and the result applies to the whole service. The composition of that sample therefore determines both the price and the reliability of the result. Reducing the sample is the simplest way to lower a quote, and the riskiest."
+  ],
+  [
+   "h3",
+   "What the official method requires"
+  ],
+  [
+   "p",
+   "In France, the official page on [[https://accessibilite.numerique.gouv.fr/obligations/evaluation-conformite/|assessing conformity with the RGAA (in French)]] sets the minimum content of the sample: the home page, the contact page, the legal notices, the Accessibility page, the site map, the help page and the authentication page where they exist; at least one relevant page per type of service, including search; at least one relevant downloadable document per type of service; all the pages of a process; pages with substantially different appearance or content; and finally randomly selected pages representing at least 10% of the sample. The number of visitors per page can also guide the choice."
+  ],
+  [
+   "p",
+   "One rule weighs heavily on both price and result: a criterion is validated for a page of a process only if it is validated for all the pages of that process. Removing the payment step from an order funnel, or the last step of an online procedure, therefore does not merely reduce the price: it makes the audit non-compliant with the method, and the published rate inaccurate."
+  ],
+  [
+   "h3",
+   "Three service profiles, three samples"
+  ],
+  [
+   "p",
+   "The following table shows how the sample, and therefore the audit effort, changes with the nature of the service. It deliberately gives no price: it serves to check that a quote provides for what your service requires."
+  ],
+  [
+   "table",
+   {
+    "caption": "Examples of sample composition by service profile",
+    "head": [
+     "Service profile",
+     "Expected sample content",
+     "What makes the audit heavier",
+     "What a quote that is too low often omits"
+    ],
+    "rows": [
+     [
+      "Information site of a small business or small local authority",
+      "Mandatory pages, one page per typical section, contact form, one or two PDF documents, random pages",
+      "Home page carousel, interactive map, form with a captcha",
+      "The PDFs, the complete contact form and the random pages"
+     ],
+     [
+      "Site with a logged-in area (citizens, customers, members)",
+      "Mandatory pages, login page, each type of procedure with all its steps, dashboard, documents produced by the service",
+      "Multi-step forms, error handling, session time-outs, data tables",
+      "The intermediate steps of procedures and the generated documents (certificates, invoices)"
+     ],
+     [
+      "Online shop subject to the EAA",
+      "Home page, search and filters, product list and product page, basket, account creation, delivery, payment, confirmation, transactional emails",
+      "Third-party components (payment, reviews, chat), strong authentication, product variants",
+      "Payment and strong authentication, on the grounds that they are supplied by a third-party provider"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "For an online shop, the list of screens to cover is developed in our [[article:e-commerce|e-commerce accessibility checklist, screen by screen]]. For a public service, the annotated sample example in our article on the RGAA audit makes it possible to check that no process has been left out. In both cases, ask for the exact list of pages to appear in the quote: it is this list, and not a number, that commits the provider."
+  ],
+  [
+   "p",
+   "The list of audited pages is, moreover, reproduced in the [[article:declaration|accessibility statement]], which makes it public. A convenient sample always ends up being noticed: a user, an association or the supervisory authority can see that the journey causing problems was never evaluated."
+  ],
+  [
+   "h2",
+   "types-of-accessibility-audit",
+   "Full audit, quick audit, re-audit, acceptance audit: what you are really buying"
+  ],
+  [
+   "p",
+   "The word “audit” covers very different services. Part of the price gap between offers comes from there: one offers a full conformity audit, another a quick diagnostic, and both carry the same name. The table below helps you identify what is actually being offered to you."
+  ],
+  [
+   "table",
+   {
+    "caption": "The main accessibility audit services and their use",
+    "head": [
+     "Service",
+     "What it checks",
+     "Does it allow a compliance rate to be published?",
+     "When to choose it"
+    ],
+    "rows": [
+     [
+      "Full conformity audit",
+      "All the criteria of the standard, on a sample compliant with the method, with assistive technologies",
+      "Yes, it is the basis of the accessibility statement",
+      "First evaluation, redesign, statement to be drawn up or renewed, preparation for an inspection"
+     ],
+     [
+      "Quick audit or diagnostic",
+      "A selection of criteria or pages, often the most blocking ones",
+      "No, the result is not a rate within the meaning of the standard",
+      "Estimate the scale of the work, prioritise before a redesign, prepare a budget"
+     ],
+     [
+      "Re-audit",
+      "The fixes, on the pages of the initial sample",
+      "Yes, it allows the rate and the statement to be updated",
+      "After a round of fixes"
+     ],
+     [
+      "Acceptance or pre-production audit",
+      "A new version before it goes live, on the templates and journeys that have changed",
+      "Depends on the scope; it mainly prepares a release without regressions",
+      "Before each major delivery, at the end of a project"
+     ],
+     [
+      "Mobile application audit",
+      "The screens of the application, on real devices, with the native screen readers",
+      "Yes, if the sample and the standard allow it",
+      "iOS or Android application within the scope of the obligations"
+     ],
+     [
+      "Automated scan",
+      "Some of the defects that a tool can detect (missing attributes, calculable contrast)",
+      "No: a large share of the criteria requires human judgement",
+      "Continuous monitoring between two audits, never as a replacement for the audit"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "When the aim is to publish or update an accessibility statement, only a full conformity audit, or a re-audit on the same sample, supports a defensible rate. A quick diagnostic is useful for budgeting, but it does not satisfy the obligation. For a French public service, our [[svc:audit-rgaa|RGAA audit]] covers the 106 criteria and delivers the draft statement; for a service subject to the European standard, the [[svc:audit-conformite|EN 301 549 and WCAG conformity audit]] follows the same logic."
+  ],
+  [
+   "p",
+   "The acceptance audit deserves a special mention, because it is often forgotten in budgets even though it costs less than a fix after go-live. Built into a project timetable, it checks that a new version does not reintroduce defects that have been fixed. Our [[svc:recette|accessibility acceptance testing]] service is designed to fit into an existing delivery cycle."
+  ],
+  [
+   "h2",
+   "standard-and-country-effect-on-audit-quote",
+   "RGAA, RAWeb, EN 301 549, eCH-0059: the effect of the standard and the country on the quote"
+  ],
+  [
+   "p",
+   "The audit standard depends on the country and on the status of the organisation. It affects the price more modestly than the sample does, but it changes the format of the deliverables, and therefore part of the writing work."
+  ],
+  [
+   "ul",
+   [
+    "In France, the RGAA 4.1.2 is the reference method for the public sector and for companies subject to Article 47 of the Law of 11 February 2005; the audit produces a grid in the official format and a rate calculated according to the method described above. The regulatory context is detailed on our page [[country:france|digital accessibility in France]].",
+    "In Belgium, there is no specific national standard: the audit relies on the EN 301 549 standard and on WCAG at level AA, with a report that can be requested in French, Dutch or English.",
+    "In Luxembourg, the public sector is assessed against RAWeb for the web and RAAM for mobile applications, published by the Service information et presse; their method is close to that of the RGAA. Our article on [[article:luxembourg|digital accessibility in Luxembourg]] describes the published checks.",
+    "In Switzerland, the eCH-0059 standard serves as the reference for federal administrations; it is based on WCAG. Swiss companies that sell in the European Union must also take the EAA into account.",
+    "For a service subject to the European Accessibility Act, the technical reference is the EN 301 549 standard; the comparison of standards appears in our article [[article:normes|WCAG 2.2, EN 301 549, RGAA, RAWeb: which standard to follow]]."
+   ]
+  ],
+  [
+   "h3",
+   "The case of groups operating in several countries"
+  ],
+  [
+   "p",
+   "A group that operates the same service in France, Belgium and Luxembourg does not need three independent full audits. The most economical approach is to choose a pivot standard, audit the shared templates once, then add the checks specific to each country (grid format, mandatory statements, accessibility statement). The additional cost then comes mainly from the deliverables and the languages, not from a new full evaluation."
+  ],
+  [
+   "h3",
+   "The effect of RGAA 5 on your purchasing timetable"
+  ],
+  [
+   "p",
+   "The DINUM (the French interministerial digital directorate) has announced that RGAA 5 will be published at the end of 2026. Statements published before its release will remain valid for eighteen months after its publication, without exceeding three years from their own date. If your statement is due to expire in the coming months, there is no point deferring the audit while waiting for the new version: an RGAA 4.1.2 audit carried out now remains usable, and a large share of the fixes it leads to will apply to the next version. If, however, you are launching a multi-year contract, provide in the specification that audits will follow the version of the standard in force on the date of each order."
+  ],
+  [
+   "h2",
+   "scoping-sheet-for-accessibility-audit-quotes",
+   "The scoping sheet to send in order to obtain comparable quotes"
+  ],
+  [
+   "p",
+   "The best way to obtain comparable prices is to ask every provider consulted the same question, with the same information. Here is the sheet we recommend attaching to any request for an accessibility audit quote. It fits on two pages and saves several rounds of exchanges."
+  ],
+  [
+   "ol",
+   [
+    [
+     "The service to be audited.",
+     "Name, address, nature (public site, logged-in area, application, intranet), target audience, main technologies (content management system, framework, component library)."
+    ],
+    [
+     "Context and objective.",
+     "First statement, renewal of a statement more than three years old, redesign under way, response to a formal notice, requirement from a customer or a public buyer, EAA compliance."
+    ],
+    [
+     "The expected standard.",
+     "RGAA 4.1.2, EN 301 549, RAWeb, eCH-0059, WCAG 2.2 at level AA, and any grid format that must be used."
+    ],
+    [
+     "The inventory of templates.",
+     "The list of page models and complex components, with an example address for each. This is the information that most improves the accuracy of quotes."
+    ],
+    [
+     "The journeys.",
+     "Each multi-step procedure or transaction, with the number of steps and the access conditions (account, payment, supporting document)."
+    ],
+    [
+     "Documents and media.",
+     "Types of downloadable documents (PDF forms, reports, generated certificates), approximate volume, presence of videos or audio content."
+    ],
+    [
+     "Platforms.",
+     "Web only, or also iOS and Android applications, with the versions and devices supported."
+    ],
+    [
+     "Languages.",
+     "Language versions of the service to be covered and the preferred language for the report and the debrief."
+    ],
+    [
+     "Access.",
+     "Availability of a stable pre-production environment, test accounts and dummy data, and security constraints (VPN, allow-list of addresses)."
+    ],
+    [
+     "Expected deliverables and services.",
+     "Grid, report, action plan, draft statement, debrief, re-audit, support with fixes, user testing, training."
+    ],
+    [
+     "The timetable.",
+     "Desired date for delivery of the report, deadlines (go-live, inspection, end of validity of the statement) and development freeze periods."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Once this sheet has been sent, a serious provider will often propose adjusting the sample: adding a forgotten journey, grouping two very similar templates. This is a good sign. Simply ask for the final sample to appear in the written proposal, so that all the quotes rest on an identical basis or, failing that, so that the differences are visible."
+  ],
+  [
+   "note",
+   "Key takeaway",
+   "A quote request that says only “50-page site, RGAA audit” will produce offers that cannot be compared. The inventory of templates, the list of journeys and the list of deliverables are the three pieces of information that make prices comparable."
+  ],
+  [
+   "h2",
+   "comparing-accessibility-audit-quotes",
+   "Comparing accessibility audit quotes: the line-by-line grid"
+  ],
+  [
+   "p",
+   "When the offers arrive, compare them on the following points before looking at the total price. Each line corresponds to a frequent gap between quotes that seem equivalent."
+  ],
+  [
+   "table",
+   {
+    "caption": "Comparison grid for accessibility audit quotes",
+    "head": [
+     "Point to compare",
+     "What the quote must specify",
+     "Warning sign"
+    ],
+    "rows": [
+     [
+      "Sample",
+      "The named list of pages and screens, the complete processes, the documents, the randomly selected pages",
+      "A bare number of pages, with no list or composition rule"
+     ],
+     [
+      "Standard and version",
+      "The standard, its version and the target level (for example RGAA 4.1.2, or WCAG 2.2 level AA)",
+      "“Standards in force” with no further detail"
+     ],
+     [
+      "Evaluation method",
+      "Manual evaluation of each criterion on each page, with tools used as support",
+      "Results coming mainly from an automated tool"
+     ],
+     [
+      "Assistive technologies",
+      "The screen reader and browser combinations used, on computer and on mobile",
+      "No mention, or a single tool"
+     ],
+     [
+      "Deliverables",
+      "Complete grid, report locating each defect, recommendations, prioritised action plan, draft statement",
+      "A “summary” report with no grid and no location of defects"
+     ],
+     [
+      "Debrief",
+      "Number of sessions, duration, audiences (technical teams, business teams, management)",
+      "Debrief absent, or charged without having been announced"
+     ],
+     [
+      "Re-audit",
+      "Included or optional, scope, time limit for requesting it",
+      "No mention: the real cost of the process is underestimated"
+     ],
+     [
+      "Independence",
+      "Auditors separate from the teams that designed or developed the service",
+      "Audit offered by the provider that built the site, with no separation of teams"
+     ],
+     [
+      "Lead time",
+      "Start date, duration of the audit, report delivery date",
+      "A very short lead time that is incompatible with the stated volume"
+     ],
+     [
+      "Assumptions and exclusions",
+      "What is not covered (third-party content, documents beyond a given volume, platforms)",
+      "Exclusions discovered when the report arrives"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Once these lines are aligned, the total price becomes useful data again. If two offers remain very far apart on an identical scope, ask for the number of days planned per phase: you will immediately see which one has underestimated the evaluation or the writing. There is nothing improper about asking this question; a provider who knows the profession answers it without difficulty."
+  ],
+  [
+   "h3",
+   "A simple scoring method"
+  ],
+  [
+   "p",
+   "For a private consultation as for a public contract, scoring in two blocks is usually enough. The first, technical block assesses the compliance of the sample with the method, the quality of an anonymised sample report, the assistive technologies and the competence of the auditors. The second assesses the price on an identical scope. Asking for an anonymised extract of a report is the quickest way to judge the real value of the deliverables: the way a defect is located and explained says a great deal about how useful the audit will be to your teams."
+  ],
+  [
+   "h2",
+   "seven-warning-signs-in-an-accessibility-audit-offer",
+   "Seven warning signs in an accessibility audit offer"
+  ],
+  [
+   "p",
+   "Some offers are cheaper because they do not provide an audit within the meaning of the standard. Here are the signs that should lead you to ask for clarification, or to set the offer aside."
+  ],
+  [
+   "ul",
+   [
+    "A fixed price announced without having seen the service or discussed the sample: the provider does not know what it is selling, and the scope will be adjusted after the fact.",
+    "An audit delivered in a few hours or in a single day for a service that includes journeys: the time planned is incompatible with a manual check of the criteria.",
+    "A report generated by an automated tool and presented as a conformity audit: many criteria, such as the relevance of a text alternative or the reading order, require human judgement.",
+    "A compliance rate guaranteed in advance, or a promised “certification”: the RGAA provides for an accessibility statement published by the organisation itself, not a certification issued by a provider, and a rate depends on the service, not on the offer.",
+    "No audit grid among the deliverables: without it, you can neither check the calculation of the rate, nor track the fixes, nor respond to an inspection.",
+    "A sample that excludes payment, authentication or the final steps of a procedure, on the grounds that they are supplied by a third party or difficult to access.",
+    "An offer that presents itself as mandated or recommended by an authority: Arcom states on its [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|page on the accessibility of digital services (in French)]] that it does not delegate to any person or group the task of acting on its behalf."
+   ]
+  ],
+  [
+   "p",
+   "A useful counter-example is Arcom's decision concerning the impots.gouv.fr website. The [[https://www.arcom.fr/en/find-out-more/legal-area/decisions/decision-24-june-2026-giving-formal-notice-ministry-public-action-and-accounts|decision of 24 June 2026]] notes in particular an inaccessible PDF tax notice, a drop-down menu that opens only with a mouse and a table whose cells are not linked to their headers. These are precisely the kinds of content that a reduced sample or an automated tool lets through: a downloadable document, a component that has to be operated with the keyboard, a table that has to be read with a screen reader."
+  ],
+  [
+   "h2",
+   "full-budget-beyond-accessibility-audit-cost",
+   "Beyond the accessibility audit cost: the full compliance budget"
+  ],
+  [
+   "p",
+   "The audit is rarely the heaviest item in a digital accessibility programme. It measures, locates and prioritises; it is the fixes that cost money, followed by maintaining compliance over time. A realistic budget therefore provides for several lines, some of them internal."
+  ],
+  [
+   "table",
+   {
+    "caption": "The items in a digital accessibility budget",
+    "head": [
+     "Item",
+     "What it covers",
+     "What makes it vary",
+     "Who usually bears it"
+    ],
+    "rows": [
+     [
+      "Initial audit",
+      "Conformity evaluation, report, action plan, draft statement",
+      "Sample, platforms, standard, deliverables",
+      "External provider or trained internal auditors"
+     ],
+     [
+      "Technical fixes",
+      "Reworking non-conforming components, templates and journeys",
+      "Front-end architecture, existence of a component library, technical debt",
+      "In-house development team or agency"
+     ],
+     [
+      "Editorial fixes",
+      "Image alternatives, headings, links, tables, content written by contributors",
+      "Volume of content, number of contributors",
+      "Content teams"
+     ],
+     [
+      "Documents",
+      "Making existing PDFs and office documents accessible, accessible templates for the future",
+      "Size of the backlog, documents with legal value or generated automatically",
+      "Business teams, specialist provider"
+     ],
+     [
+      "Re-audit",
+      "Checking the fixes and updating the rate",
+      "Scope of the initial sample, scale of the fixes",
+      "Preferably the provider of the initial audit"
+     ],
+     [
+      "User testing",
+      "Sessions with people with disabilities",
+      "Number of profiles, scenarios and sessions",
+      "Specialist provider"
+     ],
+     [
+      "Training",
+      "General awareness and role-specific training",
+      "Number of people and roles concerned",
+      "Provider, then internal champions"
+     ],
+     [
+      "Maintaining compliance",
+      "Acceptance testing at each release, monitoring, updating the statement",
+      "Frequency of deliveries, number of services",
+      "Internal teams, with occasional support"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "For the French public sector, this budget is not only a management matter. The official page on the [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|multi-year accessibility plan (in French)]] provides that it sets out the human and financial resources allocated to digital accessibility, the use of external expertise, the planned audits, the training actions and the integration of accessibility into contractual clauses, including calls for tender and quotes. The budget for the audit and the fixes is therefore meant to appear, at least in outline, in a published document."
+  ],
+  [
+   "p",
+   "The most cost-effective fixes are those that concern shared components: a defect fixed in a form component disappears from every page that uses it. This is why a well-built action plan groups defects by component rather than by page. When defects stem from the front-end architecture, support in [[svc:developpement|accessible development]] avoids paying twice for the same fix. And to stop contributors reintroducing editorial defects, [[svc:formations|targeted training by job role]] generally costs less than a new audit."
+  ],
+  [
+   "p",
+   "Finally, a process that provides for no verification with real users misses genuine barriers. [[svc:test-utilisateur|Testing with users with disabilities]], carried out on two or three essential journeys, complements the audit without replacing it: the audit says whether the service meets the standard, the tests say whether users manage to do what they came to do."
+  ],
+  [
+   "h2",
+   "cost-of-not-auditing",
+   "What not auditing costs"
+  ],
+  [
+   "p",
+   "The price of an audit should also be judged against what it avoids. In France, Arcom monitors compliance with the obligations of Article 47 of the Law of 11 February 2005. After a formal notice that has gone unheeded, it may impose a financial penalty of up to 50,000 euros for failure to meet the accessibility requirements and 25,000 euros for the other obligations: statement, notice on the home page, multi-year plan, annual plan and reporting mechanism. For products and services subject to the EAA, the DGCCRF (the French consumer protection authority) may order compliance, and breaches constitute fifth-class contraventions provided for in Article R. 451-4 of the Consumer Code. The details of the procedures appear in our article on [[article:france|obligations and penalties in France]]."
+  ],
+  [
+   "p",
+   "The most direct cost, however, is that of fixes made too late. A defect found during an inspection must be fixed under a deadline, often on a live service, sometimes by drawing in a team that was working on something else. In its decision of 24 June 2026, Arcom allowed nine months to correct the breaches of the accessibility requirements and two months for the documentary obligations: deadlines that leave little margin for a complex service whose condition had not been measured beforehand."
+  ],
+  [
+   "p",
+   "Conversely, an audit carried out at the right time makes it possible to fix first the defects that block essential journeys, to schedule the rest in later releases and to publish an accurate statement. A sincere “partially compliant” statement, backed by a dated action plan, is a far stronger position than no statement or an overstated rate."
+  ],
+  [
+   "h2",
+   "buying-an-accessibility-audit-in-public-procurement",
+   "Buying an accessibility audit in public procurement (French law)"
+  ],
+  [
+   "p",
+   "For a French public buyer, the price of the audit also determines the procedure. Since 1 April 2026, [[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053222294|Article R. 2122-8 of the Public Procurement Code (in French)]], as amended by Decree No. 2025-1386 of 29 December 2025, allows contracts for supplies or services whose estimated value is below 60,000 euros excluding VAT to be awarded without prior advertising or competition. The buyer must then take care to choose a relevant offer, to make good use of public funds and not to contract systematically with the same operator when several offers are capable of meeting the need. The rules in this section are those of French law."
+  ],
+  [
+   "p",
+   "This threshold is assessed on the estimated value of the need, not on a single audit. A local authority that plans to audit several sites over the lifetime of its multi-year plan often has an interest in grouping these needs in a framework agreement with order forms, rather than multiplying small orders. It gains consistency of method from one audit to the next, and its rates become comparable over time."
+  ],
+  [
+   "h3",
+   "Building the price schedule"
+  ],
+  [
+   "p",
+   "The structure of the price schedule determines whether offers can be compared. A single price “per audit” is hard to compare; a price “per page” encourages samples inflated with redundant pages. A more robust structure distinguishes a scoping lump sum, a unit price per page or screen of the sample, possibly distinguishing a simple page from a process step, a price per downloadable document, a re-audit price expressed per page, a debrief price and a day rate for support. An estimated quantity breakdown based on a real or fictional service then makes it possible to compare offers on the same scenario."
+  ],
+  [
+   "h3",
+   "Award criteria that protect quality"
+  ],
+  [
+   "ul",
+   [
+    "The method: compliance of the proposed sample with the official method, treatment of processes and documents, assistive technologies used.",
+    "The quality of the deliverables, assessed on an anonymised extract of a report and an audit grid.",
+    "The competence of the team: auditors' experience with the requested standard and command of assistive technologies.",
+    "Independence from the providers that design or maintain the audited service.",
+    "Lead times for performance and delivery of the deliverables, compatible with the timetable for publishing the statement.",
+    "The price, assessed on the estimated quantity breakdown rather than on isolated unit prices."
+   ]
+  ],
+  [
+   "p",
+   "For organisations in the [[sector:public|public sector]], the audit is also an opportunity to check the accessibility clauses of the contracts for the design and maintenance of sites: requiring accessible deliverables from a web provider costs little when the contract is awarded, and a great deal when defects are found after delivery."
+  ],
+  [
+   "h2",
+   "reducing-accessibility-audit-cost",
+   "Reducing the cost of an accessibility audit without distorting the result"
+  ],
+  [
+   "p",
+   "There are legitimate savings, which reduce audit time without removing any check. Almost all of them rely on preparation."
+  ],
+  [
+   "ul",
+   [
+    "Supply a precise inventory of templates and components: the auditor avoids discovering the structure of the site during the audit, and the sample contains no redundant pages.",
+    "Guarantee a stable environment and working test accounts from the first day: a journey blocked by an expired account or an unavailable pre-production environment costs billable time.",
+    "Before the audit, fix the obvious defects detected by a free automated tool: language attributes, missing alternatives, page titles. The auditor then spends time on the defects that require expertise.",
+    "Audit a component library or a design system shared by several sites, then limit the audits of the sites to the templates and content specific to each.",
+    "Group in a single order the services that share the same technology, in order to pool scoping and debrief.",
+    "Schedule the audit on a stabilised version, not on a version still in development that will change before the report is delivered.",
+    "Provide for the re-audit in the initial order: a provider that already knows the service carries it out faster, and its price is known in advance."
+   ]
+  ],
+  [
+   "p",
+   "Conversely, three savings are costly: removing processes from the sample, giving up assistive technologies and dropping the location of defects in the report. Each reduces the price of the audit, but increases the price of the fixes, or exposes you to an inaccurate statement."
+  ],
+  [
+   "p",
+   "For an [[sector:pme|SME]], the question of scope also arises beforehand. A services microenterprise with fewer than ten employees and with turnover or balance sheet total not exceeding two million euros is exempt from the EAA requirements for its services; it therefore has no audit obligation on that ground, even though the accessibility of its website remains a commercial asset. Before requesting a quote, check whether your service is really within the scope of the obligations: our article on the [[article:eaa|European Accessibility Act]] details the products, the services and the exemptions."
+  ],
+  [
+   "h2",
+   "action-plan-from-quote-request-to-re-audit",
+   "Action plan: from quote request to re-audit, in eight steps"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Check the obligation and the standard.",
+     "Identify the text that applies to your service and the standard expected in your country: RGAA, EN 301 549, RAWeb, eCH-0059."
+    ],
+    [
+     "Set the objective of the audit.",
+     "First statement, renewal, redesign, response to an inspection, customer requirement: the objective determines the type of service."
+    ],
+    [
+     "Complete the scoping sheet.",
+     "Inventory of templates, journeys, documents, platforms, languages, access, deliverables and timetable."
+    ],
+    [
+     "Consult at least two or three providers.",
+     "With the same sheet, and asking for the named list of pages in the proposed sample and an anonymised extract of a report."
+    ],
+    [
+     "Compare using the grid.",
+     "Align the scopes, then compare the prices; ask for the number of days per phase if there is a large gap."
+    ],
+    [
+     "Prepare the audit.",
+     "Stable environment, test accounts, an available technical contact, development freeze on the audited scope."
+    ],
+    [
+     "Publish and fix.",
+     "Publish the statement that matches the results, even unfavourable ones, then fix, starting with the essential journeys and shared components."
+    ],
+    [
+     "Schedule the re-audit and the next audit.",
+     "Re-audit after the fixes, then a new audit at the latest three years after the statement, after a redesign, or within eighteen months after a new version of the standard."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "If you would like a proposal on this basis, describe your service via the [[contact|contact]] page: we will reply with an annotated sample, a lead time and an offer broken down by phase. At our firm, the average lead time for an audit is three weeks from validation of the sample."
+  ]
+ ],
+ "faq": [
+  [
+   "How much does an RGAA audit cost?",
+   "There is no official price list. The price depends on the number of templates and pages in the sample, multi-step journeys, platforms, documents to be checked, the standard and the deliverables. To obtain a reliable figure, send several providers the same scoping sheet (templates, journeys, documents, expected deliverables) and compare offers that cover the same sample. Be wary of a fixed price announced without the provider having seen the service."
+  ],
+  [
+   "Why are accessibility audit quotes so different?",
+   "Most often because they do not cover the same scope. One offer may provide for a manual evaluation of all the criteria on a complete sample, another a partial diagnostic or an automated tool run. The gaps also come from the deliverables (grid, location of defects, draft statement), the debrief and the re-audit. Align these elements before comparing total prices."
+  ],
+  [
+   "Is a free automated audit enough to publish an accessibility statement?",
+   "No. An automated tool detects some of the defects, but many criteria require human judgement: relevance of an alternative, reading order, understanding of error messages, use with the keyboard and a screen reader. The rate published in a statement must result from a criterion-by-criterion evaluation on a representative sample. The tool remains useful for monitoring the site between two audits."
+  ],
+  [
+   "Is a re-audit mandatory?",
+   "No text requires a re-audit as such, but the accessibility statement must reflect the real state of the service. After a round of fixes, the re-audit checks the fixes on the initial sample and makes it possible to update the rate and the statement. It is shorter than the initial audit; ask for its price and scope in the very first quote."
+  ],
+  [
+   "Can the accessibility audit be carried out in-house to reduce costs?",
+   "Yes, the official method allows self-assessment, provided the organisation guarantees the reliability of its statement. This requires auditors trained in the standard, practised in assistive technologies and independent of the teams that designed the service. Many organisations combine an external audit at each redesign or every three years with internal checks at each release."
+  ],
+  [
+   "Should we wait for RGAA 5 before having our site audited?",
+   "Not if your statement is about to expire or you do not have one. Statements published before RGAA 5 will remain valid for eighteen months after its publication, without exceeding three years from their date. The fixes arising from an RGAA 4.1.2 audit will largely carry over to the next version. Waiting mainly means leaving online a service whose condition is not known."
+  ],
+  [
+   "Is an accessibility audit a public contract subject to advertising?",
+   "It depends on the estimated value of the need. Since 1 April 2026, service contracts whose estimated value is below 60,000 euros excluding VAT may be awarded without prior advertising or competition, under Article R. 2122-8 of the French Public Procurement Code. Above that, an adapted or formal procedure applies. The value is assessed on the whole need, for example all the audits planned in the multi-year plan."
+  ]
+ ],
+ "cta_svc": "audit-rgaa",
+ "cta_title": "An audit quote based on your real scope?",
+ "cta_text": "Describe your service to us: we will propose an annotated sample, a lead time and an offer broken down by phase, comparable with any other proposal.",
+ "related": [
+  "audit-rgaa",
+  "declaration",
+  "guide"
+ ]
+}

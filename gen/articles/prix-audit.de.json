@@ -1,0 +1,764 @@
+{
+ "slug": "kosten-audit-digitale-barrierefreiheit",
+ "h1": "Kosten Audit digitale Barrierefreiheit: Was das Angebot bestimmt, wie Sie vergleichen",
+ "crumb": "Kosten Barrierefreiheits-Audit",
+ "meta_title": "Kosten Barrierefreiheits-Audit: Faktoren, Angebote, Fallstricke",
+ "meta_desc": "Preis Audit digitale Barrierefreiheit: die zehn Kostenfaktoren, das Scoping-Blatt für Ihre Anfrage, ein Raster zum Angebotsvergleich und Warnsignale.",
+ "card_desc": "Was den Preis eines Audits nach RGAA oder EN 301 549 bestimmt, wie Sie vergleichbare Angebote erhalten und welche Sie aussortieren.",
+ "cat": "guide",
+ "where": "Europa",
+ "cover": "PREIS",
+ "cover_note": [
+  "Audit RGAA, RAWeb, EN 301 549",
+  "Angebot, Scoping, Vergleich"
+ ],
+ "date": "2026-11-03",
+ "cluster": "methode",
+ "lead": "Die Kosten eines Barrierefreiheits-Audits unterscheiden sich von Angebot zu Angebot erheblich, und das heißt nicht immer, dass ein Anbieter teurer ist: Sehr oft beziehen sich die Angebote schlicht nicht auf dasselbe. Dieser Artikel erklärt, wie sich ein Angebot für ein Audit zur digitalen Barrierefreiheit zusammensetzt, welche Faktoren es verteuern oder verbilligen, welche Angaben Sie machen sollten, um vergleichbare Angebote zu erhalten, und wie Sie die Angebote Zeile für Zeile vergleichen. Er behandelt das Audit nach dem französischen RGAA, aber auch Audits nach der Norm EN 301 549, dem luxemburgischen RAWeb oder dem Schweizer Standard eCH-0059 sowie den Einkauf eines Audits im Rahmen einer öffentlichen Vergabe.",
+ "body": [
+  [
+   "h2",
+   "preis-audit-ohne-umfang",
+   "Preis eines Audits zur digitalen Barrierefreiheit: Warum ein Tarif ohne Prüfumfang nichts aussagt"
+  ],
+  [
+   "p",
+   "Die Preisraster „pro Art von Website“, die man im Netz findet, wirken beruhigend, vergleichen aber Dinge, die nichts miteinander gemein haben. Eine Imagewebsite mit fünfzehn Seiten auf drei Seitenvorlagen und eine Website mit zehn Seiten, die einen Rechner, einen Login-Bereich und einen fünfstufigen Bezahlprozess enthält, verlangen ganz unterschiedlich viel Arbeit. Die zweite kann ein Vielfaches des Prüfaufwands der ersten erfordern, obwohl sie weniger Seiten zählt."
+  ],
+  [
+   "p",
+   "Was bei einem Barrierefreiheits-Audit verkauft wird, ist Expertenzeit: die Zeit, die ein Prüfer braucht, um jedes Kriterium auf jeder Seite der Stichprobe mit mehreren assistiven Technologien zu prüfen, jeden Mangel zu dokumentieren und eine Korrektur zu formulieren. Alles, was diese Zeit erhöht, erhöht den Preis; alles, was sie verringert, ohne eine Prüfung zu streichen, senkt ihn. Das ist der einzige wirklich verlässliche Schlüssel zum Lesen eines Angebots."
+  ],
+  [
+   "p",
+   "Aus demselben Grund veröffentlichen wir keine Preisliste, und dieser Artikel liefert keine: Eine Zahl, die genannt wird, bevor man den Dienst kennt, verpflichtet weder den Anbieter noch den Auftraggeber. Sie können jedoch sehr wohl im Voraus wissen, was den Preis Ihres Audits zur digitalen Barrierefreiheit beeinflussen wird, und sich in die Lage versetzen, vergleichbare Angebote zu erhalten. Darum geht es in den folgenden Abschnitten. Um das Audit in den Gesamtzusammenhang einzuordnen (Pflichten, Normen, Etappen), gibt der Artikel [[article:guide|Digitale Barrierefreiheit: was das Gesetz verlangt und wo Sie anfangen]] einen Überblick."
+  ],
+  [
+   "note",
+   "Zum Merken",
+   "Zwei Angebote für ein Barrierefreiheits-Audit sind nur dann vergleichbar, wenn sie sich auf dieselbe Stichprobe, dasselbe Regelwerk, dieselben Plattformen und dieselben Ergebnisdokumente beziehen. Vergleichen Sie zuerst die Prüfumfänge, dann die Preise."
+  ],
+  [
+   "h2",
+   "angebot-audit-barrierefreiheit-berechnung",
+   "Wie sich ein Angebot für ein Barrierefreiheits-Audit berechnet"
+  ],
+  [
+   "p",
+   "Unabhängig vom Anbieter gliedert sich ein Auditangebot in einige große Phasen. Wer sie kennt, versteht, wo der größte Teil der Kosten steckt, und erkennt ein Angebot, das eine Phase stillschweigend weglässt."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Das Scoping.",
+     "Austausch mit Ihren Teams, Bestandsaufnahme der Seitenvorlagen und Abläufe, Wahl des Regelwerks, Zusammenstellung und Freigabe der Stichprobe, Prüfung der Zugänge (Vorproduktionsumgebung, Testkonten, fiktive Daten). Diese Phase ist kurz, aber sie bestimmt alles Weitere."
+    ],
+    [
+     "Die Prüfung Seite für Seite.",
+     "Bei einem RGAA-Audit wird jedes der 106 Kriterien auf jeder Seite der Stichprobe untersucht, anhand der Tests, die das Regelwerk vorgibt. Das ist mit Abstand der aufwendigste Posten: Er wächst mit der Zahl der Seiten, vor allem aber mit ihrer Dichte (Formulare, dynamische Komponenten, Tabellen, Medien)."
+    ],
+    [
+     "Die Prüfungen mit assistiven Technologien.",
+     "Screenreader am Computer und am Smartphone, Tastaturbedienung, Vergrößerung. Das Regelwerk veröffentlicht eine Referenz-Testumgebung; jede zusätzlich gewünschte Kombination kostet Zeit."
+    ],
+    [
+     "Die Erstellung der Ergebnisdokumente.",
+     "Vollständiges Prüfraster, Bericht, der jeden Mangel lokalisiert und eine Korrekturempfehlung enthält, Berechnung der Konformitätsquote, priorisierter Aktionsplan, Entwurf der Barrierefreiheitserklärung. Ein Bericht, der nur nicht konforme Kriterien auflistet, ist günstiger zu erstellen, wird aber Ihre Entwickler mehr kosten, die jeden Mangel selbst wiederfinden müssen."
+    ],
+    [
+     "Die Ergebnispräsentation.",
+     "Vorstellung der Ergebnisse vor den Fachabteilungen, den technischen Teams und der Leitung, Beantwortung von Fragen. Sie kann inbegriffen sein, gesondert berechnet werden oder ganz fehlen."
+    ],
+    [
+     "Die optionalen Leistungen.",
+     "Nachprüfung nach den Korrekturen, Begleitung der Entwickler während der Korrektur, Tests mit Nutzerinnen und Nutzern mit Behinderungen, Prüfung von Büro-Dokumenten, Schulung."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Der Endpreis ist also das Produkt aus einem Arbeitsvolumen und dem Tagessatz des Anbieters. Der Tagessatz hängt von der Seniorität der Prüfer, ihrer Spezialisierung und dem Unternehmen ab, das sie beschäftigt; er schwankt, aber deutlich weniger als das Arbeitsvolumen selbst. Wenn zwei Angebote stark auseinanderliegen, liegt die Erklärung fast immer in der Zahl der veranschlagten Tage, also im Prüfumfang, und selten im Tagessatz."
+  ],
+  [
+   "p",
+   "Der konkrete Ablauf dieser Phasen, vom Scoping bis zur Präsentation, ist in unserem Artikel über [[article:audit-rgaa|den Ablauf eines RGAA-Audits Woche für Woche]] beschrieben. Hier geht es um etwas anderes: herauszufinden, was in Ihrem Dienst die Zahl der Tage beeinflusst."
+  ],
+  [
+   "h2",
+   "faktoren-preis-barrierefreiheits-audit",
+   "Die zehn Faktoren, die den Preis eines Barrierefreiheits-Audits bestimmen"
+  ],
+  [
+   "p",
+   "Die folgende Tabelle fasst die Faktoren zusammen, die ein Angebot tatsächlich beeinflussen. Zu jedem Faktor ist angegeben, warum der Prüfaufwand steigt und was Sie tun können, um ihn zu beherrschen, ohne das Ergebnis zu schwächen."
+  ],
+  [
+   "table",
+   {
+    "caption": "Preisfaktoren eines Barrierefreiheits-Audits und Möglichkeiten, sie zu beherrschen",
+    "head": [
+     "Faktor",
+     "Warum er den Prüfaufwand verändert",
+     "Wie Sie ihn beherrschen, ohne das Audit zu verfälschen"
+    ],
+    "rows": [
+     [
+      "Anzahl unterschiedlicher Seitenvorlagen",
+      "Jede Vorlage bringt eigene Komponenten mit, die geprüft werden müssen; zwei Seiten auf derselben Vorlage lassen sich deutlich schneller testen als zwei verschiedene",
+      "Das Verzeichnis der Vorlagen und Komponenten liefern statt nur einer Seitenzahl"
+     ],
+     [
+      "Anzahl der Seiten oder Bildschirme der Stichprobe",
+      "Jede Seite wird Kriterium für Kriterium bewertet; der Umfang des Berichts wächst mit ihr",
+      "Die Stichprobe nach den offiziellen Regeln zusammenstellen, ohne redundante Seiten"
+     ],
+     [
+      "Mehrstufige Abläufe",
+      "Alle Schritte eines Prozesses müssen geprüft werden; Formulare, Eingabefehler und Zusammenfassungen sind die Inhalte, deren Test am längsten dauert",
+      "Konten und Testdaten bereitstellen, mit denen sich jeder Ablauf bis zum Ende durchlaufen lässt"
+     ],
+     [
+      "Dynamische Komponenten",
+      "Menüs, Registerkarten, modale Fenster, Karussells, interaktive Karten und Autovervollständigung erfordern in jedem Zustand Prüfungen mit Tastatur und Screenreader",
+      "Komplexe Komponenten und verwendete Bibliotheken vorab nennen"
+     ],
+     [
+      "Anzahl der Plattformen",
+      "Ein Dienst, der im Web, unter iOS und unter Android verfügbar ist, bedeutet drei getrennte Prüfungen mit unterschiedlichen Werkzeugen und assistiven Technologien",
+      "Ausdrücklich festlegen, welche Plattformen zu diesem Audit gehören"
+     ],
+     [
+      "Herunterladbare Dokumente",
+      "Jedes PDF oder Büro-Dokument wird mit eigenen Werkzeugen geprüft: Auszeichnung, Lesereihenfolge, Alternativen",
+      "Mindestens ein Dokument je Dienstart einbeziehen und große Mengen in einer getrennten Leistung behandeln"
+     ],
+     [
+      "Multimedia-Inhalte",
+      "Videos und Audioinhalte erfordern die Kontrolle von Untertiteln, Transkription, Audiodeskription und Player",
+      "Die Medien auflisten und angeben, ob sie intern oder von Dritten produziert werden"
+     ],
+     [
+      "Regelwerk und erwartetes Format",
+      "Ein Audit nach mehreren Regelwerken gleichzeitig oder mit einer Zuordnungstabelle erfordert mehr Dokumentation",
+      "Pro Land ein Leitregelwerk wählen und eine Zuordnung nur verlangen, wenn sie einen Nutzen hat"
+     ],
+     [
+      "Sprachen des Audits und des Berichts",
+      "Ein mehrsprachiger Dienst kann die Prüfung der Sprachversionen und einen Bericht in mehreren Sprachen erfordern",
+      "Die zu prüfenden Versionen und die Berichtssprache schon in der Anfrage festlegen"
+     ],
+     [
+      "Termine und Zugangsbeschränkungen",
+      "Ein Audit mit sehr kurzer Frist oder eine instabile Testumgebung bindet mehr Ressourcen",
+      "Die Anfrage frühzeitig stellen und während der gesamten Dauer des Audits eine stabile Umgebung gewährleisten"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Aus dieser Tabelle ergeben sich zwei Erkenntnisse. Erstens ist die Seitenzahl ein trügerischer Indikator, wenn ihr nicht die Zahl der Vorlagen und die Liste der Abläufe beigefügt sind. Zweitens lassen sich die meisten Faktoren durch Vorbereitung beherrschen: Ein Auftraggeber, der ein präzises Verzeichnis übermittelt, erhält treffendere, näher beieinanderliegende und oft auch günstigere Angebote, weil der Anbieter das Unbekannte nicht einpreisen muss."
+  ],
+  [
+   "h2",
+   "stichprobe-preis-audit",
+   "Die Stichprobe: der erste Posten des Angebots und die erste Stelle, an der man zu Unrecht spart"
+  ],
+  [
+   "p",
+   "Ein Audit bezieht sich nie auf alle Seiten einer Website, sondern auf eine repräsentative Stichprobe, und das Ergebnis gilt für den gesamten Dienst. Die Zusammensetzung dieser Stichprobe bestimmt daher sowohl den Preis als auch die Verlässlichkeit des Ergebnisses. Die Stichprobe zu verkleinern ist der einfachste Weg, ein Angebot zu senken, und der riskanteste."
+  ],
+  [
+   "h3",
+   "Was die offizielle Methode vorschreibt"
+  ],
+  [
+   "p",
+   "In Frankreich legt die offizielle Seite zur [[https://accessibilite.numerique.gouv.fr/obligations/evaluation-conformite/|Bewertung der Konformität mit dem RGAA]] (französischsprachig) den Mindestinhalt der Stichprobe fest: die Startseite, die Kontaktseite, das Impressum, die Seite Barrierefreiheit, die Sitemap, die Hilfe und die Anmeldeseite, soweit vorhanden; mindestens eine relevante Seite je Dienstart, einschließlich der Suche; mindestens ein relevantes herunterladbares Dokument je Dienstart; alle Seiten eines Prozesses; Seiten mit deutlich unterschiedlichem Aussehen oder Inhalt; schließlich zufällig ausgewählte Seiten, die mindestens 10 % der Stichprobe ausmachen. Auch die Besucherzahl pro Seite kann die Auswahl leiten."
+  ],
+  [
+   "p",
+   "Eine Regel wiegt für Preis und Ergebnis gleichermaßen schwer: Ein Kriterium gilt für eine Seite eines Prozesses nur dann als erfüllt, wenn es für alle Seiten dieses Prozesses erfüllt ist. Den Bezahlschritt aus einem Bestellprozess oder den letzten Schritt eines Online-Verfahrens herauszunehmen, senkt daher nicht nur den Preis: Es macht das Audit methodisch unzulässig und die veröffentlichte Quote unzutreffend."
+  ],
+  [
+   "h3",
+   "Drei Dienstprofile, drei Stichproben"
+  ],
+  [
+   "p",
+   "Die folgende Tabelle zeigt, wie sich die Stichprobe und damit der Prüfaufwand je nach Art des Dienstes verändern. Sie nennt bewusst keinen Preis; sie dient dazu zu prüfen, ob ein Angebot das vorsieht, was Ihr Dienst erfordert."
+  ],
+  [
+   "table",
+   {
+    "caption": "Beispiele für die Zusammensetzung der Stichprobe je nach Dienstprofil",
+    "head": [
+     "Dienstprofil",
+     "Erwarteter Inhalt der Stichprobe",
+     "Was das Audit aufwendiger macht",
+     "Was ein zu niedriges Angebot oft auslässt"
+    ],
+    "rows": [
+     [
+      "Informationswebsite eines KMU oder einer kleinen Gemeinde",
+      "Pflichtseiten, je Rubrik eine typische Seite, Kontaktformular, ein oder zwei PDF-Dokumente, zufällig ausgewählte Seiten",
+      "Startseiten-Karussell, interaktive Karte, Formular mit Captcha",
+      "Die PDFs, das vollständige Kontaktformular und die zufällig ausgewählten Seiten"
+     ],
+     [
+      "Website mit Login-Bereich (Bürgerinnen und Bürger, Kundschaft, Mitglieder)",
+      "Pflichtseiten, Anmeldeseite, jede Art von Verfahren mit allen Schritten, Dashboard, vom Dienst erzeugte Dokumente",
+      "Mehrstufige Formulare, Fehlerbehandlung, Sitzungszeitlimits, Datentabellen",
+      "Die Zwischenschritte der Verfahren und die erzeugten Dokumente (Bescheinigungen, Rechnungen)"
+     ],
+     [
+      "Onlineshop im Anwendungsbereich des EAA",
+      "Startseite, Suche und Filter, Produktliste und Produktseite, Warenkorb, Kontoerstellung, Lieferung, Bezahlung, Bestätigung, Transaktions-E-Mails",
+      "Drittkomponenten (Bezahlung, Bewertungen, Chat), starke Authentifizierung, Produktvarianten",
+      "Die Bezahlung und die starke Authentifizierung mit der Begründung, sie würden von einem Dienstleister bereitgestellt"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Für einen Onlineshop ist die Liste der abzudeckenden Bildschirme in unserer [[article:e-commerce|Checkliste zur Barrierefreiheit im Onlineshop, Seite für Seite]] ausgeführt. Für einen öffentlichen Dienst lässt sich anhand des kommentierten Stichprobenbeispiels in unserem Artikel über das RGAA-Audit prüfen, dass kein Prozess ausgeklammert wurde. In beiden Fällen sollten Sie verlangen, dass die genaue Seitenliste im Angebot steht: Sie, und nicht eine Zahl, verpflichtet den Anbieter."
+  ],
+  [
+   "p",
+   "Die Liste der geprüften Seiten wird im Übrigen in der [[article:declaration|Barrierefreiheitserklärung]] übernommen und damit veröffentlicht. Eine Gefälligkeitsstichprobe fällt daher immer irgendwann auf: Eine Nutzerin, ein Verband oder die Kontrollbehörde kann feststellen, dass der problematische Ablauf nie bewertet wurde."
+  ],
+  [
+   "h2",
+   "audit-arten-barrierefreiheit",
+   "Vollaudit, Schnellaudit, Nachprüfung, Abnahmeprüfung: Was Sie tatsächlich einkaufen"
+  ],
+  [
+   "p",
+   "Das Wort „Audit“ umfasst sehr unterschiedliche Leistungen. Ein Teil der Preisunterschiede zwischen den Angeboten rührt daher: Das eine bietet ein vollständiges Konformitätsaudit an, das andere eine Schnelldiagnose, und beide tragen denselben Namen. Die folgende Tabelle hilft zu erkennen, was Ihnen tatsächlich angeboten wird."
+  ],
+  [
+   "table",
+   {
+    "caption": "Die wichtigsten Audit-Leistungen zur Barrierefreiheit und ihr Einsatz",
+    "head": [
+     "Leistung",
+     "Was sie prüft",
+     "Erlaubt sie die Veröffentlichung einer Konformitätsquote?",
+     "Wann sie sinnvoll ist"
+    ],
+    "rows": [
+     [
+      "Vollständiges Konformitätsaudit",
+      "Alle Kriterien des Regelwerks, an einer methodengerechten Stichprobe, mit assistiven Technologien",
+      "Ja, es ist die Grundlage der Barrierefreiheitserklärung",
+      "Erstbewertung, Relaunch, zu erstellende oder zu erneuernde Erklärung, Vorbereitung einer Kontrolle"
+     ],
+     [
+      "Schnellaudit oder Diagnose",
+      "Eine Auswahl von Kriterien oder Seiten, oft der gravierendsten",
+      "Nein, das Ergebnis ist keine Quote im Sinne des Regelwerks",
+      "Umfang des Vorhabens abschätzen, vor einem Relaunch priorisieren, ein Budget vorbereiten"
+     ],
+     [
+      "Nachprüfung",
+      "Die Korrekturen, auf den Seiten der ursprünglichen Stichprobe",
+      "Ja, sie erlaubt die Aktualisierung von Quote und Erklärung",
+      "Nach einer Korrekturkampagne"
+     ],
+     [
+      "Abnahmeprüfung oder Prüfung in der Vorproduktion",
+      "Eine neue Version vor der Veröffentlichung, an den geänderten Vorlagen und Abläufen",
+      "Je nach Umfang; sie bereitet vor allem eine Veröffentlichung ohne Rückschritte vor",
+      "Vor jeder wichtigen Auslieferung, am Ende eines Projekts"
+     ],
+     [
+      "Audit einer mobilen Anwendung",
+      "Die Bildschirme der Anwendung, auf echten Geräten, mit den nativen Screenreadern",
+      "Ja, wenn Stichprobe und Regelwerk es erlauben",
+      "iOS- oder Android-Anwendung im Anwendungsbereich der Pflichten"
+     ],
+     [
+      "Automatischer Scan",
+      "Ein Teil der Mängel, die ein Werkzeug erkennen kann (fehlende Attribute, berechenbare Kontraste)",
+      "Nein: Ein Großteil der Kriterien erfordert menschliche Beurteilung",
+      "Laufende Überwachung zwischen zwei Audits, niemals als Ersatz für das Audit"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Wenn das Ziel darin besteht, eine Barrierefreiheitserklärung zu veröffentlichen oder zu aktualisieren, begründet nur ein vollständiges Konformitätsaudit oder eine Nachprüfung an derselben Stichprobe eine vertretbare Quote. Eine Schnelldiagnose ist für die Budgetplanung nützlich, erfüllt die Pflicht aber nicht. Für einen französischen öffentlichen Dienst deckt unser [[svc:audit-rgaa|RGAA-Audit]] die 106 Kriterien ab und liefert den Entwurf der Erklärung; für einen Dienst, der der europäischen Norm unterliegt, folgt das [[svc:audit-conformite|Konformitätsaudit nach EN 301 549 und WCAG]] derselben Logik."
+  ],
+  [
+   "p",
+   "Die Abnahmeprüfung verdient besondere Erwähnung, weil sie in Budgets oft vergessen wird, obwohl sie weniger kostet als eine Korrektur nach der Veröffentlichung. Ist sie in den Zeitplan eines Projekts eingebunden, stellt sie sicher, dass eine neue Version die behobenen Mängel nicht wieder einführt. Unsere Leistung der [[svc:recette|Abnahmeprüfung zur Barrierefreiheit]] ist darauf ausgelegt, sich in einen bestehenden Auslieferungszyklus einzufügen."
+  ],
+  [
+   "h2",
+   "regelwerk-land-preis-audit",
+   "RGAA, RAWeb, EN 301 549, eCH-0059: Der Einfluss von Regelwerk und Land auf das Angebot"
+  ],
+  [
+   "p",
+   "Das Prüfregelwerk hängt vom Land und vom Status der Organisation ab. Es beeinflusst den Preis weniger stark als die Stichprobe, ändert aber das Format der Ergebnisdokumente und damit einen Teil des Redaktionsaufwands."
+  ],
+  [
+   "ul",
+   [
+    "In Frankreich ist das RGAA 4.1.2 die Referenzmethode für den öffentlichen Sektor und für die Unternehmen, die unter Artikel 47 des Gesetzes vom 11. Februar 2005 fallen; das Audit liefert ein Raster im offiziellen Format und eine Quote, die nach der oben beschriebenen Methode berechnet wird. Der rechtliche Rahmen ist auf unserer Seite [[country:france|Digitale Barrierefreiheit in Frankreich]] beschrieben.",
+    "In Belgien gibt es kein eigenes nationales Regelwerk: Das Audit stützt sich auf die Norm EN 301 549 und die WCAG auf Stufe AA, mit einem Bericht, der auf Französisch, Niederländisch oder Englisch verlangt werden kann.",
+    "In Luxemburg wird der öffentliche Sektor nach dem RAWeb für das Web und dem RAAM für mobile Anwendungen bewertet, die vom Service information et presse veröffentlicht werden; ihre Methode ist der des RGAA ähnlich. Unser Artikel über [[article:luxembourg|digitale Barrierefreiheit in Luxemburg]] beschreibt die veröffentlichten Kontrollen.",
+    "In der Schweiz dient der Standard eCH-0059 den Bundesverwaltungen als Referenz; er beruht auf den WCAG. Schweizer Unternehmen, die in der Europäischen Union verkaufen, müssen außerdem den EAA berücksichtigen.",
+    "Für einen Dienst, der dem European Accessibility Act unterliegt, ist die technische Referenz die Norm EN 301 549; der Vergleich der Normen findet sich in unserem Artikel [[article:normes|WCAG 2.2, EN 301 549, RGAA, RAWeb: welcher Norm folgen]]."
+   ]
+  ],
+  [
+   "h3",
+   "Der Fall von Gruppen, die in mehreren Ländern tätig sind"
+  ],
+  [
+   "p",
+   "Eine Gruppe, die denselben Dienst in Frankreich, Belgien und Luxemburg betreibt, braucht keine drei voneinander unabhängigen Vollaudits. Am wirtschaftlichsten ist es, ein Leitregelwerk zu wählen, die gemeinsamen Vorlagen einmal zu prüfen und dann die länderspezifischen Prüfungen hinzuzufügen (Rasterformat, Pflichtangaben, Erklärung). Die Mehrkosten entstehen dann vor allem bei den Ergebnisdokumenten und den Sprachen, nicht durch eine neue vollständige Bewertung."
+  ],
+  [
+   "h3",
+   "Der Einfluss des RGAA 5 auf Ihren Beschaffungskalender"
+  ],
+  [
+   "p",
+   "Die DINUM hat die Veröffentlichung des RGAA 5 für Ende 2026 angekündigt. Die vor seinem Erscheinen veröffentlichten Erklärungen bleiben achtzehn Monate nach seiner Veröffentlichung gültig, ohne drei Jahre ab ihrem eigenen Datum zu überschreiten. Läuft Ihre Erklärung in den nächsten Monaten aus, ist es nicht nötig, das Audit im Warten auf die neue Version aufzuschieben: Ein jetzt durchgeführtes RGAA-4.1.2-Audit bleibt verwertbar, und ein großer Teil der daraus folgenden Korrekturen gilt auch für die nächste Version. Starten Sie dagegen eine mehrjährige Vergabe, sehen Sie in den Vergabeunterlagen vor, dass die Audits der jeweils zum Zeitpunkt der einzelnen Bestellung geltenden Version des Regelwerks folgen."
+  ],
+  [
+   "h2",
+   "scoping-blatt-audit-anfrage",
+   "Das Scoping-Blatt für Ihre Anfrage: So erhalten Sie vergleichbare Angebote"
+  ],
+  [
+   "p",
+   "Der beste Weg zu vergleichbaren Preisen besteht darin, allen angefragten Anbietern dieselbe Frage mit denselben Informationen zu stellen. Hier ist das Blatt, das wir jeder Anfrage für ein Barrierefreiheits-Audit beizulegen empfehlen. Es umfasst zwei Seiten und erspart mehrere Rückfragen."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Der zu prüfende Dienst.",
+     "Name, Adresse, Art (öffentliche Website, Login-Bereich, Anwendung, Intranet), Zielgruppe, wichtigste Technologien (Content-Management-System, Framework, Komponentenbibliothek)."
+    ],
+    [
+     "Kontext und Ziel.",
+     "Erste Erklärung, Erneuerung einer Erklärung, die älter als drei Jahre ist, laufender Relaunch, Reaktion auf eine Mahnung, Anforderung einer Kundin oder eines öffentlichen Auftraggebers, Herstellung der EAA-Konformität."
+    ],
+    [
+     "Das erwartete Regelwerk.",
+     "RGAA 4.1.2, EN 301 549, RAWeb, eCH-0059, WCAG 2.2 auf Stufe AA und gegebenenfalls ein vorgeschriebenes Rasterformat."
+    ],
+    [
+     "Das Verzeichnis der Seitenvorlagen.",
+     "Die Liste der Seitenmodelle und komplexen Komponenten, mit je einer Beispieladresse. Diese Angabe verbessert die Treffsicherheit der Angebote am stärksten."
+    ],
+    [
+     "Die Abläufe.",
+     "Jedes Verfahren und jede mehrstufige Transaktion, mit Zahl der Schritte und Zugangsbedingungen (Konto, Bezahlung, Nachweisdokument)."
+    ],
+    [
+     "Die Dokumente und Medien.",
+     "Arten der herunterladbaren Dokumente (PDF-Formulare, Berichte, erzeugte Bescheinigungen), ungefähres Volumen, Vorhandensein von Videos oder Audioinhalten."
+    ],
+    [
+     "Die Plattformen.",
+     "Nur Web oder auch iOS- und Android-Anwendungen, mit unterstützten Versionen und Geräten."
+    ],
+    [
+     "Die Sprachen.",
+     "Zu berücksichtigende Sprachversionen des Dienstes und gewünschte Sprache für Bericht und Präsentation."
+    ],
+    [
+     "Die Zugänge.",
+     "Verfügbarkeit einer stabilen Vorproduktionsumgebung, von Testkonten und fiktiven Daten sowie Sicherheitsvorgaben (VPN, Liste zugelassener Adressen)."
+    ],
+    [
+     "Die erwarteten Ergebnisse und Leistungen.",
+     "Raster, Bericht, Aktionsplan, Entwurf der Erklärung, Präsentation, Nachprüfung, Begleitung der Korrekturen, Nutzertests, Schulung."
+    ],
+    [
+     "Der Zeitplan.",
+     "Gewünschtes Datum der Berichtsübergabe, Fristen (Veröffentlichung, Kontrolle, Ablauf der Gültigkeit der Erklärung) und Zeiträume, in denen die Entwicklung eingefroren ist."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Nach Versand dieses Blattes wird ein seriöser Anbieter oft vorschlagen, die Stichprobe anzupassen: einen vergessenen Ablauf hinzufügen, zwei sehr ähnliche Vorlagen zusammenfassen. Das ist ein gutes Zeichen. Verlangen Sie lediglich, dass die endgültige Stichprobe im schriftlichen Angebot steht, damit alle Angebote auf einer identischen Grundlage beruhen oder die Unterschiede zumindest sichtbar sind."
+  ],
+  [
+   "note",
+   "Zum Merken",
+   "Eine Anfrage, die nur „Website mit 50 Seiten, RGAA-Audit“ angibt, führt zu unvergleichbaren Angeboten. Das Verzeichnis der Vorlagen, die Liste der Abläufe und die Liste der Ergebnisdokumente sind die drei Angaben, die Preise vergleichbar machen."
+  ],
+  [
+   "h2",
+   "angebote-barrierefreiheits-audit-vergleichen",
+   "Angebote für ein Barrierefreiheits-Audit vergleichen: das Raster Zeile für Zeile"
+  ],
+  [
+   "p",
+   "Wenn die Angebote eintreffen, vergleichen Sie sie anhand der folgenden Punkte, bevor Sie auf den Gesamtpreis schauen. Jede Zeile entspricht einem häufigen Unterschied zwischen Angeboten, die gleichwertig erscheinen."
+  ],
+  [
+   "table",
+   {
+    "caption": "Vergleichsraster für Angebote zu Barrierefreiheits-Audits",
+    "head": [
+     "Zu vergleichender Punkt",
+     "Was das Angebot festlegen muss",
+     "Warnsignal"
+    ],
+    "rows": [
+     [
+      "Stichprobe",
+      "Die namentliche Liste der Seiten und Bildschirme, die vollständigen Prozesse, die Dokumente, die zufällig ausgewählten Seiten",
+      "Nur eine Seitenzahl, ohne Liste und ohne Zusammensetzungsregel"
+     ],
+     [
+      "Regelwerk und Version",
+      "Das Regelwerk, seine Version und die angestrebte Stufe (zum Beispiel RGAA 4.1.2 oder WCAG 2.2 Stufe AA)",
+      "„Geltende Normen“ ohne weitere Angabe"
+     ],
+     [
+      "Prüfmethode",
+      "Manuelle Bewertung jedes Kriteriums auf jeder Seite, Werkzeuge nur unterstützend",
+      "Ergebnisse, die hauptsächlich aus einem automatischen Werkzeug stammen"
+     ],
+     [
+      "Assistive Technologien",
+      "Die verwendeten Kombinationen aus Screenreader und Browser, am Computer und am Smartphone",
+      "Keine Angabe oder nur ein einziges Werkzeug"
+     ],
+     [
+      "Ergebnisdokumente",
+      "Vollständiges Raster, Bericht mit Lokalisierung jedes Mangels, Empfehlungen, priorisierter Aktionsplan, Entwurf der Erklärung",
+      "Ein „zusammenfassender“ Bericht ohne Raster und ohne Lokalisierung der Mängel"
+     ],
+     [
+      "Präsentation",
+      "Zahl der Termine, Dauer, Zielgruppen (technische Teams, Fachabteilungen, Leitung)",
+      "Präsentation fehlt oder wird berechnet, ohne angekündigt zu sein"
+     ],
+     [
+      "Nachprüfung",
+      "Enthalten oder optional, Umfang, Frist für die Beauftragung",
+      "Keine Angabe: Die tatsächlichen Kosten des Vorhabens werden unterschätzt"
+     ],
+     [
+      "Unabhängigkeit",
+      "Prüfer, die von den Teams getrennt sind, die den Dienst konzipiert oder entwickelt haben",
+      "Audit wird vom Anbieter angeboten, der die Website gebaut hat, ohne Trennung der Teams"
+     ],
+     [
+      "Frist",
+      "Starttermin, Dauer des Audits, Datum der Berichtsübergabe",
+      "Sehr kurze Frist, die mit dem angegebenen Umfang unvereinbar ist"
+     ],
+     [
+      "Annahmen und Ausschlüsse",
+      "Was nicht abgedeckt ist (Drittinhalte, Dokumente über ein bestimmtes Volumen hinaus, Plattformen)",
+      "Ausschlüsse, die erst bei der Berichtsübergabe auffallen"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Sind diese Zeilen aneinander angeglichen, wird der Gesamtpreis wieder zu einer nützlichen Größe. Liegen zwei Angebote bei gleichem Umfang weiterhin weit auseinander, fragen Sie nach der Zahl der Tage je Phase: Sie sehen sofort, welches die Bewertung oder die Berichterstellung unterschätzt hat. Es ist nichts Unangemessenes daran, diese Frage zu stellen; ein Anbieter, der sein Handwerk versteht, beantwortet sie ohne Schwierigkeiten."
+  ],
+  [
+   "h3",
+   "Eine einfache Bewertungsmethode"
+  ],
+  [
+   "p",
+   "Für eine private Ausschreibung wie für eine öffentliche Vergabe genügt meist eine Bewertung in zwei Blöcken. Der erste, technische Block bewertet die Methodenkonformität der Stichprobe, die Qualität eines anonymisierten Beispielberichts, die assistiven Technologien und die Kompetenz der Prüfer. Der zweite bewertet den Preis bei identischem Umfang. Einen anonymisierten Berichtsauszug anzufordern ist der schnellste Weg, den tatsächlichen Wert der Ergebnisdokumente zu beurteilen: Die Art, wie ein Mangel lokalisiert und erklärt wird, sagt viel über den Nutzen des Audits für Ihre Teams aus."
+  ],
+  [
+   "h2",
+   "warnsignale-angebot-barrierefreiheits-audit",
+   "Sieben Warnsignale in einem Angebot für ein Barrierefreiheits-Audit"
+  ],
+  [
+   "p",
+   "Manche Angebote sind günstiger, weil sie kein Audit im Sinne des Regelwerks liefern. Hier die Signale, die Sie dazu bringen sollten, Präzisierungen zu verlangen oder das Angebot auszusortieren."
+  ],
+  [
+   "ul",
+   [
+    "Ein Festpreis, der genannt wird, ohne den Dienst gesehen oder über die Stichprobe gesprochen zu haben: Der Anbieter weiß nicht, was er verkauft, und der Umfang wird nachträglich angepasst.",
+    "Ein Audit, das für einen Dienst mit Abläufen in wenigen Stunden oder an einem Tag geliefert wird: Die veranschlagte Zeit ist mit einer manuellen Prüfung der Kriterien unvereinbar.",
+    "Ein von einem automatischen Werkzeug erzeugter Bericht, der als Konformitätsaudit präsentiert wird: Viele Kriterien, etwa die Angemessenheit einer Textalternative oder die Lesereihenfolge, erfordern menschliche Beurteilung.",
+    "Eine im Voraus garantierte Konformitätsquote oder eine versprochene „Zertifizierung“: Das RGAA sieht eine von der Organisation selbst veröffentlichte Barrierefreiheitserklärung vor, keine von einem Anbieter ausgestellte Zertifizierung, und eine Quote hängt vom Dienst ab, nicht vom Angebot.",
+    "Das Fehlen eines Prüfrasters in den Ergebnisdokumenten: Ohne es können Sie weder die Berechnung der Quote überprüfen noch die Korrekturen nachverfolgen noch auf eine Kontrolle antworten.",
+    "Eine Stichprobe, die die Bezahlung, die Authentifizierung oder die Schlussschritte eines Verfahrens ausschließt, mit der Begründung, sie würden von Dritten bereitgestellt oder seien schwer zugänglich.",
+    "Ein Angebot, das sich als von einer Behörde beauftragt oder empfohlen darstellt: Die Arcom gibt auf ihrer [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|Seite zur Barrierefreiheit digitaler Dienste]] (französischsprachig) an, dass sie keiner Person und keiner Vereinigung den Auftrag überträgt, in ihrem Namen tätig zu werden."
+   ]
+  ],
+  [
+   "p",
+   "Das nützliche Gegenbeispiel ist die Entscheidung der Arcom zur Website impots.gouv.fr. Die [[https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-24-juin-2026-mettant-en-demeure-le-ministere-de-laction-et-des-comptes-publics|Entscheidung vom 24. Juni 2026]] (französischsprachig) bemängelt unter anderem einen Steuerbescheid als nicht barrierefreies PDF, ein Dropdown-Menü, das sich nur mit der Maus öffnen lässt, und eine Tabelle, deren Zellen nicht mit ihren Überschriften verknüpft sind. Genau das sind Inhalte, die eine verkleinerte Stichprobe oder ein automatisches Werkzeug durchrutschen lassen: ein herunterladbares Dokument, eine Komponente, die mit der Tastatur bedient werden muss, eine Tabelle, die mit einem Screenreader gelesen werden muss."
+  ],
+  [
+   "h2",
+   "budget-barrierefreiheit-gesamtkosten",
+   "Jenseits des Auditpreises: das vollständige Budget der Herstellung der Konformität"
+  ],
+  [
+   "p",
+   "Das Audit ist selten der größte Posten einer Barrierefreiheitsmaßnahme. Es misst, es lokalisiert und es setzt Prioritäten; teuer sind die Korrekturen und danach die dauerhafte Aufrechterhaltung der Konformität. Ein realistisches Budget sieht daher mehrere Zeilen vor, von denen einige intern anfallen."
+  ],
+  [
+   "table",
+   {
+    "caption": "Die Posten eines Budgets für digitale Barrierefreiheit",
+    "head": [
+     "Posten",
+     "Was er umfasst",
+     "Was ihn verändert",
+     "Wer ihn in der Regel trägt"
+    ],
+    "rows": [
+     [
+      "Erstes Audit",
+      "Konformitätsbewertung, Bericht, Aktionsplan, Entwurf der Erklärung",
+      "Stichprobe, Plattformen, Regelwerk, Ergebnisdokumente",
+      "Externer Anbieter oder geschulte interne Prüfer"
+     ],
+     [
+      "Technische Korrekturen",
+      "Überarbeitung der nicht konformen Komponenten, Vorlagen und Abläufe",
+      "Front-End-Architektur, Vorhandensein einer Komponentenbibliothek, technische Schulden",
+      "Internes Entwicklungsteam oder Agentur"
+     ],
+     [
+      "Redaktionelle Korrekturen",
+      "Bildalternativen, Überschriften, Links, Tabellen, von den Redakteuren verfasste Inhalte",
+      "Umfang der Inhalte, Zahl der Redakteure",
+      "Inhaltsteams"
+     ],
+     [
+      "Dokumente",
+      "Barrierefreie Überarbeitung bestehender PDFs und Büro-Dokumente, barrierefreie Vorlagen für die Zukunft",
+      "Umfang des Bestands, rechtlich relevante oder automatisch erzeugte Dokumente",
+      "Fachabteilungen, spezialisierter Anbieter"
+     ],
+     [
+      "Nachprüfung",
+      "Überprüfung der Korrekturen und Aktualisierung der Quote",
+      "Umfang der ursprünglichen Stichprobe, Ausmaß der Korrekturen",
+      "Vorzugsweise der Anbieter des ersten Audits"
+     ],
+     [
+      "Nutzertests",
+      "Praxistests mit Menschen mit Behinderungen",
+      "Zahl der Profile, Szenarien und Sitzungen",
+      "Spezialisierter Anbieter"
+     ],
+     [
+      "Schulung",
+      "Allgemeine Sensibilisierung und Schulungen je Berufsgruppe",
+      "Zahl der betroffenen Personen und Berufsgruppen",
+      "Anbieter, danach interne Multiplikatoren"
+     ],
+     [
+      "Aufrechterhaltung der Konformität",
+      "Abnahmeprüfung bei jeder Version, Überwachung, Aktualisierung der Erklärung",
+      "Häufigkeit der Auslieferungen, Zahl der Dienste",
+      "Interne Teams, mit punktueller Unterstützung"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Für den französischen öffentlichen Sektor ist dieses Budget nicht nur eine Frage der Verwaltung. Die offizielle Seite zum [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|mehrjährigen Barrierefreiheitsschema]] (französischsprachig) sieht vor, dass es die der digitalen Barrierefreiheit zugewiesenen personellen und finanziellen Ressourcen darstellt, den Rückgriff auf externe Expertise, die geplanten Audits, die Schulungsmaßnahmen und die Aufnahme der Barrierefreiheit in vertragliche Klauseln, einschließlich Ausschreibungen und Angebote. Das Budget für Audit und Korrekturen gehört also zumindest in seinen Grundzügen in ein veröffentlichtes Dokument."
+  ],
+  [
+   "p",
+   "Am rentabelsten sind Korrekturen an gemeinsam genutzten Komponenten: Ein Mangel, der in einer Formularkomponente behoben wird, verschwindet von allen Seiten, die sie verwenden. Deshalb fasst ein gut aufgebauter Aktionsplan die Mängel nach Komponenten zusammen und nicht nach Seiten. Liegen die Mängel in der Front-End-Architektur, vermeidet eine Begleitung durch [[svc:developpement|barrierefreie Entwicklung]], dieselbe Korrektur zweimal zu bezahlen. Und damit die Redakteure redaktionelle Mängel nicht wieder einführen, kosten [[svc:formations|gezielte Schulungen je Berufsgruppe]] in der Regel weniger als ein neues Audit."
+  ],
+  [
+   "p",
+   "Schließlich übersieht eine Maßnahme, die keine Überprüfung mit Nutzerinnen und Nutzern vorsieht, reale Hindernisse. [[svc:test-utilisateur|Tests mit Nutzerinnen und Nutzern mit Behinderungen]], durchgeführt an zwei oder drei wesentlichen Abläufen, ergänzen das Audit, ohne es zu ersetzen: Das Audit sagt, ob der Dienst die Norm einhält; die Tests sagen, ob die Nutzenden das erreichen, wofür sie gekommen sind."
+  ],
+  [
+   "h2",
+   "kosten-ohne-audit",
+   "Was es kostet, kein Audit durchzuführen"
+  ],
+  [
+   "p",
+   "Der Preis eines Audits bemisst sich auch an dem, was es vermeidet. In Frankreich kontrolliert die Arcom die Pflichten aus Artikel 47 des Gesetzes vom 11. Februar 2005. Nach einer erfolglosen Mahnung kann sie eine Geldbuße von höchstens 50 000 Euro für die Nichteinhaltung der Barrierefreiheitsanforderungen und von 25 000 Euro für die übrigen Pflichten verhängen: Erklärung, Hinweis auf der Startseite, mehrjähriges Schema, Jahresplan und Meldemechanismus. Für Produkte und Dienstleistungen im Anwendungsbereich des EAA kann die DGCCRF die Herstellung der Konformität anordnen, und die Verstöße stellen Ordnungswidrigkeiten der fünften Klasse nach Artikel R. 451-4 des französischen Verbrauchergesetzbuchs dar. Die Einzelheiten der Verfahren stehen in unserem Artikel über [[article:france|Pflichten und Sanktionen in Frankreich]]."
+  ],
+  [
+   "p",
+   "Die unmittelbarsten Kosten sind jedoch die verspäteter Korrekturen. Ein bei einer Kontrolle entdeckter Mangel muss unter Fristdruck behoben werden, oft an einem Dienst im Produktivbetrieb, manchmal unter Einsatz eines Teams, das an etwas anderem gearbeitet hat. In ihrer Entscheidung vom 24. Juni 2026 gewährte die Arcom neun Monate für die Behebung der Verstöße gegen die Barrierefreiheitsanforderungen und zwei Monate für die dokumentarischen Pflichten: Fristen, die für einen komplexen Dienst, dessen Zustand zuvor nicht gemessen wurde, wenig Spielraum lassen."
+  ],
+  [
+   "p",
+   "Umgekehrt erlaubt ein zum richtigen Zeitpunkt durchgeführtes Audit, zuerst die Mängel zu beheben, die wesentliche Abläufe blockieren, den Rest auf die folgenden Versionen zu verteilen und eine zutreffende Erklärung zu veröffentlichen. Eine aufrichtige Erklärung „teilweise konform“ mit einem datierten Aktionsplan ist eine weit stabilere Position als eine fehlende Erklärung oder eine überhöhte Quote."
+  ],
+  [
+   "h2",
+   "oeffentliche-vergabe-barrierefreiheits-audit",
+   "Ein Barrierefreiheits-Audit in der öffentlichen Vergabe einkaufen (französisches Recht)"
+  ],
+  [
+   "p",
+   "Für einen französischen öffentlichen Auftraggeber bestimmt der Preis des Audits auch das Verfahren. Die folgenden Angaben beschreiben das französische Vergaberecht. Seit dem 1. April 2026 erlaubt der [[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053222294|Artikel R. 2122-8 des französischen Code de la commande publique]] (französischsprachig), geändert durch das Dekret Nr. 2025-1386 vom 29. Dezember 2025, Liefer- oder Dienstleistungsaufträge, deren geschätzter Wert unter 60 000 Euro ohne Steuern liegt, ohne vorherige Bekanntmachung und ohne Wettbewerb zu vergeben. Der Auftraggeber muss dann darauf achten, ein sachgerechtes Angebot zu wählen, öffentliche Mittel sinnvoll zu verwenden und nicht systematisch mit demselben Wirtschaftsteilnehmer zu kontrahieren, wenn mehrere Angebote den Bedarf decken könnten."
+  ],
+  [
+   "p",
+   "Diese Schwelle bemisst sich nach dem geschätzten Wert des Bedarfs und nicht nach einem einzelnen Audit. Eine Gebietskörperschaft, die vorsieht, über die Laufzeit ihres mehrjährigen Schemas mehrere Websites zu prüfen, hat oft ein Interesse daran, diese Bedarfe in einer Rahmenvereinbarung mit Einzelabrufen zusammenzufassen, statt viele kleine Bestellungen aufzugeben. Sie gewinnt an Methodenkonsistenz von einem Audit zum nächsten, und ihre Quoten werden im Zeitverlauf vergleichbar."
+  ],
+  [
+   "h3",
+   "Das Preisblatt aufbauen"
+  ],
+  [
+   "p",
+   "Die Struktur des Preisblatts bestimmt die Vergleichbarkeit der Angebote. Ein einziger Preis „pro Audit“ ist schwer zu vergleichen; ein Preis „pro Seite“ fördert mit redundanten Seiten aufgeblähte Stichproben. Eine robustere Struktur unterscheidet eine Pauschale für das Scoping, einen Einzelpreis je Seite oder Bildschirm der Stichprobe, gegebenenfalls mit einer Unterscheidung zwischen einfacher Seite und Prozessschritt, einen Preis je herunterladbarem Dokument, einen je Seite ausgedrückten Preis für die Nachprüfung, einen Preis für die Präsentation und einen Tagessatz für die Begleitung. Eine geschätzte Mengenaufstellung, die auf einem realen oder fiktiven Dienst beruht, erlaubt es anschließend, die Angebote an demselben Szenario zu vergleichen."
+  ],
+  [
+   "h3",
+   "Zuschlagskriterien, die die Qualität schützen"
+  ],
+  [
+   "ul",
+   [
+    "Die Methode: Übereinstimmung der vorgeschlagenen Stichprobe mit der offiziellen Methode, Berücksichtigung der Prozesse und Dokumente, verwendete assistive Technologien.",
+    "Die Qualität der Ergebnisdokumente, beurteilt anhand eines anonymisierten Berichtsauszugs und eines Prüfrasters.",
+    "Die Kompetenz des Teams: Erfahrung der Prüfer mit dem verlangten Regelwerk und Beherrschung der assistiven Technologien.",
+    "Die Unabhängigkeit gegenüber den Anbietern, die den geprüften Dienst konzipieren oder pflegen.",
+    "Die Ausführungs- und Lieferfristen der Ergebnisdokumente, vereinbar mit dem Zeitplan für die Veröffentlichung der Erklärung.",
+    "Der Preis, beurteilt anhand der geschätzten Mengenaufstellung statt anhand isolierter Einzelpreise."
+   ]
+  ],
+  [
+   "p",
+   "Für Einrichtungen des [[sector:public|öffentlichen Sektors]] ist das Audit außerdem eine Gelegenheit, die Barrierefreiheitsklauseln der Verträge für Konzeption und Wartung der Websites zu überprüfen: Barrierefreie Ergebnisse von einem Webdienstleister zu verlangen kostet bei der Vergabe wenig, aber viel, wenn die Mängel erst nach der Lieferung festgestellt werden."
+  ],
+  [
+   "h2",
+   "kosten-barrierefreiheits-audit-senken",
+   "Die Kosten eines Barrierefreiheits-Audits senken, ohne das Ergebnis zu verfälschen"
+  ],
+  [
+   "p",
+   "Es gibt legitime Einsparungen, die den Prüfaufwand verringern, ohne eine Prüfung zu streichen. Fast alle beruhen auf Vorbereitung."
+  ],
+  [
+   "ul",
+   [
+    "Ein präzises Verzeichnis der Seitenvorlagen und Komponenten liefern: Der Prüfer muss die Struktur der Website nicht erst während des Audits entdecken, und die Stichprobe enthält keine redundanten Seiten.",
+    "Eine stabile Umgebung und funktionierende Testkonten ab dem ersten Tag gewährleisten: Ein Ablauf, der durch ein abgelaufenes Konto oder eine nicht verfügbare Vorproduktionsumgebung blockiert wird, kostet berechnete Zeit.",
+    "Vor dem Audit die offensichtlichen Mängel beheben, die ein kostenloses automatisches Werkzeug findet: Sprachattribute, fehlende Alternativen, Seitentitel. Der Prüfer verwendet dann seine Zeit für die Mängel, die Fachwissen erfordern.",
+    "Eine Komponentenbibliothek oder ein Design-System prüfen, die mehreren Websites gemeinsam sind, und die Audits der Websites anschließend auf die jeweils eigenen Vorlagen und Inhalte beschränken.",
+    "Dienste, die dieselbe Technologie teilen, in einer Bestellung bündeln, um Scoping und Präsentation zu teilen.",
+    "Das Audit auf eine stabilisierte Version legen und nicht auf eine Version, die sich noch in der Entwicklung befindet und sich bis zur Berichtsübergabe ändern wird.",
+    "Die Nachprüfung schon in der ersten Bestellung vorsehen: Der Anbieter, der den Dienst bereits kennt, führt sie schneller durch, und ihr Preis steht im Voraus fest."
+   ]
+  ],
+  [
+   "p",
+   "Umgekehrt sind drei Einsparungen teuer: Prozesse aus der Stichprobe nehmen, auf assistive Technologien verzichten und die Lokalisierung der Mängel im Bericht streichen. Jede senkt den Preis des Audits, erhöht aber den der Korrekturen oder setzt Sie einer unzutreffenden Erklärung aus."
+  ],
+  [
+   "p",
+   "Für ein [[sector:pme|KMU]] stellt sich die Frage des Umfangs auch schon vorher. Ein Kleinstunternehmen im Dienstleistungsbereich mit weniger als zehn Beschäftigten, dessen Jahresumsatz oder Jahresbilanzsumme zwei Millionen Euro nicht übersteigt, ist für seine Dienstleistungen von den Anforderungen des EAA ausgenommen; es hat daher in diesem Rahmen keine Auditpflicht, auch wenn die Barrierefreiheit seiner Website ein kommerzieller Vorteil bleibt. Prüfen Sie vor einer Angebotsanfrage, ob Ihr Dienst tatsächlich in den Anwendungsbereich der Pflichten fällt: Unser Artikel über [[article:eaa|den European Accessibility Act]] beschreibt Produkte, Dienstleistungen und Ausnahmen."
+  ],
+  [
+   "h2",
+   "aktionsplan-angebot-audit",
+   "Aktionsplan: von der Angebotsanfrage bis zur Nachprüfung in acht Schritten"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Pflicht und Regelwerk prüfen.",
+     "Ermitteln Sie den Text, der für Ihren Dienst gilt, und das in Ihrem Land erwartete Regelwerk: RGAA, EN 301 549, RAWeb, eCH-0059."
+    ],
+    [
+     "Das Ziel des Audits festlegen.",
+     "Erste Erklärung, Erneuerung, Relaunch, Reaktion auf eine Kontrolle, Anforderung einer Kundin: Das Ziel bestimmt die Art der Leistung."
+    ],
+    [
+     "Das Scoping-Blatt ausfüllen.",
+     "Verzeichnis der Vorlagen, Abläufe, Dokumente, Plattformen, Sprachen, Zugänge, Ergebnisse und Zeitplan."
+    ],
+    [
+     "Mindestens zwei oder drei Anbieter anfragen.",
+     "Mit demselben Blatt und mit der Bitte um die namentliche Liste der Seiten der vorgeschlagenen Stichprobe sowie einen anonymisierten Berichtsauszug."
+    ],
+    [
+     "Mit dem Raster vergleichen.",
+     "Gleichen Sie zuerst die Prüfumfänge an, vergleichen Sie dann die Preise; fragen Sie bei großen Abweichungen nach der Zahl der Tage je Phase."
+    ],
+    [
+     "Das Audit vorbereiten.",
+     "Stabile Umgebung, Testkonten, verfügbare technische Ansprechperson, Entwicklungsstopp im geprüften Bereich."
+    ],
+    [
+     "Veröffentlichen und korrigieren.",
+     "Veröffentlichen Sie die Erklärung, die den Ergebnissen entspricht, auch wenn sie ungünstig sind, und korrigieren Sie dann, beginnend mit den wesentlichen Abläufen und den gemeinsam genutzten Komponenten."
+    ],
+    [
+     "Nachprüfung und nächstes Audit planen.",
+     "Nachprüfung nach den Korrekturen, dann ein neues Audit spätestens drei Jahre nach der Erklärung, nach einem Relaunch oder innerhalb von achtzehn Monaten nach einer neuen Version des Regelwerks."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Wenn Sie auf dieser Grundlage ein Angebot wünschen, beschreiben Sie Ihren Dienst über die [[contact|Kontaktseite]]: Wir antworten mit einer kommentierten Stichprobe, einer Frist und einem nach Phasen aufgeschlüsselten Angebot. Bei uns beträgt die durchschnittliche Dauer eines Audits drei Wochen ab Freigabe der Stichprobe."
+  ]
+ ],
+ "faq": [
+  [
+   "Was kostet ein RGAA-Audit?",
+   "Es gibt keinen offiziellen Tarif. Der Preis hängt von der Zahl der Vorlagen und Seiten der Stichprobe, von mehrstufigen Abläufen, Plattformen, zu prüfenden Dokumenten, Regelwerk und Ergebnisdokumenten ab. Für eine verlässliche Zahl senden Sie mehreren Anbietern dasselbe Scoping-Blatt (Vorlagen, Abläufe, Dokumente, erwartete Ergebnisse) und vergleichen Angebote, die sich auf dieselbe Stichprobe beziehen. Misstrauen Sie einem Festpreis, der genannt wird, ohne den Dienst gesehen zu haben."
+  ],
+  [
+   "Warum unterscheiden sich Angebote für Barrierefreiheits-Audits so stark?",
+   "Meist, weil sie sich nicht auf denselben Umfang beziehen. Ein Angebot kann eine manuelle Bewertung aller Kriterien an einer vollständigen Stichprobe vorsehen, ein anderes eine Teildiagnose oder den Durchlauf eines automatischen Werkzeugs. Die Unterschiede rühren auch von den Ergebnisdokumenten (Raster, Lokalisierung der Mängel, Entwurf der Erklärung), der Präsentation und der Nachprüfung her. Gleichen Sie diese Elemente an, bevor Sie die Gesamtpreise vergleichen."
+  ],
+  [
+   "Genügt ein kostenloses automatisches Audit, um eine Barrierefreiheitserklärung zu veröffentlichen?",
+   "Nein. Ein automatisches Werkzeug erkennt einen Teil der Mängel, aber viele Kriterien erfordern menschliche Beurteilung: Angemessenheit einer Alternative, Lesereihenfolge, Verständlichkeit von Fehlermeldungen, Bedienung mit Tastatur und Screenreader. Die in einer Erklärung veröffentlichte Quote muss aus einer Bewertung Kriterium für Kriterium an einer repräsentativen Stichprobe hervorgehen. Das Werkzeug bleibt nützlich, um die Website zwischen zwei Audits zu überwachen."
+  ],
+  [
+   "Ist die Nachprüfung verpflichtend?",
+   "Kein Text schreibt eine Nachprüfung als solche vor, aber die Barrierefreiheitserklärung muss den tatsächlichen Zustand des Dienstes wiedergeben. Nach einer Korrekturkampagne überprüft die Nachprüfung die Korrekturen an der ursprünglichen Stichprobe und erlaubt es, Quote und Erklärung zu aktualisieren. Sie ist kürzer als das erste Audit; fragen Sie schon im ersten Angebot nach ihrem Preis und ihrem Umfang."
+  ],
+  [
+   "Kann man das Barrierefreiheits-Audit intern durchführen, um Kosten zu senken?",
+   "Ja, die offizielle Methode lässt die Selbstbewertung zu, sofern die Organisation die Verlässlichkeit ihrer Erklärung gewährleistet. Das setzt Prüfer voraus, die im Regelwerk geschult sind, assistive Technologien anwenden und von den Teams unabhängig sind, die den Dienst konzipiert haben. Viele Organisationen kombinieren ein externes Audit bei jedem Relaunch oder alle drei Jahre mit internen Prüfungen bei jeder Version."
+  ],
+  [
+   "Muss man auf das RGAA 5 warten, bevor man seine Website prüfen lässt?",
+   "Nicht, wenn Ihre Erklärung ausläuft oder Sie keine haben. Die vor dem RGAA 5 veröffentlichten Erklärungen bleiben achtzehn Monate nach dessen Veröffentlichung gültig, ohne drei Jahre ab ihrem Datum zu überschreiten. Die Korrekturen aus einem RGAA-4.1.2-Audit gelten größtenteils auch für die nächste Version. Warten heißt vor allem, einen Dienst online zu lassen, dessen Zustand man nicht kennt."
+  ],
+  [
+   "Ist ein Barrierefreiheits-Audit ein öffentlicher Auftrag mit Bekanntmachungspflicht?",
+   "Das hängt vom geschätzten Wert des Bedarfs ab. Seit dem 1. April 2026 können in Frankreich Dienstleistungsaufträge, deren geschätzter Wert unter 60 000 Euro ohne Steuern liegt, nach Artikel R. 2122-8 des französischen Code de la commande publique ohne vorherige Bekanntmachung und ohne Wettbewerb vergeben werden. Darüber gilt ein angepasstes oder förmliches Verfahren. Der Wert bemisst sich nach dem gesamten Bedarf, etwa allen im mehrjährigen Schema vorgesehenen Audits."
+  ]
+ ],
+ "cta_svc": "audit-rgaa",
+ "cta_title": "Ein Auditangebot auf Basis Ihres echten Umfangs?",
+ "cta_text": "Beschreiben Sie uns Ihren Dienst: Wir schlagen Ihnen eine kommentierte Stichprobe, eine Frist und ein nach Phasen aufgeschlüsseltes Angebot vor, vergleichbar mit jedem anderen Vorschlag.",
+ "related": [
+  "audit-rgaa",
+  "declaration",
+  "guide"
+ ]
+}

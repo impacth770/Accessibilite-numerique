@@ -11,6 +11,7 @@
   "cover_note": ["106 Kriterien, 13 Themenbereiche", "Vorbereiten, prüfen, Bericht lesen"],
   "date": "2026-10-29",
   "cluster": "methode",
+  "modified": "2026-11-03",
   "lead": "Ein RGAA-Audit misst Kriterium für Kriterium, inwieweit eine Website, eine App oder ein Softwarepaket dem französischen Referenzrahmen für digitale Barrierefreiheit entspricht, dem Référentiel général d'amélioration de l'accessibilité (RGAA). Es ist die zwingende Grundlage jeder Erklärung zur Barrierefreiheit in Frankreich, und genau diese Erklärung prüft die Arcom bei ihren Kontrollen. Die meisten Seiten zum Thema beschreiben die Methode; dieser Leitfaden zeigt, wie ein RGAA-Audit tatsächlich abläuft, Woche für Woche, was Ihre Organisation vorbereiten muss, wie die Stichprobe entsteht, was die Ergebnisdokumente enthalten und wie Sie den Bericht lesen, ohne Fachmann zu sein. Er richtet sich auch an Organisationen in Luxemburg, in der Schweiz und in Ostbelgien, die Dienste in Frankreich betreiben oder deren Prüfrahmen nach derselben Logik funktioniert.",
   "body": [
     ["h2", "was-ein-rgaa-audit-misst", "RGAA-Audit: was es misst und was nicht"],
@@ -164,7 +165,7 @@
       "Sind die Prüfer unabhängig von den Teams, die den Dienst konzipiert oder entwickelt haben?"
     ]],
     ["p", "Was das Budget betrifft, gibt es keinen Referenzpreis: Die Kosten hängen von der Zahl der Seiten und Seitenvorlagen, der Komplexität der Abläufe, der Zahl der Plattformen, den zu bewertenden Dokumenten und den begleitenden Leistungen ab. Um zwei Angebote zu vergleichen, prüfen Sie, ob sie dieselbe Stichprobe, denselben Referenzrahmen und dieselben Ergebnisdokumente abdecken. Am einfachsten beschreiben Sie uns Ihren Dienst über die Seite [[contact|Kontakt]]: Nach einem Abstimmungsgespräch nennen wir in unserem Angebot die Stichprobe und die Dauer."],
-    ["p", "Ein Angebot, das deutlich günstiger ist als ein anderes, erklärt sich meist durch einen dieser Punkte: weniger Seiten, ein ausgeklammerter Kundenbereich, keine Tests mit assistiven Technologien, kein Nachaudit oder ein Bericht ohne verortete Empfehlungen. Legen Sie die Angebote nebeneinander und vergleichen Sie Zeile für Zeile, bevor Sie den Preis vergleichen."],
+    ["p", "Ein Angebot, das deutlich günstiger ist als ein anderes, erklärt sich meist durch einen dieser Punkte: weniger Seiten, ein ausgeklammerter Kundenbereich, keine Tests mit assistiven Technologien, kein Nachaudit oder ein Bericht ohne verortete Empfehlungen. Legen Sie die Angebote nebeneinander und vergleichen Sie Zeile für Zeile, bevor Sie den Preis vergleichen. Zur Vorbereitung der Anfrage helfen das [[article:prix-audit|Scoping-Blatt und das Vergleichsraster für Audit-Angebote]], wirklich vergleichbare Angebote zu erhalten."],
 
     ["h2", "fehler-rgaa-audit", "Fehler, die ein RGAA-Audit verfälschen"],
     ["p", "Die folgenden Fehler finden sich in zahlreichen Berichten und veröffentlichten Erklärungen. Jeder von ihnen führt zu einer Quote, die nicht der Erfahrung der Nutzerinnen und Nutzer entspricht."],

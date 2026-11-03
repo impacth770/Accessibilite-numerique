@@ -460,7 +460,7 @@
   ],
   [
    "p",
-   "The statement is valid from its date of publication. It must be updated in three cases: on the date of a substantial modification or overhaul of the service; three years after its publication; and eighteen months after a new version of the framework is published, for organisations applying the RGAA technical method. Whichever event occurs first triggers the update."
+   "The statement is valid from its date of publication. It must be updated in three cases: on the date of a substantial modification or overhaul of the service; three years after its publication; and eighteen months after a new version of the framework is published, for organisations applying the RGAA technical method. Whichever event occurs first triggers the update. Each of these deadlines calls for a new audit or a follow-up audit: to budget for it in time, see [[article:prix-audit|what drives the cost of an audit and how to compare quotes]]."
   ],
   [
    "p",
@@ -864,5 +864,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-10-29"
+ "modified": "2026-11-03"
 }

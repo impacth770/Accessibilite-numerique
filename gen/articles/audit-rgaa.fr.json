@@ -11,6 +11,7 @@
   "cover_note": ["106 critères, 13 thématiques", "Préparer, auditer, lire le rapport"],
   "date": "2026-10-29",
   "cluster": "methode",
+  "modified": "2026-11-03",
   "lead": "Un audit RGAA mesure, critère par critère, la conformité d'un site, d'une application ou d'un progiciel au Référentiel général d'amélioration de l'accessibilité. C'est la base obligatoire de toute déclaration d'accessibilité en France, et c'est cette déclaration que l'Arcom vérifie lors de ses contrôles. Les pages qui en parlent décrivent la méthode ; celle-ci montre comment l'audit se déroule réellement, semaine par semaine, ce que votre organisation doit préparer, comment l'échantillon se construit, ce que contiennent les livrables et comment lire le rapport sans être spécialiste.",
   "body": [
     ["h2", "ce-que-mesure-un-audit-rgaa", "Audit RGAA : ce qu'il mesure, et ce qu'il ne mesure pas"],
@@ -155,7 +156,7 @@
       "Un contre-audit est-il prévu, sur quel périmètre et dans quel délai ?",
       "Les auditeurs sont-ils indépendants des équipes qui ont conçu ou développé le service ?"
     ]],
-    ["p", "Côté budget, il n'existe pas de tarif de référence : le coût dépend du nombre de pages et de gabarits, de la complexité des parcours, du nombre de plateformes, des documents à évaluer et des prestations associées. Pour comparer deux devis, vérifiez qu'ils portent sur le même échantillon, le même référentiel et les mêmes livrables. Le plus simple est de nous décrire votre service par la page [[contact|contact]] : nous précisons l'échantillon et le délai dans notre proposition, après un échange de cadrage."],
+    ["p", "Côté budget, il n'existe pas de tarif de référence : le coût dépend du nombre de pages et de gabarits, de la complexité des parcours, du nombre de plateformes, des documents à évaluer et des prestations associées. Pour comparer deux devis, vérifiez qu'ils portent sur le même échantillon, le même référentiel et les mêmes livrables. Le plus simple est de nous décrire votre service par la page [[contact|contact]] : nous précisons l'échantillon et le délai dans notre proposition, après un échange de cadrage. Pour préparer la demande, la [[article:prix-audit|fiche de cadrage et la grille de comparaison des devis d'audit]] permettent de recevoir des offres réellement comparables."],
 
     ["h2", "erreurs-audit-rgaa", "Les erreurs qui faussent un audit RGAA"],
     ["p", "Les erreurs suivantes se retrouvent dans de nombreux rapports et dans des déclarations publiées. Chacune conduit à un taux qui ne correspond pas à l'expérience des usagers."],

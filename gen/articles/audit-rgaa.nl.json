@@ -11,6 +11,7 @@
   "cover_note": ["106 criteria, 13 thema’s", "Voorbereiden, auditeren, het rapport lezen"],
   "date": "2026-10-29",
   "cluster": "methode",
+  "modified": "2026-11-03",
   "lead": "Een RGAA-audit meet criterium per criterium in welke mate een website, een app of een softwarepakket voldoet aan het Franse Référentiel général d’amélioration de l’accessibilité (RGAA). In Frankrijk is die audit de verplichte basis van elke toegankelijkheidsverklaring, en het is precies die verklaring die de Franse toezichthouder Arcom bij zijn controles nagaat. De meeste pagina’s over het onderwerp beschrijven de methode; deze gids toont hoe de audit in de praktijk verloopt, week per week, wat uw organisatie moet voorbereiden, hoe de steekproef tot stand komt, wat de opleveringen bevatten en hoe u het rapport leest zonder specialist in digitale toegankelijkheid te zijn.",
   "body": [
     ["h2", "wat-meet-een-rgaa-audit", "RGAA-audit: wat hij meet, en wat hij niet meet"],
@@ -164,7 +165,7 @@
       "Zijn de auditors onafhankelijk van de teams die de dienst hebben ontworpen of ontwikkeld?"
     ]],
     ["p", "Wat het budget betreft, bestaat er geen referentietarief: de kostprijs hangt af van het aantal pagina’s en sjablonen, de complexiteit van de trajecten, het aantal platformen, de te beoordelen documenten en de bijbehorende diensten. Om twee offertes te vergelijken, gaat u na of ze betrekking hebben op dezelfde steekproef, hetzelfde referentiekader en dezelfde opleveringen. Het eenvoudigst is uw dienst te beschrijven via onze [[contact|contactpagina]]: na een afbakeningsgesprek vermelden we de steekproef en de termijn in ons voorstel."],
-    ["p", "Een offerte die opvallend goedkoper is, beperkt vaak stilzwijgend de steekproef: alleen openbare pagina’s, geen pdf’s, geen hercontrole. Leg de offertes dus naast elkaar aan de hand van de checklist hierboven, en niet alleen aan de hand van het bedrag. Voor een kmo met een eenvoudige website ligt de omvang van een audit uiteraard anders dan voor een overheid met tien e-loketten, maar de vragen blijven dezelfde."],
+    ["p", "Een offerte die opvallend goedkoper is, beperkt vaak stilzwijgend de steekproef: alleen openbare pagina’s, geen pdf’s, geen hercontrole. Leg de offertes dus naast elkaar aan de hand van de checklist hierboven, en niet alleen aan de hand van het bedrag. Voor een kmo met een eenvoudige website ligt de omvang van een audit uiteraard anders dan voor een overheid met tien e-loketten, maar de vragen blijven dezelfde. Om de aanvraag voor te bereiden, helpen de [[article:prix-audit|afbakeningsfiche en het vergelijkingsrooster voor auditoffertes]] u om echt vergelijkbare offertes te krijgen."],
 
     ["h2", "fouten-rgaa-audit", "De fouten die een RGAA-audit vertekenen"],
     ["p", "De volgende fouten komen terug in heel wat rapporten en in gepubliceerde verklaringen. Elk ervan leidt tot een graad die niet overeenstemt met de ervaring van de gebruikers."],

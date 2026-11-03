@@ -425,7 +425,7 @@
   ],
   [
    "p",
-   "There is no public reference price, and a price quoted without knowing the scope is not worth much. The cost of a digital accessibility audit depends above all on the volume and complexity of what is being assessed. To compare quotes, ask for them to cover the same sample, the same framework and the same deliverables."
+   "There is no public reference price, and a price quoted without knowing the scope is not worth much. The cost of a digital accessibility audit depends above all on the volume and complexity of what is being assessed. To compare quotes, ask for them to cover the same sample, the same framework and the same deliverables. Our article on [[article:prix-audit|what an accessibility audit costs]] sets out the ten factors that move a quote and provides a grid for comparing offers."
   ],
   [
    "ul",
@@ -609,5 +609,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-10-31"
+ "modified": "2026-11-03"
 }

@@ -460,7 +460,7 @@
   ],
   [
    "p",
-   "La déclaration est valide à partir de sa date de publication. Elle doit être mise à jour dans trois cas : à la date d'une modification substantielle ou d'une refonte du service ; trois ans après sa publication ; dix-huit mois après la publication d'une nouvelle version du référentiel, pour les organismes qui appliquent la méthode technique du RGAA. Le premier événement survenu déclenche la mise à jour."
+   "La déclaration est valide à partir de sa date de publication. Elle doit être mise à jour dans trois cas : à la date d'une modification substantielle ou d'une refonte du service ; trois ans après sa publication ; dix-huit mois après la publication d'une nouvelle version du référentiel, pour les organismes qui appliquent la méthode technique du RGAA. Le premier événement survenu déclenche la mise à jour. Chacune de ces échéances appelle un nouvel audit ou un contre-audit : pour le budgéter à temps, voyez [[article:prix-audit|ce qui fait varier le coût d'un audit et comment comparer les devis]]."
   ],
   [
    "p",
@@ -864,5 +864,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-10-29"
+ "modified": "2026-11-03"
 }

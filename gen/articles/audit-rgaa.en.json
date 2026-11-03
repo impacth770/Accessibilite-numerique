@@ -11,6 +11,7 @@
   "cover_note": ["106 criteria, 13 themes", "Prepare, audit, read the report"],
   "date": "2026-10-29",
   "cluster": "methode",
+  "modified": "2026-11-03",
   "lead": "An RGAA audit measures, criterion by criterion, how far a website, an app or a software package complies with the RGAA, France’s General Accessibility Improvement Framework (Référentiel général d’amélioration de l’accessibilité). It is the mandatory basis of every accessibility statement in France, and that statement is what Arcom, the French regulator for audiovisual and digital communication, checks during its inspections. Most pages on the subject describe the method; this one shows how an RGAA audit actually unfolds, week by week, what your organisation needs to prepare, how the sample is built, what the deliverables contain and how to read the report without being a digital accessibility specialist.",
   "body": [
     ["h2", "what-an-rgaa-audit-measures", "RGAA audit: what it measures, and what it does not"],
@@ -159,7 +160,7 @@
       "Is a follow-up audit included, on what scope and within what timeframe?",
       "Are the auditors independent of the teams that designed or developed the service?"
     ]],
-    ["p", "On budget, there is no reference price: the cost depends on the number of pages and templates, the complexity of the journeys, the number of platforms, the documents to be assessed and the associated services. To compare two quotes, check that they cover the same sample, the same framework and the same deliverables. The simplest approach is to describe your service to us through the [[contact|contact]] page: we set out the sample and the timeframe in our proposal, after a scoping discussion."],
+    ["p", "On budget, there is no reference price: the cost depends on the number of pages and templates, the complexity of the journeys, the number of platforms, the documents to be assessed and the associated services. To compare two quotes, check that they cover the same sample, the same framework and the same deliverables. The simplest approach is to describe your service to us through the [[contact|contact]] page: we set out the sample and the timeframe in our proposal, after a scoping discussion. To prepare your request, our [[article:prix-audit|scoping sheet and grid for comparing audit quotes]] help you receive offers that are truly comparable."],
 
     ["h2", "errors-that-distort-an-rgaa-audit", "The errors that distort an RGAA audit"],
     ["p", "The following errors appear in many reports and in published statements. Each one leads to a rate that does not reflect what users actually experience."],
