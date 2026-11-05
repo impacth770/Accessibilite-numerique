@@ -128,6 +128,10 @@
    "Om aan te tonen dat een traject die resultaten haalt, baseren auditors zich op de [[https://www.w3.org/Translations/WCAG22-nl/|WCAG 2.2-richtlijnen (geautoriseerde Nederlandse vertaling)]], die op 5 oktober 2023 een W3C-aanbeveling werden, en op de Europese norm EN 301 549. Geen enkele versie van die norm geeft al een vermoeden van conformiteit in het kader van de EAA, omdat ze nog niet in het Publicatieblad van de Unie is vermeld. In de praktijk is niveau AA van de WCAG 2.2 het veiligste doel: daarop sluit versie 4.1.1 van de norm aan, gepubliceerd op 2 september 2026 en nog niet vermeld in het Publicatieblad. De overeenkomsten tussen WCAG, EN 301 549, RGAA en RAWeb staan in onze vergelijking van de [[article:normes|normen voor digitale toegankelijkheid]]."
   ],
   [
+   "p",
+   "Verschillende criteria die deze versie toevoegt, raken webwinkels rechtstreeks: de grootte van de aantalknoppen, het opnieuw invullen van het factuuradres of het plakken van de verificatiecode. Ze worden met hun oplossing uitgelegd in [[article:wcag-22|onze gids over de nieuwe WCAG 2.2-criteria]]."
+  ],
+  [
    "h2",
    "checklist-gebruiken",
    "Zo gebruikt u deze checklist voor een toegankelijke webshop"
@@ -702,5 +706,6 @@
   "eaa",
   "declaration",
   "normes"
- ]
+ ],
+ "modified": "2026-11-05"
 }

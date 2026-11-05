@@ -116,6 +116,10 @@
    "Um nachzuweisen, dass ein Ablauf diese Ergebnisse erreicht, stützen sich Auditorinnen und Auditoren auf die [[https://www.w3.org/TR/2023/REC-WCAG22-20231005/|Web Content Accessibility Guidelines (WCAG) 2.2 (englische Originalfassung)]], seit dem 5. Oktober 2023 Empfehlung des W3C, und auf die europäische Norm EN 301 549. Noch verleiht keine Fassung dieser Norm eine Konformitätsvermutung nach dem EAA, weil keine im Amtsblatt der Union zitiert ist. In der Praxis ist die Stufe AA der WCAG 2.2 das sicherste Ziel: An ihr orientiert sich die Version 4.1.1 der Norm, die am 2. September 2026 veröffentlicht und noch nicht im Amtsblatt zitiert wurde. Die Entsprechungen zwischen WCAG, EN 301 549, RGAA und RAWeb zeigt unser Vergleich der [[article:normes|Normen der digitalen Barrierefreiheit]]."
   ],
   [
+   "p",
+   "Mehrere mit dieser Version eingeführte Kriterien betreffen Onlineshops unmittelbar: die Größe der Mengen-Schaltflächen, die erneute Eingabe der Rechnungsadresse oder das Einfügen des Bestätigungscodes. Sie werden samt Korrektur in [[article:wcag-22|unserem Leitfaden zu den neuen WCAG-2.2-Kriterien]] erklärt."
+  ],
+  [
    "h2",
    "checkliste-anwenden",
    "So nutzen Sie diese Checkliste zur Barrierefreiheit im Onlineshop"
@@ -690,5 +694,6 @@
   "eaa",
   "declaration",
   "normes"
- ]
+ ],
+ "modified": "2026-11-05"
 }

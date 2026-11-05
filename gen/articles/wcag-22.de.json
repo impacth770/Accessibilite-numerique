@@ -1,0 +1,741 @@
+{
+ "slug": "wcag-2-2-neue-erfolgskriterien",
+ "h1": "WCAG 2.2: die 9 neuen Erfolgskriterien mit typischem Fehler, Korrektur und Test",
+ "crumb": "WCAG 2.2: neue Kriterien",
+ "meta_title": "WCAG 2.2 neue Erfolgskriterien: Fehler, Korrekturen, Tests",
+ "meta_desc": "Die 9 neuen Kriterien der WCAG 2.2 einzeln erklärt: typischer Fehler, Korrektur in HTML/CSS, Test zum Selbermachen und der Zeitplan in jedem Land.",
+ "card_desc": "Verdeckter Fokus, zu kleine Ziele, Drag-and-drop, redundante Eingabe, Anmeldung: jedes neue Kriterium korrigieren und testen.",
+ "cat": "guide",
+ "where": "Europa",
+ "cover": "2.2",
+ "cover_note": [
+  "WCAG 2.2, Empfehlung des W3C",
+  "9 Kriterien neu, 1 entfernt"
+ ],
+ "date": "2026-11-05",
+ "cluster": "normes",
+ "lead": "Die WCAG 2.2 ergänzen die Regeln für barrierefreie Webinhalte um neun neue Erfolgskriterien, von denen sechs zu einer Konformität der Stufe AA gehören, und streichen ein bestehendes Kriterium. Sie werden zur Grundlage der europäischen Norm EN 301 549 V4.1.1, des künftigen französischen RGAA 5 und der nächsten luxemburgischen Prüfkataloge. Für jedes dieser neuen Kriterien der WCAG 2.2 zeigen wir, was es tatsächlich verlangt, welcher Fehler am häufigsten vorkommt, wie die Korrektur in HTML oder CSS aussieht und mit welchem Test Ihr Team die Umsetzung in wenigen Minuten selbst überprüfen kann.",
+ "body": [
+  [
+   "h2",
+   "kurzueberblick",
+   "WCAG 2.2 im Überblick: neun neue Erfolgskriterien, ein Kriterium entfernt"
+  ],
+  [
+   "p",
+   "Die Web Content Accessibility Guidelines (WCAG) 2.2 sind seit dem 5. Oktober 2023 eine Empfehlung des W3C; die geltende Fassung wurde am 12. Dezember 2024 aktualisiert. Sie ergänzen die WCAG 2.1, ohne sie zu ersetzen: Alle bestehenden Regeln bleiben mit einer einzigen Ausnahme erhalten, und neun Erfolgskriterien kommen hinzu. Die offizielle Seite [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|Was in den WCAG 2.2 neu ist (auf Englisch)]] stellt sie mit Beispielen der Nutzerinnen und Nutzer vor, für die sie gedacht sind."
+  ],
+  [
+   "p",
+   "Die neuen Kriterien decken vor allem Bedürfnisse ab, die frühere Versionen nur unzureichend berücksichtigt haben: Menschen, die mit der Tastatur navigieren und dabei das aktive Element aus den Augen verlieren; Menschen mit Tremor oder eingeschränkter Feinmotorik; Menschen mit kognitiven Beeinträchtigungen, Gedächtnis- oder Lernschwierigkeiten. Betroffen sind Komponenten, die auf fast jeder Website vorkommen: fixierte Kopfleisten, Cookie-Banner, Icon-Schaltflächen, Schieberegler, Bestellprozesse und Anmeldeformulare."
+  ],
+  [
+   "table",
+   {
+    "caption": "Die neun mit den WCAG 2.2 eingeführten Kriterien",
+    "head": [
+     "Kriterium",
+     "Stufe",
+     "Was es verlangt, in einem Satz",
+     "Am häufigsten betroffene Komponenten"
+    ],
+    "rows": [
+     [
+      "2.4.11 Fokus nicht verdeckt (Minimum)",
+      "AA",
+      "Das Element, das den Tastaturfokus erhält, wird nicht vollständig von einem Inhalt der Seite verdeckt.",
+      "Fixierte Kopf- oder Fußleiste, Cookie-Banner, schwebende Chat-Schaltfläche"
+     ],
+     [
+      "2.4.12 Fokus nicht verdeckt (erweitert)",
+      "AAA",
+      "Kein Teil des Elements mit dem Fokus ist verdeckt.",
+      "Dieselben Komponenten"
+     ],
+     [
+      "2.4.13 Fokusdarstellung",
+      "AAA",
+      "Der Fokusindikator hat eine Mindestfläche und einen Mindestkontrast.",
+      "Fokus-Stile des Designsystems"
+     ],
+     [
+      "2.5.7 Ziehbewegungen",
+      "AA",
+      "Alles, was durch Ziehen erledigt wird, lässt sich auch mit einem einfachen Klick oder Tippen erledigen.",
+      "Schieberegler, Drag-and-drop, Kanban-Boards, Karten"
+     ],
+     [
+      "2.5.8 Zielgröße (Minimum)",
+      "AA",
+      "Klickbare Ziele messen mindestens 24 mal 24 CSS-Pixel, mit Ausnahmen.",
+      "Symbole, Paginierung, Schließkreuze, Kalender"
+     ],
+     [
+      "3.2.6 Konsistente Hilfe",
+      "A",
+      "Hilfeangebote bleiben von Seite zu Seite an derselben relativen Stelle.",
+      "Kontakt-Links, Telefonnummer, FAQ, Chat-Assistent"
+     ],
+     [
+      "3.3.7 Redundante Eingabe",
+      "A",
+      "Eine im selben Prozess bereits gemachte Angabe wird nicht erneut verlangt oder automatisch vorgeschlagen.",
+      "Bestellprozesse, mehrstufige Formulare"
+     ],
+     [
+      "3.3.8 Barrierefreie Authentifizierung (Minimum)",
+      "AA",
+      "Die Anmeldung verlangt keinen kognitiven Test ohne Alternative oder Hilfe.",
+      "Anmeldung, Passwort, Einmalcodes, Captchas"
+     ],
+     [
+      "3.3.9 Barrierefreie Authentifizierung (erweitert)",
+      "AAA",
+      "Dieselbe Anforderung, ohne die Ausnahmen für Objekterkennung und persönliche Inhalte.",
+      "Dieselben Komponenten"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Das Kriterium 4.1.1 Syntaxanalyse (Parsing) gilt als obsolet und wurde entfernt. Insgesamt umfassen die WCAG 2.2 damit 86 aktive Kriterien. Eine Konformität der Stufe AA, die alle europäischen Regelwerke anstreben, verlangt die Kriterien der Stufen A und AA: Von den neuen betrifft das 2.4.11, 2.5.7, 2.5.8, 3.2.6, 3.3.7 und 3.3.8. Die drei AAA-Kriterien bleiben gute Praxis, die man für besonders sensible Abläufe anstreben kann, ohne dass eine rechtliche Pflicht besteht."
+  ],
+  [
+   "p",
+   "Wie sich die WCAG in das Gefüge der Prüfkataloge einordnen (EN 301 549, RGAA, RAWeb, eCH-0059), zeigt der Überblicksartikel [[article:normes|WCAG 2.2, EN 301 549, RAWeb, eCH-0059: welche Norm für digitale Barrierefreiheit gilt]]. Der vorliegende Beitrag geht eine Ebene tiefer, bis zur einzelnen Komponente, Kriterium für Kriterium. Wenn Sie neu in das Thema einsteigen, beginnen Sie am besten mit unserem [[article:guide|Leitfaden zur digitalen Barrierefreiheit]], der die Pflichten und die betroffenen Nutzergruppen vorstellt."
+  ],
+  [
+   "h2",
+   "zeitplan-laender",
+   "Ab wann die neuen Erfolgskriterien der WCAG 2.2 in Ihrem Land verbindlich werden"
+  ],
+  [
+   "p",
+   "Die WCAG sind kein Gesetz: Verbindlich werden sie erst, wenn ein Rechtstext oder ein nationaler Prüfkatalog auf sie verweist. Die meisten im November 2026 geltenden Prüfkataloge stützen sich jedoch noch auf die WCAG 2.1. Der Übergang zu den WCAG 2.2 erfolgt deshalb Land für Land, im Rhythmus der neuen Normversionen. Diese Verschiebung erklärt eine häufige Situation: Eine Website, die in einem Land als konform erklärt ist, kann mehrere Kriterien der WCAG 2.2 verfehlen, ohne heute gegen geltendes Recht zu verstoßen."
+  ],
+  [
+   "table",
+   {
+    "caption": "Geltender Prüfkatalog und Übergang zu den WCAG 2.2, nach Land (November 2026)",
+    "head": [
+     "Land oder Rahmen",
+     "Geltender Prüfkatalog",
+     "WCAG-Grundlage",
+     "Übergang zu den WCAG 2.2"
+    ],
+    "rows": [
+     [
+      "Frankreich, öffentlicher Sektor und große Unternehmen",
+      "RGAA 4.1.2",
+      "WCAG 2.1",
+      "RGAA 5, angekündigt für Ende 2026"
+     ],
+     [
+      "Belgien, öffentlicher Sektor",
+      "Norm EN 301 549 V3.2.1",
+      "WCAG 2.1",
+      "Sobald die V4.1.1 im Amtsblatt der EU zitiert ist"
+     ],
+     [
+      "Luxemburg, öffentlicher Sektor",
+      "RAWeb 1.1 und RAAM 1.1",
+      "EN 301 549 V3.2.1, also WCAG 2.1",
+      "RAWeb 2 und RAAM 2, angekündigt für Februar 2027"
+     ],
+     [
+      "Schweiz, Bund",
+      "eCH-0059 Version 3.0",
+      "WCAG 2.1",
+      "Derzeit kein Zeitplan für eine Überarbeitung bekannt"
+     ],
+     [
+      "Europäische Union, European Accessibility Act",
+      "Anforderungen der Richtlinie (EU) 2019/882",
+      "Norm EN 301 549 als Nachweismittel",
+      "EN 301 549 V4.1.1, im September 2026 veröffentlicht, Zitierung im Amtsblatt der EU erwartet"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "In Frankreich hält die [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|offizielle Ankündigung des RGAA 5 (auf Französisch)]] der DINUM fest, dass die neue Version die WCAG 2.2 aufnehmen wird und dass ihre Kriterien die des RGAA 4.1.2 präzisieren oder ergänzen, ohne ihnen zu widersprechen. Auf europäischer Ebene hat das ETSI die [[https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf|Norm EN 301 549 V4.1.1 (PDF, auf Englisch)]] am 2. September 2026 veröffentlicht; ihre Kapitel zu Web, Dokumenten und Software sind auf die WCAG 2.2 abgestimmt. In Luxemburg hat der SIP [[https://accessibilite.public.lu/fr/news/2026-09-15-EN301549v4.html|den Übergang von RAWeb und RAAM zur Version 2 angekündigt (auf Französisch)]], kompatibel mit dieser Norm."
+  ],
+  [
+   "note",
+   "Gut zu wissen",
+   "Die sechs neuen Kriterien der Stufen A und AA jetzt zu korrigieren, kostet weniger, als sie erst nach dem Erscheinen von RGAA 5 oder RAWeb 2 anzugehen: Die meisten lassen sich in wenigen gemeinsam genutzten Komponenten beheben, und Audits nach der Norm EN 301 549 V4.1.1 prüfen sie bereits."
+  ],
+  [
+   "p",
+   "Für ein Unternehmen, das unter den European Accessibility Act fällt, stellt sich die Frage anders. Die Richtlinie legt Anforderungen an das Ergebnis fest; die harmonisierte Norm ist der einfachste Weg nachzuweisen, dass man sie erfüllt. Sobald die V4.1.1 im Amtsblatt zitiert ist, dient sie, und damit die WCAG 2.2, den Marktüberwachungsbehörden als Referenz. Der Artikel [[article:eaa|was die Behörden im Rahmen des European Accessibility Act prüfen]] beschreibt diese Kontrolle Sektor für Sektor."
+  ],
+  [
+   "h2",
+   "fokus-nicht-verdeckt",
+   "2.4.11 Fokus nicht verdeckt: Das aktive Element darf nicht unter einem Banner verschwinden"
+  ],
+  [
+   "p",
+   "Der Wortlaut des Kriteriums ist kurz: Wenn eine Komponente der Benutzeroberfläche den Tastaturfokus erhält, wird sie nicht vollständig von Inhalten verdeckt, die der Autor erstellt hat. Wer mit der Tabulatortaste, einer Bildschirmlupe oder per Sprachsteuerung navigiert, muss sehen können, wo er sich befindet. Rutscht der aktive Link unter eine fixierte Kopfleiste, bewegt sich die Person blind durch die Seite."
+  ],
+  [
+   "h3",
+   "Der typische Fehler"
+  ],
+  [
+   "p",
+   "Drei Situationen machen den Großteil der Fehler aus. Die erste ist die „klebende“ Kopfleiste (Sticky Header): Navigiert man mit Umschalt+Tab in der Seite nach oben, scrollt der Browser gerade so weit, dass der Link am oberen Fensterrand erscheint, wo ihn die Kopfleiste verdeckt. Die zweite ist das am unteren Bildschirmrand fixierte Cookie-Banner, das die Fußzeile während der gesamten Navigation überdeckt, solange es nicht geschlossen wurde. Die dritte ist eine schwebende Schaltfläche für den Chat oder für „nach oben“, die ein Feld oder eine Schaltfläche in derselben Ecke überdeckt."
+  ],
+  [
+   "p",
+   "Das Kriterium verbietet keine fixierten Elemente; es verbietet nur, dass sie das aktive Element vollständig verdecken. Die W3C-Dokumentation [[https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html|Understanding 2.4.11 (auf Englisch)]] nennt zwei nützliche Präzisierungen. Ein Inhalt, den die Nutzerin oder der Nutzer selbst geöffnet hat, etwa ein gerade aufgeklapptes Auswahlmenü, darf das aktive Element überdecken. Und wenn sich das Element sichtbar machen lässt, ohne den Fokus zu verschieben, zum Beispiel indem ein nicht modales Panel mit der Escape-Taste geschlossen wird, gilt es nicht als verdeckt."
+  ],
+  [
+   "h3",
+   "Die Korrektur"
+  ],
+  [
+   "p",
+   "Bei einer fixierten Kopfleiste passt die einfachste Korrektur in eine einzige CSS-Zeile auf dem Wurzelelement: scroll-padding-top mit einem Wert, der der Höhe der Kopfleiste entspricht, zum Beispiel „html { scroll-padding-top: 5rem; }“. Aktuelle Browser halten diesen Abstand dann frei, wenn sie die Seite scrollen, um ein Element in den sichtbaren Bereich zu bringen; prüfen Sie das mit der Tastatur in den Browsern, die Ihr Publikum nutzt. Dieselbe Logik gilt mit scroll-padding-bottom für den unteren Rand, wenn auf dem Smartphone eine Aktionsleiste unten fixiert bleibt."
+  ],
+  [
+   "p",
+   "Für das Cookie-Banner gibt es zwei sichere Varianten: Es wird im normalen Seitenfluss oben auf der Seite platziert statt als fixierte Überlagerung, oder es wird modal gestaltet, das heißt, der Fokus wird hineinverschoben und dort gehalten, bis die Person eine Wahl getroffen hat. Die schlechteste Lösung ist ein fixiertes, nicht modales Banner, das man mit der Tastatur weder leicht erreicht noch ignorieren kann. Bei einer schwebenden Schaltfläche reservieren Sie am Seitenende einen Abstand, damit kein interaktiver Inhalt darunter zu liegen kommt."
+  ],
+  [
+   "h3",
+   "Der Test zum Selbermachen"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Verkleinertes Fenster",
+     "Stellen Sie den Browser auf eine Breite von 1280 Pixeln und anschließend auf ein Smartphone-Format, jeweils mit 200 % Zoom; dort nehmen fixierte Elemente am meisten Platz ein."
+    ],
+    [
+     "Vollständiger Tabulatordurchlauf",
+     "Gehen Sie mit Tab durch die gesamte Seite und mit Umschalt+Tab wieder zurück, ohne das Cookie-Banner beim ersten Durchgang zu schließen."
+    ],
+    [
+     "Beobachtung",
+     "Prüfen Sie bei jedem Halt, ob zumindest ein Teil des aktiven Elements sichtbar bleibt; notieren Sie vollständig verdeckte Elemente und die Komponente, die sie überdeckt."
+    ],
+    [
+     "Zweiter Durchgang",
+     "Wiederholen Sie den Durchlauf mit geschlossenem Banner und danach auf den weiteren Seitenvorlagen: Artikel, Produktseite, Formular, Suchergebnisse."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Auf Stufe AAA geht das Kriterium 2.4.12 weiter: Kein Teil des Elements darf verdeckt sein. Und das Kriterium 2.4.13 Fokusdarstellung verlangt, dass der Fokusindikator mindestens die Fläche eines 2 CSS-Pixel breiten Umrisses um die Komponente abdeckt, mit einem Kontrast von mindestens 3:1 zwischen denselben Pixeln mit und ohne Fokus. Beide Kriterien sind nicht verpflichtend, doch ein nach 2.4.13 gestalteter Fokus-Stil beendet auf einen Schlag alle Diskussionen über die Sichtbarkeit des Fokus (Kriterium 2.4.7, Stufe AA, im RGAA das Kriterium 10.7)."
+  ],
+  [
+   "h2",
+   "ziehbewegungen",
+   "2.5.7 Ziehbewegungen: eine Alternative zu Drag-and-drop"
+  ],
+  [
+   "p",
+   "Das Kriterium verlangt, dass jede Funktion, die eine Ziehbewegung nutzt, auch mit einem einzelnen Zeiger ohne Ziehen ausgeführt werden kann, es sei denn, das Ziehen ist wesentlich oder die Funktion wird vom Browser bereitgestellt und vom Autor nicht verändert. Ziehen bedeutet: drücken, den Zeiger bei gedrückter Maustaste oder aufgelegtem Finger bewegen und dann loslassen. Für Menschen mit Tremor, für Personen, die ein Kopf- oder Augensteuerungsgerät oder eine Sprachsteuerung verwenden, ist diese Geste schwierig oder sogar unmöglich."
+  ],
+  [
+   "p",
+   "Man sollte es nicht mit dem Kriterium 2.5.1 Zeigergesten verwechseln, das es seit den WCAG 2.1 gibt und das Gesten betrifft, die einem Pfad folgen oder mehrere Finger verwenden. Das Kriterium 2.5.7 zielt auf das einfache Ziehen, bei dem nur Start- und Endpunkt zählen. Es betrifft auch nicht die Tastatur: Eine Komponente kann mit der Tastatur einwandfrei bedienbar sein und trotzdem an 2.5.7 scheitern, denn wer eine Maus oder einen Touchscreen nutzt, hat nicht unbedingt eine Tastatur zur Hand."
+  ],
+  [
+   "h3",
+   "Typische Fehler"
+  ],
+  [
+   "ul",
+   [
+    "ein selbst gebauter Schieberegler für Preis oder Lautstärke, der sich nur durch Ziehen des Griffs einstellen lässt;",
+    "eine Liste, die sich nur per Drag-and-drop neu sortieren lässt (Prioritäten, Schritte, Favoriten);",
+    "ein Aufgabenboard im Kanban-Stil, auf dem man den Status einer Karte ändert, indem man sie von einer Spalte in die andere zieht;",
+    "ein Bereich zum Ablegen von Dateien ohne Schaltfläche „Durchsuchen“;",
+    "eine interaktive Karte, die sich nur durch Ziehen verschieben lässt, ohne Schaltflächen zum Verschieben;",
+    "ein Vorher-nachher-Vergleich, dessen Trennlinie sich nur durch Ziehen bewegen lässt."
+   ]
+  ],
+  [
+   "h3",
+   "Die Korrektur"
+  ],
+  [
+   "p",
+   "Die Korrektur besteht darin, einen einfachen Klickweg hinzuzufügen, der neben dem Ziehen bestehen bleibt. Bei einem Schieberegler sollte ein Klick auf die Schiene den Griff an diese Stelle setzen, und Schaltflächen „minus“ und „plus“ oder ein Zahlenfeld sollten die Eingabe des Werts ermöglichen. Das native Feld „input type=range“ ist oft die beste Grundlage, weil der Browser sein Verhalten zum Teil selbst übernimmt. Bei einer sortierbaren Liste ergänzen Sie an jedem Eintrag Schaltflächen „Nach oben“ und „Nach unten“ oder ein Menü „Verschieben nach …“. Bei einem Kanban-Board genügt ein Statusmenü auf jeder Karte."
+  ],
+  [
+   "p",
+   "Ein weiteres Muster funktioniert gut: das Element mit einem Klick auswählen und dann auf das Ziel klicken. Dieses Verhalten kennt man aus Dateiverwaltungen, und es verlangt kein Gedrückthalten der Maustaste. Für den Ablagebereich ist die Schaltfläche „Durchsuchen“, die die Dateiauswahl des Betriebssystems öffnet, die Standardlösung. Bei einer Karte decken Schaltflächen zum Verschieben und Zoomen oder ein Suchfeld für Adressen den Bedarf ab."
+  ],
+  [
+   "h3",
+   "Der Test"
+  ],
+  [
+   "p",
+   "Der Test ist mechanisch: Versuchen Sie bei jeder Komponente, die auf Ziehen reagiert, dasselbe Ergebnis ausschließlich mit einfachen Klicks zu erreichen, ohne die Maustaste je gedrückt zu halten. Auf dem Smartphone machen Sie dasselbe mit einfachem Tippen. Lässt sich eine Funktion nur durch Ziehen erreichen und ist das Ziehen nicht wesentlich (wie etwa bei einer handschriftlichen Unterschrift oder einer Freihandzeichnung), ist das Kriterium nicht erfüllt."
+  ],
+  [
+   "h2",
+   "zielgroesse",
+   "2.5.8 Zielgröße: 24 CSS-Pixel und fünf Ausnahmen"
+  ],
+  [
+   "p",
+   "Das Kriterium 2.5.8 verlangt, dass die Ziele von Zeigeraktionen mindestens 24 mal 24 CSS-Pixel groß sind. Das CSS-Pixel ist die Einheit des Stylesheets, nicht das physische Pixel des Bildschirms: Auf einem Smartphone mit hoher Pixeldichte entsprechen 24 CSS-Pixel deutlich mehr physischen Pixeln. Die Regel richtet sich an Menschen mit Tremor oder eingeschränkter Feinmotorik, aber auch an alle, die ein Smartphone mit einer Hand bedienen."
+  ],
+  [
+   "p",
+   "Das Kriterium sieht fünf Ausnahmen vor, die man kennen sollte, um nicht unnötig zu korrigieren:"
+  ],
+  [
+   "ul",
+   [
+    "Abstand: Ein kleineres Ziel ist zulässig, wenn ein Kreis mit 24 CSS-Pixeln Durchmesser, zentriert auf seiner Fläche, kein anderes Ziel und keinen Kreis eines anderen kleinen Ziels berührt;",
+    "Gleichwertige Alternative: Dieselbe Funktion ist über ein anderes Bedienelement der Seite erreichbar, das die Größe einhält;",
+    "Im Text: Das Ziel steht in einem Satz, wie ein Link in einem Absatz, oder seine Größe ist durch die Zeilenhöhe des Textes begrenzt;",
+    "Vom Browser gesteuert: Die Größe wird vom Browser bestimmt und vom Autor nicht verändert, wie bei einem nativen Kontrollkästchen ohne eigenes Styling;",
+    "Wesentlich: Eine bestimmte Darstellung ist wesentlich oder rechtlich vorgeschrieben, wie die Markierungen einer Karte, die an ihrer geografischen Position bleiben müssen."
+   ]
+  ],
+  [
+   "p",
+   "Die Dokumentation [[https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html|Understanding 2.5.8 (auf Englisch)]] veranschaulicht die Kreismethode: Um jedes kleine Ziel wird ein Kreis von 24 CSS-Pixeln gezogen, und man prüft, dass kein Kreis ein benachbartes Ziel oder einen anderen Kreis überschneidet. In der Praxis kann ein Symbol von 16 Pixeln bestehen, wenn es ausreichend frei steht, während eine Reihe dicht aneinanderliegender Symbole von 20 Pixeln durchfällt."
+  ],
+  [
+   "h3",
+   "Typische Fehler"
+  ],
+  [
+   "p",
+   "Die Fehler konzentrieren sich auf wenige Muster: eine eng gesetzte Paginierung mit Seitenzahlen („1 2 3 … 12“); das Schließkreuz eines modalen Dialogs oder Banners, oft nur 12 oder 16 Pixel groß; Teilen- oder Aktionssymbole ohne Abstand nebeneinander; die Tage einer Datumsauswahl auf dem Smartphone; die Navigationspunkte eines Karussells; klickbare Sternebewertungen; die Mengenschaltflächen „+“ und „−“ im Warenkorb. In einem Kaufprozess tauchen die beiden letzten Fälle ständig auf; unsere [[article:e-commerce|Checkliste zur Barrierefreiheit im E-Commerce, Bildschirm für Bildschirm]] ordnet sie in den Bestellprozess ein."
+  ],
+  [
+   "h3",
+   "Die Korrektur"
+  ],
+  [
+   "p",
+   "Entscheidend ist die Größe der klickbaren Fläche, nicht die der Grafik. Ein Symbol von 16 Pixeln kann optisch unverändert bleiben, wenn seine Schaltfläche ein „padding“ erhält, das die klickbare Fläche auf 24 Pixel bringt, zum Beispiel „.icon-button { min-width: 24px; min-height: 24px; }“ mit zentriertem Symbol. Bei einer Reihe eng gesetzter Links vergrößern Sie den Abstand mit der Eigenschaft „gap“ eines Flex- oder Grid-Containers. Korrigieren Sie diese Regeln im Designsystem: Eine einzige, richtig dimensionierte Icon-Schaltfläche behebt Hunderte von Vorkommen."
+  ],
+  [
+   "p",
+   "Die Stufe AAA behält das Kriterium 2.5.5 Zielgröße (erweitert), das 44 mal 44 CSS-Pixel verlangt. Das ist ein gutes Ziel für die Hauptschaltflächen einer mobilen App oder eines Terminals. Teams, die bereits die in den Gestaltungsrichtlinien von iOS und Android empfohlenen Größen übernommen haben, erfüllen 2.5.8 in der Regel ohne zusätzlichen Aufwand."
+  ],
+  [
+   "h3",
+   "Der Test"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Kleine Ziele aufspüren",
+     "Untersuchen Sie in den Entwicklerwerkzeugen des Browsers Symbole, einzeln stehende Links und selbst gebaute Formularelemente; notieren Sie ihre berechnete Breite und Höhe."
+    ],
+    [
+     "Ausnahmen anwenden",
+     "Prüfen Sie für jedes Ziel unter 24 Pixeln den Abstand (Kreismethode), ob ein gleichwertiges Bedienelement existiert oder ob es „im Text“ steht."
+    ],
+    [
+     "Auf dem Smartphone prüfen",
+     "Wiederholen Sie die Bestandsaufnahme mit einer mobilen Seitenvorlage, auf der Symbole oft verkleinert und enger zusammengerückt sind."
+    ]
+   ]
+  ],
+  [
+   "h2",
+   "konsistente-hilfe",
+   "3.2.6 Konsistente Hilfe: der Hilfe-Link an derselben Stelle auf allen Seiten"
+  ],
+  [
+   "p",
+   "Das Kriterium 3.2.6 verlangt nicht, Hilfe anzubieten. Es verlangt, dass ein Hilfemechanismus, der auf mehreren Seiten einer Gruppe von Seiten wiederkehrt, in derselben Reihenfolge relativ zu den anderen Inhalten erscheint, sofern die Nutzerin oder der Nutzer nichts daran ändert. Fehlt die Hilfe auf einzelnen Seiten, ist das für sich genommen kein Verstoß: Das Kriterium betrifft nur Seiten, die Hilfe anbieten. Erfasst sind vier Mechanismen: die Kontaktdaten einer Person (Telefon, E-Mail-Adresse, Erreichbarkeit), ein Weg zum persönlichen Kontakt (Kontaktformular, Chat mit einer Beraterin oder einem Berater), eine Selbsthilfe-Option (FAQ, Hilfeseite) und ein vollständig automatisierter Kontaktmechanismus (Chatbot)."
+  ],
+  [
+   "p",
+   "Die Regel schützt Menschen mit kognitiven Beeinträchtigungen oder Gedächtnisproblemen, für die schon das Auffinden der Hilfe eine Hürde ist. Steht der Link „Kontakt“ auf der Startseite in der Kopfleiste, auf den Produktseiten in der Fußzeile und im Kundenkonto wieder an einer anderen Stelle, müssen sie ihn bei jedem Seitenwechsel neu suchen."
+  ],
+  [
+   "h3",
+   "Typische Fehler"
+  ],
+  [
+   "ul",
+   [
+    "die Telefonnummer des Kundendienstes oben auf den redaktionellen Seiten, aber unten auf den Kontoseiten;",
+    "ein Chat-Assistent, der je nach Seitenvorlage an unterschiedlichen Stellen sitzt;",
+    "ein Bestellprozess oder ein Online-Antrag, von einem anderen Dienstleister gebaut, der die gemeinsamen Elemente der Website übernimmt, den Hilfe-Link aber in einer anderen Reihenfolge platziert;",
+    "eine FAQ, die auf der Website über das Hauptmenü und im Kundenkonto über die Fußzeile verlinkt ist."
+   ]
+  ],
+  [
+   "h3",
+   "Korrektur und Test"
+  ],
+  [
+   "p",
+   "Die Korrektur ist eher eine Frage der Governance als des Codes: Legen Sie ein für alle Mal fest, wo die Hilfemechanismen stehen (zum Beispiel ein Link „Hilfe und Kontakt“ an derselben Position in der Kopfleiste aller Seitenvorlagen), und verpflichten Sie die Teams und Dienstleister, die eigene Abläufe bauen, auf diese Position. Für den Test öffnen Sie die wichtigsten Seitenvorlagen nebeneinander und prüfen, ob jeder vorhandene Hilfemechanismus in derselben relativen Reihenfolge erscheint. Der Test geht schnell, schlägt aber bei Websites, an denen mehrere Teams bauen, häufig fehl."
+  ],
+  [
+   "h2",
+   "redundante-eingabe",
+   "3.3.7 Redundante Eingabe: nicht erneut fragen, was bereits angegeben wurde"
+  ],
+  [
+   "p",
+   "Nach dem Kriterium 3.3.7 wird eine Information, die die Nutzerin oder der Nutzer bereits eingegeben hat oder die ihr bereits bereitgestellt wurde und die im selben Prozess erneut eingegeben werden muss, entweder automatisch ausgefüllt oder zur Auswahl angeboten. Es gibt drei Ausnahmen: Die erneute Eingabe ist wesentlich, sie ist zur Sicherheit des Inhalts erforderlich, oder die frühere Angabe ist nicht mehr gültig."
+  ],
+  [
+   "p",
+   "Das Wort „Prozess“ ist entscheidend: Das Kriterium betrifft eine Abfolge von Schritten zur Erledigung einer Aufgabe, etwa eine Bestellung, einen Antrag auf Sozialleistungen oder eine Registrierung. Es verlangt nicht, Angaben von einem Besuch zum nächsten zu speichern. Verwechseln sollte man es auch nicht mit dem Kriterium 1.3.5 (Stufe AA, im RGAA das Kriterium 11.13), das verlangt, den Zweck von Feldern mit personenbezogenen Daten über das Attribut autocomplete zu kennzeichnen; beide ergänzen sich."
+  ],
+  [
+   "h3",
+   "Typische Fehler"
+  ],
+  [
+   "ul",
+   [
+    "die Rechnungsadresse wird abgefragt, obwohl die Lieferadresse gerade eingegeben wurde, ohne Kontrollkästchen „identisch mit der Lieferadresse“;",
+    "ein mehrstufiges Formular fragt erneut nach dem Namen oder der Aktennummer, die im ersten Schritt eingegeben wurden;",
+    "eine Zusammenfassung, in der man ein Feld neu eintippen muss, um es zu korrigieren, statt mit dem gespeicherten Wert zum betreffenden Schritt zurückzukehren;",
+    "ein Schritt zurück im Bestellprozess leert die bereits ausgefüllten Felder."
+   ]
+  ],
+  [
+   "h3",
+   "Die Korrektur"
+  ],
+  [
+   "p",
+   "Die Lösungen sind bekannt: ein Kontrollkästchen, das die Lieferadresse in die Rechnungsadresse übernimmt; Felder, die mit den Werten aus früheren Schritten vorausgefüllt sind; eine Auswahlliste der im Prozess bereits eingegebenen Adressen; das Beibehalten der Werte beim Zurückgehen. Die Sicherheitsausnahmen bleiben bestehen: Ein neues Passwort zur Bestätigung zweimal abzufragen, verletzt das Kriterium nicht."
+  ],
+  [
+   "p",
+   "Zum Testen spielen Sie jeden mehrstufigen Ablauf durch, notieren jede eingegebene Information und prüfen bei jedem neuen Schritt, dass keine davon ohne Vorausfüllung oder Auswahlmöglichkeit erneut verlangt wird. Testen Sie auch die Schaltfläche „Zurück“ des Ablaufs und die des Browsers. Dieser Test gehört selbstverständlich in die [[svc:recette|Abnahmeprüfung auf Barrierefreiheit]] jeder neuen Version eines Formulars."
+  ],
+  [
+   "h2",
+   "barrierefreie-authentifizierung",
+   "3.3.8 Barrierefreie Authentifizierung: Passwörter, Codes und Captchas"
+  ],
+  [
+   "p",
+   "Dieses Kriterium hat die größten Folgen für Kundenportale, Banken, Versicherungen und Online-Behördendienste. Es verbietet, in einem Schritt der Authentifizierung einen kognitiven Funktionstest zu verlangen, es sei denn, dieser Schritt bietet eine Alternative oder eine Hilfe, oder der Test besteht darin, Objekte oder von der Person selbst bereitgestellte persönliche Inhalte zu erkennen. Ein kognitiver Funktionstest ist nach der Definition der WCAG eine Aufgabe, bei der man sich eine Information merken, sie verarbeiten oder abschreiben muss: sich etwa an ein Passwort erinnern, Zeichen abtippen, eine Rechnung lösen oder ein Rätsel beantworten."
+  ],
+  [
+   "p",
+   "Das Passwort ist also nicht verboten. Die Dokumentation [[https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html|Understanding 3.3.8 (auf Englisch)]] nennt zwei zulässige Hilfen: die Unterstützung von Passwortmanagern, die das Merken überflüssig machen, und Kopieren und Einfügen, das das Abschreiben überflüssig macht. Ein Passwortfeld, das mit dem automatischen Ausfüllen funktioniert und das Einfügen erlaubt, erfüllt das Kriterium. Erst das Blockieren dieser Hilfen führt zum Verstoß."
+  ],
+  [
+   "h3",
+   "Typische Fehler"
+  ],
+  [
+   "ul",
+   [
+    "ein Passwortfeld, das das Einfügen verbietet („onpaste“, das false zurückgibt);",
+    "ein Anmeldeformular, dessen Felder von Passwortmanagern nicht erkannt werden (Benutzername und Passwort auf zwei Seiten ohne autocomplete-Attribut, dynamisch erzeugte Felder ohne Namen);",
+    "eine virtuelle Tastatur, deren Ziffern bei jeder Anmeldung die Position wechseln, ohne andere Methode;",
+    "ein per SMS oder E-Mail empfangener Code, der in sechs getrennte Felder einzugeben ist, die das Einfügen verweigern;",
+    "ein Captcha, das das Abtippen eines verzerrten Textes verlangt, ohne andere Möglichkeit zur Anmeldung;",
+    "die Abfrage bestimmter Zeichen des Passworts („Geben Sie das 2., 5. und 7. Zeichen ein“), die das automatische Ausfüllen verhindert."
+   ]
+  ],
+  [
+   "h3",
+   "Die Korrektur"
+  ],
+  [
+   "p",
+   "Im Code erledigen die autocomplete-Attribute den Großteil der Arbeit: „autocomplete=username“ auf dem Feld für den Benutzernamen, „autocomplete=current-password“ auf dem Passwort bei der Anmeldung, „autocomplete=new-password“ bei der Kontoerstellung und „autocomplete=one-time-code“ auf dem Feld für den Einmalcode. Die ersten drei ermöglichen es Passwortmanagern, die Felder auszufüllen; das letzte erlaubt vielen mobilen Browsern, den per SMS empfangenen Code vorzuschlagen. Für den Code ist ein einziges Feld besser als sechs getrennte Kästchen; verlangt das Design dennoch Kästchen, muss das Einfügen eines vollständigen Codes in das erste Kästchen die folgenden ausfüllen."
+  ],
+  [
+   "p",
+   "Anmeldeverfahren ganz ohne kognitiven Test sind zulässige Alternativen: ein per E-Mail gesendeter Anmeldelink, Passkeys auf Basis von Biometrie oder des Entsperrcodes des Geräts, die Anmeldung über eine Authentifizierungs-App, die nur eine einfache Bestätigung verlangt. Die starke Authentifizierung steht nicht infrage: Ein zweiter Faktor erfüllt das Kriterium, solange sich der Code einfügen oder automatisch ausfüllen lässt oder eine Methode ohne Code angeboten wird."
+  ],
+  [
+   "p",
+   "Bei Captchas toleriert die Stufe AA die Objekterkennung („Wählen Sie alle Bilder mit einem Fahrrad“) und die Identifikation eines von der Person bereitgestellten Inhalts, etwa eines Bildes, das sie bei der Registrierung gewählt hat. Die Stufe AAA streicht mit dem Kriterium 3.3.9 diese beiden Ausnahmen. Ein Captcha, das das Abtippen eines verzerrten Textes verlangt, fällt in jedem Fall durch, wenn es keine Alternative gibt. Achtung: Ein visuelles Captcha ist für blinde Menschen auch nach anderen Kriterien ein Problem, insbesondere nach 1.1.1 zu Textalternativen."
+  ],
+  [
+   "h3",
+   "Der Test"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Passwortmanager",
+     "Speichern Sie ein Testkonto im Passwortmanager des Browsers und prüfen Sie, ob er Benutzername und Passwort auf dem Anmeldebildschirm ausfüllt."
+    ],
+    [
+     "Einfügen",
+     "Kopieren Sie das Passwort und den Einmalcode und fügen Sie sie in die jeweiligen Felder ein; das Einfügen muss funktionieren, auch bei getrennten Kästchen."
+    ],
+    [
+     "Weitere Schritte",
+     "Gehen Sie alle Schritte durch: Kontoerstellung, Passwort vergessen, zweiter Faktor, erneute Authentifizierung vor einem sensiblen Vorgang."
+    ],
+    [
+     "Captchas",
+     "Erfassen Sie jedes Captcha und prüfen Sie seine Art und ob es eine Alternative gibt."
+    ]
+   ]
+  ],
+  [
+   "h2",
+   "entferntes-kriterium",
+   "Das entfernte Kriterium 4.1.1: was sich für ein Audit ändert"
+  ],
+  [
+   "p",
+   "Das Kriterium 4.1.1 Syntaxanalyse verlangte HTML-Code ohne Strukturfehler: geöffnete und geschlossene Tags, eindeutige IDs, keine doppelten Attribute. Der W3C hat es für obsolet erklärt, weil assistive Technologien den HTML-Code nicht mehr selbst analysieren: Sie stützen sich auf die Analyse der Browser, die Fehler inzwischen zuverlässig behandeln; die realen Probleme, auf die es zielte, sind durch andere Kriterien abgedeckt, etwa 1.3.1 Info und Beziehungen oder 4.1.2 Name, Rolle, Wert."
+  ],
+  [
+   "p",
+   "Die praktische Folge hängt vom Prüfkatalog ab. Ein Audit nach den WCAG 2.2 oder der Norm EN 301 549 V4.1.1 prüft dieses Kriterium nicht mehr. Für die WCAG 2.0 und 2.1 hat der W3C einen Hinweis ergänzt, wonach dieses Kriterium für HTML- oder XML-Inhalte als stets erfüllt gilt. Ein nationaler Prüfkatalog kann jedoch seine eigene Prüfung beibehalten: Das ist in Frankreich der Fall, solange der RGAA 4.1.2 gilt, mit seinem Kriterium 8.2 zur Gültigkeit des Quellcodes. Auch die Norm EN 301 549 V3.2.1, die in Belgien angewendet wird und auf der in Luxemburg der RAWeb 1.1 beruht, enthält die entsprechende Anforderung noch. Streichen Sie die Code-Validierung daher nicht aus Ihren Abnahmeverfahren, bevor sich Ihr nationaler Prüfkatalog geändert hat."
+  ],
+  [
+   "h2",
+   "nationale-pruefkataloge",
+   "Neue Erfolgskriterien der WCAG 2.2 und nationale Prüfkataloge: so prüfen Sie 2026"
+  ],
+  [
+   "p",
+   "Keines der neun neuen Kriterien hat eine direkte Entsprechung im RGAA 4.1.2, der auf den WCAG 2.1 beruht. Eine Website kann also einen RGAA-Konformitätsgrad von 100 % ausweisen und dennoch an 2.5.8, 3.3.7 oder 3.3.8 scheitern. Diese Situation ist heute normal, hat aber zwei Folgen. Zum einen sagt der in der Erklärung zur Barrierefreiheit angegebene Wert nichts über die Konformität mit den WCAG 2.2 aus. Zum anderen droht die nächste Aktualisierung der Erklärung, die nach dem RGAA 5 erfolgt, den Wert zu senken, wenn bis dahin nichts korrigiert wurde."
+  ],
+  [
+   "p",
+   "In der Übergangszeit sind zwei Audit-Ansätze möglich. Beim ersten wird das offizielle Audit für die Erklärung nach dem geltenden Prüfkatalog durchgeführt und um eine Prüfung der sechs neuen Kriterien der Stufen A und AA ergänzt, die im Bericht gesondert dargestellt wird. Beim zweiten wird direkt nach den WCAG 2.2 oder der Norm EN 301 549 V4.1.1 geprüft; das eignet sich für Unternehmen, die unter den European Accessibility Act fallen, und für Organisationen, die in mehreren Ländern tätig sind. Unser Artikel über [[article:audit-rgaa|den Ablauf eines RGAA-Audits, Woche für Woche]] zeigt, wo diese ergänzende Prüfung ihren Platz findet, und ein [[svc:audit-conformite|Konformitätsaudit nach der Norm EN 301 549]] deckt sämtliche Kriterien der WCAG 2.2 ab."
+  ],
+  [
+   "table",
+   {
+    "caption": "Welches Audit für welche Organisation in der Übergangszeit",
+    "head": [
+     "Situation",
+     "Prüfkatalog des offiziellen Audits",
+     "Zu ergänzende WCAG-2.2-Prüfung"
+    ],
+    "rows": [
+     [
+      "Öffentliche Stelle in Frankreich",
+      "RGAA 4.1.2 (Erklärung)",
+      "Die sechs neuen Kriterien der Stufen A und AA, in einem eigenen Abschnitt"
+     ],
+     [
+      "Öffentliche Stelle in Luxemburg",
+      "RAWeb 1.1 oder RAAM 1.1",
+      "Die sechs neuen Kriterien, im Hinblick auf RAWeb 2 und RAAM 2"
+     ],
+     [
+      "Öffentliche Stelle in Belgien",
+      "EN 301 549 V3.2.1",
+      "Die sechs neuen Kriterien, im Hinblick auf die V4.1.1"
+     ],
+     [
+      "Unternehmen, das unter den EAA fällt",
+      "EN 301 549 V4.1.1 (WCAG 2.2 AA)",
+      "Bereits enthalten"
+     ],
+     [
+      "Unternehmensgruppe, die in mehreren Ländern tätig ist",
+      "WCAG 2.2 AA als Leitstandard, dazu die nationalen Prüfkataloge für die Erklärungen",
+      "Bereits enthalten"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Achten Sie bei den Erklärungen auf Stimmigkeit: Die Erklärung zur Barrierefreiheit nennt den tatsächlich verwendeten Prüfkatalog und darf keine Werte vermischen. Die häufigsten Fehler und eine kommentierte Vorlage finden Sie in unserem Artikel über [[article:declaration|die Fehler, die eine Erklärung zur Barrierefreiheit ungültig machen]]. In Luxemburg, wo der Übergang zum RAWeb 2 für Februar 2027 angekündigt ist, fasst die Seite [[country:luxembourg|digitale Barrierefreiheit in Luxemburg]] die Pflichten der öffentlichen Stellen zusammen."
+  ],
+  [
+   "h2",
+   "apps-dokumente",
+   "Mobile Apps und Dokumente: Die neuen Kriterien gelten auch hier"
+  ],
+  [
+   "p",
+   "Die WCAG wurden für das Web geschrieben, doch die Norm EN 301 549 wendet ihre Kriterien auch auf Software an, einschließlich mobiler Apps, sowie auf Dokumente. Der [[https://www.w3.org/TR/WCAG22/|Text der WCAG 2.2 (auf Englisch)]] bleibt die Referenz; ergänzend veröffentlicht der W3C Auslegungshinweise, die erklären, wie jedes Kriterium außerhalb des Browsers anzuwenden ist: WCAG2ICT für Nicht-Web-Technologien und, noch im Entwurfsstadium, WCAG2Mobile für mobile Apps. In einer App fallen von den neuen Kriterien am häufigsten durch: die Zielgröße (Symbole in Werkzeugleisten, Schließen-Schaltflächen), die Authentifizierung (ein Codefeld, das den per SMS empfangenen Code nicht vorschlägt) und die Ziehbewegungen (sortierbare Listen, Wischaktionen ohne gleichwertiges Menü)."
+  ],
+  [
+   "p",
+   "Eine iOS- oder Android-App wird auf einem echten Gerät getestet, mit VoiceOver oder TalkBack sowie für das Ziehen mit Schaltersteuerung oder Sprachsteuerung. In Luxemburg ist der RAAM der Prüfkatalog für Apps öffentlicher Stellen; anderswo folgt das Audit der Norm EN 301 549. Ein [[svc:audit-raam|Audit mobiler Apps nach dem RAAM]] prüft diese Punkte auf beiden Plattformen. Bei PDF-Dokumenten wirken sich die neuen Kriterien kaum aus: Sie betreffen vor allem Interaktionen, die Dokumente nicht enthalten, mit Ausnahme ausfüllbarer PDF-Formulare."
+  ],
+  [
+   "h2",
+   "umstellungsplan",
+   "Umstellungsplan auf die WCAG 2.2: womit Sie beginnen"
+  ],
+  [
+   "p",
+   "Die gute Nachricht: Die neuen Kriterien werden selten Seite für Seite korrigiert. Man korrigiert sie in einigen gemeinsam genutzten Komponenten und in Gestaltungsregeln. Die folgende Tabelle ordnet die sechs Kriterien der Stufen A und AA danach, wo die Korrektur erfolgt und wie groß der Aufwand üblicherweise ist; der tatsächliche Aufwand hängt von Ihrer Architektur und vom Anteil der Komponenten von Drittanbietern ab."
+  ],
+  [
+   "table",
+   {
+    "caption": "Wo jedes neue Kriterium der Stufen A und AA korrigiert wird",
+    "head": [
+     "Kriterium",
+     "Wo die Korrektur erfolgt",
+     "Üblicher Aufwand",
+     "Wer beteiligt ist"
+    ],
+    "rows": [
+     [
+      "2.4.11 Fokus nicht verdeckt",
+      "Globales Stylesheet, Einwilligungsbanner, fixierte Elemente",
+      "Gering",
+      "Frontend-Entwicklung"
+     ],
+     [
+      "2.5.8 Zielgröße",
+      "Komponenten des Designsystems: Icon-Schaltfläche, Paginierung, Kalender",
+      "Gering bis mittel",
+      "Design und Frontend"
+     ],
+     [
+      "3.2.6 Konsistente Hilfe",
+      "Vorlagen für Kopf- und Fußzeile, Abläufe von Drittanbietern",
+      "Gering",
+      "Produktverantwortung, redaktionelle Governance"
+     ],
+     [
+      "3.3.7 Redundante Eingabe",
+      "Logik mehrstufiger Formulare",
+      "Mittel",
+      "Frontend- und Backend-Entwicklung"
+     ],
+     [
+      "2.5.7 Ziehbewegungen",
+      "Interaktive Komponenten: Schieberegler, Listen, Kanban, Karten",
+      "Mittel bis hoch",
+      "Entwicklung, Design"
+     ],
+     [
+      "3.3.8 Barrierefreie Authentifizierung",
+      "Anmeldebildschirme, zweiter Faktor, Captchas, Identitätsanbieter",
+      "Unterschiedlich: gering bei eigenem Code, hoch, wenn ein Drittdienst betroffen ist",
+      "Entwicklung, IT-Sicherheit, Einkauf"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Beginnen Sie mit den schnellen Korrekturen mit großer Wirkung (verdeckter Fokus, Zielgröße, konsistente Hilfe), die sich oft in einer einzigen Iteration erledigen lassen. Nehmen Sie sich danach die Authentifizierung vor, denn sie versperrt den Zugang zum gesamten übrigen Dienst: Wer sich nicht anmelden kann, kann nichts anderes tun. Heben Sie komplexe Drag-and-drop-Komponenten für den Schluss auf, da sie manchmal eine Neugestaltung der Interaktion erfordern. Stammt der Anmeldebildschirm oder das Captcha von einem Dienstleister, führt die Korrektur über den Vertrag: Verlangen Sie bei Ihren nächsten Beschaffungen die Konformität mit den WCAG 2.2 AA."
+  ],
+  [
+   "h3",
+   "Die WCAG-2.2-Checkliste für Ihre Teams"
+  ],
+  [
+   "ul",
+   [
+    "Die Seite scrollt so, dass das aktive Element nie vollständig unter der fixierten Kopfleiste verschwindet (scroll-padding-top eingestellt);",
+    "das Cookie-Banner steht im Seitenfluss oder ist modal, nie fixiert und nicht modal über dem Inhalt;",
+    "keine schwebende Schaltfläche überdeckt interaktive Inhalte;",
+    "jede Icon-Schaltfläche, jedes Schließkreuz und jede Seitenzahl bietet eine klickbare Fläche von mindestens 24 mal 24 CSS-Pixeln oder erfüllt die Abstandsausnahme;",
+    "jeder Schieberegler lässt sich per Klick auf die Schiene, über Schaltflächen oder ein Eingabefeld einstellen;",
+    "jede sortierbare Liste bietet Schaltflächen oder ein Menü zum Verschieben;",
+    "jeder Ablagebereich für Dateien hat eine Schaltfläche „Durchsuchen“;",
+    "Hilfe- und Kontakt-Links sowie ein etwaiger Chat-Assistent stehen auf allen Vorlagen, auf denen sie vorkommen, an derselben relativen Stelle, den Bestellprozess eingeschlossen;",
+    "keine in einem Ablauf bereits gemachte Angabe wird ohne Vorausfüllung oder Auswahl erneut verlangt;",
+    "ein Schritt zurück in einem Formular behält die eingegebenen Werte;",
+    "die Felder für Benutzername und Passwort tragen die richtigen autocomplete-Attribute und erlauben das Einfügen;",
+    "der Einmalcode lässt sich einfügen und trägt autocomplete=one-time-code;",
+    "kein Abtipp-Captcha wird ohne Alternative verlangt;",
+    "die Validierung des Quellcodes bleibt Teil der Abnahme, solange sich der nationale Prüfkatalog auf die WCAG 2.1 stützt."
+   ]
+  ],
+  [
+   "p",
+   "Damit diese Regeln dauerhaft halten, nehmen Sie sie in die Definition of Done jeder Komponente und in die Abnahmekriterien der Lieferungen auf. Unsere [[svc:formations|Schulungen zur digitalen Barrierefreiheit]] für Designerinnen, Designer und Entwicklungsteams behandeln diese neuen Kriterien anhand von Codebeispielen, und die [[svc:developpement|Begleitung bei der barrierefreien Entwicklung]] ermöglicht es, das Designsystem gemeinsam mit Ihren Teams zu korrigieren."
+  ],
+  [
+   "h2",
+   "irrtuemer",
+   "Sechs verbreitete Irrtümer über die WCAG 2.2"
+  ],
+  [
+   "p",
+   "Einige Missverständnisse tauchen im Austausch mit Projektteams immer wieder auf. Sie auszuräumen, vermeidet unnötige Korrekturen oder umgekehrt teure Versäumnisse."
+  ],
+  [
+   "ol",
+   [
+    [
+     "„Wir brauchen überall Schaltflächen mit 44 Pixeln.“",
+     "Nein: Die Stufe AA verlangt 24 CSS-Pixel, mit fünf Ausnahmen; 44 Pixel gehören zum Kriterium 2.5.5 der Stufe AAA."
+    ],
+    [
+     "„Fixierte Kopfleisten sind verboten.“",
+     "Nein: Sie dürfen das aktive Element nur nicht vollständig verdecken. Oft genügt eine Zeile CSS."
+    ],
+    [
+     "„Passwörter sind verboten.“",
+     "Nein: Sie sind zulässig, wenn Passwortmanager und Kopieren und Einfügen funktionieren."
+    ],
+    [
+     "„Alle Captchas sind verboten.“",
+     "Nein: Auf Stufe AA ist die Objekterkennung zulässig; durchfallen lässt das Abtippen ohne Alternative. Andere Kriterien gelten für das Captcha weiterhin."
+    ],
+    [
+     "„Wenn es mit der Tastatur bedienbar ist, ist das Drag-and-drop konform.“",
+     "Nein: Das Kriterium 2.5.7 betrifft Zeigernutzerinnen und -nutzer; es braucht eine Methode mit einfachem Klick."
+    ],
+    [
+     "„Unser RGAA-Wert von 100 % beweist die Konformität mit den WCAG 2.2.“",
+     "Nein: Der RGAA 4.1.2 enthält keines der neun neuen Kriterien."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Um den Aufwand für Ihre Website abzuschätzen, bleibt ein auf die neuen Kriterien fokussiertes Audit, oder ihre Aufnahme in ein vollständiges Audit, das zuverlässigste Mittel; welche Faktoren die Kosten eines solchen Auftrags beeinflussen, erläutert unser Artikel über [[article:prix-audit|den Preis eines Audits zur Barrierefreiheit]]. Für öffentliche Stellen stellt die [[sector:public|Seite für den öffentlichen Sektor]] die vollständige Begleitung vor, vom Audit bis zur Erklärung."
+  ]
+ ],
+ "faq": [
+  [
+   "Sind die WCAG 2.2 in Frankreich verpflichtend?",
+   "Noch nicht direkt. Der RGAA 4.1.2, der für öffentliche Stellen und große Unternehmen geltende Prüfkatalog, stützt sich auf die WCAG 2.1. Der RGAA 5, den die DINUM für Ende 2026 angekündigt hat, wird die WCAG 2.2 aufnehmen. Für Unternehmen, die unter den European Accessibility Act fallen, wird die auf die WCAG 2.2 abgestimmte Norm EN 301 549 V4.1.1 zur Referenz, sobald sie im Amtsblatt der Europäischen Union zitiert ist."
+  ],
+  [
+   "Wie viele Kriterien umfassen die WCAG 2.2?",
+   "Die WCAG 2.2 umfassen 86 aktive Erfolgskriterien: die 78 Kriterien der WCAG 2.1, abzüglich des entfernten Kriteriums 4.1.1 Syntaxanalyse, zuzüglich der neun neuen. Von den neuen gehören zwei zur Stufe A, vier zur Stufe AA und drei zur Stufe AAA. Eine Konformität der Stufe AA, wie sie die europäischen Regelwerke verlangen, umfasst die Kriterien der Stufen A und AA."
+  ],
+  [
+   "Ist eine nach WCAG 2.1 konforme Website auch nach WCAG 2.2 konform?",
+   "Nicht unbedingt. Sie erfüllt alle Regeln, die beiden Versionen gemeinsam sind, kann aber an den sechs neuen Kriterien der Stufen A und AA scheitern: verdeckter Fokus, Ziehen, Zielgröße, konsistente Hilfe, redundante Eingabe und Authentifizierung. Umgekehrt ist eine nach WCAG 2.2 konforme Website auch nach WCAG 2.1 konform: Für das Kriterium 4.1.1 gibt der W3C an, dass es von HTML-Inhalten stets erfüllt wird, ein nationaler Prüfkatalog wie der RGAA 4.1.2 kann aber eine eigene Prüfung der Codegültigkeit beibehalten."
+  ],
+  [
+   "Wie groß muss eine Schaltfläche nach den WCAG 2.2 mindestens sein?",
+   "Das Kriterium 2.5.8 der Stufe AA verlangt eine klickbare Fläche von mindestens 24 mal 24 CSS-Pixeln. Ein kleineres Ziel bleibt zulässig, wenn es ausreichend Abstand zu benachbarten Zielen hat, wenn ein anderes konformes Bedienelement dieselbe Funktion bietet, wenn es ein Link in einem Satz ist, wenn seine Größe vom Browser festgelegt wird oder wenn seine Darstellung wesentlich ist. Die Größe von 44 CSS-Pixeln entspricht dem Kriterium 2.5.5 der Stufe AAA."
+  ],
+  [
+   "Sind Captchas nach den WCAG 2.2 verboten?",
+   "Nein. Das Kriterium 3.3.8 verbietet, für die Anmeldung einen kognitiven Test ohne Alternative oder Hilfe zu verlangen. Ein Captcha, das das Abtippen eines verzerrten Textes verlangt, fällt durch, wenn es keine andere Anmeldemethode gibt. Ein Captcha zur Objekterkennung ist auf Stufe AA zulässig, auf Stufe AAA jedoch nicht. Andere Kriterien, etwa zu Textalternativen, gelten weiterhin."
+  ],
+  [
+   "Muss für den Umstieg auf die WCAG 2.2 ein neues Audit zur Barrierefreiheit durchgeführt werden?",
+   "Nicht unbedingt ein vollständiges Audit. Ist Ihr letztes Audit aktuell, reicht oft eine gezielte Prüfung der sechs neuen Kriterien der Stufen A und AA auf Ihrer Seitenstichprobe, um die Korrekturen zu planen. Ein vollständiges Audit ist nach einem Relaunch sinnvoll, wenn sich der nationale Prüfkatalog ändert (RGAA 5, RAWeb 2) oder wenn Sie eine neue Erklärung zur Barrierefreiheit erstellen müssen."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Besteht Ihre Website die neuen Kriterien?",
+ "cta_text": "Wir prüfen die sechs neuen Kriterien der Stufen A und AA der WCAG 2.2 auf Ihren Seitenvorlagen und wichtigsten Abläufen und übergeben Ihnen einen Korrekturplan pro Komponente.",
+ "related": [
+  "normes",
+  "e-commerce",
+  "audit-rgaa"
+ ]
+}

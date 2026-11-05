@@ -139,6 +139,10 @@
   ],
   [
    "p",
+   "Jedes dieser Kriterien wird mit dem häufigsten Fehler, der Korrektur in HTML oder CSS und einem Test zum Selbermachen in unserem Beitrag über [[article:wcag-22|die neun neuen Erfolgskriterien der WCAG 2.2 im Einzelnen]] erläutert."
+  ],
+  [
+   "p",
    "Das Kriterium 4.1.1 Syntaxanalyse (Parsing) ist laut W3C in den WCAG 2.2 „obsolet und entfernt“: Browser und assistive Technologien sind nicht mehr auf die Analyse des rohen Quellcodes angewiesen. Das ist die einzige Abweichung von der Abwärtskompatibilität. Der W3C weist darauf hin, dass Organisationen, deren Vorschriften noch auf die WCAG 2.0 oder 2.1 verweisen, das Kriterium unter Umständen weiter prüfen müssen. Das gilt etwa für Frankreich, wo das Kriterium 8.2 des RGAA 4.1.2 (Gültigkeit des generierten Quellcodes) weiterhin zu prüfen ist."
   ],
   [
@@ -846,5 +850,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-10-29"
+ "modified": "2026-11-05"
 }

@@ -116,6 +116,10 @@
    "Pour démontrer qu'un parcours respecte ces résultats, les auditeurs s'appuient sur les [[https://www.w3.org/TR/2023/REC-WCAG22-20231005/|règles WCAG 2.2]], devenues recommandation du W3C le 5 octobre 2023, et sur la norme européenne EN 301 549. Aucune version de cette norme ne confère encore de présomption de conformité au titre de l'EAA, faute de citation au Journal officiel de l'Union. En pratique, le niveau AA des WCAG 2.2 est la cible la plus sûre : c'est celui sur lequel s'aligne la version 4.1.1 de la norme, publiée le 2 septembre 2026 et pas encore citée au Journal officiel. Les correspondances entre WCAG, EN 301 549, RGAA et RAWeb sont détaillées dans notre comparatif des [[article:normes|normes d'accessibilité numérique]]."
   ],
   [
+   "p",
+   "Plusieurs critères ajoutés par cette version touchent directement les sites marchands : la taille des boutons de quantité, la saisie redondante de l'adresse de facturation ou le collage du code de validation. Ils sont expliqués avec leur correction dans [[article:wcag-22|notre guide des nouveaux critères WCAG 2.2]]."
+  ],
+  [
    "h2",
    "utiliser-la-check-list",
    "Comment utiliser cette check-list d'accessibilité e-commerce"
@@ -690,5 +694,6 @@
   "eaa",
   "declaration",
   "normes"
- ]
+ ],
+ "modified": "2026-11-05"
 }

@@ -1,0 +1,741 @@
+{
+ "slug": "wcag-2-2-nieuwe-succescriteria",
+ "h1": "WCAG 2.2: de 9 nieuwe succescriteria, met de typische fout, de oplossing en de test",
+ "crumb": "WCAG 2.2: nieuwe criteria",
+ "meta_title": "WCAG 2.2 nieuwe succescriteria: fouten, oplossingen en tests",
+ "meta_desc": "De 9 nieuwe criteria van de WCAG 2.2 één voor één uitgelegd: typische fout, oplossing in HTML/CSS, een test die u zelf uitvoert en het tijdpad per land.",
+ "card_desc": "Bedekte focus, te kleine aanwijsgebieden, slepen, overbodige invoer, authenticatie: elk nieuw criterium oplossen en testen.",
+ "cat": "guide",
+ "where": "Europa",
+ "cover": "2.2",
+ "cover_note": [
+  "WCAG 2.2, aanbeveling van het W3C",
+  "9 criteria toegevoegd, 1 verwijderd"
+ ],
+ "date": "2026-11-05",
+ "cluster": "normes",
+ "lead": "De WCAG 2.2 voegen negen nieuwe succescriteria toe aan de regels voor webtoegankelijkheid, waarvan zes binnen een conformiteit op niveau AA vallen, en ze schrappen er één. Ze worden de basis van de Europese norm EN 301 549 V4.1.1, van de toekomstige Franse RGAA 5 en van de volgende Luxemburgse referentiekaders, en dus van digitale toegankelijkheid in heel Europa. Voor elk van deze nieuwe WCAG 2.2-criteria leest u hier wat het echt vereist, welke fout we het vaakst tegenkomen, hoe u die in HTML of CSS oplost en welke test uw team zelf in enkele minuten kan uitvoeren.",
+ "body": [
+  [
+   "h2",
+   "kort-overzicht",
+   "WCAG 2.2 in het kort: negen nieuwe criteria, één criterium verwijderd"
+  ],
+  [
+   "p",
+   "De Web Content Accessibility Guidelines (WCAG) 2.2 werden op 5 oktober 2023 een aanbeveling van het W3C; de geldende versie werd op 12 december 2024 bijgewerkt. Ze vullen de WCAG 2.1 aan zonder ze te vervangen: alle bestaande regels blijven behouden, op één uitzondering na, en er komen negen succescriteria bij. De officiële pagina [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|Wat er nieuw is in de WCAG 2.2 (Engelstalig)]] stelt ze voor, met voorbeelden van gebruikers voor wie ze het verschil maken."
+  ],
+  [
+   "p",
+   "Deze criteria spelen vooral in op noden die de vorige versies slecht afdekten: mensen die met het toetsenbord navigeren en het actieve element uit het oog verliezen, mensen met trillingen of een verminderde fijne motoriek, en mensen met cognitieve beperkingen, geheugen- of leerproblemen. Ze raken componenten die op bijna elke website voorkomen: vaste headers, cookiebanners, knoppen met enkel een icoon, schuifregelaars, bestelprocessen en aanmeldformulieren. Voor wie werkt aan digitale toegankelijkheid gaat het dus niet om randgevallen, maar om de bouwstenen van elke moderne interface."
+  ],
+  [
+   "table",
+   {
+    "caption": "De negen criteria die de WCAG 2.2 toevoegen",
+    "head": [
+     "Criterium",
+     "Niveau",
+     "Wat het vereist, in één zin",
+     "Meest getroffen componenten"
+    ],
+    "rows": [
+     [
+      "2.4.11 Focus niet bedekt (minimum)",
+      "AA",
+      "Het element dat de toetsenbordfocus krijgt, wordt niet volledig verborgen door content van de pagina.",
+      "Vaste header of footer, cookiebanner, zwevende chatknop"
+     ],
+     [
+      "2.4.12 Focus niet bedekt (uitgebreid)",
+      "AAA",
+      "Geen enkel deel van het element met de focus is verborgen.",
+      "Dezelfde componenten"
+     ],
+     [
+      "2.4.13 Focusweergave",
+      "AAA",
+      "De focusindicator heeft een minimale oppervlakte en een minimaal contrast.",
+      "Focusstijlen van het design system"
+     ],
+     [
+      "2.5.7 Sleepbewegingen",
+      "AA",
+      "Alles wat u door te slepen doet, kan ook met een gewone klik of tik.",
+      "Schuifregelaars, slepen en neerzetten, kanbanborden, kaarten"
+     ],
+     [
+      "2.5.8 Grootte van het aanwijsgebied (minimum)",
+      "AA",
+      "Klikbare doelen meten minstens 24 bij 24 CSS-pixels, behoudens uitzonderingen.",
+      "Iconen, paginering, sluitkruisjes, kalenders"
+     ],
+     [
+      "3.2.6 Consistente hulp",
+      "A",
+      "De manieren om hulp te krijgen, staan van pagina tot pagina op dezelfde relatieve plaats.",
+      "Contactlinks, telefoonnummer, FAQ, chatassistent"
+     ],
+     [
+      "3.3.7 Overbodige invoer",
+      "A",
+      "Informatie die al in hetzelfde proces is gegeven, wordt niet opnieuw gevraagd, of wordt automatisch voorgesteld.",
+      "Bestelprocessen, formulieren in meerdere stappen"
+     ],
+     [
+      "3.3.8 Toegankelijke authenticatie (minimum)",
+      "AA",
+      "Inloggen vereist geen cognitieve test zonder alternatief of hulp.",
+      "Aanmelden, wachtwoord, eenmalige codes, captcha’s"
+     ],
+     [
+      "3.3.9 Toegankelijke authenticatie (uitgebreid)",
+      "AAA",
+      "Dezelfde eis, zonder de uitzonderingen voor objectherkenning en persoonlijke content.",
+      "Dezelfde componenten"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Criterium 4.1.1 Parsen wordt als verouderd beschouwd en is verwijderd. In totaal tellen de WCAG 2.2 86 actieve succescriteria. Een conformiteit op niveau AA, het niveau waarop alle Europese regelgeving mikt, vereist de criteria van niveau A en AA: bij de nieuwe criteria gaat het om 2.4.11, 2.5.7, 2.5.8, 3.2.6, 3.3.7 en 3.3.8. De drie AAA-criteria blijven goede praktijken die u kunt nastreven voor gevoelige trajecten, zonder wettelijke verplichting."
+  ],
+  [
+   "p",
+   "Om de WCAG te situeren tussen de andere referentiekaders (EN 301 549, RGAA, RAWeb, eCH-0059) biedt het artikel [[article:normes|WCAG 2.2, EN 301 549, RGAA, RAWeb: welke norm voor digitale toegankelijkheid volgt u]] het totaaloverzicht. Dit artikel daalt af tot op het niveau van de component, criterium per criterium. En als u het onderwerp pas ontdekt, begin dan met onze [[article:guide|gids over digitale toegankelijkheid]], die de verplichtingen en de betrokken gebruikers voorstelt."
+  ],
+  [
+   "h2",
+   "tijdpad-per-land",
+   "Wanneer de nieuwe WCAG 2.2-criteria in uw land verplicht worden"
+  ],
+  [
+   "p",
+   "De WCAG zijn geen wet: ze worden pas verplicht wanneer een wettekst of een nationaal referentiekader ernaar verwijst. En de meeste referentiekaders die in november 2026 van kracht zijn, steunen nog op de WCAG 2.1. De overstap naar de WCAG 2.2 gebeurt dus land per land, op het ritme van de nieuwe versies van de normen. Die verschuiving verklaart een situatie die we vaak zien: een website die in een land conform is verklaard, kan op meerdere WCAG 2.2-criteria falen zonder vandaag in overtreding te zijn."
+  ],
+  [
+   "table",
+   {
+    "caption": "Geldend referentiekader en overstap naar de WCAG 2.2, per land (november 2026)",
+    "head": [
+     "Land of kader",
+     "Geldend referentiekader",
+     "WCAG-basis",
+     "Overstap naar de WCAG 2.2"
+    ],
+    "rows": [
+     [
+      "Frankrijk, publieke sector en grote ondernemingen",
+      "RGAA 4.1.2",
+      "WCAG 2.1",
+      "RGAA 5, aangekondigd voor eind 2026"
+     ],
+     [
+      "België, publieke sector",
+      "Norm EN 301 549 V3.2.1",
+      "WCAG 2.1",
+      "Wanneer de V4.1.1 in het Publicatieblad van de EU wordt vermeld"
+     ],
+     [
+      "Luxemburg, publieke sector",
+      "RAWeb 1.1 en RAAM 1.1",
+      "EN 301 549 V3.2.1, dus WCAG 2.1",
+      "RAWeb 2 en RAAM 2, aangekondigd voor februari 2027"
+     ],
+     [
+      "Zwitserland, Bondsstaat",
+      "eCH-0059 versie 3.0",
+      "WCAG 2.1",
+      "Tot op heden geen herzieningskalender bekend"
+     ],
+     [
+      "Europese Unie, European Accessibility Act",
+      "Eisen van Richtlijn (EU) 2019/882",
+      "Norm EN 301 549 als bewijsmiddel",
+      "EN 301 549 V4.1.1, gepubliceerd in september 2026, vermelding in het Publicatieblad verwacht"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "In Frankrijk vermeldt [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|de officiële aankondiging van de RGAA 5 door de DINUM (Franstalig)]] dat de nieuwe versie de WCAG 2.2 zal integreren en dat de criteria ervan die van de RGAA 4.1.2 zullen verduidelijken of aanvullen, zonder ze tegen te spreken. Op Europees niveau werd de [[https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf|norm EN 301 549 V4.1.1 (Engelstalig)]] op 2 september 2026 door ETSI gepubliceerd; de hoofdstukken over het web, documenten en software zijn afgestemd op de WCAG 2.2. In Luxemburg heeft het SIP [[https://accessibilite.public.lu/en/news/2026-09-15-EN301549v4.html|de overstap van de RAWeb en de RAAM naar versie 2 aangekondigd (Engelstalig)]], in overeenstemming met die norm."
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "De zes nieuwe criteria van niveau A en AA nu oplossen, kost minder dan ze aan te pakken na de verschijning van de RGAA 5 of de RAWeb 2: de meeste worden in enkele gedeelde componenten geregeld, en audits volgens de norm EN 301 549 V4.1.1 controleren ze nu al."
+  ],
+  [
+   "p",
+   "Voor een onderneming die onder de European Accessibility Act valt, ligt de vraag anders. De richtlijn legt resultaatsverplichtingen op; de geharmoniseerde norm is de eenvoudigste manier om aan te tonen dat u ze naleeft. Zodra de V4.1.1 in het Publicatieblad wordt vermeld, wordt zij, en dus de WCAG 2.2, de referentie voor de markttoezichtautoriteiten. Het artikel [[article:eaa|wat de autoriteiten controleren op grond van de European Accessibility Act]] beschrijft die controle sector per sector. Voor een Belgische overheidsinstantie of een Vlaamse kmo die online verkoopt, betekent dit concreet dat de nieuwe criteria er sowieso aankomen; de enige vraag is wanneer."
+  ],
+  [
+   "h2",
+   "focus-niet-bedekt",
+   "2.4.11 Focus niet bedekt: het actieve element mag niet onder een banner verdwijnen"
+  ],
+  [
+   "p",
+   "De tekst van het criterium is kort: wanneer een component van de gebruikersinterface de toetsenbordfocus krijgt, wordt die niet volledig verborgen door content die de auteur heeft aangemaakt. Iemand die navigeert met de Tab-toets, met een schermvergrootprogramma of met spraakbesturing, moet kunnen zien waar hij zich bevindt. Als de actieve link onder een vaste header verdwijnt, werkt die persoon blind verder."
+  ],
+  [
+   "h3",
+   "De typische fout"
+  ],
+  [
+   "p",
+   "Drie situaties zijn goed voor het gros van de fouten. De eerste is de vaste header (“sticky header”): wanneer u met Shift+Tab terug omhoog gaat in de pagina, scrollt de browser net genoeg om de link bovenaan het venster te brengen, waar de header hem bedekt. De tweede is de cookiebanner die onderaan het scherm vastzit en de footer verbergt zolang hij niet is gesloten, tijdens de hele navigatie. De derde is de zwevende knop voor een chat of om terug naar boven te gaan, die een veld of een knop in dezelfde hoek bedekt."
+  ],
+  [
+   "p",
+   "Het criterium verbiedt vaste elementen niet; het verbiedt dat ze het actieve element volledig verbergen. De documentatie van het W3C, [[https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html|Understanding 2.4.11 (Engelstalig)]], geeft twee nuttige nuances. Content die de gebruiker zelf heeft geopend, zoals een vervolgkeuzemenu dat hij net heeft uitgeklapt, mag het actieve element bedekken. En als de gebruiker het element zichtbaar kan maken zonder de focus te verplaatsen, bijvoorbeeld door een niet-modaal paneel met de Escape-toets te sluiten, wordt het element niet als bedekt beschouwd."
+  ],
+  [
+   "h3",
+   "De oplossing"
+  ],
+  [
+   "p",
+   "Voor een vaste header past de eenvoudigste oplossing in één regel CSS op het root-element: scroll-padding-top met een waarde gelijk aan de hoogte van de header, bijvoorbeeld “html { scroll-padding-top: 5rem; }”. Recente browsers houden die ruimte dan vrij wanneer ze de pagina scrollen om een element in beeld te brengen; controleer het wel met het toetsenbord in de browsers die uw publiek gebruikt. Dezelfde logica geldt onderaan de pagina met scroll-padding-bottom, als er op mobiel een actiebalk onderaan blijft vastzitten."
+  ],
+  [
+   "p",
+   "Voor de cookiebanner zijn er twee veilige opties: hem in de flow van de pagina plaatsen, bovenaan, in plaats van als vaste laag over de content; of hem modaal maken, dat wil zeggen de focus erin verplaatsen en daar houden tot de gebruiker een keuze maakt. De slechtste optie is een vaste, niet-modale banner die u met het toetsenbord niet gemakkelijk bereikt en die u ook niet kunt negeren. Voor een zwevende knop houdt u onderaan de pagina een marge vrij, zodat er geen interactieve content onder terechtkomt."
+  ],
+  [
+   "h3",
+   "De test die u zelf kunt uitvoeren"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Verkleind venster",
+     "stel de browser in op een breedte van 1280 pixels en daarna op een mobiel formaat, met een zoom van 200%, waar vaste elementen de meeste ruimte innemen."
+    ],
+    [
+     "Volledige tabdoorloop",
+     "doorloop de hele pagina met Tab en ga dan terug omhoog met Shift+Tab, zonder de cookiebanner bij de eerste doorloop te sluiten."
+    ],
+    [
+     "Observatie",
+     "controleer bij elke stop dat minstens een deel van het actieve element zichtbaar blijft; noteer de elementen die volledig verborgen zijn en de component die ze bedekt."
+    ],
+    [
+     "Tweede doorloop",
+     "herhaal de doorloop met gesloten banner, en daarna op de secundaire sjablonen: artikel, productpagina, formulier, zoekresultaten."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Op niveau AAA gaat criterium 2.4.12 verder: geen enkel deel van het element mag verborgen zijn. En criterium 2.4.13 Focusweergave vraagt dat de focusindicator minstens de oppervlakte beslaat van een omlijning van 2 CSS-pixels rond de component, met een contrast van minstens 3:1 tussen dezelfde pixels met en zonder focus. Die twee criteria zijn niet verplicht, maar een focusstijl die volgens 2.4.13 is ontworpen, beslecht in één keer de discussies over de zichtbaarheid van de focus (criterium 2.4.7 Focus zichtbaar, niveau AA, criterium 10.7 van de RGAA)."
+  ],
+  [
+   "h2",
+   "sleepbewegingen",
+   "2.5.7 Sleepbewegingen: een alternatief voor slepen en neerzetten"
+  ],
+  [
+   "p",
+   "Het criterium vereist dat elke functionaliteit die een sleepbeweging gebruikt, ook kan worden uitgevoerd met een enkele aanwijzer zonder slepen, tenzij het slepen essentieel is of de functionaliteit door de browser wordt geleverd zonder aanpassing door de auteur. Slepen betekent: indrukken, de aanwijzer verplaatsen terwijl u de knop of de vinger ingedrukt houdt, en dan loslaten. Die beweging is moeilijk, zo niet onmogelijk, voor iemand met trillingen, voor iemand die een hoofd- of oogbesturing gebruikt, of voor iemand die met spraakbesturing werkt."
+  ],
+  [
+   "p",
+   "Verwar het niet met criterium 2.5.1 Aanwijsgebaren, dat al sinds de WCAG 2.1 bestaat en gebaren viseert die een traject volgen of meerdere vingers gebruiken. Criterium 2.5.7 viseert het eenvoudige slepen, waarbij enkel het begin- en eindpunt tellen. Het gaat evenmin over het toetsenbord: een component kan perfect bruikbaar zijn met het toetsenbord en toch falen op 2.5.7, want iemand die een muis of een aanraakscherm gebruikt, heeft niet noodzakelijk een toetsenbord."
+  ],
+  [
+   "h3",
+   "De typische fouten"
+  ],
+  [
+   "ul",
+   [
+    "een aangepaste schuifregelaar voor prijs of volume die u alleen kunt instellen door het handvat te verslepen;",
+    "een lijst die u alleen door slepen en neerzetten kunt herschikken (prioriteiten, stappen, favorieten);",
+    "een opvolgingsbord van het type kanban waarop u de status van een kaart wijzigt door ze van de ene kolom naar de andere te slepen;",
+    "een zone om bestanden neer te zetten zonder knop “Bladeren”;",
+    "een interactieve kaart die u alleen kunt verschuiven door ze te slepen, zonder verplaatsingsknoppen;",
+    "een voor-en-navergelijking waarvan de scheidingslijn alleen beweegt als u eraan trekt."
+   ]
+  ],
+  [
+   "h3",
+   "De oplossing"
+  ],
+  [
+   "p",
+   "De oplossing bestaat erin een eenvoudig klikpad toe te voegen dat naast het slepen bestaat. Bij een schuifregelaar moet een klik op de baan het handvat naar die plaats verplaatsen, en moeten knoppen “min” en “plus” of een numeriek veld het mogelijk maken de waarde in te geven. Het native veld “input type=range” is vaak de beste basis: zijn gedrag wordt deels door de browser beheerd. Bij een lijst die u kunt herschikken, voegt u op elk element de knoppen “Omhoog” en “Omlaag” toe, of een menu “Verplaatsen naar…”. Bij een kanbanbord volstaat een statusmenu op elke kaart."
+  ],
+  [
+   "p",
+   "Een ander patroon werkt ook goed: het element met een klik selecteren en daarna op de bestemming klikken. Dat is het gedrag dat gebruikers verwachten van interfaces voor bestandsbeheer, en het vraagt niet dat u een knop ingedrukt houdt. Voor de zone om bestanden neer te zetten is de knop “Bladeren”, die de bestandskiezer van het besturingssysteem opent, de standaardoplossing. Voor een kaart dekken verplaatsings- en zoomknoppen, of een zoekveld voor een adres, de behoefte af."
+  ],
+  [
+   "h3",
+   "De test"
+  ],
+  [
+   "p",
+   "De test is mechanisch: probeer voor elke component die op slepen reageert hetzelfde resultaat te bereiken met uitsluitend gewone klikken, zonder ooit de muisknop ingedrukt te houden. Doe op mobiel hetzelfde met gewone tikken. Als een functie alleen door slepen bereikbaar is, en het slepen niet essentieel is (een handgeschreven handtekening of een tekening uit de vrije hand, bijvoorbeeld), faalt het criterium."
+  ],
+  [
+   "h2",
+   "grootte-aanwijsgebied",
+   "2.5.8 Grootte van het aanwijsgebied: 24 CSS-pixels en vijf uitzonderingen"
+  ],
+  [
+   "p",
+   "Criterium 2.5.8 vraagt dat de doelen van aanwijshandelingen minstens 24 bij 24 CSS-pixels groot zijn. De CSS-pixel is de eenheid van het stijlblad, niet de fysieke pixel van het scherm: op een smartphone met een hoge pixeldichtheid komen 24 CSS-pixels overeen met veel meer fysieke pixels. De regel is bedoeld voor mensen met trillingen of een verminderde fijne motoriek, maar ook voor iedereen die een smartphone met één hand bedient."
+  ],
+  [
+   "p",
+   "Het criterium voorziet vijf uitzonderingen, die u moet kennen om niet onnodig te corrigeren:"
+  ],
+  [
+   "ul",
+   [
+    "Tussenruimte: een kleiner doel is aanvaardbaar als een cirkel met een diameter van 24 CSS-pixels, gecentreerd op de zone van het doel, geen ander doel raakt en ook de cirkel van een ander klein doel niet;",
+    "Equivalent: dezelfde functie is beschikbaar via een ander bedieningselement op de pagina dat wel aan de grootte voldoet;",
+    "Inline: het doel staat in een zin, zoals een link in een alinea, of de grootte ervan wordt beperkt door de regelhoogte van de tekst;",
+    "Bepaald door de user agent: de grootte wordt door de browser bepaald en niet door de auteur aangepast, zoals een native selectievakje zonder stijl;",
+    "Essentieel: een bepaalde weergave is essentieel of wettelijk vereist, zoals de spelden op een kaart die op hun geografische positie moeten blijven."
+   ]
+  ],
+  [
+   "p",
+   "De documentatie [[https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html|Understanding 2.5.8 (Engelstalig)]] illustreert de cirkelmethode: u tekent een cirkel van 24 CSS-pixels, gecentreerd op elk klein doel, en controleert dat geen enkele cirkel een naburig doel of een andere cirkel overlapt. In de praktijk kan een icoon van 16 pixels slagen als het voldoende vrij staat, terwijl een rij aaneengesloten iconen van 20 pixels faalt."
+  ],
+  [
+   "h3",
+   "De typische fouten"
+  ],
+  [
+   "p",
+   "De fouten concentreren zich op enkele patronen: een paginering met dicht op elkaar staande cijfers (“1 2 3 … 12”); het sluitkruisje van een modaal venster of een banner, vaak getekend op 12 of 16 pixels; iconen om te delen of voor acties die zonder marge naast elkaar staan; de dagen van een datumkiezer op mobiel; de navigatiebolletjes van een carrousel; klikbare sterrenbeoordelingen; de knoppen “+” en “−” voor de hoeveelheid in een winkelmandje. In een aankooptraject komen die laatste twee gevallen voortdurend terug; onze [[article:e-commerce|checklist voor toegankelijke e-commerce, scherm per scherm]] plaatst ze in de context van het bestelproces."
+  ],
+  [
+   "h3",
+   "De oplossing"
+  ],
+  [
+   "p",
+   "Wat telt, is de grootte van de klikbare zone, niet die van de tekening. Een icoon van 16 pixels kan er visueel hetzelfde uitzien als de knop een “padding” krijgt die de klikbare zone op 24 pixels brengt: bijvoorbeeld “.icon-button { min-width: 24px; min-height: 24px; }” met het icoon in het midden. Voor een rij links die dicht op elkaar staan, vergroot u de tussenruimte met de eigenschap “gap” van een flex- of grid-container. Los deze regels op in het design system: één goed gedimensioneerde component voor iconenknoppen regelt honderden voorkomens."
+  ],
+  [
+   "p",
+   "Op niveau AAA blijft criterium 2.5.5 Grootte van het aanwijsgebied (uitgebreid) bestaan, dat 44 bij 44 CSS-pixels vraagt. Dat is een goed doel voor de hoofdknoppen van een mobiele app of een kiosk. Teams die de groottes al hebben overgenomen die de ontwerprichtlijnen van iOS en Android aanbevelen, voldoen doorgaans zonder extra inspanning aan 2.5.8."
+  ],
+  [
+   "h3",
+   "De test"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Kleine doelen opsporen",
+     "inspecteer in de ontwikkelaarstools van de browser de iconen, losse links en aangepaste formulierelementen; noteer hun berekende breedte en hoogte."
+    ],
+    [
+     "De uitzonderingen toepassen",
+     "controleer voor elk doel kleiner dan 24 pixels de tussenruimte (cirkelmethode), het bestaan van een equivalent bedieningselement of het inline karakter."
+    ],
+    [
+     "Controleren op mobiel",
+     "maak de inventaris opnieuw op een mobiel sjabloon, waar iconen vaak kleiner zijn en dichter bij elkaar staan."
+    ]
+   ]
+  ],
+  [
+   "h2",
+   "consistente-hulp",
+   "3.2.6 Consistente hulp: de hulplink op elke pagina op dezelfde plaats"
+  ],
+  [
+   "p",
+   "Criterium 3.2.6 vraagt niet dat u hulp aanbiedt. Het vraagt dat, als een pagina een hulpmechanisme bevat en dat mechanisme op meerdere pagina’s van een geheel wordt herhaald, het in dezelfde volgorde ten opzichte van de andere content verschijnt, behalve bij een wijziging die de gebruiker zelf in gang zet. Het ontbreken van hulp op bepaalde pagina’s is op zich geen fout: het criterium geldt alleen voor de pagina’s die hulp aanbieden. Vier mechanismen worden geviseerd: de contactgegevens van een mens (telefoon, e-mailadres, openingsuren), een manier om een mens te contacteren (contactformulier, chat met een medewerker), een zelfhulpoptie (FAQ, hulppagina) en een volledig geautomatiseerd contactmechanisme (chatbot)."
+  ],
+  [
+   "p",
+   "De regel beschermt mensen met cognitieve of geheugenproblemen, voor wie het terugvinden van hulp al een opgave is. Als de link “Contact” op de startpagina in de header staat, op de productpagina’s in de footer en in de klantenzone nog ergens anders, moeten zij hem bij elke paginawissel opnieuw zoeken."
+  ],
+  [
+   "h3",
+   "De typische fouten"
+  ],
+  [
+   "ul",
+   [
+    "het telefoonnummer van de klantendienst dat bovenaan de redactionele pagina’s staat, maar onderaan de accountpagina’s;",
+    "een chatassistent die naargelang het sjabloon op een andere plaats staat;",
+    "een bestelproces of een online aanvraagprocedure, gebouwd door een andere leverancier, dat de gemeenschappelijke elementen van de website overneemt, maar de hulplink in een andere volgorde plaatst;",
+    "een FAQ die op de website vanuit het hoofdmenu gelinkt is en in de klantenzone vanuit de footer."
+   ]
+  ],
+  [
+   "h3",
+   "De oplossing en de test"
+  ],
+  [
+   "p",
+   "De oplossing is eerder een kwestie van governance dan van code: beslis eens en voor altijd waar de hulpmechanismen staan (bijvoorbeeld een link “Hulp en contact” op dezelfde plaats in de header van alle sjablonen) en leg die plaats op aan de teams en leveranciers die afzonderlijke trajecten bouwen. De test bestaat erin de belangrijkste sjablonen naast elkaar te openen en te controleren dat elk aanwezig hulpmechanisme in dezelfde relatieve volgorde verschijnt. Hij is snel uitgevoerd, maar faalt vaak op websites die door meerdere teams zijn gebouwd. In België, waar veel websites in twee of drie talen bestaan, loont het om die controle in elke taalversie te herhalen: een vertaalde sjabloon wordt niet zelden door een ander team onderhouden."
+  ],
+  [
+   "h2",
+   "overbodige-invoer",
+   "3.3.7 Overbodige invoer: niet opnieuw vragen wat de gebruiker al heeft gegeven"
+  ],
+  [
+   "p",
+   "Volgens criterium 3.3.7 wordt informatie die de gebruiker al heeft ingevoerd, of die hem al is verstrekt, en die in hetzelfde proces opnieuw moet worden ingevoerd, ofwel automatisch ingevuld, ofwel ter keuze aangeboden. Er bestaan drie uitzonderingen: de nieuwe invoer is essentieel, ze is nodig om de beveiliging van de content te garanderen, of de vorige informatie is niet langer geldig."
+  ],
+  [
+   "p",
+   "Het woord “proces” is belangrijk: het criterium viseert een reeks stappen om een taak te volbrengen, zoals een bestelling, een aanvraag voor sociale bijstand of een inschrijving. Het verplicht niet om gegevens van het ene bezoek naar het andere te onthouden. Verwar het evenmin met criterium 1.3.5 Identificeer het doel van de input (niveau AA, criterium 11.13 van de RGAA), dat vereist dat het doel van velden met persoonsgegevens wordt aangeduid met het attribuut autocomplete; de twee vullen elkaar aan."
+  ],
+  [
+   "h3",
+   "De typische fouten"
+  ],
+  [
+   "ul",
+   [
+    "het facturatieadres dat opnieuw wordt gevraagd terwijl het leveringsadres net is ingevuld, zonder vakje “zelfde als leveringsadres”;",
+    "een formulier in meerdere stappen dat de naam of het dossiernummer uit de eerste stap opnieuw vraagt;",
+    "een overzichtsscherm dat u verplicht een veld opnieuw in te vullen om het te corrigeren, in plaats van terug te keren naar de stap met de bewaarde waarde;",
+    "een stap terug in het bestelproces die de al ingevulde velden leegmaakt."
+   ]
+  ],
+  [
+   "h3",
+   "De oplossing"
+  ],
+  [
+   "p",
+   "De oplossingen zijn bekend: een selectievakje dat het leveringsadres naar het facturatieadres kopieert; velden die vooraf zijn ingevuld met de waarden uit de vorige stappen; een keuzelijst met de adressen die al in het proces zijn ingegeven; het behouden van de waarden bij een stap terug. De beveiligingsuitzonderingen blijven geldig: een nieuw wachtwoord twee keer vragen om het te bevestigen, doet het criterium niet falen."
+  ],
+  [
+   "p",
+   "Om te testen doorloopt u elk traject in meerdere stappen terwijl u elk ingevoerd gegeven noteert, en controleert u bij elke nieuwe stap dat geen ervan opnieuw wordt gevraagd zonder vooraf ingevulde waarde of keuze. Test ook de knop “Vorige” van het traject en die van de browser. Deze test hoort thuis in de [[svc:recette|toegankelijkheidstest bij oplevering]] van elke nieuwe versie van een formulier."
+  ],
+  [
+   "h2",
+   "toegankelijke-authenticatie",
+   "3.3.8 Toegankelijke authenticatie: wachtwoorden, codes en captcha’s"
+  ],
+  [
+   "p",
+   "Dit is het criterium met de grootste gevolgen voor klantenzones, banken, verzekeraars en online overheidsdiensten. Het verbiedt om bij een authenticatiestap een cognitieve functietest te vereisen, tenzij die stap een alternatief of hulp biedt, of de test bestaat uit het herkennen van objecten of van persoonlijke content die de gebruiker zelf heeft aangeleverd. Een cognitieve functietest is volgens de definitie van de WCAG een taak waarbij u informatie moet onthouden, bewerken of overschrijven: bijvoorbeeld een wachtwoord onthouden, tekens overtypen, een berekening maken of een raadsel oplossen."
+  ],
+  [
+   "p",
+   "Het wachtwoord is dus niet verboden. De documentatie [[https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html|Understanding 3.3.8 (Engelstalig)]] noemt twee geldige hulpmiddelen: de ondersteuning van wachtwoordbeheerders, waardoor u niets hoeft te onthouden, en kopiëren-plakken, waardoor u niets hoeft over te typen. Een wachtwoordveld dat werkt met automatisch invullen en plakken toestaat, voldoet aan het criterium. Het is het blokkeren van die hulpmiddelen dat het doet falen."
+  ],
+  [
+   "h3",
+   "De typische fouten"
+  ],
+  [
+   "ul",
+   [
+    "een wachtwoordveld dat plakken verbiedt (“onpaste” dat false teruggeeft);",
+    "een aanmeldformulier waarvan de velden niet door wachtwoordbeheerders worden herkend (gebruikersnaam en wachtwoord op twee pagina’s zonder attribuut autocomplete, dynamisch gegenereerde velden zonder naam);",
+    "een virtueel toetsenbord waarvan de cijfers bij elke aanmelding van plaats veranderen, zonder andere methode;",
+    "een code die u per sms of e-mail ontvangt en in zes afzonderlijke vakjes moet ingeven die plakken weigeren;",
+    "een captcha die vraagt om vervormde tekst over te typen, zonder andere manier om in te loggen;",
+    "de vraag naar specifieke tekens van het wachtwoord (“geef het 2e, 5e en 7e teken in”), wat automatisch invullen onmogelijk maakt."
+   ]
+  ],
+  [
+   "h3",
+   "De oplossing"
+  ],
+  [
+   "p",
+   "In de code doen de autocomplete-attributen het meeste werk: “autocomplete=username” op het veld voor de gebruikersnaam, “autocomplete=current-password” op het wachtwoord bij het aanmelden, “autocomplete=new-password” bij het aanmaken van de account en “autocomplete=one-time-code” op het veld voor de eenmalige code. Met de eerste drie kunnen wachtwoordbeheerders de velden invullen; met het laatste kunnen veel mobiele browsers de per sms ontvangen code voorstellen. Kies voor de code liever één veld dan zes afzonderlijke vakjes; als het ontwerp vakjes oplegt, moet het plakken van een volledige code in het eerste vakje de volgende vakjes invullen."
+  ],
+  [
+   "p",
+   "Aanmeldmethoden die op geen enkele cognitieve test steunen, zijn geldige alternatieven: een aanmeldlink die per e-mail wordt verstuurd, passkeys op basis van biometrie of de ontgrendelcode van het toestel, of aanmelden via een authenticatie-app die enkel een bevestiging vraagt. Sterke authenticatie is niet het probleem: een tweede factor voldoet aan het criterium zolang de code kan worden geplakt of automatisch ingevuld, of zolang er een methode zonder code wordt aangeboden."
+  ],
+  [
+   "p",
+   "Voor captcha’s aanvaardt niveau AA objectherkenning (“selecteer de afbeeldingen met een fiets”) en de identificatie van content die de gebruiker zelf heeft aangeleverd, zoals een afbeelding die hij bij de registratie heeft gekozen. Niveau AAA, met criterium 3.3.9, schrapt die twee uitzonderingen. Een captcha waarbij u vervormde tekst moet overtypen, faalt in elk geval als er geen alternatief bestaat. Let op: een visuele captcha vormt ook een probleem voor blinde mensen op grond van andere criteria, met name 1.1.1 Niet-tekstuele content, over tekstalternatieven."
+  ],
+  [
+   "h3",
+   "De test"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Wachtwoordbeheerder",
+     "sla een testaccount op in de wachtwoordbeheerder van de browser en controleer dat die de gebruikersnaam en het wachtwoord op het aanmeldscherm invult."
+    ],
+    [
+     "Plakken",
+     "kopieer het wachtwoord en de eenmalige code en plak ze in hun velden; plakken moet werken, ook in afzonderlijke vakjes."
+    ],
+    [
+     "Andere stappen",
+     "overloop alle stappen: account aanmaken, wachtwoord vergeten, tweede factor, opnieuw authenticeren vóór een gevoelige verrichting."
+    ],
+    [
+     "Captcha’s",
+     "identificeer elke captcha en controleer het type en het bestaan van een alternatief."
+    ]
+   ]
+  ],
+  [
+   "h2",
+   "verwijderd-criterium",
+   "Het verwijderde criterium 4.1.1: wat het verandert voor een audit"
+  ],
+  [
+   "p",
+   "Criterium 4.1.1 Parsen vereiste HTML-code zonder structuurfouten: geopende en gesloten tags, unieke id’s, geen dubbele attributen. Het W3C heeft het verouderd verklaard, omdat hulptechnologieën de HTML-code niet langer zelf ontleden: ze steunen op de analyse van de browsers, die fouten vandaag op een betrouwbare manier afhandelen; de echte problemen die het criterium viseerde, worden door andere criteria gedekt, zoals 1.3.1 Info en relaties of 4.1.2 Naam, rol, waarde."
+  ],
+  [
+   "p",
+   "Het praktische gevolg hangt af van het referentiekader. Een audit volgens de WCAG 2.2 of de norm EN 301 549 V4.1.1 test dit criterium niet meer. Voor de WCAG 2.0 en 2.1 heeft het W3C een opmerking toegevoegd volgens welke dit criterium voor HTML- of XML-content als altijd voldaan moet worden beschouwd. Maar een nationaal referentiekader kan een eigen controle behouden: dat is het geval in Frankrijk zolang de RGAA 4.1.2 van toepassing is, met criterium 8.2 over de geldigheid van de broncode. De norm EN 301 549 V3.2.1, die in België wordt toegepast en waarop de RAWeb 1.1 in Luxemburg steunt, bevat ook nog de overeenkomstige eis. Schrap de validatie van de code dus niet uit uw opleveringsprocedures voordat uw nationale referentiekader is gewijzigd."
+  ],
+  [
+   "h2",
+   "nationale-referentiekaders",
+   "Nieuwe WCAG 2.2-criteria en nationale referentiekaders: hoe auditen in 2026"
+  ],
+  [
+   "p",
+   "Geen enkel van de negen nieuwe criteria heeft een rechtstreeks equivalent in de RGAA 4.1.2, die op de WCAG 2.1 steunt. Een website kan dus een RGAA-conformiteitspercentage van 100% tonen en toch falen op 2.5.8, 3.3.7 of 3.3.8. Die situatie is vandaag normaal, maar ze heeft twee gevolgen. Enerzijds zegt het percentage in de toegankelijkheidsverklaring niets over de conformiteit met de WCAG 2.2. Anderzijds dreigt de volgende bijwerking van de verklaring, volgens de RGAA 5, het percentage te doen dalen als er niets is gecorrigeerd. Hetzelfde geldt in België: een verklaring die conformiteit met de EN 301 549 V3.2.1 vermeldt, zegt niets over de nieuwe criteria."
+  ],
+  [
+   "p",
+   "Tijdens de overgang zijn twee auditbenaderingen mogelijk. De eerste bestaat erin de officiële audit uit te voeren volgens het geldende referentiekader, voor de verklaring, en er een controle van de zes nieuwe criteria van niveau A en AA aan toe te voegen, die apart in het rapport wordt voorgesteld. De tweede bestaat erin rechtstreeks te auditen volgens de WCAG 2.2 of de norm EN 301 549 V4.1.1, wat past bij ondernemingen die onder de European Accessibility Act vallen en bij organisaties die in meerdere landen actief zijn. Ons artikel over [[article:audit-rgaa|het verloop van een RGAA-audit, week per week]] laat zien waar die aanvullende controle past, en een [[svc:audit-conformite|conformiteitsaudit volgens de norm EN 301 549]] dekt alle WCAG 2.2-criteria."
+  ],
+  [
+   "table",
+   {
+    "caption": "Welke audit voor welke organisatie tijdens de overgang",
+    "head": [
+     "Situatie",
+     "Referentiekader van de officiële audit",
+     "Toe te voegen WCAG 2.2-controle"
+    ],
+    "rows": [
+     [
+      "Franse overheidsinstantie",
+      "RGAA 4.1.2 (verklaring)",
+      "De zes nieuwe criteria van niveau A en AA, in een aparte sectie"
+     ],
+     [
+      "Luxemburgse overheidsinstantie",
+      "RAWeb 1.1 of RAAM 1.1",
+      "De zes nieuwe criteria, met het oog op de RAWeb 2 en de RAAM 2"
+     ],
+     [
+      "Belgische overheidsinstantie",
+      "EN 301 549 V3.2.1",
+      "De zes nieuwe criteria, met het oog op de V4.1.1"
+     ],
+     [
+      "Onderneming die onder de EAA valt",
+      "EN 301 549 V4.1.1 (WCAG 2.2 AA)",
+      "Al inbegrepen"
+     ],
+     [
+      "Groep die in meerdere landen actief is",
+      "WCAG 2.2 AA als spilreferentiekader, plus de nationale referentiekaders voor de verklaringen",
+      "Al inbegrepen"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Bewaar voor de verklaringen de samenhang: de toegankelijkheidsverklaring vermeldt het referentiekader dat echt is gebruikt en mag geen percentages door elkaar halen. De meest voorkomende fouten, en een becommentarieerd model, vindt u in ons artikel over [[article:declaration|de fouten die een toegankelijkheidsverklaring ongeldig maken]]. In Luxemburg, waar de overstap naar de RAWeb 2 voor februari 2027 is aangekondigd, vat de pagina [[country:luxembourg|digitale toegankelijkheid in Luxemburg]] de verplichtingen van de overheidsinstanties samen."
+  ],
+  [
+   "h2",
+   "mobiele-apps-documenten",
+   "Mobiele apps en documenten: de nieuwe criteria gelden ook daar"
+  ],
+  [
+   "p",
+   "De WCAG zijn geschreven voor het web, maar de norm EN 301 549 past de criteria ervan toe op software, waaronder mobiele apps, en op documenten. De [[https://www.w3.org/TR/WCAG22/|tekst van de WCAG 2.2 (Engelstalig)]] blijft de referentie; het W3C publiceert daarnaast interpretatienota’s die uitleggen hoe elk criterium buiten de browser moet worden toegepast: WCAG2ICT voor niet-webtechnologieën en, nog in de vorm van een ontwerpnota, WCAG2Mobile voor mobiele apps. In een app falen van de nieuwe criteria het vaakst de grootte van het aanwijsgebied (iconen in werkbalken, sluitknoppen), de authenticatie (een codeveld dat de per sms ontvangen code niet voorstelt) en de sleepbewegingen (lijsten die u kunt herschikken, veegacties zonder equivalent menu)."
+  ],
+  [
+   "p",
+   "Voor een iOS- of Android-app gebeurt de test op een echt toestel, met VoiceOver of TalkBack, en met schakelbediening (switch control) of spraakbesturing voor het slepen. In Luxemburg is de RAAM het referentiekader voor de apps van de overheid; elders volgt de audit de norm EN 301 549. Een [[svc:audit-raam|audit van een mobiele app volgens de RAAM]] controleert die punten op beide platformen. Voor pdf-documenten hebben de nieuwe criteria weinig effect: ze viseren vooral interacties die documenten niet bevatten, met uitzondering van invulbare pdf-formulieren."
+  ],
+  [
+   "h2",
+   "stappenplan-wcag-2-2",
+   "Stappenplan voor de overstap naar WCAG 2.2: waar begint u"
+  ],
+  [
+   "p",
+   "Het goede nieuws is dat de nieuwe criteria zelden pagina per pagina worden opgelost. Ze worden opgelost in enkele gedeelde componenten en in ontwerpregels. De onderstaande tabel rangschikt de zes criteria van niveau A en AA volgens de plaats waar de correctie gebeurt en de gebruikelijke omvang van het werk; de werkelijke omvang hangt af van uw architectuur en van het aandeel componenten van derden."
+  ],
+  [
+   "table",
+   {
+    "caption": "Waar u elk nieuw criterium van niveau A en AA oplost",
+    "head": [
+     "Criterium",
+     "Waar de correctie gebeurt",
+     "Gebruikelijke omvang",
+     "Wie erbij betrokken is"
+    ],
+    "rows": [
+     [
+      "2.4.11 Focus niet bedekt",
+      "Globaal stijlblad, cookiebanner, vaste elementen",
+      "Klein",
+      "Front-endintegratie"
+     ],
+     [
+      "2.5.8 Grootte van het aanwijsgebied",
+      "Componenten van het design system: iconenknop, paginering, kalender",
+      "Klein tot middelgroot",
+      "Design en front-end"
+     ],
+     [
+      "3.2.6 Consistente hulp",
+      "Sjablonen van header en footer, trajecten van derden",
+      "Klein",
+      "Product, redactionele governance"
+     ],
+     [
+      "3.3.7 Overbodige invoer",
+      "Logica van formulieren in meerdere stappen",
+      "Middelgroot",
+      "Front-end- en back-endontwikkeling"
+     ],
+     [
+      "2.5.7 Sleepbewegingen",
+      "Interactieve componenten: schuifregelaars, lijsten, kanban, kaarten",
+      "Middelgroot tot groot",
+      "Ontwikkeling, design"
+     ],
+     [
+      "3.3.8 Toegankelijke authenticatie",
+      "Aanmeldschermen, tweede factor, captcha’s, identiteitsprovider",
+      "Variabel: klein als u de code beheerst, groot als een dienst van derden in het spel is",
+      "Ontwikkeling, beveiliging, aankoop"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Begin met de snelle correcties met veel effect (bedekte focus, grootte van het aanwijsgebied, consistente hulp), die vaak in één iteratie zijn opgelost. Pak daarna de authenticatie aan, omdat die de toegang tot de rest van de dienst blokkeert: wie niet kan inloggen, kan niets anders doen. Bewaar de complexe componenten voor slepen en neerzetten voor het laatst, want die vragen soms een herontwerp van de interactie. Als het aanmeldscherm of de captcha door een leverancier wordt geleverd, loopt de correctie via het contract: eis conformiteit met de WCAG 2.2 AA in uw volgende aankopen. Voor Belgische overheidsinstanties die via een overheidsopdracht aankopen, is dat het moment om de eis in het bestek op te nemen."
+  ],
+  [
+   "h3",
+   "De WCAG 2.2-checklist voor uw teams"
+  ],
+  [
+   "ul",
+   [
+    "de pagina scrollt zo dat het actieve element nooit volledig onder de vaste header verdwijnt (scroll-padding-top ingesteld);",
+    "de cookiebanner staat in de flow of is modaal, nooit vast en niet-modaal boven de content;",
+    "geen enkele zwevende knop bedekt interactieve content;",
+    "elke iconenknop, elk sluitkruisje en elk pagineringsnummer biedt een klikbare zone van minstens 24 bij 24 CSS-pixels, of voldoet aan de uitzondering voor tussenruimte;",
+    "elke schuifregelaar kan worden ingesteld met een klik op de baan, met knoppen of met een invoerveld;",
+    "elke lijst die u kunt herschikken, biedt knoppen of een menu om te verplaatsen;",
+    "elke zone om bestanden neer te zetten, heeft een knop “Bladeren”;",
+    "de links naar hulp en contact en de eventuele assistent staan op dezelfde relatieve plaats op alle sjablonen waarop ze voorkomen, het bestelproces inbegrepen;",
+    "geen enkel gegeven dat al in een traject is gegeven, wordt opnieuw gevraagd zonder vooraf ingevulde waarde of keuze;",
+    "een stap terug in een formulier behoudt de ingevoerde waarden;",
+    "de velden voor gebruikersnaam en wachtwoord hebben de juiste autocomplete-attributen en aanvaarden plakken;",
+    "de eenmalige code kan worden geplakt en heeft autocomplete=one-time-code;",
+    "geen enkele captcha met overtypen wordt opgelegd zonder alternatief;",
+    "de validatie van de broncode blijft in de oplevertest zolang het nationale referentiekader op de WCAG 2.1 steunt."
+   ]
+  ],
+  [
+   "p",
+   "Om deze regels op lange termijn overeind te houden, neemt u ze op in de definitie van “klaar” van elke component en in de acceptatiecriteria van de opleveringen. Onze [[svc:formations|opleidingen digitale toegankelijkheid]] voor designers en ontwikkelaars behandelen deze nieuwe criteria aan de hand van codevoorbeelden, en met de [[svc:developpement|begeleiding bij toegankelijke ontwikkeling]] corrigeert u het design system samen met uw teams."
+  ],
+  [
+   "h2",
+   "misverstanden-wcag-2-2",
+   "Zes misverstanden over de WCAG 2.2"
+  ],
+  [
+   "p",
+   "Een aantal misverstanden komt steeds terug in de gesprekken met projectteams. Ze rechtzetten voorkomt onnodige correcties of, omgekeerd, dure vergetelheden."
+  ],
+  [
+   "ol",
+   [
+    [
+     "“Er zijn overal knoppen van 44 pixels nodig.”",
+     "Nee: niveau AA vraagt 24 CSS-pixels, met vijf uitzonderingen; 44 pixels hoort bij criterium 2.5.5, van niveau AAA."
+    ],
+    [
+     "“Vaste headers zijn verboden.”",
+     "Nee: ze mogen het actieve element alleen niet volledig bedekken. Eén regel CSS volstaat vaak."
+    ],
+    [
+     "“Het wachtwoord is verboden.”",
+     "Nee: het is toegestaan als wachtwoordbeheerders en kopiëren-plakken werken."
+    ],
+    [
+     "“Alle captcha’s zijn verboden.”",
+     "Nee: op niveau AA wordt objectherkenning aanvaard; het is het overtypen zonder alternatief dat faalt. Andere criteria blijven op de captcha van toepassing."
+    ],
+    [
+     "“Als het met het toetsenbord bruikbaar is, is slepen en neerzetten conform.”",
+     "Nee: criterium 2.5.7 viseert gebruikers van een aanwijzer; er is een methode met een gewone klik nodig."
+    ],
+    [
+     "“Ons RGAA-percentage van 100% bewijst de conformiteit met de WCAG 2.2.”",
+     "Nee: de RGAA 4.1.2 bevat geen enkel van de negen nieuwe criteria."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Om het werk op uw website in te schatten, blijft een audit die gericht is op de nieuwe criteria, of de toevoeging ervan aan een volledige audit, de betrouwbaarste methode; de factoren die de kostprijs van zo’n opdracht doen variëren, worden toegelicht in ons artikel over [[article:prix-audit|de prijs van een toegankelijkheidsaudit]]. Voor een Franse overheidsinstantie stelt de [[sector:public|pagina over de publieke sector]] de volledige begeleiding voor, van de audit tot de verklaring."
+  ]
+ ],
+ "faq": [
+  [
+   "Zijn de WCAG 2.2 verplicht in Frankrijk?",
+   "Nog niet rechtstreeks. De RGAA 4.1.2, het referentiekader dat geldt voor overheidsinstanties en grote ondernemingen, steunt op de WCAG 2.1. De RGAA 5, door de DINUM aangekondigd voor eind 2026, zal de WCAG 2.2 integreren. Voor ondernemingen die onder de European Accessibility Act vallen, wordt de norm EN 301 549 V4.1.1, die op de WCAG 2.2 is afgestemd, de referentie zodra ze in het Publicatieblad van de Europese Unie is vermeld."
+  ],
+  [
+   "Hoeveel criteria tellen de WCAG 2.2?",
+   "De WCAG 2.2 tellen 86 actieve succescriteria: de 78 criteria van de WCAG 2.1, min het verwijderde criterium 4.1.1 Parsen, plus de negen nieuwe. Van de nieuwe criteria behoren er twee tot niveau A, vier tot niveau AA en drie tot niveau AAA. Een conformiteit op niveau AA, die de Europese regelgeving vereist, betreft de criteria van niveau A en AA."
+  ],
+  [
+   "Is een website die voldoet aan de WCAG 2.1 ook conform met de WCAG 2.2?",
+   "Niet noodzakelijk. Hij voldoet aan alle regels die beide versies gemeen hebben, maar kan falen op de zes nieuwe criteria van niveau A en AA: bedekte focus, slepen, grootte van het aanwijsgebied, consistente hulp, overbodige invoer en authenticatie. Omgekeerd is een website die aan de WCAG 2.2 voldoet ook conform met de WCAG 2.1: voor criterium 4.1.1 stelt het W3C dat HTML-content er altijd aan voldoet, maar een nationaal referentiekader zoals de RGAA 4.1.2 kan een eigen controle van de geldigheid van de code behouden."
+  ],
+  [
+   "Hoe groot moet een knop minimaal zijn volgens de WCAG 2.2?",
+   "Criterium 2.5.8, van niveau AA, vraagt een klikbare zone van minstens 24 bij 24 CSS-pixels. Een kleiner doel blijft aanvaardbaar als het voldoende ver van zijn buren staat, als een ander conform bedieningselement dezelfde functie biedt, als het om een link in een zin gaat, als de grootte door de browser wordt bepaald of als de weergave essentieel is. De grootte van 44 CSS-pixels hoort bij criterium 2.5.5, van niveau AAA."
+  ],
+  [
+   "Zijn captcha’s verboden door de WCAG 2.2?",
+   "Nee. Criterium 3.3.8 verbiedt om voor het inloggen een cognitieve test op te leggen zonder alternatief of hulp. Een captcha die vraagt om vervormde tekst over te typen, faalt als er geen andere aanmeldmethode bestaat. Een captcha met objectherkenning wordt op niveau AA aanvaard, maar niet op niveau AAA. Andere criteria, zoals die over tekstalternatieven, blijven van toepassing."
+  ],
+  [
+   "Moet u een nieuwe toegankelijkheidsaudit laten uitvoeren om over te stappen naar de WCAG 2.2?",
+   "Niet noodzakelijk een volledige audit. Als uw laatste audit recent is, volstaat een gerichte controle van de zes nieuwe criteria van niveau A en AA op uw staal van pagina’s vaak om de correcties te plannen. Een volledige audit is verantwoord na een herontwerp, wanneer het nationale referentiekader verandert (RGAA 5, RAWeb 2) of wanneer u een nieuwe toegankelijkheidsverklaring moet opstellen."
+  ]
+ ],
+ "cta_svc": "audit-conformite",
+ "cta_title": "Doorstaat uw website de nieuwe criteria?",
+ "cta_text": "Wij controleren de zes nieuwe criteria van niveau A en AA van de WCAG 2.2 op uw sjablonen en belangrijkste trajecten, en bezorgen u een correctieplan per component.",
+ "related": [
+  "normes",
+  "e-commerce",
+  "audit-rgaa"
+ ]
+}

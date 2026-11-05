@@ -139,6 +139,10 @@
   ],
   [
    "p",
+   "Each of these criteria is covered in detail, with the most common failure, the fix in HTML or CSS and a test you can run yourself, in our article on [[article:wcag-22|the nine WCAG 2.2 new success criteria, one by one]]."
+  ],
+  [
+   "p",
    "Criterion 4.1.1 Parsing is, according to the W3C, “obsolete and removed” from WCAG 2.2: browsers and assistive technologies no longer depend on parsing raw source code. This is the only break in backward compatibility. The W3C points out that organisations whose regulations still refer to WCAG 2.0 or 2.1 may need to keep testing it. This is the case in France, where criterion 8.2 of RGAA 4.1.2 (validity of the generated source code) must still be checked."
   ],
   [
@@ -821,5 +825,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-10-29"
+ "modified": "2026-11-05"
 }

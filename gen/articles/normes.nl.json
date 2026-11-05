@@ -139,6 +139,10 @@
   ],
   [
    "p",
+   "Elk van deze criteria wordt uitgewerkt, met de meest voorkomende fout, de oplossing in HTML of CSS en de test die u zelf kunt uitvoeren, in ons artikel over [[article:wcag-22|de negen nieuwe succescriteria van de WCAG 2.2, één voor één]]."
+  ],
+  [
+   "p",
    "Succescriterium 4.1.1 Parsen staat in de WCAG 2.2 vermeld als “verouderd en verwijderd”: browsers en hulptechnologieën zijn niet langer afhankelijk van het ontleden van de ruwe broncode. Het is de enige uitzondering op de achterwaartse compatibiliteit. Het W3C verduidelijkt dat organisaties die beleidsmatig verplicht zijn te voldoen aan de WCAG 2.0 of 2.1, dit criterium mogelijk moeten blijven testen en erover rapporteren. Dat is het geval in Frankrijk, waar criterium 8.2 van de RGAA 4.1.2 (geldigheid van de gegenereerde broncode) nog moet worden gecontroleerd."
   ],
   [
@@ -833,5 +837,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-10-29"
+ "modified": "2026-11-05"
 }

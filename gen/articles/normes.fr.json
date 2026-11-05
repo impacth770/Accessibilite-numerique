@@ -139,6 +139,10 @@
   ],
   [
    "p",
+   "Chacun de ces critères est détaillé, avec le défaut le plus fréquent, la correction en HTML ou en CSS et le test à faire soi-même, dans notre article sur [[article:wcag-22|les neuf nouveaux critères des WCAG 2.2, un par un]]."
+  ],
+  [
+   "p",
    "Le critère 4.1.1 Analyse syntaxique (Parsing) est, selon le W3C, « obsolète et retiré » des WCAG 2.2 : les navigateurs et les technologies d'assistance ne dépendent plus de l'analyse du code source brut. C'est la seule entorse à la compatibilité ascendante. Le W3C précise que les organisations dont la réglementation renvoie encore aux WCAG 2.0 ou 2.1 peuvent devoir continuer à le tester. C'est le cas en France, où le critère 8.2 du RGAA 4.1.2 (validité du code source généré) reste à vérifier."
   ],
   [
@@ -821,5 +825,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-10-29"
+ "modified": "2026-11-05"
 }
