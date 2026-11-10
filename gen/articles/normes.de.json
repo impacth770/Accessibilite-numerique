@@ -740,6 +740,10 @@
    "Ein eingescanntes PDF eines Gemeinderatsbeschlusses ist ein reines Bild: Für einen Screenreader ist es unabhängig von der Scanqualität unlesbar. Ein barrierefreies PDF ist mit Tags versehen (Überschriften, Listen, Tabellen), hat eine logische Lesereihenfolge, einen Dokumenttitel, eine deklarierte Sprache und Alternativen für seine Bilder. Für wesentliche Informationen ist es oft die nachhaltigste Lösung, den Inhalt in HTML zu veröffentlichen und das PDF ergänzend anzubieten."
   ],
   [
+   "p",
+   "Die formatspezifischen Regeln (PDF/UA, PDF-Techniken des W3C, RAPDF) und ihre Umsetzung in Word, InDesign und Acrobat beschreibt unsere [[article:pdf-accessible|Anleitung für barrierefreie PDFs]], einschließlich einer Prüfliste."
+  ],
+  [
    "h3",
    "Mobile Apps"
   ],
@@ -850,5 +854,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-05"
+ "modified": "2026-11-10"
 }

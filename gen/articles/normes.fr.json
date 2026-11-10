@@ -715,6 +715,10 @@
    "Un PDF de délibération scanné est une simple image : il est illisible par un lecteur d'écran, quelle que soit la qualité du scan. Un PDF accessible est balisé (titres, listes, tableaux), possède un ordre de lecture logique, un titre de document, une langue déclarée et des alternatives pour ses images. Pour l'information essentielle, la solution la plus durable reste souvent de publier le contenu en HTML et de proposer le PDF en complément."
   ],
   [
+   "p",
+   "Les règles propres au format (PDF/UA, techniques PDF du W3C, RAPDF) et la façon de les appliquer dans Word, InDesign et Acrobat sont présentées dans notre [[article:pdf-accessible|méthode pour produire un PDF accessible]], avec une check-list de contrôle."
+  ],
+  [
    "h3",
    "Les applications mobiles"
   ],
@@ -825,5 +829,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-05"
+ "modified": "2026-11-10"
 }

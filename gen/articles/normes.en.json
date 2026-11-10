@@ -715,6 +715,10 @@
    "A scanned PDF of a council decision is simply an image: a screen reader cannot read it, however good the scan. An accessible PDF is tagged (headings, lists, tables), has a logical reading order, a document title, a declared language and alternatives for its images. For essential information, the most sustainable solution is often to publish the content in HTML and offer the PDF as a complement."
   ],
   [
+   "p",
+   "The format-specific rules (PDF/UA, the W3C PDF techniques, RAPDF) and how to apply them in Word, InDesign and Acrobat are set out in our [[article:pdf-accessible|accessible PDF method]], together with a checklist."
+  ],
+  [
    "h3",
    "Mobile apps"
   ],
@@ -825,5 +829,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-05"
+ "modified": "2026-11-10"
 }

@@ -197,6 +197,10 @@
    "Luxemburg verfügt außerdem über einen eigenen Referenzrahmen für PDF-Dokumente, den RAPDF, der 2023 eingeführt wurde und 2026 ebenfalls in Version 1.1 erschienen ist. Für Verwaltungen, die zahlreiche Formulare, Berichte und Beschlüsse als PDF veröffentlichen, ist das ein wichtiger Punkt: Office-Dokumente sind die am häufigsten angegebene Ausnahme in den Erklärungen zur Barrierefreiheit, und nicht barrierefreie PDF-Dateien sind der häufigste Beschwerdegrund, den der SIP für 2022 bis 2024 verzeichnet hat."
   ],
   [
+   "p",
+   "Auch außerhalb Luxemburgs ist das RAPDF ein gutes Arbeitsraster; unser Beitrag [[article:pdf-accessible|barrierefreies PDF Schritt für Schritt]] zeigt, wie Sie mit Word, InDesign oder Acrobat Dokumente erstellen, die es erfüllen."
+  ],
+  [
    "h2",
    "raam",
    "Der RAAM 1.1: der Referenzrahmen für barrierefreie mobile Apps"
@@ -718,6 +722,6 @@
   "normes",
   "belgique"
  ],
- "modified": "2026-10-28",
+ "modified": "2026-11-10",
  "cluster": "reglementation"
 }

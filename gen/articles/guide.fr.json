@@ -466,6 +466,10 @@
    "La bonne pratique consiste à publier l'information en HTML chaque fois que possible et à réserver le PDF aux documents qui doivent être imprimés ou signés. Lorsqu'un PDF est nécessaire, produisez-le depuis un document source correctement structuré (styles de titres, alternatives aux images, tableaux simples) puis vérifiez le balisage. Pour le secteur public, la directive de 2016 exclut les fichiers bureautiques publiés avant le 23 septembre 2018, sauf s'ils sont nécessaires à des démarches administratives en cours. Au Luxembourg, le rapport de contrôle 2022-2024 du SIP relève d'ailleurs que les PDF inaccessibles sont la justification de charge disproportionnée la plus souvent invoquée ; une dérogation ne dispense pas de proposer une alternative accessible sur demande."
   ],
   [
+   "p",
+   "Pour la marche à suivre logiciel par logiciel, notre article [[article:pdf-accessible|créer un PDF accessible depuis Word, InDesign et Acrobat]] détaille les réglages d'export, la check-list de contrôle avant publication et les cas où une page HTML vaut mieux qu'un PDF."
+  ],
+  [
    "h3",
    "Applications mobiles"
   ],
@@ -609,5 +613,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-03"
+ "modified": "2026-11-10"
 }

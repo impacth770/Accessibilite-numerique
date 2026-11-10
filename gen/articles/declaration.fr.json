@@ -376,6 +376,10 @@
   ],
   [
    "p",
+   "L'exemption des fichiers bureautiques ne couvre ni les documents publiés depuis, ni un ancien formulaire encore utilisé : pour trier votre stock et corriger ce qui doit l'être, voyez notre article sur [[article:pdf-accessible|les PDF accessibles et leur contrôle avant publication]]."
+  ],
+  [
+   "p",
    "Cette liste a été révisée par le décret n° 2026-816 du 24 août 2026 pour tenir compte du calendrier de la directive européenne. Vérifiez la rédaction en vigueur avant de vous en prévaloir, et datez chaque contenu exempté dans la déclaration."
   ],
   [
@@ -864,5 +868,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-11-03"
+ "modified": "2026-11-10"
 }

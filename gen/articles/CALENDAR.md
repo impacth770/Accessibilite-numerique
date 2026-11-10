@@ -7,7 +7,7 @@ La tâche planifiée traite d'abord « Mises à jour prioritaires », puis le pr
 
 | Statut | Événement | Articles à mettre à jour |
 |---|---|---|
-| — | (aucune pour l'instant ; veille du 2026-11-05 : aucun nouvel événement (RGAA 5 non publié, EN 301 549 V4.1.1 non citée au JOUE, Conseil des États pas encore saisi de la loi suisse sur l'inclusion, aucune nouvelle décision Arcom, DGCCRF, BOSA, SIP ou OSAPS repérée) ; veille du 2026-11-03 : RGAA 5 toujours non publié (« publication prévue fin 2026 »), EN 301 549 V4.1.1 non citée au JOUE, loi suisse sur l'inclusion pas encore votée par le Conseil des États, aucune nouvelle décision Arcom, DGCCRF, BOSA, SIP ou OSAPS repérée ; veille du 2026-10-31 : aucun nouvel événement depuis le 29 octobre ; veille du 2026-10-29 : RGAA 5 non publié, EN 301 549 V4.1.1 non citée au JOUE, loi suisse sur l'inclusion adoptée par le Conseil national le 21 septembre 2026, Conseil des États pas encore saisi ; décision Arcom impots.gouv.fr déjà intégrée) | — |
+| — | (aucune pour l'instant ; veille du 2026-11-10 : aucun nouvel événement (RGAA 5 toujours annoncé « fin 2026 » sur accessibilite.numerique.gouv.fr, EN 301 549 V4.1.1 non citée au JOUE, RAWeb 2/RAAM 2 non publiés, Conseil des États pas encore prononcé sur la loi suisse sur l'inclusion, aucune nouvelle décision Arcom, DGCCRF, BOSA, SIP ou OSAPS repérée) ; veille du 2026-11-05 : aucun nouvel événement (RGAA 5 non publié, EN 301 549 V4.1.1 non citée au JOUE, Conseil des États pas encore saisi de la loi suisse sur l'inclusion, aucune nouvelle décision Arcom, DGCCRF, BOSA, SIP ou OSAPS repérée) ; veille du 2026-11-03 : RGAA 5 toujours non publié (« publication prévue fin 2026 »), EN 301 549 V4.1.1 non citée au JOUE, loi suisse sur l'inclusion pas encore votée par le Conseil des États, aucune nouvelle décision Arcom, DGCCRF, BOSA, SIP ou OSAPS repérée ; veille du 2026-10-31 : aucun nouvel événement depuis le 29 octobre ; veille du 2026-10-29 : RGAA 5 non publié, EN 301 549 V4.1.1 non citée au JOUE, loi suisse sur l'inclusion adoptée par le Conseil national le 21 septembre 2026, Conseil des États pas encore saisi ; décision Arcom impots.gouv.fr déjà intégrée) | — |
 
 Échéances à surveiller : RGAA 5 (annoncé fin 2026) ; citation de l'EN 301 549 V4.1.1 au JOUE (attendue vers le 16 décembre 2026) ; RAWeb 2 et RAAM 2 (février 2027) ; vote du Conseil des États sur la loi suisse sur l'inclusion.
 
@@ -15,7 +15,6 @@ La tâche planifiée traite d'abord « Mises à jour prioritaires », puis le pr
 
 | # | Statut | Silo | Requête cible (FR) | Angle (ce que les pages concurrentes ne donnent pas) | Prestation à pousser |
 |---|---|---|---|---|---|
-| 5 | à faire | technique | PDF accessible | Méthode pas à pas depuis Word, InDesign et Acrobat, PDF/UA, contrôles, quand préférer le HTML | formations |
 | 6 | à faire | methode | schéma pluriannuel accessibilité | Modèle commenté, plan annuel, budget et indicateurs, erreurs relevées par l'Arcom | audit-rgaa |
 | 7 | à faire | organisation | clause accessibilité marché public | Clauses types par type de marché, critères d'attribution, recette à la livraison, pénalités | recette |
 | 8 | à faire | normes | RGAA 5 | Ce qui est annoncé officiellement, ce qui change par rapport au RGAA 4.1.2, comment s'y préparer sans tout refaire | audit-rgaa |
@@ -66,3 +65,4 @@ La tâche planifiée traite d'abord « Mises à jour prioritaires », puis le pr
 | 2026-10-31 | e-commerce | secteurs | Accessibilité e-commerce : la check-list EAA du parcours d'achat, écran par écran |
 | 2026-11-03 | prix-audit | methode | Prix d'un audit d'accessibilité : ce qui fait varier le devis et comment comparer |
 | 2026-11-05 | wcag-22 | normes | WCAG 2.2 : les 9 nouveaux critères, avec le défaut type, la correction et le test |
+| 2026-11-10 | pdf-accessible | technique | PDF accessible : la méthode pas à pas depuis Word, InDesign et Acrobat, et quand préférer le HTML |

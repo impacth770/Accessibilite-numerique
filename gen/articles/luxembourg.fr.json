@@ -197,6 +197,10 @@
    "Le Luxembourg dispose aussi d'un référentiel dédié aux documents PDF, le RAPDF, introduit en 2023 et passé lui aussi en version 1.1 en 2026. C'est un point utile pour les administrations, qui publient de nombreux formulaires, rapports et délibérations en PDF : les documents bureautiques représentent la première exemption déclarée dans les déclarations d'accessibilité, et les PDF inaccessibles sont le premier motif de réclamation recensé par le SIP sur 2022-2024."
   ],
   [
+   "p",
+   "Même hors du Luxembourg, le RAPDF est une bonne grille de travail ; notre article [[article:pdf-accessible|PDF accessible : méthode pas à pas]] montre comment produire des documents qui la respectent depuis Word, InDesign ou Acrobat."
+  ],
+  [
    "h2",
    "raam",
    "Le RAAM 1.1 : le référentiel pour l'accessibilité des applications mobiles"
@@ -710,6 +714,6 @@
   "normes",
   "belgique"
  ],
- "modified": "2026-10-28",
+ "modified": "2026-11-10",
  "cluster": "reglementation"
 }

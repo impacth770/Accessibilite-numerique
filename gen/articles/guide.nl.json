@@ -507,6 +507,10 @@
    "De goede praktijk is om informatie waar mogelijk in HTML te publiceren en pdf voor te behouden aan documenten die afgedrukt of ondertekend moeten worden. Als een pdf nodig is, maak hem dan vanuit een goed gestructureerd brondocument (kopstijlen, tekstalternatieven bij afbeeldingen, eenvoudige tabellen) en controleer daarna de tags. Voor de overheidssector sluit de richtlijn van 2016 kantoorbestanden uit die vóór 23 september 2018 zijn gepubliceerd, tenzij ze nodig zijn voor lopende administratieve procedures. In Luxemburg stelt het controleverslag 2022-2024 van de SIP overigens vast dat ontoegankelijke pdf's de vaakst ingeroepen rechtvaardiging van onevenredige last zijn; een uitzondering ontslaat u niet van de plicht om op verzoek een toegankelijk alternatief te bieden."
   ],
   [
+   "p",
+   "Voor de werkwijze per programma beschrijft ons artikel [[article:pdf-accessible|een toegankelijke pdf maken in Word, InDesign en Acrobat]] de exportinstellingen, de checklist vóór publicatie en de gevallen waarin een html-pagina beter is dan een pdf."
+  ],
+  [
    "h3",
    "Mobiele apps"
   ],
@@ -650,5 +654,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-03"
+ "modified": "2026-11-10"
 }

@@ -376,6 +376,10 @@
   ],
   [
    "p",
+   "The office-file exemption covers neither documents published since that date nor an old form that is still in use. To sort your existing documents and fix what needs fixing, see our article on [[article:pdf-accessible|accessible PDFs and how to check them before publication]]."
+  ],
+  [
+   "p",
    "This list was revised by Decree No. 2026-816 of 24 August 2026 to take account of the timetable of the European directive. Check the wording in force before relying on it, and give the date of each item of exempt content in the statement."
   ],
   [
@@ -864,5 +868,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-11-03"
+ "modified": "2026-11-10"
 }

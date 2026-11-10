@@ -466,6 +466,10 @@
    "Bewährt hat sich, Informationen wann immer möglich in HTML zu veröffentlichen und PDF den Dokumenten vorzubehalten, die gedruckt oder unterschrieben werden müssen. Ist ein PDF nötig, erstellen Sie es aus einem korrekt strukturierten Quelldokument (Formatvorlagen für Überschriften, Alternativtexte für Bilder, einfache Tabellen) und prüfen Sie anschließend die Tags. Für den öffentlichen Sektor nimmt die Richtlinie von 2016 Office-Dateien aus, die vor dem 23. September 2018 veröffentlicht wurden, sofern sie nicht für laufende Verwaltungsverfahren benötigt werden. In Luxemburg stellt der Kontrollbericht 2022-2024 des SIP übrigens fest, dass nicht barrierefreie PDF die am häufigsten angeführte Begründung für eine unverhältnismäßige Belastung sind; eine Ausnahme entbindet jedoch nicht davon, auf Anfrage eine barrierefreie Alternative anzubieten."
   ],
   [
+   "p",
+   "Wie das in den einzelnen Programmen konkret geht, zeigt unser Beitrag [[article:pdf-accessible|barrierefreies PDF mit Word, InDesign und Acrobat erstellen]]: Exporteinstellungen, Prüfliste vor der Veröffentlichung und die Fälle, in denen eine HTML-Seite besser ist als ein PDF."
+  ],
+  [
    "h3",
    "Mobile Apps"
   ],
@@ -609,5 +613,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-03"
+ "modified": "2026-11-10"
 }

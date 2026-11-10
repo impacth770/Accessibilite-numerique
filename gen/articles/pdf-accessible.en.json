@@ -1,0 +1,771 @@
+{
+ "slug": "accessible-pdf",
+ "h1": "Accessible PDF: step by step in Word, InDesign and Acrobat, and when to choose HTML",
+ "crumb": "Accessible PDF",
+ "meta_title": "Accessible PDF: Word, InDesign and Acrobat method and checks",
+ "meta_desc": "How to make a PDF accessible in Word, InDesign or Acrobat: export settings, PDF/UA, a pre-publication checklist, difficult cases and choosing PDF or HTML.",
+ "card_desc": "Export settings, tagging, reading order, a pre-publication checklist and a PDF-or-HTML decision table, for each tool.",
+ "cat": "guide",
+ "where": "Europe",
+ "cover": "PDF",
+ "cover_note": [
+  "RGAA 13.3, EN 301 549 clause 10",
+  "PDF/UA, ISO 14289"
+ ],
+ "date": "2026-11-10",
+ "cluster": "technique",
+ "lead": "An accessible PDF is a tagged document: a screen reader finds headings in it, a logical reading order, described images, tables linked to their headers and a declared language. None of this is visible on screen, which is why a document that looks flawless is so often unusable for a blind person. This article sets out the practical method for producing an accessible PDF from Word, LibreOffice, InDesign and Acrobat, the checklist to run before publication, the difficult cases (forms, tables, scans) and a decision table showing when an HTML page is a better choice than a PDF.",
+ "body": [
+  [
+   "h2",
+   "what-is-an-accessible-pdf",
+   "What an accessible PDF actually is"
+  ],
+  [
+   "p",
+   "A PDF has two layers. The first is what you see: text and images placed at precise coordinates on a page. The second, invisible, is the structure tree, made up of tags: “this is a level 1 heading”, “this is a paragraph”, “this is a list of four items”, “this is an image, and here is its description”. Assistive technologies such as screen readers and refreshable braille displays do not read the page: they read this tree. To them, an untagged PDF is a string of characters in an arbitrary order, and sometimes nothing more than an image."
+  ],
+  [
+   "p",
+   "Take a common case. A local authority publishes the minutes of its council meeting as a PDF, laid out in two columns with a logo, a budget table and a scanned signature. Without tags, a screen reader may read the first line of the left-hand column followed by the first line of the right-hand column, announce the logo as “image” with no further detail, and work through the table cell by cell without ever saying which year or which budget line an amount belongs to. On screen the document is complete; for some residents it is unreadable."
+  ],
+  [
+   "p",
+   "Making this document accessible does not mean redesigning it. The layout stays exactly the same. What you add or correct is the structure: tagged headings, a defined reading order, a logo that is described or marked as decorative, a table with header cells, a declared document language and a document title. The vast majority of this work is done in the authoring application, before export, rather than in the PDF itself. That is the point that changes everything for the budget, as we will see."
+  ],
+  [
+   "table",
+   {
+    "caption": "What an accessible PDF contains, and who it helps",
+    "head": [
+     "Element",
+     "What is added or checked",
+     "Who needs it"
+    ],
+    "rows": [
+     [
+      "Tagging (structure tree)",
+      "Every piece of content carries a tag: heading, paragraph, list, table, figure, link",
+      "Screen reader and braille display users"
+     ],
+     [
+      "Reading order",
+      "The order of the tags follows the flow of the text, including columns and boxed text",
+      "Screen readers, “reflow” view on mobile devices"
+     ],
+     [
+      "Heading hierarchy",
+      "Levels 1, 2 and 3 with no skipped levels, and bookmarks generated from the headings",
+      "Screen reader users, people skimming a long report"
+     ],
+     [
+      "Text alternatives",
+      "Descriptions of images that convey information, decorative images marked as artifacts",
+      "Blind people, people who switch images off"
+     ],
+     [
+      "Tables",
+      "Row and column header cells, no unnecessary merged cells",
+      "Screen reader users"
+     ],
+     [
+      "Document language and title",
+      "Main language declared, changes of language marked, title displayed instead of the file name",
+      "Speech synthesis, all users"
+     ],
+     [
+      "Contrast and colour",
+      "Text readable against its background, information never conveyed by colour alone",
+      "People with low vision or colour blindness, reading in bright sunlight"
+     ],
+     [
+      "Forms",
+      "Fields with labels, a logical tab order, explicit error messages",
+      "Keyboard and screen reader users"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Digital accessibility does not stop at web pages: our [[article:guide|guide to digital accessibility]] points out that documents, apps and videos are all within scope. PDFs are often the first blind spot, because they are produced by departments that do not see themselves as “digital”: communications, legal, human resources, finance."
+  ],
+  [
+   "h2",
+   "when-accessible-pdf-is-required",
+   "When is an accessible PDF a legal requirement? The rules country by country"
+  ],
+  [
+   "p",
+   "No law prohibits PDF. The rules require published content to be accessible, either directly or through an alternative version. In France, RGAA 4.1.2 sets this out in its theme 13, “Consultation”. Criterion 13.3 requires every downloadable office document to have, where necessary, an accessible version; its test 13.3.1 accepts three solutions: the document itself is accessibility-supported, or an accessibility-supported alternative version is available for download, or an alternative version is available in HTML. Criterion 13.4 adds that this accessible version must provide the same information. The wording appears on the official page of [[https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/|RGAA 4.1.2 criteria and tests (in French)]]."
+  ],
+  [
+   "p",
+   "The RGAA glossary specifies that formats recognised as accessibility-supported (Microsoft Office formats, ODF, PDF, EPUB and DAISY) must be made accessible either directly or by means of an accessible or HTML version, and that a plain text file (.txt) cannot serve as the accessible version. So criterion 13.3 does not say “every PDF must be tagged”: it says that a person with a disability must be able to access the same content. In practice, however, maintaining two versions of the same document almost always costs more than producing a single accessible one."
+  ],
+  [
+   "p",
+   "The legislation provides an exemption for older material. For the public sector, Directive (EU) 2016/2102 excludes office file formats published before 23 September 2018, unless they are needed for active administrative processes. France transposed this in Article 3 of [[https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000038956844|Decree No. 2019-768 of 24 July 2019 (in French)]]: office files published before that date are exempt, unless they are needed to complete an administrative procedure. A 2016 grant application form still in use today is therefore not exempt; an archived 2015 annual report is."
+  ],
+  [
+   "p",
+   "For private-sector organisations covered by the European Accessibility Act, Article 2(4)(b) of [[https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0882|Directive (EU) 2019/882]] excludes from website and app content “office file formats published before 28 June 2025”. There is no proviso here for ongoing processes: the date alone decides. On the other hand, a PDF published since 28 June 2025 on the website of a covered service, such as a bank’s fee schedule or the terms and conditions of a transport service, is within scope. Our article on the [[article:eaa|European Accessibility Act sector by sector]] details which services are concerned."
+  ],
+  [
+   "table",
+   {
+    "caption": "Accessible PDF: what applies in each country (November 2026)",
+    "head": [
+     "Country or framework",
+     "Reference for documents",
+     "Exemption for older documents",
+     "Point to watch"
+    ],
+    "rows": [
+     [
+      "France, public sector and large companies",
+      "RGAA 4.1.2, criteria 13.3 and 13.4",
+      "Files published before 23 September 2018, unless needed for an administrative procedure",
+      "Non-compliant documents must be listed in the accessibility statement"
+     ],
+     [
+      "Belgium, public sector",
+      "EN 301 549, clause 10 (non-web documents)",
+      "Same date, derived from Directive 2016/2102",
+      "Federal, regional and community legislation: the monitoring body depends on the organisation"
+     ],
+     [
+      "Luxembourg, public sector",
+      "RAPDF, a framework dedicated to PDFs published by the SIP",
+      "Same date, derived from Directive 2016/2102",
+      "The only one of the four countries with a PDF-specific framework"
+     ],
+     [
+      "Switzerland, federal administration",
+      "eCH-0059 standard version 3.0, based on WCAG 2.1",
+      "No European exemption date",
+      "Swiss companies offering covered products or services in the EU are subject to the EAA there"
+     ],
+     [
+      "Private sector covered by the EAA (EU)",
+      "Requirements of Directive 2019/882, presumed met through EN 301 549",
+      "Office files published before 28 June 2025",
+      "No proviso for ongoing procedures"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "In Belgium, the [[https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf|EN 301 549 V3.2.1]] standard devotes its clause 10 to non-web documents, including downloadable PDFs: it essentially takes over the WCAG success criteria, adapted to documents. In Luxembourg, the Service information et presse (SIP) published in April 2023 a [[https://accessibilite.public.lu/en/news/2023-04-05-RAPDF.html|PDF accessibility assessment framework, the RAPDF]], which in its first version had 46 criteria spread over ten themes; it is now at version 1.1. Our page on [[country:luxembourg|digital accessibility in Luxembourg]] describes the monitoring arrangements. For the details of the French framework, see [[article:france|who is covered and who monitors compliance in France]]."
+  ],
+  [
+   "note",
+   "Key point",
+   "The RGAA does not require every PDF to be tagged: it requires the content to be accessible, either in the document itself or in an equivalent alternative version. The exemption for older material covers neither documents published since 2018 (public sector) or since 28 June 2025 (EAA), nor documents still needed for a procedure."
+  ],
+  [
+   "h2",
+   "pdf-or-html",
+   "PDF or HTML page: the decision table"
+  ],
+  [
+   "p",
+   "Before working out how to make a PDF accessible, ask whether you need the PDF at all. Many PDFs exist out of habit: a Word document is exported because that is how information has always been circulated. Yet a well-built HTML page is easier to make accessible, adapts to mobile screens, can be updated without sending out a new file and is easier to find in search engines. PDF does keep genuine advantages: it freezes a version, prints identically, can be signed and can be archived."
+  ],
+  [
+   "p",
+   "The rule we recommend is simple. If the content is meant to be read on screen, updated or consulted on a phone, publish it in HTML. If the document is a fixed version of record (a legal act, a council resolution, a contract, an annual report), if it has to be printed or if it goes into an archiving process, a PDF is justified, and it must then be accessible. Forms to be filled in are almost always better served by an online form."
+  ],
+  [
+   "table",
+   {
+    "caption": "Which format for which document?",
+    "head": [
+     "Type of document",
+     "Recommended format",
+     "Why"
+    ],
+    "rows": [
+     [
+      "News item, information page, practical guide",
+      "HTML",
+      "Frequently updated, read on mobile, better search visibility"
+     ],
+     [
+      "Application form to be filled in",
+      "Online form (HTML)",
+      "Data entry, error handling and submission are managed by the website; a fillable PDF is harder to make accessible"
+     ],
+     [
+      "Council resolution, by-law, official minutes",
+      "Accessible PDF",
+      "Fixed version of record, often archived"
+     ],
+     [
+      "Annual report, designed study",
+      "Accessible PDF, with an HTML summary",
+      "The PDF keeps the layout; the HTML summary serves most readers"
+     ],
+     [
+      "Contract, terms and conditions, fee schedule",
+      "HTML plus a downloadable accessible PDF",
+      "Online reading plus a dated version to keep"
+     ],
+     [
+      "School canteen menu, timetable, event programme",
+      "HTML",
+      "Short, frequently changing content, often read on a phone"
+     ],
+     [
+      "Map, plan, poster",
+      "PDF with a detailed text alternative, or an equivalent HTML page",
+      "Graphic information must also exist as text"
+     ],
+     [
+      "Scanned document (letter, paper archive)",
+      "Optical character recognition followed by tagging, or transcription into HTML",
+      "A raw scan is an image that a screen reader cannot read"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "This sorting has a direct effect on your compliance. Every PDF replaced by an HTML page is one less document to check, fix and mention in the [[article:declaration|accessibility statement]]. On an institutional website that publishes several hundred PDFs, this sorting exercise is often the first piece of work, before any remediation."
+  ],
+  [
+   "h2",
+   "pdf-ua-wcag-rapdf",
+   "PDF/UA, WCAG, RAPDF: the rules an accessible PDF must follow"
+  ],
+  [
+   "p",
+   "Three families of rules coexist and overlap to a large extent. First, WCAG, which underpins every European regulation. WCAG is not specific to the web: its success criteria (text alternatives, structure, contrast, reading order, language) apply to a PDF. The W3C publishes 23 [[https://www.w3.org/WAI/WCAG22/Techniques/|techniques specific to PDF]], numbered PDF1 to PDF23, which show how to meet each criterion: for example PDF18 for specifying the document title, PDF16 for setting the default language and PDF19 for marking a passage in another language."
+  ],
+  [
+   "p",
+   "Second, PDF/UA, the international standard ISO 14289 on universal accessibility of PDF files. Its first part, PDF/UA-1, published in 2012 and revised in 2014, is based on version 1.7 of the format. Its second part, [[https://www.iso.org/standard/82278.html|ISO 14289-2:2024, known as PDF/UA-2]], published in March 2024, is based on PDF 2.0. PDF/UA sets technical requirements for how the file is built: all content must be tagged or marked as an artifact, tags must be semantically meaningful, fonts must be embedded and the title must be displayed. A PDF that conforms to PDF/UA does not automatically conform to WCAG, and vice versa: PDF/UA checks how the file is built, while WCAG checks the reading experience (a text alternative may be present but wrong, a tagged heading may sit at the wrong level)."
+  ],
+  [
+   "p",
+   "Third, national frameworks turn these rules into audit criteria. The RGAA has no detailed checklist for PDFs: the auditor checks criterion 13.3 and, in practice, assesses the document against the applicable criteria. Luxembourg’s RAPDF, by contrast, is a dedicated checklist, organised into themes (images, tables, links, structure, forms, colours and so on) with precise tests. Even if you are not subject to Luxembourg law, it is an excellent working tool for any team that wants to know what to check. Our article on [[article:normes|which digital accessibility standard to follow in your situation]] sets out how these frameworks relate to one another."
+  ],
+  [
+   "table",
+   {
+    "caption": "The three families of rules applied to PDFs",
+    "head": [
+     "Reference",
+     "Type",
+     "What it checks",
+     "Recommended use"
+    ],
+    "rows": [
+     [
+      "WCAG 2.1 and 2.2, techniques PDF1 to PDF23",
+      "W3C Recommendation",
+      "The reading experience: alternatives, structure, contrast, language, forms",
+      "Basis of all regulatory compliance"
+     ],
+     [
+      "PDF/UA-1 (ISO 14289-1:2014) and PDF/UA-2 (ISO 14289-2:2024)",
+      "ISO standards",
+      "The technical construction of the file: complete tagging, artifacts, fonts, metadata",
+      "Validate the file with a PDF/UA checking tool"
+     ],
+     [
+      "RAPDF 1.1 (Luxembourg)",
+      "National assessment framework",
+      "Criteria and tests grouped into ten themes",
+      "Acceptance checklist for teams, even outside Luxembourg"
+     ],
+     [
+      "RGAA 4.1.2, criteria 13.3 and 13.4",
+      "National assessment framework",
+      "Availability of an equivalent accessible version",
+      "Compliance audit in France"
+     ],
+     [
+      "EN 301 549, clause 10",
+      "European standard",
+      "WCAG criteria adapted to non-web documents",
+      "Belgium, public procurement, EAA"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "preparing-the-source-document",
+   "Preparing the source document: where most of the work is done"
+  ],
+  [
+   "p",
+   "The golden rule fits in one sentence: an accessible PDF starts life as an accessible source document. Fixing a badly structured PDF in Acrobat is possible, but slow, fragile and has to be redone for every new version of the document. Conversely, a Word or InDesign file built with styles, lists and simple tables exports to a tagged PDF with almost no rework. That is why training writers and designers pays off far more than buying remediation licences."
+  ],
+  [
+   "p",
+   "Before any export, the source document must follow these rules, whatever the software:"
+  ],
+  [
+   "ul",
+   [
+    "Headings created with heading styles (Heading 1, Heading 2, Heading 3), never with text that has simply been enlarged and set in bold; a single level 1 heading, no skipped levels;",
+    "Lists created with the bulleted or numbered list tools, never with hand-typed dashes followed by line breaks;",
+    "Data tables built with the table tool, with a declared header row (in Word, the Header Row option among the table style options), avoiding merged cells and nested tables wherever possible;",
+    "Never a table used for layout: to place two blocks side by side, use columns or frames;",
+    "Alternative text provided for every image that conveys information, and purely decorative images marked as such;",
+    "Links whose text makes sense out of context (“Download the competition rules” rather than “click here”);",
+    "Sufficient contrast between text and background: 4.5:1 for body text, 3:1 for large text;",
+    "No information conveyed by colour alone (“the lines in red are mandatory”);",
+    "Document language correctly set, and the language of any passages in a foreign language indicated;",
+    "Document title entered in the file properties (and not “Document1” or the name of the template);",
+    "No floating text boxes and no repeated spaces or tabs to align content: they break the reading order."
+   ]
+  ],
+  [
+   "p",
+   "These rules have more to do with using a word processor properly than with technical expertise. A trained writer applies them in a few minutes per document. The gains go beyond accessibility, too: a document structured with styles is quicker to update, generates its table of contents automatically and converts cleanly to other formats, including a web page."
+  ],
+  [
+   "h2",
+   "accessible-pdf-word-libreoffice",
+   "Making an accessible PDF in Word or LibreOffice"
+  ],
+  [
+   "p",
+   "Word and LibreOffice Writer produce good-quality tagged PDFs, provided you follow the rules above and use the right export command. France’s interministerial digital directorate (DINUM) even runs a [[https://design.numerique.gouv.fr/formations/accessibilite/atelier-pdf-accessible/|workshop on creating an accessible PDF with a word processor (in French)]] devoted to these two applications. Here is the procedure in Word for Windows."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Run the Accessibility Checker.",
+     "On the Review tab, the Check Accessibility command flags, among other things, images without alternative text, badly structured tables (merged cells, nested tables) and text with insufficient contrast. Fix everything reported as an error, then review the warnings."
+    ],
+    [
+     "Enter the document title.",
+     "Under File, Info, fill in the Title property with an explicit name, for example “Minutes of the council meeting of 14 October 2026”."
+    ],
+    [
+     "Check the language.",
+     "Select all the text and check the proofing language; for a quotation in French or Dutch, apply the corresponding language to that passage only."
+    ],
+    [
+     "Export with the right command.",
+     "Use File, Save a Copy (or Save As), choose PDF as the file type, then click Options. Never use a virtual PDF printer (printing to PDF): printing produces a PDF with no tags."
+    ],
+    [
+     "Set the export options.",
+     "Tick “Document structure tags for accessibility” and “Create bookmarks using”, choosing “Headings”. Leave “Bitmap text when fonts may not be embedded” unticked, as it turns text into an image."
+    ],
+    [
+     "Check the result.",
+     "Open the resulting PDF and work through the checklist further down: does the title appear in the window’s title bar, do the bookmarks reproduce the outline, is the reading order correct?"
+    ]
+   ]
+  ],
+  [
+   "p",
+   "In LibreOffice Writer, the approach is the same: heading styles, alternative text entered in each image’s properties, and a title under File, Properties. LibreOffice also has its own Check Accessibility command in the Tools menu. On export (File, Export As, Export as PDF), tick “Universal Accessibility (PDF/UA)”: this automatically enables tagged PDF and checks the main points (title, language, alternative text, tables, heading order). Tick “Export outlines” as well, so that headings become bookmarks. If LibreOffice reports problems at export, fix them in the document rather than forcing the file to be created."
+  ],
+  [
+   "p",
+   "Two pitfalls come up in almost every audit. The first is the Word document converted to PDF by a free online service or by third-party software that does not carry the tags across: the resulting PDF looks identical but has no structure. The second is exporting from a mobile or web version of a word processor, whose accessibility options may be more limited than those of the desktop version. If in doubt, open the tags panel in Acrobat: if it reports that no tags are available, the document is not tagged."
+  ],
+  [
+   "h2",
+   "accessible-pdf-indesign",
+   "Making an accessible PDF in InDesign"
+  ],
+  [
+   "p",
+   "InDesign is the tool for heavily designed documents: annual reports, brochures, magazines. It is also where the PDFs that are hardest to fix after the event are born, because a layout built from frames, columns and layers has no natural reading order. The job is to give InDesign the information it cannot guess."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Map each paragraph style to a tag.",
+     "In the options of each paragraph style, the export tagging section lets you map the “Main title” style to the H1 tag, “Subheading” to H2 and “Body text” to P. A template that is set up properly once serves for every later publication."
+    ],
+    [
+     "Define the reading order with the Articles panel.",
+     "Drag the frames into the Articles panel in the order in which they should be read: title, standfirst, body text, box, caption. The Articles panel menu option that uses this order for the tagged PDF applies it to the tags on export."
+    ],
+    [
+     "Deal with the images.",
+     "In the object export options, enter the alternative text for informative images. Mark decorative elements (rules, backgrounds, ornaments) as artifacts so that screen readers ignore them; for text, the Artifact tag is chosen in the export tagging settings of the styles."
+    ],
+    [
+     "Build tables as real tables.",
+     "Use InDesign’s table tool and declare the header rows, rather than blocks of text aligned with tabs."
+    ],
+    [
+     "Fill in the metadata.",
+     "Enter the title and a short description of the document in the file information (File menu), which is carried into the PDF metadata. Depending on the InDesign version, displaying the title on opening and the document language are set on export or, failing that, afterwards in Acrobat."
+    ],
+    [
+     "Export as a tagged PDF.",
+     "In the export options, tick “Create Tagged PDF”, the option that uses the document structure for the tab order, and bookmark creation."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Even when properly set up, a complex InDesign document almost always needs checking and a few corrections in Acrobat: tables with multiple header levels, footnotes, boxes inserted in the middle of running text. Build this time into your publication schedule, particularly for the annual report, which is often delivered the day before it goes online."
+  ],
+  [
+   "h2",
+   "checking-fixing-pdf-acrobat-pro",
+   "Checking and fixing a PDF in Acrobat Pro"
+  ],
+  [
+   "p",
+   "Acrobat Pro is a checking and remediation tool, not a production tool. It is used to verify an exported PDF, to fix what the source application could not produce and, as a last resort, to tag a document whose source file is no longer available. Its accessibility commands are grouped in a tool named, depending on the version, “Accessibility” or “Prepare for accessibility”."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Run the automated check.",
+     "Acrobat’s accessibility check (“Check for accessibility” in recent versions) looks in particular at the presence of tags, the title, the language, alternative text and the structure of tables and lists. It also flags two points it cannot judge on its own and that must be checked manually: the logical reading order and colour contrast."
+    ],
+    [
+     "Correct the document properties.",
+     "In the document properties (File menu, or the main menu depending on the version): the Description tab for the title; the Initial View tab, choosing “Document Title” in the Show list so that the title rather than the file name is displayed; and the Advanced tab, Reading Options section, for the language."
+    ],
+    [
+     "Check and reorder the structure.",
+     "The Tags panel (“Accessibility tags” in recent versions) shows the structure tree: check that headings carry the right tag, that lists contain their items and that tables have header cells. The Reading Order tool (“Fix reading order” in recent versions) lets you move a block that is in the wrong place."
+    ],
+    [
+     "Deal with images one by one.",
+     "During the check, fixing the figures opens the “Set Alternate Text” dialog box, which steps through each figure; mark decorative figures as artifacts."
+    ],
+    [
+     "Fix complex tables.",
+     "The Table Editor, available from the reading order tool, lets you declare header cells and their scope (row or column)."
+    ],
+    [
+     "Test in real conditions.",
+     "Acrobat’s read-aloud feature and, above all, a screen reader (NVDA, free on Windows, or VoiceOver on Mac) let you listen to the document in the order in which it will be rendered."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Keep in mind the limit of any automated tool: it checks that an alternative exists, not that it is correct. A chart described as “chart” or a logo described as “logo.png” passes the automated check and fails the audit. Validation with a PDF/UA tool and Acrobat’s check are necessary but never sufficient: a human review remains essential."
+  ],
+  [
+   "note",
+   "Key point",
+   "Fix everything you can in the source document, then keep Acrobat for checks and final corrections. A fix made only in the PDF is lost the next time the document is updated."
+  ],
+  [
+   "h2",
+   "accessible-pdf-checklist",
+   "The accessible PDF checklist to run before publication"
+  ],
+  [
+   "p",
+   "This checklist covers the checks an auditor runs on a PDF. It is used document by document and takes ten to twenty minutes for a medium-sized document once you are used to it. The points with a reference correspond to W3C PDF techniques or WCAG criteria."
+  ],
+  [
+   "ul",
+   [
+    "The document is tagged: the tags panel does not report that no tags are available;",
+    "The text is real text: you can select it and search it (if not, it is an image or a scan);",
+    "The document title appears in the window’s title bar instead of the file name (technique PDF18);",
+    "The main language is declared (PDF16) and passages in a foreign language are marked (PDF19);",
+    "Headings are tagged H1, H2, H3 in a consistent order, and the bookmarks reproduce this outline;",
+    "The reading order follows the flow of the text, including columns, boxes, captions and notes;",
+    "Repeated headers and footers, page numbers and decorative elements are marked as artifacts;",
+    "Every informative image has a relevant alternative and every decorative image is ignored;",
+    "Charts have a description that conveys the essential information, or the data are repeated in a table;",
+    "Lists are tagged as lists, with their items;",
+    "Data tables have declared header cells and no table is used for layout;",
+    "Links are tagged and active, and their text is understandable;",
+    "Text contrast reaches 4.5:1 (3:1 for large text) and no information relies on colour alone;",
+    "Form fields have a label, a logical tab order and input instructions;",
+    "The document remains readable at 200% zoom and in “reflow” view;",
+    "No security restriction prevents assistive technologies from accessing the content;",
+    "The link to the PDF on the website states its format and size (for example “Annual report 2025, PDF, 2.4 MB”);",
+    "A listening test with a screen reader on the first two pages and on one table reveals no inconsistencies."
+   ]
+  ],
+  [
+   "p",
+   "For teams that want a more formal checklist, Luxembourg’s RAPDF provides detailed criteria and tests, and our [[article:wcag-22|overview of the new WCAG 2.2 success criteria]] points out those that also apply to documents, such as target size in an interactive PDF form. For a systematic check on every delivery, [[svc:recette|accessibility acceptance testing]] can build these checks into your document approval workflow."
+  ],
+  [
+   "h2",
+   "forms-tables-charts-scans",
+   "Forms, complex tables, charts and scans: the difficult cases"
+  ],
+  [
+   "h3",
+   "Fillable PDF forms"
+  ],
+  [
+   "p",
+   "An interactive PDF form must have, for each field, an accessible label (the field’s tooltip in Acrobat, which the screen reader announces), a tab order that follows the visual order, check boxes and radio buttons grouped logically, and format instructions that can be read before the field, not only in a footnote. Automatic calculations and error messages are rarely rendered well. That is why, for any form that feeds into an application or procedure, an online form remains the best solution: it handles data entry, errors and submission, and it is tested along with the rest of the website."
+  ],
+  [
+   "h3",
+   "Tables with several levels of headers"
+  ],
+  [
+   "p",
+   "A budget table with years in the columns, chapters and sub-chapters in the rows and subtotals throughout is the most time-consuming case to fix. Each header cell has to be declared, along with its scope and, for complex cases, the data cells have to be explicitly associated with their headers. Before you start, ask whether the table can be simplified: two simple tables are better than one three-way table, for every reader."
+  ],
+  [
+   "h3",
+   "Charts and infographics"
+  ],
+  [
+   "p",
+   "An alternative such as “Chart showing changes in staff numbers” is not enough: it announces the chart without giving the information. Describe the trend and the key values in the alternative (“Staff numbers rise from 120 in 2022 to 145 in 2025, with a dip in 2023”), or repeat the data in a table placed immediately after it. For a rich infographic, the simplest option is often to reproduce its content as structured text in the document or on a linked HTML page."
+  ],
+  [
+   "h3",
+   "Scanned documents"
+  ],
+  [
+   "p",
+   "A scan is a photograph of the page: without processing, a screen reader finds nothing in it. Optical character recognition (OCR) turns the image into text, but that is not enough: the recognised text must be proofread (recognition errors are common in figures and tables) and then tagged like any other PDF. For handwritten signatures and stamps, a text note (“Signed: the Mayor”) is sufficient. If the document is short and important, transcribing it into HTML is often quicker and more reliable than fixing a scan."
+  ],
+  [
+   "h3",
+   "Automatically generated documents"
+  ],
+  [
+   "p",
+   "Invoices, statements, certificates and notices generated by business software are produced by the thousand. Fixing them one by one is impossible: it is the template and the generation engine that must produce a tagged PDF. This requirement must be written into the software specification, with a sample document to be validated during acceptance testing. For organisations subject to the EAA, such as banks and transport or telecoms operators, these documents are at the heart of the customer journey and deserve priority attention. Adapting the templates then falls to our [[svc:developpement|accessible development services]] or to the software vendor."
+  ],
+  [
+   "h2",
+   "common-pdf-audit-failures",
+   "The errors that make a PDF fail an audit"
+  ],
+  [
+   "p",
+   "The same defects come up from one audit to the next, whatever the sector. The table below lists them with their consequence for the user and the fix to apply, at the right point in the production chain."
+  ],
+  [
+   "table",
+   {
+    "caption": "Common PDF errors, their consequence and the fix",
+    "head": [
+     "Error",
+     "Consequence for the user",
+     "Fix"
+    ],
+    "rows": [
+     [
+      "Untagged PDF (exported by printing or by a converter)",
+      "The screen reader reads text with no structure, sometimes out of order",
+      "Re-export from the source application with the tagging option"
+     ],
+     [
+      "Scanned PDF without character recognition",
+      "No readable text: the document is silent",
+      "OCR, proofreading, then tagging; or transcription into HTML"
+     ],
+     [
+      "Fake headings (enlarged bold text)",
+      "No way to jump from heading to heading; no bookmarks",
+      "Apply heading styles in the source document"
+     ],
+     [
+      "Document title missing or identical to the file name",
+      "The user hears “final-report-v3-def.pdf”",
+      "Fill in the Title property and display the title on opening"
+     ],
+     [
+      "Language not declared",
+      "The speech synthesiser reads French with English pronunciation",
+      "Declare the language in the source document or in the properties"
+     ],
+     [
+      "Images with no alternative, or an alternative such as “image1.jpg”",
+      "The information conveyed by the image is lost",
+      "Write a useful alternative; mark decorations as artifacts"
+     ],
+     [
+      "Table without headers, or a layout table",
+      "Figures are read without knowing what they refer to",
+      "Declare the headers; replace layout tables"
+     ],
+     [
+      "Inconsistent reading order (columns, boxes)",
+      "Sentences are jumbled between columns",
+      "Articles panel in InDesign, reading order tool in Acrobat"
+     ],
+     [
+      "Light grey or white text on a photographic background",
+      "Unreadable for people with low vision",
+      "Review the document design guidelines, check contrast"
+     ],
+     [
+      "Protected document blocking access to content",
+      "Assistive technologies cannot read the text",
+      "Allow content access for accessibility in the security settings"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "In an [[svc:audit-rgaa|RGAA audit]], the downloadable documents in the sample are assessed against criterion 13.3, and the defects found weigh on the compliance rate. Our article on [[article:audit-rgaa|how an RGAA audit is conducted]] explains how the sample is put together; naming your key documents (forms, procedural guides) at the outset avoids surprises."
+  ],
+  [
+   "h2",
+   "organising-pdf-production",
+   "Organising production: roles, existing documents, budget and timescales"
+  ],
+  [
+   "p",
+   "PDFs are rarely produced by a single team. The communications department produces the annual report with an agency, the corporate secretariat publishes council or board resolutions, human resources circulates job advertisements, and operational departments put guides and forms online. Without organisation, everyone publishes according to their own habits, and the stock of non-compliant documents grows every week."
+  ],
+  [
+   "p",
+   "Effective organisation rests on four decisions. First, accessible templates for recurring documents (resolution, briefing note, report, standard letter), with styles already mapped to the right tags. Second, short, targeted training for each role: two to three hours is often enough for a writer to master styles, alternative text and export, whereas a designer needs a more advanced module on InDesign and Acrobat. That is why our [[svc:formations|accessible document training]] is built around specific roles. Third, a checkpoint before publication, carried out by the person who puts the document online, using the checklist above. Finally, an accessibility clause in orders placed with agencies and printers, requiring a tagged PDF and giving you the right to reject a non-compliant file."
+  ],
+  [
+   "table",
+   {
+    "caption": "Who does what in the accessible PDF production chain",
+    "head": [
+     "Role",
+     "Responsibility",
+     "Skill to acquire"
+    ],
+    "rows": [
+     [
+      "Writer or author",
+      "Structure the source document: styles, lists, tables, alternatives",
+      "Proper use of the word processor, writing alternatives"
+     ],
+     [
+      "Designer or agency",
+      "Tagged templates, reading order, PDF/UA export",
+      "InDesign set-up, corrections in Acrobat"
+     ],
+     [
+      "Person who publishes",
+      "Check before going online, link text, choice of PDF or HTML",
+      "Checklist, quick screen reader test"
+     ],
+     [
+      "Accessibility lead",
+      "Internal rules, templates, monitoring the document stock, accessibility statement",
+      "Frameworks, audit methodology, programme management"
+     ],
+     [
+      "Buyer",
+      "Clauses in design, printing and software contracts",
+      "Requirements to write, evidence to request"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "For existing documents, do not start by fixing them. Take an inventory first (number of PDFs, publication date, originating page, number of downloads if you measure it), then sort them into four categories: delete (obsolete), convert to HTML, fix, exempt (published before the reference date and unconnected with any ongoing procedure). Exempt documents and those that remain non-compliant must be mentioned in the accessibility statement, and the remediation programme can be included in the annual action plan."
+  ],
+  [
+   "p",
+   "On budget, the cost of a document depends above all on its starting condition. A document that is well structured at source costs almost nothing extra. Fixing an existing PDF varies with the number of pages, images and above all complex tables: a two-page form and an eighty-page report with thirty tables do not call for the same effort. To estimate a remediation programme, we price it on a representative sample; you can [[contact|describe your document stock to us]] to obtain an estimate."
+  ],
+  [
+   "h2",
+   "30-day-pdf-action-plan",
+   "A 30-day action plan for your PDFs"
+  ],
+  [
+   "p",
+   "Here is a realistic sequence for an organisation starting from scratch. It works as well for a local authority as for a company subject to the EAA; for the public sector, our page on [[sector:public|digital accessibility in the public sector]] sets out the context."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Week 1: inventory.",
+     "Export the list of PDFs published on your websites, with their dates and originating pages. Identify those linked to a procedure (forms, guides, regulations)."
+    ],
+    [
+     "Week 1: sorting.",
+     "Classify each document: delete, convert to HTML, fix, exempt. Procedural forms and recently published documents go to the top of the list."
+    ],
+    [
+     "Week 2: templates.",
+     "Create or correct the Word and InDesign templates for recurring documents, with styles mapped to tags and a title to fill in."
+    ],
+    [
+     "Week 2: training.",
+     "Train writers and the people who publish: styles, alternatives, export, checklist. Train designers separately or brief your agency."
+    ],
+    [
+     "Week 3: fixing priority documents.",
+     "Fix procedural documents in their source files, re-export and check them; convert those that lend themselves to it into HTML pages."
+    ],
+    [
+     "Week 3: publication rule.",
+     "Introduce the pre-publication check: no PDF goes online without tags, a title, a language and a pass through the checklist."
+    ],
+    [
+     "Week 4: statement and plan.",
+     "Update the accessibility statement (non-compliant documents, exemptions) and include the remediation of the remaining stock in the annual action plan."
+    ],
+    [
+     "Week 4: contracts.",
+     "Add the requirement for a tagged and checked PDF to current and future orders with agencies, printers and software vendors."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "By the end of the month, the flow of new documents is under control and the existing stock is being managed. That is what matters most: a website whose new publications are accessible improves automatically, whereas a website that fixes its old documents without changing its practices recreates the same defects every week. If you would like a sample of your documents checked before launching this plan, a [[svc:audit-conformite|compliance audit]] can focus specifically on your PDFs."
+  ]
+ ],
+ "faq": [
+  [
+   "How can I tell whether a PDF is accessible?",
+   "Open it in Acrobat Reader and try to select the text: if you cannot, it is an image. Next, check whether the document title appears in the window’s title bar. In Acrobat Pro, the tags panel shows whether the document is tagged, and the accessibility check gives an initial diagnosis. A listening test with a free screen reader such as NVDA confirms the reading order and the quality of the text alternatives."
+  ],
+  [
+   "Is a PDF exported from Word automatically accessible?",
+   "No. Word produces a tagged PDF if you use Save As or Save a Copy with the document structure tags option, but the quality depends on the source document: fake headings, layout tables or images without alternative text end up unchanged in the PDF. Printing to a PDF printer, on the other hand, produces a PDF with no tags at all."
+  ],
+  [
+   "What is the difference between PDF/UA and WCAG?",
+   "PDF/UA (ISO 14289) checks the technical construction of the file: everything is tagged or marked as an artifact, metadata are present and fonts are embedded. WCAG checks the reading experience: relevant alternatives, logical structure, contrast, usable forms. A document can be valid PDF/UA and still have wrong alternatives. European regulations are based on WCAG; PDF/UA is an excellent technical means of getting there."
+  ],
+  [
+   "Do the old PDFs on my website have to be made accessible?",
+   "For the public sector, office files published before 23 September 2018 are exempt, unless they are needed for an administrative procedure. For companies subject to the European Accessibility Act, the exemption covers files published before 28 June 2025. Exempt documents must be mentioned in the accessibility statement, and an old form that is still in use must be fixed."
+  ],
+  [
+   "Can a PDF be replaced by a Word or text version?",
+   "An accessible Word version can serve as the alternative version, because the RGAA recognises the format as accessibility-supported. A plain text file (.txt), however, cannot serve as the accessible version according to the RGAA glossary. In every case, the alternative version must contain the same information as the original and be offered in the same place."
+  ],
+  [
+   "How long does it take to make a PDF accessible?",
+   "For a document that is well built at source, the extra effort is limited to a few minutes of checking. Fixing an existing PDF takes anything from a few minutes for a simple page to several days for a long report with many tables and charts. The number of complex tables and the absence of a source file are the two factors that lengthen the work the most."
+  ],
+  [
+   "Do I need paid software to create an accessible PDF?",
+   "To produce one, no: Word and LibreOffice Writer export tagged PDFs, and LibreOffice offers a PDF/UA option. To check and fine-tune the tag tree, PDF editing software such as Acrobat Pro remains necessary in practice. Free PDF/UA validation tools exist, and a free screen reader is enough for listening tests."
+  ]
+ ],
+ "cta_svc": "formations",
+ "cta_title": "Do your teams produce accessible PDFs?",
+ "cta_text": "We train writers, designers and the people who publish to produce and check accessible documents, working from your own templates and documents.",
+ "related": [
+  "normes",
+  "declaration",
+  "luxembourg"
+ ]
+}

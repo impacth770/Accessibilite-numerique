@@ -466,6 +466,10 @@
    "Good practice is to publish information in HTML whenever possible and to keep PDF for documents that need to be printed or signed. When a PDF is necessary, produce it from a properly structured source document (heading styles, image alternatives, simple tables) and then check the tagging. For the public sector, the 2016 directive excludes office files published before 23 September 2018, unless they are needed for active administrative processes. In Luxembourg, the SIP’s 2022–2024 monitoring report notes that inaccessible PDFs are the most frequently cited justification for disproportionate burden; an exemption does not remove the obligation to provide an accessible alternative on request."
   ],
   [
+   "p",
+   "For the step-by-step method in each program, our article on [[article:pdf-accessible|making an accessible PDF in Word, InDesign and Acrobat]] covers the export settings, the pre-publication checklist and the cases where an HTML page is a better choice than a PDF."
+  ],
+  [
    "h3",
    "Mobile apps"
   ],
@@ -609,5 +613,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-03"
+ "modified": "2026-11-10"
 }

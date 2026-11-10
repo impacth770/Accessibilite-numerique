@@ -201,6 +201,10 @@
    "Luxemburg beschikt ook over een referentiekader voor pdf-documenten, RAPDF, dat in 2023 werd ingevoerd en in 2026 eveneens naar versie 1.1 is overgestapt. Dat is nuttig voor administraties, die veel formulieren, verslagen en beslissingen als pdf publiceren: kantoordocumenten zijn de meest aangevoerde uitzondering in de toegankelijkheidsverklaringen, en ontoegankelijke pdf's zijn de belangrijkste reden voor klachten die de SIP over de periode 2022-2024 heeft geregistreerd."
   ],
   [
+   "p",
+   "Ook buiten Luxemburg is het RAPDF een handig werkinstrument; ons artikel [[article:pdf-accessible|toegankelijke pdf: stap voor stap]] laat zien hoe u vanuit Word, InDesign of Acrobat documenten maakt die eraan voldoen."
+  ],
+  [
    "h2",
    "raam",
    "RAAM 1.1: het referentiekader voor de toegankelijkheid van mobiele apps"
@@ -718,6 +722,6 @@
   "normes",
   "belgique"
  ],
- "modified": "2026-10-28",
+ "modified": "2026-11-10",
  "cluster": "reglementation"
 }

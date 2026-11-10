@@ -727,6 +727,10 @@
    "Een ingescande pdf van een gemeenteraadsbesluit is een gewone afbeelding: hij is onleesbaar voor een schermlezer, hoe goed de scan ook is. Een toegankelijke pdf is getagd (koppen, lijsten, tabellen), heeft een logische leesvolgorde, een documenttitel, een opgegeven taal en alternatieven voor de afbeeldingen. Voor essentiële informatie blijft het vaak de duurzaamste oplossing om de inhoud in HTML te publiceren en de pdf als aanvulling aan te bieden."
   ],
   [
+   "p",
+   "De regels die specifiek voor het formaat gelden (PDF/UA, de pdf-technieken van het W3C, RAPDF) en hoe u ze toepast in Word, InDesign en Acrobat, leest u in onze [[article:pdf-accessible|methode voor een toegankelijke pdf]], met een controlechecklist."
+  ],
+  [
    "h3",
    "Mobiele apps"
   ],
@@ -837,5 +841,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-05"
+ "modified": "2026-11-10"
 }

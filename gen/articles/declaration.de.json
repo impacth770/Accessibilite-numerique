@@ -380,6 +380,10 @@
   ],
   [
    "p",
+   "Die Ausnahme für Büroformate gilt weder für später veröffentlichte Dokumente noch für ein altes Formular, das noch verwendet wird. Wie Sie Ihren Bestand sortieren und das Nötige korrigieren, erklärt unser Beitrag über [[article:pdf-accessible|barrierefreie PDFs und ihre Prüfung vor der Veröffentlichung]]."
+  ],
+  [
+   "p",
    "Diese Liste wurde durch das Dekret Nr. 2026-816 vom 24. August 2026 überarbeitet, um den Zeitplan der europäischen Richtlinie zu berücksichtigen. Prüfen Sie den geltenden Wortlaut, bevor Sie sich darauf berufen, und datieren Sie jeden ausgenommenen Inhalt in der Erklärung."
   ],
   [
@@ -959,5 +963,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-11-03"
+ "modified": "2026-11-10"
 }
