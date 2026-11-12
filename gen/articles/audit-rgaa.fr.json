@@ -14,7 +14,7 @@
  ],
  "date": "2026-10-29",
  "cluster": "methode",
- "modified": "2026-11-05",
+ "modified": "2026-11-12",
  "lead": "Un audit RGAA mesure, critère par critère, la conformité d'un site, d'une application ou d'un progiciel au Référentiel général d'amélioration de l'accessibilité. C'est la base obligatoire de toute déclaration d'accessibilité en France, et c'est cette déclaration que l'Arcom vérifie lors de ses contrôles. Les pages qui en parlent décrivent la méthode ; celle-ci montre comment l'audit se déroule réellement, semaine par semaine, ce que votre organisation doit préparer, comment l'échantillon se construit, ce que contiennent les livrables et comment lire le rapport sans être spécialiste.",
  "body": [
   [
@@ -138,6 +138,10 @@
     "un interlocuteur technique disponible pendant les tests, et la date de gel des évolutions : un site qui change pendant l'audit produit des résultats incohérents ;",
     "le calendrier des contraintes : mise en ligne prévue, échéance de contrôle, comité de pilotage où les résultats doivent être présentés."
    ]
+  ],
+  [
+   "p",
+   "Si l'organisme n'a pas encore de schéma pluriannuel, l'audit est le bon moment pour en poser les bases : notre article sur [[article:schema-pluriannuel|la rédaction du schéma pluriannuel et du plan annuel]] explique comment transformer les résultats d'audit en calendrier de corrections."
   ],
   [
    "p",

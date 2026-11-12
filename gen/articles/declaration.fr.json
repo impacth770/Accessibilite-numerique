@@ -458,6 +458,10 @@
    "La cohérence entre les documents est ce qui rend l'ensemble crédible. Chaque non-conformité listée dans la déclaration devrait trouver sa correction dans un plan d'actions, avec une échéance. Chaque dérogation pour charge disproportionnée devrait être réexaminée au moment de la révision du schéma, car la situation qui la justifiait (budget, outil, prestataire) évolue. Pour un organisme public, ce travail s'articule avec la commande publique : notre page consacrée au [[sector:public|secteur public]] détaille la manière d'intégrer l'accessibilité dans les marchés."
   ],
   [
+   "p",
+   "Pour rédiger ces deux documents rubrique par rubrique, avec un exemple de plan annuel, des indicateurs et un calendrier de publication, voyez notre [[article:schema-pluriannuel|modèle commenté de schéma pluriannuel d'accessibilité]]."
+  ],
+  [
    "h2",
    "mise-a-jour",
    "Quand mettre à jour la déclaration d'accessibilité, et avec quels outils"
@@ -868,5 +872,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-11-10"
+ "modified": "2026-11-12"
 }

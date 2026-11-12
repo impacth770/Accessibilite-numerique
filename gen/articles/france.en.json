@@ -214,6 +214,10 @@
    ]
   ],
   [
+   "p",
+   "The expected content of the plan, an annotated template and a sample annual action plan are set out in our guide to the [[article:schema-pluriannuel|French multi-year digital accessibility plan (SPAN)]]."
+  ],
+  [
    "note",
    "Key point",
    "A compliance rate of 42.11% cannot be presented as “full compliance”: that is one of the ten breaches Arcom identified in its decision of 24 June 2026. The notice displayed must follow mechanically from the result of a valid audit."
@@ -653,6 +657,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-10-31",
+ "modified": "2026-11-12",
  "cluster": "reglementation"
 }

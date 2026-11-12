@@ -1,242 +1,765 @@
 {
-  "slug": "prijs-toegankelijkheidsaudit",
-  "h1": "Prijs van een toegankelijkheidsaudit: wat de offerte bepaalt en hoe u offertes vergelijkt",
-  "crumb": "Prijs van een toegankelijkheidsaudit",
-  "meta_title": "Prijs toegankelijkheidsaudit: factoren, offerte, valkuilen",
-  "meta_desc": "Prijs van een toegankelijkheidsaudit: de tien factoren van de offerte, de afbakeningsfiche om te versturen, een vergelijkingsrooster en de waarschuwingssignalen.",
-  "card_desc": "Wat de prijs van een RGAA- of EN 301 549-audit doet variëren, hoe u vergelijkbare offertes krijgt en welke u moet afwijzen.",
-  "cat": "guide",
-  "where": "Europa",
-  "cover": "PRIJS",
-  "cover_note": [
-    "Audit RGAA, RAWeb, EN 301 549",
-    "Offerte, afbakening, vergelijking"
+ "slug": "prijs-toegankelijkheidsaudit",
+ "h1": "Prijs van een toegankelijkheidsaudit: wat de offerte bepaalt en hoe u offertes vergelijkt",
+ "crumb": "Prijs van een toegankelijkheidsaudit",
+ "meta_title": "Prijs toegankelijkheidsaudit: factoren, offerte, valkuilen",
+ "meta_desc": "Prijs van een toegankelijkheidsaudit: de tien factoren van de offerte, de afbakeningsfiche om te versturen, een vergelijkingsrooster en de waarschuwingssignalen.",
+ "card_desc": "Wat de prijs van een RGAA- of EN 301 549-audit doet variëren, hoe u vergelijkbare offertes krijgt en welke u moet afwijzen.",
+ "cat": "guide",
+ "where": "Europa",
+ "cover": "PRIJS",
+ "cover_note": [
+  "Audit RGAA, RAWeb, EN 301 549",
+  "Offerte, afbakening, vergelijking"
+ ],
+ "date": "2026-11-03",
+ "cluster": "methode",
+ "lead": "De prijs van een toegankelijkheidsaudit verschilt sterk van offerte tot offerte, en dat betekent lang niet altijd dat de ene aanbieder duurder is: heel vaak slaan de offertes gewoon niet op hetzelfde. Dit artikel legt uit hoe een offerte voor een audit van digitale toegankelijkheid wordt opgebouwd, welke factoren de kostprijs van een audit doen stijgen of dalen, welke gegevens u moet bezorgen om vergelijkbare offertes te krijgen en hoe u ze regel per regel vergelijkt. Het behandelt de RGAA-audit in Frankrijk, maar ook audits volgens de norm EN 301 549, de Luxemburgse RAWeb of de Zwitserse norm eCH-0059, en de aankoop van een audit in het kader van een overheidsopdracht.",
+ "body": [
+  [
+   "h2",
+   "prijs-toegankelijkheidsaudit-zonder-afbakening",
+   "Prijs van een toegankelijkheidsaudit: waarom een tarief zonder afbakening niets betekent"
   ],
-  "date": "2026-11-03",
-  "cluster": "methode",
-  "lead": "De prijs van een toegankelijkheidsaudit verschilt sterk van offerte tot offerte, en dat betekent lang niet altijd dat de ene aanbieder duurder is: heel vaak slaan de offertes gewoon niet op hetzelfde. Dit artikel legt uit hoe een offerte voor een audit van digitale toegankelijkheid wordt opgebouwd, welke factoren de kostprijs van een audit doen stijgen of dalen, welke gegevens u moet bezorgen om vergelijkbare offertes te krijgen en hoe u ze regel per regel vergelijkt. Het behandelt de RGAA-audit in Frankrijk, maar ook audits volgens de norm EN 301 549, de Luxemburgse RAWeb of de Zwitserse norm eCH-0059, en de aankoop van een audit in het kader van een overheidsopdracht.",
-  "body": [
-    ["h2", "prijs-toegankelijkheidsaudit-zonder-afbakening", "Prijs van een toegankelijkheidsaudit: waarom een tarief zonder afbakening niets betekent"],
-    ["p", "Prijsroosters “per type website”, zoals u ze online vindt, stellen gerust, maar ze vergelijken dingen die niets met elkaar gemeen hebben. Een etalagewebsite van vijftien pagina’s, gebouwd op drie sjablonen, en een website van tien pagina’s met een simulator, een beveiligde zone en een betaaltraject in vijf stappen vragen helemaal niet hetzelfde werk. De tweede kan een veelvoud van de auditduur van de eerste vergen, hoewel ze minder pagina’s telt."],
-    ["p", "Wat bij een toegankelijkheidsaudit verkocht wordt, is expertisetijd: de tijd die een auditor besteedt aan het controleren van elk criterium op elke pagina van de steekproef, met verschillende hulptechnologieën, en vervolgens aan het documenteren van elke fout en het formuleren van een herstel. Alles wat die tijd verlengt, verhoogt de prijs; alles wat ze inkort zonder een controle te schrappen, verlaagt ze. Het is de enige echt betrouwbare sleutel om een offerte te lezen."],
-    ["p", "Het is ook de reden waarom wij geen tariefgrid publiceren en dit artikel er geen aanbiedt: een bedrag dat wordt genoemd voordat de dienst gekend is, verbindt noch de aanbieder noch de koper. Wat u wél vooraf kunt weten, is wat de prijs van uw toegankelijkheidsaudit zal doen variëren, zodat u in staat bent vergelijkbare offertes te ontvangen. Daarover gaan de volgende hoofdstukken. Voor de plaats van de audit in het geheel van de aanpak (verplichtingen, normen, stappen) geeft het artikel [[article:guide|digitale toegankelijkheid: wat de wet vereist en waar u begint]] het overzicht."],
-    ["note", "Te onthouden", "Twee offertes voor een toegankelijkheidsaudit zijn alleen vergelijkbaar als ze betrekking hebben op dezelfde steekproef, hetzelfde referentiekader, dezelfde platformen en dezelfde opleveringen. Vergelijk eerst de afbakening, daarna pas de prijzen."],
-
-    ["h2", "berekening-offerte-toegankelijkheidsaudit", "Hoe wordt een offerte voor een toegankelijkheidsaudit berekend?"],
-    ["p", "Welke aanbieder u ook kiest, een offerte voor een audit valt uiteen in enkele grote fasen. Door ze te kennen, begrijpt u waar het grootste deel van de kost zit en ziet u meteen wanneer een offerte een fase weglaat zonder het te zeggen."],
-    ["ol", [
-      ["De afbakening.", "Overleg met uw teams, inventaris van de sjablonen en trajecten, keuze van het referentiekader, samenstelling en validatie van de steekproef, controle van de toegangen (preproductie, testaccounts, fictieve gegevens). Het is een korte fase, maar zij bepaalt al de rest."],
-      ["De beoordeling pagina per pagina.", "Bij een RGAA-audit wordt elk van de 106 criteria onderzocht op elke pagina van de steekproef, met de tests die het referentiekader aanreikt. Dit is veruit de zwaarste post: hij groeit met het aantal pagina’s, maar vooral met hun dichtheid (formulieren, dynamische componenten, tabellen, media)."],
-      ["De controles met hulptechnologieën.", "Schermlezers op computer en op mobiel, toetsenbordnavigatie, vergroting. Het referentiekader publiceert een referentietestomgeving; elke bijkomende combinatie die u vraagt, voegt tijd toe."],
-      ["Het opstellen van de opleveringen.", "Volledig auditrooster, rapport dat elke non-conformiteit lokaliseert met een herstelaanbeveling, berekening van de graad, geprioriteerd actieplan, ontwerp van toegankelijkheidsverklaring. Een rapport dat zich beperkt tot een lijst van niet-conforme criteria is goedkoper om op te stellen, maar zal uw ontwikkelaars meer kosten, want zij moeten elke fout zelf terugvinden."],
-      ["De toelichting van de resultaten.", "Voorstelling van de resultaten aan de business-, de technische teams en de directie, antwoorden op vragen. Ze kan inbegrepen zijn, apart worden aangerekend of ontbreken."],
-      ["De optionele prestaties.", "Hercontrole na de correcties, begeleiding van de ontwikkelaars tijdens het herstel, tests met gebruikers met een beperking, audit van kantoordocumenten, opleiding."]
-    ]],
-    ["p", "De eindprijs is dus het product van een werkvolume en het dagtarief van de aanbieder. Het dagtarief hangt af van de ervaring van de auditors, hun specialisatie en de structuur die hen tewerkstelt; het varieert, maar veel minder dan het werkvolume zelf. Wanneer twee offertes erg ver uit elkaar liggen, zit de verklaring bijna altijd in het aantal voorziene dagen, dus in de afbakening, en zelden in het dagtarief."],
-    ["p", "Het concrete verloop van deze fasen, van de afbakening tot de toelichting, wordt uitgewerkt in ons artikel over [[article:audit-rgaa|het verloop van een RGAA-audit week per week]]. Hier is de insteek anders: nagaan wat er in uw dienst het aantal dagen zal doen variëren."],
-
-    ["h2", "factoren-prijs-toegankelijkheidsaudit", "De tien factoren die de prijs van een toegankelijkheidsaudit doen variëren"],
-    ["p", "De tabel hieronder brengt de factoren samen die echt op een offerte wegen. Bij elke factor staat waarom de auditduur toeneemt en wat u kunt doen om ze te beheersen zonder het resultaat te verzwakken."],
-    ["table", {
-      "caption": "Prijsfactoren van een toegankelijkheidsaudit en manieren om ze te beheersen",
-      "head": ["Factor", "Waarom hij de auditduur doet variëren", "Hoe u hem beheerst zonder de audit te vertekenen"],
-      "rows": [
-        ["Aantal verschillende sjablonen", "Elk sjabloon brengt zijn eigen componenten mee om te controleren; twee pagina’s op hetzelfde sjabloon zijn veel sneller te testen dan twee verschillende pagina’s", "De inventaris van sjablonen en componenten bezorgen in plaats van louter een aantal pagina’s"],
-        ["Aantal pagina’s of schermen in de steekproef", "Elke pagina wordt criterium per criterium beoordeeld; het volume van het rapport groeit mee", "De steekproef samenstellen volgens de officiële regels, zonder overbodige pagina’s"],
-        ["Trajecten in meerdere stappen", "Alle stappen van een proces moeten worden geauditeerd; formulieren, invoerfouten en overzichten zijn de inhoud die het langst duurt om te testen", "Testaccounts en testgegevens voorbereiden waarmee elk traject tot het einde kan worden doorlopen"],
-        ["Dynamische componenten", "Menu’s, tabbladen, modale vensters, carrousels, interactieve kaarten en automatisch aanvullen vragen controles met het toetsenbord en de schermlezer in elke toestand", "Complexe componenten en gebruikte bibliotheken vooraf melden"],
-        ["Aantal platformen", "Een dienst die beschikbaar is op het web, op iOS en op Android, vertegenwoordigt drie afzonderlijke beoordelingen, met andere tools en andere hulptechnologieën", "Uitdrukkelijk beslissen welke platformen binnen het bestek van deze audit vallen"],
-        ["Downloadbare documenten", "Elke pdf of elk kantoordocument wordt met eigen tools gecontroleerd: structuur, leesvolgorde, alternatieven", "Minstens één document per type dienst opnemen en grote volumes in een afzonderlijke prestatie behandelen"],
-        ["Multimedia-inhoud", "Video’s en audio vragen controle van ondertitels, transcriptie, audiodescriptie en speler", "De media oplijsten en aangeven of ze intern of door een derde worden gemaakt"],
-        ["Referentiekader en verwacht formaat", "Een audit volgens meerdere referentiekaders tegelijk, of met een concordantietabel, vergt meer documentatie", "Per land één referentiekader als spil kiezen en alleen een concordantie vragen als ze nuttig is"],
-        ["Talen van de audit en het rapport", "Een meertalige dienst kan vereisen dat de taalversies worden gecontroleerd en het rapport in meerdere talen wordt opgesteld", "De te auditeren versies en de taal van het rapport vanaf de aanvraag preciseren"],
-        ["Planning en toegangsbeperkingen", "Een audit die in een zeer korte termijn moet worden opgeleverd, of een onstabiele testomgeving, vraagt meer middelen", "De aanvraag tijdig doen en tijdens de volledige duur van de audit een stabiele omgeving garanderen"]
-      ]
-    }],
-    ["p", "Uit deze tabel vallen twee dingen op. Ten eerste is het aantal pagina’s een misleidende indicator als het niet vergezeld gaat van het aantal sjablonen en de lijst van trajecten. Ten tweede zijn de meeste factoren te beheersen door voorbereiding: een koper die een nauwkeurige inventaris bezorgt, krijgt rechtvaardiger offertes die dichter bij elkaar liggen, en vaak goedkopere, omdat de aanbieder niet hoeft te provisioneren voor het onbekende. Bij een kmo die voor het eerst een offerte opvraagt, levert al dat voorbereidingswerk doorgaans meer op dan onderhandelen over het dagtarief."],
-
-    ["h2", "steekproef-prijs-toegankelijkheidsaudit", "De steekproef: de eerste post van de offerte, en de eerste plek waar u ten onrechte bespaart"],
-    ["p", "Een audit slaat nooit op alle pagina’s van een website: hij slaat op een representatieve steekproef, en het resultaat geldt voor de hele dienst. De samenstelling van die steekproef bepaalt dus zowel de prijs als de betrouwbaarheid van het resultaat. De steekproef inkrimpen is de eenvoudigste manier om een offerte te verlagen, en de riskantste."],
-    ["h3", "Wat de officiële methode oplegt"],
-    ["p", "In Frankrijk legt de officiële pagina over [[https://accessibilite.numerique.gouv.fr/obligations/evaluation-conformite/|de beoordeling van de conformiteit met de RGAA (Franstalig)]] de minimale inhoud van de steekproef vast: de homepage, de contactpagina, de wettelijke vermeldingen, de pagina Toegankelijkheid, de sitemap, de hulp en de aanmeldingspagina, voor zover ze bestaan; minstens één relevante pagina per type dienst, inclusief zoeken; minstens één relevant downloadbaar document per type dienst; alle pagina’s van een proces; pagina’s met een merkbaar ander uitzicht of andere inhoud; en ten slotte willekeurig gekozen pagina’s ten belope van minstens 10 % van de steekproef. Ook het aantal bezoekers per pagina kan de keuze sturen."],
-    ["p", "Eén regel weegt zwaar door op de prijs en op het resultaat: een criterium wordt voor een pagina van een proces alleen gevalideerd als het voor alle pagina’s van dat proces gevalideerd is. De betaalstap uit een bestelproces halen, of de laatste stap van een onlineprocedure, verlaagt dus niet alleen de prijs: het maakt de audit strijdig met de methode en de gepubliceerde graad onjuist."],
-    ["h3", "Drie profielen van diensten, drie steekproeven"],
-    ["p", "De volgende tabel toont hoe de steekproef, en dus de auditinspanning, verandert naargelang de aard van de dienst. Ze geeft bewust geen enkele prijs: ze dient om te controleren of een offerte wel voorziet wat uw dienst vereist."],
-    ["table", {
-      "caption": "Voorbeelden van de samenstelling van een steekproef volgens het profiel van de dienst",
-      "head": ["Profiel van de dienst", "Verwachte inhoud van de steekproef", "Wat de audit zwaarder maakt", "Wat een te lage offerte vaak weglaat"],
-      "rows": [
-        ["Informatieve website van een kmo of een kleine gemeente", "Verplichte pagina’s, één pagina per type rubriek, contactformulier, een of twee pdf-documenten, willekeurige pagina’s", "Carrousel op de homepage, interactieve kaart, formulier met captcha", "De pdf’s, het volledige contactformulier en de willekeurig gekozen pagina’s"],
-        ["Website met beveiligde zone (gebruikers, klanten, leden)", "Verplichte pagina’s, aanmeldingspagina, elk type procedure met al zijn stappen, dashboard, door de dienst geproduceerde documenten", "Formulieren in meerdere stappen, foutenbeheer, sessieverloop, gegevenstabellen", "De tussenstappen van de procedures en de gegenereerde documenten (attesten, facturen)"],
-        ["Webshop onder de EAA", "Homepage, zoeken en filters, productlijst en productfiche, winkelmand, account aanmaken, levering, betaling, bevestiging, transactionele e-mails", "Componenten van derden (betaling, beoordelingen, chat), sterke authenticatie, productvarianten", "De betaling en de sterke authenticatie, omdat ze door een externe aanbieder worden geleverd"]
-      ]
-    }],
-    ["p", "Voor een webshop wordt de lijst van de te dekken schermen uitgewerkt in onze [[article:e-commerce|checklist toegankelijkheid voor webshops, scherm per scherm]]. Voor een openbare dienst laat het becommentarieerde voorbeeld van een steekproef in ons artikel over de RGAA-audit toe na te gaan of geen enkel proces is weggelaten. In beide gevallen vraagt u best dat de exacte lijst van pagina’s in de offerte staat: die lijst, en niet een aantal, verbindt de aanbieder."],
-    ["p", "De lijst van geauditeerde pagina’s wordt trouwens overgenomen in de [[article:declaration|toegankelijkheidsverklaring]], die ze openbaar maakt. Een gemakzuchtige steekproef komt dus altijd aan het licht: een gebruiker, een vereniging of de toezichthouder kan vaststellen dat het traject dat problemen geeft nooit is beoordeeld."],
-
-    ["h2", "soorten-toegankelijkheidsaudit", "Volledige audit, snelle audit, hercontrole, opleveringsaudit: wat u echt koopt"],
-    ["p", "Het woord “audit” dekt zeer uiteenlopende prestaties. Een deel van de prijsverschillen tussen offertes komt daar vandaan: de ene biedt een volledige conformiteitsaudit aan, de andere een snelle diagnose, en beide dragen dezelfde naam. De tabel hieronder helpt te herkennen wat u werkelijk wordt voorgesteld."],
-    ["table", {
-      "caption": "De belangrijkste soorten toegankelijkheidsaudits en hun gebruik",
-      "head": ["Prestatie", "Wat ze controleert", "Kan er een conformiteitsgraad mee worden gepubliceerd?", "Wanneer te kiezen"],
-      "rows": [
-        ["Volledige conformiteitsaudit", "Alle criteria van het referentiekader, op een steekproef die met de methode overeenstemt, met hulptechnologieën", "Ja, dit is de basis van de toegankelijkheidsverklaring", "Eerste beoordeling, herontwerp, op te stellen of te vernieuwen verklaring, voorbereiding op een controle"],
-        ["Snelle audit of diagnose", "Een selectie van criteria of pagina’s, vaak de meest blokkerende", "Nee, het resultaat is geen graad in de zin van het referentiekader", "De omvang van het werk inschatten, prioriteiten bepalen vóór een herontwerp, een budget voorbereiden"],
-        ["Hercontrole", "De correcties, op de pagina’s van de oorspronkelijke steekproef", "Ja, ze laat toe de graad en de verklaring bij te werken", "Na een reeks correcties"],
-        ["Audit bij oplevering of in preproductie", "Een nieuwe versie vóór de livegang, op de gewijzigde sjablonen en trajecten", "Afhankelijk van de afbakening; ze bereidt vooral een livegang zonder regressie voor", "Vóór elke belangrijke oplevering, aan het einde van een project"],
-        ["Audit van een mobiele app", "De schermen van de app, op echte toestellen, met de native schermlezers", "Ja, als de steekproef en het referentiekader het toelaten", "iOS- of Android-app die onder de verplichtingen valt"],
-        ["Automatische scan", "Een deel van de fouten die een tool kan opsporen (ontbrekende attributen, berekenbare contrasten)", "Nee: een groot deel van de criteria vergt menselijk oordeel", "Continue bewaking tussen twee audits, nooit ter vervanging van de audit"]
-      ]
-    }],
-    ["p", "Wanneer het doel is een toegankelijkheidsverklaring te publiceren of bij te werken, vormt alleen een volledige conformiteitsaudit, of een hercontrole op dezelfde steekproef, de basis van een verdedigbare graad. Een snelle diagnose is nuttig om te budgetteren, maar laat niet toe aan de verplichting te voldoen. Voor een Franse openbare dienst dekt onze [[svc:audit-rgaa|RGAA-audit]] de 106 criteria en levert hij het ontwerp van de verklaring; voor een dienst die onder de Europese norm valt, volgt de [[svc:audit-conformite|conformiteitsaudit EN 301 549 en WCAG]] dezelfde logica."],
-    ["p", "De opleveringsaudit verdient een bijzondere vermelding, omdat hij vaak in de budgetten vergeten wordt, hoewel hij minder kost dan een correctie na de livegang. Wanneer hij in de planning van een project wordt opgenomen, controleert hij dat een nieuwe versie de gecorrigeerde fouten niet opnieuw invoert. Onze prestatie [[svc:recette|toegankelijkheidsrecette]] is ontworpen om in een bestaande opleveringscyclus te passen."],
-
-    ["h2", "referentiekader-land-prijs-audit", "RGAA, RAWeb, EN 301 549, eCH-0059: het effect van het referentiekader en het land op de offerte"],
-    ["p", "Het referentiekader van de audit hangt af van het land en van het statuut van de organisatie. Het beïnvloedt de prijs bescheidener dan de steekproef, maar het wijzigt het formaat van de opleveringen, en dus een deel van het schrijfwerk."],
-    ["ul", [
-      "In Frankrijk is de RGAA 4.1.2 de referentiemethode voor de openbare sector en voor de ondernemingen die onder artikel 47 van de wet van 11 februari 2005 vallen; de audit levert een rooster in het officiële formaat en een graad die wordt berekend volgens de hierboven beschreven methode. De regelgevende context wordt uitgewerkt op onze pagina [[country:france|digitale toegankelijkheid in Frankrijk]].",
-      "In België bestaat er geen eigen nationaal referentiekader: de audit steunt op de norm EN 301 549 en de WCAG op niveau AA, met een rapport dat in het Frans, het Nederlands of het Engels kan worden gevraagd.",
-      "In Luxemburg wordt de openbare sector beoordeeld volgens de RAWeb voor het web en de RAAM voor mobiele toepassingen, gepubliceerd door de Service information et presse; hun methode ligt dicht bij die van de RGAA. Ons artikel over [[article:luxembourg|digitale toegankelijkheid in Luxemburg]] beschrijft de gepubliceerde controles.",
-      "In Zwitserland dient de norm eCH-0059 als referentie voor de federale overheidsdiensten; ze berust op de WCAG. Zwitserse bedrijven die in de Europese Unie verkopen, moeten ook rekening houden met de EAA.",
-      "Voor een dienst die onder de European Accessibility Act valt, is de technische referentie de norm EN 301 549; de vergelijking van de normen staat in ons artikel [[article:normes|WCAG 2.2, EN 301 549, RGAA, RAWeb: welke norm volgen]]."
-    ]],
-    ["h3", "Groepen die in meerdere landen actief zijn"],
-    ["p", "Een groep die dezelfde dienst in Frankrijk, in België en in Luxemburg aanbiedt, heeft geen drie onafhankelijke volledige audits nodig. De zuinigste aanpak bestaat erin één referentiekader als spil te kiezen, de gemeenschappelijke sjablonen één keer te auditeren en daarna de controles toe te voegen die eigen zijn aan elk land (formaat van het rooster, verplichte vermeldingen, verklaring). De meerkost zit dan vooral in de opleveringen en de talen, niet in een nieuwe volledige beoordeling."],
-    ["h3", "Het effect van de RGAA 5 op uw aankoopkalender"],
-    ["p", "De DINUM, de Franse interministeriële directie voor digitale zaken, heeft de publicatie van de RGAA 5 aangekondigd voor eind 2026. De verklaringen die vóór de verschijning zijn gepubliceerd, blijven geldig tot achttien maanden na de publicatie ervan, zonder dat ze langer dan drie jaar vanaf hun eigen datum gelden. Als uw verklaring de komende maanden verloopt, hoeft u de audit niet uit te stellen in afwachting van de nieuwe versie: een nu uitgevoerde RGAA 4.1.2-audit blijft bruikbaar en een groot deel van de correcties die eruit voortvloeit, zal ook voor de volgende versie gelden. Lanceert u daarentegen een meerjarige opdracht, voorzie dan in het bestek dat de volgende audits de versie van het referentiekader volgen die op de datum van elke bestelling van kracht is."],
-
-    ["h2", "afbakeningsfiche-offerte-toegankelijkheidsaudit", "De afbakeningsfiche die u verstuurt om vergelijkbare offertes te krijgen"],
-    ["p", "De beste manier om vergelijkbare prijzen te krijgen, is aan alle geraadpleegde aanbieders dezelfde vraag te stellen, met dezelfde informatie. Hieronder staat de fiche die wij aanbevelen bij elke offerteaanvraag voor een toegankelijkheidsaudit. Ze past op twee pagina’s en bespaart verschillende heen-en-weerberichten."],
-    ["ol", [
-      ["De te auditeren dienst.", "Naam, adres, aard (openbare website, beveiligde zone, app, intranet), doelpubliek, belangrijkste technologieën (contentbeheersysteem, framework, componentenbibliotheek)."],
-      ["De context en het doel.", "Eerste verklaring, vernieuwing van een verklaring die meer dan drie jaar oud is, lopend herontwerp, antwoord op een ingebrekestelling, eis van een klant of van een openbare koper, conformiteit met de EAA."],
-      ["Het verwachte referentiekader.", "RGAA 4.1.2, EN 301 549, RAWeb, eCH-0059, WCAG 2.2 op niveau AA, en eventueel opgelegd formaat van het rooster."],
-      ["De inventaris van de sjablonen.", "De lijst van paginamodellen en complexe componenten, met telkens een voorbeeldadres. Dit is de informatie die de nauwkeurigheid van de offertes het meest verbetert."],
-      ["De trajecten.", "Elke procedure of transactie in meerdere stappen, met het aantal stappen en de toegangsvoorwaarden (account, betaling, bewijsstuk)."],
-      ["De documenten en media.", "Types downloadbare documenten (pdf-formulieren, rapporten, gegenereerde attesten), geschat volume, aanwezigheid van video’s of audio-inhoud."],
-      ["De platformen.", "Alleen het web, of ook iOS- en Android-apps, met de ondersteunde versies en toestellen."],
-      ["De talen.", "Taalversies van de dienst die moeten worden gedekt en gewenste taal voor het rapport en de toelichting."],
-      ["De toegangen.", "Beschikbaarheid van een stabiele preproductie, testaccounts, fictieve gegevens, en beveiligingsbeperkingen (VPN, lijst van toegelaten adressen)."],
-      ["De verwachte opleveringen en prestaties.", "Rooster, rapport, actieplan, ontwerp van de verklaring, toelichting, hercontrole, begeleiding van de correcties, gebruikerstests, opleiding."],
-      ["De planning.", "Gewenste datum voor de overhandiging van het rapport, deadlines (livegang, controle, einde van de geldigheid van de verklaring) en periodes waarin de ontwikkelingen bevroren zijn."]
-    ]],
-    ["p", "Zodra deze fiche is verstuurd, zal een ernstige aanbieder vaak voorstellen de steekproef bij te sturen: een vergeten traject toevoegen, twee zeer gelijkaardige sjablonen samenvoegen. Dat is een goed teken. Vraag alleen dat de definitieve steekproef in het schriftelijke voorstel staat, zodat alle offertes op dezelfde basis berusten of, bij gebrek daaraan, de verschillen zichtbaar zijn."],
-    ["note", "Te onthouden", "Een offerteaanvraag die enkel vermeldt “website van 50 pagina’s, RGAA-audit” levert onvergelijkbare offertes op. De inventaris van de sjablonen, de lijst van de trajecten en de lijst van de opleveringen zijn de drie gegevens die prijzen vergelijkbaar maken."],
-
-    ["h2", "offertes-toegankelijkheidsaudit-vergelijken", "Offertes voor een toegankelijkheidsaudit vergelijken: het rooster regel per regel"],
-    ["p", "Wanneer de offertes binnenkomen, vergelijk ze dan op de volgende punten vóór u naar de totaalprijs kijkt. Elke regel komt overeen met een veelvoorkomend verschil tussen offertes die op het eerste gezicht gelijkwaardig lijken."],
-    ["table", {
-      "caption": "Vergelijkingsrooster voor offertes van een toegankelijkheidsaudit",
-      "head": ["Te vergelijken punt", "Wat de offerte moet preciseren", "Waarschuwingssignaal"],
-      "rows": [
-        ["Steekproef", "De nominatieve lijst van pagina’s en schermen, de volledige processen, de documenten, de willekeurig gekozen pagina’s", "Louter een aantal pagina’s, zonder lijst en zonder samenstellingsregel"],
-        ["Referentiekader en versie", "Het referentiekader, de versie ervan en het beoogde niveau (bijvoorbeeld RGAA 4.1.2, of WCAG 2.2 niveau AA)", "“Geldende normen” zonder verdere precisering"],
-        ["Beoordelingsmethode", "Manuele beoordeling van elk criterium op elke pagina, tools als ondersteuning", "Resultaten die vooral uit een automatische tool komen"],
-        ["Hulptechnologieën", "De gebruikte combinaties van schermlezer en browser, op computer en op mobiel", "Geen enkele vermelding, of één enkele tool"],
-        ["Opleveringen", "Volledig rooster, rapport dat elke fout lokaliseert, aanbevelingen, geprioriteerd actieplan, ontwerp van de verklaring", "Een “beknopt” rapport zonder rooster en zonder lokalisatie van de fouten"],
-        ["Toelichting", "Aantal sessies, duur, doelgroepen (technische teams, business, directie)", "Toelichting ontbreekt of wordt aangerekend zonder te zijn aangekondigd"],
-        ["Hercontrole", "Inbegrepen of optioneel, afbakening, termijn om ze te vragen", "Geen vermelding: de werkelijke kost van de aanpak wordt onderschat"],
-        ["Onafhankelijkheid", "Auditors die los staan van de teams die de dienst hebben ontworpen of ontwikkeld", "Audit voorgesteld door de aanbieder die de website heeft gebouwd, zonder scheiding van de teams"],
-        ["Termijn", "Startdatum, duur van de audit, datum van overhandiging van het rapport", "Zeer korte termijn die onverenigbaar is met het aangekondigde volume"],
-        ["Hypothesen en uitsluitingen", "Wat niet gedekt is (inhoud van derden, documenten boven een bepaald volume, platformen)", "Uitsluitingen die pas bij het rapport aan het licht komen"]
-      ]
-    }],
-    ["p", "Zodra deze regels op één lijn staan, wordt de totaalprijs weer een bruikbaar gegeven. Blijven twee offertes bij identieke afbakening ver uit elkaar liggen, vraag dan het aantal voorziene dagen per fase: u zult onmiddellijk zien welke aanbieder de beoordeling of het schrijfwerk heeft onderschat. Het is niet misplaatst die vraag te stellen; een aanbieder die zijn vak kent, antwoordt er zonder moeite op."],
-    ["h3", "Een eenvoudige beoordelingsmethode"],
-    ["p", "Voor een privéraadpleging zoals voor een overheidsopdracht volstaat meestal een beoordeling in twee blokken. Het eerste, technische blok beoordeelt de overeenstemming van de steekproef met de methode, de kwaliteit van een geanonimiseerd voorbeeld van een rapport, de hulptechnologieën en de bekwaamheid van de auditors. Het tweede beoordeelt de prijs bij identieke afbakening. Een geanonimiseerd uittreksel van een rapport vragen is de snelste manier om de werkelijke waarde van de opleveringen te beoordelen: de manier waarop een fout wordt gelokaliseerd en uitgelegd, zegt veel over het nut van de audit voor uw teams."],
-
-    ["h2", "offertes-afwijzen-toegankelijkheidsaudit", "Zeven waarschuwingssignalen in een offerte voor een toegankelijkheidsaudit"],
-    ["p", "Sommige offertes zijn goedkoper omdat ze geen audit in de zin van het referentiekader leveren. Hieronder staan de signalen die u ertoe moeten brengen om verduidelijking te vragen, of de offerte af te wijzen."],
-    ["ul", [
-      "Een vaste prijs die wordt genoemd zonder de dienst te hebben gezien en zonder over de steekproef te hebben gesproken: de aanbieder weet niet wat hij verkoopt, en de afbakening zal achteraf worden bijgestuurd.",
-      "Een audit die binnen enkele uren of op één dag wordt opgeleverd voor een dienst met trajecten: de voorziene tijd is onverenigbaar met een manuele controle van de criteria.",
-      "Een rapport dat door een automatische tool is gegenereerd en als conformiteitsaudit wordt voorgesteld: veel criteria, zoals de relevantie van een tekstalternatief of de leesvolgorde, vergen menselijk oordeel.",
-      "Een vooraf gegarandeerde conformiteitsgraad, of een beloofd “certificaat”: de RGAA voorziet in een toegankelijkheidsverklaring die de organisatie zelf publiceert, niet in een certificering die door een aanbieder wordt uitgereikt, en een graad hangt af van de dienst, niet van de offerte.",
-      "Het ontbreken van een auditrooster in de opleveringen: zonder rooster kunt u noch de berekening van de graad controleren, noch de correcties opvolgen, noch een controle beantwoorden.",
-      "Een steekproef die de betaling, de authenticatie of de laatste stappen van een procedure uitsluit, omdat ze door een derde worden geleverd of moeilijk toegankelijk zijn.",
-      "Een offerte die zich voorstelt als gemandateerd of aanbevolen door een overheidsinstantie: de Arcom vermeldt op zijn [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|pagina over de toegankelijkheid van digitale diensten (Franstalig)]] dat hij de opdracht om in zijn naam op te treden aan geen enkele persoon of groepering delegeert."
-    ]],
-    ["p", "Het nuttige tegenvoorbeeld is de beslissing van de Arcom ten aanzien van de website impots.gouv.fr. De [[https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-24-juin-2026-mettant-en-demeure-le-ministere-de-laction-et-des-comptes-publics|beslissing van 24 juni 2026 (Franstalig)]] noemt onder meer een niet-toegankelijk aanslagbiljet in pdf, een uitklapmenu dat alleen met de muis opengaat en een tabel waarvan de cellen niet aan hun koppen zijn gekoppeld. Dat zijn precies de inhouden die een beperkte steekproef of een automatische tool laat passeren: een downloadbaar document, een component die met het toetsenbord moet worden bediend, een tabel die met een schermlezer moet worden gelezen."],
-
-    ["h2", "budget-conformiteit-digitale-toegankelijkheid", "Voorbij de prijs van de audit: het volledige budget voor digitale toegankelijkheid"],
-    ["p", "De audit is zelden de zwaarste post van een toegankelijkheidstraject. Hij meet, lokaliseert en rangschikt; het zijn de correcties die kosten, en daarna het behoud van de conformiteit in de tijd. Een realistisch budget voorziet dus verschillende lijnen, waarvan sommige intern zijn."],
-    ["table", {
-      "caption": "De posten van een budget voor digitale toegankelijkheid",
-      "head": ["Post", "Wat hij omvat", "Wat hem doet variëren", "Wie hem doorgaans draagt"],
-      "rows": [
-        ["Eerste audit", "Conformiteitsbeoordeling, rapport, actieplan, ontwerp van de verklaring", "Steekproef, platformen, referentiekader, opleveringen", "Externe aanbieder of opgeleide interne auditors"],
-        ["Technische correcties", "Herwerking van de niet-conforme componenten, sjablonen en trajecten", "Front-endarchitectuur, aanwezigheid van een componentenbibliotheek, technische schuld", "Intern ontwikkelteam of bureau"],
-        ["Redactionele correcties", "Alternatieven voor afbeeldingen, titels, links, tabellen, door de contribuanten geschreven inhoud", "Volume aan inhoud, aantal contribuanten", "Contentteams"],
-        ["Documenten", "Toegankelijk maken van bestaande pdf’s en kantoordocumenten, toegankelijke sjablonen voor de toekomst", "Omvang van de voorraad, documenten met juridische waarde of automatisch gegenereerde documenten", "Businessteams, gespecialiseerde aanbieder"],
-        ["Hercontrole", "Controle van de correcties en bijwerking van de graad", "Afbakening van de oorspronkelijke steekproef, omvang van de correcties", "Bij voorkeur de aanbieder van de eerste audit"],
-        ["Gebruikerstests", "Praktijktests met personen met een beperking", "Aantal profielen, scenario’s en sessies", "Gespecialiseerde aanbieder"],
-        ["Opleiding", "Algemene sensibilisering en opleidingen per beroep", "Aantal betrokken personen en beroepen", "Aanbieder, daarna interne relais"],
-        ["Behoud van de conformiteit", "Recette bij elke versie, bewaking, bijwerking van de verklaring", "Frequentie van de opleveringen, aantal diensten", "Interne teams, met punctuele ondersteuning"]
-      ]
-    }],
-    ["p", "Voor de Franse openbare sector is dit budget niet alleen een kwestie van beheer. De officiële pagina over het [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|meerjarenschema voor toegankelijkheid (Franstalig)]] bepaalt dat het schema de personele en financiële middelen voorstelt die aan digitale toegankelijkheid worden besteed, het beroep op externe expertise, de geplande audits, de opleidingsacties en de integratie van toegankelijkheid in contractuele clausules, ook in aanbestedingen en offertes. Het budget voor de audit en de correcties hoort dus, minstens in grote lijnen, in een gepubliceerd document te staan."],
-    ["p", "De meest rendabele correcties zijn die op gedeelde componenten: een fout die in een formuliercomponent wordt hersteld, verdwijnt van alle pagina’s die hem gebruiken. Daarom groepeert een goed opgebouwd actieplan de fouten per component in plaats van per pagina. Wanneer de fouten uit de front-endarchitectuur voortkomen, voorkomt begeleiding bij [[svc:developpement|toegankelijke ontwikkeling]] dat u tweemaal voor dezelfde correctie betaalt. En opdat de contribuanten de redactionele fouten niet opnieuw invoeren, kosten [[svc:formations|opleidingen per beroep]] doorgaans minder dan een nieuwe audit."],
-    ["p", "Ten slotte mist een aanpak zonder enige controle met gebruikers echte blokkades. [[svc:test-utilisateur|Tests met gebruikers met een beperking]], uitgevoerd op twee of drie essentiële trajecten, vullen de audit aan zonder hem te vervangen: de audit zegt of de dienst de norm naleeft, de tests zeggen of de gebruikers kunnen doen waarvoor ze gekomen zijn."],
-
-    ["h2", "kost-van-niet-auditeren", "Wat het ontbreken van een audit kost"],
-    ["p", "De prijs van een audit moet ook worden afgewogen tegen wat hij vermijdt. In Frankrijk ziet de Arcom toe op de verplichtingen van artikel 47 van de wet van 11 februari 2005. Na een ingebrekestelling die zonder gevolg blijft, kan zij een geldboete opleggen van maximaal 50.000 euro voor het niet naleven van de toegankelijkheidsvereisten en van 25.000 euro voor de overige verplichtingen: verklaring, vermelding op de homepage, meerjarenschema, jaarlijks plan en meldingsmechanisme. Voor producten en diensten die onder de EAA vallen, kan de DGCCRF bevelen de conformiteit te herstellen, en vormen de tekortkomingen overtredingen van de vijfde klasse waarin artikel R. 451-4 van de Franse Code de la consommation voorziet. De details van de procedures staan in ons artikel over [[article:france|de verplichtingen en sancties in Frankrijk]]."],
-    ["p", "De meest directe kost is echter die van te laat uitgevoerde correcties. Een fout die bij een controle aan het licht komt, moet binnen een opgelegde termijn worden hersteld, vaak op een dienst die in productie draait, soms door een team dat met iets anders bezig was te mobiliseren. In haar beslissing van 24 juni 2026 heeft de Arcom negen maanden toegekend om de tekortkomingen aan de toegankelijkheidsvereisten te herstellen en twee maanden voor de documentaire verplichtingen: termijnen die weinig marge laten voor een complexe dienst waarvan de toestand vooraf niet was gemeten."],
-    ["p", "Omgekeerd laat een audit op het juiste moment toe om eerst de fouten te herstellen die de essentiële trajecten blokkeren, de rest in de volgende versies te plannen en een correcte verklaring te publiceren. Een oprechte verklaring “gedeeltelijk conform”, met een gedateerd actieplan, is een veel steviger positie dan geen verklaring of een overschatte graad."],
-
-    ["h2", "overheidsopdracht-toegankelijkheidsaudit", "Een toegankelijkheidsaudit aankopen via een overheidsopdracht (Frans recht)"],
-    ["p", "Voor een Franse openbare koper bepaalt de prijs van de audit ook de procedure. Hieronder gaat het dus om Frans recht, niet om de Belgische regelgeving inzake overheidsopdrachten. Sinds 1 april 2026 maakt [[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053222294|artikel R. 2122-8 van de Franse Code de la commande publique]], gewijzigd bij decreet nr. 2025-1386 van 29 december 2025, het mogelijk om zonder voorafgaande bekendmaking en mededinging opdrachten voor leveringen of diensten te gunnen waarvan de geraamde waarde lager is dan 60.000 euro exclusief btw. De koper moet dan toezien op de keuze van een relevante offerte, op een goed gebruik van de openbare middelen en erop niet systematisch met dezelfde marktdeelnemer te contracteren wanneer er meerdere offertes zijn die aan de behoefte kunnen voldoen."],
-    ["p", "Deze drempel wordt beoordeeld op de geraamde waarde van de behoefte, en niet op één enkele audit. Een gemeente of overheidsinstelling die van plan is meerdere websites te auditeren gedurende de looptijd van haar meerjarenschema, heeft er vaak baat bij die behoeften te bundelen in een raamovereenkomst met bestelbons, in plaats van veel kleine bestellingen te plaatsen. Zo wint ze aan samenhang in de methode van de ene audit tot de andere, en worden haar graden in de tijd vergelijkbaar."],
-    ["h3", "De prijslijst opbouwen"],
-    ["p", "De structuur van de prijslijst bepaalt de vergelijkbaarheid van de offertes. Eén enkele prijs “per audit” is moeilijk te vergelijken; een prijs “per pagina” moedigt opgeblazen steekproeven met overbodige pagina’s aan. Een robuustere structuur onderscheidt een forfait voor de afbakening, een eenheidsprijs per pagina of scherm van de steekproef, eventueel met een onderscheid tussen een eenvoudige pagina en een stap van een proces, een prijs per downloadbaar document, een prijs voor de hercontrole uitgedrukt per pagina, een prijs voor de toelichting en een dagprijs voor de begeleiding. Een geraamde kwantitatieve staat op basis van een echte of fictieve dienst maakt het daarna mogelijk de offertes op hetzelfde scenario te vergelijken."],
-    ["h3", "De gunningscriteria die de kwaliteit beschermen"],
-    ["ul", [
-      "De methode: overeenstemming van de voorgestelde steekproef met de officiële methode, rekening houden met processen en documenten, gebruikte hulptechnologieën.",
-      "De kwaliteit van de opleveringen, beoordeeld aan de hand van een geanonimiseerd uittreksel van een rapport en een auditrooster.",
-      "De bekwaamheid van het team: ervaring van de auditors met het gevraagde referentiekader en beheersing van de hulptechnologieën.",
-      "De onafhankelijkheid ten opzichte van de aanbieders die de geauditeerde dienst ontwerpen of onderhouden.",
-      "De uitvoerings- en opleveringstermijnen, die verenigbaar zijn met de planning voor de publicatie van de verklaring.",
-      "De prijs, beoordeeld op de geraamde kwantitatieve staat in plaats van op losse eenheidsprijzen."
-    ]],
-    ["p", "Voor de organisaties van de [[sector:public|openbare sector]] is de audit ook de gelegenheid om de toegankelijkheidsclausules in de opdrachten voor het ontwerp en het onderhoud van websites na te gaan: toegankelijke opleveringen eisen van een webaanbieder kost weinig op het ogenblik van de opdracht, en veel wanneer de fouten na de oplevering worden vastgesteld."],
-
-    ["h2", "kost-toegankelijkheidsaudit-verlagen", "De kost van een toegankelijkheidsaudit verlagen zonder het resultaat te vertekenen"],
-    ["p", "Er bestaan terechte besparingen, die de auditduur inkorten zonder een controle te schrappen. Ze berusten bijna allemaal op voorbereiding."],
-    ["ul", [
-      "Een nauwkeurige inventaris van de sjablonen en componenten bezorgen: de auditor hoeft de structuur van de website niet tijdens de audit te ontdekken, en de steekproef bevat geen overbodige pagina’s.",
-      "Vanaf de eerste dag een stabiele omgeving en werkende testaccounts garanderen: een traject dat wordt geblokkeerd door een vervallen account of een onbeschikbare preproductie kost aangerekende tijd.",
-      "Vóór de audit de evidente fouten corrigeren die een gratis automatische tool opspoort: taalattributen, ontbrekende alternatieven, paginatitels. De auditor besteedt zijn tijd dan aan de fouten die expertise vergen.",
-      "Een componentenbibliotheek of een designsysteem dat aan meerdere websites gemeenschappelijk is, één keer auditeren, en de audits van de websites vervolgens beperken tot de sjablonen en de inhoud die eigen zijn aan elke website.",
-      "Diensten die dezelfde technologie delen in één bestelling groeperen om de afbakening en de toelichting te delen.",
-      "De audit plannen op een gestabiliseerde versie, en niet op een versie die nog in ontwikkeling is en nog zal veranderen vóór het rapport wordt overhandigd.",
-      "De hercontrole al bij de eerste bestelling voorzien: de aanbieder die de dienst al kent, voert ze sneller uit, en de prijs ervan is vooraf gekend."
-    ]],
-    ["p", "Omgekeerd zijn drie besparingen duur: processen uit de steekproef halen, afzien van hulptechnologieën en de lokalisatie van de fouten uit het rapport schrappen. Elk van de drie verlaagt de prijs van de audit, maar verhoogt die van de correcties, of stelt u bloot aan een onjuiste verklaring."],
-    ["p", "Voor een [[sector:pme|kmo]] rijst de vraag naar de afbakening ook al vroeger. Een micro-onderneming die diensten verleent, minder dan tien werknemers telt en wier omzet of balanstotaal twee miljoen euro niet overschrijdt, is voor haar diensten vrijgesteld van de vereisten van de EAA; ze heeft dus uit dien hoofde geen auditverplichting, ook al blijft de toegankelijkheid van haar website een commerciële troef. Controleer vóór u een offerte aanvraagt of uw dienst echt binnen het toepassingsgebied van de verplichtingen valt: ons artikel over [[article:eaa|de European Accessibility Act]] zet de producten, de diensten en de vrijstellingen uiteen."],
-
-    ["h2", "actieplan-offerte-toegankelijkheidsaudit", "Actieplan: van de offerteaanvraag tot de hercontrole, in acht stappen"],
-    ["ol", [
-      ["De verplichting en het referentiekader nagaan.", "Bepaal de tekst die op uw dienst van toepassing is en het referentiekader dat in uw land wordt verwacht: RGAA, EN 301 549, RAWeb, eCH-0059."],
-      ["Het doel van de audit vastleggen.", "Eerste verklaring, vernieuwing, herontwerp, antwoord op een controle, eis van een klant: het doel bepaalt het type prestatie."],
-      ["De afbakeningsfiche invullen.", "Inventaris van de sjablonen, trajecten, documenten, platformen, talen, toegangen, opleveringen en planning."],
-      ["Minstens twee of drie aanbieders raadplegen.", "Met dezelfde fiche, en met de vraag naar de nominatieve lijst van pagina’s van de voorgestelde steekproef en een geanonimiseerd uittreksel van een rapport."],
-      ["Vergelijken met het rooster.", "Breng de afbakeningen op één lijn en vergelijk dan de prijzen; vraag bij een groot verschil het aantal dagen per fase."],
-      ["De audit voorbereiden.", "Stabiele omgeving, testaccounts, beschikbare technische gesprekspartner, ontwikkelingen op de geauditeerde afbakening bevriezen."],
-      ["Publiceren en corrigeren.", "Publiceer de verklaring die bij de resultaten past, ook als ze ongunstig zijn, en corrigeer dan te beginnen met de essentiële trajecten en de gedeelde componenten."],
-      ["De hercontrole en de volgende audit plannen.", "Hercontrole na de correcties, daarna een nieuwe audit uiterlijk drie jaar na de verklaring, na een herontwerp, of binnen achttien maanden na een nieuwe versie van het referentiekader."]
-    ]],
-    ["p", "Wenst u een voorstel op deze basis, beschrijf dan uw dienst via de [[contact|contactpagina]]: wij antwoorden met een becommentarieerde steekproef, een termijn en een offerte die per fase is uitgewerkt. In ons kantoor bedraagt de gemiddelde duur van een audit drie weken, te rekenen vanaf de validatie van de steekproef."]
+  [
+   "p",
+   "Prijsroosters “per type website”, zoals u ze online vindt, stellen gerust, maar ze vergelijken dingen die niets met elkaar gemeen hebben. Een etalagewebsite van vijftien pagina’s, gebouwd op drie sjablonen, en een website van tien pagina’s met een simulator, een beveiligde zone en een betaaltraject in vijf stappen vragen helemaal niet hetzelfde werk. De tweede kan een veelvoud van de auditduur van de eerste vergen, hoewel ze minder pagina’s telt."
   ],
-  "faq": [
-    ["Hoeveel kost een RGAA-audit?", "Er bestaat geen officieel tarief. De prijs hangt af van het aantal sjablonen en pagina’s van de steekproef, de trajecten in meerdere stappen, de platformen, de te controleren documenten, het referentiekader en de opleveringen. Voor een betrouwbaar bedrag stuurt u aan meerdere aanbieders dezelfde afbakeningsfiche (sjablonen, trajecten, documenten, verwachte opleveringen) en vergelijkt u offertes die op dezelfde steekproef slaan. Wees op uw hoede voor een vaste prijs die wordt genoemd zonder de dienst te hebben gezien."],
-    ["Waarom verschillen de offertes voor een toegankelijkheidsaudit zo sterk?", "Meestal omdat ze niet op dezelfde afbakening slaan. De ene offerte kan een manuele beoordeling van alle criteria op een volledige steekproef voorzien, de andere een gedeeltelijke diagnose of het laten lopen van een automatische tool. De verschillen komen ook uit de opleveringen (rooster, lokalisatie van de fouten, ontwerp van de verklaring), de toelichting en de hercontrole. Breng die elementen op één lijn vóór u de totaalprijzen vergelijkt."],
-    ["Volstaat een gratis automatische audit om een toegankelijkheidsverklaring te publiceren?", "Nee. Een automatische tool spoort een deel van de fouten op, maar veel criteria vergen menselijk oordeel: relevantie van een alternatief, leesvolgorde, begrijpelijkheid van foutmeldingen, gebruik met het toetsenbord en de schermlezer. De graad die in een verklaring wordt gepubliceerd, moet voortvloeien uit een beoordeling criterium per criterium op een representatieve steekproef. De tool blijft nuttig om de website tussen twee audits te bewaken."],
-    ["Is een hercontrole verplicht?", "Geen enkele tekst legt als dusdanig een hercontrole op, maar de toegankelijkheidsverklaring moet de werkelijke toestand van de dienst weergeven. Na een reeks correcties controleert de hercontrole de correcties op de oorspronkelijke steekproef en laat ze toe de graad en de verklaring bij te werken. Ze is korter dan de eerste audit; vraag de prijs en de afbakening ervan al in de eerste offerte."],
-    ["Kan ik de toegankelijkheidsaudit intern laten uitvoeren om kosten te besparen?", "Ja, de officiële methode staat zelfevaluatie toe, op voorwaarde dat de organisatie de betrouwbaarheid van haar verklaring waarborgt. Dat vereist auditors die in het referentiekader zijn opgeleid, die hulptechnologieën gebruiken en die onafhankelijk zijn van de teams die de dienst hebben ontworpen. Veel organisaties combineren een externe audit bij elk herontwerp of om de drie jaar met interne controles bij elke versie."],
-    ["Moet ik op de RGAA 5 wachten om mijn website te laten auditeren?", "Niet als uw verklaring bijna verloopt of als u er geen hebt. De verklaringen die vóór de RGAA 5 zijn gepubliceerd, blijven geldig tot achttien maanden na de publicatie ervan, zonder dat ze langer dan drie jaar vanaf hun datum gelden. De correcties uit een RGAA 4.1.2-audit zullen grotendeels ook voor de volgende versie dienen. Wachten betekent vooral een dienst online laten staan waarvan de toestand niet bekend is."],
-    ["Is een toegankelijkheidsaudit een overheidsopdracht met bekendmaking?", "Dat hangt af van de geraamde waarde van de behoefte. In het Franse recht kunnen sinds 1 april 2026 opdrachten voor diensten met een geraamde waarde onder 60.000 euro exclusief btw zonder voorafgaande bekendmaking en mededinging worden gegund, krachtens artikel R. 2122-8 van de Code de la commande publique. Daarboven geldt een aangepaste of formele procedure. De waarde wordt beoordeeld op de hele behoefte, bijvoorbeeld alle audits die het meerjarenschema voorziet."]
+  [
+   "p",
+   "Wat bij een toegankelijkheidsaudit verkocht wordt, is expertisetijd: de tijd die een auditor besteedt aan het controleren van elk criterium op elke pagina van de steekproef, met verschillende hulptechnologieën, en vervolgens aan het documenteren van elke fout en het formuleren van een herstel. Alles wat die tijd verlengt, verhoogt de prijs; alles wat ze inkort zonder een controle te schrappen, verlaagt ze. Het is de enige echt betrouwbare sleutel om een offerte te lezen."
   ],
-  "cta_svc": "audit-rgaa",
-  "cta_title": "Een offerte op basis van uw echte afbakening?",
-  "cta_text": "Beschrijf ons uw dienst: wij stellen u een becommentarieerde steekproef, een termijn en een offerte per fase voor, vergelijkbaar met elk ander voorstel.",
-  "related": ["audit-rgaa", "declaration", "guide"]
+  [
+   "p",
+   "Het is ook de reden waarom wij geen tariefgrid publiceren en dit artikel er geen aanbiedt: een bedrag dat wordt genoemd voordat de dienst gekend is, verbindt noch de aanbieder noch de koper. Wat u wél vooraf kunt weten, is wat de prijs van uw toegankelijkheidsaudit zal doen variëren, zodat u in staat bent vergelijkbare offertes te ontvangen. Daarover gaan de volgende hoofdstukken. Voor de plaats van de audit in het geheel van de aanpak (verplichtingen, normen, stappen) geeft het artikel [[article:guide|digitale toegankelijkheid: wat de wet vereist en waar u begint]] het overzicht."
+  ],
+  [
+   "note",
+   "Te onthouden",
+   "Twee offertes voor een toegankelijkheidsaudit zijn alleen vergelijkbaar als ze betrekking hebben op dezelfde steekproef, hetzelfde referentiekader, dezelfde platformen en dezelfde opleveringen. Vergelijk eerst de afbakening, daarna pas de prijzen."
+  ],
+  [
+   "h2",
+   "berekening-offerte-toegankelijkheidsaudit",
+   "Hoe wordt een offerte voor een toegankelijkheidsaudit berekend?"
+  ],
+  [
+   "p",
+   "Welke aanbieder u ook kiest, een offerte voor een audit valt uiteen in enkele grote fasen. Door ze te kennen, begrijpt u waar het grootste deel van de kost zit en ziet u meteen wanneer een offerte een fase weglaat zonder het te zeggen."
+  ],
+  [
+   "ol",
+   [
+    [
+     "De afbakening.",
+     "Overleg met uw teams, inventaris van de sjablonen en trajecten, keuze van het referentiekader, samenstelling en validatie van de steekproef, controle van de toegangen (preproductie, testaccounts, fictieve gegevens). Het is een korte fase, maar zij bepaalt al de rest."
+    ],
+    [
+     "De beoordeling pagina per pagina.",
+     "Bij een RGAA-audit wordt elk van de 106 criteria onderzocht op elke pagina van de steekproef, met de tests die het referentiekader aanreikt. Dit is veruit de zwaarste post: hij groeit met het aantal pagina’s, maar vooral met hun dichtheid (formulieren, dynamische componenten, tabellen, media)."
+    ],
+    [
+     "De controles met hulptechnologieën.",
+     "Schermlezers op computer en op mobiel, toetsenbordnavigatie, vergroting. Het referentiekader publiceert een referentietestomgeving; elke bijkomende combinatie die u vraagt, voegt tijd toe."
+    ],
+    [
+     "Het opstellen van de opleveringen.",
+     "Volledig auditrooster, rapport dat elke non-conformiteit lokaliseert met een herstelaanbeveling, berekening van de graad, geprioriteerd actieplan, ontwerp van toegankelijkheidsverklaring. Een rapport dat zich beperkt tot een lijst van niet-conforme criteria is goedkoper om op te stellen, maar zal uw ontwikkelaars meer kosten, want zij moeten elke fout zelf terugvinden."
+    ],
+    [
+     "De toelichting van de resultaten.",
+     "Voorstelling van de resultaten aan de business-, de technische teams en de directie, antwoorden op vragen. Ze kan inbegrepen zijn, apart worden aangerekend of ontbreken."
+    ],
+    [
+     "De optionele prestaties.",
+     "Hercontrole na de correcties, begeleiding van de ontwikkelaars tijdens het herstel, tests met gebruikers met een beperking, audit van kantoordocumenten, opleiding."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "De eindprijs is dus het product van een werkvolume en het dagtarief van de aanbieder. Het dagtarief hangt af van de ervaring van de auditors, hun specialisatie en de structuur die hen tewerkstelt; het varieert, maar veel minder dan het werkvolume zelf. Wanneer twee offertes erg ver uit elkaar liggen, zit de verklaring bijna altijd in het aantal voorziene dagen, dus in de afbakening, en zelden in het dagtarief."
+  ],
+  [
+   "p",
+   "Het concrete verloop van deze fasen, van de afbakening tot de toelichting, wordt uitgewerkt in ons artikel over [[article:audit-rgaa|het verloop van een RGAA-audit week per week]]. Hier is de insteek anders: nagaan wat er in uw dienst het aantal dagen zal doen variëren."
+  ],
+  [
+   "h2",
+   "factoren-prijs-toegankelijkheidsaudit",
+   "De tien factoren die de prijs van een toegankelijkheidsaudit doen variëren"
+  ],
+  [
+   "p",
+   "De tabel hieronder brengt de factoren samen die echt op een offerte wegen. Bij elke factor staat waarom de auditduur toeneemt en wat u kunt doen om ze te beheersen zonder het resultaat te verzwakken."
+  ],
+  [
+   "table",
+   {
+    "caption": "Prijsfactoren van een toegankelijkheidsaudit en manieren om ze te beheersen",
+    "head": [
+     "Factor",
+     "Waarom hij de auditduur doet variëren",
+     "Hoe u hem beheerst zonder de audit te vertekenen"
+    ],
+    "rows": [
+     [
+      "Aantal verschillende sjablonen",
+      "Elk sjabloon brengt zijn eigen componenten mee om te controleren; twee pagina’s op hetzelfde sjabloon zijn veel sneller te testen dan twee verschillende pagina’s",
+      "De inventaris van sjablonen en componenten bezorgen in plaats van louter een aantal pagina’s"
+     ],
+     [
+      "Aantal pagina’s of schermen in de steekproef",
+      "Elke pagina wordt criterium per criterium beoordeeld; het volume van het rapport groeit mee",
+      "De steekproef samenstellen volgens de officiële regels, zonder overbodige pagina’s"
+     ],
+     [
+      "Trajecten in meerdere stappen",
+      "Alle stappen van een proces moeten worden geauditeerd; formulieren, invoerfouten en overzichten zijn de inhoud die het langst duurt om te testen",
+      "Testaccounts en testgegevens voorbereiden waarmee elk traject tot het einde kan worden doorlopen"
+     ],
+     [
+      "Dynamische componenten",
+      "Menu’s, tabbladen, modale vensters, carrousels, interactieve kaarten en automatisch aanvullen vragen controles met het toetsenbord en de schermlezer in elke toestand",
+      "Complexe componenten en gebruikte bibliotheken vooraf melden"
+     ],
+     [
+      "Aantal platformen",
+      "Een dienst die beschikbaar is op het web, op iOS en op Android, vertegenwoordigt drie afzonderlijke beoordelingen, met andere tools en andere hulptechnologieën",
+      "Uitdrukkelijk beslissen welke platformen binnen het bestek van deze audit vallen"
+     ],
+     [
+      "Downloadbare documenten",
+      "Elke pdf of elk kantoordocument wordt met eigen tools gecontroleerd: structuur, leesvolgorde, alternatieven",
+      "Minstens één document per type dienst opnemen en grote volumes in een afzonderlijke prestatie behandelen"
+     ],
+     [
+      "Multimedia-inhoud",
+      "Video’s en audio vragen controle van ondertitels, transcriptie, audiodescriptie en speler",
+      "De media oplijsten en aangeven of ze intern of door een derde worden gemaakt"
+     ],
+     [
+      "Referentiekader en verwacht formaat",
+      "Een audit volgens meerdere referentiekaders tegelijk, of met een concordantietabel, vergt meer documentatie",
+      "Per land één referentiekader als spil kiezen en alleen een concordantie vragen als ze nuttig is"
+     ],
+     [
+      "Talen van de audit en het rapport",
+      "Een meertalige dienst kan vereisen dat de taalversies worden gecontroleerd en het rapport in meerdere talen wordt opgesteld",
+      "De te auditeren versies en de taal van het rapport vanaf de aanvraag preciseren"
+     ],
+     [
+      "Planning en toegangsbeperkingen",
+      "Een audit die in een zeer korte termijn moet worden opgeleverd, of een onstabiele testomgeving, vraagt meer middelen",
+      "De aanvraag tijdig doen en tijdens de volledige duur van de audit een stabiele omgeving garanderen"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Uit deze tabel vallen twee dingen op. Ten eerste is het aantal pagina’s een misleidende indicator als het niet vergezeld gaat van het aantal sjablonen en de lijst van trajecten. Ten tweede zijn de meeste factoren te beheersen door voorbereiding: een koper die een nauwkeurige inventaris bezorgt, krijgt rechtvaardiger offertes die dichter bij elkaar liggen, en vaak goedkopere, omdat de aanbieder niet hoeft te provisioneren voor het onbekende. Bij een kmo die voor het eerst een offerte opvraagt, levert al dat voorbereidingswerk doorgaans meer op dan onderhandelen over het dagtarief."
+  ],
+  [
+   "h2",
+   "steekproef-prijs-toegankelijkheidsaudit",
+   "De steekproef: de eerste post van de offerte, en de eerste plek waar u ten onrechte bespaart"
+  ],
+  [
+   "p",
+   "Een audit slaat nooit op alle pagina’s van een website: hij slaat op een representatieve steekproef, en het resultaat geldt voor de hele dienst. De samenstelling van die steekproef bepaalt dus zowel de prijs als de betrouwbaarheid van het resultaat. De steekproef inkrimpen is de eenvoudigste manier om een offerte te verlagen, en de riskantste."
+  ],
+  [
+   "h3",
+   "Wat de officiële methode oplegt"
+  ],
+  [
+   "p",
+   "In Frankrijk legt de officiële pagina over [[https://accessibilite.numerique.gouv.fr/obligations/evaluation-conformite/|de beoordeling van de conformiteit met de RGAA (Franstalig)]] de minimale inhoud van de steekproef vast: de homepage, de contactpagina, de wettelijke vermeldingen, de pagina Toegankelijkheid, de sitemap, de hulp en de aanmeldingspagina, voor zover ze bestaan; minstens één relevante pagina per type dienst, inclusief zoeken; minstens één relevant downloadbaar document per type dienst; alle pagina’s van een proces; pagina’s met een merkbaar ander uitzicht of andere inhoud; en ten slotte willekeurig gekozen pagina’s ten belope van minstens 10 % van de steekproef. Ook het aantal bezoekers per pagina kan de keuze sturen."
+  ],
+  [
+   "p",
+   "Eén regel weegt zwaar door op de prijs en op het resultaat: een criterium wordt voor een pagina van een proces alleen gevalideerd als het voor alle pagina’s van dat proces gevalideerd is. De betaalstap uit een bestelproces halen, of de laatste stap van een onlineprocedure, verlaagt dus niet alleen de prijs: het maakt de audit strijdig met de methode en de gepubliceerde graad onjuist."
+  ],
+  [
+   "h3",
+   "Drie profielen van diensten, drie steekproeven"
+  ],
+  [
+   "p",
+   "De volgende tabel toont hoe de steekproef, en dus de auditinspanning, verandert naargelang de aard van de dienst. Ze geeft bewust geen enkele prijs: ze dient om te controleren of een offerte wel voorziet wat uw dienst vereist."
+  ],
+  [
+   "table",
+   {
+    "caption": "Voorbeelden van de samenstelling van een steekproef volgens het profiel van de dienst",
+    "head": [
+     "Profiel van de dienst",
+     "Verwachte inhoud van de steekproef",
+     "Wat de audit zwaarder maakt",
+     "Wat een te lage offerte vaak weglaat"
+    ],
+    "rows": [
+     [
+      "Informatieve website van een kmo of een kleine gemeente",
+      "Verplichte pagina’s, één pagina per type rubriek, contactformulier, een of twee pdf-documenten, willekeurige pagina’s",
+      "Carrousel op de homepage, interactieve kaart, formulier met captcha",
+      "De pdf’s, het volledige contactformulier en de willekeurig gekozen pagina’s"
+     ],
+     [
+      "Website met beveiligde zone (gebruikers, klanten, leden)",
+      "Verplichte pagina’s, aanmeldingspagina, elk type procedure met al zijn stappen, dashboard, door de dienst geproduceerde documenten",
+      "Formulieren in meerdere stappen, foutenbeheer, sessieverloop, gegevenstabellen",
+      "De tussenstappen van de procedures en de gegenereerde documenten (attesten, facturen)"
+     ],
+     [
+      "Webshop onder de EAA",
+      "Homepage, zoeken en filters, productlijst en productfiche, winkelmand, account aanmaken, levering, betaling, bevestiging, transactionele e-mails",
+      "Componenten van derden (betaling, beoordelingen, chat), sterke authenticatie, productvarianten",
+      "De betaling en de sterke authenticatie, omdat ze door een externe aanbieder worden geleverd"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Voor een webshop wordt de lijst van de te dekken schermen uitgewerkt in onze [[article:e-commerce|checklist toegankelijkheid voor webshops, scherm per scherm]]. Voor een openbare dienst laat het becommentarieerde voorbeeld van een steekproef in ons artikel over de RGAA-audit toe na te gaan of geen enkel proces is weggelaten. In beide gevallen vraagt u best dat de exacte lijst van pagina’s in de offerte staat: die lijst, en niet een aantal, verbindt de aanbieder."
+  ],
+  [
+   "p",
+   "De lijst van geauditeerde pagina’s wordt trouwens overgenomen in de [[article:declaration|toegankelijkheidsverklaring]], die ze openbaar maakt. Een gemakzuchtige steekproef komt dus altijd aan het licht: een gebruiker, een vereniging of de toezichthouder kan vaststellen dat het traject dat problemen geeft nooit is beoordeeld."
+  ],
+  [
+   "h2",
+   "soorten-toegankelijkheidsaudit",
+   "Volledige audit, snelle audit, hercontrole, opleveringsaudit: wat u echt koopt"
+  ],
+  [
+   "p",
+   "Het woord “audit” dekt zeer uiteenlopende prestaties. Een deel van de prijsverschillen tussen offertes komt daar vandaan: de ene biedt een volledige conformiteitsaudit aan, de andere een snelle diagnose, en beide dragen dezelfde naam. De tabel hieronder helpt te herkennen wat u werkelijk wordt voorgesteld."
+  ],
+  [
+   "table",
+   {
+    "caption": "De belangrijkste soorten toegankelijkheidsaudits en hun gebruik",
+    "head": [
+     "Prestatie",
+     "Wat ze controleert",
+     "Kan er een conformiteitsgraad mee worden gepubliceerd?",
+     "Wanneer te kiezen"
+    ],
+    "rows": [
+     [
+      "Volledige conformiteitsaudit",
+      "Alle criteria van het referentiekader, op een steekproef die met de methode overeenstemt, met hulptechnologieën",
+      "Ja, dit is de basis van de toegankelijkheidsverklaring",
+      "Eerste beoordeling, herontwerp, op te stellen of te vernieuwen verklaring, voorbereiding op een controle"
+     ],
+     [
+      "Snelle audit of diagnose",
+      "Een selectie van criteria of pagina’s, vaak de meest blokkerende",
+      "Nee, het resultaat is geen graad in de zin van het referentiekader",
+      "De omvang van het werk inschatten, prioriteiten bepalen vóór een herontwerp, een budget voorbereiden"
+     ],
+     [
+      "Hercontrole",
+      "De correcties, op de pagina’s van de oorspronkelijke steekproef",
+      "Ja, ze laat toe de graad en de verklaring bij te werken",
+      "Na een reeks correcties"
+     ],
+     [
+      "Audit bij oplevering of in preproductie",
+      "Een nieuwe versie vóór de livegang, op de gewijzigde sjablonen en trajecten",
+      "Afhankelijk van de afbakening; ze bereidt vooral een livegang zonder regressie voor",
+      "Vóór elke belangrijke oplevering, aan het einde van een project"
+     ],
+     [
+      "Audit van een mobiele app",
+      "De schermen van de app, op echte toestellen, met de native schermlezers",
+      "Ja, als de steekproef en het referentiekader het toelaten",
+      "iOS- of Android-app die onder de verplichtingen valt"
+     ],
+     [
+      "Automatische scan",
+      "Een deel van de fouten die een tool kan opsporen (ontbrekende attributen, berekenbare contrasten)",
+      "Nee: een groot deel van de criteria vergt menselijk oordeel",
+      "Continue bewaking tussen twee audits, nooit ter vervanging van de audit"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Wanneer het doel is een toegankelijkheidsverklaring te publiceren of bij te werken, vormt alleen een volledige conformiteitsaudit, of een hercontrole op dezelfde steekproef, de basis van een verdedigbare graad. Een snelle diagnose is nuttig om te budgetteren, maar laat niet toe aan de verplichting te voldoen. Voor een Franse openbare dienst dekt onze [[svc:audit-rgaa|RGAA-audit]] de 106 criteria en levert hij het ontwerp van de verklaring; voor een dienst die onder de Europese norm valt, volgt de [[svc:audit-conformite|conformiteitsaudit EN 301 549 en WCAG]] dezelfde logica."
+  ],
+  [
+   "p",
+   "De opleveringsaudit verdient een bijzondere vermelding, omdat hij vaak in de budgetten vergeten wordt, hoewel hij minder kost dan een correctie na de livegang. Wanneer hij in de planning van een project wordt opgenomen, controleert hij dat een nieuwe versie de gecorrigeerde fouten niet opnieuw invoert. Onze prestatie [[svc:recette|toegankelijkheidsrecette]] is ontworpen om in een bestaande opleveringscyclus te passen."
+  ],
+  [
+   "h2",
+   "referentiekader-land-prijs-audit",
+   "RGAA, RAWeb, EN 301 549, eCH-0059: het effect van het referentiekader en het land op de offerte"
+  ],
+  [
+   "p",
+   "Het referentiekader van de audit hangt af van het land en van het statuut van de organisatie. Het beïnvloedt de prijs bescheidener dan de steekproef, maar het wijzigt het formaat van de opleveringen, en dus een deel van het schrijfwerk."
+  ],
+  [
+   "ul",
+   [
+    "In Frankrijk is de RGAA 4.1.2 de referentiemethode voor de openbare sector en voor de ondernemingen die onder artikel 47 van de wet van 11 februari 2005 vallen; de audit levert een rooster in het officiële formaat en een graad die wordt berekend volgens de hierboven beschreven methode. De regelgevende context wordt uitgewerkt op onze pagina [[country:france|digitale toegankelijkheid in Frankrijk]].",
+    "In België bestaat er geen eigen nationaal referentiekader: de audit steunt op de norm EN 301 549 en de WCAG op niveau AA, met een rapport dat in het Frans, het Nederlands of het Engels kan worden gevraagd.",
+    "In Luxemburg wordt de openbare sector beoordeeld volgens de RAWeb voor het web en de RAAM voor mobiele toepassingen, gepubliceerd door de Service information et presse; hun methode ligt dicht bij die van de RGAA. Ons artikel over [[article:luxembourg|digitale toegankelijkheid in Luxemburg]] beschrijft de gepubliceerde controles.",
+    "In Zwitserland dient de norm eCH-0059 als referentie voor de federale overheidsdiensten; ze berust op de WCAG. Zwitserse bedrijven die in de Europese Unie verkopen, moeten ook rekening houden met de EAA.",
+    "Voor een dienst die onder de European Accessibility Act valt, is de technische referentie de norm EN 301 549; de vergelijking van de normen staat in ons artikel [[article:normes|WCAG 2.2, EN 301 549, RGAA, RAWeb: welke norm volgen]]."
+   ]
+  ],
+  [
+   "h3",
+   "Groepen die in meerdere landen actief zijn"
+  ],
+  [
+   "p",
+   "Een groep die dezelfde dienst in Frankrijk, in België en in Luxemburg aanbiedt, heeft geen drie onafhankelijke volledige audits nodig. De zuinigste aanpak bestaat erin één referentiekader als spil te kiezen, de gemeenschappelijke sjablonen één keer te auditeren en daarna de controles toe te voegen die eigen zijn aan elk land (formaat van het rooster, verplichte vermeldingen, verklaring). De meerkost zit dan vooral in de opleveringen en de talen, niet in een nieuwe volledige beoordeling."
+  ],
+  [
+   "h3",
+   "Het effect van de RGAA 5 op uw aankoopkalender"
+  ],
+  [
+   "p",
+   "De DINUM, de Franse interministeriële directie voor digitale zaken, heeft de publicatie van de RGAA 5 aangekondigd voor eind 2026. De verklaringen die vóór de verschijning zijn gepubliceerd, blijven geldig tot achttien maanden na de publicatie ervan, zonder dat ze langer dan drie jaar vanaf hun eigen datum gelden. Als uw verklaring de komende maanden verloopt, hoeft u de audit niet uit te stellen in afwachting van de nieuwe versie: een nu uitgevoerde RGAA 4.1.2-audit blijft bruikbaar en een groot deel van de correcties die eruit voortvloeit, zal ook voor de volgende versie gelden. Lanceert u daarentegen een meerjarige opdracht, voorzie dan in het bestek dat de volgende audits de versie van het referentiekader volgen die op de datum van elke bestelling van kracht is."
+  ],
+  [
+   "h2",
+   "afbakeningsfiche-offerte-toegankelijkheidsaudit",
+   "De afbakeningsfiche die u verstuurt om vergelijkbare offertes te krijgen"
+  ],
+  [
+   "p",
+   "De beste manier om vergelijkbare prijzen te krijgen, is aan alle geraadpleegde aanbieders dezelfde vraag te stellen, met dezelfde informatie. Hieronder staat de fiche die wij aanbevelen bij elke offerteaanvraag voor een toegankelijkheidsaudit. Ze past op twee pagina’s en bespaart verschillende heen-en-weerberichten."
+  ],
+  [
+   "ol",
+   [
+    [
+     "De te auditeren dienst.",
+     "Naam, adres, aard (openbare website, beveiligde zone, app, intranet), doelpubliek, belangrijkste technologieën (contentbeheersysteem, framework, componentenbibliotheek)."
+    ],
+    [
+     "De context en het doel.",
+     "Eerste verklaring, vernieuwing van een verklaring die meer dan drie jaar oud is, lopend herontwerp, antwoord op een ingebrekestelling, eis van een klant of van een openbare koper, conformiteit met de EAA."
+    ],
+    [
+     "Het verwachte referentiekader.",
+     "RGAA 4.1.2, EN 301 549, RAWeb, eCH-0059, WCAG 2.2 op niveau AA, en eventueel opgelegd formaat van het rooster."
+    ],
+    [
+     "De inventaris van de sjablonen.",
+     "De lijst van paginamodellen en complexe componenten, met telkens een voorbeeldadres. Dit is de informatie die de nauwkeurigheid van de offertes het meest verbetert."
+    ],
+    [
+     "De trajecten.",
+     "Elke procedure of transactie in meerdere stappen, met het aantal stappen en de toegangsvoorwaarden (account, betaling, bewijsstuk)."
+    ],
+    [
+     "De documenten en media.",
+     "Types downloadbare documenten (pdf-formulieren, rapporten, gegenereerde attesten), geschat volume, aanwezigheid van video’s of audio-inhoud."
+    ],
+    [
+     "De platformen.",
+     "Alleen het web, of ook iOS- en Android-apps, met de ondersteunde versies en toestellen."
+    ],
+    [
+     "De talen.",
+     "Taalversies van de dienst die moeten worden gedekt en gewenste taal voor het rapport en de toelichting."
+    ],
+    [
+     "De toegangen.",
+     "Beschikbaarheid van een stabiele preproductie, testaccounts, fictieve gegevens, en beveiligingsbeperkingen (VPN, lijst van toegelaten adressen)."
+    ],
+    [
+     "De verwachte opleveringen en prestaties.",
+     "Rooster, rapport, actieplan, ontwerp van de verklaring, toelichting, hercontrole, begeleiding van de correcties, gebruikerstests, opleiding."
+    ],
+    [
+     "De planning.",
+     "Gewenste datum voor de overhandiging van het rapport, deadlines (livegang, controle, einde van de geldigheid van de verklaring) en periodes waarin de ontwikkelingen bevroren zijn."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Zodra deze fiche is verstuurd, zal een ernstige aanbieder vaak voorstellen de steekproef bij te sturen: een vergeten traject toevoegen, twee zeer gelijkaardige sjablonen samenvoegen. Dat is een goed teken. Vraag alleen dat de definitieve steekproef in het schriftelijke voorstel staat, zodat alle offertes op dezelfde basis berusten of, bij gebrek daaraan, de verschillen zichtbaar zijn."
+  ],
+  [
+   "note",
+   "Te onthouden",
+   "Een offerteaanvraag die enkel vermeldt “website van 50 pagina’s, RGAA-audit” levert onvergelijkbare offertes op. De inventaris van de sjablonen, de lijst van de trajecten en de lijst van de opleveringen zijn de drie gegevens die prijzen vergelijkbaar maken."
+  ],
+  [
+   "h2",
+   "offertes-toegankelijkheidsaudit-vergelijken",
+   "Offertes voor een toegankelijkheidsaudit vergelijken: het rooster regel per regel"
+  ],
+  [
+   "p",
+   "Wanneer de offertes binnenkomen, vergelijk ze dan op de volgende punten vóór u naar de totaalprijs kijkt. Elke regel komt overeen met een veelvoorkomend verschil tussen offertes die op het eerste gezicht gelijkwaardig lijken."
+  ],
+  [
+   "table",
+   {
+    "caption": "Vergelijkingsrooster voor offertes van een toegankelijkheidsaudit",
+    "head": [
+     "Te vergelijken punt",
+     "Wat de offerte moet preciseren",
+     "Waarschuwingssignaal"
+    ],
+    "rows": [
+     [
+      "Steekproef",
+      "De nominatieve lijst van pagina’s en schermen, de volledige processen, de documenten, de willekeurig gekozen pagina’s",
+      "Louter een aantal pagina’s, zonder lijst en zonder samenstellingsregel"
+     ],
+     [
+      "Referentiekader en versie",
+      "Het referentiekader, de versie ervan en het beoogde niveau (bijvoorbeeld RGAA 4.1.2, of WCAG 2.2 niveau AA)",
+      "“Geldende normen” zonder verdere precisering"
+     ],
+     [
+      "Beoordelingsmethode",
+      "Manuele beoordeling van elk criterium op elke pagina, tools als ondersteuning",
+      "Resultaten die vooral uit een automatische tool komen"
+     ],
+     [
+      "Hulptechnologieën",
+      "De gebruikte combinaties van schermlezer en browser, op computer en op mobiel",
+      "Geen enkele vermelding, of één enkele tool"
+     ],
+     [
+      "Opleveringen",
+      "Volledig rooster, rapport dat elke fout lokaliseert, aanbevelingen, geprioriteerd actieplan, ontwerp van de verklaring",
+      "Een “beknopt” rapport zonder rooster en zonder lokalisatie van de fouten"
+     ],
+     [
+      "Toelichting",
+      "Aantal sessies, duur, doelgroepen (technische teams, business, directie)",
+      "Toelichting ontbreekt of wordt aangerekend zonder te zijn aangekondigd"
+     ],
+     [
+      "Hercontrole",
+      "Inbegrepen of optioneel, afbakening, termijn om ze te vragen",
+      "Geen vermelding: de werkelijke kost van de aanpak wordt onderschat"
+     ],
+     [
+      "Onafhankelijkheid",
+      "Auditors die los staan van de teams die de dienst hebben ontworpen of ontwikkeld",
+      "Audit voorgesteld door de aanbieder die de website heeft gebouwd, zonder scheiding van de teams"
+     ],
+     [
+      "Termijn",
+      "Startdatum, duur van de audit, datum van overhandiging van het rapport",
+      "Zeer korte termijn die onverenigbaar is met het aangekondigde volume"
+     ],
+     [
+      "Hypothesen en uitsluitingen",
+      "Wat niet gedekt is (inhoud van derden, documenten boven een bepaald volume, platformen)",
+      "Uitsluitingen die pas bij het rapport aan het licht komen"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Zodra deze regels op één lijn staan, wordt de totaalprijs weer een bruikbaar gegeven. Blijven twee offertes bij identieke afbakening ver uit elkaar liggen, vraag dan het aantal voorziene dagen per fase: u zult onmiddellijk zien welke aanbieder de beoordeling of het schrijfwerk heeft onderschat. Het is niet misplaatst die vraag te stellen; een aanbieder die zijn vak kent, antwoordt er zonder moeite op."
+  ],
+  [
+   "h3",
+   "Een eenvoudige beoordelingsmethode"
+  ],
+  [
+   "p",
+   "Voor een privéraadpleging zoals voor een overheidsopdracht volstaat meestal een beoordeling in twee blokken. Het eerste, technische blok beoordeelt de overeenstemming van de steekproef met de methode, de kwaliteit van een geanonimiseerd voorbeeld van een rapport, de hulptechnologieën en de bekwaamheid van de auditors. Het tweede beoordeelt de prijs bij identieke afbakening. Een geanonimiseerd uittreksel van een rapport vragen is de snelste manier om de werkelijke waarde van de opleveringen te beoordelen: de manier waarop een fout wordt gelokaliseerd en uitgelegd, zegt veel over het nut van de audit voor uw teams."
+  ],
+  [
+   "h2",
+   "offertes-afwijzen-toegankelijkheidsaudit",
+   "Zeven waarschuwingssignalen in een offerte voor een toegankelijkheidsaudit"
+  ],
+  [
+   "p",
+   "Sommige offertes zijn goedkoper omdat ze geen audit in de zin van het referentiekader leveren. Hieronder staan de signalen die u ertoe moeten brengen om verduidelijking te vragen, of de offerte af te wijzen."
+  ],
+  [
+   "ul",
+   [
+    "Een vaste prijs die wordt genoemd zonder de dienst te hebben gezien en zonder over de steekproef te hebben gesproken: de aanbieder weet niet wat hij verkoopt, en de afbakening zal achteraf worden bijgestuurd.",
+    "Een audit die binnen enkele uren of op één dag wordt opgeleverd voor een dienst met trajecten: de voorziene tijd is onverenigbaar met een manuele controle van de criteria.",
+    "Een rapport dat door een automatische tool is gegenereerd en als conformiteitsaudit wordt voorgesteld: veel criteria, zoals de relevantie van een tekstalternatief of de leesvolgorde, vergen menselijk oordeel.",
+    "Een vooraf gegarandeerde conformiteitsgraad, of een beloofd “certificaat”: de RGAA voorziet in een toegankelijkheidsverklaring die de organisatie zelf publiceert, niet in een certificering die door een aanbieder wordt uitgereikt, en een graad hangt af van de dienst, niet van de offerte.",
+    "Het ontbreken van een auditrooster in de opleveringen: zonder rooster kunt u noch de berekening van de graad controleren, noch de correcties opvolgen, noch een controle beantwoorden.",
+    "Een steekproef die de betaling, de authenticatie of de laatste stappen van een procedure uitsluit, omdat ze door een derde worden geleverd of moeilijk toegankelijk zijn.",
+    "Een offerte die zich voorstelt als gemandateerd of aanbevolen door een overheidsinstantie: de Arcom vermeldt op zijn [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|pagina over de toegankelijkheid van digitale diensten (Franstalig)]] dat hij de opdracht om in zijn naam op te treden aan geen enkele persoon of groepering delegeert."
+   ]
+  ],
+  [
+   "p",
+   "Het nuttige tegenvoorbeeld is de beslissing van de Arcom ten aanzien van de website impots.gouv.fr. De [[https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-24-juin-2026-mettant-en-demeure-le-ministere-de-laction-et-des-comptes-publics|beslissing van 24 juni 2026 (Franstalig)]] noemt onder meer een niet-toegankelijk aanslagbiljet in pdf, een uitklapmenu dat alleen met de muis opengaat en een tabel waarvan de cellen niet aan hun koppen zijn gekoppeld. Dat zijn precies de inhouden die een beperkte steekproef of een automatische tool laat passeren: een downloadbaar document, een component die met het toetsenbord moet worden bediend, een tabel die met een schermlezer moet worden gelezen."
+  ],
+  [
+   "h2",
+   "budget-conformiteit-digitale-toegankelijkheid",
+   "Voorbij de prijs van de audit: het volledige budget voor digitale toegankelijkheid"
+  ],
+  [
+   "p",
+   "De audit is zelden de zwaarste post van een toegankelijkheidstraject. Hij meet, lokaliseert en rangschikt; het zijn de correcties die kosten, en daarna het behoud van de conformiteit in de tijd. Een realistisch budget voorziet dus verschillende lijnen, waarvan sommige intern zijn."
+  ],
+  [
+   "table",
+   {
+    "caption": "De posten van een budget voor digitale toegankelijkheid",
+    "head": [
+     "Post",
+     "Wat hij omvat",
+     "Wat hem doet variëren",
+     "Wie hem doorgaans draagt"
+    ],
+    "rows": [
+     [
+      "Eerste audit",
+      "Conformiteitsbeoordeling, rapport, actieplan, ontwerp van de verklaring",
+      "Steekproef, platformen, referentiekader, opleveringen",
+      "Externe aanbieder of opgeleide interne auditors"
+     ],
+     [
+      "Technische correcties",
+      "Herwerking van de niet-conforme componenten, sjablonen en trajecten",
+      "Front-endarchitectuur, aanwezigheid van een componentenbibliotheek, technische schuld",
+      "Intern ontwikkelteam of bureau"
+     ],
+     [
+      "Redactionele correcties",
+      "Alternatieven voor afbeeldingen, titels, links, tabellen, door de contribuanten geschreven inhoud",
+      "Volume aan inhoud, aantal contribuanten",
+      "Contentteams"
+     ],
+     [
+      "Documenten",
+      "Toegankelijk maken van bestaande pdf’s en kantoordocumenten, toegankelijke sjablonen voor de toekomst",
+      "Omvang van de voorraad, documenten met juridische waarde of automatisch gegenereerde documenten",
+      "Businessteams, gespecialiseerde aanbieder"
+     ],
+     [
+      "Hercontrole",
+      "Controle van de correcties en bijwerking van de graad",
+      "Afbakening van de oorspronkelijke steekproef, omvang van de correcties",
+      "Bij voorkeur de aanbieder van de eerste audit"
+     ],
+     [
+      "Gebruikerstests",
+      "Praktijktests met personen met een beperking",
+      "Aantal profielen, scenario’s en sessies",
+      "Gespecialiseerde aanbieder"
+     ],
+     [
+      "Opleiding",
+      "Algemene sensibilisering en opleidingen per beroep",
+      "Aantal betrokken personen en beroepen",
+      "Aanbieder, daarna interne relais"
+     ],
+     [
+      "Behoud van de conformiteit",
+      "Recette bij elke versie, bewaking, bijwerking van de verklaring",
+      "Frequentie van de opleveringen, aantal diensten",
+      "Interne teams, met punctuele ondersteuning"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Voor de Franse openbare sector is dit budget niet alleen een kwestie van beheer. De officiële pagina over het [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|meerjarenschema voor toegankelijkheid (Franstalig)]] bepaalt dat het schema de personele en financiële middelen voorstelt die aan digitale toegankelijkheid worden besteed, het beroep op externe expertise, de geplande audits, de opleidingsacties en de integratie van toegankelijkheid in contractuele clausules, ook in aanbestedingen en offertes. Het budget voor de audit en de correcties hoort dus, minstens in grote lijnen, in een gepubliceerd document te staan. Hoe u die middelen begroot zonder bedragen te verzinnen, leest u in het budgethoofdstuk van ons [[article:schema-pluriannuel|model voor het meerjarenplan]]."
+  ],
+  [
+   "p",
+   "De meest rendabele correcties zijn die op gedeelde componenten: een fout die in een formuliercomponent wordt hersteld, verdwijnt van alle pagina’s die hem gebruiken. Daarom groepeert een goed opgebouwd actieplan de fouten per component in plaats van per pagina. Wanneer de fouten uit de front-endarchitectuur voortkomen, voorkomt begeleiding bij [[svc:developpement|toegankelijke ontwikkeling]] dat u tweemaal voor dezelfde correctie betaalt. En opdat de contribuanten de redactionele fouten niet opnieuw invoeren, kosten [[svc:formations|opleidingen per beroep]] doorgaans minder dan een nieuwe audit."
+  ],
+  [
+   "p",
+   "Ten slotte mist een aanpak zonder enige controle met gebruikers echte blokkades. [[svc:test-utilisateur|Tests met gebruikers met een beperking]], uitgevoerd op twee of drie essentiële trajecten, vullen de audit aan zonder hem te vervangen: de audit zegt of de dienst de norm naleeft, de tests zeggen of de gebruikers kunnen doen waarvoor ze gekomen zijn."
+  ],
+  [
+   "h2",
+   "kost-van-niet-auditeren",
+   "Wat het ontbreken van een audit kost"
+  ],
+  [
+   "p",
+   "De prijs van een audit moet ook worden afgewogen tegen wat hij vermijdt. In Frankrijk ziet de Arcom toe op de verplichtingen van artikel 47 van de wet van 11 februari 2005. Na een ingebrekestelling die zonder gevolg blijft, kan zij een geldboete opleggen van maximaal 50.000 euro voor het niet naleven van de toegankelijkheidsvereisten en van 25.000 euro voor de overige verplichtingen: verklaring, vermelding op de homepage, meerjarenschema, jaarlijks plan en meldingsmechanisme. Voor producten en diensten die onder de EAA vallen, kan de DGCCRF bevelen de conformiteit te herstellen, en vormen de tekortkomingen overtredingen van de vijfde klasse waarin artikel R. 451-4 van de Franse Code de la consommation voorziet. De details van de procedures staan in ons artikel over [[article:france|de verplichtingen en sancties in Frankrijk]]."
+  ],
+  [
+   "p",
+   "De meest directe kost is echter die van te laat uitgevoerde correcties. Een fout die bij een controle aan het licht komt, moet binnen een opgelegde termijn worden hersteld, vaak op een dienst die in productie draait, soms door een team dat met iets anders bezig was te mobiliseren. In haar beslissing van 24 juni 2026 heeft de Arcom negen maanden toegekend om de tekortkomingen aan de toegankelijkheidsvereisten te herstellen en twee maanden voor de documentaire verplichtingen: termijnen die weinig marge laten voor een complexe dienst waarvan de toestand vooraf niet was gemeten."
+  ],
+  [
+   "p",
+   "Omgekeerd laat een audit op het juiste moment toe om eerst de fouten te herstellen die de essentiële trajecten blokkeren, de rest in de volgende versies te plannen en een correcte verklaring te publiceren. Een oprechte verklaring “gedeeltelijk conform”, met een gedateerd actieplan, is een veel steviger positie dan geen verklaring of een overschatte graad."
+  ],
+  [
+   "h2",
+   "overheidsopdracht-toegankelijkheidsaudit",
+   "Een toegankelijkheidsaudit aankopen via een overheidsopdracht (Frans recht)"
+  ],
+  [
+   "p",
+   "Voor een Franse openbare koper bepaalt de prijs van de audit ook de procedure. Hieronder gaat het dus om Frans recht, niet om de Belgische regelgeving inzake overheidsopdrachten. Sinds 1 april 2026 maakt [[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053222294|artikel R. 2122-8 van de Franse Code de la commande publique]], gewijzigd bij decreet nr. 2025-1386 van 29 december 2025, het mogelijk om zonder voorafgaande bekendmaking en mededinging opdrachten voor leveringen of diensten te gunnen waarvan de geraamde waarde lager is dan 60.000 euro exclusief btw. De koper moet dan toezien op de keuze van een relevante offerte, op een goed gebruik van de openbare middelen en erop niet systematisch met dezelfde marktdeelnemer te contracteren wanneer er meerdere offertes zijn die aan de behoefte kunnen voldoen."
+  ],
+  [
+   "p",
+   "Deze drempel wordt beoordeeld op de geraamde waarde van de behoefte, en niet op één enkele audit. Een gemeente of overheidsinstelling die van plan is meerdere websites te auditeren gedurende de looptijd van haar meerjarenschema, heeft er vaak baat bij die behoeften te bundelen in een raamovereenkomst met bestelbons, in plaats van veel kleine bestellingen te plaatsen. Zo wint ze aan samenhang in de methode van de ene audit tot de andere, en worden haar graden in de tijd vergelijkbaar."
+  ],
+  [
+   "h3",
+   "De prijslijst opbouwen"
+  ],
+  [
+   "p",
+   "De structuur van de prijslijst bepaalt de vergelijkbaarheid van de offertes. Eén enkele prijs “per audit” is moeilijk te vergelijken; een prijs “per pagina” moedigt opgeblazen steekproeven met overbodige pagina’s aan. Een robuustere structuur onderscheidt een forfait voor de afbakening, een eenheidsprijs per pagina of scherm van de steekproef, eventueel met een onderscheid tussen een eenvoudige pagina en een stap van een proces, een prijs per downloadbaar document, een prijs voor de hercontrole uitgedrukt per pagina, een prijs voor de toelichting en een dagprijs voor de begeleiding. Een geraamde kwantitatieve staat op basis van een echte of fictieve dienst maakt het daarna mogelijk de offertes op hetzelfde scenario te vergelijken."
+  ],
+  [
+   "h3",
+   "De gunningscriteria die de kwaliteit beschermen"
+  ],
+  [
+   "ul",
+   [
+    "De methode: overeenstemming van de voorgestelde steekproef met de officiële methode, rekening houden met processen en documenten, gebruikte hulptechnologieën.",
+    "De kwaliteit van de opleveringen, beoordeeld aan de hand van een geanonimiseerd uittreksel van een rapport en een auditrooster.",
+    "De bekwaamheid van het team: ervaring van de auditors met het gevraagde referentiekader en beheersing van de hulptechnologieën.",
+    "De onafhankelijkheid ten opzichte van de aanbieders die de geauditeerde dienst ontwerpen of onderhouden.",
+    "De uitvoerings- en opleveringstermijnen, die verenigbaar zijn met de planning voor de publicatie van de verklaring.",
+    "De prijs, beoordeeld op de geraamde kwantitatieve staat in plaats van op losse eenheidsprijzen."
+   ]
+  ],
+  [
+   "p",
+   "Voor de organisaties van de [[sector:public|openbare sector]] is de audit ook de gelegenheid om de toegankelijkheidsclausules in de opdrachten voor het ontwerp en het onderhoud van websites na te gaan: toegankelijke opleveringen eisen van een webaanbieder kost weinig op het ogenblik van de opdracht, en veel wanneer de fouten na de oplevering worden vastgesteld."
+  ],
+  [
+   "h2",
+   "kost-toegankelijkheidsaudit-verlagen",
+   "De kost van een toegankelijkheidsaudit verlagen zonder het resultaat te vertekenen"
+  ],
+  [
+   "p",
+   "Er bestaan terechte besparingen, die de auditduur inkorten zonder een controle te schrappen. Ze berusten bijna allemaal op voorbereiding."
+  ],
+  [
+   "ul",
+   [
+    "Een nauwkeurige inventaris van de sjablonen en componenten bezorgen: de auditor hoeft de structuur van de website niet tijdens de audit te ontdekken, en de steekproef bevat geen overbodige pagina’s.",
+    "Vanaf de eerste dag een stabiele omgeving en werkende testaccounts garanderen: een traject dat wordt geblokkeerd door een vervallen account of een onbeschikbare preproductie kost aangerekende tijd.",
+    "Vóór de audit de evidente fouten corrigeren die een gratis automatische tool opspoort: taalattributen, ontbrekende alternatieven, paginatitels. De auditor besteedt zijn tijd dan aan de fouten die expertise vergen.",
+    "Een componentenbibliotheek of een designsysteem dat aan meerdere websites gemeenschappelijk is, één keer auditeren, en de audits van de websites vervolgens beperken tot de sjablonen en de inhoud die eigen zijn aan elke website.",
+    "Diensten die dezelfde technologie delen in één bestelling groeperen om de afbakening en de toelichting te delen.",
+    "De audit plannen op een gestabiliseerde versie, en niet op een versie die nog in ontwikkeling is en nog zal veranderen vóór het rapport wordt overhandigd.",
+    "De hercontrole al bij de eerste bestelling voorzien: de aanbieder die de dienst al kent, voert ze sneller uit, en de prijs ervan is vooraf gekend."
+   ]
+  ],
+  [
+   "p",
+   "Omgekeerd zijn drie besparingen duur: processen uit de steekproef halen, afzien van hulptechnologieën en de lokalisatie van de fouten uit het rapport schrappen. Elk van de drie verlaagt de prijs van de audit, maar verhoogt die van de correcties, of stelt u bloot aan een onjuiste verklaring."
+  ],
+  [
+   "p",
+   "Voor een [[sector:pme|kmo]] rijst de vraag naar de afbakening ook al vroeger. Een micro-onderneming die diensten verleent, minder dan tien werknemers telt en wier omzet of balanstotaal twee miljoen euro niet overschrijdt, is voor haar diensten vrijgesteld van de vereisten van de EAA; ze heeft dus uit dien hoofde geen auditverplichting, ook al blijft de toegankelijkheid van haar website een commerciële troef. Controleer vóór u een offerte aanvraagt of uw dienst echt binnen het toepassingsgebied van de verplichtingen valt: ons artikel over [[article:eaa|de European Accessibility Act]] zet de producten, de diensten en de vrijstellingen uiteen."
+  ],
+  [
+   "h2",
+   "actieplan-offerte-toegankelijkheidsaudit",
+   "Actieplan: van de offerteaanvraag tot de hercontrole, in acht stappen"
+  ],
+  [
+   "ol",
+   [
+    [
+     "De verplichting en het referentiekader nagaan.",
+     "Bepaal de tekst die op uw dienst van toepassing is en het referentiekader dat in uw land wordt verwacht: RGAA, EN 301 549, RAWeb, eCH-0059."
+    ],
+    [
+     "Het doel van de audit vastleggen.",
+     "Eerste verklaring, vernieuwing, herontwerp, antwoord op een controle, eis van een klant: het doel bepaalt het type prestatie."
+    ],
+    [
+     "De afbakeningsfiche invullen.",
+     "Inventaris van de sjablonen, trajecten, documenten, platformen, talen, toegangen, opleveringen en planning."
+    ],
+    [
+     "Minstens twee of drie aanbieders raadplegen.",
+     "Met dezelfde fiche, en met de vraag naar de nominatieve lijst van pagina’s van de voorgestelde steekproef en een geanonimiseerd uittreksel van een rapport."
+    ],
+    [
+     "Vergelijken met het rooster.",
+     "Breng de afbakeningen op één lijn en vergelijk dan de prijzen; vraag bij een groot verschil het aantal dagen per fase."
+    ],
+    [
+     "De audit voorbereiden.",
+     "Stabiele omgeving, testaccounts, beschikbare technische gesprekspartner, ontwikkelingen op de geauditeerde afbakening bevriezen."
+    ],
+    [
+     "Publiceren en corrigeren.",
+     "Publiceer de verklaring die bij de resultaten past, ook als ze ongunstig zijn, en corrigeer dan te beginnen met de essentiële trajecten en de gedeelde componenten."
+    ],
+    [
+     "De hercontrole en de volgende audit plannen.",
+     "Hercontrole na de correcties, daarna een nieuwe audit uiterlijk drie jaar na de verklaring, na een herontwerp, of binnen achttien maanden na een nieuwe versie van het referentiekader."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Wenst u een voorstel op deze basis, beschrijf dan uw dienst via de [[contact|contactpagina]]: wij antwoorden met een becommentarieerde steekproef, een termijn en een offerte die per fase is uitgewerkt. In ons kantoor bedraagt de gemiddelde duur van een audit drie weken, te rekenen vanaf de validatie van de steekproef."
+  ]
+ ],
+ "faq": [
+  [
+   "Hoeveel kost een RGAA-audit?",
+   "Er bestaat geen officieel tarief. De prijs hangt af van het aantal sjablonen en pagina’s van de steekproef, de trajecten in meerdere stappen, de platformen, de te controleren documenten, het referentiekader en de opleveringen. Voor een betrouwbaar bedrag stuurt u aan meerdere aanbieders dezelfde afbakeningsfiche (sjablonen, trajecten, documenten, verwachte opleveringen) en vergelijkt u offertes die op dezelfde steekproef slaan. Wees op uw hoede voor een vaste prijs die wordt genoemd zonder de dienst te hebben gezien."
+  ],
+  [
+   "Waarom verschillen de offertes voor een toegankelijkheidsaudit zo sterk?",
+   "Meestal omdat ze niet op dezelfde afbakening slaan. De ene offerte kan een manuele beoordeling van alle criteria op een volledige steekproef voorzien, de andere een gedeeltelijke diagnose of het laten lopen van een automatische tool. De verschillen komen ook uit de opleveringen (rooster, lokalisatie van de fouten, ontwerp van de verklaring), de toelichting en de hercontrole. Breng die elementen op één lijn vóór u de totaalprijzen vergelijkt."
+  ],
+  [
+   "Volstaat een gratis automatische audit om een toegankelijkheidsverklaring te publiceren?",
+   "Nee. Een automatische tool spoort een deel van de fouten op, maar veel criteria vergen menselijk oordeel: relevantie van een alternatief, leesvolgorde, begrijpelijkheid van foutmeldingen, gebruik met het toetsenbord en de schermlezer. De graad die in een verklaring wordt gepubliceerd, moet voortvloeien uit een beoordeling criterium per criterium op een representatieve steekproef. De tool blijft nuttig om de website tussen twee audits te bewaken."
+  ],
+  [
+   "Is een hercontrole verplicht?",
+   "Geen enkele tekst legt als dusdanig een hercontrole op, maar de toegankelijkheidsverklaring moet de werkelijke toestand van de dienst weergeven. Na een reeks correcties controleert de hercontrole de correcties op de oorspronkelijke steekproef en laat ze toe de graad en de verklaring bij te werken. Ze is korter dan de eerste audit; vraag de prijs en de afbakening ervan al in de eerste offerte."
+  ],
+  [
+   "Kan ik de toegankelijkheidsaudit intern laten uitvoeren om kosten te besparen?",
+   "Ja, de officiële methode staat zelfevaluatie toe, op voorwaarde dat de organisatie de betrouwbaarheid van haar verklaring waarborgt. Dat vereist auditors die in het referentiekader zijn opgeleid, die hulptechnologieën gebruiken en die onafhankelijk zijn van de teams die de dienst hebben ontworpen. Veel organisaties combineren een externe audit bij elk herontwerp of om de drie jaar met interne controles bij elke versie."
+  ],
+  [
+   "Moet ik op de RGAA 5 wachten om mijn website te laten auditeren?",
+   "Niet als uw verklaring bijna verloopt of als u er geen hebt. De verklaringen die vóór de RGAA 5 zijn gepubliceerd, blijven geldig tot achttien maanden na de publicatie ervan, zonder dat ze langer dan drie jaar vanaf hun datum gelden. De correcties uit een RGAA 4.1.2-audit zullen grotendeels ook voor de volgende versie dienen. Wachten betekent vooral een dienst online laten staan waarvan de toestand niet bekend is."
+  ],
+  [
+   "Is een toegankelijkheidsaudit een overheidsopdracht met bekendmaking?",
+   "Dat hangt af van de geraamde waarde van de behoefte. In het Franse recht kunnen sinds 1 april 2026 opdrachten voor diensten met een geraamde waarde onder 60.000 euro exclusief btw zonder voorafgaande bekendmaking en mededinging worden gegund, krachtens artikel R. 2122-8 van de Code de la commande publique. Daarboven geldt een aangepaste of formele procedure. De waarde wordt beoordeeld op de hele behoefte, bijvoorbeeld alle audits die het meerjarenschema voorziet."
+  ]
+ ],
+ "cta_svc": "audit-rgaa",
+ "cta_title": "Een offerte op basis van uw echte afbakening?",
+ "cta_text": "Beschrijf ons uw dienst: wij stellen u een becommentarieerde steekproef, een termijn en een offerte per fase voor, vergelijkbaar met elk ander voorstel.",
+ "related": [
+  "audit-rgaa",
+  "declaration",
+  "guide"
+ ],
+ "modified": "2026-11-12"
 }

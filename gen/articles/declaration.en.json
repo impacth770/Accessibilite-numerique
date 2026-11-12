@@ -458,6 +458,10 @@
    "Consistency between the documents is what makes the whole credible. Each non-compliance listed in the statement should have a corresponding correction in an action plan, with a deadline. Each exemption for disproportionate burden should be re-examined when the multi-year plan is revised, because the situation that justified it (budget, tool, supplier) changes. For a public body, this work goes hand in hand with public procurement: our page on the [[sector:public|public sector]] explains how to build accessibility into contracts."
   ],
   [
+   "p",
+   "To draft these two documents section by section, with a sample annual action plan, indicators and a publication calendar, see our [[article:schema-pluriannuel|annotated template for the multi-year accessibility plan]]."
+  ],
+  [
    "h2",
    "updating",
    "When to update an accessibility statement, and which tools to use"
@@ -868,5 +872,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-11-10"
+ "modified": "2026-11-12"
 }

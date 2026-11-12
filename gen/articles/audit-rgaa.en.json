@@ -14,7 +14,7 @@
  ],
  "date": "2026-10-29",
  "cluster": "methode",
- "modified": "2026-11-05",
+ "modified": "2026-11-12",
  "lead": "An RGAA audit measures, criterion by criterion, how far a website, an app or a software package complies with the RGAA, France’s General Accessibility Improvement Framework (Référentiel général d’amélioration de l’accessibilité). It is the mandatory basis of every accessibility statement in France, and that statement is what Arcom, the French regulator for audiovisual and digital communication, checks during its inspections. Most pages on the subject describe the method; this one shows how an RGAA audit actually unfolds, week by week, what your organisation needs to prepare, how the sample is built, what the deliverables contain and how to read the report without being a digital accessibility specialist.",
  "body": [
   [
@@ -138,6 +138,10 @@
     "a technical contact available during testing, and the date from which changes are frozen: a website that changes during the audit produces inconsistent results;",
     "the calendar of constraints: planned go-live, inspection deadline, steering committee at which the results must be presented."
    ]
+  ],
+  [
+   "p",
+   "If the organisation does not yet have a multi-year plan, the audit is the right moment to lay its foundations: our article on [[article:schema-pluriannuel|drafting the multi-year plan and the annual action plan]] explains how to turn audit findings into a correction schedule."
   ],
   [
    "p",

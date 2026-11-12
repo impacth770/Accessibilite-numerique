@@ -244,6 +244,10 @@
    ]
   ],
   [
+   "p",
+   "Den erwarteten Inhalt des Mehrjahresplans, ein kommentiertes Muster und ein Beispiel für einen Jahresmaßnahmenplan finden Sie in unserem Leitfaden zum [[article:schema-pluriannuel|französischen Mehrjahresplan für digitale Barrierefreiheit]]."
+  ],
+  [
    "note",
    "Gut zu wissen",
    "Eine Konformitätsquote von 42 % darf nicht als „vollständige Konformität“ dargestellt werden: Das ist einer der zehn Verstöße, die die Arcom in ihrer Entscheidung vom 24. Juni 2026 festgestellt hat. Der angezeigte Hinweis muss sich zwingend aus dem Ergebnis eines gültigen Audits ergeben."
@@ -684,6 +688,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-10-31",
+ "modified": "2026-11-12",
  "cluster": "reglementation"
 }

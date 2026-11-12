@@ -14,7 +14,7 @@
  ],
  "date": "2026-10-29",
  "cluster": "methode",
- "modified": "2026-11-05",
+ "modified": "2026-11-12",
  "lead": "Een RGAA-audit meet criterium per criterium in welke mate een website, een app of een softwarepakket voldoet aan het Franse Référentiel général d’amélioration de l’accessibilité (RGAA). In Frankrijk is die audit de verplichte basis van elke toegankelijkheidsverklaring, en het is precies die verklaring die de Franse toezichthouder Arcom bij zijn controles nagaat. De meeste pagina’s over het onderwerp beschrijven de methode; deze gids toont hoe de audit in de praktijk verloopt, week per week, wat uw organisatie moet voorbereiden, hoe de steekproef tot stand komt, wat de opleveringen bevatten en hoe u het rapport leest zonder specialist in digitale toegankelijkheid te zijn.",
  "body": [
   [
@@ -146,6 +146,10 @@
     "een technische contactpersoon die tijdens de tests beschikbaar is, en de datum van de wijzigingsstop: een website die tijdens de audit verandert, levert onsamenhangende resultaten op;",
     "de kalender van de randvoorwaarden: geplande lancering, controletermijn, stuurgroep waar de resultaten moeten worden voorgesteld."
    ]
+  ],
+  [
+   "p",
+   "Heeft de organisatie nog geen meerjarenplan, dan is de audit het goede moment om de basis te leggen: ons artikel over [[article:schema-pluriannuel|het opstellen van het meerjarenplan en het jaarlijkse actieplan]] legt uit hoe u auditresultaten omzet in een correctiekalender."
   ],
   [
    "p",

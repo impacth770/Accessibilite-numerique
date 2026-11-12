@@ -14,7 +14,7 @@
  ],
  "date": "2026-10-29",
  "cluster": "methode",
- "modified": "2026-11-05",
+ "modified": "2026-11-12",
  "lead": "Ein RGAA-Audit misst Kriterium für Kriterium, inwieweit eine Website, eine App oder ein Softwarepaket dem französischen Referenzrahmen für digitale Barrierefreiheit entspricht, dem Référentiel général d'amélioration de l'accessibilité (RGAA). Es ist die zwingende Grundlage jeder Erklärung zur Barrierefreiheit in Frankreich, und genau diese Erklärung prüft die Arcom bei ihren Kontrollen. Die meisten Seiten zum Thema beschreiben die Methode; dieser Leitfaden zeigt, wie ein RGAA-Audit tatsächlich abläuft, Woche für Woche, was Ihre Organisation vorbereiten muss, wie die Stichprobe entsteht, was die Ergebnisdokumente enthalten und wie Sie den Bericht lesen, ohne Fachmann zu sein. Er richtet sich auch an Organisationen in Luxemburg, in der Schweiz und in Ostbelgien, die Dienste in Frankreich betreiben oder deren Prüfrahmen nach derselben Logik funktioniert.",
  "body": [
   [
@@ -150,6 +150,10 @@
     "eine technische Ansprechperson, die während der Tests verfügbar ist, und das Datum, ab dem keine Änderungen mehr eingespielt werden: Eine Website, die sich während des Audits verändert, liefert widersprüchliche Ergebnisse;",
     "der Kalender der Rahmenbedingungen: geplantes Go-live, Kontrollfrist, Lenkungsausschuss, in dem die Ergebnisse vorgestellt werden sollen."
    ]
+  ],
+  [
+   "p",
+   "Hat die Organisation noch keinen Mehrjahresplan, ist das Audit der richtige Zeitpunkt, um die Grundlagen zu legen: Unser Beitrag über [[article:schema-pluriannuel|die Erstellung des Mehrjahresplans und des Jahresmaßnahmenplans]] erklärt, wie Sie Auditergebnisse in einen Korrekturkalender übertragen."
   ],
   [
    "p",

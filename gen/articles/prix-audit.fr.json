@@ -580,7 +580,7 @@
   ],
   [
    "p",
-   "Pour le secteur public français, ce budget n'est pas qu'une question de gestion. La page officielle sur le [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|schéma pluriannuel de mise en accessibilité]] prévoit qu'il présente les ressources humaines et financières affectées à l'accessibilité numérique, le recours aux expertises externes, les audits prévus, les actions de formation et l'intégration de l'accessibilité dans les clauses contractuelles, y compris les appels d'offres et les devis. Le budget de l'audit et des corrections a donc vocation à figurer, au moins dans ses grandes lignes, dans un document publié."
+   "Pour le secteur public français, ce budget n'est pas qu'une question de gestion. La page officielle sur le [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|schéma pluriannuel de mise en accessibilité]] prévoit qu'il présente les ressources humaines et financières affectées à l'accessibilité numérique, le recours aux expertises externes, les audits prévus, les actions de formation et l'intégration de l'accessibilité dans les clauses contractuelles, y compris les appels d'offres et les devis. Le budget de l'audit et des corrections a donc vocation à figurer, au moins dans ses grandes lignes, dans un document publié. Pour chiffrer ces moyens sans inventer de montant, voyez la section budget de notre [[article:schema-pluriannuel|modèle de schéma pluriannuel]]."
   ],
   [
    "p",
@@ -760,5 +760,6 @@
   "audit-rgaa",
   "declaration",
   "guide"
- ]
+ ],
+ "modified": "2026-11-12"
 }

@@ -580,7 +580,7 @@
   ],
   [
    "p",
-   "Für den französischen öffentlichen Sektor ist dieses Budget nicht nur eine Frage der Verwaltung. Die offizielle Seite zum [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|mehrjährigen Barrierefreiheitsschema]] (französischsprachig) sieht vor, dass es die der digitalen Barrierefreiheit zugewiesenen personellen und finanziellen Ressourcen darstellt, den Rückgriff auf externe Expertise, die geplanten Audits, die Schulungsmaßnahmen und die Aufnahme der Barrierefreiheit in vertragliche Klauseln, einschließlich Ausschreibungen und Angebote. Das Budget für Audit und Korrekturen gehört also zumindest in seinen Grundzügen in ein veröffentlichtes Dokument."
+   "Für den französischen öffentlichen Sektor ist dieses Budget nicht nur eine Frage der Verwaltung. Die offizielle Seite zum [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|mehrjährigen Barrierefreiheitsschema]] (französischsprachig) sieht vor, dass es die der digitalen Barrierefreiheit zugewiesenen personellen und finanziellen Ressourcen darstellt, den Rückgriff auf externe Expertise, die geplanten Audits, die Schulungsmaßnahmen und die Aufnahme der Barrierefreiheit in vertragliche Klauseln, einschließlich Ausschreibungen und Angebote. Das Budget für Audit und Korrekturen gehört also zumindest in seinen Grundzügen in ein veröffentlichtes Dokument. Wie Sie diese Mittel beziffern, ohne Beträge zu erfinden, zeigt der Budgetabschnitt unseres [[article:schema-pluriannuel|Musters für den Mehrjahresplan]]."
   ],
   [
    "p",
@@ -760,5 +760,6 @@
   "audit-rgaa",
   "declaration",
   "guide"
- ]
+ ],
+ "modified": "2026-11-12"
 }

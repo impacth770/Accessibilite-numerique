@@ -462,6 +462,10 @@
    "Die Kohärenz zwischen den Dokumenten macht das Ganze glaubwürdig. Jede in der Erklärung aufgeführte Nichtkonformität sollte ihre Korrektur in einem Maßnahmenplan finden, mit einem Termin. Jede Ausnahme wegen unverhältnismäßiger Belastung sollte bei der Überarbeitung des Mehrjahresplans neu geprüft werden, denn die Lage, die sie rechtfertigte (Budget, Werkzeug, Dienstleister), ändert sich. Für eine öffentliche Stelle hängt diese Arbeit mit der öffentlichen Beschaffung zusammen: Unsere Seite für den [[sector:public|öffentlichen Sektor]] beschreibt, wie sich Barrierefreiheit in Ausschreibungen verankern lässt. In Belgien verlangt der FÖD BOSA zusätzlich, in der Erklärung selbst zu jedem nicht konformen Bereich die geplante Korrektur, den vorgesehenen Termin und die Zwischenlösung anzugeben."
   ],
   [
+   "p",
+   "Wie Sie diese beiden Dokumente Rubrik für Rubrik verfassen, mit einem Beispiel für den Jahresmaßnahmenplan, Kennzahlen und einem Veröffentlichungskalender, zeigt unser [[article:schema-pluriannuel|kommentiertes Muster für den Mehrjahresplan zur digitalen Barrierefreiheit]]."
+  ],
+  [
    "h2",
    "aktualisierung",
    "Wann die Erklärung zur Barrierefreiheit aktualisiert werden muss, und mit welchen Werkzeugen"
@@ -963,5 +967,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-11-10"
+ "modified": "2026-11-12"
 }

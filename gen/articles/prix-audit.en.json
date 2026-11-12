@@ -580,7 +580,7 @@
   ],
   [
    "p",
-   "For the French public sector, this budget is not only a management matter. The official page on the [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|multi-year accessibility plan (in French)]] provides that it sets out the human and financial resources allocated to digital accessibility, the use of external expertise, the planned audits, the training actions and the integration of accessibility into contractual clauses, including calls for tender and quotes. The budget for the audit and the fixes is therefore meant to appear, at least in outline, in a published document."
+   "For the French public sector, this budget is not only a management matter. The official page on the [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|multi-year accessibility plan (in French)]] provides that it sets out the human and financial resources allocated to digital accessibility, the use of external expertise, the planned audits, the training actions and the integration of accessibility into contractual clauses, including calls for tender and quotes. The budget for the audit and the fixes is therefore meant to appear, at least in outline, in a published document. To cost these resources without inventing figures, see the budget section of our [[article:schema-pluriannuel|multi-year plan template]]."
   ],
   [
    "p",
@@ -760,5 +760,6 @@
   "audit-rgaa",
   "declaration",
   "guide"
- ]
+ ],
+ "modified": "2026-11-12"
 }
