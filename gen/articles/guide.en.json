@@ -505,7 +505,7 @@
     "Adding ARIA attributes everywhere “to be on the safe side”: misused ARIA often makes the experience worse rather than better, while native HTML is enough in most cases.",
     "Using visual CAPTCHAs or short session timeouts without an alternative or the possibility of extending them.",
     "Neglecting PDF documents and transactional emails, even though they are part of the user journey.",
-    "Leaving accessibility requirements out of specifications and tender documents, then discovering the defects when the project is handed over.",
+    "Leaving accessibility requirements out of specifications and tender documents, then discovering the defects when the project is handed over. Our article on [[article:clauses-marche-public|accessibility clauses in public procurement]] provides model clauses and an acceptance procedure.",
     "Handing the topic to a single person with no support from senior management and no budget for fixes."
    ]
   ],
@@ -613,5 +613,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-10"
+ "modified": "2026-11-14"
 }

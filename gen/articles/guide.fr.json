@@ -505,7 +505,7 @@
     "Ajouter des attributs ARIA partout « pour bien faire » : un ARIA mal employé dégrade souvent l'expérience au lieu de l'améliorer, alors que le HTML natif suffit dans la majorité des cas.",
     "Placer des captchas visuels ou des délais de session courts sans alternative ni possibilité de prolongation.",
     "Négliger les documents PDF et les courriels transactionnels, qui font pourtant partie du parcours.",
-    "Ne pas intégrer d'exigences d'accessibilité dans les cahiers des charges, puis découvrir les défauts à la réception du projet.",
+    "Ne pas intégrer d'exigences d'accessibilité dans les cahiers des charges, puis découvrir les défauts à la réception du projet. Notre article sur [[article:clauses-marche-public|les clauses d'accessibilité des marchés publics]] propose des clauses types et une procédure de recette.",
     "Confier le sujet à une seule personne sans soutien de la direction ni budget de correction."
    ]
   ],
@@ -613,5 +613,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-10"
+ "modified": "2026-11-14"
 }

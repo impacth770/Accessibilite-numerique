@@ -341,7 +341,7 @@
   ],
   [
    "p",
-   "Other costs come on top. An Arcom decision is published in the Journal officiel, which exposes the organisation publicly. Public buyers and large companies increasingly include accessibility requirements in their tenders, and the Cour des comptes recommends making standard clauses widespread in public procurement. Finally, fixing a service already in production costs more than designing it accessibly: every non-compliant component in a design system is multiplied across all the pages that use it."
+   "Other costs come on top. An Arcom decision is published in the Journal officiel, which exposes the organisation publicly. Public buyers and large companies increasingly include accessibility requirements in their tenders, and the Cour des comptes recommends making standard clauses widespread in public procurement; we provide [[article:clauses-marche-public|annotated model clauses for tender documents]]. Finally, fixing a service already in production costs more than designing it accessibly: every non-compliant component in a design system is multiplied across all the pages that use it."
   ],
   [
    "h2",
@@ -657,6 +657,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-11-12",
+ "modified": "2026-11-14",
  "cluster": "reglementation"
 }

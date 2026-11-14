@@ -645,7 +645,7 @@
   ],
   [
    "p",
-   "Pour les organismes du [[sector:public|secteur public]], l'audit est aussi l'occasion de vérifier les clauses d'accessibilité des marchés de conception et de maintenance des sites : exiger des livrables accessibles d'un prestataire web coûte peu au moment du marché, et beaucoup lorsque les défauts sont constatés après la livraison."
+   "Pour les organismes du [[sector:public|secteur public]], l'audit est aussi l'occasion de vérifier les clauses d'accessibilité des marchés de conception et de maintenance des sites : exiger des livrables accessibles d'un prestataire web coûte peu au moment du marché, et beaucoup lorsque les défauts sont constatés après la livraison. Les formulations à reprendre dans le CCTP et le CCAP, la grille de notation et la recette à la livraison sont détaillées dans notre guide des [[article:clauses-marche-public|clauses d'accessibilité des marchés publics]]."
   ],
   [
    "h2",
@@ -761,5 +761,5 @@
   "declaration",
   "guide"
  ],
- "modified": "2026-11-12"
+ "modified": "2026-11-14"
 }

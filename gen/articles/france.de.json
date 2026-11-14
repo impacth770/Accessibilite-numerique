@@ -371,7 +371,7 @@
   ],
   [
    "p",
-   "Weitere Kosten kommen hinzu. Eine Entscheidung der Arcom wird im Amtsblatt veröffentlicht und stellt die Organisation damit öffentlich bloß. Öffentliche Auftraggeber und Großunternehmen nehmen zunehmend Anforderungen an die Barrierefreiheit in ihre Ausschreibungen auf, und der Rechnungshof empfiehlt, Musterklauseln in öffentlichen Aufträgen zur Regel zu machen. Schließlich kostet die Korrektur eines bereits produktiven Dienstes mehr als seine barrierefreie Konzeption: Jede nicht konforme Komponente eines Designsystems vervielfacht sich in allen Seiten, die sie verwenden."
+   "Weitere Kosten kommen hinzu. Eine Entscheidung der Arcom wird im Amtsblatt veröffentlicht und stellt die Organisation damit öffentlich bloß. Öffentliche Auftraggeber und Großunternehmen nehmen zunehmend Anforderungen an die Barrierefreiheit in ihre Ausschreibungen auf, und der Rechnungshof empfiehlt, Musterklauseln in öffentlichen Aufträgen zur Regel zu machen; [[article:clauses-marche-public|kommentierte Musterklauseln für Vergabeunterlagen]] stellen wir in einem eigenen Beitrag vor. Schließlich kostet die Korrektur eines bereits produktiven Dienstes mehr als seine barrierefreie Konzeption: Jede nicht konforme Komponente eines Designsystems vervielfacht sich in allen Seiten, die sie verwenden."
   ],
   [
    "h2",
@@ -688,6 +688,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-11-12",
+ "modified": "2026-11-14",
  "cluster": "reglementation"
 }

@@ -341,7 +341,7 @@
   ],
   [
    "p",
-   "D'autres coûts s'ajoutent. Une décision de l'Arcom est publiée au Journal officiel, ce qui expose l'organisme publiquement. Les acheteurs publics et les grands comptes intègrent de plus en plus des exigences d'accessibilité dans leurs consultations, et la Cour recommande de généraliser les clauses types dans les marchés publics. Enfin, corriger un service déjà en production coûte davantage que l'avoir conçu accessible : chaque composant non conforme d'un design system se retrouve multiplié dans toutes les pages qui l'utilisent."
+   "D'autres coûts s'ajoutent. Une décision de l'Arcom est publiée au Journal officiel, ce qui expose l'organisme publiquement. Les acheteurs publics et les grands comptes intègrent de plus en plus des exigences d'accessibilité dans leurs consultations, et la Cour recommande de généraliser les clauses types dans les marchés publics ; nous en proposons des [[article:clauses-marche-public|modèles commentés pour le règlement de consultation, le CCTP et le CCAP]]. Enfin, corriger un service déjà en production coûte davantage que l'avoir conçu accessible : chaque composant non conforme d'un design system se retrouve multiplié dans toutes les pages qui l'utilisent."
   ],
   [
    "h2",
@@ -657,6 +657,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-11-12",
+ "modified": "2026-11-14",
  "cluster": "reglementation"
 }

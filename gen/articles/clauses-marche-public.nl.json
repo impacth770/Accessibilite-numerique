@@ -1,0 +1,667 @@
+{
+ "slug": "toegankelijkheidsclausule-overheidsopdracht",
+ "h1": "Digitale toegankelijkheid in uw bestek: modelclausules, gunning, oplevering en boetes",
+ "crumb": "Toegankelijkheidsclausules",
+ "meta_title": "Toegankelijkheidsclausule overheidsopdracht: modellen en boetes",
+ "meta_desc": "Digitale toegankelijkheid in uw bestek: modelclausules voor technische en administratieve bepalingen, gunningscriteria, test bij oplevering en contractuele boetes.",
+ "card_desc": "Modelclausules om aan te passen, een beoordelingsrooster en een test bij oplevering om toegankelijke digitale diensten aan te kopen.",
+ "cat": "guide",
+ "where": "Europa",
+ "cover": "CCTP",
+ "cover_note": [
+  "Art. R. 2111-6 Franse code de la commande publique",
+  "Specificaties, gunning, oplevering, waarborg"
+ ],
+ "date": "2026-11-14",
+ "cluster": "organisation",
+ "lead": "Een toegankelijkheidsclausule in een overheidsopdracht is meer dan de zin “de opdrachtnemer respecteert de toegankelijkheidsnormen”. Wat de aanbestedende overheid echt beschermt, is een samenhangend geheel: een nauwkeurig omschreven behoefte, stukken die de inschrijvers moeten voorleggen, een gunningscriterium dat de offertes echt van elkaar onderscheidt, een test bij oplevering en contractuele gevolgen die u kunt toepassen. Wie naar digitale toegankelijkheid in overheidsopdrachten zoekt, vindt vooral het juridische kader; deze gids geeft modelclausules om aan te passen voor uw bestek, naar het voorbeeld van de Franse opdrachtdocumenten, een beoordelingsrooster, een opleveringsprocedure en de aandachtspunten voor België, Luxemburg en Zwitserland.",
+ "body": [
+  [
+   "h2",
+   "waarom-een-clausule",
+   "Waarom de toegankelijkheidsclausule bepaalt of uw websites conform zijn"
+  ],
+  [
+   "p",
+   "Voor een overheidsorganisatie rust de verplichting inzake digitale toegankelijkheid op de organisatie zelf, niet op het webbureau, de softwareleverancier of de drukker die de dienst heeft gemaakt. Stelt de Franse toezichthouder Arcom vast dat een website geen toegankelijkheidsverklaring publiceert of dat een dienst niet conform is, dan wordt de organisatie in gebreke gesteld, zoals we uitleggen in ons artikel over [[article:france|de verplichtingen en controles in Frankrijk]]. In België en Luxemburg is de logica dezelfde: de overheidsinstantie publiceert de verklaring en staat in voor de conformiteit. Toch wordt het grootste deel van de websites, apps en documenten van overheden door externe dienstverleners gemaakt. Zegt de opdracht niets, of zegt ze slecht wat er verwacht wordt, dan betaalt de aanbestedende overheid twee keer: een eerste keer voor de geleverde dienst, een tweede keer om hem te laten corrigeren."
+  ],
+  [
+   "p",
+   "De toegankelijkheidsclausule is dus het eerste instrument om conform te worden, nog vóór de audit en vóór de correcties. Bij het opstellen van de opdrachtdocumenten kost ze weinig: enkele paragrafen in de technische bepalingen, een subcriterium in de gunning, twee artikelen in de administratieve bepalingen. Corrigeren na de oplevering kost veel meer, omdat een slecht ontworpen component, zoals een menu, een modaal venster of een formulierveld, zich herhaalt op alle pagina’s die hem gebruiken."
+  ],
+  [
+   "p",
+   "In de praktijk bevatten opdrachtdocumenten vaak wel een toegankelijkheidsclausule, maar een clausule zonder enig effect. Ze eist “de naleving van de toegankelijkheidsnormen” zonder te zeggen welke, voorziet geen enkele controle bij de oplevering en geeft de aanbestedende overheid geen middel om correcties af te dwingen. Deze gids vertrekt van die realiteit: hij toont hoe elk opdrachtdocument een deel van de eis moet dragen, en hoe het geheel aansluit op het [[article:schema-pluriannuel|Franse meerjarenplan digitale toegankelijkheid]], dat net moet voorzien hoe toegankelijkheid in de aankopen wordt opgenomen. Ook zonder zo’n wettelijk plan is dat voor elke Belgische overheid een goede gewoonte."
+  ],
+  [
+   "p",
+   "Een woord over de terminologie. Deze gids neemt de Franse opdrachtdocumenten als vertrekpunt, omdat de Franse overheid er de meest uitgewerkte aanbevelingen over heeft gepubliceerd. In Frankrijk bestaat een dossier meestal uit een reglement van de raadpleging (règlement de la consultation, RC), dat de procedure en de in te dienen stukken regelt, een technisch bestek (cahier des clauses techniques particulières, CCTP) en een administratief bestek (cahier des clauses administratives particulières, CCAP). In België komen die bepalingen doorgaans samen in het bestek en de andere opdrachtdocumenten. Waar we RC, CCTP of CCAP noemen, kunt u dus lezen: het deel van uw bestek dat de procedure, de technische eisen of de administratieve en contractuele bepalingen regelt."
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "Een doeltreffende toegankelijkheidsclausule bestaat uit vier elementen: een gedateerd referentiekader, bewijsstukken die u van de inschrijvers vraagt, een test bij oplevering op een vooraf bepaalde steekproef, en contractuele gevolgen als de gebreken niet worden gecorrigeerd."
+  ],
+  [
+   "h2",
+   "wat-zeggen-de-teksten",
+   "Digitale toegankelijkheid en overheidsopdrachten: wat de teksten zeggen"
+  ],
+  [
+   "p",
+   "In Frankrijk legt [[https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037731027/2025-11-30|artikel R. 2111-6 van de Franse code de la commande publique (Franstalig)]] de basisregel vast. Vrij vertaald: “behalve in naar behoren gemotiveerde gevallen worden de technische specificaties zo opgesteld dat ze rekening houden met toegankelijkheidscriteria voor personen met een handicap of met functionaliteitscriteria voor alle gebruikers”. Die regel geldt voor alle opdrachten, digitaal of niet. Hij betekent dat een aanbestedende overheid die toegankelijkheid niet in haar specificaties opneemt, dat moet kunnen verantwoorden, en niet omgekeerd."
+  ],
+  [
+   "p",
+   "Ook de gunningsfase komt aan bod. [[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037730485|Artikel R. 2152-7 van dezelfde code (Franstalig)]], in de versie die sinds 21 augustus 2026 van kracht is, noemt toegankelijkheid uitdrukkelijk bij de kwaliteitselementen waarop gunningscriteria kunnen slaan. Hetzelfde artikel verplicht voortaan dat minstens één criterium rekening houdt met de milieukenmerken van de offerte: het beoordelingsrooster van een Franse digitale opdracht moet dus ruimte laten voor zowel toegankelijkheid als milieu, zonder dat het ene het andere verdringt."
+  ],
+  [
+   "p",
+   "Die aankoopregels komen bovenop de resultaatsverplichtingen van de organisatie zelf: in Frankrijk artikel 47 van de wet van 11 februari 2005, de toegankelijkheidsverklaring, het meerjarenplan en, voor producten en diensten van de privésector, de omzetting van de [[article:eaa|European Accessibility Act]]. De opdracht is het middel om die verplichtingen uit te voeren; ze vervangt ze niet."
+  ],
+  [
+   "p",
+   "De Franse interministeriële directie voor digitale zaken (DINUM) publiceert op DesignGouv een [[https://design.numerique.gouv.fr/outils/accessibilite-marche-public/|pagina over digitale toegankelijkheid in overheidsopdrachten (Franstalig)]], die ook verwijst naar de gids van het Franse economische observatorium van de overheidsopdrachten over toegankelijkheidsclausules. De aanbevelingen ervan komen in de rest van dit artikel terug: een opdracht legt een resultaatsverbintenis op en kan geen werkwijze opleggen, het geciteerde referentiekader moet het referentiekader zijn dat van kracht is op de publicatiedatum van de opdracht, en de beoordeling van de offertes moet een specifiek criterium voor toegankelijkheid bevatten. Die principes zijn niet typisch Frans: ze zijn even bruikbaar in een Belgisch of Luxemburgs bestek."
+  ],
+  [
+   "table",
+   {
+    "caption": "Wat de teksten over toegankelijkheid in overheidsopdrachten bepalen, per land",
+    "head": [
+     "Land",
+     "Tekst over overheidsopdrachten",
+     "Wat hij oplegt",
+     "Referentiekader om in het bestek te vermelden"
+    ],
+    "rows": [
+     [
+      "Frankrijk",
+      "Code de la commande publique, art. R. 2111-6 en R. 2152-7",
+      "Specificaties die rekening houden met toegankelijkheid, behalve in naar behoren gemotiveerde gevallen; toegankelijkheid mogelijk als gunningscriterium",
+      "RGAA (vandaag versie 4.1.2) voor het web; norm EN 301 549 voor de andere digitale producten"
+     ],
+     [
+      "België",
+      "Wet van 17 juni 2016 inzake overheidsopdrachten, art. 53, § 1",
+      "Specificaties opgesteld met inachtneming van toegankelijkheid en ontwerp voor alle gebruikers, behalve in naar behoren gemotiveerde gevallen",
+      "Norm EN 301 549 (WCAG niveau AA)"
+     ],
+     [
+      "Luxemburg",
+      "Art. 26 van de wet van 8 maart 2023, samen met de gewijzigde wet van 8 april 2018 inzake overheidsopdrachten",
+      "De toegankelijkheidseisen voor de bedoelde producten en diensten zijn dwingende technische specificaties",
+      "RAWeb voor het web, RAAM voor mobiel, op basis van de norm EN 301 549"
+     ],
+     [
+      "Zwitserland",
+      "Geen geverifieerde toegankelijkheidsregel in het recht inzake overheidsopdrachten",
+      "Eis op te nemen in het bestek, in lijn met de LHand (Zwitserse wet op de gelijkstelling van personen met een handicap)",
+      "Norm eCH-0059 versie 3 (WCAG 2.1 niveau AA)"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Daarmee is het juridische deel rond: het verschil wordt gemaakt bij het schrijven. De volgende hoofdstukken overlopen elk opdrachtdocument, van de regels voor de procedure tot de administratieve bepalingen, met formuleringen om aan te passen."
+  ],
+  [
+   "h2",
+   "welke-opdrachten",
+   "Welke overheidsopdrachten een clausule over digitale toegankelijkheid nodig hebben"
+  ],
+  [
+   "p",
+   "De reflex is om aan de vernieuwing van de website te denken. Dat is het meest zichtbare geval, maar veel andere opdrachten leveren inhoud of tools op die door burgers of door het personeel worden gebruikt. Het principe van artikel R. 2111-6, en van artikel 53 van de Belgische wet, geldt voor allemaal; de clausule moet gewoon in verhouding staan tot wat de dienstverlener echt levert."
+  ],
+  [
+   "table",
+   {
+    "caption": "Soort opdracht, toegankelijkheidseis en bewijs om te vragen",
+    "head": [
+     "Soort opdracht",
+     "Wat de opdrachtnemer moet garanderen",
+     "Bewijs om te vragen bij oplevering"
+    ],
+    "rows": [
+     [
+      "Bouw of vernieuwing van een website, intranet of extranet",
+      "Conformiteit met het referentiekader voor alle sjablonen en componenten, voorbeeldinhoud inbegrepen",
+      "Opleveringsaudit op een bepaalde steekproef, ingevuld evaluatierooster, ontwerp van toegankelijkheidsverklaring"
+     ],
+     [
+      "Applicatiebeheer en -onderhoud (in Frankrijk TMA)",
+      "Geen regressie: geen enkele wijziging creëert een nieuwe non-conformiteit; correctie van gemelde gebreken",
+      "Toegankelijkheidscontrole in elke versietest, register van gecorrigeerde gebreken"
+     ],
+     [
+      "Softwarepakket, SaaS-software, platform voor e-loketten",
+      "Conformiteit van de schermen die burgers en personeel gebruiken; correctieplan",
+      "Recent auditrapport over de geleverde versie, gedateerde correctieverbintenis"
+     ],
+     [
+      "Mobiele app",
+      "Conformiteit met het mobiele referentiekader en met de toegankelijkheidsregels van iOS en Android",
+      "Tests op echte toestellen met VoiceOver en TalkBack, ingevuld rooster"
+     ],
+     [
+      "Productie van documenten (rapporten, magazines, pdf-formulieren)",
+      "Toegankelijke kantoordocumenten of pdf’s, of een gelijkwaardige HTML-versie",
+      "Controle van de structuur, de leesvolgorde en de alternatieven bij elke oplevering"
+     ],
+     [
+      "Video, motion design, webinars",
+      "Ondertitels, transcriptie, audiodescriptie wanneer het beeld informatie draagt",
+      "Ondertitelbestanden en transcripties bij elke video"
+     ],
+     [
+      "Online opleiding, e-learningmodules",
+      "Modules bruikbaar met het toetsenbord en met een schermlezer, toegankelijke media",
+      "Toegankelijkheidstest van elke module vóór de onlinezetting"
+     ],
+     [
+      "Zuilen, digitale loketten, digitaal straatmeubilair",
+      "Eisen van de norm EN 301 549 voor hardware en software",
+      "Demonstratie en tests in reële omstandigheden"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Voor documenten worden de gedetailleerde eisen en de controlemethode uitgewerkt in onze gids over de [[article:pdf-accessible|toegankelijke pdf]]. Voor opdrachten die zelf een audit inhouden, ligt de vraag anders: dan koopt u een evaluatie aan, en de opbouw van de prijsinventaris en de criteria behandelen we in ons artikel over [[article:prix-audit|de prijs van een toegankelijkheidsaudit]]."
+  ],
+  [
+   "p",
+   "Een praktisch voorbeeld maakt het verschil duidelijk. Een gemeente die een nieuw platform voor het reserveren van sportzalen aankoopt, denkt spontaan aan de functionaliteiten, de beveiliging en de prijs. Als de reservatieknop alleen met de muis werkt, of als de kalender niet door een schermlezer wordt voorgelezen, kan een deel van de burgers de dienst gewoon niet gebruiken. Dat soort gebrek is na de oplevering duur om te herstellen, terwijl één zin in het bestek en een test vóór de aanvaarding het hadden kunnen voorkomen."
+  ],
+  [
+   "h2",
+   "behoefte-omschrijven",
+   "De behoefte omschrijven: afbakening, referentiekader en verwacht niveau"
+  ],
+  [
+   "p",
+   "Een clausule is maar zo goed als de omschrijving van de behoefte die ze omkadert. Drie elementen horen in de technische bepalingen, al bij de beschrijving van de behoefte, en niet in een bijlage die niemand leest."
+  ],
+  [
+   "h3",
+   "Het referentiekader en de versie"
+  ],
+  [
+   "p",
+   "Noem het referentiekader bij naam en met zijn versie. In Frankrijk is dat de RGAA in de versie die van kracht is op de publicatiedatum van de opdracht, vandaag versie 4.1.2 met haar 106 criteria. DesignGouv meldt dat [[https://design.numerique.gouv.fr/articles/2026-11-03-rgaa5/|de RGAA 5 gepland is voor december 2026 (Franstalig)]] en in de loop van 2027 bij decreet officieel wordt. Een Franse vernieuwingsopdracht die vandaag wordt gepubliceerd en in 2027 wordt opgeleverd, moet die overgang dus voorzien: de clausule in het volgende hoofdstuk stelt een formulering voor die de toepasselijke versie voor de oplevering vastlegt en een eventuele evolutie regelt."
+  ],
+  [
+   "p",
+   "Voor mobiele apps, softwarepakketten en hardware vermeldt u de norm EN 301 549, die die producten dekt. In België is EN 301 549 trouwens het referentiekader voor alle overheidswebsites en -apps. Onze vergelijking van de [[article:normes|normen voor digitale toegankelijkheid]] legt uit welke norm op welk object van toepassing is, en ons artikel over de [[article:wcag-22|nieuwe succescriteria van WCAG 2.2]] beschrijft wat er in de eisen zal veranderen."
+  ],
+  [
+   "h3",
+   "De afbakening"
+  ],
+  [
+   "p",
+   "Som op wat er geleverd wordt: paginasjablonen, componenten van het design system, trajecten (inschrijving, betaling, afspraak maken, dossier indienen), downloadbare documenten, video’s, apps. Vermeld ook wat ten laste van de opdrachtnemer valt en wat bij de aanbestedende overheid blijft: de inhoud die uw redacteurs na de onlinezetting invoeren, blijft uw verantwoordelijkheid, maar het geleverde contentbeheersysteem moet toelaten om die inhoud toegankelijk te maken (koppen, tekstalternatieven voor afbeeldingen, tabellen, links)."
+  ],
+  [
+   "p",
+   "In een meertalige context, zoals in Brussel of bij federale diensten, hoort ook de lijst van de taalversies bij de afbakening. Een website die in het Nederlands toegankelijk is, maar waarvan de Franse versie andere sjablonen of andere pdf’s gebruikt, is niet volledig conform. Vermeld daarom uitdrukkelijk dat de eis voor elke taalversie geldt, en dat de taal van elke pagina en van elk anderstalig fragment correct moet worden aangegeven."
+  ],
+  [
+   "h3",
+   "Het verwachte niveau"
+  ],
+  [
+   "p",
+   "DesignGouv raadt aan dat de opdrachtnemer zich ertoe verbindt 100 % van de RGAA-criteria na te leven. Dat is het doel dat u moet opschrijven. Een lager streefpercentage, bijvoorbeeld “minstens 75 %”, geeft een verkeerd signaal: het staat precies de gebreken toe die een traject blokkeren, want een hoog percentage kan samengaan met een formulier dat onmogelijk met het toetsenbord kan worden verzonden. De soepelheid moet zitten in de termijnen en de manier van corrigeren, niet in het doel. Wie met EN 301 549 werkt, schrijft op dezelfde manier dat alle toepasselijke eisen, voor het web dus WCAG niveau AA, moeten worden nageleefd."
+  ],
+  [
+   "p",
+   "Tot slot legt de opdracht een resultaatsverbintenis op: ze kan de opdrachtnemer geen werkwijze opleggen. U kunt hem wel vragen zijn werkwijze in zijn offerte te beschrijven, en die beschrijving beoordelen."
+  ],
+  [
+   "h2",
+   "modelclausules",
+   "Modelclausules voor digitale toegankelijkheid, document per document"
+  ],
+  [
+   "p",
+   "De formuleringen hieronder zijn werkmodellen, vertaald en aangepast vanuit de Franse praktijk. Ze moeten worden afgestemd op uw behoefte en uw standaarddocumenten, en worden nagelezen door uw dienst overheidsopdrachten of uw juridische dienst. Tussen vierkante haken staan de elementen die u moet invullen. In een Belgisch bestek plaatst u ze in het deel over de procedure en de in te dienen stukken, in de technische bepalingen en in de administratieve bepalingen."
+  ],
+  [
+   "h3",
+   "In de regels van de procedure (Franse RC)"
+  ],
+  [
+   "p",
+   "“De inschrijver voegt bij zijn offerte een technische memorie met een deel over digitale toegankelijkheid. Dat deel beschrijft: de ontwerp- en ontwikkelmethode om de conformiteit met [het referentiekader, in de versie die van kracht is op de publicatiedatum van deze opdracht] te garanderen; de controles vóór elke oplevering en de gebruikte tools en hulptechnologieën; de samenstelling van het team en de toegankelijkheidscompetenties van elk lid, en de aanwijzing van een toegankelijkheidsreferent; twee referenties van recente realisaties, telkens met de gepubliceerde toegankelijkheidsverklaring.”"
+  ],
+  [
+   "h3",
+   "In de technische bepalingen (Franse CCTP): de conformiteitseis"
+  ],
+  [
+   "p",
+   "“De opleveringen voldoen aan alle criteria van [de RGAA, versie 4.1.2 / de norm EN 301 549]. Ze omvatten de sjablonen, componenten, trajecten en documenten opgesomd in artikel [X]. De opdrachtnemer levert bij elke oplevering het ingevulde evaluatierooster voor de steekproef bepaald in artikel [Y] en een voorstel van toegankelijkheidsverklaring. Wanneer de conformiteit van een element technisch onmogelijk is, meldt de opdrachtnemer dat schriftelijk vóór de realisatie en stelt hij een toegankelijk alternatief voor, dat aan het akkoord van de aanbestedende overheid wordt onderworpen.”"
+  ],
+  [
+   "h3",
+   "In de technische bepalingen: de evolutie van het referentiekader"
+  ],
+  [
+   "p",
+   "“De conformiteit wordt beoordeeld aan de hand van de versie van het referentiekader die van kracht is op de publicatiedatum van de opdracht. Wordt tijdens de uitvoering een nieuwe versie gepubliceerd, dan bezorgt de opdrachtnemer binnen [twee] maanden een analyse van de verschillen en een offerte voor de aanpassing. De aanbestedende overheid beslist over het gevolg dat eraan wordt gegeven, onder de voorwaarden die de opdracht bepaalt.”"
+  ],
+  [
+   "p",
+   "Die formulering vermijdt twee valkuilen: de opdrachtnemer zonder tegenprestatie een referentiekader opleggen dat niet bestond toen hij zijn offerte indiende, en de dienst vastzetten op een verouderde versie. Wilt u de aanpassing binnen de opdracht kunnen opnemen, voorzie dan van bij het begin, zoals artikel R. 2194-1 van de Franse code de la commande publique toelaat, een herzieningsclausule of een duidelijke, nauwkeurige en ondubbelzinnige optie die het toepassingsgebied en de voorwaarden ervan vastlegt. In België gaat u na met uw dienst overheidsopdrachten welke herzieningsclausule in uw opdrachtdocumenten mogelijk is."
+  ],
+  [
+   "h3",
+   "In de technische bepalingen: de tools voor redacteurs"
+  ],
+  [
+   "p",
+   "“Het geleverde contentbeheersysteem laat de redacteurs toe conforme inhoud te maken: invoer van tekstalternatieven voor afbeeldingen, hiërarchie van de koppen, datatabellen met kopcellen, aanduiding van de taal, duidelijke links. De opdrachtnemer levert een toegankelijke redactiehandleiding en geeft een opleidingssessie over die functies.”"
+  ],
+  [
+   "h3",
+   "In de administratieve bepalingen (Franse CCAP): controle en waarborg"
+  ],
+  [
+   "p",
+   "“De verificaties omvatten een controle van de conformiteit met het toegankelijkheidsreferentiekader, uitgevoerd door de aanbestedende overheid of door een derde die zij aanwijst, op de steekproef bepaald in de technische bepalingen. Vastgestelde non-conformiteiten worden als voorbehoud genoteerd. De opdrachtnemer corrigeert ze op eigen kosten binnen [vijftien] werkdagen. Tijdens de waarborgperiode van [twaalf] maanden corrigeert hij kosteloos elke non-conformiteit met het referentiekader die door de aanbestedende overheid of door een gebruiker wordt gemeld.”"
+  ],
+  [
+   "h3",
+   "In de administratieve bepalingen: de boetes"
+  ],
+  [
+   "p",
+   "“Wordt een non-conformiteit die als voorbehoud werd genoteerd niet binnen de gestelde termijn gecorrigeerd, dan is de opdrachtnemer een boete verschuldigd van [bedrag] euro per non-conformiteit en per dag vertraging, met een maximum van [X] % van het opdrachtbedrag.”"
+  ],
+  [
+   "p",
+   "Het hoofdstuk over de boetes legt uit hoe u die bedragen zo kalibreert dat ze ontraden zonder kennelijk buitensporig te zijn."
+  ],
+  [
+   "h2",
+   "stukken-inschrijvers",
+   "Wat u van de inschrijvers vraagt, en wat u ermee doet"
+  ],
+  [
+   "p",
+   "DesignGouv raadt aan om de referenties na te gaan, bij voorkeur recente overheidswebsites gerealiseerd door het voorgestelde team en niet door het bedrijf in het algemeen, de competenties van het team, de aanwezigheid van een toegankelijkheidsreferent en het feit dat de tests en het opstellen van de verklaring in de offerte zijn inbegrepen. Die controles hebben pas zin als u weet waarnaar u moet kijken."
+  ],
+  [
+   "ul",
+   [
+    "Referenties: open de gepubliceerde toegankelijkheidsverklaring van elke referentie en controleer de datum, de vermelde conformiteitsstatus en het genoemde referentiekader. Een oude verklaring, een ontbrekende verklaring of een verklaring die niet strookt met de website is een signaal.",
+    "Snelle test van een referentie: doorloop een pagina en een formulier alleen met het toetsenbord en controleer of de focus zichtbaar blijft en of elk veld een label heeft. Tien minuten volstaan om een team dat het onderwerp beheerst te onderscheiden van een team dat het alleen afficheert.",
+    "Team: vraag de cv’s van de mensen die echt aan het project zullen werken, met hun ervaring met het gevraagde referentiekader, en de verbintenis om hen tijdens de uitvoering te behouden.",
+    "Toegankelijkheidsreferent: laat een persoon bij naam aanwijzen, met de tijd die hij aan het project besteedt en zijn rol in de interne tests.",
+    "Werkwijze: de beschrijving moet zeggen op welk moment de controles plaatsvinden (ontwerpen, ontwikkeling, oplevering), met welke tools en met welke hulptechnologieën.",
+    "Inbegrepen prestaties: de toegankelijkheidstests, het evaluatierooster en het ontwerp van verklaring moeten uitdrukkelijk in de offerte en in de prijsinventaris staan.",
+    "Combinaties en onderaanneming: wanneer meerdere ondernemingen meewerken (grafisch ontwerp, ontwikkeling, inhoud), moet de verdeling van de verantwoordelijkheden voor toegankelijkheid op papier staan."
+   ]
+  ],
+  [
+   "p",
+   "Een certificaat of een conformiteitsattest dat de inschrijver zelf over zijn eigen werk opstelt, volstaat niet: het is een intentieverklaring. Het bewijs is een onlinedienst die u kunt testen en een gepubliceerde verklaring die u kunt lezen."
+  ],
+  [
+   "p",
+   "Let er bij de beoordeling op dat u alle inschrijvers gelijk behandelt. Test u een referentie van de ene inschrijver, test dan ook een referentie van elke andere, met dezelfde handelingen en hetzelfde tijdsbudget, en noteer wat u vaststelt. Zo blijft de beoordeling verdedigbaar als een afgewezen inschrijver om uitleg vraagt."
+  ],
+  [
+   "h2",
+   "gunningscriteria",
+   "Gunningscriteria: een toegankelijkheidscriterium dat echt het verschil maakt"
+  ],
+  [
+   "p",
+   "DesignGouv stelt voor om in het beoordelingsrooster een specifiek criterium voor digitale toegankelijkheid op te nemen, uitsluitend, met een gewicht van ongeveer 10 %. Door het uitsluitende karakter kunt u een offerte die het onderwerp niet behandelt, terzijde leggen; door het gewicht kunt u de offertes die het wel behandelen, van elkaar onderscheiden. Zonder precieze subcriteria krijgen alle inschrijvers voor dat criterium echter bijna altijd dezelfde score, omdat ze allemaal schrijven dat ze “de normen respecteren”."
+  ],
+  [
+   "table",
+   {
+    "caption": "Voorbeeld van een toegankelijkheidscriterium op 10 punten, opgesplitst in subcriteria",
+    "head": [
+     "Subcriterium",
+     "Punten",
+     "Wat een sterke offerte onderscheidt",
+     "Wat punten moet kosten"
+    ],
+    "rows": [
+     [
+      "Ontwerp- en controlemethode",
+      "3",
+      "Controles in elke fase, geannoteerde ontwerpen, tests met genoemde schermlezers",
+      "Algemene verbintenis zonder beschrijving van de controles"
+     ],
+     [
+      "Competenties van het team en referent",
+      "3",
+      "Referent bij naam met toegewezen tijd, cv’s met recente projecten op het gevraagde referentiekader",
+      "Competentie die het bedrijf claimt, maar die niet in de cv’s staat"
+     ],
+     [
+      "Controleerbare referenties",
+      "2",
+      "Gepubliceerde, recente verklaringen die stroken met de geteste website",
+      "Referenties zonder verklaring of verklaring die door een snelle test wordt tegengesproken"
+     ],
+     [
+      "Inbegrepen toegankelijkheidsopleveringen",
+      "2",
+      "Rooster, ontwerp van verklaring, redactiehandleiding en opleiding van de redacteurs, met prijs",
+      "Toegankelijkheidstests als optie of naar een latere offerte verschoven"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Beoordeel de subcriteria op basis van de stukken, niet van de intenties. U kunt in de regels van de procedure ook een praktijkproef voorzien: bijvoorbeeld de inschrijvers die voor een toelichting worden uitgenodigd, vragen een formuliercomponent uit een eerder project te tonen en die met het toetsenbord te doorlopen. Die proef moet dan vooraf worden aangekondigd, beschreven en beoordeeld volgens regels die alle inschrijvers kennen."
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "Een nuttig toegankelijkheidscriterium wordt beoordeeld op controleerbare bewijzen: cv’s, geteste referenties, gepubliceerde verklaringen, geprijsde opleveringen. Een criterium dat op algemene verbintenissen wordt beoordeeld, geeft iedereen dezelfde score."
+  ],
+  [
+   "h2",
+   "test-bij-oplevering",
+   "De toegankelijkheidstest bij oplevering: het moment dat telt"
+  ],
+  [
+   "p",
+   "De meeste gebreken die bij een audit na de onlinezetting worden vastgesteld, hadden bij de oplevering als voorbehoud kunnen worden genoteerd. Het is de stap die in opdrachten het vaakst wordt vergeten, en het is net die stap die alle andere waarde geeft. Een [[svc:recette|toegankelijkheidstest bij oplevering]] bestaat erin vóór de aanvaarding na te gaan of de opleveringen aan het referentiekader voldoen, op een vooraf bepaalde steekproef."
+  ],
+  [
+   "ol",
+   [
+    [
+     "De steekproef in de technische bepalingen vastleggen.",
+     "Typepagina’s, sjablonen en volledige trajecten, naar het model van de steekproef van een RGAA-audit: homepage, contact, juridische informatie, toegankelijkheidsverklaring, representatieve pagina’s van elk sjabloon, en alle stappen van de e-loketten."
+    ],
+    [
+     "Tussentijdse tests voorzien.",
+     "Een controle op de ontwerpen en daarna op de eerste ontwikkelde componenten kost veel minder dan een late ontdekking."
+    ],
+    [
+     "De test laten uitvoeren door iemand die onafhankelijk is van de opdrachtnemer.",
+     "Uw eigen teams als ze opgeleid zijn, of een derde. De opdrachtnemer levert zijn eigen rooster, dat als vertrekpunt dient, niet als bewijs."
+    ],
+    [
+     "De non-conformiteiten indelen.",
+     "Onderscheid de gebreken die een traject blokkeren (een verzendknop die niet met het toetsenbord bereikbaar is, een captcha zonder alternatief) van de gebreken die het hinderen; de eerste rechtvaardigen een weigering van de aanvaarding."
+    ],
+    [
+     "Precieze voorbehouden formuleren.",
+     "Elk voorbehoud vermeldt het criterium, de pagina, het betrokken element en de verwachte correctie, met de contractuele termijn."
+    ],
+    [
+     "De correcties nacontroleren.",
+     "Een tweede ronde op alleen de genoteerde non-conformiteiten, voorzien in de opdracht en in de prijs."
+    ],
+    [
+     "De voorbehouden opheffen en de verklaring voorbereiden.",
+     "De resultaten van de test voeden rechtstreeks de toegankelijkheidsverklaring van de dienst."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Voor een belangrijke dienst kan de test de vorm aannemen van een volledige [[svc:audit-rgaa|RGAA-audit]], waarvan het verloop wordt beschreven in ons artikel over [[article:audit-rgaa|de RGAA-audit week per week]]. Het resultaat laat vervolgens toe een [[article:declaration|toegankelijkheidsverklaring]] te publiceren die op een echte controle steunt, zoals de regelgeving vereist."
+  ],
+  [
+   "p",
+   "Plan de test realistisch in de planning van het project. Een opleveringstest die twee dagen vóór de geplande lancering wordt uitgevoerd, laat geen tijd voor correcties, en de druk om toch online te gaan wint dan bijna altijd. Leg de testperiode en de correctietermijn daarom vast in het tijdschema van de opdracht, met een buffer tussen de laatste nacontrole en de publicatie."
+  ],
+  [
+   "h2",
+   "boetes-en-waarborg",
+   "Boetes, prijsvermindering en waarborg: gevolgen die u kunt toepassen"
+  ],
+  [
+   "p",
+   "Een clausule zonder gevolg wordt niet gelezen. In Frankrijk voorziet het algemeen administratief bestek voor opdrachten van informatie- en communicatietechnologie (cahier des clauses administratives générales des marchés de techniques de l’information et de la communication, CCAG-TIC) onder meer vertragingsboetes, maar geen enkel mechanisme dat specifiek over toegankelijkheid gaat. Wilt u het niet corrigeren van een toegankelijkheidsgebrek bestraffen, dan moet het mechanisme in het bijzondere administratieve bestek staan, als afwijking van of aanvulling op het gekozen algemene bestek. Ook in een Belgisch bestek hoort zo’n specifieke regeling thuis in de bijzondere administratieve bepalingen; laat de concrete formulering valideren door uw dienst overheidsopdrachten."
+  ],
+  [
+   "p",
+   "De meest robuuste boete slaat op een feit dat eenvoudig vast te stellen is: het niet corrigeren, binnen de gestelde termijn, van een non-conformiteit die als voorbehoud werd genoteerd. Zo vermijdt u discussies over het conformiteitspercentage en over de interpretatie van de steekproef. Het bedrag moet evenredig blijven: de Franse administratieve rechtspraak aanvaardt dat de rechter boetes matigt die kennelijk buitensporig of verwaarloosbaar zijn in verhouding tot het opdrachtbedrag. Een maximum uitgedrukt als percentage van de opdracht, zoals in de modelclausule, maakt het geheel veiliger."
+  ],
+  [
+   "table",
+   {
+    "caption": "De gevolgen afstemmen op de ernst van het gebrek",
+    "head": [
+     "Vastgestelde situatie",
+     "Voorgesteld contractueel gevolg",
+     "Opdrachtdocument"
+    ],
+    "rows": [
+     [
+      "Blokkerende non-conformiteit bij de oplevering",
+      "Weigering of uitstel van de aanvaarding tot de correctie",
+      "Administratieve bepalingen, verificaties"
+     ],
+     [
+      "Niet-blokkerende non-conformiteit bij de oplevering",
+      "Aanvaarding met voorbehoud en correctietermijn",
+      "Administratieve bepalingen, verificaties"
+     ],
+     [
+      "Voorbehoud niet opgeheven binnen de termijn",
+      "Boete per non-conformiteit en per dag, met een maximum",
+      "Administratieve bepalingen, boetes"
+     ],
+     [
+      "Gebrek gemeld tijdens de waarborgperiode",
+      "Kosteloze correctie binnen een vaste termijn",
+      "Administratieve bepalingen, waarborg"
+     ],
+     [
+      "Regressie veroorzaakt door een wijziging in het applicatiebeheer",
+      "Kosteloze correctie, op grond van de niet-regressie",
+      "Technische bepalingen van het applicatiebeheer"
+     ],
+     [
+      "Toegankelijkheidsopleveringen niet geleverd (rooster, verklaring)",
+      "Forfaitaire boete of opschorting van de overeenstemmende betaling",
+      "Administratieve bepalingen en prijsinventaris"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "De waarborg is het laatste vangnet. DesignGouv raadt aan dat de opdrachtnemer de toegankelijkheidsgebreken tijdens de correctieve waarborgperiode kosteloos corrigeert. Kies een duur die minstens de eerste onafhankelijke audit na de onlinezetting dekt: die brengt vaak de gebreken aan het licht die de opleveringstest niet heeft gezien."
+  ],
+  [
+   "h2",
+   "bijzondere-gevallen",
+   "Bijzondere gevallen: SaaS, raamovereenkomsten, kleine opdrachten en applicatiebeheer"
+  ],
+  [
+   "h3",
+   "SaaS-software of een standaardpakket"
+  ],
+  [
+   "p",
+   "U kunt van een softwareleverancier niet eisen dat hij zijn product voor u herbouwt. U kunt wel bij de indiening van de offertes de conformiteitsstatus van de voorgestelde versie vragen (recent auditrapport of gepubliceerde verklaring), die status beoordelen, en de correctie van de opgesomde gebreken tot een gedateerde contractuele verbintenis maken. Voorzie ook dat elke nieuwe versie de vastgestelde toegankelijkheid niet verslechtert. Die punten zijn doorslaggevend voor platformen voor e-loketten, rekrutering of het maken van afspraken, die de burgers rechtstreeks raken."
+  ],
+  [
+   "h3",
+   "Raamovereenkomsten en aankoopcentrales"
+  ],
+  [
+   "p",
+   "In een raamovereenkomst met bestelbonnen moeten de toegankelijkheidseisen in de raamovereenkomst zelf staan, niet alleen in elke bestelbon. Koopt u via een aankoopcentrale, controleer dan vóór u bestelt wat de opdracht van de centrale over toegankelijkheid zegt: u blijft verantwoordelijk voor de dienst die u online zet."
+  ],
+  [
+   "h3",
+   "Kleine opdrachten"
+  ],
+  [
+   "p",
+   "In Frankrijk kunnen opdrachten voor leveringen en diensten met een geraamde waarde van minder dan 60.000 euro exclusief btw sinds 1 april 2026 zonder voorafgaande bekendmaking en mededinging worden geplaatst, zoals we uitleggen in ons artikel over [[article:prix-audit|de prijs en de aankoop van een toegankelijkheidsaudit]]. Het ontbreken van een procedure ontslaat niet van artikel R. 2111-6: ook een offerte voor een minisite of een app voor een evenement moet het referentiekader, de test bij oplevering en de correctie van de gebreken vermelden. Voor Belgische opdrachten van beperkte waarde geldt dezelfde reflex: ook een eenvoudige bestelbon kan die drie elementen bevatten."
+  ],
+  [
+   "h3",
+   "Applicatiebeheer en -onderhoud"
+  ],
+  [
+   "p",
+   "Bij een bestaande dienst die niet conform is, is het applicatiebeheer het instrument voor een geleidelijke conformiteit. De technische bepalingen kunnen een volume werkeenheden voorzien voor de correctie van de gebreken uit de laatste audit, een eis van niet-regressie bij elke versie en een toegankelijkheidscontrole in elke versietest. Dat traject moet overeenkomen met het jaarlijkse actieplan van uw meerjarenplan, of in België met het actieplan dat u in uw toegankelijkheidsverklaring vermeldt."
+  ],
+  [
+   "h2",
+   "veelgemaakte-fouten",
+   "Veelgemaakte fouten in opdrachtdocumenten"
+  ],
+  [
+   "ul",
+   [
+    "“De geldende toegankelijkheidsnormen” vermelden zonder het referentiekader of de versie te noemen: de clausule wordt oncontroleerbaar.",
+    "Een conformiteitsdoel van minder dan 100 % vastleggen: daarmee worden blokkerende gebreken gelegitimeerd.",
+    "Resultaat en middelen door elkaar halen: een tool of ontwikkelmethode opleggen in plaats van een resultaat.",
+    "Een audit na de onlinezetting voorzien, maar geen test vóór de aanvaarding: de gebreken worden ontdekt als de opdrachtnemer al betaald is.",
+    "De test alleen aan de opdrachtnemer overlaten, die zichzelf controleert.",
+    "De documenten, video’s en voorbeeldinhoud die met de website worden geleverd, vergeten.",
+    "Niets voorzien voor het contentbeheersysteem, waardoor de website achteruitgaat vanaf de eerste publicaties van uw teams.",
+    "Het toegankelijkheidscriterium alleen beoordelen op de intentieverklaring van de inschrijver.",
+    "Geen specifieke waarborg en geen enkel gevolg voorzien als er niet wordt gecorrigeerd.",
+    "Vergeten de medewerkers op te leiden die de opdracht opvolgen, zodat ze niet kunnen controleren wat ze in ontvangst nemen."
+   ]
+  ],
+  [
+   "p",
+   "Het laatste punt is vaak de oorzaak van de andere. Een [[svc:formations|opleiding voor aankopers en projectleiders]] van een tot twee dagen volstaat om de clausules op te stellen, een testrooster te lezen en een blokkerend gebrek te herkennen."
+  ],
+  [
+   "h2",
+   "vlaanderen-en-brussel",
+   "Digitale toegankelijkheid in uw bestek: aandachtspunten voor Vlaamse en Brusselse aanbesteders"
+  ],
+  [
+   "p",
+   "De werkwijze in deze gids is ontwikkeld op basis van de Franse aanbevelingen, maar ze laat zich zonder meer toepassen in een Belgisch bestek. De wettelijke basis is artikel 53 van de wet van 17 juni 2016, dat we in het volgende hoofdstuk bespreken. Voor de rest gaat het om goede praktijk: een referentiekader met versie, bewijsstukken, een gedetailleerd gunningscriterium, een test bij oplevering en toepasbare gevolgen. Geen van die elementen vereist een specifieke Belgische regel; ze moeten wel passen in uw standaardbestek en in de keuzes van uw dienst overheidsopdrachten."
+  ],
+  [
+   "p",
+   "Drie situaties komen bij Vlaamse en Brusselse besturen vaak voor. De eerste is de website die in meerdere talen bestaat: zoals hierboven gezegd, moet de clausule elke taalversie uitdrukkelijk dekken, met dezelfde steekproef in elke taal of met een steekproef die alle verschillende sjablonen per taal bevat. De tweede is de gedeelde dienst: een lokaal bestuur dat een e-loket of een afsprakenmodule afneemt via een samenwerkingsverband of een raamovereenkomst, moet nagaan wat die overeenkomst over toegankelijkheid bepaalt, want het bestuur blijft zelf verantwoordelijk voor zijn website en zijn verklaring. De derde is de vernieuwing die over meerdere jaren loopt: daar is de clausule over de evolutie van het referentiekader het nuttigst, omdat de norm EN 301 549 en de WCAG tijdens de uitvoering kunnen evolueren."
+  ],
+  [
+   "p",
+   "Voor de toezichthouders, de toegankelijkheidsverklaring en de verplichtingen van Belgische overheidswebsites verwijzen we naar ons artikel over [[article:belgique|digitale toegankelijkheid in België]]. Het bestek is de plek waar die verplichtingen concreet worden: wat u er niet in opneemt, zult u later zelf moeten betalen."
+  ],
+  [
+   "h2",
+   "belgie-luxemburg-zwitserland",
+   "De clausules aanpassen in België, Luxemburg en Zwitserland"
+  ],
+  [
+   "p",
+   "In België neemt [[https://www.ejustice.just.fgov.be/img_l/pdf/2016/06/17/2016021053_F.pdf|artikel 53 van de wet van 17 juni 2016 inzake overheidsopdrachten (Franstalige versie in het Belgisch Staatsblad)]] de Europese regel over: voor alle opdrachten die bestemd zijn om door natuurlijke personen te worden gebruikt, houden de technische specificaties, behalve in naar behoren gemotiveerde gevallen, rekening met toegankelijkheidscriteria voor personen met een handicap of met het concept van ontwerp voor alle gebruikers. Wanneer dwingende toegankelijkheidseisen bij een handeling van de Europese Unie zijn vastgesteld, worden de specificaties door verwijzing daarnaar bepaald. Het referentiekader om te vermelden is de norm EN 301 549, zoals uitgelegd in ons artikel over [[article:belgique|de Belgische regels]]. In een land waar websites vaak twee- of drietalig zijn, moet de clausule elke taalversie dekken."
+  ],
+  [
+   "p",
+   "In Luxemburg herinnert de portaalsite voor overheidsopdrachten eraan dat [[https://marches.public.lu/fr/actualites/2024/09-24/accessibilite.html|de wet van 8 maart 2023 over de toegankelijkheid van producten en diensten (Franstalig)]], van kracht sinds 28 juni 2025, via haar artikel 26 van haar toegankelijkheidseisen dwingende eisen maakt in de vorm van technische specificaties in de zin van de gewijzigde wet van 8 april 2018 inzake overheidsopdrachten. Voor openbare websites en apps verwijzen de clausules naar de RAWeb en de RAAM, die we beschrijven in ons artikel over [[article:luxembourg|digitale toegankelijkheid in Luxemburg]]."
+  ],
+  [
+   "p",
+   "In Zwitserland [[https://www.bit.admin.ch/fr/accessibilite-dans-ladministration-federale|eist de norm eCH-0059 in versie 3 conformiteit met WCAG 2.1 niveau AA (Franstalig)]], aldus het Federaal Bureau voor Informatica en Telecommunicatie. Bij gebrek aan een geverifieerde toegankelijkheidsregel in het Zwitserse recht inzake overheidsopdrachten moet het bestek de eis dragen: eCH-0059 vermelden, bewijsstukken vragen en de test bij oplevering voorzien zoals elders. Zwitserse ondernemingen die in de Unie verkopen, blijven bovendien onder de EAA vallen, zoals we preciseren in ons artikel over [[article:suisse|Zwitserland]]."
+  ],
+  [
+   "p",
+   "In die drie landen kan een [[svc:audit-conformite|conformiteitsaudit op basis van de norm EN 301 549 of de nationale varianten ervan]] dienen als test bij oplevering, met dezelfde logica van steekproef en voorbehouden als in Frankrijk."
+  ],
+  [
+   "h2",
+   "stappenplan",
+   "Digitale toegankelijkheid in uw volgende opdracht: het tijdpad in acht stappen"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Drie maanden vóór de publicatie: inventariseren.",
+     "Lijst de digitale opdrachten op die de komende twaalf maanden gepland zijn (vernieuwingen, applicatiebeheer, software, documenten, video’s) en koppel ze aan het jaarlijkse actieplan."
+    ],
+    [
+     "Twee maanden vooraf: de behoefte omschrijven.",
+     "Afbakening, referentiekader en versie, verwachte toegankelijkheidsopleveringen, steekproef voor de test."
+    ],
+    [
+     "Zes weken vooraf: de clausules schrijven.",
+     "Pas de modelclausules voor de procedure, de technische en de administratieve bepalingen aan en laat ze nalezen door de dienst overheidsopdrachten."
+    ],
+    [
+     "Een maand vooraf: het beoordelingsrooster opstellen.",
+     "Subcriteria beoordeeld op stukken, gewicht van ongeveer 10 %, regels voor een eventuele praktijkproef."
+    ],
+    [
+     "Tijdens de beoordeling: de bewijzen controleren.",
+     "Snelle test van de referenties, lezing van de gepubliceerde verklaringen, controle van de cv’s."
+    ],
+    [
+     "Tijdens de uitvoering: tussentijdse tests.",
+     "Ontwerpen, daarna de eerste componenten, vóór de eindtest."
+    ],
+    [
+     "Bij de oplevering: test en voorbehouden.",
+     "Onafhankelijke controle op de steekproef, precieze voorbehouden, nacontrole, opheffing."
+    ],
+    [
+     "Na de onlinezetting: verklaring en waarborg.",
+     "Publicatie van de toegankelijkheidsverklaring, opvolging van de meldingen en correctie onder de waarborg."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Moet u voor uw volgende opdracht maar één actie onthouden, voeg dan de toegankelijkheidstest bij oplevering en de gevolgen van het niet corrigeren toe: dat maakt van een principezin een echte eis. Om die aankopen in de volledige aanpak te plaatsen, beschrijft onze [[article:guide|gids over digitale toegankelijkheid]] de verplichtingen, de referentiekaders en de stappen, en onze pagina over de [[sector:public|publieke sector]] beschrijft hoe we overheidsorganisaties begeleiden. We kunnen ook uw opdrachtdocumenten nalezen vóór de publicatie, of de test van uw opleveringen uitvoeren."
+  ]
+ ],
+ "faq": [
+  [
+   "Is het verplicht om toegankelijkheid op te nemen in een overheidsopdracht?",
+   "In Frankrijk bepaalt artikel R. 2111-6 van de code de la commande publique dat de technische specificaties rekening houden met toegankelijkheidscriteria voor personen met een handicap of met functionaliteitscriteria voor alle gebruikers, behalve in naar behoren gemotiveerde gevallen. In België legt artikel 53 van de wet van 17 juni 2016 een vergelijkbare regel op, en Luxemburg kent een gelijkaardige regel uit het Europese recht. Voor een opdracht voor een website, app of software voor burgers of personeel is niets voorzien dus moeilijk te verantwoorden."
+  ],
+  [
+   "Mag u 100 % conformiteit eisen in een overheidsopdracht?",
+   "Ja. DesignGouv raadt aan dat de opdrachtnemer zich ertoe verbindt 100 % van de RGAA-criteria na te leven; met EN 301 549 schrijft u op dezelfde manier dat alle toepasselijke eisen worden nageleefd. Dat is het doel om vast te leggen, omdat een lager percentage blokkerende gebreken toelaat. De opdracht moet vervolgens bepalen hoe dat resultaat wordt gecontroleerd, met een test op een vaste steekproef, en wat er gebeurt als er gebreken blijven: voorbehouden, correctietermijn, waarborg en boetes."
+  ],
+  [
+   "Welk gewicht geeft u aan toegankelijkheid in de gunningscriteria?",
+   "DesignGouv stelt een specifiek, uitsluitend criterium voor met een gewicht van ongeveer 10 %. Belangrijk is dat u het opsplitst in subcriteria die op bewijzen worden beoordeeld: controlemethode, competenties van het team, controleerbare referenties en toegankelijkheidsopleveringen die in de prijs zijn inbegrepen. Een criterium dat op loutere verbintenissen wordt beoordeeld, geeft alle inschrijvers dezelfde score."
+  ],
+  [
+   "Welke versie van de RGAA vermeldt u nu de RGAA 5 eraan komt?",
+   "Vermeld de versie die van kracht is op de publicatiedatum van de opdracht, vandaag de RGAA 4.1.2. De RGAA 5 is aangekondigd voor december 2026, met een officiële bekrachtiging bij decreet in de loop van 2027. Voorzie een clausule die de opdrachtnemer vraagt om een analyse van de verschillen en een offerte voor de aanpassing als er tijdens de uitvoering een nieuwe versie verschijnt, en, als u die binnen de opdracht wilt kunnen opnemen, een herzieningsclausule."
+  ],
+  [
+   "Wie controleert de toegankelijkheid bij de oplevering?",
+   "De aanbestedende overheid, zelf of via een derde die zij aanwijst. Het rooster dat de opdrachtnemer invult, is nuttig, maar het is geen bewijs, omdat hij zichzelf controleert. De test slaat op een steekproef die in de technische bepalingen is vastgelegd, en de resultaten dienen daarna om de toegankelijkheidsverklaring van de dienst op te stellen."
+  ],
+  [
+   "Hoe koopt u toegankelijke SaaS-software aan?",
+   "Vraag bij de indiening van de offertes de conformiteitsstatus van de voorgestelde versie, in de vorm van een recent auditrapport of een gepubliceerde verklaring, en beoordeel die. Maak van de correctie van de gekende gebreken een gedateerde contractuele verbintenis en voorzie dat elke nieuwe versie de toegankelijkheid niet verslechtert. Test zelf de schermen die burgers gebruiken voordat u kiest."
+  ],
+  [
+   "Gelden toegankelijkheidsclausules ook voor kleine opdrachten zonder mededinging?",
+   "Ja. In Frankrijk kan een dienstenopdracht met een geraamde waarde van minder dan 60.000 euro exclusief btw sinds 1 april 2026 zonder voorafgaande bekendmaking en mededinging worden geplaatst, maar artikel R. 2111-6 blijft van toepassing. De offerte of de bestelbon moet het referentiekader, de test vóór betaling en de correctie van de gebreken vermelden. Ook in België is het zinvol die drie elementen in een eenvoudige bestelbon op te nemen."
+  ]
+ ],
+ "cta_svc": "recette",
+ "cta_title": "Een digitale opdracht te publiceren of op te leveren?",
+ "cta_text": "Wij lezen uw toegankelijkheidsclausules na vóór publicatie en testen uw opleveringen, met voorbehouden die uw teams meteen kunnen gebruiken.",
+ "related": [
+  "schema-pluriannuel",
+  "prix-audit",
+  "audit-rgaa"
+ ]
+}

@@ -645,7 +645,7 @@
   ],
   [
    "p",
-   "For organisations in the [[sector:public|public sector]], the audit is also an opportunity to check the accessibility clauses of the contracts for the design and maintenance of sites: requiring accessible deliverables from a web provider costs little when the contract is awarded, and a great deal when defects are found after delivery."
+   "For organisations in the [[sector:public|public sector]], the audit is also an opportunity to check the accessibility clauses of the contracts for the design and maintenance of sites: requiring accessible deliverables from a web provider costs little when the contract is awarded, and a great deal when defects are found after delivery. Wording for the specifications and contract terms, a scoring grid and acceptance testing are covered in our guide to [[article:clauses-marche-public|accessibility clauses in tenders]]."
   ],
   [
    "h2",
@@ -761,5 +761,5 @@
   "declaration",
   "guide"
  ],
- "modified": "2026-11-12"
+ "modified": "2026-11-14"
 }

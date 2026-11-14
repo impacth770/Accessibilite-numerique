@@ -1,0 +1,638 @@
+{
+ "slug": "accessibility-clauses-public-procurement",
+ "h1": "Digital accessibility clauses in public procurement: templates, scoring, penalties",
+ "crumb": "Accessibility clauses in tenders",
+ "meta_title": "Accessibility clauses in public procurement: templates, scoring",
+ "meta_desc": "Digital accessibility clauses for public tenders: model wording for the RC, CCTP and CCAP, a scoring grid, acceptance testing on delivery and enforceable penalties.",
+ "card_desc": "Model clauses ready to adapt, a scoring grid and acceptance testing on delivery, so that the digital services you buy are accessible.",
+ "cat": "guide",
+ "where": "Europe",
+ "cover": "CCTP",
+ "cover_note": [
+  "Article R. 2111-6, French Public Procurement Code",
+  "Specifications, scoring, acceptance, warranty"
+ ],
+ "date": "2026-11-14",
+ "cluster": "organisation",
+ "lead": "A digital accessibility clause in a public contract cannot be reduced to the sentence “the contractor complies with the RGAA”. What actually protects the buyer is a consistent set of provisions: a precise statement of need, documents that bidders must provide, an award criterion that genuinely separates the tenders, acceptance testing on delivery and penalties that can be applied. Most pages on the subject restate the legal framework; this guide gives model clauses to adapt for the French tender documents (the rules of consultation, the technical specifications and the special administrative terms), a scoring grid, an acceptance procedure and the points specific to Belgium, Luxembourg and Switzerland.",
+ "body": [
+  [
+   "h2",
+   "why-accessibility-clauses",
+   "Why the accessibility clause decides whether your websites comply"
+  ],
+  [
+   "p",
+   "For a public body, the digital accessibility obligation rests on the body itself, not on the web agency, the software vendor or the printer that built the service. When Arcom, the French regulator, finds that a website publishes no accessibility statement or that a service does not comply, it is the public body that receives the formal notice, as explained in our article on [[article:france|obligations and inspections in France]]. Yet most public websites, applications and documents are produced by contractors. If the contract says nothing, or says it badly, about what is expected, the buyer pays twice: once for the service delivered, and a second time to have it fixed."
+  ],
+  [
+   "p",
+   "The accessibility clause is therefore the first compliance tool, ahead of the audit and ahead of the fixes. It costs little when the tender documents are being drafted: a few paragraphs in the technical specifications, one sub-criterion in the scoring grid, two articles in the administrative terms. Fixing things after delivery costs far more, because a badly designed component, such as a menu, a modal window or a form field, is repeated on every page that uses it."
+  ],
+  [
+   "p",
+   "In practice, tender documents often do contain an accessibility clause, but one that has no effect. It requires “compliance with accessibility standards” without saying which ones, provides for no check on delivery and gives the buyer no means of obtaining fixes. This guide starts from that reality: it shows how each document in the contract must carry part of the requirement, and how the whole fits with the [[article:schema-pluriannuel|multi-year accessibility plan]], which is precisely where French public bodies are expected to set out how accessibility is built into their purchasing."
+  ],
+  [
+   "note",
+   "Key point",
+   "An effective accessibility clause comes down to four elements: a dated framework, evidence requested from bidders, acceptance testing on delivery carried out on a defined sample, and contractual consequences if defects are not fixed."
+  ],
+  [
+   "h2",
+   "what-the-law-says",
+   "Digital accessibility in public procurement: what the law says"
+  ],
+  [
+   "p",
+   "In France, [[https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037731027/2025-11-30|Article R. 2111-6 of the French Public Procurement Code (in French)]] sets the starting rule: “sauf cas dûment justifié, les spécifications techniques sont établies de manière à prendre en compte des critères d’accessibilité pour les personnes handicapées ou des critères de fonctionnalité pour tous les utilisateurs” (“save in duly justified cases, technical specifications are drawn up so as to take into account accessibility criteria for persons with disabilities or design-for-all criteria”). The rule applies to every contract, digital or not. It means that a buyer who leaves accessibility out of its specifications must be able to justify that choice, not the other way round."
+  ],
+  [
+   "p",
+   "The award stage is also concerned. [[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037730485|Article R. 2152-7 of the same code (in French)]], in the version in force since 21 August 2026, expressly lists accessibility among the quality aspects on which award criteria may be based. The same article now requires at least one criterion to take account of the environmental characteristics of the tender: the scoring grid for a digital contract must therefore make room for both accessibility and the environment, without one crowding out the other."
+  ],
+  [
+   "p",
+   "These purchasing rules come on top of the obligations of result that rest on the public body: article 47 of the French law of 11 February 2005, the accessibility statement, the multi-year plan and, for products and services in the private sector, the transposition of the [[article:eaa|European Accessibility Act]]. The contract is the means of meeting those obligations; it does not replace them."
+  ],
+  [
+   "p",
+   "DINUM, the French interministerial digital directorate, publishes on its DesignGouv site a [[https://design.numerique.gouv.fr/outils/accessibilite-marche-public/|page on digital accessibility in public procurement (in French)]], which also points to the guide on accessibility clauses produced by the Observatoire économique de la commande publique, the French public procurement observatory. Its recommendations are used throughout this article: a contract sets an obligation of result and cannot impose a method, the framework cited must be the one in force on the date the contract notice is published, and the evaluation of tenders must include a criterion specific to accessibility."
+  ],
+  [
+   "table",
+   {
+    "caption": "What the law says about accessibility in public contracts, by country",
+    "head": [
+     "Country",
+     "Public procurement text",
+     "What it requires",
+     "Framework to cite in the specifications"
+    ],
+    "rows": [
+     [
+      "France",
+      "Public Procurement Code, art. R. 2111-6 and R. 2152-7",
+      "Specifications that take accessibility into account, save in duly justified cases; accessibility may be used as an award criterion",
+      "RGAA (currently version 4.1.2) for the web; the EN 301 549 standard for other digital products"
+     ],
+     [
+      "Belgium",
+      "Law of 17 June 2016 on public procurement, art. 53(1)",
+      "Specifications drawn up taking into account accessibility and design for all, save in duly justified cases",
+      "EN 301 549 standard (WCAG level AA)"
+     ],
+     [
+      "Luxembourg",
+      "Art. 26 of the Law of 8 March 2023, read with the amended Law of 8 April 2018 on public procurement",
+      "The accessibility requirements for the products and services covered are mandatory technical specifications",
+      "RAWeb for the web, RAAM for mobile, both based on the EN 301 549 standard"
+     ],
+     [
+      "Switzerland",
+      "No verified accessibility rule in public procurement law",
+      "Requirement to be written into the specifications, consistent with the Disability Discrimination Act (LHand/BehiG)",
+      "eCH-0059 standard version 3 (WCAG 2.1 level AA)"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "That is the end of the legal part: what makes the difference is the drafting. The following sections go through each tender document in turn, from the rules of consultation to the special administrative terms, with wording to adapt."
+  ],
+  [
+   "h2",
+   "which-contracts",
+   "Which contracts should include a digital accessibility clause?"
+  ],
+  [
+   "p",
+   "The reflex is to think of the website redesign. It is the most visible case, but many other contracts produce content or tools used by the public or by staff. The principle in Article R. 2111-6 applies to all of them; the depth of the clause simply has to be proportionate to what the contractor actually delivers."
+  ],
+  [
+   "table",
+   {
+    "caption": "Type of contract, accessibility requirement to include and evidence to demand",
+    "head": [
+     "Type of contract",
+     "What the contractor must guarantee",
+     "Evidence to demand on delivery"
+    ],
+    "rows": [
+     [
+      "Building or redesigning a website, intranet or extranet",
+      "Compliance with the framework across all templates and components, sample content included",
+      "Acceptance audit on a defined sample, completed evaluation grid, draft accessibility statement"
+     ],
+     [
+      "Third-party application maintenance (TMA)",
+      "No regression: no change introduces a new non-compliance; reported defects are fixed",
+      "Accessibility check in each release acceptance, log of defects fixed"
+     ],
+     [
+      "Software package, SaaS software, online services platform",
+      "Compliance of the screens used by the public and by staff; remediation roadmap",
+      "Recent audit report on the version delivered, dated commitment to fix"
+     ],
+     [
+      "Mobile application",
+      "Compliance with the mobile framework and with the iOS and Android platform accessibility rules",
+      "Tests on real devices with VoiceOver and TalkBack, completed grid"
+     ],
+     [
+      "Document production (reports, magazines, PDF forms)",
+      "Accessible office or PDF documents, or an equivalent HTML version",
+      "Check of structure, reading order and text alternatives on every deliverable"
+     ],
+     [
+      "Video, motion design, webinars",
+      "Captions, transcript, audio description where the image carries information",
+      "Caption files and transcripts delivered with every video"
+     ],
+     [
+      "Online training, e-learning modules",
+      "Modules usable with the keyboard and with a screen reader, accessible media",
+      "Accessibility acceptance of each module before it goes live"
+     ],
+     [
+      "Kiosks, digital counters, digital street furniture",
+      "The EN 301 549 requirements that apply to hardware and software",
+      "Demonstration and tests in real conditions"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "For documents, the detailed requirements and the inspection method are set out in our guide to the [[article:pdf-accessible|accessible PDF]]. For audit contracts themselves, the question is different: the buyer is purchasing an evaluation service, and how to build the price schedule and the criteria is covered in our article on [[article:prix-audit|the price of an accessibility audit]]."
+  ],
+  [
+   "h2",
+   "defining-the-need",
+   "Defining the need: scope, framework and expected level"
+  ],
+  [
+   "p",
+   "A clause is only as good as the precision of the need it frames. Three elements must appear in the technical specifications from the description of the need onwards, and not in an appendix that nobody will read."
+  ],
+  [
+   "h3",
+   "The framework and its version"
+  ],
+  [
+   "p",
+   "Name the framework and its version: in France, the RGAA (Référentiel général d’amélioration de l’accessibilité, the French General Accessibility Improvement Framework) in the version in force on the date the contract notice is published, which today means version 4.1.2 and its 106 criteria. DesignGouv states that [[https://design.numerique.gouv.fr/articles/2026-11-03-rgaa5/|RGAA 5 is due for release in December 2026 (in French)]] and that it will be made official by decree during 2027. A redesign contract published today and delivered in 2027 must therefore anticipate the transition: the clause in the next section proposes wording that fixes the version applicable at acceptance and organises any change of version."
+  ],
+  [
+   "p",
+   "For mobile applications, software packages and hardware, cite the EN 301 549 standard, which covers these products. Our comparison of [[article:normes|digital accessibility standards]] explains which standard applies to which object, and our article on the [[article:wcag-22|new WCAG 2.2 criteria]] sets out what will change in the requirements."
+  ],
+  [
+   "h3",
+   "The scope"
+  ],
+  [
+   "p",
+   "List what is delivered: page templates, design system components, user journeys (registration, payment, booking an appointment, submitting an application), downloadable documents, videos and applications. Also state what falls to the contractor and what falls to the buyer: the content entered by your editors after go-live remains your responsibility, but the content management system delivered must allow them to produce it in accessible form (headings, image text alternatives, tables, links)."
+  ],
+  [
+   "h3",
+   "The expected level"
+  ],
+  [
+   "p",
+   "DesignGouv recommends that the contractor undertake to meet 100% of the RGAA criteria. That is the objective to write down. A lower target rate, for instance “at least 75%”, sends the wrong signal: it permits exactly the defects that block a user journey, since a high rate can coexist with a form that cannot be submitted using the keyboard. Flexibility should apply to the deadlines and arrangements for fixes, not to the objective."
+  ],
+  [
+   "p",
+   "Finally, the contract sets an obligation of result: it cannot impose a working method on the contractor. You can, however, ask bidders to describe their method in the tender and score that description."
+  ],
+  [
+   "h2",
+   "model-clauses",
+   "Model accessibility clauses to adapt, document by document"
+  ],
+  [
+   "p",
+   "The wording below is a working template. It must be adapted to your need and to your standard documents, and reviewed by your procurement department. Square brackets mark the items to complete. French tender documents follow a well-established structure: the RC (règlement de consultation, the rules of consultation, which tell bidders what to submit and how tenders will be assessed), the CCTP (cahier des clauses techniques particulières, the special technical specifications) and the CCAP (cahier des clauses administratives particulières, the special administrative terms, covering acceptance, payment, penalties and warranty). Buyers in other countries will find the same functions in their own documents under different names."
+  ],
+  [
+   "h3",
+   "In the rules of consultation (RC)"
+  ],
+  [
+   "p",
+   "“The bidder shall attach to its tender a technical proposal containing a section devoted to digital accessibility. This section describes: the design and development method adopted to ensure compliance with the [RGAA, in the version in force on the date of publication of this contract]; the checks carried out before each delivery and the tools and assistive technologies used; the composition of the team and the accessibility skills of each of its members, together with the designation of an accessibility lead; two references for recent projects, each accompanied by the published accessibility statement.”"
+  ],
+  [
+   "h3",
+   "In the technical specifications (CCTP): the compliance requirement"
+  ],
+  [
+   "p",
+   "“The deliverables comply with all the criteria of the [RGAA, version 4.1.2]. They comprise the templates, components, user journeys and documents listed in article [X]. With each delivery, the contractor provides the evaluation grid completed on the sample defined in article [Y] and a draft accessibility statement. Where compliance of an element is technically impossible, the contractor reports this in writing before building it and proposes an accessible alternative, subject to the approval of the contracting authority.”"
+  ],
+  [
+   "h3",
+   "In the technical specifications (CCTP): changes to the framework"
+  ],
+  [
+   "p",
+   "“Compliance is assessed against the version of the framework in force on the date of publication of the contract. If a new version is published during performance, the contractor shall submit within [two] months a gap analysis and a quotation for the upgrade. The contracting authority decides on the follow-up under the conditions laid down in the contract.”"
+  ],
+  [
+   "p",
+   "This wording avoids two pitfalls: imposing on the contractor, with no consideration, a framework that did not exist when tenders were submitted, and freezing the service on an outdated version. If you want to be able to include the upgrade within the contract, provide from the outset, as Article R. 2194-1 of the French Public Procurement Code allows, a review clause or an option that is clear, precise and unequivocal, and that sets out its scope and the conditions under which it may be used."
+  ],
+  [
+   "h3",
+   "In the technical specifications (CCTP): authoring tools"
+  ],
+  [
+   "p",
+   "“The content management system delivered allows contributors to produce compliant content: entry of text alternatives for images, heading hierarchy, data tables with headers, language indication, explicit links. The contractor provides an accessible contributor guide and runs an onboarding session devoted to these functions.”"
+  ],
+  [
+   "h3",
+   "In the special administrative terms (CCAP): verification and warranty"
+  ],
+  [
+   "p",
+   "“The verification operations include a check of compliance with the accessibility framework, carried out by the contracting authority or by a third party it appoints, on the sample defined in the CCTP. Non-compliances found are recorded as reservations. The contractor fixes them at its own expense within [fifteen] working days. During the warranty period of [twelve] months, it fixes free of charge any non-compliance with the framework reported by the contracting authority or by a user.”"
+  ],
+  [
+   "h3",
+   "In the special administrative terms (CCAP): penalties"
+  ],
+  [
+   "p",
+   "“If a non-compliance that has been the subject of a reservation is not fixed within the set deadline, the contractor incurs a penalty of [amount] euros per non-compliance and per day of delay, up to a limit of [X]% of the contract value.”"
+  ],
+  [
+   "p",
+   "The section on penalties explains how to calibrate these amounts so that they are a deterrent without being manifestly excessive."
+  ],
+  [
+   "h2",
+   "what-to-ask-bidders",
+   "Accessibility requirements in tenders: what to ask bidders for, and what to do with it"
+  ],
+  [
+   "p",
+   "DesignGouv advises checking references, preferably recent public-sector websites built by the team proposed rather than by the company in general, the skills of the team, the presence of an accessibility lead and the inclusion of testing and of drafting the statement in the tender. These checks only make sense if you know what to look for."
+  ],
+  [
+   "ul",
+   [
+    "References: open the published accessibility statement for each reference and check its date, the compliance status shown and the framework cited. A statement that is old, missing or inconsistent with the website is a warning sign.",
+    "Quick test of a reference: go through one page and one form using the keyboard alone, checking that the focus stays visible and that every field has a label. Ten minutes are enough to tell a team that has mastered the subject from a team that merely claims it.",
+    "Team: ask for the CVs of the people who will actually work on the project, with their experience of the framework required, and a commitment to keep them on the project during performance.",
+    "Accessibility lead: identify a named person, the time allocated to the project and their role in internal acceptance testing.",
+    "Method: the description must say when the checks take place (mock-ups, development, acceptance), with which tools and which assistive technologies.",
+    "Included services: accessibility testing, the evaluation grid and the draft statement must appear explicitly in the tender and in the price schedule.",
+    "Joint tendering and subcontracting: where several companies are involved (graphic design, development, content), the split of responsibilities for accessibility must be set out in writing."
+   ]
+  ],
+  [
+   "p",
+   "A certificate or a statement of compliance produced by the bidder on its own work is not enough: it is a declaration of intent. The evidence is an online service you can test and a published statement you can read."
+  ],
+  [
+   "h2",
+   "scoring-tenders",
+   "Scoring tenders: an accessibility criterion that genuinely separates bidders"
+  ],
+  [
+   "p",
+   "DesignGouv suggests including in the evaluation grid a criterion specific to digital accessibility, eliminatory, with a weighting of around 10%. Making it eliminatory allows a tender that ignores the subject to be rejected; the weighting allows the tenders that do address it to be ranked. Without precise sub-criteria, however, this criterion almost always ends up with the same score for every bidder, because they all write that they “comply with the RGAA”."
+  ],
+  [
+   "table",
+   {
+    "caption": "Example breakdown of an accessibility criterion scored out of 10 points",
+    "head": [
+     "Sub-criterion",
+     "Points",
+     "What marks out a strong tender",
+     "What should cost points"
+    ],
+    "rows": [
+     [
+      "Design and verification method",
+      "3",
+      "Checks at every stage, annotated mock-ups, tests with named screen readers",
+      "Generic commitment with no description of the checks"
+     ],
+     [
+      "Team skills and accessibility lead",
+      "3",
+      "Named lead with allocated time, CVs showing recent projects on the required framework",
+      "Expertise claimed by the company but absent from the CVs"
+     ],
+     [
+      "Verifiable references",
+      "2",
+      "Published statements that are recent and consistent with the website tested",
+      "References without a statement, or a statement contradicted by a quick test"
+     ],
+     [
+      "Accessibility deliverables included",
+      "2",
+      "Grid, draft statement, contributor guide and contributor training priced in",
+      "Accessibility testing pushed to an option or a later quotation"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Score the sub-criteria on the documents provided, not on intentions. A practical exercise can also be provided for in the rules of consultation: for example, asking the bidders invited to an interview to present a form component built for an earlier project and to navigate it with the keyboard. It must then be announced, described and scored according to arrangements known to all bidders."
+  ],
+  [
+   "note",
+   "Key point",
+   "A useful accessibility criterion is scored on verifiable evidence: CVs, tested references, published statements, priced deliverables. A criterion scored on general commitments gives everyone the same mark."
+  ],
+  [
+   "h2",
+   "accessibility-acceptance-testing",
+   "Accessibility acceptance testing on delivery: the moment that counts"
+  ],
+  [
+   "p",
+   "Most of the defects found in an audit after go-live could have been recorded as reservations on delivery. It is the step most often forgotten in contracts, and it is the step that gives value to all the others. [[svc:recette|Accessibility acceptance testing]] means checking, before the deliverables are formally accepted, that they meet the framework on a sample defined in advance."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Define the sample in the technical specifications.",
+     "Typical pages, templates and complete user journeys, along the lines of the sample used in an RGAA audit: home page, contact, legal notice, accessibility statement, representative pages for each template, and every step of each online procedure."
+    ],
+    [
+     "Plan interim acceptance checks.",
+     "One check on the mock-ups, then another on the first components developed, cost much less than a late discovery."
+    ],
+    [
+     "Have acceptance carried out by someone independent of the contractor.",
+     "Your own teams if they are trained, or a third party. The contractor provides its own grid, which serves as a starting point, not as evidence."
+    ],
+    [
+     "Classify the non-compliances.",
+     "Distinguish those that block a user journey (a submit button that cannot be reached with the keyboard, a CAPTCHA with no alternative) from those that hinder it; the former justify refusing acceptance."
+    ],
+    [
+     "Issue precise reservations.",
+     "Each reservation cites the criterion, the page, the element concerned and the fix expected, with the contractual deadline."
+    ],
+    [
+     "Re-check the fixes.",
+     "A second pass covering only the non-compliances recorded as reservations, provided for in the contract and in its price."
+    ],
+    [
+     "Lift the reservations and prepare the statement.",
+     "The acceptance results feed directly into the accessibility statement for the service."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "For a major service, acceptance testing can take the form of a full [[svc:audit-rgaa|RGAA audit]], whose course is described in our article on [[article:audit-rgaa|the RGAA audit week by week]]. Its findings then make it possible to publish an [[article:declaration|accessibility statement]] based on a genuine check, as the regulations require."
+  ],
+  [
+   "p",
+   "For buyers outside France, the logic is identical whatever framework the contract cites. What matters is that the sample is fixed before delivery, that the person who checks is not the person who built, and that the result of the check has a contractual consequence. An acceptance procedure without a sample invites endless discussion about which pages count; an acceptance procedure run by the contractor alone tells you only what the contractor wishes to report."
+  ],
+  [
+   "h2",
+   "penalties-and-warranty",
+   "Penalties, price reductions and warranty: consequences that can be applied"
+  ],
+  [
+   "p",
+   "A clause with no consequence is not read. The CCAG-TIC (cahier des clauses administratives générales des marchés de techniques de l’information et de la communication, the French general administrative terms for information and communication technology contracts) provides in particular for late-delivery penalties, but no mechanism specific to accessibility. If you want to penalise the failure to fix an accessibility defect, the mechanism must be written into the CCAP, as a departure from or a supplement to the general terms chosen."
+  ],
+  [
+   "p",
+   "The most robust penalty concerns a fact that is easy to establish: failure to fix, within the set deadline, a non-compliance recorded as a reservation. It avoids arguments about the compliance rate and about how the sample should be read. Its amount must remain proportionate: French administrative case law allows the courts to reduce penalties that are manifestly excessive or derisory in relation to the contract value. A cap expressed as a percentage of the contract value, as in the model clause, secures the whole arrangement."
+  ],
+  [
+   "table",
+   {
+    "caption": "Grading the consequences according to the seriousness of the defect",
+    "head": [
+     "Situation found",
+     "Proposed contractual consequence",
+     "Contract document"
+    ],
+    "rows": [
+     [
+      "Blocking non-compliance at acceptance",
+      "Refusal of acceptance, or postponement until fixed",
+      "CCAP, verification operations"
+     ],
+     [
+      "Non-blocking non-compliance at acceptance",
+      "Acceptance with reservations and a deadline for fixes",
+      "CCAP, verification operations"
+     ],
+     [
+      "Reservation not lifted within the deadline",
+      "Penalty per non-compliance and per day, capped",
+      "CCAP, penalties"
+     ],
+     [
+      "Defect reported during the warranty period",
+      "Fix free of charge within a set deadline",
+      "CCAP, warranty"
+     ],
+     [
+      "Regression introduced by a change under application maintenance",
+      "Fix free of charge, under the no-regression requirement",
+      "CCTP of the maintenance contract"
+     ],
+     [
+      "Accessibility deliverables not supplied (grid, statement)",
+      "Flat-rate penalty or suspension of the corresponding payment",
+      "CCAP and price schedule"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "The warranty is the last safety net. DesignGouv recommends that the contractor fix accessibility defects free of charge during the corrective warranty period. Set a duration that covers at least the first independent audit after go-live: it is often that audit which reveals the defects that acceptance testing missed."
+  ],
+  [
+   "h2",
+   "special-cases",
+   "Special cases: SaaS, framework agreements, small contracts and maintenance"
+  ],
+  [
+   "h3",
+   "SaaS software or off-the-shelf software packages"
+  ],
+  [
+   "p",
+   "You cannot require a vendor to rebuild its product for you. You can, however, ask at the tender stage for the compliance status of the version offered (a recent audit report or a published statement), score that status and make the fixing of the listed defects a dated contractual commitment. Also require that each new version does not degrade the level of accessibility found. These points are decisive for platforms for online procedures, recruitment or appointment booking, which directly affect users."
+  ],
+  [
+   "h3",
+   "Framework agreements and central purchasing bodies"
+  ],
+  [
+   "p",
+   "In a framework agreement executed through purchase orders, the accessibility requirements must appear in the framework agreement itself, not only in each order. When you buy through a central purchasing body, check what its contract provides on accessibility before ordering: you remain responsible for the service you put online."
+  ],
+  [
+   "h3",
+   "Small contracts"
+  ],
+  [
+   "p",
+   "Since 1 April 2026, in France, contracts for supplies and services with an estimated value below €60,000 excluding VAT may be awarded without prior publication or competition, as explained in our article on [[article:prix-audit|pricing and buying an accessibility audit]]. The absence of a procedure does not exempt the buyer from Article R. 2111-6: a quotation for a microsite or an event app must also mention the framework, acceptance testing and the fixing of defects."
+  ],
+  [
+   "h3",
+   "Third-party application maintenance"
+  ],
+  [
+   "p",
+   "On an existing service that does not comply, the application maintenance contract (TMA, tierce maintenance applicative) is the tool for gradual compliance. The CCTP can provide for a volume of work units dedicated to fixing the defects identified in the last audit, a no-regression requirement for each release and an accessibility check built into each acceptance. This trajectory must match the annual action plan in your multi-year plan."
+  ],
+  [
+   "h2",
+   "common-mistakes",
+   "Common mistakes in tender documents"
+  ],
+  [
+   "ul",
+   [
+    "Citing “the accessibility standards in force” without naming the framework or its version: the clause becomes impossible to verify.",
+    "Setting a target compliance rate below 100%: it legitimises blocking defects.",
+    "Confusing compliance with means: imposing a tool or a development method instead of a result.",
+    "Providing for an audit after go-live but no acceptance testing before formal acceptance: defects are discovered once the contractor has been paid.",
+    "Leaving acceptance testing to the contractor alone, which ends up checking its own work.",
+    "Forgetting the documents, videos and sample content delivered with the website.",
+    "Making no provision for the authoring tool, so that the website deteriorates from the first items your teams publish.",
+    "Scoring the accessibility criterion solely on the bidder’s declaration of intent.",
+    "Providing for no specific warranty and no consequence if defects are not fixed.",
+    "Forgetting to train the staff responsible for managing the contract, who do not know how to check what they are accepting."
+   ]
+  ],
+  [
+   "p",
+   "The last point is often the cause of the others. [[svc:formations|Training for buyers and project managers]] lasting one or two days is enough to draft the clauses, read an acceptance grid and recognise a blocking defect."
+  ],
+  [
+   "h2",
+   "belgium-luxembourg-switzerland",
+   "Adapting the clauses in Belgium, Luxembourg and Switzerland"
+  ],
+  [
+   "p",
+   "In Belgium, [[https://www.ejustice.just.fgov.be/img_l/pdf/2016/06/17/2016021053_F.pdf|Article 53 of the Law of 17 June 2016 on public procurement (in French)]] takes over the European rule: for all contracts intended for use by natural persons, the technical specifications take into account, save in duly justified cases, accessibility criteria for persons with disabilities or the concept of design for all users. Where mandatory accessibility requirements have been adopted by a legal act of the European Union, the specifications are defined by reference to them. The framework to cite is the EN 301 549 standard, as explained in our article on [[article:belgique|digital accessibility in Belgium]]. In a country where websites are often bilingual or trilingual, the clause must cover every language version."
+  ],
+  [
+   "p",
+   "In Luxembourg, the public procurement portal points out that [[https://marches.public.lu/fr/actualites/2024/09-24/accessibilite.html|the Law of 8 March 2023 on the accessibility of products and services (in French)]], which entered into force on 28 June 2025, makes its accessibility requirements, through its article 26, mandatory requirements in the form of technical specifications within the meaning of the amended Law of 8 April 2018 on public procurement. For public websites and apps, the clauses cite the RAWeb and the RAAM, described in our article on [[article:luxembourg|Luxembourg]]."
+  ],
+  [
+   "p",
+   "In Switzerland, the eCH-0059 standard in its version 3 [[https://www.bit.admin.ch/en/accessibility-in-the-federal-administration|requires compliance with WCAG 2.1 at level AA]], according to the Federal Office of Information Technology, Systems and Telecommunication (FOITT). In the absence of a verified accessibility rule in public procurement law, it is the specifications that must carry it: cite eCH-0059, ask for evidence and plan acceptance testing as elsewhere. Swiss companies that sell in the European Union also remain subject to the EAA, as our article on [[article:suisse|Switzerland]] explains."
+  ],
+  [
+   "p",
+   "In all three countries, an [[svc:audit-conformite|audit of compliance with the EN 301 549 standard or its national versions]] can serve as acceptance testing on delivery, with the same logic of a defined sample and reservations as in France."
+  ],
+  [
+   "p",
+   "For large organisations that buy across several of these countries, the practical consequence is that one set of clauses can serve as a common base, provided the framework cited is adjusted to each jurisdiction. The structure stays the same everywhere: a named and dated framework, evidence requested from bidders, an independent acceptance test on a defined sample, and consequences for defects that are not fixed. Only the name of the framework and the legal reference in the tender documents change."
+  ],
+  [
+   "h2",
+   "action-plan",
+   "Building digital accessibility into your next contract: an eight-step timetable"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Three months before publication: take stock.",
+     "List the digital contracts due in the next twelve months (redesigns, application maintenance, software, documents, videos) and link them to the annual action plan."
+    ],
+    [
+     "Two months before: define the need.",
+     "Scope, framework and version, expected accessibility deliverables, acceptance sample."
+    ],
+    [
+     "Six weeks before: draft the clauses.",
+     "Adapt the model clauses for the RC, the CCTP and the CCAP, and have them reviewed by your procurement department."
+    ],
+    [
+     "One month before: build the scoring grid.",
+     "Sub-criteria scored on evidence, a weighting of around 10%, arrangements for any practical exercise."
+    ],
+    [
+     "During evaluation: check the evidence.",
+     "Quick test of the references, reading of the published statements, review of the CVs."
+    ],
+    [
+     "During performance: interim acceptance checks.",
+     "Mock-ups, then the first components, before final acceptance."
+    ],
+    [
+     "On delivery: acceptance testing and reservations.",
+     "Independent check on the sample, precise reservations, re-check, lifting of reservations."
+    ],
+    [
+     "After go-live: statement and warranty.",
+     "Publication of the accessibility statement, follow-up of user reports and fixes under the warranty."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "If you take away only one action for your next tender, add accessibility acceptance testing on delivery and the consequences of failing to fix defects: that is what turns a statement of principle into a real requirement. To place these purchases within the overall approach, our [[article:guide|guide to digital accessibility]] sets out the obligations, frameworks and steps, and our [[sector:public|public sector]] page describes how we support public bodies. We can also review a set of tender documents before publication, or carry out acceptance testing on your deliveries."
+  ]
+ ],
+ "faq": [
+  [
+   "Is it mandatory to include accessibility in a public contract?",
+   "In France, Article R. 2111-6 of the Public Procurement Code requires technical specifications to take into account accessibility criteria for persons with disabilities or design-for-all criteria, save in duly justified cases. For a contract for a website, app or software used by the public or by staff, making no provision at all is therefore hard to justify. Comparable rules, derived from EU law, exist in Belgium and Luxembourg."
+  ],
+  [
+   "Can a public contract require 100% compliance with the RGAA?",
+   "Yes. DesignGouv recommends that the contractor undertake to meet 100% of the RGAA criteria. That is the objective to set, because a lower rate permits blocking defects. The contract must then state how this result is verified, through acceptance testing on a defined sample, and what happens if defects remain: reservations, a deadline for fixes, warranty and penalties."
+  ],
+  [
+   "How much weight should accessibility carry in the award criteria?",
+   "DesignGouv suggests a specific, eliminatory criterion with a weighting of around 10%. The key is to break it down into sub-criteria scored on evidence: verification method, team skills, verifiable references and accessibility deliverables included in the price. A criterion scored on mere commitments produces the same mark for every bidder."
+  ],
+  [
+   "Which version of the RGAA should be cited now that RGAA 5 is coming?",
+   "Cite the version in force on the date the contract notice is published, currently RGAA 4.1.2. RGAA 5 is announced for December 2026, to be made official by decree during 2027. Include a clause asking the contractor for a gap analysis and an upgrade quotation if a new version appears during performance and, if you want to be able to include it in the contract, a review clause."
+  ],
+  [
+   "Who should check accessibility on delivery?",
+   "The contracting authority, directly or through a third party it appoints. The grid completed by the contractor is useful but is not evidence, since the contractor is checking its own work. Acceptance testing covers a sample fixed in the technical specifications, and its results are then used to draft the accessibility statement for the service."
+  ],
+  [
+   "How do you buy accessible SaaS software?",
+   "At the tender stage, ask for the compliance status of the version offered, in the form of a recent audit report or a published statement, and score it. Make the fixing of known defects a dated contractual commitment and require that each new version does not degrade accessibility. Test the screens used by the public yourself before making your choice."
+  ],
+  [
+   "Do accessibility clauses apply to small contracts awarded without competition?",
+   "Yes. Since 1 April 2026, in France, a services contract with an estimated value below €60,000 excluding VAT may be awarded without prior publication or competition, but Article R. 2111-6 continues to apply. The quotation or purchase order must mention the framework, acceptance testing before payment and the fixing of defects."
+  ]
+ ],
+ "cta_svc": "recette",
+ "cta_title": "A digital contract to publish or to accept?",
+ "cta_text": "We review your accessibility clauses before publication and carry out acceptance testing on your deliveries, with reservations your teams can act on directly.",
+ "related": [
+  "schema-pluriannuel",
+  "prix-audit",
+  "audit-rgaa"
+ ]
+}

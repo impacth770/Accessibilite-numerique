@@ -8,189 +8,762 @@
   "cat": "guide",
   "where": "Frankreich",
   "cover": "SPAN",
-  "cover_note": ["Artikel 47 Abs. III, Gesetz vom 11. Februar 2005", "Höchstens 3 Jahre, ein Maßnahmenplan pro Jahr"],
+  "cover_note": [
+    "Artikel 47 Abs. III, Gesetz vom 11. Februar 2005",
+    "Höchstens 3 Jahre, ein Maßnahmenplan pro Jahr"
+  ],
   "date": "2026-11-12",
   "cluster": "methode",
   "lead": "Der Mehrjahresplan für digitale Barrierefreiheit, im französischen Recht „schéma pluriannuel de mise en accessibilité“ und meist kurz SPAN genannt, ist das Dokument, mit dem eine öffentliche Stelle oder ein großes Unternehmen in Frankreich für höchstens drei Jahre seine Politik und seinen Zeitplan zur Herstellung der Barrierefreiheit festlegt. Wer danach sucht, findet vor allem Dutzende PDF-Dateien einzelner Organisationen von sehr unterschiedlicher Qualität, aber kaum eine Erklärung dazu, was verlangt und was kontrolliert wird. Dieser Leitfaden geht vom Gesetzestext und von der offiziellen Seite des französischen Referenzrahmens RGAA aus und liefert ein kommentiertes Muster Rubrik für Rubrik, ein Beispiel für einen jährlichen Maßnahmenplan, Kennzahlen für die Steuerung und die Liste der Fehler, die zu einer Inverzugsetzung durch die Arcom führen können.",
   "body": [
-    ["h2", "was-ist-ein-mehrjahresplan", "Mehrjahresplan zur Barrierefreiheit: ein Steuerungsinstrument, kein Bekenntnis"],
-    ["p", "Der Mehrjahresplan ist das dritte Transparenzdokument, das das französische Gesetz vorsieht, neben der Erklärung zur Barrierefreiheit und dem Konformitätshinweis auf der Startseite. Die Erklärung beschreibt, wo ein Dienst zu einem bestimmten Zeitpunkt steht. Der Mehrjahresplan beschreibt, wie die Organisation vorankommen will, mit welchen Mitteln, mit welcher Organisation und nach welchem Zeitplan. Der jährliche Maßnahmenplan ist seine operative Umsetzung für das laufende Jahr."],
-    ["p", "In der Praxis ähneln sich viele veröffentlichte Mehrjahrespläne stark: eine allgemeine Seite mit Absichtserklärungen, eine Liste guter Vorsätze („Teams sensibilisieren“, „unsere Websites auditieren“), selten ein Budget, fast nie eine Frist oder eine verantwortliche Person. Ein solches Dokument hakt formal ein Kästchen ab, nützt intern aber nichts und hält einer Kontrolle schlecht stand, denn die Arcom prüft Vorhandensein und Konformität des Plans, nicht nur seine bloße Existenz. Ein guter Mehrjahresplan erlaubt es dagegen einer Leitung zu wissen, was korrigiert wird, wann, von wem und zu welchen Kosten."],
-    ["p", "Der Mehrjahresplan ist auch kein Auditbericht. Er stützt sich auf vorhandene Audits, sein Gegenstand ist aber die Organisation: wer das Thema trägt, wie die Barrierefreiheit in Projekte, Beschaffung, Personalgewinnung und Weiterbildung einfließt und wie bekannte Mängel behoben werden. Das unterscheidet ihn von der [[article:declaration|Erklärung zur Barrierefreiheit]], die sich auf einen bestimmten Dienst bezieht, und macht ihn zum Steuerungsinstrument des gesamten Vorgehens, das unser [[article:guide|Leitfaden zur digitalen Barrierefreiheit]] beschreibt."],
-    ["p", "Für Leserinnen und Leser in Luxemburg, der Deutschschweiz oder der Deutschsprachigen Gemeinschaft Belgiens betrifft dieser Plan vor allem Organisationen, die in Frankreich tätig sind: eine französische Tochtergesellschaft oberhalb der Umsatzschwelle, eine grenzüberschreitende öffentliche Einrichtung oder ein Dienstleister, der für eine französische Behörde Websites betreibt. Darüber hinaus ist der Aufbau des französischen Plans eine brauchbare Vorlage für jede Organisation, die ihre Arbeit an der Barrierefreiheit über mehrere Jahre planen will, auch ohne entsprechende Pflicht."],
-    ["note", "Wichtig", "Drei Dokumente gehören zusammen: die Erklärung (der Stand eines Dienstes), der Mehrjahresplan (Politik und Zeitplan für höchstens drei Jahre) und der Maßnahmenplan des laufenden Jahres (die datierten Arbeiten). Jedes verweist auf die anderen, und alle drei müssen aktuell sein."],
-
-    ["h2", "was-das-gesetz-sagt", "Was das französische Gesetz zum Mehrjahresplan wörtlich verlangt"],
-    ["p", "Die Pflicht steht in Absatz III von Artikel 47 des Gesetzes Nr. 2005-102 vom 11. Februar 2005 in der Fassung der Verordnung (ordonnance) Nr. 2023-859 vom 6. September 2023. Danach veröffentlichen die in Absatz I genannten Stellen eine Erklärung zur Barrierefreiheit und erstellen einen Mehrjahresplan zur Herstellung der Barrierefreiheit ihrer öffentlichen Online-Kommunikationsdienste, „der öffentlich zugänglich gemacht und in jährliche Maßnahmenpläne untergliedert wird und dessen Laufzeit drei Jahre nicht überschreiten darf“ (im Original: „qui est rendu public et décliné en plans d'actions annuels, et dont la durée ne peut être supérieure à trois ans“). Der Text ist in der [[https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037388867/|geltenden Fassung von Artikel 47 auf Légifrance (auf Französisch)]] abrufbar."],
-    ["p", "Aus diesem Satz ergeben sich unmittelbar vier Anforderungen. Erstens erfasst der Plan sämtliche öffentlichen Online-Kommunikationsdienste der Organisation: Websites, Intranets, Extranets, mobile Apps, Softwarepakete und digitales Stadtmobiliar. Zweitens wird er veröffentlicht. Drittens beträgt seine Laufzeit höchstens drei Jahre. Viertens wird er in jährliche Maßnahmenpläne untergliedert. Absatz IV desselben Artikels fügt hinzu, dass die Seite zur Barrierefreiheit „leicht und direkt“ Zugang zur Erklärung, zum Mehrjahresplan und zum Maßnahmenplan des laufenden Jahres geben muss."],
-    ["h3", "Das Dekret vom 24. Juli 2019 und der RGAA"],
-    ["p", "Das Dekret Nr. 2019-768 vom 24. Juli 2019 ergänzt das Gesetz in drei Punkten, die für den Mehrjahresplan wichtig sind. Sein Artikel 5 überlässt es dem Referenzrahmen, Format und Inhalt der in Absatz III von Artikel 47 vorgesehenen Dokumente festzulegen, also der Erklärung, des Mehrjahresplans und der Jahrespläne. Sein Artikel 6 schreibt vor, dass die Erklärung den Link zum Mehrjahresplan enthält. Sein Artikel 7 verpflichtet dazu, in die berufliche Weiterbildung der Beschäftigten, die an Online-Diensten arbeiten, einen theoretischen und praktischen Unterricht zur digitalen Barrierefreiheit aufzunehmen. Der Mehrjahresplan ist der naheliegende Ort, um diese Weiterbildung zu planen."],
-    ["p", "Das Dekret Nr. 2026-816 vom 24. August 2026 hat den Text von 2019 geändert, insbesondere dessen Artikel 5, und den früheren Artikel 8 über die Sanktionen aufgehoben. Den verpflichtenden Link zum Mehrjahresplan in der Erklärung und die Weiterbildungspflicht hat es aber nicht angetastet. Der erwartete Inhalt des Plans wird Rubrik für Rubrik auf der [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|offiziellen Seite des RGAA zum Mehrjahresplan (auf Französisch)]] beschrieben; der folgende Abschnitt gibt ihn wieder."],
-    ["h3", "Wer betroffen ist"],
-    ["p", "Einen Mehrjahresplan erstellen müssen alle in Absatz I von Artikel 47 genannten Organisationen: der Staat, die Gebietskörperschaften und ihre öffentlichen Einrichtungen, die übrigen juristischen Personen des öffentlichen Rechts, die juristischen Personen des Privatrechts, denen eine Aufgabe des öffentlichen Dienstes übertragen wurde, ferner jene, die zur Erfüllung von Aufgaben im Allgemeininteresse gegründet wurden und deren Tätigkeit überwiegend von öffentlichen Stellen finanziert wird oder deren Leitung deren Aufsicht unterliegt, sowie Unternehmen, deren in Frankreich erzielter Umsatz 250 Millionen Euro übersteigt. Die Einzelheiten zum Anwendungsbereich und zur Berechnung der Schwelle finden Sie in unserem Artikel über [[article:france|die Pflichten zur digitalen Barrierefreiheit in Frankreich]]."],
-    ["p", "Unternehmen, die nur über das Verbraucherschutzgesetzbuch (code de la consommation) unter den European Accessibility Act fallen, ohne die Schwelle von Artikel 47 zu überschreiten, müssen keinen Mehrjahresplan veröffentlichen. Ihre Pflichten sind anderer Art, wie unser Artikel zum [[article:eaa|European Accessibility Act]] erläutert. Nichts hindert jedoch ein mittelgroßes Unternehmen daran, freiwillig einen Mehrjahresplan aufzustellen. Oft ist das der einfachste Weg, die Umsetzung des EAA zu organisieren."],
-    ["h3", "Kontrolle und Sanktionen"],
-    ["p", "Seit der Verordnung von 2023 überträgt [[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048050174|Artikel 47-1 des Gesetzes von 2005 (auf Französisch)]] die Kontrolle der Arcom, der französischen Regulierungsbehörde für audiovisuelle und digitale Kommunikation. Die Behörde lässt Verstöße durch Protokoll feststellen, setzt die Organisation mit einer von ihr bestimmten Frist in Verzug und macht diese Inverzugsetzung öffentlich. Kommt die Organisation ihr nicht nach, kann die Arcom eine Geldsanktion verhängen, gegebenenfalls verbunden mit einer Veröffentlichung der Sanktion. Die Obergrenze liegt bei 50.000 Euro für die Verletzung der Barrierefreiheitspflicht selbst und bei 25.000 Euro für die Pflichten aus den Absätzen III und IV, zu denen der Mehrjahresplan und der Jahresplan gehören. Besteht derselbe Verstoß sechs Monate nach einer Sanktion fort, kann eine neue Sanktion verhängt werden."],
-    ["p", "Für Unternehmen oberhalb der Schwelle ist die Arcom nur für diese Pflichten aus den Absätzen III und IV zuständig: Erklärung, Mehrjahresplan, Jahresplan, Hinweis und Zugang zu diesen Dokumenten. Für ein großes Unternehmen sind Mehrjahres- und Jahresplan also genau das, was die Behörde sanktionieren kann. Die Seite der Arcom zur [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|Barrierefreiheit von Websites und digitalen Diensten (auf Französisch)]] sagt es deutlich: Die Behörde prüft „Vorhandensein und Konformität der Erklärung zur Barrierefreiheit, des Mehrjahresplans der Organisation und des Maßnahmenplans des laufenden Jahres“."],
-
-    ["h2", "pflichtinhalt", "Der Pflichtinhalt des Mehrjahresplans zur digitalen Barrierefreiheit, Rubrik für Rubrik"],
-    ["p", "Die offizielle Seite des RGAA beschreibt zwei Blöcke. Der erste stellt die Politik der Organisation dar: Strategie, Ansprechperson für Barrierefreiheit (référent accessibilité), Mittel, Kompetenzen, Weiterbildung, Organisation, Beschaffung. Der zweite stellt die Arbeiten zur Herstellung der Konformität dar: neue Projekte, Nutzertests, Audits, Korrekturmaßnahmen mit Zeitplan, freiwillige Maßnahmen und die Bilanz der Jahrespläne. Die folgende Tabelle führt jede Rubrik auf, sagt, was man dort tatsächlich schreiben sollte, und nennt den Nachweis, der sie glaubwürdig macht."],
-    ["table", {"caption": "Erwarteter Inhalt eines Mehrjahresplans zur digitalen Barrierefreiheit nach RGAA und was dort stehen sollte", "head": ["Vom RGAA vorgesehene Rubrik", "Was konkret hineingehört", "Nachweis oder überprüfbares Element", "Häufiger Fehler"], "rows": [
-      ["Barrierefreiheit in der Digitalstrategie und der Behindertenpolitik", "Bezug zum Digitalisierungs-Masterplan, zur Behinderten- oder CSR-Politik, das Gremium, das den Plan beschließt", "Fundstelle und Datum des Beschlusses", "Allgemeines Bekenntnis ohne Anbindung an ein Gremium"],
-      ["Stellung und Aufgaben der Ansprechperson für Barrierefreiheit", "Funktionsbezeichnung, organisatorische Zuordnung, Zeitanteil, Aufgaben, gegebenenfalls Vetorecht bei der Abnahme", "Aufgabenbeschreibung, Benennungsschreiben", "Ansprechperson genannt, aber ohne Zeitbudget und ohne Zuordnung"],
-      ["Personelle und finanzielle Mittel", "Interne Vollzeitäquivalente, Jahresbudget je Posten (Audits, Korrekturen, Weiterbildung, Werkzeuge), Herkunft der Mittel", "Identifizierte Haushaltslinie", "Kein Betrag oder nur „angemessene Mittel“"],
-      ["Kompetenzen in Stellenbeschreibungen und bei der Personalgewinnung", "Betroffene Berufe (Entwicklung, Design, Redaktion, Einkauf), Musterformulierung für Stellenbeschreibungen", "Auszug aus einer Stellenbeschreibung", "Rubrik vergessen"],
-      ["Weiterbildung und Sensibilisierung", "Lernpfade je Beruf, Umfang, vorrangige Zielgruppen, Zeitplan", "Weiterbildungsplan, Zahl der geschulten Personen", "„Mitarbeitende sensibilisieren“ ohne Zielgruppe und Umfang"],
-      ["Externe Ressourcen und Fachkenntnis, Werkzeuge", "Beizug spezialisierter Auditoren oder Entwickler, Testwerkzeuge, Abnahmeumgebungen", "Laufende Aufträge oder Verträge", "Liste automatischer Werkzeuge, als Auditmethode ausgegeben"],
-      ["Interne Organisation und Bearbeitung von Anfragen", "Freigabeprozess, Prüfung der Dienste vor dem Livegang, Bearbeitung von Nutzermeldungen und Antwortfrist", "Schriftliches Verfahren, Register der Anfragen", "Kontaktadresse, die niemand bearbeitet"],
-      ["Vertragsklauseln und Abnahme", "Anforderungen in Lastenheften und Angeboten, Bewertungskriterium, Abnahmeverfahren, Vereinbarungen mit Partnern", "Musterklausel, Bewertungsraster", "Barrierefreiheit fehlt in Ausschreibungen für Relaunches"],
-      ["Neue Projekte", "Barrierefreiheit ab der Konzeption verlangt, Prüfmeilensteine", "Meilensteine in der Projektmethode", "Audit erst nach dem Livegang"],
-      ["Tests mit Menschen mit Behinderungen", "Betroffene Projekte, Häufigkeit, Profile", "Testprotokolle", "Leere Rubrik"],
-      ["Geplante Konformitätsbewertungen", "Liste der Dienste, Datum des letzten und des nächsten Audits", "Auditkalender", "Nur die Hauptwebsites sind aufgeführt"],
-      ["Korrekturmaßnahmen und Zeitplan", "Bekannte Mängel, Vorrang für die meistgenutzten Inhalte, Fristen", "Verweis auf die Auditberichte", "Zeitplan ohne Daten"],
-      ["Freiwillige Maßnahmen", "Gebärdensprache, Leichte Sprache, gegebenenfalls Kriterien der Stufe AAA", "Identifizierte Vorhaben", "Freiwillige Maßnahmen anstelle der Pflichtmaßnahmen"],
-      ["Bilanz der jährlichen Maßnahmenpläne", "Was erledigt wurde, was sich verschoben hat und warum", "Fortschrittstabelle", "Fehlt ab dem zweiten Jahr"]
-    ]}],
-    ["p", "Zwei methodische Hinweise. Erstens schreibt die offizielle Seite für den Mehrjahresplan keine festen Überschriften vor, anders als beim Format der Erklärung, bei der die Arcom in ihrer Inverzugsetzung vom Juni 2026 umbenannte oder fehlende Rubriken beanstandet hat. Reihenfolge und Wortlaut des RGAA zu übernehmen, bleibt dennoch der sicherste Weg zu zeigen, dass keine Rubrik vergessen wurde. Zweitens legt der RGAA nicht fest, welches Gremium den Plan beschließt. Eine ausdrückliche Freigabe durch die Generaldirektion, die Geschäftsleitung oder, bei einer Gebietskörperschaft, die Exekutive verleiht dem Dokument ein Gewicht, das eine bloße Veröffentlichung durch die Kommunikationsabteilung nicht hat."],
-    ["p", "Ein praktischer Tipp für die Redaktion: Legen Sie die Tabelle oben als Checkliste neben Ihren Entwurf und tragen Sie für jede Rubrik den Abschnitt ein, in dem sie behandelt wird, sowie den Nachweis, den Sie auf Nachfrage vorlegen könnten. Bleibt eine Zeile leer, fehlt entweder der Inhalt oder der Beleg. Beides lässt sich vor der Veröffentlichung leichter beheben als nach einem Protokoll der Arcom."],
-
-    ["h2", "mehrjahresplan-jahresplan-erklaerung", "Mehrjahresplan, Jahresplan und Erklärung: widerspruchsfrei verzahnen"],
-    ["p", "Die drei Dokumente beziehen sich aufeinander, und die Arcom liest sie zusammen. Eine Nichtkonformität, die in der Erklärung eines Dienstes aufgeführt ist, muss ihre Behebung in einem Maßnahmenplan finden. Eine Ausnahme wegen unverhältnismäßiger Belastung muss bei der Überarbeitung des Mehrjahresplans erneut geprüft werden. Ein im Mehrjahresplan angekündigtes Audit muss zu einer aktualisierten Erklärung führen. Der RGAA stellt klar, dass der Mehrjahresplan und der Plan des laufenden Jahres online auf der Website der Organisation zugänglich sind, in einem barrierefreien Format veröffentlicht werden und dass die Erklärung Links zu ihnen enthält."],
-    ["p", "Der Zeitplan ist die häufigste Schwachstelle. Ein Mehrjahresplan deckt höchstens drei Jahre ab, muss aber weder dem Kalenderjahr folgen noch bis zu seinem Ablauf unverändert bleiben. Der Maßnahmenplan dagegen bezieht sich auf „das laufende Jahr“: Ab dem 1. Januar erfüllt der Plan des Vorjahres die Pflicht nicht mehr. Genau dieser Verstoß wurde bei impots.gouv.fr in der [[https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-24-juin-2026-mettant-en-demeure-le-ministere-de-laction-et-des-comptes-publics|Entscheidung der Arcom vom 24. Juni 2026 (auf Französisch)]] festgestellt: Das Protokoll vom 30. April 2026 hält fest, dass der veröffentlichte Maßnahmenplan das Jahr 2024 betraf, was einen Verstoß gegen Absatz IV von Artikel 47 darstellt. Die Behörde gewährte zwei Monate, um ihn zu beheben."],
-    ["table", {"caption": "Beispielhafter Zeitplan für einen Mehrjahresplan zur digitalen Barrierefreiheit 2027–2029", "head": ["Zeitraum", "Zu veröffentlichendes oder zu aktualisierendes Dokument", "Kerninhalt", "Bezug zur Erklärung"], "rows": [
-      ["Oktober bis Dezember 2026", "Mehrjahresplan 2027–2029 beschlossen, Maßnahmenplan 2027", "Politik, Mittel, Zeitplan für Audits und Korrekturen", "Link zum neuen Mehrjahresplan in jeder Erklärung ergänzt"],
-      ["1. Januar 2027", "Veröffentlichung des Plans 2027, Plan 2026 von der Hauptseite entfernt", "Datierte Maßnahmen des Jahres", "Link „Maßnahmenplan 2027“"],
-      ["Januar 2028", "Maßnahmenplan 2028 mit Bilanz des Plans 2027", "Verschobene und neue Maßnahmen", "Erklärungen der erneut auditierten Dienste aktualisiert"],
-      ["Januar 2029", "Maßnahmenplan 2029 mit Bilanz 2028", "Vorbereitung des nächsten Mehrjahresplans", "Prüfung der Gültigkeit aller Erklärungen"],
-      ["Spätestens Ende 2029", "Mehrjahresplan 2030–2032", "Bilanz der drei Jahrespläne", "Link zum neuen Mehrjahresplan"]
-    ]}],
-    ["p", "Bewahren Sie die Pläne vergangener Jahre in einem Bereich „Archiv“ auf der Seite zur Barrierefreiheit auf, getrennt vom Link zum aktuellen Plan: Sie sind der Nachweis für die vom RGAA verlangte Bilanz. Der Hauptlink hingegen, also jener, den die Erklärung angibt und den ein vereidigter Bediensteter der Arcom finden wird, muss unmissverständlich auf den Plan des laufenden Jahres zeigen."],
-
-    ["h2", "bestandsaufnahme", "Vor dem Schreiben: die Bestandsaufnahme in sechs Wochen"],
-    ["p", "Ein glaubwürdiger Mehrjahresplan entsteht nicht aus einer im Internet gefundenen Vorlage. Er entsteht aus einem Verzeichnis dessen, was die Organisation veröffentlicht, was sie über ihren Konformitätsstand weiß und was sie einkauft. Für eine mittelgroße Gebietskörperschaft oder einen Unternehmensbereich reichen in der Regel sechs Wochen, um die Elemente zusammenzutragen, sofern von Anfang an eine verantwortliche Person benannt ist."],
-    ["ol", [
-      ["Wochen 1 und 2: die Dienste erfassen.", "Listen Sie alle Websites, Subdomains, Intranets, Extranets, mobilen Apps, browserbasierten Softwarepakete sowie die bei Softwareanbietern eingekauften Dienste für Terminbuchung oder Zahlung auf. Notieren Sie für jeden Dienst die verantwortliche Person, den Dienstleister, das Werkzeug, die geschätzte Nutzerzahl und das Datum des letzten Relaunches. Vergessene Dienste sind die häufigste Ursache für einen unvollständigen Plan."],
-      ["Woche 2: vorhandene Audits und Erklärungen sammeln.", "Ermitteln Sie für jeden Dienst Datum und Quote des letzten Audits, den auf der Startseite angezeigten Status und das Datum der Erklärung. Ein Dienst ohne gültiges Audit muss als nicht konform erklärt und vorrangig in den Auditkalender aufgenommen werden. Der [[article:audit-rgaa|Ablauf eines RGAA-Audits]] hilft, den Zeitbedarf abzuschätzen."],
-      ["Woche 3: Verträge und Ausschreibungen auflisten.", "Erfassen Sie die Aufträge für Entwicklung, Wartung und Hosting von Inhalten sowie die Abonnements für Online-Software, jeweils mit ihrem Ablaufdatum. Jede Verlängerung ist eine Gelegenheit, eine Anforderung an die Barrierefreiheit und ein Abnahmeverfahren einzuführen."],
-      ["Woche 4: die Kompetenzen kartieren.", "Wer im Haus kann ein Formular korrigieren, ein [[article:pdf-accessible|barrierefreies PDF]] erstellen, einen Alternativtext verfassen, eine Seite auditieren? Diese Übersicht bestimmt den Weiterbildungsplan und den Bedarf an externer Fachkenntnis."],
-      ["Woche 5: Meldungen der Nutzerinnen und Nutzer sammeln.", "Werten Sie das Kontaktpostfach zur Barrierefreiheit aus, die Beschwerden beim Kundendienst oder am Empfang und die Rückmeldungen von Verbänden. Sie zeigen oft die gravierendsten Blockaden, die eine Konformitätsquote nicht sichtbar macht."],
-      ["Woche 6: beziffern und priorisieren.", "Verknüpfen Sie die Nutzerzahl jedes Dienstes, die Art der Vorgänge (Zahlung, Anmeldung, Antrag auf Unterstützung) und das Ausmaß der bekannten Mängel. Das Ergebnis ist die geordnete Liste, aus der sich der Zeitplan des Mehrjahresplans und der erste Jahresplan speisen."]
-    ]],
-    ["p", "Wurden die meisten Dienste noch nie auditiert, mündet die Bestandsaufnahme ganz natürlich in eine erste Auditwelle, die in den Plan des ersten Jahres aufgenommen wird. Ein [[svc:audit-rgaa|RGAA-Audit]] der vorrangigen Dienste gibt dem Mehrjahresplan dann, was ihm am häufigsten fehlt: eine bezifferte Ausgangslage, an der sich ein Fortschritt messen lässt."],
-    ["p", "Für eine Organisation mit Sitz in Luxemburg oder in der Schweiz, die französische Dienste betreibt, empfiehlt es sich, das Verzeichnis von Anfang an nach Rechtsträgern zu gliedern. So ist sofort erkennbar, welche Websites und Apps einer französischen Gesellschaft oder Stelle zuzurechnen sind und damit in den Mehrjahresplan gehören, und welche anderen Regeln folgen."],
-
-    ["h2", "kommentiertes-muster", "Kommentiertes Muster eines Mehrjahresplans zur digitalen Barrierefreiheit"],
-    ["p", "Das folgende Muster folgt der Reihenfolge der offiziellen RGAA-Seite. Die Passagen in eckigen Klammern sind zu ersetzen; die Kommentare erklären, was von jedem Teil erwartet wird. Es eignet sich für eine öffentliche Stelle ebenso wie für ein Unternehmen, das unter Artikel 47 fällt, mit einigen gekennzeichneten Anpassungen. Die Mustertexte sind hier auf Deutsch wiedergegeben; ein in Frankreich veröffentlichter Plan wird in der Regel auf Französisch verfasst."],
-    ["h3", "1. Präambel und Geltungsbereich"],
-    ["p", "Mustertext: „Der vorliegende Mehrjahresplan zur Herstellung der digitalen Barrierefreiheit von [Organisation] gilt für den Zeitraum vom [1. Januar 2027] bis zum [31. Dezember 2029]. Er wurde am [Datum] von [Gremium] beschlossen. Er gilt für die im Anhang aufgeführten öffentlichen Online-Kommunikationsdienste, also [Anzahl] Websites, [Anzahl] mobile Apps und [Anzahl] Softwarepakete. Er wird jedes Jahr in einen Maßnahmenplan untergliedert, der auf der Seite zur Barrierefreiheit von [Adresse der Website] veröffentlicht wird.“ Kommentar: Die Liste der Dienste im Anhang ist unverzichtbar. Nur mit ihr lässt sich prüfen, ob jeder Dienst eine Erklärung hat und im Auditkalender steht."],
-    ["h3", "2. Politik der digitalen Barrierefreiheit"],
-    ["p", "Mustertext: „Die digitale Barrierefreiheit ist Bestandteil [des Digitalisierungs-Masterplans / der Behindertenpolitik / der CSR-Strategie] von [Organisation]. Sie gilt für jedes neue digitale Projekt und jede wesentliche Weiterentwicklung eines bestehenden Dienstes.“ Kommentar: Nennen Sie das strategische Bezugsdokument und, bei einer öffentlichen Stelle, den Zusammenhang mit der Politik zur Beschäftigung von Menschen mit Behinderungen. Vermeiden Sie Absichtserklärungen ohne operative Folgen."],
-    ["h3", "3. Ansprechperson für digitale Barrierefreiheit"],
-    ["p", "Mustertext: „Ansprechperson für digitale Barrierefreiheit ist [Funktion], zugeordnet [Direktion oder Abteilung]. Sie widmet dieser Aufgabe [Zeitanteil]. Sie koordiniert den Mehrjahresplan, verfolgt die Audits, aktualisiert die Erklärungen, bearbeitet die Anfragen der Nutzerinnen und Nutzer und gibt vor jedem Livegang eines neuen Dienstes eine Stellungnahme zur Barrierefreiheit ab.“ Kommentar: Die Angabe des Zeitanteils verhindert eine rein nominelle Ansprechperson. Der RGAA verlangt ihre funktionale Stellung und ihre Aufgaben; wer keinen Zugang zu den Projektgremien hat, kann auf die Entscheidungen keinen Einfluss nehmen."],
-    ["h3", "4. Personelle und finanzielle Mittel"],
-    ["p", "Mustertext: „Für den Zeitraum 2027–2029 setzt [Organisation] für die digitale Barrierefreiheit [Anzahl] interne Vollzeitäquivalente und ein Jahresbudget von [Betrag] Euro ein, aufgeteilt auf Audits, Korrekturen, Weiterbildung und Werkzeuge.“ Kommentar: Das ist die Rubrik, die am häufigsten leer bleibt. Ein Gesamtbetrag, auch ein ungefährer, ist besser als keiner. Werden die Korrekturen aus den Projektbudgets finanziert, schreiben Sie es und erläutern Sie, wie sie dort ausgewiesen werden."],
-    ["h3", "5. Kompetenzen, Personalgewinnung und Weiterbildung"],
-    ["p", "Mustertext: „Die Stellenbeschreibungen der Berufe [Entwicklung, Konzeption, Webredaktion, Einkauf] nennen die Kenntnis der Regeln der digitalen Barrierefreiheit. [Zielgruppen] wird ein Weiterbildungsweg angeboten, nach dem im jährlichen Maßnahmenplan festgelegten Zeitplan.“ Kommentar: Hier erfüllen Sie die Weiterbildungspflicht aus Artikel 7 des Dekrets von 2019. Der Lernpfad wird nach Berufen aufgebaut; unsere [[svc:formations|Schulungen zur digitalen Barrierefreiheit]] sind genau so organisiert, von der Redaktion bis zur Entwicklung."],
-    ["h3", "6. Interne Organisation und Bearbeitung von Anfragen"],
-    ["p", "Mustertext: „Jeder neue Dienst wird vor dem Livegang auf seine Barrierefreiheit geprüft. Anfragen von Nutzerinnen und Nutzern, die über [Adresse oder Formular] eingehen, werden von [Stelle] innerhalb von [Frist] bearbeitet. Jede Anfrage erhält eine Antwort, bei Bedarf eine Ersatzlösung und gegebenenfalls eine Maßnahme im Jahresplan.“ Kommentar: Eine schriftlich festgelegte Antwortfrist bindet die Organisation, und das ist gewollt. Führen Sie ein Register, damit Sie in der Bilanz darüber berichten können."],
-    ["h3", "7. Beschaffung, Verträge und Abnahme"],
-    ["p", "Mustertext: „Ausschreibungen und Angebote für digitale Dienste enthalten Anforderungen an die Konformität mit dem RGAA, ein Bewertungskriterium zur Barrierefreiheit und ein Abnahmeverfahren. Vereinbarungen mit Partnern, die Inhalte im Auftrag von [Organisation] veröffentlichen, enthalten eine Klausel zur Barrierefreiheit.“ Kommentar: Erst die Prüfung bei der Lieferung verleiht der Klausel Wirkung. Eine unabhängige [[svc:recette|Abnahmeprüfung der Barrierefreiheit]] verhindert, dass die Mängel erst beim ersten Audit auffallen, wenn der Dienstleister bereits bezahlt ist."],
-    ["h3", "8. Arbeiten zur Herstellung der Konformität"],
-    ["p", "Mustertext: „Die Dienste werden nach folgendem Zeitplan bewertet: [Tabelle]. Die Korrekturen betreffen vorrangig die meistgenutzten Inhalte und die wesentlichen Vorgänge: [Liste]. Neue Projekte umfassen Tests mit Menschen mit Behinderungen für [Art des Projekts].“ Kommentar: Der RGAA verlangt ausdrücklich, Menschen mit Behinderungen in Nutzertests einzubeziehen. Geben Sie an, welche Projekte davon profitieren, statt ein allgemeines Versprechen abzugeben. Ein [[svc:test-utilisateur|Nutzertest mit Menschen mit Behinderungen]] an einem zentralen Ablauf reicht, um diese Rubrik konkret zu machen."],
-    ["h3", "9. Freiwillige Maßnahmen und Bilanz"],
-    ["p", "Mustertext: „Über die Pflichten hinaus sieht [Organisation] [Videos in Gebärdensprache, eine Fassung der meistbesuchten Seiten in einfacher Sprache] vor. Die Bilanz der jährlichen Maßnahmenpläne wird jedes Jahr zusammen mit dem folgenden Plan veröffentlicht.“ Kommentar: Freiwillige Maßnahmen werten das Vorgehen auf, ersetzen aber niemals die Behebung von Nichtkonformitäten. Die Bilanz fehlt in der Mehrheit der Pläne im zweiten Jahr, obwohl sie eine vom RGAA ausdrücklich vorgesehene Rubrik ist."],
-
-    ["h2", "jaehrlicher-massnahmenplan", "Der jährliche Maßnahmenplan: Format, Priorisierung und Beispiel"],
-    ["p", "Der jährliche Maßnahmenplan übersetzt den Mehrjahresplan in datierte Aufgaben. Der RGAA schreibt kein Format vor. Eine HTML-Tabelle auf der Seite zur Barrierefreiheit ist für die Nutzerinnen und Nutzer am besten lesbar und am einfachsten aktuell zu halten. Vermeiden Sie eingescannte PDF-Dateien oder herunterzuladende Tabellenkalkulationen: Auch der Plan selbst muss in einem barrierefreien Format veröffentlicht werden."],
-    ["p", "Für die Priorisierung genügen in den meisten Fällen drei Kriterien: die Schwere des Mangels für die Nutzerinnen und Nutzer (eine Blockade verhindert den Abschluss eines Vorgangs, eine Beeinträchtigung verlangsamt ihn), die Reichweite des Dienstes oder Ablaufs und der Korrekturaufwand. Ein blockierender Mangel in einem viel genutzten Zahlungsformular geht hundert geringfügigen Mängeln auf Archivseiten vor. Mängel in gemeinsam genutzten Komponenten (Menü, Schaltfläche, Formularfeld des Designsystems) sollten früh behoben werden, weil eine einzige Korrektur allen Seiten zugutekommt."],
-    ["table", {"caption": "Auszug aus einem jährlichen Maßnahmenplan zur digitalen Barrierefreiheit (fiktives Beispiel)", "head": ["Maßnahme", "Dienst", "Priorität", "Verantwortlich", "Frist", "Erfüllungsindikator"], "rows": [
-      ["Vollständiges RGAA-Audit", "Portal für Verwaltungsvorgänge", "1", "Ansprechperson Barrierefreiheit", "März", "Bericht geliefert, Erklärung aktualisiert"],
-      ["Korrektur des per Tastatur nicht bedienbaren Aufklappmenüs", "Kundenbereich", "1", "Produktteam", "April", "Kriterium 7.3 im Kontrollaudit erfüllt"],
-      ["Ersatz der PDF-Formulare durch Online-Formulare", "Institutionelle Website", "1", "Kommunikationsabteilung", "Juni", "Zahl der umgestellten Formulare"],
-      ["Klausel zur Barrierefreiheit in der Ausschreibung für den Relaunch", "Intranet", "2", "Einkauf", "Mai", "Klausel und Bewertungskriterium vorhanden"],
-      ["Schulung der Webredaktion", "Alle Websites", "2", "Personalabteilung", "September", "Zahl der geschulten Mitarbeitenden"],
-      ["Test mit blinden und sehbehinderten Nutzerinnen und Nutzern", "Terminbuchung", "2", "Projektleitung", "Oktober", "Testbericht und Korrekturmaßnahmen"],
-      ["Aktualisierung der Erklärungen und Veröffentlichung des Folgeplans", "Alle Dienste", "1", "Ansprechperson Barrierefreiheit", "Dezember", "Plan des Folgejahres am 1. Januar online"]
-    ]}],
-    ["p", "Jede Maßnahme nennt nach Möglichkeit die Nummer des betroffenen RGAA-Kriteriums. So lässt sie sich mit den Auditberichten und mit der Liste der Nichtkonformitäten in der Erklärung verknüpfen. Die häufigsten Mängel, etwa unzureichende Kontraste, schlecht beschriftete Formulare oder per Tastatur nicht bedienbare Komponenten, sowie die mit den [[article:wcag-22|WCAG 2.2]] hinzugekommenen Kriterien verdienen eine eigene Zeile, sobald sie einen zentralen Ablauf betreffen."],
-
-    ["h2", "budget-und-mittel", "Budget und Mittel: den Mehrjahresplan beziffern, ohne zu erfinden"],
-    ["p", "Der RGAA verlangt die Angabe der personellen und finanziellen Mittel, die der Barrierefreiheit zugewiesen sind. Es gibt keinen offiziellen Tarif, und kein Betrag lässt sich von einer Organisation auf eine andere übertragen. Eine seriöse Kalkulation geht vom Verzeichnis aus: Zahl der Dienste, Häufigkeit der Audits, bekannter Korrekturumfang, Zahl der zu schulenden Personen und Zeitanteil der Ansprechperson."],
-    ["ul", [
-      "Audits: Die Kosten hängen von der Zahl der Seiten in der Stichprobe, der Komplexität der Komponenten, der Zahl der Plattformen (Web, iOS, Android) und den vorgesehenen Kontrollaudits ab; welche Faktoren ein Angebot beeinflussen, erklärt unser Artikel zu den [[article:prix-audit|Kosten eines Barrierefreiheitsaudits]];",
-      "Korrekturen: gemeinsam mit den Entwicklungsteams auf Grundlage der Auditberichte zu schätzen, wobei Korrekturen an gemeinsam genutzten Komponenten, wenige an der Zahl, aber strukturell entscheidend, von seitenweisen Korrekturen zu unterscheiden sind;",
-      "Inhalte: Erstellung barrierefreier Dokumente, Untertitelung, Transkription und Audiodeskription von Videos, Überarbeitung der meistbesuchten Seiten;",
-      "Weiterbildung: Zahl der Personen je Beruf und Dauer der Lernpfade;",
-      "interne Arbeitszeit: Ansprechperson, Projektleitungen, Redaktion, Einkauf; sie wird oft vergessen, obwohl sie einen großen Teil des Aufwands ausmacht."
-    ]],
-    ["p", "Für öffentliche Arbeitgeber in Frankreich gibt es Fördermittel. Der FIPHFP, der Fonds zur Eingliederung von Menschen mit Behinderungen im öffentlichen Dienst, und die interministerielle Digitaldirektion DINUM haben im November 2023 eine [[https://www.fiphfp.fr/actualites-et-evenements/actualites/renforcement-de-l-accessibilite-numerique-le-fiphfp-et-la-dinum-renouvellent-leur-convention|Vereinbarung über 20 Millionen Euro für vier Jahre (auf Französisch)]] erneuert, die unter anderem Projektaufrufe für Gebietskörperschaften vorsieht. In seinen am 18. Juni 2026 veröffentlichten Feststellungen hält der französische Rechnungshof (Cour des comptes) fest, dass die Mittel des FIPHFP nur zu 50 % der verfügbaren Kredite gebunden wurden, dass der FIPHFP eher Audits und Empfehlungen als die eigentliche Herstellung der Konformität finanziert, und zwar als Kofinanzierung, und dass das Förderangebot der DINUM, das bis zu 100 % der Kosten übernehmen kann, sich nicht an Gebietskörperschaften richtet. Wer im Mehrjahresplan die beantragten Fördermittel nennt, zeigt, dass das Budget durchdacht ist."],
-    ["note", "Wichtig", "Ein Mehrjahresplan ohne bezifferte Mittel ist das deutlichste Zeichen eines Fassadendokuments. Geben Sie mindestens den Zeitanteil der Ansprechperson, die Zahl der pro Jahr geplanten Audits und einen jährlichen Rahmenbetrag für Korrekturen und Weiterbildung an, auch wenn er nur ungefähr ist."],
-
-    ["h2", "kennzahlen", "Kennzahlen, mit denen sich der Mehrjahresplan wirklich steuern lässt"],
-    ["p", "Die vom RGAA verlangte jährliche Bilanz hat nur dann Wert, wenn sie auf Kennzahlen beruht, die bereits beim Beschluss des Plans festgelegt wurden. Die Konformitätsquote ist die bekannteste, reicht aber nicht aus: Ein Dienst kann zehn Punkte gewinnen, indem er geringfügige Mängel behebt, und gleichzeitig eine Blockade beim Zahlungsschritt behalten. Kombinieren Sie Ergebniskennzahlen mit Mittelkennzahlen."],
-    ["table", {"caption": "Kennzahlen zur Steuerung eines Mehrjahresplans für digitale Barrierefreiheit", "head": ["Kennzahl", "Art", "Berechnung", "Was sie zeigt"], "rows": [
-      ["Anteil der Dienste mit einer Erklärung, die auf einem weniger als drei Jahre alten Audit beruht", "Ergebnis", "Abgedeckte Dienste / erfasste Dienste", "Die tatsächliche Erfüllung der Pflicht"],
-      ["RGAA-Konformitätsquote je Dienst", "Ergebnis", "Offizielle Methode des RGAA, bei gleichbleibendem Prüfumfang", "Den technischen Fortschritt, Dienst für Dienst"],
-      ["Zahl der wesentlichen Abläufe ohne Blockade", "Ergebnis", "Von Anfang bis Ende getestete Abläufe ohne blockierenden Mangel", "Was Nutzerinnen und Nutzer tatsächlich erleben"],
-      ["Durchschnittliche Antwortzeit auf Meldungen", "Ergebnis", "Register der Anfragen", "Die Qualität des Kontaktkanals"],
-      ["Anteil der digitalen Ausschreibungen mit Klausel und Abnahme zur Barrierefreiheit", "Mittel", "Im Jahr vergebene Aufträge", "Die Vorbeugung künftiger Mängel"],
-      ["Zahl der geschulten Personen je Beruf", "Mittel", "Weiterbildungsplan", "Den Aufbau interner Kompetenz"],
-      ["Erfüllungsgrad des Jahresplans", "Mittel", "Erledigte Maßnahmen / geplante Maßnahmen", "Die Verlässlichkeit der Planung"]
-    ]}],
-    ["p", "Für öffentliche Stellen hat der französische Rechnungshof daran erinnert, worauf es ankommt, nämlich auf die Barrierefreiheit des gesamten Ablaufs: Im Januar 2026 waren nur 7 % der wichtigsten öffentlichen Online-Verwaltungsvorgänge mit den 106 Anforderungen des RGAA konform, so seine [[https://www.ccomptes.fr/fr/publications/laccessibilite-des-services-publics-numeriques-de-letat-pour-les-personnes-en|am 18. Juni 2026 veröffentlichten Feststellungen (auf Französisch)]]. Die Kennzahl der wesentlichen Abläufe ohne Blockade greift genau dieses Anliegen auf: Sie zwingt dazu, den ganzen Vorgang zu betrachten, von der Startseite bis zur Bestätigung, einschließlich der bei Softwareanbietern eingekauften Module."],
-    ["p", "Ein Hinweis zur Darstellung: Halten Sie die Zahl der Kennzahlen klein und ihre Definition stabil. Wer die Berechnungsweise jedes Jahr ändert, kann in der Bilanz keinen Fortschritt mehr belegen. Veröffentlichen Sie die Kennzahlen zusammen mit dem Jahresplan, damit die Bilanz des Vorjahres und die Ziele des neuen Jahres auf derselben Seite stehen."],
-
-    ["h2", "haeufige-fehler", "Die Fehler, die zu einem Verstoß führen, und wie man sie vermeidet"],
-    ["p", "Die folgenden Fehler verbinden die von der Arcom ausdrücklich festgestellten Verstöße mit jenen, die sich unmittelbar aus dem Gesetzestext und dem RGAA ergeben. Fast alle lassen sich in wenigen Tagen beheben, sofern man sie vor einer Kontrolle erkennt."],
-    ["ol", [
-      ["Den Plan eines abgelaufenen Jahres online lassen.", "Das ist der bei impots.gouv.fr festgestellte Verstoß. Planen Sie die Veröffentlichung des Plans für das Folgejahr im Dezember und prüfen Sie den Link am 2. Januar."],
-      ["Einen Mehrjahresplan mit mehr als drei Jahren Laufzeit oder ohne Daten veröffentlichen.", "Das Gesetz begrenzt die Laufzeit auf drei Jahre. Ein „Plan 2021–2025“ oder ein Plan ohne angegebenen Zeitraum erfüllt die Anforderung nicht."],
-      ["Den Link in der Erklärung vergessen.", "Artikel 6 des Dekrets von 2019 verlangt in jeder Erklärung den Link zum Mehrjahresplan; der RGAA verlangt zudem den Link zum Plan des laufenden Jahres."],
-      ["Den Mehrjahresplan schwer auffindbar machen.", "Absatz IV von Artikel 47 verlangt einen leichten und direkten Zugang von der Seite zur Barrierefreiheit aus. Ein Dokument, das in einer Rubrik „Publikationen“ versteckt ist, genügt nicht."],
-      ["Ein nicht barrierefreies PDF veröffentlichen.", "Mehrjahresplan und Jahresplan müssen in einem barrierefreien Format veröffentlicht werden. Ein Bild-PDF oder ein PDF ohne Tags widerspricht dem Dokument, das es enthält; eine HTML-Seite ist vorzuziehen."],
-      ["Den Geltungsbereich auf die Hauptwebsites beschränken.", "Der Mehrjahresplan erfasst alle öffentlichen Online-Kommunikationsdienste, einschließlich Intranets, Extranets, Apps und Softwarepaketen."],
-      ["Die Bilanz weglassen.", "Ab dem zweiten Jahr erwartet der RGAA die Bilanz der Jahrespläne. Ein Plan, der nie sagt, was erledigt wurde, verliert jede Glaubwürdigkeit."],
-      ["Den Erklärungen widersprechen.", "Wer im Mehrjahresplan ankündigt, alle Dienste seien auditiert, während mehrere Erklärungen das Fehlen eines Audits angeben, setzt sich einer ungünstigen Querlektüre aus."],
-      ["Die Politik auf freiwillige Maßnahmen reduzieren.", "Videos in Gebärdensprache gleichen ein per Tastatur nicht bedienbares Kontaktformular nicht aus."]
-    ]],
-    ["p", "Eine Querlektüre der drei Dokumente durch eine projektfremde Person oder ein [[svc:audit-conformite|dokumentarisches und technisches Konformitätsaudit]] deckt diese Widersprüche auf, bevor es ein vereidigter Bediensteter tut. Es ist auch der richtige Zeitpunkt, um zu prüfen, ob die Seite zur Barrierefreiheit selbst den RGAA einhält."],
-
-    ["h2", "sonderfaelle", "Gebietskörperschaft, öffentliche Einrichtung, Großunternehmen: den Plan anpassen"],
-    ["h3", "Gemeinde, Departement, Gemeindeverband"],
-    ["p", "Eine Gebietskörperschaft veröffentlicht viele Dokumente (Ratsbeschlüsse, Verfügungen, Gemeindeblätter, Formulare) und kauft die meisten ihrer Online-Dienste ein: Bezahlung des Schulessens, Anmeldungen, Terminbuchung, Familienportal. Ihr Mehrjahresplan muss daher den Schwerpunkt auf Beschaffung, Abnahme und Dokumentenerstellung legen. Den Plan von der Exekutive oder sogar durch einen Ratsbeschluss bestätigen zu lassen, schreiben die Texte nicht vor, erleichtert aber die Umsetzung in den Fachabteilungen. Unsere Seite zum [[sector:public|öffentlichen Sektor]] zeigt im Detail, wie sich die Barrierefreiheit in Ausschreibungen verankern lässt."],
-    ["h3", "Öffentliche Einrichtung, Hochschule, Krankenhaus"],
-    ["p", "Diese Organisationen betreiben oft Dutzende Websites von Fakultäten oder Laboren sowie Lernplattformen. Die erste Aufgabe ist das Verzeichnis, danach die Bereinigung: Wenig besuchte Websites zu schließen oder zusammenzulegen ist eine legitime Maßnahme zur Herstellung der Barrierefreiheit, sofern sie im Mehrjahresplan steht. Lernressourcen und Online-Module folgen derselben Logik wie die übrigen Dienste."],
-    ["h3", "Unternehmen mit mehr als 250 Millionen Euro Umsatz"],
-    ["p", "Für ein großes Unternehmen gehört der Mehrjahresplan zu den Dokumenten, auf die sich die Sanktionsbefugnis der Arcom unmittelbar erstreckt. Er muss die Markenwebsites, die Kundenbereiche, die Apps und die online veröffentlichten Werkzeuge für Beschäftigte erfassen. In einem Konzern veröffentlicht jede Gesellschaft, die die Schwelle überschreitet, ihren eigenen Plan oder einen Konzernplan, der die erfassten Gesellschaften und Dienste klar benennt. Der Mehrjahresplan bietet zudem die Gelegenheit, mit denselben Mitteln die Konformität der unter den EAA fallenden Abläufe zu organisieren. Unsere Seite für [[sector:grands-comptes|Großunternehmen]] stellt diesen doppelten Ansatz vor."],
-    ["p", "Für Konzerne mit Hauptsitz in Luxemburg oder der Schweiz ist dabei entscheidend, dass die Schwelle nach dem in Frankreich erzielten Umsatz jeder einzelnen Gesellschaft bemessen wird. Ein Plan auf Konzernebene ist möglich, er muss aber erkennen lassen, welche französische Gesellschaft für welchen Dienst verantwortlich ist, damit Zuständigkeit und Verantwortung für jeden Dienst nachvollziehbar sind."],
-
-    ["h2", "rgaa-5", "RGAA 5: Muss der Mehrjahresplan neu geschrieben werden?"],
-    ["p", "Die DINUM hat die [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|Veröffentlichung des RGAA 5 für Ende 2026 angekündigt (auf Französisch)]]. Am 12. November 2026 zeigt die offizielle Website noch die Version 4.1.2 an und weist darauf hin, dass Version 5 in Arbeit ist. Laut der Ankündigung übernimmt der künftige Referenzrahmen die WCAG 2.2, und Erklärungen, die vor seinem Erscheinen veröffentlicht wurden, bleiben achtzehn Monate gültig, höchstens jedoch drei Jahre ab ihrer Veröffentlichung. Eine Änderung der Pflichten zum Mehrjahresplan oder zum Jahresplan erwähnt die Ankündigung nicht."],
-    ["p", "Es gibt also keinen Grund, mit dem Beschluss oder der Erneuerung eines Mehrjahresplans auf den RGAA 5 zu warten. Sinnvoll ist es, im Plan 2027–2029 eine ausdrückliche Migrationsmaßnahme vorzusehen: Schulung der Teams zu den neuen Kriterien, Aktualisierung der Abnahmeraster und Ausschreibungsklauseln sowie ein Zeitplan für erneute Audits der Dienste nach der neuen Version, beginnend mit jenen, deren Erklärung ausläuft. Die DINUM betont im Übrigen, dass Arbeiten auf Grundlage des RGAA 4.1.2 nicht bis zur neuen Version ausgesetzt werden sollen. Unser Artikel zu [[article:normes|den Normen der digitalen Barrierefreiheit]] ordnet den RGAA im Verhältnis zu den WCAG und zur Norm EN 301 549 ein."],
-
-    ["h2", "plan-90-tage", "Einen konformen Mehrjahresplan in 90 Tagen veröffentlichen: der Ablauf"],
-    ["p", "Für eine Organisation ohne Mehrjahresplan oder mit abgelaufenem Plan schlagen wir die folgende realistische Abfolge vor. Sie setzt eine benannte verantwortliche Person und eine Entscheidung der Leitung über die Mittel in der Mitte des Ablaufs voraus."],
-    ["ol", [
-      ["Tag 1 bis 10: die verantwortliche Person benennen und den Bestand prüfen.", "Benennen Sie die Ansprechperson, erfassen Sie die veröffentlichten Dokumente (Erklärungen, alter Mehrjahresplan, Jahrespläne) und beheben Sie sofort die sichtbarsten Verstöße: Plan eines abgelaufenen Jahres, toter Link, falscher Konformitätsstatus."],
-      ["Tag 10 bis 40: die Bestandsaufnahme durchführen.", "Verzeichnis der Dienste, Audits und Erklärungen, Verträge, Kompetenzen und Meldungen, nach der oben beschriebenen Methode."],
-      ["Tag 40 bis 55: beziffern und entscheiden.", "Legen Sie der Leitung einen Zeitplan für Audits und Korrekturen, einen Weiterbildungsplan und einen jährlichen Rahmenbetrag vor. In diesem Schritt wird aus dem Dokument eine Verpflichtung."],
-      ["Tag 55 bis 70: Mehrjahresplan und ersten Jahresplan verfassen.", "Folgen Sie der Reihenfolge der RGAA-Rubriken, fügen Sie die Liste der Dienste als Anhang bei und datieren Sie jede Maßnahme des Plans."],
-      ["Tag 70 bis 80: beschließen lassen.", "Lassen Sie den Plan vom zuständigen Gremium beschließen und tragen Sie das Datum des Beschlusses in die Präambel ein."],
-      ["Tag 80 bis 90: veröffentlichen und verknüpfen.", "Stellen Sie Mehrjahresplan und Jahresplan als HTML auf die Seite zur Barrierefreiheit, ergänzen Sie die Links in jeder Erklärung, prüfen Sie den direkten Zugang über die Fußzeile und planen Sie schon jetzt die Veröffentlichung des Plans für das Folgejahr."]
-    ]],
-    ["p", "Dieser Zeitplan ist mit der Frist von zwei Monaten vereinbar, die die Arcom in ihrer Entscheidung vom Juni 2026 für die Dokumentationspflichten gewährt hat: Die ersten Maßnahmen, jene der ersten zehn Tage, beseitigen die am leichtesten feststellbaren Verstöße, während die inhaltliche Arbeit weiterläuft. Die Seite [[country:france|Digitale Barrierefreiheit in Frankreich]] fasst die übrigen Pflichten zusammen, die parallel zu erfüllen sind."]
+    [
+      "h2",
+      "was-ist-ein-mehrjahresplan",
+      "Mehrjahresplan zur Barrierefreiheit: ein Steuerungsinstrument, kein Bekenntnis"
+    ],
+    [
+      "p",
+      "Der Mehrjahresplan ist das dritte Transparenzdokument, das das französische Gesetz vorsieht, neben der Erklärung zur Barrierefreiheit und dem Konformitätshinweis auf der Startseite. Die Erklärung beschreibt, wo ein Dienst zu einem bestimmten Zeitpunkt steht. Der Mehrjahresplan beschreibt, wie die Organisation vorankommen will, mit welchen Mitteln, mit welcher Organisation und nach welchem Zeitplan. Der jährliche Maßnahmenplan ist seine operative Umsetzung für das laufende Jahr."
+    ],
+    [
+      "p",
+      "In der Praxis ähneln sich viele veröffentlichte Mehrjahrespläne stark: eine allgemeine Seite mit Absichtserklärungen, eine Liste guter Vorsätze („Teams sensibilisieren“, „unsere Websites auditieren“), selten ein Budget, fast nie eine Frist oder eine verantwortliche Person. Ein solches Dokument hakt formal ein Kästchen ab, nützt intern aber nichts und hält einer Kontrolle schlecht stand, denn die Arcom prüft Vorhandensein und Konformität des Plans, nicht nur seine bloße Existenz. Ein guter Mehrjahresplan erlaubt es dagegen einer Leitung zu wissen, was korrigiert wird, wann, von wem und zu welchen Kosten."
+    ],
+    [
+      "p",
+      "Der Mehrjahresplan ist auch kein Auditbericht. Er stützt sich auf vorhandene Audits, sein Gegenstand ist aber die Organisation: wer das Thema trägt, wie die Barrierefreiheit in Projekte, Beschaffung, Personalgewinnung und Weiterbildung einfließt und wie bekannte Mängel behoben werden. Das unterscheidet ihn von der [[article:declaration|Erklärung zur Barrierefreiheit]], die sich auf einen bestimmten Dienst bezieht, und macht ihn zum Steuerungsinstrument des gesamten Vorgehens, das unser [[article:guide|Leitfaden zur digitalen Barrierefreiheit]] beschreibt."
+    ],
+    [
+      "p",
+      "Für Leserinnen und Leser in Luxemburg, der Deutschschweiz oder der Deutschsprachigen Gemeinschaft Belgiens betrifft dieser Plan vor allem Organisationen, die in Frankreich tätig sind: eine französische Tochtergesellschaft oberhalb der Umsatzschwelle, eine grenzüberschreitende öffentliche Einrichtung oder ein Dienstleister, der für eine französische Behörde Websites betreibt. Darüber hinaus ist der Aufbau des französischen Plans eine brauchbare Vorlage für jede Organisation, die ihre Arbeit an der Barrierefreiheit über mehrere Jahre planen will, auch ohne entsprechende Pflicht."
+    ],
+    [
+      "note",
+      "Wichtig",
+      "Drei Dokumente gehören zusammen: die Erklärung (der Stand eines Dienstes), der Mehrjahresplan (Politik und Zeitplan für höchstens drei Jahre) und der Maßnahmenplan des laufenden Jahres (die datierten Arbeiten). Jedes verweist auf die anderen, und alle drei müssen aktuell sein."
+    ],
+    [
+      "h2",
+      "was-das-gesetz-sagt",
+      "Was das französische Gesetz zum Mehrjahresplan wörtlich verlangt"
+    ],
+    [
+      "p",
+      "Die Pflicht steht in Absatz III von Artikel 47 des Gesetzes Nr. 2005-102 vom 11. Februar 2005 in der Fassung der Verordnung (ordonnance) Nr. 2023-859 vom 6. September 2023. Danach veröffentlichen die in Absatz I genannten Stellen eine Erklärung zur Barrierefreiheit und erstellen einen Mehrjahresplan zur Herstellung der Barrierefreiheit ihrer öffentlichen Online-Kommunikationsdienste, „der öffentlich zugänglich gemacht und in jährliche Maßnahmenpläne untergliedert wird und dessen Laufzeit drei Jahre nicht überschreiten darf“ (im Original: „qui est rendu public et décliné en plans d'actions annuels, et dont la durée ne peut être supérieure à trois ans“). Der Text ist in der [[https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037388867/|geltenden Fassung von Artikel 47 auf Légifrance (auf Französisch)]] abrufbar."
+    ],
+    [
+      "p",
+      "Aus diesem Satz ergeben sich unmittelbar vier Anforderungen. Erstens erfasst der Plan sämtliche öffentlichen Online-Kommunikationsdienste der Organisation: Websites, Intranets, Extranets, mobile Apps, Softwarepakete und digitales Stadtmobiliar. Zweitens wird er veröffentlicht. Drittens beträgt seine Laufzeit höchstens drei Jahre. Viertens wird er in jährliche Maßnahmenpläne untergliedert. Absatz IV desselben Artikels fügt hinzu, dass die Seite zur Barrierefreiheit „leicht und direkt“ Zugang zur Erklärung, zum Mehrjahresplan und zum Maßnahmenplan des laufenden Jahres geben muss."
+    ],
+    [
+      "h3",
+      "Das Dekret vom 24. Juli 2019 und der RGAA"
+    ],
+    [
+      "p",
+      "Das Dekret Nr. 2019-768 vom 24. Juli 2019 ergänzt das Gesetz in drei Punkten, die für den Mehrjahresplan wichtig sind. Sein Artikel 5 überlässt es dem Referenzrahmen, Format und Inhalt der in Absatz III von Artikel 47 vorgesehenen Dokumente festzulegen, also der Erklärung, des Mehrjahresplans und der Jahrespläne. Sein Artikel 6 schreibt vor, dass die Erklärung den Link zum Mehrjahresplan enthält. Sein Artikel 7 verpflichtet dazu, in die berufliche Weiterbildung der Beschäftigten, die an Online-Diensten arbeiten, einen theoretischen und praktischen Unterricht zur digitalen Barrierefreiheit aufzunehmen. Der Mehrjahresplan ist der naheliegende Ort, um diese Weiterbildung zu planen."
+    ],
+    [
+      "p",
+      "Das Dekret Nr. 2026-816 vom 24. August 2026 hat den Text von 2019 geändert, insbesondere dessen Artikel 5, und den früheren Artikel 8 über die Sanktionen aufgehoben. Den verpflichtenden Link zum Mehrjahresplan in der Erklärung und die Weiterbildungspflicht hat es aber nicht angetastet. Der erwartete Inhalt des Plans wird Rubrik für Rubrik auf der [[https://accessibilite.numerique.gouv.fr/obligations/schema-pluriannuel/|offiziellen Seite des RGAA zum Mehrjahresplan (auf Französisch)]] beschrieben; der folgende Abschnitt gibt ihn wieder."
+    ],
+    [
+      "h3",
+      "Wer betroffen ist"
+    ],
+    [
+      "p",
+      "Einen Mehrjahresplan erstellen müssen alle in Absatz I von Artikel 47 genannten Organisationen: der Staat, die Gebietskörperschaften und ihre öffentlichen Einrichtungen, die übrigen juristischen Personen des öffentlichen Rechts, die juristischen Personen des Privatrechts, denen eine Aufgabe des öffentlichen Dienstes übertragen wurde, ferner jene, die zur Erfüllung von Aufgaben im Allgemeininteresse gegründet wurden und deren Tätigkeit überwiegend von öffentlichen Stellen finanziert wird oder deren Leitung deren Aufsicht unterliegt, sowie Unternehmen, deren in Frankreich erzielter Umsatz 250 Millionen Euro übersteigt. Die Einzelheiten zum Anwendungsbereich und zur Berechnung der Schwelle finden Sie in unserem Artikel über [[article:france|die Pflichten zur digitalen Barrierefreiheit in Frankreich]]."
+    ],
+    [
+      "p",
+      "Unternehmen, die nur über das Verbraucherschutzgesetzbuch (code de la consommation) unter den European Accessibility Act fallen, ohne die Schwelle von Artikel 47 zu überschreiten, müssen keinen Mehrjahresplan veröffentlichen. Ihre Pflichten sind anderer Art, wie unser Artikel zum [[article:eaa|European Accessibility Act]] erläutert. Nichts hindert jedoch ein mittelgroßes Unternehmen daran, freiwillig einen Mehrjahresplan aufzustellen. Oft ist das der einfachste Weg, die Umsetzung des EAA zu organisieren."
+    ],
+    [
+      "h3",
+      "Kontrolle und Sanktionen"
+    ],
+    [
+      "p",
+      "Seit der Verordnung von 2023 überträgt [[https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048050174|Artikel 47-1 des Gesetzes von 2005 (auf Französisch)]] die Kontrolle der Arcom, der französischen Regulierungsbehörde für audiovisuelle und digitale Kommunikation. Die Behörde lässt Verstöße durch Protokoll feststellen, setzt die Organisation mit einer von ihr bestimmten Frist in Verzug und macht diese Inverzugsetzung öffentlich. Kommt die Organisation ihr nicht nach, kann die Arcom eine Geldsanktion verhängen, gegebenenfalls verbunden mit einer Veröffentlichung der Sanktion. Die Obergrenze liegt bei 50.000 Euro für die Verletzung der Barrierefreiheitspflicht selbst und bei 25.000 Euro für die Pflichten aus den Absätzen III und IV, zu denen der Mehrjahresplan und der Jahresplan gehören. Besteht derselbe Verstoß sechs Monate nach einer Sanktion fort, kann eine neue Sanktion verhängt werden."
+    ],
+    [
+      "p",
+      "Für Unternehmen oberhalb der Schwelle ist die Arcom nur für diese Pflichten aus den Absätzen III und IV zuständig: Erklärung, Mehrjahresplan, Jahresplan, Hinweis und Zugang zu diesen Dokumenten. Für ein großes Unternehmen sind Mehrjahres- und Jahresplan also genau das, was die Behörde sanktionieren kann. Die Seite der Arcom zur [[https://www.arcom.fr/nous-connaitre/nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/les-droits-des-personnes-handicapees/accessibilite-des-sites-et-des-services-numeriques|Barrierefreiheit von Websites und digitalen Diensten (auf Französisch)]] sagt es deutlich: Die Behörde prüft „Vorhandensein und Konformität der Erklärung zur Barrierefreiheit, des Mehrjahresplans der Organisation und des Maßnahmenplans des laufenden Jahres“."
+    ],
+    [
+      "h2",
+      "pflichtinhalt",
+      "Der Pflichtinhalt des Mehrjahresplans zur digitalen Barrierefreiheit, Rubrik für Rubrik"
+    ],
+    [
+      "p",
+      "Die offizielle Seite des RGAA beschreibt zwei Blöcke. Der erste stellt die Politik der Organisation dar: Strategie, Ansprechperson für Barrierefreiheit (référent accessibilité), Mittel, Kompetenzen, Weiterbildung, Organisation, Beschaffung. Der zweite stellt die Arbeiten zur Herstellung der Konformität dar: neue Projekte, Nutzertests, Audits, Korrekturmaßnahmen mit Zeitplan, freiwillige Maßnahmen und die Bilanz der Jahrespläne. Die folgende Tabelle führt jede Rubrik auf, sagt, was man dort tatsächlich schreiben sollte, und nennt den Nachweis, der sie glaubwürdig macht."
+    ],
+    [
+      "table",
+      {
+        "caption": "Erwarteter Inhalt eines Mehrjahresplans zur digitalen Barrierefreiheit nach RGAA und was dort stehen sollte",
+        "head": [
+          "Vom RGAA vorgesehene Rubrik",
+          "Was konkret hineingehört",
+          "Nachweis oder überprüfbares Element",
+          "Häufiger Fehler"
+        ],
+        "rows": [
+          [
+            "Barrierefreiheit in der Digitalstrategie und der Behindertenpolitik",
+            "Bezug zum Digitalisierungs-Masterplan, zur Behinderten- oder CSR-Politik, das Gremium, das den Plan beschließt",
+            "Fundstelle und Datum des Beschlusses",
+            "Allgemeines Bekenntnis ohne Anbindung an ein Gremium"
+          ],
+          [
+            "Stellung und Aufgaben der Ansprechperson für Barrierefreiheit",
+            "Funktionsbezeichnung, organisatorische Zuordnung, Zeitanteil, Aufgaben, gegebenenfalls Vetorecht bei der Abnahme",
+            "Aufgabenbeschreibung, Benennungsschreiben",
+            "Ansprechperson genannt, aber ohne Zeitbudget und ohne Zuordnung"
+          ],
+          [
+            "Personelle und finanzielle Mittel",
+            "Interne Vollzeitäquivalente, Jahresbudget je Posten (Audits, Korrekturen, Weiterbildung, Werkzeuge), Herkunft der Mittel",
+            "Identifizierte Haushaltslinie",
+            "Kein Betrag oder nur „angemessene Mittel“"
+          ],
+          [
+            "Kompetenzen in Stellenbeschreibungen und bei der Personalgewinnung",
+            "Betroffene Berufe (Entwicklung, Design, Redaktion, Einkauf), Musterformulierung für Stellenbeschreibungen",
+            "Auszug aus einer Stellenbeschreibung",
+            "Rubrik vergessen"
+          ],
+          [
+            "Weiterbildung und Sensibilisierung",
+            "Lernpfade je Beruf, Umfang, vorrangige Zielgruppen, Zeitplan",
+            "Weiterbildungsplan, Zahl der geschulten Personen",
+            "„Mitarbeitende sensibilisieren“ ohne Zielgruppe und Umfang"
+          ],
+          [
+            "Externe Ressourcen und Fachkenntnis, Werkzeuge",
+            "Beizug spezialisierter Auditoren oder Entwickler, Testwerkzeuge, Abnahmeumgebungen",
+            "Laufende Aufträge oder Verträge",
+            "Liste automatischer Werkzeuge, als Auditmethode ausgegeben"
+          ],
+          [
+            "Interne Organisation und Bearbeitung von Anfragen",
+            "Freigabeprozess, Prüfung der Dienste vor dem Livegang, Bearbeitung von Nutzermeldungen und Antwortfrist",
+            "Schriftliches Verfahren, Register der Anfragen",
+            "Kontaktadresse, die niemand bearbeitet"
+          ],
+          [
+            "Vertragsklauseln und Abnahme",
+            "Anforderungen in Lastenheften und Angeboten, Bewertungskriterium, Abnahmeverfahren, Vereinbarungen mit Partnern",
+            "Musterklausel, Bewertungsraster",
+            "Barrierefreiheit fehlt in Ausschreibungen für Relaunches"
+          ],
+          [
+            "Neue Projekte",
+            "Barrierefreiheit ab der Konzeption verlangt, Prüfmeilensteine",
+            "Meilensteine in der Projektmethode",
+            "Audit erst nach dem Livegang"
+          ],
+          [
+            "Tests mit Menschen mit Behinderungen",
+            "Betroffene Projekte, Häufigkeit, Profile",
+            "Testprotokolle",
+            "Leere Rubrik"
+          ],
+          [
+            "Geplante Konformitätsbewertungen",
+            "Liste der Dienste, Datum des letzten und des nächsten Audits",
+            "Auditkalender",
+            "Nur die Hauptwebsites sind aufgeführt"
+          ],
+          [
+            "Korrekturmaßnahmen und Zeitplan",
+            "Bekannte Mängel, Vorrang für die meistgenutzten Inhalte, Fristen",
+            "Verweis auf die Auditberichte",
+            "Zeitplan ohne Daten"
+          ],
+          [
+            "Freiwillige Maßnahmen",
+            "Gebärdensprache, Leichte Sprache, gegebenenfalls Kriterien der Stufe AAA",
+            "Identifizierte Vorhaben",
+            "Freiwillige Maßnahmen anstelle der Pflichtmaßnahmen"
+          ],
+          [
+            "Bilanz der jährlichen Maßnahmenpläne",
+            "Was erledigt wurde, was sich verschoben hat und warum",
+            "Fortschrittstabelle",
+            "Fehlt ab dem zweiten Jahr"
+          ]
+        ]
+      }
+    ],
+    [
+      "p",
+      "Zwei methodische Hinweise. Erstens schreibt die offizielle Seite für den Mehrjahresplan keine festen Überschriften vor, anders als beim Format der Erklärung, bei der die Arcom in ihrer Inverzugsetzung vom Juni 2026 umbenannte oder fehlende Rubriken beanstandet hat. Reihenfolge und Wortlaut des RGAA zu übernehmen, bleibt dennoch der sicherste Weg zu zeigen, dass keine Rubrik vergessen wurde. Zweitens legt der RGAA nicht fest, welches Gremium den Plan beschließt. Eine ausdrückliche Freigabe durch die Generaldirektion, die Geschäftsleitung oder, bei einer Gebietskörperschaft, die Exekutive verleiht dem Dokument ein Gewicht, das eine bloße Veröffentlichung durch die Kommunikationsabteilung nicht hat."
+    ],
+    [
+      "p",
+      "Ein praktischer Tipp für die Redaktion: Legen Sie die Tabelle oben als Checkliste neben Ihren Entwurf und tragen Sie für jede Rubrik den Abschnitt ein, in dem sie behandelt wird, sowie den Nachweis, den Sie auf Nachfrage vorlegen könnten. Bleibt eine Zeile leer, fehlt entweder der Inhalt oder der Beleg. Beides lässt sich vor der Veröffentlichung leichter beheben als nach einem Protokoll der Arcom."
+    ],
+    [
+      "h2",
+      "mehrjahresplan-jahresplan-erklaerung",
+      "Mehrjahresplan, Jahresplan und Erklärung: widerspruchsfrei verzahnen"
+    ],
+    [
+      "p",
+      "Die drei Dokumente beziehen sich aufeinander, und die Arcom liest sie zusammen. Eine Nichtkonformität, die in der Erklärung eines Dienstes aufgeführt ist, muss ihre Behebung in einem Maßnahmenplan finden. Eine Ausnahme wegen unverhältnismäßiger Belastung muss bei der Überarbeitung des Mehrjahresplans erneut geprüft werden. Ein im Mehrjahresplan angekündigtes Audit muss zu einer aktualisierten Erklärung führen. Der RGAA stellt klar, dass der Mehrjahresplan und der Plan des laufenden Jahres online auf der Website der Organisation zugänglich sind, in einem barrierefreien Format veröffentlicht werden und dass die Erklärung Links zu ihnen enthält."
+    ],
+    [
+      "p",
+      "Der Zeitplan ist die häufigste Schwachstelle. Ein Mehrjahresplan deckt höchstens drei Jahre ab, muss aber weder dem Kalenderjahr folgen noch bis zu seinem Ablauf unverändert bleiben. Der Maßnahmenplan dagegen bezieht sich auf „das laufende Jahr“: Ab dem 1. Januar erfüllt der Plan des Vorjahres die Pflicht nicht mehr. Genau dieser Verstoß wurde bei impots.gouv.fr in der [[https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-24-juin-2026-mettant-en-demeure-le-ministere-de-laction-et-des-comptes-publics|Entscheidung der Arcom vom 24. Juni 2026 (auf Französisch)]] festgestellt: Das Protokoll vom 30. April 2026 hält fest, dass der veröffentlichte Maßnahmenplan das Jahr 2024 betraf, was einen Verstoß gegen Absatz IV von Artikel 47 darstellt. Die Behörde gewährte zwei Monate, um ihn zu beheben."
+    ],
+    [
+      "table",
+      {
+        "caption": "Beispielhafter Zeitplan für einen Mehrjahresplan zur digitalen Barrierefreiheit 2027–2029",
+        "head": [
+          "Zeitraum",
+          "Zu veröffentlichendes oder zu aktualisierendes Dokument",
+          "Kerninhalt",
+          "Bezug zur Erklärung"
+        ],
+        "rows": [
+          [
+            "Oktober bis Dezember 2026",
+            "Mehrjahresplan 2027–2029 beschlossen, Maßnahmenplan 2027",
+            "Politik, Mittel, Zeitplan für Audits und Korrekturen",
+            "Link zum neuen Mehrjahresplan in jeder Erklärung ergänzt"
+          ],
+          [
+            "1. Januar 2027",
+            "Veröffentlichung des Plans 2027, Plan 2026 von der Hauptseite entfernt",
+            "Datierte Maßnahmen des Jahres",
+            "Link „Maßnahmenplan 2027“"
+          ],
+          [
+            "Januar 2028",
+            "Maßnahmenplan 2028 mit Bilanz des Plans 2027",
+            "Verschobene und neue Maßnahmen",
+            "Erklärungen der erneut auditierten Dienste aktualisiert"
+          ],
+          [
+            "Januar 2029",
+            "Maßnahmenplan 2029 mit Bilanz 2028",
+            "Vorbereitung des nächsten Mehrjahresplans",
+            "Prüfung der Gültigkeit aller Erklärungen"
+          ],
+          [
+            "Spätestens Ende 2029",
+            "Mehrjahresplan 2030–2032",
+            "Bilanz der drei Jahrespläne",
+            "Link zum neuen Mehrjahresplan"
+          ]
+        ]
+      }
+    ],
+    [
+      "p",
+      "Bewahren Sie die Pläne vergangener Jahre in einem Bereich „Archiv“ auf der Seite zur Barrierefreiheit auf, getrennt vom Link zum aktuellen Plan: Sie sind der Nachweis für die vom RGAA verlangte Bilanz. Der Hauptlink hingegen, also jener, den die Erklärung angibt und den ein vereidigter Bediensteter der Arcom finden wird, muss unmissverständlich auf den Plan des laufenden Jahres zeigen."
+    ],
+    [
+      "h2",
+      "bestandsaufnahme",
+      "Vor dem Schreiben: die Bestandsaufnahme in sechs Wochen"
+    ],
+    [
+      "p",
+      "Ein glaubwürdiger Mehrjahresplan entsteht nicht aus einer im Internet gefundenen Vorlage. Er entsteht aus einem Verzeichnis dessen, was die Organisation veröffentlicht, was sie über ihren Konformitätsstand weiß und was sie einkauft. Für eine mittelgroße Gebietskörperschaft oder einen Unternehmensbereich reichen in der Regel sechs Wochen, um die Elemente zusammenzutragen, sofern von Anfang an eine verantwortliche Person benannt ist."
+    ],
+    [
+      "ol",
+      [
+        [
+          "Wochen 1 und 2: die Dienste erfassen.",
+          "Listen Sie alle Websites, Subdomains, Intranets, Extranets, mobilen Apps, browserbasierten Softwarepakete sowie die bei Softwareanbietern eingekauften Dienste für Terminbuchung oder Zahlung auf. Notieren Sie für jeden Dienst die verantwortliche Person, den Dienstleister, das Werkzeug, die geschätzte Nutzerzahl und das Datum des letzten Relaunches. Vergessene Dienste sind die häufigste Ursache für einen unvollständigen Plan."
+        ],
+        [
+          "Woche 2: vorhandene Audits und Erklärungen sammeln.",
+          "Ermitteln Sie für jeden Dienst Datum und Quote des letzten Audits, den auf der Startseite angezeigten Status und das Datum der Erklärung. Ein Dienst ohne gültiges Audit muss als nicht konform erklärt und vorrangig in den Auditkalender aufgenommen werden. Der [[article:audit-rgaa|Ablauf eines RGAA-Audits]] hilft, den Zeitbedarf abzuschätzen."
+        ],
+        [
+          "Woche 3: Verträge und Ausschreibungen auflisten.",
+          "Erfassen Sie die Aufträge für Entwicklung, Wartung und Hosting von Inhalten sowie die Abonnements für Online-Software, jeweils mit ihrem Ablaufdatum. Jede Verlängerung ist eine Gelegenheit, eine Anforderung an die Barrierefreiheit und ein Abnahmeverfahren einzuführen."
+        ],
+        [
+          "Woche 4: die Kompetenzen kartieren.",
+          "Wer im Haus kann ein Formular korrigieren, ein [[article:pdf-accessible|barrierefreies PDF]] erstellen, einen Alternativtext verfassen, eine Seite auditieren? Diese Übersicht bestimmt den Weiterbildungsplan und den Bedarf an externer Fachkenntnis."
+        ],
+        [
+          "Woche 5: Meldungen der Nutzerinnen und Nutzer sammeln.",
+          "Werten Sie das Kontaktpostfach zur Barrierefreiheit aus, die Beschwerden beim Kundendienst oder am Empfang und die Rückmeldungen von Verbänden. Sie zeigen oft die gravierendsten Blockaden, die eine Konformitätsquote nicht sichtbar macht."
+        ],
+        [
+          "Woche 6: beziffern und priorisieren.",
+          "Verknüpfen Sie die Nutzerzahl jedes Dienstes, die Art der Vorgänge (Zahlung, Anmeldung, Antrag auf Unterstützung) und das Ausmaß der bekannten Mängel. Das Ergebnis ist die geordnete Liste, aus der sich der Zeitplan des Mehrjahresplans und der erste Jahresplan speisen."
+        ]
+      ]
+    ],
+    [
+      "p",
+      "Wurden die meisten Dienste noch nie auditiert, mündet die Bestandsaufnahme ganz natürlich in eine erste Auditwelle, die in den Plan des ersten Jahres aufgenommen wird. Ein [[svc:audit-rgaa|RGAA-Audit]] der vorrangigen Dienste gibt dem Mehrjahresplan dann, was ihm am häufigsten fehlt: eine bezifferte Ausgangslage, an der sich ein Fortschritt messen lässt."
+    ],
+    [
+      "p",
+      "Für eine Organisation mit Sitz in Luxemburg oder in der Schweiz, die französische Dienste betreibt, empfiehlt es sich, das Verzeichnis von Anfang an nach Rechtsträgern zu gliedern. So ist sofort erkennbar, welche Websites und Apps einer französischen Gesellschaft oder Stelle zuzurechnen sind und damit in den Mehrjahresplan gehören, und welche anderen Regeln folgen."
+    ],
+    [
+      "h2",
+      "kommentiertes-muster",
+      "Kommentiertes Muster eines Mehrjahresplans zur digitalen Barrierefreiheit"
+    ],
+    [
+      "p",
+      "Das folgende Muster folgt der Reihenfolge der offiziellen RGAA-Seite. Die Passagen in eckigen Klammern sind zu ersetzen; die Kommentare erklären, was von jedem Teil erwartet wird. Es eignet sich für eine öffentliche Stelle ebenso wie für ein Unternehmen, das unter Artikel 47 fällt, mit einigen gekennzeichneten Anpassungen. Die Mustertexte sind hier auf Deutsch wiedergegeben; ein in Frankreich veröffentlichter Plan wird in der Regel auf Französisch verfasst."
+    ],
+    [
+      "h3",
+      "1. Präambel und Geltungsbereich"
+    ],
+    [
+      "p",
+      "Mustertext: „Der vorliegende Mehrjahresplan zur Herstellung der digitalen Barrierefreiheit von [Organisation] gilt für den Zeitraum vom [1. Januar 2027] bis zum [31. Dezember 2029]. Er wurde am [Datum] von [Gremium] beschlossen. Er gilt für die im Anhang aufgeführten öffentlichen Online-Kommunikationsdienste, also [Anzahl] Websites, [Anzahl] mobile Apps und [Anzahl] Softwarepakete. Er wird jedes Jahr in einen Maßnahmenplan untergliedert, der auf der Seite zur Barrierefreiheit von [Adresse der Website] veröffentlicht wird.“ Kommentar: Die Liste der Dienste im Anhang ist unverzichtbar. Nur mit ihr lässt sich prüfen, ob jeder Dienst eine Erklärung hat und im Auditkalender steht."
+    ],
+    [
+      "h3",
+      "2. Politik der digitalen Barrierefreiheit"
+    ],
+    [
+      "p",
+      "Mustertext: „Die digitale Barrierefreiheit ist Bestandteil [des Digitalisierungs-Masterplans / der Behindertenpolitik / der CSR-Strategie] von [Organisation]. Sie gilt für jedes neue digitale Projekt und jede wesentliche Weiterentwicklung eines bestehenden Dienstes.“ Kommentar: Nennen Sie das strategische Bezugsdokument und, bei einer öffentlichen Stelle, den Zusammenhang mit der Politik zur Beschäftigung von Menschen mit Behinderungen. Vermeiden Sie Absichtserklärungen ohne operative Folgen."
+    ],
+    [
+      "h3",
+      "3. Ansprechperson für digitale Barrierefreiheit"
+    ],
+    [
+      "p",
+      "Mustertext: „Ansprechperson für digitale Barrierefreiheit ist [Funktion], zugeordnet [Direktion oder Abteilung]. Sie widmet dieser Aufgabe [Zeitanteil]. Sie koordiniert den Mehrjahresplan, verfolgt die Audits, aktualisiert die Erklärungen, bearbeitet die Anfragen der Nutzerinnen und Nutzer und gibt vor jedem Livegang eines neuen Dienstes eine Stellungnahme zur Barrierefreiheit ab.“ Kommentar: Die Angabe des Zeitanteils verhindert eine rein nominelle Ansprechperson. Der RGAA verlangt ihre funktionale Stellung und ihre Aufgaben; wer keinen Zugang zu den Projektgremien hat, kann auf die Entscheidungen keinen Einfluss nehmen."
+    ],
+    [
+      "h3",
+      "4. Personelle und finanzielle Mittel"
+    ],
+    [
+      "p",
+      "Mustertext: „Für den Zeitraum 2027–2029 setzt [Organisation] für die digitale Barrierefreiheit [Anzahl] interne Vollzeitäquivalente und ein Jahresbudget von [Betrag] Euro ein, aufgeteilt auf Audits, Korrekturen, Weiterbildung und Werkzeuge.“ Kommentar: Das ist die Rubrik, die am häufigsten leer bleibt. Ein Gesamtbetrag, auch ein ungefährer, ist besser als keiner. Werden die Korrekturen aus den Projektbudgets finanziert, schreiben Sie es und erläutern Sie, wie sie dort ausgewiesen werden."
+    ],
+    [
+      "h3",
+      "5. Kompetenzen, Personalgewinnung und Weiterbildung"
+    ],
+    [
+      "p",
+      "Mustertext: „Die Stellenbeschreibungen der Berufe [Entwicklung, Konzeption, Webredaktion, Einkauf] nennen die Kenntnis der Regeln der digitalen Barrierefreiheit. [Zielgruppen] wird ein Weiterbildungsweg angeboten, nach dem im jährlichen Maßnahmenplan festgelegten Zeitplan.“ Kommentar: Hier erfüllen Sie die Weiterbildungspflicht aus Artikel 7 des Dekrets von 2019. Der Lernpfad wird nach Berufen aufgebaut; unsere [[svc:formations|Schulungen zur digitalen Barrierefreiheit]] sind genau so organisiert, von der Redaktion bis zur Entwicklung."
+    ],
+    [
+      "h3",
+      "6. Interne Organisation und Bearbeitung von Anfragen"
+    ],
+    [
+      "p",
+      "Mustertext: „Jeder neue Dienst wird vor dem Livegang auf seine Barrierefreiheit geprüft. Anfragen von Nutzerinnen und Nutzern, die über [Adresse oder Formular] eingehen, werden von [Stelle] innerhalb von [Frist] bearbeitet. Jede Anfrage erhält eine Antwort, bei Bedarf eine Ersatzlösung und gegebenenfalls eine Maßnahme im Jahresplan.“ Kommentar: Eine schriftlich festgelegte Antwortfrist bindet die Organisation, und das ist gewollt. Führen Sie ein Register, damit Sie in der Bilanz darüber berichten können."
+    ],
+    [
+      "h3",
+      "7. Beschaffung, Verträge und Abnahme"
+    ],
+    [
+      "p",
+      "Mustertext: „Ausschreibungen und Angebote für digitale Dienste enthalten Anforderungen an die Konformität mit dem RGAA, ein Bewertungskriterium zur Barrierefreiheit und ein Abnahmeverfahren. Vereinbarungen mit Partnern, die Inhalte im Auftrag von [Organisation] veröffentlichen, enthalten eine Klausel zur Barrierefreiheit.“ Kommentar: Erst die Prüfung bei der Lieferung verleiht der Klausel Wirkung. Eine unabhängige [[svc:recette|Abnahmeprüfung der Barrierefreiheit]] verhindert, dass die Mängel erst beim ersten Audit auffallen, wenn der Dienstleister bereits bezahlt ist. Musterklauseln für jedes Vergabedokument, ein Bewertungsraster und Vertragsstrafen finden Sie in unserem Beitrag über [[article:clauses-marche-public|die Barrierefreiheitsklausel in öffentlichen Aufträgen]]."
+    ],
+    [
+      "h3",
+      "8. Arbeiten zur Herstellung der Konformität"
+    ],
+    [
+      "p",
+      "Mustertext: „Die Dienste werden nach folgendem Zeitplan bewertet: [Tabelle]. Die Korrekturen betreffen vorrangig die meistgenutzten Inhalte und die wesentlichen Vorgänge: [Liste]. Neue Projekte umfassen Tests mit Menschen mit Behinderungen für [Art des Projekts].“ Kommentar: Der RGAA verlangt ausdrücklich, Menschen mit Behinderungen in Nutzertests einzubeziehen. Geben Sie an, welche Projekte davon profitieren, statt ein allgemeines Versprechen abzugeben. Ein [[svc:test-utilisateur|Nutzertest mit Menschen mit Behinderungen]] an einem zentralen Ablauf reicht, um diese Rubrik konkret zu machen."
+    ],
+    [
+      "h3",
+      "9. Freiwillige Maßnahmen und Bilanz"
+    ],
+    [
+      "p",
+      "Mustertext: „Über die Pflichten hinaus sieht [Organisation] [Videos in Gebärdensprache, eine Fassung der meistbesuchten Seiten in einfacher Sprache] vor. Die Bilanz der jährlichen Maßnahmenpläne wird jedes Jahr zusammen mit dem folgenden Plan veröffentlicht.“ Kommentar: Freiwillige Maßnahmen werten das Vorgehen auf, ersetzen aber niemals die Behebung von Nichtkonformitäten. Die Bilanz fehlt in der Mehrheit der Pläne im zweiten Jahr, obwohl sie eine vom RGAA ausdrücklich vorgesehene Rubrik ist."
+    ],
+    [
+      "h2",
+      "jaehrlicher-massnahmenplan",
+      "Der jährliche Maßnahmenplan: Format, Priorisierung und Beispiel"
+    ],
+    [
+      "p",
+      "Der jährliche Maßnahmenplan übersetzt den Mehrjahresplan in datierte Aufgaben. Der RGAA schreibt kein Format vor. Eine HTML-Tabelle auf der Seite zur Barrierefreiheit ist für die Nutzerinnen und Nutzer am besten lesbar und am einfachsten aktuell zu halten. Vermeiden Sie eingescannte PDF-Dateien oder herunterzuladende Tabellenkalkulationen: Auch der Plan selbst muss in einem barrierefreien Format veröffentlicht werden."
+    ],
+    [
+      "p",
+      "Für die Priorisierung genügen in den meisten Fällen drei Kriterien: die Schwere des Mangels für die Nutzerinnen und Nutzer (eine Blockade verhindert den Abschluss eines Vorgangs, eine Beeinträchtigung verlangsamt ihn), die Reichweite des Dienstes oder Ablaufs und der Korrekturaufwand. Ein blockierender Mangel in einem viel genutzten Zahlungsformular geht hundert geringfügigen Mängeln auf Archivseiten vor. Mängel in gemeinsam genutzten Komponenten (Menü, Schaltfläche, Formularfeld des Designsystems) sollten früh behoben werden, weil eine einzige Korrektur allen Seiten zugutekommt."
+    ],
+    [
+      "table",
+      {
+        "caption": "Auszug aus einem jährlichen Maßnahmenplan zur digitalen Barrierefreiheit (fiktives Beispiel)",
+        "head": [
+          "Maßnahme",
+          "Dienst",
+          "Priorität",
+          "Verantwortlich",
+          "Frist",
+          "Erfüllungsindikator"
+        ],
+        "rows": [
+          [
+            "Vollständiges RGAA-Audit",
+            "Portal für Verwaltungsvorgänge",
+            "1",
+            "Ansprechperson Barrierefreiheit",
+            "März",
+            "Bericht geliefert, Erklärung aktualisiert"
+          ],
+          [
+            "Korrektur des per Tastatur nicht bedienbaren Aufklappmenüs",
+            "Kundenbereich",
+            "1",
+            "Produktteam",
+            "April",
+            "Kriterium 7.3 im Kontrollaudit erfüllt"
+          ],
+          [
+            "Ersatz der PDF-Formulare durch Online-Formulare",
+            "Institutionelle Website",
+            "1",
+            "Kommunikationsabteilung",
+            "Juni",
+            "Zahl der umgestellten Formulare"
+          ],
+          [
+            "Klausel zur Barrierefreiheit in der Ausschreibung für den Relaunch",
+            "Intranet",
+            "2",
+            "Einkauf",
+            "Mai",
+            "Klausel und Bewertungskriterium vorhanden"
+          ],
+          [
+            "Schulung der Webredaktion",
+            "Alle Websites",
+            "2",
+            "Personalabteilung",
+            "September",
+            "Zahl der geschulten Mitarbeitenden"
+          ],
+          [
+            "Test mit blinden und sehbehinderten Nutzerinnen und Nutzern",
+            "Terminbuchung",
+            "2",
+            "Projektleitung",
+            "Oktober",
+            "Testbericht und Korrekturmaßnahmen"
+          ],
+          [
+            "Aktualisierung der Erklärungen und Veröffentlichung des Folgeplans",
+            "Alle Dienste",
+            "1",
+            "Ansprechperson Barrierefreiheit",
+            "Dezember",
+            "Plan des Folgejahres am 1. Januar online"
+          ]
+        ]
+      }
+    ],
+    [
+      "p",
+      "Jede Maßnahme nennt nach Möglichkeit die Nummer des betroffenen RGAA-Kriteriums. So lässt sie sich mit den Auditberichten und mit der Liste der Nichtkonformitäten in der Erklärung verknüpfen. Die häufigsten Mängel, etwa unzureichende Kontraste, schlecht beschriftete Formulare oder per Tastatur nicht bedienbare Komponenten, sowie die mit den [[article:wcag-22|WCAG 2.2]] hinzugekommenen Kriterien verdienen eine eigene Zeile, sobald sie einen zentralen Ablauf betreffen."
+    ],
+    [
+      "h2",
+      "budget-und-mittel",
+      "Budget und Mittel: den Mehrjahresplan beziffern, ohne zu erfinden"
+    ],
+    [
+      "p",
+      "Der RGAA verlangt die Angabe der personellen und finanziellen Mittel, die der Barrierefreiheit zugewiesen sind. Es gibt keinen offiziellen Tarif, und kein Betrag lässt sich von einer Organisation auf eine andere übertragen. Eine seriöse Kalkulation geht vom Verzeichnis aus: Zahl der Dienste, Häufigkeit der Audits, bekannter Korrekturumfang, Zahl der zu schulenden Personen und Zeitanteil der Ansprechperson."
+    ],
+    [
+      "ul",
+      [
+        "Audits: Die Kosten hängen von der Zahl der Seiten in der Stichprobe, der Komplexität der Komponenten, der Zahl der Plattformen (Web, iOS, Android) und den vorgesehenen Kontrollaudits ab; welche Faktoren ein Angebot beeinflussen, erklärt unser Artikel zu den [[article:prix-audit|Kosten eines Barrierefreiheitsaudits]];",
+        "Korrekturen: gemeinsam mit den Entwicklungsteams auf Grundlage der Auditberichte zu schätzen, wobei Korrekturen an gemeinsam genutzten Komponenten, wenige an der Zahl, aber strukturell entscheidend, von seitenweisen Korrekturen zu unterscheiden sind;",
+        "Inhalte: Erstellung barrierefreier Dokumente, Untertitelung, Transkription und Audiodeskription von Videos, Überarbeitung der meistbesuchten Seiten;",
+        "Weiterbildung: Zahl der Personen je Beruf und Dauer der Lernpfade;",
+        "interne Arbeitszeit: Ansprechperson, Projektleitungen, Redaktion, Einkauf; sie wird oft vergessen, obwohl sie einen großen Teil des Aufwands ausmacht."
+      ]
+    ],
+    [
+      "p",
+      "Für öffentliche Arbeitgeber in Frankreich gibt es Fördermittel. Der FIPHFP, der Fonds zur Eingliederung von Menschen mit Behinderungen im öffentlichen Dienst, und die interministerielle Digitaldirektion DINUM haben im November 2023 eine [[https://www.fiphfp.fr/actualites-et-evenements/actualites/renforcement-de-l-accessibilite-numerique-le-fiphfp-et-la-dinum-renouvellent-leur-convention|Vereinbarung über 20 Millionen Euro für vier Jahre (auf Französisch)]] erneuert, die unter anderem Projektaufrufe für Gebietskörperschaften vorsieht. In seinen am 18. Juni 2026 veröffentlichten Feststellungen hält der französische Rechnungshof (Cour des comptes) fest, dass die Mittel des FIPHFP nur zu 50 % der verfügbaren Kredite gebunden wurden, dass der FIPHFP eher Audits und Empfehlungen als die eigentliche Herstellung der Konformität finanziert, und zwar als Kofinanzierung, und dass das Förderangebot der DINUM, das bis zu 100 % der Kosten übernehmen kann, sich nicht an Gebietskörperschaften richtet. Wer im Mehrjahresplan die beantragten Fördermittel nennt, zeigt, dass das Budget durchdacht ist."
+    ],
+    [
+      "note",
+      "Wichtig",
+      "Ein Mehrjahresplan ohne bezifferte Mittel ist das deutlichste Zeichen eines Fassadendokuments. Geben Sie mindestens den Zeitanteil der Ansprechperson, die Zahl der pro Jahr geplanten Audits und einen jährlichen Rahmenbetrag für Korrekturen und Weiterbildung an, auch wenn er nur ungefähr ist."
+    ],
+    [
+      "h2",
+      "kennzahlen",
+      "Kennzahlen, mit denen sich der Mehrjahresplan wirklich steuern lässt"
+    ],
+    [
+      "p",
+      "Die vom RGAA verlangte jährliche Bilanz hat nur dann Wert, wenn sie auf Kennzahlen beruht, die bereits beim Beschluss des Plans festgelegt wurden. Die Konformitätsquote ist die bekannteste, reicht aber nicht aus: Ein Dienst kann zehn Punkte gewinnen, indem er geringfügige Mängel behebt, und gleichzeitig eine Blockade beim Zahlungsschritt behalten. Kombinieren Sie Ergebniskennzahlen mit Mittelkennzahlen."
+    ],
+    [
+      "table",
+      {
+        "caption": "Kennzahlen zur Steuerung eines Mehrjahresplans für digitale Barrierefreiheit",
+        "head": [
+          "Kennzahl",
+          "Art",
+          "Berechnung",
+          "Was sie zeigt"
+        ],
+        "rows": [
+          [
+            "Anteil der Dienste mit einer Erklärung, die auf einem weniger als drei Jahre alten Audit beruht",
+            "Ergebnis",
+            "Abgedeckte Dienste / erfasste Dienste",
+            "Die tatsächliche Erfüllung der Pflicht"
+          ],
+          [
+            "RGAA-Konformitätsquote je Dienst",
+            "Ergebnis",
+            "Offizielle Methode des RGAA, bei gleichbleibendem Prüfumfang",
+            "Den technischen Fortschritt, Dienst für Dienst"
+          ],
+          [
+            "Zahl der wesentlichen Abläufe ohne Blockade",
+            "Ergebnis",
+            "Von Anfang bis Ende getestete Abläufe ohne blockierenden Mangel",
+            "Was Nutzerinnen und Nutzer tatsächlich erleben"
+          ],
+          [
+            "Durchschnittliche Antwortzeit auf Meldungen",
+            "Ergebnis",
+            "Register der Anfragen",
+            "Die Qualität des Kontaktkanals"
+          ],
+          [
+            "Anteil der digitalen Ausschreibungen mit Klausel und Abnahme zur Barrierefreiheit",
+            "Mittel",
+            "Im Jahr vergebene Aufträge",
+            "Die Vorbeugung künftiger Mängel"
+          ],
+          [
+            "Zahl der geschulten Personen je Beruf",
+            "Mittel",
+            "Weiterbildungsplan",
+            "Den Aufbau interner Kompetenz"
+          ],
+          [
+            "Erfüllungsgrad des Jahresplans",
+            "Mittel",
+            "Erledigte Maßnahmen / geplante Maßnahmen",
+            "Die Verlässlichkeit der Planung"
+          ]
+        ]
+      }
+    ],
+    [
+      "p",
+      "Für öffentliche Stellen hat der französische Rechnungshof daran erinnert, worauf es ankommt, nämlich auf die Barrierefreiheit des gesamten Ablaufs: Im Januar 2026 waren nur 7 % der wichtigsten öffentlichen Online-Verwaltungsvorgänge mit den 106 Anforderungen des RGAA konform, so seine [[https://www.ccomptes.fr/fr/publications/laccessibilite-des-services-publics-numeriques-de-letat-pour-les-personnes-en|am 18. Juni 2026 veröffentlichten Feststellungen (auf Französisch)]]. Die Kennzahl der wesentlichen Abläufe ohne Blockade greift genau dieses Anliegen auf: Sie zwingt dazu, den ganzen Vorgang zu betrachten, von der Startseite bis zur Bestätigung, einschließlich der bei Softwareanbietern eingekauften Module."
+    ],
+    [
+      "p",
+      "Ein Hinweis zur Darstellung: Halten Sie die Zahl der Kennzahlen klein und ihre Definition stabil. Wer die Berechnungsweise jedes Jahr ändert, kann in der Bilanz keinen Fortschritt mehr belegen. Veröffentlichen Sie die Kennzahlen zusammen mit dem Jahresplan, damit die Bilanz des Vorjahres und die Ziele des neuen Jahres auf derselben Seite stehen."
+    ],
+    [
+      "h2",
+      "haeufige-fehler",
+      "Die Fehler, die zu einem Verstoß führen, und wie man sie vermeidet"
+    ],
+    [
+      "p",
+      "Die folgenden Fehler verbinden die von der Arcom ausdrücklich festgestellten Verstöße mit jenen, die sich unmittelbar aus dem Gesetzestext und dem RGAA ergeben. Fast alle lassen sich in wenigen Tagen beheben, sofern man sie vor einer Kontrolle erkennt."
+    ],
+    [
+      "ol",
+      [
+        [
+          "Den Plan eines abgelaufenen Jahres online lassen.",
+          "Das ist der bei impots.gouv.fr festgestellte Verstoß. Planen Sie die Veröffentlichung des Plans für das Folgejahr im Dezember und prüfen Sie den Link am 2. Januar."
+        ],
+        [
+          "Einen Mehrjahresplan mit mehr als drei Jahren Laufzeit oder ohne Daten veröffentlichen.",
+          "Das Gesetz begrenzt die Laufzeit auf drei Jahre. Ein „Plan 2021–2025“ oder ein Plan ohne angegebenen Zeitraum erfüllt die Anforderung nicht."
+        ],
+        [
+          "Den Link in der Erklärung vergessen.",
+          "Artikel 6 des Dekrets von 2019 verlangt in jeder Erklärung den Link zum Mehrjahresplan; der RGAA verlangt zudem den Link zum Plan des laufenden Jahres."
+        ],
+        [
+          "Den Mehrjahresplan schwer auffindbar machen.",
+          "Absatz IV von Artikel 47 verlangt einen leichten und direkten Zugang von der Seite zur Barrierefreiheit aus. Ein Dokument, das in einer Rubrik „Publikationen“ versteckt ist, genügt nicht."
+        ],
+        [
+          "Ein nicht barrierefreies PDF veröffentlichen.",
+          "Mehrjahresplan und Jahresplan müssen in einem barrierefreien Format veröffentlicht werden. Ein Bild-PDF oder ein PDF ohne Tags widerspricht dem Dokument, das es enthält; eine HTML-Seite ist vorzuziehen."
+        ],
+        [
+          "Den Geltungsbereich auf die Hauptwebsites beschränken.",
+          "Der Mehrjahresplan erfasst alle öffentlichen Online-Kommunikationsdienste, einschließlich Intranets, Extranets, Apps und Softwarepaketen."
+        ],
+        [
+          "Die Bilanz weglassen.",
+          "Ab dem zweiten Jahr erwartet der RGAA die Bilanz der Jahrespläne. Ein Plan, der nie sagt, was erledigt wurde, verliert jede Glaubwürdigkeit."
+        ],
+        [
+          "Den Erklärungen widersprechen.",
+          "Wer im Mehrjahresplan ankündigt, alle Dienste seien auditiert, während mehrere Erklärungen das Fehlen eines Audits angeben, setzt sich einer ungünstigen Querlektüre aus."
+        ],
+        [
+          "Die Politik auf freiwillige Maßnahmen reduzieren.",
+          "Videos in Gebärdensprache gleichen ein per Tastatur nicht bedienbares Kontaktformular nicht aus."
+        ]
+      ]
+    ],
+    [
+      "p",
+      "Eine Querlektüre der drei Dokumente durch eine projektfremde Person oder ein [[svc:audit-conformite|dokumentarisches und technisches Konformitätsaudit]] deckt diese Widersprüche auf, bevor es ein vereidigter Bediensteter tut. Es ist auch der richtige Zeitpunkt, um zu prüfen, ob die Seite zur Barrierefreiheit selbst den RGAA einhält."
+    ],
+    [
+      "h2",
+      "sonderfaelle",
+      "Gebietskörperschaft, öffentliche Einrichtung, Großunternehmen: den Plan anpassen"
+    ],
+    [
+      "h3",
+      "Gemeinde, Departement, Gemeindeverband"
+    ],
+    [
+      "p",
+      "Eine Gebietskörperschaft veröffentlicht viele Dokumente (Ratsbeschlüsse, Verfügungen, Gemeindeblätter, Formulare) und kauft die meisten ihrer Online-Dienste ein: Bezahlung des Schulessens, Anmeldungen, Terminbuchung, Familienportal. Ihr Mehrjahresplan muss daher den Schwerpunkt auf Beschaffung, Abnahme und Dokumentenerstellung legen. Den Plan von der Exekutive oder sogar durch einen Ratsbeschluss bestätigen zu lassen, schreiben die Texte nicht vor, erleichtert aber die Umsetzung in den Fachabteilungen. Unsere Seite zum [[sector:public|öffentlichen Sektor]] zeigt im Detail, wie sich die Barrierefreiheit in Ausschreibungen verankern lässt."
+    ],
+    [
+      "h3",
+      "Öffentliche Einrichtung, Hochschule, Krankenhaus"
+    ],
+    [
+      "p",
+      "Diese Organisationen betreiben oft Dutzende Websites von Fakultäten oder Laboren sowie Lernplattformen. Die erste Aufgabe ist das Verzeichnis, danach die Bereinigung: Wenig besuchte Websites zu schließen oder zusammenzulegen ist eine legitime Maßnahme zur Herstellung der Barrierefreiheit, sofern sie im Mehrjahresplan steht. Lernressourcen und Online-Module folgen derselben Logik wie die übrigen Dienste."
+    ],
+    [
+      "h3",
+      "Unternehmen mit mehr als 250 Millionen Euro Umsatz"
+    ],
+    [
+      "p",
+      "Für ein großes Unternehmen gehört der Mehrjahresplan zu den Dokumenten, auf die sich die Sanktionsbefugnis der Arcom unmittelbar erstreckt. Er muss die Markenwebsites, die Kundenbereiche, die Apps und die online veröffentlichten Werkzeuge für Beschäftigte erfassen. In einem Konzern veröffentlicht jede Gesellschaft, die die Schwelle überschreitet, ihren eigenen Plan oder einen Konzernplan, der die erfassten Gesellschaften und Dienste klar benennt. Der Mehrjahresplan bietet zudem die Gelegenheit, mit denselben Mitteln die Konformität der unter den EAA fallenden Abläufe zu organisieren. Unsere Seite für [[sector:grands-comptes|Großunternehmen]] stellt diesen doppelten Ansatz vor."
+    ],
+    [
+      "p",
+      "Für Konzerne mit Hauptsitz in Luxemburg oder der Schweiz ist dabei entscheidend, dass die Schwelle nach dem in Frankreich erzielten Umsatz jeder einzelnen Gesellschaft bemessen wird. Ein Plan auf Konzernebene ist möglich, er muss aber erkennen lassen, welche französische Gesellschaft für welchen Dienst verantwortlich ist, damit Zuständigkeit und Verantwortung für jeden Dienst nachvollziehbar sind."
+    ],
+    [
+      "h2",
+      "rgaa-5",
+      "RGAA 5: Muss der Mehrjahresplan neu geschrieben werden?"
+    ],
+    [
+      "p",
+      "Die DINUM hat die [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|Veröffentlichung des RGAA 5 für Ende 2026 angekündigt (auf Französisch)]]. Am 12. November 2026 zeigt die offizielle Website noch die Version 4.1.2 an und weist darauf hin, dass Version 5 in Arbeit ist. Laut der Ankündigung übernimmt der künftige Referenzrahmen die WCAG 2.2, und Erklärungen, die vor seinem Erscheinen veröffentlicht wurden, bleiben achtzehn Monate gültig, höchstens jedoch drei Jahre ab ihrer Veröffentlichung. Eine Änderung der Pflichten zum Mehrjahresplan oder zum Jahresplan erwähnt die Ankündigung nicht."
+    ],
+    [
+      "p",
+      "Es gibt also keinen Grund, mit dem Beschluss oder der Erneuerung eines Mehrjahresplans auf den RGAA 5 zu warten. Sinnvoll ist es, im Plan 2027–2029 eine ausdrückliche Migrationsmaßnahme vorzusehen: Schulung der Teams zu den neuen Kriterien, Aktualisierung der Abnahmeraster und Ausschreibungsklauseln sowie ein Zeitplan für erneute Audits der Dienste nach der neuen Version, beginnend mit jenen, deren Erklärung ausläuft. Die DINUM betont im Übrigen, dass Arbeiten auf Grundlage des RGAA 4.1.2 nicht bis zur neuen Version ausgesetzt werden sollen. Unser Artikel zu [[article:normes|den Normen der digitalen Barrierefreiheit]] ordnet den RGAA im Verhältnis zu den WCAG und zur Norm EN 301 549 ein."
+    ],
+    [
+      "h2",
+      "plan-90-tage",
+      "Einen konformen Mehrjahresplan in 90 Tagen veröffentlichen: der Ablauf"
+    ],
+    [
+      "p",
+      "Für eine Organisation ohne Mehrjahresplan oder mit abgelaufenem Plan schlagen wir die folgende realistische Abfolge vor. Sie setzt eine benannte verantwortliche Person und eine Entscheidung der Leitung über die Mittel in der Mitte des Ablaufs voraus."
+    ],
+    [
+      "ol",
+      [
+        [
+          "Tag 1 bis 10: die verantwortliche Person benennen und den Bestand prüfen.",
+          "Benennen Sie die Ansprechperson, erfassen Sie die veröffentlichten Dokumente (Erklärungen, alter Mehrjahresplan, Jahrespläne) und beheben Sie sofort die sichtbarsten Verstöße: Plan eines abgelaufenen Jahres, toter Link, falscher Konformitätsstatus."
+        ],
+        [
+          "Tag 10 bis 40: die Bestandsaufnahme durchführen.",
+          "Verzeichnis der Dienste, Audits und Erklärungen, Verträge, Kompetenzen und Meldungen, nach der oben beschriebenen Methode."
+        ],
+        [
+          "Tag 40 bis 55: beziffern und entscheiden.",
+          "Legen Sie der Leitung einen Zeitplan für Audits und Korrekturen, einen Weiterbildungsplan und einen jährlichen Rahmenbetrag vor. In diesem Schritt wird aus dem Dokument eine Verpflichtung."
+        ],
+        [
+          "Tag 55 bis 70: Mehrjahresplan und ersten Jahresplan verfassen.",
+          "Folgen Sie der Reihenfolge der RGAA-Rubriken, fügen Sie die Liste der Dienste als Anhang bei und datieren Sie jede Maßnahme des Plans."
+        ],
+        [
+          "Tag 70 bis 80: beschließen lassen.",
+          "Lassen Sie den Plan vom zuständigen Gremium beschließen und tragen Sie das Datum des Beschlusses in die Präambel ein."
+        ],
+        [
+          "Tag 80 bis 90: veröffentlichen und verknüpfen.",
+          "Stellen Sie Mehrjahresplan und Jahresplan als HTML auf die Seite zur Barrierefreiheit, ergänzen Sie die Links in jeder Erklärung, prüfen Sie den direkten Zugang über die Fußzeile und planen Sie schon jetzt die Veröffentlichung des Plans für das Folgejahr."
+        ]
+      ]
+    ],
+    [
+      "p",
+      "Dieser Zeitplan ist mit der Frist von zwei Monaten vereinbar, die die Arcom in ihrer Entscheidung vom Juni 2026 für die Dokumentationspflichten gewährt hat: Die ersten Maßnahmen, jene der ersten zehn Tage, beseitigen die am leichtesten feststellbaren Verstöße, während die inhaltliche Arbeit weiterläuft. Die Seite [[country:france|Digitale Barrierefreiheit in Frankreich]] fasst die übrigen Pflichten zusammen, die parallel zu erfüllen sind."
+    ]
   ],
   "faq": [
-    ["Was ist ein SPAN bei der digitalen Barrierefreiheit?", "SPAN ist die gängige Abkürzung für den französischen „schéma pluriannuel d'accessibilité numérique“, im Gesetz „schéma pluriannuel de mise en accessibilité“ genannt, also den Mehrjahresplan zur Herstellung der Barrierefreiheit. Er ist in Absatz III von Artikel 47 des Gesetzes vom 11. Februar 2005 vorgesehen und stellt für höchstens drei Jahre die Politik der Organisation zur Barrierefreiheit, ihre Mittel, ihre Organisation und den Zeitplan der Audits und Korrekturen dar. Er wird veröffentlicht und jedes Jahr in einen Maßnahmenplan untergliedert."],
-    ["Ist der Mehrjahresplan für ein privates Unternehmen Pflicht?", "Ja, für Unternehmen, die unter Artikel 47 fallen, also jene, deren in Frankreich erzielter Umsatz 250 Millionen Euro übersteigt, sowie für private Organisationen, denen eine Aufgabe des öffentlichen Dienstes übertragen wurde. Bei diesen Unternehmen kann die Arcom das Fehlen oder die Nichtkonformität des Mehrjahresplans und des Jahresplans sanktionieren, mit bis zu 25.000 Euro nach einer erfolglosen Inverzugsetzung. Unternehmen, die nur unter den EAA fallen, trifft diese Pflicht nicht."],
-    ["Wie lange darf ein Mehrjahresplan zur Barrierefreiheit höchstens laufen?", "Drei Jahre. Das Gesetz legt fest, dass die Laufzeit des Mehrjahresplans drei Jahre nicht überschreiten darf. Nichts spricht gegen eine kürzere Laufzeit oder eine Überarbeitung vor Ablauf, etwa nach einem umfangreichen Relaunch oder dem Erscheinen eines neuen Referenzrahmens. Ein abgelaufener Plan muss unverzüglich ersetzt werden, und der Maßnahmenplan des laufenden Jahres ist jedes Jahr zu veröffentlichen."],
-    ["Wo werden Mehrjahresplan und Maßnahmenplan veröffentlicht?", "Auf der Website der Organisation, in einem barrierefreien Format, vorzugsweise als HTML auf der Seite zur Barrierefreiheit. Das Gesetz verlangt einen leichten und direkten Zugang zum Mehrjahresplan und zum Plan des laufenden Jahres, und die Erklärung zur Barrierefreiheit jedes Dienstes muss einen Link zu ihnen enthalten. Die Pläne früherer Jahre können in einem getrennten Archivbereich online bleiben."],
-    ["Genügt ein einziger Mehrjahresplan für mehrere Websites?", "Ja. Der Plan erfasst alle öffentlichen Online-Kommunikationsdienste der Organisation: Ein einziges Dokument deckt alle Websites, Intranets, Extranets, Apps und Softwarepakete ab. Jeder Dienst behält jedoch seine eigene Erklärung zur Barrierefreiheit, die auf einem eigenen Audit beruht, und jede verweist auf denselben Mehrjahresplan. Fügen Sie die Liste der erfassten Dienste als Anhang bei, damit der Geltungsbereich überprüfbar ist."],
-    ["Was droht, wenn der Maßnahmenplan nicht aktuell ist?", "Ein Maßnahmenplan, der ein abgelaufenes Jahr betrifft, stellt einen Verstoß gegen Absatz IV von Artikel 47 dar. Das hat die Arcom im Juni 2026 bei impots.gouv.fr festgestellt und eine Frist von zwei Monaten zur Behebung gesetzt. Bleibt die Inverzugsetzung ohne Wirkung, kann eine Geldsanktion von höchstens 25.000 Euro verhängt und erneut verhängt werden, wenn der Verstoß sechs Monate danach fortbesteht."],
-    ["Sollte man mit dem Mehrjahresplan auf den RGAA 5 warten?", "Nein. Der RGAA 5 ist für Ende 2026 angekündigt, und die offizielle Ankündigung ändert die Pflichten zum Mehrjahresplan und zum Jahresplan nicht. Die DINUM verlangt, Arbeiten auf Grundlage des RGAA 4.1.2 nicht auszusetzen. Sehen Sie im Plan einfach eine Migrationsmaßnahme vor: Schulung zu den neuen Kriterien, Aktualisierung der Abnahmeraster und einen Zeitplan für erneute Audits."]
+    [
+      "Was ist ein SPAN bei der digitalen Barrierefreiheit?",
+      "SPAN ist die gängige Abkürzung für den französischen „schéma pluriannuel d'accessibilité numérique“, im Gesetz „schéma pluriannuel de mise en accessibilité“ genannt, also den Mehrjahresplan zur Herstellung der Barrierefreiheit. Er ist in Absatz III von Artikel 47 des Gesetzes vom 11. Februar 2005 vorgesehen und stellt für höchstens drei Jahre die Politik der Organisation zur Barrierefreiheit, ihre Mittel, ihre Organisation und den Zeitplan der Audits und Korrekturen dar. Er wird veröffentlicht und jedes Jahr in einen Maßnahmenplan untergliedert."
+    ],
+    [
+      "Ist der Mehrjahresplan für ein privates Unternehmen Pflicht?",
+      "Ja, für Unternehmen, die unter Artikel 47 fallen, also jene, deren in Frankreich erzielter Umsatz 250 Millionen Euro übersteigt, sowie für private Organisationen, denen eine Aufgabe des öffentlichen Dienstes übertragen wurde. Bei diesen Unternehmen kann die Arcom das Fehlen oder die Nichtkonformität des Mehrjahresplans und des Jahresplans sanktionieren, mit bis zu 25.000 Euro nach einer erfolglosen Inverzugsetzung. Unternehmen, die nur unter den EAA fallen, trifft diese Pflicht nicht."
+    ],
+    [
+      "Wie lange darf ein Mehrjahresplan zur Barrierefreiheit höchstens laufen?",
+      "Drei Jahre. Das Gesetz legt fest, dass die Laufzeit des Mehrjahresplans drei Jahre nicht überschreiten darf. Nichts spricht gegen eine kürzere Laufzeit oder eine Überarbeitung vor Ablauf, etwa nach einem umfangreichen Relaunch oder dem Erscheinen eines neuen Referenzrahmens. Ein abgelaufener Plan muss unverzüglich ersetzt werden, und der Maßnahmenplan des laufenden Jahres ist jedes Jahr zu veröffentlichen."
+    ],
+    [
+      "Wo werden Mehrjahresplan und Maßnahmenplan veröffentlicht?",
+      "Auf der Website der Organisation, in einem barrierefreien Format, vorzugsweise als HTML auf der Seite zur Barrierefreiheit. Das Gesetz verlangt einen leichten und direkten Zugang zum Mehrjahresplan und zum Plan des laufenden Jahres, und die Erklärung zur Barrierefreiheit jedes Dienstes muss einen Link zu ihnen enthalten. Die Pläne früherer Jahre können in einem getrennten Archivbereich online bleiben."
+    ],
+    [
+      "Genügt ein einziger Mehrjahresplan für mehrere Websites?",
+      "Ja. Der Plan erfasst alle öffentlichen Online-Kommunikationsdienste der Organisation: Ein einziges Dokument deckt alle Websites, Intranets, Extranets, Apps und Softwarepakete ab. Jeder Dienst behält jedoch seine eigene Erklärung zur Barrierefreiheit, die auf einem eigenen Audit beruht, und jede verweist auf denselben Mehrjahresplan. Fügen Sie die Liste der erfassten Dienste als Anhang bei, damit der Geltungsbereich überprüfbar ist."
+    ],
+    [
+      "Was droht, wenn der Maßnahmenplan nicht aktuell ist?",
+      "Ein Maßnahmenplan, der ein abgelaufenes Jahr betrifft, stellt einen Verstoß gegen Absatz IV von Artikel 47 dar. Das hat die Arcom im Juni 2026 bei impots.gouv.fr festgestellt und eine Frist von zwei Monaten zur Behebung gesetzt. Bleibt die Inverzugsetzung ohne Wirkung, kann eine Geldsanktion von höchstens 25.000 Euro verhängt und erneut verhängt werden, wenn der Verstoß sechs Monate danach fortbesteht."
+    ],
+    [
+      "Sollte man mit dem Mehrjahresplan auf den RGAA 5 warten?",
+      "Nein. Der RGAA 5 ist für Ende 2026 angekündigt, und die offizielle Ankündigung ändert die Pflichten zum Mehrjahresplan und zum Jahresplan nicht. Die DINUM verlangt, Arbeiten auf Grundlage des RGAA 4.1.2 nicht auszusetzen. Sehen Sie im Plan einfach eine Migrationsmaßnahme vor: Schulung zu den neuen Kriterien, Aktualisierung der Abnahmeraster und einen Zeitplan für erneute Audits."
+    ]
   ],
   "cta_svc": "audit-rgaa",
   "cta_title": "Hält Ihr Mehrjahresplan einer Kontrolle stand?",
   "cta_text": "Senden Sie uns Ihren Mehrjahresplan und Ihre Erklärungen: Wir zeigen Ihnen, welche Verstöße zu beheben sind und welchen Auditkalender Sie vorsehen sollten.",
-  "related": ["declaration", "audit-rgaa", "france"]
+  "related": [
+    "declaration",
+    "audit-rgaa",
+    "france"
+  ],
+  "modified": "2026-11-14"
 }

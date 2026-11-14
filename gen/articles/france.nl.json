@@ -345,7 +345,7 @@
   ],
   [
    "p",
-   "Er komen nog andere kosten bij. Een beslissing van Arcom wordt in het Journal officiel bekendgemaakt, wat de organisatie publiekelijk blootstelt. Publieke aankopers en grote ondernemingen nemen steeds vaker toegankelijkheidseisen op in hun aanbestedingen, en het Rekenhof beveelt aan standaardclausules in overheidsopdrachten te veralgemenen. Ten slotte kost het corrigeren van een dienst die al in productie is meer dan hem van meet af aan toegankelijk te ontwerpen: elke niet-conforme component van een design system wordt vermenigvuldigd in alle pagina’s die hem gebruiken."
+   "Er komen nog andere kosten bij. Een beslissing van Arcom wordt in het Journal officiel bekendgemaakt, wat de organisatie publiekelijk blootstelt. Publieke aankopers en grote ondernemingen nemen steeds vaker toegankelijkheidseisen op in hun aanbestedingen, en het Rekenhof beveelt aan standaardclausules in overheidsopdrachten te veralgemenen; wij bieden daarvoor [[article:clauses-marche-public|becommentarieerde modelclausules]]. Ten slotte kost het corrigeren van een dienst die al in productie is meer dan hem van meet af aan toegankelijk te ontwerpen: elke niet-conforme component van een design system wordt vermenigvuldigd in alle pagina’s die hem gebruiken."
   ],
   [
    "h2",
@@ -711,6 +711,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-11-12",
+ "modified": "2026-11-14",
  "cluster": "reglementation"
 }

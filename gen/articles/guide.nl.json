@@ -546,7 +546,7 @@
     "Overal ARIA-attributen toevoegen “voor de zekerheid”: verkeerd gebruikte ARIA maakt de ervaring vaak slechter in plaats van beter, terwijl native HTML in de meeste gevallen volstaat.",
     "Visuele captcha's of korte sessietijden plaatsen zonder alternatief of mogelijkheid tot verlenging.",
     "Pdf's en transactionele e-mails verwaarlozen, hoewel ze deel uitmaken van het traject.",
-    "Geen toegankelijkheidseisen opnemen in het bestek of de lastvoorwaarden, en de fouten pas bij de oplevering van het project ontdekken.",
+    "Geen toegankelijkheidseisen opnemen in het bestek of de lastvoorwaarden, en de fouten pas bij de oplevering van het project ontdekken. Ons artikel over [[article:clauses-marche-public|toegankelijkheidsclausules in overheidsopdrachten]] geeft modelclausules en een opleveringsprocedure.",
     "Het onderwerp bij één persoon leggen zonder steun van de directie en zonder budget voor correcties."
    ]
   ],
@@ -654,5 +654,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-10"
+ "modified": "2026-11-14"
 }

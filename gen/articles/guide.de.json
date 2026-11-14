@@ -505,7 +505,7 @@
     "Überall ARIA-Attribute einfügen, „um es richtig zu machen“: Falsch eingesetztes ARIA verschlechtert die Nutzung oft, statt sie zu verbessern, während natives HTML in den meisten Fällen genügt.",
     "Visuelle Captchas oder kurze Sitzungszeiten ohne Alternative und ohne Verlängerungsmöglichkeit einsetzen.",
     "PDF-Dokumente und Transaktions-E-Mails vernachlässigen, obwohl sie zum Nutzerweg gehören.",
-    "Keine Barrierefreiheitsanforderungen in Lastenhefte und Ausschreibungen aufnehmen und die Mängel dann erst bei der Abnahme des Projekts entdecken.",
+    "Keine Barrierefreiheitsanforderungen in Lastenhefte und Ausschreibungen aufnehmen und die Mängel dann erst bei der Abnahme des Projekts entdecken. Unser Beitrag zu [[article:clauses-marche-public|Barrierefreiheitsklauseln in öffentlichen Ausschreibungen]] liefert Musterklauseln und ein Abnahmeverfahren.",
     "Das Thema einer einzigen Person übertragen, ohne Rückhalt der Geschäftsleitung und ohne Budget für Korrekturen."
    ]
   ],
@@ -613,5 +613,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-10"
+ "modified": "2026-11-14"
 }
