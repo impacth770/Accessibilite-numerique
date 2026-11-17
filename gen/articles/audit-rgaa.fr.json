@@ -14,7 +14,7 @@
  ],
  "date": "2026-10-29",
  "cluster": "methode",
- "modified": "2026-11-12",
+ "modified": "2026-11-17",
  "lead": "Un audit RGAA mesure, critère par critère, la conformité d'un site, d'une application ou d'un progiciel au Référentiel général d'amélioration de l'accessibilité. C'est la base obligatoire de toute déclaration d'accessibilité en France, et c'est cette déclaration que l'Arcom vérifie lors de ses contrôles. Les pages qui en parlent décrivent la méthode ; celle-ci montre comment l'audit se déroule réellement, semaine par semaine, ce que votre organisation doit préparer, comment l'échantillon se construit, ce que contiennent les livrables et comment lire le rapport sans être spécialiste.",
  "body": [
   [
@@ -106,6 +106,10 @@
   [
    "p",
    "La quatrième ligne mérite d'être anticipée. La DINUM a annoncé la [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|publication du RGAA 5, attendue fin 2026]]. Il intègre les WCAG 2.2 et définira des critères pour les applications mobiles et les documents bureautiques. La DINUM précise que les travaux fondés sur le RGAA 4.1.2 ne doivent en aucun cas être suspendus ou reportés : un audit réalisé aujourd'hui reste utile, ses corrections resteront valables, et la déclaration qui en découle bénéficiera du délai de dix-huit mois."
+  ],
+  [
+   "p",
+   "Si votre audit est en cours ou prévu pour 2027, notre article sur [[article:rgaa-5|le passage au RGAA 5]] indique, situation par situation, ce qu'il faut ajouter dès maintenant à la commande et au rapport."
   ],
   [
    "p",

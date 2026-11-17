@@ -480,6 +480,10 @@
   ],
   [
    "p",
+   "De RGAA 5 verandert ook de inhoud van de verklaring: blokkerende punten moeten er uitdrukkelijk in staan en overheidsdiensten dienen ze in via een e-dienst. Die wijzigingen en de berekening van de geldigheid van uw huidige verklaringen staan in ons artikel over [[article:rgaa-5|wat er verandert met de RGAA 5]]."
+  ],
+  [
+   "p",
    "Het begrip substantiële wijziging wordt niet door een lijst gedefinieerd. Het omvat zonder twijfel een grafische vernieuwing, een overstap naar een ander CMS, de opening van een nieuwe gebruikersomgeving of een nieuw betaaltraject, en een wissel van ontwikkelaar. Een goede praktijk is de verklaring één keer per jaar te herlezen, bij de publicatie van het actieplan, en de audit opnieuw uit te voeren zodra een wijziging een traject uit de steekproef raakt."
   ],
   [
@@ -1127,5 +1131,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-11-12"
+ "modified": "2026-11-17"
 }

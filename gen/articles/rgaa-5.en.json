@@ -1,0 +1,722 @@
+{
+ "slug": "rgaa-5-french-accessibility-standard",
+ "h1": "RGAA 5: what is confirmed, what changes for your audits and a 90-day preparation plan",
+ "crumb": "RGAA 5",
+ "meta_title": "RGAA 5: France’s new digital accessibility standard explained",
+ "meta_desc": "RGAA 5, France’s digital accessibility standard: what is official, the blocking-issue rule tested on three services, statement validity and a 90-day plan.",
+ "card_desc": "What DINUM has actually announced, how the blocking-issue rule affects your compliance status and a plan to prepare for it.",
+ "cat": "analyse",
+ "where": "France",
+ "cover": "RGAA5",
+ "cover_note": [
+  "Release announced for December 2026",
+  "Decree expected during 2027"
+ ],
+ "date": "2026-11-17",
+ "cluster": "normes",
+ "lead": "According to DINUM, the French government’s digital directorate, RGAA 5, the new version of France’s digital accessibility standard, is due for release in December 2026 and will be made official by decree during 2027. Most pages on the subject mix the official announcement, conference reports and guesswork. This article sorts them out: what is confirmed, what has yet to be published, what the new blocking-issue rule actually changes for your compliance status, how long your current accessibility statements will remain valid, and how to prepare for RGAA 5 in 90 days without discarding the work already done under RGAA 4.1.2. It is written for international organisations with services in France as much as for French public bodies.",
+ "body": [
+  [
+   "h2",
+   "what-is-official",
+   "RGAA 5: what is official and what is not yet"
+  ],
+  [
+   "p",
+   "The RGAA (Référentiel général d’amélioration de l’accessibilité, the French general accessibility improvement framework) is the method used to check that a digital service meets the accessibility obligation laid down in Article 47 of the French Act of 11 February 2005. At the date of this article, the version in force is still RGAA 4.1.2: 106 criteria grouped into 13 themes, based on WCAG 2.1. Until the new version has been published and then made mandatory, audits, accessibility statements and regulatory checks are all carried out on that basis."
+  ],
+  [
+   "p",
+   "Two official publications by DINUM, on its DesignGouv website, currently form the basis of what is known. The first, dated 2 March 2026, set out [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|the objectives of the new version of the RGAA (in French)]]: incorporation of WCAG 2.2, criteria and tests for mobile applications and office documents, rewording and simplification of the criteria, designation of Arcom as the supervisory authority, and an online service for filing and publishing accessibility statements. The second, dated 3 November 2026, details [[https://design.numerique.gouv.fr/articles/2026-11-03-rgaa5/|what changes with RGAA 5 (in French)]]: the timeline, the blocking issue, a new rule for the “partiellement conforme” (“partially compliant”) status, a standardised multi-year plan and 40 new criteria."
+  ],
+  [
+   "p",
+   "Everything else is, for the time being, a matter of interpretation. The total number of criteria, the exact list of the 40 new ones, the method for classifying a non-conformity as blocking, the date of entry into application and the form of the decree have not been published. The table below separates what is settled from what remains open. It is the first thing to check before you amend a contract, a budget or an audit schedule."
+  ],
+  [
+   "table",
+   {
+    "caption": "RGAA 5: status of each point at 17 November 2026",
+    "head": [
+     "Topic",
+     "What has been officially announced",
+     "What has yet to be published"
+    ],
+    "rows": [
+     [
+      "Timeline",
+      "Release planned for December 2026, made official by decree during 2027",
+      "Exact date, date of entry into application, any transition period"
+     ],
+     [
+      "Scope",
+      "Three frameworks: web, mobile applications and office documents, with the same criteria where they apply and different tests",
+      "Detailed content of the mobile and office document tests, test environments"
+     ],
+     [
+      "Criteria",
+      "40 new criteria to take account of WCAG 2.2 and the EN 301 549 V4.1.1 standard; all criteria and tests updated, simplified and reorganised",
+      "List of criteria, total number, release note from RGAA 4 to RGAA 5"
+     ],
+     [
+      "Blocking issue",
+      "A blocking non-conformity results in the status “Accessibilité : non conforme” (“Accessibility: non-compliant”), whatever the compliance rate",
+      "Method for classifying a non-conformity as blocking"
+     ],
+     [
+      "Partially compliant",
+      "Reserved for services with a compliance rate of at least 50% and no blocking issue",
+      "—"
+     ],
+     [
+      "Average rate",
+      "Removed",
+      "—"
+     ],
+     [
+      "Accessibility statement",
+      "Highlights the means of contact and spells out blocking issues; for public services, an online service generates and hosts the statement",
+      "Opening of the online service, form template"
+     ],
+     [
+      "Multi-year plan",
+      "Predefined format instead of a free format",
+      "Template of the format"
+     ],
+     [
+      "Existing statements",
+      "Valid for 18 months, subject to a limit of 3 years from their date of publication (announcement of 2 March 2026)",
+      "Exact starting point of the 18 months in the regulatory text"
+     ]
+    ]
+   }
+  ],
+  [
+   "note",
+   "Key takeaway",
+   "At 17 November 2026, RGAA 4.1.2 remains the reference. DINUM asks that work based on RGAA 4.1.2 should under no circumstances be suspended or postponed, and states that the RGAA 5 criteria will clarify or supplement those of RGAA 4.1.2, without contradicting them."
+  ],
+  [
+   "p",
+   "To see where the RGAA sits in relation to the other European frameworks, WCAG, the EN 301 549 standard, Luxembourg’s RAWeb or Switzerland’s eCH-0059, read our comparison of [[article:normes|digital accessibility standards and how they fit together]]. For the overall picture, covering obligations, the organisations concerned and first steps, the reference article remains our [[article:guide|guide to digital accessibility]]."
+  ],
+  [
+   "h2",
+   "rgaa-5-timeline",
+   "RGAA 5 timeline and how long your accessibility statements remain valid"
+  ],
+  [
+   "p",
+   "The official timeline comes down to two dates: publication of the framework, planned for December 2026, followed by its formal adoption by decree during 2027. Between the two, RGAA 5 will be available and readable, but it is the regulatory text that will determine from when it becomes the mandatory reference and how the transition is organised. Do not confuse these two moments: publication allows you to prepare, while the decree sets the obligations."
+  ],
+  [
+   "p",
+   "For accessibility statements that have already been published, DINUM set out a simple rule as early as March 2026: they will remain valid for 18 months, subject to a limit of 3 years from their date of publication. In other words, a statement never gains extra life because of RGAA 5: the three-year limit, which already applies today, continues to apply. This logic is not new. The [[https://accessibilite.numerique.gouv.fr/obligations/declaration-accessibilite/|RGAA 4.1.2 page on the accessibility statement (in French)]] already requires an update 3 years after the statement’s date of publication and, for organisations that apply the technical method, 18 months after the date of publication of a new version of the framework. The exact starting point of the 18 months for RGAA 5, whether publication of the framework in December 2026 or the decree in 2027, remains to be confirmed. In the meantime, work from the publication date of RGAA 5: it is the more cautious assumption, because it is the earlier of the two."
+  ],
+  [
+   "p",
+   "The following table applies this rule to four typical statements, on the assumption that RGAA 5 is published on 15 December 2026. These dates are simulations, to be recalculated as soon as the actual publication date is known."
+  ],
+  [
+   "table",
+   {
+    "caption": "Simulation: until when does an RGAA 4.1.2 statement remain valid? (assumption: RGAA 5 published on 15 December 2026)",
+    "head": [
+     "Date of the statement",
+     "3-year limit",
+     "18-month limit",
+     "Applicable deadline (the earlier)"
+    ],
+    "rows": [
+     [
+      "1 March 2024",
+      "1 March 2027",
+      "15 June 2028",
+      "1 March 2027: a new audit should be launched now"
+     ],
+     [
+      "15 October 2024",
+      "15 October 2027",
+      "15 June 2028",
+      "15 October 2027"
+     ],
+     [
+      "10 September 2025",
+      "10 September 2028",
+      "15 June 2028",
+      "15 June 2028"
+     ],
+     [
+      "5 November 2026",
+      "5 November 2029",
+      "15 June 2028",
+      "15 June 2028"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "The practical consequence is counter-intuitive. A brand-new statement, drawn up in November 2026 on the basis of RGAA 4.1.2, does not give you three years of peace of mind: if the announced rule is confirmed, it will expire around 18 months after RGAA 5 is released. That is no reason to postpone an audit, because a service that has not been audited must display “non conforme” (“non-compliant”) from today. It is, however, a reason to budget now for an RGAA 5 audit in the 2028 financial year at the latest."
+  ],
+  [
+   "p",
+   "For finance and procurement teams in international groups, the point is worth spelling out. An audit commissioned in late 2026 still has value: it underpins the current statement, identifies the defects to fix and documents progress. What changes is the planning horizon. Instead of assuming a three-year cycle, plan for a shorter one for this transition period, and make sure that the audit budget for 2027 or 2028 already includes the RGAA 5 audit rather than leaving it to an unplanned supplementary request."
+  ],
+  [
+   "p",
+   "A substantial change to the service, such as a redesign, a change of CMS or a new logged-in area, requires a new assessment in any case, whatever the date of the statement. Our article on [[article:declaration|the accessibility statement and the errors that invalidate it]] details these update cases."
+  ],
+  [
+   "h2",
+   "blocking-issue",
+   "The blocking issue: the RGAA 5 rule that changes how the compliance rate is read"
+  ],
+  [
+   "p",
+   "Under RGAA 4.1.2, the compliance status depends solely on the rate: 100% gives “totalement conforme” (“fully compliant”), at least 50% gives “partiellement conforme” (“partially compliant”), and below 50%, or the absence of a valid audit, gives “non conforme” (“non-compliant”). A website can therefore display 85% and “partially compliant” even though the button that submits an online application cannot be used with a keyboard. This is the situation that RGAA 5 aims to eliminate."
+  ],
+  [
+   "p",
+   "The announcement of 3 November 2026 defines a blocking non-conformity as a defect that prevents a user from accessing essential information or completing a process. It gives two examples: an element that moves with no means of stopping it, and a form submit button that cannot be reached with a keyboard. A service with a blocking non-conformity systematically displays “Accessibilité : non conforme” (“Accessibility: non-compliant”), whatever its rate. The “partiellement conforme” (“partially compliant”) status is reserved for services that reach at least 50% and have no blocking issue."
+  ],
+  [
+   "h3",
+   "Simulation on three services"
+  ],
+  [
+   "p",
+   "To measure the effect of the rule, here are three fictitious services, built from situations that frequently come up in audits. The rates are calculated using the current method: criteria met divided by applicable criteria."
+  ],
+  [
+   "table",
+   {
+    "caption": "Same rate, different status: the effect of the blocking issue (simulation)",
+    "head": [
+     "Fictitious service",
+     "Compliance rate",
+     "Most serious defect",
+     "RGAA 4.1.2 status",
+     "RGAA 5 status (announced rule)"
+    ],
+    "rows": [
+     [
+      "A municipal portal",
+      "88%",
+      "The “Envoyer” (“Send”) button on the school canteen registration form cannot be reached with a keyboard",
+      "Partially compliant",
+      "Non-compliant"
+     ],
+     [
+      "Information website of a public body",
+      "71%",
+      "Many defects, but none blocks browsing or online procedures",
+      "Partially compliant",
+      "Partially compliant"
+     ],
+     [
+      "Customer area of a company subject to Article 47",
+      "62%",
+      "A news carousel on the home page scrolls continuously with no pause button",
+      "Partially compliant",
+      "Non-compliant"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "The second service, although it scores lower than the first, keeps its status; the other two lose it. RGAA 5 therefore rewards the number of criteria met less than the ability to complete every procedure from start to finish. This is good news for users, and a change of method for teams: a remediation plan that tackles the easiest criteria first in order to push up the rate becomes risky."
+  ],
+  [
+   "p",
+   "For a large company subject to Article 47, the reputational stakes are easy to see. The compliance status is displayed on the service itself, and it is what users, journalists and the regulator read first. A customer area that slips from “partially compliant” to “non-compliant” because of a single carousel sends a very different signal, even though the underlying work has not changed."
+  ],
+  [
+   "h3",
+   "What disappears: the average rate"
+  ],
+  [
+   "p",
+   "RGAA 5 also removes the average compliance rate, that is, the average of the rates obtained page by page. This second indicator, optional in the current statement template, generally gives a more flattering picture than the overall rate: in the overall rate, a criterion that fails on a single page of the sample is counted as failed, whereas in the average it only lowers the rate of that page. If your dashboards, your reports to the executive committee or your contractual targets are based on the average rate, plan to restate them around the overall rate and the number of blocking issues."
+  ],
+  [
+   "h3",
+   "Spotting potential blocking issues without waiting for the official method"
+  ],
+  [
+   "p",
+   "The classification method has not been published. Nothing prevents you, however, from looking now for defects that plainly prevent a procedure from being completed. Here is the grid we use in audits to flag them as a priority. It does not prejudge the official list; it is based on the announced definition."
+  ],
+  [
+   "ul",
+   [
+    "a button, link or field that is essential to the procedure cannot be reached or activated with a keyboard;",
+    "moving content, such as a carousel, a scrolling banner or an autoplaying video, can be neither stopped nor hidden;",
+    "a CAPTCHA or an authentication step offers no alternative that can be used by a blind person or by someone who cannot solve a cognitive test;",
+    "a modal window traps the focus or cannot be closed with a keyboard, which prevents the user from continuing;",
+    "a form error message is neither displayed next to the field nor announced by the screen reader, so the user does not understand why submission fails;",
+    "an essential document, such as a notice, a summons, an invoice or a form to fill in, exists only as an image or an untagged PDF;",
+    "essential information, such as an amount, a deadline or the status of an application, is conveyed only by colour or by an image without a text alternative."
+   ]
+  ],
+  [
+   "p",
+   "Test each of these points on the user journeys that matter, not only on isolated pages: account creation, login, payment, submitting an application, booking an appointment, downloading a certificate. [[svc:test-utilisateur|Testing with users with disabilities]] usefully complements the audit by confirming that a defect really is blocking in practice."
+  ],
+  [
+   "p",
+   "A concrete example illustrates the difference between a defect and a blocking issue. A decorative image without a text alternative on an information page is a non-conformity; it does not prevent anyone from finding their way. The same missing alternative on the image-only “Pay” button of a checkout flow means that a screen reader user hears nothing meaningful and cannot complete the purchase. Same criterion, very different consequence: this is precisely the distinction that RGAA 5 asks auditors to make."
+  ],
+  [
+   "h2",
+   "new-criteria",
+   "The 40 new criteria: what you can already test"
+  ],
+  [
+   "p",
+   "DINUM announces 40 new criteria designed to take account of WCAG 2.2 and the EN 301 549 V4.1.1 standard. Their list has not been published, but part of it can be inferred from the source texts. WCAG 2.2, published by the W3C on 5 October 2023, adds nine success criteria to WCAG 2.1, six of which are at level A or AA, the level required by the regulations. It also removes success criterion 4.1.1 Parsing, declared obsolete. The W3C page on [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|what’s new in WCAG 2.2]] lists them."
+  ],
+  [
+   "p",
+   "Since DINUM has announced the incorporation of WCAG 2.2, these six criteria should be covered, in one form or another, by RGAA 5; the official French wording has yet to be published. The table gives, for each one, a quick test that your teams can run today, without waiting for the French wording. Our article on [[article:wcag-22|the 9 new WCAG 2.2 success criteria]] describes, for each one, the typical failure, the fix and the full test procedure."
+  ],
+  [
+   "table",
+   {
+    "caption": "The six WCAG 2.2 level A and AA success criteria (official W3C titles), and a test to run now",
+    "head": [
+     "WCAG 2.2 criterion",
+     "Level",
+     "What it requires",
+     "Quick test"
+    ],
+    "rows": [
+     [
+      "2.4.11 Focus Not Obscured (Minimum)",
+      "AA",
+      "The element that receives focus is not entirely hidden by other content",
+      "Tab through the page with the cookie banner and the sticky header displayed"
+     ],
+     [
+      "2.5.7 Dragging Movements",
+      "AA",
+      "Any function that uses a dragging movement can also be performed with a single pointer without dragging, unless dragging is essential",
+      "Try to reorder a list or move a price slider using simple clicks"
+     ],
+     [
+      "2.5.8 Target Size (Minimum)",
+      "AA",
+      "Targets measure at least 24 × 24 CSS pixels, with exceptions (sufficient spacing, target within a sentence, etc.)",
+      "Measure close icons, pagination dots and the links in a dense footer"
+     ],
+     [
+      "3.2.6 Consistent Help",
+      "A",
+      "Help mechanisms repeated across several pages (contact details, contact form, online help) appear in the same relative order, unless the user changes it",
+      "Check the order of the Contact link or chat assistant relative to other content on five pages based on different templates"
+     ],
+     [
+      "3.3.7 Redundant Entry",
+      "A",
+      "Information already entered in the same process is offered again or filled in automatically, with exceptions (essential re-entry, security, information no longer valid)",
+      "In a checkout or application flow, look for an address or number that has to be entered twice"
+     ],
+     [
+      "3.3.8 Accessible Authentication (Minimum)",
+      "AA",
+      "Logging in does not require a cognitive function test (remembering, transcribing, solving a puzzle) without an alternative or assistance mechanism; object recognition remains allowed at this level",
+      "Check that copy and paste and password managers work, and that a CAPTCHA to transcribe or solve has an alternative"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "WCAG 2.2 only accounts for part of the 40 new criteria. The rest should, on our reading of the announcement, derive from the EN 301 549 V4.1.1 standard, which covers information and communication technology beyond the web, and from the new topics that the announcement explicitly mentions: chat, CAPTCHA, accessibility overlays and settings, authoring tools, video conferencing, telephony and biometric identification. The next section takes them one by one."
+  ],
+  [
+   "p",
+   "For the organisation of the work, bear two points in mind. First, a service that already meets WCAG 2.2 level AA will have less of a gap to close. Second, the rewording and reorganisation of all the criteria will mean updating your internal grids, your acceptance testing checklists and your training materials: the release note promised by DINUM, from RGAA 4 to RGAA 5, will be the first document to work from."
+  ],
+  [
+   "p",
+   "Groups that already test against WCAG 2.2 for other markets have a head start here. Their findings can be reused: a defect identified under 2.4.11 or 3.3.8 in a global design system is the same defect on the French site. What remains specific to France is the RGAA test method, the sampling of pages and the statement format, not the underlying accessibility requirement."
+  ],
+  [
+   "h2",
+   "new-topics",
+   "Chat, CAPTCHA, video conferencing, biometrics: the new topics to inventory"
+  ],
+  [
+   "p",
+   "The seven topics cited by DINUM have one thing in common: they are often provided by a third party, such as a chat software vendor, an anti-bot service, a video conferencing solution or a digital identity provider. Before any testing, you therefore need to know which of them are in production and which contract governs them: the inventory is the first step."
+  ],
+  [
+   "table",
+   {
+    "caption": "New RGAA 5 topics: where to find them and what to check first",
+    "head": [
+     "Topic",
+     "Where it is found",
+     "First checks",
+     "Who needs to act"
+    ],
+    "rows": [
+     [
+      "Chat",
+      "Online support, chatbot, secure messaging in a customer area",
+      "Opening and closing with a keyboard, new messages announced to the screen reader, no time limit on replies",
+      "The solution vendor, through the contract"
+     ],
+     [
+      "CAPTCHA",
+      "Contact forms, account creation, login",
+      "An alternative exists that relies neither on sight nor on a cognitive test",
+      "Technical team and the anti-bot service vendor"
+     ],
+     [
+      "Accessibility overlays and settings",
+      "Tools added to the website to change the display, display preferences in a logged-in area",
+      "The website remains usable without the overlay; the settings are themselves accessible",
+      "Digital department"
+     ],
+     [
+      "Authoring tools",
+      "CMS, online text editors, form or document creation tools",
+      "Contributors can produce accessible content; the tool itself can be used with a keyboard",
+      "CMS vendor, administrators"
+     ],
+     [
+      "Video conferencing",
+      "Online appointments, teleconsultations, webinars",
+      "Captions, access to the meeting chat, controls usable with a keyboard and a screen reader",
+      "Solution provider"
+     ],
+     [
+      "Telephony",
+      "Automatic call-back, interactive voice response, displayed contact number",
+      "A written alternative channel exists, information on accessible means of contact",
+      "Citizen or customer relations"
+     ],
+     [
+      "Biometric identification",
+      "Fingerprint login, facial recognition, identity verification",
+      "An alternative method exists for people who cannot use the biometrics offered",
+      "Security team and identity provider"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "For each third-party component, ask the vendor now for its conformity statement, the date of its last audit and its roadmap for WCAG 2.2. If the contract is up for renewal, include these requirements in the specifications: our article on [[article:clauses-marche-public|accessibility clauses in public contracts]] offers model clauses that specifically provide for the move to a new version of the framework."
+  ],
+  [
+   "p",
+   "In multinational groups, these components are often bought centrally, under a global contract, and then deployed on the French website without anyone in France having a say. The inventory is therefore also an opportunity to identify who holds each contract, at group or local level, and to make sure that accessibility requirements for the French market reach the person who actually negotiates with the vendor."
+  ],
+  [
+   "p",
+   "A word on overlays, the tools added to a website to offer display adjustments. The announcement states that they will be covered by new criteria. It does not say that they will make it possible to achieve conformity; conformity is still assessed on the service itself. Do not rely, therefore, on an add-on tool to fix defects in structure, forms or navigation."
+  ],
+  [
+   "h2",
+   "three-frameworks",
+   "Web, mobile, office documents: an RGAA in three frameworks"
+  ],
+  [
+   "p",
+   "RGAA 5 will consist of three frameworks, for websites, mobile applications and office documents. The criteria will be the same where they apply, but the technical tests will differ, and the test environment will be updated, with a new section for mobile and office documents. For the publishing organisation, this mainly means that the assessment will be able to cover a service as a whole: the website, the application that extends it and the documents it distributes."
+  ],
+  [
+   "h3",
+   "Mobile applications"
+  ],
+  [
+   "p",
+   "Mobile applications are already subject to the Article 47 obligation, but the absence of mobile-specific tests in RGAA 4.1.2 meant that the web method had to be adapted. With RGAA 5, mobile applications will have their own framework and technical tests; the announcement does not yet detail the systems and test environments chosen. If your organisation publishes an app, start by making an inventory of the versions in production, the main user journeys and the native or hybrid components. A [[svc:audit-raam|mobile app audit on real devices]], with VoiceOver and TalkBack, already gives a reliable picture of the defects today, whatever the final framework."
+  ],
+  [
+   "h3",
+   "Office documents"
+  ],
+  [
+   "p",
+   "Office documents, PDFs, Word documents or spreadsheets, are often the most neglected part of a service: notices, forms to print, council minutes, meeting reports. RGAA 5 will give them their own tests. Useful work can start immediately: list the documents that are actually consulted, delete those that are no longer used, convert into web pages those that can be converted and produce the others using a reliable method. Our guide to [[article:pdf-accessible|accessible PDFs from Word, InDesign and Acrobat]] describes this method step by step."
+  ],
+  [
+   "p",
+   "This move to three frameworks has a budgetary consequence. An audit that until now covered a sample of web pages may have to include app screens and documents. Anticipate this in your audit programme and in your estimates: our article on [[article:prix-audit|what drives the price of an accessibility audit]] explains how scope weighs on the quote."
+  ],
+  [
+   "h2",
+   "statement-and-plan",
+   "Accessibility statement, multi-year plan and Arcom checks under RGAA 5"
+  ],
+  [
+   "p",
+   "The RGAA does not contain technical criteria alone: its section on obligations sets the content of the accessibility statement and of the multi-year plan (schéma pluriannuel). RGAA 5 changes these documents on four points."
+  ],
+  [
+   "ol",
+   [
+    [
+     "A user-centred accessibility statement.",
+     "It will highlight the means of contact and spell out the blocking issues, pending their correction. Users will thus know, before starting a procedure, what is likely to stop them and whom to contact."
+    ],
+    [
+     "An online filing service for public services.",
+     "For central government, local authorities and the public hospital service, a form will collect the information for the statement; the online service will generate and host it. The organisation will no longer publish its statement itself: it will display the link provided when filing."
+    ],
+    [
+     "A multi-year plan in a predefined format.",
+     "The plan, which until now could be drafted in any format, will have to follow a defined format. Plans written in a very narrative style will have to be restructured; those that already follow a clear outline, with objectives, resources and timeline, will be easier to adapt."
+    ],
+    [
+     "Better-equipped supervision.",
+     "Arcom, the French audiovisual and digital communications regulator, empowered since 2023, will be able to check the statement, the compliance status, the multi-year plan and the action plan more effectively. In the event of a breach, it can issue a formal notice and then impose a fine."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Arcom’s decision of 24 June 2026, which gave formal notice to the Ministry of Public Action and Accounts regarding the impots.gouv.fr website, shows what a check already examines today. The [[https://www.arcom.fr/en/find-out-more/legal-area/decisions/decision-24-june-2026-giving-formal-notice-ministry-public-action-and-accounts|decision published by Arcom]] notes, among other things, an inaccessible tax notice in PDF format, a drop-down menu that cannot be used with a keyboard, a statement dated more than three years earlier, a compliance rate of 42.11% displayed alongside a full compliance status and an action plan covering 2024 instead of the current year. It allows nine months from its notification to make the content concerned accessible, and two months to bring the accessibility statements and the action plan into line."
+  ],
+  [
+   "p",
+   "These failings do not need RGAA 5 to be identified. But the new version will make them more visible: a blocking issue will have to appear in the statement, and, according to DINUM, the online filing service will make Arcom’s checks easier. To prepare for the predefined format, our [[article:schema-pluriannuel|annotated multi-year plan template]] already follows a structure based on objectives, resources and indicators, which is easy to transpose. French obligations and penalties are detailed in our article on [[article:france|digital accessibility in France]]."
+  ],
+  [
+   "p",
+   "The lesson of this decision applies to private companies as much as to ministries. Several of the findings concern documents rather than the website itself: a statement that is out of date, a compliance status that does not match the rate, an action plan for the wrong year. They are among the cheapest failings to correct, and among the easiest for a regulator to spot. Checking them should be part of every annual review, whatever the version of the RGAA."
+  ],
+  [
+   "h2",
+   "by-situation",
+   "Audit under way, audit planned, redesign: what to do in your situation"
+  ],
+  [
+   "p",
+   "The most frequent question since the announcement is simple: should you wait for RGAA 5? The official answer is no, and it makes sense: a service that has not been audited must display “non conforme” (“non-compliant”), and fixes made today remain valid, since the RGAA 5 criteria will supplement those of RGAA 4.1.2 without contradicting them. The right decision nevertheless depends on your situation. The table below summarises our recommendations."
+  ],
+  [
+   "table",
+   {
+    "caption": "Deciding without waiting: recommendations by situation",
+    "head": [
+     "Your situation",
+     "Recommendation",
+     "What to add now"
+    ],
+    "rows": [
+     [
+      "No valid audit, service online",
+      "Audit against RGAA 4.1.2 without waiting",
+      "Flag in the report the blocking defects and the gaps against the six WCAG 2.2 level A and AA criteria"
+     ],
+     [
+      "Audit planned for the first half of 2027",
+      "Keep the audit against RGAA 4.1.2",
+      "Include in the order an option for a gap analysis once RGAA 5 is published"
+     ],
+     [
+      "Statement more than two years old",
+      "Schedule the new audit before the three-year limit",
+      "Calculate the earlier deadline between three years and the 18-month limit"
+     ],
+     [
+      "Redesign at the design stage",
+      "Design now to WCAG 2.2 level AA",
+      "Require in the contract an upgrade to RGAA 5 if delivery takes place after its publication"
+     ],
+     [
+      "Redesign delivered in 2027",
+      "Acceptance testing against the version in force at delivery",
+      "Organise [[svc:recette|accessibility acceptance testing]] on the main user journeys, including identification of blocking issues"
+     ],
+     [
+      "Mobile app or large volume of documents",
+      "Inventory and targeted audit now",
+      "Rank apps and documents by traffic and by how essential they are"
+     ],
+     [
+      "Arcom check or formal notice",
+      "Fix against RGAA 4.1.2, which is the reference for the check",
+      "Document each fix and plan a follow-up audit"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "If you are in the middle of an audit against RGAA 4.1.2, do not switch frameworks midway. Instead, ask the auditor to flag explicitly, in the report, the defects that prevent a procedure from being completed and the gaps against the WCAG 2.2 criteria. The report will then serve both for the current statement and to prepare the next one. This is how we carry out every [[svc:audit-rgaa|RGAA audit]] today: the official grid in force, supplemented by these two annotations. The full course of an audit is described in our article on [[article:audit-rgaa|the RGAA audit week by week]]."
+  ],
+  [
+   "p",
+   "The same reasoning applies to the contractual side. If you are signing a framework agreement for audits or development work in 2026 or 2027, write the reference as “the version of the RGAA in force at the date of the service” rather than “RGAA 4.1.2”. That wording avoids renegotiating the contract when RGAA 5 becomes mandatory, and it makes clear to the supplier that the upgrade is part of the deal."
+  ],
+  [
+   "h2",
+   "90-day-plan",
+   "Preparing for RGAA 5 in 90 days, without starting from scratch"
+  ],
+  [
+   "p",
+   "Preparing for RGAA 5 does not mean waiting for the list of criteria and then redoing everything. Most of the useful work can be done now, because it relies on elements that are already known: WCAG 2.2, the logic of the blocking issue, the scope extended to mobile and documents, and the new topics announced. Here is a three-month plan, designed for an organisation that already has an audit against RGAA 4.1.2."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Weeks 1 and 2: take inventory.",
+     "List your online services, apps and families of documents, with, for each one, the date of the statement, the deadline calculated using the 18-month and 3-year rule, and the third-party components: chat, CAPTCHA, video conferencing, identity provider, appointment booking tool."
+    ],
+    [
+     "Weeks 3 and 4: map the essential user journeys.",
+     "For each service, select three to five procedures that a user must be able to complete unaided: registering, logging in, paying, submitting an application, downloading a certificate. These are the journeys that will be examined from the blocking-issue perspective."
+    ],
+    [
+     "Weeks 5 and 6: look for blocking issues.",
+     "Go through each procedure using the keyboard alone, then with a screen reader, and note everything that stops you. Go back to the latest audit report and identify the non-conformities which, located on these journeys, prevent users from reaching the end."
+    ],
+    [
+     "Weeks 7 and 8: test the six WCAG 2.2 criteria.",
+     "Apply the quick tests from the table above to the main templates. Most fixes concern shared components, such as the sticky header, the cookie banner or icon buttons, and benefit the whole website."
+    ],
+    [
+     "Weeks 9 and 10: fix what blocks first.",
+     "Reorder the action plan: blocking issues come before the easy criteria that raise the rate. Then deal with the defects in shared components."
+    ],
+    [
+     "Week 11: question your suppliers.",
+     "Send the vendors of third-party components a written request: conformity statement, date of the last audit, coverage of WCAG 2.2, timeline. Include the answers in the multi-year plan."
+    ],
+    [
+     "Week 12: update your management documents.",
+     "Replace the average rate with the overall rate and the number of blocking issues in your dashboards, enter the budget for the RGAA 5 audit and plan training for your teams on the new version."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "This plan requires no assumptions about the final content of RGAA 5. Everything it produces remains valid whatever wording is chosen: an up-to-date inventory, priority user journeys identified, blocking issues fixed, suppliers questioned. To bring teams up to speed, our [[svc:formations|digital accessibility training courses]] will be updated for RGAA 5 as soon as it is published, and our [[svc:developpement|accessible development]] teams can take on the remediation of shared components."
+  ],
+  [
+   "note",
+   "Key takeaway",
+   "RGAA 5 changes the order of the work more than its amount. With the blocking-issue rule, a service must first allow every procedure to be completed; the compliance rate comes second."
+  ],
+  [
+   "h2",
+   "checklist-by-role",
+   "RGAA 5 digital accessibility checklist by role"
+  ],
+  [
+   "p",
+   "Each role has its share of the preparation. This list can be handed out as it stands to the people concerned, with a deadline for each line."
+  ],
+  [
+   "h3",
+   "Management and accessibility lead"
+  ],
+  [
+   "ul",
+   [
+    "calculate, for each statement, the earlier deadline between the three-year limit and the 18-month limit after RGAA 5;",
+    "include RGAA 5 audits in the 2027 and 2028 budgets, taking mobile apps and documents into account;",
+    "replace the average rate with the overall rate and the number of blocking issues in the indicators you monitor;",
+    "for public bodies, appoint the person who will file the statement on the future online service;",
+    "follow the publication of the RGAA 4 to RGAA 5 release note and of the decree."
+   ]
+  ],
+  [
+   "h3",
+   "Technical and design teams"
+  ],
+  [
+   "ul",
+   [
+    "check that the focus is never hidden by a sticky header or a banner;",
+    "provide a non-dragging alternative for every dragging movement, and targets of at least 24 × 24 CSS pixels;",
+    "present help and contact options in the same relative order on every page;",
+    "pre-fill information already entered within the same journey;",
+    "allow copy and paste and password managers at login, and provide an alternative to any CAPTCHA;",
+    "provide a pause button on all moving content."
+   ]
+  ],
+  [
+   "h3",
+   "Content, procurement and customer relations"
+  ],
+  [
+   "ul",
+   [
+    "list the office documents that are actually consulted and convert into web pages those that can be converted;",
+    "ask chat, video conferencing and identity vendors for their position on WCAG 2.2;",
+    "include, in every new contract, a clause requiring an upgrade to the version of the framework in force at delivery;",
+    "check that a written contact channel exists for every service that can be reached by telephone;",
+    "prepare the section of the statement that will list blocking issues and the workarounds offered to users."
+   ]
+  ],
+  [
+   "h2",
+   "outside-france",
+   "Beyond France: RGAA 5, the EAA and neighbouring countries"
+  ],
+  [
+   "p",
+   "The RGAA is a French framework. It applies to organisations subject to Article 47 of the 2005 Act: public bodies, private bodies entrusted with a public service mission and companies above the turnover threshold set by decree. Businesses covered by the European Accessibility Act since 28 June 2025 fall under a different framework, which relies on the EN 301 549 standard; RGAA 5, aligned with WCAG 2.2 and version 4.1.1 of that standard, will nevertheless give them a useful test grid. Our article on [[article:eaa|the European Accessibility Act]] reviews that framework."
+  ],
+  [
+   "p",
+   "In Belgium, the reference is the EN 301 549 standard; in Luxembourg, it is RAWeb and RAAM, built on the methodological model of the RGAA; in Switzerland, it is the eCH-0059 standard for the federal administration. A group operating in several countries therefore has every interest in basing its approach on WCAG 2.2 level AA and the EN 301 549 standard, and then producing the statements specific to each country. The pages on [[country:france|digital accessibility in France]] and the other countries set out each one’s obligations, and our [[svc:audit-conformite|EN 301 549 conformity audit]] covers organisations subject to several frameworks."
+  ],
+  [
+   "p",
+   "For an international company with a French subsidiary, the practical question is often who owns the French statement. The group’s accessibility programme may be run from another country, but the statement, the compliance status and the multi-year plan relate to the French service and follow the RGAA. Make sure that a named person is responsible for these documents, for the deadlines calculated above and for following the RGAA 5 decree."
+  ],
+  [
+   "p",
+   "For local authorities, public bodies and government departments, the page on [[sector:public|digital accessibility in the public sector]] brings together the obligations and priorities specific to these organisations, which will be the first concerned by the online statement filing service and by Arcom’s stronger supervision."
+  ]
+ ],
+ "faq": [
+  [
+   "When will RGAA 5 be released?",
+   "According to DINUM’s announcement published on 3 November 2026, RGAA 5 is due for release in December 2026 and will be made official by decree during 2027. Until that decree, RGAA 4.1.2 remains the reference for audits, accessibility statements and checks. The regulatory text will specify the date of entry into application and how the transition will be organised."
+  ],
+  [
+   "Should we wait for RGAA 5 before having our website audited?",
+   "No. DINUM asks that work based on RGAA 4.1.2 should under no circumstances be suspended or postponed. A service without a valid audit must display “non conforme” (“non-compliant”), and fixes made today remain useful, because the RGAA 5 criteria will supplement those of RGAA 4.1.2 without contradicting them. Simply ask for the report to flag blocking defects and gaps against WCAG 2.2."
+  ],
+  [
+   "How many criteria does RGAA 5 contain?",
+   "The total number has not been published to date. DINUM announces 40 new criteria to take account of WCAG 2.2 and the EN 301 549 V4.1.1 standard, as well as an update, simplification and reorganisation of all existing criteria and tests. A release note from RGAA 4 to RGAA 5 is to be made available to map one version onto the other."
+  ],
+  [
+   "What is a blocking issue in RGAA 5?",
+   "It is a non-conformity that prevents a user from accessing essential information or completing a process, for example a form submit button that cannot be reached with a keyboard, or an animation that cannot be stopped. A service with such an issue displays “non conforme” (“non-compliant”), whatever its compliance rate. The detailed classification method has not yet been published."
+  ],
+  [
+   "Will our accessibility statement remain valid after RGAA 5?",
+   "According to DINUM’s announcement of March 2026, statements drawn up before RGAA 5 will remain valid for 18 months, subject to a limit of three years from their date of publication. Use whichever of the two deadlines comes first. A redesign or a substantial change requires a new assessment in any case, whatever the date of the statement."
+  ],
+  [
+   "Does RGAA 5 apply to mobile apps and PDFs?",
+   "Yes. RGAA 5 consists of three frameworks, for the web, mobile applications and office documents, with the same criteria where they apply and technical tests specific to each medium. Apps and documents were already covered by the obligation, but RGAA 4.1.2 did not contain tests written specifically for them."
+  ],
+  [
+   "What happens to the “partiellement conforme” (“partially compliant”) status?",
+   "It will be reserved for services that reach a compliance rate of at least 50% and have no blocking issue. A service at 90% whose essential form cannot be submitted with a keyboard will therefore display “non conforme” (“non-compliant”). The average rate, calculated page by page, also disappears from the results."
+  ]
+ ],
+ "cta_svc": "audit-rgaa",
+ "cta_title": "Preparing for the move to RGAA 5?",
+ "cta_text": "We audit your services against RGAA 4.1.2 while already flagging blocking issues and gaps against WCAG 2.2, so that your next RGAA 5 audit holds no surprises.",
+ "related": [
+  "normes",
+  "wcag-22",
+  "declaration"
+ ]
+}

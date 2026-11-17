@@ -1,0 +1,711 @@
+{
+ "slug": "rgaa-5-frans-referentiekader",
+ "h1": "RGAA 5: wat vaststaat, wat verandert voor uw audits en een voorbereidingsplan in 90 dagen",
+ "crumb": "RGAA 5",
+ "meta_title": "RGAA 5 (Frankrijk): wat verandert, tijdpad en voorbereidingsplan",
+ "meta_desc": "RGAA 5, het nieuwe Franse referentiekader voor digitale toegankelijkheid: wat officieel is, het blokkerende punt, uw verklaringen en een plan in 90 dagen.",
+ "card_desc": "Wat de DINUM echt heeft aangekondigd, het effect van het blokkerende punt op uw conformiteitsvermelding en een plan om u voor te bereiden.",
+ "cat": "analyse",
+ "where": "Frankrijk",
+ "cover": "RGAA5",
+ "cover_note": [
+  "Publicatie aangekondigd voor december 2026",
+  "Décret verwacht in de loop van 2027"
+ ],
+ "date": "2026-11-17",
+ "cluster": "normes",
+ "lead": "Volgens de DINUM verschijnt de RGAA 5, het Franse referentiekader voor digitale toegankelijkheid, in december 2026 en wordt hij in de loop van 2027 bij décret officieel vastgelegd. De meeste pagina’s die erover berichten, halen de officiële aankondiging, conferentieverslagen en veronderstellingen door elkaar. Dit artikel maakt de schifting: wat vaststaat, wat nog gepubliceerd moet worden, wat de nieuwe regel van het blokkerende punt concreet verandert aan uw conformiteitsvermelding, hoe lang uw huidige toegankelijkheidsverklaringen geldig blijven, en hoe u zich in 90 dagen op de RGAA 5 voorbereidt zonder het werk dat u met de RGAA 4.1.2 hebt gedaan weg te gooien. Werkt u vanuit België voor Franse klanten of voor een groep met vestigingen in Frankrijk, dan leest u verderop ook wat dat voor u betekent.",
+ "body": [
+  [
+   "h2",
+   "wat-officieel-is",
+   "RGAA 5: wat officieel is en wat nog niet"
+  ],
+  [
+   "p",
+   "Het Référentiel général d’amélioration de l’accessibilité (RGAA) is de methode waarmee in Frankrijk wordt nagegaan of een digitale dienst voldoet aan de toegankelijkheidsverplichting van artikel 47 van de wet van 11 februari 2005. Op de datum van dit artikel is nog altijd de RGAA 4.1.2 van kracht: 106 criteria, verdeeld over 13 thema’s en gebaseerd op de WCAG 2.1. Zolang de nieuwe versie niet gepubliceerd en daarna verplicht gemaakt is, gebeuren audits, toegankelijkheidsverklaringen en controles op die basis."
+  ],
+  [
+   "p",
+   "Twee officiële publicaties van de DINUM, de Franse interministeriële directie voor digitale zaken, op haar website DesignGouv vormen vandaag de basis van wat we weten. De eerste, van 2 maart 2026, stelde [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|de doelstellingen van de nieuwe versie van de RGAA (Franstalig)]] voor: integratie van de WCAG 2.2, criteria en tests voor mobiele applicaties en kantoordocumenten, herformulering en vereenvoudiging van de criteria, aanwijzing van Arcom als toezichthouder, en een online dienst (téléservice) om verklaringen in te dienen en te publiceren. De tweede, van 3 november 2026, beschrijft in detail [[https://design.numerique.gouv.fr/articles/2026-11-03-rgaa5/|wat er verandert met de RGAA 5 (Franstalig)]]: het tijdpad, het blokkerende punt, een nieuwe regel voor de vermelding “partiellement conforme” (gedeeltelijk conform), een genormaliseerd meerjarenplan en 40 nieuwe criteria."
+  ],
+  [
+   "p",
+   "Al de rest is voorlopig interpretatie. Het totale aantal criteria, de precieze lijst van de 40 nieuwe criteria, de methode om een non-conformiteit als blokkerend te kwalificeren, de datum van inwerkingtreding en de vorm van het décret zijn niet gepubliceerd. De tabel hieronder scheidt wat vaststaat van wat nog open ligt. Dat is het eerste wat u moet nagaan voordat u een overheidsopdracht, een budget of een auditplanning aanpast."
+  ],
+  [
+   "table",
+   {
+    "caption": "RGAA 5: status van elk punt op 17 november 2026",
+    "head": [
+     "Onderwerp",
+     "Wat officieel is aangekondigd",
+     "Wat nog gepubliceerd moet worden"
+    ],
+    "rows": [
+     [
+      "Tijdpad",
+      "Publicatie gepland voor december 2026, officiële vastlegging bij décret in de loop van 2027",
+      "Precieze datum, datum van inwerkingtreding, eventuele overgangsperiode"
+     ],
+     [
+      "Toepassingsgebied",
+      "Drie referentiekaders: web, mobiele applicaties en kantoordocumenten, met dezelfde criteria waar ze van toepassing zijn en verschillende tests",
+      "Gedetailleerde inhoud van de tests voor mobiel en kantoordocumenten, testomgevingen"
+     ],
+     [
+      "Criteria",
+      "40 nieuwe criteria om rekening te houden met de WCAG 2.2 en de norm EN 301 549 V4.1.1; alle criteria en tests geactualiseerd, vereenvoudigd en herschikt",
+      "Lijst van de criteria, totaal aantal, versienota van RGAA 4 naar RGAA 5"
+     ],
+     [
+      "Blokkerend punt",
+      "Een blokkerende non-conformiteit leidt tot de vermelding “Accessibilité : non conforme” (niet conform), ongeacht de conformiteitsgraad",
+      "Methode om een non-conformiteit als blokkerend te kwalificeren"
+     ],
+     [
+      "Gedeeltelijk conform",
+      "Voorbehouden aan diensten met een conformiteitsgraad van minstens 50 % en zonder blokkerend punt",
+      "—"
+     ],
+     [
+      "Gemiddelde conformiteitsgraad",
+      "Geschrapt",
+      "—"
+     ],
+     [
+      "Toegankelijkheidsverklaring",
+      "Zet de contactmogelijkheden voorop en vermeldt uitdrukkelijk de blokkerende punten; voor openbare diensten genereert en host een online dienst de verklaring",
+      "Opening van de online dienst, model van het formulier"
+     ],
+     [
+      "Meerjarenplan",
+      "Vooraf vastgelegd formaat in plaats van een vrij formaat",
+      "Model van het formaat"
+     ],
+     [
+      "Bestaande verklaringen",
+      "18 maanden geldig, binnen de grens van 3 jaar vanaf hun publicatiedatum (aankondiging van 2 maart 2026)",
+      "Precies vertrekpunt van de 18 maanden in de reglementaire tekst"
+     ]
+    ]
+   }
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "Op 17 november 2026 blijft de RGAA 4.1.2 het referentiekader. De DINUM vraagt uitdrukkelijk dat werkzaamheden op basis van de RGAA 4.1.2 in geen geval worden opgeschort of uitgesteld, en preciseert dat de criteria van de RGAA 5 die van de RGAA 4.1.2 zullen verduidelijken of aanvullen, zonder ze te weerleggen."
+  ],
+  [
+   "p",
+   "Wilt u de RGAA situeren ten opzichte van de andere Europese referentiekaders, de WCAG, de norm EN 301 549, de Luxemburgse RAWeb of de Zwitserse eCH-0059, lees dan onze vergelijking van de [[article:normes|normen voor digitale toegankelijkheid en hoe ze op elkaar aansluiten]]. Voor het algemene kader, de verplichtingen, de betrokken organisaties en de eerste stappen blijft onze [[article:guide|gids over digitale toegankelijkheid]] het referentieartikel."
+  ],
+  [
+   "h2",
+   "tijdpad-rgaa-5",
+   "Tijdpad van de RGAA 5 en geldigheidsduur van uw verklaringen"
+  ],
+  [
+   "p",
+   "Het officiële tijdpad bestaat uit twee data: een publicatie van het referentiekader gepland voor december 2026, en daarna een officiële vastlegging bij décret in de loop van 2027. Tussen die twee momenten is de RGAA 5 beschikbaar en leesbaar, maar het is de reglementaire tekst die zal bepalen vanaf wanneer hij het verplichte referentiekader wordt en hoe de overgang verloopt. Haal die twee momenten niet door elkaar: de publicatie laat u toe zich voor te bereiden, het décret legt de verplichtingen vast."
+  ],
+  [
+   "p",
+   "Voor reeds gepubliceerde toegankelijkheidsverklaringen gaf de DINUM al in maart 2026 een eenvoudige regel: ze blijven 18 maanden geldig, binnen de grens van 3 jaar vanaf hun publicatiedatum. Anders gezegd: een verklaring wint nooit levensduur door de RGAA 5, want de grens van drie jaar, die nu al geldt, blijft spelen. Die logica is niet nieuw. De [[https://accessibilite.numerique.gouv.fr/obligations/declaration-accessibilite/|pagina van de RGAA 4.1.2 over de toegankelijkheidsverklaring (Franstalig)]] voorziet al in een bijwerking 3 jaar na de publicatiedatum van de verklaring en, voor organisaties die de technische methode toepassen, 18 maanden na de publicatiedatum van een nieuwe versie van het referentiekader. Het precieze vertrekpunt van de 18 maanden voor de RGAA 5, de publicatie van het referentiekader in december 2026 of het décret van 2027, moet nog worden bevestigd. Ga in afwachting uit van de publicatiedatum van de RGAA 5: dat is de voorzichtigste hypothese, omdat ze de vroegste is."
+  ],
+  [
+   "p",
+   "De volgende tabel past die regel toe op vier typeverklaringen, in de hypothese dat de RGAA 5 op 15 december 2026 wordt gepubliceerd. Het gaat om simulaties, die u opnieuw moet berekenen zodra de werkelijke publicatiedatum bekend is."
+  ],
+  [
+   "table",
+   {
+    "caption": "Simulatie: tot wanneer blijft een verklaring volgens de RGAA 4.1.2 geldig? (hypothese: RGAA 5 gepubliceerd op 15 december 2026)",
+    "head": [
+     "Datum van de verklaring",
+     "Grens van 3 jaar",
+     "Grens van 18 maanden",
+     "Geldende vervaldatum (de vroegste)"
+    ],
+    "rows": [
+     [
+      "1 maart 2024",
+      "1 maart 2027",
+      "15 juni 2028",
+      "1 maart 2027: nieuwe audit nu al opstarten"
+     ],
+     [
+      "15 oktober 2024",
+      "15 oktober 2027",
+      "15 juni 2028",
+      "15 oktober 2027"
+     ],
+     [
+      "10 september 2025",
+      "10 september 2028",
+      "15 juni 2028",
+      "15 juni 2028"
+     ],
+     [
+      "5 november 2026",
+      "5 november 2029",
+      "15 juni 2028",
+      "15 juni 2028"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Het praktische gevolg is tegenintuïtief. Een gloednieuwe verklaring, opgesteld in november 2026 op basis van de RGAA 4.1.2, geeft u geen drie jaar rust: als de aangekondigde regel wordt bevestigd, vervalt ze ongeveer 18 maanden na het verschijnen van de RGAA 5. Dat is geen reden om een audit uit te stellen, want een dienst zonder audit moet vandaag al “non conforme” vermelden. Het is wel een reden om nu al een audit volgens de RGAA 5 te budgetteren, uiterlijk in het boekjaar 2028."
+  ],
+  [
+   "p",
+   "Een ingrijpende wijziging van de dienst, zoals een redesign, een overstap naar een ander CMS of een nieuwe beveiligde klantenzone, vereist hoe dan ook een nieuwe beoordeling, ongeacht de datum van de verklaring. Ons artikel over [[article:declaration|de toegankelijkheidsverklaring en de fouten die haar ongeldig maken]] beschrijft die gevallen waarin een bijwerking nodig is."
+  ],
+  [
+   "h2",
+   "blokkerend-punt",
+   "Het blokkerende punt: de regel van de RGAA 5 die de conformiteitsgraad anders doet lezen"
+  ],
+  [
+   "p",
+   "Met de RGAA 4.1.2 hangt de conformiteitsvermelding uitsluitend af van de conformiteitsgraad: 100 % geeft “totalement conforme” (volledig conform), minstens 50 % geeft “partiellement conforme” (gedeeltelijk conform), minder dan 50 % of het ontbreken van een geldige audit geeft “non conforme” (niet conform). Een website kan dus 85 % halen en “gedeeltelijk conform” vermelden, terwijl de knop waarmee een online aanvraag wordt bevestigd onbruikbaar is met het toetsenbord. Precies die situatie wil de RGAA 5 doen verdwijnen."
+  ],
+  [
+   "p",
+   "De aankondiging van 3 november 2026 definieert een blokkerende non-conformiteit als een gebrek dat een gebruiker belet toegang te krijgen tot essentiële informatie of een proces tot het einde te doorlopen. Ze geeft twee voorbeelden: een element dat beweegt zonder dat het kan worden stilgezet, en een verzendknop van een formulier die niet met het toetsenbord bereikbaar is. Een dienst met een blokkerende non-conformiteit vermeldt systematisch “Accessibilité : non conforme”, ongeacht zijn conformiteitsgraad. De vermelding “gedeeltelijk conform” is voorbehouden aan diensten die minstens 50 % halen en geen enkel blokkerend punt vertonen."
+  ],
+  [
+   "h3",
+   "Simulatie op drie diensten"
+  ],
+  [
+   "p",
+   "Om het effect van de regel te meten, nemen we drie fictieve diensten, opgebouwd uit situaties die we in audits vaak tegenkomen. De conformiteitsgraden zijn berekend volgens de huidige methode: het aantal nageleefde criteria gedeeld door het aantal toepasselijke criteria."
+  ],
+  [
+   "table",
+   {
+    "caption": "Zelfde conformiteitsgraad, andere vermelding: effect van het blokkerende punt (simulatie)",
+    "head": [
+     "Fictieve dienst",
+     "Conformiteitsgraad",
+     "Ernstigste gebrek",
+     "Vermelding RGAA 4.1.2",
+     "Vermelding RGAA 5 (aangekondigde regel)"
+    ],
+    "rows": [
+     [
+      "Portaal van een Franse gemeente",
+      "88 %",
+      "De knop “Verzenden” van het inschrijvingsformulier voor de schoolmaaltijden is niet bereikbaar met het toetsenbord",
+      "Gedeeltelijk conform",
+      "Niet conform"
+     ],
+     [
+      "Informatiewebsite van een openbare instelling",
+      "71 %",
+      "Talrijke gebreken, maar geen enkel blokkeert de raadpleging of de procedures",
+      "Gedeeltelijk conform",
+      "Gedeeltelijk conform"
+     ],
+     [
+      "Klantenzone van een onderneming die onder artikel 47 valt",
+      "62 %",
+      "Een nieuwscarrousel op de startpagina schuift voortdurend door zonder pauzeknop",
+      "Gedeeltelijk conform",
+      "Niet conform"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "De tweede dienst, die nochtans lager scoort dan de eerste, behoudt zijn vermelding; de twee andere verliezen ze. De RGAA 5 beloont dus minder het aantal nageleefde criteria en meer het vermogen om elke procedure tot het einde te doorlopen. Dat is goed nieuws voor de gebruikers, en een methodewissel voor de teams: een correctieplan dat eerst de makkelijkste criteria aanpakt om de conformiteitsgraad op te trekken, wordt riskant."
+  ],
+  [
+   "p",
+   "Neem het eerste voorbeeld. Een ouder die met een schermlezer of alleen met het toetsenbord werkt, vult het hele inschrijvingsformulier in, maar kan het niet verzenden. Voor die gebruiker is de dienst niet voor 88 % bruikbaar: hij is gewoon onbruikbaar. De nieuwe regel brengt de vermelding in overeenstemming met die ervaring."
+  ],
+  [
+   "h3",
+   "Wat verdwijnt: de gemiddelde conformiteitsgraad"
+  ],
+  [
+   "p",
+   "De RGAA 5 schrapt ook de gemiddelde conformiteitsgraad, dat wil zeggen het gemiddelde van de graden die pagina per pagina worden behaald. Die tweede indicator, facultatief in het huidige model van verklaring, geeft doorgaans een flatteuzer beeld dan de globale graad. In de globale graad telt een criterium dat op één enkele pagina van de steekproef niet wordt nageleefd als niet nageleefd, terwijl het in het gemiddelde alleen de graad van die ene pagina doet dalen. Steunen uw dashboards, uw rapportering aan het directiecomité of uw contractuele doelstellingen op de gemiddelde graad, herformuleer ze dan rond de globale graad en het aantal blokkerende punten."
+  ],
+  [
+   "h3",
+   "Kandidaat-blokkerende punten opsporen zonder op de officiële methode te wachten"
+  ],
+  [
+   "p",
+   "De kwalificatiemethode is niet gepubliceerd. Niets belet u echter om nu al te zoeken naar gebreken die overduidelijk verhinderen dat een procedure wordt afgerond. Hieronder staat het rooster dat wij in audits gebruiken om ze met voorrang te signaleren. Het loopt niet vooruit op de officiële lijst, maar steunt op de aangekondigde definitie."
+  ],
+  [
+   "ul",
+   [
+    "een knop, een link of een veld dat onmisbaar is voor de procedure, kan niet met het toetsenbord worden bereikt of geactiveerd;",
+    "bewegende inhoud, zoals een carrousel, een lopende banner of een video die automatisch start, kan niet worden stilgezet of verborgen;",
+    "een captcha of een authenticatiestap biedt geen alternatief dat bruikbaar is voor een blinde persoon of voor iemand die geen cognitieve proef kan oplossen;",
+    "een modaal venster houdt de focus gevangen of kan niet met het toetsenbord worden gesloten, waardoor de gebruiker niet verder kan;",
+    "een foutmelding in een formulier wordt niet bij het veld getoond en niet door de schermlezer voorgelezen, zodat de gebruiker niet begrijpt waarom het verzenden mislukt;",
+    "een onmisbaar document, zoals een bericht, een oproeping, een factuur of een in te vullen formulier, bestaat alleen als afbeelding of als niet-getagde pdf;",
+    "essentiële informatie, zoals een bedrag, een uiterste datum of de status van een aanvraag, wordt alleen via kleur of via een afbeelding zonder alternatief overgebracht."
+   ]
+  ],
+  [
+   "p",
+   "Test elk van die punten op de trajecten die ertoe doen, niet alleen op losse pagina’s: een account aanmaken, inloggen, betalen, een aanvraag indienen, een afspraak maken, een bewijsstuk downloaden. Een [[svc:test-utilisateur|test met gebruikers met een handicap]] vult de audit nuttig aan om te bevestigen dat een gebrek in het gebruik echt blokkerend is."
+  ],
+  [
+   "h2",
+   "nieuwe-criteria",
+   "De 40 nieuwe criteria: wat u nu al kunt testen"
+  ],
+  [
+   "p",
+   "De DINUM kondigt 40 nieuwe criteria aan om rekening te houden met de WCAG 2.2 en de norm EN 301 549 V4.1.1. De lijst is niet gepubliceerd, maar een deel ervan valt af te leiden uit de brondocumenten. De WCAG 2.2, die het W3C op 5 oktober 2023 publiceerde, voegen negen succescriteria toe aan de WCAG 2.1, waarvan zes van niveau A of AA, het niveau dat de regelgeving vereist. Ze schrappen ook criterium 4.1.1 Parsing, dat als verouderd werd verklaard. De pagina van het W3C [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|over wat er nieuw is in de WCAG 2.2 (Engelstalig)]] geeft de volledige lijst."
+  ],
+  [
+   "p",
+   "Aangezien de DINUM de integratie van de WCAG 2.2 aankondigt, zouden die zes criteria in een of andere vorm door de RGAA 5 moeten worden gedekt; de officiële Franse formulering moet nog worden gepubliceerd. De tabel geeft voor elk criterium een snelle test die uw teams vandaag al kunnen uitvoeren, zonder op die formulering te wachten. Ons artikel over [[article:wcag-22|de 9 nieuwe succescriteria van de WCAG 2.2]] beschrijft voor elk criterium de typische fout, de oplossing en het volledige testprotocol."
+  ],
+  [
+   "table",
+   {
+    "caption": "De zes WCAG 2.2-criteria van niveau A en AA (benamingen van de Nederlandse vertaling) en een test die u nu al kunt doen",
+    "head": [
+     "WCAG 2.2-criterium",
+     "Niveau",
+     "Wat het vereist",
+     "Snelle test"
+    ],
+    "rows": [
+     [
+      "2.4.11 Focus niet bedekt (minimum)",
+      "AA",
+      "Het element dat de focus krijgt, wordt niet volledig verborgen door andere inhoud",
+      "Doorloop de pagina met de Tab-toets terwijl de cookiebanner en de vaste header zichtbaar zijn"
+     ],
+     [
+      "2.5.7 Sleepbewegingen",
+      "AA",
+      "Elke functie die een sleepbeweging gebruikt, kan ook met een enkelvoudige aanwijzer worden uitgevoerd, zonder slepen, tenzij slepen essentieel is",
+      "Probeer een lijst te herschikken of een prijsschuifregelaar te verplaatsen met gewone klikken"
+     ],
+     [
+      "2.5.8 Grootte van het aanwijsgebied (minimum)",
+      "AA",
+      "Aanwijsgebieden meten minstens 24 × 24 CSS-pixels, behoudens uitzonderingen (voldoende tussenruimte, link in een tekst…)",
+      "Meet de sluitkruisjes, de bolletjes van een paginering en de links van een drukke footer"
+     ],
+     [
+      "3.2.6 Consistente hulp",
+      "A",
+      "Hulpmiddelen die op meerdere pagina’s terugkomen (contactgegevens, contactformulier, online hulp), staan in dezelfde relatieve volgorde, tenzij de gebruiker iets heeft gewijzigd",
+      "Controleer de plaats van de contactlink of de chat ten opzichte van de andere inhoud op vijf pagina’s met verschillende sjablonen"
+     ],
+     [
+      "3.3.7 Overbodige invoer",
+      "A",
+      "Informatie die al in hetzelfde proces is ingevoerd, wordt voorgesteld of automatisch ingevuld, behoudens uitzonderingen (essentiële invoer, beveiliging, informatie die niet meer geldig is)",
+      "Zoek in een bestel- of aanvraagproces naar een adres of een nummer dat u twee keer moet invoeren"
+     ],
+     [
+      "3.3.8 Toegankelijke authenticatie (minimum)",
+      "AA",
+      "Inloggen vereist geen cognitieve functietest (onthouden, overtikken, een puzzel oplossen) zonder alternatief of hulpmechanisme; objectherkenning blijft op dit niveau toegestaan",
+      "Controleer of kopiëren en plakken en de wachtwoordbeheerder werken, en of een captcha om over te tikken of op te lossen een alternatief heeft"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "De WCAG 2.2 verklaren maar een deel van de 40 nieuwe criteria. De rest zou, volgens onze lezing van de aankondiging, voortvloeien uit de norm EN 301 549 V4.1.1, die informatie- en communicatietechnologie verder dan het web bestrijkt, en uit de nieuwe onderwerpen die de aankondiging uitdrukkelijk noemt: chat, captcha, overlays en toegankelijkheidsinstellingen, bewerkingstools, videoconferentie, telefonie en biometrische identificatie. Het volgende hoofdstuk overloopt ze een voor een."
+  ],
+  [
+   "p",
+   "Voor de organisatie van het werk onthoudt u twee punten. Ten eerste heeft een dienst die al aan de WCAG 2.2 op niveau AA voldoet, een kleinere kloof te overbruggen. Ten tweede zal de herformulering en herschikking van alle criteria u verplichten uw interne roosters, uw checklists voor de oplevertest en uw opleidingsmateriaal bij te werken: de versienota van RGAA 4 naar RGAA 5 die de DINUM belooft, wordt het eerste document om door te nemen."
+  ],
+  [
+   "h2",
+   "nieuwe-onderwerpen",
+   "Chat, captcha, videoconferentie, biometrie: de nieuwe onderwerpen om te inventariseren"
+  ],
+  [
+   "p",
+   "De zeven onderwerpen die de DINUM noemt, hebben iets gemeen: ze worden vaak door een derde geleverd, zoals de leverancier van een chattool, een antirobotdienst, een videoconferentieoplossing of een aanbieder van digitale identiteit. Vóór elke test moet u dus weten welke ervan in productie zijn en welk contract ze regelt. De inventaris is de eerste stap."
+  ],
+  [
+   "table",
+   {
+    "caption": "Nieuwe onderwerpen van de RGAA 5: waar u ze vindt en wat u eerst controleert",
+    "head": [
+     "Onderwerp",
+     "Waar u het vindt",
+     "Eerste controles",
+     "Wie moet handelen"
+    ],
+    "rows": [
+     [
+      "Chat",
+      "Online hulp, chatbot, beveiligde berichtendienst van een klantenzone",
+      "Openen en sluiten met het toetsenbord, nieuwe berichten worden door de schermlezer aangekondigd, geen beperkte antwoordtijd",
+      "Leverancier van de oplossing, via het contract"
+     ],
+     [
+      "Captcha",
+      "Contactformulieren, account aanmaken, inloggen",
+      "Er bestaat een alternatief dat niet op het zicht en niet op een cognitieve proef steunt",
+      "Technisch team en leverancier van de antirobotdienst"
+     ],
+     [
+      "Overlays en toegankelijkheidsinstellingen",
+      "Tools die aan de website worden toegevoegd om de weergave aan te passen, weergavevoorkeuren in een beveiligde zone",
+      "De website blijft bruikbaar zonder de overlay; de instellingen zijn zelf toegankelijk",
+      "Digitale directie (IT)"
+     ],
+     [
+      "Bewerkingstools",
+      "CMS, online teksteditors, tools om formulieren of documenten te maken",
+      "Redacteurs kunnen toegankelijke inhoud maken; de tool is zelf bruikbaar met het toetsenbord",
+      "Leverancier van het CMS, beheerders"
+     ],
+     [
+      "Videoconferentie",
+      "Online afspraken, teleconsultatie, webinars",
+      "Ondertitels, toegang tot de chat van de vergadering, bediening via toetsenbord en schermlezer",
+      "Leverancier van de oplossing"
+     ],
+     [
+      "Telefonie",
+      "Automatisch terugbellen, spraakcomputer, getoond contactnummer",
+      "Er bestaat een alternatief schriftelijk kanaal, informatie over de toegankelijke contactmogelijkheden",
+      "Klanten- of burgerdienst"
+     ],
+     [
+      "Biometrische identificatie",
+      "Inloggen met vingerafdruk, gezichtsherkenning, identiteitsverificatie",
+      "Er bestaat een alternatieve methode voor wie de voorgestelde biometrie niet kan gebruiken",
+      "Beveiligingsteam en identiteitsprovider"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Vraag voor elk component van derden nu al aan de leverancier zijn conformiteitsverklaring, de datum van zijn laatste audit en zijn roadmap voor de WCAG 2.2. Wordt het contract binnenkort hernieuwd, neem die eisen dan op in het bestek: ons artikel over [[article:clauses-marche-public|toegankelijkheidsclausules in overheidsopdrachten]] bevat modelclausules die precies voorzien in de overstap naar een nieuwe versie van het referentiekader."
+  ],
+  [
+   "p",
+   "Een woord over overlays, de tools die aan een website worden toegevoegd om weergave-instellingen aan te bieden. De aankondiging vermeldt dat ze door nieuwe criteria zullen worden gedekt. Ze zegt niet dat ze volstaan om conformiteit te bereiken: de conformiteit wordt nog altijd beoordeeld op de dienst zelf. Reken dus niet op een toegevoegde tool om gebreken in de structuur, de formulieren of de navigatie te verhelpen."
+  ],
+  [
+   "h2",
+   "drie-referentiekaders",
+   "Web, mobiel, kantoordocumenten: een RGAA in drie referentiekaders"
+  ],
+  [
+   "p",
+   "De RGAA 5 zal bestaan uit drie referentiekaders: voor websites, voor mobiele applicaties en voor kantoordocumenten. De criteria zijn dezelfde wanneer ze van toepassing zijn, maar de technische tests verschillen, en de testomgeving wordt bijgewerkt, met een nieuwe sectie voor mobiel en kantoordocumenten. Voor de publicerende organisatie betekent dat vooral dat de beoordeling een dienst in zijn geheel kan bestrijken: de website, de app die er het verlengstuk van is en de documenten die hij verspreidt."
+  ],
+  [
+   "h3",
+   "Mobiele applicaties"
+  ],
+  [
+   "p",
+   "Mobiele applicaties vallen nu al onder de verplichting van artikel 47, maar omdat de RGAA 4.1.2 geen specifieke tests voor mobiel bevat, moest de webmethode worden aangepast. Met de RGAA 5 krijgen mobiele applicaties een eigen referentiekader en eigen technische tests; de aankondiging preciseert nog niet welke systemen en testomgevingen worden gekozen. Publiceert uw organisatie een app, begin dan met een inventaris van de versies in productie, de belangrijkste trajecten en de native of hybride componenten. Een [[svc:audit-raam|audit van een mobiele app op echte toestellen]], met VoiceOver en TalkBack, geeft vandaag al een betrouwbaar beeld van de gebreken, welk referentiekader er uiteindelijk ook komt."
+  ],
+  [
+   "h3",
+   "Kantoordocumenten"
+  ],
+  [
+   "p",
+   "Kantoordocumenten, zoals pdf’s, Word-documenten of rekenbladen, zijn vaak het meest verwaarloosde deel van een dienst: berichten, formulieren om af te drukken, gemeenteraadsbesluiten, verslagen. De RGAA 5 geeft ze eigen tests. Het nuttige werk kan meteen beginnen: de documenten oplijsten die echt worden geraadpleegd, verwijderen wat geen nut meer heeft, omzetten naar webpagina’s wat daarvoor in aanmerking komt, en de rest volgens een betrouwbare methode produceren. Onze gids over [[article:pdf-accessible|toegankelijke pdf’s vanuit Word, InDesign en Acrobat]] beschrijft die methode stap voor stap."
+  ],
+  [
+   "p",
+   "De overstap naar drie referentiekaders heeft een budgettair gevolg. Een audit die tot nu toe een steekproef van webpagina’s bestreek, zal mogelijk ook app-schermen en documenten moeten omvatten. Hou daar rekening mee in de auditplanning en in de ramingen: ons artikel over [[article:prix-audit|wat de prijs van een toegankelijkheidsaudit doet variëren]] legt uit hoe de omvang op de offerte weegt."
+  ],
+  [
+   "h2",
+   "verklaring-meerjarenplan",
+   "Toegankelijkheidsverklaring, meerjarenplan en toezicht door Arcom met de RGAA 5"
+  ],
+  [
+   "p",
+   "De RGAA bevat niet alleen technische criteria: het deel over de verplichtingen bepaalt de inhoud van de toegankelijkheidsverklaring en van het meerjarenplan (schéma pluriannuel). De RGAA 5 wijzigt die documenten op vier punten."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Een verklaring die de gebruiker centraal stelt.",
+     "Ze zal de contactmogelijkheden vooropzetten en de blokkerende punten uitdrukkelijk vermelden, in afwachting van hun correctie. De gebruiker weet zo, voordat hij aan een procedure begint, wat hem kan tegenhouden en tot wie hij zich kan wenden."
+    ],
+    [
+     "Een online dienst voor de openbare diensten.",
+     "Voor de Franse staat, de lokale besturen en de openbare ziekenhuissector zal een formulier de gegevens van de verklaring verzamelen; de online dienst genereert en host de verklaring vervolgens. De organisatie publiceert haar verklaring dan niet meer zelf: ze verwijst naar de link die ze bij het indienen krijgt."
+    ],
+    [
+     "Een meerjarenplan in een vooraf vastgelegd formaat.",
+     "Het meerjarenplan, tot nu toe in vrij formaat, zal een vastgelegd formaat moeten volgen. Plannen die zeer literair zijn opgesteld, zullen moeten worden geherstructureerd; plannen die al een duidelijke opbouw volgen, met doelstellingen, middelen en tijdpad, zullen makkelijker over te nemen zijn."
+    ],
+    [
+     "Een beter uitgerust toezicht.",
+     "Arcom, die sinds 2023 bevoegd is, zal de verklaring, de conformiteitsvermelding, het meerjarenplan en het actieplan beter kunnen controleren. Bij een tekortkoming kan ze een ingebrekestelling sturen en daarna een geldboete opleggen."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "De beslissing van Arcom van 24 juni 2026, waarmee het ministerie van Openbare Actie en Rekeningen in gebreke werd gesteld voor de website impots.gouv.fr, toont wat een controle vandaag al onderzoekt. De [[https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-24-juin-2026-mettant-en-demeure-le-ministere-de-laction-et-des-comptes-publics|door Arcom gepubliceerde beslissing (Franstalig)]] stelt onder meer vast: een ontoegankelijk aanslagbiljet in pdf, een uitklapmenu dat niet met het toetsenbord bruikbaar is, een verklaring die meer dan drie jaar oud is, een conformiteitsgraad van 42,11 % die samen met een vermelding van volledige conformiteit werd getoond, en een actieplan voor 2024 in plaats van het lopende jaar. Ze geeft negen maanden vanaf de kennisgeving om de betrokken inhoud toegankelijk te maken, en twee maanden om de toegankelijkheidsverklaringen en het actieplan in orde te brengen."
+  ],
+  [
+   "p",
+   "Voor die tekortkomingen is de RGAA 5 niet nodig om ze vast te stellen. De nieuwe versie zal ze wel zichtbaarder maken: een blokkerend punt moet in de verklaring verschijnen, en de online dienst voor het indienen van verklaringen zal, volgens de DINUM, de controles van Arcom vergemakkelijken. Om u op het vastgelegde formaat voor te bereiden, volgt ons [[article:schema-pluriannuel|becommentarieerde model van een meerjarenplan]] al een opbouw met doelstellingen, middelen en indicatoren die makkelijk om te zetten is. De Franse verplichtingen en sancties worden toegelicht in ons artikel over [[article:france|digitale toegankelijkheid in Frankrijk]]."
+  ],
+  [
+   "h2",
+   "volgens-uw-situatie",
+   "Lopende audit, geplande audit, redesign: wat u doet volgens uw situatie"
+  ],
+  [
+   "p",
+   "De vraag die sinds de aankondiging het vaakst terugkomt, is eenvoudig: moet u op de RGAA 5 wachten? Het officiële antwoord is nee, en dat is begrijpelijk. Een dienst zonder audit moet “non conforme” vermelden, en correcties die u vandaag uitvoert, blijven verworven, want de criteria van de RGAA 5 vullen die van de RGAA 4.1.2 aan zonder ze te weerleggen. De juiste beslissing hangt wel af van uw situatie. De tabel hieronder vat onze aanbevelingen samen."
+  ],
+  [
+   "table",
+   {
+    "caption": "Beslissen zonder te wachten: aanbevelingen volgens uw situatie",
+    "head": [
+     "Uw situatie",
+     "Aanbeveling",
+     "Wat u nu al toevoegt"
+    ],
+    "rows": [
+     [
+      "Geen geldige audit, dienst online",
+      "Zonder wachten auditen volgens de RGAA 4.1.2",
+      "In het rapport de blokkerende gebreken en de afwijkingen van de zes WCAG 2.2-criteria van niveau A en AA laten signaleren"
+     ],
+     [
+      "Audit gepland in het eerste halfjaar van 2027",
+      "De audit volgens de RGAA 4.1.2 behouden",
+      "In de bestelling een optie voorzien voor een gap-analyse zodra de RGAA 5 is gepubliceerd"
+     ],
+     [
+      "Verklaring ouder dan twee jaar",
+      "De nieuwe audit plannen vóór de grens van drie jaar",
+      "De vroegste vervaldatum berekenen tussen drie jaar en de grens van 18 maanden"
+     ],
+     [
+      "Redesign in de ontwerpfase",
+      "Nu al ontwerpen volgens de WCAG 2.2 op niveau AA",
+      "In het contract een upgrade naar de RGAA 5 eisen als de oplevering na de publicatie ervan valt"
+     ],
+     [
+      "Redesign opgeleverd in 2027",
+      "Oplevertest volgens de versie die bij de oplevering van kracht is",
+      "Een [[svc:recette|toegankelijkheidstest bij oplevering]] organiseren op de belangrijkste trajecten, met opsporing van blokkerende punten"
+     ],
+     [
+      "Mobiele app of grote hoeveelheid documenten",
+      "Nu al inventaris en gerichte audit",
+      "Apps en documenten rangschikken naar gebruik en naar hun onmisbaar karakter"
+     ],
+     [
+      "Controle of ingebrekestelling door Arcom",
+      "Corrigeren volgens de RGAA 4.1.2, die als referentie voor de controle dient",
+      "Elke correctie documenteren en een controle-audit voorzien"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Zit u midden in een audit volgens de RGAA 4.1.2, verander dan niet halverwege van referentiekader. Vraag de auditor liever om in het rapport uitdrukkelijk de gebreken te signaleren die verhinderen dat een procedure wordt afgerond, en de afwijkingen van de WCAG 2.2-criteria. Het rapport dient dan zowel voor de huidige verklaring als voor de voorbereiding van de volgende. Zo voeren wij vandaag elke [[svc:audit-rgaa|RGAA-audit]] uit: het officiële rooster dat van kracht is, aangevuld met die twee annotaties. Het volledige verloop van een audit staat in ons artikel over [[article:audit-rgaa|de RGAA-audit, week per week]]."
+  ],
+  [
+   "h2",
+   "plan-90-dagen",
+   "Voorbereiden op de RGAA 5 in 90 dagen, zonder alles over te doen"
+  ],
+  [
+   "p",
+   "Voorbereiden op de RGAA 5 betekent niet dat u op de lijst van criteria wacht om alles te herbeginnen. Het grootste deel van het nuttige werk kan nu al gebeuren, omdat het steunt op elementen die al bekend zijn: de WCAG 2.2, de logica van het blokkerende punt, het verruimde toepassingsgebied met mobiel en documenten, en de aangekondigde nieuwe onderwerpen. Hieronder staat een plan over drie maanden, bedoeld voor een organisatie die al een audit volgens de RGAA 4.1.2 heeft."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Week 1 en 2: de inventaris opmaken.",
+     "Lijst de online diensten, apps en documentfamilies op, met voor elk de datum van de verklaring, de vervaldatum berekend volgens de regel van 18 maanden en 3 jaar, en de componenten van derden: chat, captcha, videoconferentie, identiteitsprovider, tool om afspraken te maken."
+    ],
+    [
+     "Week 3 en 4: de essentiële trajecten in kaart brengen.",
+     "Kies voor elke dienst drie tot vijf procedures die een gebruiker zelfstandig moet kunnen doorlopen: zich inschrijven, inloggen, betalen, een aanvraag indienen, een bewijsstuk downloaden. Precies die trajecten zullen vanuit het oogpunt van het blokkerende punt worden onderzocht."
+    ],
+    [
+     "Week 5 en 6: de blokkerende punten opsporen.",
+     "Doorloop elke procedure alleen met het toetsenbord en daarna met een schermlezer, en noteer alles wat u tegenhoudt. Neem het laatste auditrapport erbij en markeer de non-conformiteiten die zich op die trajecten bevinden en verhinderen dat u tot het einde komt."
+    ],
+    [
+     "Week 7 en 8: de zes WCAG 2.2-criteria testen.",
+     "Pas de snelle tests uit de tabel hierboven toe op de belangrijkste sjablonen. De meeste correcties betreffen gedeelde componenten, zoals de vaste header, de cookiebanner en iconenknoppen, en komen de hele website ten goede."
+    ],
+    [
+     "Week 9 en 10: eerst corrigeren wat blokkeert.",
+     "Herschik het actieplan: de blokkerende punten gaan vóór de makkelijke criteria die de conformiteitsgraad optrekken. Pak daarna de gebreken in de gedeelde componenten aan."
+    ],
+    [
+     "Week 11: de leveranciers bevragen.",
+     "Stuur de leveranciers van componenten van derden een schriftelijke vraag: conformiteitsverklaring, datum van de laatste audit, aandacht voor de WCAG 2.2, tijdpad. Neem de antwoorden op in het meerjarenplan."
+    ],
+    [
+     "Week 12: de stuurdocumenten bijwerken.",
+     "Vervang in uw dashboards de gemiddelde graad door de globale graad en het aantal blokkerende punten, schrijf het budget voor de RGAA 5-audit in en plan de opleiding van de teams in de nieuwe versie."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Dit plan vraagt geen enkele hypothese over de uiteindelijke inhoud van de RGAA 5. Alles wat het oplevert, blijft geldig welke formulering er ook komt: een bijgewerkte inventaris, geïdentificeerde prioritaire trajecten, gecorrigeerde blokkeringen en bevraagde leveranciers. Om de teams bij te scholen, worden onze [[svc:formations|opleidingen digitale toegankelijkheid]] bij de publicatie van de RGAA 5 meteen geactualiseerd, en onze teams voor [[svc:developpement|toegankelijke ontwikkeling]] kunnen de correctie van de gedeelde componenten op zich nemen."
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "De RGAA 5 verandert minder aan de hoeveelheid werk dan aan de volgorde ervan. Met de regel van het blokkerende punt moet een dienst eerst toelaten dat elke procedure tot het einde wordt doorlopen; de conformiteitsgraad komt daarna."
+  ],
+  [
+   "h2",
+   "checklist-per-rol",
+   "RGAA 5-checklist per functie"
+  ],
+  [
+   "p",
+   "Elke functie heeft haar deel in de voorbereiding. Deze lijst kunt u zo aan de betrokken personen bezorgen, met een deadline per regel."
+  ],
+  [
+   "h3",
+   "Directie en toegankelijkheidsverantwoordelijke"
+  ],
+  [
+   "ul",
+   [
+    "voor elke verklaring de vroegste vervaldatum berekenen tussen de grens van drie jaar en die van 18 maanden na de RGAA 5;",
+    "de audits volgens de RGAA 5 in het budget van 2027 en 2028 opnemen, rekening houdend met mobiel en documenten;",
+    "in de opgevolgde indicatoren de gemiddelde graad vervangen door de globale graad en het aantal blokkerende punten;",
+    "voor openbare instanties de persoon aanwijzen die de verklaring via de toekomstige online dienst zal indienen;",
+    "de publicatie van de versienota van RGAA 4 naar RGAA 5 en van het décret opvolgen."
+   ]
+  ],
+  [
+   "h3",
+   "Technische en designteams"
+  ],
+  [
+   "ul",
+   [
+    "nagaan dat de focus nooit door een vaste header of een banner wordt bedekt;",
+    "voor elke sleepbeweging een alternatief zonder slepen bieden, en aanwijsgebieden van minstens 24 × 24 CSS-pixels voorzien;",
+    "hulp en contact op alle pagina’s in dezelfde relatieve volgorde tonen;",
+    "reeds ingevoerde informatie binnen hetzelfde traject vooraf invullen;",
+    "kopiëren en plakken en wachtwoordbeheerders bij het inloggen toelaten, en voor elke captcha een alternatief bieden;",
+    "op alle bewegende inhoud een pauzeknop voorzien."
+   ]
+  ],
+  [
+   "h3",
+   "Inhoud, aankoop en klanten- of burgerdienst"
+  ],
+  [
+   "ul",
+   [
+    "de kantoordocumenten oplijsten die echt worden geraadpleegd en omzetten naar webpagina’s wat daarvoor in aanmerking komt;",
+    "de leveranciers van chat, videoconferentie en identificatie naar hun standpunt over de WCAG 2.2 vragen;",
+    "in elke nieuwe opdracht een clausule opnemen voor een upgrade naar de versie van het referentiekader die bij de oplevering van kracht is;",
+    "nagaan dat er een schriftelijk contactkanaal bestaat voor elke dienst die telefonisch bereikbaar is;",
+    "de rubriek van de verklaring voorbereiden waarin de blokkerende punten en de alternatieve oplossingen voor de gebruikers worden opgesomd."
+   ]
+  ],
+  [
+   "h2",
+   "buiten-frankrijk",
+   "En buiten Frankrijk: RGAA 5, EAA en de buurlanden"
+  ],
+  [
+   "p",
+   "De RGAA is een Frans referentiekader. Het geldt voor organisaties die onder artikel 47 van de wet van 2005 vallen: overheidsinstanties, private organisaties die een opdracht van openbare dienst uitvoeren en ondernemingen boven de omzetdrempel die bij décret is vastgelegd. Ondernemingen die sinds 28 juni 2025 onder de European Accessibility Act vallen, volgen een ander kader, dat steunt op de norm EN 301 549; de RGAA 5, afgestemd op de WCAG 2.2 en op versie 4.1.1 van die norm, zal hen wel een bruikbaar testrooster bieden. Ons artikel over [[article:eaa|de European Accessibility Act]] zet dat kader op een rij."
+  ],
+  [
+   "p",
+   "In België is de norm EN 301 549 het referentiepunt; in Luxemburg zijn dat de RAWeb en de RAAM, opgebouwd volgens het methodologische model van de RGAA; in Zwitserland de norm eCH-0059 voor de federale administratie. Een groep die in meerdere landen actief is, heeft er dus belang bij zijn aanpak te baseren op de WCAG 2.2 op niveau AA en de norm EN 301 549, en vervolgens de verklaringen op te stellen die elk land eigen zijn. De pagina’s over [[country:france|digitale toegankelijkheid in Frankrijk]] en over de andere landen geven de verplichtingen per land, en onze [[svc:audit-conformite|conformiteitsaudit volgens de norm EN 301 549]] is bedoeld voor organisaties die aan meerdere referentiekaders onderworpen zijn."
+  ],
+  [
+   "p",
+   "Voor Franse lokale besturen, openbare instellingen en administraties brengt de pagina [[sector:public|digitale toegankelijkheid in de publieke sector]] de verplichtingen en prioriteiten samen die eigen zijn aan die organisaties. Zij zullen als eersten te maken krijgen met de online dienst voor verklaringen en met het versterkte toezicht van Arcom."
+  ],
+  [
+   "h2",
+   "belgische-organisaties",
+   "Voor Belgische organisaties met websites of klanten in Frankrijk"
+  ],
+  [
+   "p",
+   "Een Belgische lezer zoekt doorgaans naar de RGAA 5 om een van drie redenen: hij werkt als webbureau, ontwikkelaar of consultant voor een Franse klant, hij beheert de digitale diensten van een groep die ook een Franse vennootschap heeft, of hij is betrokken bij een Franse overheidsopdracht. In elk van die gevallen geldt de RGAA niet omdat de dienst in het Frans is opgesteld of omdat de doelgroep Franstalig is, maar omdat de organisatie die de dienst uitgeeft onder artikel 47 valt. Een Franstalige website van een Brusselse of Waalse overheidsinstantie valt onder het Belgische kader, niet onder de RGAA."
+  ],
+  [
+   "p",
+   "Voor ondernemingen is de drempel van artikel 47 een omzet van meer dan 250 miljoen euro, berekend per rechtspersoon en op basis van de omzet die in Frankrijk wordt gerealiseerd. Binnen een groep kijkt men naar de vennootschap die in de wettelijke vermeldingen (mentions légales) van de dienst wordt genoemd, niet naar de geconsolideerde omzet van de groep. Een Belgische groep met een Franse dochteronderneming moet dus per dienst nagaan welke vennootschap als uitgever optreedt. Ook onder die drempel kan de RGAA contractueel een rol spelen: een Franse publieke klant kan hem in zijn bestek opnemen, en dan bepaalt het contract welke versie bij de oplevering geldt."
+  ],
+  [
+   "p",
+   "Voor Belgische teams die beide kaders bedienen, is de RGAA 5 eerder een kans dan een extra last. Omdat hij de WCAG 2.2 en de norm EN 301 549 V4.1.1 integreert, sluit hij inhoudelijk dichter aan bij de Europese norm die ook de Belgische regelgeving als referentie gebruikt. Wat specifiek Frans blijft, zijn de vorm van de conformiteitsvermelding, de regel van het blokkerende punt, de toegankelijkheidsverklaring volgens het Franse model, het meerjarenplan en het toezicht door Arcom. Een praktische werkwijze is dus: ontwikkel en test op basis van de WCAG 2.2 op niveau AA, en voorzie in uw planning en offertes een afzonderlijke stap voor de Franse formaliteiten. Vermeld in uw contracten met Franse klanten ook uitdrukkelijk welke versie van de RGAA geldt bij oplevering, zodat een overgang tijdens het project geen discussie oplevert."
+  ]
+ ],
+ "faq": [
+  [
+   "Wanneer verschijnt de RGAA 5?",
+   "Volgens de aankondiging van de DINUM van 3 november 2026 is de publicatie van de RGAA 5 gepland voor december 2026, en volgt de officiële vastlegging bij décret in de loop van 2027. Tot dat décret blijft de RGAA 4.1.2 het referentiekader voor audits, toegankelijkheidsverklaringen en controles. De reglementaire tekst zal de datum van inwerkingtreding en de organisatie van de overgang vastleggen."
+  ],
+  [
+   "Moet u op de RGAA 5 wachten om uw website te laten auditen?",
+   "Nee. De DINUM vraagt dat werkzaamheden op basis van de RGAA 4.1.2 in geen geval worden opgeschort of uitgesteld. Een dienst zonder geldige audit moet “non conforme” vermelden, en correcties die u vandaag uitvoert, blijven nuttig, want de criteria van de RGAA 5 vullen die van de RGAA 4.1.2 aan zonder ze te weerleggen. Vraag gewoon dat het rapport de blokkerende gebreken en de afwijkingen van de WCAG 2.2 signaleert."
+  ],
+  [
+   "Hoeveel criteria telt de RGAA 5?",
+   "Het totale aantal is tot op heden niet gepubliceerd. De DINUM kondigt 40 nieuwe criteria aan om rekening te houden met de WCAG 2.2 en de norm EN 301 549 V4.1.1, en daarnaast een actualisering, vereenvoudiging en herschikking van alle bestaande criteria en tests. Er komt een versienota van RGAA 4 naar RGAA 5 om de overeenkomsten tussen beide versies te leggen."
+  ],
+  [
+   "Wat is een blokkerend punt in de RGAA 5?",
+   "Dat is een non-conformiteit die een gebruiker belet toegang te krijgen tot essentiële informatie of een proces tot het einde te doorlopen, bijvoorbeeld een verzendknop van een formulier die niet met het toetsenbord bereikbaar is, of een animatie die niet kan worden stilgezet. Een dienst met zo’n punt vermeldt “non conforme”, ongeacht zijn conformiteitsgraad. De gedetailleerde kwalificatiemethode is nog niet gepubliceerd."
+  ],
+  [
+   "Blijft mijn toegankelijkheidsverklaring geldig na de RGAA 5?",
+   "Volgens de aankondiging van de DINUM van maart 2026 blijven verklaringen die vóór de RGAA 5 zijn opgesteld 18 maanden geldig, binnen de grens van drie jaar vanaf hun publicatiedatum. Houd de vroegste van beide vervaldata aan. Een redesign of een ingrijpende wijziging vereist hoe dan ook een nieuwe beoordeling, ongeacht de datum van de verklaring."
+  ],
+  [
+   "Geldt de RGAA 5 ook voor mobiele apps en pdf’s?",
+   "Ja. De RGAA 5 bestaat uit drie referentiekaders, voor het web, voor mobiele applicaties en voor kantoordocumenten, met dezelfde criteria wanneer ze van toepassing zijn en eigen technische tests per drager. Apps en documenten vielen al onder de verplichting, maar de RGAA 4.1.2 bevatte geen uitgeschreven tests voor die dragers, zodat de webmethode moest worden aangepast."
+  ],
+  [
+   "Wat gebeurt er met de vermelding “gedeeltelijk conform”?",
+   "Ze wordt voorbehouden aan diensten met een conformiteitsgraad van minstens 50 % zonder enig blokkerend punt. Een dienst die 90 % haalt, maar waarvan een essentieel formulier niet met het toetsenbord kan worden verzonden, vermeldt dus “non conforme”. De gemiddelde conformiteitsgraad, die pagina per pagina wordt berekend, verdwijnt bovendien uit de resultaten."
+  ]
+ ],
+ "cta_svc": "audit-rgaa",
+ "cta_title": "Klaar voor de overstap naar de RGAA 5?",
+ "cta_text": "Wij auditen uw diensten volgens de RGAA 4.1.2 en signaleren nu al de blokkerende punten en de afwijkingen van de WCAG 2.2, zodat uw volgende audit volgens de RGAA 5 geen verrassingen brengt.",
+ "related": [
+  "normes",
+  "wcag-22",
+  "declaration"
+ ]
+}

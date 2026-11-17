@@ -1,0 +1,690 @@
+{
+ "slug": "rgaa-5",
+ "h1": "RGAA 5 : ce qui est acté, ce qui change pour vos audits et un plan de préparation en 90 jours",
+ "crumb": "RGAA 5",
+ "meta_title": "RGAA 5 : ce qui change, calendrier et plan de préparation",
+ "meta_desc": "RGAA 5 : le point officiel, la règle du point bloquant simulée sur trois services fictifs, la validité de vos déclarations et un plan de préparation en 90 jours.",
+ "card_desc": "Ce que la DINUM a réellement annoncé, l'effet du point bloquant sur votre mention de conformité et un plan d'action pour s'y préparer.",
+ "cat": "analyse",
+ "where": "France",
+ "cover": "RGAA5",
+ "cover_note": [
+  "Sortie annoncée pour décembre 2026",
+  "Décret attendu courant 2027"
+ ],
+ "date": "2026-11-17",
+ "cluster": "normes",
+ "lead": "Le RGAA 5 doit sortir, selon la DINUM, en décembre 2026, et être officialisé par décret courant 2027. La plupart des pages qui en parlent mélangent l'annonce officielle, des comptes rendus de conférence et des suppositions. Cet article fait le tri : ce qui est acté, ce qui reste à publier, ce que la nouvelle règle du point bloquant change concrètement pour votre mention de conformité, combien de temps vos déclarations actuelles resteront valables, et comment préparer le RGAA 5 en 90 jours sans jeter le travail fait avec le RGAA 4.1.2.",
+ "body": [
+  [
+   "h2",
+   "ce-qui-est-officiel",
+   "RGAA 5 : ce qui est officiel, ce qui ne l'est pas encore"
+  ],
+  [
+   "p",
+   "Le Référentiel général d'amélioration de l'accessibilité est la méthode qui permet de vérifier qu'un service numérique respecte l'obligation d'accessibilité prévue par l'article 47 de la loi du 11 février 2005. La version en vigueur à la date de cet article est toujours le RGAA 4.1.2 : 106 critères répartis en 13 thématiques, appuyés sur les WCAG 2.1. Tant que la nouvelle version n'est pas publiée puis rendue obligatoire, c'est sur cette base que se font les audits, les déclarations et les contrôles."
+  ],
+  [
+   "p",
+   "Deux publications officielles de la DINUM, sur son site DesignGouv, forment aujourd'hui le socle de ce que l'on sait. La première, du 2 mars 2026, a présenté [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|les objectifs de la nouvelle version du RGAA]] : intégration des WCAG 2.2, critères et tests pour les applications mobiles et les documents bureautiques, reformulation et simplification des critères, désignation de l'Arcom comme autorité de contrôle, téléservice de dépôt et de publication des déclarations. La seconde, du 3 novembre 2026, détaille [[https://design.numerique.gouv.fr/articles/2026-11-03-rgaa5/|ce qui change avec le RGAA 5]] : calendrier, point bloquant, nouvelle règle pour la mention « partiellement conforme », schéma pluriannuel normalisé et 40 nouveaux critères."
+  ],
+  [
+   "p",
+   "Tout le reste relève, pour l'instant, de l'interprétation. Le nombre total de critères, la liste exacte des 40 nouveaux, la méthode qui permettra de qualifier une non-conformité de bloquante, la date d'entrée en application et la forme du décret ne sont pas publiés. Le tableau ci-dessous sépare ce qui est acté de ce qui reste ouvert. C'est la première chose à vérifier avant de modifier un marché, un budget ou un calendrier d'audit."
+  ],
+  [
+   "table",
+   {
+    "caption": "RGAA 5 : statut de chaque point au 17 novembre 2026",
+    "head": [
+     "Sujet",
+     "Ce qui est annoncé officiellement",
+     "Ce qui reste à publier"
+    ],
+    "rows": [
+     [
+      "Calendrier",
+      "Sortie prévue pour décembre 2026, officialisation par décret courant 2027",
+      "Date exacte, date d'entrée en application, éventuelle période de transition"
+     ],
+     [
+      "Périmètre",
+      "Trois référentiels : web, applications mobiles, documents bureautiques, avec les mêmes critères quand ils s'appliquent et des tests différents",
+      "Contenu détaillé des tests mobiles et bureautiques, environnements de test"
+     ],
+     [
+      "Critères",
+      "40 nouveaux critères pour prendre en compte les WCAG 2.2 et la norme EN 301 549 V4.1.1 ; tous les critères et tests actualisés, simplifiés et réorganisés",
+      "Liste des critères, nombre total, note de version RGAA 4 vers RGAA 5"
+     ],
+     [
+      "Point bloquant",
+      "Une non-conformité bloquante entraîne la mention « Accessibilité : non conforme », quel que soit le taux",
+      "Méthode de qualification d'une non-conformité comme bloquante"
+     ],
+     [
+      "Partiellement conforme",
+      "Réservé aux services ayant au moins 50 % de taux de conformité et aucun point bloquant",
+      "—"
+     ],
+     [
+      "Taux moyen",
+      "Supprimé",
+      "—"
+     ],
+     [
+      "Déclaration",
+      "Met en avant les moyens de contact et explicite les points bloquants ; pour les services publics, un téléservice génère et héberge la déclaration",
+      "Ouverture du téléservice, modèle de formulaire"
+     ],
+     [
+      "Schéma pluriannuel",
+      "Format prédéfini, au lieu d'un format libre",
+      "Modèle du format"
+     ],
+     [
+      "Déclarations existantes",
+      "Valables 18 mois, dans la limite de 3 ans à partir de leur date de publication (annonce du 2 mars 2026)",
+      "Point de départ exact des 18 mois dans le texte réglementaire"
+     ]
+    ]
+   }
+  ],
+  [
+   "note",
+   "À retenir",
+   "Au 17 novembre 2026, le RGAA 4.1.2 reste la référence. La DINUM demande que les travaux fondés sur le RGAA 4.1.2 ne soient en aucun cas suspendus ou reportés, et précise que les critères du RGAA 5 viendront préciser ou compléter ceux du RGAA 4.1.2, sans les réfuter."
+  ],
+  [
+   "p",
+   "Pour situer le RGAA par rapport aux autres référentiels européens, WCAG, norme EN 301 549, RAWeb luxembourgeois ou eCH-0059 suisse, voyez notre comparatif des [[article:normes|normes d'accessibilité numérique et de leur articulation]]. Pour le cadre général, obligations, publics concernés et premiers pas, l'article de référence reste notre [[article:guide|guide de l'accessibilité numérique]]."
+  ],
+  [
+   "h2",
+   "calendrier-rgaa-5",
+   "Calendrier du RGAA 5 et durée de validité de vos déclarations"
+  ],
+  [
+   "p",
+   "Le calendrier officiel tient en deux dates : une publication du référentiel prévue pour décembre 2026, puis une officialisation par décret courant 2027. Entre les deux, le RGAA 5 sera disponible et lisible, mais c'est le texte réglementaire qui dira à partir de quand il devient la référence obligatoire et comment s'organise la transition. Ne confondez pas ces deux moments : la publication permet de se préparer, le décret fixe les obligations."
+  ],
+  [
+   "p",
+   "Pour les déclarations d'accessibilité déjà publiées, la DINUM a donné dès mars 2026 une règle simple : elles resteront valables 18 mois, dans la limite de 3 ans à partir de leur date de publication. Autrement dit, une déclaration ne gagne jamais de durée de vie grâce au RGAA 5 : la limite de trois ans, déjà applicable aujourd'hui, continue de jouer. Cette logique n'est pas nouvelle : la [[https://accessibilite.numerique.gouv.fr/obligations/declaration-accessibilite/|page du RGAA 4.1.2 consacrée à la déclaration d'accessibilité]] prévoit déjà une mise à jour 3 ans après la date de publication de la déclaration et, pour les organismes qui appliquent la méthode technique, 18 mois après la date de publication d'une nouvelle version du référentiel. Le point de départ exact des 18 mois pour le RGAA 5, publication du référentiel en décembre 2026 ou décret de 2027, reste à confirmer ; en attendant, raisonnez à partir de la date de publication du RGAA 5, l'hypothèse la plus prudente puisque c'est la plus précoce."
+  ],
+  [
+   "p",
+   "Le tableau suivant applique cette règle à quatre déclarations types, en prenant l'hypothèse d'un RGAA 5 publié le 15 décembre 2026. Ces dates sont des simulations, à recalculer dès que la date de publication réelle sera connue."
+  ],
+  [
+   "table",
+   {
+    "caption": "Simulation : jusqu'à quand une déclaration RGAA 4.1.2 reste-t-elle valable ? (hypothèse : RGAA 5 publié le 15 décembre 2026)",
+    "head": [
+     "Date de la déclaration",
+     "Limite des 3 ans",
+     "Limite des 18 mois",
+     "Échéance retenue (la plus proche)"
+    ],
+    "rows": [
+     [
+      "1er mars 2024",
+      "1er mars 2027",
+      "15 juin 2028",
+      "1er mars 2027 : nouvel audit à lancer dès maintenant"
+     ],
+     [
+      "15 octobre 2024",
+      "15 octobre 2027",
+      "15 juin 2028",
+      "15 octobre 2027"
+     ],
+     [
+      "10 septembre 2025",
+      "10 septembre 2028",
+      "15 juin 2028",
+      "15 juin 2028"
+     ],
+     [
+      "5 novembre 2026",
+      "5 novembre 2029",
+      "15 juin 2028",
+      "15 juin 2028"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "La conséquence pratique est contre-intuitive. Une déclaration toute récente, établie en novembre 2026 sur la base du RGAA 4.1.2, n'offre pas trois ans de tranquillité : si la règle annoncée est confirmée, elle expirera environ 18 mois après la sortie du RGAA 5. Ce n'est pas une raison pour reporter un audit, car un service non audité doit afficher « non conforme » dès aujourd'hui. C'est une raison pour budgéter dès maintenant un audit selon le RGAA 5 sur l'exercice 2028 au plus tard."
+  ],
+  [
+   "p",
+   "Une modification substantielle du service, refonte, changement de CMS ou nouvel espace connecté, impose de toute façon une nouvelle évaluation, quelle que soit la date de la déclaration. Notre article sur [[article:declaration|la déclaration d'accessibilité et les erreurs qui la rendent invalide]] détaille ces cas de mise à jour."
+  ],
+  [
+   "h2",
+   "point-bloquant",
+   "Le point bloquant : la règle du RGAA 5 qui change la lecture du taux"
+  ],
+  [
+   "p",
+   "Avec le RGAA 4.1.2, la mention de conformité dépend uniquement du taux : 100 % donne « totalement conforme », au moins 50 % donne « partiellement conforme », moins de 50 % ou l'absence d'audit valide donne « non conforme ». Un site peut donc afficher 85 % et « partiellement conforme » alors que le bouton qui valide une demande en ligne est inutilisable au clavier. C'est cette situation que le RGAA 5 veut faire disparaître."
+  ],
+  [
+   "p",
+   "L'annonce du 3 novembre 2026 définit la non-conformité bloquante comme un défaut qui empêche un utilisateur d'accéder à une information essentielle ou de mener un processus à son terme. Elle en donne deux exemples : un élément qui s'anime sans moyen de l'arrêter, et un bouton de soumission de formulaire inaccessible au clavier. Un service qui présente une non-conformité bloquante affiche systématiquement « Accessibilité : non conforme », quel que soit son taux. La mention « partiellement conforme » est réservée aux services qui atteignent au moins 50 % et ne présentent aucun point bloquant."
+  ],
+  [
+   "h3",
+   "Simulation sur trois services"
+  ],
+  [
+   "p",
+   "Pour mesurer l'effet de la règle, voici trois services fictifs, construits à partir de situations que l'on rencontre souvent en audit. Les taux sont calculés selon la méthode actuelle : critères validés divisés par critères applicables."
+  ],
+  [
+   "table",
+   {
+    "caption": "Même taux, mention différente : effet du point bloquant (simulation)",
+    "head": [
+     "Service fictif",
+     "Taux de conformité",
+     "Défaut le plus grave",
+     "Mention RGAA 4.1.2",
+     "Mention RGAA 5 (règle annoncée)"
+    ],
+    "rows": [
+     [
+      "Portail d'une commune",
+      "88 %",
+      "Le bouton « Envoyer » du formulaire d'inscription à la cantine n'est pas atteignable au clavier",
+      "Partiellement conforme",
+      "Non conforme"
+     ],
+     [
+      "Site d'information d'un établissement public",
+      "71 %",
+      "Défauts nombreux mais aucun ne bloque la consultation ni les démarches",
+      "Partiellement conforme",
+      "Partiellement conforme"
+     ],
+     [
+      "Espace client d'une entreprise soumise à l'article 47",
+      "62 %",
+      "Un carrousel d'actualités défile en continu sans bouton de pause sur la page d'accueil",
+      "Partiellement conforme",
+      "Non conforme"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Le deuxième service, pourtant moins bien noté que le premier, garde sa mention ; les deux autres la perdent. Le RGAA 5 récompense donc moins le volume de critères respectés que la capacité à mener chaque démarche jusqu'au bout. C'est une bonne nouvelle pour les usagers, et un changement de méthode pour les équipes : un plan de correction qui traite d'abord les critères les plus faciles pour faire monter le taux devient risqué."
+  ],
+  [
+   "h3",
+   "Ce qui disparaît : le taux moyen"
+  ],
+  [
+   "p",
+   "Le RGAA 5 supprime aussi le taux de conformité moyen, c'est-à-dire la moyenne des taux obtenus page par page. Ce second indicateur, facultatif dans le modèle de déclaration actuel, donne en général une image plus flatteuse que le taux global : dans le taux global, un critère non respecté sur une seule page de l'échantillon est compté comme non respecté, alors que dans la moyenne il ne fait baisser que le taux de cette page. Si vos tableaux de bord, vos rapports au comité de direction ou vos objectifs contractuels reposent sur le taux moyen, prévoyez de les reformuler autour du taux global et du nombre de points bloquants."
+  ],
+  [
+   "h3",
+   "Repérer les candidats au point bloquant sans attendre la méthode officielle"
+  ],
+  [
+   "p",
+   "La méthode de qualification n'est pas publiée. Rien n'empêche cependant de chercher dès maintenant les défauts qui, de toute évidence, empêchent de terminer une démarche. Voici la grille que nous utilisons en audit pour les signaler en priorité ; elle ne préjuge pas de la liste officielle, elle repose sur la définition annoncée."
+  ],
+  [
+   "ul",
+   [
+    "un bouton, un lien ou un champ indispensable à la démarche ne peut pas être atteint ou activé au clavier ;",
+    "un contenu en mouvement, carrousel, bandeau défilant, vidéo en lecture automatique, ne peut être ni arrêté ni masqué ;",
+    "un captcha ou une étape d'authentification n'offre aucune alternative utilisable par une personne aveugle ou qui ne peut pas résoudre une épreuve cognitive ;",
+    "une fenêtre modale piège le focus ou ne peut pas être fermée au clavier, ce qui empêche de poursuivre ;",
+    "un message d'erreur de formulaire n'est ni affiché près du champ ni restitué par le lecteur d'écran, si bien que l'usager ne comprend pas pourquoi l'envoi échoue ;",
+    "un document indispensable, avis, convocation, facture ou formulaire à remplir, n'existe que sous forme d'image ou de PDF non balisé ;",
+    "une information essentielle, montant, date limite, statut d'une demande, n'est transmise que par la couleur ou par une image sans alternative."
+   ]
+  ],
+  [
+   "p",
+   "Testez chacun de ces points sur les parcours qui comptent, pas seulement sur des pages isolées : création de compte, connexion, paiement, dépôt d'une demande, prise de rendez-vous, téléchargement d'un justificatif. Un [[svc:test-utilisateur|test avec des utilisateurs en situation de handicap]] complète utilement l'audit pour confirmer qu'un défaut est réellement bloquant dans l'usage."
+  ],
+  [
+   "h2",
+   "nouveaux-criteres",
+   "Les 40 nouveaux critères : ce que l'on peut déjà tester"
+  ],
+  [
+   "p",
+   "La DINUM annonce 40 nouveaux critères destinés à prendre en compte les WCAG 2.2 et la norme EN 301 549 V4.1.1. Leur liste n'est pas publiée, mais une partie se déduit des textes sources. Les WCAG 2.2, publiées par le W3C le 5 octobre 2023, ajoutent neuf critères de succès aux WCAG 2.1, dont six de niveau A ou AA, le niveau exigé par la réglementation. Elles retirent aussi le critère 4.1.1 Analyse syntaxique, déclaré obsolète. La page du W3C [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|consacrée aux nouveautés des WCAG 2.2]] en donne la liste."
+  ],
+  [
+   "p",
+   "Puisque la DINUM annonce l'intégration des WCAG 2.2, ces six critères devraient être couverts, sous une forme ou une autre, par le RGAA 5 ; la formulation française officielle reste à publier. Le tableau donne pour chacun un test rapide que vos équipes peuvent faire dès aujourd'hui, sans attendre la formulation française. Notre article sur [[article:wcag-22|les 9 nouveaux critères des WCAG 2.2]] décrit, pour chacun, le défaut type, la correction et le protocole de test complet."
+  ],
+  [
+   "table",
+   {
+    "caption": "Les six critères WCAG 2.2 de niveau A et AA (intitulés de la traduction française autorisée du W3C), et un test à faire dès maintenant",
+    "head": [
+     "Critère WCAG 2.2",
+     "Niveau",
+     "Ce qu'il exige",
+     "Test rapide"
+    ],
+    "rows": [
+     [
+      "2.4.11 Focus non masqué (minimum)",
+      "AA",
+      "L'élément qui reçoit le focus n'est pas entièrement caché par un autre contenu",
+      "Parcourez la page à la touche Tab avec le bandeau cookies et l'en-tête fixe affichés"
+     ],
+     [
+      "2.5.7 Mouvements de glissement",
+      "AA",
+      "Toute fonction qui utilise un mouvement de glissement peut aussi se faire avec un pointeur unique, sans glisser, sauf si le glissement est essentiel",
+      "Essayez de réordonner une liste ou de déplacer un curseur de prix par de simples clics"
+     ],
+     [
+      "2.5.8 Taille de la cible (minimum)",
+      "AA",
+      "Les cibles mesurent au moins 24 × 24 pixels CSS, sauf exceptions (espacement suffisant, cible dans un texte…)",
+      "Mesurez les icônes de fermeture, les pastilles de pagination et les liens d'un pied de page dense"
+     ],
+     [
+      "3.2.6 Aide cohérente",
+      "A",
+      "Les moyens d'aide répétés sur plusieurs pages (coordonnées, contact, aide en ligne) apparaissent dans le même ordre relatif, sauf changement fait par l'utilisateur",
+      "Vérifiez l'ordre du lien Contact ou du tchat par rapport aux autres contenus sur cinq pages de gabarits différents"
+     ],
+     [
+      "3.3.7 Saisie redondante",
+      "A",
+      "Une information déjà saisie dans le même processus est proposée ou remplie automatiquement, sauf exceptions (saisie essentielle, sécurité, information devenue invalide)",
+      "Dans un tunnel de commande ou de demande, cherchez une adresse ou un numéro à saisir deux fois"
+     ],
+     [
+      "3.3.8 Authentification accessible (minimum)",
+      "AA",
+      "La connexion n'exige pas de test de fonction cognitive (mémoriser, transcrire, résoudre une énigme) sans alternative ou mécanisme d'aide ; la reconnaissance d'objets reste admise à ce niveau",
+      "Vérifiez que le copier-coller et le gestionnaire de mots de passe fonctionnent, et qu'un captcha à transcrire ou à résoudre a une alternative"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Les WCAG 2.2 n'expliquent qu'une partie des 40 nouveaux critères. Le reste devrait découler, selon notre lecture de l'annonce, de la norme EN 301 549 V4.1.1, qui couvre les technologies de l'information et de la communication au-delà du web, et des nouveaux sujets que l'annonce cite explicitement : tchat, captcha, surcouches et paramètres d'accessibilité, outils d'édition, visioconférence, téléphonie et identification biométrique. La section suivante les reprend un par un."
+  ],
+  [
+   "p",
+   "Pour l'organisation du travail, retenez deux points. D'une part, un service qui respecte déjà les WCAG 2.2 de niveau AA aura moins d'écart à combler. D'autre part, la reformulation et la réorganisation de tous les critères imposeront de mettre à jour vos grilles internes, vos listes de contrôle de recette et vos supports de formation : la note de version promise par la DINUM, du RGAA 4 vers le RGAA 5, sera le document à exploiter en premier."
+  ],
+  [
+   "h2",
+   "nouveaux-sujets",
+   "Tchat, captcha, visio, biométrie : les nouveaux sujets à inventorier"
+  ],
+  [
+   "p",
+   "Les sept sujets cités par la DINUM ont un point commun : ils sont souvent fournis par un tiers, un éditeur de tchat, un service anti-robot, une solution de visioconférence, un prestataire d'identité numérique. Avant tout test, il faut donc savoir lesquels sont en production et quel contrat les encadre : l'inventaire est la première étape."
+  ],
+  [
+   "table",
+   {
+    "caption": "Nouveaux sujets du RGAA 5 : où les chercher et quoi vérifier en premier",
+    "head": [
+     "Sujet",
+     "Où on le trouve",
+     "Premières vérifications",
+     "Qui doit agir"
+    ],
+    "rows": [
+     [
+      "Tchat",
+      "Assistance en ligne, agent conversationnel, messagerie sécurisée d'un espace client",
+      "Ouverture et fermeture au clavier, annonce des nouveaux messages au lecteur d'écran, temps de réponse non limité",
+      "Éditeur de la solution, via le contrat"
+     ],
+     [
+      "Captcha",
+      "Formulaires de contact, création de compte, connexion",
+      "Existence d'une alternative qui ne repose ni sur la vue ni sur une épreuve cognitive",
+      "Équipe technique et éditeur du service anti-robot"
+     ],
+     [
+      "Surcouches et paramètres d'accessibilité",
+      "Outils ajoutés au site pour modifier l'affichage, préférences d'affichage d'un espace connecté",
+      "Le site reste utilisable sans la surcouche ; les paramètres sont eux-mêmes accessibles",
+      "Direction du numérique"
+     ],
+     [
+      "Outils d'édition",
+      "CMS, éditeurs de texte en ligne, outils de création de formulaires ou de documents",
+      "Les contributeurs peuvent produire un contenu accessible ; l'outil est lui-même utilisable au clavier",
+      "Éditeur du CMS, administrateurs"
+     ],
+     [
+      "Visioconférence",
+      "Rendez-vous en ligne, téléconsultation, webinaires",
+      "Sous-titres, accès au tchat de la réunion, commandes accessibles au clavier et au lecteur d'écran",
+      "Fournisseur de la solution"
+     ],
+     [
+      "Téléphonie",
+      "Rappel automatique, serveur vocal, numéro de contact affiché",
+      "Existence d'un canal alternatif écrit, information sur les moyens de contact accessibles",
+      "Relation usagers ou relation client"
+     ],
+     [
+      "Identification biométrique",
+      "Connexion par empreinte, reconnaissance faciale, vérification d'identité",
+      "Existence d'une méthode alternative pour qui ne peut pas utiliser la biométrie proposée",
+      "Équipe sécurité et prestataire d'identité"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Pour chaque composant tiers, demandez dès maintenant à l'éditeur sa déclaration de conformité, la date de son dernier audit et sa feuille de route pour les WCAG 2.2. Si le contrat est en cours de renouvellement, intégrez ces exigences dans le cahier des charges : notre article sur [[article:clauses-marche-public|les clauses d'accessibilité dans les marchés publics]] propose des clauses types qui prévoient justement le passage à une nouvelle version du référentiel."
+  ],
+  [
+   "p",
+   "Un mot sur les surcouches, ces outils que l'on ajoute à un site pour proposer des réglages d'affichage. L'annonce indique qu'ils seront couverts par de nouveaux critères. Elle ne dit pas qu'ils permettront d'atteindre la conformité ; la conformité reste évaluée sur le service lui-même. Ne comptez donc pas sur un outil ajouté pour corriger des défauts de structure, de formulaires ou de navigation."
+  ],
+  [
+   "h2",
+   "trois-referentiels",
+   "Web, mobile, bureautique : un RGAA en trois référentiels"
+  ],
+  [
+   "p",
+   "Le RGAA 5 se composera de trois référentiels, pour les sites web, les applications mobiles et les documents bureautiques. Les critères seront les mêmes lorsqu'ils s'appliquent, mais les tests techniques différeront, et l'environnement de test sera mis à jour, avec une section nouvelle pour le mobile et la bureautique. Pour l'organisation qui publie, cela signifie surtout que l'évaluation pourra porter sur un service dans sa globalité : le site, l'application qui le prolonge et les documents qu'il diffuse."
+  ],
+  [
+   "h3",
+   "Applications mobiles"
+  ],
+  [
+   "p",
+   "Les applications mobiles relèvent déjà de l'obligation de l'article 47, mais l'absence de tests propres au mobile dans le RGAA 4.1.2 obligeait à adapter la méthode web. Avec le RGAA 5, les applications mobiles disposeront d'un référentiel et de tests techniques propres ; l'annonce ne détaille pas encore les systèmes et environnements de test retenus. Si votre organisation publie une application, commencez par l'inventaire des versions en production, des parcours principaux et des composants natifs ou hybrides. Un [[svc:audit-raam|audit d'application mobile sur appareils réels]], avec VoiceOver et TalkBack, donne dès aujourd'hui une image fiable des défauts, quel que soit le référentiel final."
+  ],
+  [
+   "h3",
+   "Documents bureautiques"
+  ],
+  [
+   "p",
+   "Les documents bureautiques, PDF, documents Word ou tableurs, sont souvent la partie la plus négligée d'un service : avis, formulaires à imprimer, délibérations, comptes rendus. Le RGAA 5 leur donnera des tests propres. Le travail utile peut commencer immédiatement : recenser les documents réellement consultés, supprimer ceux qui n'ont plus d'usage, convertir en pages web ceux qui peuvent l'être et produire les autres selon une méthode fiable. Notre guide du [[article:pdf-accessible|PDF accessible depuis Word, InDesign et Acrobat]] décrit cette méthode pas à pas."
+  ],
+  [
+   "p",
+   "Ce passage à trois référentiels a une conséquence budgétaire. Un audit qui couvrait jusqu'ici un échantillon de pages web pourra devoir intégrer des écrans d'application et des documents. Anticipez-le dans la programmation des audits et dans les estimations : notre article sur [[article:prix-audit|ce qui fait varier le prix d'un audit d'accessibilité]] explique comment le périmètre pèse sur le devis."
+  ],
+  [
+   "h2",
+   "declaration-schema",
+   "Déclaration, schéma pluriannuel et contrôle de l'Arcom avec le RGAA 5"
+  ],
+  [
+   "p",
+   "Le RGAA ne contient pas seulement des critères techniques : sa partie consacrée aux obligations fixe le contenu de la déclaration d'accessibilité et du schéma pluriannuel. Le RGAA 5 modifie ces documents sur quatre points."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Une déclaration centrée sur l'usager.",
+     "Elle mettra en avant les moyens de contact et explicitera les points bloquants, en attendant leur correction. L'usager saura ainsi, avant de commencer une démarche, ce qui risque de l'arrêter et à qui s'adresser."
+    ],
+    [
+     "Un téléservice pour les services publics.",
+     "Pour l'État, les collectivités et la fonction publique hospitalière, un formulaire collectera les éléments de la déclaration ; le téléservice la générera et l'hébergera. L'organisation ne publiera plus elle-même sa déclaration : elle indiquera le lien fourni lors du dépôt."
+    ],
+    [
+     "Un schéma pluriannuel au format prédéfini.",
+     "Le schéma, jusqu'ici au format libre, devra suivre un format défini. Les schémas rédigés de façon très littéraire devront être restructurés ; ceux qui suivent déjà un plan clair, avec objectifs, moyens et calendrier, seront plus simples à reprendre."
+    ],
+    [
+     "Un contrôle mieux outillé.",
+     "L'Arcom, habilitée depuis 2023, pourra mieux contrôler la déclaration, la mention de conformité, le schéma pluriannuel et le plan d'action. En cas de manquement, elle peut mettre en demeure, puis sanctionner par une amende."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "La décision de l'Arcom du 24 juin 2026, qui a mis en demeure le ministère de l'Action et des Comptes publics pour le site impots.gouv.fr, montre ce qu'un contrôle examine déjà aujourd'hui. La [[https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-24-juin-2026-mettant-en-demeure-le-ministere-de-laction-et-des-comptes-publics|décision publiée par l'Arcom]] relève notamment un avis d'impôt en PDF inaccessible, un menu déroulant inutilisable au clavier, une déclaration datée de plus de trois ans, un taux de conformité de 42,11 % affiché avec une mention de pleine conformité et un plan d'action portant sur 2024 au lieu de l'année en cours. Elle accorde neuf mois à compter de sa notification pour rendre les contenus en cause accessibles, et deux mois pour mettre en conformité les déclarations d'accessibilité et le plan d'action."
+  ],
+  [
+   "p",
+   "Ces manquements n'ont pas besoin du RGAA 5 pour être relevés. Mais la nouvelle version les rendra plus visibles : un point bloquant devra apparaître dans la déclaration, et le téléservice de dépôt, selon la DINUM, facilitera les contrôles de l'Arcom. Pour préparer le format prédéfini, notre [[article:schema-pluriannuel|modèle commenté de schéma pluriannuel]] suit déjà une structure par objectifs, moyens et indicateurs, facile à transposer. Les obligations et les sanctions françaises sont détaillées dans notre article sur [[article:france|l'accessibilité numérique en France]]."
+  ],
+  [
+   "h2",
+   "selon-votre-situation",
+   "Audit en cours, audit prévu, refonte : que faire selon votre situation"
+  ],
+  [
+   "p",
+   "La question la plus fréquente depuis l'annonce est simple : faut-il attendre le RGAA 5 ? La réponse officielle est non, et elle se comprend : un service non audité doit afficher « non conforme », et les corrections faites aujourd'hui restent acquises puisque les critères du RGAA 5 compléteront ceux du RGAA 4.1.2 sans les réfuter. La bonne décision dépend toutefois de votre situation. Le tableau ci-dessous résume nos recommandations."
+  ],
+  [
+   "table",
+   {
+    "caption": "Décider sans attendre : recommandations selon votre situation",
+    "head": [
+     "Votre situation",
+     "Recommandation",
+     "Ce qu'il faut ajouter dès maintenant"
+    ],
+    "rows": [
+     [
+      "Aucun audit valide, service en ligne",
+      "Auditer selon le RGAA 4.1.2 sans attendre",
+      "Signaler dans le rapport les défauts bloquants et les écarts aux six critères WCAG 2.2 de niveau A et AA"
+     ],
+     [
+      "Audit prévu au premier semestre 2027",
+      "Maintenir l'audit selon le RGAA 4.1.2",
+      "Prévoir dans la commande une option d'analyse des écarts une fois le RGAA 5 publié"
+     ],
+     [
+      "Déclaration de plus de deux ans",
+      "Programmer le nouvel audit avant la limite des trois ans",
+      "Calculer l'échéance la plus proche entre trois ans et la limite des 18 mois"
+     ],
+     [
+      "Refonte en cours de conception",
+      "Concevoir dès maintenant selon les WCAG 2.2 de niveau AA",
+      "Exiger dans le contrat une mise à niveau vers le RGAA 5 si la livraison intervient après sa publication"
+     ],
+     [
+      "Refonte livrée en 2027",
+      "Recette selon la version en vigueur à la livraison",
+      "Organiser une [[svc:recette|recette d'accessibilité]] sur les parcours principaux, avec repérage des points bloquants"
+     ],
+     [
+      "Application mobile ou masse de documents",
+      "Inventaire et audit ciblé dès maintenant",
+      "Classer applications et documents par fréquentation et par caractère indispensable"
+     ],
+     [
+      "Contrôle ou mise en demeure de l'Arcom",
+      "Corriger selon le RGAA 4.1.2, qui sert de référence au contrôle",
+      "Documenter chaque correction et prévoir un contre-audit"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Si vous êtes au milieu d'un audit selon le RGAA 4.1.2, ne changez pas de référentiel en cours de route. Demandez plutôt à l'auditeur de signaler explicitement, dans le rapport, les défauts qui empêchent de terminer une démarche et les écarts aux critères WCAG 2.2. Le rapport servira à la fois pour la déclaration actuelle et pour préparer la suivante. C'est ainsi que nous menons aujourd'hui chaque [[svc:audit-rgaa|audit RGAA]] : la grille officielle en vigueur, complétée par ces deux annotations. Le déroulé complet d'un audit est décrit dans notre article sur [[article:audit-rgaa|l'audit RGAA semaine par semaine]]."
+  ],
+  [
+   "h2",
+   "plan-90-jours",
+   "Se préparer au RGAA 5 en 90 jours, sans tout refaire"
+  ],
+  [
+   "p",
+   "Préparer le RGAA 5 ne consiste pas à attendre la liste des critères pour tout reprendre. L'essentiel du travail utile peut être fait maintenant, parce qu'il repose sur des éléments déjà connus : les WCAG 2.2, la logique du point bloquant, le périmètre élargi au mobile et aux documents, et les nouveaux sujets annoncés. Voici un plan en trois mois, adapté à une organisation qui dispose déjà d'un audit selon le RGAA 4.1.2."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Semaines 1 et 2 : faire l'inventaire.",
+     "Listez les services en ligne, applications et familles de documents, avec pour chacun la date de la déclaration, l'échéance calculée selon la règle des 18 mois et des 3 ans, et les composants tiers : tchat, captcha, visioconférence, prestataire d'identité, outil de prise de rendez-vous."
+    ],
+    [
+     "Semaines 3 et 4 : cartographier les parcours essentiels.",
+     "Pour chaque service, retenez trois à cinq démarches qu'un usager doit pouvoir mener seul : s'inscrire, se connecter, payer, déposer une demande, télécharger un justificatif. Ce sont ces parcours qui seront examinés sous l'angle du point bloquant."
+    ],
+    [
+     "Semaines 5 et 6 : rechercher les points bloquants.",
+     "Parcourez chaque démarche au clavier seul, puis avec un lecteur d'écran, et notez tout ce qui vous arrête. Reprenez le dernier rapport d'audit et repérez les non-conformités qui, situées sur ces parcours, empêchent d'aller au bout."
+    ],
+    [
+     "Semaines 7 et 8 : tester les six critères WCAG 2.2.",
+     "Appliquez les tests rapides du tableau plus haut sur les gabarits principaux. La plupart des corrections portent sur des composants partagés, en-tête fixe, bandeau cookies, boutons d'icône, et profitent à tout le site."
+    ],
+    [
+     "Semaines 9 et 10 : corriger d'abord ce qui bloque.",
+     "Réordonnez le plan d'action : les points bloquants passent avant les critères faciles qui font monter le taux. Traitez ensuite les défauts des composants partagés."
+    ],
+    [
+     "Semaine 11 : interroger les fournisseurs.",
+     "Envoyez aux éditeurs des composants tiers une demande écrite : déclaration de conformité, date du dernier audit, prise en compte des WCAG 2.2, calendrier. Intégrez les réponses au schéma pluriannuel."
+    ],
+    [
+     "Semaine 12 : mettre à jour les documents de pilotage.",
+     "Remplacez le taux moyen par le taux global et le nombre de points bloquants dans vos tableaux de bord, inscrivez le budget de l'audit RGAA 5 et prévoyez la formation des équipes à la nouvelle version."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Ce plan ne demande aucune hypothèse sur le contenu final du RGAA 5. Tout ce qu'il produit reste valable quelle que soit la formulation retenue : un inventaire à jour, des parcours prioritaires identifiés, des blocages corrigés, des fournisseurs interrogés. Pour mettre les équipes à niveau, nos [[svc:formations|formations à l'accessibilité numérique]] seront actualisées pour le RGAA 5 dès sa publication, et nos équipes de [[svc:developpement|développement accessible]] peuvent prendre en charge la correction des composants partagés."
+  ],
+  [
+   "note",
+   "À retenir",
+   "Le RGAA 5 change moins la somme de travail que son ordre. Avec la règle du point bloquant, un service doit d'abord permettre de mener chaque démarche jusqu'au bout ; le taux de conformité vient ensuite."
+  ],
+  [
+   "h2",
+   "check-list-par-role",
+   "Check-list RGAA 5 par métier"
+  ],
+  [
+   "p",
+   "Chaque métier a sa part de préparation. Cette liste peut être distribuée telle quelle aux personnes concernées, avec une échéance pour chaque ligne."
+  ],
+  [
+   "h3",
+   "Direction et référent accessibilité"
+  ],
+  [
+   "ul",
+   [
+    "calculer, pour chaque déclaration, l'échéance la plus proche entre la limite des trois ans et celle des 18 mois après le RGAA 5 ;",
+    "inscrire au budget 2027 et 2028 les audits selon le RGAA 5, en tenant compte du mobile et des documents ;",
+    "remplacer le taux moyen par le taux global et le nombre de points bloquants dans les indicateurs suivis ;",
+    "désigner la personne qui déposera la déclaration sur le futur téléservice, pour les organismes publics ;",
+    "suivre la publication de la note de version RGAA 4 vers RGAA 5 et du décret."
+   ]
+  ],
+  [
+   "h3",
+   "Équipes techniques et design"
+  ],
+  [
+   "ul",
+   [
+    "vérifier que le focus n'est jamais masqué par un en-tête fixe ou un bandeau ;",
+    "offrir une alternative sans glissement à tout mouvement de glissement et des cibles d'au moins 24 × 24 pixels CSS ;",
+    "présenter l'aide et le contact dans le même ordre relatif sur toutes les pages ;",
+    "pré-remplir les informations déjà saisies dans un même parcours ;",
+    "autoriser le copier-coller et les gestionnaires de mots de passe à la connexion, et proposer une alternative à tout captcha ;",
+    "prévoir un bouton de pause sur tout contenu en mouvement."
+   ]
+  ],
+  [
+   "h3",
+   "Contenus, achats et relation usagers"
+  ],
+  [
+   "ul",
+   [
+    "recenser les documents bureautiques réellement consultés et convertir en pages web ceux qui peuvent l'être ;",
+    "demander aux éditeurs de tchat, de visioconférence et d'identification leur position sur les WCAG 2.2 ;",
+    "prévoir, dans tout nouveau marché, une clause de mise à niveau vers la version du référentiel en vigueur à la livraison ;",
+    "vérifier qu'un canal de contact écrit existe pour chaque service joignable par téléphone ;",
+    "préparer la rubrique de la déclaration qui listera les points bloquants et les solutions de contournement proposées aux usagers."
+   ]
+  ],
+  [
+   "h2",
+   "hors-de-france",
+   "Et hors de France : RGAA 5, EAA et pays voisins"
+  ],
+  [
+   "p",
+   "Le RGAA est un référentiel français. Il s'applique aux organismes soumis à l'article 47 de la loi de 2005 : organismes publics, organismes privés chargés d'une mission de service public et entreprises au-delà du seuil de chiffre d'affaires fixé par décret. Les entreprises visées par l'European Accessibility Act depuis le 28 juin 2025 relèvent d'un autre cadre, qui s'appuie sur la norme EN 301 549 ; le RGAA 5, aligné sur les WCAG 2.2 et sur la version 4.1.1 de cette norme, leur fournira toutefois une grille de test utile. Notre article sur [[article:eaa|l'European Accessibility Act]] fait le point sur ce cadre."
+  ],
+  [
+   "p",
+   "En Belgique, la référence est la norme EN 301 549 ; au Luxembourg, ce sont le RAWeb et le RAAM, construits sur le modèle méthodologique du RGAA ; en Suisse, la norme eCH-0059 pour l'administration fédérale. Un groupe présent dans plusieurs pays a donc intérêt à fonder sa démarche sur les WCAG 2.2 de niveau AA et la norme EN 301 549, puis à produire les déclarations propres à chaque pays. Les pages consacrées à [[country:france|l'accessibilité numérique en France]] et aux autres pays présentent les obligations de chacun, et notre [[svc:audit-conformite|audit de conformité EN 301 549]] couvre les organisations soumises à plusieurs référentiels."
+  ],
+  [
+   "p",
+   "Pour les collectivités, les établissements publics et les administrations, la page [[sector:public|accessibilité numérique du secteur public]] rassemble les obligations et les priorités propres à ces organismes, qui seront les premiers concernés par le téléservice de déclaration et par le contrôle renforcé de l'Arcom."
+  ]
+ ],
+ "faq": [
+  [
+   "Quand sort le RGAA 5 ?",
+   "Selon l'annonce de la DINUM publiée le 3 novembre 2026, la sortie du RGAA 5 est prévue pour décembre 2026, et son officialisation interviendra par décret courant 2027. Jusqu'à ce décret, le RGAA 4.1.2 reste la référence pour les audits, les déclarations et les contrôles. Le texte réglementaire précisera la date d'entrée en application et l'organisation de la transition."
+  ],
+  [
+   "Faut-il attendre le RGAA 5 pour faire auditer son site ?",
+   "Non. La DINUM demande que les travaux fondés sur le RGAA 4.1.2 ne soient en aucun cas suspendus ou reportés. Un service sans audit valide doit afficher « non conforme », et les corrections réalisées aujourd'hui restent utiles, car les critères du RGAA 5 compléteront ceux du RGAA 4.1.2 sans les réfuter. Demandez simplement que le rapport signale les défauts bloquants et les écarts aux WCAG 2.2."
+  ],
+  [
+   "Combien de critères compte le RGAA 5 ?",
+   "Le nombre total n'est pas publié à ce jour. La DINUM annonce 40 nouveaux critères pour prendre en compte les WCAG 2.2 et la norme EN 301 549 V4.1.1, ainsi qu'une actualisation, une simplification et une réorganisation de tous les critères et tests existants. Une note de version du RGAA 4 vers le RGAA 5 doit être mise à disposition pour faire la correspondance."
+  ],
+  [
+   "Qu'est-ce qu'un point bloquant dans le RGAA 5 ?",
+   "C'est une non-conformité qui empêche un utilisateur d'accéder à une information essentielle ou de mener un processus à son terme, par exemple un bouton de soumission de formulaire inaccessible au clavier ou une animation impossible à arrêter. Un service qui en présente une affiche « non conforme », quel que soit son taux. La méthode de qualification détaillée n'est pas encore publiée."
+  ],
+  [
+   "Ma déclaration d'accessibilité restera-t-elle valable après le RGAA 5 ?",
+   "Selon l'annonce de la DINUM de mars 2026, les déclarations établies avant le RGAA 5 resteront valables 18 mois, dans la limite de trois ans à partir de leur date de publication. Retenez l'échéance la plus proche des deux. Une refonte ou une modification substantielle impose de toute façon une nouvelle évaluation, quelle que soit la date de la déclaration."
+  ],
+  [
+   "Le RGAA 5 s'applique-t-il aux applications mobiles et aux PDF ?",
+   "Oui. Le RGAA 5 se compose de trois référentiels, pour le web, les applications mobiles et les documents bureautiques, avec les mêmes critères lorsqu'ils s'appliquent et des tests techniques propres à chaque support. Les applications et les documents étaient déjà concernés par l'obligation, mais le RGAA 4.1.2 ne contenait pas de tests écrits pour eux."
+  ],
+  [
+   "Que devient la mention « partiellement conforme » ?",
+   "Elle sera réservée aux services qui atteignent un taux de conformité d'au moins 50 % et ne présentent aucun point bloquant. Un service à 90 % mais dont un formulaire essentiel ne peut pas être envoyé au clavier affichera donc « non conforme ». Le taux moyen, calculé page par page, disparaît par ailleurs des résultats."
+  ]
+ ],
+ "cta_svc": "audit-rgaa",
+ "cta_title": "Préparer le passage au RGAA 5 ?",
+ "cta_text": "Nous auditons vos services selon le RGAA 4.1.2 en signalant déjà les points bloquants et les écarts aux WCAG 2.2, pour que votre prochain audit RGAA 5 ne réserve pas de surprise.",
+ "related": [
+  "normes",
+  "wcag-22",
+  "declaration"
+ ]
+}

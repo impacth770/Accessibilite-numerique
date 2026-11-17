@@ -1,0 +1,711 @@
+{
+ "slug": "rgaa-5-aenderungen-zeitplan-vorbereitung",
+ "h1": "RGAA 5: was feststeht, was sich für Ihre Audits ändert, und ein 90-Tage-Plan",
+ "crumb": "RGAA 5",
+ "meta_title": "RGAA 5: Änderungen, Zeitplan und 90-Tage-Vorbereitungsplan",
+ "meta_desc": "RGAA 5 und digitale Barrierefreiheit in Frankreich: der offizielle Stand, die Regel der blockierenden Mängel, die Gültigkeit Ihrer Erklärungen und ein 90-Tage-Plan.",
+ "card_desc": "Was die DINUM tatsächlich angekündigt hat, wie blockierende Mängel Ihren Konformitätshinweis verändern und wie Sie sich vorbereiten.",
+ "cat": "analyse",
+ "where": "Frankreich",
+ "cover": "RGAA5",
+ "cover_note": [
+  "Veröffentlichung für Dezember 2026 angekündigt",
+  "Dekret im Laufe des Jahres 2027 erwartet"
+ ],
+ "date": "2026-11-17",
+ "cluster": "normes",
+ "lead": "Der RGAA 5, der französische Prüfkatalog für digitale Barrierefreiheit, soll nach Angaben der DINUM im Dezember 2026 erscheinen und im Laufe des Jahres 2027 per Dekret offiziell verbindlich werden. Die meisten Seiten, die darüber berichten, vermischen die offizielle Ankündigung, Konferenzberichte und Vermutungen. Dieser Beitrag sortiert: was feststeht, was noch veröffentlicht werden muss, was die neue Regel der blockierenden Mängel konkret für Ihren Konformitätshinweis bedeutet, wie lange Ihre bisherigen Erklärungen gültig bleiben und wie Sie sich in 90 Tagen auf den RGAA 5 vorbereiten, ohne die mit dem RGAA 4.1.2 geleistete Arbeit zu verwerfen.",
+ "body": [
+  [
+   "h2",
+   "was-offiziell-ist",
+   "RGAA 5: was offiziell ist und was noch nicht"
+  ],
+  [
+   "p",
+   "Der Référentiel général d'amélioration de l'accessibilité (RGAA) ist die Methode, mit der in Frankreich geprüft wird, ob ein digitaler Dienst die Pflicht zur Barrierefreiheit nach Artikel 47 des Gesetzes vom 11. Februar 2005 erfüllt. Zum Zeitpunkt dieses Beitrags gilt weiterhin der RGAA 4.1.2: 106 Kriterien in 13 Themenbereichen, gestützt auf die WCAG 2.1. Solange die neue Version nicht veröffentlicht und anschließend verbindlich gemacht ist, finden Audits, Erklärungen und Kontrollen auf dieser Grundlage statt."
+  ],
+  [
+   "p",
+   "Zwei offizielle Veröffentlichungen der DINUM, der interministeriellen Digitaldirektion des französischen Staates, auf ihrer Website DesignGouv bilden heute die Grundlage dessen, was bekannt ist. Die erste vom 2. März 2026 hat [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|die Ziele der neuen RGAA-Version (auf Französisch)]] vorgestellt: Aufnahme der WCAG 2.2, Kriterien und Tests für mobile Apps und Bürodokumente, Umformulierung und Vereinfachung der Kriterien, Benennung der Arcom als Kontrollbehörde sowie ein Online-Dienst zur Hinterlegung und Veröffentlichung der Erklärungen. Die zweite vom 3. November 2026 beschreibt im Detail, [[https://design.numerique.gouv.fr/articles/2026-11-03-rgaa5/|was sich mit dem RGAA 5 ändert (auf Französisch)]]: Zeitplan, blockierende Mängel, neue Regel für den Hinweis „teilweise konform“, standardisierter Mehrjahresplan und 40 neue Kriterien."
+  ],
+  [
+   "p",
+   "Alles Übrige ist vorerst Auslegung. Die Gesamtzahl der Kriterien, die genaue Liste der 40 neuen, die Methode, nach der eine Nichtkonformität als blockierend eingestuft wird, das Datum des Inkrafttretens und die Form des Dekrets sind nicht veröffentlicht. Die folgende Tabelle trennt, was feststeht, von dem, was offen bleibt. Das sollten Sie als Erstes prüfen, bevor Sie einen Vertrag, ein Budget oder einen Auditplan ändern."
+  ],
+  [
+   "table",
+   {
+    "caption": "RGAA 5: Stand der einzelnen Punkte am 17. November 2026",
+    "head": [
+     "Thema",
+     "Offiziell angekündigt",
+     "Noch zu veröffentlichen"
+    ],
+    "rows": [
+     [
+      "Zeitplan",
+      "Veröffentlichung für Dezember 2026 vorgesehen, offizielle Verbindlichkeit per Dekret im Laufe des Jahres 2027",
+      "Genaues Datum, Datum des Inkrafttretens, etwaige Übergangsfrist"
+     ],
+     [
+      "Geltungsbereich",
+      "Drei Prüfkataloge: Web, mobile Apps, Bürodokumente, mit denselben Kriterien, wo sie anwendbar sind, und unterschiedlichen Tests",
+      "Detaillierter Inhalt der Tests für Mobilgeräte und Bürodokumente, Testumgebungen"
+     ],
+     [
+      "Kriterien",
+      "40 neue Kriterien, um die WCAG 2.2 und die Norm EN 301 549 V4.1.1 zu berücksichtigen; alle Kriterien und Tests aktualisiert, vereinfacht und neu geordnet",
+      "Liste der Kriterien, Gesamtzahl, Versionshinweis vom RGAA 4 zum RGAA 5"
+     ],
+     [
+      "Blockierender Mangel",
+      "Eine blockierende Nichtkonformität führt zum Hinweis „Accessibilité : non conforme“ (nicht konform), unabhängig von der Quote",
+      "Methode, nach der eine Nichtkonformität als blockierend eingestuft wird"
+     ],
+     [
+      "Teilweise konform",
+      "Diensten vorbehalten, die eine Konformitätsquote von mindestens 50 % erreichen und keinen blockierenden Mangel aufweisen",
+      "—"
+     ],
+     [
+      "Durchschnittsquote",
+      "Abgeschafft",
+      "—"
+     ],
+     [
+      "Erklärung",
+      "Stellt die Kontaktmöglichkeiten in den Vordergrund und benennt die blockierenden Mängel; für öffentliche Dienste erzeugt und hostet ein Online-Dienst die Erklärung",
+      "Start des Online-Dienstes, Formularvorlage"
+     ],
+     [
+      "Mehrjahresplan",
+      "Vorgegebenes Format statt freier Form",
+      "Vorlage des Formats"
+     ],
+     [
+      "Bestehende Erklärungen",
+      "18 Monate gültig, höchstens jedoch 3 Jahre ab ihrem Veröffentlichungsdatum (Ankündigung vom 2. März 2026)",
+      "Genauer Beginn der 18-Monats-Frist im Verordnungstext"
+     ]
+    ]
+   }
+  ],
+  [
+   "note",
+   "Gut zu wissen",
+   "Am 17. November 2026 bleibt der RGAA 4.1.2 die Referenz. Die DINUM verlangt, dass Arbeiten auf Grundlage des RGAA 4.1.2 keinesfalls ausgesetzt oder verschoben werden, und stellt klar, dass die Kriterien des RGAA 5 die des RGAA 4.1.2 präzisieren oder ergänzen, ohne ihnen zu widersprechen."
+  ],
+  [
+   "p",
+   "Wie sich der RGAA zu den anderen europäischen Regelwerken verhält, also zu den WCAG, zur Norm EN 301 549, zum luxemburgischen RAWeb oder zum Schweizer Standard eCH-0059, zeigt unser Vergleich der [[article:normes|Normen für digitale Barrierefreiheit und ihres Zusammenspiels]]. Für den allgemeinen Rahmen, also Pflichten, betroffene Nutzergruppen und erste Schritte, bleibt unser [[article:guide|Leitfaden zur digitalen Barrierefreiheit]] der Referenzartikel."
+  ],
+  [
+   "h2",
+   "zeitplan-rgaa-5",
+   "Zeitplan des RGAA 5 und Gültigkeitsdauer Ihrer Erklärungen"
+  ],
+  [
+   "p",
+   "Der offizielle Zeitplan besteht aus zwei Daten: einer Veröffentlichung des Prüfkatalogs, die für Dezember 2026 vorgesehen ist, und einer offiziellen Verbindlichkeit per Dekret im Laufe des Jahres 2027. Dazwischen wird der RGAA 5 verfügbar und lesbar sein, doch erst der Verordnungstext legt fest, ab wann er zur verbindlichen Referenz wird und wie der Übergang organisiert ist. Verwechseln Sie diese beiden Zeitpunkte nicht: Die Veröffentlichung erlaubt die Vorbereitung, das Dekret legt die Pflichten fest."
+  ],
+  [
+   "p",
+   "Für bereits veröffentlichte Erklärungen zur Barrierefreiheit hat die DINUM schon im März 2026 eine einfache Regel genannt: Sie bleiben 18 Monate gültig, höchstens jedoch 3 Jahre ab ihrem Veröffentlichungsdatum. Eine Erklärung gewinnt durch den RGAA 5 also nie an Lebensdauer: Die Dreijahresgrenze, die bereits heute gilt, wirkt weiter. Diese Logik ist nicht neu. Die [[https://accessibilite.numerique.gouv.fr/obligations/declaration-accessibilite/|Seite des RGAA 4.1.2 zur Erklärung zur Barrierefreiheit (auf Französisch)]] sieht bereits eine Aktualisierung drei Jahre nach dem Veröffentlichungsdatum der Erklärung vor und, für Organisationen, die die technische Methode anwenden, 18 Monate nach der Veröffentlichung einer neuen Version des Prüfkatalogs. Der genaue Beginn der 18 Monate beim RGAA 5, also die Veröffentlichung des Prüfkatalogs im Dezember 2026 oder das Dekret von 2027, muss noch bestätigt werden. Rechnen Sie bis dahin ab dem Veröffentlichungsdatum des RGAA 5: Das ist die vorsichtigste Annahme, weil sie die früheste ist."
+  ],
+  [
+   "p",
+   "Die folgende Tabelle wendet diese Regel auf vier typische Erklärungen an, unter der Annahme, dass der RGAA 5 am 15. Dezember 2026 veröffentlicht wird. Es handelt sich um Simulationen, die neu zu berechnen sind, sobald das tatsächliche Veröffentlichungsdatum feststeht."
+  ],
+  [
+   "table",
+   {
+    "caption": "Simulation: Wie lange bleibt eine Erklärung nach RGAA 4.1.2 gültig? (Annahme: RGAA 5 am 15. Dezember 2026 veröffentlicht)",
+    "head": [
+     "Datum der Erklärung",
+     "Dreijahresgrenze",
+     "Grenze von 18 Monaten",
+     "Maßgebliche Frist (die frühere)"
+    ],
+    "rows": [
+     [
+      "1. März 2024",
+      "1. März 2027",
+      "15. Juni 2028",
+      "1. März 2027: neues Audit sofort beauftragen"
+     ],
+     [
+      "15. Oktober 2024",
+      "15. Oktober 2027",
+      "15. Juni 2028",
+      "15. Oktober 2027"
+     ],
+     [
+      "10. September 2025",
+      "10. September 2028",
+      "15. Juni 2028",
+      "15. Juni 2028"
+     ],
+     [
+      "5. November 2026",
+      "5. November 2029",
+      "15. Juni 2028",
+      "15. Juni 2028"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Die praktische Folge widerspricht der Intuition. Eine ganz neue Erklärung, im November 2026 auf Grundlage des RGAA 4.1.2 erstellt, verschafft keine drei ruhigen Jahre: Wird die angekündigte Regel bestätigt, läuft sie etwa 18 Monate nach dem Erscheinen des RGAA 5 ab. Das ist kein Grund, ein Audit zu verschieben, denn ein nicht auditierter Dienst muss schon heute „nicht konform“ angeben. Es ist aber ein Grund, schon jetzt ein Audit nach RGAA 5 spätestens für das Haushaltsjahr 2028 einzuplanen."
+  ],
+  [
+   "p",
+   "Eine wesentliche Änderung des Dienstes, etwa ein Relaunch, ein Wechsel des CMS oder ein neuer geschützter Kundenbereich, erfordert ohnehin eine neue Bewertung, unabhängig vom Datum der Erklärung. Unser Artikel über [[article:declaration|die Erklärung zur Barrierefreiheit und die Fehler, die sie ungültig machen]] erläutert diese Fälle einer Aktualisierung im Einzelnen."
+  ],
+  [
+   "h2",
+   "blockierender-mangel",
+   "Der blockierende Mangel: die Regel des RGAA 5, die den Blick auf die Quote verändert"
+  ],
+  [
+   "p",
+   "Mit dem RGAA 4.1.2 hängt der Konformitätshinweis allein von der Quote ab: 100 % ergeben „vollständig konform“, mindestens 50 % „teilweise konform“, weniger als 50 % oder das Fehlen eines gültigen Audits „nicht konform“. Eine Website kann also 85 % und „teilweise konform“ ausweisen, obwohl die Schaltfläche, mit der ein Online-Antrag abgeschickt wird, mit der Tastatur nicht bedienbar ist. Genau diese Situation will der RGAA 5 beseitigen."
+  ],
+  [
+   "p",
+   "Die Ankündigung vom 3. November 2026 definiert die blockierende Nichtkonformität (im Französischen „point bloquant“) als einen Mangel, der eine Nutzerin oder einen Nutzer daran hindert, auf eine wesentliche Information zuzugreifen oder einen Vorgang bis zum Ende durchzuführen. Sie nennt zwei Beispiele: ein Element, das sich bewegt, ohne dass man es anhalten kann, und eine Schaltfläche zum Absenden eines Formulars, die mit der Tastatur nicht erreichbar ist. Ein Dienst mit einer blockierenden Nichtkonformität zeigt in jedem Fall „Accessibilité : non conforme“ an, unabhängig von seiner Quote. Der Hinweis „teilweise konform“ ist Diensten vorbehalten, die mindestens 50 % erreichen und keinen blockierenden Mangel aufweisen."
+  ],
+  [
+   "h3",
+   "Simulation an drei Diensten"
+  ],
+  [
+   "p",
+   "Um die Wirkung der Regel abzuschätzen, folgen drei fiktive Dienste, gebildet aus Situationen, die bei Audits häufig vorkommen. Die Quoten sind nach der derzeitigen Methode berechnet: erfüllte Kriterien geteilt durch anwendbare Kriterien."
+  ],
+  [
+   "table",
+   {
+    "caption": "Gleiche Quote, anderer Hinweis: Wirkung des blockierenden Mangels (Simulation)",
+    "head": [
+     "Fiktiver Dienst",
+     "Konformitätsquote",
+     "Schwerster Mangel",
+     "Hinweis nach RGAA 4.1.2",
+     "Hinweis nach RGAA 5 (angekündigte Regel)"
+    ],
+    "rows": [
+     [
+      "Portal einer Gemeinde",
+      "88 %",
+      "Die Schaltfläche „Senden“ im Anmeldeformular für die Schulkantine ist mit der Tastatur nicht erreichbar",
+      "Teilweise konform",
+      "Nicht konform"
+     ],
+     [
+      "Informationswebsite einer öffentlichen Einrichtung",
+      "71 %",
+      "Zahlreiche Mängel, aber keiner blockiert das Lesen oder die Online-Verfahren",
+      "Teilweise konform",
+      "Teilweise konform"
+     ],
+     [
+      "Kundenbereich eines Unternehmens, das unter Artikel 47 fällt",
+      "62 %",
+      "Ein Nachrichtenkarussell läuft auf der Startseite ununterbrochen, ohne Pause-Schaltfläche",
+      "Teilweise konform",
+      "Nicht konform"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Der zweite Dienst, obwohl schlechter bewertet als der erste, behält seinen Hinweis; die beiden anderen verlieren ihn. Der RGAA 5 belohnt also weniger die Menge der erfüllten Kriterien als die Fähigkeit, jedes Verfahren bis zum Ende durchzuführen. Das ist eine gute Nachricht für die Nutzerinnen und Nutzer und ein Methodenwechsel für die Teams: Ein Korrekturplan, der zuerst die einfachsten Kriterien abarbeitet, um die Quote zu steigern, wird riskant."
+  ],
+  [
+   "h3",
+   "Was wegfällt: die Durchschnittsquote"
+  ],
+  [
+   "p",
+   "Der RGAA 5 schafft auch die durchschnittliche Konformitätsquote ab, also den Mittelwert der Quoten, die Seite für Seite ermittelt werden. Dieser zweite Indikator, im derzeitigen Muster der Erklärung freiwillig, zeichnet in der Regel ein freundlicheres Bild als die Gesamtquote: In der Gesamtquote zählt ein Kriterium, das auf einer einzigen Seite der Stichprobe nicht erfüllt ist, als nicht erfüllt, während es im Durchschnitt nur die Quote dieser einen Seite senkt. Wenn Ihre Dashboards, Ihre Berichte an die Geschäftsleitung oder Ihre vertraglichen Ziele auf der Durchschnittsquote beruhen, sollten Sie sie auf die Gesamtquote und die Zahl der blockierenden Mängel umstellen."
+  ],
+  [
+   "h3",
+   "Kandidaten für blockierende Mängel erkennen, ohne auf die offizielle Methode zu warten"
+  ],
+  [
+   "p",
+   "Die Methode der Einstufung ist nicht veröffentlicht. Nichts hindert Sie jedoch daran, schon jetzt nach Mängeln zu suchen, die offensichtlich verhindern, dass ein Verfahren abgeschlossen wird. Hier ist das Raster, das wir bei Audits verwenden, um sie vorrangig zu melden; es greift der offiziellen Liste nicht vor, sondern stützt sich auf die angekündigte Definition."
+  ],
+  [
+   "ul",
+   [
+    "eine Schaltfläche, ein Link oder ein Feld, das für das Verfahren unverzichtbar ist, lässt sich mit der Tastatur nicht erreichen oder auslösen;",
+    "ein bewegter Inhalt, etwa ein Karussell, ein Laufband oder ein automatisch startendes Video, lässt sich weder anhalten noch ausblenden;",
+    "ein Captcha oder ein Authentifizierungsschritt bietet keine Alternative, die eine blinde Person oder eine Person, die keine kognitive Aufgabe lösen kann, nutzen könnte;",
+    "ein modaler Dialog hält den Fokus gefangen oder lässt sich mit der Tastatur nicht schließen, sodass man nicht weiterkommt;",
+    "eine Fehlermeldung in einem Formular wird weder neben dem Feld angezeigt noch vom Screenreader ausgegeben, sodass die Person nicht versteht, warum das Absenden scheitert;",
+    "ein unverzichtbares Dokument, etwa ein Bescheid, eine Vorladung, eine Rechnung oder ein auszufüllendes Formular, existiert nur als Bild oder als PDF ohne Tags;",
+    "eine wesentliche Information, etwa ein Betrag, eine Frist oder der Status eines Antrags, wird nur über die Farbe oder über ein Bild ohne Alternative vermittelt."
+   ]
+  ],
+  [
+   "p",
+   "Testen Sie jeden dieser Punkte in den Nutzerpfaden, auf die es ankommt, und nicht nur auf einzelnen Seiten: Kontoerstellung, Anmeldung, Zahlung, Einreichen eines Antrags, Terminbuchung, Herunterladen eines Nachweises. Ein [[svc:test-utilisateur|Test mit Nutzerinnen und Nutzern mit Behinderungen]] ergänzt das Audit sinnvoll, um zu bestätigen, dass ein Mangel im tatsächlichen Gebrauch wirklich blockiert."
+  ],
+  [
+   "h2",
+   "neue-kriterien",
+   "Die 40 neuen Kriterien: was Sie schon heute testen können"
+  ],
+  [
+   "p",
+   "Die DINUM kündigt 40 neue Kriterien an, mit denen die WCAG 2.2 und die Norm EN 301 549 V4.1.1 berücksichtigt werden sollen. Ihre Liste ist nicht veröffentlicht, doch ein Teil lässt sich aus den Ausgangstexten ableiten. Die WCAG 2.2, vom W3C am 5. Oktober 2023 veröffentlicht, ergänzen die WCAG 2.1 um neun Erfolgskriterien, davon sechs der Stufen A oder AA, also der Stufe, die das Recht verlangt. Außerdem streichen sie das Kriterium 4.1.1 Syntaxanalyse, das für obsolet erklärt wurde. Die Seite des W3C [[https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/|zu den Neuerungen der WCAG 2.2 (auf Englisch)]] führt sie auf."
+  ],
+  [
+   "p",
+   "Da die DINUM die Aufnahme der WCAG 2.2 ankündigt, dürften diese sechs Kriterien in der einen oder anderen Form vom RGAA 5 abgedeckt werden; die offizielle französische Formulierung steht noch aus. Die Tabelle nennt für jedes Kriterium einen Schnelltest, den Ihre Teams schon heute durchführen können, ohne auf die französische Fassung zu warten. Unser Artikel über [[article:wcag-22|die 9 neuen Erfolgskriterien der WCAG 2.2]] beschreibt für jedes Kriterium den typischen Fehler, die Korrektur und das vollständige Testprotokoll."
+  ],
+  [
+   "table",
+   {
+    "caption": "Die sechs Kriterien der WCAG 2.2 der Stufen A und AA und ein Test, den Sie sofort durchführen können",
+    "head": [
+     "Kriterium der WCAG 2.2",
+     "Stufe",
+     "Was es verlangt",
+     "Schnelltest"
+    ],
+    "rows": [
+     [
+      "2.4.11 Fokus nicht verdeckt (Minimum)",
+      "AA",
+      "Das Element, das den Fokus erhält, wird nicht vollständig von anderen Inhalten verdeckt",
+      "Gehen Sie die Seite mit der Tabulatortaste durch, während Cookie-Banner und fixierte Kopfleiste angezeigt werden"
+     ],
+     [
+      "2.5.7 Ziehbewegungen",
+      "AA",
+      "Jede Funktion, die eine Ziehbewegung nutzt, lässt sich auch mit einem einzelnen Zeiger ohne Ziehen ausführen, es sei denn, das Ziehen ist wesentlich",
+      "Versuchen Sie, eine Liste neu zu sortieren oder einen Preisregler allein mit einfachen Klicks zu verstellen"
+     ],
+     [
+      "2.5.8 Zielgröße (Minimum)",
+      "AA",
+      "Ziele messen mindestens 24 mal 24 CSS-Pixel, mit Ausnahmen (ausreichender Abstand, Ziel im Text …)",
+      "Messen Sie Schließsymbole, Paginierungspunkte und die Links einer dicht gefüllten Fußzeile"
+     ],
+     [
+      "3.2.6 Konsistente Hilfe",
+      "A",
+      "Hilfeangebote, die auf mehreren Seiten wiederkehren (Kontaktdaten, Kontakt, Online-Hilfe), erscheinen in derselben relativen Reihenfolge, sofern die Person nichts daran ändert",
+      "Prüfen Sie auf fünf Seiten mit unterschiedlichen Vorlagen die Position des Kontakt-Links oder des Chats im Verhältnis zu den übrigen Inhalten"
+     ],
+     [
+      "3.3.7 Redundante Eingabe",
+      "A",
+      "Eine im selben Prozess bereits eingegebene Information wird vorgeschlagen oder automatisch ausgefüllt, mit Ausnahmen (wesentliche Eingabe, Sicherheit, nicht mehr gültige Information)",
+      "Suchen Sie in einem Bestell- oder Antragsprozess nach einer Adresse oder Nummer, die zweimal eingegeben werden muss"
+     ],
+     [
+      "3.3.8 Barrierefreie Authentifizierung (Minimum)",
+      "AA",
+      "Die Anmeldung verlangt keinen kognitiven Funktionstest (sich etwas merken, abtippen, ein Rätsel lösen) ohne Alternative oder Hilfe; die Objekterkennung bleibt auf dieser Stufe zulässig",
+      "Prüfen Sie, ob Kopieren und Einfügen sowie der Passwortmanager funktionieren und ob ein Captcha zum Abtippen oder Lösen eine Alternative hat"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Die WCAG 2.2 erklären nur einen Teil der 40 neuen Kriterien. Der Rest dürfte, nach unserer Lesart der Ankündigung, aus der Norm EN 301 549 V4.1.1 hervorgehen, die Informations- und Kommunikationstechnik über das Web hinaus abdeckt, sowie aus den neuen Themen, die die Ankündigung ausdrücklich nennt: Chat, Captcha, Overlays und Barrierefreiheitseinstellungen, Autorenwerkzeuge, Videokonferenz, Telefonie und biometrische Identifizierung. Der nächste Abschnitt geht sie einzeln durch."
+  ],
+  [
+   "p",
+   "Für die Arbeitsorganisation sind zwei Punkte wichtig. Erstens hat ein Dienst, der die WCAG 2.2 auf Stufe AA bereits erfüllt, weniger Abstand aufzuholen. Zweitens zwingt die Umformulierung und Neuordnung aller Kriterien dazu, Ihre internen Prüfraster, Ihre Abnahme-Checklisten und Ihre Schulungsunterlagen zu aktualisieren: Der von der DINUM angekündigte Versionshinweis vom RGAA 4 zum RGAA 5 wird das Dokument sein, das Sie als Erstes auswerten sollten."
+  ],
+  [
+   "h2",
+   "neue-themen",
+   "Chat, Captcha, Videokonferenz, Biometrie: die neuen Themen, die Sie erfassen sollten"
+  ],
+  [
+   "p",
+   "Die sieben von der DINUM genannten Themen haben eines gemeinsam: Sie werden oft von Dritten geliefert, etwa vom Anbieter eines Chats, eines Dienstes zur Bot-Abwehr, einer Videokonferenzlösung oder einer digitalen Identität. Vor jedem Test müssen Sie also wissen, welche davon im Einsatz sind und welcher Vertrag sie regelt: Die Bestandsaufnahme ist der erste Schritt."
+  ],
+  [
+   "table",
+   {
+    "caption": "Neue Themen des RGAA 5: wo Sie sie finden und was Sie zuerst prüfen",
+    "head": [
+     "Thema",
+     "Wo es vorkommt",
+     "Erste Prüfungen",
+     "Wer handeln muss"
+    ],
+    "rows": [
+     [
+      "Chat",
+      "Online-Kundendienst, Chatbot, sichere Nachrichtenfunktion in einem Kundenbereich",
+      "Öffnen und Schließen per Tastatur, Ausgabe neuer Nachrichten durch den Screenreader, keine Zeitbegrenzung für Antworten",
+      "Anbieter der Lösung, über den Vertrag"
+     ],
+     [
+      "Captcha",
+      "Kontaktformulare, Kontoerstellung, Anmeldung",
+      "Vorhandensein einer Alternative, die weder auf dem Sehen noch auf einer kognitiven Aufgabe beruht",
+      "Technisches Team und Anbieter des Dienstes zur Bot-Abwehr"
+     ],
+     [
+      "Overlays und Barrierefreiheitseinstellungen",
+      "Werkzeuge, die der Website hinzugefügt werden, um die Darstellung zu verändern, Anzeigeeinstellungen eines geschützten Bereichs",
+      "Die Website bleibt ohne das Overlay nutzbar; die Einstellungen sind selbst barrierefrei",
+      "Digitalabteilung"
+     ],
+     [
+      "Autorenwerkzeuge",
+      "CMS, Online-Texteditoren, Werkzeuge zur Erstellung von Formularen oder Dokumenten",
+      "Die Redaktion kann barrierefreie Inhalte erstellen; das Werkzeug ist selbst per Tastatur bedienbar",
+      "Anbieter des CMS, Administration"
+     ],
+     [
+      "Videokonferenz",
+      "Online-Termine, Telekonsultation, Webinare",
+      "Untertitel, Zugang zum Chat der Besprechung, per Tastatur und Screenreader bedienbare Steuerelemente",
+      "Anbieter der Lösung"
+     ],
+     [
+      "Telefonie",
+      "Automatischer Rückruf, Sprachdialogsystem, angezeigte Kontaktnummer",
+      "Vorhandensein eines alternativen schriftlichen Kanals, Information über barrierefreie Kontaktmöglichkeiten",
+      "Bürger- oder Kundenservice"
+     ],
+     [
+      "Biometrische Identifizierung",
+      "Anmeldung per Fingerabdruck, Gesichtserkennung, Identitätsprüfung",
+      "Vorhandensein einer alternativen Methode für Personen, die die angebotene Biometrie nicht nutzen können",
+      "IT-Sicherheit und Identitätsanbieter"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Fordern Sie für jede Drittkomponente schon jetzt beim Anbieter seine Konformitätserklärung, das Datum seines letzten Audits und seine Roadmap für die WCAG 2.2 an. Steht der Vertrag zur Verlängerung an, nehmen Sie diese Anforderungen in die Leistungsbeschreibung auf: Unser Artikel über [[article:clauses-marche-public|Klauseln zur Barrierefreiheit bei öffentlichen Vergaben]] schlägt Musterklauseln vor, die genau den Übergang zu einer neuen Version des Prüfkatalogs vorsehen."
+  ],
+  [
+   "p",
+   "Ein Wort zu den Overlays, also den Werkzeugen, die einer Website hinzugefügt werden, um Darstellungseinstellungen anzubieten. Die Ankündigung sieht vor, dass sie von neuen Kriterien erfasst werden. Sie sagt nicht, dass sie zur Konformität führen; bewertet wird weiterhin der Dienst selbst. Verlassen Sie sich also nicht auf ein zusätzliches Werkzeug, um Mängel in Struktur, Formularen oder Navigation zu beheben."
+  ],
+  [
+   "h2",
+   "drei-pruefkataloge",
+   "Web, Mobil, Bürodokumente: ein RGAA in drei Prüfkatalogen"
+  ],
+  [
+   "p",
+   "Der RGAA 5 wird aus drei Prüfkatalogen bestehen: für Websites, für mobile Apps und für Bürodokumente. Die Kriterien sind dieselben, wo sie anwendbar sind, die technischen Tests unterscheiden sich jedoch, und die Testumgebung wird aktualisiert, mit einem neuen Abschnitt für Mobilgeräte und Bürodokumente. Für die veröffentlichende Organisation bedeutet das vor allem, dass sich die Bewertung auf einen Dienst als Ganzes erstrecken kann: die Website, die App, die sie fortsetzt, und die Dokumente, die sie verbreitet."
+  ],
+  [
+   "h3",
+   "Mobile Apps"
+  ],
+  [
+   "p",
+   "Mobile Apps unterliegen bereits der Pflicht aus Artikel 47, doch weil der RGAA 4.1.2 keine eigenen Tests für Mobilgeräte enthielt, musste die Web-Methode angepasst werden. Mit dem RGAA 5 erhalten mobile Apps einen eigenen Prüfkatalog mit eigenen technischen Tests; die Ankündigung nennt die vorgesehenen Systeme und Testumgebungen noch nicht im Einzelnen. Wenn Ihre Organisation eine App veröffentlicht, beginnen Sie mit einer Bestandsaufnahme der produktiven Versionen, der wichtigsten Nutzerpfade und der nativen oder hybriden Komponenten. Ein [[svc:audit-raam|Audit mobiler Apps auf echten Geräten]], mit VoiceOver und TalkBack, liefert schon heute ein verlässliches Bild der Mängel, unabhängig vom endgültigen Prüfkatalog."
+  ],
+  [
+   "h3",
+   "Bürodokumente"
+  ],
+  [
+   "p",
+   "Bürodokumente, also PDF-Dateien, Word-Dokumente oder Tabellen, sind oft der am stärksten vernachlässigte Teil eines Dienstes: Bescheide, Formulare zum Ausdrucken, Ratsbeschlüsse, Sitzungsprotokolle. Der RGAA 5 gibt ihnen eigene Tests. Die sinnvolle Arbeit kann sofort beginnen: die tatsächlich abgerufenen Dokumente erfassen, nicht mehr genutzte entfernen, in Webseiten umwandeln, was sich umwandeln lässt, und die übrigen nach einer verlässlichen Methode erstellen. Unser Leitfaden zum [[article:pdf-accessible|barrierefreien PDF aus Word, InDesign und Acrobat]] beschreibt diese Methode Schritt für Schritt."
+  ],
+  [
+   "p",
+   "Der Übergang zu drei Prüfkatalogen hat Folgen für das Budget. Ein Audit, das bisher eine Stichprobe von Webseiten umfasste, muss künftig unter Umständen auch App-Bildschirme und Dokumente einbeziehen. Berücksichtigen Sie das in der Auditplanung und in den Kostenschätzungen: Unser Artikel über [[article:prix-audit|die Faktoren, die den Preis eines Audits zur Barrierefreiheit bestimmen]] erklärt, wie stark der Umfang das Angebot beeinflusst."
+  ],
+  [
+   "h2",
+   "erklaerung-mehrjahresplan",
+   "Erklärung, Mehrjahresplan und Kontrolle durch die Arcom mit dem RGAA 5"
+  ],
+  [
+   "p",
+   "Der RGAA enthält nicht nur technische Kriterien: Sein Teil zu den Pflichten legt den Inhalt der Erklärung zur Barrierefreiheit und des Mehrjahresplans fest. Der RGAA 5 ändert diese Dokumente in vier Punkten."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Eine Erklärung, die sich an den Nutzenden ausrichtet.",
+     "Sie stellt die Kontaktmöglichkeiten in den Vordergrund und benennt die blockierenden Mängel, bis sie behoben sind. So weiß die Person schon vor Beginn eines Verfahrens, was sie aufhalten könnte und an wen sie sich wenden kann."
+    ],
+    [
+     "Ein Online-Dienst für öffentliche Stellen.",
+     "Für den Staat, die Gebietskörperschaften und den öffentlichen Krankenhausdienst erfasst ein Formular die Angaben der Erklärung; der Online-Dienst erzeugt und hostet sie. Die Organisation veröffentlicht ihre Erklärung nicht mehr selbst, sondern verweist auf den Link, den sie bei der Hinterlegung erhält."
+    ],
+    [
+     "Ein Mehrjahresplan in vorgegebenem Format.",
+     "Der Plan, bisher in freier Form, muss künftig einem festgelegten Format folgen. Sehr erzählend verfasste Pläne müssen neu gegliedert werden; Pläne, die bereits einer klaren Gliederung mit Zielen, Mitteln und Zeitplan folgen, lassen sich leichter übertragen."
+    ],
+    [
+     "Eine besser ausgestattete Kontrolle.",
+     "Die Arcom, die französische Regulierungsbehörde für audiovisuelle und digitale Kommunikation, ist seit 2023 zuständig und wird Erklärung, Konformitätshinweis, Mehrjahresplan und Maßnahmenplan besser kontrollieren können. Bei Verstößen kann sie in Verzug setzen und anschließend eine Geldbuße verhängen."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Die Entscheidung der Arcom vom 24. Juni 2026, mit der sie das Ministerium für öffentliches Handeln und öffentliche Finanzen (ministère de l'Action et des Comptes publics) wegen der Website impots.gouv.fr in Verzug gesetzt hat, zeigt, was eine Kontrolle schon heute untersucht. Die [[https://www.arcom.fr/se-documenter/espace-juridique/decisions/decision-du-24-juin-2026-mettant-en-demeure-le-ministere-de-laction-et-des-comptes-publics|von der Arcom veröffentlichte Entscheidung (auf Französisch)]] beanstandet unter anderem einen Steuerbescheid als nicht barrierefreies PDF, ein mit der Tastatur nicht bedienbares Auswahlmenü, eine mehr als drei Jahre alte Erklärung, eine Konformitätsquote von 42,11 %, die mit einem Hinweis auf vollständige Konformität angezeigt wurde, und einen Maßnahmenplan für 2024 statt für das laufende Jahr. Sie räumt ab Zustellung neun Monate ein, um die betroffenen Inhalte barrierefrei zu machen, und zwei Monate, um die Erklärungen zur Barrierefreiheit und den Maßnahmenplan in Ordnung zu bringen."
+  ],
+  [
+   "p",
+   "Diese Verstöße lassen sich auch ohne RGAA 5 feststellen. Die neue Version wird sie jedoch sichtbarer machen: Ein blockierender Mangel muss in der Erklärung erscheinen, und der Online-Dienst zur Hinterlegung wird nach Angaben der DINUM die Kontrollen der Arcom erleichtern. Zur Vorbereitung auf das vorgegebene Format folgt unser [[article:schema-pluriannuel|kommentiertes Muster eines Mehrjahresplans]] bereits einer Gliederung nach Zielen, Mitteln und Kennzahlen, die sich leicht übertragen lässt. Die französischen Pflichten und Sanktionen erläutert unser Artikel über [[article:france|digitale Barrierefreiheit in Frankreich]]."
+  ],
+  [
+   "h2",
+   "je-nach-situation",
+   "Laufendes Audit, geplantes Audit, Relaunch: was je nach Situation zu tun ist"
+  ],
+  [
+   "p",
+   "Die häufigste Frage seit der Ankündigung ist einfach: Soll man auf den RGAA 5 warten? Die offizielle Antwort lautet nein, und sie ist nachvollziehbar: Ein nicht auditierter Dienst muss „nicht konform“ angeben, und heute vorgenommene Korrekturen bleiben erhalten, da die Kriterien des RGAA 5 die des RGAA 4.1.2 ergänzen, ohne ihnen zu widersprechen. Die richtige Entscheidung hängt dennoch von Ihrer Situation ab. Die folgende Tabelle fasst unsere Empfehlungen zusammen."
+  ],
+  [
+   "table",
+   {
+    "caption": "Entscheiden, ohne zu warten: Empfehlungen je nach Situation",
+    "head": [
+     "Ihre Situation",
+     "Empfehlung",
+     "Was Sie schon jetzt ergänzen sollten"
+    ],
+    "rows": [
+     [
+      "Kein gültiges Audit, Dienst online",
+      "Ohne Verzögerung nach RGAA 4.1.2 auditieren",
+      "Im Bericht die blockierenden Mängel und die Abweichungen von den sechs Kriterien der WCAG 2.2 der Stufen A und AA ausweisen lassen"
+     ],
+     [
+      "Audit für das erste Halbjahr 2027 geplant",
+      "Das Audit nach RGAA 4.1.2 beibehalten",
+      "Im Auftrag eine Option für eine Abweichungsanalyse nach Veröffentlichung des RGAA 5 vorsehen"
+     ],
+     [
+      "Erklärung älter als zwei Jahre",
+      "Das neue Audit vor Ablauf der Dreijahresgrenze einplanen",
+      "Die frühere der beiden Fristen berechnen: drei Jahre oder 18 Monate"
+     ],
+     [
+      "Relaunch in der Konzeptionsphase",
+      "Schon jetzt nach den WCAG 2.2 Stufe AA konzipieren",
+      "Im Vertrag eine Anpassung an den RGAA 5 verlangen, falls die Lieferung nach seiner Veröffentlichung erfolgt"
+     ],
+     [
+      "Relaunch mit Lieferung 2027",
+      "Abnahme nach der bei Lieferung geltenden Version",
+      "Eine [[svc:recette|Abnahmeprüfung auf Barrierefreiheit]] der wichtigsten Nutzerpfade organisieren, mit Erfassung der blockierenden Mängel"
+     ],
+     [
+      "Mobile App oder große Dokumentenmenge",
+      "Sofort Bestandsaufnahme und gezieltes Audit",
+      "Apps und Dokumente nach Nutzung und Unverzichtbarkeit einordnen"
+     ],
+     [
+      "Kontrolle oder Inverzugsetzung durch die Arcom",
+      "Nach RGAA 4.1.2 korrigieren, der als Referenz der Kontrolle dient",
+      "Jede Korrektur dokumentieren und ein Kontrollaudit einplanen"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Wenn Sie sich mitten in einem Audit nach RGAA 4.1.2 befinden, wechseln Sie den Prüfkatalog nicht unterwegs. Bitten Sie stattdessen die Prüferin oder den Prüfer, im Bericht ausdrücklich die Mängel zu kennzeichnen, die den Abschluss eines Verfahrens verhindern, sowie die Abweichungen von den Kriterien der WCAG 2.2. Der Bericht dient dann zugleich der aktuellen Erklärung und der Vorbereitung der nächsten. So führen wir heute jedes [[svc:audit-rgaa|RGAA-Audit]] durch: mit dem geltenden offiziellen Prüfraster, ergänzt um diese beiden Vermerke. Den vollständigen Ablauf eines Audits beschreibt unser Artikel über [[article:audit-rgaa|das RGAA-Audit Woche für Woche]]."
+  ],
+  [
+   "h2",
+   "plan-90-tage",
+   "In 90 Tagen auf den RGAA 5 vorbereiten, ohne alles neu zu machen"
+  ],
+  [
+   "p",
+   "Sich auf den RGAA 5 vorzubereiten heißt nicht, auf die Liste der Kriterien zu warten, um dann alles neu aufzurollen. Der Großteil der sinnvollen Arbeit lässt sich jetzt erledigen, weil er auf bereits bekannten Elementen beruht: den WCAG 2.2, der Logik der blockierenden Mängel, dem auf Mobilgeräte und Dokumente erweiterten Geltungsbereich und den angekündigten neuen Themen. Hier ein Plan über drei Monate für eine Organisation, die bereits über ein Audit nach RGAA 4.1.2 verfügt."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Wochen 1 und 2: Bestandsaufnahme.",
+     "Erfassen Sie die Online-Dienste, Apps und Dokumentfamilien, jeweils mit dem Datum der Erklärung, der nach der Regel von 18 Monaten und 3 Jahren berechneten Frist und den Drittkomponenten: Chat, Captcha, Videokonferenz, Identitätsanbieter, Terminbuchungswerkzeug."
+    ],
+    [
+     "Wochen 3 und 4: wesentliche Nutzerpfade abbilden.",
+     "Wählen Sie für jeden Dienst drei bis fünf Verfahren, die eine Person allein durchführen können muss: sich registrieren, sich anmelden, bezahlen, einen Antrag einreichen, einen Nachweis herunterladen. Diese Pfade werden unter dem Gesichtspunkt der blockierenden Mängel geprüft."
+    ],
+    [
+     "Wochen 5 und 6: blockierende Mängel suchen.",
+     "Gehen Sie jedes Verfahren ausschließlich mit der Tastatur durch, danach mit einem Screenreader, und notieren Sie alles, was Sie aufhält. Nehmen Sie den letzten Auditbericht zur Hand und markieren Sie die Nichtkonformitäten, die auf diesen Pfaden liegen und den Abschluss verhindern."
+    ],
+    [
+     "Wochen 7 und 8: die sechs Kriterien der WCAG 2.2 testen.",
+     "Wenden Sie die Schnelltests aus der Tabelle weiter oben auf die wichtigsten Seitenvorlagen an. Die meisten Korrekturen betreffen gemeinsam genutzte Komponenten, etwa fixierte Kopfleiste, Cookie-Banner und Icon-Schaltflächen, und kommen der gesamten Website zugute."
+    ],
+    [
+     "Wochen 9 und 10: zuerst korrigieren, was blockiert.",
+     "Ordnen Sie den Maßnahmenplan neu: Blockierende Mängel haben Vorrang vor einfachen Kriterien, die die Quote steigern. Danach folgen die Mängel der gemeinsam genutzten Komponenten."
+    ],
+    [
+     "Woche 11: die Anbieter befragen.",
+     "Senden Sie den Anbietern der Drittkomponenten eine schriftliche Anfrage: Konformitätserklärung, Datum des letzten Audits, Berücksichtigung der WCAG 2.2, Zeitplan. Nehmen Sie die Antworten in den Mehrjahresplan auf."
+    ],
+    [
+     "Woche 12: die Steuerungsdokumente aktualisieren.",
+     "Ersetzen Sie in Ihren Dashboards die Durchschnittsquote durch die Gesamtquote und die Zahl der blockierenden Mängel, nehmen Sie das Budget für das Audit nach RGAA 5 auf und planen Sie die Schulung der Teams zur neuen Version ein."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Dieser Plan verlangt keine Annahme über den endgültigen Inhalt des RGAA 5. Alles, was er hervorbringt, bleibt unabhängig von der gewählten Formulierung gültig: eine aktuelle Bestandsaufnahme, festgelegte vorrangige Nutzerpfade, behobene Blockaden, befragte Anbieter. Um die Teams auf den neuesten Stand zu bringen, werden unsere [[svc:formations|Schulungen zur digitalen Barrierefreiheit]] mit Erscheinen des RGAA 5 aktualisiert, und unsere Teams für [[svc:developpement|barrierefreie Entwicklung]] können die Korrektur der gemeinsam genutzten Komponenten übernehmen."
+  ],
+  [
+   "note",
+   "Gut zu wissen",
+   "Der RGAA 5 ändert weniger die Menge der Arbeit als ihre Reihenfolge. Mit der Regel der blockierenden Mängel muss ein Dienst zuerst ermöglichen, jedes Verfahren bis zum Ende durchzuführen; die Konformitätsquote kommt danach."
+  ],
+  [
+   "h2",
+   "checkliste-nach-rolle",
+   "Checkliste RGAA 5 nach Aufgabenbereich"
+  ],
+  [
+   "p",
+   "Jeder Aufgabenbereich hat seinen Teil der Vorbereitung. Diese Liste können Sie unverändert an die betroffenen Personen weitergeben, mit einer Frist für jede Zeile."
+  ],
+  [
+   "h3",
+   "Leitung und Barrierefreiheitsbeauftragte"
+  ],
+  [
+   "ul",
+   [
+    "für jede Erklärung die frühere der beiden Fristen berechnen: Dreijahresgrenze oder 18 Monate nach dem RGAA 5;",
+    "Audits nach RGAA 5 in die Budgets 2027 und 2028 aufnehmen, unter Berücksichtigung von Mobilgeräten und Dokumenten;",
+    "in den verfolgten Kennzahlen die Durchschnittsquote durch die Gesamtquote und die Zahl der blockierenden Mängel ersetzen;",
+    "bei öffentlichen Stellen die Person benennen, die die Erklärung im künftigen Online-Dienst hinterlegen wird;",
+    "die Veröffentlichung des Versionshinweises vom RGAA 4 zum RGAA 5 und des Dekrets verfolgen."
+   ]
+  ],
+  [
+   "h3",
+   "Technik- und Designteams"
+  ],
+  [
+   "ul",
+   [
+    "sicherstellen, dass der Fokus nie von einer fixierten Kopfleiste oder einem Banner verdeckt wird;",
+    "für jede Ziehbewegung eine Alternative ohne Ziehen anbieten und Ziele von mindestens 24 mal 24 CSS-Pixeln vorsehen;",
+    "Hilfe und Kontakt auf allen Seiten in derselben relativen Reihenfolge anzeigen;",
+    "innerhalb eines Nutzerpfads bereits eingegebene Informationen vorausfüllen;",
+    "bei der Anmeldung Kopieren und Einfügen sowie Passwortmanager zulassen und für jedes Captcha eine Alternative anbieten;",
+    "für jeden bewegten Inhalt eine Pause-Schaltfläche vorsehen."
+   ]
+  ],
+  [
+   "h3",
+   "Inhalte, Einkauf und Bürger- oder Kundenservice"
+  ],
+  [
+   "ul",
+   [
+    "die tatsächlich abgerufenen Bürodokumente erfassen und in Webseiten umwandeln, was sich umwandeln lässt;",
+    "die Anbieter von Chat, Videokonferenz und Identifizierung nach ihrer Position zu den WCAG 2.2 fragen;",
+    "in jeder neuen Vergabe eine Klausel zur Anpassung an die bei Lieferung geltende Version des Prüfkatalogs vorsehen;",
+    "prüfen, ob es für jeden telefonisch erreichbaren Dienst einen schriftlichen Kontaktkanal gibt;",
+    "die Rubrik der Erklärung vorbereiten, in der die blockierenden Mängel und die den Nutzenden angebotenen Ausweichlösungen aufgeführt werden."
+   ]
+  ],
+  [
+   "h2",
+   "ausserhalb-frankreichs",
+   "Außerhalb Frankreichs: RGAA 5, EAA und Nachbarländer"
+  ],
+  [
+   "p",
+   "Der RGAA ist ein französischer Prüfkatalog. Er gilt für Organisationen, die unter Artikel 47 des Gesetzes von 2005 fallen: öffentliche Stellen, private Organisationen mit einem Auftrag des öffentlichen Dienstes und Unternehmen oberhalb der per Dekret festgelegten Umsatzschwelle. Unternehmen, die seit dem 28. Juni 2025 unter den European Accessibility Act fallen, unterliegen einem anderen Rahmen, der sich auf die Norm EN 301 549 stützt; der RGAA 5, abgestimmt auf die WCAG 2.2 und auf die Version 4.1.1 dieser Norm, wird ihnen dennoch ein nützliches Prüfraster liefern. Unser Artikel über [[article:eaa|den European Accessibility Act]] gibt einen Überblick über diesen Rahmen."
+  ],
+  [
+   "p",
+   "In Belgien ist die Norm EN 301 549 die Referenz; in Luxemburg sind es der RAWeb und der RAAM, die nach dem methodischen Vorbild des RGAA aufgebaut sind; in der Schweiz der Standard eCH-0059 für die Bundesverwaltung. Eine Gruppe, die in mehreren Ländern tätig ist, tut daher gut daran, ihr Vorgehen auf die WCAG 2.2 Stufe AA und die Norm EN 301 549 zu stützen und anschließend die für jedes Land vorgeschriebenen Erklärungen zu erstellen. Die Seiten zu [[country:france|digitaler Barrierefreiheit in Frankreich]] und zu den anderen Ländern stellen die jeweiligen Pflichten vor, und unser [[svc:audit-conformite|Konformitätsaudit nach EN 301 549]] richtet sich an Organisationen, die mehreren Prüfkatalogen unterliegen."
+  ],
+  [
+   "p",
+   "Für Gebietskörperschaften, öffentliche Einrichtungen und Verwaltungen bündelt die Seite [[sector:public|digitale Barrierefreiheit im öffentlichen Sektor]] die Pflichten und Prioritäten dieser Organisationen, die als Erste vom Online-Dienst für Erklärungen und von der verstärkten Kontrolle durch die Arcom betroffen sein werden."
+  ],
+  [
+   "h2",
+   "luxemburg-schweiz-ostbelgien",
+   "Was der RGAA 5 für Teams in Luxemburg, der Schweiz und Ostbelgien bedeutet"
+  ],
+  [
+   "p",
+   "Viele deutschsprachige Leserinnen und Leser dieses Beitrags arbeiten nicht in Frankreich, aber mit Frankreich: als Agentur oder Softwareanbieter für französische Auftraggeber, als Konzern mit einer französischen Tochtergesellschaft oder als Verwaltung, die ihre eigenen Regeln mit denen des Nachbarlandes vergleicht. Für sie ist der RGAA 5 kein direkt anwendbarer Text, wohl aber ein Signal, wohin sich die Prüfpraxis entwickelt. Drei Situationen lassen sich unterscheiden."
+  ],
+  [
+   "p",
+   "In Luxemburg beruhen die Prüfkataloge des öffentlichen Sektors, RAWeb für das Web und RAAM für mobile Apps, auf der Norm EN 301 549 und übernehmen die Methode des RGAA. Der Service information et presse (SIP) der Regierung hat [[https://accessibilite.public.lu/fr/news/2026-09-15-EN301549v4.html|den Übergang von RAWeb und RAAM zur Version 2 angekündigt (auf Französisch)]], im Laufe des Februars 2027 und kompatibel mit der Norm EN 301 549 V4.1.1, also mit den WCAG 2.2. Luxemburgische Teams erleben damit fast gleichzeitig mit ihren französischen Kolleginnen und Kollegen einen Versionswechsel. Ob die Regel der blockierenden Mängel oder die Abschaffung der Durchschnittsquote auch in den RAWeb 2 einfließen, ist nicht angekündigt: Gehen Sie nicht davon aus, sondern warten Sie die Veröffentlichung des SIP ab."
+  ],
+  [
+   "p",
+   "In der Schweiz verweist der Standard eCH-0059 in der Version 3.0 für die Bundesverwaltung auf die WCAG 2.1 Stufe AA. Ein Schweizer Unternehmen, das einen Dienst für französische Kundinnen und Kunden betreibt, sollte prüfen lassen, ob dieser Dienst unter Artikel 47 oder unter die französische Umsetzung des European Accessibility Act fällt, statt sich allein auf seine Schweizer Pflichten zu stützen. In Belgien, auch in der Deutschsprachigen Gemeinschaft, bleibt die Norm EN 301 549 die Referenz für öffentliche Stellen; ein RGAA-Audit wird dort nicht unmittelbar anerkannt, seine Ergebnisse bleiben aber weitgehend verwertbar, weil beide auf denselben WCAG beruhen."
+  ],
+  [
+   "p",
+   "Für alle drei Länder gilt dieselbe praktische Empfehlung: Prüfen Sie Ihre gemeinsam genutzten Komponenten schon jetzt nach den WCAG 2.2 Stufe AA und achten Sie besonders auf Mängel, die einen Nutzerpfad vollständig blockieren. Diese Arbeit zählt für den RGAA 5, für den künftigen RAWeb 2 und für die Norm EN 301 549 V4.1.1 gleichermaßen. Die Pflichten der einzelnen Länder erläutern die Seiten zu [[country:luxembourg|digitaler Barrierefreiheit in Luxemburg]], [[country:suisse|in der Schweiz]] und [[country:belgique|in Belgien]]."
+  ]
+ ],
+ "faq": [
+  [
+   "Wann erscheint der RGAA 5?",
+   "Nach der am 3. November 2026 veröffentlichten Ankündigung der DINUM ist die Veröffentlichung des RGAA 5 für Dezember 2026 vorgesehen; seine offizielle Verbindlichkeit soll im Laufe des Jahres 2027 per Dekret folgen. Bis zu diesem Dekret bleibt der RGAA 4.1.2 die Referenz für Audits, Erklärungen und Kontrollen. Der Verordnungstext wird das Datum des Inkrafttretens und die Organisation des Übergangs festlegen."
+  ],
+  [
+   "Muss man mit dem Audit einer Website auf den RGAA 5 warten?",
+   "Nein. Die DINUM verlangt, dass Arbeiten auf Grundlage des RGAA 4.1.2 keinesfalls ausgesetzt oder verschoben werden. Ein Dienst ohne gültiges Audit muss „nicht konform“ angeben, und heute vorgenommene Korrekturen bleiben nützlich, weil die Kriterien des RGAA 5 die des RGAA 4.1.2 ergänzen, ohne ihnen zu widersprechen. Verlangen Sie einfach, dass der Bericht blockierende Mängel und Abweichungen von den WCAG 2.2 ausweist."
+  ],
+  [
+   "Wie viele Kriterien hat der RGAA 5?",
+   "Die Gesamtzahl ist bisher nicht veröffentlicht. Die DINUM kündigt 40 neue Kriterien an, um die WCAG 2.2 und die Norm EN 301 549 V4.1.1 zu berücksichtigen, sowie eine Aktualisierung, Vereinfachung und Neuordnung aller bestehenden Kriterien und Tests. Ein Versionshinweis vom RGAA 4 zum RGAA 5 soll bereitgestellt werden, damit sich die Entsprechungen nachvollziehen lassen."
+  ],
+  [
+   "Was ist ein blockierender Mangel im RGAA 5?",
+   "Eine Nichtkonformität, die eine Person daran hindert, auf eine wesentliche Information zuzugreifen oder einen Vorgang bis zum Ende durchzuführen, zum Beispiel eine Schaltfläche zum Absenden eines Formulars, die mit der Tastatur nicht erreichbar ist, oder eine Animation, die sich nicht anhalten lässt. Ein Dienst mit einem solchen Mangel gibt „nicht konform“ an, unabhängig von seiner Quote. Die detaillierte Methode der Einstufung ist noch nicht veröffentlicht."
+  ],
+  [
+   "Bleibt meine Erklärung zur Barrierefreiheit nach dem RGAA 5 gültig?",
+   "Nach der Ankündigung der DINUM vom März 2026 bleiben Erklärungen, die vor dem RGAA 5 erstellt wurden, 18 Monate gültig, höchstens jedoch drei Jahre ab ihrem Veröffentlichungsdatum. Maßgeblich ist die frühere der beiden Fristen. Ein Relaunch oder eine wesentliche Änderung erfordert ohnehin eine neue Bewertung, unabhängig vom Datum der Erklärung."
+  ],
+  [
+   "Gilt der RGAA 5 für mobile Apps und PDF-Dokumente?",
+   "Ja. Der RGAA 5 besteht aus drei Prüfkatalogen, für das Web, für mobile Apps und für Bürodokumente, mit denselben Kriterien, wo sie anwendbar sind, und eigenen technischen Tests für jedes Medium. Apps und Dokumente unterlagen der Pflicht bereits, doch der RGAA 4.1.2 enthielt für sie keine eigens formulierten Tests."
+  ],
+  [
+   "Was wird aus dem Hinweis „teilweise konform“?",
+   "Er bleibt Diensten vorbehalten, die eine Konformitätsquote von mindestens 50 % erreichen und keinen blockierenden Mangel aufweisen. Ein Dienst mit 90 %, dessen wesentliches Formular sich mit der Tastatur nicht absenden lässt, gibt also „nicht konform“ an. Die Seite für Seite berechnete Durchschnittsquote verschwindet zudem aus den Ergebnissen."
+  ]
+ ],
+ "cta_svc": "audit-rgaa",
+ "cta_title": "Den Übergang zum RGAA 5 vorbereiten?",
+ "cta_text": "Wir auditieren Ihre Dienste nach RGAA 4.1.2 und weisen dabei schon blockierende Mängel und Abweichungen von den WCAG 2.2 aus, damit Ihr nächstes Audit nach RGAA 5 keine Überraschung bringt.",
+ "related": [
+  "normes",
+  "wcag-22",
+  "declaration"
+ ]
+}

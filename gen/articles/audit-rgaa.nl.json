@@ -14,7 +14,7 @@
  ],
  "date": "2026-10-29",
  "cluster": "methode",
- "modified": "2026-11-12",
+ "modified": "2026-11-17",
  "lead": "Een RGAA-audit meet criterium per criterium in welke mate een website, een app of een softwarepakket voldoet aan het Franse Référentiel général d’amélioration de l’accessibilité (RGAA). In Frankrijk is die audit de verplichte basis van elke toegankelijkheidsverklaring, en het is precies die verklaring die de Franse toezichthouder Arcom bij zijn controles nagaat. De meeste pagina’s over het onderwerp beschrijven de methode; deze gids toont hoe de audit in de praktijk verloopt, week per week, wat uw organisatie moet voorbereiden, hoe de steekproef tot stand komt, wat de opleveringen bevatten en hoe u het rapport leest zonder specialist in digitale toegankelijkheid te zijn.",
  "body": [
   [
@@ -110,6 +110,10 @@
   [
    "p",
    "De vierde rij verdient vooruitziendheid. De DINUM, de Franse interministeriële directie voor digitale zaken, heeft de [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|publicatie van de RGAA 5, verwacht eind 2026 (Franstalig)]] aangekondigd. Die versie integreert de WCAG 2.2 en zal criteria bevatten voor mobiele apps en kantoordocumenten. De DINUM benadrukt dat werkzaamheden op basis van de RGAA 4.1.2 in geen geval mogen worden opgeschort of uitgesteld: een audit die u vandaag uitvoert, blijft nuttig, de correcties blijven geldig, en de verklaring die eruit voortvloeit, geniet de termijn van achttien maanden."
+  ],
+  [
+   "p",
+   "Loopt uw audit al of is hij gepland voor 2027? Ons artikel over [[article:rgaa-5|de overstap naar de RGAA 5]] geeft per situatie aan wat u nu al aan de opdracht en het rapport moet toevoegen."
   ],
   [
    "p",

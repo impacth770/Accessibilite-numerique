@@ -163,6 +163,10 @@
    "In Frankrijk vermeldt [[https://design.numerique.gouv.fr/articles/2026-03-02-rgaa5/|de officiële aankondiging van de RGAA 5 door de DINUM (Franstalig)]] dat de nieuwe versie de WCAG 2.2 zal integreren en dat de criteria ervan die van de RGAA 4.1.2 zullen verduidelijken of aanvullen, zonder ze tegen te spreken. Op Europees niveau werd de [[https://www.etsi.org/deliver/etsi_en/301500_301599/301549/04.01.01_60/en_301549v040101p.pdf|norm EN 301 549 V4.1.1 (Engelstalig)]] op 2 september 2026 door ETSI gepubliceerd; de hoofdstukken over het web, documenten en software zijn afgestemd op de WCAG 2.2. In Luxemburg heeft het SIP [[https://accessibilite.public.lu/en/news/2026-09-15-EN301549v4.html|de overstap van de RAWeb en de RAAM naar versie 2 aangekondigd (Engelstalig)]], in overeenstemming met die norm."
   ],
   [
+   "p",
+   "De 40 nieuwe criteria die de DINUM aankondigt, de regel van het blokkerende punt en een voorbereidingsplan in 90 dagen vindt u in ons artikel over [[article:rgaa-5|de RGAA 5]]."
+  ],
+  [
    "note",
    "Om te onthouden",
    "De zes nieuwe criteria van niveau A en AA nu oplossen, kost minder dan ze aan te pakken na de verschijning van de RGAA 5 of de RAWeb 2: de meeste worden in enkele gedeelde componenten geregeld, en audits volgens de norm EN 301 549 V4.1.1 controleren ze nu al."
@@ -737,5 +741,6 @@
   "normes",
   "e-commerce",
   "audit-rgaa"
- ]
+ ],
+ "modified": "2026-11-17"
 }

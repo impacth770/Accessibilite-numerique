@@ -480,6 +480,10 @@
   ],
   [
    "p",
+   "Der RGAA 5 ändert auch den Inhalt der Erklärung: Blockierende Mängel müssen darin ausdrücklich genannt werden, und öffentliche Stellen reichen sie über einen Online-Dienst ein. Diese Änderungen und die Berechnung der Gültigkeit Ihrer bestehenden Erklärungen erläutern wir im Beitrag [[article:rgaa-5|was sich mit dem RGAA 5 ändert]]."
+  ],
+  [
+   "p",
    "Der Begriff der wesentlichen Änderung ist nicht durch eine Liste definiert. Er umfasst eindeutig eine grafische Neugestaltung, einen Wechsel des CMS, die Eröffnung eines neuen Nutzerbereichs oder eines neuen Bezahlvorgangs sowie den Wechsel des Entwicklungsdienstleisters. Bewährt hat sich, die Erklärung einmal im Jahr bei der Veröffentlichung des Maßnahmenplans durchzusehen und das Audit zu wiederholen, sobald eine Änderung einen Ablauf der Stichprobe berührt. Wer zugleich luxemburgische oder belgische Dienste betreut, gewinnt damit einen gemeinsamen Rhythmus: Dort ist eine mindestens jährliche Durchsicht ohnehin vorgesehen oder empfohlen."
   ],
   [
@@ -967,5 +971,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-11-12"
+ "modified": "2026-11-17"
 }

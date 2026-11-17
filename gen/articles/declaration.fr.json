@@ -476,6 +476,10 @@
   ],
   [
    "p",
+   "Le RGAA 5 modifiera aussi le contenu de la déclaration : les points bloquants devront y être explicités, et les services publics la déposeront sur un téléservice. Nous détaillons ces changements et le calcul de la validité de vos déclarations actuelles dans notre article sur [[article:rgaa-5|ce qui change avec le RGAA 5]]."
+  ],
+  [
+   "p",
    "La notion de modification substantielle n'est pas définie par une liste. Elle couvre sans ambiguïté une refonte graphique, un changement de CMS, l'ouverture d'un nouvel espace usager ou d'un nouveau tunnel de paiement, et le changement de prestataire de développement. Une bonne pratique consiste à relire la déclaration une fois par an, au moment de la publication du plan d'actions, et à refaire l'audit dès qu'une évolution touche un parcours de l'échantillon."
   ],
   [
@@ -872,5 +876,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-11-12"
+ "modified": "2026-11-17"
 }

@@ -476,6 +476,10 @@
   ],
   [
    "p",
+   "RGAA 5 will also change what the statement contains: blocking issues must be spelled out, and public bodies will file it through an online service. We cover these changes, and how to work out how long your current statements remain valid, in our article on [[article:rgaa-5|what changes with RGAA 5]]."
+  ],
+  [
+   "p",
    "The notion of substantial modification is not defined by a list. It clearly covers a visual redesign, a change of CMS, the launch of a new user area or a new payment funnel, and a change of development supplier. A good practice is to reread the statement once a year, when the action plan is published, and to repeat the audit as soon as a change affects a user journey in the sample."
   ],
   [
@@ -872,5 +876,5 @@
   "guide"
  ],
  "cluster": "methode",
- "modified": "2026-11-12"
+ "modified": "2026-11-17"
 }
