@@ -183,6 +183,10 @@
    "Text contrast is measured against criterion 1.4.3: 4.5:1 for body text, 3:1 for large text. Crossed-out prices in light grey, legal notices in small print and white “new” labels on pastel backgrounds often fail. Criterion 1.4.11 also requires a contrast of 3:1 for field borders when they are needed to identify the field, and for icons needed to understand the content."
   ],
   [
+   "p",
+   "To measure these cases correctly (text on photos, hover states, dark mode), follow the test protocol in our article on [[article:contraste-couleurs|colour contrast]]."
+  ],
+  [
    "h2",
    "search-product-lists-filters",
    "Screen 2: search, product listings and filters"
@@ -695,5 +699,5 @@
   "declaration",
   "normes"
  ],
- "modified": "2026-11-05"
+ "modified": "2026-11-19"
 }

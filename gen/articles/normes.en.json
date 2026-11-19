@@ -563,6 +563,10 @@
   ],
   [
    "p",
+   "To move from the rule to practice, our article on [[article:contraste-couleurs|colour contrast and its common traps]] gives calculated ratios for everyday colours and a method for adjusting a brand palette."
+  ],
+  [
+   "p",
    "Criterion 1.4.11 Non-text Contrast (level AA), RGAA criterion 3.3, extends the requirement to interface components and to graphical elements that convey information: the border of an input field, a magnifying-glass icon with no label or the line on a chart must reach a contrast of 3:1 against adjacent colours."
   ],
   [
@@ -833,5 +837,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-17"
+ "modified": "2026-11-19"
 }

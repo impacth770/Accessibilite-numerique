@@ -142,6 +142,10 @@
    "Les personnes malvoyantes utilisent le zoom du navigateur, la loupe du système d'exploitation ou un logiciel d'agrandissement dédié, parfois avec des couleurs inversées ou un mode de contraste élevé. Avec un fort grossissement, elles ne voient qu'une petite portion de l'écran à la fois. Une notification qui apparaît dans un coin éloigné, un message de confirmation qui disparaît après trois secondes ou un texte figé dans une image qui devient flou à l'agrandissement leur échappent. Les WCAG demandent notamment que le contenu reste lisible sans défilement horizontal sur une largeur équivalente à 320 pixels CSS et que l'espacement du texte puisse être augmenté sans perte d'information."
   ],
   [
+   "p",
+   "Pour ces lecteurs, le premier obstacle est souvent un texte trop pâle : les seuils à respecter et la façon de les mesurer sont détaillés dans notre article sur [[article:contraste-couleurs|le contraste des couleurs]]."
+  ],
+  [
    "h3",
    "Commande vocale"
   ],
@@ -613,5 +617,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-14"
+ "modified": "2026-11-19"
 }

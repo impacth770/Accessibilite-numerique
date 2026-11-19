@@ -142,6 +142,10 @@
    "Sehbehinderte Menschen nutzen den Zoom des Browsers, die Lupe des Betriebssystems oder eine eigene Vergrößerungssoftware, manchmal mit invertierten Farben oder einem Hochkontrastmodus. Bei starker Vergrößerung sehen sie jeweils nur einen kleinen Ausschnitt des Bildschirms. Eine Benachrichtigung, die in einer entfernten Ecke erscheint, eine Bestätigungsmeldung, die nach drei Sekunden verschwindet, oder ein in ein Bild eingebetteter Text, der beim Vergrößern unscharf wird, entgehen ihnen. Die WCAG verlangen unter anderem, dass Inhalte bei einer Breite von 320 CSS-Pixeln ohne horizontales Scrollen lesbar bleiben und dass sich die Textabstände ohne Informationsverlust vergrößern lassen."
   ],
   [
+   "p",
+   "Für diese Leserinnen und Leser ist zu blasser Text oft das erste Hindernis: Die Schwellenwerte und ihre Messung erläutert unser Beitrag zum [[article:contraste-couleurs|Farbkontrast]]."
+  ],
+  [
    "h3",
    "Sprachsteuerung"
   ],
@@ -613,5 +617,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-14"
+ "modified": "2026-11-19"
 }

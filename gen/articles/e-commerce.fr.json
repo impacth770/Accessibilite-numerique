@@ -183,6 +183,10 @@
    "Le contraste des textes est mesuré selon le critère 1.4.3 : 4,5:1 pour le texte courant, 3:1 pour le grand texte. Les prix barrés en gris clair, les mentions légales en petits caractères et les étiquettes « nouveau » blanches sur fond pastel échouent souvent. Le critère 1.4.11 impose aussi un contraste de 3:1 pour les contours des champs lorsqu'ils servent à les repérer, et pour les icônes nécessaires à la compréhension."
   ],
   [
+   "p",
+   "Pour mesurer ces cas sans erreur (texte sur photo, états de survol, mode sombre), suivez le protocole de test de notre article sur [[article:contraste-couleurs|le contraste des couleurs]]."
+  ],
+  [
    "h2",
    "recherche-listes-filtres",
    "Écran 2 : recherche, listes de produits et filtres"
@@ -695,5 +699,5 @@
   "declaration",
   "normes"
  ],
- "modified": "2026-11-05"
+ "modified": "2026-11-19"
 }

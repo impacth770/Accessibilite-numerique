@@ -238,6 +238,10 @@
    "Op niveau AAA gaat criterium 2.4.12 verder: geen enkel deel van het element mag verborgen zijn. En criterium 2.4.13 Focusweergave vraagt dat de focusindicator minstens de oppervlakte beslaat van een omlijning van 2 CSS-pixels rond de component, met een contrast van minstens 3:1 tussen dezelfde pixels met en zonder focus. Die twee criteria zijn niet verplicht, maar een focusstijl die volgens 2.4.13 is ontworpen, beslecht in één keer de discussies over de zichtbaarheid van de focus (criterium 2.4.7 Focus zichtbaar, niveau AA, criterium 10.7 van de RGAA)."
   ],
   [
+   "p",
+   "Op niveau AA valt het contrast van de focusindicator onder criterium 1.4.11 en de drempel van 3:1, die samen met de andere kleurregels wordt uitgelegd in ons artikel over [[article:contraste-couleurs|de contrastdrempels van 4,5:1 en 3:1]]."
+  ],
+  [
    "h2",
    "sleepbewegingen",
    "2.5.7 Sleepbewegingen: een alternatief voor slepen en neerzetten"
@@ -742,5 +746,5 @@
   "e-commerce",
   "audit-rgaa"
  ],
- "modified": "2026-11-17"
+ "modified": "2026-11-19"
 }

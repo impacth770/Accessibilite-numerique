@@ -195,6 +195,10 @@
    "Het contrast van tekst wordt gemeten volgens criterium 1.4.3: 4,5:1 voor gewone tekst, 3:1 voor grote tekst. Doorgestreepte prijzen in lichtgrijs, juridische vermeldingen in kleine letters en witte labels “nieuw” op een pastelkleurige achtergrond slagen vaak niet. Criterium 1.4.11 eist ook een contrast van 3:1 voor de randen van invoervelden wanneer die nodig zijn om het veld te herkennen, en voor pictogrammen die nodig zijn om de inhoud te begrijpen."
   ],
   [
+   "p",
+   "Om deze gevallen correct te meten (tekst op foto's, hovertoestanden, donkere modus), volgt u het testprotocol uit ons artikel over [[article:contraste-couleurs|kleurcontrast]]."
+  ],
+  [
    "h2",
    "zoeken-productlijsten-filters",
    "Scherm 2: zoekfunctie, productlijsten en filters"
@@ -707,5 +711,5 @@
   "declaration",
   "normes"
  ],
- "modified": "2026-11-05"
+ "modified": "2026-11-19"
 }

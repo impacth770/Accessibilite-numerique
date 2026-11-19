@@ -238,6 +238,10 @@
    "Au niveau AAA, le critère 2.4.12 va plus loin : aucune partie de l'élément ne doit être cachée. Et le critère 2.4.13 Apparence du focus demande que l'indicateur de focus couvre au moins la surface d'un contour de 2 pixels CSS autour du composant, avec un contraste d'au moins 3:1 entre les mêmes pixels avec et sans focus. Ces deux critères ne sont pas obligatoires, mais un style de focus conçu selon 2.4.13 règle d'un coup les discussions sur la visibilité du focus (critère 2.4.7, niveau AA, critère 10.7 du RGAA)."
   ],
   [
+   "p",
+   "Au niveau AA, le contraste de l'indicateur de focus relève du critère 1.4.11 et de son seuil de 3:1, détaillé avec les autres règles de couleur dans notre article sur [[article:contraste-couleurs|les seuils de contraste 4,5:1 et 3:1]]."
+  ],
+  [
    "h2",
    "mouvements-glissement",
    "2.5.7 Mouvements de glissement : une alternative au glisser-déposer"
@@ -742,5 +746,5 @@
   "e-commerce",
   "audit-rgaa"
  ],
- "modified": "2026-11-17"
+ "modified": "2026-11-19"
 }

@@ -142,6 +142,10 @@
    "Slechtziende mensen gebruiken de zoomfunctie van de browser, de loep van het besturingssysteem of gespecialiseerde vergrotingssoftware, soms met omgekeerde kleuren of een modus met hoog contrast. Bij sterke vergroting zien ze maar een klein stukje van het scherm tegelijk. Een melding die in een verre hoek verschijnt, een bevestiging die na drie seconden verdwijnt of tekst in een afbeelding die wazig wordt bij vergroting, ontgaat hen. De WCAG vragen onder meer dat de inhoud leesbaar blijft zonder horizontaal scrollen op een breedte van 320 CSS-pixels, en dat de tekstafstand vergroot kan worden zonder verlies van informatie."
   ],
   [
+   "p",
+   "Voor deze lezers is te bleke tekst vaak het eerste obstakel: de drempels en de manier om ze te meten staan in ons artikel over [[article:contraste-couleurs|kleurcontrast]]."
+  ],
+  [
    "h3",
    "Spraakbesturing"
   ],
@@ -654,5 +658,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-14"
+ "modified": "2026-11-19"
 }

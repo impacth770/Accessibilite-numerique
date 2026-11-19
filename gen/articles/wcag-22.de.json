@@ -238,6 +238,10 @@
    "Auf Stufe AAA geht das Kriterium 2.4.12 weiter: Kein Teil des Elements darf verdeckt sein. Und das Kriterium 2.4.13 Fokusdarstellung verlangt, dass der Fokusindikator mindestens die Fläche eines 2 CSS-Pixel breiten Umrisses um die Komponente abdeckt, mit einem Kontrast von mindestens 3:1 zwischen denselben Pixeln mit und ohne Fokus. Beide Kriterien sind nicht verpflichtend, doch ein nach 2.4.13 gestalteter Fokus-Stil beendet auf einen Schlag alle Diskussionen über die Sichtbarkeit des Fokus (Kriterium 2.4.7, Stufe AA, im RGAA das Kriterium 10.7)."
   ],
   [
+   "p",
+   "Auf Stufe AA fällt der Kontrast des Fokusindikators unter das Kriterium 1.4.11 mit seinem Schwellenwert von 3:1, den unser Beitrag zu [[article:contraste-couleurs|den Kontrastschwellen 4,5:1 und 3:1]] zusammen mit den übrigen Farbregeln erläutert."
+  ],
+  [
    "h2",
    "ziehbewegungen",
    "2.5.7 Ziehbewegungen: eine Alternative zu Drag-and-drop"
@@ -742,5 +746,5 @@
   "e-commerce",
   "audit-rgaa"
  ],
- "modified": "2026-11-17"
+ "modified": "2026-11-19"
 }

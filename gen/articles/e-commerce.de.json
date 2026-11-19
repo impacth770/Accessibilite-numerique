@@ -183,6 +183,10 @@
    "Der Kontrast von Texten wird nach Kriterium 1.4.3 gemessen: 4,5:1 für normalen Text, 3:1 für großen Text. Durchgestrichene Preise in Hellgrau, Rechtshinweise in Kleinschrift und weiße „Neu“-Etiketten auf Pastellgrund fallen oft durch. Kriterium 1.4.11 verlangt außerdem einen Kontrast von 3:1 für die Umrandungen von Formularfeldern, wenn sie zum Erkennen der Felder dienen, und für Symbole, die zum Verständnis nötig sind."
   ],
   [
+   "p",
+   "Um diese Fälle korrekt zu messen (Text auf Fotos, Hover-Zustände, Dunkelmodus), folgen Sie dem Prüfablauf aus unserem Beitrag zum [[article:contraste-couleurs|Farbkontrast]]."
+  ],
+  [
    "h2",
    "suche-produktlisten-filter",
    "Schritt 2: Suche, Produktlisten und Filter"
@@ -695,5 +699,5 @@
   "declaration",
   "normes"
  ],
- "modified": "2026-11-05"
+ "modified": "2026-11-19"
 }

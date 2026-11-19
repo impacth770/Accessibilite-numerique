@@ -575,6 +575,10 @@
   ],
   [
    "p",
+   "Hoe u die regel in de praktijk toepast, leest u in ons artikel over [[article:contraste-couleurs|kleurcontrast en de valkuilen ervan]], met berekende verhoudingen voor gangbare kleuren en een methode om een huisstijlpalet bij te sturen."
+  ],
+  [
+   "p",
    "Criterium 1.4.11 Contrast van niet-tekstuele content (niveau AA), criterium 3.3 van de RGAA, breidt de eis uit naar interfacecomponenten en informatieve grafische elementen: de rand van een invoerveld, het pictogram van een vergrootglas zonder label of de curve van een grafiek moeten een contrast van 3:1 halen met de aangrenzende kleuren."
   ],
   [
@@ -845,5 +849,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-17"
+ "modified": "2026-11-19"
 }

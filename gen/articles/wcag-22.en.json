@@ -238,6 +238,10 @@
    "At level AAA, criterion 2.4.12 goes further: no part of the element may be hidden. And criterion 2.4.13 Focus Appearance requires the focus indicator to cover at least the area of a 2 CSS pixel thick perimeter around the component, with a contrast of at least 3:1 between the same pixels in the focused and unfocused states. Neither criterion is mandatory, but a focus style designed to meet 2.4.13 settles once and for all the debates about focus visibility (criterion 2.4.7, level AA, criterion 10.7 of RGAA)."
   ],
   [
+   "p",
+   "At level AA, the contrast of the focus indicator falls under criterion 1.4.11 and its 3:1 threshold, explained alongside the other colour rules in our article on [[article:contraste-couleurs|the 4.5:1 and 3:1 contrast thresholds]]."
+  ],
+  [
    "h2",
    "dragging-movements",
    "2.5.7 Dragging Movements: an alternative to drag and drop"
@@ -742,5 +746,5 @@
   "e-commerce",
   "audit-rgaa"
  ],
- "modified": "2026-11-17"
+ "modified": "2026-11-19"
 }

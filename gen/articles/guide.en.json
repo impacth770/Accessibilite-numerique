@@ -142,6 +142,10 @@
    "People with low vision use the browser zoom, the operating system’s magnifier or dedicated screen magnification software, sometimes with inverted colours or a high-contrast mode. At high magnification, they see only a small portion of the screen at a time. A notification that appears in a distant corner, a confirmation message that disappears after three seconds or text embedded in an image that blurs when enlarged all escape them. WCAG requires, among other things, that content remain readable without horizontal scrolling at a width equivalent to 320 CSS pixels and that text spacing can be increased without loss of information."
   ],
   [
+   "p",
+   "For these readers, the first obstacle is often text that is too pale: the thresholds and how to measure them are set out in our article on [[article:contraste-couleurs|colour contrast]]."
+  ],
+  [
    "h3",
    "Voice control"
   ],
@@ -613,5 +617,5 @@
   "france"
  ],
  "cluster": "pilier",
- "modified": "2026-11-14"
+ "modified": "2026-11-19"
 }

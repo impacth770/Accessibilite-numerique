@@ -563,6 +563,10 @@
   ],
   [
    "p",
+   "Pour passer de la règle à la pratique, notre article sur [[article:contraste-couleurs|le contraste des couleurs et ses cas pièges]] donne les ratios calculés de couleurs courantes et une méthode pour corriger une palette de marque."
+  ],
+  [
+   "p",
    "Le critère 1.4.11 (niveau AA), critère 3.3 du RGAA, étend l'exigence aux composants d'interface et aux éléments graphiques porteurs d'information : la bordure d'un champ de saisie, l'icône d'une loupe sans libellé ou la courbe d'un graphique doivent atteindre un contraste de 3:1 avec les couleurs adjacentes."
   ],
   [
@@ -833,5 +837,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-17"
+ "modified": "2026-11-19"
 }

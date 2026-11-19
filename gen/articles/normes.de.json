@@ -588,6 +588,10 @@
   ],
   [
    "p",
+   "Wie sich diese Regel in der Praxis umsetzen lässt, zeigt unser Beitrag zu [[article:contraste-couleurs|Farbkontrast und seinen Fallstricken]], mit berechneten Verhältnissen für gängige Farben und einer Methode zur Anpassung der Markenpalette."
+  ],
+  [
+   "p",
    "Das Kriterium 1.4.11 (Stufe AA), im RGAA das Kriterium 3.3, dehnt die Anforderung auf Bedienelemente und informationstragende Grafiken aus: Der Rahmen eines Eingabefelds, ein Lupensymbol ohne Beschriftung oder die Kurve eines Diagramms müssen einen Kontrast von 3:1 zu den angrenzenden Farben erreichen."
   ],
   [
@@ -858,5 +862,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-17"
+ "modified": "2026-11-19"
 }
