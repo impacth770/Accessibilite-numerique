@@ -334,7 +334,7 @@
   ],
   [
    "p",
-   "Die Stufe AAA behält das Kriterium 2.5.5 Zielgröße (erweitert), das 44 mal 44 CSS-Pixel verlangt. Das ist ein gutes Ziel für die Hauptschaltflächen einer mobilen App oder eines Terminals. Teams, die bereits die in den Gestaltungsrichtlinien von iOS und Android empfohlenen Größen übernommen haben, erfüllen 2.5.8 in der Regel ohne zusätzlichen Aufwand."
+   "Die Stufe AAA behält das Kriterium 2.5.5 Zielgröße (erweitert), das 44 mal 44 CSS-Pixel verlangt. Das ist ein gutes Ziel für die Hauptschaltflächen einer mobilen App oder eines Terminals. Teams, die bereits die in den Gestaltungsrichtlinien von iOS und Android empfohlenen Größen übernommen haben, erfüllen 2.5.8 in der Regel ohne zusätzlichen Aufwand. Die übrigen Kriterien, die für eine App besonders zählen, etwa Ausrichtung, Gesten und Textvergrößerung, behandelt unser Beitrag zu den [[article:application-mobile|20 häufigsten Barrierefreiheitsmängeln in iOS- und Android-Apps]]."
   ],
   [
    "h3",
@@ -746,5 +746,5 @@
   "e-commerce",
   "audit-rgaa"
  ],
- "modified": "2026-11-19"
+ "modified": "2026-11-21"
 }

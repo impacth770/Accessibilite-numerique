@@ -249,7 +249,7 @@
   ],
   [
    "p",
-   "Les applications iOS et Android des organismes concernés sont couvertes depuis 2021, tout comme les progiciels métiers accessibles par navigateur. Le RGAA 4.1.2 a été construit d'abord pour les contenus web, et le décret d'août 2026 demande justement au futur référentiel de préciser à quelles catégories de services ses critères s'appliquent. En pratique, l'évaluation d'une application native s'appuie sur la norme EN 301 549 et se mène sur appareils réels, avec VoiceOver et TalkBack ; c'est l'objet d'un [[svc:audit-raam|audit d'application mobile]]. Les vues web intégrées dans une application, comme un formulaire de paiement ouvert dans un navigateur embarqué, s'évaluent quant à elles avec le RGAA."
+   "Les applications iOS et Android des organismes concernés sont couvertes depuis 2021, tout comme les progiciels métiers accessibles par navigateur. Le RGAA 4.1.2 a été construit d'abord pour les contenus web, et le décret d'août 2026 demande justement au futur référentiel de préciser à quelles catégories de services ses critères s'appliquent. En pratique, l'évaluation d'une application native s'appuie sur la norme EN 301 549 et se mène sur appareils réels, avec VoiceOver et TalkBack ; c'est l'objet d'un [[svc:audit-raam|audit d'application mobile]]. Les vues web intégrées dans une application, comme un formulaire de paiement ouvert dans un navigateur embarqué, s'évaluent quant à elles avec le RGAA. Les obligations pays par pays, les défauts les plus fréquents et un protocole de test sont réunis dans notre guide de [[article:application-mobile|l'accessibilité d'une application mobile]]."
   ],
   [
    "h3",
@@ -657,6 +657,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-11-14",
+ "modified": "2026-11-21",
  "cluster": "reglementation"
 }

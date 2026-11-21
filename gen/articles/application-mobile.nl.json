@@ -1,0 +1,725 @@
+{
+ "slug": "toegankelijkheid-mobiele-app",
+ "h1": "Toegankelijkheid van mobiele apps: 20 iOS- en Android-fouten opgelost, test in 30 minuten",
+ "crumb": "Toegankelijkheid mobiele apps",
+ "meta_title": "Toegankelijkheid van mobiele apps: iOS, Android en testen",
+ "meta_desc": "Toegankelijkheid van mobiele apps: verplichtingen per land, 20 fouten in iOS en Android met hun oplossing, test met VoiceOver en TalkBack in 30 minuten, RAAM-audit.",
+ "card_desc": "Verplichtingen per land, 20 iOS- en Android-fouten met hun oplossing, test met VoiceOver en TalkBack en inbedding in de ontwikkelcyclus.",
+ "cat": "guide",
+ "where": "Europa",
+ "cover": "iOS",
+ "cover_note": [
+  "VoiceOver en TalkBack",
+  "EN 301 549, RAAM 1.1"
+ ],
+ "date": "2026-11-21",
+ "cluster": "technique",
+ "lead": "De toegankelijkheid van mobiele apps hangt af van details die algemene gidsen zelden behandelen: een icoonknop zonder naam die VoiceOver alleen als “knop” voorleest, een scherm dat de liggende stand weigert, een veld voor een sms-code dat met TalkBack onbereikbaar is. Apps voor iOS en Android van de publieke sector vallen sinds 23 juni 2021 onder de regels voor digitale toegankelijkheid, en apps van banken, vervoerders en webshops sinds de European Accessibility Act van toepassing werd, op 28 juni 2025. Dit artikel geeft de regels die in elk land gelden, de 20 fouten die van app tot app terugkomen met hun oplossing op elk platform, een protocol om zelf in 30 minuten te testen en de manier om toegankelijkheid in de ontwikkelcyclus op te nemen.",
+ "body": [
+  [
+   "h2",
+   "toegankelijke-mobiele-app-afbakening",
+   "Toegankelijkheid van een mobiele app: waarover gaat het precies?"
+  ],
+  [
+   "p",
+   "Een toegankelijke mobiele app is een app die een blinde persoon kan gebruiken met de schermlezer van zijn telefoon, die een slechtziende persoon kan lezen met tekst die tot 200% is vergroot, die iemand die geen fijne bewegingen kan maken kan bedienen met een extern toetsenbord, spraakbediening of een schakelaar, en die een dove persoon zonder geluid kan volgen. De principes zijn die van digitale toegankelijkheid in het algemeen, zoals voorgesteld in onze [[article:guide|gids over digitale toegankelijkheid]]; de uitvoering ervan verandert op mobiel echter volledig."
+  ],
+  [
+   "p",
+   "De reden is technisch. Op het web vertaalt de browser de HTML-code naar een boomstructuur die hulptechnologieën kunnen lezen: een element button wordt aangekondigd als een knop, een titel h2 als een kop. In een native app speelt het besturingssysteem die rol, op basis van de toegankelijkheidseigenschappen die elke component blootstelt: een label, een rol (Apple spreekt van “traits”), een toestand, een waarde. Een standaardcomponent van iOS of Android stelt die informatie vanzelf bloot. Een op maat getekende component, heel gebruikelijk in apps die veel aandacht besteden aan hun visuele identiteit, stelt niets bloot zolang de ontwikkelaar dat niet uitdrukkelijk heeft gedaan."
+  ],
+  [
+   "p",
+   "Het woord “app” dekt bovendien verschillende realiteiten, en de audit verloopt niet in elk geval op dezelfde manier:"
+  ],
+  [
+   "ul",
+   [
+    "de native app, geschreven in Swift of Objective-C voor iOS, in Kotlin of Java voor Android, met de componenten van het systeem (UIKit of SwiftUI, Views of Jetpack Compose);",
+    "de cross-platform app, één keer geschreven met een framework zoals React Native of Flutter, dat er twee apps van maakt; de toegankelijkheid ervan hangt af van de manier waarop het framework zijn componenten vertaalt naar die van het systeem;",
+    "de hybride app, die in hoofdzaak webpagina’s toont in een ingebouwde weergave (webview); de inhoud ervan wordt beoordeeld als web, maar in de context van een app;",
+    "de progressive web app, geïnstalleerd vanuit de browser, die juridisch en technisch een website blijft."
+   ]
+  ],
+  [
+   "p",
+   "In de praktijk combineren veel apps die modellen: een native schil, een inschrijvingstraject in een webview, een betaalmodule van een dienstverlener, een interactieve kaart uit een externe bibliotheek. Elk van die onderdelen kan de ervaring van een schermlezergebruiker breken, en het is de volledige app, zoals de gebruiker ze downloadt, die toegankelijk moet zijn. Wie de toegankelijkheid van een mobiele app wil beoordelen, begint dus met het in kaart brengen van die bouwstenen: welke schermen zijn native, welke zijn web, en welke komen van een leverancier."
+  ],
+  [
+   "h2",
+   "verplichtingen-per-land",
+   "Mobiele apps: de verplichtingen in Frankrijk, België, Luxemburg en Zwitserland"
+  ],
+  [
+   "p",
+   "Twee Europese teksten bepalen het kader. Richtlijn (EU) 2016/2102 verplicht overheidsinstanties hun websites en mobiele apps toegankelijk te maken; voor apps was de uiterste datum 23 juni 2021. [[https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32019L0882|Richtlijn (EU) 2019/882, de European Accessibility Act]], breidt de verplichting sinds 28 juni 2025 uit tot een lijst van diensten uit de privésector. Elk land heeft die teksten omgezet met een eigen evaluatiereferentie en een eigen toezichthoudende autoriteit."
+  ],
+  [
+   "table",
+   {
+    "caption": "Toegankelijkheid van mobiele apps: toepasselijke regels per land",
+    "head": [
+     "Land",
+     "Betrokken organisaties",
+     "Evaluatiereferentie",
+     "Toezicht"
+    ],
+    "rows": [
+     [
+      "Frankrijk",
+      "Publieke sector, organisaties met een opdracht van openbare dienstverlening, ondernemingen met een omzet van meer dan 250 miljoen euro (artikel 47 van de wet van 11 februari 2005); diensten die onder de EAA vallen",
+      "RGAA 4.1.2 voor webinhoud en webviews; norm EN 301 549 voor de native app, in afwachting van de mobiele criteria van de RGAA 5",
+      "Arcom voor artikel 47; DGCCRF en sectorale autoriteiten voor de EAA"
+     ],
+     [
+      "België",
+      "Federale, gewestelijke, gemeenschaps- en lokale overheidsinstanties; diensten die onder de EAA vallen",
+      "Norm EN 301 549 (WCAG niveau AA)",
+      "Toezichthoudende instanties aangewezen door elk bestuursniveau; voor de EAA onder meer de Economische Inspectie van de FOD Economie"
+     ],
+     [
+      "Luxemburg",
+      "Publieke sector (wet van 28 mei 2019); diensten die onder de EAA vallen (wet van 8 maart 2023)",
+      "RAAM 1.1, dat de norm EN 301 549 V3.2.1 uitwerkt",
+      "SIP voor de publieke sector; OSAPS voor de EAA"
+     ],
+     [
+      "Zwitserland",
+      "Bondsstaat (LHand), kantons volgens hun eigen regels; ondernemingen die in de Unie verkopen, op grond van de EAA",
+      "Norm eCH-0059, gebaseerd op de WCAG niveau AA; EN 301 549 voor de Europese markt",
+      "Geen centrale autoriteit; toezicht op het Unierecht door de autoriteiten van de landen waar wordt verkocht"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "In Frankrijk noemt artikel 47 van de wet van 11 februari 2005 mobiele apps uitdrukkelijk, net als websites, intranetten en softwarepakketten; de DINUM herinnert daaraan in haar toelichting bij het [[https://accessibilite.numerique.gouv.fr/obligations/champ-application/|toepassingsgebied van de verplichtingen (Franstalig)]]. De moeilijkheid zit in de referentie: de RGAA 4.1.2 is ontworpen voor het web. De DINUM heeft aangekondigd dat de [[https://design.numerique.gouv.fr/articles/2026-11-03-rgaa5/|RGAA 5 criteria voor mobiele apps zal bevatten (Franstalig)]], met een publicatie die voor december 2026 is gepland. Tot dan steunt de evaluatie van een native app bij gebrek aan een eigen nationaal referentiekader in de praktijk op de norm EN 301 549, terwijl de schermen die in een webview worden getoond onder de RGAA vallen. Ons artikel over [[article:france|digitale toegankelijkheid in Frankrijk]] beschrijft de verplichtingen, de verklaring en de sancties."
+  ],
+  [
+   "p",
+   "Luxemburg is het best uitgeruste land. Het [[https://accessibilite.public.lu/fr/raam1.1/index.html|RAAM 1.1 (Franstalig)]], op 24 februari 2025 gepubliceerd door de Service information et presse (SIP), telt 108 controlecriteria en dekt de hoofdstukken van de norm EN 301 549 V3.2.1 die op een app betrekking hebben: generieke eisen, tweerichtingsspraakcommunicatie, video, niet-webdocumenten, software, documentatie en ondersteunende diensten. Het is een openbare en gratis methode, die een organisatie uit een ander land als werkraster kan gebruiken. Ons artikel over [[article:luxembourg|digitale toegankelijkheid in Luxemburg]] stelt de controles van het SIP en de gepubliceerde resultaten voor, waaruit blijkt dat mobiel het zwakke punt van de Luxemburgse publieke sector blijft."
+  ],
+  [
+   "p",
+   "In België is de referentie rechtstreeks de norm EN 301 549, die de federale wet van 19 juli 2018 en de gewestelijke en gemeenschapsteksten toepassen op de apps van overheidsinstanties. In Zwitserland dient de norm eCH-0059 als referentie voor de administraties; een Zwitserse onderneming die een app aanbiedt aan consumenten in de Unie, moet voor die markt bovendien de EAA naleven. Onze vergelijking van de [[article:normes|normen voor digitale toegankelijkheid, van WCAG 2.2 tot RGAA]] legt uit hoe die referentiekaders zich tot elkaar verhouden."
+  ],
+  [
+   "h3",
+   "Wat dit betekent voor Vlaamse en Brusselse organisaties"
+  ],
+  [
+   "p",
+   "Voor een Vlaamse gemeente, een Brusselse instelling of een federale overheidsdienst die een app publiceert, is de vraag welk referentiekader geldt dus eenvoudig te beantwoorden: de norm EN 301 549, op niveau AA van de WCAG. Er bestaat in België geen aparte nationale methode zoals het Luxemburgse RAAM. Dat is geen nadeel: niets verhindert een Belgische organisatie om het RAAM 1.1 als praktisch werkraster te gebruiken, omdat het precies die norm uitwerkt in controleerbare criteria. Het auditverslag en de toegankelijkheidsverklaring verwijzen dan naar de EN 301 549, niet naar een percentage volgens een buitenlandse methode. Onze pagina over [[country:belgique|digitale toegankelijkheid in België]] geeft het volledige overzicht van de Belgische regels."
+  ],
+  [
+   "h2",
+   "eaa-apps-privesector",
+   "European Accessibility Act: welke apps uit de privésector vallen eronder"
+  ],
+  [
+   "p",
+   "De EAA geldt niet voor alle apps: de richtlijn viseert diensten, opgesomd in artikel 2, en de app is vaak het belangrijkste kanaal van die diensten. Voor personenvervoer vermeldt de tekst uitdrukkelijk de diensten die via mobiele apparaten worden verleend, met inbegrip van apps. Voor bankdiensten en e-commerce is het de dienst zelf die wordt geviseerd, ongeacht het kanaal: een bankapp of een bestelapp valt er dus net zo goed onder als de website."
+  ],
+  [
+   "table",
+   {
+    "caption": "Mobiele apps die onder de European Accessibility Act vallen: voorbeelden per sector",
+    "head": [
+     "Sector",
+     "Voorbeelden van apps",
+     "Trajecten die u eerst moet controleren"
+    ],
+    "rows": [
+     [
+      "Bankdiensten voor consumenten",
+      "Online bankieren, betalen, consumentenkrediet, sparen",
+      "Inloggen en sterke authenticatie, rekeningen raadplegen, overschrijving, begunstigde toevoegen, kaart blokkeren"
+     ],
+     [
+      "E-commerce",
+      "App van een winkelketen, marktplaats, maaltijdbezorging, reserveren",
+      "Zoeken, productfiche, winkelmandje, betalen, bestelling volgen, retour"
+     ],
+     [
+      "Personenvervoer (lucht, spoor, bus, binnenwateren)",
+      "Ticketverkoop, instapkaart, dienstregeling en verstoringen in realtime",
+      "Reisweg zoeken, aankoop, elektronisch ticket, meldingen van verstoringen"
+     ],
+     [
+      "Elektronische communicatie",
+      "Klantenzone van een operator, berichtenapp, bellen",
+      "Abonnement beheren, hulp, realtimecommunicatie"
+     ],
+     [
+      "E-books",
+      "Leesapp, digitale boekhandel",
+      "Navigatie in het boek, leesinstellingen, spraaksynthese"
+     ],
+     [
+      "Toegang tot audiovisuele mediadiensten",
+      "Tv-app of app voor video op aanvraag",
+      "Programma’s kiezen, ondertitels, audiodescriptie, programmagids"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Twee verduidelijkingen voorkomen analysefouten. Ten eerste is een app geen “product” in de zin van de richtlijn: ze geniet niet van de overgangsperiodes die voor bepaalde apparatuur gelden, en een app die vóór 28 juni 2025 werd gepubliceerd, moet toegankelijk zijn voor elk nieuw contract dat sinds die datum wordt gesloten; alleen contracten die vóór 28 juni 2025 werden gesloten, mogen ongewijzigd doorlopen tot hun einde, en uiterlijk tot 28 juni 2030. Ten tweede zijn alleen micro-ondernemingen die diensten verlenen, met minder dan tien personen en een omzet of balanstotaal van hoogstens 2 miljoen euro, vrijgesteld. Een shoppingapp van een kmo met twintig werknemers valt dus onder het toepassingsgebied. Ons artikel over de [[article:eaa|European Accessibility Act, sector per sector]] beschrijft die regels in detail, en onze [[article:e-commerce|checklist voor een toegankelijke webshop, scherm per scherm]] geldt ook voor het aankooptraject in een app."
+  ],
+  [
+   "p",
+   "De eerste rechtszaken zijn begonnen, en ze gaan ook over apps. Op 4 juni 2026 heeft de rechtbank van Caen (tribunal judiciaire), in kort geding, een grote supermarktketen bevolen om haar website en haar mobiele app binnen zes maanden volledig toegankelijk te maken, op straffe van een dwangsom; het argument van een conformiteitspercentage van 71% werd verworpen."
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "Een native app wordt niet beoordeeld met de webcriteria zoals ze zijn: de gemeenschappelijke referentie voor de vier landen is de norm EN 301 549, in Luxemburg uitgewerkt door het RAAM 1.1 en in Frankrijk verwacht in de RGAA 5. Ingebouwde webviews worden beoordeeld als webpagina’s."
+  ],
+  [
+   "h2",
+   "wcag-criteria-mobiel",
+   "De WCAG-criteria die op mobiel het zwaarst doorwegen"
+  ],
+  [
+   "p",
+   "De norm EN 301 549 past op software, en dus op apps, het grootste deel van de WCAG-criteria van niveau A en AA toe, aangepast aan een niet-webcontext. Sommige criteria krijgen op mobiel een bijzonder gewicht, omdat ze overeenstemmen met gebruik dat eigen is aan de telefoon: de oriëntatie van het scherm, gebaren, de grootte van aanraakdoelen, het vergroten van tekst door het systeem. De nummers hieronder zijn die van de WCAG 2.2; de criteria 2.5.7, 2.5.8 en 3.3.8 staan niet in versie V3.2.1 van de norm, maar wel in V4.1.1. De criteria die in 2023 werden toegevoegd, worden toegelicht in ons artikel over de [[article:wcag-22|nieuwe succescriteria van de WCAG 2.2]]."
+  ],
+  [
+   "table",
+   {
+    "caption": "WCAG-criteria met een grote impact in een mobiele app",
+    "head": [
+     "WCAG 2.2-criterium",
+     "Wat het op mobiel vereist",
+     "Typische fout"
+    ],
+    "rows": [
+     [
+      "1.1.1 Niet-tekstuele content (A)",
+      "Elke afbeelding die informatie draagt en elke icoonknop heeft een naam die de schermlezer voorleest",
+      "Knop “winkelmandje” of “filter” aangekondigd als “knop” zonder naam"
+     ],
+     [
+      "1.3.1 Info en relaties (A)",
+      "Koppen, lijsten, groepen en tabelkoppen worden als zodanig blootgesteld",
+      "Schermtitels die alleen vet zijn, onmogelijk te doorlopen met de rotor of de leesbediening"
+     ],
+     [
+      "1.3.4 Weergavestand (AA)",
+      "De app werkt in staande en liggende stand, tenzij een bepaalde stand essentieel is",
+      "App vergrendeld in staande stand, onbruikbaar voor iemand van wie de telefoon aan een rolstoel is bevestigd"
+     ],
+     [
+      "1.4.3 en 1.4.11 Contrast (AA)",
+      "4,5:1 voor tekst, 3:1 voor componenten en iconen",
+      "Lichtgrijze tekst op een witte achtergrond, bleke tabbladiconen"
+     ],
+     [
+      "1.4.4 Herschalen van tekst (AA)",
+      "De tekst volgt de tekstgrootte-instelling van het systeem zonder verlies van inhoud",
+      "Vaste groottes in punten of pixels, tekst afgekapt met beletseltekens"
+     ],
+     [
+      "2.1.1 Toetsenbord (A)",
+      "Alles is bruikbaar met een extern toetsenbord of een schakelaar",
+      "Carrousel of aangepaste schuifregelaar onbereikbaar met het toetsenbord"
+     ],
+     [
+      "2.4.3 Focusvolgorde (A)",
+      "De leesvolgorde volgt de logica van het scherm",
+      "De schermlezer leest de onderbalk vóór de inhoud"
+     ],
+     [
+      "2.5.1 Aanwijzergebaren (A)",
+      "Een actie met meerdere vingers of met een getekend pad heeft een alternatief met één enkele aanwijzing",
+      "Kaart alleen in te zoomen door te knijpen"
+     ],
+     [
+      "2.5.4 Bewegingsactivering (A)",
+      "Een functie die wordt geactiveerd door het toestel te schudden of te kantelen, heeft een alternatief en kan worden uitgeschakeld",
+      "“Schudden om ongedaan te maken” zonder gelijkwaardige knop"
+     ],
+     [
+      "2.5.7 Sleepbewegingen (AA)",
+      "Slepen-en-neerzetten heeft een alternatief met één enkele aanwijzing",
+      "Een lijst alleen herschikken door te slepen"
+     ],
+     [
+      "2.5.8 Grootte van het aanwijsgebied (minimum) (AA)",
+      "Doelen van minstens 24 × 24 CSS-pixels, of voldoende tussenruimte",
+      "Klein sluitkruisje tegen de rand van het scherm"
+     ],
+     [
+      "3.3.8 Toegankelijke authenticatie (minimum) (AA)",
+      "Geen cognitieve test zonder alternatief; kopiëren en plakken en wachtwoordbeheerders werken",
+      "Codeveld met zes vakjes dat plakken blokkeert"
+     ],
+     [
+      "4.1.2 Naam, rol, waarde (A)",
+      "Elke component stelt zijn naam, rol en toestand bloot",
+      "Aangepaste schakelaar die niet zegt of hij aan staat"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Voor de grootte van aanraakdoelen legt [[https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html|criterium 2.5.8 van de WCAG 2.2 (Engelstalig)]] een minimum van 24 CSS-pixels per zijde vast, met uitzonderingen. De platformen raden meer aan: Google [[https://support.google.com/accessibility/android/answer/7101858?hl=en|adviseert doelen van minstens 48 × 48 dp (Engelstalig)]], ongeveer 9 mm ongeacht de grootte van het scherm, met minstens 8 dp tussenruimte. Wie de aanbevelingen van het platform volgt, heeft de vraag van het criterium meteen opgelost, en verbetert het gebruik voor iedereen, ook in een bus die remt."
+  ],
+  [
+   "p",
+   "Contrast wordt gemeten zoals op het web, maar apps falen vaak in hun toestanden: uitgeschakelde knop, hulptekst in een veld, niet-geselecteerd tabblad, een donkere modus die laat werd toegevoegd. Ons artikel over [[article:contraste-couleurs|kleurcontrast en het corrigeren van een huisstijlpalet]] geeft de drempels en de methode, die voor beide platformen gelden."
+  ],
+  [
+   "h2",
+   "fouten-ios",
+   "De 10 meest voorkomende toegankelijkheidsfouten op iOS, en hun oplossing"
+  ],
+  [
+   "p",
+   "De fouten hieronder komen van app tot app terug, ongeacht de sector. Elke fout wordt beschreven vanuit wat de VoiceOver-gebruiker waarneemt, en daarna met de oplossing, in UIKit en in SwiftUI wanneer het verschil ertoe doet."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Icoonknop zonder naam.",
+     "VoiceOver kondigt “knop” aan of de naam van het afbeeldingsbestand, bijvoorbeeld “ic cart 24”. Oplossing: de eigenschap accessibilityLabel invullen in UIKit, of de modifier accessibilityLabel in SwiftUI, met een korte en duidelijke naam: “Winkelmandje, 3 artikelen”."
+    ],
+    [
+     "Niet-gedeclareerde koppen.",
+     "De gebruiker kan niet van sectie naar sectie springen met de rotor. Oplossing: de trait header toevoegen aan de koppen (accessibilityTraits in UIKit, accessibilityAddTraits(.isHeader) in SwiftUI)."
+    ],
+    [
+     "Versnipperde elementen.",
+     "Een productkaart wordt in vijf stappen voorgelezen: afbeelding, naam, prijs, beoordeling, knop. Oplossing: de kaart groeperen tot één element waarvan het label de kern samenvat (in UIKit de container toegankelijk maken met isAccessibilityElement en een overkoepelend accessibilityLabel; in SwiftUI accessibilityElement(children: .combine)), en de secundaire acties bereikbaar houden via aangepaste acties."
+    ],
+    [
+     "Vaste tekst.",
+     "De gebruiker heeft in de instellingen een grote tekstgrootte gekozen, maar de app negeert die. Oplossing: de dynamische tekststijlen (Dynamic Type) gebruiken, regelafbreking toestaan, lay-outs voorzien die bij grote tekstgroottes overschakelen naar een kolom."
+    ],
+    [
+     "Modaal venster dat de focus laat ontsnappen.",
+     "Er opent een venster, maar VoiceOver blijft het scherm eronder voorlezen. Oplossing: de modale weergave markeren (accessibilityViewIsModal) en de melding van schermwissel versturen om de focus op de titel te plaatsen."
+    ],
+    [
+     "Niet-aangekondigde wijziging.",
+     "Een melding “Artikel toegevoegd aan winkelmandje” verschijnt drie seconden, zonder te worden voorgelezen. Oplossing: een toegankelijkheidsaankondiging publiceren, of de focus verplaatsen wanneer de wijziging een actie vereist."
+    ],
+    [
+     "Aangepaste schakelaar of aangepast selectievakje.",
+     "De component wordt voorgelezen zonder rol of toestand. Oplossing: bij voorkeur de systeemcomponent gebruiken; anders de trait knop blootstellen, een waarde “aan” of “uit”, en die waarde bij elke wijziging bijwerken."
+    ],
+    [
+     "Onlogische leesvolgorde.",
+     "In een complexe lay-out leest VoiceOver de actiebalk vóór de inhoud. Oplossing: de hiërarchie van de views herschikken of accessibilityElements uitdrukkelijk op de container definiëren."
+    ],
+    [
+     "Decoratieve elementen die worden voorgelezen.",
+     "Scheidingslijnen, illustraties of achtergrondafbeeldingen onderbreken het voorlezen. Oplossing: ze verbergen (isAccessibilityElement op false, of accessibilityHidden in SwiftUI)."
+    ],
+    [
+     "Gebaar zonder alternatief.",
+     "Een bericht verwijderen kan alleen door horizontaal over de regel te vegen. Oplossing: dezelfde actie aanbieden in een menu of als aangepaste VoiceOver-actie, en een zichtbare knop in het detailscherm."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Een aandachtspunt is de taal: als de app meerdere talen aanbiedt, moet elk toegankelijkheidslabel worden vertaald, en moet een passage in een andere taal als zodanig worden gedeclareerd om correct te worden uitgesproken. Een Belgische app in het Frans en het Nederlands waarvan de VoiceOver-labels alleen in het Frans zijn ingevoerd, is voor de Nederlandstalige gebruiker half stom. Hetzelfde geldt omgekeerd voor een app die eerst in het Nederlands werd ontwikkeld: de labels gaan mee in het vertaalproces, net als de zichtbare teksten."
+  ],
+  [
+   "h2",
+   "fouten-android",
+   "De 10 meest voorkomende toegankelijkheidsfouten op Android, en hun oplossing"
+  ],
+  [
+   "p",
+   "Dezelfde soorten fouten bestaan op Android, met een ander vocabularium. De officiële documentatie van Google over de [[https://developer.android.com/guide/topics/ui/accessibility/principles?hl=fr|principes voor de toegankelijkheid van apps]] behandelt labels, acties en signalen die niet op kleur steunen; hieronder ziet u hoe die principes zich vertalen in de fouten die men werkelijk tegenkomt, in Views en in Jetpack Compose."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Afbeelding of icoonknop zonder beschrijving.",
+     "TalkBack kondigt “knop zonder label” aan. Oplossing: contentDescription invullen, in Views zoals in Compose; voor een louter decoratieve afbeelding contentDescription op null zetten in Compose of importantForAccessibility op “no” in Views."
+    ],
+    [
+     "Formulierveld zonder gekoppeld label.",
+     "TalkBack leest “bewerkingsveld” zonder te zeggen wat er moet worden ingevuld, of leest alleen de hinttekst, die verdwijnt zodra er wordt getypt. Oplossing: een zichtbaar label aan het veld koppelen (labelFor in Views, de eigenschap label van de Material-velden in Compose) en niet alleen op de hinttekst rekenen."
+    ],
+    [
+     "Niet-gedeclareerde koppen.",
+     "De navigatieopdrachten per kop vinden niets. Oplossing: accessibilityHeading in Views, semantics { heading() } in Compose."
+    ],
+    [
+     "Te kleine doelen.",
+     "Een icoon van 24 dp zonder marge is moeilijk aan te raken. Oplossing: de Material-componenten gebruiken, die een minimale aanraakzone garanderen, of de ruimte reserveren met minimumInteractiveComponentSize in Compose."
+    ],
+    [
+     "Elementen van een rij die afzonderlijk worden voorgelezen.",
+     "Net als op iOS wordt een rij in een lijst een reeks afzonderlijke stappen. Oplossing: semantics(mergeDescendants = true) in Compose, of de rij focusseerbaar maken met een overkoepelende beschrijving in Views."
+    ],
+    [
+     "Kortstondige meldingen die niet worden weergegeven.",
+     "Een foutmelding onder een veld wordt niet voorgelezen. Oplossing: een dynamische zone declareren (accessibilityLiveRegion in Views, liveRegion in Compose) of de focus na validatie op de fout plaatsen."
+    ],
+    [
+     "Toestanden die niet worden blootgesteld.",
+     "Een geselecteerd tabblad of een actieve filter wordt alleen met kleur aangeduid. Oplossing: de geselecteerde toestand blootstellen (selected, stateDescription) en de kleur aanvullen met een vorm of een tekst."
+    ],
+    [
+     "Aangepaste componenten zonder rol.",
+     "Een op maat getekende datumkiezer wordt voorgelezen als gewone tekst. Oplossing: de rol declareren (role in de modifiers clickable of semantics van Compose, AccessibilityDelegate in Views) en toegankelijkheidsacties voorzien om te verhogen of te verlagen."
+    ],
+    [
+     "Lay-out die breekt bij grote tekst.",
+     "Lettergroottes in dp in plaats van sp negeren de instelling van de gebruiker; of, omgekeerd, de vergrote tekst overlapt. Oplossing: groottes in sp, geen vaste hoogtes voor containers, scrollen mogelijk maken."
+    ],
+    [
+     "Focus kwijt na een navigatie.",
+     "Na het sluiten van een dialoogvenster springt de TalkBack-focus terug naar de bovenkant van het scherm. Oplossing: de focus teruggeven aan het element dat het venster heeft geopend, en de titel van elk nieuw scherm aankondigen (paneTitle in Compose, accessibilityPaneTitle of de titel van de activity in Views)."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Android brengt twee onderwerpen mee die eigen zijn aan het platform. Enerzijds de diversiteit van fabrikanten: sommigen passen de interface van het systeem, het toetsenbord of de versie van TalkBack aan. Testen op één toestel garandeert niets, maar het RAAM preciseert dat geen bepaald model wordt opgelegd; een recent toestel dat dicht bij het oorspronkelijke systeem staat en een toestel van een heel courante fabrikant geven een goede dekking. Anderzijds de toegang via schakelaars (Switch Access) en via het toetsenbord: een component die TalkBack bereikt, is niet noodzakelijk bereikbaar met het toetsenbord, en omgekeerd."
+  ],
+  [
+   "note",
+   "Om te onthouden",
+   "Op iOS zoals op Android verdwijnt de helft van de fouten door de componenten van het systeem te gebruiken in plaats van op maat getekende componenten. Is een aangepaste component onmisbaar, dan moeten zijn naam, zijn rol, zijn toestand en zijn acties uitdrukkelijk worden gedeclareerd."
+  ],
+  [
+   "h2",
+   "react-native-flutter-webviews",
+   "React Native, Flutter, webviews: de valkuilen van cross-platform apps"
+  ],
+  [
+   "p",
+   "Cross-platform frameworks maken een app niet uit zichzelf toegankelijk of ontoegankelijk. Ze verleggen de vraag: de ontwikkelaar werkt niet meer rechtstreeks met de eigenschappen van iOS en Android, maar met die van het framework, dat ze correct moet vertalen. De fouten komen meestal van slecht onderhouden componenten uit de community en van een gebrekkige kennis van de toegankelijkheidseigenschappen die eigen zijn aan het framework."
+  ],
+  [
+   "table",
+   {
+    "caption": "Waar u de toegankelijkheid declareert, per technologie",
+    "head": [
+     "Technologie",
+     "Eigenschappen die u moet kennen",
+     "Veelvoorkomende valkuil"
+    ],
+    "rows": [
+     [
+      "iOS UIKit en SwiftUI",
+      "accessibilityLabel, accessibilityTraits, accessibilityValue, accessibilityHint",
+      "Aangepaste componenten zonder trait; Dynamic Type niet ondersteund"
+     ],
+     [
+      "Android Views en Jetpack Compose",
+      "contentDescription, semantics, stateDescription, liveRegion",
+      "Tekstgroottes in dp; dubbele beschrijvingen tussen ouder- en kindelementen"
+     ],
+     [
+      "React Native",
+      "accessible, accessibilityLabel, accessibilityRole, accessibilityState",
+      "“Touchable” zones zonder rol, voorgelezen als tekst; niet-toegankelijke externe bibliotheken"
+     ],
+     [
+      "Flutter",
+      "Widget Semantics, MergeSemantics, ExcludeSemantics",
+      "Aangepaste widgets zonder semantiek; getekende teksten die de grootte-instelling niet volgen"
+     ],
+     [
+      "Webview (hybride)",
+      "Semantische HTML en ARIA, zoals op een website",
+      "Paginatitel niet aangekondigd; focus niet teruggeplaatst bij het wisselen van weergave; zoomen uitgeschakeld"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Webviews verdienen bijzondere aandacht, omdat ze vaak de gevoeligste trajecten dragen: inschrijving, betaling, klachtenformulier. De inhoud is er HTML, in Frankrijk geëvalueerd met de RGAA en elders met de webclausules van de norm EN 301 549, maar de ervaring moet doorlopend blijven: de gebruiker mag zijn focus niet verliezen wanneer hij van een native scherm naar een webscherm gaat, en de terugknop van het systeem moet werken. Een conforme webpagina kan onbruikbaar worden als de webview vergroten blokkeert of een vaste hoogte oplegt."
+  ],
+  [
+   "p",
+   "Modules van derden, zoals een betaalformulier, een videospeler, een kaart of een tool om afspraken te maken, zijn een belangrijke bron van non-conformiteit. De organisatie die de app publiceert, blijft verantwoordelijk voor het geheel. Eis van elke leverancier het bewijs van de toegankelijkheid van zijn component op iOS en Android, en neem dat op in het contract: ons artikel over [[article:clauses-marche-public|toegankelijkheidsclausules in een overheidsopdracht]] stelt formuleringen voor die ook in een privécontract bruikbaar zijn."
+  ],
+  [
+   "h2",
+   "testen-voiceover-talkback",
+   "De toegankelijkheid van uw app in 30 minuten testen met VoiceOver en TalkBack"
+  ],
+  [
+   "p",
+   "Deze test vervangt geen audit, maar hij laat een productverantwoordelijke, een ontwerper of een ontwikkelaar in een half uur de grote blokkades zien. Zorg voor een iPhone en een Android-telefoon, de geïnstalleerde app, een testaccount, en kies een essentieel traject: inloggen en een saldo raadplegen, een reisweg zoeken en een ticket kopen, een product vinden en het aan het winkelmandje toevoegen."
+  ],
+  [
+   "h3",
+   "Voor u begint: de schermlezers inschakelen"
+  ],
+  [
+   "p",
+   "Op een iPhone schakelt u VoiceOver in via Instellingen, Toegankelijkheid, VoiceOver. Stel eerst de toegankelijkheidsshortcut in (driemaal drukken op de zijknop, of op de thuisknop bij modellen die er een hebben): daarmee kunt u VoiceOver uitschakelen als u de weg kwijt bent. De basisgebaren: naar rechts of links vegen om van het ene element naar het andere te gaan, tweemaal tikken om te activeren, twee vingers op het scherm draaien om de rotor te openen en navigatie per kop te kiezen. Op Android schakelt u TalkBack in via Instellingen, Toegankelijkheid, TalkBack, en u kunt het koppelen aan de sneltoets met de volumeknoppen. De gelijkwaardige gebaren zijn naar rechts of links vegen en tweemaal tikken; met de leesbediening navigeert u per kop of per link."
+  ],
+  [
+   "h3",
+   "Het protocol in vijf stappen"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Het startscherm element per element voorlezen (5 minuten).",
+     "Veeg van boven naar beneden. Heeft elk element een begrijpelijke naam, zonder alleen “knop”, zonder bestandsnaam? Volgt de volgorde de visuele logica? Worden decoratieve elementen genegeerd?"
+    ],
+    [
+     "Het traject met de schermlezer doorlopen (10 minuten).",
+     "Doorloop het gekozen traject, zo mogelijk zonder naar het scherm te kijken. Noteer elke plek waar u vastloopt: veld zonder label, onbereikbare knop, venster dat de focus niet krijgt, foutmelding die niet wordt voorgelezen, sms-code die u niet kunt plakken."
+    ],
+    [
+     "De tekst maximaal vergroten (5 minuten).",
+     "Schakel de schermlezer uit en stel de grootste tekstgrootte van het systeem in, ook de toegankelijkheidsgroottes op iOS. Wordt de tekst groter? Blijft hij volledig, zonder afkapping of overlapping? Blijven de knoppen zichtbaar?"
+    ],
+    [
+     "Het toestel draaien en de gebaren controleren (5 minuten).",
+     "Schakel over naar de liggende stand: volgt de app? Spoor elke actie op die een complex gebaar vraagt (knijpen, slepen, vegen, schudden) en controleer of er een eenvoudig alternatief bestaat."
+    ],
+    [
+     "De belangrijkste schermen door de inspectietools halen (5 minuten).",
+     "Op Android analyseert de app Accessibility Scanner een scherm en meldt ze te kleine doelen, onvoldoende contrast en ontbrekende labels. Op iOS controleert de Accessibility Inspector van Xcode een scherm vanaf een Mac. Noteer wat ze melden, zonder te vergeten wat ze niet zien."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Kan het traject niet met de schermlezer worden afgerond, dan blokkeert de app een deel van uw gebruikers, hoeveel kleine fouten er verder ook zijn. Dat is de eerste vaststelling om aan de directie voor te leggen, vóór elke discussie over een conformiteitspercentage. Om verder te gaan tonen [[svc:test-utilisateur|tests met echte schermlezergebruikers]] hoe ervaren mensen die obstakels al dan niet omzeilen, iets wat geen enkele expertentest volledig nabootst."
+  ],
+  [
+   "h2",
+   "automatische-tools-beperkingen",
+   "Automatische testtools: wat ze detecteren en wat ze missen"
+  ],
+  [
+   "p",
+   "De platformen bieden gratis tools aan, en de [[https://accessibilite.public.lu/en/raam1.1/methodologie.html|methodologie van het RAAM 1.1 (Engelstalig)]] vermeldt ze: de Accessibility Inspector van Xcode voor iOS, Accessibility Scanner en de Android Accessibility Suite voor Android, een contrastanalyse-tool voor kleuren. Beide ecosystemen bieden ook controles die in geautomatiseerde tests zijn ingebouwd: de interfacetests van Xcode kunnen een toegankelijkheidsaudit uitvoeren, en de testframeworks van Android beschikken over toegankelijkheidscontroles die in geïnstrumenteerde tests kunnen worden ingeschakeld."
+  ],
+  [
+   "p",
+   "Die tools zijn nuttig om snel de meetbare fouten op te sporen: ontbrekend label, te klein doel, onvoldoende contrast, klikbaar element zonder rol. Ze kunnen niet beoordelen of een label relevant is (“knop 1” slaagt voor de controle), of de leesvolgorde zinvol is, of een foutmelding begrijpelijk is, of de focus na een actie op de juiste plaats wordt teruggezet, en evenmin of een volledig traject kan worden afgerond. In de praktijk dekken automatische controles maar een klein deel van de criteria; ze dienen als vangnet in de continue integratie, niet als bewijs van conformiteit."
+  ],
+  [
+   "table",
+   {
+    "caption": "Verdeling van de controles tussen tools en manuele tests",
+    "head": [
+     "Controle",
+     "Automatische tool",
+     "Manuele test nodig"
+    ],
+    "rows": [
+     [
+      "Label aanwezig op knoppen en afbeeldingen",
+      "Ja",
+      "Om de relevantie ervan te beoordelen"
+     ],
+     [
+      "Grootte van aanraakdoelen",
+      "Ja",
+      "Voor gevallen van tussenruimte en de uitzonderingen"
+     ],
+     [
+      "Contrast van tekst en iconen",
+      "Ja, op het geanalyseerde scherm",
+      "Voor de toestanden (uitgeschakeld, geselecteerd), de donkere modus en afbeeldingen"
+     ],
+     [
+      "Leesvolgorde en groeperingen",
+      "Nee",
+      "Ja, met de schermlezer"
+     ],
+     [
+      "Aankondiging van wijzigingen en fouten",
+      "Nee",
+      "Ja, door het traject te doorlopen"
+     ],
+     [
+      "Vergroten van tekst en weergavestand",
+      "Gedeeltelijk",
+      "Ja, op de maximale groottes en in liggende stand"
+     ],
+     [
+      "Alternatieven voor complexe gebaren",
+      "Nee",
+      "Ja"
+     ],
+     [
+      "Volledig traject uitvoerbaar",
+      "Nee",
+      "Ja, idealiter met gebruikers"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "ontwikkelcyclus-mobiel",
+   "Toegankelijkheid opnemen in de mobiele ontwikkelcyclus"
+  ],
+  [
+   "p",
+   "Een app corrigeren na de publicatie is duur: elke correctie doorloopt een cyclus van ontwikkeling, acceptatietest en goedkeuring door de appwinkels, op twee platformen. Teams die blijvend toegankelijke apps opleveren, behandelen het onderwerp in elke fase, zoals beveiliging of performantie. Hieronder vindt u de checklist die we aanraden, van het ontwerp tot de ingebruikname."
+  ],
+  [
+   "h3",
+   "Checklist per fase"
+  ],
+  [
+   "ul",
+   [
+    "Ontwerp: elk scherm van de mock-up geeft de leesvolgorde aan, de koppen, de labels van de icoonknoppen en het gedrag bij grote tekstgroottes; aangepaste componenten worden verantwoord.",
+    "Design system: elke component wordt geleverd met zijn toegankelijkheidseigenschappen op iOS en Android, zijn contrastrijke toestanden en een voldoende grote aanraakzone; één enkele correctie komt dan alle schermen ten goede.",
+    "User stories: de acceptatiecriteria omvatten de schermlezer (“de VoiceOver-gebruiker kan een begunstigde toevoegen”) en de maximale tekstgrootte.",
+    "Ontwikkeling: toegankelijkheidslabels worden vertaald zoals de andere teksten; codereviews controleren de eigenschappen van nieuwe componenten.",
+    "Continue integratie: automatische toegankelijkheidsaudits draaien in de interfacetests en blokkeren evidente regressies.",
+    "Acceptatietest: elke versie doorloopt het testprotocol met de schermlezer op de essentiële trajecten, op iOS en Android.",
+    "Ingebruikname: de releasenotes vermelden de verbeteringen op het vlak van toegankelijkheid; de toegankelijkheidsverklaring wordt na elke belangrijke wijziging bijgewerkt.",
+    "Na publicatie: via een toegankelijk meldkanaal kunnen gebruikers een blokkade melden, en elke melding krijgt een antwoord."
+   ]
+  ],
+  [
+   "p",
+   "Twee hefbomen versnellen die organisatie. De eerste is de opleiding van de teams: een iOS- of Android-ontwikkelaar die de toegankelijkheidseigenschappen van zijn platform kent, corrigeert een fout in enkele minuten, waar een niet-opgeleide ontwikkelaar ze in elke nieuwe component herhaalt; onze [[svc:formations|opleidingen toegankelijkheid voor ontwikkelaars en ontwerpers]] zijn rond die handelingen opgebouwd. De tweede is de acceptatietest: een [[svc:recette|toegankelijkheidstest bij elke release]] voorkomt dat een nieuwe functionaliteit de gecorrigeerde fouten opnieuw binnenbrengt."
+  ],
+  [
+   "p",
+   "Ook de publicatiekalender van de appwinkels legt zijn logica op. Een dringende toegankelijkheidscorrectie, bijvoorbeeld een onbereikbare betaalknop, moet buiten het gewone releaseritme kunnen worden geleverd. Voorzie dat in uw organisatie, zeker als uw dienst onder de EAA valt: een blokkerend traject is een tekortkoming die u zonder te wachten op de volgende grote versie moet corrigeren."
+  ],
+  [
+   "h2",
+   "audit-mobiele-app",
+   "Hoe de toegankelijkheidsaudit van een mobiele app verloopt"
+  ],
+  [
+   "p",
+   "Een audit van een mobiele app volgt dezelfde logica als een audit van een website, beschreven in ons artikel over [[article:audit-rgaa|het verloop van een RGAA-audit]]: een staal, een raster van criteria, een conformiteitspercentage, een verslag en een correctieplan. Drie verschillen veranderen de voorbereiding."
+  ],
+  [
+   "ul",
+   [
+    "Elk platform is een audit: de iOS-versie en de Android-versie zijn twee afzonderlijke diensten, met hun eigen fouten en hun eigen conformiteitspercentage. De gemeenschappelijke aanbevelingen worden gebundeld, de resultaten niet.",
+    "Het staal bestaat uit schermen: de methodologie van het RAAM 1.1 vraagt minstens de schermen voor het onthaal, de wettelijke informatie, de authenticatie, het contact en de documentatie, één scherm voor elk type dienst, en daarna willekeurig gekozen schermen die minstens 10% van het staal vertegenwoordigen. Een criterium wordt alleen gevalideerd als het op alle schermen van het staal slaagt.",
+    "De tests gebeuren op echte toestellen, met VoiceOver en TalkBack, op de laatste of de voorlaatste versie van het systeem, en voor de criteria die dat vragen met andere navigatiewijzen zoals een extern toetsenbord."
+   ]
+  ],
+  [
+   "p",
+   "Om de audit voor te bereiden, verzamelt u de te auditen versie (gepubliceerde versie of testversie), de testaccounts en de fictieve gegevens waarmee de procedures zonder risico kunnen worden doorlopen, de lijst van de meest gebruikte schermen en trajecten, en de huidige toegankelijkheidsverklaring als die bestaat. De gemiddelde doorlooptijd van onze audits is drie weken; die hangt vooral af van het aantal schermen, het aantal platformen en de aanwezigheid van complexe trajecten zoals sterke authenticatie of betaling. De factoren die een offerte doen variëren, staan in ons artikel over de [[article:prix-audit|prijs van een toegankelijkheidsaudit]]."
+  ],
+  [
+   "p",
+   "Het nuttige eindproduct is niet het percentage, maar de lijst van correcties gerangschikt volgens hun impact op de trajecten, met voor elke fout het scherm, het platform, de betrokken eigenschap en de verwachte correctie in Swift, in Kotlin of in het gebruikte framework. Dat is het doel van onze [[svc:audit-raam|audit van mobiele apps volgens het RAAM of de norm EN 301 549]]; wensen uw teams begeleiding tijdens de correcties, dan neemt een [[svc:developpement|begeleiding bij toegankelijke ontwikkeling]] op iOS en Android het over."
+  ],
+  [
+   "h2",
+   "toegankelijkheidsverklaring-app",
+   "De toegankelijkheidsverklaring van een mobiele app"
+  ],
+  [
+   "p",
+   "Een app die onder de richtlijn van 2016 valt, moet een eigen toegankelijkheidsverklaring hebben: die van de website dekt ze niet. In Frankrijk wordt de verklaring van een app gepubliceerd op de website van de organisatie of bij de informatie die zichtbaar is bij het downloaden, en de conformiteitsstatus wordt ook in de app zelf vermeld, meestal in een scherm “Toegankelijkheid” dat bereikbaar is via het menu of de instellingen. In Luxemburg volgt de verklaring het officiële model en wordt ze aan het SIP gemeld."
+  ],
+  [
+   "p",
+   "De meest voorkomende fouten zijn voorspelbaar: één enkele verklaring voor iOS en Android terwijl de percentages verschillen, een verklaring die verwijst naar een audit van de vorige versie, geen contact om een fout vanuit de app te melden, een vermelding “volledig conform” zonder audit. Ons artikel over de [[article:declaration|toegankelijkheidsverklaring en de meest gemaakte fouten]] stelt een becommentarieerd model voor."
+  ],
+  [
+   "p",
+   "Voor diensten die onder de EAA vallen, neemt de verplichting een andere vorm aan: de onderneming moet informatie verstrekken over de manier waarop de dienst aan de toegankelijkheidseisen voldoet, doorgaans in haar algemene voorwaarden of een gelijkwaardig document. Niets verhindert, en alles pleit ervoor, om daarnaast een toegankelijkheidsscherm in de app te publiceren, met een contactpunt. Voor een bank, een vervoerder of een grote retailer beschrijft onze pagina [[sector:grands-comptes|grote ondernemingen]] hoe we zulke trajecten organiseren over meerdere apps en meerdere landen heen."
+  ],
+  [
+   "h2",
+   "actieplan-90-dagen",
+   "Actieplan: een mobiele app in 90 dagen toegankelijk maken"
+  ],
+  [
+   "p",
+   "Voor een app die al gepubliceerd is, op iOS en Android, geeft dit plan een realistische volgorde. De doorlooptijden veronderstellen een beschikbaar ontwikkelteam en een omvang van enkele tientallen schermen; een grotere app volgt dezelfde stappen, in pakketten van trajecten."
+  ],
+  [
+   "table",
+   {
+    "caption": "Actieplan in drie fasen",
+    "head": [
+     "Periode",
+     "Acties",
+     "Resultaat"
+    ],
+    "rows": [
+     [
+      "Dag 1 tot 15",
+      "De verplichtingen bepalen (richtlijn van 2016, EAA, of beide); de essentiële trajecten oplijsten; de test van 30 minuten op elk platform uitvoeren; de audit starten",
+      "Kadernota, lijst van evidente blokkades"
+     ],
+     [
+      "Dag 15 tot 45",
+      "De audit ontvangen; eerst de blokkades in de essentiële trajecten corrigeren (inloggen, betalen, formulieren); de componenten van het design system corrigeren",
+      "Gepubliceerde correctieve versie, toegankelijke componenten"
+     ],
+     [
+      "Dag 45 tot 75",
+      "De resterende fouten per scherm behandelen; de automatische audits aan de interfacetests toevoegen; de ontwikkelaars en ontwerpers opleiden",
+      "Verbeterd conformiteitspercentage, uitgeruste continue integratie"
+     ],
+     [
+      "Dag 75 tot 90",
+      "Controle-audit van de gecorrigeerde trajecten; publicatie of bijwerking van de toegankelijkheidsverklaring; invoering van het meldkanaal",
+      "Bijgewerkte verklaring, plan voor de resterende schermen"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Houd de normatieve kalender in het oog. Versie 4.1.1 van de norm EN 301 549, afgestemd op de WCAG 2.2, werd in september 2026 goedgekeurd en de bekendmaking ervan in het Publicatieblad van de Unie wordt verwacht; in Luxemburg is het RAAM 2 aangekondigd voor februari 2027, en de RGAA 5 moet in Frankrijk mobiele criteria invoeren. Wie nu al corrigeert volgens de WCAG 2.2 op niveau AA, met name voor de grootte van doelen, sleepbewegingen en authenticatie, vermijdt dat dezelfde schermen over een jaar opnieuw moeten worden opengebroken."
+  ]
+ ],
+ "faq": [
+  [
+   "Vallen mobiele apps onder de RGAA?",
+   "Ze vallen onder artikel 47 van de Franse wet van 11 februari 2005, net als websites, voor overheidsinstanties en ondernemingen met een omzet van meer dan 250 miljoen euro. De RGAA 4.1.2 is ontworpen voor het web: hij geldt voor webviews, terwijl de native app in de praktijk wordt beoordeeld volgens de norm EN 301 549. De DINUM heeft aangekondigd dat de RGAA 5 criteria voor mobiele apps zal bevatten."
+  ],
+  [
+   "Moeten de iOS-app en de Android-app afzonderlijk worden geaudit?",
+   "Ja. Beide versies gebruiken verschillende componenten, schermlezers en instellingen, en vertonen zelden dezelfde fouten. Elk heeft een eigen conformiteitspercentage en, voor de publieke sector, een eigen toegankelijkheidsverklaring. De gemeenschappelijke aanbevelingen, bijvoorbeeld over het design system of de labels, worden in het correctieplan gebundeld."
+  ],
+  [
+   "Kan een app die met Flutter of React Native is ontwikkeld toegankelijk zijn?",
+   "Ja, op voorwaarde dat u de toegankelijkheidseigenschappen van het framework gebruikt (widget Semantics voor Flutter, accessibilityLabel en accessibilityRole voor React Native) en de externe bibliotheken controleert. Het framework vertaalt die eigenschappen naar die van iOS en Android; een component die ze niet declareert, blijft stom voor VoiceOver en TalkBack, net als in een native app."
+  ],
+  [
+   "Valt mijn shoppingapp onder de European Accessibility Act?",
+   "Ja, als consumenten er in de Unie een overeenkomst mee kunnen sluiten en de onderneming geen micro-onderneming is die diensten verleent (minder dan tien personen en een omzet of balanstotaal van hoogstens 2 miljoen euro). De app geniet geen eigen overgangsperiode: ze moet sinds 28 juni 2025 toegankelijk zijn, net als de website; alleen contracten die vóór die datum werden gesloten, mogen doorlopen tot hun einde, uiterlijk 28 juni 2030."
+  ],
+  [
+   "Hoe groot moet een knop in een app minimaal zijn?",
+   "Criterium 2.5.8 van de WCAG 2.2, niveau AA, vraagt doelen van minstens 24 CSS-pixels per zijde of voldoende tussenruimte. Google raadt aan om op Android verder te gaan, met doelen van minstens 48 dp, ongeveer 9 mm, met 8 dp tussenruimte. De standaardcomponenten van de platformen respecteren die afmetingen doorgaans."
+  ],
+  [
+   "Volstaat een automatische tool om de toegankelijkheid van een app te controleren?",
+   "Nee. De inspectietools van Apple en Google detecteren ontbrekende labels, te kleine doelen en onvoldoende contrast, maar ze beoordelen niet of een label relevant is, of de leesvolgorde klopt en of een traject kan worden afgerond. Ze zijn nuttig in de continue integratie; conformiteit wordt gecontroleerd met manuele tests met de schermlezer, op echte toestellen."
+  ]
+ ],
+ "cta_svc": "audit-raam",
+ "cta_title": "Doorstaat uw app de test met de schermlezer?",
+ "cta_text": "Wij auditen uw iOS- en Android-apps op echte toestellen, met VoiceOver en TalkBack, en bezorgen uw ontwikkelaars correcties gerangschikt volgens impact.",
+ "related": [
+  "luxembourg",
+  "wcag-22",
+  "e-commerce"
+ ]
+}

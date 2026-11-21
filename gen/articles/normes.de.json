@@ -757,7 +757,7 @@
   ],
   [
    "p",
-   "Eine native App fällt unter Kapitel 11 der Norm EN 301 549, das Software gewidmet ist und die WCAG-Kriterien auf den Kontext einer App überträgt. In Luxemburg liefert der RAAM 1.1 den offiziellen Prüfkatalog. In Belgien und für Schweizer Anbieter, die in die EU verkaufen, ist die Norm selbst die Referenz. In Frankreich fallen mobile Apps unter Artikel 47 und werden derzeit mit dem RGAA bewertet; der RGAA 5 soll eigene Kriterien und Tests für Mobilgeräte festlegen."
+   "Eine native App fällt unter Kapitel 11 der Norm EN 301 549, das Software gewidmet ist und die WCAG-Kriterien auf den Kontext einer App überträgt. In Luxemburg liefert der RAAM 1.1 den offiziellen Prüfkatalog. In Belgien und für Schweizer Anbieter, die in die EU verkaufen, ist die Norm selbst die Referenz. In Frankreich fallen mobile Apps unter Artikel 47 und werden derzeit mit dem RGAA bewertet; der RGAA 5 soll eigene Kriterien und Tests für Mobilgeräte festlegen. Welche Mängel in fast jeder App wiederkehren und wie sie sich unter iOS und Android beheben lassen, zeigt unser Beitrag zur [[article:application-mobile|barrierefreien App]]."
   ],
   [
    "p",
@@ -862,5 +862,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-19"
+ "modified": "2026-11-21"
 }

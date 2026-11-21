@@ -732,7 +732,7 @@
   ],
   [
    "p",
-   "A native app falls under clause 11 of EN 301 549, on software, which transposes the WCAG criteria to the context of an app. In Luxembourg, RAAM 1.1 provides the official grid. In France, mobile apps fall within the scope of article 47 and are currently assessed with RGAA; RGAA 5 is due to define criteria and tests specific to mobile."
+   "A native app falls under clause 11 of EN 301 549, on software, which transposes the WCAG criteria to the context of an app. In Luxembourg, RAAM 1.1 provides the official grid. In France, mobile apps fall within the scope of article 47 and are currently assessed with RGAA; RGAA 5 is due to define criteria and tests specific to mobile. The failures that recur from one app to the next, and how to fix them on iOS and Android, are covered in our article on [[article:application-mobile|mobile app accessibility]]."
   ],
   [
    "p",
@@ -837,5 +837,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-19"
+ "modified": "2026-11-21"
 }

@@ -1,0 +1,717 @@
+{
+ "slug": "accessibilite-application-mobile",
+ "h1": "Accessibilité d'une application mobile : 20 défauts iOS et Android, test en 30 minutes",
+ "crumb": "Accessibilité application mobile",
+ "meta_title": "Accessibilité application mobile : défauts iOS, Android et tests",
+ "meta_desc": "Accessibilité des applications mobiles : obligations par pays, 20 défauts iOS et Android avec leur correction, test VoiceOver et TalkBack en 30 minutes, audit RAAM.",
+ "card_desc": "Obligations par pays, 20 défauts iOS et Android avec leur correction, test VoiceOver et TalkBack et intégration au cycle de développement.",
+ "cat": "guide",
+ "where": "Europe",
+ "cover": "iOS",
+ "cover_note": [
+  "VoiceOver et TalkBack",
+  "EN 301 549, RAAM 1.1"
+ ],
+ "date": "2026-11-21",
+ "cluster": "technique",
+ "lead": "L'accessibilité d'une application mobile se joue sur des détails que les guides généraux traitent rarement : un bouton icône sans nom lu « bouton » par VoiceOver, un écran qui refuse le mode paysage, un champ de code reçu par SMS impossible à atteindre avec TalkBack. Les applications iOS et Android du secteur public sont soumises aux règles d'accessibilité depuis le 23 juin 2021, et celles de la banque, du transport et du commerce en ligne le sont depuis l'entrée en application de l'European Accessibility Act, le 28 juin 2025. Cet article donne les règles applicables dans chaque pays, les 20 défauts que l'on retrouve d'une application à l'autre avec leur correction sur chaque plateforme, un protocole pour tester soi-même en 30 minutes et la manière d'intégrer l'accessibilité dans le cycle de développement.",
+ "body": [
+  [
+   "h2",
+   "application-mobile-perimetre",
+   "Accessibilité d'une application mobile : de quoi parle-t-on exactement ?"
+  ],
+  [
+   "p",
+   "Une application mobile accessible est une application qu'une personne aveugle peut utiliser avec le lecteur d'écran de son téléphone, qu'une personne malvoyante peut lire avec un texte agrandi à 200 %, qu'une personne qui ne peut pas faire de gestes fins peut piloter avec un clavier externe, la commande vocale ou un contacteur, et qu'une personne sourde peut suivre sans le son. Les principes sont ceux de l'accessibilité numérique en général, présentés dans notre [[article:guide|guide de l'accessibilité numérique]] ; leur mise en œuvre, elle, change complètement sur mobile."
+  ],
+  [
+   "p",
+   "La raison est technique. Sur le web, le navigateur traduit le code HTML en une arborescence que les technologies d'assistance savent lire : un élément button est annoncé comme un bouton, un titre h2 comme un titre. Dans une application native, c'est le système d'exploitation qui joue ce rôle, à partir des propriétés d'accessibilité exposées par chaque composant : un libellé, un rôle (Apple parle de « traits »), un état, une valeur. Un composant standard d'iOS ou d'Android expose ces informations tout seul. Un composant dessiné sur mesure, très fréquent dans les applications qui soignent leur identité visuelle, n'expose rien tant que le développeur ne l'a pas fait explicitement."
+  ],
+  [
+   "p",
+   "Le mot « application » recouvre par ailleurs des réalités différentes, et l'audit ne se mène pas de la même façon dans chaque cas :"
+  ],
+  [
+   "ul",
+   [
+    "l'application native, écrite en Swift ou Objective-C pour iOS, en Kotlin ou Java pour Android, avec les composants du système (UIKit ou SwiftUI, Views ou Jetpack Compose) ;",
+    "l'application multiplateforme, écrite une fois avec un framework comme React Native ou Flutter, qui produit deux applications ; son accessibilité dépend de la façon dont le framework traduit ses composants vers ceux du système ;",
+    "l'application hybride, qui affiche pour l'essentiel des pages web dans une vue intégrée (webview) ; son contenu s'évalue comme du web, mais dans le contexte d'une application ;",
+    "la progressive web app, installée depuis le navigateur, qui reste juridiquement et techniquement un site web."
+   ]
+  ],
+  [
+   "p",
+   "Dans la pratique, beaucoup d'applications combinent ces modèles : une coque native, un parcours de souscription en webview, un module de paiement fourni par un prestataire, une carte interactive issue d'un kit tiers. Chacun de ces morceaux peut casser l'expérience d'un utilisateur de lecteur d'écran, et c'est l'application entière, telle que l'usager la télécharge, qui doit être accessible."
+  ],
+  [
+   "h2",
+   "obligations-par-pays",
+   "Applications mobiles : les obligations en France, en Belgique, au Luxembourg et en Suisse"
+  ],
+  [
+   "p",
+   "Deux textes européens fixent le cadre. La directive (UE) 2016/2102 impose aux organismes du secteur public de rendre leurs sites et leurs applications mobiles accessibles ; pour les applications, l'échéance était le 23 juin 2021. La [[https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:32019L0882|directive (UE) 2019/882, dite European Accessibility Act]], étend l'obligation à une liste de services du secteur privé depuis le 28 juin 2025. Chaque pays a transposé ces textes avec son propre référentiel d'évaluation et sa propre autorité de contrôle."
+  ],
+  [
+   "table",
+   {
+    "caption": "Accessibilité des applications mobiles : règles applicables par pays",
+    "head": [
+     "Pays",
+     "Organisations visées",
+     "Référentiel d'évaluation",
+     "Contrôle"
+    ],
+    "rows": [
+     [
+      "France",
+      "Secteur public, organismes chargés d'une mission de service public, entreprises de plus de 250 millions d'euros de chiffre d'affaires (article 47 de la loi du 11 février 2005) ; services visés par l'EAA",
+      "RGAA 4.1.2 pour les contenus web et les webviews ; norme EN 301 549 pour l'application native, en attendant les critères mobiles du RGAA 5",
+      "Arcom pour l'article 47 ; DGCCRF et autorités sectorielles pour l'EAA"
+     ],
+     [
+      "Belgique",
+      "Organismes publics fédéraux, régionaux, communautaires et locaux ; services visés par l'EAA",
+      "Norme EN 301 549 (WCAG niveau AA)",
+      "Organismes de contrôle désignés par chaque niveau de pouvoir ; pour l'EAA, notamment l'Inspection économique du SPF Economie"
+     ],
+     [
+      "Luxembourg",
+      "Secteur public (loi du 28 mai 2019) ; services visés par l'EAA (loi du 8 mars 2023)",
+      "RAAM 1.1, qui décline la norme EN 301 549 V3.2.1",
+      "SIP pour le secteur public ; OSAPS pour l'EAA"
+     ],
+     [
+      "Suisse",
+      "Confédération (LHand), cantons selon leurs règles ; entreprises qui vendent dans l'Union au titre de l'EAA",
+      "Norme eCH-0059, fondée sur les WCAG niveau AA ; EN 301 549 pour le marché européen",
+      "Pas d'autorité unique ; contrôle du droit de l'Union par les autorités des pays de vente"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "En France, l'article 47 de la loi du 11 février 2005 vise expressément les applications mobiles, au même titre que les sites, les intranets et les progiciels ; la DINUM le rappelle dans sa présentation du [[https://accessibilite.numerique.gouv.fr/obligations/champ-application/|champ d'application des obligations]]. La difficulté tient au référentiel : le RGAA 4.1.2 a été conçu pour le web. La DINUM a annoncé que le [[https://design.numerique.gouv.fr/articles/2026-11-03-rgaa5/|RGAA 5 intégrera des critères pour les applications mobiles]], avec une sortie prévue pour décembre 2026. D'ici là, faute de référentiel national dédié, l'évaluation d'une application native s'appuie en pratique sur la norme EN 301 549, tandis que les écrans affichés en webview relèvent du RGAA. Notre article sur [[article:france|l'accessibilité numérique en France]] détaille les obligations, la déclaration et les sanctions."
+  ],
+  [
+   "p",
+   "Le Luxembourg est le pays le mieux outillé. Le [[https://accessibilite.public.lu/fr/raam1.1/index.html|RAAM 1.1]], publié le 24 février 2025 par le Service information et presse, compte 108 critères de contrôle et couvre les chapitres de la norme EN 301 549 V3.2.1 qui concernent une application : exigences génériques, communication vocale bidirectionnelle, vidéo, documents non web, logiciels, documentation et services d'assistance. C'est une méthode publique et gratuite, qu'une organisation d'un autre pays peut utiliser comme grille de travail. Notre article sur [[article:luxembourg|l'accessibilité numérique au Luxembourg]] présente les contrôles du SIP et les résultats publiés, qui montrent que le mobile reste le point faible du secteur public luxembourgeois."
+  ],
+  [
+   "p",
+   "En Belgique, la référence est directement la norme EN 301 549, que la loi fédérale du 19 juillet 2018 et les textes régionaux appliquent aux applications des organismes publics. En Suisse, la norme eCH-0059 sert de référence aux administrations ; une entreprise suisse qui propose une application aux consommateurs de l'Union doit en outre respecter l'EAA pour ce marché. Notre comparatif des [[article:normes|normes d'accessibilité numérique, de WCAG 2.2 au RGAA]] explique comment ces référentiels s'articulent."
+  ],
+  [
+   "h2",
+   "eaa-applications",
+   "European Accessibility Act : quelles applications du secteur privé sont concernées"
+  ],
+  [
+   "p",
+   "L'EAA ne vise pas toutes les applications : il vise des services, énumérés à l'article 2 de la directive, et l'application est souvent le canal principal de ces services. Pour le transport de voyageurs, le texte mentionne expressément les services fournis sur appareils mobiles, y compris les applications. Pour la banque et le commerce électronique, c'est le service lui-même qui est visé, quel que soit le canal : une application bancaire ou une application de commande est donc concernée au même titre que le site."
+  ],
+  [
+   "table",
+   {
+    "caption": "Applications mobiles visées par l'European Accessibility Act : exemples par secteur",
+    "head": [
+     "Secteur",
+     "Exemples d'applications",
+     "Parcours à vérifier en priorité"
+    ],
+    "rows": [
+     [
+      "Services bancaires aux consommateurs",
+      "Banque en ligne, paiement, crédit à la consommation, épargne",
+      "Connexion et authentification forte, consultation des comptes, virement, ajout d'un bénéficiaire, opposition sur une carte"
+     ],
+     [
+      "Commerce électronique",
+      "Application d'une enseigne, place de marché, livraison de repas, réservation",
+      "Recherche, fiche produit, panier, paiement, suivi de commande, retour"
+     ],
+     [
+      "Transport de voyageurs (aérien, ferroviaire, par autobus, par voie navigable)",
+      "Billetterie, carte d'embarquement, horaires et perturbations en temps réel",
+      "Recherche d'itinéraire, achat, billet électronique, alertes de perturbation"
+     ],
+     [
+      "Communications électroniques",
+      "Espace client d'un opérateur, messagerie, appels",
+      "Gestion du forfait, assistance, communication en temps réel"
+     ],
+     [
+      "Livres numériques",
+      "Application de lecture, librairie numérique",
+      "Navigation dans le livre, réglages de lecture, synthèse vocale"
+     ],
+     [
+      "Accès aux services de médias audiovisuels",
+      "Application de télévision ou de vidéo à la demande",
+      "Sélection des programmes, sous-titres, audiodescription, guide des programmes"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Deux précisions évitent les erreurs d'analyse. D'abord, une application n'est pas un « produit » au sens de la directive : elle ne bénéficie pas des périodes transitoires prévues pour certains matériels, et une application publiée avant le 28 juin 2025 doit être accessible pour chaque nouveau contrat conclu depuis cette date ; seuls les contrats conclus avant le 28 juin 2025 peuvent se poursuivre sans modification jusqu'à leur terme, et au plus tard jusqu'au 28 juin 2030. Ensuite, seules les microentreprises de services, moins de dix personnes et au plus 2 millions d'euros de chiffre d'affaires ou de total de bilan, sont exemptées. Une application de commerce éditée par une PME de vingt salariés est dans le champ. Notre article sur l'[[article:eaa|European Accessibility Act, secteur par secteur]] détaille ces règles, et notre [[article:e-commerce|check-list e-commerce écran par écran]] s'applique aussi au parcours d'achat dans une application."
+  ],
+  [
+   "p",
+   "Les contentieux ont commencé, et ils visent aussi les applications. Le 4 juin 2026, le tribunal judiciaire de Caen, saisi en référé, a ordonné à une enseigne de grande distribution de rendre son site et son application mobile pleinement accessibles dans un délai de six mois, sous astreinte ; l'argument d'un taux de conformité de 71 % a été écarté."
+  ],
+  [
+   "note",
+   "À retenir",
+   "Une application native ne s'évalue pas avec les critères web tels quels : la référence commune aux quatre pays est la norme EN 301 549, déclinée au Luxembourg par le RAAM 1.1 et attendue en France dans le RGAA 5. Les webviews intégrées, elles, s'évaluent comme des pages web."
+  ],
+  [
+   "h2",
+   "criteres-wcag-mobile",
+   "Les critères WCAG qui pèsent le plus sur mobile"
+  ],
+  [
+   "p",
+   "La norme EN 301 549 applique aux logiciels, et donc aux applications, l'essentiel des critères des WCAG de niveau A et AA, adaptés au contexte non web. Certains critères prennent sur mobile une importance particulière, parce qu'ils correspondent à des usages propres au téléphone : l'orientation de l'écran, les gestes, la taille des cibles tactiles, l'agrandissement du texte par le système. Les numéros ci-dessous sont ceux des WCAG 2.2 ; les critères 2.5.7, 2.5.8 et 3.3.8 ne figurent pas dans la version V3.2.1 de la norme, mais dans la V4.1.1. Les critères ajoutés en 2023 sont détaillés dans notre article sur les [[article:wcag-22|nouveaux critères des WCAG 2.2]]."
+  ],
+  [
+   "table",
+   {
+    "caption": "Critères WCAG à fort enjeu dans une application mobile",
+    "head": [
+     "Critère WCAG 2.2",
+     "Ce qu'il exige sur mobile",
+     "Défaut typique"
+    ],
+    "rows": [
+     [
+      "1.1.1 Contenu non textuel (A)",
+      "Toute image porteuse d'information et tout bouton icône ont un nom lu par le lecteur d'écran",
+      "Bouton « panier » ou « filtre » annoncé « bouton » sans nom"
+     ],
+     [
+      "1.3.1 Information et relations (A)",
+      "Les titres, listes, groupes et en-têtes de tableau sont exposés comme tels",
+      "Titres d'écran simplement en gras, impossibles à parcourir avec le rotor ou les commandes de lecture"
+     ],
+     [
+      "1.3.4 Orientation (AA)",
+      "L'application fonctionne en portrait et en paysage, sauf si une orientation est essentielle",
+      "Application bloquée en portrait, inutilisable pour une personne dont le téléphone est fixé à un fauteuil"
+     ],
+     [
+      "1.4.3 et 1.4.11 Contraste (AA)",
+      "4,5:1 pour le texte, 3:1 pour les composants et icônes",
+      "Texte gris clair sur fond blanc, icônes d'onglets pâles"
+     ],
+     [
+      "1.4.4 Redimensionnement du texte (AA)",
+      "Le texte suit le réglage de taille du système sans perte de contenu",
+      "Tailles fixes en points ou en pixels, texte tronqué par des points de suspension"
+     ],
+     [
+      "2.1.1 Clavier (A)",
+      "Tout est utilisable avec un clavier externe ou un contacteur",
+      "Carrousel ou curseur personnalisé inatteignable au clavier"
+     ],
+     [
+      "2.4.3 Parcours du focus (A)",
+      "L'ordre de lecture suit la logique de l'écran",
+      "Le lecteur d'écran lit le pied d'écran avant le contenu"
+     ],
+     [
+      "2.5.1 Gestes de pointage (A)",
+      "Une action à plusieurs doigts ou par tracé a une alternative à un seul pointage",
+      "Zoom de carte uniquement par pincement"
+     ],
+     [
+      "2.5.4 Activation par le mouvement (A)",
+      "Une fonction déclenchée en secouant ou en inclinant l'appareil a une alternative et peut être désactivée",
+      "« Secouez pour annuler » sans bouton équivalent"
+     ],
+     [
+      "2.5.7 Mouvements de glissement (AA)",
+      "Un glisser-déposer a une alternative à un seul pointage",
+      "Réorganiser une liste uniquement par glisser"
+     ],
+     [
+      "2.5.8 Taille de la cible (minimum) (AA)",
+      "Cibles d'au moins 24 × 24 pixels CSS, ou espacement suffisant",
+      "Petite croix de fermeture collée au bord de l'écran"
+     ],
+     [
+      "3.3.8 Authentification accessible (minimum) (AA)",
+      "Pas de test cognitif sans alternative ; le copier-coller et les gestionnaires de mots de passe fonctionnent",
+      "Champ de code à six cases qui bloque le collage"
+     ],
+     [
+      "4.1.2 Nom, rôle et valeur (A)",
+      "Chaque composant expose son nom, son rôle et son état",
+      "Interrupteur personnalisé qui ne dit pas s'il est activé"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Pour la taille des cibles, le [[https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html|critère 2.5.8 des WCAG 2.2]] fixe un minimum de 24 pixels CSS de côté, avec des exceptions. Les plateformes recommandent plus : Google [[https://support.google.com/accessibility/android/answer/7101858?hl=en|conseille des cibles d'au moins 48 × 48 dp]], soit environ 9 mm quelle que soit la taille de l'écran, séparées d'au moins 8 dp. Viser les recommandations de la plateforme règle la question du critère, et améliore l'usage pour tout le monde, y compris dans un bus qui freine."
+  ],
+  [
+   "p",
+   "Le contraste se mesure comme sur le web, mais les applications le mettent souvent en défaut par leurs états : bouton désactivé, texte d'aide dans un champ, onglet non sélectionné, mode sombre ajouté tardivement. Notre article sur le [[article:contraste-couleurs|contraste des couleurs et la correction d'une palette de marque]] donne les seuils et la méthode, valables pour les deux plateformes."
+  ],
+  [
+   "h2",
+   "defauts-ios",
+   "Les 10 défauts d'accessibilité les plus fréquents sur iOS, et leur correction"
+  ],
+  [
+   "p",
+   "Les défauts ci-dessous reviennent d'une application à l'autre, quel que soit le secteur. Chacun est décrit par ce que perçoit l'utilisateur de VoiceOver, puis par la correction, en UIKit et en SwiftUI lorsque la différence compte."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Bouton icône sans nom.",
+     "VoiceOver annonce « bouton » ou le nom du fichier image, par exemple « ic cart 24 ». Correction : renseigner la propriété accessibilityLabel en UIKit, ou le modificateur accessibilityLabel en SwiftUI, avec un nom court et explicite : « Panier, 3 articles »."
+    ],
+    [
+     "Titres non déclarés.",
+     "L'utilisateur ne peut pas sauter de section en section avec le rotor. Correction : ajouter le trait header aux titres (accessibilityTraits en UIKit, accessibilityAddTraits(.isHeader) en SwiftUI)."
+    ],
+    [
+     "Éléments éclatés.",
+     "Une carte de produit est lue en cinq arrêts : image, nom, prix, note, bouton. Correction : regrouper la carte en un seul élément dont le libellé résume l'essentiel (en UIKit, rendre le conteneur accessible avec isAccessibilityElement et un accessibilityLabel d'ensemble ; en SwiftUI, accessibilityElement(children: .combine)), et garder les actions secondaires accessibles par des actions personnalisées."
+    ],
+    [
+     "Texte figé.",
+     "L'utilisateur a réglé une grande taille de texte dans les réglages, mais l'application l'ignore. Correction : utiliser les styles de texte dynamiques (Dynamic Type), autoriser le retour à la ligne, prévoir des mises en page qui passent en colonne aux grandes tailles."
+    ],
+    [
+     "Modale qui laisse fuir le focus.",
+     "Une fenêtre s'ouvre, mais VoiceOver continue de lire l'écran en dessous. Correction : marquer la vue modale (accessibilityViewIsModal) et envoyer la notification de changement d'écran pour placer le focus sur son titre."
+    ],
+    [
+     "Changement non annoncé.",
+     "Un message « Article ajouté au panier » s'affiche trois secondes, sans être lu. Correction : publier une annonce d'accessibilité, ou déplacer le focus lorsque le changement exige une action."
+    ],
+    [
+     "Interrupteur ou case personnalisés.",
+     "Le composant est lu sans rôle ni état. Correction : préférer le composant système ; à défaut, exposer le trait bouton, une valeur « activé » ou « désactivé » et mettre à jour cette valeur à chaque changement."
+    ],
+    [
+     "Ordre de lecture incohérent.",
+     "Dans une mise en page complexe, VoiceOver lit le bandeau d'action avant le contenu. Correction : réordonner la hiérarchie des vues ou définir explicitement accessibilityElements sur le conteneur."
+    ],
+    [
+     "Éléments décoratifs lus.",
+     "Des séparateurs, illustrations ou images de fond s'intercalent dans la lecture. Correction : les masquer (isAccessibilityElement à false, ou accessibilityHidden en SwiftUI)."
+    ],
+    [
+     "Geste sans alternative.",
+     "Supprimer un message n'est possible que par un balayage horizontal sur la ligne. Correction : proposer la même action dans un menu ou par une action personnalisée VoiceOver, et un bouton visible dans l'écran de détail."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Un point de vigilance concerne la langue : si l'application propose plusieurs langues, chaque libellé d'accessibilité doit être traduit, et un passage dans une autre langue doit être déclaré pour être prononcé correctement. Une application belge en français et en néerlandais dont les libellés VoiceOver ne sont saisis qu'en français est, pour l'utilisateur néerlandophone, à moitié muette."
+  ],
+  [
+   "h2",
+   "defauts-android",
+   "Les 10 défauts d'accessibilité les plus fréquents sur Android, et leur correction"
+  ],
+  [
+   "p",
+   "Les mêmes familles de défauts existent sur Android, avec un vocabulaire différent. La documentation officielle de Google sur les [[https://developer.android.com/guide/topics/ui/accessibility/principles?hl=fr|principes d'accessibilité des applications]] couvre les libellés, les actions et les signaux autres que la couleur ; voici comment ces principes se traduisent dans les défauts que l'on rencontre réellement, en Views et en Jetpack Compose."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Image ou bouton icône sans description.",
+     "TalkBack annonce « bouton sans libellé ». Correction : renseigner contentDescription, en Views comme en Compose ; pour une image purement décorative, mettre contentDescription à null en Compose ou importantForAccessibility à « no » en Views."
+    ],
+    [
+     "Champ de formulaire sans libellé associé.",
+     "TalkBack lit « zone d'édition » sans dire quoi saisir, ou lit seulement le texte indicatif, qui disparaît à la saisie. Correction : associer un libellé visible au champ (labelFor en Views, propriété label des champs Material en Compose) et ne pas compter sur le seul texte indicatif."
+    ],
+    [
+     "Titres non déclarés.",
+     "Les commandes de navigation par titre ne trouvent rien. Correction : accessibilityHeading en Views, semantics { heading() } en Compose."
+    ],
+    [
+     "Cibles trop petites.",
+     "Une icône de 24 dp sans marge est difficile à toucher. Correction : utiliser les composants Material, qui garantissent une zone tactile minimale, ou réserver l'espace avec minimumInteractiveComponentSize en Compose."
+    ],
+    [
+     "Éléments d'une ligne lus séparément.",
+     "Comme sur iOS, une ligne de liste devient une suite d'arrêts. Correction : semantics(mergeDescendants = true) en Compose, ou rendre la ligne focalisable avec une description d'ensemble en Views."
+    ],
+    [
+     "Messages éphémères non restitués.",
+     "Une erreur affichée sous un champ n'est pas lue. Correction : déclarer une zone dynamique (accessibilityLiveRegion en Views, liveRegion en Compose) ou placer le focus sur l'erreur après validation."
+    ],
+    [
+     "États non exposés.",
+     "Un onglet sélectionné ou un filtre actif ne sont signalés que par la couleur. Correction : exposer l'état sélectionné (selected, stateDescription) et doubler la couleur par une forme ou un texte."
+    ],
+    [
+     "Composants personnalisés sans rôle.",
+     "Un sélecteur de date dessiné sur mesure est lu comme un simple texte. Correction : déclarer le rôle (role dans les modificateurs clickable ou semantics de Compose, AccessibilityDelegate en Views) et des actions d'accessibilité pour incrémenter ou décrémenter."
+    ],
+    [
+     "Mise en page qui casse avec un grand texte.",
+     "Les tailles de police en dp, au lieu de sp, ignorent le réglage de l'utilisateur ; ou, à l'inverse, le texte agrandi se superpose. Correction : tailles en sp, hauteurs de conteneurs non figées, défilement possible."
+    ],
+    [
+     "Focus perdu après une navigation.",
+     "Après la fermeture d'une boîte de dialogue, le focus TalkBack repart en haut de l'écran. Correction : redonner le focus à l'élément qui a ouvert la boîte, et annoncer le titre de chaque nouvel écran (paneTitle en Compose, accessibilityPaneTitle ou titre d'activité en Views)."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Android ajoute deux sujets propres à la plateforme. D'une part, la diversité des fabricants : certains modifient l'interface du système, le clavier ou la version de TalkBack. Tester sur un seul appareil ne garantit rien, mais le RAAM précise qu'aucun modèle particulier n'est imposé ; un appareil récent proche du système d'origine et un appareil d'un fabricant très répandu donnent une bonne couverture. D'autre part, l'accès par contacteur (Switch Access) et par clavier : un composant que TalkBack atteint n'est pas forcément atteignable au clavier, et l'inverse."
+  ],
+  [
+   "note",
+   "À retenir",
+   "Sur iOS comme sur Android, la moitié des défauts disparaît en utilisant les composants du système plutôt que des composants dessinés sur mesure. Quand un composant personnalisé est indispensable, son nom, son rôle, son état et ses actions doivent être déclarés explicitement."
+  ],
+  [
+   "h2",
+   "react-native-flutter-webview",
+   "React Native, Flutter, webviews : les pièges des applications multiplateformes"
+  ],
+  [
+   "p",
+   "Les frameworks multiplateformes ne rendent pas une application accessible ou inaccessible par nature. Ils déplacent la question : le développeur ne manipule plus directement les propriétés d'iOS et d'Android, mais celles du framework, qui doit les traduire correctement. Les défauts viennent le plus souvent de composants de la communauté peu entretenus et d'une méconnaissance des propriétés d'accessibilité propres au framework."
+  ],
+  [
+   "table",
+   {
+    "caption": "Où déclarer l'accessibilité selon la technologie",
+    "head": [
+     "Technologie",
+     "Propriétés à connaître",
+     "Piège fréquent"
+    ],
+    "rows": [
+     [
+      "iOS UIKit et SwiftUI",
+      "accessibilityLabel, accessibilityTraits, accessibilityValue, accessibilityHint",
+      "Composants personnalisés sans trait ; Dynamic Type non pris en charge"
+     ],
+     [
+      "Android Views et Jetpack Compose",
+      "contentDescription, semantics, stateDescription, liveRegion",
+      "Tailles de texte en dp ; descriptions dupliquées entre parent et enfants"
+     ],
+     [
+      "React Native",
+      "accessible, accessibilityLabel, accessibilityRole, accessibilityState",
+      "Zones « touchables » sans rôle, lues comme du texte ; bibliothèques tierces non accessibles"
+     ],
+     [
+      "Flutter",
+      "Widget Semantics, MergeSemantics, ExcludeSemantics",
+      "Widgets personnalisés sans sémantique ; textes dessinés qui ne suivent pas le réglage de taille"
+     ],
+     [
+      "Webview (hybride)",
+      "HTML sémantique et ARIA, comme sur un site",
+      "Titre de page non annoncé ; focus non replacé au changement de vue ; zoom désactivé"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Les webviews méritent une attention particulière, parce qu'elles portent souvent les parcours les plus sensibles : souscription, paiement, formulaire de réclamation. Le contenu y est du HTML, évalué avec le RGAA en France ou avec les clauses web de la norme EN 301 549 ailleurs, mais l'expérience doit rester continue : l'utilisateur ne doit pas perdre son focus en passant d'un écran natif à un écran web, et le bouton de retour du système doit fonctionner. Une page web conforme peut devenir inutilisable si la webview bloque l'agrandissement ou impose une hauteur fixe."
+  ],
+  [
+   "p",
+   "Les modules fournis par des tiers, comme un formulaire de paiement, un lecteur vidéo, une carte ou un outil de prise de rendez-vous, sont une source majeure de non-conformité. L'organisation qui publie l'application reste responsable de l'ensemble. Exigez de chaque fournisseur la preuve de l'accessibilité de son composant sur iOS et Android, et prévoyez-la dans le contrat : notre article sur les [[article:clauses-marche-public|clauses d'accessibilité d'un marché public]] propose des formulations réutilisables dans un contrat privé."
+  ],
+  [
+   "h2",
+   "tester-voiceover-talkback",
+   "Tester l'accessibilité de son application en 30 minutes avec VoiceOver et TalkBack"
+  ],
+  [
+   "p",
+   "Ce test ne remplace pas un audit, mais il permet à un chef de produit, un designer ou un développeur de voir en une demi-heure les blocages majeurs. Prévoyez un iPhone et un téléphone Android, l'application installée, un compte de test, et choisissez un parcours essentiel : se connecter et consulter un solde, rechercher un trajet et acheter un billet, trouver un produit et l'ajouter au panier."
+  ],
+  [
+   "h3",
+   "Avant de commencer : activer les lecteurs d'écran"
+  ],
+  [
+   "p",
+   "Sur iPhone, VoiceOver s'active dans Réglages, Accessibilité, VoiceOver. Configurez d'abord le raccourci d'accessibilité (triple clic sur le bouton latéral, ou sur le bouton principal des modèles qui en ont un) : il permet de couper VoiceOver si vous êtes perdu. Les gestes de base : balayer vers la droite ou la gauche pour passer d'un élément à l'autre, toucher deux fois pour activer, tourner deux doigts sur l'écran pour ouvrir le rotor et choisir la navigation par titres. Sur Android, TalkBack s'active dans Paramètres, Accessibilité, TalkBack, et peut être associé au raccourci des touches de volume. Les gestes équivalents sont le balayage à droite ou à gauche et le double toucher ; les commandes de lecture permettent de naviguer par titres ou par liens."
+  ],
+  [
+   "h3",
+   "Le protocole en cinq étapes"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Lire l'écran d'accueil élément par élément (5 minutes).",
+     "Balayez de haut en bas. Chaque élément a-t-il un nom compréhensible, sans « bouton » seul, sans nom de fichier ? L'ordre suit-il la logique visuelle ? Les éléments décoratifs sont-ils ignorés ?"
+    ],
+    [
+     "Réaliser le parcours au lecteur d'écran (10 minutes).",
+     "Sans regarder l'écran si possible, réalisez le parcours choisi. Notez chaque endroit où vous êtes bloqué : champ sans libellé, bouton inatteignable, fenêtre qui ne prend pas le focus, message d'erreur non lu, code reçu par SMS qu'on ne peut pas coller."
+    ],
+    [
+     "Agrandir le texte au maximum (5 minutes).",
+     "Coupez le lecteur d'écran et réglez la plus grande taille de texte du système, y compris les tailles d'accessibilité sur iOS. Le texte grossit-il ? Reste-t-il entier, sans troncature ni chevauchement ? Les boutons restent-ils visibles ?"
+    ],
+    [
+     "Tourner l'appareil et vérifier les gestes (5 minutes).",
+     "Passez en mode paysage : l'application suit-elle ? Repérez toute action qui demande un geste complexe (pincer, glisser, balayer, secouer) et vérifiez qu'une alternative simple existe."
+    ],
+    [
+     "Passer les écrans clés aux outils d'inspection (5 minutes).",
+     "Sur Android, l'application Accessibility Scanner analyse un écran et signale les cibles trop petites, les contrastes insuffisants et les libellés manquants. Sur iOS, l'inspecteur d'accessibilité de Xcode audite un écran depuis un Mac. Notez ce qu'ils remontent, sans oublier ce qu'ils ne voient pas."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Si le parcours ne peut pas être terminé au lecteur d'écran, l'application est bloquante pour une partie de vos utilisateurs, quel que soit le nombre de défauts mineurs par ailleurs. C'est le premier constat à porter à la direction, avant toute discussion sur un taux de conformité. Pour aller plus loin, des [[svc:test-utilisateur|tests avec des utilisateurs réels de lecteurs d'écran]] montrent comment des personnes expérimentées contournent ou non ces obstacles, ce qu'aucun test d'expert ne simule complètement."
+  ],
+  [
+   "h2",
+   "outils-automatiques-limites",
+   "Outils de test automatiques : ce qu'ils détectent et ce qu'ils ratent"
+  ],
+  [
+   "p",
+   "Les plateformes fournissent des outils gratuits, et la [[https://accessibilite.public.lu/en/raam1.1/methodologie.html|méthodologie du RAAM 1.1]] les cite : l'inspecteur d'accessibilité de Xcode pour iOS, Accessibility Scanner et la suite d'accessibilité Android pour Android, un analyseur de contraste pour les couleurs. Les deux écosystèmes proposent aussi des vérifications intégrées aux tests automatisés : les tests d'interface d'Xcode peuvent lancer un audit d'accessibilité, et les frameworks de test Android disposent de vérifications d'accessibilité activables dans les tests instrumentés."
+  ],
+  [
+   "p",
+   "Ces outils sont utiles pour attraper vite les défauts mesurables : libellé absent, cible trop petite, contraste insuffisant, élément cliquable sans rôle. Ils ne savent pas juger si un libellé est pertinent (« bouton 1 » passe le contrôle), si l'ordre de lecture a un sens, si un message d'erreur est compréhensible, si le focus est replacé au bon endroit après une action, ni si un parcours entier est réalisable. En pratique, les vérifications automatiques couvrent une petite partie des critères ; elles servent de filet dans l'intégration continue, pas de preuve de conformité."
+  ],
+  [
+   "table",
+   {
+    "caption": "Répartition des vérifications entre outils et tests manuels",
+    "head": [
+     "Vérification",
+     "Outil automatique",
+     "Test manuel nécessaire"
+    ],
+    "rows": [
+     [
+      "Libellé présent sur les boutons et images",
+      "Oui",
+      "Pour juger de sa pertinence"
+     ],
+     [
+      "Taille des cibles tactiles",
+      "Oui",
+      "Pour les cas d'espacement et les exceptions"
+     ],
+     [
+      "Contraste du texte et des icônes",
+      "Oui, sur l'écran analysé",
+      "Pour les états (désactivé, sélectionné), le mode sombre et les images"
+     ],
+     [
+      "Ordre de lecture et regroupements",
+      "Non",
+      "Oui, au lecteur d'écran"
+     ],
+     [
+      "Annonce des changements et des erreurs",
+      "Non",
+      "Oui, en réalisant le parcours"
+     ],
+     [
+      "Agrandissement du texte et orientation",
+      "Partiellement",
+      "Oui, aux tailles maximales et en paysage"
+     ],
+     [
+      "Alternatives aux gestes complexes",
+      "Non",
+      "Oui"
+     ],
+     [
+      "Parcours complet réalisable",
+      "Non",
+      "Oui, idéalement avec des utilisateurs"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "cycle-developpement",
+   "Intégrer l'accessibilité dans le cycle de développement mobile"
+  ],
+  [
+   "p",
+   "Corriger une application après sa publication coûte cher : chaque correction passe par un cycle de développement, de recette et de validation par les magasins d'applications, sur deux plateformes. Les équipes qui obtiennent des applications accessibles durablement traitent le sujet à chaque étape, comme la sécurité ou la performance. Voici la check-list que nous recommandons, de la maquette à la mise en production."
+  ],
+  [
+   "h3",
+   "Check-list par étape"
+  ],
+  [
+   "ul",
+   [
+    "Conception : chaque écran de maquette indique l'ordre de lecture, les titres, les libellés des boutons icônes et le comportement aux grandes tailles de texte ; les composants personnalisés sont justifiés.",
+    "Design system : chaque composant est livré avec ses propriétés d'accessibilité sur iOS et Android, ses états contrastés et une zone tactile suffisante ; une seule correction profite alors à tous les écrans.",
+    "User stories : les critères d'acceptation incluent le lecteur d'écran (« l'utilisateur de VoiceOver peut ajouter un bénéficiaire ») et la taille de texte maximale.",
+    "Développement : les libellés d'accessibilité sont traduits comme les autres chaînes ; les revues de code vérifient les propriétés des nouveaux composants.",
+    "Intégration continue : les audits automatiques d'accessibilité tournent dans les tests d'interface et bloquent les régressions évidentes.",
+    "Recette : chaque version passe le protocole de test au lecteur d'écran sur les parcours essentiels, sur iOS et Android.",
+    "Mise en production : les notes de version signalent les améliorations d'accessibilité ; la déclaration d'accessibilité est mise à jour après chaque évolution importante.",
+    "Après publication : un canal de signalement accessible permet aux usagers de remonter un blocage, et chaque signalement reçoit une réponse."
+   ]
+  ],
+  [
+   "p",
+   "Deux leviers accélèrent cette organisation. Le premier est la formation des équipes : un développeur iOS ou Android qui connaît les propriétés d'accessibilité de sa plateforme corrige un défaut en quelques minutes, là où un développeur non formé le reproduit dans chaque nouveau composant ; nos [[svc:formations|formations à l'accessibilité pour les développeurs et les designers]] sont construites autour de ces gestes. Le second est la recette : une [[svc:recette|recette accessibilité à chaque version]] évite qu'une nouvelle fonctionnalité réintroduise les défauts corrigés."
+  ],
+  [
+   "p",
+   "Le calendrier de publication des magasins d'applications impose aussi sa logique. Une correction d'accessibilité urgente, par exemple un bouton de paiement inatteignable, doit pouvoir être livrée en dehors du rythme habituel des versions. Prévoyez-le dans votre organisation, surtout si votre service est soumis à l'EAA : un parcours bloquant est un manquement à corriger sans attendre la prochaine version majeure."
+  ],
+  [
+   "h2",
+   "audit-application-mobile",
+   "Comment se déroule l'audit d'accessibilité d'une application mobile"
+  ],
+  [
+   "p",
+   "Un audit d'application mobile suit la même logique qu'un audit de site, décrite dans notre article sur le [[article:audit-rgaa|déroulé d'un audit RGAA]] : un échantillon, une grille de critères, un taux de conformité, un rapport et un plan de corrections. Trois différences changent la préparation."
+  ],
+  [
+   "ul",
+   [
+    "Chaque plateforme est un audit : la version iOS et la version Android sont deux services distincts, avec leurs propres défauts et leur propre taux de conformité. Les recommandations communes sont mutualisées, pas les résultats.",
+    "L'échantillon se compose d'écrans : la méthodologie du RAAM 1.1 demande au moins les écrans d'accueil, d'informations légales, d'authentification, de contact et de documentation, un écran pour chaque type de service, puis des écrans tirés au hasard représentant au moins 10 % de l'échantillon. Un critère n'est validé que s'il l'est sur tous les écrans échantillonnés.",
+    "Les tests se font sur appareils réels, avec VoiceOver et TalkBack, sur la dernière version du système ou la précédente, et, pour les critères qui le demandent, avec d'autres modes de navigation comme le clavier externe."
+   ]
+  ],
+  [
+   "p",
+   "Pour préparer l'audit, réunissez la version à auditer (version publiée ou version de test), les comptes de test et les données fictives qui permettent de parcourir les démarches sans risque, la liste des écrans et des parcours les plus utilisés, et la déclaration d'accessibilité actuelle si elle existe. Le délai moyen de nos audits est de trois semaines ; il dépend surtout du nombre d'écrans, du nombre de plateformes et de la présence de parcours complexes comme l'authentification forte ou le paiement. Les facteurs qui font varier un devis sont détaillés dans notre article sur le [[article:prix-audit|prix d'un audit d'accessibilité]]."
+  ],
+  [
+   "p",
+   "Le livrable utile n'est pas le taux, c'est la liste des corrections classées par impact sur les parcours, avec pour chaque défaut l'écran, la plateforme, la propriété en cause et la correction attendue en Swift, en Kotlin ou dans le framework utilisé. C'est l'objet de notre [[svc:audit-raam|audit d'application mobile selon le RAAM ou la norme EN 301 549]] ; si vos équipes souhaitent être accompagnées pendant les corrections, un [[svc:developpement|accompagnement en développement accessible]] sur iOS et Android prend le relais."
+  ],
+  [
+   "h2",
+   "declaration-application",
+   "La déclaration d'accessibilité d'une application mobile"
+  ],
+  [
+   "p",
+   "Une application soumise à la directive de 2016 doit avoir sa propre déclaration d'accessibilité : celle du site ne la couvre pas. En France, la déclaration d'une application est publiée sur le site de l'organisme ou avec les informations visibles au téléchargement, et l'état de conformité est également indiqué dans l'application elle-même, généralement dans un écran « Accessibilité » accessible depuis le menu ou les réglages. Au Luxembourg, la déclaration suit le modèle officiel et est signalée au SIP."
+  ],
+  [
+   "p",
+   "Les erreurs les plus fréquentes sont prévisibles : une seule déclaration pour iOS et Android alors que les taux diffèrent, une déclaration qui renvoie à un audit de la version précédente, aucun contact pour signaler un défaut depuis l'application, une mention « totalement conforme » sans audit. Notre article sur la [[article:declaration|déclaration d'accessibilité et ses erreurs fréquentes]] propose un modèle commenté."
+  ],
+  [
+   "p",
+   "Pour les services soumis à l'EAA, l'obligation prend une autre forme : l'entreprise doit fournir des informations sur la manière dont le service satisfait aux exigences d'accessibilité, en général dans ses conditions générales ou un document équivalent. Rien n'empêche, et tout incite, à publier aussi un écran d'accessibilité dans l'application, avec un contact. Pour une banque, un transporteur ou un grand distributeur, notre page [[sector:grands-comptes|grands comptes]] décrit comment nous organisons ces chantiers à l'échelle de plusieurs applications et de plusieurs pays."
+  ],
+  [
+   "h2",
+   "plan-action-90-jours",
+   "Plan d'action : rendre une application mobile accessible en 90 jours"
+  ],
+  [
+   "p",
+   "Pour une application déjà publiée, sur iOS et Android, ce plan donne un ordre de marche réaliste. Les durées supposent une équipe de développement disponible et un périmètre de quelques dizaines d'écrans ; une application plus vaste suit les mêmes étapes, par lots de parcours."
+  ],
+  [
+   "table",
+   {
+    "caption": "Plan d'action en trois phases",
+    "head": [
+     "Période",
+     "Actions",
+     "Livrable"
+    ],
+    "rows": [
+     [
+      "Jours 1 à 15",
+      "Qualifier les obligations (directive de 2016, EAA, ou les deux) ; lister les parcours essentiels ; réaliser le test en 30 minutes sur chaque plateforme ; lancer l'audit",
+      "Note de cadrage, liste des blocages évidents"
+     ],
+     [
+      "Jours 15 à 45",
+      "Recevoir l'audit ; corriger d'abord les blocages des parcours essentiels (connexion, paiement, formulaires) ; corriger les composants du design system",
+      "Version corrective publiée, composants accessibles"
+     ],
+     [
+      "Jours 45 à 75",
+      "Traiter les défauts restants par écran ; ajouter les audits automatiques aux tests d'interface ; former les développeurs et les designers",
+      "Taux de conformité amélioré, intégration continue outillée"
+     ],
+     [
+      "Jours 75 à 90",
+      "Contre-audit des parcours corrigés ; publication ou mise à jour de la déclaration d'accessibilité ; mise en place du canal de signalement",
+      "Déclaration à jour, plan pour les écrans restants"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Gardez un œil sur le calendrier normatif. La version 4.1.1 de la norme EN 301 549, alignée sur les WCAG 2.2, a été approuvée en septembre 2026 et sa citation au Journal officiel de l'Union est attendue ; le RAAM 2 est annoncé au Luxembourg pour février 2027, et le RGAA 5 doit apporter des critères mobiles en France. Corriger dès maintenant selon les WCAG 2.2 de niveau AA, notamment pour la taille des cibles, les glissements et l'authentification, évite de rouvrir les mêmes écrans dans un an."
+  ]
+ ],
+ "faq": [
+  [
+   "Les applications mobiles sont-elles soumises au RGAA ?",
+   "Elles sont soumises à l'article 47 de la loi du 11 février 2005, au même titre que les sites, pour les organismes publics et les entreprises de plus de 250 millions d'euros de chiffre d'affaires. Le RGAA 4.1.2 a été conçu pour le web : il s'applique aux webviews, tandis que l'application native s'évalue en pratique selon la norme EN 301 549. La DINUM a annoncé que le RGAA 5 intégrera des critères pour les applications mobiles."
+  ],
+  [
+   "Faut-il auditer séparément l'application iOS et l'application Android ?",
+   "Oui. Les deux versions utilisent des composants, des lecteurs d'écran et des réglages différents, et présentent rarement les mêmes défauts. Chacune a son taux de conformité et, pour le secteur public, sa déclaration d'accessibilité. Les recommandations communes, par exemple sur le design system ou les libellés, sont mutualisées dans le plan de corrections."
+  ],
+  [
+   "Une application développée avec Flutter ou React Native peut-elle être accessible ?",
+   "Oui, à condition d'utiliser les propriétés d'accessibilité du framework (widget Semantics pour Flutter, accessibilityLabel et accessibilityRole pour React Native) et de vérifier les bibliothèques tierces. Le framework traduit ces propriétés vers celles d'iOS et d'Android ; un composant qui ne les déclare pas reste muet pour VoiceOver et TalkBack, comme en natif."
+  ],
+  [
+   "Mon application de commerce est-elle concernée par l'European Accessibility Act ?",
+   "Oui si elle permet à des consommateurs de conclure un contrat dans l'Union, et si l'entreprise n'est pas une microentreprise de services (moins de dix personnes et au plus 2 millions d'euros de chiffre d'affaires ou de bilan). L'application ne bénéficie d'aucune période transitoire propre : elle doit être accessible depuis le 28 juin 2025, comme le site ; seuls les contrats conclus avant cette date peuvent se poursuivre jusqu'à leur terme, au plus tard le 28 juin 2030."
+  ],
+  [
+   "Quelle taille minimale pour un bouton dans une application ?",
+   "Le critère 2.5.8 des WCAG 2.2, de niveau AA, demande des cibles d'au moins 24 pixels CSS de côté ou un espacement suffisant. Google recommande d'aller plus loin sur Android, avec des cibles d'au moins 48 dp, environ 9 mm, séparées de 8 dp. Les composants standard des plateformes respectent en général ces dimensions."
+  ],
+  [
+   "Un outil automatique suffit-il à vérifier l'accessibilité d'une application ?",
+   "Non. Les outils d'inspection d'Apple et de Google détectent les libellés manquants, les cibles trop petites et les contrastes insuffisants, mais ils ne jugent ni la pertinence d'un libellé, ni l'ordre de lecture, ni la possibilité de terminer un parcours. Ils sont utiles en intégration continue ; la conformité se vérifie par des tests manuels au lecteur d'écran, sur appareils réels."
+  ]
+ ],
+ "cta_svc": "audit-raam",
+ "cta_title": "Votre application passe-t-elle le test du lecteur d'écran ?",
+ "cta_text": "Nous auditons vos applications iOS et Android sur appareils réels, avec VoiceOver et TalkBack, et remettons à vos développeurs des corrections classées par impact.",
+ "related": [
+  "luxembourg",
+  "wcag-22",
+  "e-commerce"
+ ]
+}

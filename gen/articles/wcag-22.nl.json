@@ -334,7 +334,7 @@
   ],
   [
    "p",
-   "Op niveau AAA blijft criterium 2.5.5 Grootte van het aanwijsgebied (uitgebreid) bestaan, dat 44 bij 44 CSS-pixels vraagt. Dat is een goed doel voor de hoofdknoppen van een mobiele app of een kiosk. Teams die de groottes al hebben overgenomen die de ontwerprichtlijnen van iOS en Android aanbevelen, voldoen doorgaans zonder extra inspanning aan 2.5.8."
+   "Op niveau AAA blijft criterium 2.5.5 Grootte van het aanwijsgebied (uitgebreid) bestaan, dat 44 bij 44 CSS-pixels vraagt. Dat is een goed doel voor de hoofdknoppen van een mobiele app of een kiosk. Teams die de groottes al hebben overgenomen die de ontwerprichtlijnen van iOS en Android aanbevelen, voldoen doorgaans zonder extra inspanning aan 2.5.8. De andere criteria die voor een app zwaar doorwegen, zoals schermoriëntatie, gebaren en tekstvergroting, behandelen we in ons artikel over [[article:application-mobile|20 toegankelijkheidsfouten in iOS- en Android-apps]]."
   ],
   [
    "h3",
@@ -746,5 +746,5 @@
   "e-commerce",
   "audit-rgaa"
  ],
- "modified": "2026-11-19"
+ "modified": "2026-11-21"
 }

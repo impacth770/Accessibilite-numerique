@@ -732,7 +732,7 @@
   ],
   [
    "p",
-   "Une application native relève du chapitre 11 de la norme EN 301 549, consacré aux logiciels, qui transpose les critères WCAG au contexte d'une application. Au Luxembourg, le RAAM 1.1 fournit la grille officielle. En France, les applications mobiles entrent dans le champ de l'article 47 et sont aujourd'hui évaluées avec le RGAA ; le RGAA 5 doit définir des critères et des tests propres au mobile."
+   "Une application native relève du chapitre 11 de la norme EN 301 549, consacré aux logiciels, qui transpose les critères WCAG au contexte d'une application. Au Luxembourg, le RAAM 1.1 fournit la grille officielle. En France, les applications mobiles entrent dans le champ de l'article 47 et sont aujourd'hui évaluées avec le RGAA ; le RGAA 5 doit définir des critères et des tests propres au mobile. Les défauts que l'on retrouve d'une application à l'autre, et leur correction sur iOS et sur Android, sont détaillés dans notre article sur [[article:application-mobile|l'accessibilité des applications mobiles]]."
   ],
   [
    "p",
@@ -837,5 +837,5 @@
   "france"
  ],
  "cluster": "normes",
- "modified": "2026-11-19"
+ "modified": "2026-11-21"
 }

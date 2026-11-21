@@ -334,7 +334,7 @@
   ],
   [
    "p",
-   "Level AAA retains criterion 2.5.5 Target Size (Enhanced), which requires 44 by 44 CSS pixels. That is a good target for the main buttons of a mobile app or a kiosk. Teams that have already adopted the sizes recommended by the iOS and Android design guidelines generally meet 2.5.8 with no extra effort."
+   "Level AAA retains criterion 2.5.5 Target Size (Enhanced), which requires 44 by 44 CSS pixels. That is a good target for the main buttons of a mobile app or a kiosk. Teams that have already adopted the sizes recommended by the iOS and Android design guidelines generally meet 2.5.8 with no extra effort. The other criteria that weigh heavily on an app, such as orientation, gestures and text resizing, are covered in our article on [[article:application-mobile|20 accessibility failures in iOS and Android apps]]."
   ],
   [
    "h3",
@@ -746,5 +746,5 @@
   "e-commerce",
   "audit-rgaa"
  ],
- "modified": "2026-11-19"
+ "modified": "2026-11-21"
 }

@@ -249,7 +249,7 @@
   ],
   [
    "p",
-   "The iOS and Android apps of covered organisations have been in scope since 2021, as have business software packages accessed through a browser. RGAA 4.1.2 was designed primarily for web content, and the August 2026 decree specifically asks the future framework to state which categories of services its criteria apply to. In practice, a native app is assessed against EN 301 549 and tested on real devices with VoiceOver and TalkBack; this is the purpose of a [[svc:audit-raam|mobile app audit]]. Web views embedded in an app, such as a payment form opened in an in-app browser, are assessed with the RGAA."
+   "The iOS and Android apps of covered organisations have been in scope since 2021, as have business software packages accessed through a browser. RGAA 4.1.2 was designed primarily for web content, and the August 2026 decree specifically asks the future framework to state which categories of services its criteria apply to. In practice, a native app is assessed against EN 301 549 and tested on real devices with VoiceOver and TalkBack; this is the purpose of a [[svc:audit-raam|mobile app audit]]. Web views embedded in an app, such as a payment form opened in an in-app browser, are assessed with the RGAA. Obligations country by country, the most common failures and a testing protocol are brought together in our guide to [[article:application-mobile|mobile app accessibility]]."
   ],
   [
    "h3",
@@ -657,6 +657,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-11-14",
+ "modified": "2026-11-21",
  "cluster": "reglementation"
 }

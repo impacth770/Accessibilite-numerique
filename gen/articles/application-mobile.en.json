@@ -1,0 +1,721 @@
+{
+ "slug": "mobile-app-accessibility",
+ "h1": "Mobile app accessibility: 20 iOS and Android failures, their fixes and a 30-minute test",
+ "crumb": "Mobile app accessibility",
+ "meta_title": "Mobile app accessibility: iOS and Android failures and tests",
+ "meta_desc": "Mobile app accessibility: obligations by country, 20 iOS and Android failures with their fixes, a 30-minute VoiceOver and TalkBack test, and the RAAM audit.",
+ "card_desc": "Obligations by country, 20 iOS and Android failures with their fixes, VoiceOver and TalkBack testing and the development lifecycle.",
+ "cat": "guide",
+ "where": "Europe",
+ "cover": "iOS",
+ "cover_note": [
+  "VoiceOver and TalkBack",
+  "EN 301 549, RAAM 1.1"
+ ],
+ "date": "2026-11-21",
+ "cluster": "technique",
+ "lead": "Mobile app accessibility comes down to details that general guides rarely cover: an icon button with no name, announced simply as “button” by VoiceOver; a screen that refuses to rotate to landscape; a field for a code received by text message that TalkBack cannot reach. Public sector iOS and Android apps have been subject to digital accessibility rules since 23 June 2021, and banking, transport and e-commerce apps have been covered since the European Accessibility Act began to apply on 28 June 2025. This article sets out the rules that apply in each country, the 20 failures found in app after app with the fix on each platform, a protocol for testing an app yourself in 30 minutes, and how to build accessibility into the development lifecycle.",
+ "body": [
+  [
+   "h2",
+   "mobile-app-scope",
+   "Mobile app accessibility: what exactly are we talking about?"
+  ],
+  [
+   "p",
+   "An accessible mobile app is one that a blind person can use with their phone’s screen reader, that a person with low vision can read with text enlarged to 200%, that a person who cannot make fine gestures can operate with an external keyboard, voice control or a switch, and that a deaf person can follow without sound. The principles are those of digital accessibility in general, presented in our [[article:guide|guide to digital accessibility]]; the way they are implemented, however, is completely different on mobile."
+  ],
+  [
+   "p",
+   "The reason is technical. On the web, the browser translates HTML code into a tree that assistive technologies know how to read: a button element is announced as a button, an h2 heading as a heading. In a native app, it is the operating system that plays this role, based on the accessibility properties exposed by each component: a label, a role (Apple calls them “traits”), a state and a value. A standard iOS or Android component exposes this information on its own. A custom-drawn component, very common in apps that pay close attention to their visual identity, exposes nothing until the developer has done so explicitly."
+  ],
+  [
+   "p",
+   "The word “app” also covers quite different realities, and an audit is not carried out in the same way in each case:"
+  ],
+  [
+   "ul",
+   [
+    "the native app, written in Swift or Objective-C for iOS, or in Kotlin or Java for Android, using the system’s components (UIKit or SwiftUI, Views or Jetpack Compose);",
+    "the cross-platform app, written once with a framework such as React Native or Flutter, which produces two apps; its accessibility depends on how the framework translates its components into the system’s components;",
+    "the hybrid app, which mostly displays web pages inside an embedded view (webview); its content is assessed as web content, but in the context of an app;",
+    "the progressive web app, installed from the browser, which remains a website, both legally and technically."
+   ]
+  ],
+  [
+   "p",
+   "In practice, many apps combine these models: a native shell, a sign-up journey in a webview, a payment module supplied by a third-party provider, an interactive map taken from an external kit. Each of these pieces can break the experience for a screen reader user, and it is the whole app, as the user downloads it, that must be accessible."
+  ],
+  [
+   "h2",
+   "obligations-by-country",
+   "Mobile apps: the obligations in France, Belgium, Luxembourg and Switzerland"
+  ],
+  [
+   "p",
+   "Two European texts set the framework. Directive (EU) 2016/2102 requires public sector bodies to make their websites and mobile applications accessible; for apps, the deadline was 23 June 2021. [[https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0882|Directive (EU) 2019/882, known as the European Accessibility Act]], has extended the obligation to a list of private sector services since 28 June 2025. Each country has transposed these texts with its own assessment framework and its own enforcement authority."
+  ],
+  [
+   "table",
+   {
+    "caption": "Mobile app accessibility: rules applicable by country",
+    "head": [
+     "Country",
+     "Organisations covered",
+     "Assessment framework",
+     "Enforcement"
+    ],
+    "rows": [
+     [
+      "France",
+      "Public sector, bodies entrusted with a public service mission, companies with a turnover above 250 million euros (Article 47 of the Act of 11 February 2005); services covered by the EAA",
+      "RGAA 4.1.2 for web content and webviews; EN 301 549 standard for the native app, pending the mobile criteria of RGAA 5",
+      "Arcom for Article 47; DGCCRF and sector authorities for the EAA"
+     ],
+     [
+      "Belgium",
+      "Federal, regional, community and local public bodies; services covered by the EAA",
+      "EN 301 549 standard (WCAG level AA)",
+      "Monitoring bodies designated by each level of government; for the EAA, notably the Economic Inspectorate of the FPS Economy"
+     ],
+     [
+      "Luxembourg",
+      "Public sector (Act of 28 May 2019); services covered by the EAA (Act of 8 March 2023)",
+      "RAAM 1.1, which applies the EN 301 549 V3.2.1 standard",
+      "SIP for the public sector; OSAPS for the EAA"
+     ],
+     [
+      "Switzerland",
+      "Confederation (Disability Discrimination Act, LHand), cantons under their own rules; companies selling in the EU under the EAA",
+      "eCH-0059 standard, based on WCAG level AA; EN 301 549 for the European market",
+      "No single authority; EU law enforced by the authorities of the countries where the service is sold"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "In France, Article 47 of the Act of 11 February 2005 expressly covers mobile applications, in the same way as websites, intranets and software packages; DINUM, the interministerial digital directorate, points this out in its presentation of the [[https://accessibilite.numerique.gouv.fr/obligations/champ-application/|scope of the obligations (in French)]]. The difficulty lies in the assessment framework: RGAA 4.1.2 was designed for the web. DINUM has announced that [[https://design.numerique.gouv.fr/articles/2026-11-03-rgaa5/|RGAA 5 will include criteria for mobile applications (in French)]], with publication planned for December 2026. Until then, in the absence of a dedicated national framework, a native app is in practice assessed against the EN 301 549 standard, while screens displayed in a webview fall under the RGAA. Our article on [[article:france|digital accessibility in France]] details the obligations, the accessibility statement and the penalties."
+  ],
+  [
+   "p",
+   "Luxembourg is the best-equipped country. [[https://accessibilite.public.lu/en/raam1.1/index.html|RAAM 1.1, the Mobile App Accessibility Assessment Framework]], published on 24 February 2025 by the Information and Press Service (SIP), has 108 control criteria and covers the chapters of the EN 301 549 V3.2.1 standard that concern an app: generic requirements, two-way voice communication, video, non-web documents, software, and documentation and support services. It is a public, free method that an organisation in another country can use as a working checklist. Our article on [[article:luxembourg|digital accessibility in Luxembourg]] presents the SIP’s monitoring and its published results, which show that mobile remains the weak point of the Luxembourg public sector."
+  ],
+  [
+   "p",
+   "In Belgium, the reference is the EN 301 549 standard itself, which the federal Act of 19 July 2018 and the regional texts apply to the apps of public bodies. In Switzerland, the eCH-0059 standard serves as the reference for public administrations; a Swiss company that offers an app to consumers in the European Union must also comply with the EAA for that market. Our comparison of [[article:normes|digital accessibility standards, from WCAG 2.2 to the RGAA]] explains how these frameworks fit together."
+  ],
+  [
+   "h2",
+   "eaa-mobile-apps",
+   "European Accessibility Act: which private sector apps are covered"
+  ],
+  [
+   "p",
+   "The EAA does not cover every app: it covers services, listed in Article 2 of the Directive, and the app is often the main channel for those services. For passenger transport, the text expressly mentions services provided on mobile devices, including mobile applications. For banking and e-commerce, it is the service itself that is covered, whatever the channel: a banking app or an ordering app is therefore covered in the same way as the website."
+  ],
+  [
+   "table",
+   {
+    "caption": "Mobile apps covered by the European Accessibility Act: examples by sector",
+    "head": [
+     "Sector",
+     "Examples of apps",
+     "Journeys to check first"
+    ],
+    "rows": [
+     [
+      "Consumer banking services",
+      "Online banking, payments, consumer credit, savings",
+      "Login and strong customer authentication, viewing accounts, transfers, adding a payee, blocking a card"
+     ],
+     [
+      "E-commerce",
+      "A retailer’s app, marketplace, food delivery, bookings",
+      "Search, product page, basket, payment, order tracking, returns"
+     ],
+     [
+      "Passenger transport (air, rail, bus and coach, waterborne)",
+      "Ticketing, boarding pass, real-time timetables and disruption information",
+      "Journey planning, purchase, e-ticket, disruption alerts"
+     ],
+     [
+      "Electronic communications",
+      "An operator’s customer area, messaging, calls",
+      "Managing a plan, support, real-time communication"
+     ],
+     [
+      "E-books",
+      "Reading app, digital bookshop",
+      "Navigating within the book, reading settings, text-to-speech"
+     ],
+     [
+      "Access to audiovisual media services",
+      "TV or video-on-demand app",
+      "Programme selection, subtitles, audio description, programme guide"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Two clarifications prevent errors of analysis. First, an app is not a “product” within the meaning of the Directive: it does not benefit from the transitional periods provided for certain hardware, and an app published before 28 June 2025 must be accessible for every new contract concluded since that date; only contracts concluded before 28 June 2025 may continue unchanged until they expire, and at the latest until 28 June 2030. Second, only microenterprises providing services, with fewer than ten employees and an annual turnover or balance sheet total of no more than 2 million euros, are exempt. A shopping app published by an SME with twenty employees is within scope. Our article on the [[article:eaa|European Accessibility Act, sector by sector]] details these rules, and our [[article:e-commerce|screen-by-screen e-commerce checklist]] also applies to the purchase journey in an app."
+  ],
+  [
+   "p",
+   "Litigation has begun, and it targets apps as well. On 4 June 2026, the Caen judicial court (tribunal judiciaire), ruling in summary proceedings, ordered a major retail chain to make its website and its mobile app fully accessible within six months, subject to a periodic penalty payment; the argument of a 71% conformance rate was dismissed."
+  ],
+  [
+   "note",
+   "Key point",
+   "A native app is not assessed with web criteria as they stand: the common reference for all four countries is the EN 301 549 standard, applied in Luxembourg through RAAM 1.1 and expected in France in RGAA 5. Embedded webviews, on the other hand, are assessed as web pages."
+  ],
+  [
+   "h2",
+   "wcag-criteria-mobile",
+   "The WCAG criteria that matter most on mobile"
+  ],
+  [
+   "p",
+   "The EN 301 549 standard applies most of the WCAG level A and AA success criteria to software, and therefore to apps, adapted to the non-web context. Some criteria take on particular importance on mobile, because they correspond to uses specific to the phone: screen orientation, gestures, the size of touch targets, and text enlargement by the system. The numbers below are those of WCAG 2.2; criteria 2.5.7, 2.5.8 and 3.3.8 do not appear in version V3.2.1 of the standard, but in V4.1.1. The criteria added in 2023 are detailed in our article on the [[article:wcag-22|new success criteria in WCAG 2.2]]."
+  ],
+  [
+   "table",
+   {
+    "caption": "WCAG criteria with high stakes in a mobile app",
+    "head": [
+     "WCAG 2.2 criterion",
+     "What it requires on mobile",
+     "Typical failure"
+    ],
+    "rows": [
+     [
+      "1.1.1 Non-text Content (A)",
+      "Every informative image and every icon button has a name read out by the screen reader",
+      "A “basket” or “filter” button announced as “button” with no name"
+     ],
+     [
+      "1.3.1 Info and Relationships (A)",
+      "Headings, lists, groups and table headers are exposed as such",
+      "Screen headings that are merely bold, impossible to navigate with the rotor or reading controls"
+     ],
+     [
+      "1.3.4 Orientation (AA)",
+      "The app works in portrait and landscape, unless a particular orientation is essential",
+      "App locked in portrait, unusable for a person whose phone is mounted on a wheelchair"
+     ],
+     [
+      "1.4.3 and 1.4.11 Contrast (AA)",
+      "4.5:1 for text, 3:1 for components and icons",
+      "Light grey text on a white background, pale tab icons"
+     ],
+     [
+      "1.4.4 Resize Text (AA)",
+      "Text follows the system text size setting without loss of content",
+      "Fixed sizes in points or pixels, text truncated with an ellipsis"
+     ],
+     [
+      "2.1.1 Keyboard (A)",
+      "Everything can be used with an external keyboard or a switch",
+      "Custom carousel or slider that cannot be reached with the keyboard"
+     ],
+     [
+      "2.4.3 Focus Order (A)",
+      "The reading order follows the logic of the screen",
+      "The screen reader reads the bottom of the screen before the content"
+     ],
+     [
+      "2.5.1 Pointer Gestures (A)",
+      "A multi-finger or path-based action has a single-pointer alternative",
+      "Map zoom only by pinching"
+     ],
+     [
+      "2.5.4 Motion Actuation (A)",
+      "A function triggered by shaking or tilting the device has an alternative and can be disabled",
+      "“Shake to undo” with no equivalent button"
+     ],
+     [
+      "2.5.7 Dragging Movements (AA)",
+      "Drag and drop has a single-pointer alternative",
+      "Reordering a list only by dragging"
+     ],
+     [
+      "2.5.8 Target Size (Minimum) (AA)",
+      "Targets of at least 24 × 24 CSS pixels, or sufficient spacing",
+      "Small close cross squeezed against the edge of the screen"
+     ],
+     [
+      "3.3.8 Accessible Authentication (Minimum) (AA)",
+      "No cognitive function test without an alternative; copy and paste and password managers work",
+      "Six-box code field that blocks pasting"
+     ],
+     [
+      "4.1.2 Name, Role, Value (A)",
+      "Every component exposes its name, role and state",
+      "Custom toggle switch that does not say whether it is on"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "For target size, [[https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html|WCAG 2.2 success criterion 2.5.8]] sets a minimum of 24 CSS pixels on each side, with exceptions. The platforms recommend more: Google [[https://support.google.com/accessibility/android/answer/7101858?hl=en|advises touch targets of at least 48 × 48 dp]], which is about 9 mm whatever the screen size, separated by at least 8 dp. Aiming for the platform recommendations settles the question of the criterion, and improves use for everyone, including on a bus that brakes suddenly."
+  ],
+  [
+   "p",
+   "Contrast is measured as on the web, but apps often fail on it because of their states: a disabled button, hint text in a field, an unselected tab, a dark mode added late in the project. Our article on [[article:contraste-couleurs|colour contrast and correcting a brand palette]] gives the thresholds and the method, which apply to both platforms."
+  ],
+  [
+   "h2",
+   "ios-failures",
+   "The 10 most common accessibility failures on iOS, and how to fix them"
+  ],
+  [
+   "p",
+   "The failures below recur from one app to the next, whatever the sector. Each is described by what the VoiceOver user perceives, then by the fix, in UIKit and in SwiftUI where the difference matters."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Icon button with no name.",
+     "VoiceOver announces “button” or the name of the image file, for example “ic cart 24”. Fix: set the accessibilityLabel property in UIKit, or the accessibilityLabel modifier in SwiftUI, with a short, explicit name: “Basket, 3 items”."
+    ],
+    [
+     "Headings not declared.",
+     "The user cannot jump from section to section with the rotor. Fix: add the header trait to headings (accessibilityTraits in UIKit, accessibilityAddTraits(.isHeader) in SwiftUI)."
+    ],
+    [
+     "Fragmented elements.",
+     "A product card is read in five stops: image, name, price, rating, button. Fix: group the card into a single element whose label sums up the essentials (in UIKit, make the container accessible with isAccessibilityElement and an overall accessibilityLabel; in SwiftUI, accessibilityElement(children: .combine)), and keep secondary actions available through custom actions."
+    ],
+    [
+     "Fixed text.",
+     "The user has chosen a large text size in Settings, but the app ignores it. Fix: use dynamic text styles (Dynamic Type), allow text to wrap, and design layouts that switch to a single column at large sizes."
+    ],
+    [
+     "Modal that lets the focus escape.",
+     "A dialog opens, but VoiceOver carries on reading the screen underneath. Fix: mark the modal view (accessibilityViewIsModal) and post the screen-changed notification to place the focus on its title."
+    ],
+    [
+     "Change not announced.",
+     "A message such as “Item added to basket” appears for three seconds without being read out. Fix: post an accessibility announcement, or move the focus when the change requires the user to act."
+    ],
+    [
+     "Custom switch or checkbox.",
+     "The component is read with no role or state. Fix: prefer the system component; failing that, expose the button trait and a value of “on” or “off”, and update that value at every change."
+    ],
+    [
+     "Illogical reading order.",
+     "In a complex layout, VoiceOver reads the action bar before the content. Fix: reorder the view hierarchy, or set accessibilityElements explicitly on the container."
+    ],
+    [
+     "Decorative elements read out.",
+     "Separators, illustrations or background images interrupt the reading. Fix: hide them (isAccessibilityElement set to false, or accessibilityHidden in SwiftUI)."
+    ],
+    [
+     "Gesture with no alternative.",
+     "Deleting a message is only possible with a horizontal swipe on the row. Fix: offer the same action in a menu or as a custom VoiceOver action, and a visible button on the detail screen."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "One point needs particular care: language. If the app offers several languages, every accessibility label must be translated, and any passage in another language must be declared so that it is pronounced correctly. For a Dutch-speaking user, a Belgian app in French and Dutch whose VoiceOver labels have only been entered in French is half silent. The same applies to a Swiss app in German, French and Italian, or to a Luxembourg app offered in French, German and English: the accessibility labels belong in the same translation files as the rest of the interface."
+  ],
+  [
+   "h2",
+   "android-failures",
+   "The 10 most common accessibility failures on Android, and how to fix them"
+  ],
+  [
+   "p",
+   "The same families of failure exist on Android, with different vocabulary. Google’s official documentation on the [[https://developer.android.com/guide/topics/ui/accessibility/principles|principles for improving app accessibility]] covers labels, actions and cues other than colour; here is how those principles translate into the failures actually encountered, in Views and in Jetpack Compose."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Image or icon button with no description.",
+     "TalkBack announces “unlabelled button”. Fix: set contentDescription, in Views as in Compose; for a purely decorative image, set contentDescription to null in Compose or importantForAccessibility to “no” in Views."
+    ],
+    [
+     "Form field with no associated label.",
+     "TalkBack reads “edit box” without saying what to enter, or reads only the hint text, which disappears as soon as the user types. Fix: associate a visible label with the field (labelFor in Views, the label property of Material text fields in Compose) and do not rely on the hint text alone."
+    ],
+    [
+     "Headings not declared.",
+     "The heading navigation controls find nothing. Fix: accessibilityHeading in Views, semantics { heading() } in Compose."
+    ],
+    [
+     "Targets too small.",
+     "A 24 dp icon with no padding is hard to tap. Fix: use Material components, which guarantee a minimum touch area, or reserve the space with minimumInteractiveComponentSize in Compose."
+    ],
+    [
+     "Elements in a row read separately.",
+     "As on iOS, a list row becomes a series of stops. Fix: semantics(mergeDescendants = true) in Compose, or make the row focusable with an overall description in Views."
+    ],
+    [
+     "Transient messages not conveyed.",
+     "An error displayed under a field is not read out. Fix: declare a live region (accessibilityLiveRegion in Views, liveRegion in Compose) or place the focus on the error after validation."
+    ],
+    [
+     "States not exposed.",
+     "A selected tab or an active filter is indicated only by colour. Fix: expose the selected state (selected, stateDescription) and back up the colour with a shape or text."
+    ],
+    [
+     "Custom components with no role.",
+     "A custom-drawn date picker is read as plain text. Fix: declare the role (role in the clickable or semantics modifiers in Compose, AccessibilityDelegate in Views) and accessibility actions to increment or decrement the value."
+    ],
+    [
+     "Layout that breaks with large text.",
+     "Font sizes in dp rather than sp ignore the user’s setting; or, conversely, the enlarged text overlaps. Fix: sizes in sp, container heights that are not fixed, and scrolling where needed."
+    ],
+    [
+     "Focus lost after navigation.",
+     "After a dialog closes, the TalkBack focus goes back to the top of the screen. Fix: return the focus to the element that opened the dialog, and announce the title of every new screen (paneTitle in Compose, accessibilityPaneTitle or the activity title in Views)."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Android adds two issues specific to the platform. The first is the diversity of manufacturers: some modify the system interface, the keyboard or the version of TalkBack. Testing on a single device guarantees nothing, but RAAM states that no particular model is required; a recent device close to stock Android and a device from a very widespread manufacturer provide good coverage. The second is access by switch (Switch Access) and by keyboard: a component that TalkBack can reach is not necessarily reachable by keyboard, and vice versa."
+  ],
+  [
+   "note",
+   "Key point",
+   "On iOS as on Android, half of the failures disappear when the system components are used rather than custom-drawn ones. When a custom component is essential, its name, role, state and actions must be declared explicitly."
+  ],
+  [
+   "h2",
+   "react-native-flutter-webview",
+   "React Native, Flutter and webviews: the pitfalls of cross-platform apps"
+  ],
+  [
+   "p",
+   "Cross-platform frameworks do not make an app accessible or inaccessible by nature. They shift the question: the developer no longer works directly with the iOS and Android properties, but with those of the framework, which must translate them correctly. Failures most often come from poorly maintained community components and from a lack of familiarity with the framework’s own accessibility properties."
+  ],
+  [
+   "table",
+   {
+    "caption": "Where to declare accessibility, by technology",
+    "head": [
+     "Technology",
+     "Properties to know",
+     "Common pitfall"
+    ],
+    "rows": [
+     [
+      "iOS UIKit and SwiftUI",
+      "accessibilityLabel, accessibilityTraits, accessibilityValue, accessibilityHint",
+      "Custom components with no trait; Dynamic Type not supported"
+     ],
+     [
+      "Android Views and Jetpack Compose",
+      "contentDescription, semantics, stateDescription, liveRegion",
+      "Text sizes in dp; descriptions duplicated between parent and children"
+     ],
+     [
+      "React Native",
+      "accessible, accessibilityLabel, accessibilityRole, accessibilityState",
+      "“Touchable” areas with no role, read as plain text; inaccessible third-party libraries"
+     ],
+     [
+      "Flutter",
+      "Semantics, MergeSemantics and ExcludeSemantics widgets",
+      "Custom widgets with no semantics; drawn text that does not follow the size setting"
+     ],
+     [
+      "Webview (hybrid)",
+      "Semantic HTML and ARIA, as on a website",
+      "Page title not announced; focus not moved when the view changes; zoom disabled"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Webviews deserve particular attention, because they often carry the most sensitive journeys: sign-up, payment, complaint forms. The content is HTML, assessed against the RGAA in France or against the web clauses of the EN 301 549 standard elsewhere, but the experience must remain continuous: the user must not lose their focus when moving from a native screen to a web screen, and the system back button must work. A compliant web page can become unusable if the webview blocks zooming or imposes a fixed height."
+  ],
+  [
+   "p",
+   "Modules supplied by third parties, such as a payment form, a video player, a map or an appointment booking tool, are a major source of non-compliance. The organisation that publishes the app remains responsible for the whole. Require each supplier to provide evidence of the accessibility of its component on iOS and Android, and write that requirement into the contract: our article on [[article:clauses-marche-public|accessibility clauses in public procurement contracts]] offers wording that can be reused in a private contract."
+  ],
+  [
+   "h2",
+   "testing-voiceover-talkback",
+   "Testing your app’s accessibility in 30 minutes with VoiceOver and TalkBack"
+  ],
+  [
+   "p",
+   "This test does not replace an audit, but it allows a product owner, a designer or a developer to see the major blockers within half an hour. You will need an iPhone and an Android phone, the app installed, a test account, and one essential journey: logging in and checking a balance, searching for a journey and buying a ticket, or finding a product and adding it to the basket."
+  ],
+  [
+   "h3",
+   "Before you start: turning on the screen readers"
+  ],
+  [
+   "p",
+   "On an iPhone, VoiceOver is turned on in Settings, Accessibility, VoiceOver. First set up the Accessibility Shortcut (triple-click the side button, or the Home button on models that have one): it lets you turn VoiceOver off again if you get lost. The basic gestures are: swipe right or left to move from one element to the next, double-tap to activate, and rotate two fingers on the screen to open the rotor and choose navigation by headings. On Android, TalkBack is turned on in Settings, Accessibility, TalkBack, and can be linked to the volume keys shortcut. The equivalent gestures are swiping right or left and double-tapping; the reading controls let you navigate by headings or by links."
+  ],
+  [
+   "p",
+   "Spend a minute or two practising on a familiar screen, such as the phone’s own settings, before opening your app. The aim is not to become an expert user, which takes weeks, but to be able to tell the difference between a blocker caused by the app and a hesitation caused by your own lack of practice."
+  ],
+  [
+   "h3",
+   "The five-step protocol"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Read the home screen element by element (5 minutes).",
+     "Swipe from top to bottom. Does each element have an understandable name, without a bare “button” and without a file name? Does the order follow the visual logic? Are decorative elements ignored?"
+    ],
+    [
+     "Complete the journey with the screen reader (10 minutes).",
+     "Without looking at the screen if possible, complete the chosen journey. Note every point where you are blocked: a field with no label, a button you cannot reach, a dialog that does not take the focus, an error message that is not read out, a code received by text message that cannot be pasted."
+    ],
+    [
+     "Enlarge the text to the maximum (5 minutes).",
+     "Turn off the screen reader and set the system’s largest text size, including the larger accessibility sizes on iOS. Does the text get bigger? Does it remain complete, with no truncation or overlap? Do the buttons remain visible?"
+    ],
+    [
+     "Rotate the device and check the gestures (5 minutes).",
+     "Switch to landscape: does the app follow? Identify any action that requires a complex gesture (pinching, dragging, swiping, shaking) and check that a simple alternative exists."
+    ],
+    [
+     "Run the key screens through the inspection tools (5 minutes).",
+     "On Android, the Accessibility Scanner app analyses a screen and flags targets that are too small, insufficient contrast and missing labels. On iOS, Xcode’s Accessibility Inspector audits a screen from a Mac. Note what they report, without forgetting what they cannot see."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "If the journey cannot be completed with the screen reader, the app is a blocker for some of your users, however many minor failures there may be elsewhere. That is the first finding to bring to senior management, before any discussion of a conformance rate. To go further, [[svc:test-utilisateur|testing with real screen reader users]] shows how experienced people do or do not get around these obstacles, something no expert test fully simulates."
+  ],
+  [
+   "h2",
+   "automated-testing-tools",
+   "Automated testing tools: what they detect and what they miss"
+  ],
+  [
+   "p",
+   "The platforms provide free tools, and the [[https://accessibilite.public.lu/en/raam1.1/methodologie.html|RAAM 1.1 methodology]] lists them: Xcode’s Accessibility Inspector for iOS, Accessibility Scanner and the Android Accessibility Suite for Android, and a contrast analyser for colours. Both ecosystems also offer checks built into automated tests: Xcode UI tests can run an accessibility audit, and the Android testing frameworks include accessibility checks that can be enabled in instrumented tests."
+  ],
+  [
+   "p",
+   "These tools are useful for catching measurable failures quickly: a missing label, a target that is too small, insufficient contrast, a clickable element with no role. They cannot judge whether a label is relevant (“button 1” passes the check), whether the reading order makes sense, whether an error message is understandable, whether the focus is returned to the right place after an action, or whether an entire journey can be completed. In practice, automated checks cover a small proportion of the criteria; they serve as a safety net in continuous integration, not as proof of conformance."
+  ],
+  [
+   "table",
+   {
+    "caption": "How checks are divided between tools and manual testing",
+    "head": [
+     "Check",
+     "Automated tool",
+     "Manual test needed"
+    ],
+    "rows": [
+     [
+      "Label present on buttons and images",
+      "Yes",
+      "To judge its relevance"
+     ],
+     [
+      "Size of touch targets",
+      "Yes",
+      "For spacing cases and exceptions"
+     ],
+     [
+      "Contrast of text and icons",
+      "Yes, on the screen analysed",
+      "For states (disabled, selected), dark mode and images"
+     ],
+     [
+      "Reading order and grouping",
+      "No",
+      "Yes, with the screen reader"
+     ],
+     [
+      "Announcement of changes and errors",
+      "No",
+      "Yes, by completing the journey"
+     ],
+     [
+      "Text enlargement and orientation",
+      "Partly",
+      "Yes, at maximum sizes and in landscape"
+     ],
+     [
+      "Alternatives to complex gestures",
+      "No",
+      "Yes"
+     ],
+     [
+      "Whole journey can be completed",
+      "No",
+      "Yes, ideally with users"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "development-lifecycle",
+   "Building accessibility into the mobile development lifecycle"
+  ],
+  [
+   "p",
+   "Fixing an app after it has been published is expensive: every fix goes through a cycle of development, acceptance testing and approval by the app stores, on two platforms. The teams that achieve lasting mobile app accessibility deal with the subject at every stage, as they do with security or performance. Here is the checklist we recommend, from mock-up to release."
+  ],
+  [
+   "h3",
+   "Checklist by stage"
+  ],
+  [
+   "ul",
+   [
+    "Design: each mock-up screen shows the reading order, the headings, the labels of icon buttons and the behaviour at large text sizes; custom components are justified.",
+    "Design system: each component is delivered with its accessibility properties on iOS and Android, its contrasting states and a sufficient touch area; a single fix then benefits every screen.",
+    "User stories: acceptance criteria include the screen reader (“a VoiceOver user can add a payee”) and the maximum text size.",
+    "Development: accessibility labels are translated like any other string; code reviews check the properties of new components.",
+    "Continuous integration: automated accessibility audits run in the UI tests and block obvious regressions.",
+    "Acceptance testing: each release goes through the screen reader test protocol on the essential journeys, on iOS and Android.",
+    "Release: release notes mention accessibility improvements; the accessibility statement is updated after every significant change.",
+    "After publication: an accessible feedback channel allows users to report a blocker, and every report receives a reply."
+   ]
+  ],
+  [
+   "p",
+   "Two things speed up this way of working. The first is training: an iOS or Android developer who knows their platform’s accessibility properties fixes a failure in a few minutes, whereas an untrained developer reproduces it in every new component; our [[svc:formations|accessibility training for developers and designers]] is built around these practical skills. The second is acceptance testing: [[svc:recette|accessibility acceptance testing for every release]] prevents a new feature from reintroducing failures that have already been fixed."
+  ],
+  [
+   "p",
+   "The app stores’ publication schedule also imposes its own logic. An urgent accessibility fix, such as a payment button that cannot be reached, must be deliverable outside the usual release rhythm. Plan for this in your organisation, especially if your service is subject to the EAA: a blocking journey is a failure to comply that must be corrected without waiting for the next major release."
+  ],
+  [
+   "h2",
+   "mobile-app-audit",
+   "How a mobile app accessibility audit works"
+  ],
+  [
+   "p",
+   "A mobile app audit follows the same logic as a website audit, described in our article on [[article:audit-rgaa|how an RGAA audit is carried out]]: a sample, a set of criteria, a conformance rate, a report and a remediation plan. Three differences change the preparation."
+  ],
+  [
+   "ul",
+   [
+    "Each platform is a separate audit: the iOS version and the Android version are two distinct services, with their own failures and their own conformance rate. Common recommendations are shared, but results are not.",
+    "The sample is made up of screens: the RAAM 1.1 methodology requires at least the home, legal information, authentication, contact and documentation screens, one screen for each type of service, then randomly selected screens representing at least 10% of the sample. A criterion is only met if it is met on every screen in the sample.",
+    "Tests are carried out on real devices, with VoiceOver and TalkBack, on the latest version of the operating system or the previous one, and, for the criteria that require it, with other navigation methods such as an external keyboard."
+   ]
+  ],
+  [
+   "p",
+   "To prepare for the audit, gather the version to be audited (published version or test build), the test accounts and dummy data that make it possible to go through the processes without risk, the list of the most used screens and journeys, and the current accessibility statement if there is one. The average turnaround for our audits is three weeks; it depends mainly on the number of screens, the number of platforms and the presence of complex journeys such as strong customer authentication or payment. The factors that affect a quote are detailed in our article on the [[article:prix-audit|cost of an accessibility audit]]."
+  ],
+  [
+   "p",
+   "The useful deliverable is not the rate: it is the list of fixes ranked by their impact on journeys, with, for each failure, the screen, the platform, the property at fault and the expected fix in Swift, in Kotlin or in the framework used. That is the purpose of our [[svc:audit-raam|mobile app audit against RAAM or the EN 301 549 standard]]; if your teams would like support while making the fixes, [[svc:developpement|support with accessible development]] on iOS and Android takes over from there."
+  ],
+  [
+   "h2",
+   "accessibility-statement-app",
+   "The accessibility statement for a mobile app"
+  ],
+  [
+   "p",
+   "An app subject to the 2016 Directive must have its own accessibility statement: the website’s statement does not cover it. In France, an app’s statement is published on the organisation’s website or with the information visible at download, and the conformance status is also shown in the app itself, usually on an “Accessibility” screen reached from the menu or the settings. In Luxembourg, the statement follows the official template and is notified to the SIP."
+  ],
+  [
+   "p",
+   "The most common errors are predictable: a single statement for iOS and Android even though the rates differ, a statement that refers to an audit of the previous version, no contact for reporting a failure from within the app, and a “fully compliant” claim without an audit. Our article on the [[article:declaration|accessibility statement and its common errors]] offers an annotated template."
+  ],
+  [
+   "p",
+   "For services subject to the EAA, the obligation takes a different form: the company must provide information on how the service meets the accessibility requirements, generally in its general terms and conditions or an equivalent document. Nothing prevents it, and everything encourages it, from also publishing an accessibility screen in the app, with a contact. For a bank, a transport operator or a major retailer, our [[sector:grands-comptes|large enterprises]] page describes how we organise these programmes across several apps and several countries."
+  ],
+  [
+   "h2",
+   "action-plan-90-days",
+   "Action plan: making a mobile app accessible in 90 days"
+  ],
+  [
+   "p",
+   "For an app already published on iOS and Android, this plan gives a realistic order of work. The durations assume an available development team and a scope of a few dozen screens; a larger app follows the same steps, in batches of journeys."
+  ],
+  [
+   "table",
+   {
+    "caption": "Three-phase action plan",
+    "head": [
+     "Period",
+     "Actions",
+     "Deliverable"
+    ],
+    "rows": [
+     [
+      "Days 1 to 15",
+      "Establish the obligations (2016 Directive, EAA, or both); list the essential journeys; run the 30-minute test on each platform; commission the audit",
+      "Scoping note, list of obvious blockers"
+     ],
+     [
+      "Days 15 to 45",
+      "Receive the audit; first fix the blockers in the essential journeys (login, payment, forms); fix the design system components",
+      "Corrective release published, accessible components"
+     ],
+     [
+      "Days 45 to 75",
+      "Deal with the remaining failures screen by screen; add automated audits to the UI tests; train developers and designers",
+      "Improved conformance rate, continuous integration equipped"
+     ],
+     [
+      "Days 75 to 90",
+      "Follow-up audit of the corrected journeys; publish or update the accessibility statement; set up the feedback channel",
+      "Up-to-date statement, plan for the remaining screens"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Keep an eye on the standards calendar. Version 4.1.1 of the EN 301 549 standard, aligned with WCAG 2.2, was approved in September 2026 and its citation in the Official Journal of the European Union is expected; RAAM 2 has been announced in Luxembourg for February 2027, and RGAA 5 is due to bring mobile criteria in France. Fixing now against WCAG 2.2 level AA, particularly for target size, dragging movements and authentication, avoids having to reopen the same screens in a year’s time."
+  ]
+ ],
+ "faq": [
+  [
+   "Are mobile apps subject to the RGAA in France?",
+   "They are subject to Article 47 of the Act of 11 February 2005, in the same way as websites, for public bodies and for companies with a turnover above 250 million euros. RGAA 4.1.2 was designed for the web: it applies to webviews, while the native app is in practice assessed against the EN 301 549 standard. DINUM has announced that RGAA 5 will include criteria for mobile applications."
+  ],
+  [
+   "Do the iOS app and the Android app need to be audited separately?",
+   "Yes. The two versions use different components, screen readers and settings, and rarely have the same failures. Each has its own conformance rate and, in the public sector, its own accessibility statement. Common recommendations, for example on the design system or on labels, are pooled in the remediation plan, so that a single fix in a shared component benefits both platforms."
+  ],
+  [
+   "Can an app built with Flutter or React Native be accessible?",
+   "Yes, provided that the framework’s accessibility properties are used (the Semantics widget in Flutter, accessibilityLabel and accessibilityRole in React Native) and that third-party libraries are checked. The framework translates these properties into those of iOS and Android; a component that does not declare them remains silent for VoiceOver and TalkBack, exactly as in a native app."
+  ],
+  [
+   "Is my shopping app covered by the European Accessibility Act?",
+   "Yes, if it allows consumers to conclude a contract in the European Union and the company is not a microenterprise providing services (fewer than ten employees and a turnover or balance sheet total of no more than 2 million euros). The app has no transitional period of its own: it must have been accessible since 28 June 2025, like the website; only contracts concluded before that date may continue until they expire, at the latest on 28 June 2030."
+  ],
+  [
+   "What is the minimum size for a button in an app?",
+   "WCAG 2.2 success criterion 2.5.8, at level AA, requires targets of at least 24 CSS pixels on each side, or sufficient spacing. Google recommends going further on Android, with touch targets of at least 48 dp, about 9 mm, separated by 8 dp. The standard components of both platforms generally respect these dimensions, which is another reason to prefer them to custom controls."
+  ],
+  [
+   "Is an automated tool enough to check an app’s accessibility?",
+   "No. Apple’s and Google’s inspection tools detect missing labels, targets that are too small and insufficient contrast, but they cannot judge the relevance of a label, the reading order or whether a journey can be completed. They are useful in continuous integration; conformance is verified through manual testing with a screen reader, on real devices."
+  ]
+ ],
+ "cta_svc": "audit-raam",
+ "cta_title": "Does your app pass the screen reader test?",
+ "cta_text": "We audit your iOS and Android apps on real devices, with VoiceOver and TalkBack, and give your developers fixes ranked by impact.",
+ "related": [
+  "luxembourg",
+  "wcag-22",
+  "e-commerce"
+ ]
+}

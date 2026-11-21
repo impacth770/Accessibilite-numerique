@@ -240,7 +240,7 @@
   ],
   [
    "p",
-   "Bei einer nativen App hat die Prüferin oder der Prüfer fast nie Zugang zum Quellcode. Ein Attribut lässt sich nicht wie auf einer Webseite inspizieren: Geprüft wird, was das System den Hilfstechnologien tatsächlich bereitstellt. Die Tests des RAAM stützen sich deshalb auf Screenreader, Systemeinstellungen und die Inspektionswerkzeuge von Apple und Google. Das ist eine andere Arbeitsweise, die echte Geräte und gute Kenntnisse beider Plattformen voraussetzt. Der RAAM ist der luxemburgische Referenzrahmen; anderswo wird dieselbe Methode mit dem jeweiligen lokalen Standard angewandt, wie unsere Seite zum [[svc:audit-raam|Audit mobiler Apps nach dem RAAM]] erklärt."
+   "Bei einer nativen App hat die Prüferin oder der Prüfer fast nie Zugang zum Quellcode. Ein Attribut lässt sich nicht wie auf einer Webseite inspizieren: Geprüft wird, was das System den Hilfstechnologien tatsächlich bereitstellt. Die Tests des RAAM stützen sich deshalb auf Screenreader, Systemeinstellungen und die Inspektionswerkzeuge von Apple und Google. Das ist eine andere Arbeitsweise, die echte Geräte und gute Kenntnisse beider Plattformen voraussetzt. Der RAAM ist der luxemburgische Referenzrahmen; anderswo wird dieselbe Methode mit dem jeweiligen lokalen Standard angewandt, wie unsere Seite zum [[svc:audit-raam|Audit mobiler Apps nach dem RAAM]] erklärt. Wer die größten Hürden schon vor dem Audit selbst finden möchte, findet in unserem Beitrag [[article:application-mobile|Barrierefreie App: Mängel, Behebung und Test]] einen 30-Minuten-Test mit VoiceOver und TalkBack."
   ],
   [
    "h2",
@@ -722,6 +722,6 @@
   "normes",
   "belgique"
  ],
- "modified": "2026-11-10",
+ "modified": "2026-11-21",
  "cluster": "reglementation"
 }

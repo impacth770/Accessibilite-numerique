@@ -240,7 +240,7 @@
   ],
   [
    "p",
-   "With a native app, the auditor almost never has access to the source code. They cannot inspect an attribute as they would on a web page: they check what the operating system actually exposes to assistive technologies. RAAM tests therefore rely on screen readers, system settings and the inspection tools provided by Apple and Google. It is a different way of working, which requires real devices and a sound knowledge of each platform. RAAM is the Luxembourg framework; elsewhere, the same method applies with the local standard, as explained on our page on [[svc:audit-raam|mobile app audits against RAAM]]."
+   "With a native app, the auditor almost never has access to the source code. They cannot inspect an attribute as they would on a web page: they check what the operating system actually exposes to assistive technologies. RAAM tests therefore rely on screen readers, system settings and the inspection tools provided by Apple and Google. It is a different way of working, which requires real devices and a sound knowledge of each platform. RAAM is the Luxembourg framework; elsewhere, the same method applies with the local standard, as explained on our page on [[svc:audit-raam|mobile app audits against RAAM]]. To spot the main blockers yourself before an audit, our guide to [[article:application-mobile|accessible mobile apps]] sets out a 30-minute test with VoiceOver and TalkBack."
   ],
   [
    "h2",
@@ -722,6 +722,6 @@
   "normes",
   "belgique"
  ],
- "modified": "2026-11-10",
+ "modified": "2026-11-21",
  "cluster": "reglementation"
 }

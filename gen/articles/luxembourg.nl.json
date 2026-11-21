@@ -244,7 +244,7 @@
   ],
   [
    "p",
-   "Bij een native app heeft de auditor bijna nooit toegang tot de broncode. Hij kan geen attribuut inspecteren zoals op een webpagina: hij controleert wat het systeem werkelijk doorgeeft aan de hulptechnologieën. De tests van RAAM steunen dus op schermlezers, de systeeminstellingen en de inspectietools van Apple en Google. Dat is een andere manier van werken, die echte toestellen en een goede kennis van elk platform vereist. RAAM is het Luxemburgse referentiekader; elders geldt dezelfde methode met het lokale referentiekader, zoals onze pagina over de [[svc:audit-raam|audit van mobiele apps volgens RAAM]] uitlegt."
+   "Bij een native app heeft de auditor bijna nooit toegang tot de broncode. Hij kan geen attribuut inspecteren zoals op een webpagina: hij controleert wat het systeem werkelijk doorgeeft aan de hulptechnologieën. De tests van RAAM steunen dus op schermlezers, de systeeminstellingen en de inspectietools van Apple en Google. Dat is een andere manier van werken, die echte toestellen en een goede kennis van elk platform vereist. RAAM is het Luxemburgse referentiekader; elders geldt dezelfde methode met het lokale referentiekader, zoals onze pagina over de [[svc:audit-raam|audit van mobiele apps volgens RAAM]] uitlegt. Wie de grootste blokkades vóór de audit zelf wil opsporen, vindt in ons artikel over [[article:application-mobile|toegankelijke mobiele apps]] een test van 30 minuten met VoiceOver en TalkBack."
   ],
   [
    "h2",
@@ -722,6 +722,6 @@
   "normes",
   "belgique"
  ],
- "modified": "2026-11-10",
+ "modified": "2026-11-21",
  "cluster": "reglementation"
 }

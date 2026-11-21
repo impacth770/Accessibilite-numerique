@@ -334,7 +334,7 @@
   ],
   [
    "p",
-   "Le niveau AAA conserve le critère 2.5.5 Taille de la cible (améliorée), qui demande 44 par 44 pixels CSS. C'est un bon objectif pour les boutons principaux d'une application mobile ou d'une borne. Les équipes qui ont déjà adopté les tailles recommandées par les guides de conception d'iOS et d'Android respectent généralement 2.5.8 sans effort supplémentaire."
+   "Le niveau AAA conserve le critère 2.5.5 Taille de la cible (améliorée), qui demande 44 par 44 pixels CSS. C'est un bon objectif pour les boutons principaux d'une application mobile ou d'une borne. Les équipes qui ont déjà adopté les tailles recommandées par les guides de conception d'iOS et d'Android respectent généralement 2.5.8 sans effort supplémentaire. Les autres critères qui pèsent sur une application, comme l'orientation, les gestes ou l'agrandissement du texte, sont traités dans notre article sur [[article:application-mobile|les 20 défauts d'accessibilité des applications iOS et Android]]."
   ],
   [
    "h3",
@@ -746,5 +746,5 @@
   "e-commerce",
   "audit-rgaa"
  ],
- "modified": "2026-11-19"
+ "modified": "2026-11-21"
 }

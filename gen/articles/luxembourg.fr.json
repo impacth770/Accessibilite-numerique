@@ -240,7 +240,7 @@
   ],
   [
    "p",
-   "Sur une application native, l'auditeur n'a presque jamais accès au code source. Il ne peut pas inspecter un attribut comme sur une page web : il vérifie ce que le système expose réellement aux technologies d'assistance. Les tests du RAAM s'appuient donc sur les lecteurs d'écran, les réglages du système et les outils d'inspection fournis par Apple et Google. C'est une autre façon de travailler, qui exige des appareils réels et une bonne connaissance de chaque plateforme. Le RAAM est le référentiel luxembourgeois ; ailleurs, la même méthode s'applique avec le référentiel local, comme l'explique notre page [[svc:audit-raam|audit d'application mobile selon le RAAM]]."
+   "Sur une application native, l'auditeur n'a presque jamais accès au code source. Il ne peut pas inspecter un attribut comme sur une page web : il vérifie ce que le système expose réellement aux technologies d'assistance. Les tests du RAAM s'appuient donc sur les lecteurs d'écran, les réglages du système et les outils d'inspection fournis par Apple et Google. C'est une autre façon de travailler, qui exige des appareils réels et une bonne connaissance de chaque plateforme. Le RAAM est le référentiel luxembourgeois ; ailleurs, la même méthode s'applique avec le référentiel local, comme l'explique notre page [[svc:audit-raam|audit d'application mobile selon le RAAM]]. Pour repérer soi-même les blocages avant l'audit, notre article [[article:application-mobile|accessibilité d'une application mobile]] propose un test en 30 minutes avec VoiceOver et TalkBack."
   ],
   [
    "h2",
@@ -714,6 +714,6 @@
   "normes",
   "belgique"
  ],
- "modified": "2026-11-10",
+ "modified": "2026-11-21",
  "cluster": "reglementation"
 }

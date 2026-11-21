@@ -279,7 +279,7 @@
   ],
   [
    "p",
-   "Die iOS- und Android-Apps der betroffenen Organisationen sind seit 2021 erfasst, ebenso wie browserbasierte Fachanwendungen. Der RGAA 4.1.2 wurde in erster Linie für Webinhalte entwickelt, und das Dekret vom August 2026 verlangt gerade vom künftigen Referenzrahmen, festzulegen, auf welche Kategorien von Diensten seine Kriterien anwendbar sind. In der Praxis stützt sich die Prüfung einer nativen App auf die Norm EN 301 549 und erfolgt auf echten Geräten, mit VoiceOver und TalkBack; das ist Gegenstand eines [[svc:audit-raam|Audits mobiler Apps]]. In eine App eingebettete Webansichten, etwa ein Zahlungsformular in einem integrierten Browser, werden dagegen mit dem RGAA geprüft."
+   "Die iOS- und Android-Apps der betroffenen Organisationen sind seit 2021 erfasst, ebenso wie browserbasierte Fachanwendungen. Der RGAA 4.1.2 wurde in erster Linie für Webinhalte entwickelt, und das Dekret vom August 2026 verlangt gerade vom künftigen Referenzrahmen, festzulegen, auf welche Kategorien von Diensten seine Kriterien anwendbar sind. In der Praxis stützt sich die Prüfung einer nativen App auf die Norm EN 301 549 und erfolgt auf echten Geräten, mit VoiceOver und TalkBack; das ist Gegenstand eines [[svc:audit-raam|Audits mobiler Apps]]. In eine App eingebettete Webansichten, etwa ein Zahlungsformular in einem integrierten Browser, werden dagegen mit dem RGAA geprüft. Die Pflichten in den einzelnen Ländern, die häufigsten Mängel und ein Testprotokoll fasst unser Leitfaden zur [[article:application-mobile|digitalen Barrierefreiheit von Apps]] zusammen."
   ],
   [
    "h3",
@@ -688,6 +688,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-11-14",
+ "modified": "2026-11-21",
  "cluster": "reglementation"
 }

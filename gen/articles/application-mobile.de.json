@@ -1,0 +1,717 @@
+{
+ "slug": "barrierefreie-app",
+ "h1": "Barrierefreie App: 20 iOS- und Android-Mängel, ihre Behebung und der 30-Minuten-Test",
+ "crumb": "Barrierefreie App",
+ "meta_title": "Barrierefreie App: iOS- und Android-Mängel, Pflichten, Tests",
+ "meta_desc": "Barrierefreie App: Pflichten je Land, 20 Mängel unter iOS und Android mit Behebung, Test mit VoiceOver und TalkBack in 30 Minuten, Audit nach RAAM.",
+ "card_desc": "Pflichten je Land, 20 Mängel unter iOS und Android mit Behebung, Test mit VoiceOver und TalkBack, Einbindung in die Entwicklung.",
+ "cat": "guide",
+ "where": "Europa",
+ "cover": "iOS",
+ "cover_note": [
+  "VoiceOver und TalkBack",
+  "EN 301 549, RAAM 1.1"
+ ],
+ "date": "2026-11-21",
+ "cluster": "technique",
+ "lead": "Ob eine App barrierefrei ist, entscheidet sich an Details, die allgemeine Leitfäden zur digitalen Barrierefreiheit selten behandeln: ein Symbolbutton ohne Namen, den VoiceOver nur als „Taste“ ansagt, ein Bildschirm, der sich nicht ins Querformat drehen lässt, ein Feld für den per SMS erhaltenen Code, das mit TalkBack nicht erreichbar ist. iOS- und Android-Apps des öffentlichen Sektors unterliegen den Barrierefreiheitsregeln seit dem 23. Juni 2021, Apps von Banken, Verkehrsunternehmen und Onlinehändlern seit dem Geltungsbeginn des European Accessibility Act am 28. Juni 2025. Dieser Beitrag nennt die in jedem Land geltenden Regeln, die 20 Mängel, die von einer App zur nächsten wiederkehren, mit ihrer Behebung auf jeder Plattform, ein Protokoll, mit dem Sie selbst in 30 Minuten testen, und die Art, wie sich Barrierefreiheit in den Entwicklungszyklus einbinden lässt.",
+ "body": [
+  [
+   "h2",
+   "barrierefreie-app-definition",
+   "Barrierefreie App: Worum geht es genau?"
+  ],
+  [
+   "p",
+   "Eine barrierefreie App ist eine App, die eine blinde Person mit dem Screenreader ihres Smartphones bedienen kann, die eine sehbehinderte Person mit einer auf 200 % vergrößerten Schrift lesen kann, die eine Person ohne feinmotorische Gesten mit einer externen Tastatur, der Sprachsteuerung oder einem Schalter steuern kann und der eine gehörlose Person ohne Ton folgen kann. Die Grundsätze sind die der digitalen Barrierefreiheit im Allgemeinen, die unser [[article:guide|Leitfaden zur digitalen Barrierefreiheit]] vorstellt; ihre Umsetzung ändert sich auf dem Smartphone jedoch grundlegend."
+  ],
+  [
+   "p",
+   "Der Grund ist technischer Natur. Im Web übersetzt der Browser den HTML-Code in eine Baumstruktur, die assistive Technologien lesen können: Ein button-Element wird als Schaltfläche angesagt, eine h2-Überschrift als Überschrift. In einer nativen App übernimmt das Betriebssystem diese Rolle, und zwar auf Grundlage der Barrierefreiheitseigenschaften, die jede Komponente bereitstellt: eine Beschriftung, eine Rolle (Apple spricht von „Traits“), ein Zustand, ein Wert. Eine Standardkomponente von iOS oder Android stellt diese Informationen von selbst bereit. Eine individuell gezeichnete Komponente, wie sie in Apps mit ausgeprägtem visuellem Markenauftritt sehr häufig vorkommt, stellt nichts bereit, solange der Entwickler es nicht ausdrücklich programmiert hat."
+  ],
+  [
+   "p",
+   "Das Wort „App“ deckt außerdem unterschiedliche Realitäten ab, und ein Audit läuft nicht in jedem Fall gleich ab:"
+  ],
+  [
+   "ul",
+   [
+    "die native App, geschrieben in Swift oder Objective-C für iOS, in Kotlin oder Java für Android, mit den Komponenten des Systems (UIKit oder SwiftUI, Views oder Jetpack Compose);",
+    "die plattformübergreifende App, einmal mit einem Framework wie React Native oder Flutter geschrieben, aus dem zwei Apps entstehen; ihre Barrierefreiheit hängt davon ab, wie das Framework seine Komponenten in die des Systems übersetzt;",
+    "die hybride App, die im Wesentlichen Webseiten in einer eingebetteten Ansicht (Webview) anzeigt; ihr Inhalt wird wie Web bewertet, aber im Kontext einer App;",
+    "die Progressive Web App, die aus dem Browser installiert wird und rechtlich wie technisch eine Website bleibt."
+   ]
+  ],
+  [
+   "p",
+   "In der Praxis kombinieren viele Apps diese Modelle: eine native Hülle, ein Antragsprozess in einer Webview, ein Zahlungsmodul eines Dienstleisters, eine interaktive Karte aus einem Drittanbieter-Kit. Jedes dieser Teile kann die Nutzung für eine Person mit Screenreader zunichtemachen, und barrierefrei sein muss die gesamte App, so wie die Nutzerin oder der Nutzer sie herunterlädt."
+  ],
+  [
+   "h2",
+   "pflichten-nach-land",
+   "Apps und digitale Barrierefreiheit: die Pflichten in Frankreich, Belgien, Luxemburg und der Schweiz"
+  ],
+  [
+   "p",
+   "Zwei europäische Rechtsakte setzen den Rahmen. Die Richtlinie (EU) 2016/2102 verpflichtet öffentliche Stellen, ihre Websites und mobilen Anwendungen barrierefrei zu gestalten; für Apps lief die Frist am 23. Juni 2021 ab. Die [[https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32019L0882|Richtlinie (EU) 2019/882, der sogenannte European Accessibility Act]], dehnt die Pflicht seit dem 28. Juni 2025 auf eine Liste von Dienstleistungen des Privatsektors aus. Jedes Land hat diese Texte mit einem eigenen Bewertungsrahmen und einer eigenen Kontrollbehörde umgesetzt."
+  ],
+  [
+   "table",
+   {
+    "caption": "Barrierefreiheit mobiler Apps: geltende Regeln nach Land",
+    "head": [
+     "Land",
+     "Betroffene Organisationen",
+     "Bewertungsrahmen",
+     "Kontrolle"
+    ],
+    "rows": [
+     [
+      "Frankreich",
+      "Öffentlicher Sektor, mit einer Aufgabe des öffentlichen Dienstes betraute Einrichtungen, Unternehmen mit mehr als 250 Millionen Euro Umsatz (Artikel 47 des Gesetzes vom 11. Februar 2005); vom EAA erfasste Dienstleistungen",
+      "RGAA 4.1.2 für Webinhalte und Webviews; Norm EN 301 549 für die native App, bis die mobilen Kriterien des RGAA 5 vorliegen",
+      "Arcom für Artikel 47; DGCCRF und sektorale Behörden für den EAA"
+     ],
+     [
+      "Belgien",
+      "Öffentliche Stellen auf Föderal-, Regional-, Gemeinschafts- und Lokalebene; vom EAA erfasste Dienstleistungen",
+      "Norm EN 301 549 (WCAG Stufe AA)",
+      "Von jeder Regierungsebene benannte Kontrollstellen; für den EAA insbesondere die Wirtschaftsinspektion des FÖD Wirtschaft"
+     ],
+     [
+      "Luxemburg",
+      "Öffentlicher Sektor (Gesetz vom 28. Mai 2019); vom EAA erfasste Dienstleistungen (Gesetz vom 8. März 2023)",
+      "RAAM 1.1, das die Norm EN 301 549 V3.2.1 umsetzt",
+      "SIP für den öffentlichen Sektor; OSAPS für den EAA"
+     ],
+     [
+      "Schweiz",
+      "Bund (BehiG), Kantone nach ihren eigenen Regeln; Unternehmen, die in der Union verkaufen, nach dem EAA",
+      "Standard eCH-0059, gestützt auf die WCAG Stufe AA; EN 301 549 für den europäischen Markt",
+      "Keine zentrale Behörde; Kontrolle des Unionsrechts durch die Behörden der Länder, in denen verkauft wird"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "In Frankreich nennt Artikel 47 des Gesetzes vom 11. Februar 2005 mobile Anwendungen ausdrücklich, ebenso wie Websites, Intranets und Softwarepakete; die DINUM erinnert daran in ihrer Darstellung des [[https://accessibilite.numerique.gouv.fr/obligations/champ-application/|Anwendungsbereichs der Pflichten (auf Französisch)]]. Die Schwierigkeit liegt beim Bewertungsrahmen: Der RGAA 4.1.2 wurde für das Web konzipiert. Die DINUM hat angekündigt, dass der [[https://design.numerique.gouv.fr/articles/2026-11-03-rgaa5/|RGAA 5 Kriterien für mobile Apps enthalten wird (auf Französisch)]], dessen Veröffentlichung für Dezember 2026 vorgesehen ist. Bis dahin stützt sich die Bewertung einer nativen App mangels eigenen nationalen Rahmens in der Praxis auf die Norm EN 301 549, während die in einer Webview angezeigten Bildschirme unter den RGAA fallen. Unser Beitrag zur [[article:france|digitalen Barrierefreiheit in Frankreich]] erläutert die Pflichten, die Erklärung und die Sanktionen im Einzelnen."
+  ],
+  [
+   "p",
+   "Luxemburg ist das am besten ausgestattete Land. Das [[https://accessibilite.public.lu/fr/raam1.1/index.html|RAAM 1.1]], am 24. Februar 2025 vom Service information et presse (SIP) veröffentlicht, umfasst 108 Prüfkriterien und deckt die Kapitel der Norm EN 301 549 V3.2.1 ab, die eine App betreffen: allgemeine Anforderungen, bidirektionale Sprachkommunikation, Video, Nicht-Web-Dokumente, Software, Dokumentation und Unterstützungsdienste. Es ist eine öffentliche und kostenlose Methode, die auch eine Organisation aus einem anderen Land als Arbeitsraster verwenden kann. Unser Beitrag zur [[article:luxembourg|digitalen Barrierefreiheit in Luxemburg]] stellt die Kontrollen des SIP und die veröffentlichten Ergebnisse vor, die zeigen, dass Mobile nach wie vor die Schwachstelle des luxemburgischen öffentlichen Sektors ist."
+  ],
+  [
+   "p",
+   "In Belgien ist die Referenz unmittelbar die Norm EN 301 549, die das föderale Gesetz vom 19. Juli 2018 und die Texte der Regionen und Gemeinschaften auf die Apps öffentlicher Stellen anwenden. In der Schweiz dient der Standard eCH-0059 den Verwaltungen als Referenz; ein Schweizer Unternehmen, das Verbraucherinnen und Verbrauchern in der Union eine App anbietet, muss für diesen Markt zusätzlich den EAA einhalten. Unser Vergleich der [[article:normes|Normen der digitalen Barrierefreiheit, von den WCAG 2.2 bis zum RGAA]] erklärt, wie diese Regelwerke ineinandergreifen."
+  ],
+  [
+   "h2",
+   "eaa-apps-privatsektor",
+   "European Accessibility Act: Welche Apps des Privatsektors betroffen sind"
+  ],
+  [
+   "p",
+   "Der EAA erfasst nicht alle Apps: Er erfasst Dienstleistungen, die in Artikel 2 der Richtlinie aufgezählt sind, und die App ist oft der Hauptkanal dieser Dienstleistungen. Für die Personenbeförderung nennt der Text ausdrücklich die über Mobilgeräte erbrachten Dienstleistungen, einschließlich mobiler Anwendungen. Bei Bankdienstleistungen und im elektronischen Geschäftsverkehr ist die Dienstleistung selbst erfasst, unabhängig vom Kanal: Eine Banking-App oder eine Bestell-App ist daher ebenso betroffen wie die Website."
+  ],
+  [
+   "table",
+   {
+    "caption": "Vom European Accessibility Act erfasste mobile Apps: Beispiele nach Sektor",
+    "head": [
+     "Sektor",
+     "Beispiele für Apps",
+     "Vorrangig zu prüfende Abläufe"
+    ],
+    "rows": [
+     [
+      "Bankdienstleistungen für Verbraucher",
+      "Onlinebanking, Zahlung, Verbraucherkredit, Sparen",
+      "Anmeldung und starke Kundenauthentifizierung, Kontoabfrage, Überweisung, Hinzufügen eines Empfängers, Sperrung einer Karte"
+     ],
+     [
+      "Elektronischer Geschäftsverkehr",
+      "App einer Handelskette, Marktplatz, Essenslieferung, Buchung",
+      "Suche, Produktseite, Warenkorb, Bezahlung, Sendungsverfolgung, Rücksendung"
+     ],
+     [
+      "Personenbeförderung (Luft-, Schienen-, Bus- und Schiffsverkehr)",
+      "Ticketverkauf, Bordkarte, Fahrpläne und Störungen in Echtzeit",
+      "Verbindungssuche, Kauf, elektronisches Ticket, Störungsmeldungen"
+     ],
+     [
+      "Elektronische Kommunikation",
+      "Kundenbereich eines Anbieters, Messaging, Anrufe",
+      "Verwaltung des Tarifs, Kundendienst, Echtzeitkommunikation"
+     ],
+     [
+      "E-Books",
+      "Lese-App, digitale Buchhandlung",
+      "Navigation im Buch, Leseeinstellungen, Sprachausgabe"
+     ],
+     [
+      "Zugang zu audiovisuellen Mediendiensten",
+      "Fernseh- oder Video-on-Demand-App",
+      "Programmauswahl, Untertitel, Audiodeskription, elektronischer Programmführer"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Zwei Klarstellungen vermeiden Fehleinschätzungen. Erstens ist eine App kein „Produkt“ im Sinne der Richtlinie: Für sie gelten nicht die Übergangsfristen, die für bestimmte Geräte vorgesehen sind, und eine vor dem 28. Juni 2025 veröffentlichte App muss für jeden seit diesem Datum geschlossenen neuen Vertrag barrierefrei sein; nur vor dem 28. Juni 2025 geschlossene Verträge dürfen unverändert bis zu ihrem Ablauf weiterlaufen, längstens bis zum 28. Juni 2030. Zweitens sind nur Kleinstunternehmen, die Dienstleistungen erbringen, also mit weniger als zehn Beschäftigten und höchstens 2 Millionen Euro Jahresumsatz oder Jahresbilanzsumme, ausgenommen. Eine Shopping-App, die ein KMU mit zwanzig Beschäftigten herausgibt, fällt in den Anwendungsbereich. Unser Beitrag zum [[article:eaa|European Accessibility Act, Sektor für Sektor]] erläutert diese Regeln, und unsere [[article:e-commerce|Checkliste für den Onlineshop, Bildschirm für Bildschirm]] gilt auch für den Kaufprozess in einer App."
+  ],
+  [
+   "p",
+   "Die ersten Gerichtsverfahren laufen, und sie betreffen auch Apps. Am 4. Juni 2026 hat das Tribunal judiciaire von Caen im Eilverfahren eine Einzelhandelskette verpflichtet, ihre Website und ihre mobile App innerhalb von sechs Monaten vollständig barrierefrei zu gestalten, unter Androhung eines Zwangsgelds; das Argument einer Konformitätsrate von 71 % wurde zurückgewiesen."
+  ],
+  [
+   "note",
+   "Merke",
+   "Eine native App wird nicht unverändert mit den Webkriterien bewertet: Die gemeinsame Referenz der vier Länder ist die Norm EN 301 549, in Luxemburg durch das RAAM 1.1 umgesetzt und in Frankreich mit dem RGAA 5 erwartet. Eingebettete Webviews werden dagegen wie Webseiten bewertet."
+  ],
+  [
+   "h2",
+   "wcag-kriterien-mobil",
+   "Die WCAG-Kriterien, die auf dem Smartphone am schwersten wiegen"
+  ],
+  [
+   "p",
+   "Die Norm EN 301 549 wendet auf Software, und damit auf Apps, den Großteil der WCAG-Kriterien der Stufen A und AA an, angepasst an den Nicht-Web-Kontext. Einige Kriterien erhalten auf dem Smartphone besonderes Gewicht, weil sie typischen Nutzungsweisen des Telefons entsprechen: der Bildschirmausrichtung, den Gesten, der Größe der Touch-Ziele, der Schriftvergrößerung durch das System. Die nachstehenden Nummern sind die der WCAG 2.2; die Kriterien 2.5.7, 2.5.8 und 3.3.8 sind nicht in der Version V3.2.1 der Norm enthalten, sondern in der V4.1.1. Die 2023 hinzugekommenen Kriterien beschreibt unser Beitrag zu den [[article:wcag-22|neuen Erfolgskriterien der WCAG 2.2]]."
+  ],
+  [
+   "table",
+   {
+    "caption": "WCAG-Kriterien mit hoher Bedeutung in einer mobilen App",
+    "head": [
+     "WCAG-2.2-Kriterium",
+     "Was es auf dem Smartphone verlangt",
+     "Typischer Mangel"
+    ],
+    "rows": [
+     [
+      "1.1.1 Nicht-Text-Inhalt (A)",
+      "Jedes informationstragende Bild und jeder Symbolbutton hat einen Namen, den der Screenreader vorliest",
+      "Button „Warenkorb“ oder „Filter“ wird nur als „Taste“ ohne Namen angesagt"
+     ],
+     [
+      "1.3.1 Info und Beziehungen (A)",
+      "Überschriften, Listen, Gruppen und Tabellenköpfe werden als solche bereitgestellt",
+      "Bildschirmtitel nur fett gesetzt, mit dem Rotor oder den Lesesteuerungen nicht ansteuerbar"
+     ],
+     [
+      "1.3.4 Ausrichtung (AA)",
+      "Die App funktioniert im Hoch- und im Querformat, sofern eine Ausrichtung nicht wesentlich ist",
+      "App im Hochformat gesperrt, unbenutzbar für eine Person, deren Telefon an einem Rollstuhl befestigt ist"
+     ],
+     [
+      "1.4.3 und 1.4.11 Kontrast (AA)",
+      "4,5:1 für Text, 3:1 für Bedienelemente und Symbole",
+      "Hellgrauer Text auf weißem Grund, blasse Tab-Symbole"
+     ],
+     [
+      "1.4.4 Textgröße ändern (AA)",
+      "Der Text folgt der Größeneinstellung des Systems ohne Inhaltsverlust",
+      "Feste Größen in Punkt oder Pixel, Text durch Auslassungspunkte abgeschnitten"
+     ],
+     [
+      "2.1.1 Tastatur (A)",
+      "Alles ist mit einer externen Tastatur oder einem Schalter bedienbar",
+      "Karussell oder individueller Schieberegler per Tastatur nicht erreichbar"
+     ],
+     [
+      "2.4.3 Fokusreihenfolge (A)",
+      "Die Lesereihenfolge folgt der Logik des Bildschirms",
+      "Der Screenreader liest die Fußleiste vor dem Inhalt"
+     ],
+     [
+      "2.5.1 Zeigergesten (A)",
+      "Eine Aktion mit mehreren Fingern oder per Pfad hat eine Alternative mit einfachem Zeigen",
+      "Karten-Zoom nur per Zwei-Finger-Geste"
+     ],
+     [
+      "2.5.4 Bewegungsaktivierung (A)",
+      "Eine Funktion, die durch Schütteln oder Neigen des Geräts ausgelöst wird, hat eine Alternative und lässt sich deaktivieren",
+      "„Schütteln zum Widerrufen“ ohne gleichwertigen Button"
+     ],
+     [
+      "2.5.7 Ziehbewegungen (AA)",
+      "Ein Drag-and-drop hat eine Alternative mit einfachem Zeigen",
+      "Liste nur per Ziehen umsortierbar"
+     ],
+     [
+      "2.5.8 Zielgröße (Minimum) (AA)",
+      "Ziele von mindestens 24 × 24 CSS-Pixeln oder ausreichender Abstand",
+      "Kleines Schließen-Kreuz direkt am Bildschirmrand"
+     ],
+     [
+      "3.3.8 Barrierefreie Authentifizierung (Minimum) (AA)",
+      "Kein kognitiver Test ohne Alternative; Kopieren und Einfügen sowie Passwortmanager funktionieren",
+      "Codefeld mit sechs Kästchen, das das Einfügen blockiert"
+     ],
+     [
+      "4.1.2 Name, Rolle, Wert (A)",
+      "Jede Komponente stellt ihren Namen, ihre Rolle und ihren Zustand bereit",
+      "Individueller Schalter, der nicht mitteilt, ob er eingeschaltet ist"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Für die Größe der Ziele legt das [[https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html|Kriterium 2.5.8 der WCAG 2.2 (auf Englisch)]] ein Minimum von 24 CSS-Pixeln Seitenlänge fest, mit Ausnahmen. Die Plattformen empfehlen mehr: Google [[https://support.google.com/accessibility/android/answer/7101858?hl=en|rät zu Zielen von mindestens 48 × 48 dp (auf Englisch)]], also etwa 9 mm unabhängig von der Bildschirmgröße, mit mindestens 8 dp Abstand. Wer sich an den Empfehlungen der Plattform orientiert, erfüllt das Kriterium und verbessert die Bedienung für alle, auch in einem bremsenden Bus."
+  ],
+  [
+   "p",
+   "Der Kontrast wird wie im Web gemessen, doch Apps verfehlen ihn häufig bei ihren Zuständen: deaktivierter Button, Hinweistext in einem Feld, nicht ausgewählter Tab, nachträglich ergänzter Dunkelmodus. Unser Beitrag zum [[article:contraste-couleurs|Farbkontrast und zur Korrektur einer Markenpalette]] nennt die Schwellenwerte und die Methode, die für beide Plattformen gelten."
+  ],
+  [
+   "h2",
+   "maengel-ios",
+   "Die 10 häufigsten Barrierefreiheitsmängel unter iOS und ihre Behebung"
+  ],
+  [
+   "p",
+   "Die folgenden Mängel kehren von einer App zur nächsten wieder, unabhängig von der Branche. Jeder wird zunächst so beschrieben, wie ihn eine Person mit VoiceOver wahrnimmt, dann mit seiner Behebung, in UIKit und in SwiftUI, wenn der Unterschied eine Rolle spielt."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Symbolbutton ohne Namen.",
+     "VoiceOver sagt „Taste“ oder den Namen der Bilddatei an, zum Beispiel „ic cart 24“. Behebung: die Eigenschaft accessibilityLabel in UIKit oder den Modifier accessibilityLabel in SwiftUI setzen, mit einem kurzen, eindeutigen Namen: „Warenkorb, 3 Artikel“."
+    ],
+    [
+     "Nicht deklarierte Überschriften.",
+     "Die Person kann mit dem Rotor nicht von Abschnitt zu Abschnitt springen. Behebung: den Trait header für Überschriften setzen (accessibilityTraits in UIKit, accessibilityAddTraits(.isHeader) in SwiftUI)."
+    ],
+    [
+     "Zersplitterte Elemente.",
+     "Eine Produktkarte wird in fünf Stationen gelesen: Bild, Name, Preis, Bewertung, Button. Behebung: die Karte zu einem einzigen Element zusammenfassen, dessen Beschriftung das Wesentliche wiedergibt (in UIKit den Container mit isAccessibilityElement und einem gesamten accessibilityLabel zugänglich machen; in SwiftUI accessibilityElement(children: .combine)), und die Nebenaktionen über benutzerdefinierte Aktionen erreichbar halten."
+    ],
+    [
+     "Starre Schrift.",
+     "Die Person hat in den Einstellungen eine große Textgröße gewählt, doch die App ignoriert sie. Behebung: die dynamischen Textstile (Dynamic Type) verwenden, Zeilenumbrüche zulassen und Layouts vorsehen, die bei großen Schriftgrößen in eine Spalte wechseln."
+    ],
+    [
+     "Modales Fenster, aus dem der Fokus entweicht.",
+     "Ein Fenster öffnet sich, aber VoiceOver liest weiter den Bildschirm darunter. Behebung: die modale Ansicht kennzeichnen (accessibilityViewIsModal) und die Benachrichtigung über einen Bildschirmwechsel senden, damit der Fokus auf ihren Titel gesetzt wird."
+    ],
+    [
+     "Nicht angesagte Änderung.",
+     "Eine Meldung „Artikel in den Warenkorb gelegt“ erscheint drei Sekunden lang, ohne vorgelesen zu werden. Behebung: eine Barrierefreiheitsansage auslösen oder den Fokus verschieben, wenn die Änderung eine Handlung erfordert."
+    ],
+    [
+     "Individueller Schalter oder individuelles Kontrollkästchen.",
+     "Die Komponente wird ohne Rolle und ohne Zustand gelesen. Behebung: die Systemkomponente bevorzugen; andernfalls den Trait button, einen Wert „ein“ oder „aus“ bereitstellen und diesen Wert bei jeder Änderung aktualisieren."
+    ],
+    [
+     "Unlogische Lesereihenfolge.",
+     "In einem komplexen Layout liest VoiceOver die Aktionsleiste vor dem Inhalt. Behebung: die Hierarchie der Ansichten neu ordnen oder accessibilityElements auf dem Container ausdrücklich festlegen."
+    ],
+    [
+     "Vorgelesene dekorative Elemente.",
+     "Trennlinien, Illustrationen oder Hintergrundbilder schieben sich in die Lesefolge. Behebung: sie ausblenden (isAccessibilityElement auf false, oder accessibilityHidden in SwiftUI)."
+    ],
+    [
+     "Geste ohne Alternative.",
+     "Eine Nachricht lässt sich nur durch horizontales Wischen über die Zeile löschen. Behebung: dieselbe Aktion in einem Menü oder als benutzerdefinierte VoiceOver-Aktion anbieten, dazu einen sichtbaren Button auf dem Detailbildschirm."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Ein Punkt verdient besondere Aufmerksamkeit: die Sprache. Bietet die App mehrere Sprachen an, muss jede Barrierefreiheitsbeschriftung übersetzt werden, und ein Abschnitt in einer anderen Sprache muss als solcher gekennzeichnet werden, damit er korrekt ausgesprochen wird. Eine belgische App in Französisch und Niederländisch, deren VoiceOver-Beschriftungen nur auf Französisch eingegeben wurden, ist für niederländischsprachige Nutzerinnen und Nutzer halb stumm. Dasselbe gilt für eine luxemburgische oder Schweizer App, die eine deutsche Oberfläche anbietet, deren Beschriftungen für VoiceOver aber nur in einer anderen Landessprache gepflegt werden."
+  ],
+  [
+   "h2",
+   "maengel-android",
+   "Die 10 häufigsten Barrierefreiheitsmängel unter Android und ihre Behebung"
+  ],
+  [
+   "p",
+   "Unter Android gibt es dieselben Familien von Mängeln, mit anderem Vokabular. Die offizielle Dokumentation von Google zu den [[https://developer.android.com/guide/topics/ui/accessibility/principles?hl=fr|Grundsätzen der Barrierefreiheit von Apps]] behandelt Beschriftungen, Aktionen und Hinweise, die nicht allein auf Farbe beruhen; so schlagen sich diese Grundsätze in den Mängeln nieder, die man tatsächlich antrifft, in Views und in Jetpack Compose."
+  ],
+  [
+   "ol",
+   [
+    [
+     "Bild oder Symbolbutton ohne Beschreibung.",
+     "TalkBack sagt „Schaltfläche ohne Label“ an. Behebung: contentDescription setzen, in Views wie in Compose; bei einem rein dekorativen Bild contentDescription in Compose auf null oder importantForAccessibility in Views auf „no“ setzen."
+    ],
+    [
+     "Formularfeld ohne zugeordnete Beschriftung.",
+     "TalkBack liest „Bearbeitungsfeld“, ohne zu sagen, was einzugeben ist, oder nur den Hinweistext, der bei der Eingabe verschwindet. Behebung: dem Feld eine sichtbare Beschriftung zuordnen (labelFor in Views, Eigenschaft label der Material-Felder in Compose) und sich nicht allein auf den Hinweistext verlassen."
+    ],
+    [
+     "Nicht deklarierte Überschriften.",
+     "Die Navigation nach Überschriften findet nichts. Behebung: accessibilityHeading in Views, semantics { heading() } in Compose."
+    ],
+    [
+     "Zu kleine Ziele.",
+     "Ein Symbol von 24 dp ohne Rand ist schwer zu treffen. Behebung: Material-Komponenten verwenden, die eine minimale Touch-Fläche garantieren, oder den Platz in Compose mit minimumInteractiveComponentSize reservieren."
+    ],
+    [
+     "Einzeln gelesene Elemente einer Zeile.",
+     "Wie unter iOS wird eine Listenzeile zu einer Folge von Stationen. Behebung: semantics(mergeDescendants = true) in Compose oder die Zeile in Views fokussierbar machen und ihr eine Gesamtbeschreibung geben."
+    ],
+    [
+     "Nicht wiedergegebene kurzlebige Meldungen.",
+     "Ein unter einem Feld angezeigter Fehler wird nicht vorgelesen. Behebung: einen dynamischen Bereich deklarieren (accessibilityLiveRegion in Views, liveRegion in Compose) oder den Fokus nach der Validierung auf den Fehler setzen."
+    ],
+    [
+     "Nicht bereitgestellte Zustände.",
+     "Ein ausgewählter Tab oder ein aktiver Filter wird nur durch Farbe gekennzeichnet. Behebung: den Auswahlzustand bereitstellen (selected, stateDescription) und die Farbe durch eine Form oder einen Text ergänzen."
+    ],
+    [
+     "Individuelle Komponenten ohne Rolle.",
+     "Eine individuell gezeichnete Datumsauswahl wird wie einfacher Text gelesen. Behebung: die Rolle deklarieren (role in den Modifiern clickable oder semantics von Compose, AccessibilityDelegate in Views) und Barrierefreiheitsaktionen zum Erhöhen oder Verringern vorsehen."
+    ],
+    [
+     "Layout, das bei großer Schrift zerbricht.",
+     "Schriftgrößen in dp statt in sp ignorieren die Einstellung der Person; oder umgekehrt überlagert sich der vergrößerte Text. Behebung: Größen in sp, keine festen Containerhöhen, Scrollen ermöglichen."
+    ],
+    [
+     "Verlorener Fokus nach einer Navigation.",
+     "Nach dem Schließen eines Dialogs springt der TalkBack-Fokus an den Anfang des Bildschirms. Behebung: dem Element, das den Dialog geöffnet hat, den Fokus zurückgeben und den Titel jedes neuen Bildschirms ansagen (paneTitle in Compose, accessibilityPaneTitle oder Activity-Titel in Views)."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Android bringt zwei plattformspezifische Themen mit sich. Zum einen die Vielfalt der Hersteller: Manche verändern die Oberfläche des Systems, die Tastatur oder die TalkBack-Version. Ein Test auf einem einzigen Gerät garantiert nichts, doch das RAAM stellt klar, dass kein bestimmtes Modell vorgeschrieben ist; ein aktuelles Gerät mit einem dem Originalsystem nahen Android und ein Gerät eines sehr verbreiteten Herstellers bieten eine gute Abdeckung. Zum anderen der Zugang per Schalter (Switch Access) und per Tastatur: Eine Komponente, die TalkBack erreicht, ist nicht zwingend per Tastatur erreichbar, und umgekehrt."
+  ],
+  [
+   "note",
+   "Merke",
+   "Unter iOS wie unter Android verschwindet die Hälfte der Mängel, wenn man die Komponenten des Systems statt individuell gezeichneter Komponenten verwendet. Ist eine individuelle Komponente unverzichtbar, müssen ihr Name, ihre Rolle, ihr Zustand und ihre Aktionen ausdrücklich deklariert werden."
+  ],
+  [
+   "h2",
+   "react-native-flutter-webview",
+   "React Native, Flutter, Webviews: die Fallstricke plattformübergreifender Apps"
+  ],
+  [
+   "p",
+   "Plattformübergreifende Frameworks machen eine App nicht von Natur aus barrierefrei oder unzugänglich. Sie verlagern die Frage: Der Entwickler arbeitet nicht mehr direkt mit den Eigenschaften von iOS und Android, sondern mit denen des Frameworks, das sie korrekt übersetzen muss. Die Mängel entstehen meist durch wenig gepflegte Community-Komponenten und durch Unkenntnis der Barrierefreiheitseigenschaften des jeweiligen Frameworks."
+  ],
+  [
+   "table",
+   {
+    "caption": "Wo Barrierefreiheit je nach Technologie deklariert wird",
+    "head": [
+     "Technologie",
+     "Zu kennende Eigenschaften",
+     "Häufiger Fallstrick"
+    ],
+    "rows": [
+     [
+      "iOS UIKit und SwiftUI",
+      "accessibilityLabel, accessibilityTraits, accessibilityValue, accessibilityHint",
+      "Individuelle Komponenten ohne Trait; Dynamic Type nicht unterstützt"
+     ],
+     [
+      "Android Views und Jetpack Compose",
+      "contentDescription, semantics, stateDescription, liveRegion",
+      "Schriftgrößen in dp; doppelte Beschreibungen bei Eltern- und Kindelementen"
+     ],
+     [
+      "React Native",
+      "accessible, accessibilityLabel, accessibilityRole, accessibilityState",
+      "„Touchable“-Bereiche ohne Rolle, die als Text gelesen werden; nicht barrierefreie Drittbibliotheken"
+     ],
+     [
+      "Flutter",
+      "Widget Semantics, MergeSemantics, ExcludeSemantics",
+      "Individuelle Widgets ohne Semantik; gezeichnete Texte, die der Größeneinstellung nicht folgen"
+     ],
+     [
+      "Webview (hybrid)",
+      "Semantisches HTML und ARIA, wie auf einer Website",
+      "Seitentitel nicht angesagt; Fokus beim Ansichtswechsel nicht neu gesetzt; Zoom deaktiviert"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Webviews verdienen besondere Aufmerksamkeit, weil sie oft die sensibelsten Abläufe tragen: Vertragsabschluss, Bezahlung, Beschwerdeformular. Der Inhalt ist dort HTML und wird in Frankreich nach dem RGAA, andernorts nach den Webklauseln der Norm EN 301 549 bewertet; das Nutzungserlebnis muss aber durchgängig bleiben: Die Person darf beim Wechsel von einem nativen zu einem Webbildschirm ihren Fokus nicht verlieren, und die Zurück-Taste des Systems muss funktionieren. Eine konforme Webseite kann unbenutzbar werden, wenn die Webview das Vergrößern blockiert oder eine feste Höhe erzwingt."
+  ],
+  [
+   "p",
+   "Von Dritten gelieferte Module, etwa ein Zahlungsformular, ein Videoplayer, eine Karte oder ein Terminbuchungswerkzeug, sind eine Hauptquelle von Nichtkonformität. Die Organisation, die die App veröffentlicht, bleibt für das Ganze verantwortlich. Verlangen Sie von jedem Anbieter den Nachweis der Barrierefreiheit seiner Komponente unter iOS und Android, und halten Sie ihn im Vertrag fest: Unser Beitrag zu den [[article:clauses-marche-public|Barrierefreiheitsklauseln in öffentlichen Ausschreibungen]] bietet Formulierungen, die sich auch in einem privatrechtlichen Vertrag verwenden lassen."
+  ],
+  [
+   "h2",
+   "test-voiceover-talkback",
+   "Die Barrierefreiheit der eigenen App in 30 Minuten mit VoiceOver und TalkBack testen"
+  ],
+  [
+   "p",
+   "Dieser Test ersetzt kein Audit, aber er ermöglicht es einer Produktverantwortlichen, einem Designer oder einer Entwicklerin, die größten Blockaden in einer halben Stunde zu sehen. Halten Sie ein iPhone und ein Android-Telefon bereit, die App installiert, ein Testkonto, und wählen Sie einen wesentlichen Ablauf: sich anmelden und einen Kontostand abrufen, eine Verbindung suchen und ein Ticket kaufen, ein Produkt finden und in den Warenkorb legen."
+  ],
+  [
+   "h3",
+   "Vor dem Start: die Screenreader aktivieren"
+  ],
+  [
+   "p",
+   "Auf dem iPhone wird VoiceOver unter Einstellungen, Bedienungshilfen, VoiceOver aktiviert. Richten Sie zuerst den Kurzbefehl für Bedienungshilfen ein (Dreifachklick auf die Seitentaste oder, bei Modellen, die eine haben, auf die Home-Taste): Damit können Sie VoiceOver ausschalten, wenn Sie sich verirrt haben. Die Grundgesten: nach rechts oder links wischen, um von einem Element zum nächsten zu gelangen, zweimal tippen, um zu aktivieren, zwei Finger auf dem Bildschirm drehen, um den Rotor zu öffnen und die Navigation nach Überschriften zu wählen. Unter Android wird TalkBack unter Einstellungen, Bedienungshilfen, TalkBack aktiviert und lässt sich mit dem Kurzbefehl über die Lautstärketasten verknüpfen. Die entsprechenden Gesten sind das Wischen nach rechts oder links und das Doppeltippen; über die Lesesteuerung lässt sich nach Überschriften oder Links navigieren."
+  ],
+  [
+   "h3",
+   "Das Protokoll in fünf Schritten"
+  ],
+  [
+   "ol",
+   [
+    [
+     "Den Startbildschirm Element für Element lesen (5 Minuten).",
+     "Wischen Sie von oben nach unten. Hat jedes Element einen verständlichen Namen, ohne bloßes „Taste“, ohne Dateinamen? Folgt die Reihenfolge der visuellen Logik? Werden dekorative Elemente übergangen?"
+    ],
+    [
+     "Den Ablauf mit dem Screenreader durchlaufen (10 Minuten).",
+     "Führen Sie den gewählten Ablauf möglichst ohne Blick auf den Bildschirm durch. Notieren Sie jede Stelle, an der Sie blockiert sind: Feld ohne Beschriftung, nicht erreichbarer Button, Fenster, das den Fokus nicht übernimmt, nicht vorgelesene Fehlermeldung, per SMS erhaltener Code, der sich nicht einfügen lässt."
+    ],
+    [
+     "Die Schrift maximal vergrößern (5 Minuten).",
+     "Schalten Sie den Screenreader aus und wählen Sie die größte Textgröße des Systems, unter iOS einschließlich der größeren Textgrößen der Bedienungshilfen. Wird der Text größer? Bleibt er vollständig, ohne Abschneiden und ohne Überlappung? Bleiben die Buttons sichtbar?"
+    ],
+    [
+     "Das Gerät drehen und die Gesten prüfen (5 Minuten).",
+     "Wechseln Sie ins Querformat: Folgt die App? Suchen Sie jede Aktion, die eine komplexe Geste verlangt (zusammenziehen, ziehen, wischen, schütteln), und prüfen Sie, ob es eine einfache Alternative gibt."
+    ],
+    [
+     "Die wichtigsten Bildschirme mit den Prüfwerkzeugen untersuchen (5 Minuten).",
+     "Unter Android analysiert die App Accessibility Scanner einen Bildschirm und meldet zu kleine Ziele, unzureichende Kontraste und fehlende Beschriftungen. Unter iOS prüft der Accessibility Inspector von Xcode einen Bildschirm vom Mac aus. Notieren Sie, was die Werkzeuge melden, ohne zu vergessen, was sie nicht sehen."
+    ]
+   ]
+  ],
+  [
+   "p",
+   "Lässt sich der Ablauf mit dem Screenreader nicht abschließen, ist die App für einen Teil Ihrer Nutzerinnen und Nutzer blockierend, ganz gleich, wie viele kleinere Mängel es daneben gibt. Das ist die erste Feststellung, die Sie der Geschäftsleitung vorlegen sollten, vor jeder Diskussion über eine Konformitätsrate. Wer weitergehen möchte, kann mit [[svc:test-utilisateur|Tests mit Menschen, die im Alltag Screenreader nutzen]], beobachten, wie erfahrene Personen diese Hindernisse umgehen oder eben nicht, was kein Expertentest vollständig nachbildet."
+  ],
+  [
+   "h2",
+   "automatische-tests-grenzen",
+   "Automatische Testwerkzeuge: Was sie erkennen und was sie übersehen"
+  ],
+  [
+   "p",
+   "Die Plattformen stellen kostenlose Werkzeuge bereit, und die [[https://accessibilite.public.lu/en/raam1.1/methodologie.html|Methodik des RAAM 1.1 (auf Englisch)]] nennt sie: den Accessibility Inspector von Xcode für iOS, Accessibility Scanner und die Android-Bedienungshilfen-Suite für Android, ein Kontrastanalysewerkzeug für die Farben. Beide Ökosysteme bieten außerdem Prüfungen, die in automatisierte Tests integriert sind: Die UI-Tests von Xcode können ein Barrierefreiheitsaudit starten, und die Android-Testframeworks verfügen über Barrierefreiheitsprüfungen, die sich in instrumentierten Tests aktivieren lassen."
+  ],
+  [
+   "p",
+   "Diese Werkzeuge sind nützlich, um messbare Mängel schnell zu finden: fehlende Beschriftung, zu kleines Ziel, unzureichender Kontrast, anklickbares Element ohne Rolle. Sie können nicht beurteilen, ob eine Beschriftung zutreffend ist („Taste 1“ besteht die Prüfung), ob die Lesereihenfolge sinnvoll ist, ob eine Fehlermeldung verständlich ist, ob der Fokus nach einer Aktion an die richtige Stelle gesetzt wird oder ob ein ganzer Ablauf durchführbar ist. In der Praxis decken automatische Prüfungen nur einen kleinen Teil der Kriterien ab; sie dienen als Netz in der kontinuierlichen Integration, nicht als Konformitätsnachweis."
+  ],
+  [
+   "table",
+   {
+    "caption": "Aufteilung der Prüfungen zwischen Werkzeugen und manuellen Tests",
+    "head": [
+     "Prüfung",
+     "Automatisches Werkzeug",
+     "Manueller Test erforderlich"
+    ],
+    "rows": [
+     [
+      "Beschriftung auf Buttons und Bildern vorhanden",
+      "Ja",
+      "Um ihre Angemessenheit zu beurteilen"
+     ],
+     [
+      "Größe der Touch-Ziele",
+      "Ja",
+      "Für Abstandsfälle und Ausnahmen"
+     ],
+     [
+      "Kontrast von Text und Symbolen",
+      "Ja, auf dem analysierten Bildschirm",
+      "Für Zustände (deaktiviert, ausgewählt), den Dunkelmodus und Bilder"
+     ],
+     [
+      "Lesereihenfolge und Gruppierungen",
+      "Nein",
+      "Ja, mit dem Screenreader"
+     ],
+     [
+      "Ansage von Änderungen und Fehlern",
+      "Nein",
+      "Ja, beim Durchlaufen des Ablaufs"
+     ],
+     [
+      "Schriftvergrößerung und Ausrichtung",
+      "Teilweise",
+      "Ja, bei maximaler Größe und im Querformat"
+     ],
+     [
+      "Alternativen zu komplexen Gesten",
+      "Nein",
+      "Ja"
+     ],
+     [
+      "Vollständiger Ablauf durchführbar",
+      "Nein",
+      "Ja, idealerweise mit Nutzerinnen und Nutzern"
+     ]
+    ]
+   }
+  ],
+  [
+   "h2",
+   "entwicklungszyklus",
+   "Barrierefreiheit in den mobilen Entwicklungszyklus einbinden"
+  ],
+  [
+   "p",
+   "Eine App nach ihrer Veröffentlichung zu korrigieren ist teuer: Jede Korrektur durchläuft einen Zyklus aus Entwicklung, Abnahme und Prüfung durch die App-Stores, und das auf zwei Plattformen. Teams, die dauerhaft barrierefreie Apps erreichen, behandeln das Thema in jeder Phase, wie Sicherheit oder Performance. Hier die Checkliste, die wir empfehlen, vom Entwurf bis zum Produktivbetrieb."
+  ],
+  [
+   "h3",
+   "Checkliste nach Phase"
+  ],
+  [
+   "ul",
+   [
+    "Konzeption: Jeder Bildschirm des Entwurfs gibt die Lesereihenfolge, die Überschriften, die Beschriftungen der Symbolbuttons und das Verhalten bei großen Textgrößen an; individuelle Komponenten werden begründet.",
+    "Designsystem: Jede Komponente wird mit ihren Barrierefreiheitseigenschaften für iOS und Android, kontrastreichen Zuständen und einer ausreichenden Touch-Fläche geliefert; eine einzige Korrektur kommt dann allen Bildschirmen zugute.",
+    "User Stories: Die Akzeptanzkriterien umfassen den Screenreader („Eine Person mit VoiceOver kann einen Empfänger hinzufügen“) und die maximale Textgröße.",
+    "Entwicklung: Die Barrierefreiheitsbeschriftungen werden wie alle anderen Zeichenketten übersetzt; Code-Reviews prüfen die Eigenschaften neuer Komponenten.",
+    "Kontinuierliche Integration: Automatische Barrierefreiheitsaudits laufen in den UI-Tests und blockieren offensichtliche Regressionen.",
+    "Abnahme: Jede Version durchläuft das Testprotokoll mit dem Screenreader für die wesentlichen Abläufe, unter iOS und Android.",
+    "Produktivbetrieb: Die Versionshinweise nennen Verbesserungen der Barrierefreiheit; die Erklärung zur Barrierefreiheit wird nach jeder wichtigen Änderung aktualisiert.",
+    "Nach der Veröffentlichung: Ein barrierefreier Meldekanal ermöglicht es Nutzerinnen und Nutzern, eine Blockade zu melden, und jede Meldung erhält eine Antwort."
+   ]
+  ],
+  [
+   "p",
+   "Zwei Hebel beschleunigen diese Organisation. Der erste ist die Schulung der Teams: Ein iOS- oder Android-Entwickler, der die Barrierefreiheitseigenschaften seiner Plattform kennt, behebt einen Mangel in wenigen Minuten, während ein nicht geschulter Entwickler ihn in jeder neuen Komponente wiederholt; unsere [[svc:formations|Schulungen zur Barrierefreiheit für Entwicklerinnen, Entwickler und Designer]] sind um diese Handgriffe herum aufgebaut. Der zweite ist die Abnahme: Eine [[svc:recette|Barrierefreiheitsabnahme bei jeder Version]] verhindert, dass eine neue Funktion bereits behobene Mängel wieder einführt."
+  ],
+  [
+   "p",
+   "Auch der Veröffentlichungsrhythmus der App-Stores folgt seiner eigenen Logik. Eine dringende Barrierefreiheitskorrektur, etwa ein nicht erreichbarer Bezahlbutton, muss außerhalb des üblichen Versionsrhythmus ausgeliefert werden können. Sehen Sie das in Ihrer Organisation vor, vor allem wenn Ihre Dienstleistung dem EAA unterliegt: Ein blockierender Ablauf ist ein Mangel, der ohne Warten auf die nächste Hauptversion zu beheben ist."
+  ],
+  [
+   "h2",
+   "audit-mobile-app",
+   "Wie das Barrierefreiheitsaudit einer mobilen App abläuft"
+  ],
+  [
+   "p",
+   "Ein App-Audit folgt derselben Logik wie ein Website-Audit, die unser Beitrag zum [[article:audit-rgaa|Ablauf eines RGAA-Audits]] beschreibt: eine Stichprobe, ein Kriterienraster, eine Konformitätsrate, ein Bericht und ein Korrekturplan. Drei Unterschiede verändern die Vorbereitung."
+  ],
+  [
+   "ul",
+   [
+    "Jede Plattform ist ein eigenes Audit: Die iOS- und die Android-Version sind zwei getrennte Dienste mit eigenen Mängeln und eigener Konformitätsrate. Gemeinsame Empfehlungen werden zusammengeführt, die Ergebnisse nicht.",
+    "Die Stichprobe besteht aus Bildschirmen: Die Methodik des RAAM 1.1 verlangt mindestens den Start-, den Impressums-, den Anmelde-, den Kontakt- und den Dokumentationsbildschirm, einen Bildschirm für jede Art von Dienst und anschließend zufällig ausgewählte Bildschirme, die mindestens 10 % der Stichprobe ausmachen. Ein Kriterium gilt nur dann als erfüllt, wenn es auf allen Bildschirmen der Stichprobe erfüllt ist.",
+    "Getestet wird auf echten Geräten, mit VoiceOver und TalkBack, auf der neuesten oder der vorherigen Systemversion und, für die Kriterien, die es verlangen, mit anderen Navigationsarten wie der externen Tastatur."
+   ]
+  ],
+  [
+   "p",
+   "Stellen Sie zur Vorbereitung des Audits Folgendes zusammen: die zu prüfende Version (veröffentlichte Version oder Testversion), die Testkonten und fiktiven Daten, mit denen sich die Abläufe gefahrlos durchspielen lassen, die Liste der meistgenutzten Bildschirme und Abläufe sowie die aktuelle Erklärung zur Barrierefreiheit, falls vorhanden. Die durchschnittliche Dauer unserer Audits beträgt drei Wochen; sie hängt vor allem von der Zahl der Bildschirme, der Zahl der Plattformen und dem Vorhandensein komplexer Abläufe wie der starken Kundenauthentifizierung oder der Bezahlung ab. Die Faktoren, die ein Angebot beeinflussen, beschreibt unser Beitrag zu den [[article:prix-audit|Kosten eines Barrierefreiheitsaudits]]."
+  ],
+  [
+   "p",
+   "Das nützliche Ergebnis ist nicht die Rate, sondern die Liste der Korrekturen, geordnet nach ihrer Auswirkung auf die Abläufe, mit Angabe des Bildschirms, der Plattform, der betroffenen Eigenschaft und der erwarteten Korrektur in Swift, in Kotlin oder im verwendeten Framework für jeden Mangel. Darum geht es in unserem [[svc:audit-raam|Audit mobiler Apps nach dem RAAM oder der Norm EN 301 549]]; wenn Ihre Teams bei den Korrekturen begleitet werden möchten, übernimmt eine [[svc:developpement|Begleitung bei der barrierefreien Entwicklung]] unter iOS und Android."
+  ],
+  [
+   "h2",
+   "erklaerung-barrierefreiheit-app",
+   "Die Erklärung zur Barrierefreiheit einer mobilen App"
+  ],
+  [
+   "p",
+   "Eine App, die der Richtlinie von 2016 unterliegt, braucht eine eigene Erklärung zur Barrierefreiheit: Die Erklärung der Website deckt sie nicht ab. In Frankreich wird die Erklärung einer App auf der Website der Stelle oder zusammen mit den beim Herunterladen sichtbaren Informationen veröffentlicht, und der Konformitätsstatus wird zudem in der App selbst angegeben, meist auf einem Bildschirm „Barrierefreiheit“, der über das Menü oder die Einstellungen erreichbar ist. In Luxemburg folgt die Erklärung dem offiziellen Muster und wird dem SIP gemeldet."
+  ],
+  [
+   "p",
+   "Die häufigsten Fehler sind vorhersehbar: eine einzige Erklärung für iOS und Android, obwohl die Raten unterschiedlich sind, eine Erklärung, die auf ein Audit der Vorgängerversion verweist, kein Kontakt, um einen Mangel aus der App heraus zu melden, ein Vermerk „vollständig konform“ ohne Audit. Unser Beitrag zur [[article:declaration|Erklärung zur Barrierefreiheit und ihren häufigen Fehlern]] bietet ein kommentiertes Muster."
+  ],
+  [
+   "p",
+   "Für Dienstleistungen, die dem EAA unterliegen, nimmt die Pflicht eine andere Form an: Das Unternehmen muss Informationen darüber bereitstellen, wie die Dienstleistung die Barrierefreiheitsanforderungen erfüllt, in der Regel in seinen Allgemeinen Geschäftsbedingungen oder einem gleichwertigen Dokument. Nichts spricht dagegen, und vieles dafür, zusätzlich einen Bildschirm zur Barrierefreiheit mit Kontaktmöglichkeit in der App zu veröffentlichen. Für eine Bank, ein Verkehrsunternehmen oder eine große Handelskette beschreibt unsere Seite für [[sector:grands-comptes|Großunternehmen]], wie wir solche Vorhaben über mehrere Apps und mehrere Länder hinweg organisieren."
+  ],
+  [
+   "h2",
+   "aktionsplan-90-tage",
+   "Aktionsplan: eine barrierefreie App in 90 Tagen"
+  ],
+  [
+   "p",
+   "Für eine bereits veröffentlichte App unter iOS und Android gibt dieser Plan eine realistische Reihenfolge vor. Die Zeitangaben setzen ein verfügbares Entwicklungsteam und einen Umfang von einigen Dutzend Bildschirmen voraus; eine umfangreichere App durchläuft dieselben Schritte, in Paketen von Abläufen."
+  ],
+  [
+   "table",
+   {
+    "caption": "Aktionsplan in drei Phasen",
+    "head": [
+     "Zeitraum",
+     "Maßnahmen",
+     "Ergebnis"
+    ],
+    "rows": [
+     [
+      "Tag 1 bis 15",
+      "Die Pflichten einordnen (Richtlinie von 2016, EAA oder beide); die wesentlichen Abläufe auflisten; den 30-Minuten-Test auf jeder Plattform durchführen; das Audit beauftragen",
+      "Rahmenpapier, Liste der offensichtlichen Blockaden"
+     ],
+     [
+      "Tag 15 bis 45",
+      "Das Audit entgegennehmen; zuerst die Blockaden der wesentlichen Abläufe beheben (Anmeldung, Bezahlung, Formulare); die Komponenten des Designsystems korrigieren",
+      "Veröffentlichte Korrekturversion, barrierefreie Komponenten"
+     ],
+     [
+      "Tag 45 bis 75",
+      "Die verbleibenden Mängel Bildschirm für Bildschirm bearbeiten; automatische Audits in die UI-Tests aufnehmen; Entwicklerinnen, Entwickler und Designer schulen",
+      "Verbesserte Konformitätsrate, ausgerüstete kontinuierliche Integration"
+     ],
+     [
+      "Tag 75 bis 90",
+      "Gegenaudit der korrigierten Abläufe; Veröffentlichung oder Aktualisierung der Erklärung zur Barrierefreiheit; Einrichtung des Meldekanals",
+      "Aktuelle Erklärung, Plan für die verbleibenden Bildschirme"
+     ]
+    ]
+   }
+  ],
+  [
+   "p",
+   "Behalten Sie den Zeitplan der Normen im Blick. Die Version 4.1.1 der Norm EN 301 549, auf die WCAG 2.2 abgestimmt, wurde im September 2026 angenommen, und ihre Fundstelle im Amtsblatt der Union wird erwartet; das RAAM 2 ist in Luxemburg für Februar 2027 angekündigt, und der RGAA 5 soll in Frankreich mobile Kriterien bringen. Wer schon jetzt nach den WCAG 2.2 Stufe AA korrigiert, insbesondere bei der Zielgröße, den Ziehbewegungen und der Authentifizierung, muss dieselben Bildschirme nicht in einem Jahr erneut öffnen."
+  ]
+ ],
+ "faq": [
+  [
+   "Unterliegen mobile Apps in Frankreich dem RGAA?",
+   "Sie unterliegen Artikel 47 des Gesetzes vom 11. Februar 2005, ebenso wie Websites, und zwar für öffentliche Stellen und für Unternehmen mit mehr als 250 Millionen Euro Umsatz. Der RGAA 4.1.2 wurde für das Web konzipiert: Er gilt für Webviews, während die native App in der Praxis nach der Norm EN 301 549 bewertet wird. Die DINUM hat angekündigt, dass der RGAA 5 Kriterien für mobile Apps enthalten wird."
+  ],
+  [
+   "Müssen die iOS-App und die Android-App getrennt geprüft werden?",
+   "Ja. Die beiden Versionen verwenden unterschiedliche Komponenten, Screenreader und Einstellungen und weisen selten dieselben Mängel auf. Jede hat ihre eigene Konformitätsrate und, im öffentlichen Sektor, ihre eigene Erklärung zur Barrierefreiheit. Gemeinsame Empfehlungen, etwa zum Designsystem oder zu den Beschriftungen, werden im Korrekturplan zusammengeführt, damit sie nur einmal umgesetzt werden müssen."
+  ],
+  [
+   "Kann eine mit Flutter oder React Native entwickelte App barrierefrei sein?",
+   "Ja, vorausgesetzt, die Barrierefreiheitseigenschaften des Frameworks werden genutzt (Widget Semantics bei Flutter, accessibilityLabel und accessibilityRole bei React Native) und die Drittbibliotheken werden geprüft. Das Framework übersetzt diese Eigenschaften in die von iOS und Android; eine Komponente, die sie nicht deklariert, bleibt für VoiceOver und TalkBack stumm, genau wie bei einer nativen App."
+  ],
+  [
+   "Ist meine Shopping-App vom European Accessibility Act betroffen?",
+   "Ja, wenn Verbraucherinnen und Verbraucher über sie in der Union einen Vertrag schließen können und das Unternehmen kein Kleinstunternehmen ist, das Dienstleistungen erbringt (weniger als zehn Beschäftigte und höchstens 2 Millionen Euro Jahresumsatz oder Bilanzsumme). Für die App gilt keine eigene Übergangsfrist: Sie muss wie die Website seit dem 28. Juni 2025 barrierefrei sein; nur vor diesem Datum geschlossene Verträge dürfen bis zu ihrem Ablauf weiterlaufen, längstens bis zum 28. Juni 2030."
+  ],
+  [
+   "Wie groß muss ein Button in einer App mindestens sein?",
+   "Das Kriterium 2.5.8 der WCAG 2.2, Stufe AA, verlangt Ziele von mindestens 24 CSS-Pixeln Seitenlänge oder einen ausreichenden Abstand. Google empfiehlt unter Android, darüber hinauszugehen, mit Zielen von mindestens 48 dp, etwa 9 mm, und 8 dp Abstand. Die Standardkomponenten der Plattformen halten diese Maße in der Regel ein, individuell gezeichnete Symbole dagegen oft nicht."
+  ],
+  [
+   "Reicht ein automatisches Werkzeug, um die Barrierefreiheit einer App zu prüfen?",
+   "Nein. Die Prüfwerkzeuge von Apple und Google erkennen fehlende Beschriftungen, zu kleine Ziele und unzureichende Kontraste, beurteilen aber weder die Angemessenheit einer Beschriftung noch die Lesereihenfolge noch die Frage, ob sich ein Ablauf abschließen lässt. Sie sind in der kontinuierlichen Integration nützlich; die Konformität wird durch manuelle Tests mit dem Screenreader auf echten Geräten nachgewiesen."
+  ]
+ ],
+ "cta_svc": "audit-raam",
+ "cta_title": "Besteht Ihre App den Screenreader-Test?",
+ "cta_text": "Wir prüfen Ihre iOS- und Android-Apps auf echten Geräten, mit VoiceOver und TalkBack, und übergeben Ihren Entwicklern nach Auswirkung geordnete Korrekturen.",
+ "related": [
+  "luxembourg",
+  "wcag-22",
+  "e-commerce"
+ ]
+}

@@ -253,7 +253,7 @@
   ],
   [
    "p",
-   "De iOS- en Android-apps van de betrokken organisaties vallen er sinds 2021 onder, net als bedrijfssoftware die via een browser toegankelijk is. De RGAA 4.1.2 is in de eerste plaats ontworpen voor webinhoud, en het décret van augustus 2026 vraagt het toekomstige referentiekader precies om te preciseren op welke categorieën van diensten zijn criteria van toepassing zijn. In de praktijk steunt de beoordeling van een native app op de norm EN 301 549 en gebeurt ze op echte toestellen, met VoiceOver en TalkBack; dat is het onderwerp van een [[svc:audit-raam|audit van mobiele apps]]. Webweergaven die in een app zijn ingebouwd, zoals een betaalformulier dat in een ingebedde browser opent, worden wel met de RGAA beoordeeld."
+   "De iOS- en Android-apps van de betrokken organisaties vallen er sinds 2021 onder, net als bedrijfssoftware die via een browser toegankelijk is. De RGAA 4.1.2 is in de eerste plaats ontworpen voor webinhoud, en het décret van augustus 2026 vraagt het toekomstige referentiekader precies om te preciseren op welke categorieën van diensten zijn criteria van toepassing zijn. In de praktijk steunt de beoordeling van een native app op de norm EN 301 549 en gebeurt ze op echte toestellen, met VoiceOver en TalkBack; dat is het onderwerp van een [[svc:audit-raam|audit van mobiele apps]]. Webweergaven die in een app zijn ingebouwd, zoals een betaalformulier dat in een ingebedde browser opent, worden wel met de RGAA beoordeeld. De verplichtingen per land, de meest voorkomende fouten en een testprotocol staan samen in onze gids over [[article:application-mobile|toegankelijkheid van mobiele apps]]."
   ],
   [
    "h3",
@@ -711,6 +711,6 @@
   "eaa",
   "normes"
  ],
- "modified": "2026-11-14",
+ "modified": "2026-11-21",
  "cluster": "reglementation"
 }
